@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-article"></a>已过时的文章
+# <a name="obsolete-article"></a><span data-ttu-id="1120d-104">已过时的文章</span><span class="sxs-lookup"><span data-stu-id="1120d-104">Obsolete article</span></span>
 
-这篇文章已过时。当前的信息，请参阅[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)。
+<span data-ttu-id="1120d-p102">这篇文章已过时。当前的信息，请参阅[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)。</span><span class="sxs-lookup"><span data-stu-id="1120d-p102">This article is obsolete. See [Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.md) for current information.</span></span>
   
 

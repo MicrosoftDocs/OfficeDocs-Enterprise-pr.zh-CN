@@ -15,330 +15,330 @@ ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>可访问的图 - Microsoft Lync 2013 平台选项
+# <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a><span data-ttu-id="ba739-103">可访问的图 - Microsoft Lync 2013 平台选项</span><span class="sxs-lookup"><span data-stu-id="ba739-103">Accessible diagram - Microsoft Lync 2013 Platform Options</span></span>
 
-**摘要：**这篇文章是图名为 Microsoft Lync 2013 平台选项，即在[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)可用辅助功能的文本版本。
+<span data-ttu-id="ba739-104">**摘要：**这篇文章是图名为 Microsoft Lync 2013 平台选项，即在[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)可用辅助功能的文本版本。</span><span class="sxs-lookup"><span data-stu-id="ba739-104">**Summary:** This article is an accessible text version of the diagram named Microsoft Lync 2013 Platform Options, which is available at [Technical Diagrams](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).</span></span>
   
-本海报介绍哪些业务决策者 (BDM) 和架构师需要了解 Lync Online (Office 365) 和 Lync Server 部署，其中包含以下内容：
+<span data-ttu-id="ba739-105">本海报介绍哪些业务决策者 (BDM) 和架构师需要了解 Lync Online (Office 365) 和 Lync Server 部署，其中包含以下内容：</span><span class="sxs-lookup"><span data-stu-id="ba739-105">This poster describes what business decision makers (BDMs) and architects need to know about Lync Online (Office 365) and Lync Server deployments and includes:</span></span>
   
-- 四个不同的部署选项比较：Lync Online (Office 365)、Lync Online/Server 混合、Lync Server 和提供程序承载的 Lync Server。 
+- <span data-ttu-id="ba739-106">四个不同的部署选项比较：Lync Online (Office 365)、Lync Online/Server 混合、Lync Server 和提供程序承载的 Lync Server。</span><span class="sxs-lookup"><span data-stu-id="ba739-106">A comparison of four different deployment options: Lync Online (Office 365), Lync Online/Server Hybrid, Lync Server, and Provider-Hosted Lync Server.</span></span> 
     
-- 部署 Lync 2013 的两个示例方案。
+- <span data-ttu-id="ba739-107">部署 Lync 2013 的两个示例方案。</span><span class="sxs-lookup"><span data-stu-id="ba739-107">Two example scenarios for deploying Lync 2013.</span></span>
     
-## <a name="comparison-of-four-different-deployments-for-the-lync-2013-platform"></a>Lync 2013 平台的四种不同部署比较
+## <a name="comparison-of-four-different-deployments-for-the-lync-2013-platform"></a><span data-ttu-id="ba739-108">Lync 2013 平台的四种不同部署比较</span><span class="sxs-lookup"><span data-stu-id="ba739-108">Comparison of four different deployments for the Lync 2013 platform</span></span>
 
-比较提供了每个部署选项的信息，包括以下方面： 
+<span data-ttu-id="ba739-109">比较提供了每个部署选项的信息，包括以下方面：</span><span class="sxs-lookup"><span data-stu-id="ba739-109">The comparison provides information about each deployment option in the following areas:</span></span> 
   
-- 不同的部署功能的概述
+- <span data-ttu-id="ba739-110">不同的部署功能的概述</span><span class="sxs-lookup"><span data-stu-id="ba739-110">An overview of the different deployment features</span></span>
     
-- 实施每个部署选项的优点
+- <span data-ttu-id="ba739-111">实施每个部署选项的优点</span><span class="sxs-lookup"><span data-stu-id="ba739-111">Benefits of implementing each deployment option</span></span>
     
-- 许可要求
+- <span data-ttu-id="ba739-112">许可要求</span><span class="sxs-lookup"><span data-stu-id="ba739-112">Licensing requirements</span></span>
     
-- 所需的体系结构任务
+- <span data-ttu-id="ba739-113">所需的体系结构任务</span><span class="sxs-lookup"><span data-stu-id="ba739-113">Required architectural tasks</span></span>
     
-- IT 专业人员对实施每个部署选项的职责
+- <span data-ttu-id="ba739-114">IT 专业人员对实施每个部署选项的职责</span><span class="sxs-lookup"><span data-stu-id="ba739-114">IT Pro responsibilities for implementing each deployment option</span></span>
     
-### <a name="overview"></a>概述
+### <a name="overview"></a><span data-ttu-id="ba739-115">概述</span><span class="sxs-lookup"><span data-stu-id="ba739-115">Overview</span></span>
 
-#### <a name="lync-online-office-365"></a>Lync Online (Office 365)
+#### <a name="lync-online-office-365"></a><span data-ttu-id="ba739-116">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="ba739-116">Lync Online (Office 365)</span></span>
 
-使用 Office 365 多租户计划提高效率并优化成本。
+<span data-ttu-id="ba739-117">使用 Office 365 多租户计划提高效率并优化成本。</span><span class="sxs-lookup"><span data-stu-id="ba739-117">You gain efficiency and optimize for cost with Office 365 multitenant plans.</span></span>
   
-随附的图显示了具有 Azure Active Directory 租户的 Lync Online，它可在本地 Active Directory 域服务 (AD DS) 环境和 Azure Active Directory 租户之间同步帐户名称和密码。 
+<span data-ttu-id="ba739-118">随附的图显示了具有 Azure Active Directory 租户的 Lync Online，它可在本地 Active Directory 域服务 (AD DS) 环境和 Azure Active Directory 租户之间同步帐户名称和密码。</span><span class="sxs-lookup"><span data-stu-id="ba739-118">The accompanying diagram shows Lync Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant.</span></span> 
   
-功能描述：
+<span data-ttu-id="ba739-119">功能描述：</span><span class="sxs-lookup"><span data-stu-id="ba739-119">Description of features and functionality:</span></span>
   
-- 软件即服务 (SaaS)。
+- <span data-ttu-id="ba739-120">软件即服务 (SaaS)。</span><span class="sxs-lookup"><span data-stu-id="ba739-120">Software as a Service (SaaS).</span></span>
     
-- 始终保持最新的丰富功能集。
+- <span data-ttu-id="ba739-121">始终保持最新的丰富功能集。</span><span class="sxs-lookup"><span data-stu-id="ba739-121">Rich feature set that is always up to date.</span></span>
     
-- 包括用于联机帐户的 Azure Active Directory 租户（可用于其他应用程序）。 
+- <span data-ttu-id="ba739-122">包括用于联机帐户的 Azure Active Directory 租户（可用于其他应用程序）。</span><span class="sxs-lookup"><span data-stu-id="ba739-122">Includes an Azure Active Directory tenant for online accounts, which can be used with other applications.</span></span> 
     
-- 目录集成包括同步本地 Active Directory 域服务 (AD DS) 环境和 Azure Active Directory 租户之间的帐户名称和密码。
+- <span data-ttu-id="ba739-123">目录集成包括同步本地 Active Directory 域服务 (AD DS) 环境和 Azure Active Directory 租户之间的帐户名称和密码。</span><span class="sxs-lookup"><span data-stu-id="ba739-123">Directory integration includes synchronizing account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant.</span></span>
     
-- 如果需要单一登录 (SSO)，可实施 Active Directory 联合身份验证服务 (AD FS)。 
+- <span data-ttu-id="ba739-124">如果需要单一登录 (SSO)，可实施 Active Directory 联合身份验证服务 (AD FS)。</span><span class="sxs-lookup"><span data-stu-id="ba739-124">If single sign-on (SSO) is a requirement, Active Directory Federation Services (AD FS) must be implemented.</span></span> 
     
-- 通过 Internet 的客户端通信将会加密并进行身份验证。
+- <span data-ttu-id="ba739-125">通过 Internet 的客户端通信将会加密并进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="ba739-125">Client communication over the Internet is encrypted and authenticated.</span></span>
     
-- 对于传统电话设备和公共交换电话网络 (PSTN)，连接通过第三方提供程序实现。
+- <span data-ttu-id="ba739-126">对于传统电话设备和公共交换电话网络 (PSTN)，连接通过第三方提供程序实现。</span><span class="sxs-lookup"><span data-stu-id="ba739-126">Legacy phone equipment, public switched telephone network (PSTN), connectivity is available through third-party providers.</span></span>
     
-#### <a name="lync-onlineserver-hybrid-split-domain"></a>Lync Online/Server 混合（拆分域）
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="ba739-127">Lync Online/Server 混合（拆分域）</span><span class="sxs-lookup"><span data-stu-id="ba739-127">Lync Online/Server Hybrid (split domain)</span></span>
 
-您可以将 Office 365 的优势与 Lync 2013 的本地部署相结合。
+<span data-ttu-id="ba739-128">您可以将 Office 365 的优势与 Lync 2013 的本地部署相结合。</span><span class="sxs-lookup"><span data-stu-id="ba739-128">You can combine the benefits of Office 365 with an on-premises deployment of Lync 2013.</span></span>
   
-随附的图中显示具有 Lync Online 的 Office 365，其中部分用户位于本地，部分用户处于联机状态。此外还显示了部署在本地的边缘服务器。
+<span data-ttu-id="ba739-p101">随附的图中显示具有 Lync Online 的 Office 365，其中部分用户位于本地，部分用户处于联机状态。此外还显示了部署在本地的边缘服务器。</span><span class="sxs-lookup"><span data-stu-id="ba739-p101">The accompanying diagram shows Office 365 with Lync Online where some users are homed on-premises and some users are homed online. An Edge Server that is deployed on-premises is also shown.</span></span>
   
-功能描述：
+<span data-ttu-id="ba739-131">功能描述：</span><span class="sxs-lookup"><span data-stu-id="ba739-131">Description of features and functionality:</span></span>
   
-- 部分用户位于本地，部分用户处于联机状态，但用户共享同一个 SIP 域（例如 contoso.com）。
+- <span data-ttu-id="ba739-132">部分用户位于本地，部分用户处于联机状态，但用户共享同一个 SIP 域（例如 contoso.com）。</span><span class="sxs-lookup"><span data-stu-id="ba739-132">Some users are homed on premises and some users are homed online, but the users share the same SIP domain (such as contoso.com).</span></span>
     
-- 利用您现有的 Lync Server 2013 基础结构，包括到 PSTN 的连接。
+- <span data-ttu-id="ba739-133">利用您现有的 Lync Server 2013 基础结构，包括到 PSTN 的连接。</span><span class="sxs-lookup"><span data-stu-id="ba739-133">Leverage your existing Lync Server 2013 infrastructure, including the connections to the PSTN.</span></span>
     
-- 当用户不需要 PSTN 时轻松添加新的 Lync Online 用户。
+- <span data-ttu-id="ba739-134">当用户不需要 PSTN 时轻松添加新的 Lync Online 用户。</span><span class="sxs-lookup"><span data-stu-id="ba739-134">Add new Lync Online users easily when they do not require PSTN.</span></span>
     
-- 按照您的安排，在一段时间后从 Lync 本地迁移到 Lync Online。
+- <span data-ttu-id="ba739-135">按照您的安排，在一段时间后从 Lync 本地迁移到 Lync Online。</span><span class="sxs-lookup"><span data-stu-id="ba739-135">Migrate from Lync on-premises to Lync Online over time, on your schedule.</span></span>
     
-- 与其他 Office 365 应用程序集成，包括 Exchange Online 和 SharePoint Online。
+- <span data-ttu-id="ba739-136">与其他 Office 365 应用程序集成，包括 Exchange Online 和 SharePoint Online。</span><span class="sxs-lookup"><span data-stu-id="ba739-136">Integrate with other Office 365 applications, including Exchange Online and SharePoint Online.</span></span>
     
-#### <a name="lync-server"></a>Lync Server
+#### <a name="lync-server"></a><span data-ttu-id="ba739-137">Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-137">Lync Server</span></span>
 
-在该部署中，您掌控一切。随附的图显示了具有本地 Active Directory 域服务 (AD DS) 环境的 Lync Server 基础结构，其中用户位于本地。
+<span data-ttu-id="ba739-p102">在该部署中，您掌控一切。随附的图显示了具有本地 Active Directory 域服务 (AD DS) 环境的 Lync Server 基础结构，其中用户位于本地。</span><span class="sxs-lookup"><span data-stu-id="ba739-p102">In this deployment, you own everything. The accompanying diagram shows a Lync Server infrastructure with an on-premises Active Directory Domain Services (AD DS) environment where users are homed on-premises.</span></span>
   
-功能描述：
+<span data-ttu-id="ba739-140">功能描述：</span><span class="sxs-lookup"><span data-stu-id="ba739-140">Description of features and functionality:</span></span>
   
-- 容量规划和大小。
+- <span data-ttu-id="ba739-141">容量规划和大小。</span><span class="sxs-lookup"><span data-stu-id="ba739-141">Capacity planning and sizing.</span></span>
     
-- 服务器购置和设置。
+- <span data-ttu-id="ba739-142">服务器购置和设置。</span><span class="sxs-lookup"><span data-stu-id="ba739-142">Server acquisition and setup.</span></span>
     
-- 部署。
+- <span data-ttu-id="ba739-143">部署。</span><span class="sxs-lookup"><span data-stu-id="ba739-143">Deployment.</span></span>
     
-- 横向扩展、修补和操作。
+- <span data-ttu-id="ba739-144">横向扩展、修补和操作。</span><span class="sxs-lookup"><span data-stu-id="ba739-144">Scaling out, patching, and operations.</span></span>
     
-- 备份数据。
+- <span data-ttu-id="ba739-145">备份数据。</span><span class="sxs-lookup"><span data-stu-id="ba739-145">Backing up data.</span></span>
     
-- 维护故障转移和灾难恢复。
+- <span data-ttu-id="ba739-146">维护故障转移和灾难恢复。</span><span class="sxs-lookup"><span data-stu-id="ba739-146">Maintaining failover and disaster recovery.</span></span>
     
-- 将您的 Lync Server 2013 基础结构连接到 PSTN。
+- <span data-ttu-id="ba739-147">将您的 Lync Server 2013 基础结构连接到 PSTN。</span><span class="sxs-lookup"><span data-stu-id="ba739-147">Connecting your Lync Server 2013 infrastructure to the PSTN.</span></span>
     
-- 与现有电话设备集成，如专用分组交换机 (PBX)。
+- <span data-ttu-id="ba739-148">与现有电话设备集成，如专用分组交换机 (PBX)。</span><span class="sxs-lookup"><span data-stu-id="ba739-148">Integration with existing phone equipment, such as private branch exchanges (PBXs).</span></span>
     
-#### <a name="provider-hosted-lync-server"></a>提供商承载的 Lync Server
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="ba739-149">提供商承载的 Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-149">Provider-Hosted Lync Server</span></span>
 
-在该部署中，您的提供商掌控一切。随附的图显示了提供商的网络，其中包括他们的服务器和设备以及到本地环境的连接。
+<span data-ttu-id="ba739-p103">在该部署中，您的提供商掌控一切。随附的图显示了提供商的网络，其中包括他们的服务器和设备以及到本地环境的连接。</span><span class="sxs-lookup"><span data-stu-id="ba739-p103">In this deployment, your provider owns everything. The accompanying diagram shows a provider's network including their servers and equipment with a connection to an on-premises environment.</span></span>
   
-功能描述：
+<span data-ttu-id="ba739-152">功能描述：</span><span class="sxs-lookup"><span data-stu-id="ba739-152">Description of features and functionality:</span></span>
   
-- 容量规划和大小。
+- <span data-ttu-id="ba739-153">容量规划和大小。</span><span class="sxs-lookup"><span data-stu-id="ba739-153">Capacity planning and sizing.</span></span>
     
-- 服务器购置和设置。
+- <span data-ttu-id="ba739-154">服务器购置和设置。</span><span class="sxs-lookup"><span data-stu-id="ba739-154">Server acquisition and setup.</span></span>
     
-- 部署。
+- <span data-ttu-id="ba739-155">部署。</span><span class="sxs-lookup"><span data-stu-id="ba739-155">Deployment.</span></span>
     
-- 横向扩展、修补和操作。
+- <span data-ttu-id="ba739-156">横向扩展、修补和操作。</span><span class="sxs-lookup"><span data-stu-id="ba739-156">Scaling out, patching, and operations.</span></span>
     
-- 备份数据。
+- <span data-ttu-id="ba739-157">备份数据。</span><span class="sxs-lookup"><span data-stu-id="ba739-157">Backing up data.</span></span>
     
-- 维护故障转移和灾难恢复。
+- <span data-ttu-id="ba739-158">维护故障转移和灾难恢复。</span><span class="sxs-lookup"><span data-stu-id="ba739-158">Maintaining failover and disaster recovery.</span></span>
     
-- 与现有电话设备集成，如专用分组交换机 (PBX)。
+- <span data-ttu-id="ba739-159">与现有电话设备集成，如专用分组交换机 (PBX)。</span><span class="sxs-lookup"><span data-stu-id="ba739-159">Integration with existing phone equipment, such as private branch exchanges (PBXs).</span></span>
     
-- 此外，提供商还可以：
+- <span data-ttu-id="ba739-160">此外，提供商还可以：</span><span class="sxs-lookup"><span data-stu-id="ba739-160">In addition, the provider can:</span></span>
     
-  - 在自己的网络中安装他们的服务器和设备，并连接到您的内部部署（实线）。
+  - <span data-ttu-id="ba739-161">在自己的网络中安装他们的服务器和设备，并连接到您的内部部署（实线）。</span><span class="sxs-lookup"><span data-stu-id="ba739-161">Install their servers and equipment in their own network with a connection to your premises (solid line).</span></span>
     
-  - 在本地安装他们的服务器（虚线）。
+  - <span data-ttu-id="ba739-162">在本地安装他们的服务器（虚线）。</span><span class="sxs-lookup"><span data-stu-id="ba739-162">Install their servers on your premises (dotted line).</span></span>
     
-### <a name="benefits-of-implementing-each-deployment-option"></a>实现每个部署选项的优点
+### <a name="benefits-of-implementing-each-deployment-option"></a><span data-ttu-id="ba739-163">实现每个部署选项的优点</span><span class="sxs-lookup"><span data-stu-id="ba739-163">Benefits of implementing each deployment option</span></span>
 
-#### <a name="lync-online-office-365"></a>Lync Online (Office 365)
+#### <a name="lync-online-office-365"></a><span data-ttu-id="ba739-164">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="ba739-164">Lync Online (Office 365)</span></span>
 
-- 本地服务器或服务器软件没有运营负担。
+- <span data-ttu-id="ba739-165">本地服务器或服务器软件没有运营负担。</span><span class="sxs-lookup"><span data-stu-id="ba739-165">No operational burden of on-premises servers or server software.</span></span>
     
-- Lync Server 2013 作为基于云的服务的通信功能。
+- <span data-ttu-id="ba739-166">Lync Server 2013 作为基于云的服务的通信功能。</span><span class="sxs-lookup"><span data-stu-id="ba739-166">Communication capabilities of Lync Server 2013 as a cloud-based service.</span></span>
     
-- Lync 状态、即时消息、音频和视频呼叫、丰富的在线会议和一系列 Web 会议功能。
+- <span data-ttu-id="ba739-167">Lync 状态、即时消息、音频和视频呼叫、丰富的在线会议和一系列 Web 会议功能。</span><span class="sxs-lookup"><span data-stu-id="ba739-167">Lync presence, instant messaging, audio and video calling, rich online meetings, and extensive web conferencing capabilities.</span></span>
     
-- 用于地理分散的组织或主要为移动状态的员工。
+- <span data-ttu-id="ba739-168">用于地理分散的组织或主要为移动状态的员工。</span><span class="sxs-lookup"><span data-stu-id="ba739-168">Used with geographically-dispersed organizations or with primarily mobile employees.</span></span>
     
-#### <a name="lync-onlineserver-hybrid-split-domain"></a>Lync Online/Server 混合（拆分域）
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="ba739-169">Lync Online/Server 混合（拆分域）</span><span class="sxs-lookup"><span data-stu-id="ba739-169">Lync Online/Server Hybrid (split domain)</span></span>
 
-- 对远程用户使用 Lync Online，并与业务合作伙伴集成。
+- <span data-ttu-id="ba739-170">对远程用户使用 Lync Online，并与业务合作伙伴集成。</span><span class="sxs-lookup"><span data-stu-id="ba739-170">Use Lync Online for remote users and integration with business partners.</span></span>
     
-- 加速从 Lync 本地到 Lync Online 的迁移。
+- <span data-ttu-id="ba739-171">加速从 Lync 本地到 Lync Online 的迁移。</span><span class="sxs-lookup"><span data-stu-id="ba739-171">Facilitate a migration from Lync on-premises to Lync Online.</span></span>
     
-- 无需使用分支办公室设备即可支持远程站点。
+- <span data-ttu-id="ba739-172">无需使用分支办公室设备即可支持远程站点。</span><span class="sxs-lookup"><span data-stu-id="ba739-172">Support remote sites without using a branch office appliance.</span></span>
     
-- 轻松增加对新业务收购的 Lync 支持。
+- <span data-ttu-id="ba739-173">轻松增加对新业务收购的 Lync 支持。</span><span class="sxs-lookup"><span data-stu-id="ba739-173">Ease of adding Lync support for new business acquisitions.</span></span>
     
-#### <a name="lync-server"></a>Lync Server
+#### <a name="lync-server"></a><span data-ttu-id="ba739-174">Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-174">Lync Server</span></span>
 
-- 私有云解决方案。
+- <span data-ttu-id="ba739-175">私有云解决方案。</span><span class="sxs-lookup"><span data-stu-id="ba739-175">Private cloud solutions.</span></span>
     
-- 高度自定义的解决方案。
+- <span data-ttu-id="ba739-176">高度自定义的解决方案。</span><span class="sxs-lookup"><span data-stu-id="ba739-176">Highly customized solutions.</span></span>
     
-- 具有第三方组件的旧版解决方案，而这些组件依赖于不受 Lync Online 支持的硬件和软件。
+- <span data-ttu-id="ba739-177">具有第三方组件的旧版解决方案，而这些组件依赖于不受 Lync Online 支持的硬件和软件。</span><span class="sxs-lookup"><span data-stu-id="ba739-177">Legacy solutions with third-party components that depend on hardware and software that are not supported by Lync Online.</span></span>
     
-- 阻止 AD DS 帐户与 Office 365 同步的隐私限制。
+- <span data-ttu-id="ba739-178">阻止 AD DS 帐户与 Office 365 同步的隐私限制。</span><span class="sxs-lookup"><span data-stu-id="ba739-178">Privacy restrictions that prevent synchronization of AD DS accounts with Office 365.</span></span>
     
-- 希望保持对整个平台和解决方案的控制的组织。
+- <span data-ttu-id="ba739-179">希望保持对整个平台和解决方案的控制的组织。</span><span class="sxs-lookup"><span data-stu-id="ba739-179">Organizations that desire control of the entire platform and solution.</span></span>
     
-- Lync Enterprise Voice 取代 PBX。
+- <span data-ttu-id="ba739-180">Lync Enterprise Voice 取代 PBX。</span><span class="sxs-lookup"><span data-stu-id="ba739-180">PBX replacement with Lync Enterprise Voice.</span></span>
     
-#### <a name="provider-hosted-lync-server"></a>提供商承载的 Lync Server
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="ba739-181">提供商承载的 Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-181">Provider-Hosted Lync Server</span></span>
 
-- 需要 Lync Server 功能，但希望外包其部署和维护的组织。
+- <span data-ttu-id="ba739-182">需要 Lync Server 功能，但希望外包其部署和维护的组织。</span><span class="sxs-lookup"><span data-stu-id="ba739-182">Organizations that want Lync Server functionality but want to outsource its deployment and maintenance.</span></span>
     
-- 基于提供商的解决方案
+- <span data-ttu-id="ba739-183">基于提供商的解决方案</span><span class="sxs-lookup"><span data-stu-id="ba739-183">Provider-based solutions.</span></span>
     
-- 高度自定义的解决方案。
+- <span data-ttu-id="ba739-184">高度自定义的解决方案。</span><span class="sxs-lookup"><span data-stu-id="ba739-184">Highly customized solutions.</span></span>
     
-- 具有第三方组件的旧版解决方案，而这些组件依赖于不受 Lync Online 支持的硬件和软件。
+- <span data-ttu-id="ba739-185">具有第三方组件的旧版解决方案，而这些组件依赖于不受 Lync Online 支持的硬件和软件。</span><span class="sxs-lookup"><span data-stu-id="ba739-185">Legacy solutions with third-party components that depend on hardware and software that are not supported by Lync Online.</span></span>
     
-- Lync Enterprise Voice 取代 PBX。
+- <span data-ttu-id="ba739-186">Lync Enterprise Voice 取代 PBX。</span><span class="sxs-lookup"><span data-stu-id="ba739-186">PBX replacement with Lync Enterprise Voice.</span></span>
     
-### <a name="license-requirements"></a>许可要求
+### <a name="license-requirements"></a><span data-ttu-id="ba739-187">许可要求</span><span class="sxs-lookup"><span data-stu-id="ba739-187">License requirements</span></span>
 
-#### <a name="lync-online-office-365"></a>Lync Online (Office 365)
+#### <a name="lync-online-office-365"></a><span data-ttu-id="ba739-188">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="ba739-188">Lync Online (Office 365)</span></span>
 
-订阅模型。
+<span data-ttu-id="ba739-189">订阅模型。</span><span class="sxs-lookup"><span data-stu-id="ba739-189">Subscription model.</span></span>
   
-#### <a name="lync-onlineserver-hybrid-split-domain"></a>Lync Online/Server 混合（拆分域）
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="ba739-190">Lync Online/Server 混合（拆分域）</span><span class="sxs-lookup"><span data-stu-id="ba739-190">Lync Online/Server Hybrid (split domain)</span></span>
 
-- Office 365  订阅模型。无需其他许可证。 
+- <span data-ttu-id="ba739-p104">Office 365  订阅模型。无需其他许可证。</span><span class="sxs-lookup"><span data-stu-id="ba739-p104">Office 365 — Subscription model. No additional licenses needed.</span></span> 
     
-- 本地  所有本地许可证均适用。 
+- <span data-ttu-id="ba739-193">本地  所有本地许可证均适用。</span><span class="sxs-lookup"><span data-stu-id="ba739-193">On-premises — All on-premises licenses apply.</span></span> 
     
-#### <a name="lync-server"></a>Lync Server
+#### <a name="lync-server"></a><span data-ttu-id="ba739-194">Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-194">Lync Server</span></span>
 
-- 服务器操作系统
+- <span data-ttu-id="ba739-195">服务器操作系统</span><span class="sxs-lookup"><span data-stu-id="ba739-195">Server Operating System</span></span>
     
-- SQL Server
+- <span data-ttu-id="ba739-196">SQL Server</span><span class="sxs-lookup"><span data-stu-id="ba739-196">SQL Server</span></span>
     
-- Lync 2013 Server 许可证
+- <span data-ttu-id="ba739-197">Lync 2013 Server 许可证</span><span class="sxs-lookup"><span data-stu-id="ba739-197">Lync 2013 Server License</span></span>
     
-- Lync 2013 客户端访问许可证
+- <span data-ttu-id="ba739-198">Lync 2013 客户端访问许可证</span><span class="sxs-lookup"><span data-stu-id="ba739-198">Lync 2013 Client Access License</span></span>
     
-#### <a name="provider-hosted-lync-server"></a>提供商承载的 Lync Server
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="ba739-199">提供商承载的 Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-199">Provider-Hosted Lync Server</span></span>
 
-成本基于与 Lync 解决方案提供商签订的协议。
+<span data-ttu-id="ba739-200">成本基于与 Lync 解决方案提供商签订的协议。</span><span class="sxs-lookup"><span data-stu-id="ba739-200">Costs are based on the agreement with your Lync solution provider.</span></span>
   
-### <a name="architecture-tasks"></a>体系结构任务
+### <a name="architecture-tasks"></a><span data-ttu-id="ba739-201">体系结构任务</span><span class="sxs-lookup"><span data-stu-id="ba739-201">Architecture tasks</span></span>
 
-本节列出了每个部署选项的体系结构任务。
+<span data-ttu-id="ba739-202">本节列出了每个部署选项的体系结构任务。</span><span class="sxs-lookup"><span data-stu-id="ba739-202">This section lists the architectural tasks for each deployment option.</span></span>
   
-#### <a name="lync-online-office-365"></a>Lync Online (Office 365)
+#### <a name="lync-online-office-365"></a><span data-ttu-id="ba739-203">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="ba739-203">Lync Online (Office 365)</span></span>
 
-- 规划和设计目录同步。
+- <span data-ttu-id="ba739-204">规划和设计目录同步。</span><span class="sxs-lookup"><span data-stu-id="ba739-204">Plan and design directory synchronization.</span></span>
     
-- 确保通过防火墙、代理服务器、网关以及跨 WAN 链接的网络容量和可用性。
+- <span data-ttu-id="ba739-205">确保通过防火墙、代理服务器、网关以及跨 WAN 链接的网络容量和可用性。</span><span class="sxs-lookup"><span data-stu-id="ba739-205">Ensure network capacity and availability through firewalls, proxy servers, gateways, and across WAN links.</span></span>
     
-- 获取第三方 SSL 证书，为 Office 365 服务产品提供企业安全性。
+- <span data-ttu-id="ba739-206">获取第三方 SSL 证书，为 Office 365 服务产品提供企业安全性。</span><span class="sxs-lookup"><span data-stu-id="ba739-206">Acquire third-party SSL certificates to provide enterprise-security for Office 365 service offerings.</span></span>
     
-- 决定是否要使用 Internet 协议版本 6 (IPv6) 连接到 Office 365。
+- <span data-ttu-id="ba739-207">决定是否要使用 Internet 协议版本 6 (IPv6) 连接到 Office 365。</span><span class="sxs-lookup"><span data-stu-id="ba739-207">Decide if you want to connect to Office 365 with Internet Protocol version 6 (IPv6).</span></span>
     
-#### <a name="lync-onlineserver-hybrid-split-domain"></a>Lync Online/Server 混合（拆分域）
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="ba739-208">Lync Online/Server 混合（拆分域）</span><span class="sxs-lookup"><span data-stu-id="ba739-208">Lync Online/Server Hybrid (split domain)</span></span>
 
-除 Office 365 和本地环境的任务以外，还需：
+<span data-ttu-id="ba739-209">除 Office 365 和本地环境的任务以外，还需：</span><span class="sxs-lookup"><span data-stu-id="ba739-209">In addition to tasks for both the Office 365 and on-premises environments:</span></span>
   
-- 确定您希望在 Exchange Server 和 SharePoint 的本地版本和联机版本中使用多少功能集成。
+- <span data-ttu-id="ba739-210">确定您希望在 Exchange Server 和 SharePoint 的本地版本和联机版本中使用多少功能集成。</span><span class="sxs-lookup"><span data-stu-id="ba739-210">Determine how much feature integration you want to use with on-premises and online versions of Exchange Server and SharePoint.</span></span>
     
-- 确定对于 Office 365 的请求将使用哪个代理服务器设备（如果需要）。
+- <span data-ttu-id="ba739-211">确定对于 Office 365 的请求将使用哪个代理服务器设备（如果需要）。</span><span class="sxs-lookup"><span data-stu-id="ba739-211">If required, determine which proxy server device will be used for requests from Office 365.</span></span>
     
-#### <a name="lync-server"></a>Lync Server
+#### <a name="lync-server"></a><span data-ttu-id="ba739-212">Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-212">Lync Server</span></span>
 
-在现有本地环境中设计 Lync 环境：
+<span data-ttu-id="ba739-213">在现有本地环境中设计 Lync 环境：</span><span class="sxs-lookup"><span data-stu-id="ba739-213">Design the Lync environment in an existing on-premises environment:</span></span>
   
-- 中央和分支办公室的 Lync 拓扑。
+- <span data-ttu-id="ba739-214">中央和分支办公室的 Lync 拓扑。</span><span class="sxs-lookup"><span data-stu-id="ba739-214">Lync topology for central and branch offices.</span></span>
     
-- 服务器硬件，包括虚拟化。
+- <span data-ttu-id="ba739-215">服务器硬件，包括虚拟化。</span><span class="sxs-lookup"><span data-stu-id="ba739-215">Server hardware, including virtualization.</span></span>
     
-- 与 Active Directory 域服务 (AD DS) 和 DNS 集成。
+- <span data-ttu-id="ba739-216">与 Active Directory 域服务 (AD DS) 和 DNS 集成。</span><span class="sxs-lookup"><span data-stu-id="ba739-216">Integration with Active Directory Domain Services (AD DS) and DNS.</span></span>
     
-- Lync 服务器池的负载平衡。
+- <span data-ttu-id="ba739-217">Lync 服务器池的负载平衡。</span><span class="sxs-lookup"><span data-stu-id="ba739-217">Load balancing for Lync server pools.</span></span>
     
-- 故障转移和灾难恢复。
+- <span data-ttu-id="ba739-218">故障转移和灾难恢复。</span><span class="sxs-lookup"><span data-stu-id="ba739-218">Failover and disaster recovery.</span></span>
     
-#### <a name="provider-hosted-lync-server"></a>提供商承载的 Lync Server
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="ba739-219">提供商承载的 Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-219">Provider-Hosted Lync Server</span></span>
 
-- 对于基于云的安装，确定到服务提供商网络的连接。
+- <span data-ttu-id="ba739-220">对于基于云的安装，确定到服务提供商网络的连接。</span><span class="sxs-lookup"><span data-stu-id="ba739-220">For a cloud-based installation, determine the connection to the service provider's network.</span></span>
     
-- 对于本地安装，确定提供商的 Lync 服务器在网络中的位置。
+- <span data-ttu-id="ba739-221">对于本地安装，确定提供商的 Lync 服务器在网络中的位置。</span><span class="sxs-lookup"><span data-stu-id="ba739-221">For an on-premises installation, determine the placement of the provider's Lync servers on your network.</span></span>
     
-- 对于两种类型的安装，确定 AD DS 与您的 PBX 设备的集成。
+- <span data-ttu-id="ba739-222">对于两种类型的安装，确定 AD DS 与您的 PBX 设备的集成。</span><span class="sxs-lookup"><span data-stu-id="ba739-222">For both types, determine the integration with AD DS and your PBX equipment.</span></span>
     
-### <a name="it-pro-responsibilities"></a>IT 专业人员的职责
+### <a name="it-pro-responsibilities"></a><span data-ttu-id="ba739-223">IT 专业人员的职责</span><span class="sxs-lookup"><span data-stu-id="ba739-223">IT Pro responsibilities</span></span>
 
-本节列出了 IT 专业人员对每个部署选项的职责。
+<span data-ttu-id="ba739-224">本节列出了 IT 专业人员对每个部署选项的职责。</span><span class="sxs-lookup"><span data-stu-id="ba739-224">This section lists the IT Pro responsibilities for each deployment option.</span></span>
   
-#### <a name="lync-online-office-365"></a>Lync Online (Office 365)
+#### <a name="lync-online-office-365"></a><span data-ttu-id="ba739-225">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="ba739-225">Lync Online (Office 365)</span></span>
 
-部署和管理 Lync Online (Office 365)：
+<span data-ttu-id="ba739-226">部署和管理 Lync Online (Office 365)：</span><span class="sxs-lookup"><span data-stu-id="ba739-226">Deploy and manage Lync Online (Office 365):</span></span>
   
-- 实施目录同步计划。
+- <span data-ttu-id="ba739-227">实施目录同步计划。</span><span class="sxs-lookup"><span data-stu-id="ba739-227">Implement the directory synchronization plan.</span></span>
     
-- 规划和实施内部和外部 DNS 记录和路由。
+- <span data-ttu-id="ba739-228">规划和实施内部和外部 DNS 记录和路由。</span><span class="sxs-lookup"><span data-stu-id="ba739-228">Plan and implement internal and external DNS records and routing.</span></span>
     
-- 针对 Office 365 IP 地址和 URL 要求配置代理或防火墙。
+- <span data-ttu-id="ba739-229">针对 Office 365 IP 地址和 URL 要求配置代理或防火墙。</span><span class="sxs-lookup"><span data-stu-id="ba739-229">Configure your proxy or firewall for Office 365 IP address and URL requirements.</span></span>
     
-- 管理用户帐户和 Lync Online 设置。
+- <span data-ttu-id="ba739-230">管理用户帐户和 Lync Online 设置。</span><span class="sxs-lookup"><span data-stu-id="ba739-230">Administer user accounts and Lync Online settings.</span></span>
     
-#### <a name="lync-onlineserver-hybrid-split-domain"></a>Lync Online/Server 混合（拆分域）
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="ba739-231">Lync Online/Server 混合（拆分域）</span><span class="sxs-lookup"><span data-stu-id="ba739-231">Lync Online/Server Hybrid (split domain)</span></span>
 
-除 Office 365 和本地环境的任务以外，还需：
+<span data-ttu-id="ba739-232">除 Office 365 和本地环境的任务以外，还需：</span><span class="sxs-lookup"><span data-stu-id="ba739-232">In addition to tasks for both the Office 365 and on-premises environments:</span></span>
   
-- 配置代理服务器设备（如果需要）。
+- <span data-ttu-id="ba739-233">配置代理服务器设备（如果需要）。</span><span class="sxs-lookup"><span data-stu-id="ba739-233">Configure the proxy server device, if required.</span></span>
     
-- 配置与 Exchange Server 和 SharePoint 的本地版本和联机版本的功能集成。
+- <span data-ttu-id="ba739-234">配置与 Exchange Server 和 SharePoint 的本地版本和联机版本的功能集成。</span><span class="sxs-lookup"><span data-stu-id="ba739-234">Configure the integration of features with on-premises and online versions of Exchange Server and SharePoint.</span></span>
     
-#### <a name="lync-server"></a>Lync Server
+#### <a name="lync-server"></a><span data-ttu-id="ba739-235">Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-235">Lync Server</span></span>
 
-在本地环境中部署和管理 Lync Server：
+<span data-ttu-id="ba739-236">在本地环境中部署和管理 Lync Server：</span><span class="sxs-lookup"><span data-stu-id="ba739-236">Deploy and manage Lync Server in an on-premises environment:</span></span>
   
-- 设置服务器。
+- <span data-ttu-id="ba739-237">设置服务器。</span><span class="sxs-lookup"><span data-stu-id="ba739-237">Provision the servers.</span></span>
     
-- 部署 Lync 拓扑。
+- <span data-ttu-id="ba739-238">部署 Lync 拓扑。</span><span class="sxs-lookup"><span data-stu-id="ba739-238">Deploy the Lync topology.</span></span>
     
-- 更新 Lync 服务器。
+- <span data-ttu-id="ba739-239">更新 Lync 服务器。</span><span class="sxs-lookup"><span data-stu-id="ba739-239">Update Lync servers.</span></span>
     
-- 按需要根据使用率添加或删除拓扑服务器。
+- <span data-ttu-id="ba739-240">按需要根据使用率添加或删除拓扑服务器。</span><span class="sxs-lookup"><span data-stu-id="ba739-240">Add or remove topology servers as needed based on utilization.</span></span>
     
-- 实施故障转移和灾难恢复环境。
+- <span data-ttu-id="ba739-241">实施故障转移和灾难恢复环境。</span><span class="sxs-lookup"><span data-stu-id="ba739-241">Implement the failover and disaster recovery environment.</span></span>
     
-#### <a name="provider-hosted-lync-server"></a>提供商承载的 Lync Server
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="ba739-242">提供商承载的 Lync Server</span><span class="sxs-lookup"><span data-stu-id="ba739-242">Provider-Hosted Lync Server</span></span>
 
-与提供商合作以：
+<span data-ttu-id="ba739-243">与提供商合作以：</span><span class="sxs-lookup"><span data-stu-id="ba739-243">Work with the provider to:</span></span>
   
-- 将 Lync Server 集成到您的网络中。
+- <span data-ttu-id="ba739-244">将 Lync Server 集成到您的网络中。</span><span class="sxs-lookup"><span data-stu-id="ba739-244">Integrate Lync Server into your network.</span></span>
     
-- 将 Lync Server 与其他 Microsoft 产品或自定义解决方案集成。
+- <span data-ttu-id="ba739-245">将 Lync Server 与其他 Microsoft 产品或自定义解决方案集成。</span><span class="sxs-lookup"><span data-stu-id="ba739-245">Integrate Lync Server with other Microsoft products or custom solutions.</span></span>
     
-- 监控提供商服务级别协议 (SLA) 的遵守情况。
+- <span data-ttu-id="ba739-246">监控提供商服务级别协议 (SLA) 的遵守情况。</span><span class="sxs-lookup"><span data-stu-id="ba739-246">Monitor adherence with provider service level agreement (SLA).</span></span>
     
-## <a name="two-example-scenarios-for-deploying-lync-2013"></a>部署 Lync 2013 的两个示例方案
+## <a name="two-example-scenarios-for-deploying-lync-2013"></a><span data-ttu-id="ba739-247">部署 Lync 2013 的两个示例方案</span><span class="sxs-lookup"><span data-stu-id="ba739-247">Two example scenarios for deploying Lync 2013</span></span>
 
-### <a name="directory-synchronization-components-in-microsoft-azure"></a>Microsoft Azure 中的目录同步组件
+### <a name="directory-synchronization-components-in-microsoft-azure"></a><span data-ttu-id="ba739-248">Microsoft Azure 中的目录同步组件</span><span class="sxs-lookup"><span data-stu-id="ba739-248">Directory Synchronization components in Microsoft Azure</span></span>
 
-根据需要部署虚拟机的能力使得在 Azure 中部署 Office 365 目录同步组件更加快捷。
+<span data-ttu-id="ba739-249">根据需要部署虚拟机的能力使得在 Azure 中部署 Office 365 目录同步组件更加快捷。</span><span class="sxs-lookup"><span data-stu-id="ba739-249">Deploying Office 365 directory synchronization components in Azure is faster due to the ability to deploy virtual machines on-demand.</span></span>
   
-随附的图显示了具有 Azure Active Directory 租户的 Lync Online，它可在本地 Active Directory 环境和 Azure Active Directory 租户之间同步帐户名称和密码。
+<span data-ttu-id="ba739-250">随附的图显示了具有 Azure Active Directory 租户的 Lync Online，它可在本地 Active Directory 环境和 Azure Active Directory 租户之间同步帐户名称和密码。</span><span class="sxs-lookup"><span data-stu-id="ba739-250">The accompanying diagram shows Lync Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span>
   
- **仅限目录同步服务器**。不在本地环境中部署 64 位目录同步，而应通过 Internet 在 Azure 中配置虚拟机。
+ <span data-ttu-id="ba739-p105">**仅限目录同步服务器**。不在本地环境中部署 64 位目录同步，而应通过 Internet 在 Azure 中配置虚拟机。</span><span class="sxs-lookup"><span data-stu-id="ba739-p105">**Directory synchronization server only**. Instead of deploying the 64-bit directory synchronization server in your on-premises environment, you provision a virtual machine in Azure over the Internet.</span></span>
   
- **目录同步 + AD FS**。此选项使您可以支持 Office 365 联合身份 (SSO)，而无需将硬件添加到内部部署基础架构。如果本地 Active Directory 环境不可用，它还可以提供复原。此选项的功能包括：
+ <span data-ttu-id="ba739-p106">**目录同步 + AD FS**。此选项使您可以支持 Office 365 联合身份 (SSO)，而无需将硬件添加到内部部署基础架构。如果本地 Active Directory 环境不可用，它还可以提供复原。此选项的功能包括：</span><span class="sxs-lookup"><span data-stu-id="ba739-p106">**Directory synchronization + AD FS**. This option allows you to support Office 365 federated identities (SSO) without adding hardware to your on-premises infrastructure. It also provides resiliency if the on-premises Active Directory environment is unavailable. The features of this option include:</span></span>
   
-- 目录集成组件作为 Azure 虚拟机运行。
+- <span data-ttu-id="ba739-257">目录集成组件作为 Azure 虚拟机运行。</span><span class="sxs-lookup"><span data-stu-id="ba739-257">Directory integration components run as Azure virtual machines.</span></span>
     
-- 通过作为 Azure 虚拟机运行的 AD FS 代理将 AD FS 发布到 Internet。
+- <span data-ttu-id="ba739-258">通过作为 Azure 虚拟机运行的 AD FS 代理将 AD FS 发布到 Internet。</span><span class="sxs-lookup"><span data-stu-id="ba739-258">AD FS is published to the Internet through AD FS proxies running as Azure virtual machines.</span></span>
     
-- 对于从任何位置连接的用户，客户端身份验证通信由部署为 Azure 虚拟机的 AD FS 服务器和代理处理。
+- <span data-ttu-id="ba739-259">对于从任何位置连接的用户，客户端身份验证通信由部署为 Azure 虚拟机的 AD FS 服务器和代理处理。</span><span class="sxs-lookup"><span data-stu-id="ba739-259">Client authentication traffic, for users that are connecting from any location, is handled by AD FS servers and proxies that are deployed as Azure virtual machines.</span></span>
     
-### <a name="lync-integration-with-exchange-and-sharepoint-in-office-365"></a>Office 365 中与 Exchange 和 SharePoint 的 Lync 集成
+### <a name="lync-integration-with-exchange-and-sharepoint-in-office-365"></a><span data-ttu-id="ba739-260">Office 365 中与 Exchange 和 SharePoint 的 Lync 集成</span><span class="sxs-lookup"><span data-stu-id="ba739-260">Lync integration with Exchange and SharePoint in Office 365</span></span>
 
-#### <a name="lync-server-with-exchange-online-and-sharepoint-online"></a>Lync Server with Exchange Online 和 SharePoint Online
+#### <a name="lync-server-with-exchange-online-and-sharepoint-online"></a><span data-ttu-id="ba739-261">Lync Server with Exchange Online 和 SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="ba739-261">Lync Server with Exchange Online and SharePoint Online</span></span>
 
-随附的图显示了连接到本地 Lync Server 2013 服务器场的 Office 365 with Exchange Online 和 SharePoint Online。
+<span data-ttu-id="ba739-262">随附的图显示了连接到本地 Lync Server 2013 服务器场的 Office 365 with Exchange Online 和 SharePoint Online。</span><span class="sxs-lookup"><span data-stu-id="ba739-262">The accompanying diagram shows Office 365 with Exchange Online and SharePoint Online connected to an on-premises Lync Server 2013 farm.</span></span>
   
-此部署的优势使您能够：
+<span data-ttu-id="ba739-263">此部署的优势使您能够：</span><span class="sxs-lookup"><span data-stu-id="ba739-263">The advantages of this deployment allow you to:</span></span>
   
-- 使用 Lync Server 2013 的完整功能集。
+- <span data-ttu-id="ba739-264">使用 Lync Server 2013 的完整功能集。</span><span class="sxs-lookup"><span data-stu-id="ba739-264">Use the full feature set of Lync Server 2013.</span></span>
     
-- 利用现有的本地电话设备，例如 PBX。
+- <span data-ttu-id="ba739-265">利用现有的本地电话设备，例如 PBX。</span><span class="sxs-lookup"><span data-stu-id="ba739-265">Leverage your existing on-premises phone equipment, such as PBXs.</span></span>
     
-- 将 Exchange Online 用于电子邮件，减轻本地电子邮件服务器和存储的负担。
+- <span data-ttu-id="ba739-266">将 Exchange Online 用于电子邮件，减轻本地电子邮件服务器和存储的负担。</span><span class="sxs-lookup"><span data-stu-id="ba739-266">Use Exchange Online for email, off-loading the burden of on-premises email servers and storage.</span></span>
     
-- 将 SharePoint Online 用于协作，减轻维护本地 SharePoint 服务器的负担。
+- <span data-ttu-id="ba739-267">将 SharePoint Online 用于协作，减轻维护本地 SharePoint 服务器的负担。</span><span class="sxs-lookup"><span data-stu-id="ba739-267">Use SharePoint Online for collaboration, off-loading the burden of maintaining on-premises SharePoint servers.</span></span>
     
-- 使用 Lync、Exchange 和 SharePoint 集成功能，包括 Office 365 中的统一消息 (UM)。
+- <span data-ttu-id="ba739-268">使用 Lync、Exchange 和 SharePoint 集成功能，包括 Office 365 中的统一消息 (UM)。</span><span class="sxs-lookup"><span data-stu-id="ba739-268">Use Lync, Exchange, and SharePoint integrated features, including Unified Messaging (UM) in Office 365.</span></span>
     
-#### <a name="exchange-server-with-lync-online"></a>Exchange Server with Lync Online
+#### <a name="exchange-server-with-lync-online"></a><span data-ttu-id="ba739-269">Exchange Server with Lync Online</span><span class="sxs-lookup"><span data-stu-id="ba739-269">Exchange Server with Lync Online</span></span>
 
-随附的图显示了连接到本地 Exchange Server 服务器场的 Office 365 with Lync Online。
+<span data-ttu-id="ba739-270">随附的图显示了连接到本地 Exchange Server 服务器场的 Office 365 with Lync Online。</span><span class="sxs-lookup"><span data-stu-id="ba739-270">The accompanying diagram shows Office 365 with Lync Online connected to an on-premises Exchange Server farm.</span></span>
   
-此部署的优势使您能够：
+<span data-ttu-id="ba739-271">此部署的优势使您能够：</span><span class="sxs-lookup"><span data-stu-id="ba739-271">The advantages of this deployment allow you to:</span></span>
   
-- 利用现有的 Exchange 基础结构。
+- <span data-ttu-id="ba739-272">利用现有的 Exchange 基础结构。</span><span class="sxs-lookup"><span data-stu-id="ba739-272">Leverage your existing Exchange infrastructure.</span></span>
     
-- 将 Lync Online 用于状态、即时消息和会议功能。
+- <span data-ttu-id="ba739-273">将 Lync Online 用于状态、即时消息和会议功能。</span><span class="sxs-lookup"><span data-stu-id="ba739-273">Use Lync Online for presence, instant messaging, and conferencing capabilities.</span></span>
     
 
