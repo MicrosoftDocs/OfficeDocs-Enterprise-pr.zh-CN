@@ -81,5 +81,5 @@
 #### [部署独立的在线 SharePoint 工作组网站](deploy-an-isolated-sharepoint-online-team-site.md)
 #### [管理独立的在线 SharePoint 工作组网站](manage-an-isolated-sharepoint-online-team-site.md)
 #### [SharePoint Online 的团队站点开发/测试环境的独立](isolated-sharepoint-online-team-site-dev-test-environment.md)
-## [管理与 Office 365 PowerShell Office 365](powershell/manage-office-365-with-office-365-powershell.md)
+## [使用 Office 365 PowerShell 管理 Office 365](powershell/manage-office-365-with-office-365-powershell.md)
 
