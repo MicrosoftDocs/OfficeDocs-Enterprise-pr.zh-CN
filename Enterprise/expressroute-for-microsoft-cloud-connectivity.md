@@ -16,7 +16,7 @@ ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。"
 ms.openlocfilehash: 69120d3237518be5d77716a106d2e75b64a4860e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -241,7 +241,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
     
 - [Office 365 的网络规划和性能调整 365](https://aka.ms/tune)
     
-- [Office 365 Performance Management](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)（Office 365 的性能管理）
+- [Office 365 Performance Management](https://mva.microsoft.com/zh-CN/training-courses/office-365-performance-management-8416)（Office 365 的性能管理）
     
 ## <a name="expressroute-options"></a>ExpressRoute 选项
 
@@ -263,7 +263,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
     
 - [ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)（面向 Azure 的 ExpressRoute）
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   

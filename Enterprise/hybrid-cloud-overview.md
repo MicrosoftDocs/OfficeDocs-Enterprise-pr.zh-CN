@@ -18,7 +18,7 @@ ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: "摘要： 了解 Microsoft 混合云的定义和元素。"
 ms.openlocfilehash: 9ece0f2e09384c0b9e6d9042b899d782be6327b5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -36,7 +36,7 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
     
 - 在查询本地数据存储的 Azure 中运行的移动应用。
     
-- 在 Azure 虚拟机上运行的 Intranet IT 工作负荷。
+- 在 Azure 虚拟机上运行的 Intranet IT 工作负载。
     
 **图 1：Microsoft 混合云的组件**
 
@@ -74,7 +74,7 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
     
     混合云方案的网络包括到 Microsoft 云平台和服务的连接，以及可在峰值负载下保持性能的足够带宽。有关详细信息，请参阅 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)。
     
-- 标识
+- Identity
     
     SaaS 和 Azure PaaS 混合方案的标识可以包括作为通用标识提供程序的 Azure AD，它可以与本地 Windows Server AD 同步，或与 Windows Sever AD 或其他标识提供程序联盟。还可以将本地标识基础结构扩展到 Azure IaaS。有关详细信息，请参阅 [企业级结构设计版的 Microsoft 云标识](microsoft-cloud-identity-for-enterprise-architects.md)。
     
@@ -86,7 +86,7 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
     
     混合云方案的管理包括维护设置、数据、帐户、策略和权限以及监视正在进行的方案元素的运行状况及其性能的能力。也可使用相同的工具集（如 Systems Management Server）来管理 Azure IaaS 中的虚拟机。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 混合云](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

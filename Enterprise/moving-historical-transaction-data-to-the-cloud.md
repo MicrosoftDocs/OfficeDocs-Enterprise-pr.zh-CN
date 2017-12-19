@@ -16,7 +16,7 @@ ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "摘要： Contoso 如何实施 SQL Server Stretch Database，以减少其本地数据存储需求并降低日常运行成本。"
 ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -69,7 +69,7 @@ Contoso 使用这些步骤将其历史数据移动到云：
     
 - 显著减少每日运行成本。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [Contoso Corporation 的企业方案](enterprise-scenarios-for-the-contoso-corporation.md)
   

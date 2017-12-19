@@ -16,7 +16,7 @@ ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "摘要： 了解采用云如何要求使用新的网络基础设施投资方法。"
 ms.openlocfilehash: 810640ab3b870759424af2f88392bbaf0b0e11c7
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -83,7 +83,7 @@ ExpressRoute 可以利用你现有的网络提供程序来提供专用连接。�
 |构建并实施内部和面向 Internet 的 IT 工作负载的负载平衡  <br/> |||应用  <br/> |
 |解决虚拟机连接和吞吐量问题  <br/> |||应用  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   

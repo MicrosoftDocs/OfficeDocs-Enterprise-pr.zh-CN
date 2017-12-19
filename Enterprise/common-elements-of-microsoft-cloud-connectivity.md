@@ -16,7 +16,7 @@ ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "摘要： 了解网络基础结构的常见元素，以及如何准备你的网络。"
 ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -24,7 +24,7 @@ ms.lasthandoff: 12/15/2017
 
  **摘要：** 了解网络基础结构的常见元素，以及如何准备你的网络。
   
-将你的网络与 Microsoft 云进行集成可提供对范围更为广泛的服务的最佳访问。
+将你的网络与 Microsoft 云进行集成可提供对各种服务的最佳访问。
   
 ## <a name="steps-to-prepare-your-network-for-microsoft-cloud-services"></a>为 Microsoft 云服务准备网络的步骤
 <a name="steps"> </a>
@@ -78,7 +78,7 @@ ms.lasthandoff: 12/15/2017
     
 - **Internet DNS：** A、AAAA、CNAME、MX、PTR 和其他记录，可以查找 Microsoft 云或你在云中托管的服务。例如，可能需要你在 Azure PaaS 中托管的应用程序的 CNAME 记录。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 <a name="steps"> </a>
 

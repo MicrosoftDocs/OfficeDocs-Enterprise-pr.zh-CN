@@ -18,7 +18,7 @@ ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "摘要： 了解 Microsoft 混合云产品的体系结构。"
 ms.openlocfilehash: 0909964421cecec455ed3c45c965a330501d361c
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/15/2017
     
     连接到 Microsoft 云平台和服务有两种选择：现有的 Internet 管道和 ExpressRoute。如果可预知的性能非常重要，请使用 ExpressRoute 连接。可以使用一个 ExpressRoute 连接直接连接到 Microsoft SaaS 服务（Office 365 和 Dynamics 365）、Azure PaaS 服务和 Azure IaaS 服务。
     
-- 标识
+- Identity
     
     对于云标识基础结构，根据 Microsoft 云平台的不同有两种方式可选。对于 SaaS 和 Azure IaaS，将本地标识基础结构与 Azure AD 集成，或与本地标识基础结构或第三方标识提供程序联合。对于在 Azure 中运行的 VM，可以将本地标识基础结构（如 Windows Server AD）扩展到 VM 驻留的虚拟网络 (VNet)。
     
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/15/2017
     
     对于提升转移以及内置云方案，在 Azure VM 上运行的基于服务器的应用程序提供了便利的预配和缩放功能。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 混合云](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

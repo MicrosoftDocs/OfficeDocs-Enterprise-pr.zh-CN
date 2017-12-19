@@ -18,7 +18,7 @@ ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "摘要： 了解在 Azure 中基于 Microsoft 平台即服务 (PaaS) 云产品的混合体系结构和方案。"
 ms.openlocfilehash: f6d7d1c9ca04c0b7bbaa020a771cf84734e5d385
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -112,13 +112,13 @@ Stretch Database 是 SQL Server 2016 的一项功能，它可以使你以透明�
   
 在图 4 中，本地网络承载一个服务器，该服务器运行配有小型本地数据库的 SQL Server 2016。Azure PaaS 承载 Azure SQL Server Stretch Database（包含扩展部分的数据库）的实例。从本地用户发送到本地 SQL 服务器的 T-SQL 查询已被安全转发到 Azure SQL Stretch Database，然后由该 Stretch Database 将结果返回给发出请求的用户。
   
- 以透明方式将包含历史数据的用户查询转发到 Azure SQL Stretch Database。即使表已扩展，也无需重新写入这些查询。
+ 包含历史数据的用户查询以透明的方式转发到 Azure SQL Stretch Database。即使延伸表，也不需要对查询进行重新编写。
   
 Stretch Database 提供经济高效的选项，用于历史数据的长期存储和透明访问。它还解决了表变大时出现的性能和可用性问题。
   
 有关详细信息，请参阅 [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 混合云](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

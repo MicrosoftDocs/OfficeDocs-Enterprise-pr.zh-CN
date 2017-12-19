@@ -15,7 +15,7 @@ ms.assetid: 48a24184-2868-4bb2-866c-1907d1bad505
 description: "了解组织如何在 Office 365 租户之间以安全方式进行协作。"
 ms.openlocfilehash: a6b82ab79d6eb2312c33fac488cb21a941831518
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
