@@ -14,7 +14,7 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 description: "摘要：了解如何从用户计算机中自动收集文件以用于电子数据展示。"
 ms.openlocfilehash: 2c2a3d5d217203bb608fcb48f9cc1da8d4b49213
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/15/2017
 |****图例****||
 |:-----|:-----|
 |![洋红色标注 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|创建一个组策略对象 (GPO) 并将其与收集登录脚本相关联。  <br/> |
-|![洋红色标注 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| 配置 GPO 安全筛选器，仅将 GPO 应用到 Custodians 组。 <br/> |
+|![洋红色标注 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   配置 GPO 安全筛选器，仅将 GPO 应用到保管人组 <br/> |
 |![洋红色标注 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|保管人登录和 GPO 运行，调用收集登录脚本。  <br/> |
 |![洋红色标注 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|收集登录脚本清单均本地挂载到保管人计算机上的驱动器，搜索您需要的文件并记录其位置。  <br/> |
 |![洋红色标注 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|收集登录脚本将清单文件复制到暂存服务器上的隐藏文件共享中。  <br/> |
@@ -264,7 +264,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 
 2. 在易于您查找的位置将上述脚本另存为 CollectionScript.ps1，例如，C:\\AFCScripts。
     
-3. 使用记事本中的"转到"功能。根据需要进行以下更改：
+3. 使用记事本中的“转到”功能。根据需要进行以下更改：
     
 |**行号**|**需更改的内容**|**必需/可选**|
 |:-----|:-----|:-----|
@@ -322,7 +322,7 @@ $AllFiles | ForEach-Object {
 
 2. 在易于您查找的位置将脚本另存为 PSTImportScript.ps1。例如，为易于使用，在暂存服务器上创建一个名为 \\\\Staging\\AFCScripts 的文件夹并将脚本保存在其中。
     
-3. 使用记事本中的"转到"功能，根据需要进行以下更改：
+3. 使用记事本中的“转到”功能，根据需要进行以下更改：
     
 |**行号**|**需更改的内容**|**必需/可选**|
 |:-----|:-----|:-----|
@@ -357,7 +357,7 @@ $AllFiles | ForEach-Object {
     
 2. 打开"Runbook Designer"，在"连接"窗格中，单击您想要在其中导入 Runbook 的文件夹。单击"操作"菜单，然后单击"导入"。此时将出现"导入"对话框。
     
-3. 在**文件位置**框中，键入您想要导入，runbook 的路径和文件名称，或者单击省略号 （ **...**） 来浏览到要导入的文件。 
+3. 在“文件位置”****框中，键入要导入的 Runbook 的路径和文件名，或单击省略号 (**...**) 转到要导入的文件。 
     
 4. 依次选择"导入 Runbook"和"导入 Orchestrator 加密数据"。清除"计数器"、"计划"、"变量"、"计算机组"、"导入全局配置"和"覆盖现有全局配置"。
     
@@ -365,9 +365,9 @@ $AllFiles | ForEach-Object {
     
 6. 编辑 **MoveFilesToColdStorage** 运行手册，如下所述：
     
-1. **移动文件**活动-设置的**源文件**路径集合文件共享，例如\\\\临时\\情况下 $。集到冷存储文件的**目标文件夹**分享 Azure，例如\\ \\AZFile1\\ContentColdStorage。选择**创建具有唯一名称的文件**。
+1. **移动文件**活动 - 将“源文件”****路径设置为集合文件共享（例如，\\\\Staging\\cases$）。将“目标文件夹”****设置为 Azure 中的冷存储文件共享（例如，\\\\AZFile1\\ContentColdStorage）。选择“创建具有唯一名称的文件”****。
     
-2. **删除文件夹**活动-设置**路径：**到集合文件共享位置，例如\\\\临时\\情况下 $\\*，然后选择**删除所有文件和子文件夹**。 
+2. **删除文件夹**活动 - 将“路径:”****设置为集合文件共享（例如，\\\\Staging\\cases$\\*），再选择“删除所有文件和子文件夹”****。 
     
 7. 使用[部署 Runbook](https://go.microsoft.com/fwlink/p/?LinkId=615120) 中的过程部署 **MoveToColdStorage** Runbook。
     
@@ -442,7 +442,7 @@ $AllFiles | ForEach-Object {
     
 2. 观察用于长期存储的 Azure 文件共享（例如 \\\\AZFile1\\ContentColdStorage）和本地集合文件共享（例如 \\\\Staging\\cases$）。您应该会看到文件和文件夹出现在冷存储文件共享中，并从集合文件共享中消失。
     
-### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>电子数据展示
 
 1. 允许冷存储文件共享的完全爬网按计划运行，或者启动爬网。有关启动完全或增量爬网的详细信息，请参阅[在 SharePoint Server 2013 中启动、暂停、继续或停止爬网](https://go.microsoft.com/fwlink/p/?LinkId=615005)。
     

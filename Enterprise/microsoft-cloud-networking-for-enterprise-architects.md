@@ -19,7 +19,7 @@ ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "摘要： 设计用于 Microsoft 云服务和平台的网络。"
 ms.openlocfilehash: 304a04313eb763352f0b9e8a5b264290be6d4fd5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,12 +29,12 @@ ms.lasthandoff: 12/15/2017
   
 本文可链接至一组文章，这些文章介绍了 IT 架构师使用 Microsoft 云服务和平台设计组织网络所需要了解的内容。此外，还可以浏览此信息的 12 页海报内容，以文摘格式进行打印（也称为分类帐、11 x 17 或 A3）。
   
-[![缩略图像可查看 Microsoft 云网络模型](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![模型缩略图：Microsoft 云网络](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54425)
   
-此外可以查看所有[Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的模型，然后通过刷卡[Microsoft 的企业云路线图： IT 决策者的资源](https://aka.ms/cloudarchitecture)。
+还可以查看 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的所有模型，逐一浏览 [Microsoft 企业云路线图：IT 决策者的资源]((https://aka.ms/cloudarchitecture))。
   
 请参阅以下部分：
   
@@ -62,16 +62,16 @@ ms.lasthandoff: 12/15/2017
     
     逐步完成设计过程以创建最佳的 Azure 虚拟网络 (VNet)，以便托管基于服务器的 IT 工作负载，包括子网、地址空间、路由、DNS、负载平衡以及本地网络的连接性、其他 VNet 和 Internet。
     
-30 分钟本宣传海报的要点的摘要，请参阅[优化您网络中的 Microsoft 云服务](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)Microsoft 虚拟学院课程。
+有关此海报要点的 30 分钟内容摘要，请学习 Microsoft Virtual Academy 课程[让网络更适合 Microsoft 云产品/服务]((https://mva.microsoft.com/zh-CN/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743))。
   
 > [!NOTE]
-> 这些文章反映的是面向企业架构师的 Microsoft 云网络的 **2017 年 6 月** 版本海报。
+> 这些文章反映了 **2017 年 6 月**版“面向企业架构师的 Microsoft 云网络”海报。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

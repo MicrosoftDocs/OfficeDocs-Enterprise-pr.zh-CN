@@ -14,18 +14,18 @@ ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: "摘要：使用适用于 Office 365 的 Windows PowerShell 检索关于所有客户租赁的报告并将数据聚合到一个位置。"
 ms.openlocfilehash: 89651971424d1b9a494335572d2654d8402ec146
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴聚合客户报告数据
 
- **摘要：**使用 Office 365 的 Windows PowerShell 上所有客户云中检索报表和数据聚合到一个单独的位置。
+ **摘要：**使用适用于 Office 365 的 Windows PowerShell 检索所有客户租赁上的报表，并将数据聚合到一个位置中。
   
 默认情况下，适用于 Office 365 的 Windows PowerShell 不具备针对多个客户租赁的报告数据的内置聚合功能。但是，您可以使用适用于 Office 365 的 Windows PowerShell 的此示例脚本循环访问您的所有客户租赁，检索每个客户的单个报告，然后将报告数据聚合到一个位置。结果是所有客户租户将聚合在一个报告中。 
   
 委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。他们通常是面向其他公司的网络或电信提供商。他们将 Office 365 订阅捆绑到为其客户提供的服务产品中。 当他们销售 Office 365 订阅时，会自动获得对客户租赁的"代表以下方管理"(AOBO) 权限，这样他们便可以管理客户租赁并生成相应报告。
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 若要使用此脚本，请替换这些变量中的特定值：
   
@@ -137,7 +137,7 @@ foreach ($c in $contracts) {
 
 此示例脚本将聚合的报告放在 ReportOutput.csv 文件中。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 
 #### 
 

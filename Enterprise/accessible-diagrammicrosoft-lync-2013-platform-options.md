@@ -11,13 +11,13 @@ ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: "本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。"
 ms.openlocfilehash: 79342a30a0391980cf16304f3615f6a7e64d51ff
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>可访问的图 - Microsoft Lync 2013 平台选项
 
-**摘要：**这篇文章是图名为 Microsoft Lync 2013 平台选项，即在[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)可用辅助功能的文本版本。
+**摘要：**本文是[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)中的“Microsoft Lync 2013 平台选项”图表的可访问文本版本。
   
 本海报介绍哪些业务决策者 (BDM) 和架构师需要了解 Lync Online (Office 365) 和 Lync Server 部署，其中包含以下内容：
   
@@ -185,9 +185,9 @@ ms.lasthandoff: 12/15/2017
   
 #### <a name="lync-onlineserver-hybrid-split-domain"></a>Lync Online/Server 混合（拆分域）
 
-- Office 365  订阅模型。无需其他许可证。 
+- Office 365  订阅模型。无需其他许可证。 
     
-- 本地  所有本地许可证均适用。 
+- 本地 — 所有本地许可证均适用。 
     
 #### <a name="lync-server"></a>Lync Server
 
@@ -213,7 +213,7 @@ ms.lasthandoff: 12/15/2017
     
 - 确保通过防火墙、代理服务器、网关以及跨 WAN 链接的网络容量和可用性。
     
-- 获取第三方 SSL 证书，为 Office 365 服务产品提供企业安全性。
+- 获取第三方 SSL 证书，提供 Office 365 服务/产品的企业安全性。
     
 - 决定是否要使用 Internet 协议版本 6 (IPv6) 连接到 Office 365。
     

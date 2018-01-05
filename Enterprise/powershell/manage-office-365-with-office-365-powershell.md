@@ -18,13 +18,13 @@ ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: "摘要：了解如何通过 Office 365 用户和许可证、Skype for Business Online、SharePoint Online 和 Microsoft Exchange Online 来使用 Office 365 PowerShell。"
 ms.openlocfilehash: aaea1d5aa83bd01bc1646a11778397936bdb14c9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Office 365
 
- **摘要：**了解如何使用 Office 365 PowerShell 与 Office 365 提供用户和许可证，Skype 业务联机、 SharePoint Online 和 Microsoft Exchange Online。
+ **摘要：**了解如何对 Office 365 用户和许可证、Skype for Business Online、SharePoint Online 和 Microsoft Exchange Online 使用 Office 365 PowerShell。
   
 Office 365 PowerShell 是一个可以补充 Office 365 管理中心的强大的管理工具。例如，您可以使用 Office 365 PowerShell 自动操作以更快地管理多个用户帐户和许可证并创建报告。了解如何通过 Office 365 用户和许可证、Skype for Business Online、SharePoint Online 和 Microsoft Exchange Online 使用 Office 365 PowerShell。 
   
@@ -38,7 +38,7 @@ Office 365 PowerShell 是一个可以补充 Office 365 管理中心的强大的�
     
     如果您已安装 Office 365 PowerShell 模块并且想要了解有关使用自动化命令管理用户帐户和许可证的详细信息，请从这里开始。
     
-- [Office 365 PowerShell for SharePoint Online](https://technet.microsoft.com/en-us/library/fp161362.aspx)（适用于 SharePoint Online 的 Office 365 PowerShell）
+- [Office 365 PowerShell for SharePoint Online]((https://technet.microsoft.com/zh-CN/library/fp161362.aspx))（适用于 SharePoint Online 的 Office 365 PowerShell）
     
     如果您已安装 Office 365 PowerShell 模块并且想要使用自动化命令来管理 SharePoint Online，请从这里开始。
     
@@ -58,7 +58,7 @@ Office 365 PowerShell 是一个可以补充 Office 365 管理中心的强大的�
     
     如果您已安装 Office 365 PowerShell 模块并且想要使用自动化命令来管理 Skype for Business Online，请从这里开始。
     
-- [Skype for Business Online cmdlets](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)
+- [Skype for Business Online cmdlets]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))
     
     如果您非常熟悉 Office 365 PowerShell 且想要了解有关特定命令的详细信息，以便为您的组织管理拨入式会议、云 PBX 和 PSTN 呼叫设置，并想要使用报告功能来监控和报告 Skype for Business Online 使用情况，请从这里开始。
     

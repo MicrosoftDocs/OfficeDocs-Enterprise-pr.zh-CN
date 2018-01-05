@@ -16,7 +16,7 @@ ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "摘要： 了解如何优化你的网络以便访问 Microsoft Azure PaaS。"
 ms.openlocfilehash: d63a7a20d4648b0044a24ea86ad4e9125779a027
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -24,15 +24,15 @@ ms.lasthandoff: 12/15/2017
 
  **摘要：** 了解如何优化你的网络以便访问 Microsoft Azure PaaS。
   
-优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，可能还会要求网络流量跨多个站点或应用分布。
+优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，并可以要求网络流量跨多个站点或应用分布。
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>计划将组织 PaaS 应用程序驻留在 Azure 中的步骤
 
 在此处插入章节正文。
   
-1. 经过[公共元素的 Microsoft 云连接](common-elements-of-microsoft-cloud-connectivity.md)中的**步骤来准备您网络上的 Microsoft 云服务**部分。
+1. 完成 [Microsoft 云连接的常见元素](common-elements-of-microsoft-cloud-connectivity.md)中的**为 Microsoft 云服务准备网络的步骤**部分。
     
-2. 优化您的互联网带宽使用步骤 2-4 的设计[网络，对于 Microsoft SaaS](designing-networking-for-microsoft-saas.md)的**步骤来准备您的 Microsoft SaaS 服务的网络**部分。
+2. 按照[设计 Microsoft SaaS 网络](designing-networking-for-microsoft-saas.md)中的**为 Microsoft SaaS 服务准备网络的步骤**部分的第 2-4 步操作，优化 Internet 带宽。
     
 3. 确定是否需要到 Azure 的 ExpressRoute 连接。
     
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/15/2017
     
 - SSL 卸载
     
-有关详细信息，请参阅[应用程序网关](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)。
+有关详细信息，请参阅[应用程序网关]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction))。
   
 ## <a name="azure-traffic-manager"></a>Azure 流量管理器
 
@@ -98,15 +98,15 @@ ms.lasthandoff: 12/15/2017
     
 2. 用户启动与欧洲区域 Web 应用之间的流量。
     
-有关详细信息，请参阅[通信量管理器](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)。
+有关详细信息，请参阅[流量管理器]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview))。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

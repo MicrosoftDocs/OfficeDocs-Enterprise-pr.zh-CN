@@ -18,21 +18,21 @@ ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。"
 ms.openlocfilehash: aa8c38864f3abf98f1aa5c8149db08506c6f7668
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看授权和未授权的用户
 
-**摘要：**解释如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。
+**摘要：**介绍如何使用 Office 365 PowerShell 查看许可和非许可用户帐户。
   
 您的 Office 365 组织中的用户帐户可能已从组织提供的许可计划中分配到部分或全部可用的许可证，或者未分配到任何许可证。您可以使用 Office 365 PowerShell 快速查找您组织中的授权和未授权的用户。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
     
-- 如果使用**Get MsolUser** cmdlet 而不使用_的所有_参数，返回前 500 个客户。
+- 如果使用 **Get-MsolUser** cmdlet，而未使用 _-All_ 参数，只返回前 500 个帐户。
     
 ## <a name="the-short-version-instructions-without-explanations"></a>简版（说明不含解释）
 
@@ -58,7 +58,7 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>长版（说明附有详细解释）
 
-Office 365 的用户帐户和 Office 365 许可证不需要有一对一的对应关系： 很可能有 Office 365 的用户不具有 Office 365 的许可证，而且很可能有未分配给用户的 Office 365 提供许可证。（事实上，单个用户帐户甚至可以将*多个*Office 365 份许可证。）当您创建新 Office 365 的用户帐户 （请参阅详细信息的文章[许可证 Office 365 提供用户与 Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx) ） 您无需将该用户指派一个许可证： 新用户将拥有有效帐户，但他 / 她将无法登录到 Office 365。如果用户尝试登录，他们将看到类似于这样：
+Office 365 用户帐户和 Office 365 许可证无需一一对应：Office 365 用户可以没有 Office 365 许可证，也可以不向用户分配 Office 365 许可证。（实际上，一个用户帐户甚至可以有*多个* Office 365 许可证。）新建 Office 365 用户帐户时（有关详细信息，请参阅[使用 Windows PowerShell 许可 Office 365 用户]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx))一文），无需为用户分配许可证。也就是说，即使新用户的帐户有效，也无法登录 Office 365。如果尝试登录，将会看到如下内容：
   
 ![没有有效 Office 365 许可证的用户。](images/o365_powershell_no_license.png)
   

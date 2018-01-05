@@ -16,15 +16,15 @@ ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: "摘要：查找不同服务的 Office 365 PowerShell cmdlet 参考主题：Azure Active Directory、Exchange Online、SharePoint Online 和 Skype for Business Online。"
 ms.openlocfilehash: 86975e7c0729429d771a9a316dad4b8c73d28010
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Office 365 服务的 cmdlet 参考
 
- **摘要：**查找 Office 365 PowerShell cmdlet 参考主题 Azure Active Directory、 Exchange 联机、 SharePoint Online，和 Skype 的在线业务。
+ **摘要：**查找 Azure Active Directory、Exchange Online、SharePoint Online 和 Skype for Business Online 的 Office 365 PowerShell cmdlet 参考主题。
   
-各种 Office 365 提供服务的 Cmdlet 引用主题提供有关如何使用每个 cmdlet 详细的信息和说明。Addiitonally，具有 PowerShell 支持每个 Office 365 提供服务需要不同的连接说明。
+各种 Office 365 服务的 cmdlet 参考主题详细介绍了如何使用各个 cmdlet。此外，支持 PowerShell 的每个 Office 365 服务都有不同的连接说明规定。
   
 > [!NOTE]
 > 若要一次连接所有的服务，请参阅[在单个 Windows PowerShell 窗口中连接所有 Office 365 服务](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)。 
@@ -37,9 +37,9 @@ Azure Active Directory cmdlet 参考主题位于 MSDN 库的 Azure Active Direct
   
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>安全与合规中心 PowerShell cmdlet
 
-Office 365 安全&amp;法规遵从性中心 cmdlet 参考主题都位于安全&amp;的 TechNet 库的法规遵从性中心 PowerShell 区域。若要这样做，请单击[Office 365 安全&amp;法规遵从性中心的 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=627085)。
+Office 365 安全与合规中心 cmdlet 参考主题位于 TechNet 库的安全与合规中心 PowerShell 区域。若要前往，请单击 [Office 365 安全与合规中心 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=627085)。
   
-有关安全的连接说明&amp;法规遵从性中心 PowerShell，单击[连接到 Office 365 安全&amp;使用远程 PowerShell 的法规遵从性中心](https://go.microsoft.com/fwlink/p/?LinkId=627084)。
+有关安全与合规中心 PowerShell 的连接说明，请单击[使用远程 PowerShell 连接到 Office 365 安全与合规中心](https://go.microsoft.com/fwlink/p/?LinkId=627084)。
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Exchange Online PowerShell cmdlet
 
@@ -62,7 +62,7 @@ Skype for Business Online cmdlet 参考主题位于 TechNet 库的 Skype for Bus
   
 有关 Skype for Business Online PowerShell 的连接说明，请单击[使用 Windows PowerShell 连接到 Skype for Business Online](https://go.microsoft.com/fwlink/p/?LinkId=691607)。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 
 #### 
 

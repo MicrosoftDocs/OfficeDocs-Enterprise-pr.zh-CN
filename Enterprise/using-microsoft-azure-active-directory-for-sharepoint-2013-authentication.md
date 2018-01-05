@@ -18,7 +18,7 @@ ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: "摘要：了解如何使用 Azure 访问控制服务，在 Azure Active Directory 中对 SharePoint Server 2013 用户进行身份验证。"
 ms.openlocfilehash: 85db8376aeb06ef6f291b563410c991ea24351d5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -105,11 +105,11 @@ ms.lasthandoff: 12/15/2017
     
 2. 在 Azure 访问控制门户上，单击"标识提供程序">"添加"，如下图中所示。
     
-     ![Azure 中的'标识提供程序'对话框](images/Identity.jpg)
+     ![Azure 中的“标识提供程序”对话框](images/Identity.jpg)
   
 3. 单击"WS-Federation 标识提供程序"（如下图中所示），然后单击"下一步"。
     
-     !['添加标识提供程序'设置](images/AddIdentity.jpg)
+     ![“添加标识提供程序”设置](images/AddIdentity.jpg)
   
 4. 填写显示名称和登录链接文本，然后单击"保存" 。对于 WS-Federation 元数据 URL，键入 https://accounts.accesscontrol.windows.net/blueskyabove.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml。下图说明了该设置。
     
@@ -123,7 +123,7 @@ ms.lasthandoff: 12/15/2017
   
 1. 在 Azure 访问控制门户上，单击"信赖方应用程序"，然后单击"添加"，如下图中所示。
     
-     ![配置成信赖方应用程序设置](images/RelyingPartyApplications.jpg)
+     ![“信赖方应用”设置](images/RelyingPartyApplications.jpg)
   
 ## <a name="create-a-self-signed-certificate-to-use-for-ssl"></a>创建自签名的证书以用于 SSL
 
@@ -141,7 +141,7 @@ ms.lasthandoff: 12/15/2017
     
      ![自签名证书向导](images/SelfSignedCert.jpg)
   
-     !['编辑绑定'对话框中的主机名](images/SelfSignedCert1.jpg)
+     ![“编辑绑定”对话框中的主机名](images/SelfSignedCert1.jpg)
   
 5. 在 Azure 管理门户上，单击您想要配置的虚拟机，然后单击"终结点"。
     
@@ -158,7 +158,7 @@ ms.lasthandoff: 12/15/2017
   
 9. 从访问控制服务门户中，添加信赖方，如下图中所示。
     
-     !['添加信赖方'应用程序设置](images/AddRelyingParty.jpg)
+     ![“添加信赖方”应用程序设置](images/AddRelyingParty.jpg)
   
 ## <a name="create-a-rule-group-for-claims-based-authentication"></a>创建用于基于声明的身份验证的规则组
 
@@ -166,11 +166,11 @@ ms.lasthandoff: 12/15/2017
   
 1. 在左侧窗格中，单击"规则组"，然后单击"添加"。
     
-2. 为规则组键入一个名称，单击**保存**，然后单击**生成**。对于本文，我们将使用**默认规则组为 spvms.cloudapp.net**，如下图中所示。
+2. 键入规则组的名称，再依次单击“保存”****和“生成”****。本文使用的是“Default Rule Group for. spvms.cloudapp.net”****，如下图所示。
     
-     ![Azure 中的'规则组'设置](images/RuleGroup.jpg)
+     ![Azure 中的“规则组”设置](images/RuleGroup.jpg)
   
-     ![选择'生成'后的规则](images/GenerateRules.jpg)
+     ![选择“生成”后的规则](images/GenerateRules.jpg)
   
     > [!NOTE]
     > 有关如何创建规则组的其他信息，请参阅[规则组和规则](https://go.microsoft.com/fwlink/p/?LinkId=393128)。 
@@ -189,7 +189,7 @@ ms.lasthandoff: 12/15/2017
   
 1. 在访问控制服务窗格中，在"开发"下单击"应用程序集成"。
     
-2. 在**终结点引用**中，找到与您 Azure 的租户， **Federation.xml** ，然后复制浏览器的地址栏中的位置。
+2. 在“终结点引用”****中，找到与 Azure 租户关联的“Federation.xml”****，再复制浏览器地址栏中的位置。
     
 3. 在 **Federation.xml** 文件中，找到 **RoleDescriptor** 部分，并复制 _<X509Certificate>_ 元素中的信息，如下图中所示。
     
@@ -219,13 +219,13 @@ ms.lasthandoff: 12/15/2017
 管理员可使用 **Add-SPShellAdmin** cmdlet 来授予使用 SharePoint 2013 cmdlet 的权限。
   
 > [!NOTE]
-> 如果您不具有这些权限，请联系您的安装管理员或 SQL Server 管理员来请求权限。有关 Windows PowerShell 权限的其他信息，请参阅 [Add-SPShellAdmin](http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx)。 
+> 如果您不具有这些权限，请联系您的安装管理员或 SQL Server 管理员来请求权限。有关 Windows PowerShell 权限的其他信息，请参阅 [Add-SPShellAdmin]((http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx))。 
   
 1. 在"开始"菜单上，单击"所有程序"。
     
 2. 单击"Microsoft SharePoint 2013 产品"。
     
-3. 单击**SharePoint 2013 管理外壳**。
+3. 单击“SharePoint 2013 命令行管理程序”****。
     
 4. 在 Windows PowerShell 命令提示符处，键入以下命令以创建声明映射：
     
@@ -261,7 +261,7 @@ ms.lasthandoff: 12/15/2017
 
 执行下列步骤，将您的 SharePoint 安装配置为 Azure AD 的新标识提供程序。
   
-1. 确认执行此过程的用户帐户是 SharePoint 组"服务器场管理员"的成员。
+1. 确认执行此过程的用户帐户是 SharePoint 组“服务器场管理员”的成员。
     
 2. 在管理中心的主页上，单击"应用程序管理"。
     
@@ -273,11 +273,11 @@ ms.lasthandoff: 12/15/2017
     
 6. 在"区域"下单击区域的名称，例如"Default"。
     
-7. 在**编辑身份验证**页**声明身份验证类型**部分中，选择**受信任的身份提供方**，然后单击您的提供商，这为本文的目的是**ACS 提供程序**的名称。单击**确定**。
+7. 在“编辑身份验证”****页上的“声明身份验证类型”****部分中，选择“受信任的标识提供程序”****，再单击提供程序名称（本文使用的是“ACS 提供程序”****）。单击“确定”****。
     
 8. 下图说明了 **Trusted Provider** 设置。
     
-![Web 应用程序中的'受信任提供程序'设置](images/AddProvider_Azure.jpg)
+![Web 应用程序中的“受信任提供程序”设置](images/AddProvider_Azure.jpg)
   
 ## <a name="set-the-permissions"></a>设置权限
 
@@ -317,12 +317,12 @@ ms.lasthandoff: 12/15/2017
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
   
-## <a name="join-the-discussion"></a>参加讨论
+## <a name="join-the-discussion"></a>加入讨论
 
 |**联系我们**|**说明**|
 |:-----|:-----|
 |**您需要什么样的解决方案？** <br/> |我们正在为跨多个 Microsoft 产品和服务的解决方案创建内容。请告诉我们您对我们的跨服务器解决方案的想法，或者发送电子邮件到 [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) 寻求具体的解决方案。<br/> |
-|**参加解决方案讨论** <br/> |如果您热衷于基于云的解决方案，请考虑加入云采用咨询委员会 (CAAB) 进行连接的 Microsoft 内容开发人员，业内专业人士和来自全球各地的客户更大的、 充满活力的社区。加入，将自己添加为 Microsoft 技术社区的[空间 CAAB （云采用咨询委员会）](https://aka.ms/caab)的成员，向我们发送快速电子邮件在[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)。任何人都可以读取与团体相关的内容，在[CAAB 博客](https://blogs.technet.com/b/solutions_advisory_board/)上。但是，CAAB 成员获取描述新的云应用资源和解决方案的专用网络研讨会的邀请。<br/> |
-|**获取您在此处看到的图片** <br/> |如果您希望您在这篇文章中看到的画的可编辑副本，我们将很高兴地向您发送它。通过电子邮件发送您的请求，包括 URL 和[cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)的图片，标题。<br/> |
+|**参加解决方案讨论** <br/> |如果热衷于基于云的解决方案，请考虑加入云采用咨询委员会 (CAAB)，以便与充满活力的更大规模社区保持联络，其中包括 Microsoft 内容开发人员、行业专家和全球各地的客户。若要加入，请将自己添加为 Microsoft 技术社区的[云采用咨询委员会 (CAAB) 空间]((https://aka.ms/caab))成员，并向我们 ([CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)) 发送电子邮件。任何人都可以阅读 [CAAB 博客]((https://blogs.technet.com/b/solutions_advisory_board/))上与社区相关的内容。不过，CAAB 成员可获邀参加私人网络研讨会，了解新云采用资源和解决方案。<br/> |
+|**获取您在此处看到的图片** <br/> |若要获取本文中图片的可编辑副本，请告诉我们，我们非常乐意发送副本。请通过电子邮件方式将请求（包括图片的 URL 和标题）发送到 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)。<br/> |
    
 

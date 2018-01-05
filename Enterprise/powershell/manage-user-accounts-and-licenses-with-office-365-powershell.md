@@ -17,13 +17,13 @@ ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: "摘要：了解如何通过 Office 365 PowerShell 管理用户帐户和许可证。"
 ms.openlocfilehash: 860fec08199d8897d7caee90d077f2956600972a
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理用户帐户和许可证
 
- **摘要：**了解如何管理用户帐户和使用 Office 365 PowerShell 的许可证。
+ **摘要：**了解如何使用 Office 365 PowerShell 管理用户帐户和许可证。
   
 所有 Office 365 管理员的一个主要任务就是管理用户帐户和许可证。虽然您可以在 Office 365 管理中心中完成其中的一些任务，但通过 Office 365 PowerShell 您可以更快、更轻松地完成其他任务。有关详细信息，请参阅下列主题：
   

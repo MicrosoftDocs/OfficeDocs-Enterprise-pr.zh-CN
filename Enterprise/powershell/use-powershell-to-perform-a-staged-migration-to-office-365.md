@@ -14,13 +14,13 @@ ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的暂存迁移。"
 ms.openlocfilehash: 6c3ed6c0e37f7b99d3f26056dfe1b9d989388ff3
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>使用 PowerShell 执行暂存迁移以迁移到 Office 365
 
- **摘要：**了解如何使用 Windows PowerShell 执行分阶段的迁移到 Office 365。
+ **摘要：**了解如何使用 Windows PowerShell 执行暂存迁移，以迁移到 Office 365。
   
 随着时间的推移，您可以使用暂存迁移将源电子邮件系统中用户邮箱的内容迁移到 Office 365。
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 12/15/2017
   
 - 使用公司网络外部的 Outlook 连接到您的内部部署 Exchange 邮箱。
     
-- 使用 [Microsoft Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) 测试连接设置。使用 Outlook 无处不在 (RPC over HTTP) 或 Outlook 自动发现测试。
+- 使用 [Microsoft Exchange Remote Connectivity Analyzer]((https://www.testexchangeconnectivity.com/)) 测试连接设置。使用 Outlook 无处不在 (RPC over HTTP) 或 Outlook 自动发现测试。
     
 - 在 Exchange Online PowerShell 中运行以下命令：
     
@@ -105,11 +105,11 @@ ms.lasthandoff: 12/15/2017
   
 暂存迁移的 CSV 文件支持下列三个属性。CSV 文件中的每一行对应于一个邮箱并且必须包含属性的相应值。
   
-|**属性**|**描述**|**是否必需？**|
+|**属性**|**说明**|**是否必需？**|
 |:-----|:-----|:-----|
 |EmailAddress  <br/> |为内部部署邮箱指定一个主要的 SMTP 电子邮件地址，例如，pilarp@contoso.com。  <br/> 为内部部署邮箱使用该主要的 SMTP 地址，而非 Office 365 中的用户 ID。例如，如果将内部部署域命名为 contoso.com，但是将 Office 365 电子邮件域命名为 service.contoso.com，则您应该为 CSV 文件中的电子邮件地址使用 contoso.com 域名。  <br/> |必需  <br/> |
-|Password  <br/> |需要为新的 Office 365 邮箱设置的密码。适用于 Office 365 组织的任何密码限制也适用于该 CSV 文件中包括的密码。  <br/> |可选  <br/> |
-|ForceChangePassword  <br/> |指定用户在首次登录自己的新 Office 365 邮箱时是否必须更改密码。对此参数的值使用 **True** 或 **False** 。<br/> > [!NOTE]> 如果您已通过部署 Active Directory 联合身份验证服务 (AD FS) 实现单一登录 (SSO) 解决方案或更高版本在您的内部组织，则必须使用**False** **ForceChangePassword**属性的值。          |可选  <br/> |
+|密码  <br/> |需要为新的 Office 365 邮箱设置的密码。适用于 Office 365 组织的任何密码限制也适用于该 CSV 文件中包括的密码。  <br/> |可选  <br/> |
+|ForceChangePassword  <br/> |指定用户在首次登录自己的新 Office 365 邮箱时是否必须更改密码。对此参数的值使用 **True** 或 **False** 。<br/> > [!NOTE]> 如果已通过在本地组织中部署 Active Directory 联合身份验证服务 (AD FS) 或更高版本来实现单一登录 (SSO) 解决方案，必须将 **ForceChangePassword** 属性值设为 **False**。          |可选  <br/> |
    
  **CSV 文件格式**
   
@@ -138,7 +138,7 @@ briant@contoso.com,Pa$$w0rd,False
   
 有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
   
-要在 Exchange Online PowerShell 中创建名为"StagedEndpoint"的 Outlook 无处不在迁移终结点，请运行以下命令：
+要在 Exchange Online PowerShell 中创建名为“StagedEndpoint”的 Outlook 无处不在迁移终结点，请运行以下命令：
   
 ```
 $Credentials = Get-Credential
@@ -155,7 +155,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscove
   
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
-在 Exchange Online PowerShell 中，运行以下命令来显示有关"StagedEndpoint"迁移终结点的信息：
+在 Exchange Online PowerShell 中，运行以下命令来显示有关“StagedEndpoint”迁移终结点的信息：
   
 ```
 Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
@@ -178,7 +178,7 @@ New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
-在 Exchange Online PowerShell 中运行以下命令来显示有关"StagedBatch1"的信息：
+在 Exchange Online PowerShell 中运行以下命令来显示有关“StagedBatch1”的信息：
   
 ```
 Get-MigrationBatch -Identity StagedBatch1 | Format-List
@@ -212,7 +212,7 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 
  在迁移批处理中的所有邮箱都已成功迁移并且将批处理中的内部部署邮箱转换为启用邮件的用户之后，可以准备删除暂存迁移批处理。确保验证邮件正在转发到迁移批处理中的 Office 365 邮箱。当您删除暂存迁移批处理时，迁移服务将清除任何与迁移批处理相关的记录，同时删除迁移批处理。
   
-要在 Exchange Online PowerShell 中删除"StagedBatch1"迁移批处理，请运行以下命令。
+要在 Exchange Online PowerShell 中删除“StagedBatch1”迁移批处理，请运行以下命令。
   
 ```
 Remove-MigrationBatch -Identity StagedBatch1
@@ -222,7 +222,7 @@ Remove-MigrationBatch -Identity StagedBatch1
   
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
-在 Exchange Online PowerShell 中运行以下命令来显示有关"IMAPBatch1"的信息：
+在 Exchange Online PowerShell 中运行以下命令来显示有关“IMAPBatch1”的信息：
   
 ```
 Get-MigrationBatch StagedBatch1
@@ -252,7 +252,7 @@ Get-MigrationBatch StagedBatch1
     
 - **停止使用内部部署 Exchange 服务器。**当您验证所有电子邮件都可以直接被路由到 Office 365 邮箱，并且您不再需要维护内部部署电子邮件组织或不用计划实施 SSO 解决方案以后，您可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
     
-    有关详细信息，请参阅下列内容：
+    有关详细信息，请参阅以下资源：
     
   - [修改或删除 Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
     

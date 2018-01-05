@@ -20,7 +20,7 @@ ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "摘要： 设计用于 Microsoft 云服务和平台的标识解决方案。"
 ms.openlocfilehash: f581711345b043d61de503360d101fbcc09de82e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,17 +30,17 @@ ms.lasthandoff: 12/15/2017
   
 本文介绍 IT 架构师为使用 Microsoft 云服务和平台的组织设计标识所需要了解的内容。此外，您还可以使用 5 页海报的形式浏览本文，以文摘格式进行打印（也称为分类帐，11 x 17 或 A3)。
   
-[![Microsoft 云标识模型的缩略图图像](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
+[![模型缩略图：Microsoft 云标识](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
   
-![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54431)
+![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio]((https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)) | ![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54431)
   
-此外可以查看所有[Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的模型，然后通过刷卡[Microsoft 的企业云路线图： IT 决策者的资源](https://aka.ms/cloudarchitecture)。
+还可以查看 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的所有模型，逐一浏览 [Microsoft 企业云路线图：IT 决策者的资源]((https://aka.ms/cloudarchitecture))。
   
 > [!NOTE]
-> 这篇文章反映了**企业架构师的 Microsoft 云标识**标牌的 2016 年 1 月版。它不包含 4 月 2016 年更改或更高版本的海报。
+> 本文反映了 2016 年 1 月版**面向企业架构师的 Microsoft 云标识**海报。它不包含 2016 年 4 月或之后版本海报的更改。
   
-## <a name="designing-identity-for-the-microsoft-cloud"></a>设计用于 Microsoft 云的标识
+## <a name="designing-identity-for-the-microsoft-cloud"></a>设计 Microsoft 云标识
 
 通过将您的标识与 Microsoft 云进行集成，您将能够访问广泛的服务和云平台选项。有两个主要选项：
   
@@ -66,7 +66,7 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
 ||||
 |:-----|:-----|:-----|
 |**免费** <br/> |**基本** <br/> |**高级** <br/> |
-| 管理用户帐户 <br/>  与本地目录同步 <br/>  跨 Azure、Office 365 和数以千计的其他流行 SaaS 应用程序（如 Salesforce、Workday、Concur、DocuSign、Google Apps、Box、ServiceNow、Dropbox 等）单一登录 <br/> | 包括免费版的所有功能，外加： <br/>  公司品牌 <br/>  基于组的应用程序访问 <br/>  自助服务密码重置 <br/>  99.9% 的企业 SLA <br/> | 包括免费版和基本版的所有功能，外加: <br/>  自助服务组管理 <br/>  高级安全报告和警报 <br/>  多重身份验证 <br/>  通过回写到本地 AD DS 重置密码 <br/>  Azure AD Connect 工具双向同步 <br/>  Azure AD 应用程序代理 <br/>  Microsoft Forefront Identity Manager (MIM) <br/> |
+| 	管理用户帐户 <br/>  与本地目录同步 <br/>  跨 Azure、Office 365 和数以千计的其他流行 SaaS 应用程序（如 Salesforce、Workday、Concur、DocuSign、Google Apps、Box、ServiceNow、Dropbox 等）单一登录 <br/> | 包括免费版的所有功能，外加： <br/>  公司品牌 <br/>  基于组的应用程序访问 <br/>  自助服务密码重置 <br/>  99.9% 的企业 SLA <br/> | 包括免费版和基本版的所有功能，外加: <br/>  自助服务组管理 <br/>  	高级安全报告和警报 <br/>  	多重身份验证 <br/>  通过回写到本地 AD DS 重置密码 <br/>  Azure AD Connect 工具双向同步 <br/>  Azure AD 应用程序代理 <br/>  	Microsoft Forefront Identity Manager (MIM) <br/> |
    
 有关这些版本的详细信息，请参阅 [Azure Active Directory 版本](https://go.microsoft.com/fwlink/p/?LinkId=524280)。
   
@@ -363,11 +363,11 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
     
 有关详细信息，请参阅[将您的本地标识与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkId=524307)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

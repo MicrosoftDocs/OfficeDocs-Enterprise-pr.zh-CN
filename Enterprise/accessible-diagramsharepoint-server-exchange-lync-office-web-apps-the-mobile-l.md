@@ -11,13 +11,13 @@ ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: "本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。"
 ms.openlocfilehash: 4f93ea633d6d93e8a6a3e7828264b6253dfbcf56
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>可访问的图 - SharePoint Server、Exchange、Lync、Office Web Apps - 移动前景
+# <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>可访问图表 - SharePoint Server、Exchange、Lync、Office Web Apps - 移动前景
 
-**摘要：**这篇文章是图名为 Microsoft Exchange 2013 平台选项，即在[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)可用辅助功能的文本版本。
+**摘要：**本文是[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)中的“Microsoft Exchange 2013 平台选项”图表的可访问文本版本。
   
 此海报显示了 SharePoint Server、Lync、Exchange Server 和 Office Web Apps 的基于应用程序和移动浏览器的环境的详细布局。其中包括以下信息： 
   
@@ -140,7 +140,7 @@ OneDrive for Business 是您的组织可针对员工作为 SharePoint 2013 本�
     
 - 使用 PowerPoint Web App，以您在台式计算机上采用的方式查看带有高分辨率幻灯片、完整切换选择和可查看注释的演示文稿。 您还可以直接从平板电脑或手机播放音频和视频文件。
     
-- 通过 Excel Web App，您可以使用高保真图表（包括 3D）、改进的查询表和数据验证支持、"切片器"功能和透视图交互性更改并可视化数据，以便有更深入的认识。
+- 通过 Excel Web App，您可以使用高保真图表（包括 3D）、改进的查询表和数据验证支持、“切片器”功能和透视图交互性更改并可视化数据，以便有更深入的认识。
     
  **在浏览器中编辑 (Windows 8/iPad)**.通过基于浏览器的 Office Web Apps 使用基本的和熟悉的工具进行编辑。随附的图显示了平板电脑上的 Office Web Apps 体验。
   
@@ -210,7 +210,7 @@ Exchange 客户端访问服务器 (CAS) 托管 Exchange ActiveSync 服务。您�
   
 在前端服务器上，自动发现服务检索用户主池的 Web 服务 URL，并将该信息通过反向代理服务器返回至移动设备。通过自动发现服务，移动设备无需要求用户手动输入 URL 就可以找到 Lync Server Web 服务。
   
-如果移动设备日志位于防火墙内，将直接向 Lync 前端池发送一个 HTTPS Get 命令，例如 LyncDiscoverInternal.com。请求在端口 443 上接收，这是自动发现服务用于向移动设备传回通信的同一端口。
+如果移动设备是在防火墙内登录，HTTPS Get 命令会直接发送至 Lync 前端池（如 LyncDiscoverInternal.com）。端口 443 接收请求，这是自动发现服务用来重新与移动设备通信的同一端口。
   
 您必须配置两条 DNS 记录以支持移动性：一条针对 LyncDiscover.contoso.com，另一条针对 LyncDiscoverInternal.com。外部 FQDN 应仅可从防火墙外部访问；内部 FQDN 应仅可从防火墙内部访问。
   

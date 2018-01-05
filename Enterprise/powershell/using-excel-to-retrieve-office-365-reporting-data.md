@@ -17,17 +17,17 @@ ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "摘要：使用 Microsoft Excel 中的 oData 功能检索 Office 365 部署的详细报告信息。"
 ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>使用 Excel 检索 Office 365 报告数据
 
- **摘要：**在 Microsoft Excel 中使用 oData 功能来检索部署 Office 365 的详细报告信息
+ **摘要：**使用 Microsoft Excel 中的 oData 功能检索 Office 365 部署的详细报表信息。
   
 报告功能是系统管理的一个关键部分。Office 365 管理中心包含大量预定义的报告，你可以通过左侧导航的" **报告**"部分访问它们。有使用情况报告以及安全性和合规性报告。
   
-您可用的报告取决于您使用的 Office 365 版本以及您启用的 Office 365 服务。有关详细信息，请参阅[报告](https://technet.microsoft.com/en-us/library/office-365-reports.aspx)页。
+您可用的报告取决于您使用的 Office 365 版本以及您启用的 Office 365 服务。有关详细信息，请参阅[报告]((https://technet.microsoft.com/zh-CN/library/office-365-reports.aspx))页。
   
 预定义的管理中心报告是非常不错的资源。它们便于查看邮箱使用情况或用户在在线会议上花费的分钟数等事项。但是，在 Office 365 域的详细分析方面，报告确实有其局限性。
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 12/15/2017
   
 1. 首先在 Excel 中打开一个新工作表。在工作表中，依次单击" **数据** "、" **来自其他来源** "和" **来自 OData 数据馈送** "。将弹出" **数据连接向导** "对话框：
     
-     ![数据连接向导中的'连接到数据源'对话框的示例。](images/o365_reporting_connect_data_feed.png)
+     ![数据连接向导中的“连接到数据源”对话框的示例。](images/o365_reporting_connect_data_feed.png)
   
 2. 在" **连接到数据馈送** "页上，输入 **https://reports.office365.com/ecp/reportingwebservice/reporting.svc/** 作为数据馈送位置。请注意，你只能输入所示的基本 URL；不能添加任何 Select、Filter 或 Format 语句。如果你输入的是除基 URL 之外的其他信息，将不会返回任何数据；而只会看到下面的错误消息：
     
@@ -53,20 +53,20 @@ ms.lasthandoff: 12/15/2017
   
 3. 输入报告服务 URL 后，选择"登录凭据"下的"使用此用户名和密码"。在"用户名"框中，输入您的 Office 365 登录名（例如，admin@litwareinc.onmicrosoft.com）。在"密码"框中，输入您的 Office 365 登录密码，然后单击"下一步"。然后，Excel 将尝试使用提供的凭据连接到报告服务。
     
-4. 您进行了身份验证后，您将看到**选择表**页。选择您将如下所示的视图 (例如， **MailTrafficTop** )，然后单击**下一步**的报告：
+4. 经过身份验证后，将看到“选择表”****页。选择要查看的报表（例如，“MailTrafficTop”****），再单击“下一步”****：
     
-     ![数据连接向导中的'选择表'页的示例。](images/o365_reporting_select_tables.png)
+     ![数据连接向导中的“选择表”页的示例。](images/o365_reporting_select_tables.png)
   
     > [!NOTE]
     > 可以选择多个报告；这会将多个表格/图表添加到你的 Excel 电子表格中。你甚至可以创建一个组合多个报告中的数据的表格/图表；但我们在本篇介绍性文章中不进行讨论。 
   
 5. 单击"下一步"之后，将显示"保存数据连接文件并完成"页：
     
-     ![数据连接向导中的'保存数据连接文件并完成'页的示例。](images/o365_reporting_odata_finish.png)
+     ![数据连接向导中的“保存数据连接文件并完成”页的示例。](images/o365_reporting_odata_finish.png)
   
     你无需输入任何信息。要检索数据，只需单击" **完成** "。但是，值得注意的是，默认情况下，Excel 会保存有关你所进行的每个数据连接的信息，此数据存储在" **我的数据源** "文件夹中：
     
-     !['我的数据源'文件夹的'文件保存'对话框的示例。](images/o365_reporting_save_data_source.png)
+     ![“我的数据源”文件夹的“文件保存”对话框的示例。](images/o365_reporting_save_data_source.png)
   
     这就是对话框为何包含具有"友好名称"和"搜索关键字"之类标签的文本框的原因；这些选项使您可以自定义这些数据连接。通过这种方式，您最终不会获取如下所示的全部数据源：
     
@@ -81,27 +81,27 @@ DataFeed_3_reports-office365-com ClientSoftwareBrowserDetail.odc
 
 如果你选中" **在文件中保存密码** "复选框，你将能够重新使用这些数据源。例如，假设你将数据连接保存为" **客户端浏览器报告** "。下次你需要有关用于访问 Office 365 域的 Web 浏览器的信息时，无需完成数据连接向导的所有操作。而只需打开 Excel，单击" **数据** "，然后单击" **现有源** "。在" **现有连接** "对话框中，选择所需的数据连接，然后单击" **确定** "：
     
-![在'现有连接'对话框中选择所需的数据连接的示例。](images/o365_reporting_select_connection.png)
+![在“现有连接”对话框中选择所需的数据连接的示例。](images/o365_reporting_select_connection.png)
   
 在这种情况下，Excel 将为您进行连接并检索数据。
     
 请注意，这些 .ODC 文件是纯文本 XML 文件。这些纯文本 XML 文件中包含了你的 Office 365 用户名和密码：
     
-\<odc:ConnectionString > 数据源 = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;命名空间包含 = *;最大接收邮件大小 = 4398046511104; 集成安全性 = 基本;**用户 ID=admin@litwareinc.onmicrosoft.com;密码 = MYpassw0rd ！**;持久性安全信息为 false;服务文档 Url = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString >
+\<odc:ConnectionString>Data Source=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;Namespaces to Include=*;Max Received Message Size=4398046511104;Integrated Security=Basic; **User ID=admin@litwareinc.onmicrosoft.com;Password=MYpassw0rd!**;Persist Security Info=false;Service Document Url=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString>
     
 如果你不希望将用户名和密码保存在纯文本文件中，则取消勾选标记为" **在文件中保存密码** "的框。但是，请注意，如果执行此操作，将无法重新使用这些数据连接。这是因为，如果没有用户名和密码，Office 365 将无法对你尝试登录服务进行身份验证。
     
 6. 单击"保存数据连接文件并完成"页上的"完成"，将显示"导入数据"对话框：
     
-     !['导入数据'对话框的示例。](images/o365_reporting_import_data.png)
+     ![“导入数据”对话框的示例。](images/o365_reporting_import_data.png)
   
-7. 选择所需视图选项 （例如，**数据透视表报表**），然后单击**确定**。如果一切顺利，您的数据将被导入并显示在任何视图选项您恰巧选择：
+7. 选择视图选项（例如，“数据透视表”****），再单击“确定”****。如果一切顺利，数据将会导入，并显示在任意选定视图选项中：
     
      ![已成功导入到 Excel 工作表中的数据的示例。](images/o365_reporting_sample_spreadsheet.png)
   
 如何处理这些数据完全由你决定。作为建议，你可以看一看[使用 OData 数据源创建 Excel Services 仪表板](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx)。尽管该文章未使用 Office 365 报告服务，但提供了向新的仪表板添加筛选器和切片器等操作的一些有用技巧。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 
 #### 
 

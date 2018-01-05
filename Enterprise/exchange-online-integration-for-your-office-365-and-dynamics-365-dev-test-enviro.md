@@ -21,7 +21,7 @@ ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "摘要：使用此测试实验室指南可以实现 Office 365 试用订阅中 Exchange Online 的 Dynamics 365 集成。"
 ms.openlocfilehash: 9cecd13f0ffc3c2822ac6c66a3bde9c9e6a3c798
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
 
 使用下列步骤配置 Dynamics 365 和 Exchange Online 集成的全局管理员邮箱：
   
-1. 使用专用浏览器会话，转到[http://portal.office.com](http://portal.office.com) ，并使用您的 Office 365 提供全局管理员帐户进行登录。
+1. 使用浏览器的专用会话，转到 [(http://portal.office.com)]((http://portal.office.com))，再使用 Office 365 全局管理员帐户登录。
     
 2. 在"Microsoft Office 主页"页上，单击"邮件"磁贴。
     
@@ -98,16 +98,16 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
   
 7. 单击 Dynamics 365 图标。应该会看到"Dynamics 365" 窗格，你可以在其中跟踪此电子邮件或访问模板、销售宣传资料或文章。
     
-8. 在电子邮件**给**字段中，键入**alex.y.wu@outlook.com**，然后**Dynamics 365**窗格中单击**重试**。在 Alex Wu，从销售应用程序示例数据提供有关您的订购试用期的联系人，您应该看到**Dynamics 365**窗格，其中显示的信息中的**收件人**节。
+8. 在电子邮件的“收件人”****字段中，键入“alex.y.wu@outlook.com”****，再单击“Dynamics 365”****窗格中的“重试”****。在“Dynamics 365”****窗格中，应能看到“收件人”****部分，其中包含 Alex Wu（销售应用的联系人）的相关信息，此信息与试用订阅的示例数据一起提供。
     
      ![存储在 Dynamics 365 中的销售联系人的 Dynamics 365 信息窗格。](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. 单击"放弃"。
 
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)为可视化映射到一个 Microsoft 云测试实验室指南堆栈中的项目的所有。
+> 单击[此处]((http://aka.ms/catlgstack))可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md)
   
@@ -119,8 +119,8 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
   
 [用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Dynamics 365（联机）的订阅管理](https://technet.microsoft.com/library/jj679903.aspx)
+[Dynamics 365（联机）的订阅管理]((https://technet.microsoft.com/library/jj679903.aspx))
   
-[管理 Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
+[管理 Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))
 
 

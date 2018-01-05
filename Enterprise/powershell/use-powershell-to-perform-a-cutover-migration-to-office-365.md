@@ -14,13 +14,13 @@ ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: "摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的直接转换迁移。"
 ms.openlocfilehash: be5a3587538c32589c20fe6d27d69a84e0b8e7db
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>使用 PowerShell 执行直接转换迁移以迁移到 Office 365
 
- **摘要：**了解如何使用 Windows PowerShell 执行到 Office 365 的移交迁移。
+ **摘要：**了解如何使用 Windows PowerShell 执行直接转换迁移，以迁移到 Office 365。
   
 通过直接转换迁移，您可以一次性将源电子邮件系统中用户邮箱的内容迁移到 Office 365。本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件直接转换迁移的任务。 
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 12/15/2017
     
   - 使用 Microsoft Outlook 从企业网络外部连接到内部部署 Exchange 邮箱。
     
-  - 使用 Microsoft [Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) 测试连接设置。使用 Outlook 无处不在 (RPC over HTTP) 或 Outlook 自动发现测试。
+  - 使用 Microsoft [Exchange Remote Connectivity Analyzer]((https://www.testexchangeconnectivity.com/)) 测试连接设置。使用 Outlook 无处不在 (RPC over HTTP) 或 Outlook 自动发现测试。
     
   - 在 Exchange Online PowerShell 中运行以下命令。
     
@@ -121,7 +121,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name CutoverEndpoint -Connection
   
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
-在 Exchange Online PowerShell 中，运行以下命令来显示有关"CutoverEndpoint"迁移终结点的信息：
+在 Exchange Online PowerShell 中，运行以下命令来显示有关“CutoverEndpoint”迁移终结点的信息：
   
 ```
 Get-MigrationEndpoint CutoverEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
@@ -154,7 +154,7 @@ Get-MigrationBatch | Format-List
 ### <a name="step-4-start-the-cutover-migration-batch"></a>步骤 4：启动直接转换迁移批处理
 <a name="BK_Step4"> </a>
 
-要在 Exchange Online PowerShell 中启动迁移批处理，请运行以下命令。这将创建名为"CutoverBatch"的迁移批处理。
+要在 Exchange Online PowerShell 中启动迁移批处理，请运行以下命令。这将创建名为“CutoverBatch”的迁移批处理。
   
 ```
 Start-MigrationBatch -Identity CutoverBatch
@@ -162,7 +162,7 @@ Start-MigrationBatch -Identity CutoverBatch
 
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
-如果迁移批处理已成功启动，其在迁移主控板中的状态指定为"正在同步"。要验证您是否已通过 Exchange Online PowerShell 成功启动迁移批处理，请运行以下命令：
+如果迁移批处理已成功启动，其在迁移主控板中的状态指定为“正在同步”。要验证您是否已通过 Exchange Online PowerShell 成功启动迁移批处理，请运行以下命令：
   
 ```
 Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
@@ -186,7 +186,7 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
     
 - 当邮件开始直接发送到 Office 365 邮箱以后，这些邮箱至少会同步一次。为此，确保迁移批处理的"上次同步时间"框中的值是最近时间，而不是邮件开始直接路由到 Office 365 邮箱的时间。
     
-要在 Exchange Online PowerShell 中删除"CutoverBatch"迁移批处理，请运行以下命令：
+要在 Exchange Online PowerShell 中删除“CutoverBatch”迁移批处理，请运行以下命令：
   
 ```
 Remove-MigrationBatch -Identity CutoverBatch
@@ -217,7 +217,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
 - **停止使用内部部署 Exchange 服务器。**当您验证所有电子邮件都可以直接被路由到 Office 365 邮箱，并且您不再需要维护内部部署电子邮件组织或不用计划实施单点登录 (SSO) 解决方案以后，您可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
     
-    有关详细信息，请参阅下列内容：
+    有关详细信息，请参阅以下资源：
     
   - [修改或删除 Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
     

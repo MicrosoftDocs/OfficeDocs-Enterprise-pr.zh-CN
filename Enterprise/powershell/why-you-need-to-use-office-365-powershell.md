@@ -16,13 +16,13 @@ ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "摘要：了解为何必须使用 Office 365 PowerShell 管理 Office 365，这在某些情况下可以变得更高效，在其他情况下则可能是必备要求。"
 ms.openlocfilehash: 46295ed851f24b16f775fd48dc8cdfbce39bf76c
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>为什么您需要使用 Office 365 PowerShell
 
- **摘要：**了解为什么您必须使用 Office 365 PowerShell Office 365 在某些情况下更有效地管理在其他情况下必然。
+ **摘要：**了解为什么必须使用 Office 365 PowerShell 管理 Office 365：在一些情况下是因为它更为高效，在另外一些情况下是因为必须这样做。
   
 借助 Office 365 管理中心不仅可以管理你的 Office 365 用户帐户和许可证，还可以管理你的 Office 365 服务器产品：Exchange、Skype for Business Online 和 SharePoint Online。但是，也可以使用 Office 365 PowerShell 命令来管理这些元素，充分利用针对速度、自动化和其他功能的命令行和脚本语言环境。
   
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/15/2017
   
 - Office 365 PowerShell 可能会显示通过 Office 365 管理中心无法看到的其他信息。
     
-- Office 365 拥有仅可使用以下工具配置的功能：Office 365 PowerShell
+- Office 365 拥有仅可使用 Office 365 PowerShell 配置的功能
     
 - Office 365 PowerShell 善于执行批量操作
     
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/15/2017
     
 - Office 365 PowerShell 方便打印或保存数据
     
-- Office 365 PowerShell 允许您管理各种服务器产品
+- Office 365 PowerShell 允许您管理跨服务器产品
     
 开始之前，您需要知道 Office 365 PowerShell 是一组用于 Windows PowerShell（用于 Windows 服务和平台的命令行环境）的模块。此环境创建了一个可用其他模块扩展的命令行界面语言并提供了执行简单或复杂命令或脚本的方法。例如，在您安装 Office 365 PowerShell 模块并连接至您的 Office 365 订阅后，您可以运行此命令以列出 Microsoft Exchange Online 的所有用户邮箱：
   
@@ -66,7 +66,7 @@ Get-SPOSite -Limit All | Get-SPWeb -Limit All | % {$_.Lists} | ? {$_ -is [Micros
     
 在学过这些基本技巧之后，您不需要使用 **Get-Mailbox** 命令列出您的邮箱用户，也不需要明白如何创建像前一个命令那样的新命令来计算您的所有 Web 应用的所有网站的所有列表中的项目数量。如果需要，Microsoft 和 Office 365 管理员社区可以帮到您。
   
-## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-office-365-admin-center"></a>Office 365 PowerShell 可能会显示通过 Office 365 管理中心无法看到的其他信息。
+## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-office-365-admin-center"></a>Office 365 PowerShell 可以显示无法在 Office 365 管理中心内看到的其他信息
 <a name="reveal"> </a>
 
 Office 365 管理中心显示大量有用的信息，但这并不意味着它会显示 Office 365 存储在用户、许可证、邮箱和网站上的所有可能信息。下面是 Office 365 管理中心中 **用户和组** 的一个示例：
@@ -94,9 +94,9 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 > [!NOTE]
-> 此命令将要求您安装 [Microsoft Azure Active Directory 模块](https://technet.microsoft.com/en-us/library/jj151815.aspx)。 
+> 此命令将要求您安装 [Microsoft Azure Active Directory 模块]((https://technet.microsoft.com/zh-CN/library/jj151815.aspx))。 
   
-下面是显示的一个示例：
+下面展示了显示内容示例：
   
 ```
 DisplayName                               UsageLocation
@@ -111,7 +111,7 @@ David Longmuir                            BR
 ```
 
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 获取当前 Office 365 订阅 ( **Get MsolUser** ) 中的所有用户，但仅显示名称和每个用户 （**选择显示名称、 UsageLocation** ） 的位置。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有用户 (**Get-MsolUser**)，但仅显示每个用户的用户名和地理位置 (**Select DisplayName, UsageLocation**)。
   
 因为 Office 365 PowerShell 支持命令行界面语言，您可以进一步操作从 **Get-MSolUser** 命令获取的信息。例如，或许您想要按用户位置对用户进行排序，将所有巴西用户、所有美国用户等进行分组。下面是命令：
   
@@ -119,7 +119,7 @@ David Longmuir                            BR
 Get-MsolUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
 ```
 
-下面是显示的一个示例：
+下面展示了显示内容示例：
   
 ```
 DisplayName                                 UsageLocation
@@ -134,15 +134,15 @@ Zrinka Makovac                              US
 ```
 
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 获取所有用户当前的 Office 365 订阅，但只有显示名称和每个用户的位置和它们的位置，然后它们的名称 (**排序 UsageLocation，第一次排序显示名称**)。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有用户，但仅显示每个用户的用户名和地理位置，并先按地理位置排序，再按用户名排序 (**Sort UsageLocation, DisplayName**)。
   
-您还可以使用其他筛选条件。例如，如果您只想查看有关巴西用户的信息，请使用此命令：
+还可以使用其他筛选条件。例如，如果只想查看巴西用户的信息，请使用下面的命令：
   
 ```
 Get-MsolUser | Where {$_.UsageLocation -eq "BR"} | Select DisplayName, UsageLocation 
 ```
 
-下面是显示的一个示例：
+下面展示了显示内容示例：
   
 ```
 DisplayName                                           UsageLocation
@@ -152,9 +152,9 @@ Fabrice Canel                                         BR
 ```
 
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 位于巴西当前 Office 365 订阅中获取的所有用户 (**其中 {$\_。UsageLocation-eq"室"}** )，然后显示名称和每个用户的位置。
+>  此 Office 365 PowerShell 命令的解释如下：获取当前 Office 365 订阅中地理位置是巴西的所有用户 (**Where {$\_.UsageLocation -eq "BR"}**)，再显示每个用户的用户名和地理位置。
   
- **有关较大的域的快速说明**
+ **有关较大域的快速说明**
   
 如果您的域非常大，有数万个用户，那么尝试此文章中介绍的某些示例可能会带来"限制"。这说明，基于计算能力和可用网络带宽等因素，您每次尝试的操作有点多。正因为如此，较大型的组织可能要将某些 Office 365 PowerShell 命令拆分为两个命令。例如，这一个命令将返回所有用户帐户，并显示每个用户的名称和位置。
   
@@ -170,11 +170,11 @@ $x | Select DisplayName, UsageLocation
 ```
 
 
-这套 Office 365 PowerShell 命令的解释是：
-- 获取当前 Office 365 订阅中的所有用户，并将信息存储在名为 $x 的变量 ( **$x = Get MsolUser** )。
-- 显示变量 $x 的内容，但仅包含名称和每个用户的位置 ( **$x |选择显示名称，UsageLocation** )。
+此组 Office 365 PowerShell 命令的解释如下：
+- 获取当前 Office 365 订阅中的所有用户，并将信息存储在 $x 变量中 (**$x = Get-MsolUser**)。
+- 显示变量 $x 的内容，但只包含每个用户的用户名和地理位置 (**$x | Select DisplayName, UsageLocation**)。
   
-## <a name="office-365-has-features-that-you-can-only-configure-with-office-365-powershell"></a>Office 365 拥有仅可使用以下工具配置的功能：Office 365 PowerShell
+## <a name="office-365-has-features-that-you-can-only-configure-with-office-365-powershell"></a>Office 365 具有只能使用 Office 365 PowerShell 配置的功能
 <a name="only"> </a>
 
 Office 365 管理中心旨在为大多数人提供对最常见或最有意义的适用管理任务的访问权限。换句话说，Office 365 管理中心的设计目标是让典型的管理员能够使用工具来执行最常见的管理任务。根据定义，这意味着某些任务无法通过 Office 365 管理中心完成。
@@ -198,12 +198,12 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 ```
 
 > [!NOTE]
-> 此命令会要求您安装 [Skype for Business Online PowerShell 模块](https://www.microsoft.com/download/details.aspx?id=39366)。 
+> 此命令要求必须安装 [Skype for Business Online PowerShell 模块](https://www.microsoft.com/download/details.aspx?id=39366)。 
   
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 为新 Skype 业务联机会议 (**集 CsMeetingConfiguration** ) 的设置，禁用允许匿名用户获得自动进入会议 ( **-AdmitAnonymousUsersByDefault $False** )、 与会者于记录会议 ( **-AllowConferenceRecording $False** )，禁止和不从您的组织的所有用户都指定作为演示者 ( **-DesignateAsPresenter"None"** )。
+>  此 Office 365 PowerShell 命令的解释如下：对于新 Skype for Business Online 会议的设置 (**Set-CsMeetingConfiguration**)，禁止匿名用户自动进入会议 (**-AdmitAnonymousUsersByDefault $False**)，禁止与会者录制会议 (**-AllowConferenceRecording $False**)，并且不将组织中的所有用户指定为演示者 (**-DesignateAsPresenter "None"**)。
   
-如果您改变了主意，想要还原这些默认设置（所有这些已启用），请运行此命令：
+如果改变了主意且希望还原这些默认设置（即启用所有设置），请运行下面的命令：
   
 ```
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceRecording $True -DesignateAsPresenter "Company"
@@ -243,10 +243,10 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> 此命令需要安装[连接到 SharePoint Online PowerShell](https://technet.microsoft.com/library/fp161372.aspx)。 
+> 此命令要求必须安装[连接到 SharePoint Online PowerShell]((https://technet.microsoft.com/library/fp161372.aspx))。 
   
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 获取所有当前 Office 365 订阅 ( **Get SPOSite** ) 中的 SharePoint 站点和每个站点，Ken 迪娜从列表中删除的用户可以访问它 ( **ForEach {删除 SPOUser-网站 $\_。Url-名"kenmyer@litwareinc.com"}** )。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有 SharePoint 网站 (**Get-SPOSite**)，并对每个网站从可以访问它的用户列表中删除 Ken Meyer (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**)。
   
 因为我们让 Office 365 从每个网站删除 Ken Meyer，包括那些他无权访问的网站，此命令的显示将对他当前无权访问的那些网站显示错误。我们可以对此命令使用一个附加条件，使其仅从其登录列表中有 Key Meyer 的网站中删除他，但所列错误对网站本身没有任何坏处。此命令运行数百个网站可能需要几分钟的时间，而通过 Office 365 管理中心运行则需要数小时。
   
@@ -257,7 +257,7 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
 ```
 
 > [!TIP]
->  此 Office 365 PowerShell 命令的解释是： 在当前的 Office 365 订阅以及每个站点获得所有 SharePoint 网站的通过将她登录名添加到网站中的 Members 组允许赵莉莉访问 ( **ForEach {添加 SPOUser 的网站$\_.名为"bkearney@litwareinc.com"的 Url-组"的成员"}** )。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有 SharePoint 网站，并对每个网站将 Bonnie Kearney 的登录名添加到网站成员组以允许她访问 (**ForEach {Add-SPOUser -Site $\_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}**)。
   
 ## <a name="office-365-powershell-is-great-at-filtering-data"></a>Office 365 PowerShell 善于筛选数据
 <a name="filter"> </a>
@@ -276,7 +276,7 @@ Exchange 管理中心还允许您组合筛选条件。例如，您可以查找�
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
 ```
 
-下面是显示的一个示例：
+下面展示了显示内容示例：
   
 ```
 DisplayName                              City
@@ -289,15 +289,15 @@ Zrinka Makovac                           San Diego
 ```
 
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 使所有当前 Office 365 订阅圣地亚哥或想查看柏明顿城市中拥有邮箱的用户 (**其中 {$\_。RecipientTypeDetails-eq"UserMailbox"-和 ($\_。城市 eq"圣地亚哥"-或 $\_。城市的 eq"想查看柏明顿")}** )，然后为每个 （**选择显示名称、 城市**） 中显示的名称和城市。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有在圣地亚哥市或布卢明顿市有邮箱的用户 (**Where {$\_.RecipientTypeDetails -eq "UserMailbox" -and ($\_.City -eq "San Diego" -or $\_.City -eq "Bloomington")}**)，再显示每个用户的用户名和城市 (**Select DisplayName, City**)。
   
-若要列出居住在布卢明顿之外的用户的所有邮箱，命令如下：
+若要列出居住在布卢明顿之外的用户的所有邮箱，可以运行下面的命令：
   
 ```
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and $_.City -ne "Bloomington"} | Select DisplayName, City
 ```
 
-下面是显示的一个示例：
+下面展示了显示内容示例：
   
 ```
 DisplayName                               City
@@ -317,7 +317,7 @@ Janet Schorr                              Bellevue
 ```
 
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 使所有有乐的想查看城市柏明顿在邮箱当前 Office 365 订阅的用户 (**其中 {$\_。RecipientTypeDetails-eq"UserMailbox"-和 $\_。城市-ne"想查看柏明顿"}** )，然后为每个显示的名称和城市。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有拥有的邮箱不在布卢明顿市的用户 (**Where {$\_.RecipientTypeDetails -eq "UserMailbox" -and $\_.City -ne "Bloomington"}**)，再显示每个用户的用户名和城市。
   
 您也可以在 Office 365 PowerShell 筛选器中使用通配符匹配部分名称。例如，假设您正在查找某个用户帐户，但是只记得其姓氏是 Anderson，或也许是 Henderson 或 Jorgenson。
   
@@ -336,7 +336,7 @@ Get-User -Filter '{LastName -like "*son"}'
 ```
 
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 获取所有用户在当前 Office 365 订阅中，但使用的筛选器只列出以"son"结尾的姓氏和名字的用户 ( **-筛选器 {姓氏-像"\*儿子"}** )。\*代表任何一组是在用户的姓氏字母的字符。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有用户，但使用仅列出姓以“son”结尾的用户的筛选器 (**-Filter '{LastName -like "\*son"}'**)。\* 代表任何一组字符；如果是用户的姓，则为字母。
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell 方便打印或保存数据
 <a name="printsave"> </a>
@@ -358,7 +358,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
 ![保存到逗号分隔值 (CSV) 文件的 Skype for Business Online 用户数据的导入到 Excel 工作表的表示例。](images/o365_powershell_data_in_excel.png)
   
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 获得 Skype 的所有当前 Office 365 订阅 ( **Get CsOnlineUser** ) 中的业务在线用户，获取用户名、 UPN 以及位置 (**选择显示名称范围内，UsageLocation** )，然后将保存的 CSV 文件中的信息命名为 c:\\日志\\SfBUsers.csv (**导出 Csv-路径"c:\\日志\\SfBUsers.csv"-NoTypeInformation** )。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有 Skype for Business Online 用户 (**Get-CsOnlineUser**)，仅获取用户名、UPN 和地理位置 (**Select DisplayName, UserPrincipalName, UsageLocation**)，再将信息保存到 CSV 文件 C:\\Logs\\SfBUsers.csv (**Export-Csv -Path "C:\\Logs\\SfBUsers.csv" -NoTypeInformation**)。
   
 您可以使用选项将此列表另存为 XML 文件或 HTML 页。事实上，通过其他 PowerShell 命令，您可以将其直接保存为 Excel 文件，该文件具有所需的所有自定义格式。 
   
@@ -370,14 +370,14 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 打印的文档如下所示：
   
-![列出的 Office 365 PowerShell 命令直接输出到 Windows 中的默认打印机的打印文档的示例。](images/o365_powershell_printed_data.png)
+![通过列出的 Office 365 PowerShell 命令直接输出到 Windows 默认打印机的打印文档示例。](images/o365_powershell_printed_data.png)
   
 > [!TIP]
->  该 Office 365 PowerShell 命令的解释是： 使所有 Skype 的在线业务用户在当前 Office 365 订阅中，获取用户名、 UPN 和地点，并再将该信息发送到默认的 Windows 打印机 ( **Out-Printer** )。
+>  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有 Skype for Business Online 用户，仅获取用户名、UPN 和地理位置，再将信息发送到默认 Windows 打印机 (**Out-Printer**)。
   
-打印的文档具有相同简单的格式显示在 Office 365 PowerShell 命令窗口中，但一旦创建 Office 365 PowerShell 命令列出您的需要您只需添加**|Out-打印机**命令以获取一份硬拷贝从工作的结束。
+打印文档与 Office 365 PowerShell 命令窗口内的显示内容采用相同的简易格式。不过，创建 Office 365 PowerShell 命令列出所需内容后，只需将 **| Out-Printer** 添加到命令末尾，即可获得要操作的打印件。
   
-## <a name="office-365-powershell-lets-you-manage-across-server-products"></a>Office 365 PowerShell 允许您管理各种服务器产品
+## <a name="office-365-powershell-lets-you-manage-across-server-products"></a>Office 365 PowerShell 支持跨服务器产品管理
 <a name="printsave"> </a>
 
 组成 Office 365 的不同组件旨在协同工作。例如，假设您向 Office 365 中添加新用户，并指定诸如用户所属的部门和电话号码之类的信息。您可以通过以下任意一款 Office 365 服务器产品访问此类用户信息：Skype for Business Online、Exchange 或 SharePoint Online。
@@ -415,7 +415,7 @@ foreach ($i in $x)
 $x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB
 ```
 
-下面是显示的一个示例：
+下面展示了显示内容示例：
   
 ```
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
@@ -431,16 +431,16 @@ Katy Jordan             False        True               False
 Molly Dempsey           False        True               False
 ```
 
-此 Office 365 PowerShell 脚本的解释是：  
-- 获取当前 Office 365 订阅中的所有用户，并将信息存储在名为 $x 的变量 ( **$x = Get MsolUser** )。
-- 首先通过在变量名为 $x ( **foreach (在 $x $i)** ) 中的所有用户运行的循环。  
-- 定义名为 $y 的变量，并在其中存储用户的邮箱信息 ( **$y = 获取邮箱-标识 $i.UserPrincipalName** )。
-- 将新属性添加到名为 IsMailBoxEnabled 的用户信息，并将其设置为用户的邮箱的 IsMailBoxEnabled 属性的值 ( **$i |Add-Member-MemberType NoteProperty-IsMailboxEnabled 的名称-值 $y.IsMailboxEnabled** )。
-- 定义名为 $y 的变量，并在其中存储用户的 Skype 的在线业务信息 ( **$y = Get CsOnlineUser-标识 $i.UserPrincipalName** )。
-- 将新属性添加到名为 EnabledForSfB 的用户信息，并将其设置为用户的 Skype 的在线业务信息的可用属性的值 ( **$i |Add-Member-MemberType NoteProperty-EnabledForSfB 的名称-值 $y.Enabled** )。
-- 显示列表中的用户，但包括他们的姓名、 授权是否和两个新属性用来指示他们的邮箱是否已启用以及是否启用它们的 Skype 的在线业务 ( **$x |选择显示名称、 IsLicensed、 IsMailboxEnabled、 EnabledforSfB** )。
+此 Office 365 PowerShell 脚本的解释如下：  
+- 获取当前 Office 365 订阅中的所有用户，并将信息存储在 $x 变量中 (**$x = Get-MsolUser**)。
+- 启动对 $x 变量中的所有用户运行的循环 (**foreach ($i in $x)**)。  
+- 定义 $y 变量，并将用户的邮箱信息存储在其中 (**$y = Get-Mailbox -Identity $i.UserPrincipalName**)。
+- 将新属性添加到 IsMailBoxEnabled 用户信息，并将它设置为用户邮箱的 IsMailBoxEnabled 属性值(**$i | Add-Member -MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled**)。
+- 定义 $y 变量，并将用户的 Skype for Business Online 信息存储在其中 (**$y = Get-CsOnlineUser -Identity $i.UserPrincipalName**)。
+- 将新属性添加到 EnabledForSfB 用户信息，并将它设置为用户的 Skype for Business Online 信息的 Enabled 属性值 (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**)。
+- 显示用户列表，但仅包括用户名、是否获得许可，以及两个指示是否已启用邮箱和是否已启用 Skype for Business Online 的新属性 (**$x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**)。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 
 
 #### 

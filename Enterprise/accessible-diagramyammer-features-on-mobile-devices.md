@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b18f4ae4-cd83-4a66-8e33-a7d5a4c06659
-description: "本文是名为移动设备上的 Yammer 功能的图的可访问文本版本。"
+description: "本文是名为“移动设备上的 Yammer 功能”的图的可访问文本版本。"
 ms.openlocfilehash: 82b73d245264018cd4d0ce17075930682ca2effa
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---yammer-features-on-mobile-devices"></a>可访问的图 - 移动设备上的 Yammer 功能
 
-**摘要：**这篇文章是图名为 Yammer 功能在移动设备上的辅助功能的文本版本。
+**摘要：**本文是“移动设备上的 Yammer 功能”图表的可访问文本版本。
   
 Yammer 通过多个设备平台提供了首选社交体验。此图显示了 Yammer 选项、Yammer 移动设备版和 Yammer 移动应用程序的概述。
   
@@ -46,7 +46,7 @@ Yammer 移动应用程序为用户提供了在公司的社交网络中参与同�
   
 此海报介绍了五项 Yammer 功能，按以下部分排列： 
   
-1. 消息 
+1. 消息  
     
 2. 组 
     
@@ -60,7 +60,7 @@ Yammer 移动应用程序为用户提供了在公司的社交网络中参与同�
 
 在 Yammer 中，所有会话和通信都由消息组成。用户创建和回复消息，这些消息显示在用户的收件箱或用户所关注的组中。 
   
-随附的屏幕截图显示了 Windows Phone 8 上 Yammer 中的"消息"，并介绍了下列任务和功能。 
+随附的屏幕截图显示了 Windows Phone 8 上 Yammer 中的“消息”，并介绍了下列任务和功能。 
   
 - 使用收件箱跟踪和管理 Yammer 中的最重要谈话。收件箱自动汇总 @mentions、组公告、会话及私人消息。 
     
@@ -70,7 +70,7 @@ Yammer 移动应用程序为用户提供了在公司的社交网络中参与同�
     
 - 私人消息允许您与一个或多个同事开始私密对话。您可以随时将更多同事添加到消息中。 
     
-- 使用"按线索组织的会话"可直接在原始消息下方或旁边查看带有回复的多个会话。 
+- 使用“按线索组织的会话”可直接在原始消息下方或旁边查看带有回复的多个会话。 
     
 - 附加图片（来自您的移动设备）到 Yammer 中的消息中。 
     
@@ -82,7 +82,7 @@ Yammer 移动应用程序为用户提供了在公司的社交网络中参与同�
     
 ### <a name="group-features-in-yammer"></a>Yammer 中的组功能
 
-使用 Yammer 中的"组"可收集有关部门通信、下一个活动启动或即将发生的公司事件的相关会话。组会话可应用到团队、项目或共同关注的领域。可以执行下列任务：
+使用 Yammer 中的“组”可收集有关部门通信、下一个活动启动或即将发生的公司事件的相关会话。组会话可应用到团队、项目或共同关注的领域。可以执行下列任务：
   
 > 创建、查找和加入您感兴趣的组。 
     
@@ -152,13 +152,13 @@ Yammer 支持同事间进行全球通信，它提供了：
   
 ### <a name="yammers-three-authentication-options"></a>Yammer 的三个身份验证选项
 
-- Yammer 凭据  通过使用 Yammer 凭据，您可以在 Yammer 的目录服务中创建用户帐户和密码。这些凭据与用于登录组织网络的凭据不同。如果您希望让组织的用户帐户独立于 Yammer 的用户帐户，请选择此选项。
+- Yammer 凭据  通过使用 Yammer 凭据，您可以在 Yammer 的目录服务中创建用户帐户和密码。这些凭据与用于登录组织网络的凭据不同。如果您希望让组织的用户帐户独立于 Yammer 的用户帐户，请选择此选项。
     
-- Yammer 的目录同步  通过实施 Yammer 的目录同步工具，使用向您组织分配的电子邮件地址登录到 Yammer。目录同步从您组织的 Active Directory 域服务中提取一些信息，在 Yammer 中创建匹配的目录信息，然后监视 Active Directory 中的更改日志是否存在对用户帐户的任何更改。例如，当新帐户添加到 Active Directory 时，目录同步会在 Yammer 中创建新帐户；当帐户在 Active Directory 中被禁用时，这些帐户在 Yammer 中将已挂起。 如果您希望用户使用他们用来访问组织网络的相同凭据，并且您未使用联合身份管理系统（例如，Active Directory 联合身份验证服务 (AD FS)），请选择此选项。
+- Yammer 的目录同步  通过实施 Yammer 的目录同步工具，使用向您组织分配的电子邮件地址登录到 Yammer。目录同步从您组织的 Active Directory 域服务中提取一些信息，在 Yammer 中创建匹配的目录信息，然后监视 Active Directory 中的更改日志是否存在对用户帐户的任何更改。例如，当新帐户添加到 Active Directory 时，目录同步会在 Yammer 中创建新帐户；当帐户在 Active Directory 中被禁用时，这些帐户在 Yammer 中将已挂起。 如果您希望用户使用他们用来访问组织网络的相同凭据，并且您未使用联合身份管理系统（例如，Active Directory 联合身份验证服务 (AD FS)），请选择此选项。
     
-- 单一登录 (SSO)  在 Yammer 中使用 SSO 时，用户使用他们用来访问您组织网络的相同凭据登录到 Yammer。进行身份验证时，Yammer 会将身份验证请求重定向到您组织的基于 SAML 的 SSO 服务器。您组织的 SSO 服务器会根据您的身份验证机制使用户自动登录。如果您的组织使用联合身份验证管理系统（例如，AD FS），请选择此选项。
+- 单一登录 (SSO)  在 Yammer 中使用 SSO 时，用户使用他们用来访问您组织网络的相同凭据登录到 Yammer。进行身份验证时，Yammer 会将身份验证请求重定向到您组织的基于 SAML 的 SSO 服务器。您组织的 SSO 服务器会根据您的身份验证机制使用户自动登录。如果您的组织使用联合身份验证管理系统（例如，AD FS），请选择此选项。
     
 > [!IMPORTANT]
->  UNRESOLVED_TOKENBLOCK_VAL(YammerDSyncSSODeprecation) 
+>  Yammer SSO 和 Yammer DSync 即将被弃用，将于 2016 年 12 月 1 日停止运行。2016 年 4 月 1 日后，将无法使用 Yammer SSO 和 DSync 设置新配置。>  建议使用[适用于 Yammer 的 Office 365 登录](https://go.microsoft.com/fwlink/?LinkId=708221)来替代 Yammer SSO。>  建议使用 Azure AD Connect 来替代 Yammer DSync。有关详细信息，请参阅[将本地标识与 Azure Active Directory 集成](http://go.microsoft.com/fwlink/?LinkID=699406)和[了解 Office 365 标识和 Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=708223)。>  若要详细了解弃用以及如何从 Yammer SSO 和 Yammer DSync 迁移，请参阅[计划 Yammer SSO 和 DSync 弃用](https://go.microsoft.com/fwlink/?LinkId=708222)。 
   
 

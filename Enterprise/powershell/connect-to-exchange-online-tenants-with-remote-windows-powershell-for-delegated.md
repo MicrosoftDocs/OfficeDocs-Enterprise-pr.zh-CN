@@ -14,13 +14,13 @@ ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: "摘要：使用 DelegatedOrg 参数，通过远程 Windows PowerShell 连接到 Exchange Online。"
 ms.openlocfilehash: 9bb6a5a316f4bc23c6586da825b8755cf755f484
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>通过远程 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴连接到 Exchange Online 租户
 
- **摘要：**使用远程 Windows PowerShell 使用_DelegatedOrg_参数连接到 Exchange 联机。
+ **摘要：**使用 _DelegatedOrg_ 参数，通过远程 Windows PowerShell 连接到 Exchange Online。
   
 远程 Windows PowerShell 允许您从命令行管理您的 Exchange Online 设置。您在本地计算机上使用 Windows PowerShell 创建到 Exchange Online 的远程会话。这个过程只需三个步骤：输入 Exchange Online 凭据，提供所需的连接设置，然后将 Exchange Online cmdlet 导入到本地 Windows PowerShell 会话以便您可以使用。
   
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/15/2017
 
 - 估计完成时间：5 分钟
     
-- 可以使用以下 Windows 版本：
+- 可以使用下列 Windows 版本：
     
   - Windows 10
     
@@ -65,7 +65,7 @@ DAP 合作伙伴是整合和云解决方案提供商 (CSP) 合作伙伴。它们
 
     在"Windows PowerShell 凭据请求"窗口中，输入您的 DAP 管理员用户名和密码，然后单击"确定"。
     
-2. 运行以下命令，替换_<customer tenant domain name>_与您要连接到组织域的名称。
+2. 运行以下命令，将 _<customer tenant domain name>_ 替换为要连接到的租户域的域名。
     
   ```
   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid?DelegatedOrg=<customer tenant domain name>-Credential $UserCredential -Authentication Basic -AllowRedirection
@@ -82,7 +82,7 @@ DAP 合作伙伴是整合和云解决方案提供商 (CSP) 合作伙伴。它们
 > [!NOTE]
 > 一个帐户下限制可运行三个并发会话。完成后务必断开与远程 Windows PowerShell 会话的连接。如果在不断开会话连接的情况下关闭 Windows PowerShell 窗口，您可能会用完可用的所有远程 Windows PowerShell 会话，然后您需要等待这些会话过期。若要断开远程 Windows PowerShell 会话连接，请运行以下命令。 >  `Remove-PSSession $Session`
   
-## <a name="how-do-you-know-this-worked"></a>您如何知道操作成功？
+## <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 
 执行步骤 3 后，Exchange Online cmdlet 将导入到您的本地 Windows PowerShell 会话，此时会显示一个进度条以便于跟踪。如果未收到任何错误，则说明连接成功。一个快速测试是运行 Exchange Online cmdlet（例如 **Get-Mailbox** ），然后查看结果。
   
@@ -104,7 +104,7 @@ DAP 合作伙伴是整合和云解决方案提供商 (CSP) 合作伙伴。它们
     
 ## <a name="call-the-cmdlet-directly-with-invoke-command"></a>直接使用 Invoke-Command 调用 cmdlet
 
-导入远程 Windows PowerShell 会话可能需要很长时间，因为它会引入所有 Exchange Online cmdlet。这可能会导致在进行批处理时出现问题  例如，当您运行报告或对不同租户进行批量更改时。除了使用 **Import-PSSession** 之外，您可以直接使用 **Invoke-Command** 调用您想使用的 cmdlet。例如，要调用 **get-mailbox** cmdlet，请替换 `Import-PSSession $Session` 的此语法。
+导入远程 Windows PowerShell 会话可能需要很长时间，因为它会引入所有 Exchange Online cmdlet。这可能会导致在进行批处理时出现问题  例如，当您运行报告或对不同租户进行批量更改时。除了使用 **Import-PSSession** 之外，您可以直接使用 **Invoke-Command** 调用您想使用的 cmdlet。例如，要调用 **get-mailbox** cmdlet，请替换 `Import-PSSession $Session` 的此语法。
   
 ```
 Invoke-Command -Session $Session -ScriptBlock {Get-Mailbox}

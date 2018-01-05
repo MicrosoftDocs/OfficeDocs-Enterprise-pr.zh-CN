@@ -14,13 +14,13 @@ ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: "摘要：使用适用于 Office 365 的 Windows PowerShell 管理客户租赁。"
 ms.openlocfilehash: 6001a6b40d2851d13e8fb74da615a2b8137f17ec
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴管理 Office 365 租户
 
- **摘要：**使用 Windows PowerShell 的 Office 365 管理客户云中。
+ **摘要：**使用适用于 Office 365 的 Windows PowerShell 管理客户租赁。
   
 Windows PowerShell 允许 联合和云解决方案提供商 (CSP) 合作伙伴 轻松地管理和报告 Office 365 管理中心中不可用的客户租赁设置。请注意，合作伙伴管理员帐户要连接到其客户租赁，需要代表以下方管理 (AOBO) 权限。
   
@@ -56,7 +56,7 @@ Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object
 
 ### <a name="list-all-domains-for-a-tenant"></a>列出租户的所有域
 
-要获得任何一个客户租户的所有域，请运行以下命令。更换_<customer TenantId value>_与实际值。
+若要获取任一客户租户的所有域，请运行以下命令。将 _<customer TenantId value>_ 替换为实际值。
   
 ```
 Get-MsolDomain -TenantId <customer TenantId value>
@@ -74,7 +74,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### <a name="get-all-users-for-a-tenant"></a>获取租户的所有用户
 
-这将显示特定租户**范围内**，**显示名称**，并为所有用户的**isLicensed**状态。更换_<customer TenantId value>_与实际值。
+这会显示特定租户的所有用户的 **UserPrincipalName**、**DisplayName** 和 **isLicensed** 状态。将 _<customer TenantId value>_ 替换为实际值。
   
 ```
 Get-MsolUser -TenantID <customer TenantId value>
@@ -82,7 +82,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>获取有关用户的所有详细信息
 
-如果您想要查看的特定用户的所有属性，则运行此命令。更换_<customer TenantId value>_和_<user principal name value>_的实际值。
+若要查看特定用户的所有属性，请运行此命令。将 _<customer TenantId value>_ 和 _<user principal name value>_ 替换为实际值。
   
 ```
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>
@@ -112,7 +112,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 
 #### 
 

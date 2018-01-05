@@ -14,13 +14,13 @@ ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的 IMAP 迁移。"
 ms.openlocfilehash: 6187207d57723c9c69fa6fdc7885c91de6d5080f
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>使用 PowerShell 执行将 IMAP 迁移到 Office 365
 
- **摘要：**了解如何使用 Windows PowerShell 执行向 Office 365 的 IMAP 迁移。
+ **摘要：**了解如何使用 Windows PowerShell 执行 IMAP 迁移，以迁移到 Office 365。
   
 作为部署 Office 365 的过程的一部分，您可以选择将 Internet 邮件访问协议 (IMAP) 电子邮件服务中用户邮箱的内容迁移到 Office 365。本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件 IMAP 迁移的任务。 
   
@@ -151,7 +151,7 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
   
 有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
   
-要在 Exchange Online PowerShell 中创建名为"IMAPEndpoint"的 IMAP 迁移终结点，运行以下命令：
+要在 Exchange Online PowerShell 中创建名为“IMAPEndpoint”的 IMAP 迁移终结点，运行以下命令：
   
 ```
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 993 -Security Ssl
@@ -169,7 +169,7 @@ New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -P
   
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
-在 Exchange Online PowerShell 中运行以下命令来显示有关"IMAPEndpoint"的信息：
+在 Exchange Online PowerShell 中运行以下命令来显示有关“IMAPEndpoint”的信息：
   
 ```
 Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,Security,Max*
@@ -180,7 +180,7 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 
 您可以使用 [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536439) cmdlet 为 IMAP 迁移创建迁移批处理。您可以通过包括 _AutoStart_ 参数来创建迁移批处理并自动启动。或者，您可以创建迁移批处理，然后通过使用[Start-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536440) cmdlet 启动它。
   
-以下 Exchange Online PowerShell 命令会自动使用名为"IMAPEndpoint"的 IMAP 终结点来启动名为"IMAPBatch1"的迁移批处理。
+以下 Exchange Online PowerShell 命令会自动使用名为“IMAPEndpoint”的 IMAP 终结点来启动名为“IMAPBatch1”的迁移批处理。
   
 ```
 New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\\Users\\Administrator\\Desktop\\IMAPmigration_1.csv")) -AutoStart
@@ -218,7 +218,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
     
 - 当邮件开始直接发送到 Office 365 邮箱以后，这些邮箱至少会同步一次。为此，确保迁移批处理的"上次同步时间"框中的值是最近时间，而不是邮件开始直接路由到 Office 365 邮箱的时间。
     
-要从 Exchange Online PowerShell 中删除"IMAPBatch1"迁移批处理，请运行以下命令：
+要从 Exchange Online PowerShell 中删除“IMAPBatch1”迁移批处理，请运行以下命令：
   
 ```
 Remove-MigrationBatch -Identity IMAPBatch1
@@ -228,7 +228,7 @@ Remove-MigrationBatch -Identity IMAPBatch1
   
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
-在 Exchange Online PowerShell 中运行以下命令来显示有关"IMAPBatch1"的信息：
+在 Exchange Online PowerShell 中运行以下命令来显示有关“IMAPBatch1”的信息：
   
 ```
 Get-MigrationBatch IMAPBatch1"
@@ -238,7 +238,7 @@ Get-MigrationBatch IMAPBatch1"
   
 有关 **Get-MigrationBatch** cmdlet 的详细信息，请参阅[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441)。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 
 #### 
 

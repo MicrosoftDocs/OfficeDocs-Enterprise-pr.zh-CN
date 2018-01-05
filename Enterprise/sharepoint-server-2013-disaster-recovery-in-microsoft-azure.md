@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Azure 中的 SharePoint Server 2013 灾难恢复"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "摘要：使用 Azure，您可以为您的内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。"
-ms.openlocfilehash: 79469b862dbc18a34b09d638879e199869de880a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
@@ -371,7 +371,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>阶段 6：设置到恢复场的日志传送
 <a name="Phase6"> </a>
 
-日志传送是在此环境中设置灾难恢复的关键组件。您可以使用日志传送，将数据库的事务日志文件从主数据库服务器实例自动传送到辅助数据库服务器实例。要设置日志传送，请参阅[Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)。 
+日志传送是在此环境中设置灾难恢复的关键组件。您可以使用日志传送，将数据库的事务日志文件从主数据库服务器实例自动传送到辅助数据库服务器实例。要设置日志传送，请参阅[Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx))。 
   
 > [!IMPORTANT]
 > SharePoint Server 中的日志传送支持仅限于特定数据库。有关详细信息，请参阅 [SharePoint 数据库的受支持的高可用性和灾难恢复选项 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)。 
@@ -438,9 +438,9 @@ restore database WSS_Content with recovery
 ```
 
 > [!IMPORTANT]
-> 明确使用 T-SQL 时，在每个 RESTORE 语句中指定 **WITH NORECOVERY** 或 **WITH RECOVERY** 以消除歧义这在编写脚本时非常重要。还原完整和差异备份后，可以在 SQL Server Management Studio 中还原事务日志。此外，由于日志传送已停止，内容数据库处于备用状态，因为您必须将状态更改为完全访问。
+> 明确使用 T-SQL 时，在每个 RESTORE 语句中指定 **WITH NORECOVERY** 或 **WITH RECOVERY** 以消除歧义这在编写脚本时非常重要。还原完整和差异备份后，可以在 SQL Server Management Studio 中还原事务日志。此外，由于日志传送已停止，内容数据库处于备用状态，因为您必须将状态更改为完全访问。
   
-在 SQL Server 管理 Studio 中，用鼠标右键单击**WSS_Content**数据库，指向**任务** > **还原**，然后单击**事务日志**（如果不还原完整备份，这将不可用）。有关详细信息，请参阅[还原事务日志备份 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778)。
+在 SQL Server Management Studio 中，右键单击“WSS_Content”****数据库，依次指向“任务”**** > “还原”****，再单击“事务日志”****（如果还没有还原完整备份，则不可用）。有关详细信息，请参阅[还原事务日志备份 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778)。
   
 ### <a name="crawl-the-content-source"></a>对内容源进行爬网
 
@@ -649,7 +649,7 @@ SharePoint 服务器场分两个阶段部署，以便在必要时简化环境稳
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Get-ADForest Windows PowerShell 命令会生成错误："术语'Get-ADForest'未识别为 cmdlet、函数、脚本文件或可运行程序的名称。"
 
-当设置用户配置文件，您需要活动目录林的名称。在添加角色和功能向导中，确保启用了活动目录模块用于 Windows PowerShell (在**远程服务器管理工具 > 角色管理工具 > AD DS 和 AD LDS 工具**节)。此外，运行以下命令，然后再使用**Get ADForest**有助于确保您的软件会加载依赖项。
+设置用户配置文件时，需要 Active Directory 林名称。在“添加角色和功能”向导中，确保已启用用于 Windows PowerShell 的 Active Directory 模块（依次转到“远程服务器管理工具”>“角色管理工具”>“AD DS 和 AD LDS 工具”****部分下）。此外，先运行以下命令，再使用 **Get-ADForest**，以确保已加载软件依赖项。
   
 ```
 Import-module servermanager
@@ -688,7 +688,7 @@ Ipconfig /flushdns
   
 [为 SharePoint 2013 配置 SQL Server 2012 AlwaysOn 可用性组](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 <a name="Troubleshooting"> </a>
 

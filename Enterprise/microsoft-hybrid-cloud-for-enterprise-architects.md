@@ -19,7 +19,7 @@ ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "摘要： IT 架构师需要了解的有关使用 Microsoft 云服务和平台的混合方案的知识。"
 ms.openlocfilehash: 46e9a6cead44f5392d3ae228dbb5e7f9285bf891
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,13 +29,13 @@ ms.lasthandoff: 12/15/2017
   
 本文可链接至一组文章，这些文章介绍了 IT 架构师使用 Microsoft 云服务和平台的混合体系结构和配置所需要了解的内容。此外，还可以浏览本文的 7 页海报内容，以文摘格式进行打印（也称为分类帐、11 x 17 或 A3）。
   
-[![Microsoft 的混合云模型的缩略图图像](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+[![模型缩略图：Microsoft 混合云](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-![PDF 文件](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)的 Visio 文件 | ![其他语言版本的页面，请参阅](images/Common_Images/GlobeIcon.png)
-[更多的语言](https://www.microsoft.com/download/details.aspx?id=54424)
+![PDF 文件](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio 文件](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![参阅包含其他语言版本的页面](images/Common_Images/GlobeIcon.png)
+[更多语言](https://www.microsoft.com/download/details.aspx?id=54424)
   
-此外可以查看所有[Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的模型，然后通过刷卡[Microsoft 的企业云路线图： IT 决策者的资源](https://aka.ms/cloudarchitecture)。
+还可以查看 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的所有模型，逐一浏览 [Microsoft 企业云路线图：IT 决策者的资源]((https://aka.ms/cloudarchitecture))。
   
 请参阅以下部分：
   
@@ -62,11 +62,11 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > 这些文章反映的是面向企业架构师的 Microsoft 混合云的 **2017 年 6 月** 版本海报。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

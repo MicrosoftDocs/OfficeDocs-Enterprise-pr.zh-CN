@@ -15,24 +15,24 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: "了解如何使用 Office 365 PowerShell 删除和还原 Office 365 的用户帐户。"
+description: "了解如何使用 Office 365 PowerShell 删除和还原 Office 365 用户帐户。"
 ms.openlocfilehash: 8404395ea9594cea1a2e772cecbeb011756b7754
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除和还原用户账户
 
-**摘要：** 了解如何使用 Office 365 PowerShell 删除和还原 Office 365 的用户帐户。
+**摘要：**了解如何使用 Office 365 PowerShell 删除和还原 Office 365 用户帐户。
   
 当您使用 Office 365 PowerShell 删除用户帐户时，该帐户不会被永久删除。您可以在 30 天内还原已删除的用户帐户。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
     
-- 如果使用**Get MsolUser** cmdlet 而不使用_的所有_参数，返回前 500 个客户。
+- 如果使用 **Get-MsolUser** cmdlet，而未使用 _-All_ 参数，只返回前 500 个帐户。
     
 ## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>使用 Office 365 PowerShell 阻止对单个用户帐户的访问
 <a name="ShortVersion"> </a>
@@ -74,7 +74,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a>使用 Azure Active Directory V2 PowerShell 模块删除用户帐户
 <a name="ShortVersion"> </a>
 
-若要使用**删除 AzureADUser** cmdlet 从 Azure 活动目录 V2 PowerShell 模块，必须首先连接到您的订购。有关说明，请参阅[使用 Azure 活动目录 V2 PowerShell 模块连接](https://go.microsoft.com/fwlink/?linkid=842218)。
+若要使用 Azure Active Directory V2 PowerShell 模块中的 **Remove-AzureADUser** cmdlet，必须先连接到订阅。有关说明，请参阅[使用 Azure Active Directory V2 PowerShell 模块连接](https://go.microsoft.com/fwlink/?linkid=842218)。
   
 连接后，使用下列语法删除单个用户帐户：
   
@@ -115,7 +115,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 ## <a name="see-also"></a>另请参阅
 <a name="SeeAlso"> </a>
 
-这些有关管理用户使用 Office 365 PowerShell 的其他主题，请参阅：
+若要了解如何使用 Office 365 PowerShell 管理用户，请参阅下面这些附加主题：
   
 - [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
     
