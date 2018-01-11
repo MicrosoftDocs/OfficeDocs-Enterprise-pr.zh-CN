@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: "摘要： Office 365 标签和数据丢失防护 (DLP) 将策略应用各种级别的信息保护的 SharePoint Online 团队站点的。"
-ms.openlocfilehash: 502a899c586114644bb59a2d55ca388c819f7777
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: dd4f71d8fae458d6d20f7a5b35b46e14a72853f1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 标签和 DLP 与 SharePoint Online 文件保护
 
@@ -161,7 +158,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
     或者，键入或粘贴您的策略提示，指导用户如何共享您的组织之外的文件中。
     
-16. 单击"确定"。
+16. 单击“**确定**”。
     
 17. 在**您想要我们检测敏感信息办？**窗格中，清除**阻止某些人共享，并限制对内容的访问**复选框，然后单击**下一步**。
     
@@ -209,7 +206,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
     或者，键入或粘贴您的策略提示，指导用户如何共享您的组织之外的文件中。
     
-16. 单击"确定"。
+16. 单击“**确定**”。
     
 17. 在**您想要我们检测敏感信息办？**窗格中，选择**需要重写的理由**，然后再单击**下一步**。
     
@@ -225,7 +222,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
 
 [SharePoint Online Azure 的信息保护文件保护](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [SharePoint Online 网站和文件保护](secure-sharepoint-online-sites-and-files.md)
   

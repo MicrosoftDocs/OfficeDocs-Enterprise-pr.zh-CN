@@ -11,14 +11,13 @@ localization_priority: Normal
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "了解如何将许可证分配给用户帐户，并在同一时间使用 Office 365 PowerShell 禁用特定的服务计划。"
-ms.openlocfilehash: 907314e13b353e5d5ddbcd8fe467db568473d0b3
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 96ce12f811ee147a92da6b6928c2f6e3391c9b1f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>在分配用户许可时，禁用对服务的访问
 
@@ -63,7 +62,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
   
 这里是服务计划和其相应的 Office 365 提供服务的部分列表。
   
-|**服务计划**|**描述**|
+|**服务计划**|**说明**|
 |:-----|:-----|
 |SWAY  <br/> |Sway  <br/> |
 |INTUNE_O365  <br/> |Office 365 移动设备管理  <br/> |
@@ -150,7 +149,7 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
     
 - 与已处理的所有用户创建 CSV 文件，并显示其许可证状态。
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 
 #### 
 

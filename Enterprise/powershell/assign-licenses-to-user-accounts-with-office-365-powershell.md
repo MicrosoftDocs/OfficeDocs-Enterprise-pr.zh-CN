@@ -12,16 +12,15 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: "解释如何使用 Office 365 PowerShell 分派给未经授权的用户的 Office 365 提供许可证。"
-ms.openlocfilehash: 7120b5d61b98f401f9ec1830598f20fbcbecdb66
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 88628a78179605c734cd1d3f114a8a1dcb712376
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 向用户帐户分配许可证
 
@@ -227,14 +226,14 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 |:-----|
 |![LinkedIn 学习的短图标](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 提供指向新建？**        [Office 365 管理员和 IT 专业人员使用](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)，LinkedIn 学习者发现免费视频课程。 |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 <a name="SeeAlso"> </a>
 
 请参阅下面有关使用 Office 365 PowerShell 管理用户的其他主题：
   
 - [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
     
-- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 删除和还原用户帐户](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [使用 Office 365 PowerShell 冻结用户账户](block-user-accounts-with-office-365-powershell.md)
     
@@ -244,11 +243,11 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
   
 - [获得 MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
     
-- [获得 MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
 - [一组 MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
-- [ForEach 对象](https://go.microsoft.com/fwlink/p/?LinkId=113300)
+- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
 - [选择对象](https://go.microsoft.com/fwlink/p/?LinkId=113387)
     

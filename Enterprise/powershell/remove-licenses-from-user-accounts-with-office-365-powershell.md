@@ -14,14 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 - O365ITProTrain
-- DecEntMigration
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: "解释如何使用 Office 365 PowerShell 删除先前已指派给用户的 Office 365 提供许可证。"
-ms.openlocfilehash: 90cae603a7a7cda0b7318571d3eb045f750fd58d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d419aab9b3287364567e03accdfb2e687eacb0de
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户的许可证
 
@@ -37,7 +36,7 @@ ms.lasthandoff: 12/15/2017
     
   - [使用 Office 365 PowerShell 查看帐户许可证和服务详细信息](view-account-license-and-service-details-with-office-365-powershell.md)
     
-- 如果使用**Get MsolUser** cmdlet 而不使用_的所有_参数，返回前 500 个客户。
+- 如果使用 **Get-MsolUser** cmdlet，而未使用 _-All_ 参数，只返回前 500 个帐户。
     
 ## <a name="the-short-version-instructions-without-explanations"></a>简版（说明不含解释）
 <a name="ShortVersion"> </a>
@@ -148,7 +147,7 @@ BelindaN@litwareinc.com      Newman, Belinda     False
   
 - [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
     
-- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 删除和还原用户帐户](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [使用 Office 365 PowerShell 冻结用户账户](block-user-accounts-with-office-365-powershell.md)
     
@@ -158,11 +157,11 @@ BelindaN@litwareinc.com      Newman, Belinda     False
   
 - [获取内容](https://go.microsoft.com/fwlink/p/?LinkId=289917)
     
-- [获得 MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
 - [一组 MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
-- [ForEach 对象](https://go.microsoft.com/fwlink/p/?LinkId=113300)
+- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
 - [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
     

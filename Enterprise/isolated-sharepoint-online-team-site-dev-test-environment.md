@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "摘要： 配置 Office 365 开发/测试环境中组织的其余部分隔离的 SharePoint Online 工作组网站。"
-ms.openlocfilehash: a5e36060ed54213f555ab75a1d4ace7300b7667c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e54edb0111fd3285030a3074b5ec66a0c9224d29
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>SharePoint Online 的团队站点开发/测试环境的独立
 
@@ -285,7 +282,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 当您准备部署在生产环境中的独立的 SharePoint Online 工作组网站时，请参阅[设计独立的在线 SharePoint 工作组网站](design-an-isolated-sharepoint-online-team-site.md)中的分步设计考虑事项。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [SharePoint Online 的独立的团队站点](isolated-sharepoint-online-team-sites.md)
   

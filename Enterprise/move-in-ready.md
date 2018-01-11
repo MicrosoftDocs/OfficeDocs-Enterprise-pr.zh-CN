@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "摘要： 获得详细信息，在云套上的内置微软云产品的存储选项。"
-ms.openlocfilehash: 341b530f3b4348a4111cdd8e9741d0e5696e652e
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8c97742c5538acb73fe9dd6491ce85049990ecc0
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="move-in-ready"></a>中移动已准备好
 
@@ -276,9 +272,9 @@ ms.lasthandoff: 12/15/2017
 
 检查的[某些程序集所需](some-assembly-required.md)的云存储选项。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
-[企业架构师的 Microsoft 云存储](microsoft-cloud-storage-for-enterprise-architects.md)
+[面向企业架构师的 Microsoft 云存储](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 

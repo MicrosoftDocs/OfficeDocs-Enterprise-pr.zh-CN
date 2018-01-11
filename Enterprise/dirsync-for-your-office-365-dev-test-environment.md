@@ -8,22 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: "摘要： 需要配置目录同步为您 Office 365 的开发/测试环境。"
-ms.openlocfilehash: da9a0070587c50ea9fc2f33612fb4885d6eaf695
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d8a663367e61ac3f01e67f4d3731a0dccdd5a222
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="dirsync-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的 DirSync
 
@@ -121,7 +117,7 @@ Stop-Process -Name Explorer -Force
 
 现在可以为您的组织中部署目录同步，请参阅[部署 Office 365 目录同步 （目录同步） Microsoft Azure 中](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)。
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
 description: "摘要： 获取组可用于创建定制的存储解决方案的云存储选项的详细信息。"
-ms.openlocfilehash: bf6f7586b3a890cd25aba314e4892d5e2ac5bb34
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: bcfc5d851a3f3b0d987214c4ea22e669db3a53ee
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="some-assembly-required"></a>一些所需的程序集
 
@@ -156,7 +152,7 @@ ms.lasthandoff: 12/15/2017
   
 ![SQL Server 2016 中的 Stretch Database。](images/Storage_Poster/CloudStor-Stretch.png)
   
-以透明方式将包含历史数据的用户查询转发到 Azure SQL Stretch Database。即使表已扩展，也无需重新写入这些查询。
+包含历史数据的用户查询以透明的方式转发到 Azure SQL Stretch Database。即使延伸表，也不需要对查询进行重新编写。
   
 Stretch Database 提供经济高效的选项，用于历史数据的长期存储和透明访问。它还解决了表变大时出现的性能和可用性问题。
   
@@ -406,9 +402,9 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
 
 复查的[从头构建](build-from-the-ground-up.md)云存储选项。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
-[企业架构师的 Microsoft 云存储](microsoft-cloud-storage-for-enterprise-architects.md)
+[面向企业架构师的 Microsoft 云存储](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
