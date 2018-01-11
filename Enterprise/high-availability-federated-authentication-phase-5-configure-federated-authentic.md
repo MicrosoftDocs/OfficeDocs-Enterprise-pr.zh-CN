@@ -72,7 +72,7 @@ ms.lasthandoff: 01/11/2018
   
 1. <span data-ttu-id="c801e-135">使用具有本地管理员特权的域帐户创建到目录同步服务器的远程桌面连接。</span><span class="sxs-lookup"><span data-stu-id="c801e-135">Create a remote desktop connection to your DirSync server with a domain account that has local administrator privileges.</span></span>
     
-2. <span data-ttu-id="c801e-136">从目录同步服务器的桌面，打开"Internet Explorer"，然后转到 [(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect))。</span><span class="sxs-lookup"><span data-stu-id="c801e-136">From the desktop of the DirSync server, open Internet Explorer and go to [(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect)).</span></span>
+2. <span data-ttu-id="c801e-136">从目录同步服务器的桌面，打开"Internet Explorer"，然后转到 [(https://aka.ms/aadconnect)](https://aka.ms/aadconnect)。</span><span class="sxs-lookup"><span data-stu-id="c801e-136">From the desktop of the DirSync server, open Internet Explorer and go to [(https://aka.ms/aadconnect)](https://aka.ms/aadconnect).</span></span>
     
 3. <span data-ttu-id="c801e-137">在"Microsoft Azure Active Directory Connect"页上，单击"下载"，然后单击"运行"。</span><span class="sxs-lookup"><span data-stu-id="c801e-137">On the **Microsoft Azure Active Directory Connect** page, click **Download**, and then click **Run**.</span></span>
     

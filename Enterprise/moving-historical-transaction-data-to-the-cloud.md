@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="1c3e9-114">图 1 显示了 SQL 客户端如何向运行 SQL Server 2016 的服务器发送 T-SQL 查询，该服务将它们转发到 Azure PaaS 中的 Azure SQL Stretch Database。</span><span class="sxs-lookup"><span data-stu-id="1c3e9-114">Figure 1 shows how a SQL client sends T-SQL queries to a server running SQL Server 2016, which forwards them to an Azure SQL Stretch Database in Azure PaaS.</span></span>
   
-<span data-ttu-id="1c3e9-115">有关详细信息，请参阅 [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))。</span><span class="sxs-lookup"><span data-stu-id="1c3e9-115">For more information, see [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).</span></span>
+<span data-ttu-id="1c3e9-115">有关详细信息，请参阅 [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1c3e9-115">For more information, see [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span></span>
   
 <span data-ttu-id="1c3e9-116">Contoso 使用这些步骤将其历史数据移动到云：</span><span class="sxs-lookup"><span data-stu-id="1c3e9-116">Contoso used these steps to move their historical data to the cloud:</span></span>
   
@@ -75,9 +75,9 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="1c3e9-140">Microsoft 云 IT 体系结构资源</span><span class="sxs-lookup"><span data-stu-id="1c3e9-140">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="1c3e9-141">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span><span class="sxs-lookup"><span data-stu-id="1c3e9-141">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span></span>
+<span data-ttu-id="1c3e9-141">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span><span class="sxs-lookup"><span data-stu-id="1c3e9-141">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span></span>
   
-<span data-ttu-id="1c3e9-142">[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="1c3e9-142">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="1c3e9-142">[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="1c3e9-142">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

@@ -70,7 +70,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="5b8cd-130">SSL 卸载</span><span class="sxs-lookup"><span data-stu-id="5b8cd-130">SSL offload</span></span>
     
-<span data-ttu-id="5b8cd-131">有关详细信息，请参阅[应用程序网关]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction))。</span><span class="sxs-lookup"><span data-stu-id="5b8cd-131">For more information, see [Application Gateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).</span></span>
+<span data-ttu-id="5b8cd-131">有关详细信息，请参阅[应用程序网关](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)。</span><span class="sxs-lookup"><span data-stu-id="5b8cd-131">For more information, see [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span></span>
   
 ## <a name="azure-traffic-manager"></a><span data-ttu-id="5b8cd-132">Azure 流量管理器</span><span class="sxs-lookup"><span data-stu-id="5b8cd-132">Azure Traffic Manager</span></span>
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/11/2018
     
 2. <span data-ttu-id="5b8cd-144">用户启动与欧洲区域 Web 应用之间的流量。</span><span class="sxs-lookup"><span data-stu-id="5b8cd-144">The user initiates traffic with the regional web app in Europe.</span></span>
     
-<span data-ttu-id="5b8cd-145">有关详细信息，请参阅[流量管理器]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview))。</span><span class="sxs-lookup"><span data-stu-id="5b8cd-145">For more information, see [Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).</span></span>
+<span data-ttu-id="5b8cd-145">有关详细信息，请参阅[流量管理器](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)。</span><span class="sxs-lookup"><span data-stu-id="5b8cd-145">For more information, see [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="5b8cd-146">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5b8cd-146">See Also</span></span>
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="5b8cd-148">Microsoft 云 IT 体系结构资源</span><span class="sxs-lookup"><span data-stu-id="5b8cd-148">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="5b8cd-149">[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="5b8cd-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="5b8cd-149">[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="5b8cd-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

@@ -112,7 +112,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="f5e3b-p108">Stretch Database 提供经济高效的选项，用于历史数据的长期存储和透明访问。它还解决了表变大时出现的性能和可用性问题。</span><span class="sxs-lookup"><span data-stu-id="f5e3b-p108">Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.</span></span>
   
-<span data-ttu-id="f5e3b-160">有关详细信息，请参阅 [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))。</span><span class="sxs-lookup"><span data-stu-id="f5e3b-160">For more information, see [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).</span></span>
+<span data-ttu-id="f5e3b-160">有关详细信息，请参阅 [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)。</span><span class="sxs-lookup"><span data-stu-id="f5e3b-160">For more information, see [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="f5e3b-161">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f5e3b-161">See Also</span></span>
 
@@ -120,7 +120,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="f5e3b-163">Microsoft 云 IT 体系结构资源</span><span class="sxs-lookup"><span data-stu-id="f5e3b-163">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="f5e3b-164">[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="f5e3b-164">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="f5e3b-164">[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="f5e3b-164">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

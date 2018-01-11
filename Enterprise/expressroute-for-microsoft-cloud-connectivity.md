@@ -60,9 +60,9 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="798b7-132">有关详细信息，请参阅下列更多资源：</span><span class="sxs-lookup"><span data-stu-id="798b7-132">See these additional resources for more information:</span></span>
   
-- <span data-ttu-id="798b7-133">[面向 Office 365 的 ExpressRoute]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="798b7-133">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="798b7-133">[面向 Office 365 的 ExpressRoute](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="798b7-133">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
-- <span data-ttu-id="798b7-134">[ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))（面向 Azure 的 ExpressRoute）</span><span class="sxs-lookup"><span data-stu-id="798b7-134">[ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))</span></span>
+- <span data-ttu-id="798b7-134">[ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)（面向 Azure 的 ExpressRoute）</span><span class="sxs-lookup"><span data-stu-id="798b7-134">[ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)</span></span>
     
 ## <a name="advantages-of-expressroute-for-azure"></a><span data-ttu-id="798b7-135">面向 Azure 的 ExpressRoute 的优点</span><span class="sxs-lookup"><span data-stu-id="798b7-135">Advantages of ExpressRoute for Azure</span></span>
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="798b7-p108">ExpressRoute 连接不能保证每一种配置的性能都会提高。通过低带宽 ExpressRoute 连接实现的性能比高带宽 Internet 连接低，在后一种情况下，与区域性 Microsoft 数据中心仅隔几个跃点。</span><span class="sxs-lookup"><span data-stu-id="798b7-p108">An ExpressRoute connection is not a guarantee of higher performance in every configuration. It is possible to have lower performance over a low-bandwidth ExpressRoute connection than a high-bandwidth Internet connection that is only a few hops away from a regional Microsoft datacenter.</span></span>
   
-<span data-ttu-id="798b7-145">有关使用适用于 Office 365 的 ExpressRoute，请参阅[适用于 Office 365 的 ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))。</span><span class="sxs-lookup"><span data-stu-id="798b7-145">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).</span></span>
+<span data-ttu-id="798b7-145">有关使用适用于 Office 365 的 ExpressRoute，请参阅[适用于 Office 365 的 ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)。</span><span class="sxs-lookup"><span data-stu-id="798b7-145">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span></span>
   
 ## <a name="expressroute-connectivity-models"></a><span data-ttu-id="798b7-146">ExpressRoute 连接模型</span><span class="sxs-lookup"><span data-stu-id="798b7-146">ExpressRoute connectivity models</span></span>
 
@@ -235,11 +235,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="798b7-246">有关详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="798b7-246">For more information, see:</span></span>
   
-- <span data-ttu-id="798b7-247">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))（Azure ExpressRoute for Office 365 培训）</span><span class="sxs-lookup"><span data-stu-id="798b7-247">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))</span></span>
+- <span data-ttu-id="798b7-247">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)（Azure ExpressRoute for Office 365 培训）</span><span class="sxs-lookup"><span data-stu-id="798b7-247">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)</span></span>
     
-- <span data-ttu-id="798b7-248">[Office 365 的网络规划和性能调整 365]((https://aka.ms/tune))</span><span class="sxs-lookup"><span data-stu-id="798b7-248">[Network planning and performance tuning for Office 365]((https://aka.ms/tune))</span></span>
+- <span data-ttu-id="798b7-248">[Office 365 的网络规划和性能调整 365](https://aka.ms/tune)</span><span class="sxs-lookup"><span data-stu-id="798b7-248">[Network planning and performance tuning for Office 365](https://aka.ms/tune)</span></span>
     
-- <span data-ttu-id="798b7-249">[Office 365 Performance Management]((https://mva.microsoft.com/zh-CN/training-courses/office-365-performance-management-8416))（Office 365 的性能管理）</span><span class="sxs-lookup"><span data-stu-id="798b7-249">[Office 365 Performance Management]((https://mva.microsoft.com/zh-CN/training-courses/office-365-performance-management-8416))</span></span>
+- <span data-ttu-id="798b7-249">[Office 365 Performance Management](https://mva.microsoft.com/zh-CN/training-courses/office-365-performance-management-8416)（Office 365 的性能管理）</span><span class="sxs-lookup"><span data-stu-id="798b7-249">[Office 365 Performance Management](https://mva.microsoft.com/zh-CN/training-courses/office-365-performance-management-8416)</span></span>
     
 ## <a name="expressroute-options"></a><span data-ttu-id="798b7-250">ExpressRoute 选项</span><span class="sxs-lookup"><span data-stu-id="798b7-250">ExpressRoute options</span></span>
 
@@ -255,11 +255,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="798b7-260">有关详细信息，请参阅下列更多资源：</span><span class="sxs-lookup"><span data-stu-id="798b7-260">See these additional resources for more information:</span></span>
   
-- <span data-ttu-id="798b7-261">[面向 Office 365 的 ExpressRoute]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="798b7-261">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="798b7-261">[面向 Office 365 的 ExpressRoute](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="798b7-261">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
-- <span data-ttu-id="798b7-262">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))（Azure ExpressRoute for Office 365 培训）</span><span class="sxs-lookup"><span data-stu-id="798b7-262">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))</span></span>
+- <span data-ttu-id="798b7-262">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)（Azure ExpressRoute for Office 365 培训）</span><span class="sxs-lookup"><span data-stu-id="798b7-262">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)</span></span>
     
-- <span data-ttu-id="798b7-263">[ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))（面向 Azure 的 ExpressRoute）</span><span class="sxs-lookup"><span data-stu-id="798b7-263">[ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))</span></span>
+- <span data-ttu-id="798b7-263">[ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)（面向 Azure 的 ExpressRoute）</span><span class="sxs-lookup"><span data-stu-id="798b7-263">[ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="798b7-264">另请参阅</span><span class="sxs-lookup"><span data-stu-id="798b7-264">See Also</span></span>
 
@@ -267,7 +267,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="798b7-266">Microsoft 云 IT 体系结构资源</span><span class="sxs-lookup"><span data-stu-id="798b7-266">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="798b7-267">[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="798b7-267">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="798b7-267">[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="798b7-267">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

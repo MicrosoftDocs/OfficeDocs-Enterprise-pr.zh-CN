@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="c31e1-162">此外，还要优化 Intranet 连接吞吐量（有线、无线或 VPN）。</span><span class="sxs-lookup"><span data-stu-id="c31e1-162">Additionally, optimize intranet connection throughput (wired, wireless, or VPN).</span></span>
   
-<span data-ttu-id="c31e1-163">有关详细信息，请参阅[与 Office 365 的 NAT 支持]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9))。</span><span class="sxs-lookup"><span data-stu-id="c31e1-163">For more information, see [NAT support with Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).</span></span>
+<span data-ttu-id="c31e1-163">有关详细信息，请参阅[与 Office 365 的 NAT 支持](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)。</span><span class="sxs-lookup"><span data-stu-id="c31e1-163">For more information, see [NAT support with Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).</span></span>
   
-<span data-ttu-id="c31e1-164">有关使用适用于 Office 365 的 ExpressRoute，请参阅[适用于 Office 365 的 ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))。</span><span class="sxs-lookup"><span data-stu-id="c31e1-164">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).</span></span>
+<span data-ttu-id="c31e1-164">有关使用适用于 Office 365 的 ExpressRoute，请参阅[适用于 Office 365 的 ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)。</span><span class="sxs-lookup"><span data-stu-id="c31e1-164">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span></span>
   
 <span data-ttu-id="c31e1-165">若要优化你的 Intranet 性能，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="c31e1-165">To optimize your intranet performance, do the following:</span></span>
   
@@ -150,7 +150,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="c31e1-168">对中间设备（年限、健康状况等）进行分析</span><span class="sxs-lookup"><span data-stu-id="c31e1-168">Perform analysis of intermediate devices (age, health, etc.)</span></span>
     
-<span data-ttu-id="c31e1-169">有关详细信息，请参阅 [PsPing 工具]((https://technet.microsoft.com/sysinternals/jj729731.aspx))。</span><span class="sxs-lookup"><span data-stu-id="c31e1-169">For more information, see the [PsPing tool]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).</span></span>
+<span data-ttu-id="c31e1-169">有关详细信息，请参阅 [PsPing 工具](https://technet.microsoft.com/sysinternals/jj729731.aspx)。</span><span class="sxs-lookup"><span data-stu-id="c31e1-169">For more information, see the [PsPing tool](https://technet.microsoft.com/sysinternals/jj729731.aspx).</span></span>
   
 ## <a name="it-operations-considerations"></a><span data-ttu-id="c31e1-170">IT 操作的注意事项</span><span class="sxs-lookup"><span data-stu-id="c31e1-170">IT operations considerations</span></span>
 
@@ -180,11 +180,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="c31e1-183">有关详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="c31e1-183">For more information, see:</span></span>
   
-- <span data-ttu-id="c31e1-184">[Office 365 的网络和迁移规划]((https://aka.ms/tune))</span><span class="sxs-lookup"><span data-stu-id="c31e1-184">[Network and migration planning for Office 365]((https://aka.ms/tune))</span></span>
+- <span data-ttu-id="c31e1-184">[Office 365 的网络和迁移规划](https://aka.ms/tune)</span><span class="sxs-lookup"><span data-stu-id="c31e1-184">[Network and migration planning for Office 365](https://aka.ms/tune)</span></span>
     
-- <span data-ttu-id="c31e1-185">[Office 365 性能管理 Microsoft Virtual Academy 课程]((https://aka.ms/o365perf))</span><span class="sxs-lookup"><span data-stu-id="c31e1-185">[Office 365 Performance Management Microsoft Virtual Academy course]((https://aka.ms/o365perf))</span></span>
+- <span data-ttu-id="c31e1-185">[Office 365 性能管理 Microsoft Virtual Academy 课程](https://aka.ms/o365perf)</span><span class="sxs-lookup"><span data-stu-id="c31e1-185">[Office 365 Performance Management Microsoft Virtual Academy course](https://aka.ms/o365perf)</span></span>
     
-- <span data-ttu-id="c31e1-186">[面向 Office 365 的 ExpressRoute]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="c31e1-186">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="c31e1-186">[面向 Office 365 的 ExpressRoute](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="c31e1-186">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="c31e1-187">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c31e1-187">See Also</span></span>
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="c31e1-189">Microsoft 云 IT 体系结构资源</span><span class="sxs-lookup"><span data-stu-id="c31e1-189">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="c31e1-190">[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="c31e1-190">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="c31e1-190">[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="c31e1-190">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

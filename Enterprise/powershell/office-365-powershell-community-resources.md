@@ -26,13 +26,13 @@ ms.lasthandoff: 01/11/2018
   
 - [<span data-ttu-id="44e2e-106">Office 365 Yammer 网络的 PowerShell for Office 365 组</span><span class="sxs-lookup"><span data-stu-id="44e2e-106">PowerShell for Office 365 group of the Office 365 Yammer Network</span></span>](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- <span data-ttu-id="44e2e-107">[管理 Office 365 社区论坛]((https://community.office365.com/zh-CN/f/148.aspx))</span><span class="sxs-lookup"><span data-stu-id="44e2e-107">[Manage Office 365 community forum]((https://community.office365.com/zh-CN/f/148.aspx))</span></span>
+- <span data-ttu-id="44e2e-107">[管理 Office 365 社区论坛](https://community.office365.com/zh-CN/f/148.aspx)</span><span class="sxs-lookup"><span data-stu-id="44e2e-107">[Manage Office 365 community forum](https://community.office365.com/zh-CN/f/148.aspx)</span></span>
     
 - [<span data-ttu-id="44e2e-108">Exchange TechCenter 社区论坛</span><span class="sxs-lookup"><span data-stu-id="44e2e-108">Exchange TechCenter community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- <span data-ttu-id="44e2e-109">[Office 博客]((https://blogs.office.com/))</span><span class="sxs-lookup"><span data-stu-id="44e2e-109">[Office Blogs]((https://blogs.office.com/))</span></span>
+- <span data-ttu-id="44e2e-109">[Office 博客](https://blogs.office.com/)</span><span class="sxs-lookup"><span data-stu-id="44e2e-109">[Office Blogs](https://blogs.office.com/)</span></span>
     
-- <span data-ttu-id="44e2e-110">[管理 Office 365 Wiki]((https://community.office365.com/zh-CN/w/manage/default.aspx))</span><span class="sxs-lookup"><span data-stu-id="44e2e-110">[Manage Office 365 Wiki]((https://community.office365.com/zh-CN/w/manage/default.aspx))</span></span>
+- <span data-ttu-id="44e2e-110">[管理 Office 365 Wiki](https://community.office365.com/zh-CN/w/manage/default.aspx)</span><span class="sxs-lookup"><span data-stu-id="44e2e-110">[Manage Office 365 Wiki](https://community.office365.com/zh-CN/w/manage/default.aspx)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="44e2e-111">另请参阅</span><span class="sxs-lookup"><span data-stu-id="44e2e-111">See also</span></span>
 

@@ -131,7 +131,7 @@ Connect-MsolService -Credential $UserCredential
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a><span data-ttu-id="81891-164">与 Azure Active Directory V2 PowerShell 模块连接</span><span class="sxs-lookup"><span data-stu-id="81891-164">Connect with the Azure Active Directory V2 PowerShell module</span></span>
 <span data-ttu-id="81891-165"><a name="ConnectV2"> </a></span><span class="sxs-lookup"><span data-stu-id="81891-165"><a name="ConnectV2"> </a></span></span>
 
-<span data-ttu-id="81891-166">有关 [Azure Active Directory V2 PowerShell 模块]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory))中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅：</span><span class="sxs-lookup"><span data-stu-id="81891-166">For procedures that require the new cmdlets in the [Azure Active Directory V2 PowerShell module]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)), use these steps to install the module and connect to your Office 365 subscription:</span></span>
+<span data-ttu-id="81891-166">有关 [Azure Active Directory V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅：</span><span class="sxs-lookup"><span data-stu-id="81891-166">For procedures that require the new cmdlets in the [Azure Active Directory V2 PowerShell module](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory), use these steps to install the module and connect to your Office 365 subscription:</span></span>
   
 1. <span data-ttu-id="81891-167">打开提升的 Windows PowerShell 命令提示符（以管理员身份运行 Windows PowerShell）。</span><span class="sxs-lookup"><span data-stu-id="81891-167">Open an elevated Windows PowerShell command prompt (run Windows PowerShell as an administrator).</span></span>
     
@@ -164,7 +164,7 @@ Connect-AzureAD -Credential $UserCredential
     
 <span data-ttu-id="81891-175">按照"Azure Active Directory PowerShell"对话框中的说明提供其他身份验证信息（如验证码），然后单击"登录"。</span><span class="sxs-lookup"><span data-stu-id="81891-175">Follow the instructions in the **Azure Active Directory PowerShell** dialog box to provide additional authentication information, such as a verification code, and then click **Sign in**.</span></span>
     
-<span data-ttu-id="81891-176">连接后，可以对 [Azure Active Directory V2 PowerShell 模块]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory))使用这些新的 cmdlet。</span><span class="sxs-lookup"><span data-stu-id="81891-176">After connecting, you can use the new cmdlets for the [Azure Active Directory V2 PowerShell module]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)).</span></span>
+<span data-ttu-id="81891-176">连接后，可以对 [Azure Active Directory V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用这些新的 cmdlet。</span><span class="sxs-lookup"><span data-stu-id="81891-176">After connecting, you can use the new cmdlets for the [Azure Active Directory V2 PowerShell module](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="81891-177">另请参阅</span><span class="sxs-lookup"><span data-stu-id="81891-177">See also</span></span>
 

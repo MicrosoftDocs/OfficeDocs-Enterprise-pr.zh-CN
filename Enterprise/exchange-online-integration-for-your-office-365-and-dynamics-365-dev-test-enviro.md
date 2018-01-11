@@ -39,7 +39,7 @@ ms.lasthandoff: 01/11/2018
 
 <span data-ttu-id="af8ff-115">使用下列步骤配置 Dynamics 365 和 Exchange Online 集成的全局管理员邮箱：</span><span class="sxs-lookup"><span data-stu-id="af8ff-115">Use these steps to configure the global administrator's mailbox for Dynamics 365 and Exchange Online integration:</span></span>
   
-1. <span data-ttu-id="af8ff-116">使用浏览器的专用会话，转到 [(http://portal.office.com)]((http://portal.office.com))，再使用 Office 365 全局管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="af8ff-116">Using a private session of your browser, go to [((http://portal.office.com))]((http://portal.office.com)) and sign in using your Office 365 global administrator account.</span></span>
+1. <span data-ttu-id="af8ff-116">使用浏览器的专用会话，转到 [(http://portal.office.com)](http://portal.office.com)，再使用 Office 365 全局管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="af8ff-116">Using a private session of your browser, go to [((http://portal.office.com))](http://portal.office.com) and sign in using your Office 365 global administrator account.</span></span>
     
 2. <span data-ttu-id="af8ff-117">在"Microsoft Office 主页"页上，单击"邮件"磁贴。</span><span class="sxs-lookup"><span data-stu-id="af8ff-117">On the **Microsoft Office Home** page, click the **Mail** tile.</span></span>
     
@@ -98,7 +98,7 @@ ms.lasthandoff: 01/11/2018
 9. <span data-ttu-id="af8ff-151">单击"放弃"。</span><span class="sxs-lookup"><span data-stu-id="af8ff-151">Click **Discard**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="af8ff-152">单击[此处]((http://aka.ms/catlgstack))可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。</span><span class="sxs-lookup"><span data-stu-id="af8ff-152">Click [here]((http://aka.ms/catlgstack)) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="af8ff-152">单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。</span><span class="sxs-lookup"><span data-stu-id="af8ff-152">Click [here](http://aka.ms/catlgstack) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="af8ff-153">另请参阅</span><span class="sxs-lookup"><span data-stu-id="af8ff-153">See Also</span></span>
 
@@ -112,8 +112,8 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="af8ff-158">用于 Office 365 开发/测试环境的 DirSync</span><span class="sxs-lookup"><span data-stu-id="af8ff-158">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
 
-<span data-ttu-id="af8ff-159">[Dynamics 365（联机）的订阅管理]((https://technet.microsoft.com/library/jj679903.aspx))</span><span class="sxs-lookup"><span data-stu-id="af8ff-159">[Subscription Management for Dynamics 365 (online)]((https://technet.microsoft.com/library/jj679903.aspx))</span></span>
+<span data-ttu-id="af8ff-159">[Dynamics 365（联机）的订阅管理](https://technet.microsoft.com/library/jj679903.aspx)</span><span class="sxs-lookup"><span data-stu-id="af8ff-159">[Subscription Management for Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)</span></span>
   
-<span data-ttu-id="af8ff-160">[管理 Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))</span><span class="sxs-lookup"><span data-stu-id="af8ff-160">[Administering Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))</span></span>
+<span data-ttu-id="af8ff-160">[管理 Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)</span><span class="sxs-lookup"><span data-stu-id="af8ff-160">[Administering Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)</span></span>
 
 
