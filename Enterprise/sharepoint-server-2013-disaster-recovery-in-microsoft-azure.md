@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Deployment
+ms.collection: Ent_O365
+ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "摘要：使用 Azure，您可以为您的内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。"
-ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
@@ -185,7 +181,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
   
 **图：生产场和温备用状态恢复场的拓扑和主要元素**
 
-![显示 SharePoint 生产场和温备用状态恢复场的拓扑和主要元素。](images/AZarch_TopWarmStndby.gif)
+![显示 SharePoint 生产场和温备用状态恢复场的拓扑和主要元素。](images/AZarchWarmStndby.gif)
   
 在此图中：
   

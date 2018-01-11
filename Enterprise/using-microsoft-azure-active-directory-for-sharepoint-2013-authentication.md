@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: "摘要：了解如何使用 Azure 访问控制服务，在 Azure Active Directory 中对 SharePoint Server 2013 用户进行身份验证。"
-ms.openlocfilehash: 85db8376aeb06ef6f291b563410c991ea24351d5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 9025eb53f4d8e37403c48416f41adbe35fa9fa01
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="using-microsoft-azure-active-directory-for-sharepoint-2013-authentication"></a>将 Microsoft Azure Active Directory 用于 SharePoint 2013 身份验证
 

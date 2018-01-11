@@ -12,14 +12,13 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - PowerShell
-- DecEntMigration
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: "摘要：使用 Office 365 PowerShell 管理 Microsoft Exchange Online，包括显示邮箱配置和显示高级报告。"
-ms.openlocfilehash: 8ec855731d9f8db7f70c7c0a3923170d463075f7
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 984347207e3773887850620b6bc194cf5ff9705d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Exchange Online
 

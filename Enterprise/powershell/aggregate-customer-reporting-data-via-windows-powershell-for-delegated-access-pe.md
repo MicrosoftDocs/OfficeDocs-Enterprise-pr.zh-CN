@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: "摘要：使用适用于 Office 365 的 Windows PowerShell 检索关于所有客户租赁的报告并将数据聚合到一个位置。"
-ms.openlocfilehash: 89651971424d1b9a494335572d2654d8402ec146
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 825f0519b97522f664c34462c441d190cac4bb8e
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴聚合客户报告数据
 

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "摘要： Contoso 如何实施 SQL Server Stretch Database，以减少其本地数据存储需求并降低日常运行成本。"
-ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>将历史交易记录数据迁移到云
 
@@ -34,7 +32,7 @@ Contoso 的企业存储系统存储了大量历史交易数据，用于遵守监
   
 图 1 显示了 SQL 客户端如何向运行 SQL Server 2016 的服务器发送 T-SQL 查询，该服务将它们转发到 Azure PaaS 中的 Azure SQL Stretch Database。
   
-有关详细信息，请参阅 [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)。
+有关详细信息，请参阅 [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))。
   
 Contoso 使用这些步骤将其历史数据移动到云：
   
@@ -77,9 +75,9 @@ Contoso 使用这些步骤将其历史数据移动到云：
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)
+[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))
   
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

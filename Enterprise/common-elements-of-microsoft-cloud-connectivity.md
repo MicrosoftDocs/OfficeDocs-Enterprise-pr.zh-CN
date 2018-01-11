@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "摘要： 了解网络基础结构的常见元素，以及如何准备你的网络。"
-ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 9dffcae28283c9f8b8c219284554225645435e0a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft 云连接的公共元素
 
@@ -86,6 +84,6 @@ ms.lasthandoff: 12/15/2017
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 

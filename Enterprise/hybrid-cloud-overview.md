@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: "摘要： 了解 Microsoft 混合云的定义和元素。"
-ms.openlocfilehash: 9ece0f2e09384c0b9e6d9042b899d782be6327b5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6f4eb3a814c6dcf50321ae34a05671cfa8cf17c1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-overview"></a>混合云概述
 
@@ -92,7 +88,7 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
  
 
 
