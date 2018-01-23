@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "摘要： 将 Windows PowerShell 连接到一个 Windows PowerShell 窗口中的所有 Office 365 提供服务。"
-ms.openlocfilehash: 2dccfc73b016cbe97436c822432331ee30ba4bcd
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5f97924d141afa4319c761fee86b13cb2b0705fb
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
   
 这不是最适合于管理 Office 365，因为不能交换跨服务管理这些五个窗口间的数据。本主题介绍如何使用与管理 Office 365、 为业务联机状态，Exchange Online，SharePoint Online，Skype 和安全的 Windows PowerShell 的单个实例&amp;法规遵从性中心。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 <a name="BeforeYouBegin"> </a>
 
 您可以从 Windows PowerShell 的单个实例中管理所有 Office 365 的之前，请考虑以下先决条件：
@@ -503,10 +503,8 @@ get-sposite : No connection available. Use Connect-SPOService before running thi
 ## <a name="new-to-office-365"></a>刚开始接触 Office 365？
 <a name="LongVersion"> </a>
 
-||
-|:-----|
-|![LinkedIn 学习的短图标](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 提供指向新建？**        [Office 365 管理员和 IT 专业人员使用](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)，LinkedIn 学习者发现免费视频课程。 |
-   
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
 ## <a name="see-also"></a>另请参阅
 
 #### 
