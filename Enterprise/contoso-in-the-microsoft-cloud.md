@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "摘要： 具有代表性的虚构全球组织如何采用包含云的 IT 基础结构，其中具有各种 Microsoft 云产品。"
-ms.openlocfilehash: 4c0969e929851c97c62a3099ff90ce311297413d
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d1d17a307f7f13668897343b69dcaebbedb4a7a4
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft 云中的 Contoso
 
@@ -67,7 +67,7 @@ ms.lasthandoff: 01/11/2018
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

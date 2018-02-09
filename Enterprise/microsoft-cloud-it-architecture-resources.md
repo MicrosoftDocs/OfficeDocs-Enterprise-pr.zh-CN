@@ -8,18 +8,17 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection:
-- Ent_O365
+ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: "摘要：了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。"
-ms.openlocfilehash: f39625b371290f3bb5ef68441409d436518e43f3
-ms.sourcegitcommit: ca96830b425b3ec5a6387eaae47cdc23c8384456
+ms.openlocfilehash: 94b0e732e84fe7ec47431b7521be4c21a1d858df
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 

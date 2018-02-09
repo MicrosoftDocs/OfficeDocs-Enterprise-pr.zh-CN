@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "摘要：了解为何必须使用 Office 365 PowerShell 管理 Office 365，这在某些情况下可以变得更高效，在其他情况下则可能是必备要求。"
-ms.openlocfilehash: 22410e167baf94f5f965fcdab060235f09fe7194
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b3715da44c1509ea46e7bb939b5ca0be8b2b9671
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>为什么您需要使用 Office 365 PowerShell
 
@@ -92,7 +92,7 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 > [!NOTE]
-> 此命令将要求您安装 [Microsoft Azure Active Directory 模块]((https://technet.microsoft.com/zh-CN/library/jj151815.aspx))。 
+> 此命令将要求您安装 [Microsoft Azure Active Directory 模块](https://technet.microsoft.com/zh-CN/library/jj151815.aspx)。 
   
 下面展示了显示内容示例：
   
@@ -241,7 +241,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> 此命令要求必须安装[连接到 SharePoint Online PowerShell]((https://technet.microsoft.com/library/fp161372.aspx))。 
+> 此命令要求必须安装[连接到 SharePoint Online PowerShell](https://technet.microsoft.com/library/fp161372.aspx)。 
   
 > [!TIP]
 >  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有 SharePoint 网站 (**Get-SPOSite**)，并对每个网站从可以访问它的用户列表中删除 Ken Meyer (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**)。

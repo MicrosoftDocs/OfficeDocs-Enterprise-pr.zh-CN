@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "摘要： 了解在 Azure 中基于 Microsoft 平台即服务 (PaaS) 云产品的混合体系结构和方案。"
-ms.openlocfilehash: 304322e5ad36f0a7f385a41fc3f2e5232dcecd69
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS 的混合云方案
 
@@ -112,7 +112,7 @@ Stretch Database 是 SQL Server 2016 的一项功能，它可以使你以透明�
   
 Stretch Database 提供经济高效的选项，用于历史数据的长期存储和透明访问。它还解决了表变大时出现的性能和可用性问题。
   
-有关详细信息，请参阅 [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))。
+有关详细信息，请参阅 [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)。
   
 ## <a name="see-also"></a>另请参阅
 
@@ -120,7 +120,7 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

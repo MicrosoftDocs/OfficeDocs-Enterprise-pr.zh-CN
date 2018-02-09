@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "摘要：使用此测试实验室指南可以实现 Office 365 试用订阅中 Exchange Online 的 Dynamics 365 集成。"
-ms.openlocfilehash: b297c3e461b5695b323c619145df64524989d58a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境的 Exchange Online 集成
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
 
 使用下列步骤配置 Dynamics 365 和 Exchange Online 集成的全局管理员邮箱：
   
-1. 使用浏览器的专用会话，转到 [(http://portal.office.com)]((http://portal.office.com))，再使用 Office 365 全局管理员帐户登录。
+1. 使用浏览器的专用会话，转到 [http://portal.office.com](http://portal.office.com)，再使用 Office 365 全局管理员帐户登录。
     
 2. 在"Microsoft Office 主页"页上，单击"邮件"磁贴。
     
@@ -98,7 +98,7 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
 9. 单击"放弃"。
 
 > [!TIP]
-> 单击[此处]((http://aka.ms/catlgstack))可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
     
 ## <a name="see-also"></a>另请参阅
 
@@ -112,8 +112,8 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
   
 [用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Dynamics 365（联机）的订阅管理]((https://technet.microsoft.com/library/jj679903.aspx))
+[Dynamics 365（联机）的订阅管理](https://technet.microsoft.com/library/jj679903.aspx)
   
-[管理 Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))
+[管理 Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
 
 

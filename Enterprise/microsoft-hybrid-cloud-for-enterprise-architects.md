@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "摘要： IT 架构师需要了解的有关使用 Microsoft 云服务和平台的混合方案的知识。"
-ms.openlocfilehash: 0a2d9e097d976a729492748aa2672146cb8681a7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9972241d5e7291a2cecf8c72811f34115dcf116a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>面向企业架构师的 Microsoft 混合云
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
 ![PDF 文件](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio 文件](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![参阅包含其他语言版本的页面](images/Common_Images/GlobeIcon.png)
 [更多语言](https://www.microsoft.com/download/details.aspx?id=54424)
   
-还可以查看 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的所有模型，逐一浏览 [Microsoft 企业云路线图：IT 决策者的资源]((https://aka.ms/cloudarchitecture))。
+还可以查看 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的所有模型，逐一浏览 [Microsoft 企业云路线图：IT 决策者的资源](https://aka.ms/cloudarchitecture)。
   
 请参阅以下部分：
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/11/2018
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

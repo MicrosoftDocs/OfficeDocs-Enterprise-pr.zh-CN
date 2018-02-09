@@ -2,7 +2,7 @@
 title: "使用 PowerShell 执行直接转换迁移以迁移到 Office 365"
 ms.author: sirkkuw
 author: sirkkuw
-manager: scotv
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: "摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的直接转换迁移。"
-ms.openlocfilehash: c690789e64af297d2ffc20505bc1a296148d9f1c
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 8181d59f53464034a584724dcb53956976c917dd
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>使用 PowerShell 执行直接转换迁移以迁移到 Office 365
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/11/2018
     
   - 使用 Microsoft Outlook 从企业网络外部连接到内部部署 Exchange 邮箱。
     
-  - 使用 Microsoft [Exchange Remote Connectivity Analyzer]((https://www.testexchangeconnectivity.com/)) 测试连接设置。使用 Outlook 无处不在 (RPC over HTTP) 或 Outlook 自动发现测试。
+  - 使用 Microsoft [Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) 测试连接设置。使用 Outlook 无处不在 (RPC over HTTP) 或 Outlook 自动发现测试。
     
   - 在 Exchange Online PowerShell 中运行以下命令。
     
