@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: "本文是名为“Microsoft SharePoint 2013 平台选项”的图的可访问文本版本。"
-ms.openlocfilehash: 9cd282cc723376f85fe2cbc5a439ee24fd2ab883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>可访问的图 - Microsoft SharePoint 2013 平台选项
 
@@ -208,9 +209,9 @@ Duet Enterprise Online
   
 #### <a name="hybrid-with-office-365"></a>与 Office 365 的混合
 
-- Office 365  订阅模型。无需其他许可证。 
+- Office 365  订阅模型。无需其他许可证。 
     
-- 本地  所有本地许可证均适用。 
+- 本地 — 所有本地许可证均适用。 
     
 #### <a name="azure"></a>Azure
 
@@ -240,7 +241,7 @@ Duet Enterprise Online
     
 - 确保通过防火墙、代理服务器、网关以及跨 WAN 链接的网络容量和可用性。 
     
-- 获取第三方 SSL 证书，为 Office 365 服务产品提供企业安全性。 
+- 获取第三方 SSL 证书，提供 Office 365 服务/产品的企业安全性。 
     
 - 规划租户名称，设计站点集体系结构和监管。  
     

@@ -6,16 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: None
 ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "摘要： 政治市场开发/测试环境中创建公共、 私人、 敏感和高度机密 SharePoint Online 的工作组网站。"
-ms.openlocfilehash: 4f89fd29103756a33aa15e8e5e2976c521d69baa
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: cc410dc98e37ca6fc0e96f00f413e57ba1958d50
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治运动的开发/测试环境中创建工作组网站
 

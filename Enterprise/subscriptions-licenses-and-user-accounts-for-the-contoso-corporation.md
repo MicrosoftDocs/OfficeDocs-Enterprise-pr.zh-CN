@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
 description: "摘要： 了解 Contoso 的云订阅、 许可证、 用户帐户和承租人的结构。"
-ms.openlocfilehash: 0fdd72a697edb312be13c9794e543a81bf9a8e54
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 6e62fbbc0f52019e5d233fc73992b000952344f5
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Contoso Corporation 的订阅、许可证和用户帐户
 
