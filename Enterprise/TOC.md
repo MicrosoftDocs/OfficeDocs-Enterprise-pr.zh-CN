@@ -64,7 +64,6 @@
 #### [高可用性联合身份验证阶段 5： 配置 Office 365 的联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 ### [Microsoft Azure 中的 SharePoint Server 2013 灾难恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 ### [Microsoft Azure 中使用 SharePoint Server 2013 的 Internet 站点](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
-### [使用 Microsoft Azure Active Directory SharePoint 2013 身份验证](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)
 ### [自动执行 eDiscovery 的文件集合](automate-file-collection-for-ediscovery.md)
 ## [安全解决方案](security-solutions.md)
 ### [Office 365 的 GDPR 的信息保护](office-365-information-protection-for-gdpr.md)
