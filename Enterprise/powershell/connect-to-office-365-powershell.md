@@ -3,7 +3,7 @@ title: "连接到 Office 365 PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 02/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。"
-ms.openlocfilehash: 942c128d8cfbcf4e78f054a0ab3a51b05173073f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9aa3fe8bc0f7debd01e3a3e5f91ca8403e696f56
+ms.sourcegitcommit: 5045bd498a9a531f34ac9db742e5cd9f15126bcc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/11/2018
 请注意，这些连接说明与 [Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113) 主题中的连接说明相同。
   
 > [!TIP]
-> **刚开始接触 PowerShell？**请观看领英学习提供的 [PowerShell 概述](http://technet.microsoft.com/library/https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
+> **刚开始接触 PowerShell？**请观看领英学习提供的 [PowerShell 概述](http://technet.microsoft.com/library/https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
@@ -46,62 +46,54 @@ ms.lasthandoff: 01/11/2018
     >请使用 64 位版 Windows。2014 年 10 月，用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块已不再支持 32 位版。
     
 -  对这些过程使用的 Office 365 工作或学校帐户必须为 Office 365 管理员角色成员。有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
+
+## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>与用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块连接
+
+用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中的命令在其 cmdlet 名称中具有 **Msol**。
     
-## <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
+### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
 
 这些步骤只需在您的计算机上执行一次即可，而不是在每次连接时都要求执行。但是，您可能需要定期安装较新版本的软件。
   
-1.  安装 64 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员的 Microsoft Online Services 登录助手 RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)。
+1.  安装 64 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员 RTW 的 Microsoft Online Services 登录助手](https://go.microsoft.com/fwlink/p/?LinkId=286152)。
     
-2. 使用以下步骤安装 64 位版本的 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块：
+2. 使用以下步骤安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块：
     
-  - 打开 [Azure Active Directory 连接](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185)网页。
+  - 打开管理员级 PowerShell 命令提示符。
+  - 运行 **Install-Module MSOnline** 命令。
+  - 如果系统提示安装 NuGet 提供程序，请键入 **Y**，然后按 Enter 键。
+  - 如果系统提示从 PSGallery 安装模块，请键入 **Y**，然后按 Enter 键。
+  - 安装完成后，关闭 PowerShell 命令窗口。
     
-  - 在页面底部的“正在下载的文件”****中，单击“下载”****，以获取“AdministrationConfig-V1.1.166.0-GA.msi”****文件，再安装此文件。
-    
-## <a name="step-2-open-the-windows-azure-active-directory-module"></a>步骤 2：打开 Windows Azure Active Directory 模块
-
-1. 使用以下某个基于 Windows 版本的方法查找并打开 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块：
-    
-  - 在桌面的“开始”****菜单中，单击“开始”****，再键入“Azure”。
-    
-  - **没有"开始"菜单** 使用下列任一方法搜索"Azure"：
-    
-  - 在"开始"屏幕中，单击空白区域，并键入"Azure"。
-    
-  - 在桌面或"开始"屏幕上，按下 Windows 键 + Q。在"搜索"超级按钮中，键入"Azure"。
-    
-  - 在桌面或“开始”屏幕上，将光标移到右上角，或从屏幕的右边缘向左轻扫，以显示超级按钮。选择“搜索”超级按钮，并键入“Azure”****。
-    
-2. 在结果中，单击"用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块"。
-    
-## <a name="step-3-connect-to-your-office-365-subscription"></a>步骤 3：连接到 Office 365 订阅
+### <a name="step-2-connect-to-your-office-365-subscription"></a>步骤 2：连接到 Office 365 订阅
 <a name="step3"> </a>
 
-仅使用 *帐户名和密码*  连接：
+仅使用*帐户名和密码*连接：
   
-1. 在"用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块"命令窗口中，运行以下命令。
+1. 运行 Windows PowerShell 命令提示符。
+2. 在 **Windows PowerShell** 命令窗口中，运行以下命令：
     
-  ```
-  $UserCredential = Get-Credential
+```
+$UserCredential = Get-Credential
 Connect-MsolService -Credential $UserCredential
-  ```
+```
 
-2. 在"Windows PowerShell 凭据请求"对话框中，键入您的 Office 365工作或学校帐户 用户名和密码，然后单击"确定"。
+3. 在"Windows PowerShell 凭据请求"对话框中，键入 Office 365工作或学校帐户 用户名和密码，再单击"确定"。
     
-使用 *多重身份验证 (MFA)*  进行连接的具体步骤：
+使用*多重身份验证 (MFA)* 进行连接的具体步骤：
   
-1. 在"用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块"命令窗口中，运行以下命令。
+1. 运行 Windows PowerShell 命令提示符。
+2. 在“用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块”****命令窗口中，运行以下命令。
     
-  ```
-  Connect-MsolService
-  ```
+```
+Connect-MsolService
+```
 
-2. 在"Azure Active Directory PowerShell"对话框中，键入你的 Office 365工作或学校帐户 用户名和密码，然后单击"登录"。
+3. 在"Azure Active Directory PowerShell"对话框中，键入你的 Office 365工作或学校帐户 用户名和密码，然后单击"登录"。
     
-3. 按照"Azure Active Directory PowerShell"对话框中的说明提供其他身份验证信息（如验证码），然后单击"登录"。
+4. 按照"Azure Active Directory PowerShell"对话框中的说明提供其他身份验证信息（如验证码），然后单击"登录"。
     
-## <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
+### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 <a name="step3"> </a>
 
 如果未收到任何错误，则说明连接成功。一个快速测试是运行 Office 365 cmdlet（例如 **Get-MsolUser** ），然后查看结果。
@@ -131,7 +123,14 @@ Connect-MsolService -Credential $UserCredential
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>与 Azure Active Directory V2 PowerShell 模块连接
 <a name="ConnectV2"> </a>
 
-有关 [Azure Active Directory V2 PowerShell 模块]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory))中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅：
+用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中的命令在其 cmdlet 名称中具有“AzureAD”。
+
+有关 [Azure Active Directory V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅。
+
+### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
+
+这些步骤只需在您的计算机上执行一次即可，而不是在每次连接时都要求执行。但是，您可能需要定期安装较新版本的软件。
+
   
 1. 打开提升的 Windows PowerShell 命令提示符（以管理员身份运行 Windows PowerShell）。
     
@@ -141,41 +140,39 @@ Connect-MsolService -Credential $UserCredential
   Install-Module -Name AzureAD 
   ```
 
-如果系统提示从不受信任的存储库安装模块，请键入"Y"，再按 ENTER。
-    
-3. 新模块安装完成后，使用以下命令连接到 Office 365 订阅：
-    
-  -  通过 *帐户名称和密码*  ：
-    
-  ```
-  $UserCredential = Get-Credential
-Connect-AzureAD -Credential $UserCredential
-  ```
+如果系统提示从不受信任的存储库安装模块，请键入 **Y**，然后按 Enter 键。
 
- 在"Windows PowerShell 凭据请求"对话框中，键入 Office 365工作或学校帐户 用户名和密码，再单击"确定"。
+
+### <a name="step-2-connect-to-office-365"></a>步骤 2：连接到 Office 365
+
+通过*帐户名和密码*连接到 Office 365 订阅：
     
-  - 通过 *多重身份验证 (MFA)*  ：
+```
+$UserCredential = Get-Credential
+Connect-AzureAD -Credential $UserCredential
+```
+
+在"Windows PowerShell 凭据请求"对话框中，键入 Office 365工作或学校帐户 用户名和密码，再单击"确定"。
     
-  ```
-  Connect-AzureAD
-  ```
+通过*多重身份验证 (MFA)* 连接到 Office 365 订阅：
+
+```
+Connect-AzureAD
+```
 
 在"Azure Active Directory PowerShell"对话框中，键入你的 Office 365工作或学校帐户 用户名和密码，然后单击"登录"。
     
 按照"Azure Active Directory PowerShell"对话框中的说明提供其他身份验证信息（如验证码），然后单击"登录"。
     
-连接后，可以对 [Azure Active Directory V2 PowerShell 模块]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory))使用这些新的 cmdlet。
+连接后，可以对 [Azure Active Directory V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用这些新的 cmdlet。
   
 ## <a name="see-also"></a>另请参阅
-
-#### 
 
 [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
   
 [在单个 Windows PowerShell 窗口中连接所有 Office 365 服务](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-#### 
 
 [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
   
