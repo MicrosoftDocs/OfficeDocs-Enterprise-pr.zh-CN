@@ -3,7 +3,7 @@ title: "Microsoft Azure 中的 SharePoint Server 2013 灾难恢复"
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,18 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: "摘要：使用 Azure，您可以为您的内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。"
-ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+description: "摘要：使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。"
+ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
- **摘要：**使用 Azure，您可以为您的内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
+ **摘要：**使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
   
- 当灾难袭击您的 SharePoint 内部部署环境时，您的头等大事是迅速使系统恢复运行。如果您已有备份环境在 Microsoft Azure 中运行，SharePoint 灾难恢复将更加快速、轻松。本视频介绍 SharePoint 温故障转移环境的主要概念，并补充了本文中提供的完整详细信息。
+ 当灾难袭击你的 SharePoint 内部部署环境时，头等大事是迅速使系统恢复运行。如果你已有备份环境在 Microsoft Azure 中运行，SharePoint 灾难恢复将更加快速、轻松。本视频介绍 SharePoint 温故障转移环境的主要概念，并补充了本文中提供的完整详细信息。
   
 ![视频（播放按钮）图标](images/mod_icon_video_M.png)
   
@@ -69,9 +69,9 @@ ms.lasthandoff: 01/29/2018
   
 使用 Azure 基础结构服务的优点如下：
   
-- **资源成本更低** 维护和支付比内部部署灾难恢复环境更少的资源。资源数量取决于您选择的灾难恢复环境：冷备用、温备用或热备用。
+- **资源成本更低** 维护和支付比内部部署灾难恢复环境更少的资源。资源数量取决于你选择的灾难恢复环境：冷备用、温备用或热备用。
     
-- **资源灵活性更高** 如果发生灾难，轻松扩展恢复 SharePoint 服务器场以满足负载要求。当您不再需要这些资源时，进行缩放。
+- **资源灵活性更高** 如果发生灾难，轻松扩展恢复 SharePoint 服务器场以满足负载要求。当你不再需要这些资源时，进行缩放。
     
 - **数据中心承诺更低** 使用 Azure 基础结构服务，而不是在其他地区投资建设辅助数据中心。
     
@@ -85,11 +85,11 @@ ms.lasthandoff: 01/29/2018
 |温备用  <br/> |已构建服务器场，虚拟机正在运行并且已更新。  <br/> 恢复包括附加内容数据库、设置服务应用程序和爬网内容。  <br/> 服务器场可以是生产服务器场的较小版本，它可以向外扩展以便为整个用户群提供服务。  <br/> |
 |冷备用  <br/> |服务器场已完全构建，但虚拟机已停止。  <br/> 维护环境包括偶尔启动虚拟机，以及修补、更新和验证环境。  <br/> 启动完整环境发生灾难时。  <br/> |
    
-请务必评估您的组织的恢复时间目标 (RTO) 和恢复点目标 (RPO)。这些要求确定了哪个环境是最适合贵组织的投资。
+请务必评估你的组织的恢复时间目标 (RTO) 和恢复点目标 (RPO)。这些要求确定了哪个环境是最适合贵组织的投资。
   
-本文中的指南介绍如何实现温备用环境。您也可以对其进行调整使其适合冷备用环境，尽管您需要执行一些其他步骤才能支持此类环境。本文不会介绍如何实现热备用环境。
+本文中的指南介绍如何实现温备用环境。你也可以对其进行调整使其适合冷备用环境，尽管你需要执行一些其他步骤才能支持此类环境。本文不会介绍如何实现热备用环境。
   
-有关灾难恢复解决方案的详细信息，请参阅 [SharePoint 2013 中的高可用性和灾难恢复概念](https://go.microsoft.com/fwlink/p/?LinkID=393114)和[选择 SharePoint 2013 的灾难恢复策略](https://go.microsoft.com/fwlink/p/?linkid=203228)。
+有关灾难恢复解决方案的详细信息，请参阅 [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114)和[Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228)。
   
 ## <a name="solution-description"></a>解决方案描述
 <a name="SOL"> </a>
@@ -106,7 +106,7 @@ ms.lasthandoff: 01/29/2018
   
 **图：Azure 中温备用解决方案的元素**
 
-![Azure 中 SharePoint 温备用状态解决方案的元素](images/AZarch_AZWarmStndby.gif)
+![Azure 中 SharePoint 温备用状态解决方案的元素](images/AZarch_AZWarmStndby.png)
   
 SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库备份和事务日志复制到 Azure 中的恢复场： 
   
@@ -114,7 +114,7 @@ SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库�
     
 - 日志将重播到 Azure 恢复环境中的 SQL Server。
     
-- 您不会在恢复环境中附加日志传送的 SharePoint 内容数据库，除非执行恢复操作。
+- 你不会在恢复环境中附加日志传送的 SharePoint 内容数据库，除非执行恢复操作。
     
 执行下列步骤，恢复服务器场：
   
@@ -132,7 +132,7 @@ SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库�
     
 7. 启动完全爬网。
     
-我们建议您定期演练这些步骤并进行记录，以确保在线恢复顺利运行。附加内容数据库和恢复服务应用程序可能需要一些时间，并且通常涉及一些手动配置。
+我们建议你定期演练这些步骤并进行记录，以确保在线恢复顺利运行。附加内容数据库和恢复服务应用程序可能需要一些时间，并且通常涉及一些手动配置。
   
 执行恢复后，此解决方案将提供下表中列出的项目。
   
@@ -141,18 +141,18 @@ SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库�
 |**项**|**说明**|
 |:-----|:-----|
 |网站和内容  <br/> |网站和内容在恢复环境中可用。  <br/> |
-|新的搜索实例  <br/> |在此温备用解决方案中，不会从搜索数据库还原搜索。恢复场中的搜索组件尽可能配置得与生产服务器场类似。网站和内容还原后，会启动完全爬网以重建搜索索引。您不需要等待爬网完成，即可使网站和内容可用。  <br/> |
+|新的搜索实例  <br/> |在此温备用解决方案中，不会从搜索数据库还原搜索。恢复场中的搜索组件尽可能配置得与生产服务器场类似。网站和内容还原后，会启动完全爬网以重建搜索索引。你不需要等待爬网完成，即可使网站和内容可用。  <br/> |
 |服务  <br/> | 将数据存储在数据库中的服务从日志传送的数据库还原。不在数据库中存储数据的服务则直接启动。 <br/>  并非数据库的所有服务都需要还原。下列服务不需要从数据库还原，在故障转移后可以直接启动： <br/>  Usage and Health Data Collection <br/>  State service <br/>  Word Automation <br/>  任何其他不使用数据库的服务 <br/> |
    
-您可以与 Microsoft 咨询服务 (MCS) 或合作伙伴合作以实现更复杂的恢复目标。下表中汇总了详细信息。
+你可以与 Microsoft 咨询服务 (MCS) 或合作伙伴合作以实现更复杂的恢复目标。下表中汇总了详细信息。
   
 **表：可以由 MCS 或合作伙伴解决的其他项目**
 
 |**项**|**说明**|
 |:-----|:-----|
-|正在同步的自定义场解决方案  <br/> |理想情况下，恢复场的配置与生产服务器场相同。您可以与顾问或合作伙伴合作，评估是否复制了自定义服务器场解决方案，以及是否制定了将两个环境保持同步的流程。  <br/> |
+|正在同步的自定义场解决方案  <br/> |理想情况下，恢复场的配置与生产服务器场相同。你可以与顾问或合作伙伴合作，评估是否复制了自定义服务器场解决方案，以及是否制定了将两个环境保持同步的流程。  <br/> |
 |到内部部署数据源的连接  <br/> |将连接复制到后端数据系统可能并不实用，例如备份域控制器 (BDC) 连接和搜索内容源。  <br/> |
-|搜索还原方案  <br/> |由于企业搜索部署通常非常独特且复杂，从数据库还原搜索需要更大的投资。您可以与顾问或合作伙伴合作，以确定并实施贵组织可能需要的搜索还原方案。  <br/> |
+|搜索还原方案  <br/> |由于企业搜索部署通常非常独特且复杂，从数据库还原搜索需要更大的投资。你可以与顾问或合作伙伴合作，以确定并实施贵组织可能需要的搜索还原方案。  <br/> |
    
 本文中提供的指南假定已设计和部署内部部署服务器场。
   
@@ -167,7 +167,7 @@ SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库�
     
 - 搜索组件的配置相同
     
-Azure 中的环境可以是生产服务器场的较小版本。如果您计划在故障转移后向外扩展恢复场，必须对每种类型的服务器进行初始表示。
+Azure 中的环境可以是生产服务器场的较小版本。如果你计划在故障转移后向外扩展恢复场，必须对每种类型的服务器进行初始表示。
   
 某些配置可能无法在故障转移环境中复制。请务必测试故障转移过程和环境，确保故障转移服务器场提供预期的服务级别。
   
@@ -181,7 +181,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
   
 **图：生产场和温备用状态恢复场的拓扑和主要元素**
 
-![显示 SharePoint 生产场和温备用状态恢复场的拓扑和主要元素。](images/AZarchWarmStndby.gif)
+![SharePoint 服务器场和温备用状态恢复场的拓扑](images/AZarch_AZWarmStndby.png)
   
 在此图中：
   
@@ -233,7 +233,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
     
 - [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=392729)
     
-最后，我们建议使用脚本编程技能，您可以用于将与这些技术相关的任务自动化。可以使用可用的用户界面完成此解决方案中所述的所有任务。但是，手动方法可能非常耗时且容易出现错误，并会交付不一致的结果。
+最后，我们建议使用脚本编程技能，你可以用于将与这些技术相关的任务自动化。可以使用可用的用户界面完成此解决方案中所述的所有任务。但是，手动方法可能非常耗时且容易出现错误，并会交付不一致的结果。
   
 除了 Windows PowerShell 之外，还有用于 SQL Server、SharePoint Server 和 Azure 的 Windows PowerShell 库。不要忘记 T-SQL，它还可以帮助减少配置和维护灾难恢复环境所需的时间。
   
@@ -242,7 +242,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
 
 ![SharePoint 灾难恢复路线图的可视化表示。](images/Azure_DRroadmap.png)
   
-此路线图假定您已经在生产中部署了 SharePoint Server 2013 服务器场。
+此路线图假定你已经在生产中部署了 SharePoint Server 2013 服务器场。
   
 **表：灾难恢复路线图**
 
@@ -276,9 +276,9 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
   
 如果你关注日志的高可用性，请考虑采取其他方法，即[使用 Azure Blob 存储服务进行 SQL Server 备份和还原](https://go.microsoft.com/fwlink/p/?LinkId=393113)。这是 Azure 中的新增功能，可将日志直接保存到 Blob 存储 URL。此解决方案不包括有关使用此功能的指导。
   
-在设计恢复场时，请牢记，成功的灾难恢复环境能够准确反映您想要恢复的生产服务器场。恢复场的大小不是恢复场设计、部署和测试中最重要的因素。恢复场规模因组织而异，具体取决于组织的需求。在出现短暂中断时，它可能会使用向下伸缩的服务器场，或者直到性能和容量需求要求您扩展服务器场。
+在设计恢复场时，请牢记，成功的灾难恢复环境能够准确反映你想要恢复的生产服务器场。恢复场的大小不是恢复场设计、部署和测试中最重要的因素。恢复场规模因组织而异，具体取决于组织的需求。在出现短暂中断时，它可能会使用向下伸缩的服务器场，或者直到性能和容量需求要求你扩展服务器场。
   
-将恢复场尽量配置得与生产服务器场相同，以便其满足服务级别协议 (SLA) 要求并提供支持业务所需的功能。当您设计灾难恢复环境时，还需审核生产环境的变更管理过程。我们建议您按与生产环境相同的间隔更新恢复环境，以将变更管理过程扩展到恢复环境。作为变更管理过程的一部分，我们建议您维护一张详细的服务器场配置、应用程序和用户清单。 
+将恢复场尽量配置得与生产服务器场相同，以便其满足服务级别协议 (SLA) 要求并提供支持业务所需的功能。当你设计灾难恢复环境时，还需审核生产环境的变更管理过程。我们建议你按与生产环境相同的间隔更新恢复环境，以将变更管理过程扩展到恢复环境。作为变更管理过程的一部分，我们建议你维护一张详细的服务器场配置、应用程序和用户清单。 
   
 ## <a name="phase-2-create-the-azure-virtual-network-and-vpn-connection"></a>阶段 2：创建 Azure 虚拟网络和 VPN 连接
 <a name="Phase2"> </a>
@@ -310,7 +310,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
   
 有关在 Azure 中设置域控制器的详细指导，请参阅[在 Azure 虚拟网络中安装副本 Active Directory 域控制器](https://go.microsoft.com/fwlink/p/?LinkId=392687)。
   
-在此阶段之前，您没有向虚拟网络部署虚拟机。用于承载 Active Directory 和 DNS 的虚拟机可能不是您的解决方案需要的最大虚拟机。在部署这些虚拟机之前，首先创建您计划在虚拟网络中使用的最大虚拟机。这有助于确保您的解决方案在 Azure 中被标记为允许您需要的最大大小。目前不需要配置此虚拟机。只需进行创建，然后放到一旁。如果不这样做，您稍后在尝试创建更大的虚拟机时可能会受到限制，编写本文时此问题尚未解决。 
+在此阶段之前，你没有向虚拟网络部署虚拟机。用于承载 Active Directory 和 DNS 的虚拟机可能不是你的解决方案需要的最大虚拟机。在部署这些虚拟机之前，首先创建你计划在虚拟网络中使用的最大虚拟机。这有助于确保你的解决方案在 Azure 中被标记为允许你需要的最大大小。目前不需要配置此虚拟机。只需进行创建，然后放到一旁。如果不这样做，你稍后在尝试创建更大的虚拟机时可能会受到限制，编写本文时此问题尚未解决。 
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>阶段 4：在 Azure 中部署 SharePoint 恢复场
 <a name="Phase4"> </a>
@@ -321,11 +321,11 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
   
 - 通过使用 Azure 门户或 PowerShell 创建虚拟机。
     
-- Azure 和 Hyper-V 不支持动态内存。请确保在您的性能和容量规划中考虑到了这一点。
+- Azure 和 Hyper-V 不支持动态内存。请确保在你的性能和容量规划中考虑到了这一点。
     
 - 通过 Azure 界面重新启动虚拟机，而不是在虚拟机登录时。使用 Azure 界面会更顺利，并且更易于预测。
     
-- 如果您想关闭某个虚拟机以节约成本，请使用 Azure 界面。如果您在虚拟机登录时关闭，费用仍会累计。
+- 如果你想关闭某个虚拟机以节约成本，请使用 Azure 界面。如果你在虚拟机登录时关闭，费用仍会累计。
     
 - 使用虚拟机的命名约定。
     
@@ -338,7 +338,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
 ## <a name="phase-5-set-up-dfsr-between-the-farms"></a>阶段 5：设置场之间的 DFSR
 <a name="Phase5"> </a>
 
-要使用 DFSR 设置文件复制，请使用 DNS Management 管理单元。但是在 DFSR 设置之前，请登录到您的内部部署文件服务器和 Azure 文件服务器，并在 Windows 中启用服务。
+要使用 DFSR 设置文件复制，请使用 DNS Management 管理单元。但是在 DFSR 设置之前，请登录到你的内部部署文件服务器和 Azure 文件服务器，并在 Windows 中启用服务。
   
 从服务器管理器仪表板中，完成以下步骤：
   
@@ -367,7 +367,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>阶段 6：设置到恢复场的日志传送
 <a name="Phase6"> </a>
 
-日志传送是在此环境中设置灾难恢复的关键组件。您可以使用日志传送，将数据库的事务日志文件从主数据库服务器实例自动传送到辅助数据库服务器实例。要设置日志传送，请参阅[Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)。 
+日志传送是在此环境中设置灾难恢复的关键组件。你可以使用日志传送，将数据库的事务日志文件从主数据库服务器实例自动传送到辅助数据库服务器实例。要设置日志传送，请参阅[Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)。 
   
 > [!IMPORTANT]
 > SharePoint Server 中的日志传送支持仅限于特定数据库。有关详细信息，请参阅 [SharePoint 数据库的受支持的高可用性和灾难恢复选项 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)。 
@@ -375,13 +375,13 @@ Azure 中的环境可以是生产服务器场的较小版本。如果您计划�
 ## <a name="phase-7-validate-failover-and-recovery"></a>阶段 7：验证故障转移和恢复
 <a name="Phase7"> </a>
 
-最后这一阶段的目的是验证灾难恢复解决方案按计划运行。为此，请创建一个故障转移事件，关闭生产服务器场并启动恢复场以进行替换。您可以手动或使用脚本启动故障转移方案。
+最后这一阶段的目的是验证灾难恢复解决方案按计划运行。为此，请创建一个故障转移事件，关闭生产服务器场并启动恢复场以进行替换。你可以手动或使用脚本启动故障转移方案。
   
-第一步是停止对服务器场服务或内容的传入用户请求。您可以通过禁用 DNS 条目或关闭前端 Web 服务器来执行此操作。服务器场关闭后，您可以故障转移到恢复场。
+第一步是停止对服务器场服务或内容的传入用户请求。你可以通过禁用 DNS 条目或关闭前端 Web 服务器来执行此操作。服务器场关闭后，你可以故障转移到恢复场。
   
 ### <a name="stop-log-shipping"></a>停止日志传送
 
-您必须在服务器场恢复之前停止日志传送。首先在 Azure 中的辅助服务器上停止日志传送，然后在内部部署主服务器上停止日志传送。使用以下脚本，首先在辅助服务器上，然后在主服务器上停止日志传送。脚本中的数据库名称可能不同，具体取决于您的环境。
+你必须在服务器场恢复之前停止日志传送。首先在 Azure 中的辅助服务器上停止日志传送，然后在内部部署主服务器上停止日志传送。使用以下脚本，首先在辅助服务器上，然后在主服务器上停止日志传送。脚本中的数据库名称可能不同，具体取决于你的环境。
   
 ```
 -- This script removes log shipping from the server.
@@ -420,7 +420,7 @@ where prm.primary_database in ( ' + @PriDB + ' )')
 
 ### <a name="restore-the-backups"></a>将备份还原
 
-备份必须按其创建的顺序还原。在还原特定事务日志备份之前，您必须首先在不回滚未提交的事务的情况下，还原下列之前的备份（即，使用  `WITH NORECOVERY`）：
+备份必须按其创建的顺序还原。在还原特定事务日志备份之前，你必须首先在不回滚未提交的事务的情况下，还原下列之前的备份（即，使用  `WITH NORECOVERY`）：
   
 - 完整的数据库备份和最新的差异备份 - 还原在执行特定事务日志备份之前创建的备份（如果存在）。在最新的完整或差异数据库备份创建之前，数据库使用完整恢复模型或大容量日志恢复模型。
     
@@ -434,19 +434,19 @@ restore database WSS_Content with recovery
 ```
 
 > [!IMPORTANT]
-> 明确使用 T-SQL 时，在每个 RESTORE 语句中指定 **WITH NORECOVERY** 或 **WITH RECOVERY** 以消除歧义这在编写脚本时非常重要。还原完整和差异备份后，可以在 SQL Server Management Studio 中还原事务日志。此外，由于日志传送已停止，内容数据库处于备用状态，因为您必须将状态更改为完全访问。
+> 明确使用 T-SQL 时，在每个 RESTORE 语句中指定 **WITH NORECOVERY** 或 **WITH RECOVERY** 以消除歧义这在编写脚本时非常重要。还原完整和差异备份后，可以在 SQL Server Management Studio 中还原事务日志。此外，由于日志传送已停止，内容数据库处于备用状态，因为你必须将状态更改为完全访问。
   
 在 SQL Server Management Studio 中，右键单击“WSS_Content”****数据库，依次指向“任务”**** > “还原”****，再单击“事务日志”****（如果还没有还原完整备份，则不可用）。有关详细信息，请参阅[还原事务日志备份 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778)。
   
 ### <a name="crawl-the-content-source"></a>对内容源进行爬网
 
-您必须为每个内容源启动完整爬网以还原 Search Service。请注意，您会丢失内部部署服务器场的部分分析信息，例如搜索建议。在启动完整爬网之前，请使用 Windows PowerShell cmdlet **Restore-SPEnterpriseSearchServiceApplication** 并指定日志传送和复制的搜索管理数据库 **Search_Service__DB_<GUID>** 。此 cmdlet 将提供搜索配置、架构、托管属性、规则和源，并创建一组默认的其他组件。
+你必须为每个内容源启动完整爬网以还原 Search Service。请注意，你会丢失内部部署服务器场的部分分析信息，例如搜索建议。在启动完整爬网之前，请使用 Windows PowerShell cmdlet **Restore-SPEnterpriseSearchServiceApplication** 并指定日志传送和复制的搜索管理数据库 **Search_Service__DB_<GUID>**。此 cmdlet 将提供搜索配置、架构、托管属性、规则和源，并创建一组默认的其他组件。
   
 要启动完全爬网，请完成以下步骤：
   
-1. 在 SharePoint 2013 管理中心中，转到"应用程序管理">"服务应用程序">"管理服务应用程序"，然后单击您要爬网的 Search Service 应用程序。
+1. 在 SharePoint 2013 管理中心中，转到"应用程序管理">"服务应用程序">"管理服务应用程序"，然后单击你要爬网的 Search Service 应用程序。
     
-2. 在"搜索管理"页上，单击"内容源"，指向您需要的内容源，单击箭头，然后单击"启动完整爬网"。
+2. 在"搜索管理"页上，单击"内容源"，指向你需要的内容源，单击箭头，然后单击"启动完整爬网"。
     
 ### <a name="recover-farm-services"></a>恢复服务器场服务
 <a name="Reco"> </a>
@@ -458,7 +458,7 @@ restore database WSS_Content with recovery
   
 **表：服务应用程序数据库引用**
 
-|**从已进行日志传送的数据库还原这些服务**|**这些服务具有数据库，但我们建议您直接启动这些服务，无需还原其数据库**|**这些服务不在数据库中存储任何数据；请在故障转移后启动这些服务**|
+|**从已进行日志传送的数据库还原这些服务**|**这些服务具有数据库，但我们建议你直接启动这些服务，无需还原其数据库**|**这些服务不在数据库中存储任何数据；请在故障转移后启动这些服务**|
 |:-----|:-----|:-----|
 | 机器翻译服务 <br/>  Managed Metadata Service <br/>  Secure Store Service <br/>  User Profile。（仅支持配置文件和社交标签数据库。不支持同步数据库。） <br/>  Microsoft SharePoint Foundation Subscription Settings Service <br/> | Usage and Health Data Collection <br/>  State service <br/>  Word Automation <br/> | Excel Services <br/>  PerformancePoint Services <br/>  PowerPoint 转换 <br/>  Visio Graphics Service <br/>  工作管理 <br/> |
    
@@ -481,19 +481,19 @@ restore database WSS_Content with recovery
 ### <a name="manage-dns-records"></a>管理 DNS 记录
 <a name="DNS"> </a>
 
-您必须手动创建 DNS 记录以指向您的 SharePoint 服务器场。
+你必须手动创建 DNS 记录以指向你的 SharePoint 服务器场。
   
-在您具有多个前端 Web 服务器的大多数情况下，利用 Windows Server 2012 中的网络负载平衡功能或硬件负载平衡器在服务器场中的 Web 前端服务器之间分发请求是明智的。网络负载平衡还可以在一个 Web 前端服务器出现故障时将请求分发到其他服务器，从而减少风险。 
+在你具有多个前端 Web 服务器的大多数情况下，利用 Windows Server 2012 中的网络负载平衡功能或硬件负载平衡器在服务器场中的 Web 前端服务器之间分发请求是明智的。网络负载平衡还可以在一个 Web 前端服务器出现故障时将请求分发到其他服务器，从而减少风险。 
   
-通常情况下，当您设置网络负载平衡时，将向群集分配单个 IP 地址。然后您在 DNS 提供程序中为指向群集的网络创建 DNS 主机。（在此项目中，我们将 DNS 服务器放置在 Azure 中，确保在出现内部部署数据中心故障时能够恢复。）例如，您可以在 DNS 管理器的 Active Directory 中创建指向负载平衡群集的 IP 地址的 DNS 记录（例如，称为  `http://sharepoint.contoso.com`）。
+通常情况下，当你设置网络负载平衡时，将向群集分配单个 IP 地址。然后你在 DNS 提供程序中为指向群集的网络创建 DNS 主机。（在此项目中，我们将 DNS 服务器放置在 Azure 中，确保在出现内部部署数据中心故障时能够恢复。）例如，你可以在 DNS 管理器的 Active Directory 中创建指向负载平衡群集的 IP 地址的 DNS 记录（例如，称为  `http://sharepoint.contoso.com`）。
   
-对于对 SharePoint 服务器场的外部访问，您可以在外部 DNS 服务器上创建主机记录，前提是该服务器具有与客户端在 Intranet（例如，http://sharepoint.contoso.com）上所使用的、指向防火墙中某个外部 IP 地址的相同 URL。（使用此示例最好的做法是设置拆分 DNS，以便内部 DNS 服务器获得 contoso.com 的授权，并将请求直接路由到 SharePoint 服务器场群集，而不是将 DNS 请求路由到外部 DNS 服务器。）然后您可以将外部 IP 地址映射到内部部署群集的内部 IP 地址，以便客户端找到所需的资源。
+对于对 SharePoint 服务器场的外部访问，你可以在外部 DNS 服务器上创建主机记录，前提是该服务器具有与客户端在 Intranet（例如，http://sharepoint.contoso.com）上所使用的、指向防火墙中某个外部 IP 地址的相同 URL。（使用此示例最好的做法是设置拆分 DNS，以便内部 DNS 服务器获得 contoso.com 的授权，并将请求直接路由到 SharePoint 服务器场群集，而不是将 DNS 请求路由到外部 DNS 服务器。）然后你可以将外部 IP 地址映射到内部部署群集的内部 IP 地址，以便客户端找到所需的资源。
   
-从这里开始，您可能会遇到几种不同的灾难恢复场景：
+从这里开始，你可能会遇到几种不同的灾难恢复场景：
   
- **示例场景：由于内部部署 SharePoint 服务器场中的硬件故障，内部部署 SharePoint 服务器场不可用。**这种情况下，在您完成故障转移到 Azure SharePoint 服务器场的步骤后，您可以在恢复 SharePoint 服务器场的 Web 前端服务器上配置网络负载平衡，就像在内部部署服务器场中一样。然后您可以将内部 DNS 提供程序中的主机记录重定向为指向恢复场的群集 IP 地址。请注意，可能需要一些时间才会刷新客户端上的缓存 DNS 记录并使其指向恢复场。
+ **示例场景：由于内部部署 SharePoint 服务器场中的硬件故障，内部部署 SharePoint 服务器场不可用。**这种情况下，在你完成故障转移到 Azure SharePoint 服务器场的步骤后，你可以在恢复 SharePoint 服务器场的 Web 前端服务器上配置网络负载平衡，就像在内部部署服务器场中一样。然后你可以将内部 DNS 提供程序中的主机记录重定向为指向恢复场的群集 IP 地址。请注意，可能需要一些时间才会刷新客户端上的缓存 DNS 记录并使其指向恢复场。
   
- **示例场景：内部部署数据中心会完全中断。**此场景可能是由于自然灾害所致，例如火灾或水灾。这种情况下，对于企业来说，可能希望有一个辅助数据中心承载在另一个区域，还有具有自己的目录服务和 DNS 的 Azure 子网。与前一个灾难场景中一样，您可以将内部和外部 DNS 记录重定向为指向 Azure SharePoint 服务器场。同样，记下该 DNS 记录传播可能需要一些时间。
+ **示例场景：内部部署数据中心会完全中断。**此场景可能是由于自然灾害所致，例如火灾或水灾。这种情况下，对于企业来说，可能希望有一个辅助数据中心承载在另一个区域，还有具有自己的目录服务和 DNS 的 Azure 子网。与前一个灾难场景中一样，你可以将内部和外部 DNS 记录重定向为指向 Azure SharePoint 服务器场。同样，记下该 DNS 记录传播可能需要一些时间。
   
 如果你使用的是主机命名的网站集，那么按照[以主机命名的网站集的体系结构和部署 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120) 中的建议，你在 SharePoint 服务器场中可能具有由同一 Web 应用程序承载的多个网站集，但都具有唯一的 DNS 名称（例如 http://sales.contoso.com 和 http://marketing.contoso.com）。在这种情况下，你可以为每个网站集创建指向群集 IP 地址的 DNS 记录。请求到达 SharePoint Web 前端服务器之后，它们会将每个请求路由到相应的网站集。
   
@@ -539,7 +539,7 @@ restore database WSS_Content with recovery
    
 ### <a name="setting-up-the-test-environment"></a>设置测试环境
 
-在不同的部署阶段，测试团队通常首先构建内部部署基础结构，然后构建相应的 Azure 环境。这反映了内部生产服务器场已在运行的常规真实案例。更为重要的是，您应该了解当前生产工作负载、容量和典型性能。除了构建可以满足业务需求的灾难恢复模型外，您还应该调整恢复场服务器的大小以交付最低级别的服务。在冷备用或温备用环境中，恢复场通常小于生产服务器场。恢复场稳定并且投入生产之后，服务器场可以向上和向外扩展以满足工作负载要求。
+在不同的部署阶段，测试团队通常首先构建内部部署基础结构，然后构建相应的 Azure 环境。这反映了内部生产服务器场已在运行的常规真实案例。更为重要的是，你应该了解当前生产工作负载、容量和典型性能。除了构建可以满足业务需求的灾难恢复模型外，你还应该调整恢复场服务器的大小以交付最低级别的服务。在冷备用或温备用环境中，恢复场通常小于生产服务器场。恢复场稳定并且投入生产之后，服务器场可以向上和向外扩展以满足工作负载要求。
   
 我们分三个阶段来部署测试环境：
   
@@ -659,19 +659,19 @@ Import-module activedirectory
   
 ### <a name="sql-server-log-shipping-job-fails-with-access-denied-error-trying-to-connect-to-the-file-share"></a>SQL Server 日志传送作业失败，并显示尝试连接到文件共享时出现访问拒绝错误
 
-确保您的 SQL Server Agent 在网络凭据而不是默认凭据下运行。
+确保你的 SQL Server Agent 在网络凭据而不是默认凭据下运行。
   
 ### <a name="sql-server-log-shipping-job-indicates-success-but-no-files-are-copied"></a>SQL Server 日志传送作业指示成功，但未复制任何文件
 
-发生这种情况是因为可用性组的默认备份首选项是"首选辅助"。确保您是从可用性组的辅助服务器而不是主服务器运行日志传送作业，否则，作业将失败且无提示。 
+发生这种情况是因为可用性组的默认备份首选项是"首选辅助"。确保你是从可用性组的辅助服务器而不是主服务器运行日志传送作业，否则，作业将失败且无提示。 
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Managed Metadata Service（或其他 SharePoint 服务）在安装后无法自动启动
 
-服务可能需要几分钟才能启动，具体取决于你的 SharePoint Server 的性能和当前负载。手动单击服务的" **启动**"按钮，留出足够的时间让服务器启动，并时常刷新一下服务器上的服务屏幕以监视其状态。如果服务仍处于停止状态，启用 SharePoint 诊断日志记录，再次尝试启动服务，然后检查日志中是否包含错误。有关详细信息，请参阅[在 SharePoint 2013 中配置诊断日志记录](https://go.microsoft.com/fwlink/p/?LinkId=510884)
+服务可能需要几分钟才能启动，具体取决于你的 SharePoint Server 的性能和当前负载。手动单击服务的“启动”****按钮，留出足够的时间让服务器启动，并时常刷新一下服务器上的服务屏幕以监视其状态。如果服务仍处于停止状态，启用 SharePoint 诊断日志记录，再次尝试启动服务，然后检查日志中是否包含错误。有关详细信息，请参阅[在 SharePoint 2013 中配置诊断日志记录](https://go.microsoft.com/fwlink/p/?LinkId=510884)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>将 DNS 更改为 Azure 故障转移环境之后，客户端浏览器继续使用 SharePoint 网站的旧 IP 地址
 
-您的 DNS 更改可能不会立即对所有客户端可见。在测试客户端上，从提升的命令提示符处执行以下命令，并再次尝试访问该网站。
+你的 DNS 更改可能不会立即对所有客户端可见。在测试客户端上，从提升的命令提示符处执行以下命令，并再次尝试访问该网站。
   
 ```
 Ipconfig /flushdns

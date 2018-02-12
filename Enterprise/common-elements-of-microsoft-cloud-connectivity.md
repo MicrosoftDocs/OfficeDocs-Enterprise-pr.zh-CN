@@ -9,14 +9,15 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "摘要： 了解网络基础结构的常见元素，以及如何准备你的网络。"
-ms.openlocfilehash: 9dffcae28283c9f8b8c219284554225645435e0a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 28825ad299ee12b55037963c68a289f43ffcc56a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft 云连接的公共元素
 
@@ -76,6 +77,11 @@ ms.lasthandoff: 01/11/2018
     
 - **Internet DNS：** A、AAAA、CNAME、MX、PTR 和其他记录，可以查找 Microsoft 云或你在云中托管的服务。例如，可能需要你在 Azure PaaS 中托管的应用程序的 CNAME 记录。
     
+
+## <a name="next-step"></a>后续步骤
+
+[面向 Microsoft 云连接的 ExpressRoute](expressroute-for-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>另请参阅
 
 <a name="steps"> </a>
@@ -83,7 +89,5 @@ ms.lasthandoff: 01/11/2018
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 

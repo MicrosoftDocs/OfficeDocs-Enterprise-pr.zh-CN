@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
-description: "摘要： 了解如何优化网络以便访问 Microsoft SaaS 服务，包括 Office 365、Microsoft Intune 和 Dynamics 365。"
-ms.openlocfilehash: 970d27e50e06f4d872de67589295c490aaa6e0e7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: "摘要：了解如何优化网络以便访问 Microsoft SaaS 服务，包括 Office 365、Microsoft Intune 和 Dynamics 365。"
+ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>为 Microsoft SaaS 设计网络
 
@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 此外，还要优化 Intranet 连接吞吐量（有线、无线或 VPN）。
   
-有关详细信息，请参阅[与 Office 365 的 NAT 支持]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9))。
+有关详细信息，请参阅[与 Office 365 的 NAT 支持](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)。
   
-有关使用适用于 Office 365 的 ExpressRoute，请参阅[适用于 Office 365 的 ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))。
+有关使用适用于 Office 365 的 ExpressRoute，请参阅[适用于 Office 365 的 ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)。
   
 若要优化你的 Intranet 性能，请执行以下操作：
   
@@ -150,7 +150,7 @@ ms.lasthandoff: 01/11/2018
     
 - 对中间设备（年限、健康状况等）进行分析
     
-有关详细信息，请参阅 [PsPing 工具]((https://technet.microsoft.com/sysinternals/jj729731.aspx))。
+有关详细信息，请参阅 [PsPing 工具](https://technet.microsoft.com/sysinternals/jj729731.aspx)。
   
 ## <a name="it-operations-considerations"></a>IT 操作的注意事项
 
@@ -180,11 +180,15 @@ ms.lasthandoff: 01/11/2018
     
 有关详细信息，请参阅：
   
-- [Office 365 的网络和迁移规划]((https://aka.ms/tune))
+- [Office 365 的网络和迁移规划](https://aka.ms/tune)
     
-- [Office 365 性能管理 Microsoft Virtual Academy 课程]((https://aka.ms/o365perf))
+- [Office 365 性能管理 Microsoft Virtual Academy 课程](https://aka.ms/o365perf)
     
-- [面向 Office 365 的 ExpressRoute]((https://aka.ms/expressrouteoffice365))
+- [面向 Office 365 的 ExpressRoute](https://aka.ms/expressrouteoffice365)
+
+## <a name="next-step"></a>后续步骤
+
+[为 Microsoft Azure PaaS 设计网络](designing-networking-for-microsoft-azure-paas.md)
     
 ## <a name="see-also"></a>另请参阅
 
@@ -192,7 +196,7 @@ ms.lasthandoff: 01/11/2018
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

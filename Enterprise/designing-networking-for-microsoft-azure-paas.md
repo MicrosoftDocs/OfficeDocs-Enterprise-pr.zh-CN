@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "摘要： 了解如何优化你的网络以便访问 Microsoft Azure PaaS。"
-ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: "摘要：了解如何优化你的网络以便访问 Microsoft Azure PaaS。"
+ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>为 Microsoft Azure PaaS 设计网络
 
@@ -26,8 +26,6 @@ ms.lasthandoff: 01/11/2018
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>计划将组织 PaaS 应用程序驻留在 Azure 中的步骤
 
-在此处插入章节正文。
-  
 1. 完成 [Microsoft 云连接的常见元素](common-elements-of-microsoft-cloud-connectivity.md)中的**为 Microsoft 云服务准备网络的步骤**部分。
     
 2. 按照[设计 Microsoft SaaS 网络](designing-networking-for-microsoft-saas.md)中的**为 Microsoft SaaS 服务准备网络的步骤**部分的第 2-4 步操作，优化 Internet 带宽。
@@ -70,7 +68,7 @@ ms.lasthandoff: 01/11/2018
     
 - SSL 卸载
     
-有关详细信息，请参阅[应用程序网关]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction))。
+有关详细信息，请参阅[应用程序网关](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)。
   
 ## <a name="azure-traffic-manager"></a>Azure 流量管理器
 
@@ -96,15 +94,19 @@ ms.lasthandoff: 01/11/2018
     
 2. 用户启动与欧洲区域 Web 应用之间的流量。
     
-有关详细信息，请参阅[流量管理器]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview))。
-  
+有关详细信息，请参阅[流量管理器](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)。
+
+## <a name="next-step"></a>后续步骤
+
+[为 Microsoft Azure IaaS 设计网络](designing-networking-for-microsoft-azure-iaas.md)
+ 
 ## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。"
-ms.openlocfilehash: 4534f06e5d4eca759aadb9b589e39f0c8cdeffb1
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>面向 Microsoft 云连接的 ExpressRoute
 
@@ -60,9 +60,9 @@ Internet 中的用户，例如漫游或远程用户，仍通过 Internet 将他�
   
 有关详细信息，请参阅下列更多资源：
   
-- [面向 Office 365 的 ExpressRoute]((https://aka.ms/expressrouteoffice365))
+- [面向 Office 365 的 ExpressRoute](https://aka.ms/expressrouteoffice365)
     
-- [ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))（面向 Azure 的 ExpressRoute）
+- [ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)（面向 Azure 的 ExpressRoute）
     
 ## <a name="advantages-of-expressroute-for-azure"></a>面向 Azure 的 ExpressRoute 的优点
 
@@ -78,7 +78,7 @@ Internet 中的用户，例如漫游或远程用户，仍通过 Internet 将他�
     
 ExpressRoute 连接不能保证每一种配置的性能都会提高。通过低带宽 ExpressRoute 连接实现的性能比高带宽 Internet 连接低，在后一种情况下，与区域性 Microsoft 数据中心仅隔几个跃点。
   
-有关使用适用于 Office 365 的 ExpressRoute，请参阅[适用于 Office 365 的 ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))。
+有关使用适用于 Office 365 的 ExpressRoute，请参阅[适用于 Office 365 的 ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)。
   
 ## <a name="expressroute-connectivity-models"></a>ExpressRoute 连接模型
 
@@ -235,11 +235,11 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
     
 有关详细信息，请参阅：
   
-- [Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))（Azure ExpressRoute for Office 365 培训）
+- [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)（Azure ExpressRoute for Office 365 培训）
     
-- [Office 365 的网络规划和性能调整 365]((https://aka.ms/tune))
+- [Office 365 的网络规划和性能调整 365](https://aka.ms/tune)
     
-- [Office 365 Performance Management]((https://mva.microsoft.com/zh-CN/training-courses/office-365-performance-management-8416))（Office 365 的性能管理）
+- [Office 365 Performance Management](https://mva.microsoft.com/zh-CN/training-courses/office-365-performance-management-8416)（Office 365 的性能管理）
     
 ## <a name="expressroute-options"></a>ExpressRoute 选项
 
@@ -255,19 +255,23 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
     
 有关详细信息，请参阅下列更多资源：
   
-- [面向 Office 365 的 ExpressRoute]((https://aka.ms/expressrouteoffice365))
+- [面向 Office 365 的 ExpressRoute](https://aka.ms/expressrouteoffice365)
     
-- [Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))（Azure ExpressRoute for Office 365 培训）
+- [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)（Azure ExpressRoute for Office 365 培训）
     
-- [ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))（面向 Azure 的 ExpressRoute）
+- [ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)（面向 Azure 的 ExpressRoute）
     
+## <a name="next-step"></a>后续步骤
+
+[为 Microsoft SaaS 设计网络](designing-networking-for-microsoft-saas.md)
+
 ## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

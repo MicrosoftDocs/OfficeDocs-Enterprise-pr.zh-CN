@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
-description: "摘要： 了解采用云如何要求使用新的网络基础设施投资方法。"
-ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: "摘要：了解采用云如何要求使用新的网络基础设施投资方法。"
+ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>发展你的云连接网络
 
@@ -81,15 +81,15 @@ ExpressRoute 可以利用你现有的网络提供程序来提供专用连接。�
 |构建并实施内部和面向 Internet 的 IT 工作负载的负载平衡  <br/> |||应用  <br/> |
 |解决虚拟机连接和吞吐量问题  <br/> |||应用  <br/> |
    
+## <a name="next-step"></a>后续步骤
+
+[Microsoft 云连接的公共元素](common-elements-of-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[面向 Microsoft 云连接的 ExpressRoute](expressroute-for-microsoft-cloud-connectivity.md)
-  
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 
