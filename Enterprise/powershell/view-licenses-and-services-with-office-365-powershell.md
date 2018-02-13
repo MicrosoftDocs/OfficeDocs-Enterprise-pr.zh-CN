@@ -9,18 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Office_Other
-- O365ITProTrain
-- LIL_Placement
-- PowerShell
+ms.custom: Ent_Office_Other, O365ITProTrain, LIL_Placement, PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "解释如何使用 Office 365 PowerShell 查看有关授权计划、 服务和 Office 365 提供组织中可用的许可证信息。"
-ms.openlocfilehash: 7564da2093bdc9de45e239be8196a626214871ba
-ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
+ms.openlocfilehash: 50c2d22d35cbf0d38f80515f8013e797d19ae483
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看许可证和服务
 
@@ -34,7 +30,7 @@ ms.lasthandoff: 01/23/2018
 - **许可证**每个授权计划包含您购买的许可证的数量。将许可证分配给用户以便他们可以使用 Office 365 提供服务所定义的授权计划。每个用户帐户要求从一个授权计划至少一个许可证，因此他们可以登录到 Office 365 提供和使用服务。
     
 Office 365 PowerShell 可用于查看 Office 365 提供组织中可用的授权计划、 许可证和服务有关的详细信息。有关产品、 功能和 Office 365 的不同预订中提供的服务的详细信息，请参阅[Office 365 计划选项](https://go.microsoft.com/fwlink/p/?LinkId=691147)。
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 <a name="RTT"> </a>
 
 - 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
