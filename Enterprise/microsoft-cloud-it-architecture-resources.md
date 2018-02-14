@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: "摘要：了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。"
-ms.openlocfilehash: 94b0e732e84fe7ec47431b7521be4c21a1d858df
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 202e7f837275474694a37060803a272c9aa5bdc4
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
@@ -47,9 +45,9 @@ ms.lasthandoff: 02/09/2018
     - [通过 Microsoft 部署新式安全桌面](microsoft-cloud-it-architecture-resources.md#msd)
     
 > [!TIP]
-> 此页上的大多数海报都有多种语言，包括中文、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语和西班牙语。若要下载其中一种语言的海报，请单击相应海报的**更多语言**链接。
+> 此页上的大多数海报都有多个语言版本，包括中文、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语和西班牙语。若要下载其中一种语言的海报，请单击相应海报的**更多语言**链接。
   
-请将想法告诉我们！向我们 ([cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)) 发送电子邮件。 
+请将你的想法告诉我们！向我们 ([cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)) 发送电子邮件。 
   
 <a name="roadmap"> </a>
 ## <a name="microsofts-enterprise-cloud-roadmap"></a>Microsoft 企业云路线图
@@ -99,7 +97,7 @@ ms.lasthandoff: 02/09/2018
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![Microsoft 云网络连接模型的缩略图](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| ![文章](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[文章](https://technet.microsoft.com/library/mt733214.aspx) <br/>![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | 此模型包含以下页面： <ul><li> **发展云连接网络**：云迁移更改了公司网络内外通信的流量和性质。它还影响了降低安全风险的方法。</li><li> **Microsoft 云连接的常见元素**：将网络与 Microsoft 云进行集成可提供对广泛服务的最佳访问。 </li><li> **Microsoft 云连接的 ExpressRoute**：ExpressRoute 可用于与 Microsoft 云建立私有、专用、高吞吐量的网络连接。 </li><li> **设计 Microsoft SaaS（Office 365、Microsoft Intune 和 Dynamics CRM Online）网络**：优化 Microsoft SaaS 服务网络需要仔细分析 Internet 边缘、客户端设备和典型 IT 运营状况。 </li><li> **设计 Azure PaaS 网络**：优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，并可以要求网络流量跨多个网站或应用分布。 </li><li> **设计 Azure IaaS 网络**：逐步调试设计流程，以创建最佳的 Azure 虚拟网络 (VNet)，以便托管基于服务器的 IT 工作负载，包括子网、地址空间、路由、DNS、负载均衡、本地网络连接性、其他 VNet 和 Internet。 </li></ul><br/>  学习此体系结构海报宣传的新 Microsoft Virtual Academy 课程：[让网络更适合 Microsoft 云产品/服务](https://aka.ms/optimizecloudnetworkingmva)。  <br/>|
+|[![Microsoft 云网络连接模型的缩略图](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| ![文章](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[文章](https://technet.microsoft.com/library/mt733214.aspx) <br/>![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | 此模型包含以下页面： <ul><li> **发展云连接网络**：云迁移将更改公司网络内部和外部的通信流量及性质，而且还会影响降低安全风险的方法。</li><li> **Microsoft 云连接的常见元素**：将网络与 Microsoft 云进行集成可提供对广泛服务的最佳访问。 </li><li> **Microsoft 云连接的 ExpressRoute**：ExpressRoute 可用于与 Microsoft 云建立私有、专用、高吞吐量的网络连接。 </li><li> **设计 Microsoft SaaS（Office 365、Microsoft Intune 和 Dynamics CRM Online）网络**：优化 Microsoft SaaS 服务网络需要仔细分析 Internet 边缘、客户端设备和典型 IT 运营状况。 </li><li> **设计 Azure PaaS 网络**：优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，并可以要求网络流量跨多个网站或应用分布。 </li><li> **设计 Azure IaaS 网络**：逐步调试设计流程，以创建最佳的 Azure 虚拟网络 (VNet)，以便托管基于服务器的 IT 工作负载，包括子网、地址空间、路由、DNS、负载均衡、本地网络连接性、其他 VNet 和 Internet。 </li></ul><br/>  学习此体系结构海报宣传的新 Microsoft Virtual Academy 课程：[让网络更适合 Microsoft 云产品/服务](https://aka.ms/optimizecloudnetworkingmva)。  <br/>|
    
 <a name="mobility"> </a>
 ### <a name="microsoft-mobility-and-security-for-enterprise-architects"></a>面向企业架构师的 Microsoft 移动性和安全性
@@ -167,7 +165,7 @@ Office 365 企业版解决方案系列介绍了如何实现 Office 365 功能，
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![Office 365 信息保护功能](images/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| ![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft 提供最完整的功能集以保护您的企业资产。此模型帮助组织采用有条不紊的方法来计划要实现的功能。  <br/>|
+|[![Office 365 信息保护功能](images/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| ![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft 提供了最完整的功能集来保护你的企业资产。此模型可帮助组织以有条不紊的方法来计划要实现的功能。  <br/>|
    
 <a name="BKMK_O365IDP"> </a>
 ### <a name="identity-and-device-protection-for-office-365"></a>Office 365 的标识和设备保护
@@ -176,7 +174,7 @@ Office 365 企业版解决方案系列介绍了如何实现 Office 365 功能，
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![模型海报：Office 365 和其他 SaaS 应用的标识和设备保护](images/c1cfb31b-5150-45ff-b46c-3a237e9f5581.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| ![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> |请务必在数据、标识和设备中使用一致的保护级别。本文档介绍可与保护标识和设备功能相媲美的功能的详细信息。  <br/> |
+|[![模型海报：Office 365 和其他 SaaS 应用的标识和设备保护](images/c1cfb31b-5150-45ff-b46c-3a237e9f5581.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| ![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> |请务必在数据、标识和设备中使用一致的保护级别。本文档将详细介绍可与保护标识和设备功能相媲美的功能。  <br/> |
    
 <a name="BKMK_O365fileprotect"> </a>
 ### <a name="file-protection-solutions-in-office-365"></a>Office 365 中的文件保护解决方案
@@ -185,7 +183,7 @@ Office 365 企业版解决方案系列介绍了如何实现 Office 365 功能，
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![Office 365 中文件保护解决方案迷你海报集缩略图](images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365 file protection.pdf)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |请务必在数据、标识和设备中使用一致的保护级别。本文档介绍可与保护 Office 365 中的文件功能相媲美的功能的详细信息。  <br/> |
+|[![Office 365 中文件保护解决方案迷你海报集缩略图](images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365 file protection.pdf)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |请务必在数据、标识和设备中使用一致的保护级别。本文档将详细介绍可与保护 Office 365 中的文件功能相媲美的功能。  <br/> |
    
 <a name="changemgmt"> </a>
 ### <a name="change-management-for-office-365-clients"></a>Office 365 客户端的变更管理
