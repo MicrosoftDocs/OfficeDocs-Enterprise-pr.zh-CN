@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: TLG, Ent_TLGs
+ms.custom:
+- TLG
+- Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "摘要： 配置 Office 365 开发/测试环境中组织的其余部分隔离的 SharePoint Online 工作组网站。"
-ms.openlocfilehash: 75a469b50603d5eb398d1e15d37c6745bc0a48b8
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: c6115e48f1b2453aaf173b384a30c1cc34ce7b5a
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>SharePoint Online 的团队站点开发/测试环境的独立
 

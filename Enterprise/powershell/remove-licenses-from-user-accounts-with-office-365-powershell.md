@@ -9,14 +9,18 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other, LIL_Placement, O365ITProTrain
+ms.custom:
+- PowerShell
+- Ent_Office_Other
+- LIL_Placement
+- O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: "解释如何使用 Office 365 PowerShell 删除先前已指派给用户的 Office 365 提供许可证。"
-ms.openlocfilehash: 115a708d8def679d43d88e9c83b68ca13dd72fdc
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: c02d5a6cac029ce9beb8077da98418734d935ded
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户的许可证
 
