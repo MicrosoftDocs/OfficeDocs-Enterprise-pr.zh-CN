@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: "摘要： 单步执行独立在线 SharePoint 工作组网站的设计过程。"
-ms.openlocfilehash: 343872ef7a41b40a87454da27ddccc4530ffe2eb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>设计独立的在线 SharePoint 工作组网站
 
@@ -133,7 +129,7 @@ ms.lasthandoff: 12/15/2017
 
 当您准备创建和配置生产中一个独立的网站时，请参见[部署独立的在线 SharePoint 工作组网站](deploy-an-isolated-sharepoint-online-team-site.md)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [SharePoint Online 的独立的团队站点](isolated-sharepoint-online-team-sites.md)
   

@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "摘要： 配置和展示数据分类和标记您 Office 365 的开发/测试环境中使用 Azure 信息保护 (AIP) 客户端。"
-ms.openlocfilehash: 2784f4105903855de89c6c45f7a643279bb4dfbf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7243acecca0dd4c39ff6ef2aecd25091f25f2f53
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的数据分类和标记
 
@@ -53,9 +49,9 @@ Azure 信息保护客户端使您可以将文档划分到之前将其上载到 S
     
 4. **购买服务**页上找到**Azure 信息保护津贴 P2**项。鼠标悬停并单击**开始免费试用版**。
     
-5. 在**确认订单**页中，单击**立即尝试**。
+5. 在“确认订单”页中，单击“立即试用”。
     
-6. 在**订单收据**页上，单击**继续**。
+6. 在“订单签收”页中，单击“继续”。
     
 接下来，为所有用户帐户启用 Azure 信息保护许可证。
   
@@ -141,7 +137,7 @@ Azure 信息保护客户端使您可以将文档划分到之前将其上载到 S
     
 5. 在列表的 SharePoint 组，请单击**支持站点集合成员**。
     
-6. 在**用户和用户组**页上，单击**新建**。
+6. 在“人员和组”页中，单击“新建”。
     
 7. 在**共享支持网站集**，键入**每个人**，**每个人，除了外部用户**，请单击，然后单击**共享。**
     
@@ -161,12 +157,12 @@ Azure 信息保护客户端使您可以将文档划分到之前将其上载到 S
     
     应该会在支持网站集上看到文档文件夹中的 AfterAIP.docx。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Office 365 和 EMS 开发/测试环境](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
-[Azure 的信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)
+[Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 

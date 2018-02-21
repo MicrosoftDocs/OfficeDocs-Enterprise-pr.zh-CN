@@ -5,23 +5,22 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Top
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: "摘要： 在 Azure 同步您的内部目录和 Office 365 订购的 Azure AD 租户之间的帐户中的虚拟机上部署 Azure AD 连接 （目录同步）。"
-ms.openlocfilehash: c6ee337c49092ac5d2b3d30a54fc33b3f3e2bb58
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 07ec310c50635afd70b0342d2e0547aab0e95d01
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Office 365 目录同步 (DirSync)
 
@@ -198,7 +197,7 @@ Azure AD Connect 将帐户从本地 Windows Server AD 添加到 Office 365 订�
     
 7. 对于其他用户，请返回步骤 3。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 <a name="DeploymentRoadmap"> </a>
 

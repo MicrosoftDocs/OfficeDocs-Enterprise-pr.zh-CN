@@ -13,14 +13,13 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: "解释如何使用 Office 365 PowerShell 确定已指派给用户的 Office 365 提供服务。"
-ms.openlocfilehash: 59a6444e0f6618fd837e8eae567661499e795c69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 
@@ -28,7 +27,7 @@ ms.lasthandoff: 12/15/2017
   
 Office 365 中许可证的授权计划 （也称为的 Sku 或 Office 365 计划） 允许用户访问的计划，这些计划定义 Office 365 提供服务。但是，用户可能不具有访问中当前分配给它们的许可证提供的所有服务。Office 365 PowerShell 可用于对用户帐户查看服务的状态。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 <a name="RTT"> </a>
 
 - 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
@@ -292,14 +291,14 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
 是的这也非常怪模怪样的命令。但是，它将创建 CSV 文件显示您的所有用户和所有及其服务状态。
 
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>另请参阅
 <a name="SeeAlso"> </a>
 
 请参阅下面有关使用 Office 365 PowerShell 管理用户的其他主题：
   
 - [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
     
-- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 删除和还原用户帐户](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [使用 Office 365 PowerShell 冻结用户账户](block-user-accounts-with-office-365-powershell.md)
     
@@ -313,7 +312,7 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
     
 - [格式列表](https://go.microsoft.com/fwlink/p/?LinkId=113302)
     
-- [获得 MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
 - [选择对象](https://go.microsoft.com/fwlink/p/?LinkId=113387)
     
@@ -324,8 +323,4 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
 ## <a name="new-to-office-365"></a>刚开始接触 Office 365？
 
 
-||
-|:-----|
-|![LinkedIn 学习的短图标](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 提供指向新建？**        [Office 365 管理员和 IT 专业人员使用](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)，LinkedIn 学习者发现免费视频课程。 |
-   
-
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]

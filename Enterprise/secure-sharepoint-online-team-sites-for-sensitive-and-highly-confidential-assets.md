@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "摘要： 如何 Contoso 变得更容易实现保护敏感和高度机密 SharePoint Online 的工作组站点，尚未安全、 高级管理人员的协作和其研究中心。"
-ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>保护敏感和高度机密的资产的 SharePoint Online 工作组站点
 
@@ -60,7 +56,7 @@ Contoso 使用这些步骤来为他们的执行官们和研究小组创建 Share
   
  若要设置此功能演示、 概念证明或开发/测试，请参见[安全 SharePoint Online 网站的开发/测试环境](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [Contoso Corporation 的企业方案](enterprise-scenarios-for-the-contoso-corporation.md)
   

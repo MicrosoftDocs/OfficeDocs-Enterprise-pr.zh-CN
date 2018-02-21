@@ -5,19 +5,20 @@ author: JoeDavies-MSFT
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: "本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。"
-ms.openlocfilehash: d81fe9947feee64d1dd75278738262d10c802ecc
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>可访问的图 - Microsoft Exchange 2013 平台选项
 
-**摘要：**这篇文章是图名为 Microsoft Exchange 2013 平台选项，即在[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)可用辅助功能的文本版本。
+**摘要：**本文是[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)中的“Microsoft Exchange 2013 平台选项”图表的可访问文本版本。
   
 本海报介绍哪些业务决策者 (BDM) 和架构师需要了解 Exchange Online 与 Exchange Server 部署，其中包含以下内容： 
   

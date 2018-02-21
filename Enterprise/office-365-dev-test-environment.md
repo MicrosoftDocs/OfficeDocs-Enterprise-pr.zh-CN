@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
-- Ent_TLGs
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: "摘要： 使用此测试实验室指南创建 Office 365 提供试用版订购评估或开发/测试。"
-ms.openlocfilehash: 1864043513fc7502ada332ab3b3043ff20a13736
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: b3c9e83dfab3aaf02ad598021e11965657e877bb
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
@@ -298,7 +293,7 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
     
 - [Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

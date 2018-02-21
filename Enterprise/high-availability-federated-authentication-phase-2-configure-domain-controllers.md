@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "摘要： 在 Microsoft Azure 中配置域控制器和 Office 365 提供您的高可用性联合身份验证的目录同步服务器。"
-ms.openlocfilehash: 86b5630f073a1c07dc2dbf270ac7e9d2220f7503
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 5e2cc8b5c750b5b2cf48ff0c594a5bd716d5bcf2
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
@@ -38,7 +33,7 @@ ms.lasthandoff: 12/15/2017
 
 首先，您需要填写表格 M 的**虚拟机名称**列中，根据需要在**最小大小**列中修改虚拟机大小。
   
-|**项**|**虚拟机的名称**|**插图**|**存储类型**|**最小大小**|
+|**项目**|**虚拟机的名称**|**插图**|**存储类型**|**最小大小**|
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |______________（第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |______________（第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
@@ -255,7 +250,7 @@ Restart-Computer
 
 使用[高可用性联合身份验证阶段 3： 配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)继续配置此工作负载。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: "摘要： 了解如何创建包含运行 Exchange Server 2013年的服务器、 运行 Lync Server 2013，服务器和服务器运行 SharePoint Server 2013 集成的测试实验室。"
-ms.openlocfilehash: 6fc3bc05db0d28bc4de2be77671ccf5e8fc55926
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4bc9c48782c7693368c304f5f9d5bae56242111d
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>测试实验室指南：配置集成的 Exchange、Lync 和 SharePoint 测试实验室
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 12/15/2017
 
 [测试实验室指南： 配置集成的交换、 Lync 和 SharePoint 测试实验室](https://go.microsoft.com/fwlink/p/?LinkId=313670)(https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [测试实验室指南](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 

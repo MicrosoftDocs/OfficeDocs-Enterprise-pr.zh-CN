@@ -8,21 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- jan17entnews
-- Strat_O365_Enterprise
-- Ent_TLGs
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: "摘要： 使用此测试实验室指南 Dynamics 365 添加到 Office 365 开发/测试环境。"
-ms.openlocfilehash: 49648dd357d23eaee2d08d35252e18edf6a5d2ec
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境
 
@@ -64,15 +58,15 @@ ms.lasthandoff: 12/15/2017
 
 1. 台式计算机 （轻型） 上使用浏览器或客户端 1 （模拟企业），到 Office 365 门户网站位于[https://portal.office.com](https://portal.office.com)的全局管理员帐户凭据登录。
     
-2. 单击**管理**拼贴。
+2. 单击“管理”磁贴。
     
 3. **办公室管理中心**选项卡上，左边的导航，请单击**计费 > 购买服务**。
     
 4. **购买服务**页上找到**Dynamics 365 计划 1 企业版**项目。将鼠标指针悬停在其上，单击**启动免费试用版**。
     
-5. 在**确认订单**页中，单击**立即尝试**。
+5. 在“确认订单”页中，单击“立即试用”。
     
-6. 在**订单收据**页上，单击**继续**。
+6. 在“订单签收”页中，单击“继续”。
     
 > [!NOTE]
 > Dynamics 365 计划 1 企业版订阅试用期是 30 天。可以轻松地将该订阅的试用期再延长 30 天。对于永久性开发/测试环境，请使用少量许可证创建新的付费订阅。 
@@ -136,7 +130,7 @@ ms.lasthandoff: 12/15/2017
 
 配置，然后说明如何 Office 365 和 Dynamics 365 结合使用[Office 365 和 Dynamics 365 开发/测试环境](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)的 Exchange 联机集成在 Exchange 在线邮箱。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

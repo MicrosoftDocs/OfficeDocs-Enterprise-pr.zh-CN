@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365_Hybrid_Top
-- Ent_O365
-- Ent_O365_Hybrid
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: "摘要： 在创建和配置 Office 365 提供您的高可用性联合身份验证的 Active Directory 联合身份验证服务 (AD FS) 服务器 Microsoft Azure。"
-ms.openlocfilehash: b3faf7e7ebf25dbcbfd5a0a8d3431d145b540da8
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a9daecddb572bf2432d68ae76ed8d81571ef4b79
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
@@ -156,7 +151,7 @@ Restart-Computer
 
 使用[高可用性联合身份验证阶段 4： 配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)继续配置此工作负载。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

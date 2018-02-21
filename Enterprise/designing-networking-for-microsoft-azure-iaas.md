@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: "摘要： 了解如何设计用于在 Microsoft Azure IaaS 的工作负载优化的网络。"
-ms.openlocfilehash: e4861de51f386af6e142debdafc64f655f010880
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>为 Microsoft Azure IaaS 设计网络
 
@@ -32,11 +30,11 @@ ms.lasthandoff: 12/15/2017
   
 ### <a name="step-1-prepare-your-intranet-for-microsoft-cloud-services"></a>步骤 1：为 Microsoft 云服务准备 Intranet。
 
-经过[公共元素的 Microsoft 云连接](common-elements-of-microsoft-cloud-connectivity.md)中的**步骤来准备您网络上的 Microsoft 云服务**部分。
+完成 [Microsoft 云连接的常见元素](common-elements-of-microsoft-cloud-connectivity.md)中的**为 Microsoft 云服务准备网络的步骤**部分。
   
 ### <a name="step-2-optimize-your-internet-bandwidth"></a>步骤 2：优化 Internet 带宽。
 
-优化您的互联网带宽使用步骤 2-4 的设计[网络，对于 Microsoft SaaS](designing-networking-for-microsoft-saas.md)的**步骤来准备您的 Microsoft SaaS 服务的网络**部分。
+按照[设计 Microsoft SaaS 网络](designing-networking-for-microsoft-saas.md)中的**为 Microsoft SaaS 服务准备网络的步骤**部分的第 2-4 步操作，优化 Internet 带宽。
   
 ### <a name="step-3-determine-the-type-of-vnet-cloud-only-or-cross-premises"></a>步骤 3：确定 VNet 的类型（仅限云或跨界部署）。
 
@@ -198,8 +196,7 @@ Azure 内部负载平衡功能将来自其他 Azure VM 或 Intranet 计算机的
 |1.在云服务中配置的终结点和 ACL  <br/> |经典  <br/> |
 |2.网络安全组  <br/> |Resource Manager 和经典  <br/> |
 |3.面向 Internet 的负载平衡器，具有入站 NAT 规则  <br/> |资源经理  <br/> |
-|4.网络在 Azure 中的安全装置 
- 市场 （未显示）  <br/> |Resource Manager 和经典  <br/> |
+|4.网络安全装置在 Azure 市场上 （未显示）  <br/> |Resource Manager 和经典  <br/> |
    
  **表 5： 连接到虚拟机和其相应的 Azure 部署模型的方法**
   
@@ -381,10 +378,8 @@ VNet 对等有关的详细信息，请参阅[VNet 对等](https://docs.microsoft
 |**步骤**|**结果**|
 |:-----|:-----|
 |1.列出不属于 VNet 地址空间的根空间的前缀。  <br/> |172.16.0.0/12 和 192.168.0.0/16  <br/> |
-|2.达列表变量的八位字节的非重叠前缀，但不是包括最后一次使用 
- 八位字节的 VNet 地址空间中。  <br/> |10.0.0.0/16、 10.1.0.0/16...10.99.0.0/16、 10.101.0.0/16...10.254.0.0/16，10.255.0.0/16 （255 前缀，跳过 10.100.0.0/16）  <br/> |
-|3.在非重叠前缀的列表 
- 最后一次使用 VNet 地址空间的八位位组。  <br/> | 10.100.0.0/24、 10.100.1.0/24...10.100.99.0/24、 10.100.101.0/24...10.100.254.0/24，10.100.0.255.0/24 （255 前缀，跳过 10.100.100.0/24）  <br/> |
+|2.列出非重叠达变量的八位字节，但 VNet 地址空间中不包括使用的最后一个八位字节的前缀。  <br/> |10.0.0.0/16、 10.1.0.0/16...10.99.0.0/16、 10.101.0.0/16...10.254.0.0/16，10.255.0.0/16 （255 前缀，跳过 10.100.0.0/16）  <br/> |
+|3.列出的最后一个使用八位字节的 VNet 地址空间中的非重叠前缀。  <br/> |10.100.0.0/24、 10.100.1.0/24...10.100.99.0/24、 10.100.101.0/24...10.100.254.0/24，10.100.0.255.0/24 （255 前缀，跳过 10.100.100.0/24）  <br/> |
    
  **表 7： 示例本地地址的网络空间**
   
@@ -415,7 +410,7 @@ Azure 的子网的默认系统路由指向 Internet。为了确保虚拟机的�
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>Azure 中的 SharePoint Server 2016 场
 <a name="cross_prem"> </a>
 
-Azure IaaS 中托管 Intranet IT 工作负荷的一个示例就是高可用性、多层 SharePoint Server 2016 场，如图 19 中所示。
+Intranet 中 Azure IaaS 承载的 IT 工作负荷的一个示例是高可用性、 多层 SharePoint 服务器 2016年场。
   
 **图 19: Azure IaaS 在一个高度可用的内联网 SharePoint 服务器 2016年场**
 
@@ -428,7 +423,7 @@ Azure IaaS 中托管 Intranet IT 工作负荷的一个示例就是高可用性�
   
 有关其他示例部署虚拟跨场所 Azure 中的虚拟机上的 IT 工作负荷的网络，请参阅[混合 Azure IaaS 云方案](https://technet.microsoft.com/library/mt750502.aspx)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 <a name="cross_prem"> </a>
 

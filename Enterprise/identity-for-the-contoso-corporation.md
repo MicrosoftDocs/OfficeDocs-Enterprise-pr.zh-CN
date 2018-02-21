@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "摘要： 了解 Contoso 如何利用 IDaaS 和提供地理分布和冗余针对其用户的身份验证。"
-ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
@@ -126,9 +124,9 @@ Contoso 已配置联合身份验证，它提供了单一登录，Contoso 的工�
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 
-[企业架构师的 Microsoft 云标识](http://aka.ms/cloudarchidentity)
+[面向企业架构师的 Microsoft 云标识](http://aka.ms/cloudarchidentity)
   
-[标识和 Office 365 的设备保护](http://aka.ms/o365protect_device)
+[Office 365 的标识和设备保护](http://aka.ms/o365protect_device)
   
 [Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
 

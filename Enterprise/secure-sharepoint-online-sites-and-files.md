@@ -1,101 +1,100 @@
 ---
-title: "SharePoint Online 网站和文件保护"
+title: "保护 SharePoint Online 网站和文件"
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Top
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: "摘要： 为保护 SharePoint Online Office 365 中的文件的配置建议。"
-ms.openlocfilehash: 336dd4114e7853319fede88f9f3ea5aa613b2081
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: 035c3e69a430269b382ab032387a44cc3cbbbfd6
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online 网站和文件保护
+# <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
  **摘要：**为保护 SharePoint Online Office 365 中的文件的配置建议。
   
 本文提供了有关配置 SharePoint Online 的工作组站点和平衡安全而且易于协作的文件保护的建议。本文定义了四种不同配置，最开放的共享策略与组织内的公用网站开始。每个其他配置表示一个有意义的步骤组成的保护，但能够访问和协作资源减少到相关集的用户。这些建议作为起点并调整配置以满足您组织的需要。 
   
-这篇文章中的配置符合 Microsoft 对三个层次的数据、 身份和设备的保护的建议：
+本文中的配置符合 Microsoft 针对数据、标识和设备的三层保护的建议：
   
-- 基线的保护
+- 基线保护
     
-- 写保护
+- 敏感保护
     
-- 高度机密的保护
+- 高度机密保护
     
-有关这些层和建议的每一层的功能的详细信息，请参阅以下资源。 
+有关这些保护层以及针对每层建议的功能的详细信息，请参阅以下资源。 
   
-- [标识和 Office 365 的设备保护](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
+- [Office 365 的标识和设备保护](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     
 - [Office 365 中的文件保护解决方案](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     
 ## <a name="capability-overview"></a>功能概述
 
-SharePoint Online 团队站点的建议依靠各种 Office 365 提供功能。对于高度机密的站点，建议使用 Azure 的信息保护。这将包括在企业移动 + 安全 (EMS)。 
+针对各种 Office 365 功能的 SharePoint Online 团队网站绘制的建议。 对于高度机密的网站，建议使用 Azure 信息保护。 这包括在企业移动性 + 安全性 (EMS) 中。 
   
 下图显示了四个 SharePoint Online 的团队站点的建议的配置。
   
 ![适用于 SharePoint 网站的推荐配置](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
   
-图所示：
+如图所示：
   
-- 基线保护包括 SharePoint Online 团队站点的两个选项 — — 一个公共站点和专用站点。公共网站可以发现，并由组织中的任何人访问。只能发现和访问网站的成员的专用网站。同时这些站点配置允许共享组之外。 
+- 基线保护包含针对 SharePoint Online 团队网站的两个选项 - 公共网站和专用网站。 组织中的任何人均可发现和访问公共网站。 只有网站成员可以发现和访问专用网站。 这两个网站配置均允许组外共享。 
     
-- 敏感和高度机密保护的站点都是与访问仅限于特定组的成员的专用站点。
+- 敏感保护和高度机密的保护的网站是专用网站，只有特定组的成员才具有相关访问权限。
     
-- Office 365 标签提供所需的保护级别的数据进行分类的方法。每个 SharePoint Online 的团队站点都配置为自动标签文件与默认标签的文档库中的网站。对应于四个站点配置，在此示例中的标志是内部公共、 私人、 敏感、 和高度机密。用户可以更改的标签，但这种配置可确保所有文件都获得一个默认标签。
+- Office 365 标签提供根据所需保护级别对数据进行分类的方法。 每个 SharePoint Online 团队网站均被配置为使用网站的默认标签自动标记文档库中的文件。 与四个网站配置相对应，此示例中的标签分别为内部公开、专用、敏感和高度机密。 用户可以更改标签，但此配置可确保所有文件均接收默认的标签。
     
-- 数据丢失防护 (DLP) 策略配置的敏感和高度机密的 Office 365 的标签警告或阻止用户在尝试发送这些类型的组织外部文件时。
+- 为敏感和高度机密 Office 365 标签配置数据丢失防护 (DLP)，在其试图向组织外部发送这些类型的文件时警告或阻止用户。
     
-- 对于站点配置了高度机密的保护，Azure 信息保护进行加密和授予权限的文件。
+- 对于配置有高度机密保护的网站，Azure 信息保护将对文件进行加密，并授予相应权限。
     
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和业务的 OneDrive 的租户范围设置
+## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和 OneDrive for Business 的租户范围内设置
 
-SharePoint Online 和业务的 OneDrive 包括租户范围影响到所有站点和用户的设置。其中的某些设置也可以在网站级别为限制性更强 （但不是更少） 来调整。本部分讨论了影响安全和协作的租户范围设置。 
+SharePoint Online 和 OneDrive for Business 包括影响所有网站和用户的租户范围内设置。 其中一些设置也可在网站级别进行调整，使其更具有（而不是更不具有）限制性。 本部分讨论影响安全性和协作的租户范围内设置。 
   
 ### <a name="sharing"></a>共享
 
-对于本解决方案，我们建议以下的租户范围设置：
+对于此解决方案，建议使用以下租户范围内设置：
   
-- 保持默认的共享策略，允许与所有帐户类型，包括匿名共享的所有共享。
+- 保留允许所有与所有帐户类型共享（包括匿名共享）的默认共享策略。
     
-- 如果需要，请设置过期，匿名的链接。
+- 如果需要，请将匿名链接设置为过期。
     
-- 更改到内部共享的默认链接类型。这有助于防止数据意外泄漏，在您的组织之外。
+- 将共享的默认链接类型更改为“内部”。 这有助于防止数据意外泄露到组织外部。
     
-虽然这可能看起来有悖常理，允许外部共享，这种方法提供了更好地控制文件共享到电子邮件中发送的文件进行比较。SharePoint Online 和 Outlook 协同工作以提供关于文件的安全协作。 
+虽然允许外部共享可能看起来有悖常理，但相较于通过电子邮件发送文件，此方法可更好地控制文件共享。 SharePoint Online 和 Outlook 彼此协作，提供安全的文件协作。 
   
-- 默认情况下，Outlook 共享文件，而是通过电子邮件发送该文件的链接。 
+- 默认情况下，Outlook 共享文件链接，而不是通过电子邮件发送文件。 
     
 - SharePoint Online 和业务的 OneDrive 可以轻松与正在组织内外的参与者共享文件的链接
     
-您还可以控制可帮助管理外部共享。例如，您可以：
+用户还可进行控制，帮助管理外部共享。 例如，你能够：
   
 - 禁用匿名来宾链接。
     
-- 吊销用户对站点的访问。
+- 撤销用户对网站的访问权限。
     
-- 谁有权访问特定的网站或文档，请参阅。
+- 查看谁有权访问特定网站或文档。
     
-- 设置匿名共享链接过期 （租户设置）。
+- 将匿名共享链接设置为过期（租户设置）。
     
-- 可以共享外部组织 （租户设置） 的限制。
+- 限制可与之共享的组织外部用户（租户设置）。
     
-### <a name="use-external-sharing-together-with-data-loss-prevention-dlp"></a>使用外部数据丢失防护 (DLP) 和共享
+### <a name="use-external-sharing-together-with-data-loss-prevention-dlp"></a>配合使用外部共享与数据丢失预防 (DLP)
 
 如果您不允许外部共享时，与业务用户需要了解备用工具和方法。Microsoft 建议您将合并外部共享与 DLP 策略来保护敏感和高度机密文件。
   
@@ -103,26 +102,26 @@ SharePoint Online 和业务的 OneDrive 包括租户范围影响到所有站点�
 
 SharePoint Online 和 OneDrive 的业务设备访问设置使您可以确定是否限制为仅限于浏览器访问 （不能下载文件），或访问被阻止。这些设置目前在第一版，并且应用租户范围。即将是在站点级别配置设备访问策略的能力。对于本解决方案，建议不使用应用组织范围内的设备访问设置。
   
-要使用设备访问设置，而这些在第一个版本是：[设置标准或 Office 365 中的第一个发布选项](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)。
+要使用处于首次发布状态的设备访问设置，请参阅：[在 Office 365 中设置标准发布或首次发布选项](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)。
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-请访问这些设置，以决定是否要更改业务网站的默认设置为 OneDrive。目前，共享和设备访问权限设置 SharePoint Online 管理中心从复制，并应用于这两种环境。
+访问这些设置，确定是否要更改 OneDrive for Business 网站的默认设置。 目前，共享和设备访问设置与 SharePoint Online 管理中心重复，并适用于这两个环境。
   
-## <a name="sharepoint-team-site-configuration"></a>SharePoint 工作组网站配置
+## <a name="sharepoint-team-site-configuration"></a>SharePoint 团队网站配置
 
-下表总结了每个团队站点在本文的前面部分中描述的配置。作为起始点建议使用这些配置和调整以满足组织的需要的网站类型和配置。不是每个组织都需要每种类型的网站。只有较少的组织需要高度机密的保护。
+下表总结了本文前面所述的每个团队网站的配置。 使用这些配置作为起点建议并调整网站类型和配置，以满足组织的需求。 不是每个组织都需要每种类型的网站。 只有少许组织需要高度机密的保护。
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**基线保护 #1** <br/> |**基线保护 #2** <br/> |**写保护** <br/> |**高度机密** <br/> |
-|说明  <br/> |打开搜索和组织内的协作。  <br/> |组与组外允许共享和专用网站。  <br/> |独立的网站，在其中定义的访问级别的特定组中的成员资格。只允许对网站的成员共享。DLP 将尝试发送在组织外部文件时警告用户。  <br/> |独立的网站 + 文件加密和权限 Azure 的信息保护。DLP 可防止用户发送该组织以外的文件。  <br/> |
-|私有或公共的工作组站点  <br/> |公用的  <br/> |专用  <br/> |专用  <br/> |专用  <br/> |
-|谁可以访问？  <br/> |每个人在组织中，包括 B2B 用户和来宾用户。  <br/> |只有网站的成员。其他人可以请求访问权限。  <br/> |只有网站的成员。其他人可以请求访问权限。  <br/> |仅限成员。其他人不能请求访问权限。  <br/> |
-|站点级共享控制  <br/> |与任何人共享允许。默认设置。  <br/> |与任何人共享允许。默认设置。  <br/> |成员不能共享访问该网站。  <br/> 非成员可以请求访问该网站，但这些请求必须由网站管理员受到重视。  <br/> |成员不能共享访问该网站。  <br/> 非成员不能请求访问的站点或内容。  <br/> |
-|站点级设备的访问控制  <br/> |没有其他的控件。  <br/> |没有其他的控件。  <br/> |网站级别控制即将推出，这将使用户将文件下载到不符合标准或非域联接的设备。这样，来自所有其他设备只能在浏览器的访问。  <br/> |网站级别控制即将推出，这将阻止下载到不符合标准或非域联接的设备文件。  <br/> |
-|Office 365 标签  <br/> |内部公众  <br/> |专用  <br/> |敏感  <br/> |高度机密  <br/> |
-|DLP 策略  <br/> |||在组织外部发送为敏感的标有时警告用户。  <br/> 阻止外部共享敏感数据类型，如信用卡号码或其他个人数据，您可以配置其他 DLP 策略用于这些数据类型 （包括自定义的数据类型，您将配置）。  <br/> |阻止用户发送标记为组织外部为高度机密的文件。允许用户通过提供理由，包括那些它们共享的文件重写。  <br/> |
+||**基线保护 #1** <br/> |**基线保护 #2** <br/> |**敏感保护** <br/> |**高度机密** <br/> |
+|描述  <br/> |组织内的开放式发现和协作。  <br/> |允许在组外部共享的专用网站和组。  <br/> |独立网站，该网站中的访问级别由特定组中的成员身份进行定义。 仅允许网站成员进行共享。 DLP 在用户试图向组织外发送文件时警告用户。  <br/> |启用 Azure 信息保护的独立网站和文件及权限。 DLP 阻止用户向组织外发送文件。  <br/> |
+|专用或公用团队网站  <br/> |公用  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
+|谁可以访问？  <br/> |组织中的任何人，包括 B2B 用户和来宾用户。  <br/> |仅限网站成员。 其他人可以请求访问。  <br/> |仅限网站成员。 其他人可以请求访问。  <br/> |仅限成员。 其他人无法请求访问。  <br/> |
+|网站级共享控制  <br/> |允许与任何人共享。 默认设置。  <br/> |允许与任何人共享。 默认设置。  <br/> |成员无法共享对网站的访问权限。  <br/> 非成员可以请求访问该网站，但需要由网站管理员对这些请求进行寻址。  <br/> |成员无法共享对网站的访问权限。  <br/> 非成员无法请求访问网站或内容。  <br/> |
+|网站级别的设备访问控制  <br/> |无任何额外控制。  <br/> |无任何额外控制。  <br/> |即将推出网站级别控制，可防止用户将文件下载到不符合或未加入域的设备。 使所有其他设备仅限浏览器访问。  <br/> |即将推出网站级别控制，可阻止将文件下载到不符合或未加入域的设备。  <br/> |
+|Office 365 标签  <br/> |内部公用  <br/> |Private  <br/> |敏感  <br/> |高度机密  <br/> |
+|DLP 策略  <br/> |||在用户向组织外发送标记为“敏感”的文件时进行警告。  <br/> 要阻止外部共享敏感数据类型，如信用卡号或其他个人数据，可以针对这些数据类型（包括所配置的自定义数据类型）配置其他 DLP 策略。  <br/> |阻止用户向组织外发送标记为“高度机密”的文件。 允许用户通过提供他们与之共享的对象等理由来替代此行为。  <br/> |
 |Azure 信息保护  <br/> ||||使用 Azure 信息保护自动加密并授予其权限的文件。它们泄漏的情况下，这种保护传输的文件。  <br/> Office 365 无法读取使用 Azure 信息保护加密的文件。此外，DLP 策略只能处理的元数据 （包括标签），但不是包括这些文件 （例如，信用卡号文件内） 的内容。  <br/> |
    
 若要部署此解决方案中的 SharePoint Online 小组站点的四种不同类型的步骤，请参阅[部署 SharePoint Online 网站的三个层次的保护](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)。创建开发/测试环境的步骤，请参阅[安全 SharePoint Online 网站的开发/测试环境](secure-sharepoint-online-sites-in-a-dev-test-environment.md)。 
@@ -141,35 +140,35 @@ SharePoint Online 和 OneDrive 的业务设备访问设置使您可以确定是�
     
 ![适用于 SharePoint 网站的推荐配置](images/7fed0126-ab4a-4480-922c-681970642339.png)
   
-如所示，这一解决方案包括创建以下标签：
+如图所示，此解决方案包括创建以下标签：
   
 - 高度机密
     
 - 敏感
     
-- 专用
+- Private
     
-- 内部公众
+- 内部公用
     
 这些标签映射到图中的推荐的网站和本文中前面的图表。本解决方案建议配置 DLP 策略有助于防止文件标记为敏感和高度机密的泄露。
   
-在此解决方案中配置 Office 365 标签和 DLP 策略的步骤，请参阅[Office 365 标签和 DLP 与保护 SharePoint Online 文件](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)。
+有关如何配置此解决方案中的 Office 365 标签和 DLP 策略的步骤，请参阅[使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)。
   
 ## <a name="azure-information-protection"></a>Azure 信息保护
 
-使用 Azure 信息保护应用标签和按照文件，无论它们的保护。对于本解决方案，我们建议使用的指定了作用域的 Azure 的信息保护策略和高度机密的标签的子标签进行加密和授权需要使用安全的最高级别保护的文件。 
+使用 Azure 信息保护应用标签和与文件如影随形的保护。 对于此解决方案，建议使用作用域内 Azure 信息保护策略和“高度机密”标签的子标签来加密需要最高级别安全性保护的文件并授予相应权限。 
   
-请注意当 Azure 信息保护加密应用于存储在 Office 365 中的文件时，此服务无法处理这些文件的内容。共同创作、 eDiscovery、 搜索、 Delve 和其他协作功能不起作用。DLP 策略只能处理的元数据 （包括 Office 365 的标签），但不是包括这些文件 （例如，信用卡号文件内） 的内容。
+请注意，将 Azure 信息保护加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。 共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。 DLP 策略只适用于元数据（包括 Office 365 标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
   
 ![Azure 信息保护是在 Azure 中进行配置，标签显示在客户端工具栏中](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
-图所示：
+如图所示：
   
 - 在 Microsoft Azure 门户配置了 Azure 的信息保护策略和标签。建议配置的指定了作用域的 Azure 的信息保护策略的子标签。
     
 - Azure 的信息保护标签显示了作为 Office 应用程序中的**信息保护**栏。
     
-### <a name="adding-permissions-for-external-users"></a>添加外部的用户的权限
+### <a name="adding-permissions-for-external-users"></a>添加外部用户的权限
 
 有两种方法可以授予外部用户访问 Azure 的信息保护受保护的文件。在这两个这种情况下，外部用户必须拥有 Azure 的广告帐户。如果外部用户不能使用 Azure AD 的组织的成员，他们可以获取的 Azure 的广告帐户作为个人利用该注册页面： [https://aka.ms/aip-signup](https://aka.ms/aip-signup)。
   
@@ -181,11 +180,11 @@ SharePoint Online 和 OneDrive 的业务设备访问设置使您可以确定是�
     
      可以从组织 (例如 Fabrikam.com)，（例如组织内部财务组） Azure AD 组或单个用户添加的所有用户。例如，您可以添加标签保护外部团队的管理机构。使用此方法，只对外部实体添加到保护后，保护带标签的文件授予权限。
     
-### <a name="deploying-and-using-azure-information-protection"></a>部署和使用 Azure 的信息保护
+### <a name="deploying-and-using-azure-information-protection"></a>部署并使用 Azure 信息保护
 
-将 Azure 信息保护配置此解决方案中的步骤，请参阅[保护 SharePoint Online Azure 的信息保护的文件](protect-sharepoint-online-files-with-azure-information-protection.md)。
+有关配置此解决方案中的 Azure 信息保护的步骤，请参阅[使用 Azure 信息保护来保护 SharePoint Online 文件](protect-sharepoint-online-files-with-azure-information-protection.md)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [为政治运动、 非营利性组织和其他敏捷组织的 Microsoft 安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
@@ -193,7 +192,7 @@ SharePoint Online 和 OneDrive 的业务设备访问设置使您可以确定是�
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
   
-[开发/测试环境中的安全 SharePoint Online 网站](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[开发/测试环境中保护 SharePoint Online 站点](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
 
 

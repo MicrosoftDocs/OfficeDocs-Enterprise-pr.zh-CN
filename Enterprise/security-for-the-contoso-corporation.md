@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "摘要： 了解 Contoso 微软云服务中的功能映射其安全要求，并确定一个路径以云安全准备工作。"
-ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f8df7f6437159aefe88851a22cc8da8b19c3838c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Contoso Corporation 的安全
 

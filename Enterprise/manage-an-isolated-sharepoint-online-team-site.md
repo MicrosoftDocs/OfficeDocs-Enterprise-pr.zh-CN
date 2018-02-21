@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: "摘要： 管理这些过程带有独立的 SharePoint Online 工作组站点。"
-ms.openlocfilehash: 516bf9d1c94992789bd8341b347a5788dbb04933
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: bc6a3487f8e7dd6d6c3c0c8a38d2ac85e3565091
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理独立的在线 SharePoint 工作组网站
 
@@ -184,7 +180,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 17. 关闭您的浏览器中的**用户和用户组**选项卡。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [SharePoint Online 的独立的团队站点](isolated-sharepoint-online-team-sites.md)
   

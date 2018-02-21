@@ -12,16 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
 - PowerShell
-- apr17entnews
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: "摘要： 视图、 列表或显示您的用户帐户与 Office 365 PowerShell 的各种方式。"
-ms.openlocfilehash: b27f9045d26d4dabd3ada70766491f722d822a91
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e9ffa439c1840cbbbd8a47c2835d9427330804be
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>查看用户帐户与 Office 365 PowerShell
 
@@ -29,7 +27,7 @@ ms.lasthandoff: 12/15/2017
   
 尽管可以使用 Office 365 管理中心为 Office 365 租户查看帐户，您还可以使用 Office 365 PowerShell 并做一些 Office 365 管理中心不能。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
   
@@ -257,11 +255,9 @@ Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object Disp
     
 ## <a name="new-to-office-365"></a>刚开始接触 Office 365？
 
-||
-|:-----|
-|![LinkedIn 学习的短图标](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 提供指向新建？**        [Office 365 管理员和 IT 专业人员使用](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)，LinkedIn 学习者发现免费视频课程。 |
-   
-## <a name="see-also"></a>See also
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+  
+## <a name="see-also"></a>另请参阅
 
 #### 
 

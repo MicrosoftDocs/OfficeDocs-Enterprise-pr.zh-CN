@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: "摘要： 了解混合的体系结构和方案为 Microsoft 基础架构即服务 (IaaS)-基于在 Azure 的云服务。"
-ms.openlocfilehash: 389ab2b7ce37423a1601a2f76d143370833085cb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 66024c708cb4fbc904de18f27077871d52f0e70c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS 的混合云方案
+# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>适用于 Azure IaaS 的混合云方案
 
  **摘要：**了解 Microsoft 的基础结构即服务 (IaaS) 混合体系结构和方案-基于在 Azure 的云服务。
   
@@ -188,7 +184,7 @@ Azure 中一个多层、高可用性 LOB 应用程序的示例是 SharePoint Ser
     
 - [设计和构建 Azure 中的 LOB 应用程序](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 混合云](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

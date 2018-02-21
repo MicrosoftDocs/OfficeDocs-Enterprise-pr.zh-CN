@@ -10,19 +10,17 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "摘要： 使用这些云采用测试实验室指南 (TLGs) 设置的演示中，证据的概念或开发/测试环境为 Office 365、 企业移动性 + 安全性 (EMS)、 Dynamics 365 办公室服务器产品。"
-ms.openlocfilehash: 532215a08e28a9d67cd19ef60d60419b06df4957
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3172b6033fbb7dd79b8eb786d92a4f58886a8fd5
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>云采用测试实验室指南 (TLG)
 
@@ -160,11 +158,11 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
 
 |**联系我们**|**说明**|
 |:-----|:-----|
-|**您需要什么样的解决方案？** <br/> |我们正在为跨多个 Microsoft 产品和服务的解决方案创建内容。请告诉我们您对我们的跨服务器解决方案的想法，或者发送电子邮件到 [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) 寻求具体的解决方案。<br/> |
-|**参加解决方案讨论** <br/> |如果您热衷于基于云的解决方案，请考虑加入云采用咨询委员会 (CAAB) 进行连接的 Microsoft 内容开发人员，业内专业人士和来自全球各地的客户更大的、 充满活力的社区。加入，将自己添加为 Microsoft 技术社区的[空间 CAAB （云采用咨询委员会）](https://aka.ms/caab)的成员，向我们发送快速电子邮件在[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)。任何人都可以读取与团体相关的内容，在[CAAB 博客](https://blogs.technet.com/b/solutions_advisory_board/)上。但是，CAAB 成员获取描述新的云应用资源和解决方案的专用网络研讨会的邀请。<br/> |
-|**获取您在此处看到的图片** <br/> |如果您希望您在这篇文章中看到的画的可编辑副本，我们将很高兴地向您发送它。通过电子邮件发送您的请求，包括 URL 和[cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)的图片，标题。<br/> |
+|**你需要什么样的解决方案？** <br/> |我们正在为跨多个 Microsoft 产品和服务的解决方案创建内容。请告诉我们你对我们的跨服务器解决方案的想法，或者发送电子邮件到 [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) 寻求具体的解决方案。<br/> |
+|**参加解决方案讨论** <br/> |如果热衷于基于云的解决方案，请考虑加入云采用咨询委员会 (CAAB)，以便与充满活力的更大规模社区保持联络，其中包括 Microsoft 内容开发人员、行业专家和全球各地的客户。若要加入，请将自己添加为 Microsoft 技术社区的[云采用咨询委员会 (CAAB) 空间](https://aka.ms/caab)成员，并向我们 ([CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)) 发送电子邮件。任何人都可以阅读 [CAAB 博客](https://blogs.technet.com/b/solutions_advisory_board/)上与社区相关的内容。不过，CAAB 成员可获邀参加私人网络研讨会，了解新云采用资源和解决方案。<br/> |
+|**获取您在此处看到的图片** <br/> |若要获取本文中图片的可编辑副本，请告诉我们，我们非常乐意发送副本。请通过电子邮件方式将请求（包括图片的 URL 和标题）发送到 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)。<br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 <a name="ADD_TLGs"> </a>
 
@@ -172,7 +170,7 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
   
-[SharePoint、 交换、 业务、 和 Lync Skype 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [混合解决方案](hybrid-solutions.md)
 

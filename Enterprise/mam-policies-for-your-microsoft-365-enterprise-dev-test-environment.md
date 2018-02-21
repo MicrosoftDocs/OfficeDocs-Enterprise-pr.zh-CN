@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: "摘要： 使用此测试实验室指南 EMS 移动应用程序管理 (MAM) 策略添加到 Microsoft 365 开发/测试环境。"
-ms.openlocfilehash: d088970dca1ec55212642f16d0519e89bd9591e5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 9eb636fe14b2fbd1fe45fb7dac528a0d4e31be36
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>您的 Microsoft 365 企业开发/测试环境的 MAM 策略
 
@@ -141,9 +137,9 @@ Microsoft 的企业移动性 + 安全 (EMS) 可帮助使您的员工提高工作
 现在你有两个 MAM 策略，一个适用于 iOS 设备的策略和一个适用于 Android 设备的策略，并已准备好对所选应用的测试设置进行测试。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)为可视化映射到一个 Microsoft 云测试实验室指南堆栈中的项目的所有。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [Microsoft 365 企业开发/测试环境](the-microsoft-365-enterprise-dev-test-environment.md)
   

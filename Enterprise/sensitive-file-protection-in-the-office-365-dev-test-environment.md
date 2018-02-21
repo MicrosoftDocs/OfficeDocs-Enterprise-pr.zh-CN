@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "摘要： 配置，并演示如何 Office 365 的信息权限管理保护您的敏感文件，即使它们过帐到错误的 SharePoint Online 网站集。"
-ms.openlocfilehash: a6547cf4327980e3909323d5bda4455dfffd37f4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 236272a90bb6ff7f310c95f1494b68750e363f40
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的敏感文件保护
 
@@ -141,7 +137,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. 在列表的 SharePoint 组，请单击**管理层成员**。
     
-9. 在**用户和用户组**页上，单击**新建**。
+9. 在“人员和组”页中，单击“新建”。
     
 10. **共享执行官**中, 键入**执行官**，**主管人员**组中，单击，然后单击**共享**。
     
@@ -157,7 +153,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. 在 SharePoint 组的列表中，单击**销售网站集成员**。
     
-5. 在**用户和用户组**页上，单击**新建**。
+5. 在“人员和组”页中，单击“新建”。
     
 6. 在**共享销售网站集**，键入**每个人**，**除外部用户**，请单击，然后单击**共享**。
     
@@ -267,7 +263,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 9. 在下**组保护和凭据时间间隔设置**，请选择**允许组保护**输为**默认组**，**执行官**。
     
-10. 单击"确定"。
+10. 单击“**确定**”。
     
 接下来，以 CEO 身份进行操作，将新文档上载到执行人员文档文件夹，下载它，再意外地将其上载到销售文档文件夹。
   
@@ -331,7 +327,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 请参阅 IRM 保护的另一个方法是看一看在您的本地文件夹中的文件。**SensitiveData AfterIRM.docx**应该比**SensitiveData BeforeIRM.docx**文件大很多。**SensitiveData AfterIRM.docx**文件加密的添加了 IRM 保护信息。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

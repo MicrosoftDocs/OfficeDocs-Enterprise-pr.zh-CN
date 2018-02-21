@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "摘要： 了解您为何需要云存储，查看的 Microsoft 的云存储选项和密钥存储方案的列表。"
-ms.openlocfilehash: 3501f6a39498276d02fe4178f701a06dfb6a3e93
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-storage-for-the-microsoft-cloud"></a>设计 Microsoft 云存储
 
@@ -158,9 +154,9 @@ ms.lasthandoff: 12/15/2017
 
 查看[准备搬入](move-in-ready.md)云存储选项。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
-[企业架构师的 Microsoft 云存储](microsoft-cloud-storage-for-enterprise-architects.md)
+[面向企业架构师的 Microsoft 云存储](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 

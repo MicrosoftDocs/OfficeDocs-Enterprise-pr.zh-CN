@@ -10,20 +10,18 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: "摘要： 配置联合身份验证为您的 Office 365 开发/测试环境。"
-ms.openlocfilehash: 62d3b5483a405a591038f347af2b9bcc798b1917
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的联合身份
 
@@ -71,7 +69,7 @@ Office 365 支持联合的身份。这意味着，而不是执行本身的凭据
   
 有关如何在您的 DNS 提供商创建了正确的 DNS 记录和域添加到 Office 365 的试用订阅的说明，请参阅[添加用户和域添加到 Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)。 
   
-下面是生成的配置。
+生成的配置如下。
   
 **图 2： 为 Office 365 的开发/测试环境的的目录同步**
 
@@ -441,7 +439,7 @@ CORP app1 发出虚拟机连接使用[Azure 的门户网站](http://portal.azure
 
 当准备好部署生产就绪后时，针对在 Azure，Office 365 提供高可用性联合身份验证请参见[Office 365 Azure 中部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

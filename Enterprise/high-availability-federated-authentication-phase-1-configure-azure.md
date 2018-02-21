@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "摘要： 配置 Microsoft Azure 基础结构主机的高可用性到 Office 365 的联合身份验证。"
-ms.openlocfilehash: fed6b24af2ba54bef95be22641fd140f7c1be717
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 829bad1dadc3c3987e42d32f8afe8c1f76459ff0
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1:配置 Azure
 
@@ -43,7 +38,7 @@ ms.lasthandoff: 12/15/2017
 
 配置 Azure 的组件之前，请填写下表。为了帮助您配置 Azure 的过程中，打印此部分并记下所需的信息或复制到文档的此部分并填写。VNet 的设置，请填写表格 V。
   
-|**项**|**配置设置**|**说明**|**值**|
+|**项目**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |_______________________________  <br/> |
 |2.  <br/> |VNet 的位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |_______________________________  <br/> |
@@ -65,7 +60,7 @@ ms.lasthandoff: 12/15/2017
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
-|**项目**|**子网名称**|**子网地址空间**|**目的**|
+|**项目**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |_______________________________  <br/> |Windows Server Active Directory (AD) 域控制器和目录同步服务器虚拟机 (VM) 使用的子网。  <br/> |
 |2.  <br/> |_______________________________  <br/> |_______________________________  <br/> |AD FS VM 使用的子网。  <br/> |
@@ -76,7 +71,7 @@ ms.lasthandoff: 12/15/2017
   
 下一步，针对分配给虚拟机和负载平衡器实例的静态 IP 地址填写表 I。
   
-|**项**|**用途**|**在子网的 IP 地址**|**值**|
+|**项目**|**用途**|**在子网的 IP 地址**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |_______________________________  <br/> |
 |2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |_______________________________  <br/> |
@@ -151,7 +146,7 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 为一组唯一资源组名称填写下表。
   
-|**项**|**资源组名称**|**目的**|
+|**项目**|**资源组名称**|**用途**|
 |:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |域控制器  <br/> |
 |2.  <br/> |_______________________________  <br/> |AD FS 服务器  <br/> |
@@ -276,7 +271,7 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 接下来，定义三个可用性集的名称。填写表 A。 
   
-|**项**|**用途**|**可用性设置名称**|
+|**项目**|**用途**|**可用性设置名称**|
 |:-----|:-----|:-----|
 |1.  <br/> |域控制器  <br/> |_______________________________  <br/> |
 |2.  <br/> |AD FS 服务器  <br/> |_______________________________  <br/> |
@@ -311,7 +306,7 @@ New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $l
 
 使用[高可用性联合身份验证阶段 2： 配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)要继续进行此工作负载的配置。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

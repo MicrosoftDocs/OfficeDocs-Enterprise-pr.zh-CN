@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: "摘要： 使用此测试实验室指南注册 Microsoft 365 开发/测试环境中的设备，并对其进行远程管理。"
-ms.openlocfilehash: 8ad22ed62d8e7cac8aca225af42e389dc05cb2b5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 77b5074b083656fdfa2cd460510231dae0689d10
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>IOS 和 Android 设备在 Microsoft 企业 365 开发/测试环境中注册
 
@@ -60,7 +56,7 @@ Microsoft 企业移动套件 (EMS) 有助于使您的员工提高工作效率的
     
 6. 在**自定义**，选择**主题颜色**中的**绿色**。
     
-7. 单击"保存"。
+7. 单击“**保存**”。
     
 接下来要安装 Microsoft Intune 公司门户应用并注册 iOS 或 Android 设备，然后测试 Microsoft Intune 管理控制台中的基本管理功能。
   
@@ -255,9 +251,9 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。如果有人丢
 7. 若要更改密码后，进入**设置**、 点击**设备**，点击**锁定屏幕**、 密码中输入新的密码，点击**屏幕锁**，并选择。
     
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)为可视化映射到一个 Microsoft 云测试实验室指南堆栈中的项目的所有。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [Microsoft 365 企业开发/测试环境](the-microsoft-365-enterprise-dev-test-environment.md)
   

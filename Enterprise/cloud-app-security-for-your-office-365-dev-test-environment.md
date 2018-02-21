@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "摘要： 配置和您 Office 365 的开发/测试环境中演示 Office 365 云应用程序安全性。"
-ms.openlocfilehash: 1fab5ebfd6e0670ba59fe34b2cca8a7282e75723
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ac5f5c25ecb4d97ac1c8fe3b48096ee02da2ec3e
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的云应用程序安全性
 
@@ -157,7 +154,7 @@ Office 365 云应用程序的安全性，以前称为 Office 365 高级安全管
     
 您现在可以使用此环境中进一步试用 Office 365 云应用程序安全地创建新的策略。配置其他文章的链接，请参阅[为 Office 365 云应用程序安全做好准备](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

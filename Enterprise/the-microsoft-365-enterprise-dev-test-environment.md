@@ -10,18 +10,17 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
 - Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: "摘要： 使用此测试实验室指南创建开发/测试环境，包括 Office 365 E5、 企业移动性 + 安全 (EMS) E5 和计算机运行 Windows 10 企业。"
-ms.openlocfilehash: 547662a21733941e3242e9cdd933090a4f53714d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: c31c9a86a6918ee0a68e64cf3edfa7e2e4d2e93a
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业开发/测试环境
 
@@ -45,17 +44,17 @@ ms.lasthandoff: 12/15/2017
   
 1. 与 Internet 浏览器的专用实例，登录到 Office 365 门户使用您的全局管理员帐户凭据。有关帮助信息，请参阅[登录到 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 单击**管理**拼贴。
+2. 单击“管理”磁贴。
     
-3. 在浏览器中，在左边的导航中， **Office 管理中心**选项卡单击**计费 > 购买服务**。
+3. 在浏览器的“Office 管理中心”选项卡的左侧导航中，单击“帐单”>“购买服务”。
     
 4. **购买服务**页上找到**企业移动 + 安全 E5**项。将鼠标指针悬停在其上，单击**启动免费试用版**。
     
-5. 在**确认订单**页中，单击**立即尝试**。
+5. 在“确认订单”页中，单击“立即试用”。
     
-6. 在**订单收据**页上，单击**继续**。
+6. 在“订单签收”页中，单击“继续”。
     
-7. 在浏览器中，在左边的导航中， **Office 365 管理中心**选项卡单击**用户 > 活动用户**。
+7. 在浏览器的“Office 365 管理中心”选项卡的左侧导航中，单击“用户”>“活动用户”。
     
 8. 单击您的全局管理员帐户，然后单击**编辑****产品**许可证。
     
@@ -227,7 +226,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 - [配置和测试高级威胁防护](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [一个 Microsoft 云开发/测试环境](the-one-microsoft-cloud-dev-test-environment.md)
 

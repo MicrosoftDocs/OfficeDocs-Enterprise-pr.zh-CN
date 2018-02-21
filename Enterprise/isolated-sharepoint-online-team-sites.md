@@ -10,18 +10,17 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Top
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: "摘要： 了解独立 SharePoint Online 的团队站点的使用。"
-ms.openlocfilehash: 3de60bb19498d9f84c18e51181a3fedda9846bdf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7798a1aa7bdf39783c3d83bc11fba03f3a3f711e
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>SharePoint Online 的独立的团队站点
 
@@ -61,7 +60,7 @@ SharePoint Online 工作组站点是在 Microsoft Office 365 中快速创建协�
   
 当您准备部署在生产环境中的独立的 SharePoint Online 工作组网站时，请参阅[设计独立的在线 SharePoint 工作组网站](design-an-isolated-sharepoint-online-team-site.md)中的分步设计考虑事项。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [设计独立的在线 SharePoint 工作组网站](design-an-isolated-sharepoint-online-team-site.md)
   

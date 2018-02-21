@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "摘要： 了解 Contoso 公司业务以及其世界各地办事处的分层的结构。"
-ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation 概述
 
@@ -69,7 +67,7 @@ Contoso 的 IT 架构师确定了下列元素时采用微软云产品的规划�
     
     有关详细信息，请参阅[Microsoft 云网络企业架构师的](microsoft-cloud-networking-for-enterprise-architects.md)海报。
    
-- 标识
+- Identity
     
     Contoso 其内部标识提供程序使用 Windows 服务器 AD 林，而且还与第三方提供商，为客户和合作伙伴建立联盟。Contoso 必须利用的内部一套微软的云服务的帐户。为客户和合作伙伴对基于云的应用程序的访问必须利用第三方身份提供程序。
     

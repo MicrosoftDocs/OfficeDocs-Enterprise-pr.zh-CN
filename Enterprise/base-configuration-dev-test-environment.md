@@ -8,19 +8,19 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: "摘要： 创建的简化内部网作为 Microsoft Azure 中的开发/测试环境。"
-ms.openlocfilehash: 672486f62a940d812c821fda67d3e92a4164eea8
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 04da1037dbebed9f9a5d2aa2fb37b03b88218839
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>基础配置开发/测试环境
 
@@ -360,7 +360,7 @@ Restart-Computer
 Azure 中的基本配置现在已准备就绪，可用于应用程序开发和测试或用于构建其他测试环境。 
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)为可视化映射到一个 Microsoft 云测试实验室指南堆栈中的项目的所有。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
   
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>将 Azure 中的测试环境虚拟机成本降至最低
 <a name="mincost"> </a>
@@ -397,7 +397,7 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "APP1"
 Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 ```
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 <a name="mincost"> </a>
 

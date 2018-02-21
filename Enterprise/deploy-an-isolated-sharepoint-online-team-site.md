@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: "摘要： 部署新独立的 SharePoint Online 工作组网站提供这些分步说明。"
-ms.openlocfilehash: 9715c6168276b6ba9ffc63591cc6421708bbda27
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 297681b688b43eb02ee4f99f983a0f796312e599
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的在线 SharePoint 工作组网站
 
@@ -67,19 +63,19 @@ ms.lasthandoff: 12/15/2017
     
 1. 在浏览器中，转到 Azure 门户网站位于[https://portal.azure.com](https://portal.azure.com)并使用已分配的用户管理管理员或公司管理员角色帐户的凭据登录。
     
-2. 在 Azure 的门户，单击**Azure Active Directory > 用户和组 > 所有组**。
+2. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”。
     
-3. **所有组**刀片式服务器，请单击**+ 新组**。
+3. 在“所有组”边栏选项卡上，单击“+ 新建组”。
     
-4. 在**组**刀片具有：
+4. 在“组”边栏选项卡上：
     
   - 在**名称**中键入组的名称。
     
-  - 在**成员资格**，请选择**分配**。
+  - 在“成员身份”中选择“已分配”。
     
-  - **启用 Office 功能**，请单击**是**。
+  - 对“启用 Office 功能”单击“是”。
     
-5. 单击**创建**，然后关闭**组**刀片。
+5. 单击“创建”，然后关闭“组”边栏选项卡。
     
 6. 对于其他的组，请重复步骤 3-5。
     
@@ -164,11 +160,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 1. 登录到 Office 365 门户网站也将用来管理 SharePoint Online 工作组网站 （SharePoint Online 管理员） 的帐户。有关帮助信息，请参阅[登录到 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 在图块的列表中，单击**SharePoint**。
+2. 在磁贴列表中，单击“SharePoint”。
     
 3. 在您的浏览器的新**SharePoint**选项卡，单击**+ 创建网站**。
     
-4. 在**创建网站**页上，单击**工作组网站**。
+4. 在“创建网站”页中，单击“团队网站”。
     
 5. 在**站点名称**中，键入工作组网站的名称。 
     
@@ -176,15 +172,15 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 7. 在**隐私设置**，选择**专用的只有成员才能访问此网站**，然后单击**下一步**。
     
-8. 在**谁您想要添加？**窗格中，单击**完成**。
+8. 在“希望添加哪些人员?”窗格中，单击“完成”。
     
 接下来，从新的 SharePoint Online 团队站点配置权限。
   
 1. 在工具栏上，单击设置图标，然后单击**网站权限**。
     
-2. 在**网站权限**窗格中，单击**高级的权限设置**。
+2. 在“网站权限”窗格中，单击“高级权限设置”。
     
-3. 您的浏览器新**权限**选项卡上，单击**访问请求设置**。
+3. 在浏览器的新“权限”标签页中，单击“访问请求设置”。
     
 4. 在**访问请求设置**对话框中，清除**允许成员共享的网站和个别文件和文件夹**，并**允许访问请求**（以使所有三个复选框都被清除），然后单击**确定**。
     
@@ -210,7 +206,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 15. 在**共享**对话框中，键入站点查看器访问组的名称，选择它，，然后单击**共享**。
     
-16. 关闭您的浏览器**权限**选项卡。
+16. 关闭浏览器的“权限”选项卡。
     
 这些权限设置的结果是：
   
@@ -232,7 +228,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 当您需要更改网站访问组成员身份或创建具有自定义权限的文档文件夹时，请参阅[管理独立的在线 SharePoint 工作组网站](manage-an-isolated-sharepoint-online-team-site.md)。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
 [SharePoint Online 的独立的团队站点](isolated-sharepoint-online-team-sites.md)
   
