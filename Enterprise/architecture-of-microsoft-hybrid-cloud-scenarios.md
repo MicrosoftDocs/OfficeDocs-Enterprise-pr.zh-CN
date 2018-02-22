@@ -9,15 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "摘要： 了解 Microsoft 混合云产品的体系结构。"
-ms.openlocfilehash: f1c234026324b2c507dd4369cb98306e7e83a775
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 33d98d88a10b18cdd357250f46c5414f1c1b6a75
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft 混合云方案的体系结构
 
@@ -41,9 +40,9 @@ ms.lasthandoff: 02/09/2018
     
     连接到 Microsoft 云平台和服务有两种选择：现有的 Internet 管道和 ExpressRoute。如果可预知的性能非常重要，请使用 ExpressRoute 连接。可以使用一个 ExpressRoute 连接直接连接到 Microsoft SaaS 服务（Office 365 和 Dynamics 365）、Azure PaaS 服务和 Azure IaaS 服务。
     
-- Identity
+- 标识
     
-    对于云标识基础结构，根据 Microsoft 云平台的不同有两种方式可选。对于 SaaS 和 Azure IaaS，将本地标识基础结构与 Azure AD 集成，或与本地标识基础结构或第三方标识提供程序联合。对于在 Azure 中运行的 VM，可以将本地标识基础结构（如 Windows Server AD）扩展到 VM 驻留的虚拟网络 (VNet)。
+    对于云标识基础结构，根据 Microsoft 云平台的不同有两种方式可选。对于 SaaS 和 Azure PaaS，将本地标识基础结构与 Azure AD 集成，或与本地标识基础结构或第三方标识提供程序联合。对于在 Azure 中运行的 VM，可以将本地标识基础结构（如 Windows Server AD）扩展到 VM 驻留的虚拟网络 (VNet)。
     
 ## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>用于三阶段云应用流程的混合云方案
 

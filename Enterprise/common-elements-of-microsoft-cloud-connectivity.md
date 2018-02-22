@@ -9,15 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "摘要： 了解网络基础结构的常见元素，以及如何准备你的网络。"
-ms.openlocfilehash: 28825ad299ee12b55037963c68a289f43ffcc56a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft 云连接的公共元素
 
@@ -52,17 +51,17 @@ ms.lasthandoff: 02/09/2018
 ![图 1：Microsoft 云连接选项](images/Network_Poster/CommonElements.png)
 
   
-图 1 显示内部部署网络如何使用其现有的 Internet 管道或 ExpressRoute 连接到 Microsoft 云服务。Internet 管道表示 DMZ，并且可以具有下列组件：
+图 1 显示本地网络如何使用其现有的 Internet 管道或 ExpressRoute 连接到 Microsoft 云服务。Internet 管道表示 DMZ，并且可以具有下列组件：
   
-- **内部防火墙：** 受信任的网络与不受信的网络任之间的屏障。执行流量筛选（基于规则）和监视。
+- **内部防火墙：**受信任的网络与不受信的网络任之间的屏障。执行流量筛选（基于规则）和监视。
     
-- **外部工作负载：** 网站或其他工作负载供 Internet 上的外部用户使用。
+- **外部工作负载：**网站或其他工作负载供 Internet 上的外部用户使用。
     
-- **代理服务器：** 代表 Intranet 用户发出的对 Web 内容的服务请求。反向代理服务器允许未经请求的入站请求。
+- **代理服务器：**代表 Intranet 用户发出的对 Web 内容的服务请求。反向代理服务器允许未经请求的入站请求。
     
-- **外部防火墙：** 允许出站流量和指定的入站流量。可以执行地址转换。
+- **外部防火墙：**允许出站流量和指定的入站流量。可以执行地址转换。
     
-- **到 ISP 的 WAN 连接：** 到 ISP 的基于载波的连接，与 Internet 对等，可以实现连接和传送。
+- **到 ISP 的 WAN 连接：**到 ISP 的基于载波的连接，与 Internet 对等，可以实现连接和传送。
     
 ## <a name="areas-of-networking-common-to-all-microsoft-cloud-services"></a>对所有 Microsoft 云服务通用的网络区域
 <a name="steps"> </a>
@@ -73,9 +72,9 @@ ms.lasthandoff: 02/09/2018
     
 - **边缘设备：** 网络边缘的设备用作出口点，可以包括网络地址转换器 (NAT)、代理服务器（包括反向代理服务器）、防火墙、入侵检测设备或这些项的组合。
     
-- **Internet 连接：** 到 ISP 和 Internet 的 WAN 连接应具有足够的容量来处理峰值负载。你也可以使用 ExpressRoute 连接。
+- **Internet 连接：**到 ISP 和 Internet 的 WAN 连接应具有足够的容量来处理峰值负载。也可以使用 ExpressRoute 连接。
     
-- **Internet DNS：** A、AAAA、CNAME、MX、PTR 和其他记录，可以查找 Microsoft 云或你在云中托管的服务。例如，可能需要你在 Azure PaaS 中托管的应用程序的 CNAME 记录。
+- **Internet DNS：**A、AAAA、CNAME、MX、PTR 和其他记录，可以查找 Microsoft 云或你在云中托管的服务。例如，可能需要你在 Azure PaaS 中托管的应用程序的 CNAME 记录。
     
 
 ## <a name="next-step"></a>后续步骤
