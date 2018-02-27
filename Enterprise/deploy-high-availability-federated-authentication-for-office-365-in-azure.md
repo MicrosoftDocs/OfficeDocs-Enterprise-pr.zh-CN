@@ -9,16 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Solutions
+ms.custom: Strat_O365_Enterprise, Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "摘要：在 Microsoft Azure 中为 Office 365 订阅配置高可用性联合身份验证。"
-ms.openlocfilehash: ada4533179aa79f7f619f7b0cf04576594283863
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 6bbc53eae616fca4c044b7b4c24314191d9be22a
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>在 Azure 中部署 Office 365 的高可用性联合身份验证
 
@@ -48,7 +46,7 @@ ms.lasthandoff: 02/09/2018
 用于特定角色的每对虚拟机都位于自己的子网和可用性集中。
   
 > [!NOTE]
-> 由于此 VNet 连接到本地网络，所以此配置不包括管理子网上的跳转框或监视虚拟机。有关详细信息，请参阅 [Running Windows VMs for an N-tier architecture](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)（运行用于 N 层体系结构的 Windows VM）。 
+> 由于此 VNet 连接到本地网络，所以此配置不包括管理子网上的跳转框或监视虚拟机。有关详细信息，请参阅[运行用于 N 层体系结构的 Windows VM](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)。 
   
 此配置的结果是，将对所有 Office 365 用户使用联合身份验证，即可以使用自己的 Windows Server Active Directory 凭据（而不是 Office 365 帐户）进行登录。联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
   
@@ -86,11 +84,11 @@ ms.lasthandoff: 02/09/2018
   
 - [高可用性联合身份验证阶段 1：配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md) - 创建资源组、存储帐户、可用性集和跨界虚拟网络。
     
-- [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。创建和配置副本 Windows Server Active Directory (AD) 域控制器和目录同步服务器。
+- [高可用性联合身份验证阶段 2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。创建和配置副本 Windows Server Active Directory (AD) 域控制器和目录同步服务器。
     
-- [高可用性联合身份验证阶段 3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) - 创建和配置两个 AD FS 服务器。
+- [高可用性联合身份验证阶段 3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。创建和配置两个 AD FS 服务器。
     
-- [高可用性联合身份验证阶段 4：配置 Web 应用代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) - 创建和配置两个 Web 应用代理服务器。
+- [高可用性联合身份验证阶段 4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。创建和配置两个 Web 应用程序代理服务器。
     
 - [高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。为 Office 365 订阅配置联合身份验证。
     

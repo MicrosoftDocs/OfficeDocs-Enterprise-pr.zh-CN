@@ -15,24 +15,24 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。"
-ms.openlocfilehash: 9aa3fe8bc0f7debd01e3a3e5f91ca8403e696f56
-ms.sourcegitcommit: 5045bd498a9a531f34ac9db742e5cd9f15126bcc
+ms.openlocfilehash: 2f51c68acf55239c7d47f9b617a8a72965ead79d
+ms.sourcegitcommit: 7ed9108846227ca883cb5113543a165704d9bbc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
  **摘要：**使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。
   
-借助 Office 365 PowerShell，可以通过命令行管理 Office 365 设置。连接到 Office 365 PowerShell 是一个非常简单的三步流程：安装必需软件，运行必需软件，再连接到 Office 365 组织。 
+借助 Office 365 PowerShell，可以通过命令行管理 Office 365 设置。连接到 Office 365 PowerShell 是一个非常简单的三步流程：安装必需的软件，运行必需的软件，然后连接到 Office 365 组织。 
 
 请注意，这些连接说明与 [Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113) 主题中的连接说明相同。
   
 > [!TIP]
-> **刚开始接触 PowerShell？**请观看领英学习提供的 [PowerShell 概述](http://technet.microsoft.com/library/https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
+> **刚开始接触 PowerShell？**请观看 LinkedIn Learning 提供的 [PowerShell 概述](http://technet.microsoft.com/library/https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，需要知道什么？
 
 - 估计完成时间：5 分钟
     
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/03/2018
     
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
 
-这些步骤只需在您的计算机上执行一次即可，而不是在每次连接时都要求执行。但是，您可能需要定期安装较新版本的软件。
+这些步骤只需在你的计算机上执行一次即可，而不是在每次连接时都要求执行。但是，你可能需要定期安装较新版本的软件。
   
 1.  安装 64 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员 RTW 的 Microsoft Online Services 登录助手](https://go.microsoft.com/fwlink/p/?LinkId=286152)。
     
@@ -96,13 +96,13 @@ Connect-MsolService
 ### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 <a name="step3"> </a>
 
-如果未收到任何错误，则说明连接成功。一个快速测试是运行 Office 365 cmdlet（例如 **Get-MsolUser** ），然后查看结果。
+如果未收到任何错误，说明连接成功。一个快速测试是运行 Office 365 cmdlet（例如 **Get-MsolUser** ），然后查看结果。
   
 如果收到错误，则查看以下要求：
   
-- **常见问题是密码错误** 。重新运行步骤 3，并仔细查看您输入的用户名和密码。
+- **常见问题是密码错误**。重新运行步骤 3，并仔细查看你输入的用户名和密码。
     
-- **用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 要求在您的计算机上启用 Microsoft .NET Framework 3.5. _x_ 功能。** 很可能您的计算机已安装了较新的版本（例如 4 或 4.5. _x_），但可以启用或禁用与 .NET Framework 的早期版本的向后兼容性。有关详细信息，请参阅下列主题：
+- **用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块要求在你的计算机上启用 Microsoft .NET Framework 3.5. _x_ 功能。**很可能你的计算机已安装了较新的版本（例如 4 或 4.5. _x_），但可以启用或禁用与 .NET Framework 的早期版本的向后兼容性。有关详细信息，请参阅下列主题：
     
   - 对于 Windows Server 2012 或 Windows Server 2012 R2，请参阅[使用“添加角色和功能”向导启用 .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkId=532368)
     
@@ -110,26 +110,26 @@ Connect-MsolService
     
   - 对于 Windows 7 或 Windows Server 2008 R2，请参阅[不能打开用于 Windows PowerShell 的 Azure Active Directory 模块](https://go.microsoft.com/fwlink/p/?LinkId=532370)
     
-- **您的 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 版本可能已过期。** 若要进行检查，请在 Office 365 PowerShell 或 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 中运行以下命令：
+- **你的用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块版本可能已过期。**若要进行检查，请在 Office 365 PowerShell 或用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中运行以下命令：
     
   ```
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    如果返回的版本号低于值 1.0.8070.2，请卸载 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过第 1 步中的链接安装最新版本。
+    如果返回的版本号低于值 1.0.8070.2，请卸载用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过第 1 步中的链接安装最新版本。
     
 - **如果看到连接错误，请参阅以下主题：**[“Connect-MsolService：抛出类型异常”错误](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>与 Azure Active Directory V2 PowerShell 模块连接
 <a name="ConnectV2"> </a>
 
-用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中的命令在其 cmdlet 名称中具有“AzureAD”。
+Azure Active Directory V2 PowerShell 模块中的命令在其 cmdlet 名称中包含“AzureAD”。
 
-有关 [Azure Active Directory V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅。
+有关在 [Azure Active Directory V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅。
 
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
 
-这些步骤只需在您的计算机上执行一次即可，而不是在每次连接时都要求执行。但是，您可能需要定期安装较新版本的软件。
+这些步骤只需在你的计算机上执行一次即可，而不是在每次连接时都要求执行。但是，你可能需要定期安装较新版本的软件。
 
   
 1. 打开提升的 Windows PowerShell 命令提示符（以管理员身份运行 Windows PowerShell）。
