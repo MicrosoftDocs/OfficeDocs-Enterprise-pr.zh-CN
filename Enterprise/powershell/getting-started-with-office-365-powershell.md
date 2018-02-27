@@ -9,22 +9,24 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other
+ms.custom:
+- PowerShell
+- Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: "摘要：了解 Office 365 PowerShell 的重要性，连接到 Office 365 租户，并获取帮助。"
-ms.openlocfilehash: e6e3ed87208c36db359e40ba0aceaeb1cef505fd
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Office 365 PowerShell 入门
 
  **摘要：**了解 Office 365 PowerShell 的重要性，以及如何连接到 Office 365 租户并获取帮助。
   
-通过 Office 365 PowerShell，可以使用命令和脚本来管理 Office 365 以简化日常工作。了解 Office 365 PowerShell 技能对管理 Office 365 至关重要的原因，同时了解如何连接到 Office 365 订阅、创建报表并从 Office 365 社区获得其他信息和帮助。
+通过 Office 365 PowerShell，您可以使用命令和脚本来管理 Office 365 以简化您的日常工作。了解 Office 365 PowerShell 技能对管理 Office 365 至关重要的原因，同时了解如何连接到您的 Office 365 订阅、创建报表并从 Office 365 社区获得其他信息和帮助。
   
-根据需求选择文章：
+根据您的需求选择文章：
   
 - [为什么您需要使用 Office 365 PowerShell](why-you-need-to-use-office-365-powershell.md)
     
