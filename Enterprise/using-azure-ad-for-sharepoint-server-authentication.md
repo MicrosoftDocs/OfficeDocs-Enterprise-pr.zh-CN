@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "摘要： 了解如何绕过 Azure 访问控制服务和使用 SAML 1.1 Azure Active Directory 与您 SharePoint 服务器用户进行身份验证。"
-ms.openlocfilehash: e346a79fae32c19e14ce852257d5643041faf5d4
-ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
+ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
+ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>SharePoint 服务器身份验证使用 Azure 的广告
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/05/2018
 > 本文基于 Kirk Evans，Microsoft 主体项目经理的工作。 
 
 <blockquote>
-<p>这篇文章是指与 Azure 活动目录图表进行交互的代码样本。您可以下载代码示例[这里](https://1drv.ms/u/s!AuAlJmH2xI6Kg3ItzF78krMFxJu3)。</p>
+<p>这篇文章是指与 Azure 活动目录图表进行交互的代码样本。您可以下载代码示例[这里](https://github.com/kaevans/spsaml11/tree/master/scripts)。</p>
 </blockquote>
 
 SharePoint 服务器 2016年提供使用基于声明的身份验证，使其更容易地管理您的用户通过与不同的标识提供程序信任，但其他人管理对进行身份验证的用户进行身份验证的能力。例如，而不是管理用户身份验证通过 Active Directory 域服务 (AD DS)，可以使用户能够使用 Azure 活动目录 (AD Azure) 进行身份验证。这样，仅云用户与他们的用户名中的 onmicrosoft.com 后缀的身份验证，用户与内部部署目录，同步和邀请的来宾用户从其他目录。它还使您能够利用 Azure 的广告功能，例如多因素身份验证和高级报告功能。
@@ -131,13 +131,12 @@ SharePoint 服务器 2016年提供使用基于声明的身份验证，使其更�
 $realm = "<Realm from Table 1>"
 $wsfedurl="<SAML single sign-on service URL from Table 1>"
 $filepath="<Full path to SAML signing certificate file from Table 1>"
-$cert = New-Object 
-System.Security.Cryptography.X509Certificates.X509Certificate2($filepath)
+$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($filepath)
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 $map = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" -IncomingClaimTypeDisplayName "name" -LocalClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
 $map2 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" -IncomingClaimTypeDisplayName "GivenName" -SameAsIncoming
 $map3 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" -IncomingClaimTypeDisplayName "SurName" -SameAsIncoming
-$ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint secured by Azure AD" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl $wsfedurl -IdentifierClaim “http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name”
+$ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint secured by Azure AD" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl $wsfedurl -IdentifierClaim "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
 ```
 
 接下来，请按照以下步骤来启用应用程序信任的身份提供程序：
@@ -173,7 +172,8 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>步骤 6： 在 Azure AD 中添加 SAML 1.1 令牌颁发策略
 
-在门户中创建 AD Azure 应用程序时，它默认使用 SAML 2.0。SharePoint 服务器 2016年要求 SAML 1.1 标记格式。下面的脚本将删除默认 SAML 2.0 策略，并对问题 SAML 1.1 标记中添加新的策略。
+在门户中创建 AD Azure 应用程序时，它默认使用 SAML 2.0。SharePoint 服务器 2016年要求 SAML 1.1 标记格式。下面的脚本将删除默认 SAML 2.0 策略，并对问题 SAML 1.1 标记中添加新的策略。这段代码要求下载附带的[示例演示与 Azure 活动目录图表进行交互](https://github.com/kaevans/spsaml11/tree/master/scripts)。
+
 
 ```
 Import-Module <file path of Initialize.ps1> 
@@ -183,6 +183,8 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+
+使用 Azure AD 的令牌颁发策略的详细信息，请参阅[图形 API 参考的操作策略](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)。
 
 ## <a name="step-7-verify-the-new-provider"></a>第 7 步： 验证新的提供程序
 
@@ -197,6 +199,17 @@ Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $obj
 最后，您可以访问网站从 Azure Active Directory 租户的用户的身份登录。
 
 ![用户登录到 SharePoint](images/SAML11/fig15-signedinsharepoint.png)
+
+## <a name="managing-certificates"></a>管理证书
+请务必了解上面的步骤 4 中的信任的身份提供程序配置的签名证书已到期日期和必须续订。有关续订证书，请参阅文章[管理联盟单一登录 Azure Active Directory 中的证书](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-sso-certs)的信息。一旦已经在 Azure AD 续订该证书，下载到本地文件，并使用下面的脚本来配置续订签名证书与受信任的身份提供方。 
+
+```
+$filepath="<Full path to renewed SAML signing certificate file>"
+$cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($filePath)
+New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
+Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
+```
+
 
 
 ## <a name="additional-resources"></a>其他资源
