@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "摘要： 了解如何绕过 Azure 访问控制服务和使用 SAML 1.1 Azure Active Directory 与您 SharePoint 服务器用户进行身份验证。"
-ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
+ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>SharePoint 服务器身份验证使用 Azure 的广告
 
@@ -67,7 +67,7 @@ SharePoint 服务器 2016年提供使用基于声明的身份验证，使其更�
 
 ## <a name="step-1-create-a-new-azure-ad-directory-or-use-your-existing-directory"></a>步骤 1： 创建一个新 Azure 的广告目录，或者使用您现有的目录
 
-在 Azure 门户 ([https://portal.azure.com](https://portal.azure.com)) 中，创建一个新目录。提供组织名称、 初始域名称和国家 / 地区。
+在 Azure 门户网站 ([https://portal.azure.com](https://portal.azure.com))，创建一个新目录。提供组织名称、 初始域名称和国家 / 地区。
 
 ![创建目录](images/SAML11/fig2-createdirectory.png) 
 
@@ -89,7 +89,7 @@ SharePoint 服务器 2016年提供使用基于声明的身份验证，使其更�
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>步骤 3： 创建新的企业级应用程序在 Azure 的广告
 
-1. 在 Azure 门户 ([https://portal.azure.com](https://portal.azure.com)) 中，打开您的 Azure 的广告目录。单击**企业应用程序**，然后单击**新的应用程序**。选择**非库应用程序**。提供一个名称，如*SharePoint SAML 集成*并单击**添加**。</br>![添加一个新的非库应用程序](images/SAML11/fig5-addnongalleryapp.png)</br>
+1. 在 Azure 门户网站 ([https://portal.azure.com](https://portal.azure.com))，打开 Azure 的广告目录。单击**企业应用程序**，然后单击**新的应用程序**。选择**非库应用程序**。提供一个名称，如*SharePoint SAML 集成*并单击**添加**。</br>![添加一个新的非库应用程序](images/SAML11/fig5-addnongalleryapp.png)</br>
 2. 单击导航窗格中配置应用程序，一个登录链接。为**基于 SAML 的登录方式进行登录**以显示应用程序的 SAML 配置属性更改**单一登录模式**下拉列表。配置具有以下属性：</br>
     - 标识符：`urn:sharepoint:portal.contoso.local`
     - 答复的 URL:`https://portal.contoso.local/_trust/default.aspx`
@@ -144,7 +144,7 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 2. 在功能区中，单击**身份验证提供程序**，并选择您想要使用的区域。
 3. 选择**受信任的身份提供程序**并选择名为*AzureAD*的识别提供只需注册。  
 4. 登录页的 URL 设置，请选择**自定义登录页**和提供的值"/_trust/"。 
-5. 单击“**确定**”。
+5. 单击"确定"。
 
 ![配置身份验证提供程序](images/SAML11/fig10-configauthprovider.png)
 
@@ -159,11 +159,11 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
  
 用户已被授予权限的 Azure 的广告，但还必须授予在 SharePoint 中的权限。使用以下步骤设置访问 web 应用程序的权限。
 
-1. 在管理中心，单击**应用程序管理**。
+1. 在管理中心中，单击"应用程序管理"。
 2. 在"应用程序管理"页上的"Web 应用程序"部分，单击"管理 Web 应用程序"。
 3. 单击适当的 Web 应用程序，然后单击"用户策略"。
 4. 在 Web 应用程序的策略，单击**添加用户**。</br>![搜索用户通过其名称声明](images/SAML11/fig11-searchbynameclaim.png)</br>
-5. 在"添加用户" 对话框中，单击"区域"中的适当区域，然后单击"下一步"。
+5. 在"添加用户"对话框中，单击"区域"中的适当区域，然后单击"下一步"。
 6. 在**Web 应用程序的策略**对话框中的在**选择用户**部分，单击**浏览**图标。
 7. 在**查找**文本框中，键入用户的登录名称在您的目录中，单击**搜索**。 </br>例如： *demouser@blueskyabove.onmicrosoft.com*。
 8. AzureAD 在标题下的列表视图中，选择名称属性，单击**添加**，然后单击**确定**以关闭对话框。
@@ -172,7 +172,7 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>步骤 6： 在 Azure AD 中添加 SAML 1.1 令牌颁发策略
 
-在门户中创建 AD Azure 应用程序时，它默认使用 SAML 2.0。SharePoint 服务器 2016年要求 SAML 1.1 标记格式。下面的脚本将删除默认 SAML 2.0 策略，并对问题 SAML 1.1 标记中添加新的策略。这段代码要求下载附带的[示例演示与 Azure 活动目录图表进行交互](https://github.com/kaevans/spsaml11/tree/master/scripts)。
+在门户中创建 AD Azure 应用程序时，它默认使用 SAML 2.0。SharePoint 服务器 2016年要求 SAML 1.1 标记格式。下面的脚本将删除默认 SAML 2.0 策略，并对问题 SAML 1.1 标记中添加新的策略。这段代码要求下载附带的[示例演示与 Azure 活动目录图表进行交互](https://github.com/kaevans/spsaml11/tree/master/scripts)。 
 
 
 ```
@@ -183,8 +183,9 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+> 需要注意的是一定要运行`Import-Module`在此示例中所示的命令。这将加载的依赖模块包含所示的命令。您可能需要打开提升的命令提示符成功执行这些命令。
 
-使用 Azure AD 的令牌颁发策略的详细信息，请参阅[图形 API 参考的操作策略](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)。
+这些示例 PowerShell 命令是如何对图形 API 执行查询的示例。使用 Azure AD 的令牌颁发策略的详细信息，请参阅[图形 API 参考的操作策略](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)。
 
 ## <a name="step-7-verify-the-new-provider"></a>第 7 步： 验证新的提供程序
 
@@ -210,7 +211,14 @@ New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
 
+## <a name="fixing-people-picker"></a>修复人员选取器
+用户现在可以登录到 SharePoint 2016 使用标识从 Azure 的广告，但仍有改进的用户体验的机会。例如，搜索用户人员选取器中显示多个搜索结果。还有 3 声明类型中声明映射创建的每个搜索结果。若要选择用户使用人员选取器，必须准确地键入他们的用户名并选择**名称**声明的结果。
 
+![索赔的搜索结果](images/SAML11/fig16-claimssearchresults.png)
+
+没有验证您搜索的这会导致拼写错误的值或用户意外地选择错误声称如**姓**分配类型声明。这可以防止用户成功访问资源。
+
+为了帮助这种情况下，提供了开源的解决方案称为 SharePoint 2016 年提供的自定义声明提供程序的[AzureCP](https://yvand.github.io/AzureCP/) 。它将使用 Azure 广告图解决用户输入并执行验证。了解更多信息，请访问[AzureCP](https://yvand.github.io/AzureCP/)。 
 
 ## <a name="additional-resources"></a>其他资源
 
