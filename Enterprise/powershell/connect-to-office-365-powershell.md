@@ -1,5 +1,5 @@
 ---
-title: "连接到 Office 365 PowerShell"
+title: 连接到 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: "摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。"
-ms.openlocfilehash: a13fcc401a4d00f49dcc4eec2a5acba36075233f
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+description: 摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。
+ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
+ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/09/2018
 请注意，这些连接说明与 [Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113) 主题中的连接说明相同。
   
 > [!TIP]
-> **刚开始接触 PowerShell？**请观看领英学习提供的 [PowerShell 概述](http://technet.microsoft.com/library/https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
+> **刚开始接触 PowerShell？**请观看领英学习提供的 [PowerShell 概述](https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
