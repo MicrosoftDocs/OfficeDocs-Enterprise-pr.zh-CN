@@ -1,5 +1,5 @@
 ---
-title: "使用 PowerShell 以将电子邮件迁移到 Office 365 中"
+title: 使用 PowerShell 以将电子邮件迁移到 Office 365 中
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: "摘要：了解如何使用 Windows PowerShell 将电子邮件迁移到 Office 365。"
+description: 摘要：了解如何使用 Windows PowerShell 将电子邮件迁移到 Office 365。
 ms.openlocfilehash: 5c982e795a39faed1c3837f86c74413a3413d59e
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT

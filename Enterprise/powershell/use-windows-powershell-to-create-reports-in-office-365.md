@@ -1,5 +1,5 @@
 ---
-title: "使用 Windows PowerShell 在 Office 365 中创建报告"
+title: 使用 Windows PowerShell 在 Office 365 中创建报告
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: "摘要：使用 Office 365 PowerShell 来创建无法在 Office 365 管理中心生成的报告。"
+description: 摘要：使用 Office 365 PowerShell 来创建无法在 Office 365 管理中心生成的报告。
 ms.openlocfilehash: 09db143c027af987cf86036c4f5fd6bca009afe4
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
