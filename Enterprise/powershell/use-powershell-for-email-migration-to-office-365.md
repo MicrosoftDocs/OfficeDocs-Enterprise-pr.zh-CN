@@ -1,5 +1,5 @@
 ---
-title: "使用 PowerShell 以将电子邮件迁移到 Office 365 中"
+title: 使用 PowerShell 以将电子邮件迁移到 Office 365 中
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: "摘要：了解如何使用 Windows PowerShell 将电子邮件迁移到 Office 365。"
+description: 摘要：了解如何使用 Windows PowerShell 将电子邮件迁移到 Office 365。
 ms.openlocfilehash: 5c982e795a39faed1c3837f86c74413a3413d59e
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
@@ -47,9 +47,9 @@ ms.lasthandoff: 01/11/2018
 [<span data-ttu-id="c01a3-117">使用 Windows PowerShell 在 Office 365 中创建报告</span><span class="sxs-lookup"><span data-stu-id="c01a3-117">Use Windows PowerShell to create reports in Office 365</span></span>](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-<span data-ttu-id="c01a3-118">[使用 Windows PowerShell 管理 Office 365 的优点](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)</span><span class="sxs-lookup"><span data-stu-id="c01a3-118">[Advantages of using Windows PowerShell to manage Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)</span></span>
+<span data-ttu-id="c01a3-118">[使用 Windows PowerShell 管理 Office 365 的优点]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span><span class="sxs-lookup"><span data-stu-id="c01a3-118">[Advantages of using Windows PowerShell to manage Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span></span>
   
-<span data-ttu-id="c01a3-119">[Office 365 技术参考中的 Windows PowerShell](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)</span><span class="sxs-lookup"><span data-stu-id="c01a3-119">[Windows PowerShell in Office 365 technical reference](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)</span></span>
+<span data-ttu-id="c01a3-119">[Office 365 技术参考中的 Windows PowerShell]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))</span><span class="sxs-lookup"><span data-stu-id="c01a3-119">[Windows PowerShell in Office 365 technical reference]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))</span></span>
   
-<span data-ttu-id="c01a3-120">[Office 365 许可和 Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)</span><span class="sxs-lookup"><span data-stu-id="c01a3-120">[Office 365 Licensing and Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)</span></span>
+<span data-ttu-id="c01a3-120">[Office 365 许可和 Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))</span><span class="sxs-lookup"><span data-stu-id="c01a3-120">[Office 365 Licensing and Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))</span></span>
 
