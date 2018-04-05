@@ -1,5 +1,5 @@
 ---
-title: "Azure IaaS 的混合云方案"
+title: Azure IaaS 的混合云方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: "摘要： 了解混合的体系结构和方案为 Microsoft 基础架构即服务 (IaaS)-基于在 Azure 的云服务。"
-ms.openlocfilehash: 66024c708cb4fbc904de18f27077871d52f0e70c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 摘要： 了解混合的体系结构和方案为 Microsoft 基础架构即服务 (IaaS)-基于在 Azure 的云服务。
+ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>适用于 Azure IaaS 的混合云方案
 
@@ -179,8 +179,6 @@ Azure 中一个多层、高可用性 LOB 应用程序的示例是 SharePoint Ser
 请参阅其他资源：
   
 - [混合云环境的构建](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [将您的数据中心扩展到云 Microsoft 虚拟学院课程](https://mva.microsoft.com/en-US/training-courses/extend-your-datacenter-to-the-cloud-13908?l=7fG3tAouB_7100115881)
     
 - [设计和构建 Azure 中的 LOB 应用程序](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     

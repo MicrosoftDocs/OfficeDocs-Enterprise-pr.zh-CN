@@ -1,9 +1,9 @@
 ---
-title: "用于 Office 365 开发/测试环境的 DirSync"
+title: 您 Office 365 的开发/测试环境的目录同步
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,31 +16,29 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
-description: "摘要： 需要配置目录同步为您 Office 365 的开发/测试环境。"
-ms.openlocfilehash: 8a656ea742af642a8b4dc3e096764f0e8cbde074
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 需要配置目录同步为您 Office 365 的开发/测试环境。
+ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="dirsync-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的 DirSync
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>您 Office 365 的开发/测试环境的目录同步
 
  **摘要：**配置目录同步为您 Office 365 的开发/测试环境。
   
-许多组织使用 Azure AD Connect 和目录同步 (DirSync)，将其本地 Windows Server Active Directory (AD) 林中的帐户集同步到 Office 365 中的帐户集。本文介绍了如何通过与 Office 365 开发/测试环境的密码同步添加 DirSync，从而生成以下配置。
+许多组织使用 Azure AD 连接和目录同步同步中其内部 Windows 服务器活动目录 (AD) 林向 Office 365 中帐户的组帐户的组。本文介绍了如何添加目录同步密码哈希同步与 Office 365 的开发/测试环境，从而在以下配置中。
   
-![DirSync 的 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![通过目录同步在 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 此配置包括：  
   
 - Office 365 E5 试用订阅，从你创建它起 30 天内过期。
-    
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的三个虚拟机（DC1、APP1 和 CLIENT1）。Azure AD Connect 在 APP1 上运行以便使 Windows Server AD 域同步到 Office 365。
     
 设置此开发/测试环境包含两个阶段：
   
 1. 创建 Office 365 开发/测试环境（Azure 虚拟网络中的 DC1、APP1 和 CLIENT1 虚拟机，有 Office 365 E5 试用订阅）。
-    
 2. 在 APP1 上安装和配置 Azure AD Connect。
     
 > [!TIP]
@@ -55,7 +53,6 @@ ms.lasthandoff: 02/14/2018
 此配置包括：  
   
 - Office 365 E5 试用订阅。
-    
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>第 2 阶段：在 APP1 上安装 Azure AD Connect
@@ -75,7 +72,7 @@ Stop-Process -Name Explorer -Force
 
   ```
 
-3. 从任务栏中，单击**Internet Explorer** ，然后转到[https://aka.ms/aadconnect](https://aka.ms/aadconnect)。
+3. 从任务栏中，单击**Internet Explorer** ，并转到[https://aka.ms/aadconnect](https://aka.ms/aadconnect)。
     
 4. 在 Microsoft Azure 活动目录连接页面上，单击**下载**，，然后单击**运行**。
     
@@ -93,7 +90,7 @@ Stop-Process -Name Explorer -Force
     
 11. 在**完成配置**页上，单击**退出**。
     
-12. 在 Internet Explorer 中，请转到 Office 365 门户网站 ([https://portal.office.com](https://portal.office.com)) 和 Office 365 试用订阅使用全局管理员帐户登录。
+12. 在 Internet Explorer 中，转到 Office 365 门户网站 ([https://portal.office.com](https://portal.office.com)) 和 Office 365 试用订阅使用全局管理员帐户登录。
     
 13. 从主门户页面中，单击**管理**。
     
@@ -107,30 +104,24 @@ Stop-Process -Name Explorer -Force
     
 下面是生成的配置。
   
-![DirSync 的 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![通过目录同步在 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 此配置包括：  
   
 - Office 365 E5 试用订阅。
-    
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。Azure AD Connect 在 APP1 上运行以便每隔 30 分钟使 Windows Server AD 域同步到 Office 365。
     
 ## <a name="next-step"></a>下一步
 
-现在可以为您的组织中部署目录同步，请参阅[部署 Office 365 目录同步 （目录同步） Microsoft Azure 中](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)。
+当您准备部署您的组织的目录同步时，请参阅[Microsoft Azure 中的部署 Office 365 提供目录同步](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)。
 
 ## <a name="see-also"></a>另请参阅
 
-[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
-  
-[基础配置开发/测试环境](base-configuration-dev-test-environment.md)
-  
-[Office 365 开发/测试环境](office-365-dev-test-environment.md)
-  
+[云采纳测试实验室指南 (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[基本配置开发/测试环境](base-configuration-dev-test-environment.md)
+[Office 365 的开发/测试环境](office-365-dev-test-environment.md)
 [Office 365 开发/测试环境的云应用程序安全性](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[为您的 Office 365 开发/测试环境高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
+ [为您的 Office 365 开发/测试环境高级威胁保护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
 

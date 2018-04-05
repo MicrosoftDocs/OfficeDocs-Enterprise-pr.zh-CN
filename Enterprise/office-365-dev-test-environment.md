@@ -1,9 +1,9 @@
 ---
-title: "Office 365 开发/测试环境"
+title: Office 365 开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
-description: "摘要： 使用此测试实验室指南创建 Office 365 提供试用版订购评估或开发/测试。"
-ms.openlocfilehash: b3c9e83dfab3aaf02ad598021e11965657e877bb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 摘要： 使用此测试实验室指南创建 Office 365 提供试用版订购评估或开发/测试。
+ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
@@ -56,17 +56,17 @@ ms.lasthandoff: 02/13/2018
 
 要启动 Office 365 E5 试用订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
-1. 我们建议，Contoso 的公司名称变量，该变量用于您公司的名称，它是 Microsoft 示例内容中使用虚构的公司，但它并不是必需。记录您的虚构公司名称: ___
+1. 我们建议，Contoso 的公司名称变量，该变量用于您公司的名称，它是 Microsoft 示例内容中使用虚构的公司，但它并不是必需。记录您的虚构公司名称: ___。
     
-2. 若要注册新的 Microsoft 帐户，转到[https://outlook.com](https://outlook.com)并使用新的电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
+2. 要注册新的 Microsoft 帐户，请转到[https://outlook.com](https://outlook.com)和新电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
     
-  - 在此记录新帐户的名字和姓氏：_______________________________
+  - 记录您的新帐户的第一个和最后一个名称: ___。
     
   - 在此记录新的电子邮件帐户地址：_____________________________@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>注册 Office 365 E5 试用订阅
 
-1. 轻量的 Office 365 开发/测试环境，打开互联网浏览器在您的计算机上，并转到[https://aka.ms/e5trial](https://aka.ms/e5trial)。 
+1. 轻量的 Office 365 开发/测试环境，打开在您的计算机上的 Internet 浏览器并转到[https://aka.ms/e5trial](https://aka.ms/e5trial)。 
     
     为模拟的企业 Office 365 的开发/测试环境：
     
@@ -83,7 +83,7 @@ Stop-Process -Name Explorer -Force
     > [!TIP]
     > 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)以获取包含本文中的所有 PowerShell 命令的文本文件。
   
-  - 从开始屏幕中，单击**Internet Explorer** ，然后转到[https://aka.ms/e5trial](https://aka.ms/e5trial)。
+  - 从开始屏幕中，单击**Internet Explorer** ，并转到[https://aka.ms/e5trial](https://aka.ms/e5trial)。
     
 2. 在**欢迎，让我们知道您**的页中，指定：
     
@@ -105,7 +105,7 @@ Stop-Process -Name Explorer -Force
     
     将你键入的密码记录在安全的位置。
     
-    记录您的虚构的公司名称，作为该**组织名称**，此处被称为: ___
+    记录您的虚构的公司名称，作为该**组织名称**，此处被称为: ___。
     
 5. 单击**我的帐户**。
     
@@ -113,7 +113,7 @@ Stop-Process -Name Explorer -Force
     
 7. 键入接收的文本消息的验证代码，然后单击**下一步**。
     
-8. 在此记录登录页面 URL（选择并复制）：___________________________________________
+8. 记录登录页面 URL （选择和复制）: ___。
     
 9. 在此记录用户 ID（选择并复制）：__________________________________.onmicrosoft.com
     
@@ -259,17 +259,17 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 生产站点 URL: https://___.sharepoint.com/sites/production
+  - 生产站点 URL:https://______________________________________________.sharepoint.com/sites/production
     
-  - 销售网站 URL：https://______________________________________________.sharepoint.com/sites/sales
+  - 销售网站网址：https://______________________________________________.sharepoint.com/sites/sales
     
-  - 支持网站 URL：https://______________________________________________.sharepoint.com/sites/support
+  - 支持网站的 URL:https://______________________________________________.sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>后续步骤
 
 在 Office 365 开发/测试环境中使用这些附加的文章：
   
-- [用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
+- [您 Office 365 的开发/测试环境的目录同步](dirsync-for-your-office-365-dev-test-environment.md)
     
 - [您的 Office 365 开发/测试环境的的多因素身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     

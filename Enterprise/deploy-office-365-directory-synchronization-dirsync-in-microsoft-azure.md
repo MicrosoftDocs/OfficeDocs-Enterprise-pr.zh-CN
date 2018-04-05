@@ -1,9 +1,9 @@
 ---
-title: "在 Microsoft Azure 中部署 Office 365 目录同步 (DirSync)"
+title: 部署 Office 365 Microsoft Azure 中的目录同步
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,16 +15,16 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: "摘要： 在 Azure 同步您的内部目录和 Office 365 订购的 Azure AD 租户之间的帐户中的虚拟机上部署 Azure AD 连接 （目录同步）。"
-ms.openlocfilehash: 07ec310c50635afd70b0342d2e0547aab0e95d01
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 部署在 Azure 同步您的内部目录和 Office 365 订购的 Azure AD 租户之间的帐户中的虚拟机上的 Azure AD 连接。
+ms.openlocfilehash: f96147542da3af1883ea5428b1345c8cf75b9223
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Office 365 目录同步 (DirSync)
+# <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>部署 Office 365 Microsoft Azure 中的目录同步
 
- **摘要：**在 Azure 同步您的内部目录和 Office 365 订购的 Azure AD 租户之间的帐户中的虚拟机上部署 Azure AD 连接 （目录同步）。
+ **摘要：**部署在 Azure 同步您的内部目录和 Office 365 订购的 Azure AD 租户之间的帐户中的虚拟机上的 Azure AD 连接。
   
 Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同步工具或 DirSync.exe 工具） 是基于服务器的应用程序，它在加入域的服务器上安装同步您的本地 Windows 服务器活动目录用户定向到 Office 365 订购的 Azure Active Directory 租户。您可以在本地服务器上，安装 Azure AD 连接但您也可以安装它在 Azure 中的虚拟机上，原因如下：
   
@@ -46,7 +46,7 @@ Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>在 Azure 中部署 Office 365 目录同步的概述
 <a name="Overview"> </a>
 
-下图显示了 Azure AD 连接在同步到 anOffice 365 订阅内部 Windows 服务器 AD 林中的 Azure (DirSync server) 中的虚拟机上运行。
+下图显示了 Azure AD 连接在同步到 anOffice 365 订阅内部 Windows 服务器 AD 林中的 Azure （目录同步服务器） 中的虚拟机上运行。
   
 ![Azure 中的虚拟机上的 Azure AD Connect 工具使用流量流将本地帐户同步到 Office 365 订阅的 Azure AD 租户](images/CP_DirSyncOverview.png)
   
@@ -73,7 +73,7 @@ Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同
     
     配置 Azure AD 连接需要 Azure AD 管理员帐户和 Windows 服务器 AD 企业管理员帐户的凭据 （用户名和密码）。Azure AD 连接运行立即并持续同步到 Office 365 的内部部署 Windows 服务器 AD 林。
     
-在部署此解决方案在生产环境中的之前，按照[您 Office 365 的开发/测试环境的目录同步](dirsync-for-your-office-365-dev-test-environment.md)中的说明设置此配置作为概念，用于演示，或实验验证。
+在部署此解决方案在生产环境中的之前，使用[您 Office 365 的开发/测试环境的目录同步](dirsync-for-your-office-365-dev-test-environment.md)过程中的说明进行操作将该配置设置为概念，用于演示，或实验验证。
   
 > [!IMPORTANT]
 > Azure AD Connect 配置完成后，它不会保存 Windows Server AD 企业管理员帐户凭据。 
@@ -81,7 +81,7 @@ Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同
 > [!NOTE]
 > 此解决方案说明同步单个 Windows 服务器 AD 林到 Office 365。本文中介绍的拓扑表示方法只有一种实现这一解决方案。您的组织的拓扑可能会不同，根据您独特的网络要求和安全注意事项。 
   
-## <a name="plan-for-hosting-a-dirsync-server-for-office-365-in-azure"></a>规划将 Office 365 的 DirSync 服务器托管在 Azure 中
+## <a name="plan-for-hosting-a-directory-sync-server-for-office-365-in-azure"></a>在 Azure 中的 Office 365 的宿主目录同步服务器计划
 <a name="PlanningVirtual"> </a>
 
 ### <a name="prerequisites"></a>先决条件
@@ -106,11 +106,11 @@ Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同
     
 - 在内部部署网络中，域控制器和 DNS 服务器存在。
     
-- Azure AD 连接执行而不是单一登录的密码同步。不需要部署 Active Directory 联合身份验证服务 (AD FS）) 的基础结构。若要了解有关密码同步和单一登录选项的详细信息，请参阅[确定要使用哪个目录集成方案](https://go.microsoft.com/fwlink/p/?LinkId=393094)。
+- Azure AD 连接执行而不是单一登录的密码哈希同步。不需要部署 Active Directory 联合身份验证服务 (AD FS）) 的基础结构。若要了解有关密码哈希同步和单一登录选项的详细信息，请参阅[确定要使用哪个目录集成方案](https://go.microsoft.com/fwlink/p/?LinkId=393094)。
     
 下面是您在环境中部署此解决方案时可能会考虑的一些其他设计选项：
   
-- 如果存在现有的 Azure 虚拟网络中的 DNS 服务器，请确定是否要使用它们来进行名称解析，而不是在内部网络上的 DNS 服务器的目录同步服务器。
+- 如果存在现有的 Azure 虚拟网络中的 DNS 服务器，确定您是否您的目录同步服务器，使用它们来进行名称解析，而不是在内部网络上的 DNS 服务器。
     
 - 如果现有 Azure 虚拟网络中的域控制器，请确定是否配置 Active Directory 站点和服务可能会为您更好的选择。目录同步服务器可以查询 Azure 中的帐户和密码，而不是在内部网络上的域控制器的更改虚拟网络中的域控制器。
     
@@ -128,7 +128,7 @@ Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同
 部署之后，还必须为 Office 365 中的新用户帐户分配位置和许可证。
   
 > [!TIP]
-> [在 Azure 部署工具包中的目录同步服务器](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)包含所有的 Azure PowerShell 块来构建此解决方案、 Microsoft PowerPoint 和 Visio 格式中的关系图和生成 Azure PowerShell 的 Microsoft Excel 配置工作簿为您的设置自定义的命令块。
+> [在 Azure 部署工具包中的目录同步服务器](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)包含所有的 Azure PowerShell 块来构建此解决方案、 Microsoft PowerPoint 和 Visio 格式中的关系图和生成的 Microsoft Excel 配置工作簿自定义您的设置的 azure PowerShell 命令块。
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>阶段 1：创建和配置 Azure 虚拟网络
 
@@ -136,7 +136,7 @@ Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同
   
 这是生成的配置。
   
-![托管于 Azure 中的 Office 365 的 DirSync 服务器阶段 1](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![目录同步服务器，以承载在 Azure 中的 Office 365 的第 1 阶段](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 该图显示了通过站点到站点 VPN 或 ExpressRoute 连接来连接到 Azure 虚拟网络的本地网络。
   
@@ -150,34 +150,34 @@ Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同
     
 - 在**设置**窗格中，在**存储**部分中选择**标准**的存储类型。在**网络**部分中，选择虚拟网络和子网的名称所在的目录同步服务器 (不是 GatewaySubnet)。将所有其他设置保留为其默认值。
     
-通过检查内部 DNS 验证 DirSync 服务器是否正确使用 DNS，以确保为具有 IP 地址的虚拟机添加地址 (A) 记录。 
+请确认您的目录同步服务器在使用 DNS 正确通过检查您的内部 DNS 以确保为虚拟机提供的 IP 地址添加了一个地址 (A) 记录。 
   
-使用中的说明[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)到远程桌面连接的目录同步服务器连接。登录后，加入本地 Windows 服务器 AD 域虚拟机。
+使用中的说明[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)来连接到远程桌面连接的目录同步服务器。登录后，加入本地 Windows 服务器 AD 域虚拟机。
   
-若要使用 Azure AD Connect 访问 Internet 资源，必须将 DirSync 服务器配置为使用本地网络的代理服务器。有关要执行的其他配置步骤，你应与网络管理员联系。
+Azure AD 连接来访问互联网资源，您必须配置目录同步服务器要使用的代理服务器的内部网络。应联系您的网络管理员进行任何其他配置步骤来执行。
   
 这是生成的配置。
   
-![托管于 Azure 中的 Office 365 的 DirSync 服务器阶段 2](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![目录同步服务器，以承载在 Azure 中的 Office 365 的第 2 阶段](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
-该图显示跨界 Azure 虚拟网络中的 DirSync 服务器虚拟机。
+下图显示跨部署中的目录同步服务器虚拟机 Azure 的虚拟网络。
   
 ### <a name="phase-3-install-and-configure-azure-ad-connect"></a>阶段 3：安装和配置 Azure AD Connect
 
 请完成以下过程：
   
-1. 连接到远程桌面连接使用具有本地管理员权限的 Windows 服务器 AD 域帐户目录同步服务器。请参阅[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)。
+1. 连接到远程桌面连接使用具有本地管理员权限的 Windows 服务器 AD 域帐户的目录同步服务器。请参阅[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)。
     
-2. 从目录同步服务器，打开[设置目录同步在 Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)的文章并按照指导目录同步密码同步。
+2. 从目录同步服务器，打开[设置目录同步在 Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)的文章并按照指导与密码哈希同步目录同步。
     
 > [!CAUTION]
 > 安装程序会在本地用户的组织单位 (OU) 创建的**AAD_xxxxxxxxxxxx**帐户。不要移动或删除该帐户或同步将失败。
   
 这是生成的配置。
   
-![托管于 Azure 中的 Office 365 的 DirSync 服务器阶段 3](images/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![第三阶段在 Azure 中承载 Office 365 的目录同步服务器](images/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
-该图显示跨界 Azure 虚拟网络中具有 Azure AD Connect 的 DirSync 服务器。
+下图显示使用 Azure AD 连接的目录同步服务器跨场合 Azure 的虚拟网络。
   
 ### <a name="assign-locations-and-licenses-to-users-in-office-365"></a>将位置和许可证分配给 Office 365 中的用户
 
