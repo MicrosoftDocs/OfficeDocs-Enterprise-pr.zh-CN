@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 企业开发/测试环境"
+title: Microsoft 365 企业开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: "摘要： 使用此测试实验室指南创建开发/测试环境，包括 Office 365 E5、 企业移动性 + 安全 (EMS) E5 和计算机运行 Windows 10 企业。"
-ms.openlocfilehash: c31c9a86a6918ee0a68e64cf3edfa7e2e4d2e93a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 使用此测试实验室指南创建开发/测试环境，包括 Office 365 E5、 企业移动性 + 安全 (EMS) E5 和计算机运行 Windows 10 企业。
+ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业开发/测试环境
 
@@ -68,7 +68,6 @@ ms.lasthandoff: 02/14/2018
 现在已开发/测试环境：
   
 - 与你的用户帐户列表共享同一个组织和相同 Azure AD 租户的 Office 365 E5 企业版和 EMS 试用订阅。
-    
 - 所有适当的用户帐户 （只是全局管理员或所有五个用户帐户） 都可以使用 Office 365 E5 和 EMS E5。
     
 图 2 显示您生成的配置，它增加了 EMS。
@@ -91,7 +90,7 @@ ms.lasthandoff: 02/14/2018
   
 ### <a name="virtual-machine-in-azure"></a>在 Azure 中的虚拟机
 
-若要在 Microsoft Azure，***您必须基于 Visual Studio 的预订***，为 Windows 10 企业有权图像创建 Windows 10 虚拟机。其他类型的 Azure 订阅，如试用和付费订阅，不能访问到此图像。
+在 Microsoft Azure 使用 Azure 的插图创建 Windows 10 虚拟机。
   
 > [!NOTE]
 > 下面的命令设置使用 Azure PowerShell te 最新版本。请参阅[开始使用 Azure PowerShell cmdlet](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)。这些命令集生成 Windows 10 企业虚拟机命名为 WIN10，其所需的基础结构，包括某一资源组、 存储帐户和虚拟网络的所有。如果您已熟悉 Azure 的基础结构服务，请调整这些说明来满足您当前部署的基础结构。 
@@ -131,27 +130,6 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-基于资源管理器的虚拟机需要基于资源管理器的存储帐户。您必须选择为您存储帐户，*仅小写字母和数字，它包含*一个全局唯一名称。可以使用此命令可以列出现有的存储帐户。
-  
-```
-Get-AzureRMStorageAccount | Sort StorageAccountName | Select StorageAccountName
-```
-
-使用此命令来测试建议的存储帐户名称是否唯一。
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-使用这些命令为你的新测试环境创建一个新的存储帐户。
-  
-```
-$rgName="<your new resource group name>"
-$saName="<storage account name>"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
 接下来，创建一个新的虚拟网络和 WIN10 虚拟机使用这些命令。出现提示时，为 WIN10 提供的用户名和密码的本地管理员帐户和存储在一个安全的位置。
   
 ```
@@ -165,19 +143,17 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 $pip=New-AzureRMPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzureRMNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzureRMVMConfig -VMName WIN10 -VMSize Standard_D1_V2
-$storageAcc=Get-AzureRMStorageAccount -ResourceGroupName $rgName -Name $saName
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for WIN10."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftVisualStudio -Offer Windows -Skus Windows-10-N-x64 -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$osDiskUri=$storageAcc.PrimaryEndpoints.Blob.ToString() + "vhds/WIN10-TestLab-OSDisk.vhd"
-$vm=Set-AzureRMVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -VhdUri $osDiskUri -CreateOption fromImage
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 ## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>阶段 4: Windows 10 将计算机加入到 Azure 的广告
 
-物理计算机或虚拟机配置 Windows 10 企业，有的创建并运行后，使用本地管理员帐户登录。
+创建物理或虚拟机，它与 Windows 10 企业后，使用本地管理员帐户登录。
   
 > [!NOTE]
 > 在 Azure 中的虚拟机，将连接到使用[这些说明](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon)。使用本地管理员帐户的凭据登录。 
@@ -196,7 +172,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 6. 关闭设置窗口。
     
-接下来，在 WIN10 计算机上安装 Office 2016
+接下来，在 WIN10 计算机上安装 Office 2016。
   
 1. 打开 Microsoft 边浏览器并登录到您的全局管理员帐户凭据与 Office 365 门户。有关帮助信息，请参阅[登录到 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
@@ -228,10 +204,8 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 ## <a name="see-also"></a>另请参阅
 
-[一个 Microsoft 云开发/测试环境](the-one-microsoft-cloud-dev-test-environment.md)
+- [Microsoft 365 企业文档](https://docs.microsoft.com/microsoft-365-enterprise/)
 
-[Microsoft 365 企业文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+ - [部署 Microsoft 365 企业](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 
-
-
-
+- [一个 Microsoft 云开发/测试环境](the-one-microsoft-cloud-dev-test-environment.md)
