@@ -1,9 +1,9 @@
 ---
-title: "基础配置开发/测试环境"
+title: 基础配置开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
-description: "摘要： 创建的简化内部网作为 Microsoft Azure 中的开发/测试环境。"
-ms.openlocfilehash: 04da1037dbebed9f9a5d2aa2fb37b03b88218839
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 创建的简化内部网作为 Microsoft Azure 中的开发/测试环境。
+ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>基础配置开发/测试环境
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/14/2018
 
 ![CLIENT1 虚拟机的 Azure 中的基础配置的阶段 4](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-图 1 中的基础配置开发/测试环境由模拟连接至 Internet 的简化专用内部网的仅限云的 Azure 虚拟网络（名为 TestLab）中的企业网络子网组成。它包含运行 Windows Server 2016 的三个 Azure 虚拟机：
+在图 1 中的基本配置开发/测试环境由仅云 Azure 虚拟网络命名测试实验室模拟简化、 专用内联网连接到 Internet 的企业网络子网组成。它包含三个 Azure 的虚拟机：
   
 - DC1 被配置为一个内部网域控制器和域名系统 (DNS) 服务器
     
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/14/2018
   
 - 用于应用程序开发和测试。
     
-- 为自己设计一个长的测试环境的初始配置，包括附加的虚拟机、 Azure 服务或其他 Microsoft 云产品如 Office 365 和企业安全 + 移动。
+- 为自己设计一个长的测试环境的初始配置，包括附加的虚拟机、 Azure 服务或其他 Microsoft 云产品如 Office 365 和企业安全 + 移动 (EMS)。
     
 在 Azure 中设置基本配置测试环境的四个阶段：
   
@@ -163,7 +163,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>使用本地管理员帐户凭据连接到 DC1。
 
-1. 在[Azure 门户](https://portal.azure.com)，单击**资源组 >** <the name of your new resource group> **> DC1 > 连接**。
+1. 在[Azure 门户](https://portal.azure.com)，单击**资源组 >** [新的资源组的名称] **> DC1 > 连接**。
     
 2. 打开已下载的 DC1.rdp 文件，然后单击**连接**。
     
@@ -191,7 +191,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs"
+Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
 
 需指定安全模式管理员密码。在安全的位置存储该密码。
@@ -202,7 +202,7 @@ DC1 重启后，重新连接到 DC1 虚拟机。
   
 ### <a name="connect-to-dc1-using-domain-credentials"></a>使用域凭据连接到 DC1
 
-1. 在[Azure 门户](https://portal.azure.com)，单击**资源组 >** <your resource group name> **> DC1 > 连接**。
+1. 在[Azure 门户](https://portal.azure.com)，单击**资源组 >** [资源组名称] **> DC1 > 连接**。
     
 2. 运行已下载的 DC1.rdp 文件，然后单击**连接**。
     
@@ -242,7 +242,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 APP1 提供 Web 和文件共享服务。
   
-若要为 APP1 创建一台 Azure 虚拟机，请填入你的资源组名称、Azure 位置和存储帐户名称，并在本地计算机上的 Azure PowerShell 命令提示符下运行这些命令。
+若要创建 APP1 Azure 的虚拟机，填入您的资源组，Azure PowerShell 命令提示符下运行这些命令，您的本地计算机上。
   
 ```
 $rgName="<resource group name>"
@@ -283,9 +283,9 @@ Install-WindowsFeature Web-WebServer -IncludeManagementTools
 下一步，使用这些 PowerShell 命令在 APP1 的文件夹中创建一个共享文件夹和文本文件。
   
 ```
-New-Item -path c:\\files -type directory
-Write-Output "This is a shared file." | out-file c:\\files\\example.txt
-New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
+New-Item -path c:\files -type directory
+Write-Output "This is a shared file." | out-file c:\files\example.txt
+New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 ```
 
 这是你的当前配置。
@@ -296,10 +296,7 @@ New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
 
 CLIENT 1 可在 Contoso 内部网上充当典型的笔记本电脑、平板电脑或台式计算机。
   
-> [!NOTE]
-> 下面的命令集创建客户端 1 运行 Windows 服务器 2016年数据，这可以为所有类型的 Azure 订阅中心。如果您有基于 Visual Studio 的 Azure 订阅，可以创建客户端 1 运行 Windows 10、 Windows 8 或 Windows 7 [Azure 的门户](https://portal.azure.com)。 
-  
-若要为 CLIENT1 创建一台 Azure 虚拟机，请填入你的资源组名称、Azure 位置和存储帐户名称，并在本地计算机上的 Azure PowerShell 命令提示符下运行这些命令。
+若要创建的客户端 1 Azure 的虚拟机，填充您的资源组的名称和在 Azure PowerShell 命令提示符下运行这些命令，您的本地计算机上。
   
 ```
 $rgName="<resource group name>"
@@ -310,7 +307,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -343,7 +340,7 @@ Restart-Computer
     
 4. 从开始屏幕中，单击**Internet Explorer**，，然后单击**确定**。
     
-5. 在地址栏中键入**http://app1.corp.contoso.com/**，，然后按 enter 键。您应该看到 APP1 默认 Internet Information Services 网页。
+5. 在地址栏中，键入**http://app1.corp.contoso.com/**，然后按 enter 键。您应该看到 APP1 默认 Internet Information Services 网页。
     
 6. 从桌面任务栏中，单击文件资源管理器图标。
     
@@ -362,8 +359,8 @@ Azure 中的基本配置现在已准备就绪，可用于应用程序开发和�
 > [!TIP]
 > 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
   
-## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>将 Azure 中的测试环境虚拟机成本降至最低
 <a name="mincost"> </a>
+## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>将 Azure 中的测试环境虚拟机成本降至最低
 
 若要将运行测试环境虚拟机的成本降至最低，可以执行以下任一操作：
   
@@ -383,9 +380,7 @@ Stop-AzureRMVM -ResourceGroupName $rgName -Name "DC1" -Force
 若要确保所有虚拟机在从停止（已取消分配）状态启动时可以正常工作，则应按以下顺序进行启动：
   
 1. DC1
-    
 2. APP1
-    
 3. 客户端 1
     
 若要使用 Azure PowerShell 按顺序启动虚拟机，请填写资源组名称并运行这些命令。
@@ -399,16 +394,8 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>另请参阅
 
-<a name="mincost"> </a>
-
-[Office 365 开发/测试环境](office-365-dev-test-environment.md)
-  
-[用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Office 365 开发/测试环境的云应用程序安全性](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[为您的 Office 365 开发/测试环境高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
-
-
+- [Office 365 开发/测试环境](office-365-dev-test-environment.md)
+- [用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
+- [Office 365 开发/测试环境的云应用程序安全性](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [为您的 Office 365 开发/测试环境高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
