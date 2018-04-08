@@ -1,9 +1,9 @@
 ---
-title: "用于 Office 365 开发/测试环境的联合身份"
+title: 用于 Office 365 开发/测试环境的联合身份
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: "摘要： 配置联合身份验证为您的 Office 365 开发/测试环境。"
-ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 配置联合身份验证为您的 Office 365 开发/测试环境。
+ms.openlocfilehash: 8841e203587f4582396db172ff5f4626eacbcdc7
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的联合身份
 
@@ -63,19 +63,19 @@ Office 365 支持联合的身份。这意味着，而不是执行本身的凭据
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>阶段 1：创建包含 DirSync 的模拟企业 Office 365 开发/测试环境
 
-请按照[您 Office 365 的开发/测试环境的目录同步](dirsync-for-your-office-365-dev-test-environment.md)的说明进行操作以 APP1 作为目录同步服务器和同步的标识 Office 365 和 Windows 服务器 AD 之间创建 Office 365 的模拟的企业开发/测试环境在 DC1 上的帐户。
+按照[您 Office 365 的开发/测试环境的目录同步](dirsync-for-your-office-365-dev-test-environment.md)过程中的说明创建与目录同步服务器以 APP1 模拟的企业 Office 365 的开发/测试环境，并且同步之间 Office 365 的标识和在 DC1 上的 Windows 服务器 AD 帐户。
   
 接下来，创建新公共 DNS 域的名称基于您当前域的名称并将其添加到您的 Office 365 订购。我们建议使用名称**测试实验室。**\<公共域 >。例如，如果 contoso.com 公共域名，则添加公共域的名称 testlab.contoso.com。
   
 有关如何在您的 DNS 提供商创建了正确的 DNS 记录和域添加到 Office 365 的试用订阅的说明，请参阅[添加用户和域添加到 Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)。 
   
-生成的配置如下。
+下面是生成的配置。
   
 **图 2： 为 Office 365 的开发/测试环境的的目录同步**
 
-![DirSync 的 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![通过目录同步在 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-图 2 展示了用于 Office 365 开发/测试环境的 DirSync，其中包括 Office 365 和 Azure 虚拟网络中的 CLIENT1、APP1 和 DC1 虚拟机。
+图 2 显示了对于 Office 365 开发/测试环境，其中包括 Office 365 和客户端 1，APP1，并且 DC1 虚拟机在 Azure 的虚拟网络目录 synchronizationc。
   
 ## <a name="phase-2-create-the-ad-fs-server"></a>阶段 2：创建 AD FS 服务器
 
@@ -103,7 +103,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0)以获取包含本文中的所有 PowerShell 命令的文本文件。
+> 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0)为包含本文中的所有 PowerShell 命令的文本文件。
   
 接下来，使用[Azure 门户](http://portal.azure.com)连接到 ADFS1 虚拟机使用 ADFS1 本地管理员帐户名和密码，然后再打开 Windows PowerShell 命令提示符。
   
@@ -112,7 +112,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 接下来，在 ADFS1 上的 Windows PowerShell 提示符处运行下面这些命令，将 ADFS1 虚拟机加入 CORP 域。
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -164,7 +164,7 @@ Get-AzureRmNetworkSecurityGroup -Name CorpNet -ResourceGroupName $rgName | Add-A
 接下来，在 PROXY1 上的 Windows PowerShell 提示符处运行下面这些命令，将 PROXY1 虚拟机加入 CORP 域。
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -214,9 +214,9 @@ New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user pa
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
-New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\\LocalMachine\\My"
-New-Item -path c:\\Certs -type directory
-New-SmbShare -name Certs -path c:\\Certs -changeaccess CORP\\User1
+New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\LocalMachine\My"
+New-Item -path c:\Certs -type directory
+New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 ```
 
 接下来，按下面这些步骤操作，将新建的自签名证书保存为文件。

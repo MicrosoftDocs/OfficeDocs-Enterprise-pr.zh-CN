@@ -1,9 +1,9 @@
 ---
-title: "高可用性联合身份验证阶段 2 配置域控制器"
+title: 高可用性联合身份验证阶段 2 配置域控制器
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: "摘要： 在 Microsoft Azure 中配置域控制器和 Office 365 提供您的高可用性联合身份验证的目录同步服务器。"
-ms.openlocfilehash: 5e2cc8b5c750b5b2cf48ff0c594a5bd716d5bcf2
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 摘要： 在 Microsoft Azure 中配置域控制器和 Office 365 提供您的高可用性联合身份验证的目录同步服务器。
+ms.openlocfilehash: 80846025af82810f63087aafd1a3b3a1213212d1
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
@@ -33,15 +33,15 @@ ms.lasthandoff: 02/09/2018
 
 首先，您需要填写表格 M 的**虚拟机名称**列中，根据需要在**最小大小**列中修改虚拟机大小。
   
-|**项目**|**虚拟机的名称**|**插图**|**存储类型**|**最小大小**|
+|**项**|**虚拟机的名称**|**插图**|**存储类型**|**最小大小**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |______________（第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |______________（第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |______________ （目录同步服务器，示例 DS1）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |______________ （第一个 AD FS 服务器，示例 ADFS1）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |______________ （第二个 AD FS 服务器，示例 ADFS2）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |______________ （第一个 Web 应用程序代理服务器，示例 WEB1）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |______________ （第二个 Web 应用程序代理服务器，示例 WEB2）  <br/> |Windows Server 2016 数据中心  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)（第一个域控制器 DC1 的示例）  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)（第二个域控制器，DC2 的示例）  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./images/Common_Images/TableLine.png)（目录同步服务器，示例 DS1）  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./images/Common_Images/TableLine.png)（第一个 AD FS 服务器，ADFS1 的示例）  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./images/Common_Images/TableLine.png)（第二个 AD FS 服务器示例 ADFS2）  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./images/Common_Images/TableLine.png)（第一个 web 应用程序代理服务器，示例 WEB1）  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./images/Common_Images/TableLine.png)（第二个 web 应用程序代理服务器，WEB2 示例）  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
    
  **表 M-Azure 中的 Office 365 的高可用性联合身份验证的虚拟机**
   

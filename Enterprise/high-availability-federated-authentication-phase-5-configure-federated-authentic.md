@@ -1,5 +1,5 @@
 ---
-title: "高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证"
+title: 高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,22 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: "摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 Azure AD Connect。"
-ms.openlocfilehash: 2c23ffa2e9f033018c5cc1fd016fb4ed76535605
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 Azure AD Connect。
+ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证
 
  **摘要：**在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 Azure AD Connect。
  
-在为 Azure 基础结构服务中的 Office 365 部署高可用性联合身份验证的最后阶段中，获取并安装公共证书颁发机构颁发的证书，验证配置，然后在目录同步服务器上安装并运行 Azure AD Connect。Azure AD Connect 配置 Office 365 订阅、Active Directory 联合身份验证服务 (AD FS) 以及用于联合身份验证的 Web 应用程序代理服务器。
+此部署高可用性联合身份验证针对 Office 365 提供在 Azure 的基础结构服务的最后一个阶段，在您获得和安装公共证书颁发机构所颁发的证书、 验证您的配置，安装和运行 Azure 的广告目录同步服务器上的连接。Azure AD 连接配置 Office 365 订阅和 Active Directory 联合身份验证服务 (AD FS) 联合身份验证的 web 应用程序代理服务器。
   
 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
   
-## <a name="get-a-public-certificate-and-copy-it-to-the-dirsync-server"></a>获取公共证书并将其复制到目录同步服务器
+## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>获取公钥的证书并将其复制到目录同步服务器
 
 从具有以下属性的公共证书颁发机构获取数字证书：
   
@@ -40,7 +40,7 @@ ms.lasthandoff: 02/09/2018
   
 有关联合身份验证的证书要求的详细信息，请参阅[联合身份验证安装和配置的先决条件](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)。
   
-在收到证书后，请将其复制到目录同步服务器 C: 驱动器的文件夹中。例如，将文件命名为 SSL.pfx，并将其存储在目录同步服务器上的 C:\\Certs 文件夹中。
+当您收到该证书时，请将其复制到 c： 驱动器中的目录同步服务器上的文件夹。例如，命名为 SSL.pfx 的文件并将其存储在 c:\\证书目录同步服务器上的文件夹。
   
 ## <a name="verify-your-configuration"></a>验证配置
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 02/09/2018
     
 - 联合身份验证服务 FQDN 的专用 DNS A 记录指向用于 AD FS 服务器的内部 Azure 负载均衡器的专用 IP 地址。
     
-- 公共证书颁发机构颁发的适用于 SSL 连接（SAN 设置为联合身份验证服务 FQDN）的数字证书是存储在目录同步服务器上的一个 PFX 文件。
+- 公共证书颁发机构 isssued 数码证书适用于与 SAN 到联合身份验证服务设置 SSL 连接 FQDN 将 PFX 文件存储在您的目录同步服务器上。
     
 - 公共证书颁发机构的根证书安装在计算机和设备上受信任根证书颁发机构存储中。
     
@@ -70,9 +70,9 @@ ms.lasthandoff: 02/09/2018
 
 Azure AD Connect 工具通过以下步骤配置 AD FS 服务器、Web 应用程序代理服务器和用于联合身份验证的 Office 365：
   
-1. 使用具有本地管理员特权的域帐户创建到目录同步服务器的远程桌面连接。
+1. 使用具有本地管理员特权的域帐户创建到您的目录同步服务器的远程桌面连接。
     
-2. 从目录同步服务器的桌面，打开"Internet Explorer"，然后转到 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)。
+2. 从目录同步服务器的桌面，打开 Internet Explorer，并转到[https://aka.ms/aadconnect](https://aka.ms/aadconnect)。
     
 3. 在"Microsoft Azure Active Directory Connect"页上，单击"下载"，然后单击"运行"。
     
