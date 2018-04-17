@@ -1,5 +1,5 @@
 ---
-title: "用于 Office 365 开发/测试环境的高级电子数据展示"
+title: 用于 Office 365 开发/测试环境的高级电子数据展示
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: "摘要： 配置和演示 Office 365 高级的 eDiscovery Office 365 开发/测试环境中的示例数据。"
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 配置和演示 Office 365 高级的 eDiscovery Office 365 开发/测试环境中的示例数据。
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的高级电子数据展示
 
@@ -44,11 +44,11 @@ Office 365 高级的 eDiscovery 可以快速找到并分析整个 Office 365，�
 
 在此过程中，创建电子邮件，稍后会在高级电子数据展示案例中对这些电子邮件进行分析。
   
-1. 打开 Internet Explorer 并登录到 Outlook 帐户在[Office 365 开发/测试环境](office-365-dev-test-environment.md)的阶段 2 中创建的[https://outlook.com](https://outlook.com) 。
+1. 打开 Internet Explorer，在登录[https://outlook.com](https://outlook.com)到您在第 2 阶段的[Office 365 的开发/测试环境](office-365-dev-test-environment.md)中创建 Outlook 帐户。
     
   - 如果使用的是轻型开发/测试环境，请打开 Internet Explorer 的专用会话并从本地计算机登录。
     
-  - 如果您使用的模拟的企业开发/测试环境，使用 Azure 门户网站 ([https://portal.azure.com](https://portal.azure.com)) 连接到客户端 1 虚拟机，然后从客户端 1 登录。
+  - 如果您使用的模拟的企业开发/测试环境，则使用 Azure 门户网站 ([https://portal.azure.com](https://portal.azure.com)) 以连接到客户端 1 虚拟机，然后从客户端 1 登录。
     
 2. 在**Outlook 邮件**选项卡上，单击**新建**。
     
@@ -76,7 +76,7 @@ Office 365 高级的 eDiscovery 可以快速找到并分析整个 Office 365，�
     
 14. 单击右上角的用户图标，然后单击**注销**。
     
-15. 打开一个新的选项卡和登录到的帐户名和密码您的订购试用期的 User6 帐户与 Office 365 门户网站 ([https://portal.office.com](https://portal.office.com))。
+15. 打开新选项卡，然后登录到 Office 365 门户网站 ([https://portal.office.com](https://portal.office.com)) 与帐户名和密码您的订购试用期的 User6 帐户。
     
 16. **Office 365 门户**选项卡上，单击**邮件**。
     

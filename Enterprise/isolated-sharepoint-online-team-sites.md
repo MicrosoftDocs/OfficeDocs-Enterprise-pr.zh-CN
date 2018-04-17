@@ -1,5 +1,5 @@
 ---
-title: "SharePoint Online 的独立的团队站点"
+title: SharePoint Online 的独立的团队站点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
-description: "摘要： 了解独立 SharePoint Online 的团队站点的使用。"
-ms.openlocfilehash: 7798a1aa7bdf39783c3d83bc11fba03f3a3f711e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 了解独立 SharePoint Online 的团队站点的使用。
+ms.openlocfilehash: 358bb16c01c51a76da6557091dacca75e317bf92
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>SharePoint Online 的独立的团队站点
 

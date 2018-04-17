@@ -1,5 +1,5 @@
 ---
-title: "面向企业架构师的 Microsoft 云存储"
+title: 面向企业架构师的 Microsoft 云存储
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
-description: "摘要： 设计您的 Microsoft 云服务和平台的存储。"
-ms.openlocfilehash: 4bfa848912685aad6fcb6965ed3d7a50226e0dd4
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 设计您的 Microsoft 云服务和平台的存储。
+ms.openlocfilehash: e6edaae9d575babff3c85e87cac5ea65b5a8407b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云存储
 

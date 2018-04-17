@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: 了解如何将一个 OneDrive 网站移至不同的地理位置。
-ms.openlocfilehash: a31f683170fdb83dac90e9d09884c3020d1a47b1
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7ce9106fa7d8d144f0f8935713b4df926a73fb6b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将一个 OneDrive 网站移至不同的地理位置 
 
@@ -76,9 +77,9 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 
 要安排稍后进行的地区移动，请使用下列参数之一：
 
--   _PreferredMoveBeginDate_ – 移动很可能开始在此指定的时间。
+-   _PreferredMoveBeginDate_ – 移动很可能开始在此指定的时间。必须指定时间以协调世界时 (UTC)。
 
--   _PreferredMoveEndDate_ – 移动很可能在尽力执行该指定时间之前完成。
+-   _PreferredMoveEndDate_ – 移动很可能在尽力执行该指定时间之前完成。必须指定时间以协调世界时 (UTC)。 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>取消了 OneDrive 地区移动 
 
@@ -97,7 +98,7 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Status</strong></th>
+<th align="left"><strong>状态</strong></th>
 <th align="left"><strong>说明</strong></th>
 </tr>
 </thead>

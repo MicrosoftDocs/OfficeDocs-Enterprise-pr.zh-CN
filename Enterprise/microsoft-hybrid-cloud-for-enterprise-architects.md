@@ -1,5 +1,5 @@
 ---
-title: "面向企业架构师的 Microsoft 混合云"
+title: 面向企业架构师的 Microsoft 混合云
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
-description: "摘要： IT 架构师需要了解的有关使用 Microsoft 云服务和平台的混合方案的知识。"
-ms.openlocfilehash: e31981c87d7b1ca350eff0acc3a63092092c8567
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: 摘要： IT 架构师需要了解的有关使用 Microsoft 云服务和平台的混合方案的知识。
+ms.openlocfilehash: 491e445f197e0f499f2762adc20b696cfce9c20a
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>面向企业架构师的 Microsoft 混合云
 
@@ -24,7 +27,7 @@ ms.lasthandoff: 02/13/2018
   
 本文可链接至一组文章，这些文章介绍了 IT 架构师使用 Microsoft 云服务和平台的混合体系结构和配置所需要了解的内容。此外，还可以浏览本文的 7 页海报内容，以文摘格式进行打印（也称为分类帐、11 x 17 或 A3）。
   
-[![Microsoft 混合云模型的缩略图](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+[![模型缩略图：Microsoft 混合云](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
 ![PDF 文件](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio 文件](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![参阅包含其他语言版本的页面](images/Common_Images/GlobeIcon.png)

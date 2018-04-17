@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: 了解如何配置 OneDrive 业务多的地区。
-ms.openlocfilehash: 4ef31df802eeaedf2eecbdd295d2e359816e4909
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 56268acd319684ecb713e674b8accbe311d08dce
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive 业务多地区租户配置
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/03/2018
 
 若要使用 OneDrive 业务多的地区，需要_Office 365 中的多个地区功能_计划。使用您的帐户小组将该计划添加到您的租户。您的客户小组将连接您具有适当的授权专家并获得您配置的租户。
 
-请注意， _Office 365 中的多个地区能力_计划的用户级服务计划。您需要为每个用户所需的 setellite 位置设立的许可证。您可以添加更多许可证随着时间的推移，因为卫星位置中添加用户。
+请注意， _Office 365 中的多个地区能力_计划的用户级服务计划。您需要为要承载卫星位置中的每个用户的许可证。您可以添加更多许可证随着时间的推移，因为卫星位置中添加用户。
 
 一旦您租户已配置_Office 365 中的多个地区能力_计划，**地理位置**选项卡将变为可用的[OneDrive 管理中心](https://admin.onedrive.com)。
 
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/03/2018
 
 6. 单击"关闭"。
 
-完成资源调配的附属位置后，您将收到电子邮件确认。当新的地理位置出现在蓝色上 OneDrive 管理中心中的**地理位置**选项卡上的映射时，您可以继续该地理位置设置用户的首选的数据位置。 
+资源调配可能需要从几小时到 72 小时，具体取决于您组织的大小。完成资源调配的附属位置后，您将收到电子邮件确认。当新的地理位置出现在蓝色上 OneDrive 管理中心中的**地理位置**选项卡上的映射时，您可以继续该地理位置设置用户的首选的数据位置。 
 
 > [!IMPORTANT]
 > 使用默认设置，将设置新卫星地理位置。这将允许您配置该地理位置适合于您的本地法规遵从性需要。

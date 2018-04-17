@@ -3,7 +3,7 @@ title: 连接到 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/02/2018
+ms.date: 04/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。
-ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
-ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
-ms.translationtype: HT
+ms.openlocfilehash: 95d1e5717d3fec7f0d3102beb65eebaef28bd6cf
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/28/2018
 请注意，这些连接说明与 [Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113) 主题中的连接说明相同。
   
 > [!TIP]
-> **刚开始接触 PowerShell？**请观看领英学习提供的 [PowerShell 概述](https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
+> **刚开始接触 PowerShell？**请观看领英学习提供的 [PowerShell 概述](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 03/28/2018
     > [!NOTE]
     >请使用 64 位版 Windows。2014 年 10 月，用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块已不再支持 32 位版。
     
--  对这些过程使用的 Office 365 工作或学校帐户必须为 Office 365 管理员角色成员。有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
+-  这些步骤适用于 Office 365 管理角色的成员的用户。有关详细信息，请参阅[有关 Office 365 管理角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>与用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块连接
 
@@ -102,7 +102,7 @@ Connect-MsolService
   
 - **常见问题是密码错误** 。重新运行步骤 3，并仔细查看您输入的用户名和密码。
     
-- **用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 要求在您的计算机上启用 Microsoft .NET Framework 3.5. _x_ 功能。** 很可能您的计算机已安装了较新的版本（例如 4 或 4.5. _x_），但可以启用或禁用与 .NET Framework 的早期版本的向后兼容性。有关详细信息，请参阅下列主题：
+- * *Microsoft Azure 活动目录模块用于 Windows PowerShell 需要 Microsoft.NET Framework 3.5。*在您的计算机 * * 启用 x * 功能。很可能您的计算机已安装了较新的版本 (例如，4 或 4.5。*x *），但可以向后启用或禁用与.NET Framework 的早期版本的兼容性。有关详细信息，请参阅下列主题：
     
   - 对于 Windows Server 2012 或 Windows Server 2012 R2，请参阅[使用“添加角色和功能”向导启用 .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkId=532368)
     
@@ -125,7 +125,11 @@ Connect-MsolService
 
 Azure Active Directory V2 PowerShell 模块中的命令在其 cmdlet 名称中包含“AzureAD”。
 
-有关在 [Azure Active Directory V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅。
+对于需要新 cmdlet Azure 活动目录 V2 PowerShell 模块中的过程，使用这些步骤模块安装并连接到您的 Office 365 订购。
+
+>[!Note]
+>有关不同版本的 Microsoft Windows 的支持信息，请参阅[Azure 活动目录 V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)。
+>
 
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
 
@@ -168,13 +172,9 @@ Connect-AzureAD
   
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
-  
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
-  
-[在单个 Windows PowerShell 窗口中连接所有 Office 365 服务](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-
-[Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-  
-[Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
+- [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+- [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+- [在单个 Windows PowerShell 窗口中连接所有 Office 365 服务](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+- [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
+- [Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
 

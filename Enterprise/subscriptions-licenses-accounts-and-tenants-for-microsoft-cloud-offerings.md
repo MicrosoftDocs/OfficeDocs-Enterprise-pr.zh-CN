@@ -1,5 +1,5 @@
 ---
-title: "预订、 许可证、 帐户和微软的云服务的租户"
+title: 预订、 许可证、 帐户和微软的云服务的租户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: "摘要： 了解跨 Microsoft 的云服务的组织、 订阅、 许可、 用户帐户与承租人的关系。"
-ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 了解跨 Microsoft 的云服务的组织、 订阅、 许可、 用户帐户与承租人的关系。
+ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>预订、 许可证、 帐户和微软的云服务的租户
 
@@ -150,7 +149,7 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Office 365、
    
 向你的组织添加 Microsoft SaaS 服务订阅的简便方法是通过 Office 365 Admin 中心来添加：
   
-1. 登录到您的全局管理员帐户，Office 365 门户网站 ([https://portal.office.com](https://portal.office.com))，然后单击**管理**。
+1. 登录到 Office 365 门户网站 ([https://portal.office.com](https://portal.office.com)) 与全局管理员帐户，然后再单击**管理**。
     
 2. 从**管理中心**主页上的左导航，**帐单**，单击，然后单击**采购服务**。
     
@@ -160,7 +159,7 @@ Office 365 管理中心将 Office 365 订阅的组织和 Azure AD 租户分配�
   
 使用与你的 Office 365 订阅相同的组织和 Azure AD 租户添加 Azure 订阅：
   
-1. 登录到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com)) 与您的 Office 365 提供全局管理员帐户。
+1. 登录到 Azure 门户网站 ([https://portal.azure.com](https://portal.azure.com)) 与您的 Office 365 提供全局管理员帐户。
     
 2. 在左侧的导航中，**订阅**，请单击，然后单击**添加**。
     
@@ -172,7 +171,7 @@ Office 365 管理中心将 Office 365 订阅的组织和 Azure AD 租户分配�
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
   
-[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[云应用测试实验室指南 (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

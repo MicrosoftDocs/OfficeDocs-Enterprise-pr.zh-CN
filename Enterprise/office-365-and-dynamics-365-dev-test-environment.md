@@ -1,5 +1,5 @@
 ---
-title: "Office 365 和 Dynamics 365 开发/测试环境"
+title: Office 365 和 Dynamics 365 开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: "摘要： 使用此测试实验室指南 Dynamics 365 添加到 Office 365 开发/测试环境。"
-ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 摘要： 使用此测试实验室指南 Dynamics 365 添加到 Office 365 开发/测试环境。
+ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境
 
@@ -56,7 +58,7 @@ ms.lasthandoff: 02/13/2018
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>注册 Dynamics 365 试用订阅
 
-1. 台式计算机 （轻型） 上使用浏览器或客户端 1 （模拟企业），到 Office 365 门户网站位于[https://portal.office.com](https://portal.office.com)的全局管理员帐户凭据登录。
+1. 台式计算机 （轻型） 上使用浏览器或从客户端 1 （模拟企业），则登录到 Office 365 门户[https://portal.office.com](https://portal.office.com)您的全局管理员帐户的凭据。
     
 2. 单击“管理”磁贴。
     

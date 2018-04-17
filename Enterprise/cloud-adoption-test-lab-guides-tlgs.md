@@ -1,5 +1,5 @@
 ---
-title: "云采用测试实验室指南 (TLG)"
+title: 云采用测试实验室指南 (TLG)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "摘要： 使用这些云采用测试实验室指南 (TLGs) 设置的演示中，证据的概念或开发/测试环境为 Office 365、 企业移动性 + 安全性 (EMS)、 Dynamics 365 办公室服务器产品。"
-ms.openlocfilehash: 3172b6033fbb7dd79b8eb786d92a4f58886a8fd5
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 使用这些云采用测试实验室指南 (TLGs) 设置的演示中，证据的概念或开发/测试环境为 Office 365、 企业移动性 + 安全性 (EMS)、 Dynamics 365 办公室服务器产品。
+ms.openlocfilehash: 1597bcefbcfa578e74d96676b3ea446c72a080bc
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>云采用测试实验室指南 (TLG)
 
@@ -142,7 +141,7 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
 
 以下是你可以在 Azure 基础结构服务中创建的其他基于云的开发/测试环境：
   
-- [在 Azure 中的 SharePoint 服务器 2016年开发/测试环境](https://technet.microsoft.com/library/mt723354.aspx)
+- [Azure 中的 SharePoint Server 2016 开发/测试环境](https://technet.microsoft.com/library/mt723354.aspx)
     
     在 Azure 基础结构服务中生成单个服务器 SharePoint Server 2016 场。
     

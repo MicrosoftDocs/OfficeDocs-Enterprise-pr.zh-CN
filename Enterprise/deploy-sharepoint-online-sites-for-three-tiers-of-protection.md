@@ -1,5 +1,5 @@
 ---
-title: "部署 SharePoint Online 网站的三个层次的保护"
+title: 部署 SharePoint Online 网站的三个层次的保护
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
-description: "摘要： 创建和配置 SharePoint Online 的团队站点的各种级别的信息保护。"
-ms.openlocfilehash: f015ce8d7c91d02ce5dc0a7791ba22a53bc2933f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 创建和配置 SharePoint Online 的团队站点的各种级别的信息保护。
+ms.openlocfilehash: ddeb1885cbc74be6e7098660eb1d9906d43739fd
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署 SharePoint Online 网站的三个层次的保护
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 02/14/2018
     
 8. 在“希望添加哪些人员?”窗格中，单击“完成”。
     
-生成的配置如下。
+下面是生成的配置。
   
 ![适用于公共 SharePoint Online 团队网站的基线级保护。](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
@@ -78,7 +77,7 @@ ms.lasthandoff: 02/14/2018
     
 9. 当您完成将最初的成员集添加到该网站，单击**完成**
     
-生成的配置如下。
+下面是生成的配置。
   
 ![适用于专用 SharePoint Online 团队网站的基线级保护。](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
@@ -194,7 +193,7 @@ ms.lasthandoff: 02/14/2018
     
 - 启用非成员请求访问的功能。
     
-生成的配置如下。
+下面是生成的配置。
   
 ![适用于独立 SharePoint Online 团队网站的敏感级保护。](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
@@ -270,7 +269,7 @@ ms.lasthandoff: 02/14/2018
   
 [开发/测试环境中保护 SharePoint Online 站点](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[为政治运动、 非营利性组织和其他敏捷组织的 Microsoft 安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 

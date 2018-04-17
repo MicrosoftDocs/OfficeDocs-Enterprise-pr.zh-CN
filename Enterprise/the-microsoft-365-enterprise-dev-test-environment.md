@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 摘要： 使用此测试实验室指南创建开发/测试环境，包括 Office 365 E5、 企业移动性 + 安全 (EMS) E5 和计算机运行 Windows 10 企业。
-ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业开发/测试环境
 
@@ -90,10 +89,10 @@ ms.lasthandoff: 04/06/2018
   
 ### <a name="virtual-machine-in-azure"></a>在 Azure 中的虚拟机
 
-在 Microsoft Azure 使用 Azure 的插图创建 Windows 10 虚拟机。
+若要在 Microsoft Azure，***您必须基于 Visual Studio 的预订***，为 Windows 10 企业有权图像创建 Windows 10 虚拟机。其他类型的 Azure 订阅，如试用和付费订阅，不能访问到此图像。
   
 > [!NOTE]
-> 下面的命令设置使用 Azure PowerShell te 最新版本。请参阅[开始使用 Azure PowerShell cmdlet](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)。这些命令集生成 Windows 10 企业虚拟机命名为 WIN10，其所需的基础结构，包括某一资源组、 存储帐户和虚拟网络的所有。如果您已熟悉 Azure 的基础结构服务，请调整这些说明来满足您当前部署的基础结构。 
+> 下面的命令设置使用 Azure PowerShell 的最新版本。请参阅[开始使用 Azure PowerShell cmdlet](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)。这些命令集生成 Windows 10 企业虚拟机命名为 WIN10，其所需的基础结构，包括某一资源组、 存储帐户和虚拟网络的所有。如果您已熟悉 Azure 的基础结构服务，请调整这些说明来满足您当前部署的基础结构。 
   
 首先，启动 Microsoft PowerShell 提示。
   
@@ -205,7 +204,5 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft 365 企业文档](https://docs.microsoft.com/microsoft-365-enterprise/)
-
- - [部署 Microsoft 365 企业](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
-
+- [部署 Microsoft 365 企业](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [一个 Microsoft 云开发/测试环境](the-one-microsoft-cloud-dev-test-environment.md)

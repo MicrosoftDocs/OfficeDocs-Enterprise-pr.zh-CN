@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 摘要： 部署在 Azure 同步您的内部目录和 Office 365 订购的 Azure AD 租户之间的帐户中的虚拟机上的 Azure AD 连接。
-ms.openlocfilehash: f96147542da3af1883ea5428b1345c8cf75b9223
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>部署 Office 365 Microsoft Azure 中的目录同步
 
@@ -203,7 +202,7 @@ Azure AD Connect 将帐户从本地 Windows Server AD 添加到 Office 365 订�
 
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
   
-[将内部网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
 [下载 Azure AD 连接](https://www.microsoft.com/download/details.aspx?id=47594)
   

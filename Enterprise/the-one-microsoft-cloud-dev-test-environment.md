@@ -1,5 +1,5 @@
 ---
-title: "一个 Microsoft 云开发/测试环境"
+title: 一个 Microsoft 云开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: "摘要： 使用此测试实验室指南创建包括所有微软云产品的开发/测试环境。"
-ms.openlocfilehash: 90f93b1050ec0c2b82f4ed42c76413d68b314b7c
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 使用此测试实验室指南创建包括所有微软云产品的开发/测试环境。
+ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>一个 Microsoft 云开发/测试环境
 
@@ -57,24 +56,24 @@ ms.lasthandoff: 02/14/2018
 
 在此阶段，注册 EMS 试用订阅，并将其作为 Office 365 试用订阅添加到同一组织。
   
-1. 使用浏览器在您的桌面计算机或从客户端 1，登录到 Office 365 门户网站位于[https://portal.office.com](https://portal.office.com)的全局管理员帐户凭据。
+1. 使用浏览器在台式计算机或从客户端 1，登录到 Office 365 门户[https://portal.office.com](https://portal.office.com)您的全局管理员帐户的凭据。
     
-2. 单击**管理**拼贴。
+2. 单击“管理”磁贴。
     
-3. 在浏览器中，在左边的导航中， **Office 管理中心**选项卡单击**计费 > 购买服务**。
+3. 在浏览器的“Office 管理中心”选项卡的左侧导航中，单击“帐单”>“购买服务”。
     
 4. **购买服务**页上找到**企业移动 + 安全 E5**项。将鼠标指针悬停在其上，单击**启动免费试用版**。
     
-5. 在**确认订单**页中，单击**立即尝试**。
+5. 在“确认订单”页中，单击“立即试用”。
     
-6. 在**订单收据**页上，单击**继续**。
+6. 在“订单签收”页中，单击“继续”。
     
 > [!NOTE]
 > 企业移动性 + 安全性 E5 的试订阅期为 90 天。对于永久性开发/测试环境，请使用少量许可证新建付费订阅。 
   
 下一步，使企业移动性 + 为所有用户帐户的安全 E5 许可证。
   
-1. 在浏览器中，在左边的导航中， **Office 365 管理中心**选项卡单击**用户 > 活动用户**。
+1. 在浏览器的“Office 365 管理中心”选项卡的左侧导航中，单击“用户”>“活动用户”。
     
 2. 单击您的全局管理员帐户，然后单击**编辑****产品**许可证。
     
@@ -100,17 +99,17 @@ ms.lasthandoff: 02/14/2018
 
 在此阶段，您 Dynamics 365 试用订阅注册，即可将其添加到为您的 Office 365 和 EMS 试用订阅的同一组织。
   
-1. 您的桌面计算机上使用浏览器或客户端 1，从登录到 Office 365 门户网站位于[https://portal.office.com](https://portal.office.com)的全局管理员帐户的凭据。
+1. 您的桌面计算机上使用浏览器或客户端 1，从登录到 Office 365 门户[https://portal.office.com](https://portal.office.com)您的全局管理员帐户的凭据。
     
-2. 单击**管理**拼贴。
+2. 单击“管理”磁贴。
     
 3. **办公室管理中心**选项卡上，左边的导航，请单击**计费 > 购买服务**。
     
 4. **购买服务**页上找到**Dynamics 365 计划 1 企业版**项目。将鼠标指针悬停在其上，单击**启动免费试用版**。
     
-5. 在**确认订单**页中，单击**立即尝试**。
+5. 在“确认订单”页中，单击“立即试用”。
     
-6. 在**订单收据**页上，单击**继续**。
+6. 在“订单签收”页中，单击“继续”。
     
 > [!NOTE]
 > Dynamics 365 计划 1 企业版订阅试用期是 30 天。可以轻松地将该订阅的试用期再延长 30 天。对于永久性开发/测试环境，请使用少量许可证创建新的付费订阅。 
@@ -186,7 +185,7 @@ ms.lasthandoff: 02/14/2018
     
 ## <a name="see-also"></a>另请参阅
 
-[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[云应用测试实验室指南 (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
   

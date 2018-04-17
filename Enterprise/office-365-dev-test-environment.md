@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 摘要： 使用此测试实验室指南创建 Office 365 提供试用版订购评估或开发/测试。
-ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
@@ -26,7 +29,7 @@ ms.lasthandoff: 04/05/2018
   
 - 轻型 Office 365 开发/测试环境包含从你的主计算机进行访问的 Office 365 试用订阅。
     
-    想在快速演示功能时使用此环境。对于轻量级的 Office 365 开发/测试环境，请完成本文中的阶段 2 和阶段 3。
+    当您希望快速演示功能时使用该环境。对于轻量级的 Office 365 开发/测试环境，完成阶段 2 和 3 的这篇文章。
     
 - 模拟企业 Office 365 开发/测试环境包含一个 Office 365 试用订阅和一个连接到 Internet 的简化的组织 Intranet（托管在 Microsoft Azure 基础结构服务中）。你可以完全在云中生成此配置。
     
@@ -56,13 +59,13 @@ ms.lasthandoff: 04/05/2018
 
 要启动 Office 365 E5 试用订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
-1. 我们建议，Contoso 的公司名称变量，该变量用于您公司的名称，它是 Microsoft 示例内容中使用虚构的公司，但它并不是必需。记录您的虚构公司名称: ___。
+1. 我们建议，Contoso 的公司名称变量，该变量用于您公司的名称，它是 Microsoft 示例内容中使用虚构的公司，但它并不是必需。记录您的虚构公司名称：![](./images/Common_Images/TableLine.png)
     
 2. 要注册新的 Microsoft 帐户，请转到[https://outlook.com](https://outlook.com)和新电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
     
-  - 记录您的新帐户的第一个和最后一个名称: ___。
+  - 记录您的新帐户的第一个和最后一个名称：![](./images/Common_Images/TableLine.png)
     
-  - 在此记录新的电子邮件帐户地址：_____________________________@outlook.com
+  - 记录下面新的电子邮件帐户地址： ![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>注册 Office 365 E5 试用订阅
 
@@ -105,7 +108,7 @@ Stop-Process -Name Explorer -Force
     
     将你键入的密码记录在安全的位置。
     
-    记录您的虚构的公司名称，作为该**组织名称**，此处被称为: ___。
+    记录您的虚构的公司名称，作为该**组织名称**，此处被称为：![](./images/Common_Images/TableLine.png)
     
 5. 单击**我的帐户**。
     
@@ -113,9 +116,9 @@ Stop-Process -Name Explorer -Force
     
 7. 键入接收的文本消息的验证代码，然后单击**下一步**。
     
-8. 记录登录页面 URL （选择和复制）: ___。
+8. 记录登录页面 URL （选择和复制）：![](./images/Common_Images/TableLine.png)
     
-9. 在此记录用户 ID（选择并复制）：__________________________________.onmicrosoft.com
+9. 记录该用户 ID 在此处 （选择和复制）： ![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
     
     此值称为**Office 365 全局管理员名称**。
     
@@ -229,11 +232,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 记录这些值以便用于或部署此测试环境中的其他测试实验室指南：
   
-- Office 365 全局管理员名称：____________________________________.onmicrosoft.com（在第 2 阶段的第 9 步中）
+- Office 365 全局管理员名称： ![](./images/Common_Images/TableLine.png)。 onmicrosoft.com （从第二阶段的第 9 步）
     
     还应将此帐户的密码记录在安全位置。
     
-- 试用订阅组织名称：______________________________________________（在第 2 阶段的第 4 步中）
+- 您的订购试用期的组织名称： ![](./images/Common_Images/TableLine.png) （从步骤 4 的第 2 阶段）
     
 - 要列出 User 2、User 3、User 4 和 User 5 的帐户，从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
     
@@ -243,13 +246,13 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
     在此记录帐户名：
     
-  - User 2 的帐户名：user2@_______________________________________________.onmicrosoft.com
+  - 2 用户帐户名称： user2 @![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
     
-  - User 3 的帐户名：user3@_______________________________________________.onmicrosoft.com
+  - 3 用户帐户名称： 用户 @ 3![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
     
-  - User 4 的帐户名：user4@_______________________________________________.onmicrosoft.com
+  - 4 用户帐户名称： 用户 4 @![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
     
-  - User 5 的帐户名：user5@_______________________________________________.onmicrosoft.com
+  - 5 用户帐户名称： user5 @![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
     
     还应将这些帐户的密码记录在安全位置。
     
@@ -259,11 +262,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 生产站点 URL:https://______________________________________________.sharepoint.com/sites/production
+  - 生产站点 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - 销售网站网址：https://______________________________________________.sharepoint.com/sites/sales
+  - 销售网站 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - 支持网站的 URL:https://______________________________________________.sharepoint.com/sites/support
+  - 支持站点 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>后续步骤
 
@@ -295,10 +298,10 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
     
 ## <a name="see-also"></a>另请参阅
 
-[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+- [云应用测试实验室指南 (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md)
+- [Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md)
   
-[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
+ - [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
 

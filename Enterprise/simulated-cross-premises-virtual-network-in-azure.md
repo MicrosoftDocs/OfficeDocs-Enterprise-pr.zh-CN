@@ -1,5 +1,5 @@
 ---
-title: "Azure 中的模拟跨界虚拟网络"
+title: Azure 中的模拟跨界虚拟网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
-description: "摘要： 在 Microsoft Azure 中创建模拟的跨部署虚拟网络，作为开发/测试环境。"
-ms.openlocfilehash: 0889d0c70b6ffb93fc0ebf9c989b68e8a4766126
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 在 Microsoft Azure 中创建模拟的跨部署虚拟网络，作为开发/测试环境。
+ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure 中的模拟跨界虚拟网络
 

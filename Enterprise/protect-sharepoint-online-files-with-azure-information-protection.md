@@ -1,5 +1,5 @@
 ---
-title: "SharePoint Online Azure 的信息保护文件保护"
+title: SharePoint Online Azure 的信息保护文件保护
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
-description: "摘要： 应用 Azure 的信息保护，以保护高度机密的在线 SharePoint 工作组网站中的文件。"
-ms.openlocfilehash: 0b83b3d17a9b61eac359338389051f7354fb6af4
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 应用 Azure 的信息保护，以保护高度机密的在线 SharePoint 工作组网站中的文件。
+ms.openlocfilehash: 84bd1f48c7051f945e7b851f829421364de2a557
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>SharePoint Online Azure 的信息保护文件保护
 
@@ -37,7 +36,7 @@ ms.lasthandoff: 02/14/2018
   
 1. Office 365 门户拥有安全管理员或公司管理员角色的帐户登录。有关帮助信息，请参阅[登录到 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 在浏览器的单独选项卡中，转到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。
+2. 在浏览器的独立选项卡上，转到 Azure 门户网站 ([https://portal.azure.com](https://portal.azure.com))。
     
 3. 如果这是首次配置 Azure 信息保护，请参见以下[说明](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)。
     
@@ -100,7 +99,7 @@ ms.lasthandoff: 02/14/2018
   
 [开发/测试环境中保护 SharePoint Online 站点](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[为政治运动、 非营利性组织和其他敏捷组织的 Microsoft 安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 

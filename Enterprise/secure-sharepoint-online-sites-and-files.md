@@ -1,5 +1,5 @@
 ---
-title: "保护 SharePoint Online 网站和文件"
+title: 保护 SharePoint Online 网站和文件
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "摘要： 为保护 SharePoint Online Office 365 中的文件的配置建议。"
-ms.openlocfilehash: 035c3e69a430269b382ab032387a44cc3cbbbfd6
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 为保护 SharePoint Online Office 365 中的文件的配置建议。
+ms.openlocfilehash: 800d81d657164b2a936b95764d57fd092cfa21cc
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
@@ -186,7 +185,7 @@ SharePoint Online 和 OneDrive 的业务设备访问设置使您可以确定是�
   
 ## <a name="see-also"></a>另请参阅
 
-[为政治运动、 非营利性组织和其他敏捷组织的 Microsoft 安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [安全解决方案](security-solutions.md)
   
