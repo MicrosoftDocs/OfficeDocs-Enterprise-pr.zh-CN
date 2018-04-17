@@ -1,5 +1,5 @@
 ---
-title: "企业级结构设计版的 Microsoft 云标识"
+title: 企业级结构设计版的 Microsoft 云标识
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,22 +12,21 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - O365ITProTrain
 - Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
-description: "摘要： 设计用于 Microsoft 云服务和平台的标识解决方案。"
-ms.openlocfilehash: 07a27a63972163948148da117084800171a304b7
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 设计用于 Microsoft 云服务和平台的标识解决方案。
+ms.openlocfilehash: d5f122a8ec001f6f61130f0efc52656955e13016
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>企业级结构设计版的 Microsoft 云标识
 
  **摘要：** 设计用于 Microsoft 云服务和平台的标识解决方案。
   
-本文介绍 IT 架构师为使用 Microsoft 云服务和平台的组织设计标识所需要了解的内容。此外，你还可以使用 5 页海报的形式浏览本文，以文摘格式进行打印（也称为分类帐，11 x 17 或 A3)。
+本文介绍 IT 架构师为使用 Microsoft 云服务和平台的组织设计标识所需要了解的内容。此外，您还可以使用 5 页海报的形式浏览本文，以文摘格式进行打印（也称为分类帐，11 x 17 或 A3)。
   
 [![模型缩略图：Microsoft 云标识](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
@@ -37,15 +36,15 @@ ms.lasthandoff: 02/14/2018
 还可以查看 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的所有模型，逐一浏览 [Microsoft 企业云路线图：IT 决策者的资源](https://aka.ms/cloudarchitecture)。
   
 > [!NOTE]
-> 本文涵盖了 2016 年 1 月版**面向企业架构师的 Microsoft 云标识**海报。它不包含 2016 年 4 月或之后版本海报的更改。
+> 本文反映了 2016 年 1 月版**面向企业架构师的 Microsoft 云标识**海报。它不包含 2016 年 4 月或之后版本海报的更改。
   
 ## <a name="designing-identity-for-the-microsoft-cloud"></a>设计 Microsoft 云标识
 
-通过将你的标识与 Microsoft 云进行集成，你将能够访问广泛的服务和云平台选项。有两个主要选项：
+通过将您的标识与 Microsoft 云进行集成，您将能够访问广泛的服务和云平台选项。有两个主要选项：
   
-- 你可以与 Microsoft Azure Active Directory (AD) 集成。这涉及将你的本地帐户同步到 Azure AD，这是适用于 Microsoft 云的标识提供程序。
+- 您可以与 Microsoft Azure Active Directory (AD) 集成。这涉及将您的本地帐户同步到 Azure AD，这是适用于 Microsoft 云的标识提供程序。
     
-- 你可以将本地 Active Directory 域服务 (AD DS) 环境扩展到在 Microsoft Azure 基础结构服务中运行的虚拟机。
+- 您可以将您的本地 Active Directory 域服务 (AD DS) 环境扩展到在 Microsoft Azure 基础结构服务中运行的虚拟机。
     
 ![在云中设计您的标识的选项](images/08277e96-e4d2-43cb-a56f-a11c7647881a.png)
   
@@ -55,7 +54,7 @@ ms.lasthandoff: 02/14/2018
   
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务。它位于 Microsoft 云服务和平台的中心。通过与 Azure AD 进行集成，你将能够使用当前帐户和密码集访问所有 Microsoft SaaS 服务。该集成还为 Azure PaaS 应用程序提供基于云的标识。 
+Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务。它位于 Microsoft 云服务和平台的中心。通过与 Azure AD 进行集成，您将能够使用当前帐户和密码集访问所有 Microsoft SaaS 服务。该集成还为 Azure PaaS 应用程序提供基于云的标识。 
   
 > [!NOTE]
 > Azure AD 不能替代企业组织或在 Azure 服务架构 (IaaS) 中运行的基于 Windows 的虚拟机对本地 AD DS 的需求。 
@@ -71,7 +70,7 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
   
 ### <a name="option-1-integrate-with-azure-active-directory"></a>选项 1：与 Azure Active Directory 集成
 
-大多数组织将一组标准对象和属性同步到他们的 Azure AD 租户。Azure AD Connect 工具在本地 AD DS 和 Azure AD 租户之间同步你的帐户。
+大多数组织将一组标准对象和属性同步到他们的 Azure AD 租户。Azure AD Connect 工具在本地 AD DS 和 Azure AD 租户之间同步您的帐户。
   
 ![与 Azure AD 集成](images/3ce05e49-2cb6-4cdc-99ab-d96c5bd12fe8.png)
   
@@ -79,11 +78,11 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
   
 图 2 显示了 Azure AD Connect 工具如何获取 AD DS 更改，并将这些更改发送到 Azure AD 租户。在这种情况下，Azure AD 租户是基本本地目录内容的云托管副本。
   
-许多组织使用 AD DS 作为其本地标识提供程序。你可以使用不同类型的本地标识提供程序（例如，使用 LDAP 的本地标识提供程序），并将它们同步到 Azure AD。
+许多组织使用 AD DS 作为其本地标识提供程序。您可以使用不同类型的本地标识提供程序（例如，使用 LDAP 的本地标识提供程序），并将它们同步到 Azure AD。
   
 ### <a name="option-2-extend-ad-ds-to-azure"></a>选项 2：将 AD DS 扩展到 Azure
 
-将 AD DS 扩展到在 Azure 基础结构服务中运行的虚拟机，这一操作可支持一组与同步到 Azure AD 不同的解决方案和应用程序。有两种支持方式：
+将 AD DS 扩展到在 Azure 基础结构服务中运行的虚拟机这一操作支持一组与同步到 Azure AD 不同的解决方案和应用程序。有两种支持方式：
   
 - 支持基于云的解决方案，这些解决方案需要 NTLM 或 Kerberos 身份验证或加入 AD DS 域的虚拟机。
     
@@ -117,7 +116,7 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
     
 - 联合身份验证和单一登录
     
-从满足你需求的最简单选项入手。如果需要，你可以在这些选项之间切换。
+从满足您需求的最简单选项入手。如果需要，您可以这些选项之间切换。
   
 > [!NOTE]
 > 不建议企业规模组织使用云专用帐户（即，不与您的本地 AD DS 集成）。 
@@ -132,9 +131,9 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
   
 图 4 显示了带有 AD DS 域控制器的本地或私有云数据中心。运行 Azure AD Connect 工具的服务器会将帐户名称列表与 Azure AD 同步。
   
-使用此选项，你可以实现以下功能：
+使用此选项，您可以实现以下功能：
   
-- 将用户帐户从你的本地 AD DS（或其他标识提供程序）同步到你的 Azure AD 租户。本地目录仍是帐户的权威来源，并且你可以从中管理所有帐户更改。
+- 将用户帐户从您的本地 AD DS（或其他标识提供程序）同步到您的 Azure AD 租户。本地目录仍是帐户的权威来源，并且您可以从中管理所有帐户更改。
     
 - Azure AD 为基于 Microsoft SaaS 的服务和 Azure PaaS 应用程序执行所有的身份验证。
     
@@ -222,7 +221,7 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
   
  **图 6： 将 AD DS 扩展到 Azure 虚拟网络**
   
-图 6 显示了一个本地或私有云数据中心，其中 AD DS 已通过站点到站点 VPN 或 ExpressRoute 连接已连接到 Azure 虚拟网络。Azure 虚拟网络包含业务线应用程序的服务器及其自己的一组 AD DS 域控制器。此配置是本地 AD DS 的混合部署，位于 Azure 基础结构服务中。它需要：
+图 6 显示了一个本地或私有云数据中心，其中 AD DS 已通过站点到站点 VPN 或 ExpressRoute 连接连接到 Azure 虚拟网络。Azure 虚拟网络包含业务线应用程序的服务器及其自己的一组 AD DS 域控制器。此配置是本地 AD DS 的混合部署，位于 Azure 基础结构服务中。它需要：
   
 - Azure 虚拟网络。
     
@@ -252,7 +251,7 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
     
 ## <a name="integrate-your-applications-with-cloud-identities"></a>将应用程序与云标识进行集成
 
-当设计和开发在云中运行的应用程序时，你应力求实现身份验证过程用户体验的一致性，包括所需的凭据集。例如，在使用 Windows 凭据时，无论针对的是 Azure AD 还是扩展的 AD DS，都要确保用户可以快速进行验证并专注于他们的任务。
+当设计和开发在云中运行的应用程序时，您应力求实现身份验证过程用户体验的一致性，包括所需的凭据集。例如，在使用 Windows 凭据时，无论针对的是 Azure AD 还是扩展的 AD DS，都要确保用户可以快速进行验证并专注于他们的任务。
   
 ![将应用程序与云标识进行集成](images/1e6304b0-fa15-4f80-a3b4-7507a28808ae.png)
   
@@ -262,9 +261,9 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
   
 1. 通过 Azure AD 注册云托管的应用程序。
     
-    请参阅 MSDN 文章[将应用程序与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkId=524303)。这允许你使用 Azure AD 来验证对 PaaS 应用程序的访问，并允许用户或管理员授予对你的应用程序的权限以便代表他们访问来自其他云服务（如 Office 365）的内容。更多详细信息和代码示例可在 MSDN 文章 [Azure Active Directory 的身份验证方案](https://go.microsoft.com/fwlink/p/?LinkId=524304)中找到。 
+    请参阅 MSDN 文章[将应用程序与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkId=524303)。这允许您使用 Azure AD 来验证对 PaaS 应用程序的访问，并允许用户或管理员授予对您的应用程序的权限以便代表他们访问来自其他云服务（如 Office 365）的内容。更多详细信息和代码示例可在 MSDN 文章 [Azure Active Directory 的身份验证方案](https://go.microsoft.com/fwlink/p/?LinkId=524304)上找到。 
     
-2. 需要以编程方式进行身份验证来获取通过 AD SD、Windows Server 2012 R2 上的 AD SD 或 Azure AD 保护的应用程序访问权限的应用程序可以使用：
+2. 需要以编程方式进行身份验证来获取受 AD SD、Windows Server 2012 R2 上的 AD SD 或 Azure AD 保护的应用程序的访问权限的应用程序可以使用：
     
   - [Azure AD 图形 API](https://go.microsoft.com/fwlink/p/?LinkId=524305)
     
@@ -282,7 +281,7 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
   
 ## <a name="deploying-directory-components-in-azure"></a>在 Azure 中部署目录组件
 
-你可以在 Azure 虚拟网络而不是本地数据中心中部署目录组件，如用于密码同步或联合身份验证的服务器。考虑其优点，尤其是当你计划将 AD DS 扩展到 Azure 时。
+您可以在 Azure 虚拟网络而不是本地数据中心中部署目录组件，如用于密码同步或联合身份验证的服务器。考虑其优点，尤其是当您计划将 AD DS 扩展到 Azure 时。
   
 下面是可以置于 Azure 虚拟网络中的目录组件：
   
@@ -304,7 +303,7 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
   
  **图 8：在 Azure 中运行的 AD Connect 工具**
   
-图 8 显示了在 Azure 虚拟网络的虚拟机上运行的 AD Connect 工具，此工具查询本地 AD DS 域控制器的帐户更改，然后将这些更改发送到 Office 365。此解决方案适用于：
+图 8 显示了在 Azure 虚拟网络的虚拟机上运行的 AD Connect 工具，此工具查询本地 AD DS 域控制器的帐户更改，然后将这些更改发送到 Office 365。此解决方案适用于:
   
 - Office 365 服务。
     
@@ -346,13 +345,13 @@ Microsoft Azure AD 是 Microsoft 云托管标识并且可以访问管理服务�
   
 ### <a name="standalone-ad-ds-environment-in-an-azure-virtual-network"></a>Azure 虚拟网络中的独立 AD DS 环境
 
-并非总是需要将云应用程序与本地环境集成。例如，Azure 虚拟网络中的独立 AD DS 域支持面向公众的应用程序，如 Internet 站点。
+并非始终需要将云应用程序与本地环境集成。例如，Azure 虚拟网络中的独立 AD DS 域支持面向公众的应用程序，如 Internet 站点。
   
 ![适用于基于服务器的应用程序的独立 AD DS 环境](images/98c7349f-535d-4c9b-8de4-e580f6d573d4.png)
   
  **图 10：适用于基于服务器的应用程序的独立 AD DS 环境**
   
-图 10 显示了托管一组 AD DS 服务器，并且同时提供 AD DS 服务和 DNS 服务的 Azure 虚拟网络，以及一组托管应用程序的服务器。此解决方案适用于：
+图 10 显示了托管一组 AD DS 服务器，并且同时提供 AD DS 服务和 DNS 服务的 Azure 虚拟网络，以及一组托管应用程序的服务器。此解决方案适用于:
   
 - 面向 Internet 的 Web 站点和应用程序
     

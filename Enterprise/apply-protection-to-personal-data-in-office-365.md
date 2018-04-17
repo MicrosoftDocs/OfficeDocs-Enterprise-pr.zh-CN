@@ -1,5 +1,5 @@
 ---
-title: "向 Office 365 中的个人数据应用保护"
+title: 向 Office 365 中的个人数据应用保护
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- GDPR
-- Strat_O365_Enterprise
-ms.assetid: 
-description: "了解如何使用 DLP 策略保护 Office 365 中的个人数据。"
-ms.openlocfilehash: e3ecb020a569cbf2cdcf50b4aead5cedf962b4d9
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: 了解如何使用 DLP 策略保护 Office 365 中的个人数据。
+ms.openlocfilehash: 8753ffe2b051e18e0790fba14c7a063200a74758
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用保护
 
@@ -299,7 +298,8 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 详细信息：
 
--   [管理 SharePoint Online 环境的外部共享](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   
+  [管理 SharePoint Online 环境的外部共享](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [与组织外部的用户共享站点或文档](https://support.office.com/zh-CN/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
