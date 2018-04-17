@@ -3,7 +3,7 @@ title: 在 OneDrive 和在线 Office 365 中的 SharePoint 多地区功能
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
+ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,15 +11,15 @@ ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 在 OneDrive 和 SharePoint Online 多地区功能的多个地理区域展开您 Office 365 的状态。
-ms.openlocfilehash: 2c5de533aaaace68e51b747cd62a53b9572bcaec
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 3f72158fe05aadfe8a08a5520bf65cd2d0aaa1c6
+ms.sourcegitcommit: a81d08c7e8771cb2c232435971e3169d4f7428dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>在 OneDrive 和在线 Office 365 中的 SharePoint 多地区功能
 
-使用 OneDrive 和 SharePoint Online 中多地区功能，组织可以扩展到多个地理区域和/或国家/地区内您现有租户的其 Office 365 的存在。此功能目前在预览中。动身去找注册多国家公司的 OneDrive 多地区预览您 Microsoft 客户小组。
+使用 OneDrive 和 SharePoint Online 中多地区功能，组织可以扩展到多个地理区域和/或国家/地区内您现有租户的其 Office 365 的存在。动身去找您的 Microsoft 客户小组注册多国家公司 OneDrive 业务多的地区。
   
 与 OneDrive 多的地区，可以预置和存放的数据存储在您选择满足派驻的数据要求，地理位置和在同一时间为人员解锁您全球推出现代生产力的经验。
   
@@ -84,6 +84,6 @@ OneDrive 多地区目前提供这些地区和国家/地区：
 - 法国
 - 印度
     
-## <a name="getting-started"></a>入门
+## <a name="getting-started"></a>开始使用
 
 若要开始使用 OneDrive 业务多的地区，第一步是[规划业务多地理环境为您 OneDrive](plan-for-multi-geo.md)。下一步，[了解有关管理多地理环境](administering-a-multi-geo-environment.md)和[您的用户会多地理环境](multi-geo-user-experience.md)。当您准备将 OneDrive 设置为业务多的地区，[配置您的多个地区的租户](multi-geo-tenant-configuration.md)，然后[移到其新的地理位置的任何现有 OneDrive 站点](move-onedrive-between-geo-locations.md)并[设置搜索](configure-search-for-multi-geo.md)。
