@@ -76,6 +76,7 @@
 #### [将 OneDrive 配置为业务多地区](multi-geo-tenant-configuration.md)
 #### [配置搜索业务多地区的 OneDrive](configure-search-for-multi-geo.md)
 #### [将 OneDrive 库移动到不同的地理位置](move-onedrive-between-geo-locations.md)
+### [联机 Exchange 中的多个地区功能](multi-geo-capabilities-in-exchange-online.md)
 ## [安全解决方案](security-solutions.md)
 ### [Office 365 的 GDPR 的信息保护](office-365-information-protection-for-gdpr.md)
 #### [概述： GDPR Office 365 的信息保护](office-365-info-protection-for-gdpr-overview.md)
