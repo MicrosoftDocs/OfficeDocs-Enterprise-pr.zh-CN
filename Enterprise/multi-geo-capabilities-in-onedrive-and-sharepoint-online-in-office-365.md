@@ -11,11 +11,11 @@ ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 在 OneDrive 和 SharePoint Online 多地区功能的多个地理区域展开您 Office 365 的状态。
-ms.openlocfilehash: 3f72158fe05aadfe8a08a5520bf65cd2d0aaa1c6
-ms.sourcegitcommit: a81d08c7e8771cb2c232435971e3169d4f7428dc
+ms.openlocfilehash: edcd8895c4a6e57ae1124ad15a9c5cc2b6bf94ca
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>在 OneDrive 和在线 Office 365 中的 SharePoint 多地区功能
 
@@ -42,12 +42,10 @@ ms.lasthandoff: 04/16/2018
 - 将区域的内部部署数据整合到您的 Office 365 多地区租户。
     
 在多个地区配置中，Office 365 租户组成一个集中的位置 （也称为默认位置） 和一个或多个卫星地理位置。多个地区的关键概念是，单个组织将跨越一个跨多个地理位置。多地区承租人，在地理位置、 组和用户信息，信息被掌握在 Azure 活动目录 (AAD)。因为承租人信息是集中掌握，同步到每个地理位置共享和经验涉及从贵公司的任何人都将包含全局意识。
-  
-## <a name="sample-multi-geo-tenant-configuration"></a>多地区租户配置示例
 
-通过使用多地区租户，Contoso，北美地区的中心位置可以展开到卫星的 Contoso.com 单个组织伞下的在欧洲和澳大利亚地理位置。设置为欧洲及其首选的数据位置的用户将具有在欧洲他们 OneDrive，而其首选的数据位置为北美地区的用户都将具有其 OneDrive 在美国。
-  
-![世界，显示了 Contoso 的地理位置和其他可用的地理位置地图](images/df317ccc-2e53-411d-9211-a5aee63ca1e5.png)
+## <a name="video-introducing-office-365-multi-geo"></a>视频： 推出 Office 365 多地区
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
   
 ## <a name="get-multi-geo-features-in-three-simple-steps"></a>三个简单步骤中获得多个地理特征
 
