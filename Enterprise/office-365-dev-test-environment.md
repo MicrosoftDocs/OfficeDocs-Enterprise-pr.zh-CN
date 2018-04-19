@@ -3,7 +3,7 @@ title: Office 365 开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 摘要： 使用此测试实验室指南创建 Office 365 提供试用版订购评估或开发/测试。
-ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
@@ -71,22 +71,9 @@ ms.lasthandoff: 04/16/2018
 
 1. 轻量的 Office 365 开发/测试环境，打开在您的计算机上的 Internet 浏览器并转到[https://aka.ms/e5trial](https://aka.ms/e5trial)。 
     
-    为模拟的企业 Office 365 的开发/测试环境：
-    
-  - 从[Azure 的门户](https://portal.azure.com)，连接到客户端 1 CORP 与\\User1 帐户。
-    
-  - 打开管理员级别的 Windows PowerShell 命令提示符，然后运行下面的命令：
-    
-  ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Stop-Process -Name Explorer -Force
-  ```
+    模拟的企业 Office 365 的开发/测试环境中，连接到客户端 1 CORP\User1 帐户从 Azure 的门户。
 
-    > [!TIP]
-    > 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)以获取包含本文中的所有 PowerShell 命令的文本文件。
-  
-  - 从开始屏幕中，单击**Internet Explorer** ，并转到[https://aka.ms/e5trial](https://aka.ms/e5trial)。
+    从开始屏幕中，运行 Microsoft 边缘，然后转至[https://aka.ms/e5trial](https://aka.ms/e5trial)。
     
 2. 在**欢迎，让我们知道您**的页中，指定：
     
@@ -161,6 +148,8 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+> [!TIP]
+> 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)以获取包含本文中的所有 PowerShell 命令的文本文件。
 
 从**新建 MsolUser**命令显示时，请注意用户 2 帐户生成的密码并将其记录在安全的地方。
   
@@ -296,12 +285,12 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
     
 - [Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>概念
 
-- [云应用测试实验室指南 (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+- [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md)
   
- - [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
+- [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
 

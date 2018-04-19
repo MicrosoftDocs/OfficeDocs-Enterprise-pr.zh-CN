@@ -3,7 +3,7 @@ title: 连接到 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2018
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。
-ms.openlocfilehash: 95d1e5717d3fec7f0d3102beb65eebaef28bd6cf
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
@@ -27,7 +27,6 @@ ms.lasthandoff: 04/16/2018
   
 借助 Office 365 PowerShell，可以通过命令行管理 Office 365 设置。连接到 Office 365 PowerShell 是一个非常简单的三步流程：安装必需软件，运行必需软件，再连接到 Office 365 组织。 
 
-请注意，这些连接说明与 [Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113) 主题中的连接说明相同。
   
 > [!TIP]
 > **刚开始接触 PowerShell？**请观看领英学习提供的 [PowerShell 概述](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
@@ -120,15 +119,15 @@ Connect-MsolService
     
 - **如果看到连接错误，请参阅以下主题：**[“Connect-MsolService：抛出类型异常”错误](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     
-## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>与 Azure Active Directory V2 PowerShell 模块连接
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>用图形模块 Azure 活动目录 PowerShell 连接
 <a name="ConnectV2"> </a>
 
-Azure Active Directory V2 PowerShell 模块中的命令在其 cmdlet 名称中包含“AzureAD”。
+中图模块 Azure 活动目录 PowerShell 命令其 cmdlet 名称中有"AzureAD"。
 
-对于需要新 cmdlet Azure 活动目录 V2 PowerShell 模块中的过程，使用这些步骤模块安装并连接到您的 Office 365 订购。
+有关图形模块需要在 Azure 活动目录 PowerShell 的新 cmdlet 的过程，使用这些步骤来安装模块和连接到您的 Office 365 订购。
 
 >[!Note]
->有关不同版本的 Microsoft Windows 的支持信息，请参阅[Azure 活动目录 V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)。
+>有关不同版本的 Microsoft Windows 的支持的信息，请参阅[图形模块 Azure 活动目录 PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 。
 >
 
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
@@ -168,7 +167,7 @@ Connect-AzureAD
     
 按照"Azure Active Directory PowerShell"对话框中的说明提供其他身份验证信息（如验证码），然后单击"登录"。
     
-连接后，可以对 [Azure Active Directory V2 PowerShell 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用这些新的 cmdlet。
+连接后，您可以使用[Azure 的活动目录 PowerShell 图形模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)新 cmdlet。
   
 ## <a name="see-also"></a>另请参阅
 

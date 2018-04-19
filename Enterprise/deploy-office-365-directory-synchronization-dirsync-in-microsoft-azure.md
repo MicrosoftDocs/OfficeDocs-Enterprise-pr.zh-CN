@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 摘要： 部署在 Azure 同步您的内部目录和 Office 365 订购的 Azure AD 租户之间的帐户中的虚拟机上的 Azure AD 连接。
-ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 31a72d027acd274c9908a7e63e83843bce9cec71
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>部署 Office 365 Microsoft Azure 中的目录同步
 
@@ -105,7 +105,7 @@ Azure 的活动目录 (AD) 连接 （以前称为目录同步工具、 目录同
     
 - 在内部部署网络中，域控制器和 DNS 服务器存在。
     
-- Azure AD 连接执行而不是单一登录的密码哈希同步。不需要部署 Active Directory 联合身份验证服务 (AD FS）) 的基础结构。若要了解有关密码哈希同步和单一登录选项的详细信息，请参阅[确定要使用哪个目录集成方案](https://go.microsoft.com/fwlink/p/?LinkId=393094)。
+- Azure AD 连接执行而不是单一登录的密码哈希同步。不需要部署 Active Directory 联合身份验证服务 (AD FS）) 的基础结构。若要了解有关密码哈希同步和单一登录选项的详细信息，请参阅[选择 Azure Active Directory 混合标识解决方案的适当的身份验证方法](http://aka.ms/auth-options)。
     
 下面是您在环境中部署此解决方案时可能会考虑的一些其他设计选项：
   
@@ -196,7 +196,7 @@ Azure AD Connect 将帐户从本地 Windows Server AD 添加到 Office 365 订�
     
 7. 对于其他用户，请返回步骤 3。
     
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>概念
 
 <a name="DeploymentRoadmap"> </a>
 

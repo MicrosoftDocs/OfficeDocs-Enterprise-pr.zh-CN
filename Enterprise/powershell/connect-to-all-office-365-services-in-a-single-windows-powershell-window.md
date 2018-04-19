@@ -3,7 +3,7 @@ title: 在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2018
+ms.date: 04/17/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要： 将 Windows PowerShell 连接到一个 Windows PowerShell 窗口中的所有 Office 365 提供服务。
-ms.openlocfilehash: ffa603ec50c95f5800315eee07b4d01e058852f3
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: b48caf9ab75b775995b9839325832c798da4d331
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/16/2018
   
 这不是最适合于管理 Office 365，因为不能交换跨服务管理这些五个窗口间的数据。本主题介绍如何使用与管理 Office 365、 为业务联机状态，Exchange Online，SharePoint Online，Skype 和安全的 Windows PowerShell 的单个实例&amp;法规遵从性中心。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 <a name="BeforeYouBegin"> </a>
 
 您可以从 Windows PowerShell 的单个实例中管理所有 Office 365 的之前，请考虑以下先决条件：
@@ -57,10 +57,9 @@ ms.lasthandoff: 04/16/2018
     
     您需要使用 64 位版本的 Windows 由于 Skype 的要求在线业务模块和 Office 365 模块之一。
     
-- 您需要安装所需的 Office 365、 SharePoint Online 和 Skype 的在线业务的模块：
+- 您需要安装的模块所需的 Azure 的广告，SharePoint Online 和 Skype 的在线业务：
     
-   - [Microsoft 在线服务登录助理为 IT 专业人士一项的](https://go.microsoft.com/fwlink/p/?LinkId=286152)
-   - Windows Azure 活动目录模块用于 Windows PowerShell （64-位版本） 用在提升 PowerShell 命令提示符**安装模块 MSOnline**命令。
+   - [Azure 的 Active Directory V2](connect-to-office-365-powershell.md#ConnectV2)
    - [SharePoint 在线管理外壳程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype 的在线业务 Windows PowerShell 模块](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
@@ -83,11 +82,10 @@ ms.lasthandoff: 04/16/2018
   $credential = Get-Credential
   ```
 
-3. 运行以下命令以连接到 Office 365。
+3. 运行以下命令以连接到 Azure 活动目录 (AD)。
     
   ```
-  Import-Module MsOnline
-  Connect-MsolService -Credential $credential
+   Connect-AzureAD -Credential $credential
   ```
 
 4. 运行以下命令以连接到 SharePoint Online。更换_\<domainhost >_与实际值为您的域。例如，对于`litwareinc.onmicrosoft.com`， _ \<domainhost >_值是`litwareinc`。
@@ -124,8 +122,7 @@ ms.lasthandoff: 04/16/2018
 ```
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
-Import-Module MsOnline
-Connect-MsolService -Credential $credential
+Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com -credential $credential
 Import-Module SkypeOnlineConnector
@@ -151,10 +148,7 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 $acctName="<UPN of a global administrator account>"
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
-#If you are running Office 365 commands that contain "AzureAd" in their name, use this command:
 Connect-AzureAD
-#If you are running Office 365 commands that contain "Msol" in their name, comment the preceding command and un-comment the following command:
-#Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
 #Skype for Business Online
@@ -176,8 +170,7 @@ Import-PSSession $sfboSession
 
 ## <a name="see-also"></a>另请参阅
 
-- [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
-- [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+- [连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)
 - [使用 Office 365 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
 - [使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [使用 Windows PowerShell 在 Office 365 中创建报告](use-windows-powershell-to-create-reports-in-office-365.md)

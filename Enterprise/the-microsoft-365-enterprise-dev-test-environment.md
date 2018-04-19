@@ -3,7 +3,7 @@ title: Microsoft 365 企业开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 摘要： 使用此测试实验室指南创建开发/测试环境，包括 Office 365 E5、 企业移动性 + 安全 (EMS) E5 和计算机运行 Windows 10 企业。
-ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业开发/测试环境
 
@@ -29,11 +29,14 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>阶段 1： 创建 Office 365 E5 订阅
 
-按照在第 2 阶段和第 3 阶段的[Office 365 的开发/测试环境](office-365-dev-test-environment.md)来创建 Office 365 轻量级开发/测试环境中，如图 1 所示的步骤。
+按照在第 2 阶段和第 3 阶段的[Office 365 的开发/测试环境](office-365-dev-test-environment.md)来创建 Office 365 轻量级开发/测试环境中，如图 1 中所示的步骤。
   
 **图 1: Office 365 E5 订阅其 Azure 活动目录 (AD) 租户和用户帐户**
 
 ![Microsoft 365 企业版开发/测试环境的第 1 阶段](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
+
+> [!NOTE]
+> Office 365 E5 试用订阅是 30 天，可以轻松地扩展至 60 天。为永久的开发测试环境，创建新付款订购数目较少的许可证。 
   
 ## <a name="phase-2-add-ems"></a>阶段 2： 添加 EMS
 
@@ -66,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 现在已开发/测试环境：
   
-- 与你的用户帐户列表共享同一个组织和相同 Azure AD 租户的 Office 365 E5 企业版和 EMS 试用订阅。
+- Office 365 E5 企业和 EMS E5 试用订阅，您的用户帐户列表与共享相同的 Azure AD 租户。
 - 所有适当的用户帐户 （只是全局管理员或所有五个用户帐户） 都可以使用 Office 365 E5 和 EMS E5。
     
 图 2 显示您生成的配置，它增加了 EMS。
@@ -201,8 +204,9 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 - [配置和测试高级威胁防护](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>概念
 
 - [Microsoft 365 企业文档](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [部署 Microsoft 365 企业](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [一个 Microsoft 云开发/测试环境](the-one-microsoft-cloud-dev-test-environment.md)
+- [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
