@@ -1,5 +1,5 @@
 ---
-title: "使用 Office 365 PowerShell 向用户帐户分配许可证"
+title: 使用 Office 365 PowerShell 向用户帐户分配许可证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: "解释如何使用 Office 365 PowerShell 分派给未经授权的用户的 Office 365 提供许可证。"
-ms.openlocfilehash: 688e2775e7a028cd9dbe0c8ea27a7f3a453b5279
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 解释如何使用 Office 365 PowerShell 分派给未经授权的用户的 Office 365 提供许可证。
+ms.openlocfilehash: ce8e8c26e929132a8d4beb0f71e18c127064acbe
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 向用户帐户分配许可证
 
@@ -66,7 +66,7 @@ Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "l
 $x = Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>]; $x | foreach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
 
- **备注**
+ **注释**
   
 - 您无法使用相同的许可计划为用户分配多个许可证。
     
@@ -139,7 +139,7 @@ Set-MsolUserLicense -UserPrincipalName "BelindaN@litwareinc.com" -AddLicenses "l
   
 当**一组 MsolUserLicense**完成运行时，您会看到类似于此屏幕上：
   
- `PS C:\\windows\\system32>`
+ `PS C:\windows\system32>`
   
 换句话说，它不会看起来有的事情。验证用户具有已分配的许可，运行如下命令：
   
@@ -231,7 +231,7 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
   
 - [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
     
-- [使用 Office 365 PowerShell 删除和还原用户帐户](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [使用 Office 365 PowerShell 冻结用户账户](block-user-accounts-with-office-365-powershell.md)
     

@@ -11,11 +11,11 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 摘要： 了解如何创建包含运行 Exchange Server 2013年的服务器、 运行 Lync Server 2013，服务器和服务器运行 SharePoint Server 2013 集成的测试实验室。
-ms.openlocfilehash: 636429a9cce04b982c1129dba601c6348deb9cdc
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: a15bdefe1749bca98933a8b9a4c4874130732eda
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>测试实验室指南：配置集成的 Exchange、Lync 和 SharePoint 测试实验室
 
@@ -23,8 +23,7 @@ ms.lasthandoff: 04/18/2018
  
 **Lync，集成的交换，SharePoint 测试实验室指南概述视频观看**
 
-<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" ></iframe>
-
+> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
 测试实验室得出这种配置，其中包括服务器的所有三种类型的服务器之间的身份验证，可用于构建并展示多产品方案和解决方案使用的服务器上运行 Exchange Server 2013，Lync Server 2013，运行服务器和服务器运行 SharePoint Server 2013。
   

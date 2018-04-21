@@ -1,9 +1,9 @@
 ---
-title: "使用 Office 365 PowerShell 查看帐户许可证和服务详细信息"
+title: 使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: "解释如何使用 Office 365 PowerShell 确定已指派给用户的 Office 365 提供服务。"
-ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 解释如何使用 Office 365 PowerShell 确定已指派给用户的 Office 365 提供服务。
+ms.openlocfilehash: 5286a581a67b39d5d5ca921b998d6ea14b3ff50f
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/14/2018
   
 Office 365 中许可证的授权计划 （也称为的 Sku 或 Office 365 计划） 允许用户访问的计划，这些计划定义 Office 365 提供服务。但是，用户可能不具有访问中当前分配给它们的许可证提供的所有服务。Office 365 PowerShell 可用于对用户帐户查看服务的状态。 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 <a name="RTT"> </a>
 
 - 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
@@ -44,8 +44,8 @@ Office 365 中许可证的授权计划 （也称为的 Sku 或 Office 365 计划
     
 - 如果您使用 **Get-MsolUser** cmdlet 而无需使用 _All_ 参数，仅可返回前 500 个帐户。
     
-## <a name="the-short-version-instructions-without-explanations"></a>简版（说明不含解释）
 <a name="ShortVersion"> </a>
+## <a name="the-short-version-instructions-without-explanations"></a>简版（说明不含解释）
 
 若要查看用户有权访问的所有 Office 365 PowerShell 的服务，请使用下面的语法：
   
@@ -89,8 +89,8 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceSt
 Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>长版（说明附有详细解释）
 <a name="LongVersion"> </a>
+## <a name="the-long-version-instructions-with-detailed-explanations"></a>长版（说明附有详细解释）
 
 ### <a name="find-the-office-365-powershell-services-that-a-user-has-access-to"></a>查找用户有权访问 Office 365 PowerShell 服务
 
@@ -124,7 +124,7 @@ System.Runtime... Microsoft.On...  litwarein... {Microsoft.Online.A...
 
 然后通过扩展的**ServiceStatus**属性我们可以得到更多的信息：
   
-|服务计划 ***|说明 ***|
+|服务计划 ***|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -162,7 +162,7 @@ EXCHANGE_S_ENTERPRISE             Success
 
 然后，让我们也看一看表，解释这些奇怪命名服务计划的真正代表：
   
-|服务计划 ***|说明 ***|
+|服务计划 ***|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -190,7 +190,7 @@ EXCHANGE_S_ENTERPRISE             Success
   
 我们希望有人会问这个问题。为了回答这个问题，让我们回顾一下我们第一次看文章[查看许可证和服务与 Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md)中我们唯一可用的授权计划的服务的表`litwareinc:ENTERPRISEPACK`:
   
-|服务计划 ***|说明 ***|
+|服务计划 ***|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -282,23 +282,27 @@ Get-MsolUser | Where-Object {$_.isLicensed -eq $true -and $_.Licenses.ServiceSta
   
 这，当然，这是为什么我们有 Windows PowerShell: Windows PowerShell 有助于节省您从乏味而耗时的任务，例如。
   
-当我们解决它时，下面是用于查看服务信息的最终命令：
+下面是用于查看一组指定服务的服务信息，由 Office 365 E5 订阅及其许可证和 ServiceStatus 的索引命令的示例：
   
 ```
-Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[0].ProvisioningStatus}}, @{Name="MDM";Expression={$_.Licenses[0].ServiceStatus[1].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[2].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[3].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[4].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[5].ProvisioningStatus}}, @{Name="OfficeWeb";Expression={$_.Licenses[0].ServiceStatus[6].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[8].ProvisioningStatus}} | ConvertTo-Html > "C:\\My Documents\\Service Info.html"
+Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[12].ProvisioningStatus}}, @{Name="Teams";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[20].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[19].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[21].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[22].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[24].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[23].ProvisioningStatus}} | ConvertTo-CSV > "C:\Service Info.csv"
 ```
 
-是的这也非常怪模怪样的命令。但是，它将创建 CSV 文件显示您的所有用户和所有及其服务状态。
+此命令创建 CSV 文件显示的所有用户和服务 （团队、 Yammer、 AD RMS、 OfficePro、 Skype、 SharePoint 和 Exchange） 的指定设置及其服务状态。
+
+>[!Note]
+>可以获取的服务列表中从订购`(Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus`命令。在输出中，您开始编排服务索引为 0。上面的命令只是一个示例。随着时间的推移可以更改服务的索引号。
+>
 
   
-## <a name="see-also"></a>另请参阅
 <a name="SeeAlso"> </a>
+## <a name="see-also"></a>另请参阅
 
 请参阅下面有关使用 Office 365 PowerShell 管理用户的其他主题：
   
 - [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
     
-- [使用 Office 365 PowerShell 删除和还原用户帐户](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [使用 Office 365 PowerShell 冻结用户账户](block-user-accounts-with-office-365-powershell.md)
     

@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 摘要： 需要配置目录同步为您 Office 365 的开发/测试环境。
-ms.openlocfilehash: 2fd4a9e6ea009e28ce95ff69e5ab03043ed18706
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: ebb16cb65738e0440b40d0d14550cd1f9c5bb21c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>您 Office 365 的开发/测试环境的目录同步
 
@@ -65,8 +65,8 @@ ms.lasthandoff: 04/16/2018
 2. 在 APP1 中打开管理员级别的 Windows PowerShell 命令提示符，然后运行下面的命令：
     
   ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+  Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
 Stop-Process -Name Explorer -Force
 
   ```

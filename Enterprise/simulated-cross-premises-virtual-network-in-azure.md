@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 摘要： 在 Microsoft Azure 中创建模拟的跨部署虚拟网络，作为开发/测试环境。
-ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure 中的模拟跨界虚拟网络
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/16/2018
 首先，在本地计算机上启动 Azure PowerShell 提示符。
   
 > [!NOTE]
-> 下面的命令设置使用 Azure PowerShell 的最新版本。请参阅[开始使用 Azure PowerShell cmdlet](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
   
 使用以下命令登录 Azure 帐户。
   
@@ -85,7 +85,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)以获取包含所有这篇文章中的 PowerShell 命令的文本文件。
+> [!提示] 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)可获取包含本文中所有 PowerShell 命令的文本文件。
   
 使用以下命令获得订阅名称。
   
@@ -173,7 +173,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -Credential (Get-Credential CORP\\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\\NTDS" -LogPath "F:\\Logs" -SysvolPath "F:\\SYSVOL"
+Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
 请注意，则会提示您提供这两个公司\\User1 密码和目录服务还原模式 (DSRM) 密码，并重新启动 DC2。 
