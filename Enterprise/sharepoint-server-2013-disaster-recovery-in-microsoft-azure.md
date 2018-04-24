@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Azure 中的 SharePoint Server 2013 灾难恢复"
+title: Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/5/2018
+ms.date: 04/17/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,28 +11,28 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: "摘要：使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。"
-ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 摘要：使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
+ms.openlocfilehash: 1e8f067954de19c374688220be439fe1a56089f7
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
  **摘要：**使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
+
+ **观看 SharePoint Server 2013 灾难恢复概述视频**
+<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=1b73ec8f-29bd-44eb-aa3a-f7932784bfd9&AutoPlayVideo=false&height=415&width=740" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" style="width: 740px; height: 415px;"></iframe>
+
   
  当灾难袭击你的 SharePoint 内部部署环境时，头等大事是迅速使系统恢复运行。如果你已有备份环境在 Microsoft Azure 中运行，SharePoint 灾难恢复将更加快速、轻松。本视频介绍 SharePoint 温故障转移环境的主要概念，并补充了本文中提供的完整详细信息。
   
-![视频（播放按钮）图标](images/mod_icon_video_M.png)
-  
 将本文与以下解决方案模型结合使用： **Microsoft Azure 中的 SharePoint 灾难恢复** 。
   
-[![SharePoint 到 Azure 的灾难恢复过程](images/SP_DR_Azure.png)
+[![Azure 中的 SharePoint 灾难恢复过程](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
-](https://go.microsoft.com/fwlink/p/?LinkId=392555)
-  
-![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
+![PDF 文件](images/ITPro_Other_PDFicon.png) [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | ![Visio 文件](images/ITPro_Other_VisioIcon.jpg) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
 本文内容：
   
@@ -436,7 +436,7 @@ restore database WSS_Content with recovery
 > [!IMPORTANT]
 > 明确使用 T-SQL 时，在每个 RESTORE 语句中指定 **WITH NORECOVERY** 或 **WITH RECOVERY** 以消除歧义这在编写脚本时非常重要。还原完整和差异备份后，可以在 SQL Server Management Studio 中还原事务日志。此外，由于日志传送已停止，内容数据库处于备用状态，因为你必须将状态更改为完全访问。
   
-在 SQL Server Management Studio 中，右键单击“WSS_Content”****数据库，依次指向“任务”**** > “还原”****，再单击“事务日志”****（如果还没有还原完整备份，则不可用）。有关详细信息，请参阅[还原事务日志备份 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778)。
+在 SQL Server Management Studio 中，右键单击“WSS_Content”**** 数据库，依次指向“任务”**** > “还原”****，再单击“事务日志”****（如果还没有还原完整备份，则不可用）。有关详细信息，请参阅[还原事务日志备份 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778)。
   
 ### <a name="crawl-the-content-source"></a>对内容源进行爬网
 
@@ -487,15 +487,15 @@ restore database WSS_Content with recovery
   
 通常情况下，当你设置网络负载平衡时，将向群集分配单个 IP 地址。然后你在 DNS 提供程序中为指向群集的网络创建 DNS 主机。（在此项目中，我们将 DNS 服务器放置在 Azure 中，确保在出现内部部署数据中心故障时能够恢复。）例如，你可以在 DNS 管理器的 Active Directory 中创建指向负载平衡群集的 IP 地址的 DNS 记录（例如，称为  `http://sharepoint.contoso.com`）。
   
-对于对 SharePoint 服务器场的外部访问，你可以在外部 DNS 服务器上创建主机记录，前提是该服务器具有与客户端在 Intranet（例如，http://sharepoint.contoso.com）上所使用的、指向防火墙中某个外部 IP 地址的相同 URL。（使用此示例最好的做法是设置拆分 DNS，以便内部 DNS 服务器获得 contoso.com 的授权，并将请求直接路由到 SharePoint 服务器场群集，而不是将 DNS 请求路由到外部 DNS 服务器。）然后你可以将外部 IP 地址映射到内部部署群集的内部 IP 地址，以便客户端找到所需的资源。
+若要从外部访问 SharePoint 场，可以在外部 DNS 服务器上创建主机记录，且 URL 与客户端在 Intranet 上使用的指向防火墙中外部 IP 地址的 URL（例如，http://sharepoint.contoso.com)）相同。（在此示例中，最佳做法是设置拆分 DNS，让内部 DNS 服务器对 contoso.com 有控制权，并将请求直接路由到 SharePoint 场群集，而不是将 DNS 请求路由到外部 DNS 服务器。）然后，可以将外部 IP 地址映射到本地群集的内部 IP 地址，以便客户端能够找到所需的资源。
   
-从这里开始，你可能会遇到几种不同的灾难恢复场景：
+接下来，将介绍几种不同的灾难恢复应用场景：
   
  **示例场景：由于内部部署 SharePoint 服务器场中的硬件故障，内部部署 SharePoint 服务器场不可用。**这种情况下，在你完成故障转移到 Azure SharePoint 服务器场的步骤后，你可以在恢复 SharePoint 服务器场的 Web 前端服务器上配置网络负载平衡，就像在内部部署服务器场中一样。然后你可以将内部 DNS 提供程序中的主机记录重定向为指向恢复场的群集 IP 地址。请注意，可能需要一些时间才会刷新客户端上的缓存 DNS 记录并使其指向恢复场。
   
  **示例场景：内部部署数据中心会完全中断。**此场景可能是由于自然灾害所致，例如火灾或水灾。这种情况下，对于企业来说，可能希望有一个辅助数据中心承载在另一个区域，还有具有自己的目录服务和 DNS 的 Azure 子网。与前一个灾难场景中一样，你可以将内部和外部 DNS 记录重定向为指向 Azure SharePoint 服务器场。同样，记下该 DNS 记录传播可能需要一些时间。
   
-如果你使用的是主机命名的网站集，那么按照[以主机命名的网站集的体系结构和部署 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120) 中的建议，你在 SharePoint 服务器场中可能具有由同一 Web 应用程序承载的多个网站集，但都具有唯一的 DNS 名称（例如 http://sales.contoso.com 和 http://marketing.contoso.com）。在这种情况下，你可以为每个网站集创建指向群集 IP 地址的 DNS 记录。请求到达 SharePoint Web 前端服务器之后，它们会将每个请求路由到相应的网站集。
+如果使用的是主机命名网站集，根据[主机命名网站集体系结构和部署 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120) 中的建议，可以让 SharePoint 场中的同一 Web 应用程序托管多个网站集，分别具有唯一 DNS 名称（例如，http://sales.contoso.com 和 http://marketing.contoso.com)）。在这种情况下，可以为每个网站集创建指向群集 IP 地址的 DNS 记录。在请求到达 SharePoint Web 前端服务器后，它们就会着手将各个请求路由到相应的网站集。
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft 概念证明环境
 <a name="POC"> </a>
@@ -645,7 +645,7 @@ SharePoint 服务器场分两个阶段部署，以便在必要时简化环境稳
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Get-ADForest Windows PowerShell 命令会生成错误："术语'Get-ADForest'未识别为 cmdlet、函数、脚本文件或可运行程序的名称。"
 
-设置用户配置文件时，需要 Active Directory 林名称。在“添加角色和功能”向导中，确保已启用用于 Windows PowerShell 的 Active Directory 模块（依次转到“远程服务器管理工具”>“角色管理工具”>“AD DS 和 AD LDS 工具”****部分下）。此外，先运行以下命令，再使用 **Get-ADForest**，以确保已加载软件依赖项。
+设置用户配置文件时，需要 Active Directory 林名称。在“添加角色和功能”向导中，确保已启用用于 Windows PowerShell 的 Active Directory 模块（依次转到“远程服务器管理工具”>“角色管理工具”>“AD DS 和 AD LDS 工具”**** 部分下）。此外，先运行以下命令，再使用 **Get-ADForest**，以确保已加载软件依赖项。
   
 ```
 Import-module servermanager
@@ -667,7 +667,7 @@ Import-module activedirectory
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Managed Metadata Service（或其他 SharePoint 服务）在安装后无法自动启动
 
-服务可能需要几分钟才能启动，具体取决于你的 SharePoint Server 的性能和当前负载。手动单击服务的“启动”****按钮，留出足够的时间让服务器启动，并时常刷新一下服务器上的服务屏幕以监视其状态。如果服务仍处于停止状态，启用 SharePoint 诊断日志记录，再次尝试启动服务，然后检查日志中是否包含错误。有关详细信息，请参阅[在 SharePoint 2013 中配置诊断日志记录](https://go.microsoft.com/fwlink/p/?LinkId=510884)
+服务可能需要几分钟才能启动，具体取决于你的 SharePoint Server 的性能和当前负载。手动单击服务的“启动”**** 按钮，留出足够的时间让服务器启动，并时常刷新一下服务器上的服务屏幕以监视其状态。如果服务仍处于停止状态，启用 SharePoint 诊断日志记录，再次尝试启动服务，然后检查日志中是否包含错误。有关详细信息，请参阅[在 SharePoint 2013 中配置诊断日志记录](https://go.microsoft.com/fwlink/p/?LinkId=510884)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>将 DNS 更改为 Azure 故障转移环境之后，客户端浏览器继续使用 SharePoint 网站的旧 IP 地址
 

@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: 摘要：具有代表性的虚构全球组织如何采用包含云的 IT 基础结构，其中具有各种 Microsoft 云产品。
-ms.openlocfilehash: 7807a6b07179e695c28a923f744805558d83e690
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft 云中的 Contoso
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 请参阅以下部分：
   
-- [混合云概述](hybrid-cloud-overview.md)
+- [Contoso Corporation 概述](overview-of-the-contoso-corporation.md)
     
     Contoso Corporation 是一家集制造、销售和支持服务为一体的全球性大型组织，提供 100,000 多种产品。
     
