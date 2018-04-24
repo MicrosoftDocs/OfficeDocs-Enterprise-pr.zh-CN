@@ -1,5 +1,5 @@
 ---
-title: "安全解决方案"
+title: 安全解决方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,26 +11,26 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
-description: "摘要： 使用这些文章部署与 Microsoft 的云服务的安全解决方案。"
+description: 摘要：按照这些文章用 Microsoft 云服务部署安全解决方案。
 ms.openlocfilehash: 6ba8b623d4073b611a5123e01e7cf5819bd34e4a
 ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2018
 ---
 # <a name="security-solutions"></a>安全解决方案
 
- **摘要：**使用这些文章部署与 Microsoft 的云服务的安全解决方案。
+ **摘要：**按照这些文章用 Microsoft 云服务部署安全解决方案。
   
-以下是用于安全访问、 协作和数据与 Microsoft Office 365，Microsoft Azure，Microsoft Dynamics 365，Microsoft 企业移动 + (EMS) 安全套件的解决方案：
+下面是针对安全访问防护、 协作和使用 Microsoft Office 365、 Microsoft Azure、 Microsoft Dynamics 365 和 Microsoft 企业移动性 + 安全性 (EMS) 套件数据的解决方案：
 
-- [Office 365 的 GDPR 的信息保护](office-365-information-protection-for-gdpr.md)
+- [针对 GDPR 的 Office 365 信息保护](office-365-information-protection-for-gdpr.md)
   
-- [为政治运动、 非营利性组织和其他敏捷组织的 Microsoft 安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+- [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
     
-- [SharePoint Online 网站和文件保护](secure-sharepoint-online-sites-and-files.md)
+- [保护 SharePoint Online 网站和文件](secure-sharepoint-online-sites-and-files.md)
     
-- [SharePoint Online 的独立的团队站点](isolated-sharepoint-online-team-sites.md)
+- [单独的 SharePoint Online 团队网站](isolated-sharepoint-online-team-sites.md)。
 <br/><br/>
     
 **参加讨论**
@@ -47,7 +47,7 @@ ms.lasthandoff: 01/29/2018
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
   
-[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[云应用测试实验室指南 (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
