@@ -3,7 +3,7 @@ title: 将本地网络连接到 Microsoft Azure 虚拟网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,18 +14,20 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: 摘要： 了解如何为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-ms.openlocfilehash: 559c1330c3f39ea52b1cf5c3127782dddf37f95b
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+description: 摘要： 了解如何配置跨场所 Azure 办公室服务器工作负载的站点到站点 VPN 连接的虚拟网络。
+ms.openlocfilehash: 818e709c8177c6533bfa02da00170bf7fdb5a0ac
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
  **摘要：** 了解如何为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
   
-Azure 跨界虚拟网络连接到本地网络，扩展网络以包括在 Azure 基础结构服务中托管的子网和虚拟机。上述连接允许本地网络中的计算机直接访问 Azure 中的虚拟机，反之亦然。例如，在 Azure 虚拟机上运行的目录同步服务器需要查询本地域控制器获取对帐户进行的更改并将这些更改与 Office 365 订阅同步。本文介绍如何设置 Azure 跨界虚拟网络以使其为托管 Azure 虚拟机做好准备。
+Azure 的虚拟网络连接到内部网络，扩展您的网络子网和承载的虚拟机包括在 Azure 的基础结构服务跨场所。此连接允许计算机在内部网络直接访问虚拟机在 Azure，反之亦然。 
+
+例如，Azure 的虚拟机上运行的目录同步服务器需要查询内部域控制器对帐户进行更改并将这些更改与 Office 365 订阅同步。本文介绍如何设置跨场所 Azure 虚拟网络使用就可以承载 Azure 的虚拟机的站点到站点虚拟专用网络 (VPN) 连接。
 
 ## <a name="overview"></a>概述
 
@@ -33,13 +35,22 @@ Azure 中的虚拟机无需与本地环境隔离。若要将 Azure 虚拟机连�
   
 ![通过站点到站点 VPN 连接来连接到 Microsoft Azure 的本地网络连接](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-在该图中，有两个使用站点间虚拟专用网络 (VPN) 连接进行连接的网络：本地网络和 Azure 虚拟网络。站点到站点 VPN 连接的两端分别为本地网络中的 VPN 设备和 Azure 虚拟网络中的 Azure VPN 网关。Azure 虚拟网络中具有虚拟机。从 Azure 虚拟网络上的虚拟机发出的网络流量将转发到 VPN 网关，然后通过站点间 VPN 连接将流量转发到本地网络上的 VPN 设备。随后本地网络的路由基础结构会将流量转发到其目标。
+在图中，是通过站点到站点 VPN 连接来连接两个网络： 内部网络和 Azure 的虚拟网络。为站点到站点 VPN 连接：
+
+- 两个端点之间所寻址和公用的 Internet 上找到。
+- 终止在内部网络上的 VPN 设备和 Azure 的虚拟网络上的 Azure VPN 网关。
+
+在 Azure 的虚拟网络承载的虚拟机。源自于 Azure 的虚拟网络上的虚拟机的网络流量获取转发到 VPN 网关，然后转发通讯，通过站点到站点 VPN 连接到内部网络上的 VPN 设备。内部网络的路由结构然后转发到目标的通信。
+
+>[!Note]
+>您还可以使用[ExpressRoute](https://azure.microsoft.com/services/expressroute/)，这是您的组织和 Microsoft 的网络之间的直接连接。通过 ExpressRoute 的通信不经过公共 Internet 上。本文不介绍如何使用 ExpressRoute。
+>
   
 要设置 Azure 虚拟网络和本地网络之间的 VPN 连接，请执行以下步骤： 
   
 1. **本地：** 为指向本地 VPN 设备的 Azure 虚拟网络的地址空间定义并创建本地网络路由。
     
-2. **Microsoft Azure：**创建具有网站间 VPN 连接的 Azure 虚拟网络。本文并未介绍如何使用 [ExpressRoute](https://azure.microsoft.com/services/expressroute/)。
+2. **Microsoft Azure:** 创建站点到站点 VPN 连接使用 Azure 的虚拟网络。 
     
 3. **本地：** 将本地硬件或软件 VPN 设备配置为终止使用遵循 Internet 协议安全性 (IPsec) 的 VPN 连接。
     
@@ -51,7 +62,7 @@ Azure 中的虚拟机无需与本地环境隔离。若要将 Azure 虚拟机连�
 ### <a name="prerequisites"></a>先决条件
 <a name="Prerequisites"></a>
 
-- Azure 订阅。有关 Azure 订阅的信息，请转到 [Microsoft Azure 订阅页面](https://azure.microsoft.com/pricing/purchase-options/)。
+- Azure 的订阅。Azure 订阅有关信息，请转到[如何购买 Azure 页](https://azure.microsoft.com/pricing/purchase-options/)。
     
 - 可用的专用 IPv4 地址空间，将分配给虚拟网络及其子网，具有足够的空间容纳现在和将来所需的虚拟机。
     
@@ -328,7 +339,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>阶段 3（可选）：添加虚拟机
 
-在 Azure 中创建所需虚拟机。有关详细信息，请参阅[在 Azure 门户中创建第一个 Windows 虚拟机](https://go.microsoft.com/fwlink/p/?LinkId=393098)。
+在 Azure 创建虚拟机所需。有关详细信息，请参阅[创建 Windows Azure 门户网站虚拟机](https://go.microsoft.com/fwlink/p/?LinkId=393098)。
   
 使用以下设置：
   
@@ -347,6 +358,4 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
 ## <a name="next-step"></a>后续步骤
   
 [在 Microsoft Azure 中部署 Office 365 目录同步 (DirSync)](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
- 
-
 

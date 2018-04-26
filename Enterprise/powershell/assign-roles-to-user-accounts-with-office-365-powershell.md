@@ -1,5 +1,5 @@
 ---
-title: "将角色分配给用户帐户与 Office 365 PowerShell"
+title: 将角色分配给用户帐户与 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: "摘要： 使用 Office 365 PowerShell 和添加 MsolRoleMember cmdlet 将角色分配给用户帐户。"
-ms.openlocfilehash: 97ecf29e10d14843322f3062ef16da14f16f7a2a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 摘要： 使用 Office 365 PowerShell 和添加 MsolRoleMember cmdlet 将角色分配给用户帐户。
+ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>将角色分配给用户帐户与 Office 365 PowerShell
 
@@ -67,7 +67,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-复制命令并将其粘贴到记事本。**$DispName**和**$roleName**变量的值替换说明文本，删除\<和 > 字符，并将引号。将已修改的行复制并粘贴到您的 Windows Azure 活动目录模块用于 Windows PowerShell 窗口来运行它们。或者，您可以使用 Windows PowerShell 集成脚本环境 (ISE)。
+复制命令并将其粘贴到记事本。**$DispName**和 **$roleName**变量的值替换说明文本，删除\<和 > 字符，并将引号。将已修改的行复制并粘贴到您的 Windows Azure 活动目录模块用于 Windows PowerShell 窗口来运行它们。或者，您可以使用 Windows PowerShell 集成脚本环境 (ISE)。
   
 这里是完成的命令集的示例：
   
@@ -124,14 +124,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ## <a name="see-also"></a>另请参阅
 
-#### 
-
-[使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-  
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
-  
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
-#### 
-
-[添加 MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
-
+- [使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+- [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+- [添加 MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)

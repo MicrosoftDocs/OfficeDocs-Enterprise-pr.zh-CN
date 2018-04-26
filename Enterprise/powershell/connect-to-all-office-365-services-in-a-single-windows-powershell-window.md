@@ -3,7 +3,7 @@ title: 在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2018
+ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要： 将 Windows PowerShell 连接到一个 Windows PowerShell 窗口中的所有 Office 365 提供服务。
-ms.openlocfilehash: b48caf9ab75b775995b9839325832c798da4d331
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 7e3a3ecbb0526c88392848cf39b59b40f1f4c80c
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
@@ -88,7 +88,7 @@ ms.lasthandoff: 04/19/2018
    Connect-AzureAD -Credential $credential
   ```
 
-4. 运行以下命令以连接到 SharePoint Online。更换_\<domainhost >_与实际值为您的域。例如，对于`litwareinc.onmicrosoft.com`， _ \<domainhost >_值是`litwareinc`。
+4. 运行以下命令以连接到 SharePoint Online。更换_\<domainhost >_ 与实际值为您的域。例如，对于`litwareinc.onmicrosoft.com`， _ \<domainhost >_ 值是`litwareinc`。
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -113,8 +113,8 @@ ms.lasthandoff: 04/19/2018
 7. 运行以下命令以对安全连接&amp;法规遵从性中心。
     
   ```
-  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-  Import-PSSession $SccSession
+  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
+  Import-PSSession $SccSession -Prefix cc
   ```
 
 下面是在一个块的所有命令。指定您的域主机的名称，然后一次运行所有这些。
@@ -130,8 +130,8 @@ $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $exchangeSession
-$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $SccSession
+$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
+Import-PSSession $SccSession -Prefix cc
 ```
 准备就绪以关闭 Windows PowerShell 窗口后，运行以下命令来删除联机业务、 Exchange Online，SharePoint Online，和安全到 Skype 的活动会话&amp;法规遵从性中心：
   
@@ -158,7 +158,7 @@ Import-PSSession $sfboSession
 
 为 Exchange 联机和安全&amp;法规遵从性中心，请参阅下面的主题使用多因素身份验证进行连接：
 
-- [连接到 Exchange 联机 PowerShell 使用多因素身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)。
+- [连接到 Exchange 联机 PowerShell 使用多因素身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
 - [连接到 Office 365 安全和法规遵从性中心 PowerShell 使用多因素身份验证](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
 请注意，在两种情况下，必须使用 Exchange 联机远程 PowerShell 模块的单独会话连接。

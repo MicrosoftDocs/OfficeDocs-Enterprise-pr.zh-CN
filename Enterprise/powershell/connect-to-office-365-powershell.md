@@ -14,16 +14,16 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。
-ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+description: 摘要： 连接到 Office 365 单位使用 Office 365 PowerShell 从命令行执行管理的中心任务。
+ms.openlocfilehash: 65ddb3c66d2cd69ad1ecb468ec762667a0b07a84
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
- **摘要：**使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行 Office 365 管理中心任务。
+ **摘要：**连接到您的 Office 365 组织使用 Office 365 PowerShell 命令行中执行管理任务。
   
 借助 Office 365 PowerShell，可以通过命令行管理 Office 365 设置。连接到 Office 365 PowerShell 是一个非常简单的三步流程：安装必需软件，运行必需软件，再连接到 Office 365 组织。 
 
@@ -64,8 +64,7 @@ ms.lasthandoff: 04/19/2018
   - 如果系统提示从 PSGallery 安装模块，请键入 **Y**，然后按 Enter 键。
   - 安装完成后，关闭 PowerShell 命令窗口。
     
-### <a name="step-2-connect-to-your-office-365-subscription"></a>步骤 2：连接到 Office 365 订阅
-<a name="step3"> </a>
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2： 连接到 Azure 广告为您的 Office 365 订阅
 
 仅使用*帐户名和密码*连接：
   
@@ -82,7 +81,7 @@ Connect-MsolService -Credential $UserCredential
 使用*多重身份验证 (MFA)* 进行连接的具体步骤：
   
 1. 运行 Windows PowerShell 命令提示符。
-2. 在“用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块”****命令窗口中，运行以下命令。
+2. 在“用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块”**** 命令窗口中，运行以下命令。
     
 ```
 Connect-MsolService
@@ -93,7 +92,6 @@ Connect-MsolService
 4. 按照"Azure Active Directory PowerShell"对话框中的说明提供其他身份验证信息（如验证码），然后单击"登录"。
     
 ### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
-<a name="step3"> </a>
 
 如果未收到任何错误，则说明连接成功。一个快速测试是运行 Office 365 cmdlet（例如 **Get-MsolUser** ），然后查看结果。
   
@@ -119,10 +117,10 @@ Connect-MsolService
     
 - **如果看到连接错误，请参阅以下主题：**[“Connect-MsolService：抛出类型异常”错误](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>用图形模块 Azure 活动目录 PowerShell 连接
 <a name="ConnectV2"> </a>
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>用图形模块 Azure 活动目录 PowerShell 连接
 
-中图模块 Azure 活动目录 PowerShell 命令其 cmdlet 名称中有"AzureAD"。
+在[Azure 的活动目录 PowerShell 图模块的](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)模块中的命令其 cmdlet 名称中有"AzureAD"。
 
 有关图形模块需要在 Azure 活动目录 PowerShell 的新 cmdlet 的过程，使用这些步骤来安装模块和连接到您的 Office 365 订购。
 
@@ -146,7 +144,7 @@ Connect-MsolService
 如果系统提示从不受信任的存储库安装模块，请键入 **Y**，然后按 Enter 键。
 
 
-### <a name="step-2-connect-to-office-365"></a>步骤 2：连接到 Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2： 连接到 Azure 广告为您的 Office 365 订阅
 
 通过*帐户名和密码*连接到 Office 365 订阅：
     

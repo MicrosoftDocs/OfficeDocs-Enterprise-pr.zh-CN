@@ -1,5 +1,5 @@
 ---
-title: "电子数据展示文件收集自动化"
+title: 电子数据展示文件收集自动化
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
-description: "摘要：了解如何从用户计算机中自动收集文件以用于电子数据展示。"
-ms.openlocfilehash: bb93bed80ec95511c6bbf4307d1f0c9e1d4f82cb
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: 摘要：了解如何从用户计算机中自动收集文件以用于电子数据展示。
+ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>电子数据展示文件收集自动化
 
@@ -163,7 +163,7 @@ catch [System.Exception] {
 Function CopyFileToCaseFolder($SourcePath, $TargetPath, $FileName) {
     
     # Check to see if the file already exists
-    $TargetFileCheck = Test-Path $TargetPath\\$FileName
+    $TargetFileCheck = Test-Path $TargetPath\$FileName
 
 try {
 
@@ -202,18 +202,18 @@ $CaseNo = get-date -Format yyyyMMddHHmm
 $CaseNo = $CaseNo + "_" + [Environment]::UserName
 
 # Target location to copy case files
-$CaseRootLocation = "\\\\staging\\Cases$" 
+$CaseRootLocation = "\\staging\Cases$" 
 
 # File copy location, log file location, PST file location and temporary log file location
-$CaseLocation = $CaseRootLocation + "\\" + $CaseNo
-$CaseLogLocation = $CaseRootLocation + "\\" + $CaseNo + "\\_Log"
-$CasePSTLocation = $CaseRootLocation + "\\" + $CaseNo + "\\_PSTs"
-$TemporaryLogLocation = [Environment]::getfolderpath('ApplicationData') + "\\" + $CaseNo
+$CaseLocation = $CaseRootLocation + "\" + $CaseNo
+$CaseLogLocation = $CaseRootLocation + "\" + $CaseNo + "\_Log"
+$CasePSTLocation = $CaseRootLocation + "\" + $CaseNo + "\_PSTs"
+$TemporaryLogLocation = [Environment]::getfolderpath('ApplicationData') + "\" + $CaseNo
 
 # Inventory of local drives
 $LocalDrives = Get-PSDrive -PSProvider FileSystem -Scope Global
 
-$LoggingFile = "$CaseLogLocation\\FileCopyErrors.log"
+$LoggingFile = "$CaseLogLocation\FileCopyErrors.log"
 
 # Main script
 
@@ -221,12 +221,12 @@ $LoggingFile = "$CaseLogLocation\\FileCopyErrors.log"
 CreateCaseFolder
 
 # Create the list of files to be copied
-# First create the temporary directory in the AppData\\Roaming folder
+# First create the temporary directory in the AppData\Roaming folder
 New-Item "$TemporaryLogLocation" -ItemType Directory -Force -ErrorAction SilentlyContinue
 $LocalDrives | foreach {
 
     # Write-Host -ForeGroundColor Cyan "Collecting Files for Drive: " $_
-    Get-ChildItem -Path $_.Root -Recurse -Include $FileTypes -ErrorAction SilentlyContinue -ErrorVariable +Loggederrors | Export-Clixml $TemporaryLogLocation\\\\$_.xml -Force
+    Get-ChildItem -Path $_.Root -Recurse -Include $FileTypes -ErrorAction SilentlyContinue -ErrorVariable +Loggederrors | Export-Clixml $TemporaryLogLocation\$_.xml -Force
     # Needs try catch and logged collection error file
 }
 
@@ -290,7 +290,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 # This is for on-prem Exchange only
 # Input parameters
 # When you run the script, you call it with two parameters, PST source path and target mailbox alias
-# For example:  .\\PSTImport.ps1 \\\\FileShare\\PSTFiles jdoe
+# For example:  .\PSTImport.ps1 \\FileShare\PSTFiles jdoe
 
 param ([String]$SourcePath,[String]$MailboxAlias)
 
@@ -337,7 +337,7 @@ $AllFiles | ForEach-Object {
     
   - **$MailboxAlias** ，将接收导入的电子邮件的目标邮箱的别名。
     
-6. 例如，如果您想将路径 \\\\Staging\\Cases$ 中的所有 PST 文件都导入到别名为 eDiscoveryMailbox 的邮箱，您需要运行与此类似的脚本： `\\\\staging\\AFCscripts\\PSTImportScript.ps1 \\\\Staging\\cases$ eDiscoveryMailbox`
+6. 例如，如果您想将路径 \\Staging\Cases$ 中的所有 PST 文件都导入到别名为 eDiscoveryMailbox 的邮箱，您需要运行与此类似的脚本 `\\staging\AFCscripts\PSTImportScript.ps1 \\Staging\cases$ eDiscoveryMailbox`。
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>PST 导入选项 B，用于 Exchange Online
 
@@ -357,7 +357,7 @@ $AllFiles | ForEach-Object {
     
 2. 打开"Runbook Designer"，在"连接"窗格中，单击您想要在其中导入 Runbook 的文件夹。单击"操作"菜单，然后单击"导入"。此时将出现"导入"对话框。
     
-3. 在“文件位置”****框中，键入要导入的 Runbook 的路径和文件名，或单击省略号 (**...**) 转到要导入的文件。 
+3. 在“文件位置”**** 框中，键入要导入的 Runbook 的路径和文件名，或单击省略号 (**...**) 转到要导入的文件。 
     
 4. 依次选择"导入 Runbook"和"导入 Orchestrator 加密数据"。清除"计数器"、"计划"、"变量"、"计算机组"、"导入全局配置"和"覆盖现有全局配置"。
     
@@ -365,9 +365,9 @@ $AllFiles | ForEach-Object {
     
 6. 编辑 **MoveFilesToColdStorage** 运行手册，如下所述：
     
-1. **移动文件**活动 - 将“源文件”****路径设置为集合文件共享（例如，\\\\Staging\\cases$）。将“目标文件夹”****设置为 Azure 中的冷存储文件共享（例如，\\\\AZFile1\\ContentColdStorage）。选择“创建具有唯一名称的文件”****。
+1. **移动文件**活动 - 将“源文件”**** 路径设置为集合文件共享（例如，\\\\Staging\\cases$）。将“目标文件夹”**** 设置为 Azure 中的冷存储文件共享（例如，\\\\AZFile1\\ContentColdStorage）。选择“创建具有唯一名称的文件”****。
     
-2. **删除文件夹**活动 - 将“路径:”****设置为集合文件共享（例如，\\\\Staging\\cases$\\*），再选择“删除所有文件和子文件夹”****。 
+2. **删除文件夹**活动 - 将“路径:”**** 设置为集合文件共享（例如，\\\\Staging\\cases$\\*），再选择“删除所有文件和子文件夹”****。 
     
 7. 使用[部署 Runbook](https://go.microsoft.com/fwlink/p/?LinkId=615120) 中的过程部署 **MoveToColdStorage** Runbook。
     
