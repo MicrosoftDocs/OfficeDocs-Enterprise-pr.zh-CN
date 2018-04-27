@@ -7,23 +7,23 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
-description: 摘要： 在 Microsoft Azure 中创建模拟的跨部署虚拟网络，作为开发/测试环境。
-ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+description: 摘要： 在 Microsoft Azure 中创建模拟的跨内部部署虚拟网络作为开发/测试环境。
+ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure 中的模拟跨界虚拟网络
 
- **摘要：**在 Microsoft Azure 创建模拟的跨部署虚拟网络，作为开发/测试环境。
+ **摘要：**创建模拟的跨内部部署虚拟网络在 Microsoft Azure 中作为开发/测试环境。
   
 本文逐步介绍了如何使用两个 Azure 虚拟网络来创建 Microsoft Azure 模拟混合云环境。下面是生成的配置。   
   
@@ -59,11 +59,11 @@ ms.lasthandoff: 04/20/2018
 ![Microsoft 云中的测试实验室指南](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)为可视化映射到一个 Microsoft 云测试实验室指南堆栈中的所有项目。
+> 单击[下面](http://aka.ms/catlgstack)的 visual 映射到一个 Microsoft 云测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>第 1 阶段：配置 TestLab 虚拟网络
 
-在[基本配置开发/测试环境](base-configuration-dev-test-environment.md)中使用说明 Azure 命名测试实验室的虚拟网络中配置 DC1，APP1 和客户端 1 计算机。
+使用[基本配置开发/测试环境](base-configuration-dev-test-environment.md)中的说明在 Azure 虚拟网络名为测试实验室中配置 DC1、 APP1 和 CLIENT1 计算机。
   
 这是你的当前配置。 
   
@@ -93,7 +93,7 @@ Login-AzureRMAccount
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-设置 Azure 订购。引号，包括的所有内容替换\<和 > 字符，替换为正确的名称。
+设置您的 Azure 订阅。引号，包括内的所有内容替换\<和 > 字符，并且正确的名称。
   
 ```
 $subscrName="<subscription name>"
@@ -152,7 +152,7 @@ $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC2-DataDisk1" -CreateOption Attach -Ma
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-接下来，连接到新的虚拟机 DC2 从[Azure 门户](https://portal.azure.com)使用其本地管理员帐户名和密码。
+接下来，连接到新的 DC2 虚拟机从[Azure 门户](https://portal.azure.com)使用其本地管理员帐户名和密码。
   
 接下来，将 Windows 防火墙规则配置为允许通信以进行基本的连接测试。在 DC 2 上的管理员级别 Windows PowerShell 命令提示符处，运行下面这些命令。  
   
@@ -163,7 +163,7 @@ ping dc1.corp.contoso.com
 
 ping 命令应获得从 IP 地址 10.0.0.4 发出的四个成功响应。这是跨 VNet 对等关系的通信测试。  
   
-接下来，在 DC2 Windows PowerShell 命令提示符下添加为新卷驱动器号 f： 使用此命令的额外数据磁盘。
+接下来，从 Windows PowerShell 命令提示符 DC2 上添加为新卷使用此命令使用的驱动器号 f： 的额外数据磁盘。
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -176,7 +176,7 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
-请注意，则会提示您提供这两个公司\\User1 密码和目录服务还原模式 (DSRM) 密码，并重新启动 DC2。 
+请注意，系统提示您提供两个 CORP\\User1 密码和目录服务恢复模式 (DSRM) 密码并重新启动 DC2。 
   
 至此，XPrem 虚拟网络已拥有自己的 DNS 服务器 (DC2)。你必须将 XPrem 虚拟网络配置为使用此 DNS 服务器。在本地计算机上的 Azure PowerShell 命令提示符处，运行下面这些命令。
   
@@ -187,7 +187,7 @@ Set-AzureRmVirtualNetwork -VirtualNetwork $vnet
 Restart-AzureRmVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-从 Azure 的门户，在您的本地计算机上，连接到 dc1，将其与公司\\User1 凭据。要配置 CORP 域，以使计算机和用户使用其本地域控制器进行身份验证，请在 DC1 上从管理员级别的 Windows PowerShell 命令提示符运行这些命令。
+从本地计算机上 Azure 门户，连接到与 CORP DC1\\User1 凭据。若要配置 CORP 域，以便计算机和用户使用其本地域控制器进行身份验证，请在 DC1 上从管理员级 Windows PowerShell 命令提示符处运行这些命令。
   
 ```
 New-ADReplicationSite -Name "TestLab" 
@@ -204,7 +204,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
   
 ## <a name="next-step"></a>后续步骤
 
-使用此开发/测试环境中模拟了[Azure 中承载 SharePoint 服务器 2016 intranet 服务器场](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)。
+使用此开发/测试环境中模拟一个[Azure 中承载的 SharePoint Server 2016 intranet 场](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)。
   
 ## <a name="see-also"></a>另请参阅
 
@@ -216,7 +216,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
   
 [Office 365 开发/测试环境的云应用程序安全性](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[为您的 Office 365 开发/测试环境高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[高级威胁保护您的 Office 365 开发/测试环境](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
