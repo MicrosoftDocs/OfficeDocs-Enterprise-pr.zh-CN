@@ -1,44 +1,61 @@
 ---
-title: 添加或删除地区管理员
+title: 添加或删除的地理位置管理员
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-description: 了解如何添加或删除在 OneDrive 地区管理员业务多的地区。
-ms.openlocfilehash: 0007f1ac3c73fa7a2ada562f8da65215f80744ca
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+description: 了解如何在添加或移除地理管理员 OneDrive for Business 多-地理位置。
+ms.openlocfilehash: 7630597654df9ad78619b94fedc9e18d5b0b721e
+ms.sourcegitcommit: 886b23f590f6187f7a98c1083a3b49359ec2a5c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/30/2018
 ---
-# <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>添加或删除 OneDrive Busniess 多-地理地区管理员
+# <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>在添加或移除地理管理员 OneDrive for Busniess 多-地理位置
 
-您可以配置单独的管理员必须在您组织中的每个地理位置。这些管理员将有权访问特定于其地理位置的 SharePoint Online 和 OneDrive 设置。
+您可以配置已在您的租户中每个地理位置的单独管理员。这些管理员将有权访问特定于其地理位置的 SharePoint Online 和 OneDrive 设置。
 
-某些服务-例如词库的是从中心位置管理和复制到分支机构。中心位置的地区管理员有权访问这些，而 geo 卫星位置的管理员不。
+某些服务的术语库-例如是从中心位置管理，并复制到附属位置。中心位置地理管理员有权访问这些而附属位置的地理位置 admins 不。
 
-全局管理员和 SharePoint Online 管理员继续在所有地理位置无法访问设置。
+全局管理员和 SharePoint Online 管理员继续在所有地理位置有权访问设置。
 
-## <a name="configuring-geo-administrators"></a>配置地区管理员
+## <a name="configuring-geo-administrators"></a>配置地理管理员
 
-地区管理员配置需要 SharePoint 在线 PowerShell 模块。
+配置地理管理员需要 SharePoint Online PowerShell 模块。
 
-使用[连接 SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService)连接到管理员中心的地理位置，您要在其中添加地理联系管理员。（例如，连接 SPOServicehttps://ContosoEUR-admin.sharepoint.com.)
+[Connect-sposervice](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService)用于连接到管理中心的地理位置想要添加地理位置管理员。（例如，Connect-sposervicehttps://ContosoEUR-admin.sharepoint.com.)
 
-若要将用户添加为 geo 管理，运行`Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
+若要查看位置的现有的地理位置管理员，请运行`Get-SPOGeoAdministrator`
 
-若要查看某个位置的现有地区管理员，请运行`Get-SPOGeoAdministrators`
+### <a name="adding-a-user-as-a-geo-admin"></a>添加用户作为地理位置管理
 
-若要删除作为 Geo 管理位置的用户，运行`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+若要将用户添加为地理位置管理，运行`Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
+
+若要作为位置的地理位置管理删除用户，请运行`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+
+### <a name="adding-a-group-as-a-geo-admin"></a>将组添加为地理位置管理
+
+您可以将安全组或已启用邮件的安全组添加为地理位置管理员。（通讯组和 Office 365 组不支持。）
+
+若要将组添加为地理位置管理，运行`Add-SPOGeoAdministrator -GroupAlias <alias>`
+
+若要删除作为地理位置管理一组，请运行`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+
+请注意，不是所有安全组的组别名。如果您想要添加安全组不具有别名，运行[Get MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup)检索组的列表，找到您的安全组 ObjectID，然后运行：
+
+`Add-SPOGeoAdministrator -ObjectID <ObjectID>`
+
+若要使用 ObjectID 删除组，请运行`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 ## <a name="see-also"></a>另请参阅
 
 [添加 SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 
-[获得 SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
+[Get SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
 
 [删除 SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
+
+[设置安全组的别名 (MailNickName)](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
