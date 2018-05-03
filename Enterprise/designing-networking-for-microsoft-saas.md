@@ -1,5 +1,5 @@
 ---
-title: "为 Microsoft SaaS 设计网络"
+title: 为 Microsoft SaaS 设计网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
-description: "摘要：了解如何优化网络以便访问 Microsoft SaaS 服务，包括 Office 365、Microsoft Intune 和 Dynamics 365。"
-ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要：了解如何优化网络以便访问 Microsoft SaaS 服务，包括 Office 365、Microsoft Intune 和 Dynamics 365。
+ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>为 Microsoft SaaS 设计网络
 
@@ -181,8 +181,6 @@ ms.lasthandoff: 02/09/2018
 有关详细信息，请参阅：
   
 - [Office 365 的网络和迁移规划](https://aka.ms/tune)
-    
-- [Office 365 性能管理 Microsoft Virtual Academy 课程](https://aka.ms/o365perf)
     
 - [面向 Office 365 的 ExpressRoute](https://aka.ms/expressrouteoffice365)
 
