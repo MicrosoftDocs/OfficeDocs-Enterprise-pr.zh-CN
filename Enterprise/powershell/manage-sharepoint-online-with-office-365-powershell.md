@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 Office 365 PowerShell 管理 SharePoint Online 用户、组和网站组。
-ms.openlocfilehash: 752c7d24ee6d0e77ee1cc4a65322957324767531
-ms.sourcegitcommit: 74cdb2534bce376abc9cf4fef85ff039c46ee790
+ms.openlocfilehash: 77b589ea036ecb7d7a47b7ba6c442047529c19cf
+ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 SharePoint Online
 
@@ -36,9 +36,7 @@ ms.lasthandoff: 05/03/2018
     
 ## <a name="see-also"></a>另请参阅
 
-#### 
+- [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
 
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
-  
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+- [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
 
