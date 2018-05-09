@@ -4,21 +4,24 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.date: 5/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: ''
-ms.custom: ''
-ms.assetid: ''
+ms.service: Office 365 Administration
+localization_priority: None
+ms.collection: Strat_O365_Enterprise
 description: 摘要： 了解 Office 365 客户端策略所支持的 Android、 浏览器、 iOS、 Mac OS X、 Windows 和 Windows Mobile。
-ms.openlocfilehash: 1da917ec40fb40d7a13dc5fb426f640b178877f4
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: 663d2e2a127b03524f7f402acee3d6249870321a
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="office-365-client-policies---client-and-app-view"></a>Office 365 客户端策略的客户端和 App 视图
+**要更改此信息的视图？选择下一个不同视图：**
+> [!div class="op_single_selector"] 
+> - [客户端和 App 视图](office-365-client-policies-app-view.md)
+> - [策略视图](office-365-client-policies-policy-view.md)
+
 使用下表确定单个 Microsoft 客户端应用程序支持的 Office 365 客户端策略。
 
 ## <a name="delve"></a>Delve

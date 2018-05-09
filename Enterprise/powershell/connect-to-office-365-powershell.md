@@ -14,16 +14,16 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 摘要： 连接到 Office 365 单位使用 Office 365 PowerShell 从命令行执行管理的中心任务。
-ms.openlocfilehash: 65ddb3c66d2cd69ad1ecb468ec762667a0b07a84
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+description: 摘要： 连接到 Office 365 组织使用 Office 365 PowerShell 从命令行执行 admin center 任务。
+ms.openlocfilehash: eac56ae28ab48bb53842725d703bf81fb37d31eb
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
- **摘要：**连接到您的 Office 365 组织使用 Office 365 PowerShell 命令行中执行管理任务。
+ **摘要：**连接到 Office 365 组织使用 Office 365 PowerShell 从命令行执行管理任务。
   
 借助 Office 365 PowerShell，可以通过命令行管理 Office 365 设置。连接到 Office 365 PowerShell 是一个非常简单的三步流程：安装必需软件，运行必需软件，再连接到 Office 365 组织。 
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/26/2018
     > [!NOTE]
     >请使用 64 位版 Windows。2014 年 10 月，用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块已不再支持 32 位版。
     
--  这些步骤适用于 Office 365 管理角色的成员的用户。有关详细信息，请参阅[有关 Office 365 管理角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
+-  这些过程适用于 Office 365 管理员角色的成员的用户。有关详细信息，请参阅[有关 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>与用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块连接
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 04/26/2018
   - 如果系统提示从 PSGallery 安装模块，请键入 **Y**，然后按 Enter 键。
   - 安装完成后，关闭 PowerShell 命令窗口。
     
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2： 连接到 Azure 广告为您的 Office 365 订阅
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2： 连接到 Office 365 订阅 Azure AD
 
 仅使用*帐户名和密码*连接：
   
@@ -99,7 +99,7 @@ Connect-MsolService
   
 - **常见问题是密码错误** 。重新运行步骤 3，并仔细查看您输入的用户名和密码。
     
-- * *Microsoft Azure 活动目录模块用于 Windows PowerShell 需要 Microsoft.NET Framework 3.5。*在您的计算机 * * 启用 x * 功能。很可能您的计算机已安装了较新的版本 (例如，4 或 4.5。*x *），但可以向后启用或禁用与.NET Framework 的早期版本的兼容性。有关详细信息，请参阅下列主题：
+- * *Microsoft Azure Active Directory 的 Windows PowerShell 模块需要 Microsoft.NET Framework 3.5。*对您计算机 * * 启用 x * 功能。很可能计算机具有安装新版本 (例如，4 或 4.5。*x *），但向后启用或禁用与旧版本的.NET framework 兼容。有关详细信息，请参阅以下主题：
     
   - 对于 Windows Server 2012 或 Windows Server 2012 R2，请参阅[使用“添加角色和功能”向导启用 .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkId=532368)
     
@@ -118,14 +118,14 @@ Connect-MsolService
 - **如果看到连接错误，请参阅以下主题：**[“Connect-MsolService：抛出类型异常”错误](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     
 <a name="ConnectV2"> </a>
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>用图形模块 Azure 活动目录 PowerShell 连接
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>使用图模块 Azure Active Directory PowerShell 连接
 
-在[Azure 的活动目录 PowerShell 图模块的](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)模块中的命令其 cmdlet 名称中有"AzureAD"。
+在该[图模块的 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)模块中的命令其 cmdlet 名称中具有**AzureAD** 。
 
-有关图形模块需要在 Azure 活动目录 PowerShell 的新 cmdlet 的过程，使用这些步骤来安装模块和连接到您的 Office 365 订购。
+有关图模块需要在 Azure Active Directory PowerShell 中的新 cmdlet 的过程，使用以下步骤安装模块并连接到 Office 365 订阅。
 
 >[!Note]
->有关不同版本的 Microsoft Windows 的支持的信息，请参阅[图形模块 Azure 活动目录 PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 。
+>有关不同版本的 Microsoft Windows 支持的信息，请参阅[Azure Active Directory PowerShell for 图模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)。
 >
 
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
@@ -144,7 +144,7 @@ Connect-MsolService
 如果系统提示从不受信任的存储库安装模块，请键入 **Y**，然后按 Enter 键。
 
 
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2： 连接到 Azure 广告为您的 Office 365 订阅
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2： 连接到 Office 365 订阅 Azure AD
 
 通过*帐户名和密码*连接到 Office 365 订阅：
     
@@ -165,7 +165,7 @@ Connect-AzureAD
     
 按照"Azure Active Directory PowerShell"对话框中的说明提供其他身份验证信息（如验证码），然后单击"登录"。
     
-连接后，您可以使用[Azure 的活动目录 PowerShell 图形模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)新 cmdlet。
+连接后，可以为[Azure Active Directory PowerShell for 图模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用的新 cmdlet。
   
 ## <a name="see-also"></a>另请参阅
 
