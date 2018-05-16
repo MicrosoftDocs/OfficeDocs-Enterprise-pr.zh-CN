@@ -3,7 +3,7 @@ title: 在开发/测试环境中保护 SharePoint Online 网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -14,15 +14,15 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要： 在开发/测试环境中创建公共、 专用、 敏感和高度机密 SharePoint Online 团队网站。
-ms.openlocfilehash: 8c02f1416cb00150e68dcc27dc7afb41bf82ed21
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 004a1614330f220b31be640cd822d9fdcbb49b99
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在开发/测试环境中保护 SharePoint Online 网站
 
- **摘要：**开发/测试环境中创建公共、 专用、 敏感和高度机密 SharePoint Online 团队网站。
+ **摘要：** 开发/测试环境中创建公共、 专用、 敏感和高度机密 SharePoint Online 团队网站。
   
 本文提供了以创建包含四种不同的[安全 SharePoint Online 网站和文件](secure-sharepoint-online-sites-and-files.md)的解决方案的 SharePoint Online 团队网站开发/测试环境的指导。
   
@@ -66,18 +66,18 @@ ms.lasthandoff: 04/27/2018
   
 1. 在浏览器中，创建单独的选项卡，然后转到 Azure 门户在[https://portal.azure.com](https://portal.azure.com)。如果需要登录您的 Office 365 E5 试用订阅的全局管理员帐户的凭据。
     
-2. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”。
+2. 在 Azure 门户中，单击**Azure Active Directory > 组**。
     
-3. 在“所有组”边栏选项卡上，单击“+ 新建组”。
+3. 在**组-所有组**刀片中，单击 **+ 新建组**。
     
 4. 在“组”边栏选项卡上：
     
+  - 在**类型组**中选择**Office 365** 。
+    
   - 在“名称”中键入“高层管理人员”。
     
-  - 在“成员身份”中选择“已分配”。
-    
-  - 对“启用 Office 功能”单击“是”。
-    
+  - 在**成员资格类型**中选择**已分配**。
+      
 5. 单击“创建”，然后关闭“组”边栏选项卡。
     
 6. 对以下组名称重复步骤 3-5：
@@ -285,7 +285,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 5. 在“网站名称”中，键入“项目 1”。 
     
-6. 在**工作组网站说明中，**键入**Project 1 的 SharePoint 网站**。
+6. 在**工作组网站说明中，** 键入**Project 1 的 SharePoint 网站**。
     
 7. 在**隐私设置**中，选择**专用-只有成员可以访问此网站**，，然后单击**下一步**。
     
@@ -409,11 +409,11 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
   - 要与组织外部的用户共享，请下载并打开文件。 依次单击“文件”、“保护文档”、“使用密码加密”，然后指定强密码。 通过单独的电子邮件或其他通信方式发送密码。
     
-16. 单击“**确定**”。
+16. 单击“确定”****。
     
-17. 在**所需我们检测敏感信息时如何操作？**窗格中，清除**阻止某些人共享，并限制对共享内容的访问**复选框，然后单击**下一步**。
+17. 在**所需我们检测敏感信息时如何操作？** 窗格中，清除**阻止某些人共享，并限制对共享内容的访问**复选框，然后单击**下一步**。
     
-18. 在**您想要启用出第一个策略或测试事项？**窗格中，单击**是，立即打开**，，，然后单击**下一步**。
+18. 在**您想要启用出第一个策略或测试事项？** 窗格中，单击**是，立即打开**，，，然后单击**下一步**。
     
 19. 在**查看您的设置**窗格中，单击**创建**，然后单击**关闭**。
     
@@ -523,11 +523,11 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
   - 要与组织外部的用户共享，请下载并打开文件。 依次单击“文件”、“保护文档”、“使用密码加密”，然后指定强密码。 通过单独的电子邮件或其他通信方式发送密码。
     
-17. 单击“**确定**”。
+17. 单击“确定”****。
     
-18. 在**所需我们检测敏感信息时如何操作？**窗格中，选择**需要替代的业务理由**，，，然后单击**下一步**。
+18. 在**所需我们检测敏感信息时如何操作？** 窗格中，选择**需要替代的业务理由**，，，然后单击**下一步**。
     
-19. 在**您想要启用出第一个策略或测试事项？**窗格中，单击**是，立即打开**，，，然后单击**下一步**。
+19. 在**您想要启用出第一个策略或测试事项？** 窗格中，单击**是，立即打开**，，，然后单击**下一步**。
     
 20. 在**查看您的设置**窗格中，单击**创建**，然后单击**关闭**。
     
@@ -541,7 +541,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 3. 如果这是您正在配置 Azure 信息保护第一次，请参阅以下[说明](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)。
     
-4. 在列表窗格中，单击**多个服务**，键入**信息**，，然后单击**Azure 信息保护**。
+4. 在列表窗格中，单击**所有服务**，键入**信息**，，然后都单击**Azure 信息保护**。
     
 5. **Azure 信息保护**刀片上,，单击**范围策略 > + 添加新的策略**。
     
