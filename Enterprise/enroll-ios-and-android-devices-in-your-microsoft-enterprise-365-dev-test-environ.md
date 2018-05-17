@@ -3,7 +3,7 @@ title: 注册 iOS 和 Microsoft 企业 365 开发/测试环境中的 Android 设
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/14/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 摘要： 使用此测试实验室指南注册 Microsoft 365 开发/测试环境中的设备和远程管理它们。
-ms.openlocfilehash: b5ceecd74ac010d787bc580054d5dd43db952fef
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 8765a7ffb1bff1f257d7cd1ce5181561c2cf0080
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>注册 iOS 和 Microsoft 企业 365 开发/测试环境中的 Android 设备
 
