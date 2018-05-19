@@ -87,6 +87,7 @@
 #### [保护应用于 Office 365 中的个人数据](apply-protection-to-personal-data-in-office-365.md)
 #### [监控泄漏个人数据](monitor-for-leaks-of-personal-data.md)
 ### [内部部署 Office server GDPR](gdpr-for-office-servers.md)
+#### [SharePoint server GDPR](gdpr-for-sharepoint-server.md)
 #### [Exchange server GDPR](gdpr-for-exchange-server.md)
 #### [业务服务器 Skype 的 GDPR](gdpr-for-skype-for-business-server.md)
 #### [Project server GDPR](gdpr-for-project-server.md)
