@@ -1,5 +1,5 @@
 ---
-title: "混合云概述"
+title: 混合云概述
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
-description: "摘要： 了解 Microsoft 混合云的定义和元素。"
-ms.openlocfilehash: 3cf828b8411605a9d0bdd338c3b6c16a5892f6b7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要： 了解 Microsoft 混合云的定义和元素。
+ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="hybrid-cloud-overview"></a>混合云概述
 
@@ -72,7 +72,7 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
     
 - Identity
     
-    SaaS 和 Azure PaaS 混合方案的标识可以包括作为通用标识提供程序的 Azure AD，它可以与本地 Windows Server AD 同步，或与 Windows Sever AD 或其他标识提供程序联盟。还可以将本地标识基础结构扩展到 Azure IaaS。有关详细信息，请参阅 [企业级结构设计版的 Microsoft 云标识](microsoft-cloud-identity-for-enterprise-architects.md)。
+    SaaS 和 Azure PaaS 混合方案的标识可以包括作为通用标识提供程序的 Azure AD，它可以与本地 Windows Server AD 同步，或与 Windows Sever AD 或其他标识提供程序联盟。还可以将本地标识基础结构扩展到 Azure IaaS。有关详细信息，请参阅 [企业级结构设计版的 Microsoft 云标识](microsoft-cloud-it-architecture-resources.md#identity)。
     
 - 安全性
     

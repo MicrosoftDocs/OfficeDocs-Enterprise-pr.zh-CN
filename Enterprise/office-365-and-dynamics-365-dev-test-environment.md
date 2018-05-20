@@ -3,7 +3,7 @@ title: Office 365 和 Dynamics 365 开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,17 +14,20 @@ ms.collection:
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 摘要： 使用此测试实验室指南 Dynamics 365 添加到 Office 365 开发/测试环境。
-ms.openlocfilehash: ccf0615befe2ba74f85177dc252516f685655ed6
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 00d5cc0fd347aff7e201056f6af9ca271008d285
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境
 
- **摘要：**使用此测试实验室指南 Dynamics 365 添加到 Office 365 开发/测试环境。
+ **摘要：** 使用此测试实验室指南 Dynamics 365 添加到 Office 365 开发/测试环境。
   
 使用本文中的说明进行操作，将 Dynamics 365 试用订阅作为 Office 365 开发/测试环境添加到同一个组织，创建一个 Office 365 和 Dynamics 365 开发/测试环境。
+
+![Office 365 和 Dynamics 365 开发/测试环境](images/o365-dynamics365-dev-test.png)
+  
   
 可将 Dynamics 365 试用订阅用于演示 Dynamics 365 的功能和特性。Dynamics 365 计划 1（企业版试用）包括以下解决方案：
   
@@ -41,13 +44,15 @@ ms.lasthandoff: 04/27/2018
 ![Microsoft 云中的测试实验室指南](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 单击[下面](http://aka.ms/catlgstack)的 visual 映射到一个 Microsoft 云测试实验室指南堆栈中的所有文章。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>第 1 阶段：构建轻型或模拟的企业 Office 365 开发/测试环境
 
 如果您只想要测试 Office 365 和 Dynamics 365 轻型方式的最低要求，请在阶段 2 和 3 的[Office 365 开发/测试环境](office-365-dev-test-environment.md)按照的说明。
   
 如果您想要用于模拟企业测试 Office 365 和 Dynamics 365，请按照[目录同步的 Office 365 开发/测试环境](dirsync-for-your-office-365-dev-test-environment.md)中的说明。
+
+![Office 365 开发/测试环境](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 > [!NOTE]
 > 本文中的配置不需要模拟的企业开发/测试环境，该环境中包括连接到 Internet 的模拟内部网和 Windows Server AD 林的目录同步。它在此处作为一个选项提供，以便你可以测试 Office 365 和 Dynamics 365，并在代表典型组织的环境中对其进行试验。 
@@ -69,6 +74,8 @@ ms.lasthandoff: 04/27/2018
 5. 在“确认订单”页中，单击“立即试用”。
     
 6. 在“订单签收”页中，单击“继续”。
+
+![Office 365 和 Dynamics 365 开发/测试环境](images/o365-dynamics365-dev-test.png)
     
 > [!NOTE]
 > Dynamics 365 计划 1 企业版订阅试用期是 30 天。可以轻松地将该订阅的试用期再延长 30 天。对于永久性开发/测试环境，请使用少量许可证创建新的付费订阅。 

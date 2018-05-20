@@ -1,26 +1,25 @@
 ---
-title: "使用 PowerShell 执行直接转换迁移以迁移到 Office 365"
+title: 使用 PowerShell 执行直接转换迁移以迁移到 Office 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: "摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的直接转换迁移。"
-ms.openlocfilehash: 8181d59f53464034a584724dcb53956976c917dd
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的直接转换迁移。
+ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>使用 PowerShell 执行直接转换迁移以迁移到 Office 365
 
- **摘要：**了解如何使用 Windows PowerShell 执行直接转换迁移，以迁移到 Office 365。
+ **摘要：** 了解如何使用 Windows PowerShell 执行直接转换迁移，以迁移到 Office 365。
   
 通过直接转换迁移，您可以一次性将源电子邮件系统中用户邮箱的内容迁移到 Office 365。本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件直接转换迁移的任务。 
   
@@ -75,7 +74,7 @@ ms.lasthandoff: 02/09/2018
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **为内部部署用户帐户分配访问 Exchange 组织中的邮箱所需的权限。** 用于连接到内部部署 Exchange 组织的内部部署用户帐户（也称为迁移管理员）必须拥有访问要迁移到 Office 365 的邮箱所需的权限。该用户帐户用于创建内部部署组织的迁移终结点。
+- **分配所需的权限访问 Exchange 组织中的邮箱的内部部署用户帐户。** 用于连接到内部部署 Exchange 组织 （也称为迁移管理员） 的内部部署用户帐户必须具有访问您想要迁移到 Office 365 的内部部署邮箱的必要权限。此用户帐户用于创建迁移终结点到内部部署组织。
     
     以下列表显示了使用直接转换迁移迁移邮箱所需的管理权限。有三个可能的选项。
     
@@ -195,12 +194,12 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>第 7 部分：分配用户许可证
 <a name="BK_Step7"> </a>
 
- **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。**如果您不分配许可证，则在宽限期（30 天）结束后将禁用该邮箱。若要在 Office 365 管理中心 中分配许可证，请参阅[为 Office 365 商业版分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
+ **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。** 如果您不分配许可证，则在宽限期（30 天）结束后将禁用该邮箱。若要在 Office 365 管理中心 中分配许可证，请参阅[为 Office 365 商业版分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Step8"> </a>
 
-- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。**所有内部部署邮箱都迁移到 Office 365 以后，您可以为您的 Office 365 组织配置自动发现 DNS 记录，使用户可以轻松地使用 Outlook 和移动客户端连接到他们的新 Office 365 邮箱。此新自动发现 DNS 记录必须使用对 Office 365 组织使用的相同命名空间。例如，如果您基于云的命名空间是 cloud.contoso.com，则您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
+- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。** 所有内部部署邮箱都迁移到 Office 365 以后，您可以为您的 Office 365 组织配置自动发现 DNS 记录，使用户可以轻松地使用 Outlook 和移动客户端连接到他们的新 Office 365 邮箱。此新自动发现 DNS 记录必须使用对 Office 365 组织使用的相同命名空间。例如，如果您基于云的命名空间是 cloud.contoso.com，则您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
     
     如果您保留 Exchange Server，则还应确保在迁移后自动发现 DNS CNAME 记录必须在内部和外部 DNS 中指向 Office 365，以便 Outlook 客户端能够连接到正确的邮箱。
     
@@ -209,13 +208,13 @@ Remove-MigrationBatch -Identity CutoverBatch
   
     Office 365 使用 CNAME 记录为 Outlook 和移动客户端实现自动发现服务。自动发现 CNAME 记录必须包含以下信息：
     
-  - **别名：**autodiscover
+  - **别名：** autodiscover
     
-  - **目标：**autodiscover.outlook.com
+  - **目标：** autodiscover.outlook.com
     
     有关更多信息，请参阅[管理 DNS 记录时为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=535028)。
     
-- **停止使用内部部署 Exchange 服务器。**当您验证所有电子邮件都可以直接被路由到 Office 365 邮箱，并且您不再需要维护内部部署电子邮件组织或不用计划实施单点登录 (SSO) 解决方案以后，您可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
+- **停止使用内部部署 Exchange 服务器。** 当您验证所有电子邮件都可以直接被路由到 Office 365 邮箱，并且您不再需要维护内部部署电子邮件组织或不用计划实施单点登录 (SSO) 解决方案以后，您可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
     
     有关详细信息，请参阅以下资源：
     

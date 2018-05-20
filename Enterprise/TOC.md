@@ -3,7 +3,6 @@
 
 # [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 ## [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-### [面向企业架构师的 Microsoft 云标识](microsoft-cloud-identity-for-enterprise-architects.md)
 ### [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
 #### [发展你的云连接网络](evolving-your-network-for-cloud-connectivity.md)
 #### [Microsoft 云连接的公共元素](common-elements-of-microsoft-cloud-connectivity.md)
