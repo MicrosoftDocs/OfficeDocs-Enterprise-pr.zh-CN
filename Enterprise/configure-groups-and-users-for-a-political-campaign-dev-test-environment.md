@@ -1,135 +1,136 @@
 ---
-title: "配置组和用户对于政治市场开发/测试环境"
+title: 为政治宣传活动开发/测试环境配置组和用户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: None
-ms.custom:
-- DecEntMigration
+ms.collection:
+- Ent_O365
 - Strat_O365_Enterprise
+ms.service: o365-solutions
+localization_priority: Priority
+ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
-description: "摘要： 使用政治市场开发/测试环境的用户和组创建 Office 365 和企业移动 + 安全 (EMS) 的试用版本。"
-ms.openlocfilehash: 7faf428fc2225d3f31297ba6bf83a10a7682009a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
+ms.openlocfilehash: 8556040a648937d4c1bc338292be121e5d290dd9
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>配置组和用户对于政治市场开发/测试环境
+# <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
- **摘要：**与政治市场开发/测试环境的用户和组创建 Office 365 和企业移动 + 安全 (EMS) 的试用版本。
+ **摘要**：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
   
-使用本文中的说明创建包括简化的用户帐户和组的[Microsoft 安全指南为政治运动、 非营利性组织和其他的敏捷组织](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解决方案的开发/测试环境。
+使用本文中的说明创建一个开发/测试环境，其中包含[面向政治宣传活动、非盈利组织和其他敏捷组织的 Microsoft 安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解决方案的简化用户帐户和组。
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>第 1 阶段：创建 Office 365 开发/测试环境
 
-在此阶段中，您将获得 Office 365 E5 和企业移动性 + 表示政治运动的虚拟组织的安全 (EMS) E5 试用订阅。
+在此阶段，将获取用于虚拟组织（代表政治宣传活动）的 Office 365 E5 和企业移动性 + 安全性 (EMS) E5 的试用订阅。
   
-首先，按照**第二阶段**的[Office 365 的开发/测试环境](office-365-dev-test-environment.md)中的说明进行操作。
+首先，按照 [Office 365 开发/测试环境](office-365-dev-test-environment.md)的**阶段 2** 中的说明进行操作。
   
-接下来，EMS E5 试用订阅注册，即可将其添加到作为 Office 365 的试用订阅的同一组织。
+下一步，注册 EMS E5 试用订阅，并将其作为 Office 365 试用订阅添加到同一组织。
   
-1. 如果需要请登录到您的订购试用期的全局管理员帐户的凭据对 Office 365 门户。有关帮助信息，请参阅[登录到 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录 Office 365 门户。如需帮助，请参阅[在哪里登录 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 单击**管理**拼贴。
+2. 单击“管理员”磁贴****。
     
-3. 在浏览器中，在左边的导航中， **Office 管理中心**选项卡单击**计费 > 购买服务**。
+3. 在浏览器的“Office 管理中心”标签页的左侧导航中，单击“帐单”>“购买服务”********。
     
-4. **购买服务**页上找到**企业移动 + 安全 E5**项。将鼠标指针悬停在其上，单击**启动免费试用版**。
+4. 在“购买服务”**** 页上，找到“企业移动性 + 安全性 E5”**** 项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”****。
     
-5. 在**确认订单**页中，单击**立即尝试**。
+5. 在“确认订单”页上，单击“立即试用”********。
     
-6. 在**订单收据**页上，单击**继续**。
+6. 在“订单签收”页上，单击“继续”********。
     
-下一步，使您的全局管理员帐户的 EMS E5 许可证。
+接下来，为全局管理员帐户启用 EMS E5 许可证。
   
-1. 在浏览器中，在左边的导航中， **Office 365 管理中心**选项卡单击**用户 > 活动用户**。
+1. 在浏览器的“Office 365 管理中心”**** 标签页的左侧导航中，单击“用户”>“活动用户”****。
     
-2. 单击您的全局管理员帐户，然后单击**编辑****产品**许可证。
+2. 单击全局管理员帐户，然后针对“产品许可证”单击“编辑”********。
     
-3. **产品许可证**的窗格中，在打开产品许可证**的企业移动性 + 安全 E5**到**上**，单击**保存**，然后两次单击**关闭**。
+3. 在“产品许可证”**** 窗格，将“企业移动 +安全 E5”**** 的产品许可证设置为“打开”****，单击“保存”****，然后单击“关闭”**** 两次。
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>第 2 阶段： 创建和配置 Azure 活动目录 (AD) 组
+## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>第 2 阶段：创建和配置 Azure Active Directory (AD) 组
 
-在此阶段中，您创建和市场配置的 Azure AD 组。
+在此阶段，为活动创建和配置 Azure AD 组。
   
-首先，Azure 门户创建一组典型政治市场活动组。
+首先，通过 Azure 门户为典型政治宣传活动创建一系列组。
   
-1. 您的浏览器在单独的选项卡，请转到 Azure 门户网站位于[https://portal.azure.com](https://portal.azure.com)。如果需要请为您的 Office 365 E5 试用订阅登录的全局管理员帐户的凭据。
+1. 在浏览器的单独标签页上，转到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。如有需要，请使用 Office 365 E5 试用订阅的全局管理员帐户凭据登录。
     
-2. 在 Azure 的门户，单击**Azure Active Directory > 用户和组 > 所有组**。
+2. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”****。
     
-3. 请执行以下步骤在此列表中每个组的名称：
+3. 对此列表中的每个组名称执行以下步骤：
     
-  - 高级和战略性工作人员
+  - 高级和战略人员
     
   - IT 人员
     
   - 分析人员
     
-  - 常规的核心人员
+  - 常规核心人员
     
-  - 操作人员
+  - 运营人员
     
-  - 现场员工
+  - 现场人员
     
-1. **所有组**刀片式服务器，请单击**+ 新组**。
+1. 在“所有组”边栏选项卡上，单击“+ 新建组”********。
     
-2. 在**名称**中键入列表中的组名称。
+2. 在“名称”**** 中键入列表中的组名称。
     
-3. 选择**动态的用户****成员身份**。
+3. 在“成员资格”**** 中选择“动态用户”****。
     
-4. **启用 Office 功能**，请单击**是**。
+4. 对“启用 Office 功能”单击“是”********。
     
-5. 单击**添加动态查询**。
+5. 单击“添加动态查询”****。
     
-6. 在**中添加用户，**，选择**部门**。
+6. 在“添加以下位置的用户”**** 中，选择“部门”****。
     
-7. 在下一个字段中，选择**等于**。
+7. 在下一个字段中，选择“等于”****。
     
 8. 在下一个字段中，键入列表中的组名称。
     
-9. 单击**添加查询**，然后单击**创建**。
+9. 单击“添加查询”****，然后单击“创建”****。
     
-10. 单击**用户和组的所有组**。
+10. 单击“用户和组 - 所有组”****。
     
-下一步，以便成员会自动分配 Office 365 E5 和 EMS E5 许可证配置组。
+接下来，配置组以便成员被自动分配 Office 365 E5 和 EMS E5 许可证。
   
-1. 在 Azure 的门户，单击**Azure Active Directory > 许可证 > 所有产品**。
+1. 在 Azure 门户中，单击“Azure Active Directory”>“许可证”>“所有产品”****。
     
-2. 在列表中，选择**企业移动 + 安全 E5**和**Office 365 企业 E5**，然后单击**+ 分配**。
+2. 在列表中，选择“企业移动性 + 安全性 E5”**** 和“Office 365 企业版 E5”****，然后单击“+ 分配”****。
     
-3. 在**分派许可证**刀片式服务器，单击**用户和组**。
+3. 在“分配许可证”边栏选项卡中，单击“用户和组”********。
     
-4. 在组列表中，选择下列设置：
+4. 在组列表中，选择以下各项：
     
   - 分析人员
     
-  - 现场员工
+  - 现场人员
     
   - IT 人员
     
-  - 操作人员
+  - 运营人员
     
-  - 常规的核心人员
+  - 常规核心人员
     
-  - 高级和战略性工作人员
+  - 高级和战略人员
     
-5. 单击**选择**，然后单击**分配**。
+5. 单击“选择”****，然后单击“分配”****。
     
-6. 关闭您的浏览器中的 Azure 门户选项卡。
+6. 关闭浏览器中的 Azure 门户选项卡。
     
-## <a name="phase-3-add-your-user-accounts"></a>阶段 3： 添加用户帐户
+## <a name="phase-3-add-your-user-accounts"></a>第 3 阶段：添加用户帐户
 
-在此阶段中，您添加示例用户帐户为您的政治运动。
+在这一阶段，为政治宣传活动添加示例用户帐户。
   
-首先，您[使用 Azure 活动目录 V2 PowerShell 模块连接](https://go.microsoft.com/fwlink/?linkid=842218)。
+首先，[连接到 Azure Active Directory V2 PowerShell 模块](https://go.microsoft.com/fwlink/?linkid=842218)。
   
-接下来，您填写您的组织名称、 您所在的位置和常见的密码，并从 PowerShell 命令提示符或脚本集成环境 (ISE) 运行这些命令：
+接下来，填写你的组织名称、位置和常用密码，然后从 PowerShell 命令提示符或集成的脚本环境 (ISE) 运行这些命令：
   
 ```
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
@@ -161,45 +162,45 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 ```
 
 > [!IMPORTANT]
-> 使用常见是配置的密码的自动化和易于开发/测试环境。不推荐用于生产订阅。随着每个新用户帐户登录，系统会提示您更改密码。 
+> 此处使用常用密码是为了自动化和方便配置开发/测试环境。但是对于生产订阅，不建议这样做。在登录这些新用户帐户时，系统将提示你更改密码。 
   
-使用下列步骤验证动态组成员关系和基于组的授权工作正常。
+使用这些步骤验证动态组成员资格和基于组的许可是否工作正常。
   
-1. 从浏览器的**Microsoft Office 主页**选项卡上，单击**管理**拼贴。
+1. 在浏览器的“Microsoft Office 主页”标签页中，单击“管理员”磁贴********。
     
-2. 您的浏览器的新**办公室管理中心**标签，单击**用户**。
+2. 在浏览器的新“Office 管理中心”标签页中，单击“用户”********。
     
-3. 在用户列表中，单击**候选**。
+3. 在用户列表中，单击“候选人”****。
     
-4. 在列出**候选**用户帐户的属性窗格中，请验证：
+4. 在列出“候选人”**** 用户帐户属性的窗格中，确保：
     
-  - 它是**高级和战略性工作人员**（在**组成员身份**） 组的成员。
+  - 它是“高级和战略人员”**** 组（位于“组成员资格”****）的成员。
     
-  - 它已分配**的企业移动性 + 安全 E5**和**Office 365 企业 E5**许可证 （在**产品许可证**）。
+  - 它已被分配“企业移动性 + 安全性 E5”**** 和“Office 365 企业 E5”**** 许可证（位于“产品许可证”**** 中）。
     
-5. 关闭**候选**用户帐户窗格。
+5. 关闭“候选人”**** 用户帐户窗格。
     
-## <a name="record-values-for-future-reference"></a>记录值以供将来参考
+## <a name="record-values-for-future-reference"></a>记录这些值以供将来参考
 
-记录这些值使用 Office 365 和 EMS 试用版本，此开发/测试环境：
+记录此开发/测试环境的这些值以用于 Office 365 和 EMS 试用订阅：
   
-- 您的订购试用期的组织名称: ___ 
+- 试用订阅组织名称：_______________________________________________ 
     
-    例如，contoso.onmicrosoft.com 的试用订阅域名，单位名称为"contoso"。
+    例如，对于 contoso.onmicrosoft.com 的试用订阅域名，组织名称是“contoso”。
     
-- Office 365 全局管理员名称： ___.onmicrosoft.com
+- Office 365 全局管理员名称：____________________________________.onmicrosoft.com
     
-    此帐户的密码和其他用户帐户的通用初始密码记录在一个安全的位置。
+    在安全位置记录此帐户的密码和其他用户帐户的常用初始密码。
     
 ## <a name="next-step"></a>后续步骤
 
-构建四个不同类型的 SharePoint Online 工作组网站[创建工作组网站的政治运动开发/测试环境中](create-team-sites-in-a-political-campaign-dev-test-environment.md)具有此开发/测试环境中。
+通过[在政治宣传活动开发/测试环境中创建团队网站](create-team-sites-in-a-political-campaign-dev-test-environment.md)，在此开发/测试环境中构建四种不同类型的 SharePoint Online 团队网站。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>另请参阅
 
-[为政治运动、 非营利性组织和其他敏捷组织的 Microsoft 安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[在政治运动的开发/测试环境中创建工作组网站](create-team-sites-in-a-political-campaign-dev-test-environment.md)
+[在政治宣传活动开发/测试环境中创建团队网站](create-team-sites-in-a-political-campaign-dev-test-environment.md)
   
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

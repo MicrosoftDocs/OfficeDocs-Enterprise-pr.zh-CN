@@ -7,62 +7,62 @@ ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: 摘要： 了解如何配置跨场所 Azure 办公室服务器工作负载的站点到站点 VPN 连接的虚拟网络。
-ms.openlocfilehash: 818e709c8177c6533bfa02da00170bf7fdb5a0ac
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
-ms.translationtype: MT
+description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
+ms.openlocfilehash: de61603781009149c284701f749f42cfdd0881f6
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
  **摘要：** 了解如何为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
   
-Azure 的虚拟网络连接到内部网络，扩展您的网络子网和承载的虚拟机包括在 Azure 的基础结构服务跨场所。此连接允许计算机在内部网络直接访问虚拟机在 Azure，反之亦然。 
+Azure 跨界虚拟网络连接到本地网络，从而可扩展网络以包含在 Azure 基础结构服务中托管的子网和虚拟机。上述连接允许本地网络中的计算机直接访问 Azure 中的虚拟机，反之亦然。 
 
-例如，Azure 的虚拟机上运行的目录同步服务器需要查询内部域控制器对帐户进行更改并将这些更改与 Office 365 订阅同步。本文介绍如何设置跨场所 Azure 虚拟网络使用就可以承载 Azure 的虚拟机的站点到站点虚拟专用网络 (VPN) 连接。
+例如，在 Azure 虚拟机上运行的一个目录同步服务器需要查询本地域控制器，以获取对帐户所做的更改并将其与 Office 365 订阅同步。本文介绍如何使用已准备就绪托管 Azure 虚拟机的站点间虚拟专用网络 (VPN) 连接来设置跨界 Azure 虚拟网络。
 
 ## <a name="overview"></a>概述
 
 Azure 中的虚拟机无需与本地环境隔离。若要将 Azure 虚拟机连接到本地网络资源，必须配置 Azure 跨界虚拟网络。下图显示了使用 Azure 中的虚拟机部署跨部署 Azure 虚拟网络所需的组件。
   
-![通过站点到站点 VPN 连接来连接到 Microsoft Azure 的本地网络连接](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
+![通过站点间 VPN 连接来连接到 Microsoft Azure 的本地网络连接](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-在图中，是通过站点到站点 VPN 连接来连接两个网络： 内部网络和 Azure 的虚拟网络。为站点到站点 VPN 连接：
+在该关系图中，有两个通过站点间 VPN 连接进行连接的网络：本地网络和 Azure 虚拟网络。站点间 VPN 连接为：
 
-- 两个端点之间所寻址和公用的 Internet 上找到。
-- 终止在内部网络上的 VPN 设备和 Azure 的虚拟网络上的 Azure VPN 网关。
+- 在可寻址和位于在公共 Internet 上的两个终结点之间。
+- 两端分别为本地网络中的 VPN 设备和 Azure 虚拟网络中的 Azure VPN 网关。
 
-在 Azure 的虚拟网络承载的虚拟机。源自于 Azure 的虚拟网络上的虚拟机的网络流量获取转发到 VPN 网关，然后转发通讯，通过站点到站点 VPN 连接到内部网络上的 VPN 设备。内部网络的路由结构然后转发到目标的通信。
+Azure 虚拟网络托管虚拟机。Azure 虚拟网络上从虚拟机发出的网络流量将转发到 VPN 网关，然后再跨站点间 VPN 连接将流量转发到本地网络上的 VPN 设备。本地网络的路由基础结构接着会将流量转发到其目标。
 
 >[!Note]
->您还可以使用[ExpressRoute](https://azure.microsoft.com/services/expressroute/)，这是您的组织和 Microsoft 的网络之间的直接连接。通过 ExpressRoute 的通信不经过公共 Internet 上。本文不介绍如何使用 ExpressRoute。
+>此外，你还可以使用 [ExpressRoute](https://azure.microsoft.com/services/expressroute/)，即组织和 Microsoft 网络之间的直接连接。ExpressRoute 上的流量不会在公共 Internet 上传输。本文对 ExpressRoute 的用法将不做介绍。
 >
   
 要设置 Azure 虚拟网络和本地网络之间的 VPN 连接，请执行以下步骤： 
   
-1. **本地：** 为指向本地 VPN 设备的 Azure 虚拟网络的地址空间定义并创建本地网络路由。
+1. **** 本地：为指向本地 VPN 设备的 Azure 虚拟网络的地址空间定义并创建本地网络路由。
     
-2. **Microsoft Azure:** 创建站点到站点 VPN 连接使用 Azure 的虚拟网络。 
+2. **** Microsoft Azure：使用站点间 VPN 连接创建一个 Azure 虚拟网络。 
     
-3. **本地：** 将本地硬件或软件 VPN 设备配置为终止使用遵循 Internet 协议安全性 (IPsec) 的 VPN 连接。
+3. **** 本地：将本地硬件或软件 VPN 设备配置为终止使用遵循 Internet 协议安全性 (IPsec) 的 VPN 连接。
     
 建立站点到站点 VPN 连接后，将 Azure 虚拟机添加到虚拟网络子网。
   
-## <a name="plan-your-azure-virtual-network"></a>规划您的 Azure 虚拟网络
+## <a name="plan-your-azure-virtual-network"></a>规划你的 Azure 虚拟网络
 <a name="PlanningVirtual"></a>
 
 ### <a name="prerequisites"></a>先决条件
 <a name="Prerequisites"></a>
 
-- Azure 的订阅。Azure 订阅有关信息，请转到[如何购买 Azure 页](https://azure.microsoft.com/pricing/purchase-options/)。
+- Azure 订阅。有关 Azure 订阅的信息，请转到[如何购买 Azure 页面](https://azure.microsoft.com/pricing/purchase-options/)。
     
 - 可用的专用 IPv4 地址空间，将分配给虚拟网络及其子网，具有足够的空间容纳现在和将来所需的虚拟机。
     
@@ -339,15 +339,15 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>阶段 3（可选）：添加虚拟机
 
-在 Azure 创建虚拟机所需。有关详细信息，请参阅[创建 Windows Azure 门户网站虚拟机](https://go.microsoft.com/fwlink/p/?LinkId=393098)。
+在 Azure 中创建所需的虚拟机。有关详细信息，请参阅[在 Azure 门户中创建 Windows 虚拟机](https://go.microsoft.com/fwlink/p/?LinkId=393098)。
   
 使用以下设置：
   
-- 在" **基本信息** "窗格中，选择与虚拟网络相同的订阅和资源组。在安全的位置记录用户名和密码。你稍后将需要使用这些信息登录到虚拟机。
+- 在****“基本信息”窗格中，选择与虚拟网络相同的订阅和资源组。在安全的位置记录用户名和密码。你稍后将需要使用这些信息登录到虚拟机。
     
-- 在" **大小** "窗格中，选择合适的大小。
+- 在****“大小”窗格中，选择合适的大小。
     
-- 在" **设置** "窗格的" **存储** "部分中，选择用于设置虚拟网络的" **标准** "存储类型和存储帐户。在" **网络** "部分中，选择虚拟网络的名称和托管虚拟机（不是网关子网）的子网。其他所有设置都保留默认值。
+- 在****“设置”窗格的 ****“存储”部分中，选择用于设置虚拟网络的****“标准”存储类型和存储帐户。在****“网络”部分中，选择虚拟网络的名称和托管虚拟机（不是网关子网）的子网。其他所有设置都保留默认值。
     
 请检查内部 DNS 验证虚拟机是否正确使用 DNS，确保已为新虚拟机添加地址 (A) 记录。要访问 Internet，必须将 Azure 虚拟机配置为使用本地网络的代理服务器。有关要在服务器上执行的其他配置步骤，请与网络管理员联系。
   

@@ -1,5 +1,5 @@
 ---
-title: 在 multgeo 环境中的用户体验
+title: 多地理位置环境中的用户体验
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,52 +7,53 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: 了解多地理环境中的 SharePoint 和 OneDrive 的用户体验。
-ms.openlocfilehash: 42e384d3e93ca3f5a06a8ee07a37b10e21477038
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: 了解多地理位置环境中的 SharePoint 和 OneDrive 用户体验。
+ms.openlocfilehash: 3c7e4b6802bddc78db016c9c282f5add0c71c491
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="user-experience-in-a-multi-geo-environment"></a>在多个地理环境中的用户体验
+# <a name="user-experience-in-a-multi-geo-environment"></a>多地理位置环境中的用户体验
 
-下面是您的用户将看到在 OneDrive 多地区配置：
+下面是你的用户将在 OneDrive 多地理位置配置中看到的内容：
 
-#### <a name="users-onedrive-for-business-location"></a>营业地点的用户的 OneDrive
+#### <a name="users-onedrive-for-business-location"></a>用户的 OneDrive for Business 位置
 
-用户将拥有其业务在其首选的数据位置设置为 OneDrive。如果用户导航到包含不正确的地理位置 （例如，从地理位置上一书签） OneDrive URL 时，它们将自动重定向到适当的地理位置在 OneDrive。
+用户将在其首选数据位置预配 OneDrive for Business。如果用户导航到包含错误地理位置的 OneDrive URL（如来自先前地理位置的书签），则会将其自动重定向到相应地理位置的 OneDrive。
 
 #### <a name="sharing"></a>共享
 
-人员选取器体验向所有用户都显示无论其地理位置如何。这允许用户在其同一地区或任何其他租户的地理位置，与其他用户共享。来自不同的地理位置会显示在**与我共享**视图中为业务用户的 OneDrive 和可以使用单点登录体验，而不考虑哪些地理位置位于访问的内容。
+人员选取器体验将显示所有用户，无论他们的地理位置如何。这允许用户与同一地理位置或任何其他租户地理位置中的另一个用户共享。不同地理位置的内容将显示在用户的 OneDrive for Business 的“与我共享”**** 视图中，而且无论其托管在哪个地理位置，都可以通过单一登录体验进行访问。
 
 #### <a name="office-applications"></a>Office 应用程序
 
-登录时，office 应用程序如 Word 和 Excel 中，PowerPoint 将自动检测业务地理位置的每个用户正确的 OneDrive。用户不需要输入其 OneDrive 的地区特定 URL。
+Word、Excel 和 PowerPoint 等 Office 应用程序会在每个用户登录时自动为其检测正确的 OneDrive for Business 地理位置。用户无需输入其 OneDrive 特定于地理位置的 URL。
 
-#### <a name="onedrive-for-business-sync-client"></a>OneDrive 业务同步客户端
+#### <a name="onedrive-for-business-sync-client"></a>OneDrive for Business 同步客户端
 
-为业务同步客户端 OneDrive (版本 17.3.6943.0625 或更高版本) 将自动检测正确的 OneDrive 为业务用户的地理位置。
+OneDrive for Business 同步客户端（版本 17.3.6943.0625 及更高版本）将自动为用户检测正确的 OneDrive for Business 地理位置。
 
 #### <a name="office-365-app-launcher"></a>Office 365 应用启动器
 
-应用程序启动程序多地理感知，将定向到适当的地理位置的工作负载的每个图块。OneDrive 图块指向承载用户的 OneDrive 库位置，虽然 SharePoint 图块将指向所有用户的中心位置，如仍那里托管团队站点的正确的地理位置。
+该应用启动器可感知多地理位置，并将每个磁贴定向到工作负载的相应地理位置。OneDrive 磁贴指向托管用户的 OneDrive 库的正确地理位置，而 SharePoint 磁贴会将所有用户指向中心位置，因为团队网站仍托管在那里。
 
-#### <a name="delve-user-profiles"></a>深入用户配置文件
+#### <a name="delve-user-profiles"></a>Delve 用户配置文件
 
-用户配置文件信息被掌握在用户的地理位置。当选择用户，您将重定向到适当的地理位置对于用户，您看他们完整的配置文件的详细信息。
+用户配置文件信息在用户的地理位置中进行管控。选择用户时，你将被定向到用户的相应地理位置，从中你将看到他们的完整配置文件详情。
 
-如果 Delve 被关闭，您将看到在 SharePoint 中，遇到不知道多地理经典配置文件。
+如果 Delve 已关闭，你将看到 SharePoint 中的经典配置文件体验，该体验无法感知多地理位置。
 
 #### <a name="delve"></a>Delve
 
-对于 Office 365 提供用户在卫星情况，深入多地区支持，Delve 没有链接到 SharePoint 博客文章编写的其他地区，只有在对 SharePoint 博客站点的用户限制。
+对于位于附属实例中的 Office 365 用户，支持 Delve 多地理位置，但也存在限制，Delve 不会链接到其他区域的用户撰写的 SharePoint 博客文章，只会链接到其 SharePoint 博客网站。
 
 #### <a name="search"></a>搜索
 
-每个地理位置都有其自己的搜索索引和搜索中心。当用户搜索时，查询被发送到所有的地理位置，并返回的结果被合并，并且然后排名使用户可以通过统一的结果。从所有的地理位置，而不考虑自己的地理位置，用户可以得到结果。有关详细信息，请参阅[配置搜索 OneDrive 业务多的地区](configure-search-for-multi-geo.md)。
+每个地理位置都有其自己的搜索索引和搜索中心。当用户搜索时，查询将发送到所有地理位置，并将返回的结果合并，然后进行排名，以便用户获得统一的结果。用户将获取来自所有地理位置的结果，而不管他们自己的地理位置如何。有关详情，请参阅[配置 OneDrive for Business 多地理位置的搜索](configure-search-for-multi-geo.md)。
 
 支持下列搜索客户端：
 
@@ -68,10 +69,10 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="onedrive-ios-and-android"></a>OneDrive iOS 和 Android 
 
-OneDrive iOS 和 Android 的移动应用程序将向您展示您的 OneDrive 文件和不管其地理位置与您共享的文件。从 OneDrive 的移动应用程序的搜索将显示来自所有地理位置相关的结果。请下载最新版本的这些应用程序。
+OneDrive iOS 和 Android 移动应用将向你显示你的 OneDrive 文件和与你共享的文件，无论你的地理位置如何。从 OneDrive 移动应用搜索将显示来自所有地理位置的相关结果。请下载这些应用的最新版本。
 
-有关详细信息，请参阅使用[OneDrive 在 iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247)和[Android 的使用 OneDrive](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) 。
+有关详细信息，请参阅使用 [iOS 上的 OneDrive](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) 和[使用适用于 Android 的 OneDrive](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36)。
 
-#### <a name="teams-experience"></a>团队的经验
+#### <a name="teams-experience"></a>Teams 体验
 
-团队是多地理意识。而不考虑用户的地理位置显示 OneDrive 文件和最近查看过的文件。@ 提及所有地理位置的用户使用。
+Teams 可感知多地理位置。无论用户的地理位置如何，都会显示 OneDrive 文件和最近查看的文件。@ 提到与所有地理位置的用户协作的工作。

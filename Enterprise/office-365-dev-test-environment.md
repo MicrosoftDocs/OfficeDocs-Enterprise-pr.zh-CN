@@ -7,29 +7,29 @@ ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
-description: 摘要： 使用此测试实验室指南创建 Office 365 提供试用版订购评估或开发/测试。
-ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
-ms.translationtype: MT
+description: 摘要：使用此测试实验室指南创建用于评估或开发/测试的 Office 365 试用订阅。
+ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
- **摘要：**此测试实验室指南用于创建 Office 365 提供试用版订购评估或开发/测试。
+ **摘要：** 使用此测试实验室指南创建用于评估或开发/测试的 Office 365 试用订阅。
   
 可以使用 Office 365 试用订阅并创建应用程序的 Office 365 开发/测试环境，或演示 Office 365 的特性和功能。有两个版本：
   
 - 轻型 Office 365 开发/测试环境包含从你的主计算机进行访问的 Office 365 试用订阅。
     
-    当您希望快速演示功能时使用该环境。对于轻量级的 Office 365 开发/测试环境，完成阶段 2 和 3 的这篇文章。
+    当希望快速演示功能时使用此环境。对于轻量级的 Office 365 开发/测试环境，请仅完成本文中的阶段 2 和阶段 3。
     
 - 模拟企业 Office 365 开发/测试环境包含一个 Office 365 试用订阅和一个连接到 Internet 的简化的组织 Intranet（托管在 Microsoft Azure 基础结构服务中）。你可以完全在云中生成此配置。
     
@@ -41,17 +41,19 @@ ms.lasthandoff: 04/19/2018
 ![Microsoft 云中的测试实验室指南](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)为可视化映射到一个 Microsoft 云测试实验室指南堆栈中的所有项目。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>第 1 阶段：在 Azure 中创建基本配置
 
-按照[基本配置开发/测试环境](base-configuration-dev-test-environment.md)中的说明进行操作。
+按照[基本配置开发/测试环境](base-configuration-dev-test-environment.md)中的说明执行操作。
   
-您将需要 Azure 的订阅。对于此配置，可以使用[Azure 免费试用版](https://azure.microsoft.com/pricing/free-trial/)。如果您订阅了 MSDN 或 Visual Studio，请参见[为 Visual Studio 订户每月 Azure 信用](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)。
+你将需要有一个 Azure 订阅。你可以使用 [Azure 免费试用版](https://azure.microsoft.com/pricing/free-trial/)进行此设置。如果你有 MSDN 或 Visual Studio 订阅，请参阅 [Visual Studio 订阅者的每月 Azure 额度](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)。
   
 下面是生成的配置。
   
-![Azure 中的基础配置开发/测试环境](images/63108214-f716-46ae-9974-072ff15b44a2.png)
+![Azure 中的基础配置开发/测试环境](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+
+
   
 该配置包括 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。
   
@@ -59,23 +61,23 @@ ms.lasthandoff: 04/19/2018
 
 要启动 Office 365 E5 试用订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
-1. 我们建议，Contoso 的公司名称变量，该变量用于您公司的名称，它是 Microsoft 示例内容中使用虚构的公司，但它并不是必需。记录您的虚构公司名称：![](./images/Common_Images/TableLine.png)
+1. 我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称：![](./images/Common_Images/TableLine.png)
     
-2. 要注册新的 Microsoft 帐户，请转到[https://outlook.com](https://outlook.com)和新电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
+2. 要注册新的 Microsoft 帐户，请转到 [https://outlook.com](https://outlook.com)，然后使用新的电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
     
-  - 记录您的新帐户的第一个和最后一个名称：![](./images/Common_Images/TableLine.png)
+  - 在此记录新帐户的名字和姓氏：![](./images/Common_Images/TableLine.png)
     
-  - 记录下面新的电子邮件帐户地址： ![](./images/Common_Images/TableLine.png)@outlook.com
+  - 在此记录新的电子邮件帐户地址：![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>注册 Office 365 E5 试用订阅
 
-1. 轻量的 Office 365 开发/测试环境，打开在您的计算机上的 Internet 浏览器并转到[https://aka.ms/e5trial](https://aka.ms/e5trial)。 
+1. 对于轻量级的 Office 365 开发/测试环境，打开你的计算机上的 Internet 浏览器并转到 [https://aka.ms/e5trial](https://aka.ms/e5trial)。 
     
-    模拟的企业 Office 365 的开发/测试环境中，连接到客户端 1 CORP\User1 帐户从 Azure 的门户。
+    对于模拟的企业 Office 365 开发/测试环境，请使用 CORP\User1 帐户从 Azure 门户连接到 CLIENT1。
 
-    从开始屏幕中，运行 Microsoft 边缘，然后转至[https://aka.ms/e5trial](https://aka.ms/e5trial)。
+    从“开始”屏幕中，运行 Microsoft Edge 然后转到 [https://aka.ms/e5trial](https://aka.ms/e5trial)。
     
-2. 在**欢迎，让我们知道您**的页中，指定：
+2. 在“欢迎，很高兴认识你”**** 页上，请指定：
     
   - 你的实际位置
     
@@ -89,37 +91,37 @@ ms.lasthandoff: 04/19/2018
     
   - 规模达 250-999 人的组织
     
-3. 单击**只是一个更多的步骤**。
+3. 单击“只需再执行一步”****。
     
-4. 在**创建您的用户 ID**页中，键入用户名称基于您新的电子邮件地址，您之后的虚构公司 @ 符号 （删除所有名称中包含空格），然后针对此新的 Office 365 提供帐户密码 （两次）。
+4. 在“**创建你的用户 ID**”页上，基于你新的电子邮件地址、@ 符号之后你的虚构公司（删除名称中的所有空格）键入用户名，然后为此新的 Office 365 帐户键入密码（两次）。
     
     将你键入的密码记录在安全的位置。
     
-    记录您的虚构的公司名称，作为该**组织名称**，此处被称为：![](./images/Common_Images/TableLine.png)
+    在此记录你的虚构公司名称，将其称为“组织名称”****：![](./images/Common_Images/TableLine.png)
     
-5. 单击**我的帐户**。
+5. 单击“创建我的帐户”****。
     
-6. 在**上证明。你。不。答： 机器人。**页上，键入的文本功能手机的电话号码，然后单击**文本我**。
+6. 在“证明你不是机器人”**** 页上，键入可发短信的手机号码，然后单击“给我发短信”****。
     
-7. 键入接收的文本消息的验证代码，然后单击**下一步**。
+7. 键入短信中收到的验证代码，然后单击“下一步”****。
     
-8. 记录登录页面 URL （选择和复制）：![](./images/Common_Images/TableLine.png)
+8. 在此记录登录页面 URL（选择并复制）：![](./images/Common_Images/TableLine.png)
     
-9. 记录该用户 ID 在此处 （选择和复制）： ![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
+9. 在此记录用户 ID（选择并复制）：![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-    此值称为**Office 365 全局管理员名称**。
+    此值将被称为“Office 365 全局管理员名称”****。
     
-10. 当看到**你准备就绪**时，请单击它。
+10. 看到“你已准备就绪”**** 时，请单击它。
     
-11. 在下一页上，等待，直到 Office 365 提供了完成设置和所有拼块都可用。
+11. 在下一页，等到 Office 365 完成设置并且显示所有标题。
     
-应该可以看到 Office 365 门户主页面，你可以从该页面访问 Office Online 服务和 Office 365 管理中心。
+你应可看到 Office 365 门户主页，可从该页访问 Office Online 服务和 Office 365 管理中心。
   
-在模拟的企业 Office 365 的开发/测试环境中，以下是你的结果配置。
+对于模拟的企业 Office 365 的开发/测试环境，以下是你的结果配置。
   
 ![Office 365 开发/测试环境](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
-此配置包括：  
+此配置包括： 
   
 - Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。
     
@@ -129,15 +131,15 @@ ms.lasthandoff: 04/19/2018
 
 在这个阶段，配置包含其他用户和 SharePoint Online 团队网站的 Office 365 订阅。
   
-首先，添加四个新用户并为他们分配 E5 许可证。
+首先，添加 4 个新用户并为他们分配 E5 许可证。
   
-使用中的说明[连接到 Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) PowerShell 模块安装并连接到您新的 Office 365 订阅：
+使用[连接到 Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) 中的说明，从以下位置安装 PowerShell 模块并连接到新的 Office 365 订阅：
   
 - 你的计算机（对于轻量级的 Office 365 开发/测试环境）。
     
-- CLIENT1 虚拟机（对于企业 Office 365 开发/测试环境）。
+- CLIENT1 虚拟机（对于模拟的企业 Office 365 开发/测试环境）。
     
- 在 Windows PowerShell 凭据请求对话框中，键入 Office 365 全局管理员名称 (示例： jdoe@contosotoycompany.onmicrosoft.com) 和密码。
+ 在“Windows PowerShell 凭据请求”对话框中，键入 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码。
   
 填写组织名称（示例：contosotoycompany），你所在位置的两位字符的国家/地区代码，然后从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
   
@@ -149,9 +151,9 @@ $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 > [!TIP]
-> 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)以获取包含本文中的所有 PowerShell 命令的文本文件。
+> 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)，可获取包含本文中所有 PowerShell 命令的文本文件。
 
-从**新建 MsolUser**命令显示时，请注意用户 2 帐户生成的密码并将其记录在安全的地方。
+在显示的 **New-MsolUser** 命令中，请注意为 User 2 帐户生成的密码并将其记录在安全的位置。
   
 从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
   
@@ -160,7 +162,7 @@ $userName= "user3@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 3" -FirstName User -LastName 3 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-从**新建 MsolUser**命令显示时，请注意用户 3 帐户生成的密码并将其记录在安全的地方。
+在显示的 **New-MsolUser** 命令中，请注意为 User 3 帐户生成的密码并将其记录在安全的位置。
   
 从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
   
@@ -169,7 +171,7 @@ $userName= "user4@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 4" -FirstName User -LastName 4 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-从**新建 MsolUser**命令显示时，请注意用户 4 帐户生成的密码并将其记录在安全的地方。
+在显示的 **New-MsolUser** 命令中，请注意为 User 4 帐户生成的密码并将其记录在安全的位置。
   
 从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
   
@@ -178,15 +180,15 @@ $userName= "user5@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-从**新建 MsolUser**命令显示时，请注意用户 5 帐户生成的密码并将其记录在安全的地方。
+在显示的 **New-MsolUser** 命令中，请注意为 User 5 帐户生成的密码并将其记录在安全的位置。
   
 接下来，为销售、生产和支持部门创建三个新的 SharePoint Online 团队网站。
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>创建三个新的 SharePoint Online 团队网站
+### <a name="create-three-new-sharepoint-online-team-sites"></a>创建 3 个新的 SharePoint Online 团队网站
 
-1. 安装[SharePoint 在线管理外壳](https://go.microsoft.com/fwlink/p/?LinkId=255251)(x64 版本)。
+1. 安装 [SharePoint Online 命令行管理程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)（x64 版本）。
     
-2. 单击**开始**，键入**sharepoint**，，然后单击**SharePoint 在线管理外壳**。
+2. 单击“启动”****，键入 **sharepoint**，然后单击“SharePoint Online 命令行管理程序”****。
     
 3. 填写你的组织名称（示例：contosotoycompany），然后从 SharePoint Online Management Shell 提示符中运行以下命令以连接到 SharePoint Online 服务
 ```
@@ -195,9 +197,9 @@ $spURL="https://" + $orgName + "-admin.sharepoint.com"
 Connect-SPOService -Url $spURL
 ```
 
-4. 在**Microsoft SharePoint 在线管理程序**对话框中，键入 Office 365 全局管理员名称 (示例： jdoe@contosotoycompany.onmicrosoft.com) 和密码，然后单击**登录**。
+4. 在“Microsoft SharePoint Online 命令行管理程序”**** 对话框中，键入 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码，然后单击“登录”****。
     
-5. 创建三个新的工作组站点 （销售、 生产和支持），填入 Office 365 全局管理员名称，然后在 SharePoint 在线管理外壳提示符下运行以下命令：
+5. 若要创建 3 个新的团队网站（销售、生产和支持），请填入 Office 365 全局管理员名称，然后从 SharePoint Online 命令行管理程序提示符处运行以下命令：
     
   ```
   $owner = "<global administrator account name>"
@@ -217,15 +219,15 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 7. 在 Internet Explorer 中输入生产网站的 URL，以查看生产部门的默认 SharePoint Online 团队网站。
     
-## <a name="record-values-for-future-reference"></a>记录值以供将来参考
+## <a name="record-values-for-future-reference"></a>记录这些值以供将来参考
 
-记录这些值以便用于或部署此测试环境中的其他测试实验室指南：
+记录这些值，以便用于或部署此测试环境中的其他测试实验室指南：
   
-- Office 365 全局管理员名称： ![](./images/Common_Images/TableLine.png)。 onmicrosoft.com （从第二阶段的第 9 步）
+- Office 365 全局管理员名称：![](./images/Common_Images/TableLine.png).onmicrosoft.com（在第 2 阶段的第 9 步中）
     
-    还应将此帐户的密码记录在安全位置。
+    此外，还应将此帐户的密码记录在安全位置。
     
-- 您的订购试用期的组织名称： ![](./images/Common_Images/TableLine.png) （从步骤 4 的第 2 阶段）
+- 试用订阅组织名称：![](./images/Common_Images/TableLine.png)（在第 2 阶段的第 4 步中）
     
 - 要列出 User 2、User 3、User 4 和 User 5 的帐户，从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
     
@@ -233,59 +235,59 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
-    在此记录帐户名：
+    在此记录帐户名称：
     
-  - 2 用户帐户名称： user2 @![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
+  - User 2 的帐户名称：user2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-  - 3 用户帐户名称： 用户 @ 3![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
+  - User 3 的帐户名称：user3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-  - 4 用户帐户名称： 用户 4 @![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
+  - User 4 的帐户名称：user4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-  - 5 用户帐户名称： user5 @![](./images/Common_Images/TableLine.png)。 onmicrosoft.com
+  - User 5 的帐户名称：user5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-    还应将这些帐户的密码记录在安全位置。
+    此外，还应将这些帐户的密码记录在安全位置。
     
-- 若要列出销售、生产和支持团队网站的 URL，从 SharePoint Online Management Shell 提示符中运行以下命令：
+- 若要列出销售、生产和支持团队网站的 URL，从 SharePoint Online 命令行管理程序提示符处运行以下命令：
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 生产站点 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
+  - 生产网站 URL：https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - 销售网站 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - 销售网站 URL：https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - 支持站点 URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - 支持网站 URL：https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>后续步骤
 
 在 Office 365 开发/测试环境中使用这些附加的文章：
   
-- [您 Office 365 的开发/测试环境的目录同步](dirsync-for-your-office-365-dev-test-environment.md)
+- [Office 365 开发/测试环境的目录同步](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [您的 Office 365 开发/测试环境的的多因素身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [用于 Office 365 开发/测试环境的多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
 - [用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 开发/测试环境的云应用程序安全性](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [用于 Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [为您的 Office 365 开发/测试环境高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Office 365 开发/测试环境中的高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
-- [高级的 eDiscovery 您 Office 365 的开发/测试环境](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [用于 Office 365 开发/测试环境的高级电子数据展示](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-- [在 Office 365 的开发/测试环境中的敏感文件保护](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [Office 365 开发/测试环境中的敏感文件保护](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [SharePoint Online 的团队站点开发/测试环境的独立](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [独立的 SharePoint Online 团队网站开发/测试环境](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-- [数据分类和标记在 Office 365 的开发/测试环境](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+- [Office 365 开发/测试环境中的数据分类和标记](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
-扩展 Office 365 开发/测试环境，将其他 Microsoft 云产品包含在内：
+扩展 Office 365 开发/测试环境，将其他 Microsoft 云产品/服务包含在内：
   
-- [Microsoft 365 企业开发/测试环境](the-microsoft-365-enterprise-dev-test-environment.md)
+- [Microsoft 365 企业版开发/测试环境](the-microsoft-365-enterprise-dev-test-environment.md)
     
 - [Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>概念
+## <a name="see-also"></a>另请参阅
 
 - [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

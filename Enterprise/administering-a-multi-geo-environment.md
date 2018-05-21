@@ -1,102 +1,102 @@
 ---
-title: 管理多个地理环境
+title: 管理多地理位置环境
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: 了解有关管理 SharePoint 和 OneDrive 多地理环境中的服务。
-ms.openlocfilehash: 5d423fedc25b6e58ee84a51b01eb3858e6f198bb
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: 学习如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
+ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="administering-a-multi-geo-environment"></a>管理多个地理环境
+# <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
-下面我们来看 OneDrive 和 SharePoint 服务多地理环境中的工作方式。
+下面介绍 OneDrive 和 SharePoint 服务在多地理位置环境中的工作方式。
 
 #### <a name="onedrive-administrator-experience"></a>OneDrive 管理员体验
 
-[OneDrive 管理中心](https://admin.onedrive.com)有**地理位置**选项卡在左边的导航功能地理位置映射，您可以查看和管理您的地理位置。使用此页面可添加或删除您组织的地理位置。
+[OneDrive 管理中心](https://admin.onedrive.com)的左侧导航栏中有一个“地理位置”**** 选项卡，其中包含地理位置地图，你可在其中查看和管理地理位置。使用此页面可添加或删除租户的地理位置。
 
 #### <a name="taxonomy"></a>分类
 
-我们支持统一的[分类](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)企业托管元数据跨地理位置与主所驻留在您的公司的集中位置。我们建议您从中心位置管理您的全局分类，并仅将特定位置术语添加到卫星地理位置分类。全局分类条款将同步到附属的地理位置。
+对于跨多地理位置的企业托管元数据，我们支持统一[分类](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)，同时将主数据托管在公司的中心位置。建议从中心位置管理全局分类，并只在附属地理位置的分类中添加特定于位置的术语。全局分类术语将同步到附属地理位置。
 
 #### <a name="sharing"></a>共享
 
-管理员可以设置并管理其位置的每个共享策略。在每个地理位置的 OneDrive 网站将履行只相应地区特定共享设置。例如，您可以允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)有关您的中心位置，而不是您的附属位置，反之亦然。对于 OneDrive 多的地区，因为这些都不会同步跨租户必须管理共享设置在每个地理位置。
+管理员可以为他们的每个位置设置共享策略并对其进行管理。每个地理位置的 OneDrive 网站只会接受相应地理位置特定的共享设置。（例如，可以将[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)用于中心位置，但不可用于附属位置，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
 
-若要管理共享访问[共享设置的 OneDrive 管理中心](https://admin.onedrive.com/?v=SharingSettings)页。默认情况下与任何人在每个卫星位置启用外部共享。
+对于 OneDrive 多地理位置，必须在每个地理位置管理你的共享设置，因为这些设置在租户之间不同步。要管理共享，请访问 [OneDrive 管理中心共享设置](https://admin.onedrive.com/?v=SharingSettings)页。默认情况下，每个附属位置中的任何人都可以使用外部共享。
 
 #### <a name="user-profile-application"></a>用户配置文件应用程序
 
-每个地理位置处于一个[用户配置文件应用程序](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723)。在它们的地理位置和地理位置的管理员可以承载每个用户的配置文件信息。
+每个地理位置都有一个[用户配置文件应用程序](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723)。每个用户的配置文件信息都托管在其地理位置中，并可供该地理位置的管理员使用。
 
-如果您有自定义配置文件属性，那么建议您跨地区使用相同的配置文件架构并填充您的自定义配置文件属性可在所有地理位置或者在需要的地方。
+如果你有自定义配置文件属性，建议跨地区使用同一配置文件架构并在所有地理位置或所需的位置填充自定义配置文件属性。有关如何以编程方式填充用户配置文件数据的指导，请参阅[批量用户配置文件更新 API](https://docs.microsoft.com/zh-CN/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)
 
-#### <a name="bcs-secure-store-apps"></a>BCS，安全的存储应用程序
+#### <a name="bcs-secure-store-apps"></a>BCS、安全存储、应用
 
-BCS、 安全存储和应用程序所有具有独立的地理实例，因此 SharePoint Online 管理员应管理和配置这些服务与它们希望这些存在每个 geo 实例。
+BCS、安全存储和应用都具有单独的地理位置实例，因此，SharePoint Online 管理员应从希望在其中显示服务的每个地理位置实例中管理和配置这些服务。
 
-#### <a name="security-and-compliance-admin-center"></a>安全性和法规遵从性管理中心
+#### <a name="security-and-compliance-admin-center"></a>安全与合规管理中心
 
-没有一个中央法规遵从性中心多地区租户： [Office 365 安全和法规遵从性中心](https://protection.office.com/?rfr=AdminCenter\#/homepage)。
+还有一个多地理位置租户的中央合规中心：[Office 365 安全与合规中心](https://protection.office.com/?rfr=AdminCenter\#/homepage)。
 
-#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>信息 (IP) 的保护数据丢失防护 (DLP) 策略
+#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>信息保护 (IP) 数据丢失防护 (DLP) 策略
 
-您可以设置 IP DLP 策略业务的 OneDrive 在安全性和法规遵从性中心，根据需要为整个组织或适用的用户范围的策略。例如： 如果您想要为用户选择策略 OneDrive 卫星位置，选择该选项可以将该策略应用于特定的 OneDrive，输入用户的 OneDrive url。[数据丢失防护策略概述](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)在创建 DLP 策略的一般指南，请参见
+可以在安全与合规中心为 OneDrive for Business 设置 IP DLP 策略，根据需要将策略范围设置为整个租户或适用用户。例如，如果希望选择适用于附属位置中 OneDrive 用户的策略，请选择将策略应用到特定 OneDrive 并输入用户的 OneDrive URL。有关创建 DLP 策略的常规指导，请参阅[数据丢失防护策略概述](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
-DLP 策略将自动同步根据每个地理位置对其适用性。
+DLP 策略将基于每个地理位置的适用性自动同步。
 
-在地理位置实现对所有用户的信息保护和数据丢失防护策略不在用户界面中可用的选项，而必须选择策略适用的 OneDrive 帐户或全局将策略应用到所有的 OneDrive 帐户。
+在 UI 中，无法为地理位置中的所有用户实施信息保护和数据丢失防护策略，你必须为策略选择适用的 OneDrive 帐户，或将策略全局应用于所有 OneDrive 帐户。
 
 #### <a name="ediscovery"></a>电子数据展示 
 
-默认情况下，电子数据展示的经理或管理员的多个地区组织将能够执行 eDiscovery 仅在该组织的中心位置。为支持开展卫星位置的 eDiscovery 的能力，一个新的法规遵从性安全筛选器参数，称为"区域"可通过 PowerShell。
+默认情况下，多地理位置租户的电子数据展示管理者或管理员只能在该租户所在的中心位置实施电子数据展示。若要支持在附属位置实施电子数据展示，可通过 PowerShell 获取一个名为“Region”的新合规性安全筛选器参数。
 
-Office 365 全局管理员必须将分配 eDiscovery 经理权限以允许其他用户执行 eDiscovery 和分配其适用的法规遵从性安全筛选来指定执行 eDiscovery 作为附属的区域中的"区域"参数位置，否则为没有 eDiscovery 执行的附属位置。
+Office 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。
 
-当 eDiscovery 的经理或管理员角色设置为特定地理位置时，eDiscovery 的经理或管理员仅能执行 eDiscovery 搜索操作的 SharePoint 网站和地理位置的 OneDrive 站点。如果 eDiscovery 经理或管理员尝试搜索指定区域之外的 OneDrive 站点，则将不返回任何结果。此外，当区域经理或管理员 eDiscovery 触发一个导出，该地区的 Azure 实例导出数据。这可以帮助企业保持法规遵从性，从而不受控制的界限要导出的内容。
+当为特定地理位置设置电子数据展示管理者或管理员角色时，电子数据展示管理者或管理员将只能对位于该地理区域的 SharePoint 网站和 OneDrive 网站执行电子数据展示搜索操作。如果电子数据展示管理者或管理员尝试搜索指定区域以外的 SharePoint 或 OneDrive 网站，将不返回任何结果。此外，当某个区域的电子数据展示管理者或管理员触发导出时，数据将导出到该地区的 Azure 实例。通过禁止跨受控界限导出内容，将有助于组织保持合规性。
 
 > [!NOTE]
-> 如果有必要为 eDiscovery 经理在 SharePoint 中的多个区域进行搜索，需要为 eDiscovery 指定 OneDrive 或 SharePoint 网站的位置的备用区域服务控制管理器创建另一个用户帐户。
+> 如果需要电子数据展示管理者搜索多个 SharePoint 区域，将需要为电子数据展示管理者创建另一个用户帐户，以指定 OneDrive 或 SharePoint 网站所在的备用区域。
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>多地区支持地理位置</strong></th>
-<th align="left"><strong>eDiscovery SharePoint 导出的数据将处于此 Azure Blob 数据的位置...</strong></th>
+<th align="left"><strong>支持多地理位置的地理位置</strong></th>
+<th align="left"><strong>SharePoint 导出数据的电子数据展示将会在此 Azure Blob 数据位置中...</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>名称</strong></td>
+<td align="left"><strong>NAM</strong></td>
 <td align="left">美国数据中心</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>欧元</strong></td>
+<td align="left"><strong>EUR</strong></td>
 <td align="left">欧洲数据中心</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>APC 公司</strong></td>
-<td align="left">东南方向或东亚太地区数据中心</td>
+<td align="left"><strong>APC</strong></td>
+<td align="left">东南亚或东亚数据中心</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>可以</strong></td>
+<td align="left"><strong>CAN</strong></td>
 <td align="left">美国数据中心</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>澳大利亚</strong></td>
-<td align="left">东南方向或东亚太地区数据中心</td>
+<td align="left"><strong>AUS</strong></td>
+<td align="left">东南亚或东亚数据中心</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>韩文</strong></td>
+<td align="left"><strong>KOR</strong></td>
 <td align="left">租户的默认数据位置</td>
 </tr>
 <tr class="odd">
@@ -104,27 +104,27 @@ Office 365 全局管理员必须将分配 eDiscovery 经理权限以允许其他
 <td align="left">欧洲数据中心</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>日文</strong></td>
-<td align="left">东南方向或东亚太地区数据中心</td>
+<td align="left"><strong>JPN </strong></td>
+<td align="left">东南亚或东亚数据中心</td>
 </tr>
 </tbody>
 </table>
 
-要为区域设置遵从安全筛选器：
+针对区域设置合规性安全筛选器：
 
 1.  打开 Windows PowerShell
 
 2.  输入  
-    $s = New PSSession 配置名 Microsoft.Exchange-ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -$cred 凭据-基本身份验证 AllowRedirection-SessionOption (New PSSessionOption SkipCACheck-SkipCNCheck-SkipRevocationCheck)
+    $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $ = 导入 PSSession $s AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
-3.  **新 ComplianceSecurityFilter****-操作**所有**-FilterName** EnterTheNameYouWantToAssign **-地区**EnterTheRegionParameter **-用户**EnterTheUserPrincipalName
+3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
-    例如：**新 ComplianceSecurityFilter-操作**所有**-FilterName** NAMEDISCOVERYMANAGERS **-地区**名称**-用户**adwood@contosodemosx.onmicrosoft.com
+    例如：**New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com
 
-请参阅附加的参数和语法的[新 ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx)文章
+请参阅 [New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx) 一文了解其他参数和语法
 
 #### <a name="audit-log-search"></a>审核日志搜索
 
-Office 365 审核日志搜索页面提供了统一[审核日志](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)的所有您的地理位置。您可以看到中的所有审核日志项跨 geo、 例如，名称和欧元地区用户的活动中将会显示一个组织视图，然后可以应用现有的筛选器以都查看特定用户的活动。
+所有地理位置的统一[审核日志](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)均可从 Office 365 审核日志搜索页找到。你可以查看跨地理位置的所有审核日志条目，例如，NAM 和 EUR 地理位置用户的活动将显示在一个组织视图中，然后你可以应用现有筛选器，查看特定用户的活动。
