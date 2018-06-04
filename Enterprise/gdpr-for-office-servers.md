@@ -9,15 +9,18 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: 了解如何解决本地 Office 服务器中的 GDPR 要求。
-ms.openlocfilehash: dc1150361db6a28f011e4890a2770f4a6b607a91
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: 598d4b0c3f4b7d4281383111f0891759f81d483f
+ms.sourcegitcommit: 53a57b0617b5bb22beea766e515873d14b3a4783
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19183591"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>用于本地 Office 服务器的 GDPR
 
 一般数据保护条例 (GDPR) 为组织提供了保护个人数据和适当回应数据主体请求的要求。本系列文章为本地工作负载提供了推荐的方法：
+
+-   [SharePoint Server](gdpr-for-sharepoint-server.md)
 
 -   [Exchange Server](gdpr-for-exchange-server.md)
 
@@ -48,4 +51,4 @@ ms.lasthandoff: 05/17/2018
 |保护||Exchange Server 数据丢失防护规则；权限，库的 IRM 保护|Exchange Server 数据丢失防护规则；与 Exchange Server 的 IRM 集成|||
 |监视|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|
 
-*对于 GDPR，应用不包含保护的标签。保护功能可以加密文件。因此，SharePoint Server 无法在这些文件中找到敏感信息类型。
+*注意，保护功能会加密文件。因此，SharePoint Server 无法在受保护的文件中查找敏感信息类型。

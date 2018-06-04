@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 简介：使用此测试实验室指南创建包含 Office 365 E5、企业移动性+安全性 (EMS) E5 和运行 Windows 10 企业版的计算机的开发/测试环境。
-ms.openlocfilehash: 5a4c23b3bde309a75a61e574e91823ecdd4629fe
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 03fa8e0a4e8d90fcb834eeb2491d3dd39b67ff05
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19178644"
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业版开发/测试环境
 
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="virtual-machine-in-azure"></a>Azure 中的虚拟机
 
-要在 Microsoft Azure 中创建 Windows 10 虚拟机，你必须拥有基于 Visual Studio 的订阅******，以便有权访问 Windows 10 企业版的映像。其他类型的 Azure 订阅（如试用版和付费订阅）均无权访问此映像。
+要在 Microsoft Azure 中创建 Windows 10 虚拟机，***你必须拥有基于 Visual Studio 的订阅***，以便有权访问 Windows 10 企业版的映像。其他类型的 Azure 订阅（如试用版和付费订阅）均无权访问此映像。有关最新信息，请参阅[在 Azure 中使用 Windows 客户端实现开发/测试方案](https://docs.microsoft.com/azure/virtual-machines/windows/client-images)。
   
 > [!NOTE]
 > 下面的命令集使用最新版 Azure PowerShell。请参阅 [Azure PowerShell cmdlet 入门](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)。这些命令集构建了名为 WIN10 的 Windows 10 企业版虚拟机及其所需的全部基础架构，其中包括资源组、存储帐户和虚拟网络。如果你已熟悉 Azure 基础架构服务，请修改这些说明以适应当前部署的基础架构。 
@@ -172,9 +173,9 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 5. 当提示你确定这是你的组织时，单击“加入”****，然后单击“完成”****。
     
-6. 关闭“设置“窗口。
+6. 关闭“设置”窗口。
     
-接下来，在 WIN10 计算机上安装 Office 2016。
+接下来，在 WIN10 计算机上安装 Office 365 专业增强版。
   
 1. 打开 Microsoft Edge 浏览器，使用全局管理员帐户凭据登录到 Office 365 门户。如需帮助，请参阅[在哪里登录 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
@@ -182,11 +183,15 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 3. 出现应执行的操作提示时，单击“运行”****，然后针对“用户帐户控制”单击“是”********。
     
-4. 等待 Office 完成安装。当看到“你已设置完毕!”**** 时，单击“关闭”**** 两次。
+4. 等待 Office 完成安装。当看到“**你已设置完毕!**”时，单击“**关闭**”两次。
     
-图 3 显示了你的生成环境，其中包括已加入 Office 365 和 EMS 订阅的 Azure AD 租户的 WIN10 计算机。
+图 3 显示生成的环境，其中包括具有以下内容的 WIN10 计算机：
+
+- 已联接到 Office 365 和 EMS 订阅的 Azure AD 租户。
+- 已注册为 Intune 中的 Azure AD 设备 (EMS)。
+- 已安装 Office 365 专业增强版。
   
-**图 3：将 WIN10 计算机帐户添加到 Azure AD 租户**
+**图 3：Microsoft 365 开发/测试环境最终配置**
 
 ![Microsoft 365 企业版开发/测试环境的第 4 阶段](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   

@@ -14,11 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
-ms.openlocfilehash: 8556040a648937d4c1bc338292be121e5d290dd9
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168506"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/27/2018
     
 3. 在浏览器的“Office 管理中心”标签页的左侧导航中，单击“帐单”>“购买服务”********。
     
-4. 在“购买服务”**** 页上，找到“企业移动性 + 安全性 E5”**** 项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”****。
+4. 在“购买服务”页上，找到“企业移动性 + 安全性 E5”项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”************。
     
 5. 在“确认订单”页上，单击“立即试用”********。
     
@@ -184,11 +185,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 记录此开发/测试环境的这些值以用于 Office 365 和 EMS 试用订阅：
   
-- 试用订阅组织名称：_______________________________________________ 
+- 试用订阅组织名称：![](./images/Common_Images/TableLine.png) 
     
     例如，对于 contoso.onmicrosoft.com 的试用订阅域名，组织名称是“contoso”。
     
-- Office 365 全局管理员名称：____________________________________.onmicrosoft.com
+- Office 365 全局管理员名称：![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
     在安全位置记录此帐户的密码和其他用户帐户的常用初始密码。
     

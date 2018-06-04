@@ -15,15 +15,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、企业移动性 + 安全性 (EMS)、Dynamics 365 和 Office Server 产品的开发/测试环境。
-ms.openlocfilehash: 87e9be912b7e53dea07915ae236b057273285718
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193672"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>云应用测试实验室指南 (TLG)
 
- **摘要：**使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、企业移动性 + 安全性 (EMS)、Dynamics 365 和 Office Server 产品的开发/测试环境。
+ **摘要：** 使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、企业移动性 + 安全性 (EMS)、Dynamics 365 和 Office Server 产品的开发/测试环境。
   
 TLG 可帮助你快速了解 Microsoft 产品。当你需要先评估某种技术或配置，然后再决定它是否适合你或将其推广给用户时，这些指南非常有用。“我自己构建，它可运行”的亲身体验有助于了解新产品或解决方案的部署需求，以便更好地规划将其托管在生产中。
   
@@ -38,7 +39,6 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
 - 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
     
 ## <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
-<a name="O365"> </a>
 
 使用这些文章构建 Office 365 开发/测试环境：
   
@@ -89,7 +89,6 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     演示如何创建因敏感或高度机密资源而与组织其他部分隔离的 SharePoint Online 团队网站。
     
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业版开发/测试环境
-<a name="O365"> </a>
 
 使用以下文章创建适用于 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365-enterprise/)方案的开发/测试环境：
   
@@ -106,7 +105,6 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     注册 iOS 或 Android 设备，并对其进行远程管理。
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境
-<a name="O365_D365"> </a>
 
 使用以下文章添加 Dynamics 365 试用订阅并测试 Office 365 和 Dynamics 365 的集成功能和应用场景：
   
@@ -119,12 +117,10 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     配置然后演示 Office 365 和 Dynamics 365 如何在 Exchange Online 邮箱中协作。
     
 ## <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft 云开发/测试环境
-<a name="O365_D365"> </a>
 
 创建包括所有 Microsoft 云产品/服务的开发/测试环境：Office 365、Azure、EMS 和 Dynamics 365。有关分步说明，请参阅 [One Microsoft 云开发/测试环境](the-one-microsoft-cloud-dev-test-environment.md)。
   
 ## <a name="simulated-cross-premises-devtest-environments"></a>模拟的跨界开发/测试环境
-<a name="O365_D365"> </a>
 
 可以参阅以下文章来创建跨界开发/测试环境，其中包括 Azure 虚拟网络和模拟的本地网络：
   
@@ -137,7 +133,6 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     在 Azure 虚拟网络中创建单个服务器的 SharePoint Server 2016 场，并从模拟的本地网络测试连接性和管理。
     
 ## <a name="additional-cloud-based-devtest-environments"></a>其他基于云的开发/测试环境
-<a name="ADD_TLGs"> </a>
 
 以下是你可以在 Azure 基础结构服务中创建的其他基于云的开发/测试环境：
   

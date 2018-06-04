@@ -3,7 +3,7 @@ title: Microsoft 云 IT 体系结构资源
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/18/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -15,15 +15,16 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: 摘要：了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。
-ms.openlocfilehash: ccc10e2ba369d711c26936a88385fdb3c1cae3ac
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: a2e2431d0ace5a77722da844feb3aaaea61b0e6f
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193702"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
- **摘要：**了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。
+ **摘要：** 了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。
   
 这些体系结构工具和海报为你提供了有关 Microsoft 云服务和平台的信息，包括 Office 365、Microsoft Azure、Microsoft Intune、Microsoft Dynamics 365、私有云数据中心，以及混合本地和云的解决方案。IT 决策者和架构师可以使用这些资源，以确定工作负载的理想解决方案并做出有关标识和安全等核心基础结构组件的决策。 
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![Microsoft 云标识模型的缩略图](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![文章](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[文章](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | 此模型包含： <ul><li>Microsoft 云标识简介 </li> <li>Azure AD IDaaS 功能 </li><li>将本地 Active Directory 域服务帐户与 Microsoft Azure Active Directory 集成 </li> <li>将目录组件放入 Azure </li><li>Azure IaaS 中适用于工作负载的域服务选项 </li></ul> <br/>|
+|[![Microsoft 云标识模型的缩略图](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF 文件](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Visio 文件](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![参阅包含其他语言版本的页面](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[更多语言](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | 此模型包含： <ul><li>Microsoft 云标识简介 </li> <li>Azure AD IDaaS 功能 </li><li>将本地 Active Directory 域服务帐户与 Microsoft Azure Active Directory 集成 </li> <li>将目录组件放入 Azure </li><li>Azure IaaS 中适用于工作负载的域服务选项 </li></ul> <br/>|
    
 <a name="security"> </a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云安全性

@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：应用 Azure 信息保护来保护高度机密的 SharePoint Online 团队网站中的文件。
-ms.openlocfilehash: a5df4d7289ec31686ad74f78a4797e1aa3eaa447
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: bab799a784cac579c92fb06ea17592d85fd59af2
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168496"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>使用 Azure 信息保护来保护 SharePoint Online 文件
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/27/2018
     
 3. 如果是首次配置 Azure 信息保护，请参阅这些[说明](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)。
     
-4. 在列表窗格中，单击“更多服务”****，键入 **information**，然后单击“Azure 信息保护”****。
+4. 在列表窗格中，单击“**更多服务**”，键入“**信息**”，然后单击“**Azure 信息保护**”。
     
-5. 在“Azure 信息保护”**** 边栏选项卡上，选择“作用域内策略”>“+ 添加新策略”****。
+5. 在“**Azure 信息保护**”边栏选项卡上，选择“**作用域内策略”>“+ 添加新策略**”。
     
 6. 在“策略名称”中键入新策略的名称，并在“描述”中键入新策略的描述********。
     

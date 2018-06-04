@@ -3,7 +3,7 @@ title: Office 365 开发/测试环境的目录同步
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,11 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 摘要：为 Office 365 开发/测试环境配置目录同步。
-ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193532"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的目录同步
 
@@ -117,11 +118,16 @@ Stop-Process -Name Explorer -Force
 ## <a name="see-also"></a>另请参阅
 
 [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+
 [基础配置开发/测试环境](base-configuration-dev-test-environment.md)
+
 [Office 365 开发/测试环境](office-365-dev-test-environment.md)
-[Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
-[Office 365 开发/测试环境的高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-[云采用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
+
+[用于 Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
+
+[Office 365 开发/测试环境中的高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+
+[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
 
 
