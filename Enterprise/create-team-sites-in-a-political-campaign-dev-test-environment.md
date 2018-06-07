@@ -3,7 +3,7 @@ title: 在政治宣传活动开发/测试环境中创建团队网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -14,12 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: 1651d89a1c17dfa5af592727bb534717763288e0
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 452e504a8d5fe0cb53fde2e4bb11aa8510f247fc
+ms.sourcegitcommit: 0d92efcb24a388c6fc5c3e333bc5714f43dbf4a7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168486"
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "19339153"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -372,40 +372,42 @@ ms.locfileid: "19168486"
 3. 如果是首次配置 Azure 信息保护，请参阅这些[说明](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)。
     
 4. 在列表窗格中，单击“**更多服务**”，键入“**信息**”，然后单击“**Azure 信息保护**”。
+
+5. 单击“**标签**”。
     
-5. 在“**Azure 信息保护**”边栏选项卡上，选择“**作用域内策略”>“+ 添加新策略**”。
+6. 右键单击“高度机密”**** 标签，然后单击“添加子标签”****。
     
-6. 在“策略名称”中键入 **CampaignStrategy****，并在“描述”中键入 ****Label for documents in the Campaign strategy team site******。
+7. 在“名称”**** 中键入“CampaignStrategy”****，并在“描述”**** 中键入“Label for documents in the Campaign strategy team site”****。
     
-7. 单击“选择获取此策略的用户或组”>“用户/组”，然后选择“高层和策略人员”********。
+8. 在“为包含此标签的文档和电子邮件设置权限”**** 中，单击“保护”****。
     
-8. 单击“选择”>“确定”****。
+9. 在“保护”部分中，单击“Azure (云密钥)”********。
     
-9. 对于“高度机密”标签，请单击省略号 (…)，然后单击“添加子标签”********。
+10. 在“保护”边栏选项卡中，在“保护设置”下，单击“+ 添加权限”************。
     
-10. 在“名称”中键入子标签的名称，并在“描述”中键入标签的描述********。
+11. 在“添加权限”**** 边栏选项卡的“指定用户和组”**** 下，单击“+ 浏览目录”****。
     
-11. 在“为包含此标签的文档和电子邮件设置权限”中，单击“保护”********。
+12. 在“AAD 用户和组”**** 窗格中，选择“高级和策略人员”****，然后单击“选择”****。
     
-12. 在“保护”部分中，单击“Azure (云密钥)”********。
+13. 在“从预设或设置自定义中选择权限”**** 下，单击“自定义”****，然后依次单击“查看权限”****、“编辑内容”****、“保存”****、“答复”**** 和“全部答复”**** 复选框。
     
-13. 在“保护”边栏选项卡中，在“保护设置”下，单击“+ 添加权限”************。
+14. 单击“**确定**”两次。
     
-14. 在“添加权限”**** 边栏选项卡的“指定用户和组”**** 下，单击“+ 浏览目录”****。
+15. 在“**子标签**”边栏选项卡上，单击“**保存**”，然后单击“**确定**”。
+
+16. 在“Azure 信息保护”**** 边栏选项卡上，单击“策略”>“+ 添加新策略”****。
     
-15. 在“AAD 用户和组”**** 窗格中，选择“高级和策略人员”****，然后单击“选择”****。
+17. 在“名称”**** 中键入“CampaignStrategy”****，并在“描述”**** 中键入“Documents in the Campaign strategy team site”****。
     
-16. 在“从预设中选择权限”**** 下，取消勾选“打印”、“复制和提取内容”******** 和“转发”**** 复选框。
+18. 单击“选择获取此策略的用户或组”****>“用户/组”，然后选择“高层和策略人员”****。
     
-17. 单击“确定”**** 两次。
-    
-18. 在“子标签”边栏选项卡上，单击“保存”********。
-    
-19. 关闭“新作用域内策略”边栏选项卡。
-    
-20. 在“Azure 信息保护 - 作用域内策略”边栏选项卡上，单击“发布”，然后单击“是”************。
-    
-现在，可以在这四个网站中创建文档，并使用试用订阅中的各种用户帐户进行访问测试。 
+19. 单击“选择”>“确定”****。
+
+20. 单击“添加或删除标签”****。在“策略: 添加或删除标签”**** 窗格中，单击“CampaignStrategy”****，然后单击“确定”****。   
+
+21. 单击“保存”****，然后单击“确定”****。
+  
+现在，可以在这四个网站中创建文档，并使用各种用户帐户进行访问测试。 
   
 若要使用 Azure 信息保护和新标签保护文档，必须在测试计算机上[安装 Azure 信息保护客户端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，从 Office 365 门户安装 Office，然后使用试用订阅的“高级和策略人员”**** 组中的帐户从 Microsoft Word 登录。
   
