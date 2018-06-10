@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 混合云方案的体系结构"
+title: Microsoft 混合云方案的体系结构
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
-description: "摘要： 了解 Microsoft 混合云产品的体系结构。"
-ms.openlocfilehash: 33d98d88a10b18cdd357250f46c5414f1c1b6a75
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: 摘要： 了解 Microsoft 混合云产品的体系结构。
+ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631383"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft 混合云方案的体系结构
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 02/13/2018
     
 - 网络
     
-    连接到 Microsoft 云平台和服务有两种选择：现有的 Internet 管道和 ExpressRoute。如果可预知的性能非常重要，请使用 ExpressRoute 连接。可以使用一个 ExpressRoute 连接直接连接到 Microsoft SaaS 服务（Office 365 和 Dynamics 365）、Azure PaaS 服务和 Azure IaaS 服务。
+    有两种选择用于连接到 Microsoft 云平台和服务： 您的现有 Internet 管道和 ExpressRoute。如果可预测的性能很重要，请使用 ExpressRoute 连接。您可以使用一个 ExpressRoute 连接直接向 Microsoft SaaS 服务 （Office 365 和 Dynamics 365）、 Azure PaaS 服务和 Azure IaaS 服务连接。
     
 - 标识
     

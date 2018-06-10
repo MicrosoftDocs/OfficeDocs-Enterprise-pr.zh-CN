@@ -17,18 +17,16 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 摘要： 了解如何以绕过 Azure 访问控制服务，使用 SAML 1.1 与 Azure Active Directory 在 SharePoint Server 用户进行身份验证。
-ms.openlocfilehash: 8a844cf1f45f6285e676439f934b9119a757804f
-ms.sourcegitcommit: c52bd6eaa8772063f9e2bd1acf10fa23422a2b92
+ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
+ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19702982"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>用于 SharePoint Server 身份验证的 Azure AD
 
- **摘要：**了解如何在 SharePoint Server 2016 用户与 Azure Active Directory 身份验证。
-  
-> [!NOTE]
-> 本文基于 Kirk evans 添加，Microsoft 主体项目经理的工时。 
+ **摘要：** 了解如何在 SharePoint Server 2016 用户与 Azure Active Directory 身份验证。 
 
 <blockquote>
 <p>本文是指与 Azure Active Directory 图形进行交互的代码示例。您可以下载代码示例[此处](https://github.com/kaevans/spsaml11/tree/master/scripts)。</p>
@@ -102,7 +100,7 @@ Azure 门户中 ([https://portal.azure.com](https://portal.azure.com))，创建�
     - 应用程序的对象 id。 </br>
 将*Identifier*值复制到的*领域*属性表中 (请参见表 1 下方)。
 4. 保存所做的更改。
-5. 单击**配置 （应用程序名称）**链接访问配置单一登录页。</br>![在页面上配置单一登录](images/SAML11/fig7-configssopage.png)</br> 
+5. 单击**配置 （应用程序名称）** 链接访问配置单一登录页。</br>![在页面上配置单一登录](images/SAML11/fig7-configssopage.png)</br> 
     -  单击**SAML 签名证书的原始**链接以下载扩展名.cer 文件 SAML 签名证书。复制并粘贴到数据表下载的文件的完整路径。
     - 复制并粘贴到 SAML 单一登录服务 URL 链接，替换 */wsfed*URL */saml2*部分。</br>
 6.  导航到**属性**窗格中的应用程序。复制并粘贴到您在步骤 3 中设置的表的对象 ID 值。</br>![应用程序的属性窗格](images/SAML11/fig8-propertiespane.png)</br>
@@ -143,9 +141,12 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 2. 在功能区中，单击**验证提供程序**，然后选择您想要使用的区域。
 3. 选择**受信任标识提供程序**并选择的标识提供程序只需注册名为*AzureAD*。  
 4. 登录页 URL 设置，请选择**自定义登录页**，并提供"/_trust/"的值。 
-5. 单击“**确定**”。
+5. 单击“确定”****。
 
 ![配置验证提供程序](images/SAML11/fig10-configauthprovider.png)
+
+> [!IMPORTANT]
+> 务必执行所有步骤，包括自定义登录设置"/_trust/"页中，如下所示。除非时遵循所有步骤，配置将无法正常工作。
 
 ## <a name="step-5-set-the-permissions"></a>步骤 5： 设置权限
 
@@ -158,7 +159,7 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
  
 用户已被授予在 Azure AD 权限，但还必须被授予 SharePoint 中的权限。使用以下步骤可设置访问 web 应用程序的权限。
 
-1. 在管理中心中，单击"应用程序管理"。
+1. 在管理中心中，单击“应用程序管理”****。
 2. 在"应用程序管理"页上的"Web 应用程序"部分，单击"管理 Web 应用程序"。
 3. 单击适当的 Web 应用程序，然后单击"用户策略"。
 4. 在 Web 应用程序的策略，单击**添加用户**。</br>![按其名称声明搜索的用户](images/SAML11/fig11-searchbynameclaim.png)</br>
@@ -167,22 +168,58 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 7. 在**查找**文本框中，键入您的目录中的用户的登录名并单击**搜索**。 </br>示例： *demouser@blueskyabove.onmicrosoft.com*。
 8. 在列表视图中 AzureAD 标题下，选择名称属性，单击**添加**，然后单击**确定**关闭对话框。
 9. 在权限中，单击**完全控制**。</br>![向声明用户授予完全控制](images/SAML11/fig12-grantfullcontrol.png)</br>
-10. 单击"完成"，然后单击"确定"。
+10. 单击“完成”****，然后单击“确定”****。
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>步骤 6: Azure AD 中添加的 SAML 1.1 令牌颁发策略
 
-在门户中创建 Azure AD 应用程序后，它默认为使用 SAML 2.0。SharePoint Server 2016 需要的 SAML 1.1 令牌格式。以下脚本将删除默认 SAML 2.0 策略，并向问题 SAML 1.1 令牌中添加新的策略。此代码需要下载附带的[示例演示与 Azure Active Directory 图表交互](https://github.com/kaevans/spsaml11/tree/master/scripts)。 
+在门户中创建 Azure AD 应用程序后，它默认为使用 SAML 2.0。SharePoint Server 2016 需要的 SAML 1.1 令牌格式。以下脚本将删除默认 SAML 2.0 策略，并向问题 SAML 1.1 令牌中添加新的策略。 
 
+> 此代码需要下载附带的[示例演示与 Azure Active Directory 图表交互](https://github.com/kaevans/spsaml11/tree/master/scripts)。如果您从 GitHub 到 Windows 桌面 ZIP 文件下载脚本，请确保取消阻止`MSGraphTokenLifetimePolicy.psm1`脚本模块文件和`Initialize.ps1`脚本文件 （右键单击属性、 选择取消阻止，请单击确定）。![阻塞下载文件](images/SAML11/fig17-unblock.png)
+
+示例脚本下载后，创建新的 PowerShell 脚本使用下面的代码，将下载的文件路径替换为占位符`Initialize.ps1`本地计算机上。应用程序的对象 ID 占位符替换为您在表 1 中输入的应用程序对象 ID。创建后，执行 PowerShell 脚本。 
 
 ```
-Import-Module <file path of Initialize.ps1> 
-$objectid = "<Application Object ID from Table 1>"
-$saml2policyid = Get-PoliciesAssignedToServicePrincipal -servicePrincipalId $objectid | ?{$_.displayName -EQ "TokenIssuancePolicy"} | select objectId
-Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $objectid
-$policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
-Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
+function AssignSaml11PolicyToAppPrincipal
+{
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$pathToInitializeScriptFile, 
+        [Parameter(Mandatory=$true)]
+        [string]$appObjectid
+    )
+
+    $folder = Split-Path $pathToInitializeScriptFile
+    Push-Location $folder
+
+    #Loads the dependent ADAL module used to acquire tokens
+    Import-Module $pathToInitializeScriptFile 
+
+    #Gets the existing token issuance policy
+    $existingTokenIssuancePolicy = Get-PoliciesAssignedToServicePrincipal -servicePrincipalId $appObjectid | ?{$_.type -EQ "TokenIssuancePolicy"} 
+    Write-Host "The following TokenIssuancePolicy policies are assigned to the service principal." -ForegroundColor Green
+    Write-Host $existingTokenIssuancePolicy -ForegroundColor White
+    $policyId = $existingTokenIssuancePolicy.objectId
+
+    #Removes existing token issuance policy
+    Write-Host "Only a single policy can be assigned to the service principal. Removing the existing policy with ID $policyId" -ForegroundColor Green
+    Remove-PolicyFromServicePrincipal -policyId $policyId -servicePrincipalId $appObjectid
+
+    #Creates a new token issuance policy and assigns to the service principal
+    Write-Host "Adding the new SAML 1.1 TokenIssuancePolicy" -ForegroundColor Green
+    $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
+    Write-Host "Assigning the new SAML 1.1 TokenIssuancePolicy $policy.objectId to the service principal $appObjectid" -ForegroundColor Green
+    Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $appObjectid
+    Pop-Location
+}
+
+#Only edit the following two variables
+$pathToInitializeScriptFile = "<file path of Initialize.ps1>"
+$appObjectid = "<Application Object ID from Table 1>"
+
+AssignSaml11PolicyToAppPrincipal $pathToInitializeScriptFile $appObjectid
 ```
-> 请注意，务必要运行`Import-Module`命令此例中所示。这将加载包含显示的命令的相关模块。您可能需要打开提升的命令提示符处，若要成功执行这些命令。
+> [!IMPORTANT]
+> 未签名的 PowerShell 脚本，系统可能提示您设置执行策略。执行策略的详细信息，请参阅[有关执行策略](http://go.microsoft.com/fwlink/?LinkID=135170)。此外，您可能需要打开提升的命令提示符处，若要成功执行示例脚本中包含的命令。
 
 这些示例 PowerShell 命令是如何对图形 API 执行查询的示例。使用 Azure AD 的令牌颁发策略的详细信息，请参阅[图 API 参考 （英文） 策略操作](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)。
 
@@ -215,7 +252,7 @@ Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -I
 1. 在 Azure 门户中，打开 Azure AD 目录。单击**应用程序注册**，然后单击**查看所有应用程序**。单击以前创建的应用程序 （SharePoint SAML 集成）。
 2. 单击**设置**。
 3. 在设置刀片中，单击**回复 Url**。 
-4. 添加其他 web 应用程序的 URL (如`https://sales.contoso.local`) 并单击**保存**。 
+4. 添加的其他 web 应用程序的 URL`/_trust/default.aspx`追加到 URL (如`https://sales.contoso.local/_trust/default.aspx`) 并单击**保存**。 
 5. 在 SharePoint 服务器上，打开**SharePoint 2016 命令行管理程序**并执行以下命令，将使用您以前使用的受信任的身份令牌颁发者的名称。
 
 ```
