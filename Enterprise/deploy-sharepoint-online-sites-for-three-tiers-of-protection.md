@@ -3,7 +3,7 @@ title: 部署具有三层保护的 SharePoint Online 网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 06/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：为各种级别的信息保护创建和配置 SharePoint Online 团队网站。
-ms.openlocfilehash: 7349616f130c5fc01108fb85ed172e9bc6bba05e
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631393"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署具有三层保护的 SharePoint Online 网站
 
@@ -139,11 +140,11 @@ ms.lasthandoff: 04/27/2018
     
 8. 在“希望添加哪些人员?”窗格中，单击“完成”********。
     
-接下来，在新的 SharePoint Online 团队网站中，使用以下步骤配置权限。
+接下来，在新的 SharePoint Online 团队网站中，按照以下步骤操作来配置权限。
   
-1. 确定 IT 管理员或将负责响应和针对网站访问请求进行寻址的其他人员的用户主体名称 (UPN)（例如 belindan@contoso.com）。记下该 UPN：_________________________________________
+1. 确定 IT 管理员或将负责响应和处理网站访问请求的其他人员的用户主体名称 (UPN)（例如，belindan@contoso.com）。记下此 UPN：![](./images/Common_Images/TableLine.png)。
     
-2. 在工具栏中单击设置图标，然后单击“网站权限”。****
+2. 在工具栏中，依次单击设置图标和“网站权限”****。
     
 3. 在“网站权限”窗格中，单击“高级权限设置”********。
     
