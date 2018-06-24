@@ -3,7 +3,6 @@ title: Office 365 PowerShell 社区资源
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,27 +11,28 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: 摘要：从这些社区获取有关 Office 365 PowerShell 的帮助。
-ms.openlocfilehash: 9348c824e34baba4d4d1a12da7910fc3cfe81a30
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+ms.openlocfilehash: 9b98345db6db9b5070d738170258de6d7fff10ea
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017388"
 ---
 # <a name="office-365-powershell-community-resources"></a>Office 365 PowerShell 社区资源
 
- **摘要：**从这些社区获取 Office 365 PowerShell 方面的帮助。
+ **摘要：** 从这些社区获取 Office 365 PowerShell 方面的帮助。
   
-使用这些 Yammer 网络、社区论坛和 Wiki 使您能够接触到您的同行，从而使您的 Office 365 PowerShell 问题得以快速正确地解答。 
+使用这些社区论坛和 Wiki 获取您连接到您的同行和获取 Office 365 PowerShell 问题的解答快速和正确。 
   
-- [Office 365 Yammer 网络的 PowerShell for Office 365 组](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
+- [访问 Office 365 技术社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [管理 Office 365 社区论坛](https://community.office365.com/zh-CN/f/148.aspx)
+- [Office 365 技术社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
 - [Exchange TechCenter 社区论坛](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
 - [Office 博客](https://blogs.office.com/)
     
-- [管理 Office 365 Wiki](https://community.office365.com/zh-CN/w/manage/default.aspx)
+- [管理 Office 365 Wiki](https://community.office365.com/en-us/w/manage/default.aspx)
     
 ## <a name="see-also"></a>另请参阅
 
