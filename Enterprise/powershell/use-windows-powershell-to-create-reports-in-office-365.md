@@ -3,7 +3,7 @@ title: 使用 Windows PowerShell 在 Office 365 中创建报告
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 06/22/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,15 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 摘要：使用 Office 365 PowerShell 来创建无法在 Office 365 管理中心生成的报告。
-ms.openlocfilehash: 09db143c027af987cf86036c4f5fd6bca009afe4
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 381a07d48db777a335e24baa32a65e992a78dfa2
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017418"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>使用 Windows PowerShell 在 Office 365 中创建报告
 
- **摘要：**使用 Office 365 PowerShell 创建无法在 Office 365 管理中心内生成的报表。
+ **摘要：** 使用 Office 365 PowerShell 创建无法在 Office 365 管理中心内生成的报表。
   
 Office 365 管理中心中提供很多不同的报告。但是，这些报告提供的信息有限，有时你可能需要更多信息。这就是你需要 Office 365 PowerShell 的时候
   
@@ -68,5 +69,3 @@ Office 365 管理中心中提供很多不同的报告。但是，这些报告提
   
 [使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[使用 Excel 检索 Office 365 报告数据](using-excel-to-retrieve-office-365-reporting-data.md)
-
