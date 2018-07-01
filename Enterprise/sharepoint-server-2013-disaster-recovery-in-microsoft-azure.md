@@ -12,19 +12,19 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 摘要：使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
-ms.openlocfilehash: 1e8f067954de19c374688220be439fe1a56089f7
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
-ms.translationtype: HT
+ms.openlocfilehash: 553b2e6bb9d35ab3dba471b01938914a95af23d6
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161795"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
- **摘要：**使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
+ **摘要：** 使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
 
  **观看 SharePoint Server 2013 灾难恢复概述视频**
-<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=1b73ec8f-29bd-44eb-aa3a-f7932784bfd9&AutoPlayVideo=false&height=415&width=740" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" style="width: 740px; height: 415px;"></iframe>
-
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
   
  当灾难袭击你的 SharePoint 内部部署环境时，头等大事是迅速使系统恢复运行。如果你已有备份环境在 Microsoft Azure 中运行，SharePoint 灾难恢复将更加快速、轻松。本视频介绍 SharePoint 温故障转移环境的主要概念，并补充了本文中提供的完整详细信息。
   
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/18/2018
   
 [![Azure 中的 SharePoint 灾难恢复过程](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
-![PDF 文件](images/ITPro_Other_PDFicon.png) [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | ![Visio 文件](images/ITPro_Other_VisioIcon.jpg) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
+ [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
 本文内容：
   
@@ -491,9 +491,9 @@ restore database WSS_Content with recovery
   
 接下来，将介绍几种不同的灾难恢复应用场景：
   
- **示例场景：由于内部部署 SharePoint 服务器场中的硬件故障，内部部署 SharePoint 服务器场不可用。**这种情况下，在你完成故障转移到 Azure SharePoint 服务器场的步骤后，你可以在恢复 SharePoint 服务器场的 Web 前端服务器上配置网络负载平衡，就像在内部部署服务器场中一样。然后你可以将内部 DNS 提供程序中的主机记录重定向为指向恢复场的群集 IP 地址。请注意，可能需要一些时间才会刷新客户端上的缓存 DNS 记录并使其指向恢复场。
+ **示例场景：由于内部部署 SharePoint 服务器场中的硬件故障，内部部署 SharePoint 服务器场不可用。** 这种情况下，在你完成故障转移到 Azure SharePoint 服务器场的步骤后，你可以在恢复 SharePoint 服务器场的 Web 前端服务器上配置网络负载平衡，就像在内部部署服务器场中一样。然后你可以将内部 DNS 提供程序中的主机记录重定向为指向恢复场的群集 IP 地址。请注意，可能需要一些时间才会刷新客户端上的缓存 DNS 记录并使其指向恢复场。
   
- **示例场景：内部部署数据中心会完全中断。**此场景可能是由于自然灾害所致，例如火灾或水灾。这种情况下，对于企业来说，可能希望有一个辅助数据中心承载在另一个区域，还有具有自己的目录服务和 DNS 的 Azure 子网。与前一个灾难场景中一样，你可以将内部和外部 DNS 记录重定向为指向 Azure SharePoint 服务器场。同样，记下该 DNS 记录传播可能需要一些时间。
+ **示例场景：内部部署数据中心会完全中断。** 此场景可能是由于自然灾害所致，例如火灾或水灾。这种情况下，对于企业来说，可能希望有一个辅助数据中心承载在另一个区域，还有具有自己的目录服务和 DNS 的 Azure 子网。与前一个灾难场景中一样，你可以将内部和外部 DNS 记录重定向为指向 Azure SharePoint 服务器场。同样，记下该 DNS 记录传播可能需要一些时间。
   
 如果使用的是主机命名网站集，根据[主机命名网站集体系结构和部署 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120) 中的建议，可以让 SharePoint 场中的同一 Web 应用程序托管多个网站集，分别具有唯一 DNS 名称（例如，http://sales.contoso.com 和 http://marketing.contoso.com)）。在这种情况下，可以为每个网站集创建指向群集 IP 地址的 DNS 记录。在请求到达 SharePoint Web 前端服务器后，它们就会着手将各个请求路由到相应的网站集。
   

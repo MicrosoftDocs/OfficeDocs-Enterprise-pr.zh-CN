@@ -1,5 +1,5 @@
 ---
-title: 用于 SharePoint Server 身份验证的 Azure AD
+title: 使用 Azure AD 进行 SharePoint Server 身份验证
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -18,13 +18,13 @@ ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 摘要： 了解如何以绕过 Azure 访问控制服务，使用 SAML 1.1 与 Azure Active Directory 在 SharePoint Server 用户进行身份验证。
 ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
-ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19702982"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "19856267"
 ---
-# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>用于 SharePoint Server 身份验证的 Azure AD
+# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>使用 Azure AD 进行 SharePoint Server 身份验证
 
  **摘要：** 了解如何在 SharePoint Server 2016 用户与 Azure Active Directory 身份验证。 
 
@@ -94,7 +94,7 @@ Azure 门户中 ([https://portal.azure.com](https://portal.azure.com))，创建�
     - 用户标识符：`user.userprincipalname`</br>
     - 注意： 请记住，更改*portal.contoso.local*替换要保护的 SharePoint 网站的 URL 的 Url。</br>
 3. 设置表格 （类似于下面的表 1），包括以下行：</br> 
-    - 领域
+    - Realm
     - SAML 签名证书文件的完整路径
     - （替换 */wsfed* */saml2* ） SAML 单一登录服务 URL
     - 应用程序的对象 id。 </br>
@@ -109,7 +109,7 @@ Azure 门户中 ([https://portal.azure.com](https://portal.azure.com))，创建�
 
 | 捕获的表 1： 值  |  |
 |---------|---------|
-|领域 | `urn:sharepoint:portal.contoso.local` |
+|Realm | `urn:sharepoint:portal.contoso.local` |
 |SAML 签名证书文件的完整路径 | `C:/temp/SharePoint SAML Integration.cer`  |
 |SAML 单一登录服务 URL （替换 /wsfed /saml2） | `https://login.microsoftonline.com/b1726649-b616-460d-8d20-defab80d476c/wsfed` |
 |应用程序对象 ID | `a812f48b-d1e4-4c8e-93be-e4808c8ca3ac` |
