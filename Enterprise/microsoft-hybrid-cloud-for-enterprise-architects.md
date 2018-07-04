@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 摘要： IT 架构师需要了解的有关使用 Microsoft 云服务和平台的混合方案的知识。
-ms.openlocfilehash: a4d0f7d0f788a3de2c9f21f3d875395c6daab4a3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: a729c770fee5a6484e8a8efbfe014b54fe266bc0
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161815"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>面向企业架构师的 Microsoft 混合云
 
@@ -27,10 +28,10 @@ ms.lasthandoff: 04/27/2018
   
 本文可链接至一组文章，这些文章介绍了 IT 架构师使用 Microsoft 云服务和平台的混合体系结构和配置所需要了解的内容。此外，还可以浏览本文的 7 页海报内容，以文摘格式进行打印（也称为分类帐、11 x 17 或 A3）。
   
-[![模型缩略图：Microsoft 混合云](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+[![Microsoft 混合云模型的缩略图](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-![PDF 文件](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio 文件](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![参阅包含其他语言版本的页面](images/Common_Images/GlobeIcon.png)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
 [更多语言](https://www.microsoft.com/download/details.aspx?id=54424)
   
 还可以查看 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的所有模型，逐一浏览 [Microsoft 企业云路线图：IT 决策者的资源](https://aka.ms/cloudarchitecture)。
