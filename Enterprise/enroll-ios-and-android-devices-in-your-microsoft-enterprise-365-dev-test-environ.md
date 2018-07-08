@@ -1,5 +1,5 @@
 ---
-title: 注册 iOS 和 Microsoft 企业 365 开发/测试环境中的 Android 设备
+title: 在 Microsoft 365 企业版开发/测试环境中注册 iOS 和 Android 设备
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 摘要： 使用此测试实验室指南注册 Microsoft 365 开发/测试环境中的设备和远程管理它们。
-ms.openlocfilehash: 8765a7ffb1bff1f257d7cd1ce5181561c2cf0080
-ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
+ms.openlocfilehash: a5d43a0ef3ed090f84c8415de3ac26f53fdafe0a
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188100"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>注册 iOS 和 Microsoft 企业 365 开发/测试环境中的 Android 设备
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-devtest-environment"></a>在 Microsoft 365 企业版开发/测试环境中注册 iOS 和 Android 设备
 
  **摘要：** 使用此测试实验室指南注册 Microsoft 365 开发/测试环境中的设备和远程管理它们。
   
@@ -50,37 +51,37 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。如果有人丢
 
 2.  从浏览器的 Microsoft Intune 管理控制台中，单击左侧导航窗格中的**组**。
 
-3. 在**组**窗格中，打开**所有设备 > 所有的移动设备 > 所有直接管理设备**。
+3. 在“**组**”窗格中，打开“**所有设备>所有移动设备>所有直接托管设备**”。
     
-4. 在**所有直接管理设备**窗格中，单击**设备**选项卡。
+4. 在“**所有直接托管设备**”窗格中，单击“**设备**”选项卡。
     
 5. 在设备列表中，单击自己的 iOS 设备。  
     
 6. 在自己的 iOS 设备中，请确保其位于主屏幕上。  
     
-7. 从管理计算机，在任务栏上，单击**远程任务 > 远程锁定**。它将切换到锁定屏幕上看 iOS 设备。
+7. 在自己的管理计算机中的任务栏中，单击“ **远程任务>远程锁定**”。在 iOS 设备切换到锁定屏幕时观察设备变化。
     
 删除密码：
   
-1. 从管理计算机，在**所有直接管理设备**窗格中，单击**设备**选项卡。
+1. 从自己的管理计算机的“**所有直接托管设备**”窗格中，单击“**设备**”选项卡。
     
-2. 在列表中，单击 iOS 设备。在任务栏上，单击**远程任务 > 密码重置**。等待一分钟。
+2. 在列表中，单击你的 iOS 设备。在任务栏上单击“**远程任务>密码重置**”。等待一分钟。
     
-3. 从 iOS 设备，解除锁定，请注意，有不再密码。若要更改密码后，转到**设置**，然后**密码**。
+3. 在你的 iOS 设备中将其解锁，注意此时不再存在密码。若要恢复密码，则依次进入“**设置**”、“**密码**”。
     
 远程锁定 Android 设备：
   
 1. 从浏览器的 Microsoft Intune 管理控制台中，单击左侧导航窗格中的**组**。
     
-2. 在**组**窗格中，打开**所有设备 > 所有的移动设备 > 所有直接管理设备**。
+2. 在“**组**”窗格中，打开“**所有设备>所有移动设备>所有直接托管设备**”。
     
-3. 在**所有直接管理设备**窗格中，单击**设备**选项卡。
+3. 在“**所有直接托管设备**”窗格中，单击“**设备**”选项卡。
     
 4. 在设备列表中，单击自己的 Android 设备。  
     
 5. 在自己的 Android 设备中，请确保其位于主屏幕上。  
     
-6. 从管理计算机，在任务栏上，单击**远程任务 > 远程锁定**。出现提示时，单击**是**。
+6. 在自己的管理计算机中的任务栏中，单击“ **远程任务>远程锁定**”。出现提示时，请单击“**是**”。
     
 7. Android 设备切换到锁定屏幕时观察其变化。
     
@@ -88,19 +89,19 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。如果有人丢
   
 远程重置密码：
   
-1. 从管理计算机上的浏览器中，在**所有直接管理设备**窗格中，Microsoft Intune 管理控制台选项卡中，单击 Android 设备。
+1. 在自己的管理计算机中，从浏览器的“Microsoft Intune 管理控制台”选项卡中的“**所有直接托管设备**”窗格中单击自己的 Android 设备。
     
-2. 在任务栏上，单击**远程任务 > 密码重置**。
+2. 在任务栏上单击“**远程任务>密码重置**”。
     
-3. 在**远程任务： 密码重置**提示下，单击**是**。等待一分钟。
+3. 在“**远程任务:密码重置**”提示符上，单击“**是**”。等待一分钟。
     
-4. 在**所有直接管理设备**窗格中，单击**查看属性**。
+4. 在“**所有直接托管设备**”窗格中，单击“**查看属性**”。
     
-5. 在**密码重置**，记下新密码。
+5. 在“**密码重置**”中，写入新的密码。
     
 6. 在自己的 Android 设备的锁屏中输入新密码。  
     
-7. 若要更改密码后，转到**设置**、 点击**设备**、 点击**锁定屏幕**、 输入新密码再次、 点击**屏幕锁定**然后所选的密码。
+7. 若要恢复密码，则进入“**设置**”，点按“**设备**”，然后点按“**锁屏**”，然后再次输入新密码，然后依次点按“**屏幕锁定**”和自己选择的密码。
     
 
 > [!TIP]
@@ -112,7 +113,7 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。如果有人丢
   
 [用于 Microsoft 365 企业版开发/测试环境的 MAM 策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[云应用测试实验室指南 (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 
 [企业移动 + 安全 (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

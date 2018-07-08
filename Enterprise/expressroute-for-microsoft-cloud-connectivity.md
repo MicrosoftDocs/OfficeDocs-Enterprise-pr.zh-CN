@@ -1,9 +1,9 @@
 ---
-title: "面向 Microsoft 云连接的 ExpressRoute"
+title: 面向 Microsoft 云连接的 ExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。"
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188110"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>面向 Microsoft 云连接的 ExpressRoute
 
@@ -48,7 +49,7 @@ Internet 中的用户，例如漫游或远程用户，通过 Internet 将他们�
   
 图 2 显示了两个网络路径。到 Microsoft Intune 的流量与普通 Internet 流量的路径相同。Office 365、Microsoft Azure 和 Dynamics 365 的流量经过 ExpressRoute 连接，这是内部部署网络边缘与 Microsoft 云边缘之间的专用路径。
   
-如果有 ExpressRoute 连接，你现在可以通过与服务提供商之间的关系控制从你的边缘到 Microsoft 云边缘的整个流量路径。此连接能提供可预知的性能和正常运行时间达 99.9% 的 SLA。
+ExpressRoute 连接，您现在可以控制，通过与服务提供商的关系，通过从您边缘到 Microsoft 的整个流量路径云边缘。可预测的性能和[99.95%运行时间 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)可以提供此连接。
   
 基于服务提供商到 Office 365、Azure 和 Dynamics 365 服务的连接，现在可以依靠可预测的吞吐量和延迟。目前不支持 ExpressRoute 到 Microsoft Intune 的连接。
   
@@ -239,7 +240,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
     
 - [Office 365 的网络规划和性能调整 365](https://aka.ms/tune)
     
-- [Office 365 Performance Management](https://mva.microsoft.com/zh-CN/training-courses/office-365-performance-management-8416)（Office 365 的性能管理）
+- [Office 365 Performance Management](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)（Office 365 的性能管理）
     
 ## <a name="expressroute-options"></a>ExpressRoute 选项
 

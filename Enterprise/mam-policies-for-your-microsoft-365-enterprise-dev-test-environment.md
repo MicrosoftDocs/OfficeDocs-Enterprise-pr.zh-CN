@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 企业版开发/测试环境的 MAM 策略
+title: 用于 Microsoft 365 企业版开发/测试环境的 MAM 策略
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 摘要： 使用此测试实验室指南添加到 Microsoft 365 开发/测试环境 EMS 移动应用程序管理 (MAM) 策略。
-ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 0a5c81665edf06631b8cebc57c9e715c78d3d85e
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188150"
 ---
-# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业版开发/测试环境的 MAM 策略
+# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>用于 Microsoft 365 企业版开发/测试环境的 MAM 策略
 
  **摘要：** 使用此测试实验室指南添加到 Microsoft 365 开发/测试环境 EMS 移动应用程序管理 (MAM) 策略。
   
@@ -143,9 +144,9 @@ Microsoft 企业移动 + 安全 (EMS) 有助于您的员工提高生产效率的
 
 [Microsoft 365 企业版开发/测试环境](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[在 Microsoft 企业版 365 开发/测试环境中注册 iOS 和 Android 设备](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[在 Microsoft 365 企业版开发/测试环境中注册 iOS 和 Android 设备](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
-[云应用测试实验室指南 (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 
 [企业移动 + 安全 (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
