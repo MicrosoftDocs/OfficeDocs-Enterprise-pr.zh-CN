@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、企业移动性 + 安全性 (EMS)、Dynamics 365 和 Office Server 产品的开发/测试环境。
-ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193672"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188160"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>云应用测试实验室指南 (TLG)
 
@@ -100,7 +100,7 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
     创建适用于 iOS 和 Android 设备的用户组和移动应用程序管理 (MAM) 策略。
     
-- [在 Microsoft 企业版 365 开发/测试环境中注册 iOS 和 Android 设备](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [在 Microsoft 365 企业版开发/测试环境中注册 iOS 和 Android 设备](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
     
     注册 iOS 或 Android 设备，并对其进行远程管理。
     
