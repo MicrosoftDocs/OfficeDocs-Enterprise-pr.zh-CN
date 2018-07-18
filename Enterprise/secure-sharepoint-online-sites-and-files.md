@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 SharePoint Online 和 Office 365 中文件的配置建议。
-ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319223"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
@@ -46,9 +47,9 @@ ms.lasthandoff: 04/27/2018
 针对各种 Office 365 功能的 SharePoint Online 团队网站绘制的建议。 对于高度机密的网站，建议使用 Azure 信息保护。 这包括在企业移动性 + 安全性 (EMS) 中。 
   
 下图显示了针对四个 SharePoint Online 团队网站的建议配置。
-  
-![适用于 SharePoint 网站的推荐配置](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
-  
+
+![适用于 SharePoint 网站的推荐配置](Media/SharePoint-site-configuration-v2.png)
+
 如图所示：
   
 - 基线保护包含针对 SharePoint Online 团队网站的两个选项 - 公共网站和专用网站。 组织中的任何人均可发现和访问公共网站。 只有网站成员可以发现和访问专用网站。 这两个网站配置均允许组外共享。 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/27/2018
     
 - 为敏感和高度机密 Office 365 标签配置数据丢失防护 (DLP)，在其试图向组织外部发送这些类型的文件时警告或阻止用户。
     
-- 对于配置有高度机密保护的网站，Azure 信息保护将对文件进行加密，并授予相应权限。
+- 如果方案需要，可以使用 Azure 信息保护来加密高度机密文件，并授予对此类文件的相应权限。不建议用于所有客户。
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和 OneDrive for Business 的租户范围内设置
 
@@ -155,7 +156,7 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
   
 ## <a name="azure-information-protection"></a>Azure 信息保护
 
-使用 Azure 信息保护应用标签和与文件如影随形的保护。对于此解决方案，建议使用作用域内 Azure 信息保护策略和“高度机密”标签的子标签来加密需要最高级别安全性保护的文件并授予相应权限。 
+如果安全方案需要，可以使用 Azure 信息保护来应用与文件一直如影随形的标签和保护。Azure 信息保护标签与 Office 365 标签不同。对于此解决方案，建议使用范围内 Azure 信息保护策略和“高度机密”标签的子标签，加密需要最高级安全保护的文件，并授予对此类文件的相应权限。 
   
 请注意，将 Azure 信息保护加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。 DLP 策略只适用于元数据（包括 Office 365 标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
   
