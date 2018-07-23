@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要： 将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。
-ms.openlocfilehash: ba23dde0fd79d13274244b52c5914d9249640570
-ms.sourcegitcommit: f496a401245240ec01754edcd4d44e7a0194d068
+ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "19907183"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720368"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
@@ -60,8 +60,8 @@ ms.locfileid: "19907183"
     
 - 您需要安装所需的 Azure AD 模块 SharePoint Online 和 Skype 业务 online:
     
-   - [Azure Active Directory V2](connect-to-office-365-powershell.md#ConnectV2)
-   - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+   - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
+   - [SharePoint Online 命令行管理程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype for Business 联机 Windows PowerShell 模块](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
 -  Windows PowerShell 需要配置的业务 Online、 Exchange Online 和安全的 Skype 运行签名的脚本&amp;合规性中心。若要执行此操作，在提升的 Windows PowerShell 会话中运行以下命令 （通过选择**运行以管理员身份**打开 Windows PowerShell 窗口）。
@@ -197,7 +197,7 @@ Import-PSSession $sfboSession
 
 Exchange Online 和安全&amp;合规性中心，请参阅使用多因素身份验证进行连接的以下主题：
 
-- [连接到 Exchange Online PowerShell 中使用多因素身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
+- [使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
 - [连接到 Office 365 安全性和合规性中心 PowerShell 使用多因素身份验证](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
 请注意，在两种情况下，必须使用单独的 Exchange Online 远程 PowerShell 模块会话进行连接。
