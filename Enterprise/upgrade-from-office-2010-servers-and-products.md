@@ -10,7 +10,6 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
-- MET150
 - LCC120
 - OFF120
 - OFF140
@@ -21,12 +20,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: 支持的 Office 2010 服务器和客户端应用程序，结束推出和自定义支持协议不可用。使用本文启动现在规划您的升级。
-ms.openlocfilehash: dd2d8d3a5ad629dcdbddab07cf9209a305a3024c
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: deca71195aec15370d10003b979e7222dead7418
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169774"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549973"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>资源可帮助您升级从 Office 2010 的服务器和客户端
 
@@ -39,22 +38,21 @@ ms.locfileid: "21169774"
 |Office 2010 （包括 Word、 Excel 2010，PowerPoint 2010 和 Outlook 2010）  <br/> |[Office 2010 末尾的支持路线图](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[Exchange 2010 末尾的支持路线图](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 或 SharePoint Server 2010  <br/> |[从 SharePoint 2010 升级](upgrade-from-sharepoint-2010.md) <br/> |
-   
-> [!TIP]
-> 更多规划路线图即将推出 ！请务必以供将来参考此页面加入书签。 
-  
+|Project Server 2010 </br> | [规划 Project Server 和 Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
+|Lync Server 2010 </br> | [Plan to upgrade to Skype 业务服务器](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+    
 使用 Office 2010 产品和服务接近其结束，这是支持的考虑移动到 Office 365 的绝佳时间。您获得最新功能、 安全更新和访问向内容跨各种设备。
 
 选择以下选项之一：
 - **将移动到 Office 365**： 对于许多客户，这是一个高效经济的解决方案。请参阅[如何我们移动到 Office 365 的业务？](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)
     
-- **升级您的内部服务器和应用程序。** 请参阅[Exchange 2010](exchange-2010-end-of-support.md)， [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)和[SharePoint 2010](upgrade-from-sharepoint-2010.md)规划路线图。 
+- **升级您的内部服务器和应用程序。** 请参阅[Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)、 [Exchange](exchange-2010-end-of-support.md)、 [SharePoint](upgrade-from-sharepoint-2010.md)、 [Project Server 和 Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)和[for Business 的 Skype](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)规划内容。 
     
 - **实现包括 Office 365 的混合解决方案**和您的内部服务器和应用程序。请参阅[Office 365 的混合云解决方案概述。](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)
     
 **是否需要帮助？** 请考虑使用合作伙伴或批量许可专家。**[查找您的 Office 365 合作伙伴或经销商](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**。 
 > [!TIP]
-> 如果您的组织购买 50 个或多个 Office 365 许可证，我们 FastTrack 团队可以帮助您通过设置 Office 365 的过程。访问[FastTrack.Microsoft.com](https://fasttrack.microsoft.com)。
+> 如果您的组织购买 50 个或多个 Office 365 许可证，我们 FastTrack 团队可以帮助您通过设置 Office 365 的过程。访问[FastTrack.Microsoft.com](https://www.microsoft.com/fasttrack/microsoft-365/office-365)。
   
 如果您的组织购买少于 50 Office 365 许可证，请参阅[Admins： 将用户升级到最新 Office 客户端使用 Office 365 的业务](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx)。 
   
@@ -80,11 +78,9 @@ Office 365 是一种软件作为-服务 (SaaS) 服务，Microsoft 云堆栈的�
   
 |**资源**|**说明**|
 |:-----|:-----|
-|**[视频： 什么是 Office 365？](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)** <br/> |观看此视频以了解 Office 365 概述。  <br/> |
-|**[我们如何移动到 Office 365 的业务？](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)** <br/> |阅读此文，了解如何企业组织可以移动到 Office 365 的高级概述。  <br/> |
 |**[选择的计划](https://aka.ms/viirjv)** <br/> |访问此页上，若要了解有关 Office 365 业务计划  <br/> |
 |**[Office 的系统要求](https://aka.ms/o365sysrequirements)** <br/> |在**业务、 教育和政府的 Office 365 计划**部分查看系统要求的详细信息。  <br/> |
-|**[Microsoft 云平台选项](https://www.microsoft.com/download/details.aspx?id=54432)** <br/> |下载此海报以了解有关 Office 365 和 Microsoft 云堆栈。您将了解 Microsoft 云堆栈，包括 Office 365 和责任您、 我们的客户和 Microsoft 的区域的核心功能。您可以下载海报以查看 PDF 或 Visio 格式。  <br/> |
+|**[Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)** <br/> |下载进一步了解 Microsoft 云和服务器平台选项的一个或多个海报。您可以下载中 PDF 海报或 Visio 格式。  <br/> |
 |**[Office 365 常见问题](https://aka.ms/office365faqs)** <br/> |访问此页以查看常见问题进行了解答有关 Office 365，并提供其他信息的链接的列表。  <br/> |
    
 ## <a name="what-is-microsoft-365"></a>什么是 Microsoft 365？

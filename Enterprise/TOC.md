@@ -1,6 +1,3 @@
-
-  
-
 # [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 ## [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
 ### [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
@@ -44,9 +41,6 @@
 #### [用于 Office 365 开发/测试环境的高级电子数据展示](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 #### [Office 365 开发/测试环境中的敏感文件保护](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
 #### [Office 365 开发/测试环境中的数据分类和标记](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
-### [Microsoft 365 企业版开发/测试环境](the-microsoft-365-enterprise-dev-test-environment.md)
-#### [用于 Microsoft 365 企业版开发/测试环境的 MAM 策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-#### [在 Microsoft 365 企业版开发/测试环境中注册 iOS 和 Android 设备](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 ### [Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md)
 #### [Office 365 和 Dynamics 365 开发/测试环境的 Exchange Online 集成](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
 ### [One Microsoft 云开发/测试环境](the-one-microsoft-cloud-dev-test-environment.md)
@@ -112,5 +106,19 @@
 #### [部署单独的 SharePoint Online 团队网站](deploy-an-isolated-sharepoint-online-team-site.md)
 #### [管理单独的 SharePoint Online 团队网站](manage-an-isolated-sharepoint-online-team-site.md)
 #### [独立的 SharePoint Online 团队网站开发/测试环境](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [从 Office 2007 或 2010年产品升级](plan-upgrade-previous-versions-office.md)
+### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
+#### [Office 2010 桌面](/DeployOffice/office-2010-end-support-roadmap.md)
+#### [Exchange 2010](exchange-2010-end-of-support.md)
+#### [SharePoint 2010](upgrade-from-sharepoint-2010.md)
+#### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [Project Server 2010](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)
+### [Office 2007](upgrade-from-office-2007-servers-and-products.md)
+#### [Office 2007 桌面](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap)
+#### [Exchange 2007](exchange-2007-end-of-support.md)
+#### [SharePoint 2007](sharepoint-2007-end-of-support.md)
+#### [Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
+#### [Project Server 2007](project-server-2007-end-of-support.md)
 ## [使用 Office 365 PowerShell 管理 Office 365](powershell/manage-office-365-with-office-365-powershell.md)
 
