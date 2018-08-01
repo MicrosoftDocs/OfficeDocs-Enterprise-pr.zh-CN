@@ -10,11 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 学习如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
-ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21550055"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -76,7 +77,15 @@ Office 365 全局管理员必须分配电子数据展示管理者权限，以允
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>NAM</strong></td>
+<td align="left"><strong>APC</strong></td>
+<td align="left">东南亚或东亚数据中心</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>AUS</strong></td>
+<td align="left">东南亚或东亚数据中心</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>CAN</strong></td>
 <td align="left">美国数据中心</td>
 </tr>
 <tr class="even">
@@ -84,28 +93,24 @@ Office 365 全局管理员必须分配电子数据展示管理者权限，以允
 <td align="left">欧洲数据中心</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>APC</strong></td>
-<td align="left">东南亚或东亚数据中心</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>CAN</strong></td>
-<td align="left">美国数据中心</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>AUS</strong></td>
-<td align="left">东南亚或东亚数据中心</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>KOR</strong></td>
-<td align="left">租户的默认数据位置</td>
+<td align="left"><strong>FRA</strong></td>
+<td align="left">欧洲数据中心</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
 <td align="left">欧洲数据中心</td>
 </tr>
 <tr class="even">
+<td align="left"><strong>KOR</strong></td>
+<td align="left">东南亚或东亚数据中心</td>
+</tr>
+<tr class="even">
 <td align="left"><strong>JPN </strong></td>
 <td align="left">东南亚或东亚数据中心</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>NAM</strong></td>
+<td align="left">美国数据中心</td>
 </tr>
 </tbody>
 </table>
