@@ -11,11 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 了解如何配置 OneDrive for Business 多地理位置。
-ms.openlocfilehash: 29e69fa6e5a9715360b61024ee41dee4cd4b95b1
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549963"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 多地理位置租户配置
 
@@ -42,14 +43,6 @@ ms.lasthandoff: 04/27/2018
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">北美</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
-<td align="left">欧洲/中东/非洲</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
 <td align="left">亚太地区</td>
 <td align="left">APC</td>
 </tr>
@@ -57,26 +50,38 @@ ms.lasthandoff: 04/27/2018
 <td align="left">澳大利亚</td>
 <td align="left">AUS</td>
 </tr>
+<tr class="even">
+<td align="left">加拿大</td>
+<td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">欧洲/中东/非洲</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="even">
+<td align="left">法国</td>
+<td align="left">FRA</td>
+</tr>
 <tr class="odd">
 <td align="left">日本</td>
 <td align="left">JPN</td>
 </tr>
 <tr class="even">
-<td align="left">加拿大</td>
-<td align="left">CAN</td>
+<td align="left">韩国</td>
+<td align="left">KOR</td>
+</tr>
+<tr class="odd">
+<td align="left">北美</td>
+<td align="left">NAM</td>
 </tr>
 <tr class="odd">
 <td align="left">英国</td>
 <td align="left">GBR</td>
 </tr>
-<tr class="even">
-<td align="left">韩国</td>
-<td align="left">KOR</td>
-</tr>
 </tbody>
 </table>
 
-添加附属地理位置
+添加卫星地理位置
 
 1. 打开 [OneDrive 管理中心](https://admin.onedrive.com)。
 
