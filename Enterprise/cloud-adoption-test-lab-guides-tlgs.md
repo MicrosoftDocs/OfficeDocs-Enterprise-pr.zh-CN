@@ -1,36 +1,38 @@
 ---
-title: 云应用测试实验室指南 (TLG)
+title: 使用云应用测试实验室指南 (TLG) 测试 Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/23/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 摘要：使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、企业移动性 + 安全性 (EMS)、Dynamics 365 和 Office Server 产品的开发/测试环境。
-ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+description: 摘要：使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、Dynamics 365 和 Office Server 产品的开发/测试环境。
+ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
+ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188160"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "23041496"
 ---
-# <a name="cloud-adoption-test-lab-guides-tlgs"></a>云应用测试实验室指南 (TLG)
+# <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>使用云应用测试实验室指南 (TLG) 测试 Office 365
 
- **摘要：** 使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、企业移动性 + 安全性 (EMS)、Dynamics 365 和 Office Server 产品的开发/测试环境。
+ **摘要：** 使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、Dynamics 365 和 Office Server 产品的开发/测试环境。
   
 TLG 可帮助你快速了解 Microsoft 产品。当你需要先评估某种技术或配置，然后再决定它是否适合你或将其推广给用户时，这些指南非常有用。“我自己构建，它可运行”的亲身体验有助于了解新产品或解决方案的部署需求，以便更好地规划将其托管在生产中。
   
 TLG 还允许你创建用于开发和测试应用程序的代表性环境，也称为开发/测试环境。
   
-![Microsoft 云中的测试实验室指南](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Microsoft 云中的测试实验室指南](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 深入了解前请参阅其他资源：
   
@@ -88,21 +90,10 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
     演示如何创建因敏感或高度机密资源而与组织其他部分隔离的 SharePoint Online 团队网站。
     
-## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业版开发/测试环境
+## <a name="the-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境
 
-使用以下文章创建适用于 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365-enterprise/)方案的开发/测试环境：
-  
-- [Microsoft 365 企业版开发/测试环境](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-    创建包括 Office 365 E5、EMS E5 和运行 Windows 10 企业版的计算机的初始环境。
-    
-- [用于 Microsoft 365 企业版开发/测试环境的 MAM 策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-    
-    创建适用于 iOS 和 Android 设备的用户组和移动应用程序管理 (MAM) 策略。
-    
-- [在 Microsoft 365 企业版开发/测试环境中注册 iOS 和 Android 设备](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-    
-    注册 iOS 或 Android 设备，并对其进行远程管理。
+使用[这些文章](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)创建适用于 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365-enterprise/)的测试环境。
+ 
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境
 
@@ -148,17 +139,7 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
     在 Azure 基础结构服务中构建基本和高可用性 SharePoint Server 2013 场。
     
-**加入讨论**
-
-|**联系我们**|**说明**|
-|:-----|:-----|
-|**你需要什么样的解决方案？** <br/> |我们正在为跨多个 Microsoft 产品和服务的解决方案创建内容。请告诉我们你对我们的跨服务器解决方案的想法，或者发送电子邮件到 [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) 寻求具体的解决方案。<br/> |
-|**参加解决方案讨论** <br/> |如果热衷于基于云的解决方案，请考虑加入云采用咨询委员会 (CAAB)，以便与充满活力的更大规模社区保持联络，其中包括 Microsoft 内容开发人员、行业专家和全球各地的客户。若要加入，请将自己添加为 Microsoft 技术社区的[云采用咨询委员会 (CAAB) 空间](https://aka.ms/caab)成员，并向我们 ([CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)) 发送电子邮件。任何人都可以阅读 [CAAB 博客](https://blogs.technet.com/b/solutions_advisory_board/)上与社区相关的内容。不过，CAAB 成员可获邀参加私人网络研讨会，了解新云采用资源和解决方案。<br/> |
-|**获取您在此处看到的图片** <br/> |若要获取本文中图片的可编辑副本，请告诉我们，我们非常乐意发送副本。请通过电子邮件方式将请求（包括图片的 URL 和标题）发送到 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)。<br/> |
-   
 ## <a name="see-also"></a>另请参阅
-
-<a name="ADD_TLGs"> </a>
 
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
   
