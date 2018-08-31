@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 摘要： 配置主机相比的高可用性的 Microsoft Azure 基础结构的 Office 365 联合身份验证。
-ms.openlocfilehash: 465c53efe8464ac823ebb3cd0e847a854eed82bb
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+description: 摘要：配置 Microsoft Azure 基础结构以托管 Office 365 的高可用性联合身份验证。
+ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915457"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1:配置 Azure
 
- **摘要：**配置主机为 Office 365 的高可用性联合身份验证的 Microsoft Azure 基础结构。
+ **摘要：** 配置 Microsoft Azure 基础结构以托管 Office 365 的高可用性联合身份验证。
   
 在此阶段中，您将创建的资源组、 阶段 2、 3 和 4 中将承载虚拟机的 Azure 中的虚拟网络 (VNet) 和可用性集。您必须完成之后才能接着到此阶段[高可用性联合身份验证第 2 阶段： 配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。为所有阶段，请参阅[在 Azure 中的 Office 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
   
@@ -40,11 +41,11 @@ Azure 必须设置与这些基本组件：
   
 |**项目**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 V：跨部署虚拟网络配置**
   
@@ -62,10 +63,10 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
   
 |**项目**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) 域控制器和目录同步服务器虚拟机 (VM) 使用的子网。  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |AD FS VM 使用的子网。  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Web 应用程序代理 VM 使用的子网。  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Azure 网关 VM 使用的子网。  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) 域控制器和目录同步服务器虚拟机 (VM) 使用的子网。  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM 使用的子网。  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理 VM 使用的子网。  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 网关 VM 使用的子网。  <br/> |
    
  **表 S：虚拟网络中的子网**
   
@@ -73,14 +74,14 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
   
 |**项目**|**用途**|**子网的 IP 地址**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |目录同步服务器的静态 IP 地址  <br/> |在表 S 的第 1 项中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |AD FS 服务器内部负载均衡器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |第一个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|6.  <br/> |第二个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|7.  <br/> |第一个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|8.  <br/> |第二个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |目录同步服务器的静态 IP 地址  <br/> |在表 S 的第 1 项中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |AD FS 服务器内部负载均衡器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |第一个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |第二个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |第一个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |第二个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 I：虚拟网络中的静态 IP 地址**
   
@@ -88,8 +89,8 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
   
 |**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 D：本地 DNS 服务器**
   
@@ -99,16 +100,16 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
   
 |**项**|**本地网络地址空间**|
 |:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 L：本地网络的地址前缀**
   
 现在让我们开始构建 Azure 基础结构来托管你的 Office 365 联合身份验证。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Azure PowerShell cmdlet 使用入门](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)。 
   
 首先，启动 Azure PowerShell 提示符并登录到你的帐户。
   
@@ -131,7 +132,7 @@ Get-AzureRMSubscription | Sort Name | Select Name
 Get-AzureRMSubscription | Sort Name | Select SubscriptionName
 ```
 
-设置您的 Azure 订阅。引号，包括内的所有内容替换\<和 > 字符，并且正确的名称。
+设置 Azure 订阅。使用正确的名称替换引号内的所有内容（包括 \< 和 > 字符）。
   
 ```
 $subscr="<subscription name>"
@@ -148,10 +149,10 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
   
 |**项目**|**资源组名称**|**用途**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |域控制器  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |AD FS 服务器  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Web 应用程序代理服务器  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |基础结构元素  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |域控制器  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS 服务器  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理服务器  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |基础结构元素  <br/> |
    
  **表 R：资源组**
   
@@ -273,9 +274,9 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 |**项目**|**用途**|**可用性集的名称**|
 |:-----|:-----|:-----|
-|1.  <br/> |域控制器  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |AD FS 服务器  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Web 应用程序代理服务器  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |域控制器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |AD FS 服务器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Web 应用程序代理服务器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 A：可用性集**
   
@@ -298,13 +299,13 @@ New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $l
 
 这是该阶段成功完成后生成的配置。
   
-**第 1 阶段： Azure 基础结构的高可用性的 Office 365 的联合身份验证**
+**阶段 1：用于 Office 365 高可用性联合身份验证的 Azure 基础结构**
 
-![阶段 1：在包含 Azure 基础结构的 Azure 中配置高可用性 Office 365 联合身份验证](images/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![阶段 1：在包含 Azure 基础结构的 Azure 中配置高可用性 Office 365 联合身份验证](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>后续步骤
 
-使用[高可用性联合身份验证第 2 阶段： 配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)继续此工作负荷的配置。
+使用 [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 
@@ -314,6 +315,6 @@ New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $l
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 的联合标识](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[了解 Office 365 标识和 Azure Active Directory](about-office-365-identity.md)
 
 

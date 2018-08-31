@@ -1,5 +1,5 @@
 ---
-title: "为 Microsoft Azure PaaS 设计网络"
+title: 为 Microsoft Azure PaaS 设计网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "摘要：了解如何优化你的网络以便访问 Microsoft Azure PaaS。"
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要：了解如何优化你的网络以便访问 Microsoft Azure PaaS。
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915107"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>为 Microsoft Azure PaaS 设计网络
 
@@ -46,7 +49,7 @@ ms.lasthandoff: 02/09/2018
     
 **图 1：用于连接 Azure PaaS 服务的连接选项**
 
-![图 1：Azure PaaS 服务的连接选项](images/Network_Poster/PaaS1.png)
+![图 1：Azure PaaS 服务的连接选项](media/Network-Poster/PaaS1.png)
   
 图 1 显示了通过 Internet 管道或 ExpressRoute 连接到 Azure PaaS 服务的内部部署网络。
   
@@ -56,7 +59,7 @@ ms.lasthandoff: 02/09/2018
   
 **图 2：Azure 应用程序网关**
 
-![图 2：Azure 应用程序网关服务](images/Network_Poster/PaaS2.png)
+![图 2：Azure 应用程序网关服务](media/Network-Poster/PaaS2.png)
   
 图 2 显示了 Azure 应用程序网关，并展示如何将来自 Internet 的用户请求传送到 Azure Web 应用、云服务或虚拟机。
   
@@ -86,7 +89,7 @@ ms.lasthandoff: 02/09/2018
   
 **图 3：Azure 流量管理器**
 
-![图 3：Azure 流量管理器](images/Network_Poster/PaaS3.png)
+![图 3：Azure 流量管理器](media/Network-Poster/PaaS3.png)
   
 图 3 显示了流量管理器用来将请求传送到在美国、欧洲和亚洲的三个不同 Azure Web 应用的基本过程。在本例中：
   

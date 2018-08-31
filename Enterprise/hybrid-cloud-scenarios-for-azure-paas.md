@@ -1,5 +1,5 @@
 ---
-title: "Azure PaaS 的混合云方案"
+title: Azure PaaS 的混合云方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
-description: "摘要： 了解在 Azure 中基于 Microsoft 平台即服务 (PaaS) 云产品的混合体系结构和方案。"
-ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要： 了解在 Azure 中基于 Microsoft 平台即服务 (PaaS) 云产品的混合体系结构和方案。
+ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915007"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS 的混合云方案
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/09/2018
   
 **图 1：Azure 中基于 Microsoft PaaS 的混合方案**
 
-![Azure 中基于 Microsoft PaaS 的混合方案](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
+![Azure 中基于 Microsoft PaaS 的混合方案](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 针对体系结构的每一层：
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 02/09/2018
   
 **图 2：基于 Azure PaaS 的混合应用程序**
 
-![基于 Azure PaaS 的混合应用程序](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
+![基于 Azure PaaS 的混合应用程序](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
 在图 2 中，本地网络在服务器上承载存储或应用程序以及包含代理服务器的 DMZ。它通过 Internet 或使用 ExpressRoute 连接来连接到 Azure PaaS 服务。
   
@@ -78,7 +79,7 @@ Azure 应用可以使用以下程序提供的凭据：
   
 **图 3：基于 Azure PaaS 的混合应用程序示例**
 
-![基于 Azure PaaS 的混合应用程序示例](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
+![基于 Azure PaaS 的混合应用程序示例](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
 在图 3 中，本地网络承载 LOB 应用程序。Azure PaaS 承载自定义的移动应用。Internet 上的智能电话访问 Azure 中的自定义移动应用，它将数据请求发送到本地 LOB 应用程序。
   
@@ -104,7 +105,7 @@ Stretch Database 是 SQL Server 2016 的一项功能，它可以使你以透明�
   
 **图 4：使用 SQL Server 2016 的 Stretch Database**
 
-![使用 SQL Server 2016 的 Stretch Database](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
+![使用 SQL Server 2016 的 Stretch Database](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
   
 在图 4 中，本地网络承载一个服务器，该服务器运行配有小型本地数据库的 SQL Server 2016。Azure PaaS 承载 Azure SQL Server Stretch Database（包含扩展部分的数据库）的实例。从本地用户发送到本地 SQL 服务器的 T-SQL 查询已被安全转发到 Azure SQL Stretch Database，然后由该 Stretch Database 将结果返回给发出请求的用户。
   

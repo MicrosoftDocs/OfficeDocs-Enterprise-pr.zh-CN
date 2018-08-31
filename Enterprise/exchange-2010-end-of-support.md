@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 已接近结束的支持。使用本规划指南作为指南准备升级到 Exchange Online 或 Exchange Server 内部部署的更新版本。
-ms.openlocfilehash: 240f93bfe27e3d564514626fc1d0f51ddeb7802d
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: e655edcc38723acd622fc6abc62a00d3f3e36738
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169884"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915187"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 末尾的支持路线图
 
@@ -178,9 +178,9 @@ Express 迁移非常适合于需要更多时间，以将其邮箱迁移到 Offic
     
 - [Exchange Server 混合部署](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
     
-- ["混合配置"向导](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
+- [混合配置向导](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
     
-- [混合配置向导 FAQ](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [混合配置向导常见问题解答](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
     
 - [混合部署先决条件](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
     

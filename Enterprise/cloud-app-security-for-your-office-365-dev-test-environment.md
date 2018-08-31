@@ -8,18 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 摘要： 配置和演示 Office 365 开发/测试环境中的 Office 365 云应用程序安全性。
-ms.openlocfilehash: d62524b6c4373c851a67b4039146ad8b6a610790
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215874"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915757"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的云应用安全
 
@@ -55,7 +57,7 @@ Office 365 云应用程序安全性，以前称为 Office 365 高级安全管理
     
 2. 在主门户页上，单击“管理员”****。
     
-3. 在左侧导航栏中，单击“用户”>“活动用户”****。
+3. 在左侧导航栏中，依次单击“用户”和“活动用户”****。
     
 4. 	单击“**User 4**”帐户。
     
@@ -123,7 +125,7 @@ Office 365 云应用程序安全性，以前称为 Office 365 高级安全管理
     
 8. 在主门户页上，单击“管理员”****。
     
-9. 在左侧导航栏中，单击“用户”>“活动用户”****。
+9. 在左侧导航栏中，依次单击“用户”和“活动用户”****。
     
 10. 单击“**User 5**”帐户。
     

@@ -8,14 +8,16 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: None
+search.appverid:
+- MET150
 ms.collection: Strat_O365_Enterprise
 description: 了解 Office 365 客户端应用程序支持的条件的访问
-ms.openlocfilehash: f9a1b4c022b00569a392d7f50bfcae583847ea3c
-ms.sourcegitcommit: 4e654517825b74a3bbe171b915b134ba49231e2e
+ms.openlocfilehash: 215b97daf532e22eb37618d66779378e37accb31
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "21541962"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915297"
 ---
 # <a name="office-365-client-app-support---conditional-access"></a>Office 365 客户端应用程序支持的条件的访问
 
@@ -36,11 +38,11 @@ ms.locfileid: "21541962"
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![深入图标](images/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Excel 图标](images/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![流图标](images/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![表单图标](images/o365-forms-64x64.png) <br> [Forms](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Kaizala 图标](images/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) 
-| ![Office 365 管理图标](images/o365-o365admin-64x64.png) <br> [Office 365<br>管理](https://products.office.com/business/manage-office-365-admin-app) | ![OneDrive for Business 图标](images/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) | ![OneNote 图标](images/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Outlook 图标](images/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![计划工具图标](images/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) 
-| ![PowerBI 图标](images/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![PowerPoint 图标](images/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![项目图标](images/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![SharePoint 图标](images/o365-sharepoint-64x64.png) <br> [Sharepoint<sup>1</sup>](https://products.office.com/sharepoint) | ![Skype 业务图标](images/o365-skypeforbusiness-64x64.png) <br> [Skype 的<br>业务](https://www.skype.com/business/) 
-| ![StaffHub 图标](images/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software) | ![流图标](images/o365-stream-64x64.png) <br> [流](https://stream.microsoft.com) | ![Sway 图标](images/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![团队图标](images/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![待办事项图标](images/o365-todo-64x64.png) <br> [微软待办](https://todo.microsoft.com) 
-| ![Visio 图标](images/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Word 图标](images/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Yammer 图标](images/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
+| ![深入图标](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Excel 图标](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![流图标](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![表单图标](media/o365-forms-64x64.png) <br> [Forms](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Kaizala 图标](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) 
+| ![Office 365 管理图标](media/o365-o365admin-64x64.png) <br> [Office 365<br>管理](https://products.office.com/business/manage-office-365-admin-app) | ![OneDrive for Business 图标](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) | ![OneNote 图标](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Outlook 图标](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![计划工具图标](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) 
+| ![PowerBI 图标](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![PowerPoint 图标](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![项目图标](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![SharePoint 图标](media/o365-sharepoint-64x64.png) <br> [Sharepoint<sup>1</sup>](https://products.office.com/sharepoint) | ![Skype 业务图标](media/o365-skypeforbusiness-64x64.png) <br> [Skype 的<br>业务](https://www.skype.com/business/) 
+| ![StaffHub 图标](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software) | ![流图标](media/o365-stream-64x64.png) <br> [流](https://stream.microsoft.com) | ![Sway 图标](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![团队图标](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![待办事项图标](media/o365-todo-64x64.png) <br> [微软待办](https://todo.microsoft.com) 
+| ![Visio 图标](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Word 图标](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Yammer 图标](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
 
 > [!NOTE]
 > <sup>1</sup>上 macOS 即将发布的 SharePoint 应用程序支持。

@@ -1,5 +1,5 @@
 ---
-title: "设计 Microsoft 云存储"
+title: 设计用于 Microsoft 云的存储
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,53 +8,56 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
-description: "摘要： 了解您为何需要云存储，查看的 Microsoft 的云存储选项和密钥存储方案的列表。"
-ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 摘要： 了解您为何需要云存储，并查看 Microsoft 云存储选项和密钥存储方案的列表。
+ms.openlocfilehash: d96992d63115095dd6a1b7277886d0a4bb2bc02f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915227"
 ---
-# <a name="designing-storage-for-the-microsoft-cloud"></a>设计 Microsoft 云存储
+# <a name="designing-storage-for-the-microsoft-cloud"></a>设计用于 Microsoft 云的存储
 
- **摘要：**了解您为何需要云存储，查看的 Microsoft 的云存储选项和密钥存储方案的列表。
+ **摘要：** 了解您为何需要云存储和查看 Microsoft 云存储选项和密钥存储方案的列表。
   
-与 Microsoft 云服务集成存储到范围广泛的服务和云平台选项使您可以访问。
+将您的存储与 Microsoft 云服务集成到各种服务和云平台选项使您可以访问。
   
 ## <a name="why-cloud-storage"></a>为什么云存储？
 
-有两种使用云存储的主要原因。
+有两个主要原因使用云存储。
   
-1. 推向市场的速度：
+1. 上市速度：
     
-  - 更快地配置为具有高可用性和灾难恢复能力的
+  - 更快地配置高可用性和灾难恢复
     
-  - 购买任何存储硬件
+  - 若要购买没有存储硬件
     
-  - 由 Microsoft 的云服务提供的内置管道
+  - Microsoft 云服务所提供的内置管道
     
-  - 可从任何地方在世界上
+  - 可从在世界各地
     
-2. 更低的成本来维护：
+2. 若要维护的降低成本：
     
-  - 若要缩放向上和向下的存储需求的弹性
+  - 弹性扩展上下存储要求
     
   - 没有存储硬件维护或迁移
     
-  - Microsoft 为您内置的管道工，维护和改善基础结构
+  - Microsoft 是您内置管道工维护和改善基础结构
     
-  - 在市场上进行了持续改进的最佳存储安全
+  - 与持续改进市场中的最佳存储安全
     
 ## <a name="microsoft-cloud-storage-options"></a>Microsoft 云存储选项
 
-为帮助您理解云存储选项范围广泛，我们使用一个构造类比。
+若要帮助您了解各种云存储选项，我们使用构造葡萄形状。
   
-### <a name="move-in-ready"></a>中移动已准备好
+### <a name="move-in-ready"></a>移入已准备就绪
 
-使用这些预组包的解决方案捆绑在一起，与现有的服务。使用立即和最小配置。
+与现有服务使用这些捆绑在一起的预先打包的解决方案。使用立即和最小配置。
   
 - Office 365
     
@@ -64,19 +67,19 @@ ms.lasthandoff: 02/09/2018
     
 - Dynamics 365
     
-- Visual Studio 团队服务
+- Visual Studio Team Services
     
-- Azure 站点恢复
+- Azure Site Recovery
     
-- Yammer 站点共享
+- Yammer 共享网站
     
-- Azure 的备份
+- Azure 备份
     
-其中的每个细节云存储选项，请参阅[移动中的准备](move-in-ready.md)。
+每个的详细信息云存储选项，请参阅[Move 中准备](move-in-ready.md)。
   
 ### <a name="some-assembly-required"></a>一些所需的程序集
 
-作为起点与其他配置存储解决方案或自定义合适的编码使用现有的服务。
+使用作为起点与其他配置存储解决方案或编码的自定义调整现有的服务。
   
 - Azure 内容交付网络
     
@@ -84,25 +87,25 @@ ms.lasthandoff: 02/09/2018
     
 - HdInsight
     
-- Azure 的 Redis 高速缓存
+- Azure Redis 缓存
     
 - Azure SQL 数据库
     
-- SQL Server 在 Azure 的 VM
+- 在 Azure 虚拟机上的 SQL Server
     
 - Azure 宇宙 DB
     
 - StorSimple
     
-- SQL azure 数据仓库
+- Azure SQL 数据仓库
     
-- Azure 数据湖存储区
+- Azure 数据湖泊存储区
     
 每个云存储选项的详细信息，请参阅[所需的某些程序集](some-assembly-required.md)。
   
 ### <a name="build-from-the-ground-up"></a>从零开始构建
 
-这些存储构建基块，以及编码，用于从头开始创建您自己的应用程序或存储解决方案。
+存储这些构建基块，编码，以及用于从头开始创建您自己的存储解决方案或应用程序。
   
 - Azure 存储 （文件）
     
@@ -112,47 +115,47 @@ ms.lasthandoff: 02/09/2018
     
 - Azure 存储 （表）
     
-每个云存储选项的详细信息，请参阅[从头开始了](build-from-the-ground-up.md)。
+有关每个云存储选项的详细信息，请参阅[从头开始安装](build-from-the-ground-up.md)。
   
 ## <a name="key-storage-scenarios"></a>密钥存储方案
 
-下面是需要基于云存储的关键方案：
+下面是需要基于云的存储的主要方案：
   
 - 缓存数据
     
-    对常用的数据访问速度通过将它存储在高速缓存中。
+    通过将其存储在高速缓存中访问速度到常用数据。
     
 - 与团队成员协作
     
-    若要允许访问云存储中的数据的多个用户授予权限。
+    为多个用户允许云存储中的数据访问授予权限。
     
 - 管理数据
     
-    存储、 移动或删除内部或外部的大容量数据。
+    存储、 移动或删除内部或外部批量数据。
     
-- 管理源代码
+- 管理源代码的步骤
     
-    上载、 协作并在云中运行应用程序的代码文件。
+    上载、 协作和云中的运行应用程序代码文件。
     
 - 备份文件
     
-    将异地内部或外部数据的副本存储在云的多个位置。
+    在多个云位置中存储内部或外部数据的非现场的副本。
     
-- 发布公司的通信
+- 发布公司通信
     
-    创建出版物的内部或外部邮件的单个点。
+    创建单个内部或外部的邮件的出版物的点。
     
-- 分发数以百万计的事件
+- 分发数百万事件
     
-    创建网站、 应用程序和设备的遥测接收存储。
+    从网站、 应用程序和设备中创建遥测引入的存储。
     
-- 管理/服务于视频
+- 管理/服务视频
     
-    存储并向客户或组织用户提供视频内容。
+    存储和向客户或组织用户提供视频内容。
     
 ## <a name="next-step"></a>后续步骤
 
-查看[准备搬入](move-in-ready.md)云存储选项。
+查看[移入准备](move-in-ready.md)云存储选项。
   
 ## <a name="see-also"></a>另请参阅
 

@@ -1,5 +1,5 @@
 ---
-title: "一些所需的程序集"
+title: 一些所需的程序集
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,47 +8,50 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
-description: "摘要： 获取组可用于创建定制的存储解决方案的云存储选项的详细信息。"
-ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 摘要： 大致集可用于创建自定义存储解决方案的云存储选项的详细信息。
+ms.openlocfilehash: 2c80b0cdf0829e80a7916133ee51a45c91b96efa
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915517"
 ---
 # <a name="some-assembly-required"></a>一些所需的程序集
 
- **摘要：**获取上的云组的详细信息可用于创建定制的存储解决方案的存储选项。
+ **摘要：** 获取一组由云的详细信息可用于创建自定义存储解决方案的存储选项。
   
-"某些程序集所需"的存储解决方案：
+"一些所需的程序集"存储解决方案：
   
-- 为您的存储解决方案作为起点使用现有的服务。
+- 作为起点的现有服务用于存储解决方案。
     
 - 需要一些配置或编码。
     
-- 可以自定义以满足您的需要。
+- 可以自定义以满足您的需求。
     
-以下各节描述了每个"某些程序集所需"的存储解决方案的详细信息。
+以下各节介绍了每个"一些所需的程序集"存储解决方案的详细信息。
   
 ## <a name="azure-content-delivery-network"></a>Azure 内容交付网络
 
 ### <a name="features"></a>功能
 
-- 高级和实际时间的分析
+- 高级和实际时间分析
     
-- 可靠的安全性，防止 DDoS
+- 针对 DDoS 可靠的安全性
     
-- 获取内容自动从 Azure 网站或 Azure 云服务一旦设置集成
+- 获取内容自动从 Azure 网站或 Azure 云服务后设置集成
     
-- Akamai 的新合作
+- 与 Akamai 新合作关系
     
-- 可以处理通信量激增和繁重的负载
+- 可以处理突然流量峰值和过重
     
 ### <a name="common-uses"></a>常见用途
 
-- 音频、 视频、 应用程序、 图像和其他文件速度更快、 更可靠地向客户分发使用是离他们最近的服务器
+- 音频、 视频、 应用程序、 图像和其他文件更快、 更可靠地向客户分发使用其最接近的服务器
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
@@ -58,7 +61,7 @@ ms.lasthandoff: 02/09/2018
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://azure.microsoft.com/services/cdn/)。
+其他信息，请单击[此处](https://azure.microsoft.com/services/cdn/)。
   
 成本信息，请单击[此处](https://azure.microsoft.com/pricing/details/cdn/)。
   
@@ -66,27 +69,27 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="features"></a>功能
 
-- Apache Hadoop 分发由云数据湖服务
+- Apache Hadoop 分发由云数据湖泊服务
     
-- 扩展到 petabytes 即需即装
+- 扩展到按需型 petabytes
     
-- 处理非结构化和半结构化数据在 Java、.NET，和更多的发展
+- 处理非结构化和半结构化数据 Java、.NET，等中的开发
     
 - 跳过购买和维护硬件
     
-- 使用云连接内部 Hadoop 群集
+- 使用云连接的本地 Hadoop 群集
     
-- 灵活地部署任意 Hadoop 项目通过自定义脚本 (例如 R Giraph，Solr)
+- 灵活地部署通过自定义脚本 (例如 R，Giraph，Solr) 的任意 Hadoop 项目
     
 ### <a name="common-uses"></a>常见用途
 
 - 数据分析工作负荷
     
-- 内存中数据处理的框架，用于大数据 （触发）
+- 内存中数据处理框架 big 数据 (Spark)
     
-- 实时流处理 （冲击）
+- 实时流处理 （风暴）
     
-- 大事务处理 (OLTP) 的非关系数据 (HBase)
+- 大型事务处理 (OLTP) 的非关系数据 (HBase)
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
@@ -94,7 +97,7 @@ ms.lasthandoff: 02/09/2018
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://azure.microsoft.com/services/hdinsight/)。
+其他信息，请单击[此处](https://azure.microsoft.com/services/hdinsight/)。
   
 成本信息，请单击[此处](https://azure.microsoft.com/pricing/details/hdinsight/)。
   
@@ -106,51 +109,51 @@ ms.lasthandoff: 02/09/2018
     
 - 自动高可用性、 灾难恢复和升级
     
-- 建议企业管理数百个或数千个 1 TB 大小的数据库
+- 建议企业管理数百或数千个达 1 TB 的大小的数据库
     
-- 分片技术可以将数据拆分跨数据库的更高的存储
+- 分片技术可将数据分割数据库来增加存储
     
-- 扩展数据库与 SQL Server 2016
+- 伸展数据库与 SQL Server 2016
     
 ### <a name="common-uses"></a>常见用途
 
-- 新云设计应用程序使用关系数据
+- 新的云设计应用程序的关系数据
     
-- 在示意性、 高度结构化的关系的数据集上的数据处理
+- 通过使用关系示意图、 高度结构化数据集的数据处理
     
-- 空间数据或格式的数据类型
+- 空间数据或丰富的数据类型
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
 - 管理数据
     
-### <a name="elastic-database"></a>弹性的数据库
+### <a name="elastic-database"></a>弹性数据库
 
-几乎不受限制的资源的 SQL Azure 数据库时使用：
+几乎不受限制的资源的 Azure SQL 数据库时的使用：
   
-- 总数据量太大，无法适应单个数据库的约束。
+- 太长而单个数据库的限制内的总数据量。
     
-- 整个工作负荷的事务吞吐量超过单个数据库的功能。
+- 总体工作负荷的事务吞吐量超出单个数据库的功能。
     
-- 租户需要彼此，物理隔离，所以单独的数据库所需的每个租户。
+- 租户需要从每个其他，物理隔离，因此每个租户需要单独的数据库。
     
-- 一个数据库的不同部分需要驻留在不同的地理位置，为法规遵从性、 性能或地缘政治的原因。
+- 数据库的不同部分需要驻留在不同地理区域的合规性、 性能或地缘政治原因。
     
-垂直缩放，您可以更改 Azure 数据库性能级别/版或使用弹性数据库池。
+使用垂直缩放比例，您可以更改 Azure 数据库性能级别/版或使用弹性数据库池。
   
-![Azure SQL 数据库提供的垂直缩放比例。](images/Storage_Poster/CloudStor-VertScale.png)
+![Azure SQL 数据库提供的垂直缩放比例。](media/Storage-Poster/CloudStor-VertScale.png)
   
-水平缩放，您可以根据需要添加新的数据库。
+水平缩放，您可以根据需要添加新数据库。
   
-![Azure SQL 数据库提供的水平缩放比例。](images/Storage_Poster/CloudStor-HorizScale.png)
+![Azure SQL 数据库提供的水平缩放比例。](media/Storage-Poster/CloudStor-HorizScale.png)
   
 单击[此处](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)的详细信息。
   
 ### <a name="stretch-database-with-sql-server-2016"></a>使用 SQL Server 2016 的 Stretch Database
 
-扩展数据库是 SQL Server 2016，可以透明地和安全地移动冷备用数据，如大表包含客户订单信息，到 Azure 中的 SQL 拉伸数据库中的已结束的业务数据的功能。拉伸，SQL Server 实例、 数据库或甚至单个表中的内容时，SQL Server 2016年服务器中的本地数据和远程数据在 Azure 中的组合。对于拉伸由 SQL Server 2016年自动移至 Azure 变得符合条件的数据。
+拉伸数据库是一项功能允许您透明地实施且安全地移动冷备用数据，例如包含客户订单信息，在 Azure 中的 SQL 拉伸数据库大型表中的已关闭的业务数据的 SQL Server 2016。拉伸时, 的内容的 SQL Server 实例、 数据库，或者甚至是单个表是 SQL Server 2016 server 中的本地数据和 Azure 中的远程数据的组合。将成为合格的拉伸自动移动到 Azure SQL Server 2016 的数据。
   
-![SQL Server 2016 中的 Stretch Database。](images/Storage_Poster/CloudStor-Stretch.png)
+![SQL Server 2016 中的 Stretch Database。](media/Storage-Poster/CloudStor-Stretch.png)
   
 包含历史数据的用户查询以透明的方式转发到 Azure SQL Stretch Database。即使延伸表，也不需要对查询进行重新编写。
   
@@ -160,7 +163,7 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
   
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](http://azure.microsoft.com/services/sql-database/)。
+其他信息，请单击[此处](http://azure.microsoft.com/services/sql-database/)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/sql-database/)。
   
@@ -168,17 +171,17 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
 
 ### <a name="features"></a>功能
 
-- 保证低延迟、 无限的、 弹性的比例，为存储和吞吐量达 99.99%的可用性 SLA
+- 保证低延迟、 99.99%可用性 SLA 无限可能、 弹性比例为存储和吞吐量
     
-- 所有数据全局范围内都复制跨任意数量的区域与透明的故障切换和四个定义明确的一致性级别
+- 在任意数量的地区透明故障转移和四个定义完善的一致性级别全局复制所有数据
     
-- 自动索引您的所有数据，而无需架构或辅助索引
+- 自动对所有数据而无需架构或辅助索引编制都索引
     
-- 丰富的 SQL 和 JavaScript 的查询和多项事务
+- 富 SQL 和 JavaScript 查询和多项事务
     
 ### <a name="common-uses"></a>常见用途
 
-- IoT、 移动和社会
+- IoT、 移动和社交
     
 - 游戏
     
@@ -190,23 +193,23 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
 
 - 管理数据
     
-### <a name="cosmos-db-vs-azure-tables-vs-azure-sql-database"></a>宇宙和 Azure 数据库表与 Azure SQL 数据库
+### <a name="cosmos-db-vs-azure-tables-vs-azure-sql-database"></a>宇宙 DB 与 Azure 表与 Azure SQL 数据库
 
-宇宙 DB、 Azure 表存储和 SQL Azure 数据库的常用属性：
+宇宙 DB、 Azure 表存储和 Azure SQL 数据库的常见属性：
   
 - 99.99 可用性 SLA
     
 - 完全托管的数据库服务
     
-- 通过 ISO 27001、 HIPAA 和符合欧盟模型子句
+- ISO 27001、 HIPAA 和欧盟示范条款兼容
     
-下表显示了 Azure 宇宙 DB、 Azure 表存储和 SQL Azure 数据库的常见属性。
+下表显示不常用的 Azure 宇宙 DB、 Azure 表存储和 Azure SQL Database 属性。
   
-![不常用属性：Cosmos DB 与Azure 表与Azure SQL 数据库](images/Storage_Poster/CloudStor-Table.png)
+![不常用属性：Cosmos DB 与Azure 表与Azure SQL 数据库](media/Storage-Poster/CloudStor-Table.png)
   
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](http://azure.microsoft.com/services/documentdb/)。
+其他信息，请单击[此处](http://azure.microsoft.com/services/documentdb/)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/documentdb/)。
   
@@ -214,25 +217,25 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
 
 ### <a name="features"></a>功能
 
-- 实时和视频用比例的视频点播 (VOD) 交货
+- Live 和使用扩展需求 (VOD) 传递视频
     
-- 高可用编码和流式处理
+- 高可用性编码和流式处理
     
-- 支持快递、 iOS、 Android、 HTML5 和 Xbox
+- 支持 Flash、 iOS、 Android、 HTML5 和 Xbox
     
 - Studio 认证 DRM 支持
     
-- 蕴含丰富的内容
+- 富内容蕴含
     
-- 预集成的合作伙伴的广泛生态系统
+- 广泛预集成合作伙伴生态系统
     
 ### <a name="common-uses"></a>常见用途
 
-- 编码、 存储和传输音频和视频在规模较大
+- 编码、 存储和流音频和视频，网址为扩展
     
-- 实时流和 VOD
+- 实时流式传输和 VOD
     
-- 优化视频内容管理
+- 简化的视频内容管理
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
@@ -240,51 +243,51 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://azure.microsoft.com/services/media-services/)。
+其他信息，请单击[此处](https://azure.microsoft.com/services/media-services/)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/media-services/)。
   
-## <a name="azure-redis-cache"></a>Azure 的 Redis 高速缓存
+## <a name="azure-redis-cache"></a>Azure Redis 缓存
 
 ### <a name="features"></a>功能
 
-- 安全、 专用 Redis 服务器的高可用性数据复制和由 Microsoft 管理的故障切换
+- 安全、 专用 Redis 具有高可用性与数据复制和由 Microsoft 托管的故障转移服务器
     
-- 建议用于需要高吞吐量的任何应用程序
+- 建议在需要高吞吐量任何应用程序
     
-- 可用大小达 530 GB 及以后 （包括津贴和自动分片）
+- 中的可用大小为 530 GB 及 （带 Premium 自动分片）
     
-- Redis 持久性仍然存在内存中缓存的数据到 Azure 存储
+- Redis 持久性仍然存在内存中缓存数据到 Azure 存储
     
 - Redis 群集，可以实现最大的规模和吞吐量
     
-- 增强的安全性和网络隔离与 Azure 虚拟网络支持
+- 使用 Azure 虚拟网络支持增强的安全性和网络隔离
     
 ### <a name="common-uses"></a>常见用途
 
-- 在 Azure，如宇宙数据库和 SQL Azure 数据库中的任何存储服务中的数据的反向查找
+- 反向查找 Azure，如宇宙 DB 和 Azure SQL 数据库中的任何存储服务中的数据
     
-- 从其他数据存储区的同步的内容
+- 从其他数据存储同步的内容
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
 - 缓存数据
     
-- 高吞吐量的应用程序的消息代理
+- 高吞吐量应用程序的消息 broker
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](http://azure.microsoft.com/services/cache/)。
+其他信息，请单击[此处](http://azure.microsoft.com/services/cache/)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/cache/)。
   
-## <a name="sql-server-on-an-azure-vm"></a>SQL Server 在 Azure 的 VM
+## <a name="sql-server-on-an-azure-vm"></a>在 Azure 虚拟机上的 SQL Server
 
 ### <a name="features"></a>功能
 
-- SQL Server 运行在 Azure 的虚拟机上安装的应用程序
+- Azure 虚拟机上运行安装的应用程序的 SQL Server
     
-- 使用库图像与 SQL Server 安装，或者让 SQL Server 许可证
+- 使用带有 SQL Server 库图像安装或者让您自己的 SQL Server 许可证
     
 ### <a name="common-uses"></a>常见用途
 
@@ -296,7 +299,7 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](http://azure.microsoft.com/services/virtual-machines/)。
+其他信息，请单击[此处](http://azure.microsoft.com/services/virtual-machines/)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/virtual-machines/)。
   
@@ -304,47 +307,47 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
 
 ### <a name="features"></a>功能
 
-- 可扩展的企业混合 SAN 存储与 SSD 硬盘内部混合存储阵列中，与云存储解决方案的集成扩展
+- 可扩展的企业混合 SAN 存储与 SSD HDD 的内部部署混合存储阵列，与云存储解决方案的集成扩展
     
-- 串联重复数据消除、 压缩、 自动分层，并加密非结构化和半结构化数据
+- 内嵌消除、 压缩、 自动分层和非结构化的加密和半结构化数据
     
-- 自动化的异地数据保护使用云快照
+- 使用云快照自动的异地数据保护
     
 - 有高效、 独立于位置的灾难恢复
     
-- 企业数据与 StorSimple Azure 中的虚拟应用装置的数据移动
+- 与 Azure 中的 StorSimple 虚拟装置的企业数据的数据移动
     
 ### <a name="common-uses"></a>常见用途
 
-- 管理数据增长相关的文件共享、 档案和其他数据存储库
+- 管理数据增长与文件共享、 档案和其他数据存储库
     
-- 异地数据保护和灾难恢复的文件共享、 虚拟机、 SQL 和 SharePoint （使用远程 Blob 存储）
+- 非现场数据保护和灾难恢复的文件共享、 虚拟机、 SQL 和 SharePoint （使用远程 Blob 存储）
     
-- 利用云快照克隆 Azure 中的数据，并增加业务灵活性
+- 利用云快照克隆 Azure 中的数据并增加业务灵活性
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
 - 管理数据
     
-- 合作
+- 协作
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](http://azure.microsoft.com/services/storsimple/)。
+其他信息，请单击[此处](http://azure.microsoft.com/services/storsimple/)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/storsimple/)。
   
-## <a name="azure-sql-data-warehouse"></a>SQL azure 数据仓库
+## <a name="azure-sql-data-warehouse"></a>Azure SQL 数据仓库
 
 ### <a name="features"></a>功能
 
-- 可以扩展到多达 32 个并发查询 petabytes 的弹性数据仓库
+- 弹性数据仓库，能够扩展到最多 32 并发查询 petabytes
     
-- 管理大量结构化数据与快速分析动态增大和收缩以秒为单位计算
+- 管理大量 fast 结构化数据分析动态放大和缩小以秒为单位计算
     
 - 支持透明数据加密
     
-- 备份的 7 天内每隔 8 小时
+- 备份 7 天的每隔 8 小时
     
 ### <a name="common-uses"></a>常见用途
 
@@ -352,7 +355,7 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
     
 - 使用率报告
     
-- 大量的数据
+- 大量数据
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
@@ -360,33 +363,33 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://azure.microsoft.com/services/sql-data-warehouse/)。
+其他信息，请单击[此处](https://azure.microsoft.com/services/sql-data-warehouse/)。
   
 成本信息，请单击[此处](https://azure.microsoft.com/pricing/details/sql-data-warehouse/)。
   
-## <a name="azure-data-lake-store"></a>Azure 数据湖存储区
+## <a name="azure-data-lake-store"></a>Azure 数据湖泊存储区
 
 ### <a name="features"></a>功能
 
-- 对于大数据分析工作负荷超大规模存储库
+- 大数据分析工作负荷超大型存储库
     
-- Hadoop 分布式文件系统的云
+- Hadoop 分布式文件系统针对云
     
-- 没有固定的限制文件大小
+- 没有固定的文件大小限制
     
-- 没有固定的限制帐户大小
+- 没有固定的帐户大小限制
     
-- 以其本机格式的非结构化和结构化数据
+- 以本机格式的非结构化和非结构化数据
     
-- 巨大的吞吐量，从而提高分析性能
+- 大规模吞吐量，从而提高性能分析
     
-- 高耐用性、 可用性和可靠性 （99.9%企业级 SLA 和 24/7 支持）
+- 高持久性、 可用性和可靠性 （99.9%的企业级 SLA 和全天候支持）
     
 - Azure Active Directory 访问控制
     
 ### <a name="common-uses"></a>常见用途
 
-- 企业级存储库来存储每种类型的数据收集到一个位置
+- 企业级存储库来存储每个类型的一个位置中收集数据
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
@@ -394,13 +397,13 @@ Stretch Database 提供经济高效的选项，用于历史数据的长期存储
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://azure.microsoft.com/services/data-lake-store/)。
+其他信息，请单击[此处](https://azure.microsoft.com/services/data-lake-store/)。
   
 成本信息，请单击[此处](https://azure.microsoft.com/pricing/details/data-lake-store/)。
   
 ## <a name="next-step"></a>后续步骤
 
-复查的[从头构建](build-from-the-ground-up.md)云存储选项。
+查看[up 从头生成](build-from-the-ground-up.md)云存储选项。
   
 ## <a name="see-also"></a>另请参阅
 

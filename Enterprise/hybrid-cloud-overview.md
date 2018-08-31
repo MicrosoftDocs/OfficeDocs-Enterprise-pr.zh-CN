@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 摘要： 了解 Microsoft 混合云的定义和元素。
-ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915817"
 ---
 # <a name="hybrid-cloud-overview"></a>混合云概述
 
@@ -36,7 +39,7 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
     
 **图 1：Microsoft 混合云的组件**
 
-![Microsoft 混合云的组件](images/Hybrid_Poster/MS_Hybrid_Cloud.png)
+![Microsoft 混合云的组件](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
 图 1 显示跨 Internet 或 ExpressRoute 连接提供的 Microsoft 混合云组件，从本地网络到 Office 365、Azure 平台即服务 (PaaS) 和 Azure 基础结构即服务 (IaaS) 均包含在内。
   

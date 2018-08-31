@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要： 将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。
-ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
-ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
+ms.openlocfilehash: b4d7b163bfba433196f46046030078c5559c4459
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "20720368"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915827"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
@@ -29,12 +29,11 @@ ms.locfileid: "20720368"
   
 使用 PowerShell 管理 Office 365，时，可能需要与 Office 365 管理中心、 SharePoint Online、 Exchange Online、 Skype online 业务和安全&amp;合规性中心。使用单独的 Windows PowerShell 会话中的五个不同的连接方法，您的桌面无法如下所示：
   
-![五个同时运行的 Windows PowerShell 控制台](images/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
+![五个同时运行的 Windows PowerShell 控制台](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
 这不是最佳用于管理 Office 365，因为您不能跨服务管理这些五个窗口之间进行数据交换。本主题介绍如何使用 Windows PowerShell 从其管理 Office 365、 业务联机状态，Exchange Online 中，SharePoint online，Skype 和安全性的单个实例&amp;合规性中心。
 
 ## <a name="before-you-begin"></a>准备工作
-<a name="BeforeYouBegin"> </a>
 
 您可以从 Windows PowerShell 的单个实例来管理所有 Office 365 之前，请考虑以下先决条件：
   
@@ -71,7 +70,6 @@ ms.locfileid: "20720368"
   ```
 
 ## <a name="connection-steps-when-using-a-password"></a>使用密码时的连接步骤
-<a name="ConnStepsPassword"> </a>
 
 下面是连接到单个 PowerShell 窗口中的所有服务的步骤。
   
@@ -165,7 +163,6 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 ```
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>使用多因素身份验证时的连接步骤
-<a name="ConnStepsMFA"> </a>
 
 下面是在一个块来连接到 Azure AD 的所有命令 SharePoint Online 和 Skype 的 Buiness 单个窗口中使用多因素身份验证。指定全局管理员帐户的用户主体名称 (UPN) 名称和域主机名，然后再一次运行所有这些。
 
@@ -202,10 +199,6 @@ Exchange Online 和安全&amp;合规性中心，请参阅使用多因素身份�
  
 请注意，在两种情况下，必须使用单独的 Exchange Online 远程 PowerShell 模块会话进行连接。
 
-
-## <a name="new-to-office-365"></a>刚开始接触 Office 365？
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
 ## <a name="see-also"></a>另请参阅
 

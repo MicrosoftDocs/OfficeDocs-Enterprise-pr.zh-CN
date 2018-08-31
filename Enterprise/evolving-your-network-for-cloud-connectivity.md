@@ -1,5 +1,5 @@
 ---
-title: "发展你的云连接网络"
+title: 发展你的云连接网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
-description: "摘要：了解采用云如何要求使用新的网络基础设施投资方法。"
-ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要：了解采用云如何要求使用新的网络基础设施投资方法。
+ms.openlocfilehash: 16dbbafe46e903fa41163e12c1741a45b47c5f45
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915137"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>发展你的云连接网络
 

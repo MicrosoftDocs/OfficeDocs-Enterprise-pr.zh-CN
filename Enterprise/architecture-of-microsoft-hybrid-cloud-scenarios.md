@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 摘要： 了解 Microsoft 混合云产品的体系结构。
-ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631383"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914917"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft 混合云方案的体系结构
 
@@ -27,7 +29,7 @@ ms.locfileid: "19631383"
   
 **图 1：Microsoft 混合云堆栈**
 
-![Microsoft 混合云堆叠](images/Hybrid_Poster/Hybrid_Cloud_Stack.png)
+![Microsoft 混合云堆叠](media/Hybrid-Poster/Hybrid-Cloud-Stack.png)
   
 图 1 显示了 Microsoft 混合云堆栈及其层，包括内部部署、网络、标识、应用程序和方案，以及云服务（Microsoft SaaS、Azure PaaS 和 Azure PaaS）的类别。
   

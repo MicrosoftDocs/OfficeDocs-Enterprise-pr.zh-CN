@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: 摘要： 了解作为商业和其世界各地的办事处的分层的结构 Contoso Corporation。
-ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 66171ee872f9b526860ae1436b0e8cb51de119de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915857"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation 概述
 
@@ -30,7 +31,7 @@ Contoso 的全球组织拥有多少个办事处位于以下位置：
   
 **图 1: Contoso 在世界各地的办事处**
 
-![Contoso Corporation 在世界各地的办事处](images/Contoso_Poster/Contoso_WW_Org.png)
+![Contoso Corporation 在世界各地的办事处](media/Contoso-Poster/Contoso-WW-Org.png)
 
   
 图 1 显示了在巴黎的总部办公室和在各大洲的区域中心和分支办事处。
@@ -51,7 +52,9 @@ Contoso 的世界各地的办事处按照三层设计。
     
 - 分支办事处
     
-    分支办事处包含 80%销售和支持人员提供的主要城市或子区域中的 Contoso 客户的物理和现场状态。每个分支办公室连接到的高带宽 WAN 链接与区域集线器。
+    分支办事处包含 80% 的销售和支持人员，并为主要城市或子地区的 Contoso 客户提供实地和现场展示。每个分支办事处都通过高带宽的 WAN 链接连接到区域中心。
+
+
     
     每个分支办事处平均拥有 250 名工作人员。
     
@@ -65,13 +68,13 @@ Contoso IT 架构师规划采用 Microsoft 的云产品时确定以下元素。
     
     网络包括连接到 Microsoft 云服务和足够带宽，要在峰值负载下的性能。某些连接将通过本地 Internet 连接，一些将 Contoso 的专用网络基础结构中。
     
-    有关详细信息，请参阅[Microsoft 云网络的企业架构师](microsoft-cloud-networking-for-enterprise-architects.md)海报。
+    有关详细信息，请参阅 [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md) 海报。
    
 - 标识
     
     Contoso 使用其内部身份提供程序的 Windows Server AD 林，而且还与第三方提供程序为客户和合作伙伴建立联盟。Contoso 必须利用 Microsoft 的云服务的帐户的内部集。基于云的应用程序访问的客户和合作伙伴必须利用第三方身份提供程序。
     
-    有关详细信息，请参阅[Microsoft 云标识企业架构师](microsoft-cloud-it-architecture-resources.md#identity)海报。
+    有关详细信息，请参阅 [Microsoft Cloud Identity for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity) 海报。
     
 - 安全
     

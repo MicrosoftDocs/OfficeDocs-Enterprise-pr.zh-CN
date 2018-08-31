@@ -8,18 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 摘要：在 Office 365 开发/测试环境中使用 Azure 信息保护 (AIP) 客户端配置和演示数据分类和标记。
-ms.openlocfilehash: f9674f5e2bac804f5bd23b5f67e733580c50450f
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188090"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914847"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的数据分类和标记
 
@@ -164,6 +166,6 @@ Azure 信息保护客户端可以用于分类文档之前将其上载到 Office 
 
 [Office 365 和 EMS 开发/测试环境](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
-[Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)
+[Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)（Azure 信息保护）
 
 

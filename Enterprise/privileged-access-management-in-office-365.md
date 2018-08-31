@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关 Office 365 中的访问权限的管理功能的详细信息
-ms.openlocfilehash: b2db3e16e53cca7deb2bf8fbff61b5b981f42fa6
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 22286d4f91ffa0bd3c49f028681d20e36d14283d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319203"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915387"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的管理访问权限
 
@@ -46,7 +48,7 @@ ms.locfileid: "20319203"
 ### <a name="step-1---create-an-approvers-group"></a>步骤 1-创建审批者组
 从 Office 365 管理门户，选择**组** > **添加组**，然后为特权的默认访问审批者创建启用邮件的安全组。完成后，选择**添加**来创建和保存审批者组。
 
-![访问权限的 Office 365 管理门户中的审批者屏幕](images/privileged-access-approvers-ui.png)
+![访问权限的 Office 365 管理门户中的审批者屏幕](media/privileged-access-approvers-ui.png)
 
 > [!NOTE] 
 > 此时，允许仅具有管理访问权限的用户批准来自 Office 365 特权访问请求。在将来的审批者的组的一部分的任何用户都将能够批准访问请求。
@@ -140,7 +142,7 @@ Disable-ElevatedAccessControl
 ## <a name="managed-access-to-microsoft-graph-in-microsoft-azure"></a>管理 Microsoft Azure 中的 Microsoft Graph 访问
 
 > [!IMPORTANT]
-> 本节介绍用于公开 beta 版的 Microsoft Graph 功能仅当前 Office 365 E5 和高级合规性 Sku 中可用的部署和配置指南。
+> 本节涵盖有关当前仅适用于预览功能的详细信息。
 
 到 Microsoft Azure 中的 Microsoft Graph 托管的 access 是一种服务，可帮助组织施加控制其 Office 365 数据粒度级别。此系统允许应用程序开发人员伪造见解与该数据。 
 

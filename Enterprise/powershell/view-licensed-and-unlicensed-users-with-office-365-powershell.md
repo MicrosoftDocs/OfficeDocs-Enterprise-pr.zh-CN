@@ -1,5 +1,5 @@
 ---
-title: "使用 Office 365 PowerShell 查看授权和未授权的用户"
+title: 使用 Office 365 PowerShell 查看授权和未授权的用户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,16 +14,17 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: "介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。"
-ms.openlocfilehash: b26c98c1c294e2f1369d4368d0b1415702580a83
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: 介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。
+ms.openlocfilehash: d182e53992b189e8ede52e6d133b864a17ba7232
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914867"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看授权和未授权的用户
 
-**摘要：**介绍如何使用 Office 365 PowerShell 查看许可和非许可用户帐户。
+**摘要：** 介绍如何使用 Office 365 PowerShell 查看许可和非许可用户帐户。
   
 您的 Office 365 组织中的用户帐户可能已从组织提供的许可计划中分配到部分或全部可用的许可证，或者未分配到任何许可证。您可以使用 Office 365 PowerShell 快速查找您组织中的授权和未授权的用户。
   
@@ -57,9 +58,9 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>长版（说明附有详细解释）
 
-Office 365 用户帐户和 Office 365 许可证无需一一对应：Office 365 用户可以没有 Office 365 许可证，也可以不向用户分配 Office 365 许可证。（实际上，一个用户帐户甚至可以有*多个* Office 365 许可证。）新建 Office 365 用户帐户时（有关详细信息，请参阅[使用 Windows PowerShell 许可 Office 365 用户](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)一文），无需为用户分配许可证。也就是说，即使新用户的帐户有效，也无法登录 Office 365。如果尝试登录，将会看到如下内容：
+Office 365 用户帐户和 Office 365 许可证不需要一一对应： 就可以有 Office 365 用户不具有 Office 365 许可证，并且可能需要没有已分配给用户的 Office 365 许可证。（事实上，单个用户帐户甚至可以将*多个*Office 365 许可证。）当您创建新的 Office 365 用户帐户 （请参阅文章[分配给与 Office 365 PowerShell 中的用户帐户的许可证](assign-licenses-to-user-accounts-with-office-365-powershell.md)的详细信息） 您无需将该用户分配许可证： 新的用户将具有有效的帐户，但他/她不能为签名中到 Office 365 的 n。如果用户尝试登录时，他们将看到类似于以下内容：
   
-![没有有效 Office 365 许可证的用户。](images/o365_powershell_no_license.png)
+![没有有效 Office 365 许可证的用户。](media/o365-powershell-no-license.png)
   
 同样，您可能有一个用户需要休假或者休产假/陪产假，因此将要延长时间。在这种情况下，您可以删除用户的许可证，但使用户帐户保持不变（即地址、电话号码等所有属性值保持不变）。这样，您可以将其许可证分配给其他人（例如，接替休假人员的临时工作人员）。用户回到工作岗位后，您可以向其签发新的许可证，他们将可以继续工作，就像从来没有离开过一样。
   
@@ -125,7 +126,6 @@ AlexD@litwareinc.com        Alex Darrow                     True
 可以看到，未返回 Belinda Newman 的信息。为什么没有返回？是的，原因是：Belinda 的帐户的 **isLicensed** 属性未设置为 `True`。
   
 ## <a name="see-also"></a>另请参阅
-<a name="SeeAlso"> </a>
 
 有关在这些步骤中使用的 cmdlet 的详细信息，请参阅下列主题：
   

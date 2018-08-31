@@ -14,15 +14,16 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要： 使用 Office 365 PowerShell 管理 SharePoint Online 网站用户组。
-ms.openlocfilehash: 881e67b7eb2d8bb5e04f83e28569aa54341d16b9
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915347"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 SharePoint Online 网站用户组
 
- **摘要：**使用 Office 365 PowerShell 管理 SharePoint Online 网站用户组。
+ **摘要：** 使用 Office 365 PowerShell 管理 SharePoint Online 网站用户组。
   
 尽管您可以使用 Office 365 管理中心，您可以使用 Office 365 PowerShell 管理 SharePoint Online 网站组。
 
@@ -32,12 +33,12 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>查看 SharePoint Online 与 Office 365 PowerShell
 
-在 SharePoint Online 管理中心具有用于管理网站用户组一些易于使用的方法。例如，假设您想要查看组和组成员，https\://litwareinc.sharepoint.com/sites/finance 网站。下面是您需要对执行的操作：
+在 SharePoint Online 管理中心具有用于管理网站用户组一些易于使用的方法。例如，假设您想要查找组和组成员，在`https://litwareinc.sharepoint.com/sites/finance`网站。下面是您需要对执行的操作：
 
 1. 从 Office 365 管理中心中，单击**资源** > **网站**，然后单击网站的 URL。
-2. 在网站集对话框中，单击**转到此网站**。
-3. 在网站页上单击**设置**图标 （位于页面的右上角），然后单击**网站设置**:</br>
-![SharePoint Online 网站设置](images/spo-site-settings.png)</br>
+2. 在“网站集”对话框中，单击“**转到此网站**”。
+3. 在网站页上，单击“**设置**”图标（位于页面的右上角），然后单击“**网站设置**”：</br>
+![SharePoint Online 网站设置](media/spo-site-settings.png)</br>
 4. 在网站设置页上单击**用户和权限**下的**网站权限**。
 
 然后对您要查看的下一个网站重复此过程。
@@ -66,9 +67,9 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 在这两种情况下，应该会看到类似下面的内容：
 
-![SharePoint Online 网站用户组](images/SPO-site-groups.png)
+![SharePoint Online 网站用户组](media/SPO-site-groups.png)
 
-这是已为网站 https 创建的所有组\:/ / litwareinc.sharepoint.com/sites/finance，以及所有用户分配给这些组。组名称是黄色可帮助您从其成员的单独的组名称。
+这是已创建的网站的所有组`https://litwareinc.sharepoint.com/sites/finance`、，以及分配给这些组的所有用户。组名称是黄色可帮助您从其成员的单独的组名称。
 
 又如，下面是一个命令集，列出的组和所有的组成员身份，所有的 SharePoint Online 网站。
 
@@ -90,9 +91,9 @@ foreach ($y in $x)
     
 ## <a name="see-also"></a>另请参阅
 
-[连接到 SharePoint Online PowerShell 中](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[创建 SharePoint Online 网站和使用 Office 365 PowerShell 中添加用户](create-sharepoint-sites-and-add-users-with-powershell.md)
+[使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [使用 Office 365 PowerShell 管理 SharePoint Online 用户和组](manage-sharepoint-users-and-groups-with-powershell.md)
 

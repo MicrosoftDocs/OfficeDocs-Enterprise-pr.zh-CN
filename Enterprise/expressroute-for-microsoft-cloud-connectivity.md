@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。
-ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188110"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915487"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>面向 Microsoft 云连接的 ExpressRoute
 
@@ -31,7 +33,7 @@ ExpressRoute 提供了到 Microsoft 云的单独、专用、高吞吐量的网�
   
 **图 1：没有 ExpressRoute 的网络路径**
 
-![图 1：没有 ExpressRoute 的网络路径](images/Network_Poster/ExpressRoute.png)
+![图 1：没有 ExpressRoute 的网络路径](media/Network-Poster/ExpressRoute.png)
   
 图 1 显示内部部署网络与 Microsoft 云之间的典型路径。内部部署网络边缘通过到 ISP 的 WAN 链接连接到 Internet。然后，流量流经 Internet 到达 Microsoft 云的边缘。Microsoft 云内的云产品包括 Office 365、Microsoft Azure、Microsoft Intune 和 Dynamics 365。组织的用户可以位于内部部署网络或 Internet。
   
@@ -45,7 +47,7 @@ Internet 中的用户，例如漫游或远程用户，通过 Internet 将他们�
   
 **图 2：有 ExpressRoute 的网络路径**
 
-![图 2：有 ExpressRoute 的网络路径](images/Network_Poster/ExpressRoute_post.png)
+![图 2：有 ExpressRoute 的网络路径](media/Network-Poster/ExpressRoute-post.png)
   
 图 2 显示了两个网络路径。到 Microsoft Intune 的流量与普通 Internet 流量的路径相同。Office 365、Microsoft Azure 和 Dynamics 365 的流量经过 ExpressRoute 连接，这是内部部署网络边缘与 Microsoft 云边缘之间的专用路径。
   
@@ -87,7 +89,7 @@ ExpressRoute 连接不能保证每一种配置的性能都会提高。通过低�
   
 |**在云交换中归置**|**点到点的以太网**|**任意对任意的 (IP VPN) 连接**|
 |:-----|:-----|:-----|
-|![ExpressRoute 连接模型：在云交换中归置](images/Network_Poster/ER_Conn1.png)|![ExpressRoute 连接模型：点到点的以太网](images/Network_Poster/ER_Conn2.png)|![ExpressRoute 连接模型：任意对任意的 (IP VPN) 连接](images/Network_Poster/ER_Conn3.png)|
+|![ExpressRoute 连接模型：在云交换中归置](media/Network-Poster/ER-Conn1.png)|![ExpressRoute 连接模型：点到点的以太网](media/Network-Poster/ER-Conn2.png)|![ExpressRoute 连接模型：任意对任意的 (IP VPN) 连接](media/Network-Poster/ER-Conn3.png)|
 |如果你的数据中心与云交换共同位于某设施内，你可以通过归置提供程序的以太网交换订购到 Microsoft 云的虚拟交叉连接。  <br/> |如果你的数据中心位于你的场所，你可以使用点对点以太网链路连接到 Microsoft 云。  <br/> |如果你已使用 IP VPN (MPLS) 提供程序连接组织的站点，到 Microsoft 云的 ExpressRoute 连接可以用作专用 WAN 中的另一个位置。  <br/> |
    
  **表 1：ExpressRoute 连接模型**
@@ -98,7 +100,7 @@ ExpressRoute 连接不能保证每一种配置的性能都会提高。通过低�
   
 **图 3：单个 ExpressRoute 连接中的三个不同的 BGP 关系**
 
-![图 3：单次 ExpressRoute 连接中的三个不同的 BGP 关系](images/Network_Poster/ERPeering.png)
+![图 3：单次 ExpressRoute 连接中的三个不同的 BGP 关系](media/Network-Poster/ERPeering.png)
   
 图 3 显示了内部部署网络中的 ExpressRoute 连接。ExpressRoute 连接中包含三个逻辑对等关系。Microsoft 对等关系转到 Microsoft SaaS 服务，其中包括 Office 365 和 Dynamcs CRM Online。公共对等关系转到 Azure PaaS 服务。专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
   
@@ -128,7 +130,7 @@ Microsoft 对等 BGP 关系：
   
 **图 4：Azure 虚拟机上的访问本地 SharePoint 场的应用程序**
 
-![图 4：Azure 虚拟机上的访问本地 SharePoint 场的应用程序](images/Network_Poster/ER_App_Flow1.png)
+![图 4：Azure 虚拟机上的访问本地 SharePoint 场的应用程序](media/Network-Poster/ER-App-Flow1.png)
 
   
 图 4 显示了内部部署 SharePoint 场、内部部署网络和 Azure IaaS 中的虚拟网络之间的站点到站点 VPN 连接、作为 Azure IaaS 虚拟机运行的应用程序服务器，以及应用程序服务器和 SharePoint 场之间的流量。
@@ -139,7 +141,7 @@ Microsoft 对等 BGP 关系：
   
 **图 5：将本地 SharePoint 场移至 SharePoint Online**
 
-![图 5：将本地 SharePoint 场迁移到 SharePoint Online](images/Network_Poster/Hairpin1.png)
+![图 5：将本地 SharePoint 场迁移到 SharePoint Online](media/Network-Poster/Hairpin1.png)
   
 图 5 显示将带有对等关系的 ExpressRoute 连接添加到 Microsoft SaaS 和 Office 365 以及 Azure IaaS 中，其中包含虚拟网络上的应用程序服务器。SharePoint 内部部署场已迁移至 Office 365。
   
@@ -157,7 +159,7 @@ Microsoft 对等 BGP 关系：
   
 **图 6：SharePoint 场迁移到 Office 365 中的 SharePoint Online 时的流量**
 
-![图 6：SharePoint 场迁移到 Office 365 中的 SharePoint Online 时的流量](images/Network_Poster/Hairpin2.png)
+![图 6：SharePoint 场迁移到 Office 365 中的 SharePoint Online 时的流量](media/Network-Poster/Hairpin2.png)
 
   
 图 6 显示了应用程序服务器和 Office 365 中的 SharePoint Online 之间的流量如何通过专用的对等关系从应用程序服务器流到内部部署网络边缘，然后通过 Microsoft 对等关系从边缘流到 Office 365。
@@ -186,7 +188,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 **图 7：使用单个 ExpressRoute 连接的地理位置分散的组织示例**
 
-![图 7：使用单次 ExpressRoute 连接的地理位置分散的组织的示例](images/Network_Poster/MSNet1.png)
+![图 7：使用单次 ExpressRoute 连接的地理位置分散的组织的示例](media/Network-Poster/MSNet1.png)
   
 图 7 显示了具有两个位置的组织：美国西北部的位置 1 和东北部的位置 2。它们由任意对任意 WAN 提供程序连接。该组织还有到西海岸的 Microsoft 对等位置的 ExpressRoute 连接。来自东北部的位置 2 且发往东海岸数据中心的流量，必须一直流经组织的 WAN 直到西海岸、Microsoft 对等位置，然后通过 Microsoft 云网络流经全国，返回东海岸数据中心。
   
@@ -194,7 +196,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 **图 8：使用多个 ExpressRoute 连接实现到区域性数据中心的最佳传送**
 
-![图 8：使用多个 ExpressRoute 连接实现到区域性数据中心的最佳传送](images/Network_Poster/MSNet2.png)
+![图 8：使用多个 ExpressRoute 连接实现到区域性数据中心的最佳传送](media/Network-Poster/MSNet2.png)
   
 图 8 显示了使用到本地 Microsoft 对等位置的两个 ExpressRoute 连接的同一组织，一个连接针对一个位置。在此配置中，来自东北部的位置 2 且发往东海岸数据中心的流量，会直接流至东海岸的对等位置、Microsoft 云网络，然后再到东海岸数据中心。
   
@@ -224,7 +226,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 **图 9：全球范围内的 Microsoft 云网络**
 
-![图 9：全球范围内的 Microsoft 云网络](images/Network_Poster/MSNet3.png)
+![图 9：全球范围内的 Microsoft 云网络](media/Network-Poster/MSNet3.png)
   
 图 9 显示了全球范围的 Microsoft 云网络的逻辑图，其中网络跨越世界各洲和区域以及它们之间的互连。每个洲都包含部分 Microsoft 云网络，全球企业从其区域中心办事处创建到本地 Microsoft 对等位置的 ExpressRoute Premium 连接。
   

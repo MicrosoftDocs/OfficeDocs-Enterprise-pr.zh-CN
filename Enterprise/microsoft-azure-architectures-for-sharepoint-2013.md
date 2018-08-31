@@ -1,5 +1,5 @@
 ---
-title: "SharePoint 2013 的 Microsoft Azure 体系结构"
+title: SharePoint 2013 的 Microsoft Azure 体系结构
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: "摘要： SharePoint 2013 解决方案可以在 Microsoft Azure 虚拟机中托管。了解哪种类型的解决方案非常适合以及如何设置 Microsoft Azure 托管一个解决方案。"
-ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要： SharePoint 2013 解决方案可以在 Microsoft Azure 虚拟机中托管。了解哪种类型的解决方案非常适合以及如何设置 Microsoft Azure 托管一个解决方案。
+ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915377"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 的 Microsoft Azure 体系结构
 
@@ -53,7 +54,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
 
 本文以 SharePoint 拓扑为例，您可以将这些设计理念用于任何 SharePoint 服务器场拓扑。在设计 Azure 环境之前，请使用以下拓扑、体系结构、容量和性能指导设计 SharePoint 服务器场：
   
-- [面向 SharePoint 2013 IT 专业人员的体系结构设计](http://technet.microsoft.com/zh-CN/sharepoint/fp123594.aspx)
+- [面向 SharePoint 2013 IT 专业人员的体系结构设计](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
 - [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
@@ -76,7 +77,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
   
 **图 1：本地环境和 Azure 中的虚拟网络。**
 
-![SharePoint 解决方案的 Microsoft Azure 虚拟网络设计。Azure 网关的一个子网。虚拟机的一个子网。](images/OPrrasconWA_AZarch.png)
+![SharePoint 解决方案的 Microsoft Azure 虚拟网络设计。Azure 网关的一个子网。虚拟机的一个子网。](media/OPrrasconWA-AZarch.png)
   
 在此图中：
   
@@ -92,7 +93,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
   
 **图 2：使用 Azure 网关和本地网关设备提供本地环境和 Azure 之间的站点到站点连接**
 
-![通过跨界连接（可以是站点到站点 VPN 连接，也可以是 ExpressRoute）连接到 Azure 虚拟网络的本地环境。](images/AZarch_VPNgtwyconnct.png)
+![通过跨界连接（可以是站点到站点 VPN 连接，也可以是 ExpressRoute）连接到 Azure 虚拟网络的本地环境。](media/AZarch-VPNgtwyconnct.png)
   
 在此图中：
   
@@ -110,7 +111,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
   
 **图 3：混合 Active Directory 域配置**
 
-![部署到 Azure 虚拟网络和 SharePoint 场子网的 STwo 虚拟机是域控制器和 DNS 服务器的副本](images/AZarch_HyADdomainConfig.png)
+![部署到 Azure 虚拟网络和 SharePoint 场子网的 STwo 虚拟机是域控制器和 DNS 服务器的副本](media/AZarch-HyADdomainConfig.png)
   
 此图在上一张图的基础之上构建，它将两个虚拟机添加到 Windows Server AD 和 DNS 子网。这些虚拟机是域控制器和 DNS 服务器的副本。它们是本地 Windows Server AD 环境的扩展。 
   
@@ -134,7 +135,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
   
 **图 4：SharePoint 虚拟机的位置**
 
-![添加到 SharePoint 场子网内的 Azure 虚拟网络中的数据库服务器和 SharePoint 服务器角色](images/AZarch_SPVMsinCloudSer.png)
+![添加到 SharePoint 场子网内的 Azure 虚拟网络中的数据库服务器和 SharePoint 服务器角色](media/AZarch-SPVMsinCloudSer.png)
   
 此图构建在上一张图的基础之上，它将 SharePoint 服务器场服务器角色添加到了相应的层级中。
   
@@ -150,7 +151,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
   
 **图 5：使用 Azure 可用性集为 SharePoint 服务器层级提供高可用性**
 
-![SharePoint 2013 解决方案的 Azure 基础结构中的可用性集配置。](images/AZenv_WinAzureAvailSetsHA.png)
+![SharePoint 2013 解决方案的 Azure 基础结构中的可用性集配置。](media/AZenv-WinAzureAvailSetsHA.png)
   
 此图调用 Azure 基础结构内可用性集的配置。下面每一个角色使用一个单独的可用性集：
   
@@ -170,7 +171,7 @@ SharePoint 服务器场可能需要在 Azure 平台中进行优化。要确保�
   
 **图 6：三层服务器场的容量和性能目标规划示例**
 
-![具有能满足特定容量和性能目标的组件分配的标准 SharePoint 2013 Internet 网站体系结构](images/AZarch_CapPerfexmpArch.png)
+![具有能满足特定容量和性能目标的组件分配的标准 SharePoint 2013 Internet 网站体系结构](media/AZarch-CapPerfexmpArch.png)
   
 在此图中：
   
@@ -186,7 +187,7 @@ SharePoint 服务器场可能需要在 Azure 平台中进行优化。要确保�
   
 **图 7：优化之前的应用程序服务器层**
 
-![调整 Microsoft Azure 可用性集之前的示例 SharePoint Server 2013 应用程序服务器层](images/AZarch_AppServtierBefore.png)
+![调整 Microsoft Azure 可用性集之前的示例 SharePoint Server 2013 应用程序服务器层](media/AZarch-AppServtierBefore.png)
   
 在此图中：
   
@@ -202,7 +203,7 @@ SharePoint 服务器场可能需要在 Azure 平台中进行优化。要确保�
   
 **图 8：优化之后的应用程序服务器层**
 
-![调整 Microsoft Azure 可用性集之后的示例 SharePoint Server 2013 应用程序服务器层](images/AZarch_AppServtierAfter.png)
+![调整 Microsoft Azure 可用性集之后的示例 SharePoint Server 2013 应用程序服务器层](media/AZarch-AppServtierAfter.png)
   
 此图显示了使用相同的四个组件进行相同配置的所有三个应用程序服务器。
   
@@ -210,7 +211,7 @@ SharePoint 服务器场可能需要在 Azure 平台中进行优化。要确保�
   
 **图 9：Azure 基础结构服务中已完成的 SharePoint 服务器场**
 
-![Azure 基础结构服务中的示例 SharePoint 2013 场，带有虚拟网络、跨界连接、子网、虚拟机和可用性集。](images/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Azure 基础结构服务中的示例 SharePoint 2013 场，带有虚拟网络、跨界连接、子网、虚拟机和可用性集。](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 此图显示在 Azure 基础结构服务中实现的 SharePoint 服务器场，以及为每个层级中的服务器提供故障域的可用性集。
   

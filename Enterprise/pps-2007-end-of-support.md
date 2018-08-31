@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007、 ProClarity 和 SharePoint Server 2007 已达到结束的支持。阅读此文，规划 BI 解决方案升级。
-ms.openlocfilehash: 98a02ba3945578171c97a616edd88fe0db1cc57f
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: d03da4d05240e0f80b21f7a709d97cf2e9d1fa32
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169784"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915097"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 停止提供支持路线图
 
@@ -32,7 +32,7 @@ Office 2007 服务器和应用程序已达到其结束的支持，包括服务�
 |SharePoint Server 2007 Service Pack 3  <br/> |2017 年 10 月 10 日  <br/> |
 |PerformancePoint Server 2007 Service Pack 3  <br/> |2018 年 1 月 9 日  <br/> |
    
-有关 Office 2007 服务器达到退休的详细信息，请参阅[规划 Office 2007 服务器的升级](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx)。
+有关详细信息，请参阅[资源以帮助您升级从 Office 2007 的服务器和客户端](upgrade-from-office-2007-servers-and-products.md)。
   
 ## <a name="what-does-end-of-support-mean"></a>支持平均值内容的末尾？
 
@@ -73,10 +73,10 @@ ProClarity、 SharePoint Server 2007 SP3 和 PerformancePoint Server 2007 SP3 �
   
 |**选项**|**在云中还是内部部署？**|
 |:-----|:-----|
-|[使用 Excel Online 使用 Excel](pps-2007-end-of-support.md#ExcelAndOnline) <br/> |两者  <br/> |
-|[使用 Power BI](pps-2007-end-of-support.md#PowerBI) <br/> |两者  <br/> |
-|[使用 Reporting Services](pps-2007-end-of-support.md#SSRS) <br/> |仅位于内部  <br/> |
-|[使用 PerformancePoint Services](pps-2007-end-of-support.md#PPS) <br/> |仅位于内部  <br/> |
+|[通过 Excel Online Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |两者  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |两者  <br/> |
+|[Reporting Services](#use-reporting-services-on-premises) <br/> |仅位于内部  <br/> |
+|[PerformancePoint 服务](#use-performancepoint-services-on-premises) <br/> |仅位于内部  <br/> |
    
 ### <a name="use-excel-with-excel-online-in-the-cloud-or-on-premises"></a>使用 Excel Excel Online （在内部部署或云）
 
@@ -84,7 +84,7 @@ ProClarity、 SharePoint Server 2007 SP3 和 PerformancePoint Server 2007 SP3 �
   
 下表比较 SharePoint Server 与 Excel 使用下面的其他信息与 Office 365 一起使用 Excel 的主要的优点。
   
-|**[与 Office 365 （云中） 的 Excel](pps-2007-end-of-support.md#ExcelO365)**|**[与 SharePoint Server （本地） 的 Excel](pps-2007-end-of-support.md#ExcelSPS)**|
+|**[与 Office 365 （云中） 的 Excel](#excel-with-office-365-in-the-cloud)**|**[与 SharePoint Server （本地） 的 Excel](#excel-with-sharepoint-server-on-premises)**|
 |:-----|:-----|
 |**获取 Excel 的最新、 最大版本**。与 Office 365，您可以获取最新版本的 Excel，其中包括功能强大，新图表类型，可以快速、 方便地，创建图表和表格和多个数据源的支持。<br/> <br/> **安装程序简单得多**。Excel Online 是包含与 Office 365 业务，因此您部件上没有任何繁重工作。注册和登录，并将启动并正在运行更快、 效率比升级您的内部服务器。<br/> <br/> **人员无处不在有权访问工作簿**。人们可以安全地查看无论身处何地，使用其计算机、 智能手机和平板电脑的工作簿。<br/> <br/> **还远不止**！请参阅[Excel 和 Office 365 中的 BI 功能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/> |**管理全局设置**。作为 SharePoint 管理员，您可以指定全局设置，如安全性、 负载平衡、 会话管理、 工作簿缓存和外部数据连接。<br/> <br/> **您可以使用 Excel Services with PerformancePoint Services**。可配置您的 SharePoint 服务器安装的一部分的 Excel Services 和 PerformancePoint Services 和 PerformancePoint 仪表板中包括 Excel Services 报表。<br/> <br/> **还远不止**！请参阅[Excel 和 Excel Services (SharePoint Server 2013) 中的商业智能](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |
    
@@ -92,7 +92,7 @@ ProClarity、 SharePoint Server 2007 SP3 和 PerformancePoint Server 2007 SP3 �
 
 如果您移动到 Office 365，您必须的最新的服务和应用程序，包括 Excel 2016 和 Excel Online。PerformancePoint Services 不适用于 Office 365 中，因此您将替换 PerformancePoint 仪表板内容与 Excel 工作簿或其他报表。好的消息是，Excel 2016 具有大量新图表类型，并且在 Excel 中创建令人印象深刻的仪表板是比以往更轻松。和定期添加新功能。若要了解详细信息，请参阅[What's New in Excel 2016 windows](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)。
   
-和，当您购买 50 座位或多个 Office 365，Microsoft FastTrack 团队可帮助您开始设置。若要了解详细信息，请参阅[Microsoft FastTrack](https://go.microsoft.com/fwlink/?linkid=780698)。
+和，当您购买 50 座位或多个 Office 365，Microsoft FastTrack 团队可帮助您开始设置。若要了解详细信息，请访问[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)。
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>与 SharePoint Server （本地） 的 Excel
 

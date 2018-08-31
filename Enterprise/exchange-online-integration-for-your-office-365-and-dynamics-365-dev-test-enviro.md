@@ -1,5 +1,5 @@
 ---
-title: "Office 365 和 Dynamics 365 开发/测试环境的 Exchange Online 集成"
+title: Office 365 和 Dynamics 365 开发/测试环境的 Exchange Online 集成
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
-description: "摘要：使用此测试实验室指南可以实现 Office 365 试用订阅中 Exchange Online 的 Dynamics 365 集成。"
-ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要：使用此测试实验室指南可以实现 Office 365 试用订阅中 Exchange Online 的 Dynamics 365 集成。
+ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915497"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境的 Exchange Online 集成
 
- **摘要：**使用此测试实验室指南可以实现 Office 365 试用订阅中 Exchange Online 的 Dynamics 365 集成。
+ **摘要：** 使用此测试实验室指南可以实现 Office 365 试用订阅中 Exchange Online 的 Dynamics 365 集成。
   
 Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在同一个位置，因此具有相应权限的任何人都可以查看所有相关的客户记录。例如，查看与特定联系人、帐户、 商机或案例关联的所有电子邮件。
   
@@ -39,13 +42,13 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
 
 使用下列步骤配置 Dynamics 365 和 Exchange Online 集成的全局管理员邮箱：
   
-1. 使用浏览器的专用会话，转到 [http://portal.office.com](http://portal.office.com)，再使用 Office 365 全局管理员帐户登录。
+1. 使用专用会话的浏览器中，转到[http://portal.office.com](http://portal.office.com)和使用 Office 365 全局管理员帐户登录。
     
 2. 在"Microsoft Office 主页"页上，单击"邮件"磁贴。
     
 3. 在浏览器中的新"邮件"选项卡上，单击"新建"并注意用于键入消息的框下方窗格的底角如何显示"我的模板"图标。
     
-     ![空白的新电子邮件未与 Dynamics 365 集成。](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![空白的新电子邮件未与 Dynamics 365 集成。](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. 单击"放弃"，并使"邮件"选项卡保持打开状态。
     
@@ -87,13 +90,13 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
     
 6. 在浏览器中新的"邮件"选项卡上，单击"新建"。请注意，用于键入消息的框下方窗格的底角现在显示 Dynamics 365 的图标。
     
-     ![空白的新电子邮件与 Dynamics 365 集成，显示新图标。](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![空白的新电子邮件与 Dynamics 365 集成，显示新图标。](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. 单击 Dynamics 365 图标。应该会看到"Dynamics 365" 窗格，你可以在其中跟踪此电子邮件或访问模板、销售宣传资料或文章。
     
-8. 在电子邮件的“收件人”****字段中，键入“alex.y.wu@outlook.com”****，再单击“Dynamics 365”****窗格中的“重试”****。在“Dynamics 365”****窗格中，应能看到“收件人”****部分，其中包含 Alex Wu（销售应用的联系人）的相关信息，此信息与试用订阅的示例数据一起提供。
+8. 在电子邮件的“收件人”**** 字段中，键入“alex.y.wu@outlook.com”****，再单击“Dynamics 365”**** 窗格中的“重试”****。在“Dynamics 365”**** 窗格中，应能看到“收件人”**** 部分，其中包含 Alex Wu（销售应用的联系人）的相关信息，此信息与试用订阅的示例数据一起提供。
     
-     ![存储在 Dynamics 365 中的销售联系人的 Dynamics 365 信息窗格。](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![存储在 Dynamics 365 中的销售联系人的 Dynamics 365 信息窗格。](media/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. 单击"放弃"。
 

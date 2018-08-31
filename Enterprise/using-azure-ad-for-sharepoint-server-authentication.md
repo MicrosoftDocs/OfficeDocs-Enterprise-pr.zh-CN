@@ -2,27 +2,26 @@
 title: 使用 Azure AD 进行 SharePoint Server 身份验证
 ms.author: tracyp
 author: MSFTTracyP
-ms.reviewer:
-- kirke
-- josephd
-- kirks
+ms.reviewer: kirke, josephd, kirks
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Ent_O365_Hybrid
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 摘要： 了解如何以绕过 Azure 访问控制服务，使用 SAML 1.1 与 Azure Active Directory 在 SharePoint Server 用户进行身份验证。
-ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.openlocfilehash: 465f333638401402c743dc66d3ebecc33be00749
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19856267"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915447"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>使用 Azure AD 进行 SharePoint Server 身份验证
 
@@ -39,7 +38,7 @@ SharePoint Server 2016 能够轻松地通过不同的身份提供程序的信任
 
 本文介绍如何使用 Azure AD 以进行用户身份验证而不是您的内部部署 AD DS。在此配置中，Azure AD 将成为受信任的身份提供程序的 SharePoint Server 2016。此配置添加独立于所使用的 SharePoint Server 2016 安装本身的 AD DS 验证用户身份验证方法。这样可以受益这篇文章，您应熟悉 WS 联合身份验证。有关详细信息，请参阅[了解 WS 联合身份验证](https://go.microsoft.com/fwlink/p/?linkid=188052)。
 
-![SharePoint 身份验证使用 Azure AD](images/SAML11/fig1-architecture.png)
+![SharePoint 身份验证使用 Azure AD](media/SAML11/fig1-architecture.png)
 
 以前，这种配置需要联合身份验证服务如 Azure 访问控制服务 (ACS) 在云中或环境中承载 Active Directory 联合身份验证服务 (AD FS) 转换为 SAML 1.1 SAML 2.0 令牌。Azure AD 现在可支持颁发的 SAML 1.1 令牌，该转换不再需要。上图显示 SharePoint 2016 用户在此配置中，演示不再媒介执行该转换的要求对身份验证的方式。
 
@@ -66,7 +65,7 @@ SharePoint Server 2016 能够轻松地通过不同的身份提供程序的信任
 
 Azure 门户中 ([https://portal.azure.com](https://portal.azure.com))，创建一个新目录。提供组织名称、 初始域名的国家或地区。
 
-![创建一个目录](images/SAML11/fig2-createdirectory.png) 
+![创建一个目录](media/SAML11/fig2-createdirectory.png) 
 
  如果您已有一个目录，如用于 Microsoft Office 365 或 Microsoft Azure 订阅，则您可以改用该目录。您必须有权在目录中注册应用程序。
 
@@ -76,17 +75,17 @@ Azure 门户中 ([https://portal.azure.com](https://portal.azure.com))，创建�
 
 使用 SAML 要求应用程序配置为使用 SSL。如果您的 SharePoint web 应用程序未配置为使用 SSL，使用以下步骤创建新的自签名的证书配置 SSL 的 web 应用程序。此配置仅适用于实验室环境，并不是生产。生产环境应使用签名的证书。
 
-1. 转到**管理中心** > **应用程序管理** > **管理 Web 应用程序**，并选择需要扩展，以使用 SSL 的 web 应用程序。选择 web 应用程序，然后单击**扩展功能区**按钮。扩展的 web 应用程序使用相同的 URL，但使用端口 443 使用 SSL。</br>![扩展到其他 IIS 网站的 web 应用程序](images/SAML11/fig3-extendwebapptoiis.png)</br>
+1. 转到**管理中心** > **应用程序管理** > **管理 Web 应用程序**，并选择需要扩展，以使用 SSL 的 web 应用程序。选择 web 应用程序，然后单击**扩展功能区**按钮。扩展的 web 应用程序使用相同的 URL，但使用端口 443 使用 SSL。</br>![扩展到其他 IIS 网站的 web 应用程序](media/SAML11/fig3-extendwebapptoiis.png)</br>
 2. 在 IIS 管理器 中，双击"服务器证书"。
 3. 在**操作**窗格中，单击**创建自签名证书**。在指定的友好名称证书框中，键入证书的友好名称，然后单击**确定**。
-4. 从**编辑网站绑定**对话框中，确保 host name 是相同的友好名称，如下图所示。</br>![在 IIS 中编辑网站绑定](images/SAML11/fig4-editsitebinding.png)</br>
+4. 从**编辑网站绑定**对话框中，确保 host name 是相同的友好名称，如下图所示。</br>![在 IIS 中编辑网站绑定](media/SAML11/fig4-editsitebinding.png)</br>
 
 每个 SharePoint 场中的 web 前端服务器将需要在 IIS 中配置网站绑定的证书。
 
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>步骤 3: Azure AD 中创建新的企业应用程序
 
-1. Azure 门户中 ([https://portal.azure.com](https://portal.azure.com))，打开 Azure AD 目录。单击**企业应用程序**，然后单击**新建应用程序**。选择**非库应用**程序。提供一个名称，如*SharePoint SAML 集成*并单击**添加**。</br>![添加新的非库应用程序](images/SAML11/fig5-addnongalleryapp.png)</br>
+1. Azure 门户中 ([https://portal.azure.com](https://portal.azure.com))，打开 Azure AD 目录。单击**企业应用程序**，然后单击**新建应用程序**。选择**非库应用**程序。提供一个名称，如*SharePoint SAML 集成*并单击**添加**。</br>![添加新的非库应用程序](media/SAML11/fig5-addnongalleryapp.png)</br>
 2. 单击的单一登录链接在导航窗格中配置应用程序。将**单一登录模式**下拉列表更改为**基于 SAML 的单一登录**以显示应用程序的 SAML 配置属性。配置具有以下属性：</br>
     - 标识符：`urn:sharepoint:portal.contoso.local`
     - 答复 URL:`https://portal.contoso.local/_trust/default.aspx`
@@ -100,10 +99,10 @@ Azure 门户中 ([https://portal.azure.com](https://portal.azure.com))，创建�
     - 应用程序的对象 id。 </br>
 将*Identifier*值复制到的*领域*属性表中 (请参见表 1 下方)。
 4. 保存所做的更改。
-5. 单击**配置 （应用程序名称）** 链接访问配置单一登录页。</br>![在页面上配置单一登录](images/SAML11/fig7-configssopage.png)</br> 
+5. 单击**配置 （应用程序名称）** 链接访问配置单一登录页。</br>![在页面上配置单一登录](media/SAML11/fig7-configssopage.png)</br> 
     -  单击**SAML 签名证书的原始**链接以下载扩展名.cer 文件 SAML 签名证书。复制并粘贴到数据表下载的文件的完整路径。
     - 复制并粘贴到 SAML 单一登录服务 URL 链接，替换 */wsfed*URL */saml2*部分。</br>
-6.  导航到**属性**窗格中的应用程序。复制并粘贴到您在步骤 3 中设置的表的对象 ID 值。</br>![应用程序的属性窗格](images/SAML11/fig8-propertiespane.png)</br>
+6.  导航到**属性**窗格中的应用程序。复制并粘贴到您在步骤 3 中设置的表的对象 ID 值。</br>![应用程序的属性窗格](media/SAML11/fig8-propertiespane.png)</br>
 7. 使用您捕获的值，请确保您在步骤 3 中设置表类似于下面的表 1。
 
 
@@ -141,9 +140,9 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 2. 在功能区中，单击**验证提供程序**，然后选择您想要使用的区域。
 3. 选择**受信任标识提供程序**并选择的标识提供程序只需注册名为*AzureAD*。  
 4. 登录页 URL 设置，请选择**自定义登录页**，并提供"/_trust/"的值。 
-5. 单击“确定”****。
+5. 单击" **确定**"。
 
-![配置验证提供程序](images/SAML11/fig10-configauthprovider.png)
+![配置验证提供程序](media/SAML11/fig10-configauthprovider.png)
 
 > [!IMPORTANT]
 > 务必执行所有步骤，包括自定义登录设置"/_trust/"页中，如下所示。除非时遵循所有步骤，配置将无法正常工作。
@@ -162,19 +161,19 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 1. 在管理中心中，单击“应用程序管理”****。
 2. 在"应用程序管理"页上的"Web 应用程序"部分，单击"管理 Web 应用程序"。
 3. 单击适当的 Web 应用程序，然后单击"用户策略"。
-4. 在 Web 应用程序的策略，单击**添加用户**。</br>![按其名称声明搜索的用户](images/SAML11/fig11-searchbynameclaim.png)</br>
+4. 在 Web 应用程序的策略，单击**添加用户**。</br>![按其名称声明搜索的用户](media/SAML11/fig11-searchbynameclaim.png)</br>
 5. 在"添加用户"对话框中，单击"区域"中的适当区域，然后单击"下一步"。
 6. 在**Web 应用程序的策略**对话框的**选择用户**部分中，单击**浏览**图标。
 7. 在**查找**文本框中，键入您的目录中的用户的登录名并单击**搜索**。 </br>示例： *demouser@blueskyabove.onmicrosoft.com*。
 8. 在列表视图中 AzureAD 标题下，选择名称属性，单击**添加**，然后单击**确定**关闭对话框。
-9. 在权限中，单击**完全控制**。</br>![向声明用户授予完全控制](images/SAML11/fig12-grantfullcontrol.png)</br>
+9. 在权限中，单击**完全控制**。</br>![向声明用户授予完全控制](media/SAML11/fig12-grantfullcontrol.png)</br>
 10. 单击“完成”****，然后单击“确定”****。
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>步骤 6: Azure AD 中添加的 SAML 1.1 令牌颁发策略
 
 在门户中创建 Azure AD 应用程序后，它默认为使用 SAML 2.0。SharePoint Server 2016 需要的 SAML 1.1 令牌格式。以下脚本将删除默认 SAML 2.0 策略，并向问题 SAML 1.1 令牌中添加新的策略。 
 
-> 此代码需要下载附带的[示例演示与 Azure Active Directory 图表交互](https://github.com/kaevans/spsaml11/tree/master/scripts)。如果您从 GitHub 到 Windows 桌面 ZIP 文件下载脚本，请确保取消阻止`MSGraphTokenLifetimePolicy.psm1`脚本模块文件和`Initialize.ps1`脚本文件 （右键单击属性、 选择取消阻止，请单击确定）。![阻塞下载文件](images/SAML11/fig17-unblock.png)
+> 此代码需要下载附带的[示例演示与 Azure Active Directory 图表交互](https://github.com/kaevans/spsaml11/tree/master/scripts)。如果您从 GitHub 到 Windows 桌面 ZIP 文件下载脚本，请确保取消阻止`MSGraphTokenLifetimePolicy.psm1`脚本模块文件和`Initialize.ps1`脚本文件 （右键单击属性、 选择取消阻止，请单击确定）。![阻塞下载文件](media/SAML11/fig17-unblock.png)
 
 示例脚本下载后，创建新的 PowerShell 脚本使用下面的代码，将下载的文件路径替换为占位符`Initialize.ps1`本地计算机上。应用程序的对象 ID 占位符替换为您在表 1 中输入的应用程序对象 ID。创建后，执行 PowerShell 脚本。 
 
@@ -227,15 +226,15 @@ AssignSaml11PolicyToAppPrincipal $pathToInitializeScriptFile $appObjectid
 
 打开浏览器中为您在前面的步骤中配置的 web 应用程序的 URL。将重定向以登录到 Azure AD。
 
-![登录为联盟配置的 Azure AD](images/SAML11/fig13-examplesignin.png)
+![登录为联盟配置的 Azure AD](media/SAML11/fig13-examplesignin.png)
 
 系统要求您是否要保持登录状态。
 
-![保持登录状态？](images/SAML11/fig14-staysignedin.png)
+![保持登录状态？](media/SAML11/fig14-staysignedin.png)
 
 最后，您可以访问网站以从 Azure Active Directory 租户的用户身份登录。
 
-![用户登录到 SharePoint](images/SAML11/fig15-signedinsharepoint.png)
+![用户登录到 SharePoint](media/SAML11/fig15-signedinsharepoint.png)
 
 ## <a name="managing-certificates"></a>管理证书
 务必要了解已配置为在第 4 步中的受信任的身份提供程序的签名证书已到期日期，并且必须进行更新。在续订证书，请参阅文章[管理联合单一登录 Azure Active Directory 中的证书](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-sso-certs)的信息。一旦在 Azure AD 中已经续订证书，下载到本地文件，并使用以下脚本续订签名证书配置受信任的身份提供程序。 
@@ -266,7 +265,7 @@ $t.Update()
 ## <a name="fixing-people-picker"></a>修复人员选取器
 用户现在可以登录到 SharePoint 2016 使用从 Azure AD 的标识，但仍有机会改善用户体验。例如，搜索用户在人员选取器中显示多个搜索结果。没有为每个声明映射中创建的 3 的声明类型的搜索结果。若要选择使用人员选取器的用户，必须完全键入用户姓名并选择**名称**声明结果。
 
-![声明搜索结果](images/SAML11/fig16-claimssearchresults.png)
+![声明搜索结果](media/SAML11/fig16-claimssearchresults.png)
 
 这会导致拼写错误，搜索值没有验证或意外选择错误声明类型，如**姓**分配的用户声明。这样可以防止用户成功访问资源。
 

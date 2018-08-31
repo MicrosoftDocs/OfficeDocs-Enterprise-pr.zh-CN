@@ -1,5 +1,5 @@
 ---
-title: "保护敏感和高度机密的资产的 SharePoint Online 工作组站点"
+title: 保护 SharePoint Online 团队网站的高度机密敏感资产
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,53 +8,56 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "摘要： 如何 Contoso 变得更容易实现保护敏感和高度机密 SharePoint Online 的工作组站点，尚未安全、 高级管理人员的协作和其研究中心。"
-ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 摘要： 如何 Contoso 更易于实现敏感保护和高度机密 SharePoint Online 团队网站，尚未安全、 协作的执行官且其研究中心。
+ms.openlocfilehash: 23511e4156bb04e8bacf970913b00ed36e8ff9c8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914857"
 ---
-# <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>保护敏感和高度机密的资产的 SharePoint Online 工作组站点
+# <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>保护 SharePoint Online 团队网站的高度机密敏感资产
 
- **摘要：**如何实现 Contoso 敏感保护和高度机密 SharePoint Online 团队更容易，然而安全，协作的行政人员和其研究中心的网站。
+ **摘要：** 如何实现的 Contoso 敏感保护和高度机密 SharePoint Online 团队网站的执行官和其研究中心更容易、 尚未安全协作。
   
-Contoso 行政领导想要使用 Office 365 并将他们的文件存储在一个位置进行协作，而不考虑管理人员可能。同样，Contoso 的研究部门 — — 与巴黎、 莫斯科、 纽约、 北京，以及班加罗尔的部门 — — 想要在团队之间过渡到云，用户更容易访问和更开放的协作及其内部数字资产。
+Contoso executive 领导想要使用 Office 365，并将其文件存储在一个位置进行协作，无论主管可能。同样，Contoso 的研究部门 — 与部门中巴黎、 莫斯科，纽约、 北京和班加罗尔 — 要在团队之间转换到云中更轻松地访问和更多 open 协作其内部部署数字资产。
   
-但是，在这两种情况下，对这些资源的访问必须限于人员有权查看或更改它们，与由 IT 人员管理网站的日常权限的子集。此外，即使某些资源被有意或无意中分布，它们必须加密而且具有权限，以防止那些无权访问要查看或更改它们的内容。
+但是，在这两种情况，这些资源的访问权限必须限制为允许查看或更改它们与持续由 IT 人员管理网站的权限的人员的子集。此外，即使一些资源有意或无意中分发，他们必须加密并有权阻止那些没有访问权限，可以查看或更改其内容。
   
-在 Contoso 的安全和 SharePoint 管理员的 IT 部门决定使用敏感保护和高度机密的 SharePoint Online 工作组站点，如图 1 所示。
+Contoso 中的安全和 SharePoint 管理员的 IT 部门决定使用敏感保护和高度机密 SharePoint Online 团队网站，如图 1 中所示。
   
-**图 1： 比较敏感的保护和高度机密的在线 SharePoint 工作组网站**
+**图 1： 比较的敏感保护和高度机密 SharePoint Online 团队网站**
 
-![敏感保护和高度机密的 SharePoint Online 团队网站](images/Contoso_Poster/SP_Solution.png)
+![敏感保护和高度机密的 SharePoint Online 团队网站](media/Contoso-Poster/SP-Solution.png)
   
-Contoso 使用这些步骤来为他们的执行官们和研究小组创建 SharePoint Online 的安全团队站点：
+Contoso 使用以下步骤为其执行官和研究团队创建安全的 SharePoint Online 团队网站：
   
-1. 创建一个**执行官**敏感 SharePoint Online 团队网站
+1. 创建**Executives**敏感 SharePoint Online 团队网站
     
-    新工作组网站具有完全控制权限级别的所有者具有编辑 SharePoint 权限级别和少量 SharePoint 管理员帐户的成员作为人员使用现有的 Azure 活动目录 (AD) 组。
+    新的工作组网站作为为具有完全控制权限级别的所有者编辑 SharePoint 权限级别与 SharePoint 管理员帐户的组成员的执行官使用现有的 Azure Active Directory (AD) 组。
     
-2. 将执行官的文件迁移
+2. 迁移 executives 文件
     
-    将现有的内部行政文件和文件夹移动到新执行官 SharePoint Online 的工作组网站。
+    将现有的内部部署 executive 文件和文件夹移动到新的执行官 SharePoint Online 团队网站。
     
-3. 创建**研究**高度机密在线 SharePoint 工作组网站
+3. 创建**研究**高度机密 SharePoint Online 团队网站
     
-    新的团队站点使用现有 Azure 广告研究团队组作为具有完全控制权限级别的所有者具有编辑权限级别和少量 SharePoint 管理员帐户的成员。AIP 标签分配研究文件确保对它们进行加密，并只有研究组的成员可以打开它们。
+    新的工作组网站使用现有的 Azure AD 研究团队组作为成员与编辑权限级别和一小组 SharePoint 管理员帐户为具有完全控制权限级别的所有者。分配研究文件 AIP 标签确保对它们进行加密和只有研究组的成员可以打开它们。
     
-4. 研究文件迁移
+4. 迁移研究文件
     
-    移动现有研究小组内部的文件和文件夹到新研究 SharePoint Online 工作组站点。
+    移动现有研究小组本地文件和文件夹到新的研究 SharePoint Online 团队网站。
     
-结果是两个由安全和 SharePoint 管理员紧密控制其访问权限的协作站点。使用高度机密的 AIP 的标签的文件，即使分发外部研究工作组站点，它们都将被加密，只能打开由研究小组的成员。
+结果是由安全性和 SharePoint 管理员严格控制其访问权限的两个协作网站。与高度机密 AIP 标签的文件，即使分发外研究工作组网站，它们已加密和只能打开由研究团队的成员。
   
 有关详细信息，请参阅[安全 SharePoint Online 网站和文件](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)。
   
- 若要设置此功能演示、 概念证明或开发/测试，请参见[安全 SharePoint Online 网站的开发/测试环境](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)。
+ 若要设置此功能演示、 概念证明或开发/测试，请参阅[开发/测试环境中的安全 SharePoint Online 网站](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)。
   
 ## <a name="see-also"></a>另请参阅
 

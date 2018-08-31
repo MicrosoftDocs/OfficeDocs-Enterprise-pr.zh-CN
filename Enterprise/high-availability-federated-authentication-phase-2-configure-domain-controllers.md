@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
-ms.openlocfilehash: 3f898fea8fc92d4f7ea392bfe854425beafb1eb4
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: 1e66403348bc2cd9a6dfab56f32735d62c986035
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215864"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915147"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
@@ -36,13 +36,13 @@ ms.locfileid: "20215864"
   
 |**项**|**虚拟机名称**|**库图像**|**存储类型**|**最小大小**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)（第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)（第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)（目录同步服务器，示例 DS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)（第一台 AD FS 服务器，示例 ADFS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./images/Common_Images/TableLine.png)（第二个 AD FS 服务器，示例 ADFS2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./images/Common_Images/TableLine.png)（第一个 web 应用程序代理服务器，示例 WEB1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./images/Common_Images/TableLine.png)（第二个 web 应用程序代理服务器，示例 WEB2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)（第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)（第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)（目录同步服务器，示例 DS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)（第一台 AD FS 服务器，示例 ADFS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png)（第二个 AD FS 服务器，示例 ADFS2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png)（第一个 web 应用程序代理服务器，示例 WEB1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)（第二个 web 应用程序代理服务器，示例 WEB2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **表 M-Azure 中的 Office 365 的高可用性联合身份验证的虚拟机**
   
@@ -245,7 +245,7 @@ Restart-Computer
   
 **阶段 2：Azure 中用于高可用性联合身份验证基础结构的域控制器和目录同步服务器**
 
-![阶段 2：在包含域控制器的 Azure 中配置高可用性 Office 365 联合身份验证基础结构](images/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![阶段 2：在包含域控制器的 Azure 中配置高可用性 Office 365 联合身份验证基础结构](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -259,6 +259,6 @@ Restart-Computer
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 的联合标识](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[联合身份验证选项](about-office-365-identity.md#federated-authentication-options)
 
 

@@ -1,5 +1,5 @@
 ---
-title: "从零开始构建"
+title: 从零开始构建
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,53 +8,56 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
-description: "摘要： 获取详细信息集的云存储，可用于创建您自己的存储服务或解决方案的构建基块。"
-ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 摘要： 获取对云组的详细信息可用于创建您自己的存储服务或解决方案的存储构建基块。
+ms.openlocfilehash: 8ef5d7a99c4e82d9a4fc3eb281a4af505887b792
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915677"
 ---
 # <a name="build-from-the-ground-up"></a>从零开始构建
 
- **摘要：**获取详细信息集的云存储，可用于创建您自己的存储服务或解决方案的构建基块。
+ **摘要：** 获取一组由云的详细信息可用于创建您自己的存储服务或解决方案的存储构建基块。
   
-"生成从零开始"的存储解决方案：
+"从头开始"存储解决方案：
   
 - 允许您从头开始创建您自己的存储解决方案。 
     
 - 需要在使用 REST Api 的编程。
     
-- 提供最佳的自定义功能和灵活性。
+- 提供最佳的自定义和灵活性。
     
-以下各节描述了每个"从头生成"存储选项的详细信息。
+以下各节介绍了每个"从头开始"的存储选项的详细信息。
   
 ## <a name="azure-storage-files"></a>Azure 存储 （文件）
 
 ### <a name="features"></a>功能
 
-- 便于更方便地移动到云的旧式应用程序
+- 可更轻松地移动到云的旧应用程序
     
-- 新的应用程序首选的 blob 存储
+- 首选的新应用程序的 blob 存储
     
-- 可以装载从 Azure 的虚拟机
+- 可以从 Azure 虚拟机装入
     
-- 可以装载内部使用 SMB 3.0
+- 可以安装在本地与 SMB 3.0
     
-- 与 Linux 和 Windows 的工作原理
+- 适用于 Linux 和 Windows
     
-- 不支持基于 AD 的 Azure 身份验证或 Acl （Azure 存储帐户密钥提供身份验证和授权的访问的文件共享）
+- 不支持 Azure 基于 AD 的身份验证或 Acl （Azure 存储帐户关键字提供身份验证和授权的访问的文件共享）
     
 ### <a name="common-uses"></a>常见用途
 
-- 迁移到云的旧式应用程序依赖于文件共享
+- 迁移到云中的旧版应用程序依赖文件共享
     
 - 共享开发和测试工具
     
-- 分布式应用程序可以存储日志，诊断数据，并崩溃转储
+- 分布式应用程序可以存储日志，诊断数据和崩溃转储
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
@@ -62,7 +65,7 @@ ms.lasthandoff: 02/09/2018
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://msdn.microsoft.com/library/azure/dn166972.aspx)。
+其他信息，请单击[此处](https://msdn.microsoft.com/library/azure/dn166972.aspx)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/storage/)。
   
@@ -70,27 +73,27 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="features"></a>功能
 
-- 每个存储帐户可以容纳多达 500 TB （一个订阅可以有多个存储帐户）
+- 每个存储帐户可以保留达 500 TB （有一个订阅可以有多个存储帐户）
     
-- 帐户存储被组织成容器，其中可以具有应用于它们的安全性，可以包含 blob
+- 存储帐户组织到容器中，这可以应用于它们的安全，并且可以包含 blob
     
-- 块 blob 则适合流式传输和存储云对象达 200GB 的大小
+- 阻止 blob 优化的流式传输和存储云对象的大小为 200 GB
     
-- 适合页面 blob 表示 PaaS 磁盘并支持随机写入，达 1TB 的大小
+- 代表 PaaS 磁盘的优化页面 blob 和支持随机写入达 1 TB 的大小
     
-- 追加 blob 则适合追加操作，达 195 GB
+- 追加针对优化 blob 追加操作，为 195 GB
     
-- 高级存储提供了更快通过 SSD 存储 IOPS
+- Premium 存储提供通过 SSD 存储的速度更快 IOPS
     
 ### <a name="common-uses"></a>常见用途
 
-- 备份的文件、 计算机、 数据库和设备的图像和文本的 web 应用程序
+- 文件、 计算机、 数据库和设备图像和文本的 web 应用程序的备份
     
 - 云应用程序的配置数据
     
-- 大数据，例如，日志和其他大型的数据集
+- 大数据，如日志和其他大型数据集
     
-- Azure 使用 blob 为自己服务，如 HDInsight 和虚拟机的磁盘存储
+- Azure 使用 blob 存储其自己的服务，例如 HDInsight 和虚拟机的磁盘
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
@@ -98,7 +101,7 @@ ms.lasthandoff: 02/09/2018
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://msdn.microsoft.com/library/azure/dd179376.aspx)。
+其他信息，请单击[此处](https://msdn.microsoft.com/library/azure/dd179376.aspx)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/storage/)。
   
@@ -108,31 +111,31 @@ ms.lasthandoff: 02/09/2018
 
 - 存储帐户可以包含任意数量的队列
     
-- 队列可以包含任意数量的消息 （直到存储帐户已满）
+- 队列可包含任意数量的邮件 （直到存储帐户已满）
     
-- 队列消息是自动在七天后删除如果不检索和删除应用程序
+- 队列消息被自动七天后删除如果未检索并删除应用程序
     
-- 消息可能会多达 64 KB 的大小
+- 邮件可能最多为 64 KB 的大小
     
-- 在存储帐户级别安全
+- 安全帐户存储级别
     
-- 旨在传递控制消息，不是原始数据的队列
+- 队列旨在传递控制消息，而不是原始数据
     
 ### <a name="common-uses"></a>常见用途
 
-- 创建异步处理的工作的积压
+- 创建工作积压以异步处理
     
 - 处理日志消息
     
-- 将应用程序中分离出来
+- 使应用程序分离
     
 ### <a name="key-storage-scenarios"></a>密钥存储方案
 
-- 分发的事件
+- 分发事件
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://msdn.microsoft.com/library/azure/dd179353.aspx)。
+其他信息，请单击[此处](https://msdn.microsoft.com/library/azure/dd179353.aspx)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/storage/)。
   
@@ -140,21 +143,21 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="features"></a>功能
 
-- 最适合于半结构化数据集
+- 最适合半结构化数据集
     
-- 通常更低的成本比传统的 SQL
+- 通常低于传统的 SQL 成本
     
-- 如果查询键，如果查询值降低速度非常快
+- 如果查询对于键，如果查询值降低非常快
     
-- 可以扩展;任意数量的表的存储帐户的限制
+- 高度可伸缩;任意数量的最多的存储帐户限制表
     
-- 通过 REST API，有限的 oData 协议，.NET 访问
+- 可通过 REST API，有限的 oData 协议，.NET 访问
     
-- 必须进行序列化的值
+- 必须序列化值
     
 ### <a name="common-uses"></a>常见用途
 
-- 对于 web 应用程序的用户数据
+- Web 应用程序的的用户数据
     
 - 通讯簿
     
@@ -166,29 +169,29 @@ ms.lasthandoff: 02/09/2018
     
 ### <a name="resources"></a>资源
 
-有关其他信息，请单击[此处](https://msdn.microsoft.com/library/azure/dd179463.aspx)。
+其他信息，请单击[此处](https://msdn.microsoft.com/library/azure/dd179463.aspx)。
   
 成本信息，请单击[此处](http://azure.microsoft.com/pricing/details/storage/)。
   
 ## <a name="microsoft-azure-storage-recommendations"></a>Microsoft Azure 存储建议
 
-在设计使用 Azure 存储您定制的存储解决方案时，请牢记以下：
+在设计与 Azure 存储自定义存储解决方案时，请牢记以下事项：
   
-- 利用更大的可扩展性，为增加大小 (> 100 TB) 或更大的吞吐量 （每秒 5000 > 操作） 的多个存储的帐户。
+- 利用多个存储帐户更大的可伸缩性，为增加大小 (> 100 TB) 或更大的吞吐量 （每秒 > 5,000 个操作）。
     
-- 设计用于添加更多存储帐户作为配置的更改，而不是代码更改的能力。
+- 设计添加其他存储帐户作为配置更改，而不是代码变更的能力。
     
-- 请仔细选择表存储，以实现所需的比例，在插入和查询性能方面的分区函数。
+- 请仔细选择表存储，以实现所需的比例插入和查询性能方面的分区函数。
     
-- 选择短的列名的表的元数据 （属性名称） 的属性存储在带内 （列名称也计入 1 MB 的最大行大小之前）。
+- 选择表属性作为元数据 （属性名称） 的简短的列名称是存储的带内 （的列名称进行计数达到最大行大小为 1 MB）。
     
-- 在可能的情况下，批处理存储操作。
+- 如果可能，批处理存储到的操作。
     
-- 主动缓存到分布式缓存配置数据库中的信息。
+- 主动缓存到分布式缓存的配置数据库中的信息。
     
-- 如果应用程序的性能或可靠性取决于某些段可用的数据缓存中时，您的应用程序应预先填充缓存之前拒绝传入的请求。
+- 如果依赖于在缓存中无可用的数据的某些一段应用程序的性能和可靠性，您的应用程序应拒绝的传入请求，直到缓存预填充。
     
-- 分区的数据在垂直方向 （按表） 或横向 （跨多个 shards 线段表） 来跨多个数据库的负载。
+- 分区的数据在垂直方向 （通过表） 或水平 （跨多个 shards 段表） 以跨多个数据库负载。
     
 ## <a name="see-also"></a>另请参阅
 
