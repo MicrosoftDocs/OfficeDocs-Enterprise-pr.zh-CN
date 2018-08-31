@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：为具有各级别信息保护的 SharePoint Online 团队网站应用 Office 365 标签和数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 1e83f8c08dde55c22b7b9e8e6f9fe966c9fe9c02
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319263"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915777"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>使用 Office 365 标签和 DLP 保护 SharePoint Online 文件
 
@@ -127,7 +129,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 下面是生成的配置。
   
-![四种类型的 SharePoint Online 团队网站的 Office 365 标签。](images/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![四种类型的 SharePoint Online 团队网站的 Office 365 标签。](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>适用于 SharePoint Online 网站的 DLP 策略
 
@@ -178,7 +180,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 以下为敏感 SharePoint Online 团队网站的配置结果。
   
-![使用敏感 Office 365 标签的独立 SharePoint Online 团队网站的 DLP 策略。](images/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![使用敏感 Office 365 标签的独立 SharePoint Online 团队网站的 DLP 策略。](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 接下来，使用以下步骤配置 DLP 策略，该策略可在用户在组织外共享关于 SharePoint Online 高度机密团队网站的文档时阻止用户。
   
@@ -226,7 +228,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 以下为高度机密的 SharePoint Online 团队网站的配置结果。
   
-![使用高度机密 Office 365 标签的独立 SharePoint Online 团队网站的 DLP 策略。](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![使用高度机密 Office 365 标签的独立 SharePoint Online 团队网站的 DLP 策略。](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>后续步骤
 

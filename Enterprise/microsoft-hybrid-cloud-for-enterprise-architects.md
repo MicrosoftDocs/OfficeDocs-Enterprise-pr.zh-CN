@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 摘要： IT 架构师需要了解的有关使用 Microsoft 云服务和平台的混合方案的知识。
-ms.openlocfilehash: a729c770fee5a6484e8a8efbfe014b54fe266bc0
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: a2859d6ce677a37541948d481530aee8f46adf7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161815"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915547"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>面向企业架构师的 Microsoft 混合云
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161815"
   
 本文可链接至一组文章，这些文章介绍了 IT 架构师使用 Microsoft 云服务和平台的混合体系结构和配置所需要了解的内容。此外，还可以浏览本文的 7 页海报内容，以文摘格式进行打印（也称为分类帐、11 x 17 或 A3）。
   
-[![Microsoft 混合云模型的缩略图](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+[![Microsoft 混合云模型的缩略图](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 

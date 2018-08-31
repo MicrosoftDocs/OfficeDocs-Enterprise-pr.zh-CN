@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 摘要：使用本测试实验室指南创建包含所有 Microsoft 云产品/服务的开发/测试环境。
-ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915627"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft 云开发/测试环境
 
@@ -27,7 +30,7 @@ ms.lasthandoff: 04/27/2018
   
 按照本文中的说明，你可以在 Microsoft Azure 基础结构服务中创建模拟 Intranet，然后添加 Microsoft Office 365、Microsoft 企业移动性 + 安全性 (EMS) 和 Microsoft Dynamics 365 订阅。结果是，得到简化的组织可以在单个开发/测试环境中同时使用所有 Microsoft 云产品/服务。 
   
-![包含 Azure、Office 365、EMS 和 Dynamics 365 的 One Microsoft 云开发/测试环境的第 3 阶段](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![包含 Azure、Office 365、EMS 和 Dynamics 365 的 One Microsoft 云开发/测试环境的第 3 阶段](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 你可以使用生成的配置执行以下操作：
   
@@ -47,7 +50,7 @@ ms.lasthandoff: 04/27/2018
   
 **图 1：包含 Office 365 的 Azure 中的模拟 Intranet**
 
-![包含 DirSync 的 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![包含 DirSync 的 Office 365 开发/测试环境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
 > Azure 试用期为 30 天。Office 365 企业版 E5 试用版的订阅期为 30 天，可以轻松延长 30 天。对于永久性开发/测试环境，使用少量许可证创建新的付费 Azure 订阅和新的付费 Office 365 企业版 E5 订阅。 
@@ -93,7 +96,7 @@ ms.lasthandoff: 04/27/2018
   
 **图 2：包含 Office 365 和 EMS 的 Azure 中的模拟 Intranet**
 
-![包含 Azure、Office 365 和 EMS 的 One Microsoft 云开发/测试环境的第 2 阶段](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
+![包含 Azure、Office 365 和 EMS 的 One Microsoft 云开发/测试环境的第 2 阶段](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
 ## <a name="phase-3-add-dynamics-365"></a>第 3 阶段：添加 Dynamics 365
 
@@ -171,7 +174,7 @@ ms.lasthandoff: 04/27/2018
   
 **图 3：包含 Office 365、EMS 和 Dynamics 365 的 Azure 中的模拟 Intranet**
 
-![包含 Azure、Office 365、EMS 和 Dynamics 365 的 One Microsoft 云开发/测试环境的第 3 阶段](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![包含 Azure、Office 365、EMS 和 Dynamics 365 的 One Microsoft 云开发/测试环境的第 3 阶段](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 ## <a name="next-steps"></a>后续步骤
 

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: 摘要：设计用于 Microsoft 云服务和平台的存储。
-ms.openlocfilehash: 7c8d232c42c203ce1f4fba06d4134693e01e7284
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 56f7f8316296b43b96903ad8da5f4f4fbf2733d7
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161805"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915667"
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云存储
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161805"
   
 本文可链接至一组文章，这些文章介绍了 IT 架构师使用 Microsoft 云服务和平台设计组织存储所需要了解的内容。此外，还可以浏览此信息的 6 页海报内容，以文摘格式（也称为分类帐、11 x 17 或 A3）进行打印。
   
-[![Microsoft 云存储模型的缩略图](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+[![Microsoft 云存储模型的缩略图](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | [更多语言](https://www.microsoft.com/download/details.aspx?id=49552)

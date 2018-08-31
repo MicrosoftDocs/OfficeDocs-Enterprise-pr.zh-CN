@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: 摘要：具有代表性的虚构全球组织如何采用包含云的 IT 基础结构，其中具有各种 Microsoft 云产品。
-ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: afb1760d1c2fcfe7679d39a14e22f6abfcf0e80c
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161775"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915287"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft 云中的 Contoso
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161775"
   
 本文将你链接到一组文章，描述总部位于巴黎的全球制造业巨头 Contoso Corporation 如何实施包含云的 IT 基础结构并制定有关网络、标识、安全性以及如何实现企业云应用场景以解决其业务问题的主要设计决策。此外，你还可以使用 11 页海报的形式浏览此信息，以文摘格式进行打印（也称为分类帐、11 x 17 或 A3）。
   
-[![海报缩略图：Microsoft 云中的 Contoso。](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![海报缩略图：Microsoft 云中的 Contoso。](media/Contoso-Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [更多语言](https://www.microsoft.com/download/details.aspx?id=54427)
   

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 SharePoint Online 和 Office 365 中文件的配置建议。
-ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 5ee7ce0f5d52076ec27a3478a39b998a96e0e270
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319223"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915077"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
@@ -138,7 +140,7 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
     
 - 组织中的用户可手动将标签应用于 Outlook 网页版、Outlook 2010 及更高版本、OneDrive for Business、SharePoint Online 以及 Office 365 组。用户通常都很了解他们处理的内容类型，以便可以对其进行分类并应用相应的 DLP 策略。
     
-![适用于 SharePoint 网站的推荐配置](images/7fed0126-ab4a-4480-922c-681970642339.png)
+![适用于 SharePoint 网站的推荐配置](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
 如图所示，此解决方案包括创建以下标签：
   
@@ -160,7 +162,7 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
   
 请注意，将 Azure 信息保护加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。 DLP 策略只适用于元数据（包括 Office 365 标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
   
-![Azure 信息保护在 Azure 中进行配置，标签显示在客户端工具栏中](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
+![Azure 信息保护在 Azure 中进行配置，标签显示在客户端工具栏中](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
 如图所示：
   

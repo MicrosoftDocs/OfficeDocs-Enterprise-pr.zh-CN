@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 摘要： 设计用于 Microsoft 云服务和平台的网络。
-ms.openlocfilehash: eebfb0537ba3166ded84c899f22efcd11825601b
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161865"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915397"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云网络
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161865"
   
 本文可链接至一组文章，这些文章介绍了 IT 架构师使用 Microsoft 云服务和平台设计组织网络所需要了解的内容。此外，还可以浏览此信息的 12 页海报内容，以文摘格式进行打印（也称为分类帐、11 x 17 或 A3）。
   
-[![模型缩略图：Microsoft 云网络](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![模型缩略图：Microsoft 云网络](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [更多语言](https://www.microsoft.com/download/details.aspx?id=54425)

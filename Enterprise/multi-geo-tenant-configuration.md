@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 了解如何配置 OneDrive for Business 多地理位置。
-ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549963"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915247"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 多地理位置租户配置
 
@@ -112,7 +112,7 @@ ms.locfileid: "21549963"
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>使用 AD Connect 同步用户的首选数据位置 
 
-如果将公司的用户从本地 Active Directory (AD) 系统同步到 Azure Active Directory (AAD)，则其 PreferredDataLocation 必须在 AD 中填充并同步到 AAD。按照 [Azure AD Connect 同步：更改默认配置](https://docs.microsoft.com/zh-CN/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)中的流程，将首选数据位置同步从本地 AD 配置到 AAD。
+如果将公司的用户从本地 Active Directory (AD) 系统同步到 Azure Active Directory (AAD)，则其 PreferredDataLocation 必须在 AD 中填充并同步到 AAD。按照 [Azure AD Connect 同步：更改默认配置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)中的流程，将首选数据位置同步从本地 AD 配置到 AAD。
 
 我们建议你在标准用户创建工作流中加入设置用户的“首选数据位置”。
 
@@ -129,7 +129,7 @@ ms.locfileid: "21549963"
 
 2.  运行 `Connect-MsolService`，然后输入租户的全局管理员凭据。
 
-3.  使用 [Set-MsolUser](https://docs.microsoft.com/zh-CN/powershell/msonline/v1/set-msoluser) cmdlet 来设置每位用户的首选数据位置。例如：
+3.  使用 [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet 来设置每位用户的首选数据位置。例如：
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -137,7 +137,7 @@ ms.locfileid: "21549963"
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration_image3.png)
+![](media/multi-geo-tenant-configuration-image3.png)
 
 我们建议你在标准用户创建工作流中加入设置用户的“首选数据位置”。
 

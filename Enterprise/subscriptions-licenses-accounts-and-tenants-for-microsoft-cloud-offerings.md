@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319213"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915197"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -62,7 +64,7 @@ ms.locfileid: "20319213"
   
 **图 1：组织的多个订阅示例**
 
-![组织订阅多个 Micrososft 云服务的示例。](images/Subscriptions/Subscriptions_Fig1.png)
+![组织订阅多个 Micrososft 云服务的示例。](media/Subscriptions/Subscriptions-Fig1.png)
 
   
 图 1 显示了一个组织，其具有多个 Office 365 订阅、一个 Intune 订阅、一个 Dynamics 365 订阅以及多个 Azure 订阅。
@@ -73,7 +75,7 @@ ms.locfileid: "20319213"
   
 **图 2：组织基于 SaaS 的订阅内的许可证**
 
-![Microsoft 基于 SaaS 的云服务订阅中的多个许可证示例。](images/Subscriptions/Subscriptions_Fig2.png)
+![Microsoft 基于 SaaS 的云服务订阅中的多个许可证示例。](media/Subscriptions/Subscriptions-Fig2.png)
   
 对于基于 Azure PaaS 的云服务，软件许可证是服务定价的一部分。
   
@@ -89,7 +91,7 @@ ms.locfileid: "20319213"
   
 **图 3：组织使用同一 Azure AD 租户进行的多个订阅**
 
-![组织使用同一个 Azure AD 租户进行多个订阅的示例。](images/Subscriptions/Subscriptions_Fig3.png)
+![组织使用同一个 Azure AD 租户进行多个订阅的示例。](media/Subscriptions/Subscriptions-Fig3.png)
   
 ### <a name="tenants"></a>租户
 
@@ -131,7 +133,7 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Office 365、
   
 **图 4：适用于组织的同步本地帐户和 IDaaS**
 
-![适用于组织的标识即服务 (IaaS) IDaaS。](images/Subscriptions/Subscriptions_Fig4.png)
+![适用于组织的标识即服务 (IaaS) IDaaS。](media/Subscriptions/Subscriptions-Fig4.png)
   
 图 4 显示了如何将常见的 Azure AD 租户用于 Microsoft 的 SaaS 云产品、Azure PaaS 应用以及 Azure IaaS 中使用 Azure AD 域服务的虚拟机。Azure AD Connect 将本地 Windows Server AD 林与 Azure AD 租户同步。
   

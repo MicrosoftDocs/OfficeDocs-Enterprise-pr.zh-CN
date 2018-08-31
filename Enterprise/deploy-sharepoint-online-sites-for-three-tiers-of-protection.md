@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：为各种级别的信息保护创建和配置 SharePoint Online 团队网站。
-ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 6103675941802fcdee50c06ac3212d90f95c6d35
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631393"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915617"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署具有三层保护的 SharePoint Online 网站
 
@@ -54,7 +56,7 @@ ms.locfileid: "19631393"
     
 下面是生成的配置。
   
-![适用于公共 SharePoint Online 团队网站的基线级保护。](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![适用于公共 SharePoint Online 团队网站的基线级保护。](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>私有
 
@@ -80,7 +82,7 @@ ms.locfileid: "19631393"
     
 下面是生成的配置。
   
-![适用于专用 SharePoint Online 团队网站的基线级保护。](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![适用于专用 SharePoint Online 团队网站的基线级保护。](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>敏感 SharePoint Online 团队网站
 
@@ -142,7 +144,7 @@ ms.locfileid: "19631393"
     
 接下来，在新的 SharePoint Online 团队网站中，按照以下步骤操作来配置权限。
   
-1. 确定 IT 管理员或将负责响应和处理网站访问请求的其他人员的用户主体名称 (UPN)（例如，belindan@contoso.com）。记下此 UPN：![](./images/Common_Images/TableLine.png)。
+1. 确定 IT 管理员或将负责响应和处理网站访问请求的其他人员的用户主体名称 (UPN)（例如，belindan@contoso.com）。记下此 UPN：![](./media/Common-Images/TableLine.png)。
     
 2. 在工具栏中，依次单击设置图标和“网站权限”****。
     
@@ -196,7 +198,7 @@ ms.locfileid: "19631393"
     
 下面是生成的配置。
   
-![适用于独立 SharePoint Online 团队网站的敏感级保护。](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![适用于独立 SharePoint Online 团队网站的敏感级保护。](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 通过其中一个访问组的组成员身份，网站成员现可对网站资源进行安全协作。
   
@@ -256,7 +258,7 @@ ms.locfileid: "19631393"
     
 下面是生成的配置。
   
-![适用于独立 SharePoint Online 团队网站的高度机密级保护。](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![适用于独立 SharePoint Online 团队网站的高度机密级保护。](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 通过其中一个访问组的组成员身份，网站成员现可对网站资源进行安全协作。
   

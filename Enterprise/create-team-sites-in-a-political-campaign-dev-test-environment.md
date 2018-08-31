@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: 452e504a8d5fe0cb53fde2e4bb11aa8510f247fc
-ms.sourcegitcommit: 0d92efcb24a388c6fc5c3e333bc5714f43dbf4a7
+ms.openlocfilehash: 03e73a540d1a92d20446d8e12066df87bd179293
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "19339153"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915257"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
