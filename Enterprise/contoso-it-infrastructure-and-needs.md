@@ -1,5 +1,5 @@
 ---
-title: "Contoso 的 IT 基础结构和需求"
+title: Contoso 的 IT 基础结构和需求
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
-description: "摘要： 了解 Contoso 的本地 IT 基础结构的基本结构，以及 Microsoft 云产品满足其业务需求的方式。"
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 摘要： 了解 Contoso 的本地 IT 基础结构的基本结构，以及 Microsoft 云产品满足其业务需求的方式。
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915727"
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>Contoso 的 IT 基础结构和需求
 
@@ -30,7 +31,7 @@ Contoso 通过将应用程序数据中心置于巴黎总部，来使用最集中
   
 **图 1：Contoso 的现有 IT 基础结构**
 
-![Contoso 的现有 IT 基础结构](images/Contoso_Poster/Existing_IT.png)
+![Contoso 的现有 IT 基础结构](media/Contoso-Poster/Existing-IT.png)
   
 图 1 显示总部办事处的应用程序数据中心、DMZ 和 Internet。
   

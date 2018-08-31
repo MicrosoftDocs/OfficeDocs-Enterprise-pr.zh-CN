@@ -1,5 +1,5 @@
 ---
-title: "将历史交易记录数据迁移到云"
+title: 将历史交易记录数据迁移到云
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
-description: "摘要： Contoso 如何实施 SQL Server Stretch Database，以减少其本地数据存储需求并降低日常运行成本。"
-ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 摘要： Contoso 如何实施 SQL Server Stretch Database，以减少其本地数据存储需求并降低日常运行成本。
+ms.openlocfilehash: 791b5d4f14ba7246221cf9b459c31c9ba1b54099
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915717"
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>将历史交易记录数据迁移到云
 
@@ -28,7 +31,7 @@ Contoso 的企业存储系统存储了大量历史交易数据，用于遵守监
   
 **图 1：SQL Server Stretch Database**
 
-![SQL Server Stretch Database 作为混合数据解决方案](images/Contoso_Poster/StretchDB01.png)
+![SQL Server Stretch Database 作为混合数据解决方案](media/Contoso-Poster/StretchDB01.png)
   
 图 1 显示了 SQL 客户端如何向运行 SQL Server 2016 的服务器发送 T-SQL 查询，该服务将它们转发到 Azure PaaS 中的 Azure SQL Stretch Database。
   
@@ -52,7 +55,7 @@ Contoso 使用这些步骤将其历史数据移动到云：
   
 **图 2：对 Contoso 的数据中心中的服务器使用 Stretch Database**
 
-![Contoso SQL Server Stretch Database 配置，用于运行 SQL Server 的单个计算机](images/Contoso_Poster/StretchDB02.png)
+![Contoso SQL Server Stretch Database 配置，用于运行 SQL Server 的单个计算机](media/Contoso-Poster/StretchDB02.png)
 
   
 图 2 显示了对 Contoso 数据中心中的应用程序服务器的用户查询如何成为可传递到 Azure PaaS 中的 Azure SQL Stretch Database 的 SQL 查询。

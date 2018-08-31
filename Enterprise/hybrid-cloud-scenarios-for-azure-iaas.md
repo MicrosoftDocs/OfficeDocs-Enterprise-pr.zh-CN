@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: 摘要： 了解混合的体系结构和方案为 Microsoft 基础架构即服务 (IaaS)-基于在 Azure 的云服务。
-ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+description: 摘要： 了解混合体系结构和方案的 Microsoft 的基础结构作为服务 (IaaS)-基于 Azure 中的云服务。
+ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915027"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>适用于 Azure IaaS 的混合云方案
 
- **摘要：**了解 Microsoft 的基础结构即服务 (IaaS) 混合体系结构和方案-基于在 Azure 的云服务。
+ **摘要：** 了解作为服务 (IaaS) for Microsoft 的基础结构的混合体系结构和方案-基于 Azure 中的云服务。
   
 通过托管在跨内部 Azure 虚拟网络 (VNet) 中运行的 IT 工作负荷，将本地计算和标识基础结构扩展到云。  
   
@@ -28,9 +29,9 @@ ms.lasthandoff: 04/05/2018
 
 图 1 显示了 Azure 中基于 Microsoft laaS 的混合方案的体系结构。
   
-**图 1： 在 Azure 中的 Microsoft IaaS 基于混合方案**
+**图 1：Azure 中基于 Microsoft IaaS 的混合方案**
 
-![Azure 中基于 Microsoft IaaS 的混合方案](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS.png)
+![Azure 中基于 Microsoft IaaS 的混合方案](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
   
 针对体系结构的每一层：
   
@@ -54,11 +55,11 @@ ms.lasthandoff: 04/05/2018
 
 如图 2 中所示，从 Azure VNet 运行目录同步 (DirSync) 服务器是一个将计算和标识基础结构扩展到云的示例。
   
-**图 2： 针对 Office 365 提供在 Azure IaaS 的目录同步服务器**
+**图 2：Azure IaaS 中适用于 Office 365 的 DirSync 服务器**
 
-![Azure IaaS 中适用于 Office 365 的 DirSync 服务器](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_DirSync.png)
+![Azure IaaS 中适用于 Office 365 的 DirSync 服务器](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-在图 2 中，内部网络承载 Windows 服务器 AD 基础结构，使用代理服务器，并在其边缘路由器。路由器连接到 Azure 边沿的站点到站点 VPN 或 ExpressRoute 连接 Azure VNet 网关。在 VNet，一个目录同步服务器运行 Azure AD 连接。
+图 2 中的本地网络承载具有代理服务器和边缘处路由器 Windows Server AD 基础结构。路由器连接到 Azure 网关与站点到站点 VPN 或 ExpressRoute 连接 Azure VNet 边缘内侧。内 VNet，一台 DirSync 服务器运行 Azure AD 连接。
   
 Office 365 的 DirSync 服务器将 Windows Server AD 中的帐户列表与 Office 365 订阅的 Azure AD 租户进行同步。
   
@@ -66,19 +67,22 @@ DirSync 服务器是运行 Azure AD Connect 的基于 Windows 的服务器。为
   
 DirSync 服务器轮询 Windows Server AD 的更改，然后将它们与 Office 365 订阅同步。
   
-有关详细信息，请参阅[部署 Office 365 目录同步在 Azure 中](https://technet.microsoft.com/library/dn635310.aspx)。
+有关详细信息，请参阅[设置 Office 365 的目录同步](set-up-directory-synchronization.md)。
   
 ## <a name="line-of-business-lob-application"></a>业务线 (LOB) 应用程序
 
 图 3 显示了在 Azure IaaS 中运行的基于服务器的 LOB 应用程序的配置。
   
-**图 3： 在 Azure IaaS 的 LOB 应用程序**
+**图 3：Azure IaaS 中的 LOB 应用程序**
 
-![Azure IaaS 中基于服务器的 LOB 应用程序](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_Ex.png)
+![Azure IaaS 中基于服务器的 LOB 应用程序](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
   
 在图 3 中，本地网络托管标识基础结构和用户。它通过站点到站点 VPN 或 ExpressRoute 连接来连接到 Azure IaaS 网关。Azure IaaS 托管包含 LOB 应用程序服务器的虚拟网络。
   
-您还可以在 Azure Vm，位于子网的 Azure VNet Azure 数据中心 （也称为位置） 上运行的 LOB 应用程序。
+可以创建在 Azure VM 上运行的 LOB 应用，它驻留在 Azure 数据中心的 Azure VNet 的子网（也称为位置）上。 
+
+
+
   
 因为实际上要将本地基础结构扩展到 Azure，则必须将唯一的专用地址空间分配给 VNet，并更新本地路由表，以确保对每个 VNet 的可访问性。
   
@@ -86,7 +90,7 @@ DirSync 服务器轮询 Windows Server AD 的更改，然后将它们与 Office 
   
 通过配置公开的端口，移动或远程用户还可以从 Internet 对这些 VM 进行访问。
   
-概念验证的配置，请参阅[Simulated 跨内部 Azure 中的虚拟网络](simulated-cross-premises-virtual-network-in-azure.md)。
+有关概念证明配置的信息，请参阅 [Simulated cross-premises virtual network in Azure](simulated-cross-premises-virtual-network-in-azure.md)。
   
 以下为在 Azure VM 上托管的 LOB 应用的属性：
   
@@ -110,9 +114,9 @@ DirSync 服务器轮询 Windows Server AD 的更改，然后将它们与 Office 
 
 Azure 中一个多层、高可用性 LOB 应用程序的示例是 SharePoint Server 2016 场，如图 4 中所示。
   
-**图 4： 一个高可用性 SharePoint 服务器 2016年场在 Azure IaaS**
+**图 4：Azure IaaS 中具有高可用性的 SharePoint Server 2016 场**
 
-![Azure IaaS 中具有高可用性的 SharePoint Server 2016 场](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_SP2016.png)
+![Azure IaaS 中具有高可用性的 SharePoint Server 2016 场](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-SP2016.png)
   
 在图 4 中，本地网络托管标识基础结构和用户。它通过站点到站点 VPN 或 ExpressRoute 连接来连接到 Azure IaaS 网关。Azure VNet 包含 SharePoint Server 2016 场的多个服务器，该场包括前端服务器的单独层、应用程序服务器，SQL Server 群集，以及域控制器。
   
@@ -120,7 +124,8 @@ Azure 中一个多层、高可用性 LOB 应用程序的示例是 SharePoint Ser
   
 - 层
     
-    服务器场中运行不同的角色创建多层，每层都有其自己的子网。
+    场中运行不同角色的服务器创建多个层，并且每一层都有其自己的子网。
+
     
 - 高可用性
     
@@ -138,47 +143,47 @@ Azure 中一个多层、高可用性 LOB 应用程序的示例是 SharePoint Ser
   
 1. 计算和试验
     
-    请参阅[Microsoft Azure 中的 SharePoint 服务器 2016年](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx)了解运行 SharePoint 服务器 2016 Azure 中的好处。
+    请参阅[Microsoft Azure 中的 SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure)了解 Azure 中运行 SharePoint Server 2016 的优势。
     
-    请参阅[Intranet SharePoint 服务器 2016 Azure 开发/测试环境中](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)生成模拟的开发测试环境
+    请参阅[Azure 的开发测试环境中的 Intranet SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)生成模拟的开发测试环境
     
 2. 设计
     
-    请参阅[设计在 Azure 中的 SharePoint 服务器 2016年场](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx)来完成整个过程，以确定的 Azure IaaS 网络、 计算和存储元素来承载您的服务器场和它们的设置的集合。
+    请参阅[设计 Azure 中的 SharePoint Server 2016 场](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure)以完成整个过程，以确定的 Azure IaaS 网络、 计算、 和存储元素来承载您的服务器场和其设置的集合。
     
 3. 部署
     
-    请参见[部署 SharePoint 服务器 2016 Azure 中的 SQL Server AlwaysOn 可用性组与](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx)单步执行端到端配置的高可用性服务器场分五个阶段。
+    请参阅[在 Azure 中的 SQL Server AlwaysOn 可用性组与部署 SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in)逐步处理的高可用性服务器场中五个阶段的端到端配置。
     
-## <a name="federated-identity-for-office-365-in-azure"></a>对于 Office 365 Azure 中的联合的身份
+## <a name="federated-identity-for-office-365-in-azure"></a>Azure 中的 Office 365 联合的身份
 
-在 Azure 中的多层、 高可用性的 LOB 应用程序的另一个例子是针对 Office 365 提供联合的身份。
+Azure 中的多层、 高可用性的 LOB 应用程序的另一个示例是 Office 365 联合的身份。
   
-**图 5： 一个高可用性联合的身份的基础架构在 Azure IaaS 的 Office 365**
+**图 5: 高可用性联合的身份基础结构 Azure IaaS 中的 Office 365**
 
-![Azure 中高可用性 Office 365 联合身份验证基础结构的最终配置](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
+![Azure 中高可用性 Office 365 联合身份验证基础结构的最终配置](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
-在图 5 中，内部网络托管身份基础结构和用户。它被连接到 Azure IaaS 网关与一个站点到站点 VPN 或 ExpressRoute 连接。Azure VNet 包含 web 代理服务器、 Active Directory 联合身份验证服务 (AD FS) 服务器和 Windows 服务器活动目录 (AD) 的域控制器。
+图 5 中的本地网络承载身份基础结构和用户。连接到 Azure IaaS 网关与站点到站点 VPN 或 ExpressRoute 连接。Azure VNet 包含 web 代理服务器、 Active Directory 联合身份验证服务 (AD FS) 服务器和 Windows Server Active Directory (AD) 域控制器。
   
 此配置具有 Azure 中 LOB 应用程序的以下属性： 
   
-- **层：**有不同层次的 web 代理服务器、 AD FS 服务器和 Windows 服务器 AD 域控制器。
+- **层：** 有 web 代理服务器、 AD FS 服务器和 Windows Server AD 域控制器的层。
     
-- **负载分布：**外部的 Azure 负载平衡器分发传入的客户端身份验证请求到 web 代理服务器和内部的 Azure 负载平衡器将分发到 AD FS 服务器的身份验证请求。
+- **负载分布：** 外部 Azure 负载平衡器分发 web 代理对传入客户端身份验证请求并内部 Azure 负载平衡器将分发到 AD FS 服务器的身份验证请求。
     
 按照此方法实现成功的应用：
   
 1. 计算和试验
     
-    请参阅[您 Office 365 的开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)建立联合身份验证与 Office 365 的模拟的开发/测试环境。
+    请参阅[为 Office 365 开发/测试环境的联盟标识](federated-identity-for-your-office-365-dev-test-environment.md)生成与 Office 365 联合身份验证的模拟的开发测试环境。
     
 2. 部署
     
-    请参阅[Office 365 Azure 中部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)以逐句通过 AD FS 基础结构的高可用性的端到端配置分五个阶段。
+    请参阅[在 Azure 中的 Office 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)完成 AD FS 基础结构的高可用性的端到端配置过程中五个阶段的步骤。
     
 请参阅其他资源：
   
-- [混合云环境的构建](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
+- [构建混合云环境](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
     
 - [设计和构建 Azure 中的 LOB 应用程序](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     

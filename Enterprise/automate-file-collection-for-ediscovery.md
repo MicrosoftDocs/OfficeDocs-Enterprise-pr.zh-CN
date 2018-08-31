@@ -11,16 +11,19 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
+search.appverid:
+- MET150
 description: 摘要：了解如何从用户计算机中自动收集文件以用于电子数据展示。
-ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
-ms.translationtype: HT
+ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915747"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>电子数据展示文件收集自动化
 
- **摘要：**了解如何从用户计算机中自动收集文件以用于电子数据展示。
+ **摘要：** 了解如何从用户计算机中自动收集文件以用于电子数据展示。
   
 所有公司都有可能采取诉讼或其他类型的法律行动。尽管法律部门致力于减少曝光，但是诉讼是商业活动中的平常事。公司在法律发现过程中需采取法律行动，向法院和对方律师提供所有相关书面材料。 
   
@@ -37,21 +40,21 @@ ms.lasthandoff: 04/20/2018
   
 下图向您展示了解决方案的所有步骤和元素。
   
-![自动化文件收集解决方案概述](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![自动化文件收集解决方案概述](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
 |****图例****||
 |:-----|:-----|
-|![洋红色标注 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|创建一个组策略对象 (GPO) 并将其与收集登录脚本相关联。  <br/> |
-|![洋红色标注 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   配置 GPO 安全筛选器，仅将 GPO 应用到保管人组 <br/> |
-|![洋红色标注 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|保管人登录和 GPO 运行，调用收集登录脚本。  <br/> |
-|![洋红色标注 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|收集登录脚本清单均本地挂载到保管人计算机上的驱动器，搜索您需要的文件并记录其位置。  <br/> |
-|![洋红色标注 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|收集登录脚本将清单文件复制到暂存服务器上的隐藏文件共享中。  <br/> |
-|![洋红色标注 6](images/99589726-0c7e-406b-a276-44301a135768.png)| （选项 A）手动运行 PST 导入脚本，将收集的 PST 文件导入到 Exchange Server 2013。 <br/> |
-|![洋红色标注 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|（选项 B）使用 Office 365 导入工具和过程，将收集的 PST 文件导入到 Exchange Online。  <br/> |
-|![洋红色标注 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|将所有收集的文件移至 Azure 文件共享，以便在 MoveToColdStorageSystem Center Orchestrator 2012 R2 Runbook 中长期存储。 <br/> |
-|![洋红色标注 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|使用 SharePoint 2013 对冷存储文件共享中的文件编制索引。  <br/> |
-|![洋红色标注 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|对冷存储和本地 Exchange Server 2013 中的内容执行eDiscovery。  <br/> |
-|![洋红色标注 11](images/e59ab403-2f19-497a-92a5-549846dded66.png)|对 Office 365 中的内容执行eDiscovery。  <br/> |
+|![洋红色标注 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|创建一个组策略对象 (GPO) 并将其与收集登录脚本相关联。  <br/> |
+|![洋红色标注 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   配置 GPO 安全筛选器，仅将 GPO 应用到保管人组 <br/> |
+|![洋红色标注 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|保管人登录和 GPO 运行，调用收集登录脚本。  <br/> |
+|![洋红色标注 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|收集登录脚本清单均本地挂载到保管人计算机上的驱动器，搜索您需要的文件并记录其位置。  <br/> |
+|![洋红色标注 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|收集登录脚本将清单文件复制到暂存服务器上的隐藏文件共享中。  <br/> |
+|![洋红色标注 6](media/99589726-0c7e-406b-a276-44301a135768.png)| （选项 A）手动运行 PST 导入脚本，将收集的 PST 文件导入到 Exchange Server 2013。 <br/> |
+|![洋红色标注 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|（选项 B）使用 Office 365 导入工具和过程，将收集的 PST 文件导入到 Exchange Online。  <br/> |
+|![洋红色标注 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|将所有收集的文件移至 Azure 文件共享，以便在 MoveToColdStorageSystem Center Orchestrator 2012 R2 Runbook 中长期存储。 <br/> |
+|![洋红色标注 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|使用 SharePoint 2013 对冷存储文件共享中的文件编制索引。  <br/> |
+|![洋红色标注 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|对冷存储和本地 Exchange Server 2013 中的内容执行eDiscovery。  <br/> |
+|![洋红色标注 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|对 Office 365 中的内容执行eDiscovery。  <br/> |
    
 ## <a name="prerequisites"></a>先决条件
 
