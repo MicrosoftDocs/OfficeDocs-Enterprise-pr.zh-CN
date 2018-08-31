@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 摘要：了解如何优化网络以便访问 Microsoft SaaS 服务，包括 Office 365、Microsoft Intune 和 Dynamics 365。
-ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 94118022b86a5e732467599632e30c058827468f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915467"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>为 Microsoft SaaS 设计网络
 
@@ -44,7 +47,7 @@ ms.lasthandoff: 05/03/2018
   
 **图 1：Microsoft SaaS 服务的连接选项**
 
-![图 1：Microsoft SaaS 服务的连接选项](images/Network_Poster/SaaS1.png)
+![图 1：Microsoft SaaS 服务的连接选项](media/Network-Poster/SaaS1.png)
   
 图 1 显示了通过 Internet 管道或 ExpressRoute 连接到 Microsoft SaaS 服务的本地网络。
   

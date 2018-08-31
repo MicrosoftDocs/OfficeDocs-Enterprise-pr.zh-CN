@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: 11 2017 年，在 Exchange Server 2007 达到结束的支持。如果您没有已开始迁移到 Office 365 的 Exchange 2007 或 Exchange 2016，现在是开始规划过程的时间。
-ms.openlocfilehash: 4bb8933977c280b4bfaa686e858fc818a1dc4ace
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 674de8904d03e024a8a75b945b5ef94319214f92
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169804"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915567"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 停止提供支持路线图
 
@@ -189,9 +189,9 @@ Office 365 还获取新功能和体验第一个和您和您的用户可以通常
     
 - [Exchange Server 混合部署](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
     
-- ["混合配置"向导](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
+- [混合配置向导](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
     
-- [混合配置向导 FAQ](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [混合配置向导常见问题解答](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
     
 - [混合部署先决条件](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
     
