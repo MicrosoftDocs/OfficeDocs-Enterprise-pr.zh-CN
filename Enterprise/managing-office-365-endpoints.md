@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些网络旨在限制访问到 internet，以确保像这些可以访问 Office 365 的网络和代理管理员需要管理的 Fqdn，Url、 列表和 IP 地址的网络上的计算机组成的 Office 365 终结点列表。要添加到代理服务器或防火墙规则和 PAC 文件，以确保网络请求这些需要是能够访问 Office 365。
-ms.openlocfilehash: 0396174719adc7794a1d6bb4b1f950bfe4603996
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539664"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831917"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -66,8 +66,8 @@ ms.locfileid: "22539664"
 第一个示例是通过 Internet 仅管理终结点我们推荐方法的演示。绕过 Office 365 目标其中的 IP 地址发布，并将剩余网络请求发送到代理的代理。
   
 代码段：
-  
-```
+
+```javascript
 // JavaScript source code
 //July 2018 - Updates go live 1st August2018
 //This PAC file contains all FQDNs needed for all services and splits the traffic between those which Microsoft can provide IPs for (so can be sent through a managed firewall with conditional access if desired) and those which IPs cannot be provided for, so need to go to an unrestricted proxy or egress. 
@@ -187,7 +187,7 @@ function FindProxyForURL(url, host)
     || (shExpMatch(host, "weu-000.tasks.osi.office.net"))
     || (shExpMatch(host, "wus-000.tasks.osi.office.net"))
     || (shExpMatch(host, "www.office.com")))
-      
+
     {
         return "DIRECT";
     }
@@ -351,7 +351,7 @@ function FindProxyForURL(url, host)
         || (shExpMatch(host, "www.remoteapp.windowsazure.com"))
         || (shExpMatch(host, "www.youtube.com"))
         || (shExpMatch(host, "xsi.outlook.com")))
-        
+
     {
         return proxyserver;
     }
@@ -367,8 +367,8 @@ else return proxyserver;
 第二个示例是方法的我们建议与 ExpressRoute 和 Internet 电路可用时管理连接的演示。发送 ExpressRoute 公布到 ExpressRoute 电路目标和 Internet 仅公布到代理的目标。
   
 代码段：
-  
-```
+
+```javascript
 // JavaScript source code
 //July 2018 Update
 // Consolidated FQDNs of URLS which are reachable via Microsoft peering over ExpressRoute. All other traffic sent to a proxy in this example. 
@@ -489,8 +489,8 @@ function FindProxyForURL(url, host)
 第三个示例演示如何发送到单个目标与 Office 365 相关联的所有网络请求。这通常用于绕过的 Office 365 网络请求的所有检查，并提供了您所有在其中发布终结点的格式是在列表中要用于您的自定义的 PAC 格式。
   
 代码段：
-  
-```
+
+```javascript
 // JavaScript source code
 //July 2018 Update new URLS go live 1st August 2018 -
 //Consolidated FQDNs required to access Office 365 - All services including optional components covered and elements covered under wildcards removed. 
@@ -713,11 +713,10 @@ function FindProxyForURL(url, host)
   <tenant-name>-my.sharepoint.com
   <tenant-name>-<app>.sharepoint.com
   *.Lync.com
-  
   ```
 
 - 确保所有网络请求直接发送到您的防火墙都没有对应项，在防火墙中允许列表，以允许通过的请求。
-    
+
 ## <a name="perimeter-network-integration"></a>外围网络集成
 <a name="BKMK_Perimeter"> </a>
 
@@ -746,481 +745,7 @@ function FindProxyForURL(url, host)
 如果这些用户可以使用 Office 365 URL 和 IP 定义从 XML 以加快开销本地 （用户）、 低网络的 Office 365 流量出口、 管理其优先级相对于其他应用程序和调整，请与您的网络解决方案或服务提供商Office 365 连接到具体取决于网络条件改变 Microsoft 网络的网络路径。某些解决方案下载和自动化 Office 365 URL 和 IP XMLs 定义其堆栈中。
   
 始终确保已实施的解决方案有必要程度恢复能力，Office 365 流量的网络路径的相应地理位置冗余成为发布可容纳对 Office 365 Url 和 Ip 的更改。
-  
-## <a name="web-service"></a>Web 服务
-<a name="webservice"> </a>
 
-为了帮助您更好地标识和区分 Office 365 网络流量，新的 web 服务发布 Office 365 终结点，使您更轻松地评估、 配置和保持最新更改。此新的 web 服务 （现在在预览） 中，最终将取代[Office 365 Url 和 IP 地址范围](urls-and-ip-address-ranges.md)一文，以及该数据的 RSS 和 XML 版本中的终结点的列表。计划淘汰上 2018 年 10 月 2，这些终结点数据的格式。 
-  
-作为客户或网络外围设备供应商联系，您可以构建针对 Office 365 IP 地址和 FQDN 项新的基于 REST 的 web 服务。
-  
-- Office 365 Url 和 IP 地址范围的最新版本，使用[https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)。
-    
-- 对于 Office 365 Url 和 IP 地址范围页上的防火墙和代理服务器上的数据，使用[https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)。
-    
-- 若要获取的最新更改，请使用[https://endpoints.office.com/changes/worldwide/0000000000](https://endpoints.office.com/changes/worldwide/0000000000?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)。
-    
-作为客户，您可以使用此 web 服务： 
-  
-- 更新您的 PowerShell 脚本能够获取 Office 365 终结点数据和修改任何格式的网络设备。
-    
-- 使用此信息更新 PAC 文件部署到客户端计算机。
-    
-作为网络外围设备供应商，您可以使用此 web 服务： 
-  
-- 创建和测试设备软件下载的自动配置的列表。 
-    
-- 检查当前版本。
-    
-- 获取当前更改。
-    
-以下各节介绍了此 web 服务，后者可能会随时间通常可用服务之前的预览。 
-  
-Web 服务上的数据是最新，我们不打算对 web 服务 Url 进行进一步的更改，或返回此 web 服务的正式发布版本之前的数据架构。
-  
-有关其他信息，请参阅：
-  
-- [在 Office 365 技术社区论坛中的公告博客文章](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
-    
-- [有关使用 web 服务的问题的 office 365 技术社区论坛](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
-    
-### <a name="common-parameters"></a>常见参数
-
-这些参数都是通用的 web 服务方法：
-  
-- **格式 = CSV |JSON** -查询字符串参数。默认情况下，返回的数据格式是 JSON。包含此可选参数，以逗号分隔值 (CSV) 格式返回数据。 
-    
-- **ClientRequestId** -查询字符串参数。客户端会话关联生成必选的 GUID。您应生成为每个调用 web 服务的客户端计算机的 GUID。不要使用下面的示例中所示，因为它们可能将来阻止了 web 服务的 Guid。GUID 格式是 xxxxxxxx-格式的格式的格式-xxxxxxxxxxxx，其中 x 表示的十六进制数。若要生成的 GUID，使用[新 Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell 命令。 
-    
-### <a name="version-web-method"></a>版本 web 方法
-
-Microsoft 更新的 Office 365 IP 地址和 FQDN 条目末尾的每个月和偶尔注销周期操作或支持要求。每个已发布的实例的数据分配的版本号。版本 web 方法，可以为每个 Office 365 服务实例的最新版本轮询。我们建议您每天，或在最、 小时检查版本。
-  
-还有一个版本 web 方法的参数：
-  
-- **AllVersions = true** -查询字符串参数。默认情况下返回的版本是最新。包含此可选参数，以请求所有已发布版本。 
-    
-- **实例**-路由参数。此可选参数指定要返回的版本的实例。如果省略，则返回所有实例。有效实例是： 全球，中国德国、 USGovDoD、 USGovGCCHigh 
-    
-版本 web 方法的结果可能是一条记录的数组。每个记录的元素有：
-  
-- 实例-Office 365 服务实例的短名称。
-    
-- 最新的指定实例的终结点的最新版本。
-    
-- 版本-指定实例的所有以前版本的列表。此元素是仅包含如果 AllVersions 参数为 true。
-   
-#### <a name="examples"></a>示例：
-  
-示例 1 请求 URI: ** <span>https:</span>//endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-此 URI 返回每个 Office 365 服务实例的最新版本。示例结果：
-  
-```
-[
- {
-  "instance": "Worldwide", 
-  "latest": "2018063000"
- },
- {
-  "instance": "USGovDoD", 
-  "latest": "2018063000"
- },
- {
-  "instance": "USGovGCCHigh",
-  "latest": "2018063000"
- },
- {
-  "instance": "China",
-  "latest": "2018063000"
- },
- {
-  "instance": "Germany",
-  "latest": "2018063000"
- }
-] 
-```
-
-> [!IMPORTANT]
-> 这些 Uri 中的 ClientRequestID 参数的 GUID 是只是一个示例。若要尝试运行 web 服务出的 Uri，生成您自己的 GUID。以下示例中所示的 Guid 可能将来阻止 web 服务。 
-  
-示例 2 请求 URI: ** <span>https:</span>//endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-此 URI 返回指定的 Office 365 服务实例的最新版本。示例结果：
-  
-```
-{
- "instance": "Worldwide",
- "latest": "2018063000"
-}
-```
-
-示例 3 请求 URI: ** <span>https:</span>//endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId = b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-此 URI 以 CSV 格式显示输出。示例结果：
-  
-```
-instance,latest
-Worldwide,2018063000
-```
-
-示例 4 请求 URI: ** <span>https:</span>//endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId = b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-此 URI 显示已发布的 Office 365 全球服务实例的所有早期版本。示例结果：
-  
-```
-{
-  "instance": "Worldwide",
-  "latest": "2018063000",
-  "versions": [
-    "2018063000",
-    "2018062000"
-  ]
-}
-```
-
-### <a name="endpoints-web-method"></a>终结点 web 方法
-
-终结点 web 方法返回 IP 地址范围和构成 Office 365 服务的 Url 的所有的记录。终结点 web 方法的参数为：
-  
-- **ServiceAreas** -查询字符串参数。服务领域的以逗号分隔列表。有效的项目是常用、 Exchange、 SharePoint、 Skype。公共服务区域项的所有其他服务方面的先决条件，因为 web 服务将始终包含它们。如果不包括此参数，则返回所有服务区域。 
-    
-- **TenantName** -查询字符串参数。您的 Office 365 租户名称。Web 服务采用您提供的名称，并将其插入部分包括租户名称的 Url。如果您没有提供一个租户名称，Url 这些部件具有通配符 (\*)。 
-    
-- **NoIPv6** -查询字符串参数。将其设置为 true 排除 IPv6 地址可从输出，例如，如果您未在网络中使用 IPv6。 
-    
-- **实例**-路由参数。此所需的参数指定要返回的终结点的实例。有效实例是： 全球，中国德国、 USGovDoD、 USGovGCCHigh。 
-    
-终结点 web 方法的结果是数组的记录与每个记录表示终结点设置。对于每个记录元素有：
-  
-- 设置 id 的终结点的不可变 id 号。
-    
-- serviceArea-这是部分的服务区域： 常用、 Exchange、 SharePoint、 或 Skype。
-    
-- url 的 Url 终结点设置。DNS 记录的 JSON 数组。如果为空，则省略。
-    
-- tcpPorts-终结点的 TCP 端口设置。端口的所有元素都设置为端口或短划线字符 （-） 分隔的端口范围的以逗号分隔列表都格式。端口应用于所有 IP 地址和所有 Url 中，为该类别的终结点设置。如果为空，则省略。
-    
-- udpPorts-UDP 端口的 IP 地址范围此终结点集中。如果为空，则省略。
-    
-- ip-与按列出的 TCP 或 UDP 端口与关联设置此终结点关联的 IP 地址范围。如果为空，则省略。
-    
-- 类别的终结点的连接类别设置。有效值为优化、 允许，和默认。必填。
-    
-- expressRoute-True 或 False，如果此终结点设置路由通过 ExpressRoute。
-    
-- 如果此终结点设置，需要具有 Office 365 支持的连接，则为 True 所需的。省略如果为 false。
-    
-- 说明-可选终结点，此文本介绍了将会丢失，如果 IP 地址的 Office 365 功能或 Url 中此终结点无法在网络层访问设置。如果为空，则省略。
-    
-#### <a name="examples"></a>示例：
-  
-示例 1 请求 URI: ** <span>https:</span>//endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-此 URI 获取所有工作负荷的 Office 365 全球实例的所有终结点。显示输出的摘录的示例结果：
-  
-```
-[ 
- { 
-  "id": 1, 
-  "serviceArea": "Exchange", 
-  "serviceAreaDisplayName": "Exchange Online", 
-  "urls": 
-   [ 
-    "*.protection.outlook.com" 
-   ], 
-  "ips": 
-   [ 
-    "2a01:111:f403::/48", "23.103.132.0/22", "23.103.136.0/21", "23.103.198.0/23", "23.103.212.0/22", "40.92.0.0/14", "40.107.0.0/17", "40.107.128.0/18", "52.100.0.0/14", "213.199.154.0/24", "213.199.180.128/26", "94.245.120.64/26", "207.46.163.0/24", "65.55.88.0/24", "216.32.180.0/23", "23.103.144.0/20", "65.55.169.0/24", "207.46.100.0/24", "2a01:111:f400:7c00::/54", "157.56.110.0/23", "23.103.200.0/22", "104.47.0.0/17", "2a01:111:f400:fc00::/54", "157.55.234.0/24", "157.56.112.0/24", "52.238.78.88/32" 
-   ], 
-  "tcpPorts": "443", 
-  "expressRoute": true, 
-  "category": "Allow" 
- }, 
- { 
-  "id": 2, 
-  "serviceArea": "Exchange", 
-  "serviceAreaDisplayName": "Exchange Online", 
-  "urls": 
-   [ 
-    "*.mail.protection.outlook.com" 
-   ],
-...
-```
-
-本示例中不包含其他终结点设置。
-  
-示例 2 请求 URI: ** <span>https:</span>//endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId = b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-此示例获取 Exchange Online 和依赖项仅为 Office 365 全球实例的终结点。
-  
-在于结果将不包含终结点的 SharePoint Online 或 Skype 业务 online 例如 2 的输出类似于示例 1。
-  
-### <a name="changes-web-method"></a>更改 web 方法
-
-更改 web 方法返回的已发布的最新更新。这通常是对 IP 地址范围和 Url 上个月的更改。
-  
-> [!NOTE]
-> 从 API 的更改的数据的准确性中预览，并应仅为用于开发和测试。 
-  
-更改 web 方法的参数为：
-  
-- **版本**-路由参数所需的 URL。您当前已实现，并且想要查看自该版本以来所做的更改的版本。格式为 YYYYMMDDNN。 
-    
-更改 web 方法的结果是数组的记录与每个记录表示的特定版本的终结点中的更改。对于每个记录元素有：
-  
-- id-更改记录的不可变 id。
-    
-- endpointSetId-ID 的终结点设置已更改的记录。必填。
-    
-- 处置-这可以是的更改，添加或删除并介绍更改终结点集记录到的未。
-    
-- 版本的已发布的终结点的版本中引入的更改设置。版本号的格式 YYYYMMDDNN，其中 NN 是递增如果有一个自然数字是需要发布上一天的多个版本。
-    
-- 以前的子结构伴随以前的值更改终结点上的元素的设置。这不会包含新添加的终结点设置。包括 tcpPorts，udpPorts，ExpressRoute，需要的类别、 注释。
-    
-- 当前-子结构伴随更新 endpoinset 上更改元素的值。包括 tcpPorts，udpPorts，ExpressRoute，需要的类别、 注释。
-    
-- 添加-细节项目添加到终结点的 sub 结构设置集。如果不有任何添加，省略。
-    
-  - effectiveDate-时增加将 live 服务中定义的数据。
-    
-  - ip-项目添加到 ip 数组。
-    
-  - url 项添加到 url 数组。
-    
-- 删除-子结构细节终结点集中要删除的项目。如果不有任何删除，省略。
-    
-  - ip-要删除 ip 数组中的项目。
-    
-  - url 项 url 数组中删除。
-    
- **示例：**
-  
-示例 1 请求 URI: ** <span>https:</span>//endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-此请求到 Office 365 全球服务实例的所有以前的更改。示例结果：
-  
-```
-[ 
- { 
-  "id": 424, 
-  "endpointSetId": 32, 
-  "disposition": "Change", 
-  "version": "2018062700", 
-  "remove": 
-   { 
-    "urls": 
-     [ 
-      "*.api.skype.com", "skypegraph.skype.com" 
-     ] 
-   } 
- }, 
- { 
-  "id": 426, 
-  "endpointSetId": 31, 
-  "disposition": "Change", 
-  "version": "2018062700", 
-  "add": 
-   { 
-    "effectiveDate": "20180609", 
-    "ips": 
-     [ 
-      "51.140.203.190/32" 
-     ]
-   },
-  "remove": 
-   { 
-    "ips": 
-     [
-...
-
-```
-
-示例 2 请求 URI: ** <span>https:</span>//endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7**
-  
-此请求更改相到 Office 365 全球实例的指定版本。在这种情况下，指定的版本是最新。示例结果：
-  
-```
-[
-  {
-    "id":3,
-    "endpointSetId":33,
-    "changeDescription":"Removing old IP prefixes",
-    "disposition":"Change",
-    "version":"2018031301",
-    "remove":{
-      "ips":["65.55.127.0/24","66.119.157.192/26","66.119.158.0/25",
-      "111.221.76.128/25","111.221.77.0/26","207.46.5.0/24"]
-    }
-  },
-  {
-    "id":4,
-    "endpointSetId":45,
-    "changeDescription":"Removing old IP prefixes",
-    "disposition":"Change",
-    "version":"2018031301",
-    "remove":{
-      "ips":["13.78.93.8/32","40.113.87.220/32","40.114.149.220/32",
-      "40.117.100.83/32","40.118.214.164/32","104.208.31.113/32"]
-    }
-  }
-]
-
-```
-
-### <a name="example-powershell-script"></a>示例 PowerShell 脚本
-
-下面是您可以运行以查看是否有需要更新的数据执行的操作的 PowerShell 脚本。此脚本检查 Office 365 全球实例终结点的版本号。当有更改时，它可以下载的终结点和筛选的"允许"和"优化"类别终结点。此外使用唯一 ClientRequestId 跨多个呼叫并保存在临时文件中找到的最新版本。应每小时一次调用此脚本，以检查版本更新。
-  
-```
-# webservice root URL
-$ws = "https://endpoints.office.com"
-# path where client ID and latest version number will be stored
-$datapath = $Env:TEMP + "\endpoints_clientid_latestversion.txt"
-# fetch client ID and version if data file exists; otherwise create new file
-if (Test-Path $datapath) {
-    $content = Get-Content $datapath
-    $clientRequestId = $content[0]
-    $lastVersion = $content[1]
-}
-else {
-    $clientRequestId = [GUID]::NewGuid().Guid
-    $lastVersion = "0000000000"
-    @($clientRequestId, $lastVersion) | Out-File $datapath
-}
-# call version method to check the latest version, and pull new data if version number is different
-$version = Invoke-RestMethod -Uri ($ws + "/version/Worldwide?clientRequestId=" + $clientRequestId)
-if ($version.latest -gt $lastVersion) {
-    Write-Host "New version of Office 365 worldwide commercial service instance endpoints detected"
-    
-    # write the new version number to the data file
-    @($clientRequestId, $version.latest) | Out-File $datapath
-    # invoke endpoints method to get the new data
-    $endpointSets = Invoke-RestMethod -Uri ($ws + "/endpoints/Worldwide?clientRequestId=" + $clientRequestId)
-    # filter results for Allow and Optimize endpoints, and transform these into custom objects with port and category
-    $flatUrls = $endpointSets | ForEach-Object {
-        $endpointSet = $_
-        $urls = $(if ($endpointSet.urls.Count -gt 0) { $endpointSet.urls } else { @() })
-        $urlCustomObjects = @()
-        if ($endpointSet.category -in ("Allow", "Optimize")) {
-            $urlCustomObjects = $urls | ForEach-Object {
-                [PSCustomObject]@{
-                    category = $endpointSet.category;
-                    url      = $_;
-                    tcpPorts = $endpointSet.tcpPorts;
-                    udpPorts = $endpointSet.udpPorts;
-                }
-            }
-        }
-        $urlCustomObjects
-    }
-    $flatIps = $endpointSets | ForEach-Object {
-        $endpointSet = $_
-        $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
-        # IPv4 strings have dots while IPv6 strings have colons
-        $ip4s = $ips | Where-Object { $_ -like '*.*' }
-        
-        $ipCustomObjects = @()
-        if ($endpointSet.category -in ("Allow", "Optimize")) {
-            $ipCustomObjects = $ip4s | ForEach-Object {
-                [PSCustomObject]@{
-                    category = $endpointSet.category;
-                    ip = $_;
-                    tcpPorts = $endpointSet.tcpPorts;
-                    udpPorts = $endpointSet.udpPorts;
-                }
-            }
-        }
-        $ipCustomObjects
-    }
-    Write-Output "IPv4 Firewall IP Address Ranges"
-    ($flatIps.ip | Sort-Object -Unique) -join "," | Out-String
-    Write-Output "URLs for Proxy Server"
-    ($flatUrls.url | Sort-Object -Unique) -join "," | Out-String
-    # TODO Call Send-MailMessage with new endpoints data
-}
-else {
-    Write-Host "Office 365 worldwide commercial service instance endpoints are up-to-date"
-}
-```
-
-### <a name="example-python-script"></a>示例 Python 脚本
-
-下面是经 Python 3.6.3 Windows 10，您可以运行以查看是否有需要更新的数据执行的操作的上一个 Python 脚本。此脚本检查 Office 365 全球实例终结点的版本号。当有更改时，它可以下载的终结点和筛选的"允许"和"优化"类别终结点。此外使用唯一 ClientRequestId 跨多个呼叫并保存在临时文件中找到的最新版本。应每小时一次调用此脚本，以检查版本更新。
-  
-```
-import json
-import os
-import urllib.request
-import uuid
-# helper to call the webservice and parse the response
-def webApiGet(methodName, instanceName, clientRequestId):
-    ws = "https://endpoints.office.com"
-    requestPath = ws + '/' + methodName + '/' + instanceName + '?clientRequestId=' + clientRequestId
-    request = urllib.request.Request(requestPath)
-    with urllib.request.urlopen(request) as response:
-        return json.loads(response.read().decode())
-# path where client ID and latest version number will be stored
-datapath = os.environ['TEMP'] + '\endpoints_clientid_latestversion.txt'
-# fetch client ID and version if data exists; otherwise create new file
-if os.path.exists(datapath):
-    with open(datapath, 'r') as fin:
-        clientRequestId = fin.readline().strip()
-        latestVersion = fin.readline().strip()
-else:
-    clientRequestId = str(uuid.uuid4())
-    latestVersion = '0000000000'
-    with open(datapath, 'w') as fout:
-        fout.write(clientRequestId + '\n' + latestVersion)
-# call version method to check the latest version, and pull new data if version number is different
-version = webApiGet('version', 'Worldwide', clientRequestId)
-if version['latest'] > latestVersion:
-    print('New version of Office 365 worldwide commercial service instance endpoints detected')
-    # write the new version number to the data file
-    with open(datapath, 'w') as fout:
-        fout.write(clientRequestId + '\n' + version['latest'])
-    # invoke endpoints method to get the new data
-    endpointSets = webApiGet('endpoints', 'Worldwide', clientRequestId)
-    # filter results for Allow and Optimize endpoints, and transform these into tuples with port and category
-    flatUrls = []
-    for endpointSet in endpointSets:
-        if endpointSet['category'] in ('Optimize', 'Allow'):
-            category = endpointSet['category']
-            urls = endpointSet['urls'] if 'urls' in endpointSet else []
-            tcpPorts = endpointSet['tcpPorts'] if 'tcpPorts' in endpointSet else ''
-            udpPorts = endpointSet['udpPorts'] if 'udpPorts' in endpointSet else ''
-            flatUrls.extend([(category, url, tcpPorts, udpPorts) for url in urls])
-    flatIps = []
-    for endpointSet in endpointSets:
-        if endpointSet['category'] in ('Optimize', 'Allow'):
-            ips = endpointSet['ips'] if 'ips' in endpointSet else []
-            category = endpointSet['category']
-            # IPv4 strings have dots while IPv6 strings have colons
-            ip4s = [ip for ip in ips if '.' in ip]
-            tcpPorts = endpointSet['tcpPorts'] if 'tcpPorts' in endpointSet else ''
-            udpPorts = endpointSet['udpPorts'] if 'udpPorts' in endpointSet else ''
-            flatIps.extend([(category, ip, tcpPorts, udpPorts) for ip in ip4s])
-    print('IPv4 Firewall IP Address Ranges')
-    print(','.join(sorted(set([ip for (category, ip, tcpPorts, udpPorts) in flatIps]))))
-    print('URLs for Proxy Server')
-    print(','.join(sorted(set([url for (category, url, tcpPorts, udpPorts) in flatUrls]))))
-    
-    # TODO send mail (e.g. with smtplib/email modules) with new endpoints data
-else:
-    print('Office 365 worldwide commercial service instance endpoints are up-to-date')
-```
-
-### <a name="web-service-interface-versioning"></a>Web 服务界面版本控制
-
-将来可能还需要更新的参数或这些 web 服务方法的结果。发布这些 web 服务的正式发布版本后，Microsoft 将尽力提前材料更新 web 服务发出通知。当 Microsoft 认为更新需要更改客户端使用 web 服务时，Microsoft 将保留至少十二 （12） 个月后的发行版的新版本可用的 web 服务的早期版本 （返回一个版本）。在这段时间不升级客户可能无法访问 web 服务和其方法。客户必须确保在 web 服务的客户端继续正常运行，如果对 web 服务界面签名进行以下更改：
-  
-- 将新的可选参数添加到现有的 web 方法，以不一定要由早期客户端并不会影响结果的旧客户端接收。
-    
-- 响应 CSV 响应 REST 项目或其他列之一中添加新的命名的属性。
-    
-- 添加新的 web 方法，该方法具有不由旧客户端调用的新名称。
-    
 ## <a name="faq"></a>常见问题解答
 
 常见问题： 管理员疑问连接：
@@ -1247,19 +772,15 @@ Office 365 终结点发布每月 30 天通知的末尾。有时会更改，则�
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |**说明** <br/> |计数  <br/> |之后，您可以预期网络请求发送到终结点的日期。  <br/> |功能或服务所需终结点的基本说明。  <br/> |您可以连接到此终结点 ExpressRoute 电路除了 internet 上？  <br/> |**是**-您可以连接到此终结点上的 internet 和 ExpressRoute。  <br/> **无**-仅可以连接到 internet 上的此终结点。  <br/> |目标 FQDN 或 IP 范围正在添加或删除。  <br/> |
 |**示例** <br/> |1 /  <br/> |[有效 xx/xx/xxx。  <br/> |必需：\<说明\>。  <br/> |ExpressRoute:  <br/> |\<是/否\>。  <br/> |\<FQDN/IP\>]，  <br/> |
-   
+
 一些其他事情要注意，每个条目都有一的分隔符的常见：
   
-- **/**-后计数 
-    
-- **[** -以指示计数的项 
-    
-- **.**-使用之间条目的每个不同部分 
-    
-- **]，** -以指示单输入末尾 
-    
-- **].**-要指示的所有条目的结束 
-    
+- **/**-后计数
+- **[** -以指示计数的项
+- **.**-使用之间条目的每个不同部分
+- **]，** -以指示单输入末尾
+- **].**-要指示的所有条目的结束
+
 ### <a name="how-do-i-determine-the-location-of-my-tenant"></a>如何确定我租户的位置？
 
  使用我们的[数据中心映射](https://o365datacentermap.azurewebsites.net/)最佳确定**租户位置**。
@@ -1285,17 +806,12 @@ Office 365 终结点发布每月 30 天通知的末尾。有时会更改，则�
 即使两行第三和四个需要使用 Office Online，它们已分离以指示目标是不同：
   
 1. \*。 officeapps.live.com 不代表 CDN，对此命名空间的含义请求将直接转到 Microsoft 数据中心。
-    
 2. \*。 officeapps.live.com 是在使用 Microsoft Peering ExpressRoute 电路可访问。
-    
 3. Office Online 相关联的 IP 地址和\*。 officeapps.live.com 可以找到按照此链接。
-    
 4. \*。 cdn.office.net 表示由 Akamai 承载的 CDN，对此命名空间的含义请求将转到 Akamai 数据中心。
-    
 5. \*。 cdn.office.net 不可访问 ExpressRoute 电路上。
-    
 6. Office Online 相关联的 IP 地址和\*。 cdn.office.net 不可用。
-    
+
 ![终结点页的屏幕截图](media/42b487f3-24f3-48fe-9885-f97aae3194f3.png)
   
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>我不在发布列表中查看网络请求到 IP 地址，我需要提供对这些访问吗？
@@ -1306,11 +822,9 @@ Office 365 终结点发布每月 30 天通知的末尾。有时会更改，则�
 请参阅 IP 与 Office 365 上所需的详细信息？
   
 1. 检查使用[CIDR 计算器](http://jodies.de/ipcalc)的较大发布区域中是否包括 IP 地址。
-    
 2. 请参阅合作伙伴是否拥有[whois 查询](https://dnsquery.org/)与 IP。如果是 Microsoft 拥有，可能为内部伙伴。
-    
-3. 检查证书，在浏览器中连接到 IP 地址使用*HTTPS://\<ip 地址\>*，检查证书以了解哪些域将关联的 IP 地址上列出的域。如果它是 Microsoft 拥有 IP 地址，不在列表中的 Office 365 IP 地址，它是可能的 IP 地址是与 Microsoft CDN 如*MSOCDN.NET*或没有 IP 的已发布信息的另一个 Microsoft 域相关联。如果找到此证书的域是我们声明列出的 IP 地址，请让我们知道。 
-    
+3. 检查证书，在浏览器中连接到 IP 地址使用*HTTPS://\<ip 地址\>*，检查证书以了解哪些域将关联的 IP 地址上列出的域。如果它是 Microsoft 拥有 IP 地址，不在列表中的 Office 365 IP 地址，它是可能的 IP 地址是与 Microsoft CDN 如*MSOCDN.NET*或没有 IP 的已发布信息的另一个 Microsoft 域相关联。如果找到此证书的域是我们声明列出的 IP 地址，请让我们知道。
+
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>为什么我看如 nsatc.net 或 akadns.net 中的 Microsoft 域名的名称？
 <a name="bkmk_akamai"> </a>
 
@@ -1318,11 +832,11 @@ Office 365 和其他 Microsoft 服务使用多个第三方服务，如 Akamai �
   
 在任何时候恕服务列表中。当前正在使用的服务的一些包括：
   
-当您看到包括的请求时，正在使用[MarkMonitor](https://www.markmonitor.com/) * \*。 nsatc.net* 。此服务提供域名称保护和监控防御恶意行为。 
+当您看到包括的请求时，正在使用[MarkMonitor](https://www.markmonitor.com/) * \*。 nsatc.net* 。此服务提供域名称保护和监控防御恶意行为。
   
-当您看到对请求[ExactTarget](https://www.marketingcloud.com/)正在使用*\*。 exacttarget.com* 。此服务提供电子邮件链接管理和监视针对恶意行为。 
+当您看到对请求[ExactTarget](https://www.marketingcloud.com/)正在使用*\*。 exacttarget.com* 。此服务提供电子邮件链接管理和监视针对恶意行为。
   
-当您看到包含以下 Fqdn 之一的请求， [Akamai](https://www.akamai.com/)正在使用中。此服务提供了地理 DNS 和内容交付网络服务。 
+当您看到包含以下 Fqdn 之一的请求， [Akamai](https://www.akamai.com/)正在使用中。此服务提供了地理 DNS 和内容交付网络服务。
   
 ```
 *.akadns.net
@@ -1334,18 +848,15 @@ Office 365 和其他 Microsoft 服务使用多个第三方服务，如 Akamai �
 *.akamaized.net
 *.edgekey.net
 *.edgesuite.net
-
 ```
 
 ### <a name="what-are-the-three-types-of-office-365-endpoints"></a>什么是 Office 365 终结点的三种类型？
 <a name="bkmk_akamai"> </a>
 
 - 您连接到第三方服务若要检索基本 internet 服务，如 DNS 查找和检索 CDN 内容。您还连接到第三方服务集成，如引入 OneNote 笔记本中的 YouTube 视频。
-    
 - 您连接到辅助服务承载和运行 microsoft 如启用您输入您的计算机在最接近的 internet 位置 Microsoft 的全局网络的网络请求的边缘节点。作为地球上的第三个最大网络，这提高了您连接的体验。您还连接到 Microsoft Azure 服务，如 Azure 媒体服务所使用的各种 Office 365 服务。
-    
 - 您连接到主例如 Exchange Online 的邮箱服务器或 Skype 的唯一和专有数据所在的位置的业务联机服务器的 Office 365 服务。您可以通过 FQDN 或 IP 地址连接到主 Office 365 服务，并使用 internet 或 ExpressRoute 电路。您只能连接到第三方和辅助服务上 internet 电路使用 Fqdn。
-    
+
 下图显示了这些服务区域之间的差异。在此图中的左下角中的客户的本地网络都有多个网络设备，以帮助管理网络连接。以下内容类似的配置是常见的企业客户。如果您的网络仅有防火墙之间客户端计算机和 internet，也支持，并且您需要确保您的防火墙可以在规则允许列表中支持 Fqdn 和通配符。
   
 阅读[Office 365 网络连接原则](office-365-network-connectivity-principles.md)获取 Office 365 终结点类别的详细信息并了解用于安全地管理 Office 365 流量和获取最佳性能的连接原则。 
@@ -1371,11 +882,13 @@ Office 365 是一套函数构建通过 internet 的服务、 可靠性和可用�
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>如何阻止访问 Microsoft 的使用者服务？
 <a name="bkmk_consumer"> </a>
 
-限制对我们的使用者服务访问应该执行需要您自担风险，阻止使用者服务仅可靠的方式是限制对*login.live.com* FQDN 的访问。广泛的服务，包括非消费服务，例如 MSDN、 TechNet 和其他人使用此 FQDN。限制对此 FQDN 访问可能会导致需要还包括与这些服务关联的网络请求规则例外情况。 
+限制对我们的使用者服务访问应该执行需要您自担风险，阻止使用者服务仅可靠的方式是限制对*login.live.com* FQDN 的访问。广泛的服务，包括非消费服务，例如 MSDN、 TechNet 和其他人使用此 FQDN。限制对此 FQDN 访问可能会导致需要还包括与这些服务关联的网络请求规则例外情况。
   
 请记住，阻止访问单独的 Microsoft 客户服务不会阻止的人在您的网络到使用 Office 365 租户或其他服务的 exfiltrate 信息。
   
 ## <a name="related-topics"></a>相关主题
+
+[Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)
 
 [Microsoft Azure 数据中心 IP 地址范围](https://www.microsoft.com/download/details.aspx?id=41653)
   
@@ -1390,5 +903,3 @@ Office 365 是一套函数构建通过 internet 的服务、 可靠性和可用�
 [管理 ExpressRoute for Office 365 连接](managing-expressroute-for-connectivity.md)
   
 [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
-  
-
