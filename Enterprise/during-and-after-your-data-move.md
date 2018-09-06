@@ -3,7 +3,7 @@ title: 数据移动期间和数据移动之后
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是对最终用户影响最小的后端操作。Microsoft 会到新的数据中心按地理为您的租户中移动的每个服务和关联的数据时，不不需要任何操作。出现在后台提前和最小的影响用户数据传输和验证。
-ms.openlocfilehash: 8813e73dcbce7b6ea24e497929ca6b8e0928e4e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539689"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839600"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -165,4 +165,13 @@ SharePoint Online 移动时，还移动数据的以下服务：
 
 我们仅用于 Exchange Online、 SharePoint Online 和 for Business 的 Skype 移动客户数据。我们不会移动其他服务的数据。没有更改或向您作为客户或其他服务的用户的影响。移动过程不会影响，并其客户数据的位置保持不变。
   
+## <a name="related-topics"></a>相关主题 
+ 
+[如何请求数据移动](request-your-data-move.md)
+    
+[数据移动常见问题解答](data-move-faq.md)
+  
+[Microsoft Dynamics CRM online 的新数据中心 geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Azure 服务区域](https://azure.microsoft.com/en-us/regions/)
 

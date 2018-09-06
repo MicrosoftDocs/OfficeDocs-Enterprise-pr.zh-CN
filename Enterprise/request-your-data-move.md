@@ -3,7 +3,7 @@ title: 如何请求数据移动
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要让其参与的 Office 365 服务移动到其新的地理位置的客户数据之前其国家/地区的最终期限提交一个请求。
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222974"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839570"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -109,5 +109,15 @@ Microsoft 团队还不支持客户的内容进行 rest 从区域中的 Microsoft
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>通知用户更新移动设备上的过期 Exchange 设置
 
 如果用户具有与 Exchange 服务器设置为**m.outlook.com**或**podxxxxx.outlook.com**移动设备，我们建议他们就改为**outlook.office365.com**，向上移动设备同步[组中的说明使用您的帐户](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)。
+
+## <a name="related-topics"></a>相关主题
+
+[将核心数据移动到新的 Office 365 数据中心 geo](moving-data-to-new-datacenter-geos.md)
+
+[数据移动常见问题解答](data-move-faq.md)
+
+[Microsoft Dynamics CRM online 的新数据中心 geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Azure 服务区域](https://azure.microsoft.com/en-us/regions/)
   
 

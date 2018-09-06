@@ -3,7 +3,7 @@ title: 数据移动常见问题解答
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 以下是有关将核心数据移动到新的数据中心按地理的常见问题的解答。
-ms.openlocfilehash: 40f83ee94aaa7c919f08d91d888ff131da02df67
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539700"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839590"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -149,4 +149,12 @@ Microsoft 将其他数量等于 for Office 365 服务澳大利亚 GST 收取所�
   
 答: 是。Microsoft 维护大型全局网络有 50 多个位置中对等协议 1,500 个以上 Internet 服务提供商 (Isp) 与世界各地的 23 国家/地区的公共 Internet 连接。用户将能够从所在 Internet 上访问数据中心。
   
+## <a name="related-topics"></a>相关主题
 
+[将核心数据移动到新的 Office 365 数据中心 geo](moving-data-to-new-datacenter-geos.md)
+
+[如何请求数据移动](request-your-data-move.md)
+
+[Microsoft Dynamics CRM online 的新数据中心 geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Azure 服务区域](https://azure.microsoft.com/en-us/regions/)

@@ -3,7 +3,7 @@ title: 将核心数据移动到新的 Office 365 数据中心 geo
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 新的数据中心 geo 增加容量和计算资源以支持我们的日常客户需求和使用情况增长。此外，新的数据中心 geo 提供在地理位置数据住所的核心客户数据。核心客户数据是一个术语，指的是在 Microsoft Online 服务条款中定义的客户数据子集： Exchange Online 邮箱内容 （电子邮件正文、 日历项和电子邮件附件的内容） 和 SharePoint Online 网站内容和文件存储在该站点，并上载到 OneDrive for Business 文件。
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539785"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839580"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>将核心数据移动到新的 Office 365 数据中心 geo
 
