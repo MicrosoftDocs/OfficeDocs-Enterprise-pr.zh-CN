@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: 您需要知道以找出并修复滞后、 挂起和 SharePoint Online、 OneDrive for Business、 Exchange Online 中，或 Skype online 业务和客户端计算机之间的性能太慢采取的步骤执行操作？在调用支持之前，这篇文章可帮助您解决 Office 365 的性能问题和甚至修复的一些最常见的问题。
-ms.openlocfilehash: c7eed9498920c601b3b345e8d1879ddbb16c56c3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
+ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539695"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849365"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 的性能疑难解答计划
 
@@ -120,14 +120,14 @@ Microsoft 的网络监视工具 ([Netmon](https://www.microsoft.com/download/det
   
  **运行 HTTPWatch 并重现问题**
   
-1. HTTPWatch 是浏览器插件，因此公开浏览器中的工具是每个版本的 Internet Explorer 略有不同。通常情况下，您可以在 Internet Explorer 浏览器中，在命令栏下方中找到 HTTPWatch。</br></br>如果您没有浏览器窗口中看到插件 HTTPWatch，检查您的浏览器版本通过单击帮助\>有关，或者，更高版本的 Internet Explorer 中，单击齿轮符号和有关 Internet Explorer。启动**命令**栏中，右键单击 Internet Explorer 中的菜单栏，单击**命令栏**。过去，HTTPWatch 已关联使用的命令和浏览器栏中，因此一次安装，如果您没有立即看到 （甚至之后重新启动） 检查**工具**和您的工具栏图标的图标。请记住，可以自定义工具栏，可以向它们添加选项。</br>
+1. HTTPWatch 是浏览器插件，因此公开浏览器中的工具是每个版本的 Internet Explorer 略有不同。通常情况下，您可以在 Internet Explorer 浏览器中，在命令栏下方中找到 HTTPWatch。</br>如果您没有浏览器窗口中看到插件 HTTPWatch，检查您的浏览器版本通过单击帮助\>有关，或者，更高版本的 Internet Explorer 中，单击齿轮符号和有关 Internet Explorer。启动**命令**栏中，右键单击 Internet Explorer 中的菜单栏，单击**命令栏**。过去，HTTPWatch 已关联使用的命令和浏览器栏中，因此一次安装，如果您没有立即看到 （甚至之后重新启动） 检查**工具**和您的工具栏图标的图标。请记住，可以自定义工具栏，可以向它们添加选项。</br>
     ![Internet Explorer 带有 HTTPWatch 图标显示的命令工具栏。](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. 启动 Internet Explorer 浏览器窗口中的 HTTPWatch。将显示固定到浏览器在该窗口的底部。单击**记录**。
     
 3. 重现参与性能问题的的具体步骤。单击 HTTPWatch 中的**停止**按钮。 
     
-4. **保存**HTTPWatch 或**通过电子邮件发送**。请记住，使其包含日期和时间信息和相对值的指示您监视是否包含性能良好或错误的演示，作为文件名。</br></br>![HTTPWatch，显示 Office 365 主页的页面加载的“网络”选项卡。](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br></br>
+4. **保存**HTTPWatch 或**通过电子邮件发送**。请记住，使其包含日期和时间信息和相对值的指示您监视是否包含性能良好或错误的演示，作为文件名。</br>![HTTPWatch，显示 Office 365 主页的页面加载的“网络”选项卡。](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
     此屏幕截图是从 HTTPWatch 的专业版。您可以打开与专业版的计算机上的基本版本中所做的跟踪，并那里读取。额外的信息可从该方法通过跟踪。
     
 ## <a name="problem-steps-recorder"></a>问题步骤记录器
