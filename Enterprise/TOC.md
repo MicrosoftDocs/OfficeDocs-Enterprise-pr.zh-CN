@@ -92,7 +92,7 @@
 ### [如何准备不可路由的域进行目录同步](prepare-a-non-routable-domain-for-directory-synchronization.md)
 ### [ExpressRoute for Office 365 网络规划](network-planning-with-expressroute.md)
 ### [ExpressRoute for Office 365 路由](routing-with-expressroute.md)
-### [Office 365 网络连接原则](network-connectivity.md)
+### [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
 ### Office 365 终结点
 #### [全球范围终结点](urls-and-ip-address-ranges.md)
 #### [美国政府 DoD 终结点](office-365-u-s-government-dod-endpoints.md)
