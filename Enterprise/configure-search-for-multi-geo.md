@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何在多地理位置环境中配置搜索。
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915057"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>为 OneDrive for Business 多地理位置配置搜索
 
@@ -81,7 +82,7 @@ Delve 源和个人资料卡片只能显示存储在**** 中央位置中的文件
 </tr>
 <tr class="even">
 <td align="left">搜索精简</td>
-<td align="left">搜索将返回来自租户的所有地理位置的精简内容，然后对其进行聚合。聚合是最佳做法，意味着精简计数可能并非 100% 准确。对于大部分搜索驱动的方案，此准确度已足够。</td>
+<td align="left">搜索将返回来自租户的所有地理位置的精简内容，然后对其进行聚合。聚合是最佳做法，意味着精简计数可能并非 100% 准确。对于大部分搜索驱动的方案，此准确度已足够。 </td>
 <td align="left">对于依赖于精简完整度的搜索驱动的应用程序，在不使用多地理位置扇出的情况下单独查询每个地理位置。</td>
 </tr>
 <tr class="odd">
@@ -128,7 +129,8 @@ Delve 源和个人资料卡片只能显示存储在**** 中央位置中的文件
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>如何在多地理位置环境中进行搜索？
 
 **** 所有搜索客户端均使用现有 SharePoint Search REST API 与搜索索引进行交互。
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. 搜索客户端使用查询属性 EnableMultiGeoSearch= true 来调用搜索 REST 终结点。
 2. 查询将被发送到租户中的所有地理位置。
@@ -150,8 +152,8 @@ Delve 源和个人资料卡片只能显示存储在**** 中央位置中的文件
 
 3.  选择要设置的类别，单击右上角的“设置”**** 齿轮图标，然后单击“编辑页面”****。搜索结果页将在编辑模式下打开。
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  在搜索结果 Web 部件中，将指针移至 Web 部件的右上角，单击箭头，然后单击菜单上的“编辑 Web 部件”****。“搜索结果 Web 部件”工具窗格将在页面右上角的功能区下方打开。![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  在搜索结果 Web 部件中，将指针移至 Web 部件的右上角，单击箭头，然后单击菜单上的“编辑 Web 部件”****。“搜索结果 Web 部件”工具窗格将在页面右上角的功能区下方打开。![](media/configure-search-for-multi-geo-image3.png)
 
 1.  在 Web 部件工具窗格中的“设置”**** 部分，在“结果控制设置”**** 下，选择“显示多地理位置结果”****，获取搜索结果 Web 部件，以显示来自所有地理位置的结果。
 
@@ -227,6 +229,7 @@ MultiGeoSearchStatus - 这是 SharePoint Search API 响应请求返回的属性�
 
 使用 GET 请求，指定 URL 中的查询参数。使用 POST 请求，在正文中以 JavaScript 对象表示法 (JSON) 格式传递查询参数。
 
+
 #### <a name="request-headers"></a>请求标头
 
 <table>
@@ -250,9 +253,12 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>扇出部分**** 地理位置的示例 GET 请求
 
-https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 
-#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>扇出到所有**** 地理位置的示例 POST 请求
+> [!NOTE]
+> MultiGeoSearchConfiguration 属性的地理位置列表中的逗号和冒号前面有**反斜杠**字符。这是因为 GET 请求使用冒号将属性和逗号分隔为单独的属性参数。如果没有反斜杠作为转义字符，则系统会错误地解释 MultiGeoSearchConfiguration 属性。
+
+#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>扇出到**所有**地理位置的示例 POST 请求
 
     {
         "request": {
