@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何将 OneDrive 站点移到其他地理位置。
-ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "19174898"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915327"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 
@@ -39,6 +39,14 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 
 移动成功后，务必向用户发送电子邮件，告知他们可在 OneDrive 中恢复工作。
 
+## <a name="scheduling-onedrive-site-moves"></a>安排 OneDrive 网站移动
+
+可以提前安排 OneDrive 网站移动（在本文后面介绍）。建议先通过少数用户验证工作流和通信策略。如果你对该过程感到满意，可以按如下方式安排移动：
+
+- 一次最多可以安排 4,000 次移动。
+- 移动开始后，可以安排更多移动操作，在在队列及任何给定时间内最多有 4,000 个待处理移动。
+- 建议每月不要安排超过 4,000 次移动。
+
 ## <a name="moving-a-onedrive-site"></a>移动 OneDrive 网站
 
 若要执行 OneDrive 异地移动，租户管理员必须首先将用户的首选数据位置 (PDL) 设置为相应的地理位置。PDL 一旦设置，请等待至少 24 小时，以使 PDL 更新在 OneDrive 异地移动开始前跨地理位置同步。
@@ -51,7 +59,7 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations_image1.png)
+![](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>验证环境
 
@@ -86,7 +94,7 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations_image2.png)
+![](media/move-onedrive-between-geo-locations-image2.png)
 
 若要设置在以后执行的异地移动，请使用以下参数之一：
 

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 摘要：为 Office 365 开发/测试环境配置目录同步。
-ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193532"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915837"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的目录同步
 
@@ -29,7 +31,7 @@ ms.locfileid: "19193532"
   
 许多组织使用 Azure AD Connect 和目录同步，将其本地 Windows Server Active Directory (AD) 林中的帐户集同步到 Office 365 中的帐户集。本文介绍了如何使用密码哈希同步将目录同步添加到 Office 365 开发/测试环境，从而生成以下配置。
   
-![具有目录同步的 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![具有目录同步的 Office 365 开发/测试环境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 此配置包括： 
   
@@ -48,7 +50,7 @@ ms.locfileid: "19193532"
 
 按照 [Office 365 开发/测试环境](office-365-dev-test-environment.md)文章中的阶段 1、2 和 3 的说明进行操作。下面是生成的配置。
   
-![Office 365 开发/测试环境](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Office 365 开发/测试环境](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 此配置包括： 
   
@@ -104,7 +106,7 @@ Stop-Process -Name Explorer -Force
     
 下面是生成的配置。
   
-![具有目录同步的 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![具有目录同步的 Office 365 开发/测试环境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 此配置包括： 
   

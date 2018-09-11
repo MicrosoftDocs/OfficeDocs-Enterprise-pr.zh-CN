@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 摘要：在 Azure 虚拟机上部署 Azure AD Connect，以在本地目录和 Office 365 订阅的 Azure AD 租户之间同步帐户。
-ms.openlocfilehash: c37fd1e31684590b0b564b3fed402b5c33c062a3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 01dede756142c08722e3cf21d91a0028eb815051
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915637"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Office 365 目录同步
 
@@ -43,11 +46,10 @@ Azure Active Directory (AD) Connect（旧称为“目录同步工具”或“Dir
 > Office 365 对其目录服务使用 Azure Active Directory (Azure AD)。你的 Office 365 订阅包括 Azure AD 租户。该租户还可与其他云工作负载（其中包括其他 SaaS 应用程序和 Azure 中的应用）一起用于管理你的组织标识。 
   
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>在 Azure 中部署 Office 365 目录同步的概述
-<a name="Overview"> </a>
 
 下图显示了在将本地 Windows Server AD 林同步到 Office 365 订阅的 Azure（目录同步服务器）中，在虚拟机上运行的 Azure AD Connect。
   
-![Azure 中的虚拟机上的 Azure AD Connect 工具使用流量流将本地帐户同步到 Office 365 订阅的 Azure AD 租户](images/CP_DirSyncOverview.png)
+![Azure 中的虚拟机上的 Azure AD Connect 工具使用流量流将本地帐户同步到 Office 365 订阅的 Azure AD 租户](media/CP-DirSyncOverview.png)
   
 图中有两个通过站点间 VPN 或 ExpressRoute 连接进行连接的网络：一个是 Windows Server AD 域控制器所在的本地网络，另外一个是带有目录同步服务器的 Azure 虚拟网络，目录同步服务器是一个运行 [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) 的虚拟机。有两个主要通信流源自目录同步服务器：
   
@@ -87,11 +89,11 @@ Azure Active Directory (AD) Connect（旧称为“目录同步工具”或“Dir
 
 开始操作之前，请查看此解决方案的以下先决条件。
   
-- 查阅[规划 Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#PlanningVirtual)中有关规划的内容。
+- 查阅[规划你的 Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#plan-your-azure-virtual-network)中有关规划的内容。
     
-- 确保满足配置 Azure 虚拟网络的所有[先决条件](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Prerequisites)。
+- 确保满足配置 Azure 虚拟网络的所有[先决条件](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites)。
     
-- 具有包含 Active Directory 集成功能的 Office 365 订阅。有关 Office 365 订阅的信息，请转到 [Office 365 订阅页面](https://go.microsoft.com/fwlink/p/?LinkId=394278)。
+- 具有包含 Active Directory 集成功能的 Office 365 订阅。有关 Office 365 订阅的信息，请转到 [Office 365 订阅页面](https://products.office.com/compare-all-microsoft-office-products?tab=2)。
     
 - 预配一个运行 Azure AD Connect 的 Azure 虚拟机，以便将本地 Windows Server AD 林与 Office 365 同步。
     
@@ -114,9 +116,8 @@ Azure Active Directory (AD) Connect（旧称为“目录同步工具”或“Dir
 - 如果现有的 Azure 虚拟网络中存在域控制器，请确定配置 Active Directory 站点和服务是否为更好的选择。目录同步服务器可以用 Azure 虚拟网络中的域控制器查询帐户和密码的更改，而不是使用本地网络上的域控制器。
     
 ## <a name="deployment-roadmap"></a>部署路线图
-<a name="DeploymentRoadmap"> </a>
 
-在 Azure 的虚拟机上部署 Azure AD Connect 包含三个阶段：
+在 Azure 的虚拟机上部署 Azure AD Connect 的过程包含三个阶段：
   
 - 阶段 1：创建和配置 Azure 虚拟网络
     
@@ -131,11 +132,11 @@ Azure Active Directory (AD) Connect（旧称为“目录同步工具”或“Dir
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>阶段 1：创建和配置 Azure 虚拟网络
 
-要创建和配置 Azure 虚拟网络，请完成[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)部署路线图中的[阶段 1：准备你的本地网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase1)和[阶段 2：在 Azure 中创建跨界虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase2)。
+要创建和配置 Azure 虚拟网络，请完成[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)部署路线图中的[阶段 1：准备你的本地网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-1-prepare-your-on-premises-network)和[阶段 2：在 Azure 中创建跨界虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-2-create-the-cross-premises-virtual-network-in-azure)。
   
 这是生成的配置。
   
-![托管于 Azure 中的 Office 365 的目录同步服务器阶段 1](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![托管于 Azure 中的 Office 365 的目录同步服务器阶段 1](media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 该图显示了通过站点间 VPN 或 ExpressRoute 连接来连接到 Azure 虚拟网络的本地网络。
   
@@ -157,7 +158,7 @@ Azure Active Directory (AD) Connect（旧称为“目录同步工具”或“Dir
   
 这是生成的配置。
   
-![托管于 Azure 中的 Office 365 的目录同步服务器阶段 2](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![托管于 Azure 中的 Office 365 的目录同步服务器阶段 2](media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 该图显示跨界 Azure 虚拟网络中的目录同步服务器虚拟机。
   
@@ -167,14 +168,14 @@ Azure Active Directory (AD) Connect（旧称为“目录同步工具”或“Dir
   
 1. 通过远程桌面连接，使用具有本地管理员特权的 Windows Server AD 域帐户连接到目录同步服务器。请参阅[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)。
     
-2. 从目录同步服务器，打开[在 Office 365 中设置目录同步](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)一文，并遵循使用密码哈希同步进行目录同步的说明。
+2. 从目录同步服务器中打开[设置 Office 365 的目录同步](set-up-directory-synchronization.md)一文，并按照使用密码哈希同步进行目录同步的说明操作。
     
 > [!CAUTION]
 > 安装程序将在本地用户组织单位 (OU) 中创建 **AAD_xxxxxxxxxxxx** 帐户。请勿移动或删除该帐户，否则同步将失败。
   
 这是生成的配置。
   
-![托管于 Azure 中的 Office 365 的目录同步服务器阶段 3](images/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![托管于 Azure 中的 Office 365 的目录同步服务器阶段 3](media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 该图显示跨界 Azure 虚拟网络中具有 Azure AD Connect 的目录同步服务器。
   
@@ -198,15 +199,13 @@ Azure AD Connect 将帐户从本地 Windows Server AD 添加到 Office 365 订�
     
 ## <a name="see-also"></a>另请参阅
 
-<a name="DeploymentRoadmap"> </a>
-
-[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
+[云采用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
   
 [将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
 [下载 Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)
   
-[在 Office 365 中设置目录同步](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)
+[设置 Office 365 的目录同步](set-up-directory-synchronization.md)
   
 [Azure 部署工具包中的目录同步服务器](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
 

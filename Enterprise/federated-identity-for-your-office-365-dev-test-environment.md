@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Office 365 开发/测试环境配置联合身份验证。
-ms.openlocfilehash: 2877fa7f85643057c6ba8630939c690256bb8918
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215854"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915237"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的联合身份
 
@@ -33,7 +35,7 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
   
 **图 1：Office 365 开发/测试环境的联合身份验证**
 
-![添加到用于 Office 365 开发/测试环境的 DirSync 的 Web 应用程序代理服务器](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![Office 365 开发/测试环境的联合身份验证](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 图 1 中的配置包括： 
   
@@ -73,7 +75,7 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
   
 **图 2：Office 365 开发/测试环境的目录同步**
 
-![具有目录同步的 Office 365 开发/测试环境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![具有目录同步的 Office 365 开发/测试环境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 图 2 展示了用于 Office 365 开发/测试环境的目录同步，其中包括 Office 365 和 Azure 虚拟网络中的 CLIENT1、APP1 和 DC1 虚拟机。
   
@@ -121,7 +123,7 @@ Restart-Computer
   
 **图 3：添加 AD FS 服务器**
 
-![添加到用于 Office 365 开发/测试环境的 DirSync 的 AD FS 服务器](images/da82f39e-426d-41e2-842a-c13b382d63d5.png)
+![添加到用于 Office 365 开发/测试环境的 DirSync 的 AD FS 服务器](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
 图 3 展示了如何将 ADFS1 服务器添加到用于 Office 365 开发/测试环境的 DirSync 中。
   
@@ -192,7 +194,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv
   
 **图 4：添加 Web 应用程序代理服务器**
 
-![添加到用于 Office 365 开发/测试环境的 DirSync 的 Web 应用程序代理服务器](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![添加到用于 Office 365 开发/测试环境的 DirSync 的 Web 应用程序代理服务器](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 图 4 展示了如何添加 PROXY1 服务器。
   

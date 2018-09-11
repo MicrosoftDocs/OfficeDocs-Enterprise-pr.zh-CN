@@ -3,11 +3,13 @@ title: 使用 Azure 信息保护来保护 SharePoint Online 文件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/08/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：应用 Azure 信息保护来保护高度机密的 SharePoint Online 团队网站中的文件。
-ms.openlocfilehash: 2c4776f5795a5a0b07be0f04b4872abadb4d31ca
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 4ea6c1da8b39f22a56ba4f4d555518b671f07b70
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319283"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915307"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>使用 Azure 信息保护来保护 SharePoint Online 文件
 
@@ -46,41 +48,42 @@ ms.locfileid: "20319283"
 2. 在浏览器的单独标签页中，转到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。
     
 3. 如果是首次配置 Azure 信息保护，请参阅这些[说明](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)。
-    
+
 4. 在列表窗格中，单击“**更多服务**”，键入“**信息**”，然后单击“**Azure 信息保护**”。
+
+5. 单击“**标签**”。
     
-5. 在“**Azure 信息保护**”边栏选项卡上，选择“**作用域内策略”>“+ 添加新策略**”。
+6. 右键单击“高度机密”**** 标签，然后单击“添加子标签”****。
     
-6. 在“策略名称”中键入新策略的名称，并在“描述”中键入新策略的描述********。
+7. 在“名称”**** 中键入子标签的名称，并在“描述”**** 中键入子标签的描述。
     
-7. 单击“选择获取此策略的用户或组”>“用户/组”，然后选择高度敏感的 SharePoint Online 团队网站的网站成员访问组****。 
+8. 在“为包含此标签的文档和电子邮件设置权限”**** 中，单击“保护”****。
     
-8. 单击“选择”>“确定”****。
+9. 在“保护”**** 部分中，单击“Azure (云密钥)”****。
     
-9. 对于“高度机密”标签，请单击省略号 (…)，然后单击“添加子标签”********。
+10. 在“保护”**** 边栏选项卡中，在“保护设置”**** 下，单击“添加权限”****。
     
-10. 在“名称”中键入子标签的名称，并在“描述”中键入标签的描述********。
+11. 在“添加权限”**** 边栏选项卡的“指定用户和组”**** 下，单击“浏览目录”****。
     
-11. 在“为包含此标签的文档和电子邮件设置权限”中，单击“保护”********。
+12. 在“AAD 用户和组”**** 窗格中，选择高度敏感的 SharePoint Online 团队网站的网站成员访问组，然后单击“选择”****。
     
-12. 在“保护”部分中，单击“Azure (云密钥)”********。
+13. 在“从预设或设置自定义中选择权限”**** 下，单击“自定义”****，然后依次单击“查看权限”****、“编辑内容”****、“保存”****、“答复”**** 和“全部答复”**** 复选框。
     
-13. 在“保护”边栏选项卡中，在“保护设置”下，单击“+ 添加权限”************。
+14. 单击“**确定**”两次。
     
-14. 在“添加权限”**** 边栏选项卡的“指定用户和组”**** 下，单击“+ 浏览目录”****。
+15. 在“**子标签**”边栏选项卡上，单击“**保存**”，然后单击“**确定**”。
+
+16. 在“Azure 信息保护”**** 边栏选项卡上，单击“策略”>“添加新策略”****。
     
-15. 在“AAD 用户和组”**** 窗格中，选择高度敏感的 SharePoint Online 团队网站的网站成员访问组，然后单击“选择”****。
+17. 在“策略名称”**** 中键入新策略的名称，并在“描述”**** 中键入新策略的描述。
     
-16. 在“从预设中选择权限”**** 下，取消勾选“打印”****、“复制和提取内容”**** 和“转接”**** 复选框。
+18. 单击“选择获取此策略的用户或组”>“用户/组”，然后选择高度敏感的 SharePoint Online 团队网站的网站成员访问组****。
     
-17. 单击“确定”**** 两次。
-    
-18. 在“子标签”边栏选项卡上，单击“保存”********。
-    
-19. 关闭“新作用域内策略”边栏选项卡。
-    
-20. 在“Azure 信息保护 - 范围内策略”**** 边栏选项卡上，单击“发布”****。
-    
+19. 单击“选择”>“确定”****。
+
+20. 单击“添加或删除标签”****。在“策略: 添加或删除标签”**** 窗格中，单击新子标签的名称，然后单击“确定”****。   
+
+21. 单击“保存”****，然后单击“确定”****。
  
 ##<a name="client-setup"></a>客户端设置
 现在可以开始创建文档，并使用 Azure 信息保护和新标签来保护它们。
