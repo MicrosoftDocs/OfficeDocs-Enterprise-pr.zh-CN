@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 为了帮助你更好地标识和区分 Office 365 网络流量，我们推出了一项用于发布 Office 365 终结点的新 Web 服务，以方便你更轻松地评估、配置并掌握最新变更。这项新 Web 服务取代了目前可用的 XML 可下载文件。
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830882"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831897"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP 地址和 URL Web 服务**
 
@@ -66,13 +66,15 @@ Microsoft 在每月底更新 Office 365 IP 地址和 FQDN 条目，有时也会�
 
 - **AllVersions=true** - 查询字符串参数。默认返回最新版本。添加此可选参数，可请求获取所有已发布版本。
 - **Format=JSON** | **CSV** | **RSS** - 除了 JSON 和 CSV 格式以外，版本 Web 方法还支持 RSS。可将此参数与 allVersions=true 参数结合使用，以请求获取能用于 Outlook 或其他 RSS 阅读器的 RSS 源。
-- **Instance** - 路由参数。此可选参数指定要返回哪个实例的版本。如果省略，将返回所有实例的版本。有效实例为 Worldwide、China、Germany、USGovDoD 和 USGovGCCHigh
+- **Instance** - 路由参数。此可选参数指定要返回哪个实例的版本。如果省略，将返回所有实例的版本。有效实例为 Worldwide、China、Germany、USGovDoD 和 USGovGCCHigh。
 
 版本 Web 方法的结果可以是一条记录，也可以是一组记录。每条记录均包含以下元素：
 
 - instance - Office 365 服务实例的短名称。
 - latest - 指定实例的终结点的最新版本。
 - versions - 指定实例的所有旧版本列表。仅当 AllVersions 参数为 true 时，才包含此元素。
+
+可以使用 Microsoft Flow 来获取对 IP 地址和 URL 所做的更改的电子邮件通知。请参阅[使用 Microsoft Flow 接收对 Office 365 IP 地址和 URL 所做的更改的电子邮件](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)。
 
 ### <a name="examples"></a>**示例：**
 
@@ -487,24 +489,10 @@ else:
 
 [与 Office 365 的网络连接](network-connectivity.md)
   
-[Azure ExpressRoute for Office 365](azure-expressroute.md)
-  
-[管理 ExpressRoute for Office 365 连接](managing-expressroute-for-connectivity.md)
-  
-[使用 ExpressRoute for Office 365 路由](routing-with-expressroute.md)
-  
-[实现 ExpressRoute for Office 365](implementing-expressroute.md)
-  
-[在 ExpressRoute for Office 365 方案中使用 BGP 社区（预览版）](bgp-communities-in-expressroute.md)
-  
 [Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [优化 Skype for Business Online 网络](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[Skype for Business Online 中的 ExpressRoute 和 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[使用 ExpressRoute 的呼叫流](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
   
 [Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
