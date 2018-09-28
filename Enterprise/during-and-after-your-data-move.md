@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是对最终用户影响最小的后端操作。Microsoft 会到新的数据中心按地理为您的租户中移动的每个服务和关联的数据时，不不需要任何操作。出现在后台提前和最小的影响用户数据传输和验证。
-ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839600"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975170"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -96,8 +96,8 @@ ms.locfileid: "23839600"
   
 ||**Exchange 管理中心**|**安全&amp;合规性中心**|
 |:-----|:-----|:-----|
-|电子数据展示  <br/> | 转到https://portal.office.com，然后单击**管理员**图块。 </br> 单击**管理中心** \> **Exchange**。 </br> 选择**合规性管理** \> **就地电子数据展示&amp;保留**。 | 转到https://portal.office.com，然后单击管理员图块。 </br> 单击**管理中心** \> **安全&amp;合规性**。 </br> 选中**搜索&amp;调查** \> **电子数据展示**。|
-|审核  <br/> | 转到https://portal.office.com，然后单击**管理员**图块。 </br> 单击**管理中心** \> **Exchange**。选择**合规性管理** \> **审核**。 | 转到https://portal.office.com，然后单击管理员图块。 </br> 单击**管理中心** \> **安全&amp;合规性**。 </br> 选中**搜索&amp;调查** \> **审核日志搜索**。 |
+|电子数据展示  <br/> | 转到https://portal.office.com，然后单击**管理员**图块。 <br/> 单击**管理中心** \> **Exchange**。 <br/> 选择**合规性管理** \> **就地电子数据展示&amp;保留**。 | 转到https://portal.office.com，然后单击管理员图块。 <br/> 单击**管理中心** \> **安全&amp;合规性**。 <br/> 选中**搜索&amp;调查** \> **电子数据展示**。|
+|审核  <br/> | 转到https://portal.office.com，然后单击**管理员**图块。 <br/> 单击**管理中心** \> **Exchange**。选择**合规性管理** \> **审核**。 | 转到https://portal.office.com，然后单击管理员图块。 <br/> 单击**管理中心** \> **安全&amp;合规性**。 <br/> 选中**搜索&amp;调查** \> **审核日志搜索**。 |
    
 ### <a name="mailbox-migration"></a>邮箱迁移
 

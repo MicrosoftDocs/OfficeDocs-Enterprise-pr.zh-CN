@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 管理 Skype for Business Online
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/22/2018
+ms.date: 09/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 摘要：使用 Office 365 PowerShell 管理 Skype for Business Online 策略、每用户策略和会议设置。
-ms.openlocfilehash: f490131491a026961b0a5db312df5780483eadd9
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: a91803316972337aa31e2b979f841ac1cfbe8566
+ms.sourcegitcommit: 053db5479f93478a65d4c36ffe44c6a7bcb60e3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319233"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965189"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Skype for Business Online
 
@@ -62,7 +62,7 @@ ms.locfileid: "20319233"
 
 有关详细信息，请参阅下列主题：
   
-- [管理 Skype 与 Office 365 PowerShell 的在线业务策略](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 管理 Skype for Business Online 策略](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
 - [指定每个用户 Skype 的在线商业策略与 Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
@@ -71,4 +71,6 @@ ms.locfileid: "20319233"
 [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+
+[Skype 的业务 PowerShell cmdlet 参考](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

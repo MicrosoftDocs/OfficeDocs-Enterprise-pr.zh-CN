@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: 混合现代身份验证 (HMA)，是一种身份管理提供更安全的用户身份验证和授权，并适用于 Exchange server 内部部署混合部署的方法。
-ms.openlocfilehash: 871f03b8e776c694f7378f6905259d21516f7326
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539687"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975190"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
@@ -81,7 +81,7 @@ HMA 开启方法：
     
 执行此命令，应包括 https:// 的输出的注释 （和更高版本比较的屏幕快照） * 自动发现。*yourdomain* .com * 和 https:// *mail.yourdomain.com* URL，但主要包含开头 00000002-0000-0ff1-ce00-000000000000 的 Spn /。从内部部署的缺少的 https:// Url 时我们将需要这些特定记录添加到此列表。 
   
-3. 如果看不到您内部和外部 MAPI/HTTP、 EWS、 ActiveSync、 OAB 和自动发现记录此列表中的，您必须添加它们使用下面的命令 (示例 Url 是`mail.corp.contoso.com`和`owa.contoso.com`，但您必须**替换为您自己的示例 Url** ): </br>
+3. 如果看不到您内部和外部 MAPI/HTTP、 EWS、 ActiveSync、 OAB 和自动发现记录此列表中的，您必须添加它们使用下面的命令 (示例 Url 是`mail.corp.contoso.com`和`owa.contoso.com`，但您必须**替换为您自己的示例 Url** ): <br/>
 ```
 - $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 - $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

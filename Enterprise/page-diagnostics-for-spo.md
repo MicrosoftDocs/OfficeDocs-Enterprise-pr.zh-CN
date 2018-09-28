@@ -15,12 +15,12 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: 使用 SharePoint 工具页诊断 SharePoint online 分析经典页面针对建议的最佳实践。
-ms.openlocfilehash: fb5bb9a333a3b04acfe3d014952eb6406f7dbe31
-ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
+ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849355"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975160"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>SharePoint online 中使用页诊断工具
 
@@ -29,20 +29,20 @@ ms.locfileid: "23849355"
 没有启用的发布的工作组网站无法使 Cdn 的使用，但所有剩余的规则都适用。发布添加额外开销，因此不要打开发布，只需以获取 CDN 的功能，如它会产生负面影响页面加载时间。
   
 > [!IMPORTANT]
-> 如工具在设计上可查看 SharePoint 网站页，将会对文档库或系统页面不运行页诊断工具。*Allitems.aspx*页是系统页。如果试图在系统上运行该工具，您将收到一条消息，表明，"此应用程序应仅运行在 SharePoint 页面上。"</br> ![必须在 SharePoint 页面上运行](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)</br>这不是在工具错误，如评估库或 system 页中没有值。请导航到非系统 SharePoint 页面使用的工具。该工具应该想要提供反馈有关请单击关于选项卡并按照[提供反馈链接](https://go.microsoft.com/fwlink/?linkid=874109)。 
+> 如工具在设计上可查看 SharePoint 网站页，将会对文档库或系统页面不运行页诊断工具。*Allitems.aspx*页是系统页。如果试图在系统上运行该工具，您将收到一条消息，表明，"此应用程序应仅运行在 SharePoint 页面上。"<br/> ![必须在 SharePoint 页面上运行](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>这不是在工具错误，如评估库或 system 页中没有值。请导航到非系统 SharePoint 页面使用的工具。该工具应该想要提供反馈有关请单击关于选项卡并按照[提供反馈链接](https://go.microsoft.com/fwlink/?linkid=874109)。 
   
 ## <a name="install-the-page-diagnostic-tool"></a>安装页诊断工具
 
 > [!IMPORTANT]
 > Microsoft 不会读取的数据或访问，网站和我们不会捕获任何个人信息、 网站或下载具有此工具的信息。工具记录的唯一信息是租户的名称，规则计数和是否支持日志记录选项利用过时运行该工具。此信息适用于 Microsoft 来分析通过我们的客户经验正在什么难题，以确保不被误用支持日志记录功能。
 
-1. 使用 Chrome 浏览器，直接打开[链接到该工具](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)或[Chrome 浏览器 web 存储](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint)中打开搜索和安装浏览器扩展。请查看用户隐私策略存储中的说明页上提供。时添加到您的浏览器的工具，您将看到以下权限注意。</br>![部件版式存储权限](media/e9fbcef0-1171-43ac-8ea8-c2b5be1b7925.png)</br>   此通知是就地中，因为页面可能包含从外部 SharePoint 具体取决于 web 部件和自定义项在页上的位置的内容。这意味着，该工具将读取的请求和响应时单击开始按钮和仅为活动的 SharePoint 选项卡运行该工具。该信息本地捕获按 web 浏览器，并且可供您通过导出到 JSON 工具中的链接。**不发送到或由 Microsoft 捕获的信息。**（此工具应包含 Microsoft 隐私策略可访问[此处](https://go.microsoft.com/fwlink/p/?linkid=857875)。）</br></br>为什么需要"管理您的下载"权限，也是在工具中的"导出到 JSON"功能。请结果包含 Url 和共享您的组织之外的 JSON 文件可归类为 PII （个人身份信息） 之前，按照您公司的隐私准则。
+1. 使用 Chrome 浏览器，直接打开[链接到该工具](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)或[Chrome 浏览器 web 存储](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint)中打开搜索和安装浏览器扩展。请查看用户隐私策略存储中的说明页上提供。时添加到您的浏览器的工具，您将看到以下权限注意。<br/>![部件版式存储权限](media/e9fbcef0-1171-43ac-8ea8-c2b5be1b7925.png)<br/>   此通知是就地中，因为页面可能包含从外部 SharePoint 具体取决于 web 部件和自定义项在页上的位置的内容。这意味着，该工具将读取的请求和响应时单击开始按钮和仅为活动的 SharePoint 选项卡运行该工具。该信息本地捕获按 web 浏览器，并且可供您通过导出到 JSON 工具中的链接。**不发送到或由 Microsoft 捕获的信息。**（此工具应包含 Microsoft 隐私策略可访问[此处](https://go.microsoft.com/fwlink/p/?linkid=857875)。）<br/><br/>为什么需要"管理您的下载"权限，也是在工具中的"导出到 JSON"功能。请结果包含 Url 和共享您的组织之外的 JSON 文件可归类为 PII （个人身份信息） 之前，按照您公司的隐私准则。
     
 2. （这是可选的）如果您想要在部件版式 incognito 模式下使用此工具，导航到该扩展名，然后单击**允许 incognito 中**。
     
 3. 向 SharePoint 经典发布页面在 SharePoint Online 您想要查看的导航。我们已允许"延迟加载"中的项目页面; 例如：因此，**不会自动停止工具**。您希望停止集合，您可以单击**停止**。（这是设计使然，以设法满足所有页面负载方案的值。）单击**停止**之前，请确保网络跟踪数据已完成。否则，您将具有部分跟踪。另外，该工具将浏览器扩展，并且打开多个选项卡或 windows 将只允许一次运行该工具的一个活动实例。这是在浏览器的扩展限制。 
   
-4. 单击扩展徽标 ![SharePoint 徽标的页诊断](media/60a3e44d-1b59-483f-b50f-d580044d921a.png) 加载该工具，并将显示与以下扩展弹出式窗口：</br> ![页诊断工具弹出窗口](media/b01fa00e-c5f3-4c37-91f2-6edd096cf87e.png)</br>启动和停止操作 follow 当您单击页上将重新加载的开始和集合的基本概念将开始。
+4. 单击扩展徽标 ![SharePoint 徽标的页诊断](media/60a3e44d-1b59-483f-b50f-d580044d921a.png) 加载该工具，并将显示与以下扩展弹出式窗口：<br/> ![页诊断工具弹出窗口](media/b01fa00e-c5f3-4c37-91f2-6edd096cf87e.png)<br/>启动和停止操作 follow 当您单击页上将重新加载的开始和集合的基本概念将开始。
 
 阅读以下各节中，若要了解有关该工具中提供的信息。
 
@@ -62,7 +62,7 @@ ms.locfileid: "23849355"
     
   - **URL** （统一资源定位器） 是当前页的 web 地址。 
     
-3. [**诊断**选项卡](#how-to-use-the-diagnostic-tab)将列出规则和如果任何这些标有红色![跨](media/9859ac84-be43-4eae-984c-e0e827f5a228.png)，则会出现在上发现的问题。</br>每个规则均具有自己单击如果项目为红色的"详细信息"链接。这样，就会为该规则和如何修正问题后面的详细信息。</br>![诊断红色-打开的规则](media/1598f0f7-3103-4613-8787-dfec6fffd40a.png)
+3. [**诊断**选项卡](#how-to-use-the-diagnostic-tab)将列出规则和如果任何这些标有红色![跨](media/9859ac84-be43-4eae-984c-e0e827f5a228.png)，则会出现在上发现的问题。<br/>每个规则均具有自己单击如果项目为红色的"详细信息"链接。这样，就会为该规则和如何修正问题后面的详细信息。<br/>![诊断红色-打开的规则](media/1598f0f7-3103-4613-8787-dfec6fffd40a.png)
 
 4. 一个[**网络跟踪**选项卡](#how-to-use-the-network-trace-tab)提供了详细信息页生成请求和响应。
 
@@ -88,7 +88,7 @@ ms.locfileid: "23849355"
 - 绿色： \< 500ms年
 - 黄色： 500 毫秒
 - 红色：\>毫秒
-</br>![网络跟踪](media/3cfede99-7d31-4041-888d-7bbc275cadc2.png)</br>在上面显示的图像，红色项目与相关的默认页面。它将始终显示红色除非页面加载\<毫秒 （小于 1 秒）。
+<br/>![网络跟踪](media/3cfede99-7d31-4041-888d-7bbc275cadc2.png)<br/>在上面显示的图像，红色项目与相关的默认页面。它将始终显示红色除非页面加载\<毫秒 （小于 1 秒）。
 
 2. **测试项目加载时间**。在某些情况下将有任何时间或颜色指示器由于项目已由浏览器缓存。若要正确测试这一点，打开的页面和清除浏览器缓存，然后单击**开始**，将强制"冷"页加载和的初始页面加载，则返回 true 反射。这应然后比较到"暖"页面加载，这还将有助于确定哪些项目缓存在页面上。 
     
@@ -107,7 +107,7 @@ ms.locfileid: "23849355"
 
 1. 打开页面诊断工具。
 2. 键盘上按下 ALT-Shift-l。这将显示**启用日志记录支持级别**。 
-3. 选中的复选框，然后单击**启动**重新加载网页并生成详细日志记录支持分析。</br>![启用的支持选项](media/ddef47de-8593-4b28-9346-eb48ebf6cdab.png)
+3. 选中的复选框，然后单击**启动**重新加载网页并生成详细日志记录支持分析。<br/>![启用的支持选项](media/ddef47de-8593-4b28-9346-eb48ebf6cdab.png)
   
 这一重要元素是 CorrelationID，如支持团队将然后，使用该号码提取所需的信息。请复制 CorrelationID （顶部的页诊断工具），并向支持提供的因为它们无法执行所需的工作，而不完整的 id。
     

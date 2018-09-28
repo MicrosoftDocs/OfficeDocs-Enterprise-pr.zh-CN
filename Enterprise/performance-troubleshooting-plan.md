@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: 您需要知道以找出并修复滞后、 挂起和 SharePoint Online、 OneDrive for Business、 Exchange Online 中，或 Skype online 业务和客户端计算机之间的性能太慢采取的步骤执行操作？在调用支持之前，这篇文章可帮助您解决 Office 365 的性能问题和甚至修复的一些最常见的问题。
-ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
-ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
+ms.openlocfilehash: 0e588d35ff6caaa0796092bb2f964bced15f4e47
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849365"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975180"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 的性能疑难解答计划
 
@@ -120,14 +120,14 @@ Microsoft 的网络监视工具 ([Netmon](https://www.microsoft.com/download/det
   
  **运行 HTTPWatch 并重现问题**
   
-1. HTTPWatch 是浏览器插件，因此公开浏览器中的工具是每个版本的 Internet Explorer 略有不同。通常情况下，您可以在 Internet Explorer 浏览器中，在命令栏下方中找到 HTTPWatch。</br>如果您没有浏览器窗口中看到插件 HTTPWatch，检查您的浏览器版本通过单击帮助\>有关，或者，更高版本的 Internet Explorer 中，单击齿轮符号和有关 Internet Explorer。启动**命令**栏中，右键单击 Internet Explorer 中的菜单栏，单击**命令栏**。过去，HTTPWatch 已关联使用的命令和浏览器栏中，因此一次安装，如果您没有立即看到 （甚至之后重新启动） 检查**工具**和您的工具栏图标的图标。请记住，可以自定义工具栏，可以向它们添加选项。</br>
+1. HTTPWatch 是浏览器插件，因此公开浏览器中的工具是每个版本的 Internet Explorer 略有不同。通常情况下，您可以在 Internet Explorer 浏览器中，在命令栏下方中找到 HTTPWatch。<br/>如果您没有浏览器窗口中看到插件 HTTPWatch，检查您的浏览器版本通过单击帮助\>有关，或者，更高版本的 Internet Explorer 中，单击齿轮符号和有关 Internet Explorer。启动**命令**栏中，右键单击 Internet Explorer 中的菜单栏，单击**命令栏**。过去，HTTPWatch 已关联使用的命令和浏览器栏中，因此一次安装，如果您没有立即看到 （甚至之后重新启动） 检查**工具**和您的工具栏图标的图标。请记住，可以自定义工具栏，可以向它们添加选项。<br/>
     ![Internet Explorer 带有 HTTPWatch 图标显示的命令工具栏。](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. 启动 Internet Explorer 浏览器窗口中的 HTTPWatch。将显示固定到浏览器在该窗口的底部。单击**记录**。
     
 3. 重现参与性能问题的的具体步骤。单击 HTTPWatch 中的**停止**按钮。 
     
-4. **保存**HTTPWatch 或**通过电子邮件发送**。请记住，使其包含日期和时间信息和相对值的指示您监视是否包含性能良好或错误的演示，作为文件名。</br>![HTTPWatch，显示 Office 365 主页的页面加载的“网络”选项卡。](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
+4. **保存**HTTPWatch 或**通过电子邮件发送**。请记住，使其包含日期和时间信息和相对值的指示您监视是否包含性能良好或错误的演示，作为文件名。<br/>![HTTPWatch，显示 Office 365 主页的页面加载的“网络”选项卡。](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)<br/>
     此屏幕截图是从 HTTPWatch 的专业版。您可以打开与专业版的计算机上的基本版本中所做的跟踪，并那里读取。额外的信息可从该方法通过跟踪。
     
 ## <a name="problem-steps-recorder"></a>问题步骤记录器
@@ -279,11 +279,11 @@ SYN-中找到 SYN/确认旧或时效硬件可能不会利用 TCP windows 缩放�
 
 1. Ping URL `ping outlook.office365.com` ，在结果中，记录的名称和 IP 地址的 ping 请求发送到的 DNS 服务器。 
 2. 网络跟踪打开页上，或执行的操作，为您提供了性能问题，或如果您 ping，本身上, 看到高延迟网络跟踪。 
-3. 为了 DNS Netmon 和筛选器中打开跟踪 (此筛选器还 Wireshark 中, 正常工作，但写到事例`-- dns`)。由于您知道您 ping 从 DNS 服务器的名称可能还筛选类似的多个快速在 Netmon: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` 、 看上去像这样 Wireshark dns 中和框架中包含"namnorthwest"。</br>打开响应数据包，然后在的 Netmon 帧详细信息窗口中，单击 DNS 以展开的详细信息。您会发现请求于 Office 365-开始到 DNS 服务器的 IP 地址的 DNS 信息中，您将需要此 IP 地址的下一步 （PsPing 工具）。删除筛选器，右键单击 Netmon 的帧摘要中的 DNS 响应\>查找对话\>DNS，请参阅 DNS 查询和响应-并行。 
+3. 为了 DNS Netmon 和筛选器中打开跟踪 (此筛选器还 Wireshark 中, 正常工作，但写到事例`-- dns`)。由于您知道您 ping 从 DNS 服务器的名称可能还筛选类似的多个快速在 Netmon: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` 、 看上去像这样 Wireshark dns 中和框架中包含"namnorthwest"。<br/>打开响应数据包，然后在的 Netmon 帧详细信息窗口中，单击 DNS 以展开的详细信息。您会发现请求于 Office 365-开始到 DNS 服务器的 IP 地址的 DNS 信息中，您将需要此 IP 地址的下一步 （PsPing 工具）。删除筛选器，右键单击 Netmon 的帧摘要中的 DNS 响应\>查找对话\>DNS，请参阅 DNS 查询和响应-并行。 
 4. 在 Netmon，还请注意之间的 DNS 请求和响应时间偏移列。在下一步中，轻松安装和使用[PsPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx)工具有非常方便，同时 ICMP 上防火墙，通常被阻止和 PsPing 自然地跟踪延迟 （毫秒）。PsPing 完成 TCP 连接到地址和端口 （在我们案例打开端口 443）。 
 5. 安装 PsPing。 
 6. 打开命令提示符 (开始\>运行\>键入 cmd 或 Windows 密钥\>键入 cmd) 并将目录更改为您安装 PsPing 运行 PsPing 命令的目录。在我的示例可以看到所做的 C.根目录上的性能文件夹您可以快速访问相同。 
-7. 键入命令，以便您要从早期 Netmon 跟踪发起针对 Office 365 DNS 服务器的 IP 地址您 PsPing--请记住要添加的端口号。 </br>换句话说， `psping -n 20 132.245.24.82:445`。这将为您提供的 20 ping 取样，并 PsPing 停止时的平均延迟。 
+7. 键入命令，以便您要从早期 Netmon 跟踪发起针对 Office 365 DNS 服务器的 IP 地址您 PsPing--请记住要添加的端口号。 <br/>换句话说， `psping -n 20 132.245.24.82:445`。这将为您提供的 20 ping 取样，并 PsPing 停止时的平均延迟。 
 
 如果您正在通过代理服务器转到 Office 365，是稍有不同的步骤。向代理服务器以获取平均延迟值，以毫秒为单位代理中的外出和后，将第一个 PsPing，然后再运行 PsPing 在代理服务器上，或直接的 Internet 连接，以获取缺失值 （到 Office 365 并返回一个） 的计算机上。  
 
@@ -490,6 +490,6 @@ Netmon
 
 [管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Office 365 终结点常见问题](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Office 365 终结点 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
   
 

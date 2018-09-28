@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要： 使用 Office 365 PowerShell 管理 SharePoint Online 网站用户组。
-ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915347"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975140"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 SharePoint Online 网站用户组
 
@@ -37,8 +37,8 @@ ms.locfileid: "22915347"
 
 1. 从 Office 365 管理中心中，单击**资源** > **网站**，然后单击网站的 URL。
 2. 在“网站集”对话框中，单击“**转到此网站**”。
-3. 在网站页上，单击“**设置**”图标（位于页面的右上角），然后单击“**网站设置**”：</br>
-![SharePoint Online 网站设置](media/spo-site-settings.png)</br>
+3. 在网站页上，单击“**设置**”图标（位于页面的右上角），然后单击“**网站设置**”：<br/>
+![SharePoint Online 网站设置](media/spo-site-settings.png)<br/>
 4. 在网站设置页上单击**用户和权限**下的**网站权限**。
 
 然后对您要查看的下一个网站重复此过程。
@@ -58,7 +58,7 @@ foreach ($y in $x)
 
 有两种方式来运行在 SharePoint Online 命令行管理程序命令提示符中设置此命令：
 
-- 将命令复制到记事本 （或其他文本编辑器）、 修改 **$siteURL**变量的值、 选择的命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符处。PowerShell 执行操作时，将在停止**>>** 提示。按 Enter 执行**foreach**命令。</br>
+- 将命令复制到记事本 （或其他文本编辑器）、 修改 **$siteURL**变量的值、 选择的命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符处。PowerShell 执行操作时，将在停止**>>** 提示。按 Enter 执行**foreach**命令。<br/>
 - 将命令复制到记事本 （或其他文本编辑器）、 修改 **$siteURL**变量的值，然后保存名称和.ps1 扩展名合适的文件夹中的此文本文件。下一步，指定其路径和文件名称从 SharePoint Online 命令行管理程序命令提示符运行脚本。下面是示例命令：
 
 ```
