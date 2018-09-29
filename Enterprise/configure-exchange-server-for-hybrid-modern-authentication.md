@@ -3,7 +3,7 @@ title: 如何配置本地 Exchange Server 以使用混合新式验证
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 3/23/2018
+ms.date: 09/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: 混合现代身份验证 (HMA)，是一种身份管理提供更安全的用户身份验证和授权，并适用于 Exchange server 内部部署混合部署的方法。
-ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
+ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975190"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347602"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
@@ -63,13 +63,12 @@ HMA 开启方法：
   
 首先，收集所有 AAD 中添加所需的 Url。运行这些命令在本地：
   
-- Get MapiVirtualDirectory |FL 服务器\*url\*
-    
-- Get-webservicesvirtualdirectory |FL 服务器\*url\*
-    
-- **Get-activesyncvirtualdirectory |FL 服务器\*url\***
-    
-- Get-oabvirtualdirectory |FL 服务器\*url\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*
+Get-WebServicesVirtualDirectory | FL server,*url*
+Get-ActiveSyncVirtualDirectory | FL server,*url*
+Get-OABVirtualDirectory | FL server,*url*
+```
     
 确保客户端可以连接到列为 HTTPS AAD 中的服务主体名称的 Url。
   
@@ -77,17 +76,19 @@ HMA 开启方法：
     
 2. 对于 Exchange 相关的 Url，键入以下命令：
     
-- Get MsolServicePrincipal-AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 |选择-ExpandProperty ServicePrincipalNames
-    
-执行此命令，应包括 https:// 的输出的注释 （和更高版本比较的屏幕快照） * 自动发现。*yourdomain* .com * 和 https:// *mail.yourdomain.com* URL，但主要包含开头 00000002-0000-0ff1-ce00-000000000000 的 Spn /。从内部部署的缺少的 https:// Url 时我们将需要这些特定记录添加到此列表。 
+```powershell
+Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
+```
+
+执行此命令，其中应包括 https:// *autodiscover.yourdomain.com*和 https:// *mail.yourdomain.com* URL，但主要包含开头的 Spn 的输出的注释 （和更高版本比较的屏幕快照）00000002-0000-0ff1-ce00-000000000000 /。从内部部署的缺少的 https:// Url 时我们将需要这些特定记录添加到此列表。 
   
 3. 如果看不到您内部和外部 MAPI/HTTP、 EWS、 ActiveSync、 OAB 和自动发现记录此列表中的，您必须添加它们使用下面的命令 (示例 Url 是`mail.corp.contoso.com`和`owa.contoso.com`，但您必须**替换为您自己的示例 Url** ): <br/>
-```
-- $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
-- $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://eas.contoso.com/")
-- Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```powershell
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
+$x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
+$x.ServicePrincipalnames.Add("https://owa.contoso.com/")
+$x.ServicePrincipalnames.Add("https://eas.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
 4. 确认通过 Get MsolServicePrincipal 命令从步骤 2 再次运行，并将输出通过查找已添加新记录。比较列表 / 屏幕截图从之前对新列表的 Spn （您还可以屏幕截图新列表的记录）。如果您已成功完成，您将看到列表中的两个新 Url。通过我们的示例转，Spn 的列表将现已包括特定的 Url`https://mail.corp.contoso.com`和`https://owa.contoso.com`。 
@@ -96,28 +97,27 @@ HMA 开启方法：
 
 现在验证中正确启用 OAuth 在所有虚拟目录 Outlook 上的 Exchange 可能使用通过运行以下命令：
 
-```
-Get-MapiVirtualDirectory | FL server,\*url\*,\*auth\* 
-Get-WebServicesVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-OABVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*,*auth* 
+Get-WebServicesVirtualDirectory | FL server,*url*,*oauth*
+Get-OABVirtualDirectory | FL server,*url*,*oauth*
+Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
 检查以确保**OAuth**的输出启用每个这些 VDirs，它看起来如下所示 （和需要查看的重要一点是 OAuth）; 
-  
- **[PS]C:\Windows\system32\>Get MapiVirtualDirectory |fl 服务器\*url\*，\*身份验证\***
-  
- **服务器： EX1**
-  
- **InternalUrl:`https://mail.contoso.com/mapi`**
-  
- **ExternalUrl:`https://mail.contoso.com/mapi`**
-  
- **IISAuthenticationMethods: {Ntlm、 OAuth、 Negotiate}**
-  
- **InternalAuthenticationMethods: {Ntlm、 OAuth、 Negotiate}**
-  
- **ExternalAuthenticationMethods: {Ntlm、 OAuth、 Negotiate}**
+
+```powershell
+Get-MapiVirtualDirectory | fl server,*url*,*auth*
+```
+
+```
+Server                        : EX1
+InternalUrl                   : https://mail.contoso.com/mapi
+ExternalUrl                   : https://mail.contoso.com/mapi
+IISAuthenticationMethods      : {Ntlm, OAuth, Negotiate}
+InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+```
   
 如果您需将其使用相关的命令，然后再继续添加 OAuth 缺少来自任何服务器和任何四个虚拟目录。
   
@@ -125,8 +125,10 @@ Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
 
 返回到此最后一个命令的本地 Exchange 命令行管理程序。现在您可以验证本地 evoSTS 身份验证提供程序有一项：
   
-`Get-AuthServer | where {$_.Name -eq "EvoSts"}`
-    
+```powershell
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
+```
+
 输出应显示的名称 EvoSts 认证服务器和已启用状态应该为 True。如果您看不到此，您应下载并运行混合配置向导的最新版本。
   
  **重要**如果您在您的环境中运行 Exchange 2010，不会创建 EvoSTS 身份验证提供程序。 
@@ -135,7 +137,7 @@ Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
 
 在 Exchange Management Shell 中，在本地运行以下命令：
 
-```
+```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
