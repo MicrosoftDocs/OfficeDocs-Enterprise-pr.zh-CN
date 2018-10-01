@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。
-ms.openlocfilehash: f6f390a493efe4f4155655cc6116e9fdd7ec5a9f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915737"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022091"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
@@ -40,7 +40,6 @@ ms.locfileid: "22915737"
     - [面向企业架构师的 Microsoft 移动性和安全性](microsoft-cloud-it-architecture-resources.md#mobility)
     - [面向企业架构师的 Microsoft 云存储](microsoft-cloud-it-architecture-resources.md#storage)
     - [面向企业架构师的 Microsoft 混合云](microsoft-cloud-it-architecture-resources.md#hybrid)
-    - [Microsoft 云中的 Contoso](microsoft-cloud-it-architecture-resources.md#contoso)
     - [常见攻击和保护组织的 Microsoft 功能](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Office 365 企业版解决方案系列](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**：
@@ -132,22 +131,13 @@ ms.locfileid: "22915737"
 |:-----|:-----|
 |[![Microsoft 混合云模型的缩略图](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [文章](https://technet.microsoft.com/library/mt750500.aspx) <br/>[更多语言](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | 此模型包含以下页面： <ul><li> **混合云概述**：Microsoft 云产品/服务（SaaS、Azure PaaS 和 Azure IaaS）及其常见元素。 </li><li> **Microsoft 混合云方案体系结构**：Microsoft 云产品/服务的混合云体系结构图，显示本地基础结构、网络和标识的公用层。 </li><li> **Microsoft SaaS (Office 365) 混合云方案**：Skype for Business、SharePoint Server 和 Exchange Server 的 SaaS 混合方案体系结构和关键混合配置说明。 </li><li> **Azure PaaS 混合云方案**：Azure PaaS 混合方案体系结构、Azure PaaS 混合应用说明（包含示例）以及 SQL Server 2016 Stretch Database 说明。 </li><li> **Azure IaaS 混合云方案**：Azure IaaS 混合方案体系结构和托管在 Azure IaaS 中的业务线 (LOB) 应用的说明。 </li></ul><br/>|
    
-<a name="contoso"> </a>
-### <a name="contoso-in-the-microsoft-cloud"></a>Microsoft 云中的 Contoso
-
-虚构但具有代表性的全局组织如何实现 Microsoft 的云产品/服务，包括 Office 365、Azure、Dynamics 365 和 Intune。
-  
-|**项**|**说明**|
-|:-----|:-----|
-|[![Microsoft 云中的 Contoso 海报缩略图。](media/63077617-b8f2-45b6-b772-bad6cd98721d.png)          ](https://www.microsoft.com/download/details.aspx?id=54427) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)           \| [文章](https://technet.microsoft.com/library/mt775341.aspx) <br/>[更多语言](https://www.microsoft.com/download/details.aspx?id=54427) <br/> |此模型包含： <ul><li>Contoso Corporation 概述 </li><li>Contoso 的 IT 基础结构和需求 </li><li>Contoso 的云网络</li><li>Contoso 的云标识</li><li>Contoso 的订阅、许可证和用户帐户</li><li>Contoso 的云安全性</li><li>Contoso 的企业云方案</li></ul> <br/>|
-   
 <a name="attacks"> </a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>常见攻击和保护组织的 Microsoft 功能
 了解最常见的网络攻击以及 Microsoft 在攻击的每个阶段如何帮助组织。 
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![常见攻击海报缩略图。](media/common%20attacks-thumb3.png)](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) </br> | 该海报展示了常见攻击的路径，并说明了哪些功能有助于在攻击的每个阶段阻止攻击者。 <br/>|
+|[![常见攻击海报缩略图。](media/common%20attacks-thumb3.png)](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | 该海报展示了常见攻击的路径，并说明了哪些功能有助于在攻击的每个阶段阻止攻击者。 <br/>|
 
 
 <a name="santa"> </a>

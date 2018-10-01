@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5f434fef42777034d32970dd55e15be35b76961e
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915197"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022071"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -180,7 +180,3 @@ Office 365 管理中心将 Office 365 订阅的组织和 Azure AD 租户分配�
   
 [混合解决方案](hybrid-solutions.md)
   
-[Contoso Corporation 的订阅、许可证和用户帐户](subscriptions-licenses-and-user-accounts-for-the-contoso-corporation.md)
-
-
-
