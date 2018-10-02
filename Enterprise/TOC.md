@@ -36,6 +36,10 @@
 ### [适用于 Office 365 的 Azure ExpressRoute](azure-expressroute.md)
 ### [如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](modern-auth-for-office-2013-and-2016.md)
 ### [Office 365 租户间协作](office-365-inter-tenant-collaboration.md)
+## Office 365 客户端支持
+### [条件访问](office-365-client-support-conditional-access.md)
+### [移动应用管理](office-365-client-support-mobile-application-management.md)
+### [现代身份验证](office-365-client-support-modern-authentication.md)
 ## 混合选项
 ### [Skype for Business Server 和 Exchange Server 的混合新式验证和先决条件](hybrid-modern-auth-overview.md)
 ### [如何配置本地 Exchange Server 以使用混合新式验证](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -169,6 +173,8 @@
 ### [使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
 ### [调整 Exchange Online 性能](tune-exchange-online-performance.md)
 ### [调整 SharePoint Online 性能](tune-sharepoint-online-performance.md)
+#### [SharePoint Online 性能调整简介](introduction-to-performance-tuning-for-sharepoint-online.md)
+#### [诊断 SharePoint Online 的性能问题](diagnosing-performance-issues-with-sharepoint-online.md)
 ### [优化业务联机性能 Skype](tune-skype-for-business-online-performance.md)
 ### [调整 Project Online 的性能](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 ### [Office 365 的性能疑难解答计划](performance-troubleshooting-plan.md)
