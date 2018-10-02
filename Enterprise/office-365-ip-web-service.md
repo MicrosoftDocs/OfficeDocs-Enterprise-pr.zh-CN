@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 为了帮助你更好地标识和区分 Office 365 网络流量，我们推出了一项用于发布 Office 365 终结点的新 Web 服务，以方便你更轻松地评估、配置并掌握最新变更。这项新 Web 服务取代了目前可用的 XML 可下载文件。
-ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
+ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831897"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24961821"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP 地址和 URL Web 服务**
 
@@ -183,7 +183,7 @@ Worldwide,2018063000
 - tcpPorts - 终结点集的 TCP 端口。所有端口元素都格式化为端口的逗号分隔列表，或用短划线字符 (-) 分隔的端口范围。端口适用于相应类别的特定终结点集中的所有 IP 地址和所有 URL。若为空白，将省略此元素。
 - udpPorts - 此终结点集中 IP 地址范围的 UDP 端口。若为空白，将省略此元素。
 - ips - 与此终结点关联的 IP 地址范围，设置为与列出的 TCP 或 UDP 端口关联。IP 地址范围的 JSON 数组。若为空白，将省略此元素。
-- category - 终结点集的连接类别。有效值为 Optimize、Allow 和 Default。此为必需元素。
+- category - 端点集的连接类别。有效值为 Optimize、Allow 和 Default。如果使用端点数据搜索某个类别的 IP 地址或 URL，查询可能会返回多个类别。出现这种情况的原因有多种。此时，你应该遵循针对最高优先级类别的建议。例如，如果既有 Optimize 类别又有 Allow 类别的端点，则应遵循针对 Optimize 的要求。必须提供。 
 - expressRoute - True 或 False，表示此终结点集是否通过 ExpressRoute 进行路由。
 - required - 如果此终结点集必须有连接才能支持 Office 365，则为 True。如果此终结点集是可选的，则为 false。
 - notes - 对于可选终结点，此文本描述了无法在网络层访问此终结点集中 IP 地址或 URL 的情况下缺少的 Office 365 功能。若为空白，将省略此元素。

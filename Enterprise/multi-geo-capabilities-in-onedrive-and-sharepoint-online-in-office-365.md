@@ -12,15 +12,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 使用 OneDrive 和 SharePoint Online 中的多地理位置功能将 Office 365 的状态扩展到多个地理位置区域。
-ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
+ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24012732"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Office 365 的 OneDrive 和 SharePoint Online 中的多地理位置功能
 
-借助 OneDrive 和 SharePoint Online 中的多地理位置功能，你的组织可以将其 Office 365 的状态扩展到现有租户内的多个地理区域和/或国家/地区。请联系你的 Microsoft 帐户团队，为你的跨国公司注册 OneDrive for Business 多地理位置。
+借助 OneDrive 和 SharePoint Online 中的多地理位置功能，你的组织可以将其 Office 365 的存在范围扩展到现有租户内的多个地理区域和/或国家/地区。请联系你的 Microsoft 帐户团队，为你的跨国公司注册 OneDrive for Business 多地理位置。
   
 通过 OneDrive 多地理位置，你可以在选择的地理位置中预配和存储静态数据，以满足数据驻留要求，与此同时，开启面向员工的现代生产力体验的全球推广。
   
@@ -69,6 +70,8 @@ ms.lasthandoff: 04/27/2018
 - 加拿大
     
 - 欧盟 (EMEA)
+
+- 法国
     
 - 日本
     
@@ -80,7 +83,6 @@ ms.lasthandoff: 04/27/2018
       
 即将新增的地理位置：
   
-- 法国
 - 印度
     
 ## <a name="getting-started"></a>入门
