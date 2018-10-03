@@ -3,7 +3,7 @@ title: 数据移动期间和数据移动之后
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是对最终用户影响最小的后端操作。Microsoft 会到新的数据中心按地理为您的租户中移动的每个服务和关联的数据时，不不需要任何操作。出现在后台提前和最小的影响用户数据传输和验证。
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975170"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361500"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -34,7 +34,7 @@ ms.locfileid: "23975170"
 |澳大利亚，新西兰，斐济  <br/> |2017 年 10 月 31 日  <br/> |
 |日本  <br/> |2018 年 10 月 31 日  <br/> |
 |印度  <br/> |2018 年 10 月 31 日  <br/> |
-|加拿大  <br/> |2018 年 10 月 31 日  <br/> |
+|加拿大  <br/> |2019 年 6 月 30日，  <br/> |
 |韩国  <br/> |2018 年 10 月 31 日  <br/> |
 |英国  <br/> |2019 年 9 月 15日，  <br/> |
 |法国  <br/> |于 2020 2020年 9 月 15日日  <br/> |
