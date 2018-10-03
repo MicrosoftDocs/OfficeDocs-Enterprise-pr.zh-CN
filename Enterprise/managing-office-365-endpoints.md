@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些网络旨在限制访问到 internet，以确保像这些可以访问 Office 365 的网络和代理管理员需要管理的 Fqdn，Url、 列表和 IP 地址的网络上的计算机组成的 Office 365 终结点列表。要添加到代理服务器或防火墙规则和 PAC 文件，以确保网络请求这些需要是能够访问 Office 365。
-ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: a1a658ff04bc7306cb953477798d3e32d894d695
+ms.sourcegitcommit: 854653f927c9515024a1c9e0a86fd5f2fadb92f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831917"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25359494"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -42,7 +42,7 @@ ms.locfileid: "23831917"
   
 ## <a name="update-your-firewalls-outbound-allow-lists"></a>更新您的防火墙的出站允许列表
 
-您可以通过发送所有受信任的 Office 365 网络请求直接通过防火墙、 绕过所有其他数据包级别检查或处理优化您的网络。这会减少从延迟性能太慢，并减少外围容量要求。选择要信任的网络请求的最简单方式是使用我们在上面**代理**选项卡上的预建的 PAC 文件。 
+您可以通过发送所有受信任的 Office 365 网络请求直接通过防火墙、 绕过所有其他数据包级别检查或处理优化您的网络。这会减少从延迟性能太慢，并减少外围容量要求。选择要信任的网络请求的最简单方式是使用我们的[预建的 PAC 文件](managing-office-365-endpoints.md#pacfiles)。 
   
 如果您的防火墙块出站通信中，您需要确保的所有 IP 和 Fqdn 作为此[XML 文件](https://go.microsoft.com/fwlink/?LinkId=533185)中的**所需**列出位于允许列表。识别所有服务都需要使用一些第三方服务。我们不提供的证书提供商，内容交付网络，DNS 提供程序，如这些第三方服务的 IP 地址等等。获得完整的 Office 365 功能，您必须能够访问请求的 Office 365，无论多少信息我们发布目标的所有目标。 
   
@@ -890,9 +890,9 @@ Office 365 是一套函数构建通过 internet 的服务、 可靠性和可用�
 
 [Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)
 
-[Microsoft Azure 数据中心 IP 地址范围](https://www.microsoft.com/download/details.aspx?id=41653)
+[Microsoft Azure 数据中心 IP 范围](https://www.microsoft.com/download/details.aspx?id=41653)
   
-[Microsoft 公用 IP 空间](https://www.microsoft.com/download/details.aspx?id=53602)
+[Microsoft 公共 IP 空间](https://www.microsoft.com/download/details.aspx?id=53602)
   
 [Microsoft Intune 的网络基础结构要求](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
