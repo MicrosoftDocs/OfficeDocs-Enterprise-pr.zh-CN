@@ -3,7 +3,7 @@ title: 规划从 Office 2007 或 2010年服务器和客户端升级
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/8/2018
+ms.date: 10/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: 它是规划您从早期版本的 Office 产品和服务器的升级的时间。使用这些资源以开始使用您的计划。
-ms.openlocfilehash: ea5af6a91a0977016eb9c90f7b1acb2def1dbd2f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: 如果您使用的 Office 2007 或 Office 2010，则时间来规划您的升级。使用这些资源以开始使用您的计划。
+ms.openlocfilehash: a8d3c0aad4499e37e4fc0c36412c6830d5df4941
+ms.sourcegitcommit: 57deed1be7cd66528f39eb2504b9a271d3f6dfb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915157"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363165"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 Office 2010 的服务器和客户端升级
 
@@ -54,9 +54,11 @@ ms.locfileid: "22915157"
 
 如果您使用的 Office 2007 或 Office 2010 在家，请考虑以下选项：
 
+- **使用 Office Online 的忙**。创建、 查看和编辑 Office 文件在浏览器中，和从具有 internet 访问权限的任何设备有权访问这些文件。[Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)包括[Word Online](http://go.microsoft.com/fwlink/p/?linkid=746664)、 [Excel Online](http://go.microsoft.com/fwlink/p/?linkid=746665)、[联机 PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666)、 [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674)、 [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675)、[电子邮件](http://go.microsoft.com/fwlink/p/?linkid=746676)、[日历](http://go.microsoft.com/fwlink/p/?linkid=746678)和[OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)。若要开始，请访问[office.com](https://office.com) ，并使用您的 Microsoft 帐户登录。（如果您没有 Microsoft 帐户，您可以创建一个在 office.com 上。）
+
 - **供家庭使用试用 Office 365**。[Office 365 家庭](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm)或[Office 365 个人](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)订阅之间进行选择。和注册试用。注册，并在 Windows 或 Mac 计算机、 您 iOS 或 Android 智能手机，和您 iOS 或 Android 平板电脑上安装 Office 的最新版本。与 Office 365 将享受 OneDrive 云存储，您将获取移动 Skype 调用的 60 分钟和固定电话号码，每月以及您将获取很多其他重要的功能。[请参阅 Office 365 计划和定价的主页](https://products.office.com/explore-office-for-home)。
     
-- **购买 Office 主页&amp;学生 2016年**。如果选择此选项，您将进行一次性购买，然后安装[Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc)或[Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac)上的 Office 2016。 
+- **购买 Office 主页&amp;学生 2016年**。如果选择此选项，您将进行一次性购买，然后安装[Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc)或[Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac)上的 Office 2016。这不是订阅;它是一台计算机的一次性、 永久使用许可证。
 
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>如果不升级，则会发生什么情况？
