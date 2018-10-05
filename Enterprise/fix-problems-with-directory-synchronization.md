@@ -15,12 +15,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍 Office 365 中目录同步问题的常见原因并提供一些方法，以帮助用户排除和解决这些问题。
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539604"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405125"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>修复 Office 365 的目录同步问题
 
@@ -63,7 +63,7 @@ ms.locfileid: "22539604"
 - [目录同步到 Azure Active Directory 停止或您正在同步不起作用注册多个一天中收到警告](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**密码哈希值不同步，或我能看到不起作用已最新的密码哈希同步在 Office 365 管理中心内通知**
-- [实现与 Azure AD 连接同步的密码哈希同步](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [实现与 Azure AD 连接同步的密码哈希同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**我能看到一条警报，超出对象配额**
 - 我们有内置对象配额以帮助保护本服务。如果您有太多的对象，您需要同步到 Office 365 的目录中，您必须对[业务产品支持的联系人](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)以增加配额。
