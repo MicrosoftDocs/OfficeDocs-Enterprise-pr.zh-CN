@@ -3,7 +3,7 @@ title: Office 365 服务中的 IPv6 支持
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/12/2017
+ms.date: 10/10/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 摘要： 介绍了在 Microsoft Office 365 组件和 Office 365 政府版产品中的 IPv6 支持。
-ms.openlocfilehash: 74752988803728ef4c319e368150b90f7e5d2599
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
+ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223124"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25493827"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 服务中的 IPv6 支持
 
@@ -79,7 +79,9 @@ Office 365 政府版产品的 IPv6 支持符合 Office 的管理和预算 (OMB) 
 
 - IPv6 不支持 BlackBerry® Enterprise Server (BES)，因为 BlackBerry 不支持 IPv6。
 
-这是一个简短的链接，您可以使用回来：[https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+- 如果您使用 Office 365 使用 Active Directory 联合身份验证服务 (AD FS)，播发到 Office 365 您 AD FS 网络终结点使用 IPv6 不支持。使用 Exchange Online 时，不应在 AD FS DNS 条目中包括 AAAA 记录。 
+
+以下是可以用于返回的简短链接：[https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>另请参阅
 
