@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online 中的多地理位置功能的多个地理区域中展开 Office 365 状态。
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914777"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498222"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -52,7 +52,7 @@ Office 365 中的多地理位置功能启用单个租户跨多个地理位置 (G
 - 美国
 
 ## <a name="prerequisite-configuration"></a>必备组件配置
-然后才能开始联机 Exchange 中使用多地理位置功能 Microsoft 需要配置您的 Exchange Online 租户多地理支持。排序多地理位置和许可证显示在我们租户后，将触发本一次性配置进程。此一次性配置过程通常应小于 30 天才能完成。
+然后才能开始联机 Exchange 中使用多地理位置功能 Microsoft 需要配置您的 Exchange Online 租户多地理支持。排序多地理位置和许可证显示在您的租户后，将触发本一次性配置进程。此一次性配置过程通常应小于 30 天才能完成。顺序多地理位置，请与 Microsoft 代表联系。有关详细信息，请参阅https://aka.ms/Multi-Geo。
 
 完成您的配置后，您将在[Office 365 邮件中心](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093)收到通知。配置自动触发后多地理许可证显示在您的租户。
 
@@ -146,7 +146,7 @@ AAD 连接版本 1.1.524.0 或更高版本用于从内部部署 Active Directory
 Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table
 ```
 
-命令输出如下所示：
+此命令的输出如下所示：
 
 ```
 APC
@@ -167,7 +167,7 @@ NAM
 Get-OrganizationConfig | Select DefaultMailboxRegion
 ```
 
-命令输出如下所示：
+此命令的输出如下所示：
 
 ```
 DefaultMailboxRegion
@@ -197,7 +197,7 @@ Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
 ```
 
-命令输出如下所示：
+此命令的输出如下所示：
 
 ```
 Database                    : EURPR03DG077-db007 
@@ -222,7 +222,7 @@ Get-MsolUser -UserPrincipalName <UserPrincipalName> | Format-List UserPrincipalN
 Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
 ```
 
-命令输出如下所示：
+此命令的输出如下所示：
 
 ```
 UserPrincipalName     : michelle@contoso.onmicrosoft.com
