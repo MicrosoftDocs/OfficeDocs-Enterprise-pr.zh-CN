@@ -12,15 +12,16 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 摘要：使用适用于 Office 365 的 Windows PowerShell 管理客户租赁。
-ms.openlocfilehash: f4c6f1a0275e9b483a30b31564426b62241029bf
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 86bf5f10862c7eb3f3b9e17e9d8431bb0602a090
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498242"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴管理 Office 365 租户
 
- **摘要：**使用适用于 Office 365 的 Windows PowerShell 管理客户租赁。
+ **摘要：** 使用适用于 Office 365 的 Windows PowerShell 管理客户租赁。
   
 Windows PowerShell 允许 联合和云解决方案提供商 (CSP) 合作伙伴 轻松地管理和报告 Office 365 管理中心中不可用的客户租赁设置。请注意，合作伙伴管理员帐户要连接到其客户租赁，需要代表以下方管理 (AOBO) 权限。
   
@@ -41,7 +42,7 @@ Windows PowerShell 允许 联合和云解决方案提供商 (CSP) 合作伙伴 �
 若要列出您有权访问的所有客户租户 ID，请运行此命令。
   
 ```
-Get-MsolPartnerContract -All | Select-Object -TenantId
+Get-MsolPartnerContract -All | Select-Object TenantId
 ```
 
 这将按 **TenantId** 列出所有客户租户。
@@ -51,7 +52,7 @@ Get-MsolPartnerContract -All | Select-Object -TenantId
 要按域名获取特定客户租户的 **TenantId** ，请运行此命令。将 _<domainname.onmicrosoft.com>_ 替换为您需要的客户租户的实际域名。
   
 ```
-Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object -TenantId
+Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object TenantId
 ```
 
 ### <a name="list-all-domains-for-a-tenant"></a>列出租户的所有域
