@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要： 将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。
-ms.openlocfilehash: b4d7b163bfba433196f46046030078c5559c4459
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 44f00364d1f81633e06663770f32e0c9f9e99ed8
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915827"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575256"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
@@ -33,7 +33,7 @@ ms.locfileid: "22915827"
   
 这不是最佳用于管理 Office 365，因为您不能跨服务管理这些五个窗口之间进行数据交换。本主题介绍如何使用 Windows PowerShell 从其管理 Office 365、 业务联机状态，Exchange Online 中，SharePoint online，Skype 和安全性的单个实例&amp;合规性中心。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 您可以从 Windows PowerShell 的单个实例来管理所有 Office 365 之前，请考虑以下先决条件：
   
@@ -44,6 +44,8 @@ ms.locfileid: "22915827"
   - Windows 10
     
   - Windows 8.1 或 Windows 8
+    
+  - Windows Server 2019
     
   - Windows Server 2016
     
@@ -125,7 +127,7 @@ ms.locfileid: "22915827"
 以下在一个块是所有命令时使用 Azure Active Directory PowerShell 图模块。指定您的域主机的名称，然后一次运行所有这些。
   
 ```
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -142,7 +144,7 @@ Import-PSSession $SccSession -Prefix cc
 另外，以下是所有命令在一个块时使用的 Microsoft Azure Active Directory 模块用于 Windows PowerShell 模块。指定您的域主机的名称，然后一次运行所有这些。
   
 ```
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-MsolService -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -168,7 +170,7 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 
 ````
 $acctName="<UPN of a global administrator account>"
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-AzureAD
 #SharePoint Online
@@ -182,7 +184,7 @@ Import-PSSession $sfboSession
 
 ````
 $acctName="<UPN of a global administrator account>"
-$domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
+$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-MsolService
 #SharePoint Online
