@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 摘要： 连接到 Office 365 组织使用 Office 365 PowerShell 从命令行执行 admin center 任务。
-ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575276"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601636"
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
@@ -89,6 +89,10 @@ Connect-AzureAD
 **登录到您的帐户**对话框中，键入您的 Office 365 工作或学校帐户的用户名和密码，，然后单击**确定**。
 
 如果您使用 MFA，请按照其他对话框中的说明提供身份验证中的详细信息，如验证代码。
+
+>[!Tip]
+>若要连接到 Office 365 德国，请参阅[连接到使用 PowerShell 的 Azure 德国](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)。
+>
     
 连接后，可以为[Azure Active Directory PowerShell for 图模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用的新 cmdlet。
   
@@ -122,6 +126,9 @@ Connect-MsolService
 
 如果您使用 MFA，请按照其他对话框中的说明提供身份验证中的详细信息，如验证代码。
 
+>[!Tip]
+>若要连接到 Office 365 德国，请参阅[连接到使用 PowerShell 的 Azure 德国](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)。
+>
     
 ### <a name="how-do-you-know-this-worked"></a>怎样才能知道这是否已正常工作？
 
