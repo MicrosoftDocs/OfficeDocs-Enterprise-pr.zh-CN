@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Office 365 中管理用户标识。
-ms.openlocfilehash: 0fb6e77aef4495b2284256c13cb21320e6292746
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 14d1ec8a3ebc4620a72f831c0ec80253f7b3072c
+ms.sourcegitcommit: dcb57859ad40090cf70586ac350472eb0fc8d9c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914977"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25639631"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>了解 Office 365 标识和 Azure Active Directory
 
@@ -53,7 +53,7 @@ Office 365 使用的基于云的用户标识和身份验证服务 Azure Active D
   
 ### <a name="pass-through-authentication-with-seamless-single-sign-on"></a>传递身份验证与无缝单一登录
 
-提供使用一个或多个本地服务器上运行的软件代理来验证直接与您的本地 Active Directory 用户的 Azure AD 身份验证服务的简单密码验证。使用传递身份验证 (PTA)，您可以与 Office 365 同步的本地 Active Directory 用户帐户对象和管理用户内部部署。允许用户登录到同时在本地和 Office 365 资源和应用程序使用其内部部署帐户和密码。此配置验证直接针对您的本地 Active Directory 用户的密码，而不发送到 Office 365 密码哈希值。立即强制在本地用户帐户的安全要求的公司状态，密码策略和登录时间会使用此身份验证方法。与无缝单一登录，用户将自动登录到 Azure AD 他们在其企业设备并连接到企业网络。
+提供使用一个或多个本地服务器上运行的软件代理来验证直接与您的本地 Active Directory 用户的 Azure AD 身份验证服务的简单密码验证。使用传递身份验证 (PTA)，您可以与 Office 365 同步的本地 Active Directory 用户帐户对象和管理用户内部部署。允许用户登录到同时在本地和 Office 365 资源和应用程序使用其内部部署帐户和密码。此配置而不发送到 Office 365 密码哈希验证直接针对您的本地 Active Directory 的用户密码。立即强制在本地用户帐户的安全要求的公司状态，密码策略和登录时间会使用此身份验证方法。与无缝单一登录，用户将自动登录到 Azure AD 他们在其企业设备并连接到企业网络。
   
 了解有关[选择传递身份验证](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)和[无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)的详细信息。
   
