@@ -15,16 +15,16 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 有些企业网络限制到泛型 internet 位置的访问或包括大量将或网络流量的处理。若要确保像这些可以访问 Office 365，网络和代理管理员需要管理的 Fqdn，Url、 列表和 IP 地址的网络上的计算机组成的 Office 365 终结点列表。要添加到直接路由、 代理绕过和/或防火墙规则和 PAC 文件，以确保网络请求是能够访问 Office 365 这些需要。
-ms.openlocfilehash: a240e3deea512dacd70b377b3d47a7b6f49a235c
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 480d2fa1b55507187f9150d02907849178a451b5
+ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719016"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
-具有多个 office 位置和 WAN 连接的大多数企业组织需要需要具有 Office 365 网络连接的配置。您可以通过发送所有受信任的 Office 365 网络请求直接通过防火墙、 绕过所有其他数据包级别检查或处理优化您的网络。这会减少了延迟，并减少外围容量要求。确定 Office 365 网络流量是提供最佳性能，为您的 Office 365 用户的第一步。有关 Office 365 网络连接的详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)
+具有多个 office 位置和 WAN 连接的大多数企业组织需要需要配置的 Office 365 网络连接。您可以通过发送所有受信任的 Office 365 网络请求直接通过防火墙、 绕过所有其他数据包级别检查或处理优化您的网络。这会减少延迟和外围容量要求。确定 Office 365 网络流量是提供最佳性能，为您的用户的第一步。有关 Office 365 网络连接的详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)
 
 Microsoft 建议您访问 Office 365 网络终结点和对其使用[Office 365 IP 地址和 Web 服务 URL](office-365-ip-web-service.md)的更改
 
@@ -34,33 +34,33 @@ Microsoft 建议您访问 Office 365 网络终结点和对其使用[Office 365 I
 
 ## <a name="sdwan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>重要 Office 365 网络流量的本地分支出口的 SDWAN
 
-在每个分支机构位置，您可以为 Office 365 优化类别或优化到路由 IP 地址提供配置 SDWAN 设备，并允许类别，直接向 Microsoft 的网络。包括本地 datacenter 流量、 通用 internet 网站通信和 Office 365 默认类别流量其他网络流量发送给您有更大的网络外围的另一个位置。 
+在每个分支机构位置，您可以提供配置路由流量的终结点或优化 Office 365 优化类别，并允许类别，直接向 Microsoft 的网络 SDWAN 设备。包括本地 datacenter 流量、 常规 Internet 网站流量和到 Office 365 默认类别终结点的流量其他网络流量发送给您有更大的网络外围的另一个位置。
 
-Microsoft 正在与 SDWAN 提供程序，以启用自动的配置。您可以阅读有关[Office 365 网络合作伙伴计划](office-365-networking-partner-program.md)进一步
+Microsoft 正在与 SDWAN 提供程序，以启用自动的配置。有关详细信息，请参阅[Office 365 网络合作伙伴计划](office-365-networking-partner-program.md)。
 
 <a name="pacfiles"> </a>
-## <a name="use-of-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>使用 PAC 文件的重要的 Office 365 流量直接路由
+## <a name="use-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>用于 PAC 文件的重要的 Office 365 流量直接路由
 
-使用 PAC 或 WPAD 文件管理网络请求与 Office 365 相关联，但不具有提供的 IP 地址。通过代理服务器或外围设备发送的典型网络请求会引发其他延迟。时 SSL 中断和检查产生最大税费，如代理身份验证和声誉查找其他服务可能会导致不佳的用户体验。此外，这些外围网络设备需要足够的容量来处理的所有网络连接请求。我们建议绕过代理服务器或检查基础结构的直接 Office 365 网络请求。
+使用 PAC 或 WPAD 文件管理网络请求与 Office 365 相关联，但不具有一个 IP 地址。通过代理服务器或外围设备发送的典型网络请求增加延迟。SSL 中断和检查创建的最大延迟，而其他服务如代理身份验证和声誉查找可能会导致性能不佳和错误的用户体验。此外，这些外围网络设备需要足够的容量来处理的所有网络连接请求。我们建议绕过代理服务器或检查设备的直接 Office 365 网络请求。
   
-[PowerShell 库 Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile)的 PowerShell 脚本的 web services 中读取的最新的网络终结点，并创建示例 PAC 文件。 
+[PowerShell 库 Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile)是从 Office 365 IP 地址和 URL Web 服务中读取的最新的网络终结点，并创建一个示例 PAC 文件的 PowerShell 脚本。您可以修改该脚本，以便它可以与您现有的 PAC 文件管理集成。 
 
-一旦您下载此脚本，可用于生成 PAC 文件。以便它可以与您现有的 PAC 文件管理集成，还可以修改该脚本。 
+![通过防火墙和代理连接到 Office 365。](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
-![通过防火墙和代理连接到 Office 365。](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)图 1-简单企业网络外围
+**图 1-简单企业网络外围**
 
-PAC 文件部署到在图 1 中的点 (1) 的计算机。使用重要的 Office 365 网络流量的直接出口 PAC 文件，还需要在网络外围防火墙上允许连接到这些 Url 后面的 IP 地址。这通过获取 PAC 文件中的指定相同 Office 365 终结点类别的 IP 地址和创建防火墙 Acl 基于这些地址。如图 1 中指向 (3)，将显示在防火墙。 
+PAC 文件部署到 web 浏览器在图 1 中的点 1。使用重要的 Office 365 网络流量的直接出口 PAC 文件，还需要在网络外围防火墙上允许连接到这些 Url 后面的 IP 地址。这通过获取 PAC 文件中的指定相同 Office 365 终结点类别的 IP 地址和创建防火墙 Acl 基于这些地址。防火墙是图 1 中的点 3。 
 
-单独如果您选择仅执行直接路由的网络通信优化类别终结点发送到代理服务器的类别终结点时所需的代理服务器，以绕过进一步处理列出任何所需允许的路由。例如，SSL 中断检查和代理身份验证与不兼容的优化和允许类别终结点。如图 1 中点 (2)，将显示代理服务器。
+单独如果您选择仅执行直接路由优化类别终结点发送到代理服务器的类别终结点时所需的代理服务器，以绕过进一步处理列出任何所需允许。例如，SSL 中断检查和代理身份验证与不兼容的优化和允许类别终结点。代理服务器就是图 1 中的点 2。
 
-常见配置是以便点击代理服务器的 Office 365 网络流量的目标 IP 地址，则不需要代理服务器允许所有出站通信。阅读有关 SSL 中断与在[使用第三方网络设备或在 Office 365 通信解决方案](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)检查问题。
+常见配置是允许不处理来自点击代理服务器的 Office 365 网络流量的目标 IP 地址的代理服务器的所有出站通信。有关 SSL 中断和检查问题的信息，请参阅[使用第三方网络设备或在 Office 365 通信解决方案](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)。
 
 有两种类型的 Get PacFile 脚本将生成的 PAC 文件。
 
 |**类型**|**说明**|
 |:-----|:-----|
-|**1** <br/> |将优化终结点通信直接和所有其他人发送到的代理服务器。 <br/> |
-|**2** <br/> |发送优化和允许终结点流量直接和所有其他代理服务器。此外可以用于发送所有支持 ExpressRoute ExpressRoute 网络段和所有其他代理服务器的 Office 365 流量。 <br/> |
+|**1** <br/> |将优化终结点流量直接和其他内容发送到的代理服务器。 <br/> |
+|**2** <br/> |将优化和允许直接的终结点流量以及所有其他人发送到的代理服务器。此类型还可以用于发送所有支持 ExpressRoute ExpressRoute 网段的 Office 365 流量以及所有其他代理服务器。 <br/> |
 
 下面是调用 PowerShell 脚本的简单示例：
 
@@ -72,12 +72,12 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 |**参数**|**说明**|
 |:-----|:-----|
-|**ClientRequestId** <br/> |这是必需的和 GUID 传递到 web 服务值，该值代表发起呼叫的客户端计算机 <br/> |
-|**Instance** <br/> |Office 365 服务实例，它默认为全球。也将传递到 web 服务 <br/> |
-|**TenantName** <br/> |您的 Office 365 租户名称。传递给 web 服务并用作某些 Office 365 Url 中的可替换参数 <br/> |
-|**类型** <br/> |您想要生成的代理 PAC 文件类型 <br/> |
+|**ClientRequestId** <br/> |这是必需的和 GUID 传递到 web 服务值，该值代表发起呼叫的客户端计算机。 <br/> |
+|**Instance** <br/> |Office 365 服务实例，它默认为全球。也将传递到 web 服务。 <br/> |
+|**TenantName** <br/> |您的 Office 365 租户名称。传递给 web 服务并用作某些 Office 365 Url 中的可替换参数。 <br/> |
+|**类型** <br/> |您想要生成的代理 PAC 文件类型。 <br/> |
 
-下面是调用带有其他参数的 PowerShell 脚本的另一个示例：
+下面是调用带有其他参数的 PowerShell 脚本的另一个示例。
 
 ```
 Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 
@@ -85,32 +85,34 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 ## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>代理服务器绕过的 Office 365 网络流量的处理 
 
-其中 PAC 文件未用于直接出站流量，仍然需要通过配置您的代理服务器旁路在外围网络上的处理。[Office 365 网络合作伙伴计划](office-365-networking-partner-program.md)中所述，某些代理服务器供应商已启用此自动的配置。如果手动执行这需要获得优化和允许来自 Office 365 IP 地址和 URL Web 服务的终结点类别终结点数据代理服务器配置为绕过处理这些。非常重要的优化避免 SSL 中断和检查和代理服务器身份验证并允许类别终结点。 
+其中 PAC 文件未用于直接出站流量，仍要绕过通过配置您的代理服务器的外围网络上的处理。[Office 365 网络合作伙伴计划](office-365-networking-partner-program.md)中所述，某些代理服务器供应商已启用此自动的配置。 
+
+如果手动执行这需要获得优化和允许来自 Office 365 IP 地址和 URL Web 服务的终结点类别数据代理服务器配置为绕过处理这些。非常重要的优化避免 SSL 中断和检查和代理服务器身份验证并允许类别终结点。 
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>变更管理 Office 365 IP 地址和 Url
 
-除了选择适当配置网络外围，很重要，采用更改管理过程的 Office 365 终结点。定期更改这些终结点，并且如果您不能管理所做的更改您可以结尾阻止用户或性能不佳后一个新的 IP 地址或 URL 添加。 
+除了选择适当配置网络外围，很重要，采用更改管理过程的 Office 365 终结点。定期更改这些终结点，如果您不管理所做的更改，您可以结尾阻止用户或性能不佳后一个新的 IP 地址或 URL 添加。 
 
 每月的最后一天附近通常发布到 Office 365 IP 地址和 Url 的更改。有时发生的更改将发布该由于操作的计划、 支持或安全要求之外。
 
-发布更改时，需要执行操作，因为已添加的 IP 地址或 URL，您应该会接收来自我们之前没有 live Office 365 服务的终结点上发布更改的时间 30 天通知。尽管此通知周期的目的是 Microsoft，它始终可能不可能由于操作、 支持或安全要求。不需要立即操作维护连接，例如更改删除 IP 地址或 Url 或更少的重大更改，不包括提前通知。提供了哪些通知，则无论我们将列出每次更改的预期的服务活动日期。
+发布更改时，需要执行操作，因为已添加的 IP 地址或 URL，您应该会收到 30 天通知从该终结点上的 Office 365 服务之前，我们发布更改的时间。虽然我们的目标此通知段，它始终可能不可能由于操作、 支持或安全要求。不需要立即操作维护连接，例如更改删除 IP 地址或 Url 或更少的重大更改，不包括提前通知。提供了哪些通知，则无论我们列出每次更改的预期的服务活动日期。
 
-### <a name="change-notification-using-web-services"></a>使用 web 服务的更改通知
+### <a name="change-notification-using-the-web-service"></a>使用 Web 服务的更改通知
 
-您可以使用 Office 365 IP 地址和 URL Web 服务，以使更改通知。我们建议您调用 /version web 方法每小时一次以检查要用于连接到 Office 365 的终结点的版本。如果已在使用中的版本相比，此版本发生更改，您应从 /endpoints web 方法获取最新的终结点数据和 （可选） 获得差异 /changes web 方法。不需要调用 /endpoints 或 /changes web 方法，如果已对您找到的版本的任何更改。 
+您可以使用 Office 365 IP 地址和 URL Web 服务获取更改通知。我们建议您调用 **/version** web 方法每小时一次以检查要用于连接到 Office 365 的终结点的版本。如果已在使用中的版本相比，此版本发生更改，您应从 **/endpoints** web 方法获取最新的终结点数据和 （可选） 从 **/changes** web 方法获取差异。不需要调用 **/endpoints**或 **/changes** web 方法，如果已对您找到的版本的任何更改。 
 
-有关详细信息，请参阅[Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)。
+有关详细信息，请参阅[Office 365 IP 地址和 Web 服务 URL](office-365-ip-web-service.md)。
 
 ### <a name="change-notification-using-rss-feeds"></a>使用 RSS 源的更改通知
 
-Office 365 IP 地址和 URL Web 服务提供了您可以订阅在 Outlook 中的 RSS 源。有指向每个 IP 地址的 Office 365 服务实例特定页面上的 RSS Url 和 Url。RSS 源进一步[Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)中所述。
+Office 365 IP 地址和 URL Web 服务提供了您可以在 Outlook 中订阅 RSS 源。有指向每个 IP 地址的 Office 365 服务实例特定页上的 RSS Url 和 Url。有关详细信息，请参阅[Office 365 IP 地址和 Web 服务 URL](office-365-ip-web-service.md)。
 
 ### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>更改通知和审批查看使用 Microsoft 流
 
 我们知道您通过每个月的网络终结点更改可能仍然需要手动处理。Microsoft 流可用于创建通知您通过电子邮件并 （可选） 在运行更改审批过程，在 Office 365 网络终结点都发生更改时的流程。完成检查后，您可以自动电子邮件向防火墙和代理服务器管理团队的更改的流。 
 
-阅读有关 Microsoft 流示例和在[使用 Microsoft 流以接收对 Office 365 IP 地址和 Url 的更改的电子邮件](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)模板
+有关 Microsoft 流示例和模板的信息，请参阅[使用 Microsoft 流可以接收电子邮件的 Office 365 IP 地址和 Url 的更改](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Office 365 网络终结点常见问题
