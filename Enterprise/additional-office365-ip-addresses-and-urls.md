@@ -1,9 +1,9 @@
 ---
-title: Web 服务中未包含的其他 Office 365 IP 地址和 URL
+title: Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 9/13/2018
+ms.date: 10/23/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,24 +20,24 @@ search.appverid:
 - MOM160
 - BCS160
 ms.assetid: ''
-description: 摘要：新端点 Web 服务不包含特定应用场景的少量端点。
+description: 摘要：新终结点 Web 服务不包含特定应用场景的少量终结点。
 hideEdit: true
-ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
-ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
+ms.openlocfilehash: 1d551f8757464aa1336bc351de8689c103f0a54f
+ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719006"
 ---
-# <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Web 服务中未包含的其他 Office 365 IP 地址和 URL
+# <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 
-某些网络终结点以前已发布，尚未包含在 Web 服务中。Web 服务范围是跨企业外围网络从 Office 365 的最终用户进行连接所需的网络终结点。目前不包括：
+某些网络终结点以前已发布，但尚未包含在 [Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)中。Web 服务范围是跨企业外围网络从 Office 365 用户进行连接所需的网络终结点。目前不包括：
 
-1. 从 Microsoft 数据中心到客户网络可能需要的网络连接（入站混合服务器网络流量）
-2. 跨企业外围的客户网络上的服务器的网络连接（出站服务器网络流量）
-3. 来自用户的网络连接要求的不常用方案
-4. DNS 解析连接要求（未在下面列出）
-5. Internet Explorer 或 Microsoft Edge 受信任的站点
+1. 可能需要从 Microsoft 数据中心建立到客户网络的网络连接（入站混合服务器网络流量）。
+2. 跨企业外围网络从客户网络上的服务器建立的网络连接（出站服务器网络流量）。
+3. 用户的网络连接要求的不常用方案。
+4. DNS 解析连接要求（未在下面列出）。
+5. Internet Explorer 或 Microsoft Edge 受信任的站点。
 
 除了 DNS 之外，这些对于大多数客户来说都是可选的，需要所描述的特定应用场景的情况除外。
 
@@ -53,10 +53,13 @@ ms.locfileid: "23977347"
 | 7  | [Exchange 混合](https://docs.microsoft.com/exchange/exchange-deployment-assistant)代理身份验证 | 客户本地 STS | 入站服务器流量 |
 | 8  | 用于使用 Exchange 混合配置向导配置 [Exchange 混合](https://docs.microsoft.com/exchange/exchange-deployment-assistant)。 <br> 注意：这些终结点仅用于配置 Exchange 混合  | TCP 端口 80 和 443 上的 ```domains.live.com```，仅用于 Exchange 2010 SP3 混合配置向导。 | 仅出站服务器流量 |
 | 9  | AutoDetect 服务用于 [Exchange 混合](https://docs.microsoft.com/exchange/exchange-deployment-assistant)应用场景，可实现[适用于 iOS 和 Android 的 Outlook 的混合型新式验证](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | TCP 443 上的客户本地 Exchange 服务器 | 入站服务器流量 |
-| 10  | **身份验证和标识 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必须位于客户端的 Internet Explorer (IE) 或 Edge 受信任的站点区域内才能起作用。 |  | 受信任的站点 |
-| 11  |  **Microsoft Teams FQDN** <br> 如果你使用的是 Internet Explorer 或 Microsoft Edge，则需要启用第一方和第三方 Cookie，并将 Teams FQDN 添加到受信任的站点。这是除上面列出的套件级 FQDN、CDN 和遥测之外的补充内容。有关详细信息，请参阅 [ Microsoft Teams 的已知问题](https://docs.microsoft.com/microsoftteams/known-issues)。 |  | 受信任的站点 |
-| 12  |  **SharePoint Online 和 OneDrive for Business FQDN** <br> FQDN 中带有“\<tenant>”的所有“.sharepoint.com”FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。除了上面列出的套件级 FQDN、CDN 和遥测之外，还需要添加这些终结点。 |  | 受信任的站点 |
-| 13  | **Yammer**  <br> Yammer 仅在浏览器中可用，并要求经过身份验证的用户通过代理传递。所有 Yammer FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。 |  | 受信任的站点 |
+| 10  | Office 2016 中的 Skype for Business 包括使用 UDP 端口的基于视频的屏幕共享。Office 2013 和早期版本中的先前 Skype for Business 客户端使用 RDP over TCP 端口 443。 | TCP 端口 443 对 52.112.0.0/14 开放 | Office 2013 和早期版本中的 Skype for Business 早期客户端版本 |
+| 11  | Skype for Business 与 Skype for Business Online 的混合内部部署服务器连接 | 13.107.64.0/18，52.112.0.0/14 UDP 端口 50,000-59,999 <BR>  TCP 端口 50,000-59,999 | Skype for Business 内部部署服务器出站连接 |
+| 12  | 具有内部部署混合连接的云 PSTN 要求网络连接对内部部署主机开放。有关 Skype for Business Online 混合配置的更多详细信息，  | 请参阅 [Skype for Business 混合解决方案](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Skype for Business 内部部署混合入站 |
+| 13  | **身份验证和标识 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必须位于客户端的 Internet Explorer (IE) 或 Edge 受信任的站点区域内才能起作用。 |  | 受信任的站点 |
+| 14  |  **Microsoft Teams FQDN** <br> 如果你使用的是 Internet Explorer 或 Microsoft Edge，则需要启用第一方和第三方 Cookie，并将 Teams FQDN 添加到受信任的站点。这是除上面列出的套件级 FQDN、CDN 和遥测之外的补充内容。有关详细信息，请参阅 [ Microsoft Teams 的已知问题](https://docs.microsoft.com/microsoftteams/known-issues)。 |  | 受信任的站点 |
+| 15  |  **SharePoint Online 和 OneDrive for Business FQDN** <br> FQDN 中带有“\<tenant>”的所有“.sharepoint.com”FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。除了上面列出的套件级 FQDN、CDN 和遥测之外，还需要添加这些终结点。 |  | 受信任的站点 |
+| 16  | **Yammer**  <br> Yammer 仅在浏览器中可用，并要求经过身份验证的用户通过代理传递。所有 Yammer FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。 |  | 受信任的站点 |
 
 ## <a name="related-topics"></a>相关主题
 
