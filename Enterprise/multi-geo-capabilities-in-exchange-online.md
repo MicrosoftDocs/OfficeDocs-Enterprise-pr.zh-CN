@@ -10,26 +10,26 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online 中的多地理位置功能的多个地理区域中展开 Office 365 状态。
-ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
-ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
+ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498222"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849918"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
-Office 365 中的多地理位置功能启用单个租户跨多个地理位置 (Geo)。启用多地理位置后，客户可以选择基于每个用户的 Exchange Online 邮箱内容 （静态数据） 的位置。
+Office 365 中的多地理位置功能启用单个租户跨多个地理位置。启用多地理位置后，客户可以选择基于每个用户的 Exchange Online 邮箱内容 （静态数据） 的位置。
 
-基于您的付费地址确定初始租户您的位置 （称为您"default"或"管理中心"位置）。启用多地理位置后，可以将邮箱置于由的其他"附属"位置：
+基于您的付费地址确定初始租户您的位置 （称为中心位置）。启用多地理位置后，可以将邮箱置于其他附属位置的：
 
-- 直接在附属中创建新的 Exchange Online 邮箱。
+- 直接在附属位置中创建新的 Exchange Online 邮箱。
 
-- 将现有的 Exchange Online 邮箱移到附属。
+- 将现有的 Exchange Online 邮箱移到附属位置。
 
-- 加入从直接附属内部部署 Exchange 组织的邮箱。
+- 加入从直接附属位置在本地 Exchange 组织的邮箱。
 
-以下 Geo 供多地理位置配置中的使用：
+下面的地理位置供多地理位置配置中的使用：
 
 - 亚太地区
 
@@ -52,45 +52,45 @@ Office 365 中的多地理位置功能启用单个租户跨多个地理位置 (G
 - 美国
 
 ## <a name="prerequisite-configuration"></a>必备组件配置
-然后才能开始联机 Exchange 中使用多地理位置功能 Microsoft 需要配置您的 Exchange Online 租户多地理支持。排序多地理位置和许可证显示在您的租户后，将触发本一次性配置进程。此一次性配置过程通常应小于 30 天才能完成。顺序多地理位置，请与 Microsoft 代表联系。有关详细信息，请参阅https://aka.ms/Multi-Geo。
+然后才能开始联机 Exchange 中使用多地理位置功能 Microsoft 需要配置您的 Exchange Online 租户多地理支持。排序 Office 365 多地理位置和许可证显示在您的租户后，将触发本一次性配置进程。此一次性配置过程通常应小于 30 天才能完成。订购 Office 365 多地理位置，请联系 Microsoft 代表。有关详细信息，请参阅https://aka.ms/Multi-Geo。
 
 完成您的配置后，您将在[Office 365 邮件中心](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093)收到通知。配置自动触发后多地理许可证显示在您的租户。
 
 ## <a name="mailbox-placement-and-moves"></a>邮箱位置和移动
-Microsoft 完成的必备组件的多地理配置步骤之后，Exchange Online 也会授予对用户对象的**PreferredDataLocation**属性在 Azure AD。
+Microsoft 完成必备组件的多地理位置配置步骤之后，Exchange Online 也会授予对用户对象的**PreferredDataLocation**属性在 Azure AD。
 
-Exchange Online 同步到 Exchange Online 的目录服务中的**MailboxRegion**属性 Azure AD 的**PreferredDataLocation**属性。**MailboxRegion**的值确定的 Geo 放置用户邮箱和任何关联的存档邮箱。不能配置用户的主邮箱和存档邮箱驻留在不同 Geo。只有一个地理位置可以配置每个用户对象。
+Exchange Online 同步到 Exchange Online 的目录服务中的**MailboxRegion**属性 Azure AD 的**PreferredDataLocation**属性。**MailboxRegion**的值确定的 Geo 放置用户邮箱和任何关联的存档邮箱。不能配置用户的主邮箱和存档邮箱驻留在不同地理位置中。只有一个地理位置可以配置每个用户对象。
 
 - 上具有现有的邮箱的用户配置**PreferredDataLocation** ，则邮箱将放入重定位队列，并自动移动到指定的地理位置。 
 
-- 时上没有现有邮箱的用户配置**PreferredDataLocation** ，则将设置邮箱到指定的地理位置。 
+- 当上没有现有邮箱的用户配置**PreferredDataLocation** ，则邮箱到指定的地理位置设置。 
 
-- 当用户在未指定**PreferredDataLocation** ，则邮箱都位于默认地理位置。
+- 当用户在未指定**PreferredDataLocation**时，邮箱将会发出中央位置。
 
-- 如果**PreferredDataLocation**代码不正确 （例如类型的而不是越南 NAN） 邮箱将位于默认地理位置。
+- 如果**PreferredDataLocation**代码不正确 （例如类型的而不是越南 NAN） 邮箱将放置在中心位置。
 
 **注意**： 多地理位置功能和两个业务联机地区组织承载会议的 Skype **PreferredDataLocation**属性用于在用户对象上查找服务。如果您的地区组织托管的会议的用户对象上配置**PreferredDataLocation**值，这些用户的邮箱将自动移动到指定的地理位置后的 Office 365 租户启用多地理位置。
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange Online 中的多地理位置功能限制
-1. 用户邮箱、 资源邮箱 （房间和设备邮箱） 和共享的邮箱支持多地理位置功能。公用文件夹邮箱和 Office 365 组保持客户的主地理位置。
+1. 用户邮箱、 资源邮箱 （房间和设备邮箱） 和共享的邮箱支持多地理位置功能。公用文件夹邮箱和 Office 365 组保持在中心位置。
  
 2. 安全性和遵从性 （例如，审核和电子数据展示） 可用功能的 Exchange 管理员中心 (EAC) 中不可用多地理位置组织中。相反，您需要使用[Office 365 安全性和合规性中心](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)来配置安全性和遵从性功能。
 
-3. 他们的邮箱移动到新的地理位置时，outlook for Mac 用户可能会遇到临时断开其联机存档文件夹的访问权限。发生这种情况时用户的主和存档邮箱都在不同 Geo，因为跨地理邮箱移动可能完成时间不同。
+3. 他们的邮箱移动到新的地理位置时，outlook for Mac 用户可能会遇到临时断开其联机存档文件夹的访问权限。发生这种情况时用户的主和存档邮箱位于不同地理位置，因为跨地理邮箱移动可能完成时间不同。
 
-4. 用户无法在 web （以前称为，Outlook Web App 或 OWA） 上的 Outlook 中的 Geo 之间共享*邮箱文件夹*。例如，在欧盟用户不能使用 web 上的 Outlook 打开位于美国的邮箱中的共享的文件夹。但是，在 Web 用户的 Outlook 可以*其他邮箱*中打开不同 Geo 使用单独的浏览器窗口[打开 Outlook Web App 中的一个单独的浏览器窗口中的其他人的邮箱](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)中所述。
+4. 用户无法在 web （以前称为，Outlook Web App 或 OWA） 上的 Outlook 中的地理位置之间共享*邮箱文件夹*。例如，在欧盟用户不能使用 web 上的 Outlook 打开位于美国的邮箱中的共享的文件夹。但是，在 Web 用户的 Outlook 可以*其他邮箱*中打开不同 Geo 使用单独的浏览器窗口[打开 Outlook Web App 中的一个单独的浏览器窗口中的其他人的邮箱](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)中所述。
 
     **注意**： 在 Outlook 中为 Windows 上支持跨地理邮箱文件夹共享。
 
 ## <a name="administration"></a>管理 
-远程 PowerShell 需要查看和 Office 365 环境中配置与地理位置相关的属性。有关各种用来管理 Office 365，请参阅[管理 Office 365 和 Exchange Online 使用 Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)的 PowerShell 模块的信息。
+远程 PowerShell 需要查看和 Office 365 环境中配置多地理属性。有关各种用来管理 Office 365，请参阅[管理 Office 365 和 Exchange Online 使用 Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)的 PowerShell 模块的信息。
 
 - 您需要[Microsoft Azure Active Directory PowerShell 模块](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx)v1.1.166.0 或更高版本中 1.x 版在用户对象上看到**PreferredDataLocation**属性。通过 AAD 连接同步到 AAD 的用户对象不能直接通过 AAD PowerShell 修改其**PreferredDataLocation**值。仅限云用户对象可以通过 AAD PowerShell 进行修改。要连接到 Azure AD PowerShell，请参阅[Connect to Office 365 PowerShell 中](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。 
 
 - 要连接到 Exchange Online PowerShell 中，请参阅[Connect to Exchange Online PowerShell 中](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 
 
 ### <a name="connect-directly-to-a-specific-geo-using-exchange-online-powershell"></a>直接连接到 Exchange Online PowerShell 中使用的特定地理位置
-通常情况下，Exchange Online PowerShell 中将连接到默认地理位置。但是，您还可以直接向非默认 Geo 连接。由于性能改进，我们建议直接连接到非默认地理位置时仅管理中的地理位置的用户。
+通常情况下，Exchange Online PowerShell 中将连接到默认地理位置。但是，您还可以直接向非默认地理位置连接。由于性能改进，我们建议仅管理该地理位置中的用户时连接直接到非默认地理位置。
 
 要连接到特定的地理位置，则正则连接说明以外的其他*ConnectionUri*参数。其余的命令和值都相同。步骤如下：
 
@@ -101,7 +101,7 @@ Exchange Online 同步到 Exchange Online 的目录服务中的**MailboxRegion**
     ```
    **Windows PowerShell 凭据请求**对话框中，键入您的工作或学校帐户和密码，，然后单击**确定**。
     
-2. 替换`<emailaddress>`替换**任何**目标地理位置中的邮箱并运行以下命令的电子邮件地址。不因素; 您对邮箱和向您在步骤 1 中的凭据的关系的权限。电子邮件地址仅仅告诉 Exchange Online 连接的位置。
+2. 替换`<emailaddress>`替换**任何**目标地理位置和运行以下命令中的邮箱的电子邮件地址。不因素; 您对邮箱和向您在步骤 1 中的凭据的关系的权限。电子邮件地址仅仅告诉 Exchange Online 连接的位置。
   
    ```
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -177,7 +177,7 @@ NAM
 
 
 ### <a name="find-the-geo-location-of-a-mailbox"></a>查找邮箱的地理位置
-Exchange Online PowerShell 中的**Get-mailbox** cmdlet 显示邮箱上的地理位置相关的以下属性：
+Exchange Online PowerShell 中显示以下多地理位置中的**Get-mailbox** cmdlet 的相关邮箱上的属性：
 
 - **数据库**： 数据库名称的前 3 个字母对应告诉您邮箱所在的位置当前的地理位置代码。联机存档邮箱**ArchiveDatabase**应使用属性。
 
@@ -205,7 +205,7 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM 
 ```
 
-> **注意：** 如果在数据库名称的地理位置代码与**MailboxRegion**值不匹配，邮箱将被自动放入重定位队列和移动到指定的**MailboxRegion**值 （Exchange Online 看起来这些不匹配的地理位置属性值）。
+> **注意：** 如果在数据库名称地理位置代码与**MailboxRegion**值不匹配，邮箱将被自动放入重定位队列和移动到指定的**MailboxRegion**值的地理位置 (Exchange Online 查找不是匹配这些属性值之间）。
 
 ### <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo"></a>将现有仅使用云的邮箱移动到特定的地理位置
 仅限云用户是用户不到通过 AAD 连接租户的同步。直接在 Azure AD 中创建此用户。使用 Windows PowerShell 的 Azure AD 模块中**Get-msoluser**和**Set-msoluser** cmdlet 查看或指定存储仅使用云的用户的邮箱地理位置。
@@ -245,7 +245,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 - 提到过之前不能使用此过程从内部部署 Active Directory 同步的用户对象。您需要更改**PreferredDataLocation**值使用 AAD 连接。有关详细信息，请参阅[Azure Active Directory 连接同步： 配置 Office 365 资源的首选的数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。 
 
-- 它所需的时间重定位到新的所需地理其当前地理位置取决于多个因素 mailboxfrom:
+- 它所需的时间重定位到新的所需的地理位置其当前地理位置取决于多个因素 mailboxfrom:
  
   - 大小和类型的邮箱。
  
@@ -260,7 +260,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 2. 更改**PreferredDataLocation**。
 
-3. 它已移至所选的地理位置以将其放回禁用状态后，请从邮箱中删除许可证。
+3. 它已移到所选的地理位置以将其放回禁用状态后，请从邮箱中删除许可证。
 
 ### <a name="create-new-cloud-mailboxes-in-a-specific-geo"></a>在特定的地理位置中创建新的云邮箱 
 若要在特定的地理位置创建一个新的邮箱，您需要执行以下步骤之一：
@@ -321,9 +321,9 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
     New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
     ```
 
-5. 您需要从内部部署 Exchange 迁移到附属地理您当前连接到每个邮箱重复步骤 4。
+5. 您需要从内部部署 Exchange 迁移到您当前连接到的附属位置每个邮箱重复步骤 4。
 
-6. 如果您需要将其他邮箱迁移到不同的附属地理位置，请对每个特定的附属地理重复步骤 2 到 4。
+6. 如果您需要将其他邮箱迁移到不同的附属位置，请为每个特定附属位置重复步骤 2 到 4。
 
 ### <a name="multi-geo-reporting"></a>多地理位置报告
-在 Office 365 管理中心中的**多地理使用率报告**按地理位置显示用户计数。报告显示当前月份用户分布，并提供过去 6 个月的历史数据。
+在 Office 365 管理中心中的**多地理使用率报告**的地理位置显示用户计数。报告显示当前月份用户分布，并提供过去 6 个月的历史数据。

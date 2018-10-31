@@ -1,5 +1,5 @@
 ---
-title: 添加或删除的地理位置管理员
+title: 添加或删除地理位置管理员
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,11 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: 了解如何在添加或移除地理管理员 OneDrive for Business 多-地理位置。
-ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849808"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>在添加或移除地理管理员 OneDrive for Busniess 多-地理位置
 
@@ -20,7 +21,7 @@ ms.lasthandoff: 05/03/2018
 
 某些服务的术语库-例如是从中心位置管理，并复制到附属位置。中心位置地理管理员有权访问这些而附属位置的地理位置 admins 不。
 
-全局管理员和 SharePoint Online 管理员继续在所有地理位置有权访问设置。
+全局管理员和 SharePoint Online 管理员继续有权访问的中心位置和附属的所有位置中的设置。
 
 ## <a name="configuring-geo-administrators"></a>配置地理管理员
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/03/2018
 
 您可以将安全组或已启用邮件的安全组添加为地理位置管理员。（通讯组和 Office 365 组不支持。）
 
-若要将组添加为地理位置管理，运行`Add-SPOGeoAdministrator -GroupAlias <alias>`
+若要将组添加为地理管理员，运行`Add-SPOGeoAdministrator -GroupAlias <alias>`
 
-若要删除作为地理位置管理一组，请运行`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+若要删除的地理位置管理员为一组，请运行`Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
 请注意，不是所有安全组的组别名。如果您想要添加安全组不具有别名，运行[Get MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup)检索组的列表，找到您的安全组 ObjectID，然后运行：
 
