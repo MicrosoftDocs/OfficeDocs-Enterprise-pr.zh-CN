@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 学习如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
-ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550055"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849878"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -27,7 +27,7 @@ ms.locfileid: "21550055"
 
 #### <a name="taxonomy"></a>分类
 
-对于跨多地理位置的企业托管元数据，我们支持统一[分类](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)，同时将主数据托管在公司的中心位置。建议从中心位置管理全局分类，并只在附属地理位置的分类中添加特定于位置的术语。全局分类术语将同步到附属地理位置。
+对于跨多地理位置的企业托管元数据，我们支持统一[分类](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)，同时将主数据托管在公司的中心位置。建议从中心位置管理全局分类，并只在附属位置的分类中添加特定于位置的术语。全局分类术语将同步到附属位置。
 
 #### <a name="sharing"></a>共享
 
@@ -43,7 +43,7 @@ ms.locfileid: "21550055"
 
 #### <a name="bcs-secure-store-apps"></a>BCS、安全存储、应用
 
-BCS、安全存储和应用都具有单独的地理位置实例，因此，SharePoint Online 管理员应从希望在其中显示服务的每个地理位置实例中管理和配置这些服务。
+BCS、安全存储和应用在每个附属位置都具有单独的实例，因此，SharePoint Online 管理员应从每个附属位置单独管理和配置这些服务。
 
 #### <a name="security-and-compliance-admin-center"></a>安全与合规管理中心
 
@@ -63,10 +63,10 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 
 Office 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。
 
-当为特定地理位置设置电子数据展示管理者或管理员角色时，电子数据展示管理者或管理员将只能对位于该地理区域的 SharePoint 网站和 OneDrive 网站执行电子数据展示搜索操作。如果电子数据展示管理者或管理员尝试搜索指定区域以外的 SharePoint 或 OneDrive 网站，将不返回任何结果。此外，当某个区域的电子数据展示管理者或管理员触发导出时，数据将导出到该地区的 Azure 实例。通过禁止跨受控界限导出内容，将有助于组织保持合规性。
+当为特定附属位置设置电子数据展示管理者或管理员角色时，电子数据展示管理者或管理员将只能对位于该附属位置的 SharePoint 网站和 OneDrive 网站执行电子数据展示搜索操作。如果电子数据展示管理者或管理员尝试搜索指定附属位置以外的 SharePoint 或 OneDrive 网站，将不返回任何结果。此外，当某个附属位置的电子数据展示管理者或管理员触发导出时，数据将导出到该地区的 Azure 实例。通过禁止跨受控界限导出内容，将有助于组织保持合规性。
 
 > [!NOTE]
-> 如果需要电子数据展示管理者搜索多个 SharePoint 区域，将需要为电子数据展示管理者创建另一个用户帐户，以指定 OneDrive 或 SharePoint 网站所在的备用区域。
+> 如果需要电子数据展示管理者搜索多个 SharePoint 附属位置，将需要为电子数据展示管理者创建另一个用户帐户，以指定 OneDrive 或 SharePoint 网站所在的备用附属位置。
 
 <table>
 <thead>
@@ -122,7 +122,7 @@ Office 365 全局管理员必须分配电子数据展示管理者权限，以允
 2.  输入  
     $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $a = Import-PSSession $s -AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
 3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
@@ -132,4 +132,4 @@ Office 365 全局管理员必须分配电子数据展示管理者权限，以允
 
 #### <a name="audit-log-search"></a>审核日志搜索
 
-所有地理位置的统一[审核日志](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)均可从 Office 365 审核日志搜索页找到。你可以查看跨地理位置的所有审核日志条目，例如，NAM 和 EUR 地理位置用户的活动将显示在一个组织视图中，然后你可以应用现有筛选器，查看特定用户的活动。
+所有附属位置的统一[审核日志](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)均可从 Office 365 审核日志搜索页找到。你可以查看跨地理位置的所有审核日志条目，例如，NAM 和 EUR 地理位置用户的活动将显示在一个组织视图中，然后你可以应用现有筛选器，查看特定用户的活动。

@@ -11,16 +11,16 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 了解如何配置 OneDrive for Business 多地理位置。
-ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915247"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849868"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 多地理位置租户配置
 
-在配置 OneDrive for Business 多地理位置之前，请确保已阅读[规划 OneDrive for Business 多地理位置](plan-for-multi-geo.md)。若要执行本文中的步骤，你需要列出想启用的位置和要在这些位置中预配的测试用户。
+在配置 OneDrive for Business 多地理位置之前，请确保已阅读[规划 OneDrive for Business 多地理位置](plan-for-multi-geo.md)。若要执行本文中的步骤，你需要具有想要启用作为附属位置的地理位置的列表和要在这些位置中预配的测试用户。
 
 ## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>将 Office 365 中的多地理位置功能计划添加到租户
 
@@ -30,9 +30,9 @@ ms.locfileid: "22915247"
 
 你的租户配置了 _Office 365 的多地理位置功能_计划后，便可使用 [OneDrive 管理中心的](https://admin.onedrive.com)“地理位置”**** 选项卡。
 
-## <a name="set-the-allowed-data-locations-adl-to-your-tenant"></a>将允许数据位置 (ADL) 设置为你的租户
+## <a name="add-satellite-locations-to-your-tenant"></a>向租户添加附属地理位置
 
-你必须为想要使用 OneDrive for Business 的每个地理位置设置 SharePoint 的允许数据位置。下表显示了可用的地理位置：
+必须为想要使用 OneDrive for Business 的每个地理位置添加附属位置。下表显示了可用的地理位置：
 
 <table>
 <thead>
@@ -81,7 +81,7 @@ ms.locfileid: "22915247"
 </tbody>
 </table>
 
-添加卫星地理位置
+添加附属位置
 
 1. 打开 [OneDrive 管理中心](https://admin.onedrive.com)。
 
@@ -98,32 +98,32 @@ ms.locfileid: "22915247"
 预配可能需要几小时到 72 小时，具体要取决于租户的大小。附属位置设置完成后，你将收到电子邮件确认。当新地理位置在 OneDrive 管理中心的“地理位置”**** 选项卡的地图上以蓝色显示时，你可以继续将用户的首选数据位置设置为该地理位置。 
 
 > [!IMPORTANT]
-> 你的新附属地理位置将使用默认设置进行设置。这可使你根据当地合规性要求来配置该地理位置。
+> 你的新附属位置将使用默认设置进行设置。这可使你根据当地合规性要求来配置该附属位置。
 
 ## <a name="setting-users-preferred-data-location"></a>设置用户的首选数据位置
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-一旦启用了所需的数据位置，就可以更新你的用户帐户以使用适当的数据位置。我们建议你为每个用户设置一个首选数据位置，即使该用户处于默认数据位置。
+一旦启用了所需的附属位置，就可以更新你的用户帐户以使用适当的首选数据位置。我们建议你为每个用户设置一个首选数据位置，即使该用户处于中心位置。
 
 > [!TIP]
-> 我们建议你在组织内更广泛地推广多地理位置功能之前，请先以测试用户或少量用户来进行验证。
+> 我们建议你在组织内更广泛地推广多地理位置之前，请先以测试用户或少量用户来进行验证。
 
 在 AAD 中，有两种类型的用户对象：仅限云的用户和同步用户。请按照针对用户类型的相应说明进行操作。
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>使用 AD Connect 同步用户的首选数据位置 
 
-如果将公司的用户从本地 Active Directory (AD) 系统同步到 Azure Active Directory (AAD)，则其 PreferredDataLocation 必须在 AD 中填充并同步到 AAD。按照 [Azure AD Connect 同步：更改默认配置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)中的流程，将首选数据位置同步从本地 AD 配置到 AAD。
+如果将公司的用户从本地 Active Directory 系统同步到 Azure Active Directory，则其 PreferredDataLocation 必须在 AD 中填充并同步到 AAD。按照 [Azure AD Connect 同步：更改默认配置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)中的流程，将首选数据位置同步从本地 Active Directory 配置到 Azure Active Directory。
 
 我们建议你在标准用户创建工作流中加入设置用户的“首选数据位置”。
 
 > [!IMPORTANT]
-> 对于未预配 OneDrive 的新用户，请在用户的 PDL 同步到 AAD 后至少等待 24 小时，以便在用户登录到 OneDrive for Business 之前传播更改。（在用户登录之前设置首选数据位置，以预配 OneDrive for Business，这可确保用户的新 OneDrive 将在正确的位置进行设置。）
+> 对于未预配 OneDrive 的新用户，请在用户的 PDL 同步到 Azure Active Directory 后至少等待 24 小时，以便在用户登录到 OneDrive for Business 之前传播更改。（在用户登录之前设置首选数据位置，以预配 OneDrive for Business，这可确保用户的新 OneDrive 将在正确的位置进行设置。）
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>为仅限云的用户设置首选数据位置 
 
-如果公司的用户没有从本地 Active Directory (AD) 系统同步到 Azure Active Directory (AAD)，这意味着它们是在 Office 365 或 AAD 中创建的，必须使用 AAD PowerShell 设置 PDL。
+如果公司的用户没有从本地 Active Directory 系统同步到 Azure Active Directory，这意味着它们是在 Office 365 或 Azure Active Directory 中创建的，必须使用 Azure Active Directory PowerShell 设置 PDL。
 
-此部分中的步骤需要使用[用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)。如果已安装 AAD PowerShell，请确保更新到最新版本。
+此部分中的步骤需要使用[用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)。如果已安装 Azure Active Directory PowerShell，请确保更新到最新版本。
 
 1.  打开用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
 
@@ -142,13 +142,13 @@ ms.locfileid: "22915247"
 我们建议你在标准用户创建工作流中加入设置用户的“首选数据位置”。
 
 > [!IMPORTANT]
-> 对于未设置 OneDrive 的新用户，请在用户的 PDL 设置后至少等待 24 小时，以便在用户登录到 SharePoint OneDrive 之前传播更改。（在用户登录之前设置首选数据位置，以预配 OneDrive for Business，这可确保用户的新 OneDrive 将在正确的位置进行设置。）
+> 对于未设置 OneDrive 的新用户，请在用户的 PDL 设置后至少等待 24 小时，以便在用户登录到 OneDrive 之前传播更改。（在用户登录之前设置首选数据位置，以预配 OneDrive for Business，这可确保用户的新 OneDrive 将在正确的位置进行设置。）
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive 设置和 PDL 效果
 
 如果用户已拥有在租户中创建的 OneDrive 网站，则设置其 PDL 将不能自动移动其现有 OneDrive。若要移动该用户的 OneDrive，请参阅 [OneDrive for Business 地理位置移动](move-onedrive-between-geo-locations.md)，在地理位置之间移动 OneDrive 时，请按照其中的说明。
 
-如果用户在租户内没有 OneDrive 网站，则假定用户的 PDL 与公司的允许数据位置 (ADL) 之一相匹配，根据其 PDL 值为他们设置 OneDrive。
+如果用户在租户内没有 OneDrive 网站，则假定用户的 PDL 与公司的附属位置之一相匹配，根据其 PDL 值为他们设置 OneDrive。
 
 ## <a name="configuring-multi-geo-search"></a>配置多地理位置搜索
 

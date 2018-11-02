@@ -11,26 +11,26 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解 OneDrive for Business 多地理位置、多地理位置的工作方式，以及哪些地理位置可用于数据存储。
-ms.openlocfilehash: 26dc9d1b0f0f78e1740088036be4b77bea3ce176
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: d40f84ea3636b4eca2711a48bd9d70c73a242cfd
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549983"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849858"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>规划 OneDrive for Business 多地理位置
 
 本指南主要面向跨国合公司 (MNC) 的管理员，帮助他们根据公司的经营情况准备将 SharePoint Online 租户扩展到其他地区，以满足数据驻留需求。
 
-在 OneDrive 多地理位置配置中，Office 365 租户由中心位置（也称为默认位置）以及一个或多个附属地理位置组成。这是一个横跨多个地理位置的单个租户。在 OneDrive 多地理位置中，你的租户信息（包括地理位置）在 Azure Active Directory (AAD) 中进行管控。 
+在 OneDrive 多地理位置配置中，Office 365 租户由中心位置以及一个或多个附属地理位置组成。这是一个横跨多个地理位置的单个租户。在 OneDrive 多地理位置中，你的租户信息（包括地理位置）在 Azure Active Directory (AAD) 中进行管控。 
 
 下面是一些关键的多地理位置术语，可以帮助你了解配置的基本概念：
 
--   **租户** - Office 365 云中组织的表示形式，其通常具有一个或多个与之关联的域，例如，http://contoso.sharepoint.com)。 
+-   **租户** - Office 365 云中组织的表示形式，其通常具有一个或多个与之关联的域，例如，http://contoso.sharepoint.com)。 
 
--   **地理位置** – 托管租户数据的地理位置。多地理位置租户跨多个地理位置，例如，北美和欧洲。
+-   **地理位置** – 可用于托管 Office 365 租户中数据的地理位置。
 
--   **允许数据位置 (ADL)** – 租户已配置为托管 OneDrive 和 SharePoint 数据的地理位置。
+-   **附属位置** – 已配置的用于托管 Office 365 租户中数据的地理位置。多地理位置租户跨多个地理位置，例如，北美和欧洲。
 
 -   **首选数据位置 (PDL)** – 其中存储单个用户 OneDrive 数据的地理位置。这可由管理员设置为任何一个已为租户配置的允许数据位置。注意，如果更改了已具有 OneDrive 站点的用户的 PDL，则其 OneDrive 数据不会自动移动到新的地理位置。请参阅[将 OneDrive 库移动到其他地理位置](move-onedrive-between-geo-locations.md)，了解更多信息。
 
@@ -38,18 +38,18 @@ ms.locfileid: "21549983"
 
 1.  与你的帐户团队协作，_在 Office 365 服务计划中添加多地理位置功能_。
 
-2.  选择需要的附属地理位置并将其添加到租户。
+2.  选择需要的附属位置并将其添加到租户。
 
-3.  将用户的首选数据位置设置为所需的附属地理位置。在为用户预配新的 OneDrive 站点时，会将该位置预配到其 PDL。
+3.  将用户的首选数据位置设置为所需的附属位置。在为用户预配新的 OneDrive 站点时，会将该位置预配到其 PDL。
 
-4.  根据需要，将用户的现有 OneDrive 站点从起始点位置迁移到首选的数据位置。
+4.  根据需要，将用户的现有 OneDrive 站点从中心位置迁移到首选的数据位置。
 
 请参阅[配置 OneDrive for Business 多地理位置](multi-geo-tenant-configuration.md)，了解有关每个步骤的详细信息。
 
 > [!IMPORTANT]
-> 注意，Office 365 的多地理功能不是专为性能优化情况而设计的，它们主要是为了满足数据驻留需求。有关 Office 365 性能优化的信息，请参阅[针对 Office 365 的网络规划和性能优化](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848)，或联系支持小组。
+> 注意，Office 365 多地理位置不是专为性能优化情况而设计的，它主要是为了满足数据驻留需求。有关 Office 365 性能优化的信息，请参阅[针对 Office 365 的网络规划和性能优化](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848)，或联系支持小组。
 
-你可以将任何以下地理位置配置为可托管 OneDrive 文件的附属地理位置。规划多地理位置时，创建一个想要向 Office 365 租户添加的位置列表。我们建议从一个或两个附属位置开始，然后根据需要逐渐扩展到更多的地理位置。
+你可以将任何以下地理位置配置为可托管 OneDrive 文件的附属位置。规划多地理位置时，创建一个想要向 Office 365 租户添加的位置列表。我们建议从一个或两个附属位置开始，然后根据需要逐渐扩展到更多的地理位置。
 
 <table>
 <thead>
@@ -106,15 +106,15 @@ ms.locfileid: "21549983"
 
 ## <a name="best-practices"></a>最佳做法
 
-我们建议在 Office 365 中创建一个测试用户，进行一些初始测试。在将 OneDrive 多地理位置功能载入生产用户时，我们将使用此用户进行一些测试和验证步骤。
+我们建议在 Office 365 中创建一个测试用户，进行一些初始测试。在将生产用户载入 OneDrive 多地理位置时，我们将使用此用户进行一些测试和验证步骤。
 
 在使用测试用户完成测试后，选择一个试点组（可能来自 IT 部门）作为首个在新地理位置使用 OneDrive 的用户。对于此首个小组，请选择尚未拥有 OneDrive 的用户。我们建议这个初始小组的人数不超过 5 个，然后逐渐扩大，最终再批量推广。
 
-每个用户都应设置“首选数据位置”**(PDL)，以便 Office 365 可以确定在哪个地理位置预配 OneDrive。用户的首选数据位置必须与所选附属位置或中心位置相匹配。虽然 PDL 字段不是强制性的，但我们建议为所有用户设置一个 PDL。没有 PDL 的用户的工作负载将在中央位置基于多地理位置逻辑进行预配。   
+每个用户都应设置“首选数据位置”**(PDL)，以便 Office 365 可以确定在哪个地理位置预配 OneDrive。用户的首选数据位置必须与所选卫星位置或中心位置相匹配。虽然 PDL 字段不是强制性的，但我们建议为所有用户设置一个 PDL。没有 PDL 的用户的工作负载将在中央位置进行预配。   
 
 创建一个用户列表，并包含他们的用户主体名称 (UPN) 和相应首选数据位置的位置代码。首先包含你的测试用户和初始试点组。在配置过程中你将需要使用这个列表。
 
-如果你的用户从本地 Active Directory (AD) 系统同步到 Azure Active Directory (AAD)，则必须使用 Azure Active Directory Connect 为同步的用户设置首选数据位置。你不能使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。在 AD 中设置 PDL 并对其进行同步的步骤，请参阅 [Azure Active Directory Connect 同步：为 Office 365 资源配置首选数据位置](https://docs.microsoft.com/zh-CN/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
+如果你的用户从本地 Active Directory 系统同步到 Azure Active Directory，则必须使用 Azure Active Directory Connect 为同步的用户设置首选数据位置。你不能使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。在 AD 中设置 PDL 并对其进行同步的步骤，请参阅 [Azure Active Directory Connect 同步：为 Office 365 资源配置首选数据位置](https://docs.microsoft.com/zh-CN/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
 
 多地理位置租户的管理可能与非多地理位置租户不同，因为许多 SharePoint 和 OneDrive 设置和服务都具有多地理位置意识。我们建议你在继续配置之前先查看[管理多地理位置环境](administering-a-multi-geo-environment.md)。
 

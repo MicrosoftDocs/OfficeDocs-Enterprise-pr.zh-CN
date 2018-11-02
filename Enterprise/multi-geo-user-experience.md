@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解多地理位置环境中的 SharePoint 和 OneDrive 用户体验。
-ms.openlocfilehash: 3c7e4b6802bddc78db016c9c282f5add0c71c491
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 951efb636ce00f59393f624687d44a406fcf3fc0
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849828"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>多地理位置环境中的用户体验
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 04/27/2018
 
 #### <a name="users-onedrive-for-business-location"></a>用户的 OneDrive for Business 位置
 
-用户将在其首选数据位置预配 OneDrive for Business。如果用户导航到包含错误地理位置的 OneDrive URL（如来自先前地理位置的书签），则会将其自动重定向到相应地理位置的 OneDrive。
+用户将在其首选数据位置预配 OneDrive for Business。如果用户导航到包含不正确的地理位置的 OneDrive URL（例如来自先前地理位置的书签），则会将其自动重定向到相应地理位置的 OneDrive。
 
 #### <a name="sharing"></a>共享
 
-人员选取器体验将显示所有用户，无论他们的地理位置如何。这允许用户与同一地理位置或任何其他租户地理位置中的另一个用户共享。不同地理位置的内容将显示在用户的 OneDrive for Business 的“与我共享”**** 视图中，而且无论其托管在哪个地理位置，都可以通过单一登录体验进行访问。
+人员选取器体验显示所有用户，无论他们的地理位置如何。这允许用户与同一地理位置或任何其他租户的地理位置中的另一个用户共享。不同地理位置的内容将显示在用户的 OneDrive for Business 的“与我共享”**** 视图中，而且无论其托管在哪个地理位置，都可以通过单一登录体验进行访问。
 
 #### <a name="office-applications"></a>Office 应用程序
 
