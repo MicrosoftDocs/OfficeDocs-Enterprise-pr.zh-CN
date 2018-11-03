@@ -12,12 +12,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 使用 OneDrive 和 SharePoint Online 中的多地理位置功能将 Office 365 的状态扩展到多个地理位置区域。
-ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
-ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
+ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24012732"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849818"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Office 365 的 OneDrive 和 SharePoint Online 中的多地理位置功能
 
@@ -43,7 +43,7 @@ ms.locfileid: "24012732"
     
 - 将你区域的本地数据整合到 Office 365 多地理位置租户。
     
-在多地理位置配置中，Office 365 租户由中心位置（也称为默认位置）和一个或多个附属地理位置组成。多地理位置的关键概念是单个租户将跨越多个地理位置。在多地理位置租户中，有关地理位置、组和用户信息的信息在 Azure Active Directory (AAD) 中进行管控。由于你的租户信息被集中管控并同步到每个地理位置，因此，涉及你公司任何人的共享和经验都包含全球意识。
+在多地理位置配置中，Office 365 租户由中心位置（即 Office 365 订阅的初始预配位置）和一个或多个附属地理位置组成。多地理位置的关键概念是单个租户将跨越多个地理位置。在多地理位置租户中，有关地理位置、组和用户信息的信息在 Azure Active Directory (AAD) 中进行管控。由于你的租户信息被集中管控并同步到每个地理位置，因此，涉及你公司任何人的共享和经验都包含全球意识。
 
 ## <a name="video-introducing-office-365-multi-geo"></a>视频：Office 365 多地理位置简介
 
