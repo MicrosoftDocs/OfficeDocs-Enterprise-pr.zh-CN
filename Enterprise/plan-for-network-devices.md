@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 摘要：介绍了网络容量的考虑因素、WAN 加速器和用于连接到 Office 365 的负载平衡设备。
-ms.openlocfilehash: c384ba043e64ec83eda74b234937efaf72f29815
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223064"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933119"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 
@@ -37,7 +37,7 @@ ms.locfileid: "23223064"
   
 业务帮助文章的以下 Skype 具有 Skype 业务设置的详细信息：
   
-- [疑难解答 Skype 业务登录错误 （管理员） （英文）](https://go.microsoft.com/fwlink/p/?LinkID=243624)
+- [管理员 Skype 业务 Online 登录错误疑难解答](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [无法连接到业务的 Skype 或某些功能执行操作不起作用，因为本地防火墙阻止连接](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 

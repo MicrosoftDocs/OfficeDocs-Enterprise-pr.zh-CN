@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 摘要： 了解网络基础结构的常见元素，以及如何准备你的网络。
-ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
+ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915647"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25897025"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft 云连接的公共元素
 
@@ -60,7 +60,7 @@ ms.locfileid: "22915647"
     
 - **外部工作负载：** 网站或其他工作负载供 Internet 上的外部用户使用。
     
-- **代理服务器：** 代表 Intranet 用户发出的对 Web 内容的服务请求。反向代理服务器允许未经请求的入站请求。
+- **代理服务器：** 为 web 内容代表 intranet 用户请求提供服务。反向代理允许未经请求的入站的请求。
     
 - **外部防火墙：** 允许出站流量和指定的入站流量。可以执行地址转换。
     
