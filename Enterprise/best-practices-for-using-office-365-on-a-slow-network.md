@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: 如果 Internet 连接已始终 fast 和永远不会向下不是很好？可能的一天的将到来。但同时，有可执行解决 balky 网络和仍获取您完成的日常工作的实践操作。
-ms.openlocfilehash: 52c3bde04aa58f9e24a49d2034e6b6433c44f21c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539789"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933139"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>在慢速网络上使用 Office 365 的最佳实践
 
@@ -162,7 +162,7 @@ OneDrive for Business 同步应用程序是适用于 Office 2013 （Professional
 
 自定义网页时，您可能无意中导致与页的性能不佳。多种因素可能会影响，如的复杂性和页、 多少 web 部件均已添加，最初显示列表或库项目的数量，以及代码页的方式的大小。
   
-有关详细信息，请参阅[优化 SharePoint Online 的性能](https://technet.microsoft.com/library/f97c2f06-0426-443d-8a16-d98abb0da252#TuneSharePoint)。
+有关详细信息，请参阅[优化 SharePoint Online 的性能](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance)。
   
 ## <a name="best-practices-for-using-project-online"></a>使用 Project Online 的最佳实践
 
@@ -186,11 +186,11 @@ Microsoft 不断地提高了 Office 365 by 监控网络，测量带宽的总体�
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 的网络规划和性能优化](network-planning-and-performance.md)
+[Office 365 网络计划和性能优化](network-planning-and-performance.md)
   
 [Microsoft 虚拟学院课程 — Office 365 性能管理](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
   
 [管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Office 365 终结点常见问题](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Office 365 终结点 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
