@@ -11,16 +11,16 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何在多地理位置环境中配置搜索。
-ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915057"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849908"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>为 OneDrive for Business 多地理位置配置搜索
 
-在多地理位置 SharePoint Online (SPO) 环境中，一个组织可以具有一个 Office 365 租户，但可在多个地理位置存储其 SharePoint 内容 - 一个中央位置和一个或多个附属地理位置。
+在 OneDrive for Business 多地理位置环境中，一个组织可以具有一个 Office 365 租户，但可在多个地理位置存储其 OneDrive 内容 - 一个中央位置和一个或多个附属位置。
 
 每个地理位置都有其各自的搜索索引和搜索中心。在用户搜索时，查询会扇出所有索引，并合并返回的结果。
 
@@ -48,7 +48,7 @@ ms.locfileid: "22915057"
 
 多地理位置环境一旦设置，在 Delve 中搜索的用户即可获得来自所有地理位置的结果。
 
-Delve 源和个人资料卡片只能显示存储在**** 中央位置中的文件预览。对于存储在附属地理位置的文件，将改为显示文件类型的图标。
+Delve 源和个人资料卡片只能显示存储在**中央**位置中的文件预览。对于存储在附属位置的文件，将改为显示文件类型的图标。
 
 ### <a name="the-sharepoint-home-page"></a>SharePoint 主页
 
@@ -77,7 +77,7 @@ Delve 源和个人资料卡片只能显示存储在**** 中央位置中的文件
 <tbody>
 <tr class="odd">
 <td align="left">升级的结果</td>
-<td align="left">你可以在不同级别使用升级的结果来创建查询规则：针对整个租户、针对网站集或针对网站。在多地理位置环境中，如果想要将结果升级到所有<strong></strong>地理位置中的搜索中心，请在<strong></strong>“租户”级别定义升级的结果。如果只<strong></strong>想在位于网站集或网站的地理位置中的搜索中心升级结果，请在“网站集”<strong></strong>或“网站”<strong></strong>级别定义结果。</td>
+<td align="left">你可以在不同级别使用升级的结果来创建查询规则：针对整个租户、针对网站集或针对网站。在多地理位置环境中，如果想要将结果升级到<strong>所有</strong>地理位置中的搜索中心，请在<strong></strong>“租户”级别定义升级的结果。如果<strong>只</strong>想在位于网站集或网站的地理位置中的搜索中心升级结果，请在“网站集”<strong></strong>或“网站”<strong></strong>级别定义结果。</td>
 <td align="left">如果不需要对每个地理位置使用不同的升级结果（例如，在出差时使用不同的规则），我们建议在租户级别定义升级的结果。</td>
 </tr>
 <tr class="even">
@@ -179,7 +179,7 @@ MultiGeoSearchConfiguration - 这是一个可选列表，显示当 **EnableMulti
 <table>
 <thead>
 <tr class="header">
-<th align="left">项</th>
+<th align="left">Item</th>
 <th align="left">说明</th>
 </tr>
 </thead>
