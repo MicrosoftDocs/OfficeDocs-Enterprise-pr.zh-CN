@@ -45,7 +45,7 @@
 ### [如何配置本地 Exchange Server 以使用混合新式验证](configure-exchange-server-for-hybrid-modern-authentication.md)
 ### [如何配置本地 Skype for Business 以使用混合新式验证](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
 ### [从 Skype for Business 和 Exchange 删除或禁用混合新式验证](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
-## [规划从 Office 2007 或 2010 产品升级](plan-upgrade-previous-versions-office.md)
+## [升级 Office](plan-upgrade-previous-versions-office.md)
 ### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
 #### [Office 2010 桌面版](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 #### [Exchange 2010](exchange-2010-end-of-support.md)
