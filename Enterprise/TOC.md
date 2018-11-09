@@ -81,13 +81,13 @@
 ## [为组织部署 Office 365 企业版](setup-overview-for-enterprises.md)
 ### [Office 365 部署计划清单](deployment-planning-checklist.md)
 ### [Office 365 的安全最佳做法](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
-## 设置网络
+## [设置网络](set-up-network-for-office-365.md)
 ### [Office 365 网络连接概述](office-365-networking-overview.md)
 ### [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
 ### [Office 365 网络计划和性能优化](network-planning-and-performance.md)
 ### [与 Office 365 的网络连接](network-connectivity.md)
 ### [Office 365 网络合作伙伴计划](office-365-networking-partner-program.md)
-### Office 365 IP 地址和 URL
+### [Office 365 IP 地址和 URL](office-365-endpoints.md)
 #### [管理 Office 365 终结点](managing-office-365-endpoints.md)
 #### [全球终结点](urls-and-ip-address-ranges.md)
 #### [美国政府 DoD 终结点](office-365-u-s-government-dod-endpoints.md)
