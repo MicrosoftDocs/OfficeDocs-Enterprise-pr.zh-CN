@@ -3,7 +3,7 @@ title: Office 365 租户间协作
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: 了解 Office 365 协作方式跨租户和组织。
-ms.openlocfilehash: 932c837f9dc09dd0469a17ad4e6a05f09966d29c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ec844f78a0ae31469c2ca92c5cb97d965bdb3508
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539597"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219882"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Office 365 租户间协作
 
@@ -41,15 +41,14 @@ Office 365 租户间协作选项包括一个中心位置用于文件和对话，
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|与外部用户共享网站和文档  <br/> |管理员配置租户，请在共享或网站集级别的 Microsoft 帐户身份验证、 工作或学校帐户经过身份验证或来宾帐户  <br/> |
-  [管理 SharePoint Online 环境的外部共享](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [受限的域中的共享 Office 365 SharePoint Online 和 OneDrive for Business](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [SharePoint Online 用作企业到企业 (B2B) extranet 解决方案](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
+|与外部用户共享网站和文档  <br/> |管理员配置租户，请在共享或网站集级别的 Microsoft 帐户身份验证、 工作或学校帐户经过身份验证或来宾帐户  <br/> |[管理你的 SharePoint Online 环境的外部共享](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [受限的域中的共享 Office 365 SharePoint Online 和 OneDrive for Business](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [SharePoint Online 用作企业到企业 (B2B) extranet 解决方案](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
 |跟踪和控制针对最终用户的外部共享  <br/> |OneDrive for Business 文件所有者和 SharePoint Online 最终用户配置网站和文档共享并建立通知来跟踪共享  <br/> |[配置通知的 OneDrive for Business 的外部共享](https://support.office.com/en-US/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [在 Office 365 中共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
 ## <a name="skype-for-business-collaboration-options"></a>Skype 的业务协作选项
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|与其他适用于业务用户的 Skype Skype 的业务 Online IM、 呼叫和状态  <br/> |管理员可以启用 IM 业务联机用户其 Skype、 进行音频/视频呼叫，并查看与其他 Office 365 租户中的用户的状态。  <br/> |[允许用户业务用户的联系人外部 Skype](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
+|与其他适用于业务用户的 Skype Skype 的业务 Online IM、 呼叫和状态  <br/> |管理员可以启用 IM 业务联机用户其 Skype、 进行音频/视频呼叫，并查看与其他 Office 365 租户中的用户的状态。  <br/> |[允许用户连接外部 Skype for Business 用户](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
 |Skype 的业务 Online IM、 呼叫和与 Skype （使用者） 用户的状态  <br/> |管理员可以启用 IM 业务联机用户其 Skype、 发起呼叫，并查看与 Skype （使用者） 用户的状态。  <br/> |[让业务用户的 Skype 添加 Skype 联系人](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
    
 ## <a name="azure-ad-b2b-collaboration-options"></a>Azure AD B2B 协作选项
@@ -68,7 +67,7 @@ Office 365 租户间协作选项包括一个中心位置用于文件和对话，
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|Yammer-企业社交媒体通过的协作  <br/> |除非 Yammer 管理员禁用能够创建外部组，则用户可以创建外部通过对话，能够 like 和按照帖子、 共享文件、 聊天联机协作 Yammer 中的组。  <br/> |[创建和管理 Yammer 中的外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
+|Yammer-企业社交媒体通过的协作  <br/> |除非 Yammer 管理员禁用能够创建外部组，则用户可以创建外部通过对话，能够 like 和按照帖子、 共享文件、 聊天联机协作 Yammer 中的组。  <br/> |[在 Yammer 中创建和管理外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
    
 ## <a name="teams-collaboration-options"></a>团队协作选项
 
@@ -77,7 +76,13 @@ Office 365 租户间协作选项包括一个中心位置用于文件和对话，
 |与组织外部的用户在团队协作  <br/> |邀请的 Office 365 租户的全局管理员需要启用团队中的外部协作。全局管理员和团队所有者现在都将能够邀请任何人与在工作组中进行协作的电子邮件地址。  <br/> 管理员还可以管理和编辑来宾其租户中已存在。  <br/> |[授权来宾访问](https://docs.microsoft.com/en-us/microsoftteams/teams-dependencies) <br/> [团队中打开或关闭来宾访问](https://docs.microsoft.com/en-us/microsoftteams/set-up-guests) <br/> [使用 PowerShell 来宾访问控制](https://docs.microsoft.com/en-us/microsoftteams/guest-access-powershell) <br/> [来宾访问清单](https://docs.microsoft.com/en-us/microsoftteams/guest-access-checklist) <br/> [查看来宾用户](https://docs.microsoft.com/en-us/microsoftteams/view-guests) <br/> [编辑来宾用户信息](https://docs.microsoft.com/en-us/microsoftteams/edit-guests-information) <br/> |
 |团队所有者可以邀请和管理来宾其团队中的协作方式。  <br/> |团队所有者具有上来宾可以在其团队内执行的操作的其他控件。  <br/> |[添加来宾](https://support.office.com/en-us/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [将来宾添加到团队](https://docs.microsoft.com/en-us/microsoftteams/add-guests) <br/> [管理团队中的来宾访问](https://docs.microsoft.com/en-us/microsoftteams/manage-guests) <br/> [了解谁处于团队或通道](https://support.office.com/en-us/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
 |从其他租户的来宾可以查看团队中的内容，并与其他成员协作  <br/> |无。  <br/> |[来宾访问体验](https://docs.microsoft.com/en-us/microsoftteams/guest-experience) <br/> |
-   
+
+## <a name="power-bi-collaboration-options"></a>Power BI 协作选项
+
+|**共享目标**|**管理操作**|**操作方法信息**|
+|:-----|:-----|:-----|
+|Power BI 使外部来宾用户可以使用通过链接共享的内容。这使组织中的用户以安全方式组织分配内容。<br/> | Power BI 管理员可以控制用户是否可以邀请外部用户可以查看组织内的内容。 <br/> |[分发外部来宾用户与 Azure AD B2B Power BI 内容](https://docs.microsoft.com/en-us/power-bi/service-admin-azure-ad-b2b) <br/> |
+ 
 ## <a name="points-to-be-aware-of-about-office-365-inter-tenant-collaboration"></a>点要注意的有关 Office 365 租户间协作
 
 ### <a name="sharing-of-user-accounts-licenses-subscriptions-and-storage"></a>共享的用户帐户、 许可证、 订阅和存储

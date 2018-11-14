@@ -15,21 +15,23 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: 使用 SharePoint 工具页诊断 SharePoint online 分析经典页面针对建议的最佳实践。
-ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 1524befc0003006cfab9100aafc7d3deda2a37d2
+ms.sourcegitcommit: 5be99683fb2de87f723264c8a1123451d31ea43b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975160"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26253613"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>SharePoint online 中使用页诊断工具
 
 本文介绍如何使用页诊断工具分析您的经典发布网页和网页上经典工作组网站，针对**SharePoint Online**中的建议做法的子集。 
   
 没有启用的发布的工作组网站无法使 Cdn 的使用，但所有剩余的规则都适用。发布添加额外开销，因此不要打开发布，只需以获取 CDN 的功能，如它会产生负面影响页面加载时间。
+
+**请注意，已中止 V1.05 请更新您的扩展，如果您已安装了**。如果您不确定哪种版本然后请单击"关于"链接以验证它。
   
 > [!IMPORTANT]
-> 如工具在设计上可查看 SharePoint 网站页，将会对文档库或系统页面不运行页诊断工具。*Allitems.aspx*页是系统页。如果试图在系统上运行该工具，您将收到一条消息，表明，"此应用程序应仅运行在 SharePoint 页面上。"<br/> ![必须在 SharePoint 页面上运行](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>这不是在工具错误，如评估库或 system 页中没有值。请导航到非系统 SharePoint 页面使用的工具。该工具应该想要提供反馈有关请单击关于选项卡并按照[提供反馈链接](https://go.microsoft.com/fwlink/?linkid=874109)。 
+> 如工具在设计上可查看 SharePoint 网站页，将会对文档库或系统页面不运行页诊断工具。*Allitems.aspx*页是系统页。如果试图在系统上运行该工具，您将收到一条消息，表明，"此应用程序应仅运行在 SharePoint 页面上。"<br/> ![必须在 SharePoint 页面上运行](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>这不是在工具错误，如评估库或 system 页中没有值。请导航到非系统 SharePoint 页面使用的工具。如果 SharePoint 页上将发生这种情况然后请检查 MasterPage 如我们所看到客户删除 SharePoint 元标记，然后页面不再是一个 SharePoint 页面。该工具应该想要提供反馈有关请单击关于选项卡并按照[提供反馈链接](https://go.microsoft.com/fwlink/?linkid=874109)。 
   
 ## <a name="install-the-page-diagnostic-tool"></a>安装页诊断工具
 
@@ -113,8 +115,8 @@ ms.locfileid: "23975160"
     
 ## <a name="related-topics"></a>相关主题
 
-[调整 SharePoint Online 性能](tune-sharepoint-online-performance.md)
+[优化 SharePoint Online 性能](tune-sharepoint-online-performance.md)
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[内容传递网络](content-delivery-networks.md)
+[内容分发网络](content-delivery-networks.md)

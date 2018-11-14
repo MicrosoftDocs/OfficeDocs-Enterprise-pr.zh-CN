@@ -1,9 +1,9 @@
 ---
-title: Office 2016 for Mac 中的网络请求
+title: Office mac 版中的网络请求
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/9/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Office for Mac 应用程序的 2016 macOS 平台上提供的本机应用程序体验。每个应用程序设计以在各种方案，包括状态，无法访问网络时可用。计算机连接到网络后，应用程序将自动连接到一系列的基于 web 的服务，以提供增强的功能。本白皮书介绍了哪些终结点 Url 尝试通，应用程序和提供的服务。疑难解答网络配置问题和网络代理服务器的设置策略时，此信息很有用。本文中的详细信息都适用于 Office 365 URL 和地址范围文章的补充。
-ms.openlocfilehash: b94b77a0ff8cd37b0fa1c881ba590853615bfe93
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Office for Mac 应用程序提供的本机应用程序体验 macOS 平台上。每个应用程序设计以在各种方案，包括状态，无法访问网络时可用。计算机连接到网络后，应用程序将自动连接到一系列的基于 web 的服务，以提供增强的功能。本白皮书介绍了哪些终结点 Url 尝试通，应用程序和提供的服务。疑难解答网络配置问题和网络代理服务器的设置策略时，此信息很有用。本文中的详细信息都适用于 Office 365 URL 和地址范围文章的补充。
+ms.openlocfilehash: 929b93433f5d990952b540a1b28fe2ac74edfb5d
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539787"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219892"
 ---
-# <a name="network-requests-in-office-2016-for-mac"></a>Office 2016 for Mac 中的网络请求
+# <a name="network-requests-in-office-for-mac"></a>Office mac 版中的网络请求
 
-Office for Mac 应用程序的 2016 macOS 平台上提供的本机应用程序体验。每个应用程序设计以在各种方案，包括状态，无法访问网络时可用。计算机连接到网络后，应用程序将自动连接到一系列的基于 web 的服务，以提供增强的功能。本白皮书介绍了哪些终结点 Url 尝试通，应用程序和提供的服务。网络配置问题和网络代理服务器的设置策略疑难解答时，此信息很有用。本文中的详细信息旨在补充[Office 365 URL 和地址范围文章](urls-and-ip-address-ranges.md)，其中包括运行 Microsoft Windows 的计算机的终结点。
+Office for Mac 应用程序提供的本机应用程序体验 macOS 平台上。每个应用程序设计以在各种方案，包括状态，无法访问网络时可用。计算机连接到网络后，应用程序将自动连接到一系列的基于 web 的服务，以提供增强的功能。以下信息介绍了哪些终结点 Url 尝试通，应用程序和提供的服务。网络配置问题和网络代理服务器的设置策略疑难解答时，此信息很有用。本文中的详细信息都适用于[Office 365 URL 和地址范围文章](urls-and-ip-address-ranges.md)，其中包括运行 Microsoft Windows 的计算机的终结点专用于补充。除非另行说明，这篇文章中的信息也适用于 Mac 的 Office 2019 和 Office for Mac、 的 2016年可作为一次性购买从零售店或批量许可协议。 
+
   
 本文的大部分是表详述网络 Url、 类型和服务或由该终结点提供的功能的说明。每个 Office 应用程序可能会有所不同在其服务和终结点的使用率。下表中定义了以下应用程序：
   
@@ -39,12 +40,13 @@ URL 类型定义，如下所示：
 - SS： 分号静态-URL 编码作为网页或重定向的一部分。
     
 - CS： 配置服务的 URL 作为返回 Office 配置服务的一部分。
+
     
-## <a name="office-2016-for-mac-default-configuration"></a>Mac 默认配置的 office 2016
+## <a name="office-for-mac-default-configuration"></a>Office for Mac 默认配置
 
  **安装和更新**
   
-下列网络终结点用于下载 Microsoft 内容交付网络 (CDN) 中的 Office 2016 Mac 安装程序。
+下列网络终结点用于下载 Microsoft 内容交付网络 (CDN) 中的 Office for Mac 安装程序。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -127,7 +129,7 @@ URL 类型定义，如下所示：
    
  **研究工具**
   
-下列网络终结点适用于这两个 Office 365 订阅。
+下列网络终结点仅适用于 Office 365 订阅。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -171,7 +173,7 @@ URL 类型定义，如下所示：
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |将笑脸服务发送  <br/> |
    
- **联系支持人员**
+ **与支持部门联系**
   
 下列网络终结点适用于 Office 365 订阅和零售/批量许可激活。
   
@@ -220,7 +222,7 @@ Office 应用程序加载项是受信任时，下列网络终结点适用于 Off
    
  **安全链接**
   
-网络终结点适用于 Office 2016 应用程序。
+应用于所有 Office 应用程序的 Office 365 订阅仅网络终结点。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -228,7 +230,7 @@ Office 应用程序加载项是受信任时，下列网络终结点适用于 Off
    
  **崩溃报告**
   
-网络终结点适用于所有 Office 2016 应用程序和许可证类型。如果进程意外崩溃，为生成报表并将其发送到 Watson 服务。
+网络终结点适用于 Office 365 订阅和零售/批量许可激活所有 Office 应用程序。如果进程意外崩溃，为生成报表并将其发送到 Watson 服务。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -237,7 +239,7 @@ Office 应用程序加载项是受信任时，下列网络终结点适用于 Off
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>减少网络请求和通信选项
 
-用于 Mac 的 Office 2016 默认配置提供最佳用户体验，包括功能和保持最新的计算机。在某些情况下，您可能希望阻止联系网络终结点的应用程序。本节讨论了这样的选项。
+Office for Mac 的默认配置提供最佳用户体验，包括功能和保持最新的计算机。在某些情况下，您可能希望阻止联系网络终结点的应用程序。本节讨论了这样的选项。
   
  ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>禁用云登录和 Office 加载项
   
@@ -266,11 +268,11 @@ Office 应用程序加载项是受信任时，下列网络终结点适用于 Off
 若要重新建立用户的完整功能，或者设置为"2"的首选项或将其删除。
   
 > [!NOTE]
-> 此首选项 for Mac 生成 15.25 [160726] 需要 Office 2016 或更高版本。 
+> 此首选项需要 Office for Mac 生成 15.25 [160726] 或更高版本。 
   
 ### <a name="telemetry"></a>遥测
   
-用于 Mac 的 office 2016 的时间间隔定期将遥测信息发送回 Microsoft。数据上载到结点终结点。遥测数据可帮助评估运行状况和每个 Office 应用程序的任何意外的行为工程团队。有两种类别的遥测：
+Office mac 版的时间间隔定期将遥测信息发送回 Microsoft。数据上载到结点终结点。遥测数据可帮助评估运行状况和每个 Office 应用程序的任何意外的行为工程团队。有两种类别的遥测：
   
 - **检测信号**包含版本和许可信息。在应用程序启动时立即发送此数据。 
     
@@ -307,7 +309,7 @@ Microsoft 非常重视您的隐私非常。您可以阅读有关 Microsoft 的�
   
 ### <a name="updates"></a>更新
   
-Microsoft 发布 Office 2016 Mac 更新定期 （通常每月一次）。我们强烈建议用户和 IT 管理员保留机最新，以确保最新的安全修补程序安装。在 IT 管理员希望紧密控制和管理计算机更新的情况下，可以设置以下首选项，以防止自动检测并提供产品更新 AutoUpdate 流程：
+Microsoft 发布 Office for Mac 更新定期 （通常每月一次）。我们强烈建议用户和 IT 管理员保留机最新，以确保最新的安全修补程序安装。在 IT 管理员希望紧密控制和管理计算机更新的情况下，可以设置以下首选项，以防止自动检测并提供产品更新 AutoUpdate 流程：
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
@@ -315,7 +317,7 @@ Microsoft 发布 Office 2016 Mac 更新定期 （通常每月一次）。我们�
   
 如果您的组织块通过防火墙或代理服务器请求 url 确保配置为允许，本文档中列出的 Url 或阻止带有 40 X 响应 （例如 403 或 404）。40 X 响应将允许正常接受无法访问该资源，Office 应用程序，并将提供更快的用户体验，比放连接，这将导致反过来客户端重试。
   
-如果您的代理服务器要求身份验证，407 响应将返回到客户端。为获得最佳体验，确保您使用 Office 2016 生成 15.27 或更高版本，，，其中包括有关使用 NTLM 和 Kerberos 服务器特定修补程序。
+如果您的代理服务器要求身份验证，407 响应将返回到客户端。获得最佳体验，确保您正在使用的 Office for Mac 生成 15.27 或更高版本，其中包括有关使用 NTLM 和 Kerberos 服务器特定修补程序。
   
   
 ## <a name="see-also"></a>另请参阅
