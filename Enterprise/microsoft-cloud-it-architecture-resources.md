@@ -3,7 +3,7 @@ title: Microsoft 云 IT 体系结构资源
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 05/18/2018
+ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。
-ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022091"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525843"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
@@ -38,7 +38,6 @@ ms.locfileid: "24022091"
     - [面向企业架构师的 Microsoft 云安全性](microsoft-cloud-it-architecture-resources.md#security)
     - [面向企业架构师的 Microsoft 云网络](microsoft-cloud-it-architecture-resources.md#networking)
     - [面向企业架构师的 Microsoft 移动性和安全性](microsoft-cloud-it-architecture-resources.md#mobility)
-    - [面向企业架构师的 Microsoft 云存储](microsoft-cloud-it-architecture-resources.md#storage)
     - [面向企业架构师的 Microsoft 混合云](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [常见攻击和保护组织的 Microsoft 功能](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
@@ -112,15 +111,6 @@ ms.locfileid: "24022091"
 |**项**|**说明**|
 |:-----|:-----|
 |[![Office 365 信息保护海报的缩略图](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | 此模型包含： <ul><li>热门商业移动应用。 </li><li>用于开发移动应用的平台、服务和资源 </li><li>通过移动设备管理对基于云的应用和数据的访问权限 </li><li>比较 Office 365 MDM、Azure Active Directory Premium 和 Intune 的功能和平台支持 </li></ul><br/> |
-   
-<a name="storage"> </a>
-### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云存储
-
-关于 Microsoft 云服务和平台的存储选项，IT 架构师需要了解的信息。
-  
-|**项**|**说明**|
-|:-----|:-----|
-|[![Microsoft 云存储模型的缩略图](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| [文章](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>[更多语言](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | 此模型包含： <ul><li>使用云存储和主要方案的原因 </li><li>与现有服务捆绑的云存储选项 </li><li>可用作存储解决方案入门点的存储选项 </li><li>用于为应用创建用户自己的存储解决方案或存储的存储构建基块</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>面向企业架构师的 Microsoft 混合云

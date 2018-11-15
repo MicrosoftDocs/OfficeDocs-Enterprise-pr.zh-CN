@@ -135,3 +135,22 @@
 | 11/2/2018 | [Office 365 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges) | 修改 |
 | 11/2/2018 | [资源可帮助您升级从 Office 2007 的服务器和客户端](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | 修改 |
 | 11/2/2018 | [资源可帮助您升级从 Office 2010 的服务器和客户端](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 修改 |
+
+
+## <a name="week-of-november-05-2018"></a>2018 年 11 月 5，这一周
+
+
+| 上发布 |主题标题 | 更改 |
+|------|------------|--------|
+| 11/5/2018 | [将本地网络连接到 Microsoft Azure 虚拟网络](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 修改 |
+| 11/5/2018 | [在 Microsoft Azure 中部署 Office 365 目录同步](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 修改 |
+| 11/5/2018 | [针对 Office 365 设置您的网络](/Office365/Enterprise/set-up-network-for-office-365) | 添加 |
+| 11/6/2018 | [Office 365 IP 地址和 URL Web 服务中未包含的其他终结点](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 修改 |
+| 11/6/2018 | [在 Azure 中为 Office 365 部署高可用性联合身份验证](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 修改 |
+| 11/6/2018 | [使用基线和性能历史记录优化 Office 365 性能](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | 修改 |
+| 11/7/2018 | [Office 365 终结点](/Office365/Enterprise/office-365-endpoints) | 添加 |
+| 11/7/2018 | [针对 Office 365 设置您的网络](/Office365/Enterprise/set-up-network-for-office-365) | 修改 |
+| 11/8/2018 | [Office mac 版中的网络请求](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | 修改 |
+| 11/8/2018 | [Office 365 租户间协作](/Office365/Enterprise/office-365-inter-tenant-collaboration) | 修改 |
+| 11/8/2018 | [SharePoint Online 性能优化简介](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 修改 |
+| 11/9/2018 | [SharePoint online 中使用页诊断工具](/Office365/Enterprise/page-diagnostics-for-spo) | 修改 |

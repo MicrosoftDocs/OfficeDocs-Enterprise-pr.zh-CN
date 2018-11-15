@@ -94,7 +94,7 @@
 #### [美国政府 GCC 高终结点](office-365-u-s-government-gcc-high-endpoints.md)
 #### [由世纪互联运营的 Office 365 终结点](urls-and-ip-address-ranges-21vianet.md)
 #### [Office 365 Germany 终结点](office-365-germany-endpoints.md)
-#### [Office 2016 for Mac 中的网络请求](network-requests-in-office-2016-for-mac.md)
+#### [Office for Mac 中的网络请求](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)
 #### [Web 服务中未包含的其他终结点](additional-office365-ip-addresses-and-urls.md)
 ### [内容分发网络](content-delivery-networks.md)
@@ -191,5 +191,5 @@
 ### [客户端连接](client-connectivity.md)
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [安全与合规性](https://docs.microsoft.com/Office365/SecurityCompliance)
-# [Office 365 for Business](https://support.office.com/office365admin)
+# [Office 365 for Business](https://docs.microsoft.com/office365/admin/admin-home)
   

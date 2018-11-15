@@ -3,7 +3,7 @@ title: Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/23/2018
+ms.date: 11/06/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新终结点 Web 服务不包含特定应用场景的少量终结点。
 hideEdit: true
-ms.openlocfilehash: 1d551f8757464aa1336bc351de8689c103f0a54f
-ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
+ms.openlocfilehash: 65b425c7a94374e80fb9069ab831e7ab92de8313
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25719006"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024664"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 
@@ -49,17 +49,18 @@ ms.locfileid: "25719006"
 | 3  | Azure AD Connect（带有 SSO 选项） - WinRM 和远程 PowerShell | 客户 STS 环境（AD FS 服务器和 AD FS 代理）\| TCP 端口 80 和 443 | 入站服务器流量 |
 | 4  | ST FS，例如 AD FS 代理服务器（仅限联盟客户） | 客户 STS（例如 AD FS 代理）\| 端口 TCP 443 或 TCP 49443，带有 ClientTLS | 入站服务器流量 |
 | 5  | [Exchange Online 统一消息/SBC 集成](https://technet.microsoft.com/library/jj673565.aspx) | 本地会话边界控制器和 *.um.outlook.com 之间的双向 | 仅出站服务器流量 |
-| 6  | [Exchange 混合](https://docs.microsoft.com/exchange/exchange-deployment-assistant)共存功能，例如忙/闲共享。 | 客户本地 Exchange 服务器 | 入站服务器流量 |
-| 7  | [Exchange 混合](https://docs.microsoft.com/exchange/exchange-deployment-assistant)代理身份验证 | 客户本地 STS | 入站服务器流量 |
-| 8  | 用于使用 Exchange 混合配置向导配置 [Exchange 混合](https://docs.microsoft.com/exchange/exchange-deployment-assistant)。 <br> 注意：这些终结点仅用于配置 Exchange 混合  | TCP 端口 80 和 443 上的 ```domains.live.com```，仅用于 Exchange 2010 SP3 混合配置向导。 | 仅出站服务器流量 |
-| 9  | AutoDetect 服务用于 [Exchange 混合](https://docs.microsoft.com/exchange/exchange-deployment-assistant)应用场景，可实现[适用于 iOS 和 Android 的 Outlook 的混合型新式验证](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | TCP 443 上的客户本地 Exchange 服务器 | 入站服务器流量 |
-| 10  | Office 2016 中的 Skype for Business 包括使用 UDP 端口的基于视频的屏幕共享。Office 2013 和早期版本中的先前 Skype for Business 客户端使用 RDP over TCP 端口 443。 | TCP 端口 443 对 52.112.0.0/14 开放 | Office 2013 和早期版本中的 Skype for Business 早期客户端版本 |
-| 11  | Skype for Business 与 Skype for Business Online 的混合内部部署服务器连接 | 13.107.64.0/18，52.112.0.0/14 UDP 端口 50,000-59,999 <BR>  TCP 端口 50,000-59,999 | Skype for Business 内部部署服务器出站连接 |
-| 12  | 具有内部部署混合连接的云 PSTN 要求网络连接对内部部署主机开放。有关 Skype for Business Online 混合配置的更多详细信息，  | 请参阅 [Skype for Business 混合解决方案](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Skype for Business 内部部署混合入站 |
-| 13  | **身份验证和标识 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必须位于客户端的 Internet Explorer (IE) 或 Edge 受信任的站点区域内才能起作用。 |  | 受信任的站点 |
-| 14  |  **Microsoft Teams FQDN** <br> 如果你使用的是 Internet Explorer 或 Microsoft Edge，则需要启用第一方和第三方 Cookie，并将 Teams FQDN 添加到受信任的站点。这是除上面列出的套件级 FQDN、CDN 和遥测之外的补充内容。有关详细信息，请参阅 [ Microsoft Teams 的已知问题](https://docs.microsoft.com/microsoftteams/known-issues)。 |  | 受信任的站点 |
-| 15  |  **SharePoint Online 和 OneDrive for Business FQDN** <br> FQDN 中带有“\<tenant>”的所有“.sharepoint.com”FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。除了上面列出的套件级 FQDN、CDN 和遥测之外，还需要添加这些终结点。 |  | 受信任的站点 |
-| 16  | **Yammer**  <br> Yammer 仅在浏览器中可用，并要求经过身份验证的用户通过代理传递。所有 Yammer FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。 |  | 受信任的站点 |
+| 6  | 邮箱迁移。从本地 [Exchange 混合部署](https://docs.microsoft.com/exchange/exchange-deployment-assistant)向 Office 365 进行邮箱迁移时，Office 365 将连接到你已发布的 Exchange Web 服务 (EWS)/邮箱复制服务 (MRS) 服务器。如果你需要了解 Exchange Online 服务器使用的 NAT IP 地址，以限制来自特定源 IP 范围的入站连接，可在“Exchange Online”服务区域下的 [Office 365 URL 和 IP 范围](urls-and-ip-address-ranges.md)中找到相关信息。请注意确保不会影响对已发布 EWS 端点（如 OWA）的访问，这就需要确保 MRS 代理会在限制来自特定源 IP 范围的 TCP 443 连接之前先解析至独立的 FQDN 和公共 IP 地址。 | 客户本地 EWS/MRS 代理<br> TCP 端口 443 | 入站服务器流量 |
+| 7  | [Exchange 混合部署](https://docs.microsoft.com/exchange/exchange-deployment-assistant)共存功能，例如忙/闲共享。 | 客户本地 Exchange 服务器 | 入站服务器流量 |
+| 8  | [Exchange 混合部署](https://docs.microsoft.com/exchange/exchange-deployment-assistant)代理身份验证 | 客户本地 STS | 入站服务器流量 |
+| 9  | 用于使用 Exchange 混合部署配置向导来配置 [Exchange 混合配置](https://docs.microsoft.com/exchange/exchange-deployment-assistant)。 <br> 注意：这些终结点仅用于配置 Exchange 混合  | TCP 端口 80 和 443 上的 ```domains.live.com```，仅用于 Exchange 2010 SP3 混合配置向导。 | 仅出站服务器流量 |
+| 10  | AutoDetect 服务用于 [Exchange 混合部署](https://docs.microsoft.com/exchange/exchange-deployment-assistant)应用场景，可实现[适用于 iOS 和 Android 的 Outlook 的混合型新式验证](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | TCP 443 上的客户本地 Exchange 服务器 | 入站服务器流量 |
+| 11  | Office 2016 中的 Skype for Business 包括使用 UDP 端口的基于视频的屏幕共享。Office 2013 和早期版本中的先前 Skype for Business 客户端使用 RDP over TCP 端口 443。 | TCP 端口 443 对 52.112.0.0/14 开放 | Office 2013 和早期版本中的 Skype for Business 早期客户端版本 |
+| 12  | Skype for Business 混合内部部署服务器与 Skype for Business Online 之间的连接 | 13.107.64.0/18，52.112.0.0/14 UDP 端口 50,000-59,999 <BR>  TCP 端口 50,000-59,999 | Skype for Business 内部部署服务器出站连接 |
+| 13  | 具有内部部署混合连接的云 PSTN 要求网络连接对内部部署主机开放。有关 Skype for Business Online 混合配置的更多详细信息，  | 请参阅 [Skype for Business 混合解决方案](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Skype for Business 内部部署混合入站 |
+| 14  | **身份验证和标识 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必须位于客户端的 Internet Explorer (IE) 或 Edge 受信任的站点区域内才能起作用。 |  | 受信任的站点 |
+| 15  |  **Microsoft Teams FQDN** <br> 如果你使用的是 Internet Explorer 或 Microsoft Edge，则需要启用第一方和第三方 Cookie，并将 Teams FQDN 添加到受信任的站点。这是除上面列出的套件级 FQDN、CDN 和遥测之外的补充内容。有关详细信息，请参阅 [ Microsoft Teams 的已知问题](https://docs.microsoft.com/microsoftteams/known-issues)。 |  | 受信任的站点 |
+| 16  |  **SharePoint Online 和 OneDrive for Business FQDN** <br> FQDN 中带有“\<tenant>”的所有“.sharepoint.com”FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。除了上面列出的套件级 FQDN、CDN 和遥测之外，还需要添加这些终结点。 |  | 受信任的站点 |
+| 17  | **Yammer**  <br> Yammer 仅在浏览器中可用，并要求经过身份验证的用户通过代理传递。所有 Yammer FQDN 都需要在客户的 IE 或 Edge 受信任的站点区域中才能起作用。 |  | 受信任的站点 |
 
 ## <a name="related-topics"></a>相关主题
 

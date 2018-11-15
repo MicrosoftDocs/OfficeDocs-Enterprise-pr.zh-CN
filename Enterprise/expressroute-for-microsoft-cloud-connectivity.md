@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。
-ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915487"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525833"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>面向 Microsoft 云连接的 ExpressRoute
 
@@ -102,7 +102,7 @@ ExpressRoute 连接不能保证每一种配置的性能都会提高。通过低�
 
 ![图 3：单次 ExpressRoute 连接中的三个不同的 BGP 关系](media/Network-Poster/ERPeering.png)
   
-图 3 显示了内部部署网络中的 ExpressRoute 连接。ExpressRoute 连接中包含三个逻辑对等关系。Microsoft 对等关系转到 Microsoft SaaS 服务，其中包括 Office 365 和 Dynamcs CRM Online。公共对等关系转到 Azure PaaS 服务。专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
+图 3 显示了从本地网络 ExpressRoute 连接。ExpressRoute 连接都有三个逻辑的对等关系。Microsoft 对等关系转到 Microsoft SaaS 服务，包括 Office 365 和 Dynamcs CRM Online。公共的对等关系转到 Azure PaaS 服务。专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
   
 Microsoft 对等 BGP 关系： 
   
@@ -186,9 +186,9 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 这可能会导致任意对任意连接模型的本地 Microsoft 数据中心的传送达不到最佳状态。
   
-**图 7：使用单个 ExpressRoute 连接的地理位置分散的组织示例**
+**使用的单个 ExpressRoute 连接的地理位置分散的组织的图 7： 示例**
 
-![图 7：使用单次 ExpressRoute 连接的地理位置分散的组织的示例](media/Network-Poster/MSNet1.png)
+![使用的单个 ExpressRoute 连接的地理位置分散的组织的图 7： 示例](media/Network-Poster/MSNet1.png)
   
 图 7 显示了具有两个位置的组织：美国西北部的位置 1 和东北部的位置 2。它们由任意对任意 WAN 提供程序连接。该组织还有到西海岸的 Microsoft 对等位置的 ExpressRoute 连接。来自东北部的位置 2 且发往东海岸数据中心的流量，必须一直流经组织的 WAN 直到西海岸、Microsoft 对等位置，然后通过 Microsoft 云网络流经全国，返回东海岸数据中心。
   
