@@ -3,7 +3,7 @@ title: 如何配置本地 Exchange Server 以使用混合新式验证
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 09/28/2018
+ms.date: 11/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: 混合现代身份验证 (HMA)，是一种身份管理提供更安全的用户身份验证和授权，并适用于 Exchange server 内部部署混合部署的方法。
-ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
-ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
+ms.openlocfilehash: df5ea03b06ee1c101b03e19c7acb445c9543586b
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347602"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547154"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
@@ -72,7 +72,9 @@ Get-OABVirtualDirectory | FL server,*url*
     
 确保客户端可以连接到列为 HTTPS AAD 中的服务主体名称的 Url。
   
-1. 首先，连接到 AAD 与[这些说明](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell)。
+1. 首先，连接到 AAD 与[这些说明](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。 
+
+ **注释**您需要使用此页中的 Connect-msolservice 选项以能够使用下面的命令。 
     
 2. 对于 Exchange 相关的 Url，键入以下命令：
     
@@ -148,7 +150,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
   
 您还应右键单击该图标的 Outlook 客户端 （还在 Windows 通知任务栏中） 的同时按住 CTRL 键，然后单击连接状态。查找针对的身份验证类型的客户端的 SMTP 地址持有者\*，它代表用于 OAuth 持有者令牌。
   
- **注释**需要配置 HMA Skype for Business？您将需要两篇文章： 一个列出了[受支持的拓扑](https://technet.microsoft.com/en-us/library/mt803262.aspx)，，另一个演示[如何执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。
+ **注释**需要配置 HMA Skype for Business？您将需要两篇文章： 一个列出了[受支持的拓扑](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，，另一个演示[如何执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。
   
 
 ## <a name="related-topics"></a>相关主题

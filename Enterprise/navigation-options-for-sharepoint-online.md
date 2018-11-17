@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 本文介绍与 SharePoint 发布 SharePoint Online 中启用导航选项网站。选择和配置导航显著影响性能和可伸缩性的 SharePoint Online 中的网站。
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957447"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547174"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 
@@ -193,7 +193,7 @@ ms.locfileid: "23957447"
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. 结果将分配给 self.nodes 数组和层次结构构建利用使用 linq.js 将输出分配给数组 self.heirarchy 对象。此数组是绑定到 HTML 的对象。这是通过将自我对象传递给 ko.applyBinding() 函数完成 toggleView() 函数中。<br/>然后，这会导致要绑定到以下 HTML 的层次结构数组：<br/>
+8. 结果将分配给 self.nodes 数组和层次结构构建利用使用 linq.js 将输出分配给数组 self.hierarchy 对象。此数组是绑定到 HTML 的对象。这是通过将自我对象传递给 ko.applyBinding() 函数完成 toggleView() 函数中。<br/>然后，这会导致要绑定到以下 HTML 的层次结构数组：<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
