@@ -133,6 +133,7 @@
 ##### [删除地理位置](delete-a-geo-location.md)
 ##### [多地理位置环境中的用户体验](multi-geo-user-experience.md)
 #### [配置 OneDrive for Business 多地理位置](multi-geo-tenant-configuration.md)
+##### [配置首选数据位置](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### [为 OneDrive for Business 多地理位置配置搜索](configure-search-for-multi-geo.md)
 #### [将 OneDrive 库移到其他地理位置](move-onedrive-between-geo-locations.md)
 ### [Exchange Online 中的多地理位置功能](multi-geo-capabilities-in-exchange-online.md)
