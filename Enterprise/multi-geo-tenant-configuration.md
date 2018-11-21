@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 了解如何配置 OneDrive for Business 多地理位置。
-ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 5049904b1419935ed1d55eb73b74d2cd12edb3c0
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849868"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547164"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 多地理位置租户配置
 
@@ -112,7 +112,7 @@ ms.locfileid: "25849868"
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>使用 AD Connect 同步用户的首选数据位置 
 
-如果将公司的用户从本地 Active Directory 系统同步到 Azure Active Directory，则其 PreferredDataLocation 必须在 AD 中填充并同步到 AAD。按照 [Azure AD Connect 同步：更改默认配置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)中的流程，将首选数据位置同步从本地 Active Directory 配置到 Azure Active Directory。
+如果将公司的用户从本地 Active Directory 系统同步到 Azure Active Directory，则其 PreferredDataLocation 必须在 AD 中填充并同步到 AAD。请遵循 [Azure Active Directory Connect 同步：为 Office 365 资源配置首选数据位置](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)中的过程，将首选数据位置同步从本地 Active Directory 配置为 Azure Active Directory。
 
 我们建议你在标准用户创建工作流中加入设置用户的“首选数据位置”。
 
