@@ -3,7 +3,6 @@ title: 与 Office 365 的 Azure 集成
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -16,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Office 365 订阅包括订阅 Azure AD。将 Office 365 与 Azure AD 集成，如果您希望与您的本地环境密码同步还是单一登录。
-ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
-ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
+ms.openlocfilehash: 8b7af5ba8d5106900384369a3e6548af40f9e201
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531835"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674416"
 ---
 # <a name="azure-integration-with-office-365"></a>与 Office 365 的 Azure 集成
 
@@ -57,7 +56,7 @@ Azure 还提供其他一些功能，如管理集成的应用程序，可用于�
    
 有关 Microsoft 云和 Office 365 的其他资源，请参阅以下资源：
   
-- [面向企业架构师的 Microsoft 云标识](https://go.microsoft.com/fwlink/p/?LinkId=828642)
+- [面向企业架构师的 Microsoft 云标识](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
 - [在 Microsoft Azure 中部署 Office 365 目录同步 (DirSync)](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     

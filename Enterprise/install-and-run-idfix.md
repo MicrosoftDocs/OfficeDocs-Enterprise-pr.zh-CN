@@ -3,7 +3,6 @@ title: 安装并运行 Office 365 IdFix 工具
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: get-started-article
 f1_keywords:
@@ -16,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: 如何安装和运行 Office 365 IdFix 工具以帮助清理您的 active directory 同步到 Office 365 之前。
-ms.openlocfilehash: 642273c0171603d627a19273a78fe66662f4caaf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c485d8397aa32005a34b77f886b9bc8f4e857f1b
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539553"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674426"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>安装并运行 Office 365 IdFix 工具
 
@@ -36,30 +35,30 @@ ms.locfileid: "22539553"
     
 ## <a name="what-you-need-to-run-idfix"></a>运行 IdFix 所需内容
 
-最简单方式来获取 IdFix 和运行时将其安装在加入到域的计算机上。如果需要，但它并不需要，您可以在域控制器上运行它。
+最简单方式来获取 IdFix 和运行时将其安装在加入到域的计算机上。如果您希望，但它并不需要，您可以在域控制器上运行它。
   
 ### <a name="idfix-hardware-requirements"></a>IdFix 硬件要求
 
-您安装了 IdFix 的计算机需要满足以下硬件要求：
+您安装了 IdFix 的计算机需要满足以下最低硬件要求：
   
-- 4 GB RAM（最低）
-- 2 GB 的硬盘空间（最低）
+- 4GB RAM
+- 2 GB 的硬盘空间
     
 ### <a name="idfix-software-requirements"></a>IdFix 软件要求
 
-其中安装 IdFix 需求到的计算机需要加入到想要将用户同步到 Office 365 的同一个 Active Directory 域。计算机还需要有.NET Framework 4.0 安装。 
+您安装了 IdFix 的计算机需要加入到想要将用户同步到 Office 365 的同一个 Active Directory 域。计算机还需要有.NET Framework 4.0 安装。 
   
-如果您运行的 Windows Server 2008 或 Windows Server 2012，则可能已经安装.NET Framework。如果不需要，您可以[下载从下载中心下载.NET 4.0](https://go.microsoft.com/fwlink/p/?LinkId=400475)或使用 Windows Update。 
+如果您运行的 Windows Server 2008 或 Windows Server 2012，则可能已经安装.NET Framework。如果不需要，您可以[下载从下载中心下载.NET 4.0](https://go.microsoft.com/fwlink/p/?LinkId=400475)或通过 Windows Update。 
   
 ### <a name="idfix-permissions-requirements"></a>IdFix 权限要求
 
 您用来运行 IdFix 的用户帐户需要具有对目录的读/写访问权限。
   
-如果您不确定您的用户帐户满足这些要求，并且您不确定如何检查，如果仍然可以安装并继续运行 IdFix。如果您的用户帐户没有正确的权限，IdFix 将只会显示错误，当您尝试运行它。
+如果您不确定您的用户帐户满足这些要求，并且您不确定如何检查，您仍可以安装和运行 IdFix。如果您的用户帐户没有正确的权限，IdFix 将只会显示错误，当您尝试运行它。
   
 ## <a name="install-idfix"></a>安装 IdFix
 
-要安装 IdFix，您可以下载并解压缩“IdFix.exe”****，如以下步骤所述： 
+若要安装 IdFix，下载并解压缩**IdFix.exe**: 
   
 1. 登录到您要安装 IdFix 工具的计算机。
     
@@ -69,7 +68,7 @@ ms.locfileid: "22539553"
     
 4. 出现提示时，选择**运行**。
     
-5. 在**WinZip 自动解压缩程序**对话框中**解压缩到文件夹**文本框中，键入或浏览到要安装 IdFix 工具的位置。默认情况下，IdFix 安装到 C:\Deployment 工具\. 
+5. 在**WinZip 自动解压缩程序**对话框中**解压缩到文件夹**文本框中，键入或浏览到要安装 IdFix 工具的位置。默认情况下，IdFix 安装到`C:\Deployment Tools\`。 
     
 6. 选择**解压缩**。
     
@@ -79,7 +78,7 @@ ms.locfileid: "22539553"
   
 1. 使用对目录具有读/写访问权限的帐户登录到您安装 IdFix 的计算机。
     
-2. 在文件资源管理器中，转到您安装了 IdFix 的位置。如果您在安装过程中选择了默认文件夹，请转到 C:\Deployment Tools\IdFix。
+2. 在文件资源管理器，转到您安装 IdFix 的位置。如果在安装过程中选择默认文件夹，请转到`C:\Deployment Tools\IdFix`。
     
 3. 双击“IdFix.exe”****。 
     
@@ -97,7 +96,7 @@ ms.locfileid: "22539553"
     
     ![IdFix 查询和错误数。](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
   
-7. IdFix 完成查询之后，且目录中没有错误，则可以继续同步目录。如果您的目录中有错误，建议您在同步之前先修复这些错误。如果您想了解有关错误类型以及对解决每个错误的最佳方法的建议的详细信息，请参阅本主题结尾的链接。 
+7. IdFix 完成查询后，您可以继续操作，并将目录同步，如果没有任何错误。如果您目录中有错误，建议同步之前修复这些。如果您希望有关的错误类型的更多特定信息和有关每个修复的最佳方法的建议，请参阅本主题末尾的链接。 
     
     虽然对同步之前修复错误的做法不是强制性的，但我们还是强烈建议您至少检查一下由 IdFix 返回的所有错误。
     
@@ -123,6 +122,6 @@ ms.locfileid: "22539553"
     
 ## <a name="video-training"></a>视频培训
 
-有关详细信息，请参阅进入您的 LinkedIn 学习课[安装和使用 IDFix 工具](https://support.office.com/article/4d81d73c-f172-4fd5-8542-f601c0c96aa9.aspx)。
+有关详细信息，请参阅进入您的 LinkedIn 学习课[安装和使用 IDFix 工具](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US)。
   
 

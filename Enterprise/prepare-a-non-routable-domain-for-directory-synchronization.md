@@ -3,7 +3,6 @@ title: 非路由的域准备进行目录同步
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: 了解您有一个非 routale 域与 Office 365 同步之前与内部部署用户相关联时如何操作。
-ms.openlocfilehash: 62779ba879522177ba15a491644ab42f5961ece0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9ec96c34e1dc4a6c755ea97fce3f5f2a5ba21bb3
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539803"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674436"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>非路由的域准备进行目录同步
 将内部部署目录同步与 Office 365 时必须具有 Azure Active Directory 中的已验证的域。仅用户主体名称 (UPN) 与内部部署域同步。但是，包含非路由的域，例如.local （如 billa@contoso.local)，任何 UPN 将同步到。 onmicrosoft.com 域 （如 billa@contoso.onmicrosoft.com)。 
@@ -32,7 +31,7 @@ ms.locfileid: "22539803"
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>如果只需.local 内部部署域？
 
-最近工具可用于将您的 Active Directory 与 Azure Active Directory 同步名为 Azure AD 连接。有关详细信息，请参阅[将您的本地标识与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkId=624168)。
+最近工具可用于将您的 Active Directory 与 Azure Active Directory 同步名为 Azure AD 连接。有关详细信息，请参阅[将您的本地标识与 Azure Active Directory 集成](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)。
   
 Azure AD 连接同步用户的 UPN 和密码，以便用户可以对这些用户使用在本地使用相同的凭据。但是，Azure AD 连接仅同步到 Office 365 验证的域的用户。这意味着，还验证域的 Azure Active Directory 因为由 Azure Active Directory 管理 Office 365 标识。换句话说，域必须是有效的 Internet 域 （例如，.com、.org、.net、.us 等。）。如果内部 Active Directory 只使用不可路由的域 (例如，.local)，这可能不能与 Office 365 具有的已验证的域匹配。通过更改您的主域您本地 Active Directory 中或通过添加一个或多个 UPN 后缀，可以解决此问题。
   
