@@ -3,7 +3,7 @@ title: 在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/11/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要： 将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。
-ms.openlocfilehash: 44f00364d1f81633e06663770f32e0c9f9e99ed8
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 5635cf8b03490c2b2f811f22c231c271d5204552
+ms.sourcegitcommit: 65de707bd1c389eea48767a68c31032dd5198359
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575256"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706686"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
@@ -33,7 +33,11 @@ ms.locfileid: "25575256"
   
 这不是最佳用于管理 Office 365，因为您不能跨服务管理这些五个窗口之间进行数据交换。本主题介绍如何使用 Windows PowerShell 从其管理 Office 365、 业务联机状态，Exchange Online 中，SharePoint online，Skype 和安全性的单个实例&amp;合规性中心。
 
-## <a name="before-you-begin"></a>开始之前
+>[!Note]
+>本文当前仅包含连接到 Office 365 全球 （+ GCC） 云中的命令。其他注释提供连接到的其他 Office 365 云信息的文章的链接。
+>
+
+## <a name="before-you-begin"></a>准备工作
 
 您可以从 Windows PowerShell 的单个实例来管理所有 Office 365 之前，请考虑以下先决条件：
   
@@ -117,12 +121,20 @@ ms.locfileid: "25575256"
   Import-PSSession $exchangeSession
   ```
 
+>[!Note]
+>若要连接到 Exchange Online for Office 365 云全球之外，请参阅[Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+>
+
 7. 运行以下命令以连接到安全性&amp;合规性中心。
     
   ```
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $SccSession -Prefix cc
   ```
+
+>[!Note]
+>连接到安全性&amp;合规中心的 Office 365 云之外全球，请参阅[Connect to Office 365 安全性和合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+>
 
 以下在一个块是所有命令时使用 Azure Active Directory PowerShell 图模块。指定您的域主机的名称，然后一次运行所有这些。
   
