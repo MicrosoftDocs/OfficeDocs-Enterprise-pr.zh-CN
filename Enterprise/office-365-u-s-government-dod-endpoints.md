@@ -3,7 +3,7 @@ title: Office 365 美国政府 DoD 终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 摘要： Office 365 要求连接到 Internet。下面的终结点应该为客户使用 Office 365 美国政府 DoD 计划仅可访问。
 hideEdit: true
-ms.openlocfilehash: 769830741e2444a9a2caeaaef50d95ae7defc6f6
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+ms.openlocfilehash: f4412f18407eeb1f9adcb750687f75de8f704fc2
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933099"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872313"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 美国政府 DoD 终结点
 
@@ -31,13 +31,13 @@ ms.locfileid: "25933099"
  **摘要：** Office 365 要求连接到 Internet。下面的终结点应该为客户使用 Office 365 美国政府 DoD 计划仅可访问。
   
 > [!NOTE]
-> Microsoft 已发布基于 REST 的 web 服务的 IP 地址和此页上的 FQDN 条目。此新服务将帮助您配置和更新网络外围设备，如防火墙和代理服务器。您可以下载的终结点、 列表或特定更改的当前版本的列表。此服务将替换链接从该页面，其中上 2018 年 10 月 2，已弃用的 XML 文档。若要试用此新的服务，请转到[Web 服务](office-365-ip-web-service.md)。
+> Microsoft 针对此页上的 IP 地址和 FQDN 条目发布了基于 REST 的 Web 服务。这项新服务有助于配置和更新网络外围设备，如防火墙和代理服务器。可以下载终结点列表，无论是列表的当前版本，还是应用了特定更改的列表。这项服务会替换从此页面链接到的 XML 文档（已于 2018 年 10 月 2 日遭弃用）。若要试用这项新服务，请转到 [Web 服务](office-365-ip-web-service.md)。
   
  **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md) | [由世纪互联运营的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germany](office-365-germany-endpoints.md) | *Office 365 美国政府版 DoD* | [Office 365 美国政府版 GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**上次更新时间：** 11/1/2018- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)格式的完整列表 <br/> |
+|**上次更新时间：** 11/28/2018- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)格式的完整列表 <br/> |
    
  从[管理 Office 365 终结点](managing-office-365-endpoints.md)开始了解我们的建议用于管理网络连接使用该数据。终结点数据更新新的 IP 地址和 Url 发布前处于活动状态的 30 天内每月的开头。这样不尚未具有自动更新完成其流程之前不需要新连接的客户。如果无需对地址支持升级、 安全事件或其他即时操作要求，还可能月份内更新终结点。所有生成的基于 REST 的 web 服务从下面此页面上显示的数据。如果您使用脚本或网络设备进行访问这些数据，您应直接转到[Web 服务](office-365-ip-web-service.md)中。
 

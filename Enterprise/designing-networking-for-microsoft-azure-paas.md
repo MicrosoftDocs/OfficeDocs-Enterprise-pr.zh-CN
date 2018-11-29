@@ -3,7 +3,7 @@ title: 为 Microsoft Azure PaaS 设计网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 摘要：了解如何优化你的网络以便访问 Microsoft Azure PaaS。
-ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915107"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872233"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>为 Microsoft Azure PaaS 设计网络
 
@@ -108,8 +108,4 @@ ms.locfileid: "22915107"
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

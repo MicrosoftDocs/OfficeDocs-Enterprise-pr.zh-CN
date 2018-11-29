@@ -3,7 +3,7 @@ title: 发展你的云连接网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: 摘要：了解采用云如何要求使用新的网络基础设施投资方法。
-ms.openlocfilehash: 16dbbafe46e903fa41163e12c1741a45b47c5f45
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915137"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872253"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>发展你的云连接网络
 
@@ -44,6 +44,8 @@ ms.locfileid: "22915137"
 - **Azure 平台即服务 (PaaS)** 除了 Microsoft SaaS 服务的投资，多站点或地理位置上分散的 PaaS 应用程序可能需要构建 Azure 流量管理器来分配客户端流量。正在进行的投资包括性能和流量分布监控以及故障转移测试。
     
 - **Azure 基础结构即服务 (IaaS)** 除了 Microsoft SaaS 和 PaaS 服务的投资，IaaS 中正在运行的 IT 工作负载要求设计和配置 Azure 虚拟网络，这些网络用于承载虚拟机、到虚拟机上运行的应用程序的安全连接、路由、IP 地址、DNS 以及负载平衡。正在进行的投资包括性能和安全监控以及疑难解答。
+
+[Microsoft 365](https://www.microsoft.com/microsoft-365)是 Office 365、 企业管理 + 安全 (EMS) 和 Windows 10 的组合。Microsoft 365 结合使用多个 SaaS 和完整、 智能解决方案，使所有人都是创作的 Azure 服务和安全地协同工作。
     
 ## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>云中成功的网络投资领域
 
@@ -59,7 +61,7 @@ ms.locfileid: "22915137"
   
 ### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>对于 Azure、Office 365，和 Dynamics 365 的高级 SLA，请使用 ExpressRoute
 
-尽管你可以从边缘网络使用当前的 Internet 连接，但到达和来自 Microsoft 云服务的流量必须与发往 Internet 的其他 Intranet 流量共享管道。此外，到 Microsoft 云服务的流量还受限于 Internet 流量拥塞。
+尽管您可以从边缘网络使用您当前的 Internet 连接，从 Microsoft 云服务之间的通信必须与其他转到 Internet 的 intranet 流量共享管道。此外，您到 Microsoft 云服务的通信受制于 Internet 通信拥塞。
   
 为了实现高级 SLA 和最佳性能，请使用 ExpressRoute，这是你的网络与 Azure、Office 365、Dynamics 365 或所有这三个系统之间的专用 WAN 连接。 
   

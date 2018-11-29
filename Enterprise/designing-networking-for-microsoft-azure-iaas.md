@@ -3,7 +3,7 @@ title: 为 Microsoft Azure IaaS 设计网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 摘要： 了解如何设计优化的网络的 Microsoft Azure IaaS 中的工作负荷。
-ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d13c1d4b985c633b8336dc33253e1350a54b5a39
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915117"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872333"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>为 Microsoft Azure IaaS 设计网络
 
@@ -92,11 +92,11 @@ VNet 中有两种类型的子网：网关子网和虚拟机托管的子网。
 
 ![图 3：Azure 中两种类型的子网](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
-图 3 显示了包含网关子网（包含 Azure 网关）和一组虚拟机托管的子网（包含虚拟机）的 VNet。
+图 3 显示了包含网关子网已 Azure 的网关及一系列包含虚拟机的虚拟机托管的子网 VNet。
   
 Azure 需要 Azure 网关子网来托管 Azure 网关的两个虚拟机。指定前缀长度至少有 29 位的地址空间（例如：192.168.15.248/29）。尤其是在你计划使用 ExpressRoute 时，建议使用 28 位或更短的前缀长度。
   
-如下是用来确定 Azure 网关子网的地址空间的最佳实践：
+用于确定 Azure 网关子网的地址空间最佳做法是：
   
 1. 确定网关子网的大小。
     
@@ -123,11 +123,11 @@ Azure 上的每个子网使用的前 3 的地址。因此，可能在 Azure 子�
   
 |**所需的虚拟机**|**主机位**|**子网大小**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|1-3  <br/> |3   <br/> |/29  <br/> |
+|4-11  <br/> |4   <br/> |/28  <br/> |
+|12-27  <br/> |5   <br/> |/27  <br/> |
+|28-59  <br/> |6   <br/> |/26  <br/> |
+|60-123  <br/> |7   <br/> |/25  <br/> |
    
  **表 3：虚拟机要求及其子网大小**
   
@@ -358,7 +358,7 @@ Azure 内部负载平衡功能将来自其他 Azure VM 或 Intranet 计算机的
   
 图 15 显示跨界 VNet 以及 Azure 网关中的本地网络地址空间，Azure 网关表示本地网络上可访问的地址空间。  
   
-你可以按以下方式定义本地网络地址空间：
+您可以按以下方式定义的本地网络地址空间：
   
 - 选项 1：当前所需或正在使用的地址空间的前缀列表（当你添加新的子网时可能需要更新）。
     
@@ -419,22 +419,17 @@ Intranet Azure IaaS 中承载的 IT 工作负荷的示例是高可用性、 多�
 
 ![Azure IaaS 中具有高可用性的 SharePoint Server 2016 场](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
-图 19 显示了使用内部负载平衡器的前端和数据层跨界 VNet 中部署 SharePoint Server 2016 服务器场的九个服务器。有关详细信息，包括分步设计和部署的说明，请参阅[Microsoft Azure 中的 SharePoint Server 2016](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx)。
+图 19 显示了使用内部负载平衡器的前端和数据层跨界 VNet 中部署 SharePoint Server 2016 服务器场的九个服务器。有关详细信息，包括分步设计和部署的说明，请参阅[Microsoft Azure 中的 SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure)。
   
 > [!TIP]
-> 创建模拟的跨界 VNet 在单服务器 2016 SharePoint 服务器场，请参阅[Azure 的开发测试环境中的 Intranet SharePoint Server 2016](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)。 
+> 创建模拟的跨界 VNet 在单服务器 2016 SharePoint 服务器场，请参阅[Azure 的开发测试环境中的 Intranet SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)。 
   
-有关其他示例中虚拟跨内部部署 Azure 虚拟机上部署的 IT 工作负荷的网络，请参阅[Azure IaaS 混合云方案](https://technet.microsoft.com/library/mt750502.aspx)。
+有关其他示例中虚拟跨内部部署 Azure 虚拟机上部署的 IT 工作负荷的网络，请参阅[Azure IaaS 混合云方案](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas)。
   
 ## <a name="see-also"></a>另请参阅
-
-<a name="cross_prem"> </a>
 
 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 
