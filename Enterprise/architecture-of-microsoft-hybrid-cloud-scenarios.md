@@ -3,7 +3,7 @@ title: Microsoft 混合云方案的体系结构
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 摘要： 了解 Microsoft 混合云产品的体系结构。
-ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914917"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123389"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft 混合云方案的体系结构
 
@@ -33,7 +33,7 @@ ms.locfileid: "22914917"
   
 图 1 显示了 Microsoft 混合云堆栈及其层，包括内部部署、网络、标识、应用程序和方案，以及云服务（Microsoft SaaS、Azure PaaS 和 Azure PaaS）的类别。
   
-应用程序和方案层包含本模型中其他文章中详述的特定混合云方案。标识、网络和本地层可与云服务（SaaS、PaaS 或 PaaS）类别共用。
+该应用程序和应用场景的图层具有此模型的其他文章中详细介绍了特定混合云方案。标识、 网络和本地 layers 可以是适用于云服务 （SaaS、 PaaS 或 PaaS） 的类别。
   
 - 本地
     
@@ -68,8 +68,4 @@ ms.locfileid: "22914917"
 [面向企业架构师的 Microsoft 混合云](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

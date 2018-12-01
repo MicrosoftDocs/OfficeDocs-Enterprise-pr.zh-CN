@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 查看授权和未授权的用户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。
-ms.openlocfilehash: d182e53992b189e8ede52e6d133b864a17ba7232
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 61f94664a62b6a5cb178579c1a5777b208d0b2ec
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914867"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123359"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看授权和未授权的用户
 
@@ -34,10 +34,8 @@ ms.locfileid: "22914867"
     
 - 如果使用 **Get-MsolUser** cmdlet，而未使用 _-All_ 参数，只返回前 500 个帐户。
     
-## <a name="the-short-version-instructions-without-explanations"></a>简版（说明不含解释）
+## <a name="viewing-licensed-and-unlicensed-users"></a>查看许可和未许可用户
 
-此部分介绍的步骤未经任何渲染或过多解释。如果您有任何疑问或想了解更多信息，可以阅读本主题的其余部分。
-  
 若要查看组织中所有用户帐户及其授权状态的列表，请在 Office 365 PowerShell 中运行以下命令：
   
 ```
@@ -56,75 +54,6 @@ Get-MsolUser -All -UnlicensedUsersOnly
 Get-MsolUser -All | where {$_.isLicensed -eq $true}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>长版（说明附有详细解释）
-
-Office 365 用户帐户和 Office 365 许可证不需要一一对应： 就可以有 Office 365 用户不具有 Office 365 许可证，并且可能需要没有已分配给用户的 Office 365 许可证。（事实上，单个用户帐户甚至可以将*多个*Office 365 许可证。）当您创建新的 Office 365 用户帐户 （请参阅文章[分配给与 Office 365 PowerShell 中的用户帐户的许可证](assign-licenses-to-user-accounts-with-office-365-powershell.md)的详细信息） 您无需将该用户分配许可证： 新的用户将具有有效的帐户，但他/她不能为签名中到 Office 365 的 n。如果用户尝试登录时，他们将看到类似于以下内容：
-  
-![没有有效 Office 365 许可证的用户。](media/o365-powershell-no-license.png)
-  
-同样，您可能有一个用户需要休假或者休产假/陪产假，因此将要延长时间。在这种情况下，您可以删除用户的许可证，但使用户帐户保持不变（即地址、电话号码等所有属性值保持不变）。这样，您可以将其许可证分配给其他人（例如，接替休假人员的临时工作人员）。用户回到工作岗位后，您可以向其签发新的许可证，他们将可以继续工作，就像从来没有离开过一样。
-  
-这就意味着，您确实可以使用户具有帐户但不具有许可证。反之亦然。
-  
-文章 [使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)介绍了如何确定您的组织购买的 Office 365 许可证数量，以及为用户分配的这些许可证数量。这是很重要的信息。但了解已向哪些用户分配了这些许可证，哪些用户没有分配许可证同样重要。本文将告诉您如何做到这一点。
-  
-您可能已经知道， **Get-MsolUser** cmdlet 将返回有关所有 Office 365 用户帐户的信息。需要有关所有 Office 365 用户的快速参考信息？请在 Office 365 PowerShell 中运行以下命令：
-  
-```
-Get-MsolUser
-```
-
-反之，Get-MsolUser 将返回与以下类似的数据：
-  
-```
-UserPrincipalName           DisplayName                     isLicensed
------------------           -----------                     ----------
-ZrinkaM@litwareinc.com      Zrinka Makovac                  True
-BelindaN@litwareinc.com     Belinda Newman                  False
-BonnieK@litwareinc.com      Bonnie Kearney                  True
-FabriceC@litwareinc.com     Fabrice Canel                   True
-AnneW@litwareinc.com        Anne Wallace                    True
-AlexD@litwareinc.com        Alex Darrow                     True
-```
-
-正如您所见，返回的其中一个属性值是 **isLicensed** 属性的值。如果 **isLicensed** 为 `False`，则意味着用户没有 Office 365 的许可证。换句话说，如果您愿意，您可以滚动用户列表，并挑选出将 **isLicensed** 属性设置为 `False` 的用户。
-  
-无论如何，只要您的用户数量相对较少，即可滚动用户列表、尝试挑选出未许可用户。但是，如果您具有大量用户，滚动列表将会非常缓慢。（此外，根据 Windows PowerShell 的配置方式，可能完全无法这样做。这是由于对在 Windows PowerShell 控制台中一次可显示的输出行数存在限制。）
-  
-牢记这一点，列出未许可用户的更好方式是转为运行此命令：
-  
-```
-Get-MsolUser -UnlicensedUsersOnly
-```
-
-该命令仅返回没有 Office 365 许可证的用户。即：
-  
-```
-UserPrincipalName           DisplayName                     isLicensed
------------------           -----------                     ----------
-BelindaN@litwareinc.com     Belinda Newman                  False
-```
-
-可以看到，我们有一个未许可用户。如果我们仅需要 *已许可*  用户列表，应该怎么做？这略显复杂，但仅一点点复杂而已：
-  
-```
-Get-MsolUser | Where-Object {$_.isLicensed -eq $true}
-```
-
-查找 **isLicensed** 属性为 `True` 的所有用户帐户的命令将返回与以下类似的信息：
-  
-```
-UserPrincipalName           DisplayName                     isLicensed
------------------           -----------                     ----------
-ZrinkaM@litwareinc.com      Zrinka Makovac                  True
-BonnieK@litwareinc.com      Bonnie Kearney                  True
-FabriceC@litwareinc.com     Fabrice Canel                   True
-AnneW@litwareinc.com        Anne Wallace                    True
-AlexD@litwareinc.com        Alex Darrow                     True
-```
-
-可以看到，未返回 Belinda Newman 的信息。为什么没有返回？是的，原因是：Belinda 的帐户的 **isLicensed** 属性未设置为 `True`。
-  
 ## <a name="see-also"></a>另请参阅
 
 有关在这些步骤中使用的 cmdlet 的详细信息，请参阅下列主题：

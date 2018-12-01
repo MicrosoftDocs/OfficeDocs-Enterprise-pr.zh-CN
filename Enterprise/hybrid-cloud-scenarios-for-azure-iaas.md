@@ -3,7 +3,7 @@ title: Azure IaaS 的混合云方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 摘要： 了解混合体系结构和方案的 Microsoft 的基础结构作为服务 (IaaS)-基于 Azure 中的云服务。
-ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915027"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123239"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>适用于 Azure IaaS 的混合云方案
 
@@ -67,7 +67,7 @@ DirSync 服务器是运行 Azure AD Connect 的基于 Windows 的服务器。为
   
 DirSync 服务器轮询 Windows Server AD 的更改，然后将它们与 Office 365 订阅同步。
   
-有关详细信息，请参阅[设置 Office 365 的目录同步](set-up-directory-synchronization.md)。
+有关详细信息，请参阅[部署 Microsoft Azure 中 Office 365 目录同步](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)。
   
 ## <a name="line-of-business-lob-application"></a>业务线 (LOB) 应用程序
 
@@ -161,7 +161,7 @@ Azure 中的多层、 高可用性的 LOB 应用程序的另一个示例是 Offi
   
 **图 5: 高可用性联合的身份基础结构 Azure IaaS 中的 Office 365**
 
-![Azure 中高可用性 Office 365 联合身份验证基础结构的最终配置](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![高可用性 Office 365 联合 Azure 中的身份验证基础结构](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 图 5 中的本地网络承载身份基础结构和用户。连接到 Azure IaaS 网关与站点到站点 VPN 或 ExpressRoute 连接。Azure VNet 包含 web 代理服务器、 Active Directory 联合身份验证服务 (AD FS) 服务器和 Windows Server Active Directory (AD) 域控制器。
   
@@ -181,19 +181,11 @@ Azure 中的多层、 高可用性的 LOB 应用程序的另一个示例是 Offi
     
     请参阅[在 Azure 中的 Office 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)完成 AD FS 基础结构的高可用性的端到端配置过程中五个阶段的步骤。
     
-请参阅其他资源：
-  
-- [构建混合云环境](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [设计和构建 Azure 中的 LOB 应用程序](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 混合云](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 

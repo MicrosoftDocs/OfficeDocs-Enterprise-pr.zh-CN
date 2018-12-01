@@ -3,7 +3,7 @@ title: 混合云概述
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 摘要： 了解 Microsoft 混合云的定义和元素。
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915817"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123309"
 ---
 # <a name="hybrid-cloud-overview"></a>混合云概述
 
@@ -55,7 +55,7 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
   
 - SaaS
     
-    Microsoft SaaS 服务包括 Office 365、Microsoft Intune 和 Microsoft Dynamics 365。采用 Microsoft SaaS 的混合云方案将这些服务与本地服务或应用程序相结合。例如，在 Office 365 中运行的 Exchange Online 可以与部署在本地的 Skype for Business 2015 集成。
+    Saas 与 Microsoft 服务包括 Office 365、 Microsoft Intune 和 Microsoft Dynamics 365。与 Microsoft SaaS 混合云方案的本地服务或应用程序中结合这些服务。例如，Exchange Online 在 Office 365 中运行可与集成业务 2019 的本地部署的 Skype。
     
 - Azure PaaS
     
@@ -90,8 +90,4 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
 [面向企业架构师的 Microsoft 混合云](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 

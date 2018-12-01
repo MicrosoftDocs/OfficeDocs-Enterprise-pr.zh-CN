@@ -3,7 +3,7 @@ title: Azure PaaS 的混合云方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 摘要： 了解在 Azure 中基于 Microsoft 平台即服务 (PaaS) 云产品的混合体系结构和方案。
-ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915007"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123329"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS 的混合云方案
 
@@ -95,33 +95,9 @@ Azure 应用可以使用以下程序提供的凭据：
     
 由于本地标识提供程序已与 Azure AD 同步，自定义移动应用和 LOB 应用都可以验证请求用户的帐户名称。
   
-## <a name="stretch-database-with-sql-server-2016"></a>使用 SQL Server 2016 的 Stretch Database
-
-Stretch Database 是 SQL Server 2016 的一项功能，它可以使你以透明的方式安全地将原始数据（如包含客户订单信息的大型表中已结束的业务数据）移动到 Azure 中的 SQL Stretch Database。
-  
-延伸后，SQL Server 实例、数据库或者甚至单个表中的内容会是 SQL Server 2016 服务器中的本地数据和 Azure 中远程数据的组合。SQL Server 2016 会自动将变得符合条件的伸展数据移动至 Azure。
-  
-图 4 显示了使用 SQL Server 2016 的 Stretch Database。
-  
-**图 4：使用 SQL Server 2016 的 Stretch Database**
-
-![使用 SQL Server 2016 的 Stretch Database](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
-  
-在图 4 中，本地网络承载一个服务器，该服务器运行配有小型本地数据库的 SQL Server 2016。Azure PaaS 承载 Azure SQL Server Stretch Database（包含扩展部分的数据库）的实例。从本地用户发送到本地 SQL 服务器的 T-SQL 查询已被安全转发到 Azure SQL Stretch Database，然后由该 Stretch Database 将结果返回给发出请求的用户。
-  
- 包含历史数据的用户查询以透明的方式转发到 Azure SQL Stretch Database。即使延伸表，也不需要对查询进行重新编写。
-  
-Stretch Database 提供经济高效的选项，用于历史数据的长期存储和透明访问。它还解决了表变大时出现的性能和可用性问题。
-  
-有关详细信息，请参阅 [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)。
-  
 ## <a name="see-also"></a>另请参阅
 
 [面向企业架构师的 Microsoft 混合云](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
