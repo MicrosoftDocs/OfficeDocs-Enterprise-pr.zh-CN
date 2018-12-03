@@ -3,7 +3,7 @@ title: 面向企业架构师的 Microsoft 云网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 摘要： 设计用于 Microsoft 云服务和平台的网络。
-ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ee0df6442795a8ec440a0c56fa23dfd10448e0d
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915397"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872223"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云网络
 
@@ -35,7 +35,7 @@ ms.locfileid: "22915397"
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [更多语言](https://www.microsoft.com/download/details.aspx?id=54425)
   
-还可以查看 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中的所有模型，逐一浏览 [Microsoft 企业云路线图：IT 决策者的资源](https://aka.ms/cloudarchitecture)。
+还可以在 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中查看所有模型。
   
 请参阅以下部分：
   
@@ -51,11 +51,11 @@ ms.locfileid: "22915397"
     
     ExpressRoute 提供了到 Microsoft 云的单独、专用、高吞吐量的网络连接。
     
-- [为 Microsoft SaaS 设计网络](designing-networking-for-microsoft-saas.md)
+- [设计 Microsoft SaaS 网络](designing-networking-for-microsoft-saas.md)
     
-    优化你的 Microsoft SaaS 服务网络需要认真分析 Internet 边缘、你的客户端设备和典型的 IT 运营状况。
+    若要为 Microsoft SaaS 服务优化网络，需要将内部和边缘设备配置为把各种类别的流量路由至 Microsoft SaaS 服务。
     
-- [为 Microsoft Azure PaaS 设计网络](designing-networking-for-microsoft-azure-paas.md)
+- [设计 Microsoft Azure PaaS 网络](designing-networking-for-microsoft-azure-paas.md)
     
     优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，并可以要求网络流量跨多个站点或应用分布。
     
@@ -66,13 +66,9 @@ ms.locfileid: "22915397"
 有关此海报要点的 30 分钟内容摘要，请学习 Microsoft Virtual Academy 课程[让网络更适合 Microsoft 云产品/服务](https://mva.microsoft.com/zh-CN/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)。
   
 > [!NOTE]
-> 这些文章反映了 **2017 年 6 月**版“面向企业架构师的 Microsoft 云网络”海报。
+> 这些文章反映了面向企业架构师的 Microsoft 云网络的 **2018 年 12 月**版本的海报。
   
 ## <a name="see-also"></a>另请参阅
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
