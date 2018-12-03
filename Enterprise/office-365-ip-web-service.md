@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 为了帮助你更好地标识和区分 Office 365 网络流量，我们推出了一项用于发布 Office 365 终结点的新 Web 服务，以方便你更轻松地评估、配置并掌握最新变更。这项新 Web 服务取代了目前可用的 XML 可下载文件。
-ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 8a9b3981f833705b0d77e87a6f0588730b9fb170
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697978"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985767"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP 地址和 URL Web 服务**
 
@@ -68,7 +68,7 @@ Microsoft 在每月底更新 Office 365 IP 地址和 FQDN 条目，有时也会�
 - **Format=JSON** | **CSV** | **RSS** - 除了 JSON 和 CSV 格式以外，版本 Web 方法还支持 RSS。可将此参数与 allVersions=true 参数结合使用，以请求获取能用于 Outlook 或其他 RSS 阅读器的 RSS 源。
 - **Instance** - 路由参数。此可选参数指定要返回哪个实例的版本。如果省略，将返回所有实例的版本。有效实例为 Worldwide、China、Germany、USGovDoD 和 USGovGCCHigh。
 
-版本 Web 方法的结果可以是一条记录，也可以是一组记录。每条记录均包含以下元素：
+版本 Web 方法不受速率限制，并且不会返回 429 HTTP 响应代码。版本 Web 方法的响应确实包括，建议将数据缓存 1 小时的缓存控制标头。版本 Web 方法的结果可以是一条记录，也可以是一组记录。每条记录都由以下元素构成：
 
 - instance - Office 365 服务实例的短名称。
 - latest - 指定实例的终结点的最新版本。
@@ -168,12 +168,14 @@ Worldwide,2018063000
 
 ## <a name="endpoints-web-method"></a>**终结点 Web 方法**
 
-终结点 Web 方法返回组成 Office 365 服务的 IP 地址范围和 URL 的所有记录。虽然来自终结点 Web 方法的最新数据应用于网络设备配置，但由于有附加事先通知，数据在发布后最多可缓存 30 天。终结点 Web 方法需要使用以下参数：
+终结点 Web 方法返回组成 Office 365 服务的 IP 地址范围和 URL 的所有记录。虽然来自终结点 Web 方法的最新数据应该用于网络设备配置，但由于有提前发出的附加通知，数据在发布后最多可缓存 30 天。建议仅在版本 Web 方法指明有新版数据时，才重新调用终结点 Web 方法。终结点 Web 方法需要使用以下参数：
 
 - **ServiceAreas** - 查询字符串参数。此参数指定服务区域的逗号分隔列表。有效项为 Common、Exchange、SharePoint 和 Skype。因为 Common 服务区域项是其他所有服务区域的先决条件，所以 Web 服务始终包含此项。如果你不添加此参数，将返回所有服务区域。
 - **TenantName** - 查询字符串参数。此参数指定 Office 365 租户名称。这项 Web 服务获取你提供的名称，并将它插入包含租户名称的 URL 部分中。如果你未提供租户名称，这些 URL 部分包含的是通配符 (\*)。
 - **NoIPv6** - 查询字符串参数。将此属性设置为 true，可从输出中排除 IPv6 地址（例如，你在网络中没有使用 IPv6 的话）。
 - **Instance** - 路由参数。此必需参数指定要返回哪个实例的终结点。有效实例为 Worldwide、China、Germany、USGovDoD 和 USGovGCCHigh。
+
+如果从同一客户端 IP 地址调用不合理次数的终结点 Web 方法，可能会收到 HTTP 响应代码 429“请求次数过多”。大多数人永远不会看到此代码。如果收到此响应代码，应先等待 1 小时，再重新调用方法。计划仅在版本 Web 方法指明有新版本时，才调用终结点 Web 方法。 
 
 终结点 Web 方法的结果是一组记录，每条记录均代表一个终结点集。每条记录均包含以下元素：
 
@@ -239,11 +241,22 @@ Worldwide,2018063000
 
 - **Version** - 必需的 URL 路由参数。此参数指定当前实现的版本，且要查看自这一版本起的变更。格式是 _YYYYMMDDNN_。
 
+变更 Web 方法受速率限制，与终结点 Web 方法受限于速率一样。如果收到 429 HTTP 响应代码，应先等待 1 小时，再重新调用方法。 
+
 变更 Web 方法的结果是一组记录，每条记录均代表特定版本终结点中的变更。每条记录均包含以下元素：
 
 - id - 变更记录的不可变 ID。
 - endpointSetId - 变更的终结点集记录的 ID。此为必需元素。
-- disposition - 此元素可以是两种变更之一（add 或 remove），描述了终结点集记录有何变更。此为必需元素。
+- disposition - 这可以是两种变更之一（add 或 remove），描述了终结点集记录有何变更。此为必需元素。
+- impact - 并非所有变更都对每个环境同样重要。此元素说明了相应更改对企业网络外围环境的预期影响。此属性仅包含在版本 2018112800 及更高版本的变更记录中。impact 选项包括：
+  - AddedIp - IP 地址已添加到 Office 365，且很快就会对服务生效。这表示需要更改防火墙或其他第 3 层网络外围设备。如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
+  - AdedUrl - URL 已添加到 Office 365，且很快就会对服务生效。这表示需要更改代理服务器或 URL 分析网络外围设备。如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
+  - AddedIpAndUrl - IP 地址和 URL 均已添加。这表示需要更改防火墙第 3 层设备、代理服务器或 URL 分析设备。如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
+  - RemovedIpOrUrl - 从 Office 365 中至少删除了一个 IP 地址或 URL。应从外围设备中删除网络终结点，但此操作并无截止时间。
+  - ChangedIsExpressRoute - ExpressRoute 支持属性已更改。如果使用 ExpressRoute，可能需要采取措施，具体视配置而定。
+  - MovedIpOrUrl - 在此终结点集和另一个终结点集之间迁移了 IP 地址或 URL。通常无需采取任何措施。
+  - RemovedDuplicateIpOrUrl - 删除了重复的 IP 地址或 URL，但它仍是对 Office 365 发布的。通常无需采取任何措施。
+  - OtherNonPriorityChanges - 更改了一些不如其他所有选项（如注释字段）重要的某内容
 - version - 引入变更的已发布终结点集的版本。版本号格式为 _YYYYMMDDNN_，其中 NN 是必须在一天内发布多个版本时递增的自然数。
 - previous - 详细说明终结点集中已变更元素的旧值的子结构。对于新添加的终结点集，不包含此元素。此元素包括 tcpPorts、udpPorts、ExpressRoute、category、required 和 notes。
 - current - 详细说明终结点集中已变更元素的更新值的子结构。此元素包括 tcpPorts、udpPorts、ExpressRoute、category、required 和 notes。

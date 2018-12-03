@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。
-ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
-ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
+ms.openlocfilehash: 8a95cb5904907984b393c5e4c67840bd7c0b0311
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26525843"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985757"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
@@ -137,7 +137,7 @@ ms.locfileid: "26525843"
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![海报缩略图：圣诞云](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)          ](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |圣诞老人和他的小精灵们（即 IT 部门）使用 Office 365、Azure、Dynamics 365 和 Intune 来确定谁最淘气谁最可爱，以及要在 12 月 24 日派送的礼物。  <br/>|
+|[![“圣诞云”海报的缩略图](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [联机查看](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |圣诞老人和他的小精灵们（即 IT 部门）使用 Office 365、Azure、Dynamics 365 和 Intune 来确定谁最淘气谁最可爱，以及要在 12 月 24 日派送的礼物。  <br/>|
    
 <a name="BKMK_o365solutions"> </a>
 ## <a name="office-365-enterprise-solution-series"></a>Office 365 企业版解决方案系列
