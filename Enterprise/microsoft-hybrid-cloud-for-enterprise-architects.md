@@ -3,7 +3,7 @@ title: 面向企业架构师的 Microsoft 混合云
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 摘要： IT 架构师需要了解的有关使用 Microsoft 云服务和平台的混合方案的知识。
-ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 40a46c6d289011a0e0c6065573a5b67a3ac66756
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872243"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123369"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>面向企业架构师的 Microsoft 混合云
 
@@ -33,8 +33,7 @@ ms.locfileid: "26872243"
 [![Microsoft 混合云模型的缩略图](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
-[更多语言](https://www.microsoft.com/download/details.aspx?id=54424)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)
   
 还可以在 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)中查看所有模型。
   
@@ -61,13 +60,9 @@ ms.locfileid: "26872243"
     Azure IaaS 混合方案体系结构和托管在 Azure IaaS 中的业务线 (LOB) 应用的说明。
     
 > [!NOTE]
-> 这些文章反映的是面向企业架构师的 Microsoft 混合云的 **2017 年 6 月** 版本海报。
+> 这些文章反映了面向企业架构师的 Microsoft 混合云的 **2018 年 12 月**版本的海报。
   
 ## <a name="see-also"></a>另请参阅
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft 企业云路线图：IT 决策者的资源](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

@@ -3,7 +3,6 @@ title: Microsoft 云 IT 体系结构资源
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,68 +15,72 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 摘要：了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。
-ms.openlocfilehash: 8a95cb5904907984b393c5e4c67840bd7c0b0311
-ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
+description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Office 专业增强版部署新式安全桌面。
+ms.openlocfilehash: 88ff136002ea1a5a580d5d03e4e64aa7dd81d368
+ms.sourcegitcommit: bd50d505b134da4e46606c9580d67f34f6199ecb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26985757"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118165"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
- **摘要：** 了解 Microsoft 云服务和平台。查看我们的企业云路线图，探索云体系结构系列等。
+ **摘要：** 了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Office 专业增强版部署新式安全桌面。
   
-这些体系结构工具和海报为你提供了有关 Microsoft 云服务和平台的信息，包括 Office 365、Microsoft Azure、Microsoft Intune、Microsoft Dynamics 365、私有云数据中心，以及混合本地和云的解决方案。IT 决策者和架构师可以使用这些资源，以确定工作负载的理想解决方案并做出有关标识和安全等核心基础结构组件的决策。 
+这些体系结构工具和海报提供有关 Microsoft 云服务的信息，其中包括 Office 365、Windows 10、Microsoft Intune、Microsoft Dynamics 365 以及本地混合和云解决方案。IT 决策者和架构师可以使用这些资源来确定其工作负载的理想解决方案，并做出有关核心基础结构组件的决策，如标识和安全性。 
   
-- **[Microsoft 企业云路线图](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway)
+<!---**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) --->
     
-- **[面向企业架构师的 Microsoft 云系列](microsoft-cloud-it-architecture-resources.md#cloudarch)** 
-    - [Microsoft 云服务和平台选项](microsoft-cloud-it-architecture-resources.md#platformoptions)
+- **[面向企业架构师的 Microsoft 云系列](microsoft-cloud-it-architecture-resources.md#cloudarch)** <!--- [Microsoft Cloud Services and Platform Options](microsoft-cloud-it-architecture-resources.md#platformoptions) --->
     - [面向企业架构师的 Microsoft 云标识](microsoft-cloud-it-architecture-resources.md#identity)
     - [面向企业架构师的 Microsoft 云安全性](microsoft-cloud-it-architecture-resources.md#security)
     - [面向企业架构师的 Microsoft 云网络](microsoft-cloud-it-architecture-resources.md#networking)
-    - [面向企业架构师的 Microsoft 移动性和安全性](microsoft-cloud-it-architecture-resources.md#mobility)
     - [面向企业架构师的 Microsoft 混合云](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [常见攻击和保护组织的 Microsoft 功能](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
-- **[Office 365 企业版解决方案系列](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**：
-    - [Office 365 信息保护](microsoft-cloud-it-architecture-resources.md#BKMK_infoprotect)
+- **[Office 365 企业版解决方案系列](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**：<!--- [Information Protection for Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_infoprotect) --->
     - [Office 365 的标识和设备保护](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Office 365 中的文件保护解决方案](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
-    - [Office 365 客户端的变更管理](microsoft-cloud-it-architecture-resources.md#changemgmt)
     - [通过 Microsoft 部署新式安全桌面](microsoft-cloud-it-architecture-resources.md#msd)
     
-> [!TIP]
-> 此页上的大多数海报都有多种语言，包括中文、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语和西班牙语。若要下载其中一种语言的海报，请单击相应海报的**更多语言**链接。
+
   
-请将想法告诉我们！向我们 ([cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)) 发送电子邮件。 
-  
+请将你的想法告诉我们！向我们 ([cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)) 发送电子邮件。 
+
+<!---
 <a name="roadmap"> </a>
-## <a name="microsofts-enterprise-cloud-roadmap"></a>Microsoft 企业云路线图
+## Microsoft's Enterprise Cloud Roadmap
 
-请参阅海报、图标集、社区以及介绍业界最完整云解决方案的其他资源。
+See the posters, icon sets, community venues, and other resources that describe the industry's most complete cloud solution.
   
-|**项**|**说明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![缩略图：企业云路线图](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft 企业云路线图](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |逐一浏览此 Sway 体验，获取介绍业界最完整云解决方案的资源。  <br/> |
-   
-<a name="cloudarch"> </a>
-## <a name="microsoft-cloud-for-enterprise-architects-series"></a>面向企业架构师的 Microsoft 云系列
-
-这些云体系结构海报介绍了 Microsoft 云服务和平台，包括 Office 365、Microsoft Azure、Microsoft Intune、Microsoft Dynamics CRM Online、私有云数据中心，以及混合本地和云解决方案。IT 决策者和架构师可以使用这些资源，以确定最适合工作负载的解决方案，并就核心基础结构组件（如标识和安全性等）做出决策。
+|[![Thumbnail for Enterprise Cloud Roadmap](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft's Enterprise Cloud Roadmap](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Swipe through this Sway experience for the resources that describe the industry's most complete cloud solution.  <br/> |
+--->
   
+<a name="cloudarch">
+
+ </a>
+## 面向企业架构师的 Microsoft 云系列
+
+这些云体系结构海报提供有关 Microsoft 云服务的信息，其中包括 Office 365、Azure Active Directory、Microsoft Intune、Microsoft Dynamics CRM Online 以及本地混合和云解决方案。IT 决策者和架构师可以使用这些资源来确定其工作负载的理想解决方案，并做出有关核心基础结构组件的决策，如标识和安全性。
+
+<!---  
 <a name="platformoptions"> </a>
-### <a name="microsoft-cloud-services-and-platform-options"></a>Microsoft 云服务和平台选项
+### Microsoft Cloud Services and Platform Options
 
-了解 Microsoft 云服务和平台产品/服务的关键区别。确定最适合解决方案的选项。
+Learn key differences between Microsoft cloud services and platform offerings. Find the best fit for your solution.
   
-|**项**|**说明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![提供服务选项的云体系结构模型的缩略图](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | 此模型描述： <ul><li>  服务型软件 (SaaS) 产品/服务，包括 Office 365 </li><li>  Microsoft Azure 中的平台即服务 (PaaS) 功能 </li><li>  Microsoft Azure 中的服务架构 (IaaS) 功能 </li><li>  使用 Windows Server 和 System Center 的私有云数据中心功能 </li><li>  了解 Microsoft 拥有的 IT 部门如何迁移到这些云服务并生成混合云。 </li></ul><br/>|
+|[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Office 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
+--->
+
    
-<a name="identity"> </a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云标识
+<a name="identity">
+
+ </a>
+### 面向企业架构师的 Microsoft 云标识
 
 关于使用 Microsoft 云服务和平台为组织设计标识，IT 架构师需要了解的信息。
   
@@ -103,14 +106,6 @@ ms.locfileid: "26985757"
 |:-----|:-----|
 |[![Microsoft 云网络连接模型的缩略图](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [文章](https://technet.microsoft.com/library/mt733214.aspx) <br/>[更多语言](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | 此模型包含以下页面： <ul><li> **发展云连接网络**：云迁移更改了公司网络内外通信的流量和性质。它还影响了降低安全风险的方法。</li><li> **Microsoft 云连接的常见元素**：将网络与 Microsoft 云进行集成可提供对广泛服务的最佳访问。 </li><li> **Microsoft 云连接的 ExpressRoute**：ExpressRoute 可用于与 Microsoft 云建立私有、专用、高吞吐量的网络连接。 </li><li> **设计 Microsoft SaaS（Office 365、Microsoft Intune 和 Dynamics CRM Online）网络**：优化 Microsoft SaaS 服务网络需要仔细分析 Internet 边缘、客户端设备和典型 IT 运营状况。 </li><li> **设计 Azure PaaS 网络**：优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，并可以要求网络流量跨多个网站或应用分布。 </li><li> **设计 Azure IaaS 网络**：逐步调试设计流程，以创建最佳的 Azure 虚拟网络 (VNet)，以便托管基于服务器的 IT 工作负载，包括子网、地址空间、路由、DNS、负载均衡、本地网络连接性、其他 VNet 和 Internet。 </li></ul><br/>  学习此体系结构海报宣传的新 Microsoft Virtual Academy 课程：[让网络更适合 Microsoft 云产品/服务](https://aka.ms/optimizecloudnetworkingmva)。  <br/>|
    
-<a name="mobility"> </a>
-### <a name="microsoft-mobility-and-security-for-enterprise-architects"></a>面向企业架构师的 Microsoft 移动性和安全性
-
-关于 Microsoft 云服务和平台的移动性，IT 架构师需要了解的信息。
-  
-|**项**|**说明**|
-|:-----|:-----|
-|[![Office 365 信息保护海报的缩略图](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | 此模型包含： <ul><li>热门商业移动应用。 </li><li>用于开发移动应用的平台、服务和资源 </li><li>通过移动设备管理对基于云的应用和数据的访问权限 </li><li>比较 Office 365 MDM、Azure Active Directory Premium 和 Intune 的功能和平台支持 </li></ul><br/> |
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>面向企业架构师的 Microsoft 混合云
@@ -143,18 +138,21 @@ ms.locfileid: "26985757"
 ## <a name="office-365-enterprise-solution-series"></a>Office 365 企业版解决方案系列
 
 Office 365 企业版解决方案系列介绍了如何实现 Office 365 功能，尤其是其中一些跨技术的功能。
-  
-<a name="BKMK_infoprotect"> </a>
-### <a name="information-protection-for-office-365"></a>Office 365 信息保护
 
-企业组织用于保护企业资产的功能。
+<!---  
+<a name="BKMK_infoprotect"> </a>
+### Information Protection for Office 365
+
+Capabilities for enterprise organizations to protect corporate assets.
   
-|**项**|**说明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Office 365 信息保护功能](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft 提供最完整的功能集以保护您的企业资产。此模型帮助组织采用有条不紊的方法来计划要实现的功能。  <br/>|
+|[![Information protection capabilities for Office 365](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft provides the most complete set of capabilities to protect your corporate assets. This model helps organizations take a methodical approach when planning which capabilities to implement.  <br/>|
+--->
    
-<a name="BKMK_O365IDP"> </a>
-### <a name="identity-and-device-protection-for-office-365"></a>Office 365 的标识和设备保护
+<a name="BKMK_O365IDP">
+ </a>
+### Office 365 的标识和设备保护
 
 用于保护访问 Office 365 设备、其他 SaaS 服务以及使用 Azure AD 应用代理发布的本地应用的标识和设备的推荐功能。
   
@@ -171,14 +169,6 @@ Office 365 企业版解决方案系列介绍了如何实现 Office 365 功能，
 |:-----|:-----|
 |[![Office 365 中文件保护解决方案迷你海报集缩略图](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |请务必在数据、标识和设备中使用一致的保护级别。本文档介绍可与保护 Office 365 中的文件功能相媲美的功能的详细信息。  <br/> |
    
-<a name="changemgmt"> </a>
-### <a name="change-management-for-office-365-clients"></a>Office 365 客户端的变更管理
-
-关于管理 Office 365 客户端应用和 Windows 10 版本，IT 架构师需要了解的信息。 
-  
-|**项**|**说明**|
-|:-----|:-----|
-|[![模型海报：Office 365 客户端的变更管理](media/fd0705af-5103-438f-9e1a-fa38eb1af2cc.png)          ](https://www.microsoft.com/download/details.aspx?id=49141) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=626681)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=626680)| 此模型包含： <ul><li>Windows 10 和 Office 365 客户端应用的服务模型 </li><li>  发布选项 </li><li>  Cadences 版本 </li><li>  更改类型 </li><li>  角色和责任 </li><li>  管理更新部署 </li></ul><br/>  请查看文章表单中的信息：[Office 365 客户端的变更管理](https://docs.microsoft.com/DeployOffice/change-management-for-office-365-clients)。  <br/> |
    
 <a name="msd"> </a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>通过 Microsoft 部署新式安全桌面
