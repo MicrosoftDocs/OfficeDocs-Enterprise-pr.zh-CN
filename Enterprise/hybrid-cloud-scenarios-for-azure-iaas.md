@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 摘要： 了解混合体系结构和方案的 Microsoft 的基础结构作为服务 (IaaS)-基于 Azure 中的云服务。
-ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123239"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181033"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>适用于 Azure IaaS 的混合云方案
 
@@ -51,21 +51,21 @@ ms.locfileid: "27123239"
     
     包含与在 Azure 中运行的标识服务器同步的标识服务器。此外还包含在 Azure 中运行的 VM 可访问的资源，如存储和系统管理基础结构。
     
-## <a name="dirsync-server-for-office-365"></a>适用于 Office 365 的 DirSync 服务器
+## <a name="directory-synchronization-server-for-office-365"></a>Office 365 的目录同步服务器
 
-如图 2 中所示，从 Azure VNet 运行目录同步 (DirSync) 服务器是一个将计算和标识基础结构扩展到云的示例。
+从 Azure VNet，运行您的目录同步服务器，如图 2 中所示是扩展到云计算和标识基础结构的示例。
   
-**图 2：Azure IaaS 中适用于 Office 365 的 DirSync 服务器**
+**图 2: Azure IaaS 中的 Office 365 的目录同步服务器**
 
-![Azure IaaS 中适用于 Office 365 的 DirSync 服务器](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Azure IaaS 中的 Office 365 的目录同步服务器](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-图 2 中的本地网络承载具有代理服务器和边缘处路由器 Windows Server AD 基础结构。路由器连接到 Azure 网关与站点到站点 VPN 或 ExpressRoute 连接 Azure VNet 边缘内侧。内 VNet，一台 DirSync 服务器运行 Azure AD 连接。
+图 2 中的本地网络承载具有代理服务器和边缘处路由器 Windows Server AD 基础结构。路由器连接到 Azure 网关与站点到站点 VPN 或 ExpressRoute 连接 Azure VNet 边缘内侧。内 VNet，目录同步服务器运行 Azure AD 连接。
   
-Office 365 的 DirSync 服务器将 Windows Server AD 中的帐户列表与 Office 365 订阅的 Azure AD 租户进行同步。
+Office 365 的目录同步服务器将与 Office 365 订阅的 Azure AD 租户同步在 Windows Server AD 中的帐户的列表。
   
-DirSync 服务器是运行 Azure AD Connect 的基于 Windows 的服务器。为了实现更迅速的预配或减少组织中本地服务器的数量，请在 Azure IaaS 的虚拟网络 (VNet) 中部署 DirSync 服务器。
+目录同步服务器是运行 Azure AD 连接的基于 Windows 的服务器。用于更快地设置或减少内部部署组织中的服务器数量的部署您在 Azure IaaS 虚拟网络 (VNet) 中的目录同步服务器。
   
-DirSync 服务器轮询 Windows Server AD 的更改，然后将它们与 Office 365 订阅同步。
+目录同步服务器轮询 Windows Server AD 的更改，然后将它们与 Office 365 订阅同步。
   
 有关详细信息，请参阅[部署 Microsoft Azure 中 Office 365 目录同步](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)。
   

@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 本文介绍如何部署到 SharePoint Online 不执行传统负载测试，因为它不允许。
-ms.openlocfilehash: 490d05598c42cd5d94f61dd21ee5a11701d4b4a7
-ms.sourcegitcommit: 033156d46ac0fb5f05d2b1a594d5ef368b93b893
+ms.openlocfilehash: 6a22ee089adc0817f5c52bbfee5f2b41d7e5d80c
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "27134667"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181023"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量规划和负载测试 SharePoint Online
 
-本文介绍如何部署到 SharePoint Online 不执行传统负载测试，因为它是强烈建议您不要。
+本文介绍如何部署到 SharePoint Online 传统负载测试，因为负载测试是强烈建议您不要的情况下。
   
 尽管活动的负载测试在 SharePoint Online 是强烈建议您不要，还有其他的方法可以确保网站不会产生很差的用户体验时启动网站。 
   
