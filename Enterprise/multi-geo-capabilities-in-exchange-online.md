@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online 中的多地理位置功能的多个地理区域中展开 Office 365 状态。
-ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 6acd2ffab1f35b74d06d6ab5f7bfcbf70f88f8b4
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849918"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200735"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -41,7 +41,7 @@ Office 365 中的多地理位置功能启用单个租户跨多个地理位置。
 
 - 法国
 
-- 印度 (当前仅适用于使用在印度帐单地址客户)
+- 印度
 
 - 日本
 
