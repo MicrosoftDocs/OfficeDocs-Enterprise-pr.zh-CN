@@ -3,7 +3,6 @@ title: OneDrive for Business 多地理位置租户配置
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +10,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 了解如何配置 OneDrive for Business 多地理位置。
-ms.openlocfilehash: 5049904b1419935ed1d55eb73b74d2cd12edb3c0
-ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
+ms.openlocfilehash: f521470b024817bbe53bbf3cbb1dd81e2a4a6754
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547164"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200700"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 多地理位置租户配置
 
@@ -61,6 +60,10 @@ ms.locfileid: "26547164"
 <tr class="even">
 <td align="left">法国</td>
 <td align="left">FRA</td>
+</tr>
+<tr class="even">
+<td align="left">印度</td>
+<td align="left">IND</td>
 </tr>
 <tr class="odd">
 <td align="left">日本</td>
