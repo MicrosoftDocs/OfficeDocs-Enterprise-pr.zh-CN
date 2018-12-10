@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 学习如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
-ms.openlocfilehash: 09f8816fc0ba748ced5bd104710677829d893198
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+ms.openlocfilehash: 823b3a4c1d063a4d398b7f734c2171e856ee1244
+ms.sourcegitcommit: 4a1d6c43da44b559136f2bf422a531bea5f48dbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200695"
+ms.lasthandoff: 12/09/2018
+ms.locfileid: "27210120"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -102,7 +102,7 @@ Office 365 全局管理员必须分配电子数据展示管理者权限，以允
 </tr>
 <tr class="even">
 <td align="left"><strong>IND</strong></td>
-<td align="left">东南亚或东亚数据中心</td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KOR</strong></td>
