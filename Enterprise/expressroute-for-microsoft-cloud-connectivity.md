@@ -3,7 +3,7 @@ title: 面向 Microsoft 云连接的 ExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872323"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213969"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>面向 Microsoft 云连接的 ExpressRoute
 
@@ -222,7 +222,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
     
 - 在本地 ExpressRoute 连接不可用时提高全局 Microsoft 云的可用性。
     
-基于 Office 365 的 ExpressRoute 连接需要 ExpressRoute Premium。但是，拥有 500 名或更多授权用户的企业不需要额外成本。
+基于 Office 365 ExpressRoute 连接需要 ExpressRoute Premium。
   
 **图 9：全球范围内的 Microsoft 云网络**
 

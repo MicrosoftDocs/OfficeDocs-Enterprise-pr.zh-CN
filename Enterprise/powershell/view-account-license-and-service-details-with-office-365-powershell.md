@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/27/2018
+ms.date: 12/10/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: 介绍如何使用 Office 365 PowerShell 来确定已分配给用户的 Office 365 服务。
-ms.openlocfilehash: 78608c3a52151c115eaf80b5315bb71b61e62356
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 5d575ea9e0b45ddc453b3b1c73bd53bf73adab2e
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223104"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213949"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 
@@ -63,30 +63,6 @@ ms.locfileid: "23223104"
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
-```
-
-若要查找已启用或未启用特定服务的所有授权用户，请使用下面的语法：
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled" -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled"...}
-```
-
-这些示例使用下面的信息：
-  
-- 提供对我们感兴趣的 Office 365 服务的访问的许可证分配给 （索引号为 0） 的所有用户的第一个许可证。
-    
-- 我们感兴趣的 Office 365 服务是 Skype 业务 Online 和 Exchange Online。对于与许可计划相关联的许可证，业务 online Skype 是列出的第六个服务 （索引号，5） 和 Exchange Online 是第九服务列出 （索引号为 8）。
-    
-本示例返回所有许可的用户启用了 Skype 业务 Online 和 Exchange Online。
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -ne "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -ne "Disabled"}
-```
-
-本示例返回所有许可的用户未启用的 Skype 业务 Online 或 Exchange Online。
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
 若要查看已分配*多个许可证*的用户的所有服务，请使用以下语法：
