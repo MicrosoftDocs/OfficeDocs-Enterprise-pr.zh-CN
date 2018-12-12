@@ -1,5 +1,5 @@
 ---
-title: "可访问的图 - SharePoint Server、Exchange、Lync、Office Web Apps - 移动前景"
+title: 可访问的图 - SharePoint Server、Exchange、Lync、Office Web Apps - 移动前景
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,16 +9,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
-description: "本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。"
+description: 本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。
 ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503405"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>可访问图表 - SharePoint Server、Exchange、Lync、Office Web Apps - 移动前景
 
-**摘要：**本文是[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)中的“Microsoft Exchange 2013 平台选项”图表的可访问文本版本。
+**摘要：** 本文是[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)中的“Microsoft Exchange 2013 平台选项”图表的可访问文本版本。
   
 此海报显示了 SharePoint Server、Lync、Exchange Server 和 Office Web Apps 的基于应用程序和移动浏览器的环境的详细布局。其中包括以下信息： 
   

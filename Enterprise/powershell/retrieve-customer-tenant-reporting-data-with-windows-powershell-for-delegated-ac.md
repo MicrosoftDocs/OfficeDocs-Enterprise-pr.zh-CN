@@ -1,5 +1,5 @@
 ---
-title: "通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴检索客户报告数据"
+title: 通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴检索客户报告数据
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,18 +9,19 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
-description: "摘要：使用适用于 Microsoft Exchange Online 的远程 Windows PowerShell 检索单个客户租户的报告。"
+description: 摘要：使用适用于 Microsoft Exchange Online 的远程 Windows PowerShell 检索单个客户租户的报告。
 ms.openlocfilehash: d764f34b89ee55fd7015f01c0c48446fc73a6ac0
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17114661"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴检索客户报告数据
 
- **摘要：**使用适用于 Microsoft Exchange Online 的远程 Windows PowerShell 从各个客户租户中检索报表。
+ **摘要：** 使用适用于 Microsoft Exchange Online 的远程 Windows PowerShell 从各个客户租户中检索报表。
   
 联合和云解决方案提供商 (CSP) 合作伙伴 可以直接通过适用于 Exchange Online PowerShell 的远程 Windows PowerShell 访问构成客户租户报告的数据。这样，合作伙伴可以收集并保存报告数据，然后对其执行其他操作。打开远程连接后，检索有关客户租赁的报告数据与在客户租赁中运行任何 cmdlet 的效果是一样的。
   

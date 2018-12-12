@@ -1,5 +1,5 @@
 ---
-title: "使用 Office 365 PowerShell 创建用户帐户"
+title: 使用 Office 365 PowerShell 创建用户帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,16 +14,17 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: "了解如何在 Office 365 中使用 Office 365 PowerShell 来创建用户帐户。"
+description: 了解如何在 Office 365 中使用 Office 365 PowerShell 来创建用户帐户。
 ms.openlocfilehash: e5fed572d0b835a42071e77b4aeaf8714f2178bd
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17553255"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 创建用户帐户
 
-**摘要：**了解如何使用 Office 365 PowerShell 在 Office 365 中创建用户帐户。
+**摘要：** 了解如何使用 Office 365 PowerShell 在 Office 365 中创建用户帐户。
   
 您可以使用 Office 365 PowerShell 来高效地创建用户帐户，尤其是多个用户帐户。当您在 Office 365 PowerShell 中创建用户帐户时，某些帐户属性始终是必需的。其他属性对于创建帐户则不是必需的，但也很重要。下表介绍了这些属性：
   

@@ -1,5 +1,5 @@
 ---
-title: "使用 Office 365 PowerShell 配置用户帐户的属性"
+title: 使用 Office 365 PowerShell 配置用户帐户的属性
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,16 +14,17 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: "摘要： 使用 Office 365 PowerShell Office 365 租户中配置单个或多个用户帐户的属性。"
+description: 摘要： 使用 Office 365 PowerShell Office 365 租户中配置单个或多个用户帐户的属性。
 ms.openlocfilehash: 60b3c1d91df0cb28f19f60a285093de7337904a9
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17552685"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>使用 Office 365 PowerShell 配置用户帐户的属性
 
- **摘要：**使用 Office 365 PowerShell Office 365 租户中配置单个或多个用户帐户的属性。
+ **摘要：** 使用 Office 365 PowerShell Office 365 租户中配置单个或多个用户帐户的属性。
   
 虽然您可以使用 Office 365 管理中心配置 Office 365 租户的用户帐户的属性，您还可以使用 Office 365 PowerShell 并做一些 Office 365 管理中心不能。
   
@@ -93,7 +94,7 @@ Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName |
     
 - 它们一屏一次显示 （**更多**）。
     
-此命令将列出您的所有帐户。如果您想要显示基于其显示名称帐户的用户主体名称 （第一个和最后一个名称），填入下面的**$userName**变量 (删除\<和 > 字符)，然后运行以下命令：
+此命令将列出您的所有帐户。如果您想要显示基于其显示名称帐户的用户主体名称 （第一个和最后一个名称），填入下面的 **$userName**变量 (删除\<和 > 字符)，然后运行以下命令：
   
 ```
 $userName="<Display name>"
@@ -107,7 +108,7 @@ $userName="Caleb Sills"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-通过使用**$upn**变量，您可以到基于其显示名称的个人帐户进行更改。下面是一个示例设置 Belinda Newman 使用位置到法国，但指定她显示名称，而不是她的用户主体名称：
+通过使用 **$upn**变量，您可以到基于其显示名称的个人帐户进行更改。下面是一个示例设置 Belinda Newman 使用位置到法国，但指定她显示名称，而不是她的用户主体名称：
   
 ```
 $userName="<Display name>"
@@ -210,7 +211,7 @@ Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalNam
 - 显示只需为每个帐户 (**选择对象的范围内**) 的用户主体名称属性。
 - 它们一屏一次显示 （**更多**）。
     
-此命令将列出您的所有帐户。如果您想要显示基于其显示名称帐户的用户主体名称 （第一个和最后一个名称），填入下面的**$userName**变量 (删除\<和 > 字符)，然后运行以下命令：
+此命令将列出您的所有帐户。如果您想要显示基于其显示名称帐户的用户主体名称 （第一个和最后一个名称），填入下面的 **$userName**变量 (删除\<和 > 字符)，然后运行以下命令：
   
 ```
 $userName="<Display name>"
@@ -224,7 +225,7 @@ $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-通过使用**$upn**变量，您可以到基于其显示名称的个人帐户进行更改。下面是一个示例设置 Belinda Newman 使用位置到法国，但指定她显示名称，而不是她的用户主体名称：
+通过使用 **$upn**变量，您可以到基于其显示名称的个人帐户进行更改。下面是一个示例设置 Belinda Newman 使用位置到法国，但指定她显示名称，而不是她的用户主体名称：
   
 ```
 $userName="Belinda Newman"

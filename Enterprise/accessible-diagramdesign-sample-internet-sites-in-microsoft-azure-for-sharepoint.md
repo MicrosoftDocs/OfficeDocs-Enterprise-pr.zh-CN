@@ -1,5 +1,5 @@
 ---
-title: "可以访问关系图的设计样本在 SharePoint 2013 的 Microsoft Azure 中的 Internet 站点"
+title: 可以访问关系图的设计样本在 SharePoint 2013 的 Microsoft Azure 中的 Internet 站点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
-description: "本文是名为“设计示例：Microsoft Azure for SharePoint 2013 中的 Internet 站点”的图的可访问文本版本。"
+description: 本文是名为“设计示例：Microsoft Azure for SharePoint 2013 中的 Internet 站点”的图的可访问文本版本。
 ms.openlocfilehash: 0d42a96f80d47b360084557fea47c4155d106d30
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17502755"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>可访问的图 - 设计示例：Microsoft Azure for SharePoint 2013 中的 Internet 站点
 
-**摘要：**这篇文章是设计 sample 图的辅助功能的文本版本： 在 SharePoint 2013 的 Microsoft Azure 中的 Internet 站点。
+**摘要：** 这篇文章是设计 sample 图的辅助功能的文本版本： 在 SharePoint 2013 的 Microsoft Azure 中的 Internet 站点。
   
 本设计示例用作 Azure 使用 SharePoint 2013 在面向 Internet 的网站的起始点。
   

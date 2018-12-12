@@ -1,5 +1,5 @@
 ---
-title: "可访问的图 - 跨 Microsoft Office Server 产品的功能集成"
+title: 可访问的图 - 跨 Microsoft Office Server 产品的功能集成
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: "本文是名为“跨 Microsoft Office Server 产品的功能集成 - SharePoint Server、Exchange Server、Lync Server 和 Office Online”的图的可访问文本版本。"
+description: 本文是名为“跨 Microsoft Office Server 产品的功能集成 - SharePoint Server、Exchange Server、Lync Server 和 Office Online”的图的可访问文本版本。
 ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504215"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>可访问的图 - 跨 Microsoft Office Server 产品的功能集成
 
-**摘要：**这篇文章是图名为功能集成在 Microsoft Office 服务器产品-SharePoint 服务器、 Exchange Server、 Lync Server 和 Office Online 的辅助功能的文本版本。
+**摘要：** 这篇文章是图名为功能集成在 Microsoft Office 服务器产品-SharePoint 服务器、 Exchange Server、 Lync Server 和 Office Online 的辅助功能的文本版本。
   
 该图表包含几个选项卡，由该文档的节标题。
   

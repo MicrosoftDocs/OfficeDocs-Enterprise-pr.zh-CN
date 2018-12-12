@@ -1,5 +1,5 @@
 ---
-title: "可访问的图 - Microsoft SharePoint 2013 平台选项"
+title: 可访问的图 - Microsoft SharePoint 2013 平台选项
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
-description: "本文是名为“Microsoft SharePoint 2013 平台选项”的图的可访问文本版本。"
+description: 本文是名为“Microsoft SharePoint 2013 平台选项”的图的可访问文本版本。
 ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504315"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>可访问的图 - Microsoft SharePoint 2013 平台选项
 
-**摘要：**这篇文章是图名为 Microsoft SharePoint 2013 平台选项的辅助功能的文本版本。
+**摘要：** 这篇文章是图名为 Microsoft SharePoint 2013 平台选项的辅助功能的文本版本。
   
 哪些业务决策者 (Bdm) 和架构师需要了解有关 Office 365、 Microsoft Azure 和内部部署。 
   

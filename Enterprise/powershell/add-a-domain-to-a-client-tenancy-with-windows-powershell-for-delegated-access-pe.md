@@ -1,5 +1,5 @@
 ---
-title: "使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁"
+title: 使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,18 +9,19 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: "摘要：使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有的客户租户。"
+description: 摘要：使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有的客户租户。
 ms.openlocfilehash: f99039ffa9f921b33829767a08f33db500a5d2ed
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17114691"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
- **摘要：**使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有客户租户。
+ **摘要：** 使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有客户租户。
   
 您可以使用适用于 Office 365 的 Windows PowerShell 创建新域并将其与您的客户租户相关联，其速度比使用 Office 365 管理中心要快。
   
@@ -44,7 +45,7 @@ UNRESOLVED_TOKEN_VAL(GENL_O365_PowerShell_BeforeYouBegin)
  您的客户可能会要求您创建与其租赁关联的其他域，因为他们不想让默认的<domain>.onmicrosoft.com域成为向全世界展示其公司标识的主要域。此步骤将引导您创建与您的客户租赁相关联的新域。
   
 > [!NOTE]
-> 若要执行其中部分操作，对于登录时所用的合作伙伴管理员帐户，必须将 Office 365 管理中心内管理员帐户详细信息页面中的“向支持的公司分配管理员权限”****设置设为“完全管理”****。若要详细了解如何管理合作伙伴管理员角色，请参阅[合作伙伴：提供委派管理](https://go.microsoft.com/fwlink/p/?LinkId=532435)。 
+> 若要执行其中部分操作，对于登录时所用的合作伙伴管理员帐户，必须将 Office 365 管理中心内管理员帐户详细信息页面中的“向支持的公司分配管理员权限”**** 设置设为“完全管理”****。若要详细了解如何管理合作伙伴管理员角色，请参阅[合作伙伴：提供委派管理](https://go.microsoft.com/fwlink/p/?LinkId=532435)。 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>在 Azure Active Directory 中创建域
 

@@ -1,5 +1,5 @@
 ---
-title: "可访问的图 - 内部部署电子数据展示流程"
+title: 可访问的图 - 内部部署电子数据展示流程
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
-description: "本文是名为“本地电子数据展示流程”的图的可访问文本版本。"
+description: 本文是名为“本地电子数据展示流程”的图的可访问文本版本。
 ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503055"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>可访问的图 - 内部部署电子数据展示流程
 
-**摘要：**这篇文章是名为内部 eDiscovery 流图的辅助功能的文本版本。
+**摘要：** 这篇文章是名为内部 eDiscovery 流图的辅助功能的文本版本。
   
 此海报提供了关于跨服务器产品的体系结构和数据流的详细信息。 
   

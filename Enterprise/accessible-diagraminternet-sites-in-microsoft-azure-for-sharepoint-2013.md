@@ -1,5 +1,5 @@
 ---
-title: "可访问的图 - Microsoft Azure for SharePoint 2013 中的 Internet 站点"
+title: 可访问的图 - Microsoft Azure for SharePoint 2013 中的 Internet 站点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
-description: "本文是名为“Microsoft Azure for SharePoint 2013 中的 Internet 网站”的图的可访问文本版本。"
+description: 本文是名为“Microsoft Azure for SharePoint 2013 中的 Internet 网站”的图的可访问文本版本。
 ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503045"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>可访问的图 - Microsoft Azure for SharePoint 2013 中的 Internet 站点
 
-**摘要：**这篇文章是图为 SharePoint 2013 名 Microsoft Azure 中的 Internet 站点的辅助功能的文本版本。
+**摘要：** 这篇文章是图为 SharePoint 2013 名 Microsoft Azure 中的 Internet 站点的辅助功能的文本版本。
   
 此海报介绍并演示了面向公众的 Internet 网站如何从针对客户帐户的云弹性和 Azure AD 中受益。有六个不同的方案描述了 Internet 网站如何从 Azure 中受益：  
   

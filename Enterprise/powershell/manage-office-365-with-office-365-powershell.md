@@ -20,10 +20,11 @@ ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "18609004"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Office 365
 
- **摘要：**了解如何使用 Office 365 PowerShell 管理 Office 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和 Office 365 安全与合规中心。
+ **摘要：** 了解如何使用 Office 365 PowerShell 管理 Office 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和 Office 365 安全与合规中心。
   
 Office 365 PowerShell 是一款功能强大的管理工具，可与 Office 365 管理中心搭配使用。例如，可以使用 Office 365 PowerShell 自动化功能，更快速地管理多个用户帐户和许可证并创建报告。了解如何使用 Office 365 PowerShell 管理 Office 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和 Office 365 安全与合规中心。
   

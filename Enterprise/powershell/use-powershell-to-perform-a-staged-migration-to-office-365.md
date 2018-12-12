@@ -1,5 +1,5 @@
 ---
-title: "使用 PowerShell 执行暂存迁移以迁移到 Office 365"
+title: 使用 PowerShell 执行暂存迁移以迁移到 Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,18 +9,19 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: "摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的暂存迁移。"
+description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的暂存迁移。
 ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504365"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>使用 PowerShell 执行暂存迁移以迁移到 Office 365
 
- **摘要：**了解如何使用 Windows PowerShell 执行暂存迁移，以迁移到 Office 365。
+ **摘要：** 了解如何使用 Windows PowerShell 执行暂存迁移，以迁移到 Office 365。
   
 随着时间的推移，您可以使用暂存迁移将源电子邮件系统中用户邮箱的内容迁移到 Office 365。
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 02/09/2018
   
  **禁用统一消息 (UM)** 如果您要迁移的内部部署邮箱上开启了 UM，请先将其关闭，然后再执行迁移。迁移完成以后，打开邮箱的 UM。有关具体的操作方法步骤，请参阅[禁用统一消息](https://go.microsoft.com/fwlink/?LinkId=521891)。
   
- **使用目录同步在 Office 365 中新建用户。**您可以使用目录同步在您的 Office 365 组织中创建所有内部部署用户。
+ **使用目录同步在 Office 365 中新建用户。** 您可以使用目录同步在您的 Office 365 组织中创建所有内部部署用户。
   
 创建用户以后，您需要对他们授予许可。您可以在创建用户之后的 30 天内添加许可证。有关添加许可证的步骤，请参阅[步骤 8：完成迁移后任务](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration)。
   
@@ -240,17 +241,17 @@ Get-MigrationBatch StagedBatch1
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Postmigration"> </a>
 
-- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。**所有内部部署邮箱都迁移到 Office 365 以后，您可以为您的 Office 365 组织配置自动发现 DNS 记录，使用户可以轻松地使用 Outlook 和移动客户端连接到他们的新 Office 365 邮箱。此新自动发现 DNS 记录必须使用对 Office 365 组织使用的相同命名空间。例如，如果您基于云的命名空间是 cloud.contoso.com，则您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
+- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。** 所有内部部署邮箱都迁移到 Office 365 以后，您可以为您的 Office 365 组织配置自动发现 DNS 记录，使用户可以轻松地使用 Outlook 和移动客户端连接到他们的新 Office 365 邮箱。此新自动发现 DNS 记录必须使用对 Office 365 组织使用的相同命名空间。例如，如果您基于云的命名空间是 cloud.contoso.com，则您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
     
     Office 365 使用 CNAME 记录为 Outlook 和移动客户端实现自动发现服务。自动发现 CNAME 记录必须包含以下信息：
     
-  - **别名：**autodiscover
+  - **别名：** autodiscover
     
-  - **目标：**autodiscover.outlook.com
+  - **目标：** autodiscover.outlook.com
     
     有关更多信息，请参阅[管理 DNS 记录时为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=535028)。
     
-- **停止使用内部部署 Exchange 服务器。**当您验证所有电子邮件都可以直接被路由到 Office 365 邮箱，并且您不再需要维护内部部署电子邮件组织或不用计划实施 SSO 解决方案以后，您可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
+- **停止使用内部部署 Exchange 服务器。** 当您验证所有电子邮件都可以直接被路由到 Office 365 邮箱，并且您不再需要维护内部部署电子邮件组织或不用计划实施 SSO 解决方案以后，您可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
     
     有关详细信息，请参阅以下资源：
     
