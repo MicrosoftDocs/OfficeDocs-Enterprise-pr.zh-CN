@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-november-05-2018"></a>2018 年 11 月 5 日所在周
-
-
-| 发布时间 |主题标题 | 更改 |
-|------|------------|--------|
-| 2018 年 11 月 5 日 | [将本地网络连接到 Microsoft Azure 虚拟网络](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 修改时间 |
-| 2018 年 11 月 5 日 | [在 Microsoft Azure 中部署 Office 365 目录同步](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 修改时间 |
-| 2018 年 11 月 5 日 | [设置 Office 365 网络](/Office365/Enterprise/set-up-network-for-office-365) | 添加 |
-| 11/6/2018 | [Office 365 IP 地址和 URL Web 服务中未包含的其他终结点](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 修改时间 |
-| 11/6/2018 | [在 Azure 中为 Office 365 部署高可用性联合身份验证](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 修改时间 |
-| 11/6/2018 | [使用基线和性能历史记录优化 Office 365 性能](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | 修改时间 |
-| 11/7/2018 | [Office 365 端点](/Office365/Enterprise/office-365-endpoints) | 添加 |
-| 11/7/2018 | [设置 Office 365 网络](/Office365/Enterprise/set-up-network-for-office-365) | 修改时间 |
-| 11/8/2018 | [Office for Mac 中的网络请求](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | 修改时间 |
-| 11/8/2018 | [Office 365 租户间协作](/Office365/Enterprise/office-365-inter-tenant-collaboration) | 修改时间 |
-| 11/8/2018 | [SharePoint Online 性能优化简介](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 修改时间 |
-| 11/9/2018 | [SharePoint online 中使用页诊断工具](/Office365/Enterprise/page-diagnostics-for-spo) | 修改时间 |
-
-
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日所在周
 
 
@@ -104,3 +85,12 @@
 | 12/7/2018 | [Exchange Online 中的多地理位置功能](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | 修改时间 |
 | 12/7/2018 | [OneDrive for Business 多地理位置租户配置](/Office365/Enterprise/multi-geo-tenant-configuration) | 修改时间 |
 | 12/7/2018 | [计划采用 OneDrive for Business 多地理位置](/Office365/Enterprise/plan-for-multi-geo) | 修改时间 |
+
+
+## <a name="week-of-december-10-2018"></a>2018 年 12 月 10，这一周
+
+
+| 发布时间 |主题标题 | 更改 |
+|------|------------|--------|
+| 12/10/2018 | [面向 Microsoft 云连接的 ExpressRoute](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | 修改时间 |
+| 12/10/2018 | [使用 Office 365 PowerShell 查看帐户许可证和服务详细信息](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | 修改时间 |

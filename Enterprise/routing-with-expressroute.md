@@ -1,9 +1,9 @@
 ---
-title: ExpressRoute for Office 365 路由
+title: 使用 ExpressRoute for Office 365 路由
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/7/2017
+ms.date: 12/14/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 要正确了解到 Office 365 使用 Azure ExpressRoute 路由流量，您将需要严格掌握的核心 ExpressRoute 路由要求的 ExpressRoute 电路和路由域。这些排放使用 ExpressRoute 将依赖于 Office 365 客户的基础知识。
-ms.openlocfilehash: e80ce78c0b229881349a4d02c7708fb9509748a9
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d8fa0c606a5aedd3760236cb46bcf9e1c584ecb8
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539580"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294472"
 ---
-# <a name="routing-with-expressroute-for-office-365"></a>ExpressRoute for Office 365 路由
+# <a name="routing-with-expressroute-for-office-365"></a>使用 ExpressRoute for Office 365 路由
 
 要正确了解到 Office 365 使用 Azure ExpressRoute 路由流量，您将需要严格理解核心[ExpressRoute 路由要求](https://azure.microsoft.com/documentation/articles/expressroute-routing/)以及[ExpressRoute 电路和路由域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。这些排放使用 ExpressRoute 将依赖于 Office 365 客户的基础知识。
   
@@ -53,13 +53,11 @@ Office 365 前端服务器可访问 Internet 和 ExpressRoute 上。这些服务
   
 下面的这些的方案将其中启动与本地网络从 Office 365 的通信。若要简化您的网络设计，我们建议路由这些通过 Internet 路径。
   
+- SMTP 服务，例如从 Exchange Online 租户到的本地主机的邮件或 SharePoint Online 邮件从 SharePoint Online 发送到的本地主机。SMTP 协议使用更广泛地 Microsoft 的网络内不是通过 ExpressRoute 电路共享路由前缀和广告本地通过 ExpressRoute 的 SMTP 服务器将导致在这些其他服务。
+
 - 在登录的密码验证过程的 ADFS。
 
 - [Exchange Server 混合部署](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)。
-
-- 从 Exchange Online 租户的邮件到的本地主机正在
-
-- 从 SharePoint Online，SharePoint Online 邮件发送到的本地主机。
 
 - [SharePoint 联合混合搜索](https://technet.microsoft.com/library/dn197174.aspx)。
 
@@ -69,7 +67,13 @@ Office 365 前端服务器可访问 Internet 和 ExpressRoute 上。这些服务
 
 - [Skype 商业云连接器](https://technet.microsoft.com/library/mt605227.aspx )。
 
-对于 Microsoft 以路由至您的网络的这些双向通信流后，必须与 Microsoft 共享 BGP 路由到内部部署的设备。
+对于 Microsoft 以路由至您的网络的这些双向通信流后，必须与 Microsoft 共享 BGP 路由到内部部署的设备。通过 ExpressRoute 公布到 Microsoft 路由前缀，您应遵循这些最佳做法：
+
+1) 未公布同一个公共 IP 地址路由前缀到公共 Internet，通过 ExpressRoute。强烈建议向 Microsoft 通过 ExpressRoute IP BGP 路由前缀广告从根本不公布到 internet 的区域。如果这是不可能由于可用的 IP 地址空间实现的则必须确保您通过 ExpressRoute 公布范围更具体比任何 internet 电路。
+
+2) 使用单独的 NAT IP 池，每个 ExpressRoute 电路并与 internet 电路分隔。
+
+3) 注意播发到 Microsoft 任何路由将吸引来自 Microsoft 的网络，而不是只那些为其公布路由到网络通过 ExpressRoute 中任何服务器的网络流量。仅公布到其中定义和很好地理解团队路由方案的服务器的路由。Advertise 在每个网络从多个 ExpressRoute 电路单独的 IP 地址路由前缀。 
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>确定哪些应用程序和功能通过 ExpressRoute 路由
 
@@ -222,33 +226,33 @@ Humongous 保险规划其多 geography 策略时，有大量和需要考虑事�
 
 4. **BGP 社区**-筛选基于[BGP 社区标记](https://aka.ms/bgpexpressroute365)允许客户确定哪些 Office 365 应用程序区域将遍历 ExpressRoute 和该区域将遍历 internet。
 
-这是一个简短的链接，您可以使用回来：[https://aka.ms/erorouting](https://aka.ms/erorouting)
+以下是可以用于返回的简短链接：[https://aka.ms/erorouting](https://aka.ms/erorouting)
   
 ## <a name="related-topics"></a>相关主题
 
 [与 Office 365 的网络连接](network-connectivity.md)
   
-[适用于 Office 365 的 Azure ExpressRoute](azure-expressroute.md)
+[Azure ExpressRoute for Office 365](azure-expressroute.md)
   
 [管理 ExpressRoute for Office 365 连接](managing-expressroute-for-connectivity.md)
   
-[ExpressRoute for Office 365 网络规划](network-planning-with-expressroute.md)
+[ExpressRoute for Office 365 网络计划](network-planning-with-expressroute.md)
   
 [实现 ExpressRoute for Office 365](implementing-expressroute.md)
   
-[媒体质量和 Skype 中的网络连接性能 for Business 联机](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[为业务 Online 的 Skype 优化您的网络](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[优化 Skype for Business Online 网络](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute 和 Skype for Business Online 中的 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online 中的 ExpressRoute 和 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[使用 ExpressRoute 呼叫流](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[使用 ExpressRoute 的呼叫流](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [使用 Office 365 方案中 ExpressRoute BGP 社区 （英文）](bgp-communities-in-expressroute.md)
   
 [使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
   
-[Office 365 的性能疑难解答计划](performance-troubleshooting-plan.md)
+[Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
   
 [Office 365 URL 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
