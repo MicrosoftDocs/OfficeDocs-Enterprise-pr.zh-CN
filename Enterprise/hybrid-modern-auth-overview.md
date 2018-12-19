@@ -4,19 +4,19 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/27/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 description: 现代身份验证是一种身份管理提供更安全的用户身份验证和授权的方法。它是可用于业务服务器本地和 Exchange server 内部部署，以及业务混合的拆分域 Skype 的 Skype 的混合部署。此文章链接到相关文档有关先决条件，安装程序/禁用现代身份验证，以及某些相关的客户端 （如 Outlook 和 Skype 客户端） 信息。
-ms.openlocfilehash: 3d510c6d3e9f8ff885279dc008eeefb5d1014639
-ms.sourcegitcommit: 2ffe998e58ce1466366d697d99f0dd3e85b0605c
+ms.openlocfilehash: c10e5660d43ccce50497fccfd9d830d31ac07d55
+ms.sourcegitcommit: c5761d3c41aa2d26815f0d24c73dbcd53ab37957
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23240587"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27371106"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合现代身份验证概述和使用内部部署 Skype 使用的业务和 Exchange 服务器的先决条件
 
@@ -51,7 +51,8 @@ ms.locfileid: "23240587"
   
 请注意，因为与 Exchange 紧密合作 for Business 的 Skype，用户会看到的业务客户端的登录行为 Skype 将会影响 Exchange 的现代身份验证状态。如果您有业务拆分域混合 Skype，也将应用此问题。此外，支持使用现代身份验证的业务混合的 Skype 的类型通常称为拆分域 （拆分域中具有业务 online Skype 和 Skype 的业务上-prem，并且用户都驻留在两个位置）。
   
- **重要**您知道，从 2017 年 8 月，所有新的 Office 365 租户，包括 for Business 的 Skype online 和 Exchange online 会默认启用的现代身份验证吗？事先租户都不会有更改，在其默认 MA 状态，但新的所有租户自动都支持的扩展您看到上面列出的标识功能集。若要联机检查 for Business 的 Skype MA 状态，您可以用于 Skype 业务 online PowerShell 中使用全局管理员凭据。运行 Get-csoauthconfiguration 检查-ClientADALAuthOverride 的输出。如果-ClientADALAuthOverride 允许您现代的身份验证已打开。 
+> [!IMPORTANT]
+> 您知道，从 2017 年 8 月，所有新的 Office 365 租户，包括 for Business 的 Skype online 和 Exchange online 会默认启用的现代身份验证吗？事先租户都不会有更改，在其默认 MA 状态，但新的所有租户自动都支持的扩展您看到上面列出的标识功能集。若要联机检查 for Business 的 Skype MA 状态，您可以用于 Skype 业务 online PowerShell 中使用全局管理员凭据。运行`Get-CsOAuthConfiguration`检查-ClientADALAuthOverride 的输出。如果-ClientADALAuthOverride 允许您现代的身份验证已打开。 
   
 ## <a name="what-changes-when-i-use-modern-authentication"></a>有哪些变化时使用现代身份验证？
 <a name="BKMK_WhatChanges"> </a>
@@ -66,12 +67,13 @@ ms.locfileid: "23240587"
   
 什么也不会更改？无论您是在拆分域混合或 Skype 用于业务和 Exchange server 内部部署中，所有用户首先必须进行身份都验证*内部部署*。在现代的身份验证的混合实现，Lyncdiscovery 和自动发现是指向您的本地服务器。 
   
- **重要**如果您需要知道业务拓扑支持 MA 的特定 Skype，这是[记录此处](https://technet.microsoft.com/en-us/library/mt803262.aspx)。
+> [!IMPORTANT]
+> 如果您需要知道业务拓扑支持 MA 的特定 Skype，这是[记录此处](https://technet.microsoft.com/en-us/library/mt803262.aspx)。
   
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>检查本地环境的现代身份验证状态
 <a name="BKMK_CheckStatus"> </a>
 
-因为现代身份验证更改时服务利用 OAuth/S2S 使用授权服务器，您需要知道现代身份验证的业务和 Exchange 环境您 Skype 是否是打开还是关闭。您可以通过在 PowerShell 中运行 Get-csoauthconfiguration 命令检查业务服务器，内部部署 Exchange 或 Skype 上的状态。如果该命令将返回 OAuthServers 属性为空，则会禁用现代身份验证。
+因为现代身份验证更改时服务利用 OAuth/S2S 使用授权服务器，您需要知道现代身份验证的业务和 Exchange 环境您 Skype 是否是打开还是关闭。您可以通过运行检查业务服务器，内部部署 Exchange 或 Skype 上的状态`Get-CSOAuthConfiguration`在 PowerShell 命令。如果该命令将返回 OAuthServers 属性为空，则会禁用现代身份验证。
   
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>您是否满足现代身份验证系统必备组件？
 
@@ -85,35 +87,28 @@ ms.locfileid: "23240587"
     
   - 您的 SIP 域添加作为 Office 365 中的联盟域
     
-  - 所有 SFB 前端必须都能够连接到 internet、 to Office 365 身份验证 Url (TCP 443) 和已知证书根 Crl (TCP 80) 出站行 1 和 2 的[Office 365 Url 和 IP 的 Office 365 身份验证和标识部分中列出地址范围](https://www.bing.com/search?q=%22Office+365+URLs+and+IP+address+ranges%22&amp;src=IE-SearchBox&amp;FORM=IESR3N&amp;redir=5&amp;itrid=96B6C7422F9F4019B37C1B7FDAF8831E)。
+  - 所有 SFB 前端必须都能够连接到 internet，到 Office 365 身份验证 Url (TCP 443) 出站和 Office 365 Url 和 IP，行 56 和 125 的[Microsoft 365 常见和 Office Online 部分中列出已知证书根 Crl (TCP 80)地址范围](urls-and-ip-address-ranges.md)。
     
  **注释**如果您 Skype 业务前端服务器使用代理服务器访问 Internet，必须在每个前端的 web.config 文件的配置部分中输入使用的代理服务器 IP 和端口号。 
   
-- Business Server 2015\Web Components\Web ticket\int\web.config 的 c:\program files\Skype
+- 为业务服务器 2015\Web Components\Web C:\Program Files\Skype ticket\int\web.config
     
-- Business Server 2015\Web Components\Web ticket\ext\web.config 的 c:\program files\Skype
+- 为业务服务器 2015\Web Components\Web C:\Program Files\Skype ticket\ext\web.config
     
-- \</system.identityModel.services\>
+```xml
+<system.identityModel.services>
+  <system.net>
+    <defaultProxy>
+      <proxy
+        proxyaddress="http://192.168.100.60:8080"
+        bypassonlocal="true" />
+    </defaultProxy>
+  </system.net>
+</system.identityModel.services>
+```
     
-     \<system.net\> 
-    
-     \<请参见\> 
-    
-     \<代理 
-    
-     proxyaddress ="http://192.168.100.60:8080" 
-    
-     bypassonlocal ="true" 
-    
-     /\> 
-    
-     \</defaultProxy\> 
-    
-     \</system.net\> 
-    
-    \</configuration\>
-    
- **重要**请务必订阅 RSS 源获取有关[Office 365 Url 和 IP 地址范围](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)可保持最新列表的所需的 Url。 
+> [!IMPORTANT]
+> 请务必订阅 RSS 源获取有关[Office 365 Url 和 IP 地址范围](urls-and-ip-address-ranges.md)可保持最新列表的所需的 Url。 
   
 - **Exchange Server 特定**
     
@@ -133,7 +128,7 @@ ms.locfileid: "23240587"
   |:-----|:-----|:-----|
   |Outlook 2013 和 Outlook 2016  <br/> |MAPI over HTTP  <br/> |MAPI over HTTP 必须启用 Exchange 中才能将现代身份验证与这些客户端 （通常启用或 True 新安装的 Exchange 2013 Service Pack 1）; 结合使用有关详细信息，请参阅[如何现代身份验证适用于 Office 2013 和 Office 2016 客户端应用程序](https://docs.microsoft.com/en-us/office365/enterprise/modern-auth-for-office-2013-and-2016)。  <br/> 确保您正在运行的 Outlook; 最小必需的生成请参阅[最新版本的使用 Windows Installer (MSI) 的 Outlook 更新](https://docs.microsoft.com/en-us/officeupdates/outlook-updates-msi)。  <br/> |
   |Outlook 2016 for Mac  <br/> |Exchange Web 服务  <br/> |  <br/> |
-  |ITPro_R4_Stub_79  <br/> |  <br/> |有关详细信息，请参阅[使用 hybrid 现代 Authentication with Outlook for iOS 和 Android](https://docs.microsoft.com/en-us/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) 。  <br/> |
+  |Outlook for iOS 和 Outlook for Android  <br/> |  <br/> |有关详细信息，请参阅[使用 hybrid 现代 Authentication with Outlook for iOS 和 Android](https://docs.microsoft.com/en-us/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) 。  <br/> |
   |Exchange ActiveSync 客户端 （例如，iOS11 邮件）  <br/> |Exchange ActiveSync  <br/> |对于支持现代身份验证的 Exchange ActiveSync 客户端，必须以从基本身份验证切换到现代身份验证重新创建配置文件。  <br/> |
 
 - **常规系统必备组件**

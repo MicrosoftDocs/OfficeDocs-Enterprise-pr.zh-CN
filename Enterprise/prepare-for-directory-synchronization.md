@@ -21,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备以设置到 Office 365 的用户使用目录同步和使用此方法的长期优势。
-ms.openlocfilehash: 78636fd3ec7aaaac8fa06ba8a0f2c37d76d1b045
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 8e84f4602b79ce321cd9a71e6c35331baf40f7f0
+ms.sourcegitcommit: c5761d3c41aa2d26815f0d24c73dbcd53ab37957
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539798"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27371116"
 ---
 # <a name="prepare-to-provision-users-through-directory-synchronization-to-office-365"></a>准备通过目录同步到 Office 365 来设置用户
 
@@ -44,7 +44,7 @@ ms.locfileid: "22539798"
 
 在开始同步您的目录之前，您需要清理您的目录。
   
-查看还[属性同步到 Azure Active Directory 的 Azure AD 连接](https://go.microsoft.com/fwlink/p/?LinkId=746480)。
+查看还[属性同步到 Azure Active Directory 的 Azure AD 连接](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)。
   
 > [!IMPORTANT]
 > 如果您不执行目录清理同步之前，，可以显著负面影响的部署过程。它可能需要数天，或几周内，通过目录同步，确定错误，以及重新同步周期。 
@@ -95,7 +95,7 @@ ms.locfileid: "22539798"
   - 如果该属性在用户对象中，它会与 Office 365 同步，但 Office 365 并不需要或使用它。
   - 最大字符数：64
     
-- **邮件**
+- **mail**
     
   - 在目录中，属性值必须是唯一的。
     
