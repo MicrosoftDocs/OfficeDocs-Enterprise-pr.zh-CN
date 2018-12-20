@@ -1,7 +1,7 @@
 ---
 title: 如何将新式验证用于 Office 2013 和 Office 2016 客户端应用
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/1/2017
 ms.audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 description: 了解 Office 365 现代身份验证方式不同 Office 2013 和 2016年客户端应用程序。
-ms.openlocfilehash: 78df8c12ab008922592516cf1d3cda10c594e552
-ms.sourcegitcommit: 7a12a46019970fcd45a6461f4f4cbcd1f76c9b4e
+ms.openlocfilehash: 2a5e218ca751f341e2a3a0ffd164f000ee503279
+ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25436080"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27378498"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>如何将新式验证用于 Office 2013 和 Office 2016 客户端应用
 
@@ -54,8 +54,7 @@ Office 2013 客户端应用程序默认情况下支持旧的身份验证。旧�
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- 
-  [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -97,7 +96,7 @@ Office 2013 客户端应用程序默认情况下支持旧的身份验证。旧�
    
 ## <a name="see-also"></a>另请参阅
 
-[在 Windows 设备上启用 Office 2013 的现代身份验证](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[在 Windows 设备上启用适用于 Office 2013 的新式验证](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
 [规划多因素身份验证的 Office 365 部署 （适用于 Office 365 管理员）](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
