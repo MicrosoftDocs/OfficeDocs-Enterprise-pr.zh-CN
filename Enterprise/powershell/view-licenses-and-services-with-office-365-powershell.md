@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 查看许可证和服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/17/2018
+ms.date: 12/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 介绍如何使用 Office 365 PowerShell 中查看许可计划、 服务和 Office 365 组织中可用的许可证的信息。
-ms.openlocfilehash: 21dda5bfc1bf1fa975b4a94879435c1842c383ec
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: dab6b8f1828c6be4d32bb2432437d23328653560
+ms.sourcegitcommit: 6dd4ac5808d72406578fcc7be6590dd7a99cebea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601626"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466871"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看许可证和服务
 
@@ -29,19 +29,19 @@ ms.locfileid: "25601626"
   
 每个 Office 365 订阅包括以下元素：
 
-- **许可计划**这些也称为 aslicense 计划或 Office 365 plans。许可计划定义适用于用户的 Office 365 服务。Office 365 订阅可能包含多个许可计划。示例许可计划将为 Office 365 企业版 E3。
+- **许可计划**这些是也称为许可计划或 Office 365 plans。许可计划定义适用于用户的 Office 365 服务。Office 365 订阅可能包含多个许可计划。示例许可计划将为 Office 365 企业版 E3。
     
-- **服务**这些是已知的 asservice 计划。服务是 Office 365 产品、 功能和功能所提供的每个许可计划，例如 Exchange Online 和 Office Professional Plus。用户可以具有多个许可证分配给它们从不同的许可计划授予的访问权限不同的服务。
+- **服务**这些是也称为服务计划。服务是 Office 365 产品、 功能和功能所提供的每个许可计划，例如 Exchange Online 和 Office Professional Plus。用户可以具有多个许可证分配给它们从不同的许可计划授予的访问权限不同的服务。
     
 - **许可证**每个许可计划包含您购买的许可证数量。以便他们可以使用 Office 365 服务所定义的许可计划，可以向用户分配许可证。每个用户帐户需要至少一个许可证从一个许可计划，以便他们可以登录到 Office 365，并使用服务。
     
 Office 365 PowerShell 中可用于在 Office 365 组织中查看有关可用许可计划、 许可证和服务的详细信息。有关产品、 功能和在不同的 Office 365 订阅中可用的服务的详细信息，请参阅[Office 365 计划选项](https://go.microsoft.com/fwlink/p/?LinkId=691147)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
     
-- PowerShell 脚本是可用的自动执行本主题中所述的过程。具体而言，该脚本，可以查看和 Office 365 组织，包括 Sway 中禁用这些服务。有关详细信息，请参阅[禁用对 Sway 与 Office 365 PowerShell 中的访问](disable-access-to-sway-with-office-365-powershell.md)。
+- PowerShell 脚本是可用的自动执行本主题中所述的过程。具体而言，该脚本允许您查看和 Office 365 组织，包括 Sway 中禁用这些服务。有关详细信息，请参阅[禁用对 Sway 与 Office 365 PowerShell 中的访问](disable-access-to-sway-with-office-365-powershell.md)。
     
 ## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>查看有关许可计划和可用的许可证的信息
 

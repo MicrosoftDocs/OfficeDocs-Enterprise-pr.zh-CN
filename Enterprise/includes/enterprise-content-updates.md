@@ -3,16 +3,6 @@
 
 
 
-## <a name="week-of-november-19-2018"></a>2018 年 11 月 19，这一周
-
-
-| 发布时间 |主题标题 | 更改 |
-|------|------------|--------|
-| 11/19/2018 | [PerformancePoint Server 2007 停止提供支持路线图](/Office365/Enterprise/pps-2007-end-of-support) | 修改时间 |
-| 11/19/2018 | [Office 365 IP 地址和 URL Web 服务中未包含的其他终结点](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 修改时间 |
-| 11/19/2018 | [面向 Office 365 管理员的集成应用和 Azure AD](/Office365/Enterprise/integrated-apps-and-azure-ads) | 修改时间 |
-
-
 ## <a name="week-of-november-26-2018"></a>2018 年 11 月 26 日所在周
 
 
@@ -90,3 +80,10 @@
 | 12/19/2018 | [如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 修改时间 |
 | 12/19/2018 | [Office 365 的会话超时](/Office365/Enterprise/session-timeouts) | 修改时间 |
 | 12/20/2018 | [Exchange 2010 末尾的支持路线图](/Office365/Enterprise/exchange-2010-end-of-support) | 修改时间 |
+
+
+## <a name="week-of-december-24-2018"></a>2018 年 12 月 24，这一周
+
+
+| 发布时间 |主题标题 | 更改 |
+|------|------------|--------|
