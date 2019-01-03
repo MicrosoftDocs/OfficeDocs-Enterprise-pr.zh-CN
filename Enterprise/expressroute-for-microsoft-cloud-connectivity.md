@@ -3,7 +3,7 @@ title: 面向 Microsoft 云连接的 ExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 01/02/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。
-ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
+ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27470164"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>面向 Microsoft 云连接的 ExpressRoute
 
@@ -96,25 +96,19 @@ ExpressRoute 连接不能保证每一种配置的性能都会提高。通过低�
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>ExpressRoute 与 Microsoft 云服务的对等关系
 
-一个 ExpressRoute 连接最多支持三个不同的边界网关协议 (BGP) 与 Microsoft 云不同部分的对等关系。BPG 使用对等关系建立信任和交换路由信息。
+单个 ExpressRoute 连接支持最多两个不同边框网关协议 (BGP) 对等关系向 Microsoft 云的不同部分。BPG 使用对等关系建立信任和 exchange 路由信息。
   
-**图 3：单个 ExpressRoute 连接中的三个不同的 BGP 关系**
+**图 3: 两个不同 BGP 关系中的单个 ExpressRoute 连接**
 
-![图 3：单次 ExpressRoute 连接中的三个不同的 BGP 关系](media/Network-Poster/ERPeering.png)
+![图 3: 两个不同 BGP 关系中的单个 ExpressRoute 连接](media/Network-Poster/ERPeering.png)
   
-图 3 显示了从本地网络 ExpressRoute 连接。ExpressRoute 连接都有三个逻辑的对等关系。Microsoft 对等关系转到 Microsoft SaaS 服务，包括 Office 365 和 Dynamcs CRM Online。公共的对等关系转到 Azure PaaS 服务。专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
+图 3 显示了从本地网络 ExpressRoute 连接。ExpressRoute 连接都有两个逻辑的对等关系。Microsoft 对等关系转到 Microsoft SaaS 服务，包括 Office 365、 Dynamcs 365 和 Azure PaaS 服务。专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
   
 Microsoft 对等 BGP 关系： 
   
-- 是从 DMZ 中的某个路由器到 Office 365 和 Dynamics 365 服务的公用地址。 
+- 是从 dmz 路由器到 Office 365、 Dynamics 365 和 Azure 服务公共地址。 
     
 - 支持双向启动的通信。
-    
-公共对等 BGP 关系：
-  
-- 是从 DMZ 中的某个路由器到 Azure 服务的公用 IP 地址。
-    
-- 仅支持从内部部署系统中单向启动的通信。对等关系不支持从 Azure PaaS 服务启动的通信。
     
 专用的对等 BGP 关系：
   
@@ -123,6 +117,10 @@ Microsoft 对等 BGP 关系：
 - 支持双向启动的通信。
     
 - 是从组织网络到 Microsoft 云的扩展，配有内部一致的寻址和路由。
+
+>[!Note]
+>本文的早期版本中所述的公共对等 BGP 关系已被弃用。
+>
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>通过 ExpressRoute 的应用程序部署和流量的示例
 
@@ -250,7 +248,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 - **边缘的安全性：** 要实现通过 ExpressRoute 连接发送和接收的流量的高级安全性，如流量检查或入侵/恶意软件检测，请将安全装置放入 DMZ 内的流量路径下或 Intranet 边界。
     
-    VM 的 Internet 流量 为防止 Azure VM 直接启动与 Internet 位置的流量，请将默认路由告知 Microsoft。Internet 流量通过 ExpressRoute 连接和内部部署代理服务器传送。从 Azure 虚拟机到 Azure PaaS 服务或 Office 365 的流量将通过 ExpressRoute 连接传送回去。
+- **虚拟机的 Internet 通信：** 若要防止 Azure 虚拟机启动直接与 Internet 位置的流量，公布到 Microsoft 的默认路由。通过 ExpressRoute 连接并通过您的本地代理服务器路由到 Internet 的流量。返回通过 ExpressRoute 连接路由到 Azure PaaS 服务或 Office 365 的 Azure 虚拟机流量。
     
 - **WAN 优化程序：** 你可以在跨界部署的 Azure 虚拟网络 (VNet) 的专用对等连接两端部署 WAN 优化程序。在 Azure VNet 内部，使用 Azure 市场的 WAN 优化网络设备和用户定义路由通过该设备传送流量。
     
