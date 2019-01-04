@@ -3,7 +3,7 @@ title: 查看用户帐户与 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/30/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 摘要： 查看、 列表或显示您的用户帐户与 Office 365 PowerShell 中的各种方式。
-ms.openlocfilehash: f2743197456cc56f654e99e682108230420384c9
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123249"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546523"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>查看用户帐户与 Office 365 PowerShell
 
@@ -28,15 +28,11 @@ ms.locfileid: "27123249"
   
 尽管可以使用 Office 365 管理中心以查看 Office 365 租户帐户，您还可以使用 Office 365 PowerShell 并执行某些操作不能在 Office 365 管理中心。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用 Azure Active Directory PowerShell 图模块
 
-若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
+第一个、[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
-## <a name="display-office-365-user-account-information-with-azure-active-directory-powershell-for-graph"></a>显示使用 Azure Active Directory PowerShell 图形的 Office 365 用户帐户信息 
-
-以下各节介绍如何显示用户帐户信息。
-
-### <a name="all-accounts"></a>所有帐户
+### <a name="view-all-accounts"></a>查看所有帐户
 
 若要显示的用户帐户的完整列表，请运行以下命令：
   
@@ -57,7 +53,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
 ```
 
-### <a name="a-specific-account"></a>为特定帐户
+### <a name="view-a-specific-account"></a>查看特定帐户
 
 若要显示特定的用户帐户，填写的用户帐户的用户主体名称 (UPN)、 删除"<"和">"字符，然后运行以下命令：
   
@@ -65,7 +61,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 Get-AzureADUser -ObjectID <UPN of user account>
 ```
 
-### <a name="additional-property-values-for-a-specific-account"></a>特定帐户的的其他属性值
+### <a name="view-additional-property-values-for-a-specific-account"></a>查看特定帐户的其他属性值
 
 默认情况下，**获取 AzureADUser** cmdlet 仅显示帐户的 ObjectID、 DisplayName 和 UserPrincipalName 的属性。
 
@@ -93,7 +89,7 @@ Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
 Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>某些帐户基于公共属性
+### <a name="view-some-accounts-based-on-a-common-property"></a>查看基于公共属性某些帐户
 
 要更好选择性有关列表帐户显示，您可以使用**Where-object** cmdlet 与**Get AzureADUser** cmdlet 结合使用。若要合并的两个 cmdlet，我们使用"管道"字符"|"，它指示 Azure Active Directory PowerShell 图形执行一个命令的结果并将其发送到下一个命令。下面是显示未指定的使用率位置这些用户帐户的示例命令：
   
@@ -123,11 +119,11 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 >  以下示例中所示**Where-object** cmdlet 的语法**Where-object {$\_。**[用户帐户属性名][比较运算符][值]**}**。 > [比较运算符] 是 **-eq**等同于的、 不等于为 **-ne** 、 **-lt**小于， **-gt**大于、 和其他人。 [值] 通常是字符串 （的字母、 数字和其他字符序列）、 数字值或 **$Null**的未指定 > 详细信息，请参阅[Where-object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) 。
   
 
-## <a name="display-office-365-user-account-information-with-microsoft-azure-active-directory-module-for-windows-powershell"></a>显示与 Azure Active Directory 模块的 Windows PowerShell 的 Microsoft Office 365 用户帐户信息
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-以下各节介绍如何显示用户帐户信息。
+第一个、[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-### <a name="all-accounts"></a>所有帐户
+### <a name="view-all-accounts"></a>查看所有帐户
 
 若要显示的用户帐户的完整列表，请运行以下命令：
   
@@ -166,7 +162,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 有关其他参数，以筛选显示一组的用户帐户显示，请参阅[Get-msoluser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100))。
   
 
-### <a name="a-specific-account"></a>为特定帐户
+### <a name="view-a-specific-account"></a>查看特定帐户
 
 若要显示特定的用户帐户，填写的用户帐户的用户主体名称 (UPN)、 删除"<"和">"字符，然后运行以下命令：
   
@@ -174,7 +170,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Get-MsolUser -UserPrincipalName <UPN of user account>
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>某些帐户基于公共属性
+### <a name="view-some-accounts-based-on-a-common-property"></a>查看基于公共属性某些帐户
 
 要更好选择性的帐户，若要显示，列表有关您可以使用**Where-object** cmdlet 与**Get-msoluser** cmdlet 结合使用。若要合并的两个 cmdlet，我们使用"管道"字符"|"，它指示 Office 365 PowerShell 中执行一个命令的结果并将其发送到下一个命令。下面是显示未指定的使用率位置这些用户帐户的示例命令：
   
@@ -219,7 +215,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
-### <a name="additional-property-values-for-accounts"></a>帐户的其他属性值
+### <a name="view-additional-property-values-for-accounts"></a>查看其他属性值的帐户
 
 默认情况下**Get-msoluser** cmdlet 显示三个用户帐户的属性：
   
@@ -291,10 +287,6 @@ Scott Wallace            Operations
 ```
 
     
-## <a name="new-to-office-365"></a>刚开始接触 Office 365？
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-  
 ## <a name="see-also"></a>另请参阅
 
 [使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
