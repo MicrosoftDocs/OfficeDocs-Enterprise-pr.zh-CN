@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 摘要： 查看、 列表或显示您的用户帐户与 Office 365 PowerShell 中的各种方式。
-ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: e95353602b96babe5c80f7d57462370636dd26fa
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546523"
+ms.locfileid: "27730317"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>查看用户帐户与 Office 365 PowerShell
 
@@ -55,10 +55,16 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>查看特定帐户
 
-若要显示特定的用户帐户，填写的用户帐户的用户主体名称 (UPN)、 删除"<"和">"字符，然后运行以下命令：
+若要显示特定的用户帐户，请填充中的用户帐户，也称为的用户主体名称 (UPN) 的登录帐户名称中删除"<"和">"字符，然后运行以下命令：
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account>
+Get-AzureADUser -ObjectID <sign-in name of the user account>
+```
+
+下面是一个示例：
+  
+```
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 ```
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>查看特定帐户的其他属性值
@@ -80,13 +86,13 @@ Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 要查看所有用户帐户的属性，用于**Select-object** cmdlet 和通配符 （*） 以显示所有这些特定的用户帐户。下面是一个示例：
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 又如，您可以检查使用以下命令的特定用户帐户启用的状态：
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
+Get-AzureADUser -ObjectID <sign-in name of the user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>查看基于公共属性某些帐户
@@ -106,7 +112,7 @@ Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 与用户帐户关联的许多属性之一的**UsageLocation**属性。要查看所有用户帐户的属性，用于**Select-object** cmdlet 和通配符 （*） 以显示所有这些特定的用户帐户。下面是一个示例：
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 例如，从此列表中，**市/县**是的用户帐户属性的名称。这意味着您可以使用以下命令列出所有的生活中伦敦的用户的用户帐户：
@@ -164,10 +170,10 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ### <a name="view-a-specific-account"></a>查看特定帐户
 
-若要显示特定的用户帐户，填写的用户帐户的用户主体名称 (UPN)、 删除"<"和">"字符，然后运行以下命令：
+若要显示特定的用户帐户，请填充的用户帐户，也称为的用户主体名称 (UPN) 的用户帐户的登录名称中删除"<"和">"字符，然后运行以下命令：
   
 ```
-Get-MsolUser -UserPrincipalName <UPN of user account>
+Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>查看基于公共属性某些帐户
@@ -197,7 +203,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 与用户帐户关联的许多属性之一的**UsageLocation**属性。要查看所有用户帐户的属性，用于**Select-object** cmdlet 和通配符 （*） 以显示所有这些特定的用户帐户。下面是一个示例：
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 例如，从此列表中，**市/县**是的用户帐户属性的名称。这意味着您可以使用以下命令列出所有的生活中伦敦的用户的用户帐户：
@@ -254,7 +260,7 @@ Scott Wallace           Operations
 **Select-object** cmdlet，可以选择您希望显示的命令的属性。若要查看所有用户帐户的属性，使用通配符 （*） 显示所有这些特定的用户帐户。下面是一个示例：
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 要更好的帐户，若要显示，列表有关选择性您还可以使用**Where-object** cmdlet。下面是显示未指定的使用率位置这些用户帐户的示例命令：

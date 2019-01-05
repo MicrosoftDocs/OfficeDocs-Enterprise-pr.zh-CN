@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 介绍如何使用 Office 365 PowerShell 中查看许可计划、 服务和 Office 365 组织中可用的许可证的信息。
-ms.openlocfilehash: e4c4a0570cafd3d9cb775dd99c5f75da613715e3
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: f673ac984e504a740dfac474821366d34de5ccbc
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546533"
+ms.locfileid: "27730327"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看许可证和服务
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 结果包含以下信息：
   
-- **SkuPartNumber:** 显示为您的组织可用的许可计划 >，如`ENTERPRISEPACK`是 Office 365 企业版 E3 的系统名称。
+- **SkuPartNumber:** 显示为您的组织可用的许可计划。例如，`ENTERPRISEPACK`是 Office 365 企业版 E3 的系统名称。
     
 - **启用：** 您已为特定的许可计划购买的许可证数量。
     

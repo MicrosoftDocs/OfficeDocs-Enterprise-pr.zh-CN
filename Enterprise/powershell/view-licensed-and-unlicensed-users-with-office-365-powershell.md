@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。
-ms.openlocfilehash: 0648fae89a45b080bd48561bb079184f0e97dd36
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 79f7bf1966d515634c5fc038db650c19547259aa
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546503"
+ms.locfileid: "27730337"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看授权和未授权的用户
 
@@ -42,7 +42,7 @@ Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLice
 若要查看所有用户帐户的列表，组织中的已分配任何您许可计划 （许可用户），运行以下命令：
   
 ```
-Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $user.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} } }
+Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $user.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用 Windows PowerShell 的 Microsoft Azure Active Directory 模块
