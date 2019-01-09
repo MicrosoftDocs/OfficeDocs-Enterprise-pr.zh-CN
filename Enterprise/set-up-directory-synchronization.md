@@ -3,7 +3,6 @@ title: 设置 Office 365 的目录同步
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -12,17 +11,17 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
-- MED150
+- MED15
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 了解如何设置 Office 365 和内部部署 Active Directory 之间的目录同步。
-ms.openlocfilehash: e406eec08b34a694602c756235533f8b1ff6651e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 95f138a0a11f14a1036d7d48983f4c88bc965fd0
+ms.sourcegitcommit: 0fdb6e470342a98ba164db627fe3dd02cfe8aa0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539565"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27768821"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>设置 Office 365 的目录同步
 Office 365 使用 Azure Active Directory 的基于云的用户标识管理服务来管理用户。通过将您的内部部署环境与 Office 365 同步，还可以将您的本地 Active Directory 集成与 Azure AD。设置同步后可以决定要进行 Azure AD 中或您的本地目录中其用户身份验证。
@@ -62,57 +61,7 @@ Office 365 您将需要：
     
     ![在详细菜单中，选择目录同步](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-3. 在 * * 是最适合您的目录同步？* * 页上，两个首选的**1-10**和**11 50**结果"根据您的组织的大小，我们建议您创建和管理在云中的用户。使用目录同步将使您的安装程序更复杂。转到活动的用户，以添加您的用户。" 
-    
-    - 通过选择在页面底部的**此处继续**仍，但是，可以继续设置目录同步。 
-    
-    - 如果您选择的两个后一种选择， **51 250** **251 或更高版本**，同步安装程序将建议目录同步。选择**下一步**以继续。 
-    
-    ![选择下一步继续设置目录同步](media/359a1eb9-99ae-4b5b-a413-4de53037cceb.png)
-  
-4. 在**本地与云目录同步**，读取信息，然后如果您希望的详细信息，选择了解转到的更多链接：[准备通过目录同步到 Office 365 设置用户](prepare-for-directory-synchronization.md)，然后选择**下一步**. 
-    
-5. 在**让我们检查您的目录**页上，检查自动检查您的目录的要求。如果您满足要求，选择**下一步** \> **开始扫描**。如果您不能满足要求您仍可以继续通过选择**手动继续**。
-    
-    ![选择下一步或手动在继续让我们检查目录页](media/af4a6bd5-13aa-4bfa-9751-4464a32ca8db.png)
-  
-6. 如果您选择要扫描您的目录，请在**评估目录同步设置**页上选择**开始扫描**。 
-    
-    按照说明下载并运行扫描。
-    
-7. 扫描完成后，返回到安装向导中，并选择**下一步**以查看您的扫描结果。 
-    
-8. 按照在**验证域所有权**上的说明，请确认您的域。有关详细说明，请参阅[为 Office 365 管理 DNS 记录时创建 DNS 记录](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)。
-    
-    > [!IMPORTANT]
-    > 添加 TXT 记录以验证您拥有您的域后，不会在域向导添加用户的下一步。目录同步将为您添加用户。 
-  
-    返回到**Office 365 Setup**页上，并选择**刷新**
-    
-    ![确认您的域后，选择刷新](media/9b5fb593-5ff7-49f0-80d0-18e36d39d669.png)
-  
-9. 在**您的域准备**页上，选择**下一步**。
-    
-10. 在**清理环境**页上，（可选） 按照说明下载 IDFix 检查您的 Active Directory。选择**下一步**以继续。 
-    
-11. 在 * * 运行 Azure Active Directory 连接 * * 页面上，选择**下载**以安装 Azure AD 连接向导。 
-    
-    > [!NOTE]
-    > 此时您将在 Azure AD 连接向导。请确保您离开您是最后一次打开在浏览器中，因此 Azure AD 连接步骤已完成之后，可以返回到该目录同步向导页。 
-  
-    Azure AD 连接向导程序安装后将自动打开。也可以在从您的桌面，默认安装网站打开它。按照向导说明具体取决于您的方案：
-    
-  - 对于与密码哈希同步的目录同步，使用[使用 express 设置 Azure AD 连接](https://go.microsoft.com/fwlink/p/?LinkID=698537)。
-    
-  - 对于多个林，传递身份验证、 联合的身份和 SSO 选项，使用[自定义安装的 Azure AD 连接](https://go.microsoft.com/fwlink/p/?LinkId=698430)。
-    
-    选择要使用这些选项的**Express 设置**页上的**自定义**。 
-    
-12. Azure AD 连接向导完成后，返回到**Office 365 安装**向导中，并按照**使确保同步担任预期页**上的说明。选择**下一步**以继续。 
-    
-13. 在阅读说明 * * 激活用户 * * 页面，然后选择**下一步**。
-    
-14. 在**您所有的安装程序**页上选择**完成**。 
+3. 在**Active Directory 准备**页上，选择**下载 Microsoft Azure Active Directory 连接工具**的链接开始。关于 Azure Active Directory 连接安装过程的详细信息，请参阅[Azure AD 连接和 Azure AD 连接运行状况安装指南](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap)。
     
 ## <a name="assign-licences-to-synchronized-users"></a>将许可证分配给同步用户
 已同步到 Office 365 用户后，则创建它们，但您需要将许可证分配给它们，以便他们可以使用 Office 365 功能，如邮件。有关说明，请参阅[分配对业务的 Office 365 中的用户的许可证](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。
