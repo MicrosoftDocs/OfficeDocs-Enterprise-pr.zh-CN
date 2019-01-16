@@ -3,7 +3,7 @@ title: Office 365 的网络规划和性能调整
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/23/2018
+ms.date: 1/15/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: 帮助您规划您的 Microsoft Office 365 的网络带宽要求。您正在部署之后，返回这里微调，并解决 Office 365 性能。
-ms.openlocfilehash: da8618381664a0ddf4d670cfbb2907236c468ac0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 395f61ee2b6e9ee46161d5aa8b5ac5e4e62d5dd5
+ms.sourcegitcommit: f0ba0d8c62f802447bc9d07f5d877067156fbed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22915887"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28021783"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Office 365 的网络规划和性能调整
 在首次部署或迁移到 Office 365 之前，可以使用这些主题中的信息来估计所需的带宽，然后测试并确认您拥有足够的带宽来部署或迁移到 Office 365。概述，请参阅：[网络和规划 Office 365 的迁移](network-and-migration-planning.md)。
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**网络规划** <br/> ![网络](media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |要快速连接和快速加载的页面？  <br/> 读取[获取最佳的连接和 Office 365 中的性能](https://aka.ms/o365perfprinciples) <br/> 观看[了解网络连接，以优化您的性能与 Office 365](https://blogs.office.com/2015/03/04/understanding-network-connectivity-optimize-performance-office-365/)了解概念，  <br/> |**测量网络** <br/> ![“计算器”](media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |阅读[Office 365 性能调整使用比较基准和性能历史记录](performance-tuning-using-baselines-and-history.md)和[性能疑难解答 for Office 365 的计划](performance-troubleshooting-plan.md)。  <br/> 使用这些工具以[评估现有的网络](network-and-migration-planning.md#calculators)。  <br/> |
-|**最佳做法** <br/> ![最佳实践](media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |[网络规划和 Office 365 的提高迁移性能的最佳做法](network-and-migration-planning.md#BestPractices)。要开始立即帮助您的用户？请参阅[使用在低速网络中的 Office 365 的最佳实践](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)。<br/> [Office 365 网络连接原则](https://aka.ms/o365networkingprinciples)将帮助您了解有关安全地优化 Office 365 网络连接的最新指南。  <br/> |**参考 （英文）** <br/> ![书籍或日记](media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |需要详细信息，如 IP 地址和端口的列表？请参阅[网络规划 Office 365 的引用](network-and-migration-planning.md#NetReference)。<br/> |
+|**网络规划** <br/> ![网络](media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |要快速连接和快速加载的页面？  <br/> 读取[获取最佳的连接和 Office 365 中的性能](https://aka.ms/o365perfprinciples) <br/> 阅读[Office 365 网络连接概述](https://docs.microsoft.com/en-us/office365/enterprise/office-365-networking-overview)以了解概念，  <br/> |**测量网络** <br/> ![“计算器”](media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |阅读[Office 365 性能调整使用比较基准和性能历史记录](performance-tuning-using-baselines-and-history.md)和[性能疑难解答 for Office 365 的计划](performance-troubleshooting-plan.md)。  <br/> 使用这些工具以[评估现有的网络](network-and-migration-planning.md#calculators)。  <br/> |
+|**最佳做法** <br/> ![最佳做法](media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |[网络规划和 Office 365 的提高迁移性能的最佳做法](network-and-migration-planning.md#BestPractices)。要开始立即帮助您的用户？请参阅[使用在低速网络中的 Office 365 的最佳实践](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)。<br/> [Office 365 网络连接原则](https://aka.ms/o365networkingprinciples)将帮助您了解有关安全地优化 Office 365 网络连接的最新指南。  <br/> |**参考** <br/> ![书籍或日记](media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |需要详细信息，如 IP 地址和端口的列表？请参阅[网络规划 Office 365 的引用](network-and-migration-planning.md#NetReference)。<br/> |
 |![请参阅 Microsoft 云网络企业架构师海报](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)           <br/> |优化网络 for Office 365 和其他 Microsoft 云平台和服务的步骤，请参阅[Microsoft 云网络的企业架构师](https://aka.ms/cloudarchnetworking)海报。  <br/> |
    
 ## <a name="performance-tuning-and-troubleshooting-resources-for-office-365"></a>Office 365 的性能调整和疑难解答资源

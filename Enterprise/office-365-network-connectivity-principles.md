@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: 规划 Office 365 网络连接网络之前，务必了解用于安全地管理 Office 365 流量和获取最佳性能的连接原则。本文将帮助您了解有关安全地优化 Office 365 网络连接的最新指南。
-ms.openlocfilehash: be41162833a7442ac65af1e973a00923841fca6b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d319d99cdd413fe1df9e8f88d18742ad464bbb3b
+ms.sourcegitcommit: f0ba0d8c62f802447bc9d07f5d877067156fbed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539697"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28021803"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 网络连接原则
 
@@ -54,8 +54,8 @@ Microsoft 建议以下原则以获得最佳的 Office 365 连接性和性能。�
   
 应为网络设计中的主要目标从您的网络到 Microsoft 全局网络中，Microsoft 的公用网络中枢的互连所有 Microsoft 数据中心的低延迟以减少延迟通过减少的往返时间 (RTT)和云应用程序在全球范围内的入口点。您可以了解有关在[Microsoft 如何构建其快速且可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)的 Microsoft 全局网络的详细信息。
   
-### <a name="identify-and-differentiate-office-365-traffic"></a>确定并区分 Office 365 通信量
 <a name="BKMK_P1"> </a>
+### <a name="identify-and-differentiate-office-365-traffic"></a>确定并区分 Office 365 通信量
 
 ![确定 Office 365 流量](media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
@@ -67,10 +67,10 @@ Office 365 终结点类别和优化方法的详细信息，请参阅[新的 Offi
   
 Microsoft 现在作为 web 服务发布所有 Office 365 终结点，并提供有关如何充分利用此数据指导。如何获取并使用 Office 365 终结点的详细信息，请参阅文章[Office 365 Url 和 IP 地址范围](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US)。
   
-### <a name="egress-network-connections-locally"></a>本地出口网络连接
 <a name="BKMK_P2"> </a>
+### <a name="egress-network-connections-locally"></a>实现本地连接出口
 
-![本地出口网络连接](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![实现本地连接出口](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 本地 DNS 和 Internet 出口是入口的一点的至关重要是入口的一点的减少连接延迟和确保用户连接所做的最接近到 Office 365 服务点。在复杂的网络拓扑中，务必一起实现本地 DNS 和本地 Internet 出口。有关 Office 365 将客户端连接路由到最接近的入口点的方式的详细信息，请参阅文章[客户端连接](https://support.office.com/en-us/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)。
   
@@ -102,8 +102,8 @@ Microsoft 现在作为 web 服务发布所有 Office 365 终结点，并提供�
 - 本地出口，从而减少了企业网络基础结构上的负载。
 - 利用客户端终结点安全性和云安全功能保护两端的连接。
 
-### <a name="avoid-network-hairpins"></a>避免网络 hairpins
 <a name="BKMK_P3"> </a>
+### <a name="avoid-network-hairpins"></a>避免网络发卡
 
 ![避免 hairpins](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
@@ -115,8 +115,8 @@ Microsoft 现在作为 web 服务发布所有 Office 365 终结点，并提供�
   
 由于大量的分布式与 Office 365 入口点和邻近受最终用户的位置，路由到任何第三方网络或安全提供程序的 Office 365 通信可以负面影响 Office 365 连接如果没有提供商网络为获得最佳的 Office 365 对等配置。
   
-### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>绕过代理服务器、 流量检查设备和重复的安全技术
 <a name="BKMK_P4"> </a>
+### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>绕过代理服务器、 流量检查设备和重复的安全技术
 
 ![绕过代理服务器、 流量检查设备和重复的安全技术](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
@@ -124,8 +124,8 @@ Microsoft 现在作为 web 服务发布所有 Office 365 终结点，并提供�
   
 大多数企业网络强制 Internet 通信使用如代理、 SSL 检查、 数据包检查和数据丢失防护系统技术的网络安全。这些技术提供的通用 Internet 请求的重要风险缓解时，但可以显著减少性能、 可伸缩性和应用到 Office 365 终结点时的最终用户体验质量。
   
-#### <a name="office-365-endpoints-web-service"></a>Office 365 终结点 web 服务
 <a name="BKMK_WebSvc"> </a>
+#### <a name="office-365-endpoints-web-service"></a>Office 365 终结点 web 服务
 
 Office 365 管理员可以使用的脚本或使用结构化的 Office 365 终结点的终结点列表的 REST 调用 web 服务和更新的外围防火墙配置和其他网络设备。这将确保 Office 365 绑定的流量为标识，进行适当处理并从网络流量泛型和通常未知的 Internet 网站绑定以不同的方式管理。有关如何使用 Office 365 终结点的详细信息 web 服务，请参阅文章[Office 365 Url 和 IP 地址范围](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US)。
   
@@ -151,7 +151,7 @@ Office 365 终结点表示一套各种的网络地址和子网。终结点可能
   
 在用于管理 Office 365 流量我们以前指南，终结点已组织分为两类，**所需**和**可选**。许多客户所面临的难题中对齐的完整列表的 Office 365 Url 和 IP 地址的同一个网络优化应用程序和每个类别中的终结点所需的服务，具体取决于重要程度不同优化。 
   
-在新模型中，终结点被隔离到三个类别中，**优化**、**所需**和**默认值**，以实现最佳性能改进的焦点网络优化工作何处上提供基于优先级的透视和投资回报。终结点中根据网络质量、 卷和性能信封的方案和易于实现有效的用户体验的敏感度上述类别合并。建议的优化可以应用到给定类别中的所有终结点的方式相同。
+在新模型中，终结点被隔离到三个类别中，**优化**、**允许**和**默认值**，在焦点网络优化工作，以实现最佳性能改进，并返回到的位置上提供基于优先级的数据透视表投资。终结点中根据网络质量、 卷和性能信封的方案和易于实现有效的用户体验的敏感度上述类别合并。建议的优化可以应用到给定类别中的所有终结点的方式相同。
   
 - **优化**终结点所需的连接到每个 Office 365 服务和占的 Office 365 带宽、 连接和数据量的 75%。这些终结点表示最敏感网络性能、 延迟和可用性的 Office 365 方案。在 Microsoft 数据中心中承载的所有终结点。应到此类别中的终结点的变化率低于其他两个类别中的终结点得多。此类别包括一非常小 （大约为大约 10) 的 Url 和一组定义的 IP 子网专用于核心 Office 365 工作负载，例如 Exchange Online、 SharePoint Online、 Skype 业务 Online 和 Microsoft 团队的键。
 
