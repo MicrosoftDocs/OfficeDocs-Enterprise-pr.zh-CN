@@ -16,18 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 摘要： 介绍了在 Microsoft Office 365 组件和 Office 365 政府版产品中的 IPv6 支持。
-ms.openlocfilehash: 75ed1c8ffe96ed1b09aa8802e11ae195ad60a4f2
-ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
+ms.openlocfilehash: 82af5c7659b3c16c8e92b45b65b6868a404eca23
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "27294459"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327354"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 服务中的 IPv6 支持
 
  **摘要**： 介绍了在 Microsoft Office 365 组件和 Office 365 政府版产品中的 IPv6 支持。
   
-Office 365 支持 IPv6 和 IPv4;但是，不是所有的 Office 365 功能完全启用 ipv6。这意味着，您必须使用 IPv4 和 IPv6 连接到 Office 365。如果进行筛选到 Office 365 您出站通信，可以[Office 365 Url 和 IP 地址范围](https://go.microsoft.com/fwlink/?LinkId=293744)一文中找到支持的 Office 365 的 IPv6 地址的完整列表。您的网络配置并允许相应的 IPv6 地址后，您可以下载[Office 365 IPv6 测试计划](https://go.microsoft.com/fwlink/?LinkId=293447)从 Microsoft 下载中心。
+Office 365 支持 IPv6 和 IPv4;但是，不是所有的 Office 365 功能完全启用 ipv6。这意味着，您必须使用 IPv4 和 IPv6 连接到 Office 365。如果进行筛选到 Office 365 您出站通信，可以[Office 365 Url 和 IP 地址范围](urls-and-ip-address-ranges.md)一文中找到支持的 Office 365 的 IPv6 地址的完整列表。您的网络配置并允许相应的 IPv6 地址后，您可以下载[Office 365 IPv6 测试计划](https://go.microsoft.com/fwlink/?LinkId=293447)从 Microsoft 下载中心。
   
 ||
 |:-----|
@@ -37,7 +37,7 @@ Office 365 支持 IPv6 和 IPv4;但是，不是所有的 Office 365 功能完全
 
 ### <a name="exchange-online-and-ipv6"></a>Exchange Online 和 IPv6
 
-如果您使用连接到 Exchange Online 的程序支持 IPv6，它将有线和无线网络上的默认情况下使用 IPv6。如果您希望控制与 Exchange Online 的通信，请在[Office 365 Url 和 IP 地址范围](https://go.microsoft.com/fwlink/?LinkId=293744)中使用的 IP 地址范围。
+如果您使用连接到 Exchange Online 的程序支持 IPv6，它将有线和无线网络上的默认情况下使用 IPv6。如果您希望控制与 Exchange Online 的通信，请在[Office 365 Url 和 IP 地址范围](urls-and-ip-address-ranges.md)中使用的 IP 地址范围。
   
 ### <a name="sharepoint-online-and-ipv6"></a>SharePoint Online 和 IPv6
 
@@ -45,7 +45,7 @@ Office 365 支持 IPv6 和 IPv4;但是，不是所有的 Office 365 功能完全
   
  **公共多租户云**Microsoft 启用您的请求的 SharePoint Online IPv6。您需要提供 CIDR 表示该组织的 DNS 基础结构的 IP 地址。请记住，不能由租户启用 IPv6 的其他组织共享此 DNS 基础结构。启用 IPv6 时，如果您使用连接到 SharePoint Online 的程序支持 IPv6 后，将默认情况下使用 IPv6。
   
-如果您使用连接到 SharePoint Online 的程序支持 IPv6，它将有线和无线网络上的默认情况下使用 IPv6。如果您希望控制与 SharePoint Online 的通信，请在[Office 365 Url 和 IP 地址范围](https://go.microsoft.com/fwlink/?LinkId=293744)中使用的 IP 地址范围。
+如果您使用连接到 SharePoint Online 的程序支持 IPv6，它将有线和无线网络上的默认情况下使用 IPv6。如果您希望控制与 SharePoint Online 的通信，请在[Office 365 Url 和 IP 地址范围](urls-and-ip-address-ranges.md)中使用的 IP 地址范围。
   
  **Office 365 政府版 G1/G3/G4/版 K1**如果您使用连接到 SharePoint Online 的程序支持 IPv6，它会默认情况下使用 IPv6。
   
@@ -55,17 +55,21 @@ Office 365 支持 IPv6 和 IPv4;但是，不是所有的 Office 365 功能完全
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection 和 IPv6
 
-Exchange Online Protection (EOP) 支持 IPv6，如果通过传输层安全协议进行传输。对于 EOP 区域中，使用[Office 365 Url 和 IP 地址范围](https://go.microsoft.com/fwlink/?LinkId=293744)。
+Exchange Online Protection (EOP) 支持 IPv6，如果通过传输层安全协议进行传输。对于 EOP 区域中，使用[Office 365 Url 和 IP 地址范围](urls-and-ip-address-ranges.md)。
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>Office 365 政府版产品的 IPv6 支持
 
-Office 365 政府版产品的 IPv6 支持符合 Office 的管理和预算 (OMB) 备忘录的主管部门和机构，以及联邦政府应用的 Internet 协议版本 6 (IPv6 的首席信息官) 备忘录。[Microsoft Office 365 政府版](https://go.microsoft.com/fwlink/p/?LinkId=325414)是我们政府数据存储在隔离的社区云中多租户服务。像其他 Office 365 产品，它提供了工作效率和协作服务，包括 Exchange Online，Skype 的业务、 SharePoint Online 和 Office Professional Plus。Microsoft Office 365 政府版产品应用仅用于 2013年及更高版本。有关 Office 365 政府版产品的详细信息，请参阅[宣布 Office 365 政府版： 美国政府社区云](https://go.microsoft.com/fwlink/p/?LinkId=325414)。国际流量在 Arm 法规 (ITAR) 是一套美国政府法规，控制导出和导入防御相关的文章和[美国军需列表 (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415)上的服务。Microsoft Office 365 企业版提供支持安全、 隐私和法规遵从性要求我们需要确保联邦信息安全联邦机构的 Microsoft 生产力解决方案的专用托管的服务管理 (FISMA) 证书和 ITAR 受到商业实体。
+Office 365 政府版产品的 IPv6 支持符合 Office 的管理和预算 (OMB) 备忘录的主管部门和机构，以及联邦政府应用的 Internet 协议版本 6 (IPv6 的首席信息官) 备忘录。[Microsoft Office 365 政府版](https://go.microsoft.com/fwlink/p/?LinkId=325414)是我们政府数据存储在隔离的社区云中多租户服务。像其他 Office 365 产品，它提供了工作效率和协作服务，包括 Exchange Online，Skype 的业务、 SharePoint Online 和 Office Professional Plus。 
+
+Microsoft Office 365 政府版产品应用仅用于 2013年及更高版本。有关 Office 365 政府版产品的详细信息，请参阅[宣布 Office 365 政府版： 美国政府社区云](https://go.microsoft.com/fwlink/p/?LinkId=325414)。国际流量在 Arm 法规 (ITAR) 是一套美国政府法规，控制导出和导入防御相关的文章和[美国军需列表 (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415)上的服务。 
+
+Microsoft Office 365 企业版提供支持安全、 隐私和法规遵从性要求我们需要确保联邦信息安全联邦机构的 Microsoft 生产力解决方案的专用托管的服务管理 (FISMA) 证书和 ITAR 受到商业实体。
   
 ## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>使用 IPv6 和 Office 365 时的注意事项
 
-我们建议您不要禁用 IPv6。有关详细信息，请参阅[针对 Microsoft Windows IPv6： 常见问题解答](https://go.microsoft.com/fwlink/p/?LinkId=325418)。若要确定您的网络上正在使用的哪些 IP 版本，请考虑以下方面：
+我们建议您不要禁用 IPv6。有关详细信息，请参阅此[指南文章](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users)。若要确定您的网络上正在使用的哪些 IP 版本，请考虑以下方面：
   
-- 如果 IPConfig 命令的命令提示符处显示包含名为"IPv6 地址"临时 IPv6 地址"行，您的环境中有 IPv6。
+- 如果**IPConfig**命令的命令提示符处显示包含名为"IPv6 地址"临时 IPv6 地址"行，您的环境中有 IPv6。
 
 - 如果所有 IPv6 地址以"fe80"开头，并且对应于名为"链接-本地 IPv6 地址"行中，您无需在您的环境中的 IPv6。
 
@@ -83,8 +87,6 @@ Office 365 政府版产品的 IPv6 支持符合 Office 的管理和预算 (OMB) 
   
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 技术位置纸张](https://go.microsoft.com/fwlink/p/?linkid=525743)
+[IPv6 学习路线图](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
   
-[TCP/IP v4 和 v6](https://go.microsoft.com/fwlink/p/?LinkID=211898)
-  
-[IPv6 生存指南](https://go.microsoft.com/fwlink/p/?LinkID=237480)
+[IPv6 生存指南](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)
