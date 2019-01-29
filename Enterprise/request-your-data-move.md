@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要让其参与的 Office 365 服务移动到其新的地理位置的客户数据之前其国家/地区的最终期限提交一个请求。
-ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839570"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604503"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -80,7 +80,7 @@ ms.locfileid: "23839570"
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft 团队还不支持客户的内容进行 rest 从区域中的 Microsoft 团队的数据住所位于中-国家/地区数据中心到的迁移。 因此，只有新客户都会将所有其数据存储中的新区域的 Microsoft 团队其中支持数据住所的国家/地区内。 了解有关 Office 365 在您公司所在的数据住所[其中是位于数据？](https://office/com/datamaps)   
+Microsoft 团队还不支持客户的内容进行 rest 从区域中的 Microsoft 团队的数据住所位于中-国家/地区数据中心到的迁移。 因此，只有新客户都会将所有其数据存储中的新区域的 Microsoft 团队其中支持数据住所的国家/地区内。 了解有关 Office 365 在您公司所在的数据住所[其中是位于数据？](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>可选操作之前请求移动
 

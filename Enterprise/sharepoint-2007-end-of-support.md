@@ -3,7 +3,7 @@ title: SharePoint Server 2007 停止提供支持路线图
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +32,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 在 2017 年 10 月 10，支持结束 SharePoint Server 2007。阅读此文，了解有关疑难解答、 最佳实践、 系统要求、 升级步骤和如何从 Microsoft 合作伙伴获取帮助您升级选项。
-ms.openlocfilehash: b548e7623a72d57793c18409a80506bb832df858
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: b0d3eda690733b45ee82054e145642a5c76125d5
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169794"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604513"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 停止提供支持路线图
 
@@ -60,7 +60,7 @@ SharePoint Server 像几乎在所有 Microsoft 产品，具有支持生命周期
 > [!TIP]
 > 如果您已尚未升级或迁移的计划，请参阅： [SharePoint 2007 迁移选项，要考虑](sharepoint-2007-migration-options.md)的开始位置的一些示例。您还可以搜索[Microsoft 合作伙伴](https://go.microsoft.com/fwlink/?linkid=841249)可帮助进行升级或 Office 365 迁移 （或两者）。 
   
-有关 Office 2007 服务器达到结束的支持的详细信息，请参阅[规划 Office 2007 服务器的升级](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx)。
+有关 Office 2007 服务器达到结束的支持的详细信息，请参阅[资源以帮助您升级从 Office 2007 的服务器和客户端](upgrade-from-office-2007-servers-and-products.md)。
   
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
@@ -78,7 +78,7 @@ SharePoint Server 像几乎在所有 Microsoft 产品，具有支持生命周期
 
 SharePoint Server 可以是在本地安装在您自己的服务器，或者您可以使用 SharePoint Online，这是 Microsoft Office 365 的一部分的联机服务。您可以选择：
   
-- 迁移到 SharePoint Online
+- 将迁移到 SharePoint Online
     
 - 升级 SharePoint Server 内部部署
     
@@ -100,7 +100,7 @@ SharePoint Server 可以是在本地安装在您自己的服务器，或者您�
    
 迁移到 Office 365 时，一次性移动时您组织的数据，还可以决定要让进入云内容和要留下将有前期，粗成本。但是，升级将自动从那时、 不再需要管理硬件和软件更新，并且将 Microsoft 服务级别协议 ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) 通过备份服务器场的运行时间。
   
-### <a name="migrate-to-sharepoint-online"></a>迁移到 SharePoint Online
+### <a name="migrate-to-sharepoint-online"></a>将迁移到 SharePoint Online
 
 请确保 SharePoint Online 具有所需的查看关联的服务说明的所有功能。下面是指向所有 Office 365 服务说明的链接：
   
