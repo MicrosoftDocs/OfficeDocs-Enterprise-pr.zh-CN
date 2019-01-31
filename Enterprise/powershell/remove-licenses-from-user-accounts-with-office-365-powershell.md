@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 删除用户帐户的许可证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/29/2018
+ms.date: 01/29/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,30 +16,59 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: 介绍如何使用 Office 365 PowerShell 中删除之前已分配给用户的 Office 365 许可证。
-ms.openlocfilehash: a993737f4bd1186a7fb5beb7fa0f6a2ae6782618
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 5b5f4550a5fade7f95669ad455aebd5d5f7fbf34
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123299"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651216"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户的许可证
 
 **摘要：** 介绍如何使用 Office 365 PowerShell 中删除之前已分配给用户的 Office 365 许可证。
-  
-## <a name="before-you-begin"></a>准备工作
 
-- 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
-    
-- 若要查看组织中的许可计划 (**AccountSkuID** ) 信息，请参阅以下主题：
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
+
+首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+  
+
+接下来，使用此命令租户中列出的许可计划。
+
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+接下来，获取要为其删除许可证，也称为的用户主体名称 (UPN) 的帐户的登录名称。
+
+最后，指定用户登录和许可计划的名称，删除"<"和">"字符，并运行以下命令。
+
+```
+$userUPN="<user sign-in name (UPN)>"
+$planName="<license plan name from the list of license plans>"
+$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
+$licenses.AddLicenses = $license
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+$Licenses.AddLicenses = @()
+$Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+```
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
+
+首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+
+   
+若要查看组织中的许可计划 (**AccountSkuID** ) 信息，请参阅以下主题：
     
   - [使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)
     
   - [使用 Office 365 PowerShell 查看帐户许可证和服务详细信息](view-account-license-and-service-details-with-office-365-powershell.md)
     
-- 如果使用 **Get-MsolUser** cmdlet，而未使用 _-All_ 参数，只返回前 500 个帐户。
+如果使用 **Get-MsolUser** cmdlet，而未使用 _-All_ 参数，只返回前 500 个帐户。
     
-## <a name="removing-licenses-from-user-accounts"></a>从用户帐户删除许可证
+### <a name="removing-licenses-from-user-accounts"></a>从用户帐户删除许可证
 
 要从现有的用户帐户中删除许可证，请使用以下语法：
   
@@ -109,27 +138,12 @@ $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -Remov
   
 ## <a name="see-also"></a>另请参阅
 
-请参阅下面有关使用 Office 365 PowerShell 管理用户的其他主题：
+[使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
-    
-- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [使用 Office 365 PowerShell 冻结用户账户](block-user-accounts-with-office-365-powershell.md)
-    
-- [使用 Office 365 PowerShell 向用户帐户分配许可证](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-有关在这些步骤中使用的 cmdlet 的详细信息，请参阅下列主题：
+[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
   
-- [获取内容](https://go.microsoft.com/fwlink/p/?LinkId=289917)
-    
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
-    
-- [Set-msoluserlicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
-    
-- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
-    
-- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
+[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+
     
 ## <a name="new-to-office-365"></a>刚开始接触 Office 365？
 

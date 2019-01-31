@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 介绍如何使用 Office 365 PowerShell 中查看许可计划、 服务和 Office 365 组织中可用的许可证的信息。
-ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
-ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
+ms.openlocfilehash: bce181445523a2f043caa932f3d4e0ddd81d89cc
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "27786148"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651206"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看许可证和服务
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 结果包含以下信息：
   
-- **SkuPartNumber:** 显示为您的组织可用的许可计划。例如，`ENTERPRISEPACK`是 Office 365 企业版 E3 的系统名称。
+- **SkuPartNumber:** 显示为您的组织可用的许可计划。例如，`ENTERPRISEPACK`是 Office 365 企业版 E3 的许可计划名称。
     
 - **启用：** 您已为特定的许可计划购买的许可证数量。
     
@@ -74,7 +74,7 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ````
 
-\<索引 > 是一个整数，指定的行数的许可计划从显示的`Get-AzureADSubscribedSku | Select SkuPartNumber`命令，减 1 之间。
+\<index> 是一个整数，指定的行数的许可计划从显示的`Get-AzureADSubscribedSku | Select SkuPartNumber`命令，减 1 之间。
 
 例如，如果显示的`Get-AzureADSubscribedSku | Select SkuPartNumber`命令这是：
 
