@@ -20,12 +20,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 查看 Office 365 服务的运行状况状态之前调用支持，以了解是否有有效的服务中断
-ms.openlocfilehash: 7e04e1309c990ccced67663576285f7276603ccc
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
+ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651182"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29696349"
 ---
 # <a name="how-to-check-office-365-service-health"></a>如何查看 Office 365 服务运行状况
 
@@ -108,7 +108,7 @@ ms.locfileid: "29651182"
    
 ## <a name="history"></a>“历史记录”
 
-可通过服务运行状况查看当前运行状况状态，以及过去 30 天中任何服务公告和事件的历史记录。若要查看所有服务以往的运行状况，请在" **服务运行状况**"页上选择" **查看历史记录**"。 
+服务运行状况，可以查看当前运行状况和查看任何服务咨询和已过去 30 天内影响您的租户的事件的历史记录。若要查看过去的所有服务运行状况，选择**服务运行状况**页上的**查看历史记录**。 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
