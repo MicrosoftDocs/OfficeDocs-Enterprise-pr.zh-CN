@@ -1,8 +1,8 @@
 ---
-title: 管理 Office 365 PowerShell 组
-ms.author: dianef
-author: dianef77
-manager: scotv
+title: 使用 PowerShell 管理 Office 365 组
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 本文提供的 Microsoft PowerShell 组执行常见管理任务的步骤。
-ms.openlocfilehash: 23dfb7f871496b33bf9c34937977b98dc13cea6d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 83b7340cea1fd8d38bba073353b61f0b17fad8a0
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539773"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741225"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>管理 Office 365 PowerShell 组
+# <a name="manage-office-365-groups-with-powershell"></a>使用 PowerShell 管理 Office 365 组
 
  *上次更新 18 年 4 月，2018* 
   
@@ -35,9 +35,9 @@ ms.locfileid: "22539773"
 
 - [向 Office 365 组升级的通讯组列表](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f.aspx)
     
-- [管理谁可以创建 Office 365 组](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
+- [管理可创建 Office 365 组的人员](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
     
-- [管理 Office 365 组来宾访问](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+- [管理对 Office 365 组的来宾访问](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
     
 - [动态在 Azure Active Directory 中管理组](https://go.microsoft.com/fwlink/?linkid=847632)
     
@@ -204,7 +204,7 @@ Office 365 在 Outlook 中创建组为私有默认情况下。如果您的组织
   
 ## <a name="office-365-groups-cmdlets"></a>Office 365 组 cmdlet
 
-以下 cmdlet 最近做可用到 Office 365 组。如果您不能使用这些，您的 Office 365 订阅尚未更新利用此功能您尚未。检查邮件中心和[Office 365 路线图](http://roadmap.office.com/en-us)。
+以下 cmdlet 最近做可用到 Office 365 组。如果您不能使用这些，您的 Office 365 订阅尚未更新利用此功能您尚未。检查邮件中心和[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
   
 |**Cmdlet 名称**|**说明**|
 |:-----|:-----|
@@ -216,6 +216,6 @@ Office 365 在 Outlook 中创建组为私有默认情况下。如果您的组织
 |[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |添加十万或数千个用户或新的所有者，到现有 Office 365 组  <br/> |
 |[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |删除现有的 Office 365 组的所有者和成员  <br/> |
    
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多信息
 
 [使用 Office 365 PowerShell 管理 Office 365](powershell/manage-office-365-with-office-365-powershell.md)

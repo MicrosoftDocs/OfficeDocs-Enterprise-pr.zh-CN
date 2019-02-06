@@ -3,13 +3,6 @@
 
 
 
-## <a name="week-of-december-24-2018"></a>2018 年 12 月 24，这一周
-
-
-| 发布时间 |主题标题 | 更改 |
-|------|------------|--------|
-
-
 ## <a name="week-of-december-31-2018"></a>2018 年 12 月 31，这一周
 
 
@@ -47,7 +40,7 @@
 | 2019 年 1/11 | [Office 365 美国政府 DoD 终结点](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 修改时间 |
 
 
-## <a name="week-of-january-14-2019"></a>2019 年 1 月 14，这一周
+## <a name="week-of-january-14-2019"></a>2019 年 1 月 14 日所在周
 
 
 | 发布时间 |主题标题 | 更改 |
@@ -73,3 +66,23 @@
 | 2019 年 1/25 | [将 OneDrive 站点移动到其他地理位置](/Office365/Enterprise/move-onedrive-between-geo-locations) | 修改时间 |
 | 2019 年 1/25 | [与 SharePoint Online 中使用 Office 365 内容交付网络](/Office365/Enterprise/use-office-365-cdn-with-spo) | 修改时间 |
 | 2019 年 1/25 | [设置 Office 365 的目录同步](/Office365/Enterprise/set-up-directory-synchronization) | 修改时间 |
+
+
+## <a name="week-of-january-28-2019"></a>2019 年 1 月 28，这一周
+
+
+| 发布时间 |主题标题 | 更改 |
+|------|------------|--------|
+| 2019 年 1/28 | [Office 365 服务的部署顾问](/Office365/Enterprise/deployment-advisors-for-office-365) | 修改时间 |
+| 2019 年 1/28 | [如何请求数据移动](/Office365/Enterprise/request-your-data-move) | 修改时间 |
+| 2019 年 1/28 | [SharePoint Server 2007 停止提供支持路线图](/Office365/Enterprise/sharepoint-2007-end-of-support) | 修改时间 |
+| 2019 年 1/29 | [Office 365 美国政府 DoD 终结点](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 修改时间 |
+| 2019 年 1/29 | [Office 365 美国政府高 GCC 终结点](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 修改时间 |
+| 2019 年 1/29 | [Office 365 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges) | 修改时间 |
+| 1/30/2019 | [使组织为部署 Office 365 企业版做好准备](/Office365/Enterprise/get-your-organization-ready-for-office-365) | 修改时间 |
+| 1/30/2019 | [使用 Office 365 PowerShell 向用户帐户分配许可证](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 修改时间 |
+| 1/30/2019 | [使用 Office 365 PowerShell 删除用户帐户的许可证](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | 修改时间 |
+| 1/30/2019 | [使用 Office 365 PowerShell 查看许可证和服务](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | 修改时间 |
+| 1/30/2019 | [如何查看 Office 365 服务运行状况](/Office365/Enterprise/view-service-health) | 修改时间 |
+| 1/31/2019 | [将角色分配给用户帐户与 Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 修改时间 |
+| 2/1/2019 | [如何查看 Office 365 服务运行状况](/Office365/Enterprise/view-service-health) | 修改时间 |

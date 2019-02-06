@@ -1,8 +1,8 @@
 ---
-title: 管理 Office 365 PowerShell 组
-ms.author: dianef
-author: dianef77
-manager: scotv
+title: 使用 PowerShell 管理 Office 365 组
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 上次更新 18 年 4 月，2018
-ms.openlocfilehash: 8def3b304a19ad57887c992aa6342ea2cf14ba28
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 518f845099a72d9addac13388d1b281ca63ee408
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539884"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741215"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>管理 Office 365 PowerShell 组
+# <a name="manage-office-365-groups-with-powershell"></a>使用 PowerShell 管理 Office 365 组
 
  *上次更新 18 年 4 月，2018* 
   
@@ -32,11 +32,11 @@ ms.locfileid: "22539884"
   
 ## <a name="common-tasks-for-managing-office-365-groups"></a>管理 Office 365 组的常见任务
 
-- [升级的通讯组列表向 Outlook 中的 Office 365 组](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
+- [将通讯组列表升级到 Outlook 中的 Office 365 组](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
     
-- [管理谁可以创建 Office 365 组](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618)
+- [管理可创建 Office 365 组的人员](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618)
     
-- [管理 Office 365 组来宾访问](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96)
+- [管理对 Office 365 组的来宾访问](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96)
     
 - [动态在 Azure Active Directory 中管理组](https://go.microsoft.com/fwlink/?linkid=847632)
     
@@ -220,7 +220,7 @@ Office 365 在 Outlook 中创建组为私有默认情况下。如果您的组织
 |[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |添加十万或数千个用户或新的所有者，到现有 Office 365 组  <br/> |
 |[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |删除现有的 Office 365 组的所有者和成员  <br/> |
    
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多信息
 
 - [使用 PowerShell](https://technet.microsoft.com/en-us/library/cc482986.aspx)
     
