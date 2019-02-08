@@ -1,5 +1,5 @@
 ---
-title: ExpressRoute for Office 365 网络规划
+title: ExpressRoute for Office 365 网络计划
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 ExpressRoute 提供之间的第 3 层连接网络和 Microsoft 数据中心。电路使用 Office 365 的前端服务器的边框网关协议 (BGP) 路由的广告。从内部部署的设备的角度来看，当他们需要选择正确的 TCP/IP 路径到 Office 365 Azure ExpressRoute 被看作到 Internet 的替代项。
-ms.openlocfilehash: 79cad16a619f048d1ba98b6058127f901211344d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539782"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897225"
 ---
-# <a name="network-planning-with-expressroute-for-office-365"></a>ExpressRoute for Office 365 网络规划
+# <a name="network-planning-with-expressroute-for-office-365"></a>ExpressRoute for Office 365 网络计划
 
 Office 365 ExpressRoute 提供之间的第 3 层连接网络和 Microsoft 数据中心。电路使用 Office 365 的前端服务器的边框网关协议 (BGP) 路由的广告。从内部部署的设备的角度来看，当他们需要选择正确的 TCP/IP 路径到 Office 365 Azure ExpressRoute 被看作到 Internet 的替代项。
   
@@ -33,12 +33,12 @@ Azure ExpressRoute 将直接路径添加到一组特定的受支持的功能和�
 
 |**网络规划的差异**|**Internet 网络连接**|**ExpressRoute 网络连接**|
 |:-----|:-----|:-----|
-| 访问所需的 internet 服务，包括：  <br/>  DNS 名称解析  <br/>  证书吊销验证  <br/>  内容传递网络  <br/> |是  <br/> |向 Microsoft 请求拥有 DNS 和/或 CDN 基础结构可能使用 ExpressRoute 网络。  <br/> |
+| 访问所需的 internet 服务，包括：  <br/>  DNS 名称解析  <br/>  证书吊销验证  <br/>  内容分发网络  <br/> |是  <br/> |向 Microsoft 请求拥有 DNS 和/或 CDN 基础结构可能使用 ExpressRoute 网络。  <br/> |
 | 访问 Office 365 服务，包括：  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office Online  <br/>  Office 365 门户和身份验证  <br/> |是，所有应用程序和功能  <br/> |是的[特定应用程序和功能](https://aka.ms/o365endpoints) <br/> |
-|在部署外围安全。  <br/> |是  <br/> |是  <br/> |
+|在部署外围安全。  <br/> |是  <br/> |可访问  <br/> |
 |规划高可用性。  <br/> |故障转移到备用 internet 网络连接  <br/> |故障转移到的备用 ExpressRoute 连接  <br/> |
 |与可预测的网络配置文件的直接连接。  <br/> |否  <br/> |是  <br/> |
-|IPv6 连接。  <br/> |是  <br/> |是  <br/> |
+|IPv6 连接。  <br/> |是  <br/> |可访问  <br/> |
 
 展开标题下方的规划指南的更多网络。我们还录制 10 部分的公开跳水更深入地介绍[有关 Office 365 培训 Azure ExpressRoute](https://channel9.msdn.com/series/aer)系列。
 
@@ -106,7 +106,7 @@ Woodgrove 银行正在考虑部署 Azure ExpressRoute 以及规划的最佳体�
   
 Woodgrove，具有多个大洲中的位置的多个国家/地区组织的安全必须跨越所有外围环境。Woodgrove 的最佳连接选项是与服务的每个大陆中其员工需要在全球范围内的多个对等位置的多点连接。每个大陆包含冗余 Azure ExpressRoute 电路内洲和安全必须跨越所有这些。
   
-Woodgrove 的现有基础结构可靠，并且可以处理其他工作，因此，Woodgrove 银行能够利用其 Azure ExpressRoute 和 internet 外围安全的基础结构。如果这不是这种情况，无法选择 Woodgrove 购买其他设备进行了补充其现有的设备或处理不同类型的连接。
+Woodgrove 的现有基础结构可靠，并可以处理其他工作，因此，Woodgrove 银行是能够使用其 Azure ExpressRoute 和 internet 外围安全的基础结构。如果这不是这种情况，无法选择 Woodgrove 购买其他设备进行了补充其现有的设备或处理不同类型的连接。
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>高可用性和故障转移与 Azure ExpressRoute
 <a name="BKMK_high-availability"> </a>
@@ -185,37 +185,37 @@ Woodgrove 银行的多个地理设计都经过路由、 带宽、 安全性、 �
   
 使用您的提供程序或提供程序以选择最佳的连接选项，点对点的多点或托管。请记住，您可以混合和只要带宽和其他冗余组件支持您的路由和高可用性设计匹配连接选项。
   
-这是一个简短的链接，您可以使用回来：[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+以下是可以用于返回的简短链接：[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>相关主题
 <a name="BKMK_high-availability"> </a>
 
 [与 Office 365 的网络连接](network-connectivity.md)
   
-[适用于 Office 365 的 Azure ExpressRoute](azure-expressroute.md)
+[Azure ExpressRoute for Office 365](azure-expressroute.md)
   
 [管理 ExpressRoute for Office 365 连接](managing-expressroute-for-connectivity.md)
   
-[ExpressRoute for Office 365 路由](routing-with-expressroute.md)
+[使用 ExpressRoute for Office 365 路由](routing-with-expressroute.md)
   
 [实现 ExpressRoute for Office 365](implementing-expressroute.md)
   
-[使用 Office 365 方案 (preview) 中 ExpressRoute BGP 社区 （英文）](bgp-communities-in-expressroute.md)
+[在 ExpressRoute for Office 365 方案中使用 BGP 社区（预览版）](bgp-communities-in-expressroute.md)
   
-[媒体质量和 Skype 中的网络连接性能 for Business 联机](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[为业务 Online 的 Skype 优化您的网络](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[优化 Skype for Business Online 网络](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute 和 Skype for Business Online 中的 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online 中的 ExpressRoute 和 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[使用 ExpressRoute 呼叫流](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[使用 ExpressRoute 的呼叫流](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
   
-[Office 365 的性能疑难解答计划](performance-troubleshooting-plan.md)
+[Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
   
 [Office 365 URL 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 网络和性能优化](network-planning-and-performance.md)
   
-[Office 365 终结点常见问题](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Office 365 终结点 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

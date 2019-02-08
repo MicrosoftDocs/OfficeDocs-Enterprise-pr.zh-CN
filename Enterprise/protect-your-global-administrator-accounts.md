@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 保护向这三个步骤与 Office 365 订阅的全局管理员访问权限。
-ms.openlocfilehash: 7260e903ea007735c87ab8aa826e3b97e7bd28c1
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 41168643fb8867017865860624c8b436460fa0b8
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539786"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897515"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>保护 Office 365 全局管理员帐户
 
@@ -92,13 +92,13 @@ Microsoft 提供的功能来帮助保护您的组织，但它们是使用它们�
 
 全局管理员帐户的多因素身份验证 (MFA) 需要的帐户名和密码之外的其他信息。Office 365 支持这些验证方法：
   
-- 电话呼叫
+- 电话联络
     
 - 随机生成的密码
     
-- 智能卡 （虚拟或物理）
+- 智能卡（虚拟或物理）
     
-- 生物特征设备
+- 生物识别设备
     
 如果您的小型企业中使用的仅在云中 （云标识模型） 中存储的用户帐户，请使用以下步骤配置 MFA 使用电话呼叫或文本消息验证代码发送到智能电话：
   
@@ -120,7 +120,7 @@ Microsoft 提供的功能来帮助保护您的组织，但它们是使用它们�
   
 ## <a name="step-3-monitor-for-suspicious-global-administrator-account-activity"></a>步骤 3。可疑的全局管理员帐户活动的监视器
 
-Office 365 云应用程序安全性允许您创建策略，通知您在您的订阅的可疑行为。云应用程序安全性中内置了 Office 365 E5，但也可作为单独的服务。例如，如果您没有 Office 365 E5，您可以购买全局管理员、 安全管理员和合规性管理员角色分配的用户帐户的各个云应用程序安全性的许可证。
+Office 365 云应用程序安全性，可以创建策略，以通知您在您的订阅的可疑行为。云应用程序安全性中内置了 Office 365 E5，但也可作为单独的服务。例如，如果您没有 Office 365 E5，您可以购买全局管理员、 安全管理员和合规性管理员角色分配的用户帐户的各个云应用程序安全性的许可证。
   
 如果您有 Office 365 订阅中的云应用程序安全性，使用以下步骤：
   

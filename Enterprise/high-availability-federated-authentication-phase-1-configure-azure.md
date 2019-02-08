@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构以托管 Office 365 的高可用性联合身份验证。
-ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915457"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897475"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1:配置 Azure
 
@@ -39,7 +39,7 @@ Azure 必须设置与这些基本组件：
 
 在开始配置 Azure 组件之前，请填充下表中。为了帮助您配置 Azure 的过程，打印本节并记下所需的信息或复制到文档的本部分并填写。VNet 的设置，填写表 V。
   
-|**项目**|**配置设置**|**说明**|**值**|
+|**项**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
-|**项目**|**子网名称**|**子网地址空间**|**用途**|
+|**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) 域控制器和目录同步服务器虚拟机 (VM) 使用的子网。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM 使用的子网。  <br/> |
@@ -94,7 +94,7 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
    
  **表 D：本地 DNS 服务器**
   
-要通过站点间 VPN 连接将数据包从跨界网络传输到组织网络，你必须使用本地网络配置虚拟网络。此本地网络包含组织的本地网络上所有可访问位置的地址空间列表（使用 CIDR 表示法）。用于定义本地网络的地址空间列表必须是唯一的，并且不得与用于其他虚拟网络或其他本地网络的地址空间重叠。
+若要跨站点到站点 VPN 连接路由到您的组织的网络从跨界网络数据包，必须配置虚拟网络与包含列表的地址空间 （以 CIDR 表示） 的访问所有本地网络贵组织的本地网络上的位置。定义您的本地网络的地址空间的列表必须是唯一的并且必须使用用于其他虚拟网络或其他本地网络地址空间不重叠。
   
 对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
@@ -109,7 +109,7 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
 现在让我们开始构建 Azure 基础结构来托管你的 Office 365 联合身份验证。
   
 > [!NOTE]
-> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Azure PowerShell cmdlet 使用入门](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)。 
+> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Azure PowerShell cmdlet 使用入门](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/) 
   
 首先，启动 Azure PowerShell 提示符并登录到你的帐户。
   
@@ -118,7 +118,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> 对于包含所有这篇文章并生成即点即已准备 PowerShell 命令块，根据您的自定义设置 Microsoft Excel 配置工作簿中的 PowerShell 命令的文本文件，请参阅[联合身份验证的 Office 365 中的Azure 部署工具包](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)。 
+> 对于所有这篇文章并生成即点即已准备 PowerShell 命令块，根据您的自定义设置 Microsoft Excel 配置工作簿中的 PowerShell 命令的文本文件，请参阅在 Azure 中的[for Office 365 联合身份验证部署工具包](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)。 
   
 使用以下命令获得订阅名称。
   
@@ -199,7 +199,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-接下来，为每个包含虚拟机的子网创建网络安全组。若要执行子网隔离，可以添加规则，指定允许或拒绝进入子网的网络安全组的特定类型流量。
+接下来，您创建网络具有虚拟机的每个子网的安全组。若要执行子网隔离，您可以添加流量允许或拒绝网络安全组的子网的特定类型的规则。
   
 ```
 # Create network security groups
@@ -272,7 +272,7 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 接下来，定义三个可用性集的名称。填写表 A。 
   
-|**项目**|**用途**|**可用性集的名称**|
+|**项**|**用途**|**可用性集的名称**|
 |:-----|:-----|:-----|
 |1.  <br/> |域控制器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS 服务器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 讨论网络优化为何重要 SaaS 服务，Office 365 网络的目标和如何 SaaS 需要从其他工作负荷的不同网络。
-ms.openlocfilehash: ebd7410ec5fe421561543f1223e455377e99e625
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25002351"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897205"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 网络连接概述
 
@@ -84,7 +84,7 @@ Office 365 流量受制数据包检测和集中的外出时，将创建某些常
 > [!NOTE]
 > _分布式服务前盖_基础结构是具有地理上分散的位置的 Microsoft 全局网络的高可用性和可扩展性网络边缘。它终止最终用户的连接，并高效地将其路由 Microsoft 全球网络内。您可以了解有关在[Microsoft 如何构建其快速且可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)的 Microsoft 全局网络的详细信息。
 
-了解并应用 Office 365 网络连接原则的详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles#office-365-connectivity-principles)。
+了解并应用 Office 365 网络连接原则的详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)。
 
 ## <a name="conclusion"></a>结束语
 
@@ -106,6 +106,6 @@ Office 365 流量受制数据包检测和集中的外出时，将创建某些常
 
 [使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
 
-[Office 365 的性能疑难解答计划](performance-troubleshooting-plan.md)
+[Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
 
 [Microsoft 如何构建其快速且可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)

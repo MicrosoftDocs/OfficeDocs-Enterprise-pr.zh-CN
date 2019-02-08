@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 摘要：在 Office 365 开发/测试环境中使用 Azure 信息保护 (AIP) 客户端配置和演示数据分类和标记。
-ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914847"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897435"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的数据分类和标记
 
  **摘要：** 在 Office 365 开发/测试环境中使用 Azure 信息保护 (AIP) 客户端配置和演示数据分类和标记。
   
-Azure 信息保护客户端可以用于分类文档之前将其上载到 Office 365 中的 SharePoint Online 文件夹。使用本文中的说明，您可以安装 Azure 信息保护客户端和演示数据分类。有关详细信息，请参阅[Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)。
+Azure 信息保护客户端允许您将其上载到 Office 365 中的 SharePoint Online 文件夹之前对文档进行分类。使用本文中的说明，您可以安装 Azure 信息保护客户端和演示数据分类。有关详细信息，请参阅[Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)。
   
 > [!TIP]
 > 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
@@ -126,7 +126,7 @@ Azure 信息保护客户端可以用于分类文档之前将其上载到 Office 
     
 9. 单击任务栏中的“**文件资源管理器**”，然后打开“**文档**”文件夹。
     
-    注意 **BeforeAIP** 和 **AfterAIP** 文档的不同文件大小。AfterAIP 文档较大，因为它包含分类信息。
+    注意**BeforeAIP**和**AfterAIP**文档的不同文件大小。AfterAIP 文档是较大，因为它包含分类信息。
     
 接下来，允许每个人访问支持网站集。
   
@@ -140,7 +140,7 @@ Azure 信息保护客户端可以用于分类文档之前将其上载到 Office 
     
 5. 在 SharePoint 组列表中，单击“**支持网站集成员**”。
     
-6. 在“人员和组”页中，单击“新建”********。
+6. 在“**人员和组**”页中，单击“**新建**”。
     
 7. 在**共享支持网站集**，键入**Everyone**，单击**除外部用户**，然后单击**共享。**
     
@@ -150,7 +150,7 @@ Azure 信息保护客户端可以用于分类文档之前将其上载到 Office 
   
 1. 在“**Microsoft Office 主页**”选项卡上，单击右上方的用户图标，然后单击“**注销**”。
     
-2. 转到[http://portal.office.com](http://portal.office.com)。
+2. 转到 [http://portal.office.com](http://portal.office.com)。
     
 3. 在**Office 365 登录**页上，单击 User5 帐户名和登录。
     

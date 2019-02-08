@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 摘要： 连接到 Office 365 组织使用 Office 365 PowerShell 从命令行执行 admin center 任务。
-ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849888"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897195"
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
  **摘要：** 连接到 Office 365 组织使用 Office 365 PowerShell 从命令行执行管理任务。
   
-Office 365 PowerShell 允许您从命令行管理 Office 365 设置。连接到 Office 365 PowerShell 是一个简单的过程，其中您安装所需的软件，然后连接到 Office 365 组织。 
+Office 365 PowerShell 中，可以从命令行管理 Office 365 设置。连接到 Office 365 PowerShell 是一个简单的过程，其中您安装所需的软件，然后连接到 Office 365 组织。 
 
 有两个版本的用于连接到 Office 365 和管理用户帐户、 组和许可证的 PowerShell 模块：
 
@@ -133,7 +133,7 @@ Office 365 PowerShell 允许您从命令行管理 Office 365 设置。连接到 
 
 如果您使用 MFA，请按照其他对话框中的说明提供身份验证中的详细信息，如验证代码。
 
-### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 如果未收到任何错误，则说明连接成功。一个快速测试是运行 Office 365 cmdlet（例如 **Get-MsolUser** ），然后查看结果。
   

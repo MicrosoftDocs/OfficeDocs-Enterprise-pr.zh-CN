@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365 ExpressRoute 提供备用路由路径许多 internet 面向 Office 365 服务。Office 365 ExpressRoute 的体系结构基于广告已可访问 internet 的后续重新发布到这些 IP 前缀您已设置 ExpressRoute 电路到的 Office 365 服务的公共 IP 前缀您的网络。与 ExpressRoute 有效地启用多个不同的路由路径，通过 internet 和 ExpressRoute，许多 Office 365 服务。此状态的路由网络上可能表示重大更改至设计您的内部网络拓扑的方式。
-ms.openlocfilehash: c4479a236d1419293dbd433e8d3c10a11ea5fb45
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: e535135557f7f2f64077c1d926f120fff78dbd42
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539888"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25715868"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>实现 ExpressRoute for Office 365
 
@@ -115,6 +115,7 @@ Office 365 ExpressRoute 提供备用路由路径许多 internet 面向 Office 36
 |**路径对称控件** <br/> |**方法**： 源 NAT  <br/> **Internet 路径**： 源 NAT 入站连接到 192.168.5.5  <br/> |**ExpressRoute 路径**： 源 NAT 连接到 192.168.1.0 （芝加哥） 和 192.168.2.0 （达拉斯）  <br/> |
 
 下面是一种服务，仅出站的示例：
+
 |**Connection 属性**|**值**|
 |:-----|:-----|
 |**网络流量方向** <br/> |出站  <br/> |
@@ -563,33 +564,33 @@ QoS 所需业务 online Skype 获取语音和会议的好处。确保，ExpressR
   
 请记住，您需要确保 ExpressRoute 的网络配置的 ExpressRoute 连接部署 Office 365 时优化设计和您已也优化网络如客户端计算机上的其他组件。除了使用本规划指南解决您可能错过的步骤，我们还具有写入[性能疑难解答 for Office 365 的计划](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c)。
   
-这是一个简短的链接，您可以使用回来：[https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
+以下是可以用于返回的简短链接：[https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
 ## <a name="related-topics"></a>相关主题
 
 [与 Office 365 的网络连接](network-connectivity.md)
   
-[适用于 Office 365 的 Azure ExpressRoute](azure-expressroute.md)
+[Azure ExpressRoute for Office 365](azure-expressroute.md)
   
 [管理 ExpressRoute for Office 365 连接](managing-expressroute-for-connectivity.md)
   
-[ExpressRoute for Office 365 路由](routing-with-expressroute.md)
+[使用 ExpressRoute for Office 365 路由](routing-with-expressroute.md)
   
-[ExpressRoute for Office 365 网络规划](network-planning-with-expressroute.md)
+[ExpressRoute for Office 365 网络计划](network-planning-with-expressroute.md)
   
-[使用 Office 365 方案 (preview) 中 ExpressRoute BGP 社区 （英文）](bgp-communities-in-expressroute.md)
+[在 ExpressRoute for Office 365 方案中使用 BGP 社区（预览版）](bgp-communities-in-expressroute.md)
   
-[媒体质量和 Skype 中的网络连接性能 for Business 联机](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[为业务 Online 的 Skype 优化您的网络](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[优化 Skype for Business Online 网络](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute 和 Skype for Business Online 中的 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online 中的 ExpressRoute 和 QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[使用 ExpressRoute 呼叫流](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[使用 ExpressRoute 的呼叫流](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
   
-[Office 365 的性能疑难解答计划](performance-troubleshooting-plan.md)
+[Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
   
 [Office 365 URL 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   

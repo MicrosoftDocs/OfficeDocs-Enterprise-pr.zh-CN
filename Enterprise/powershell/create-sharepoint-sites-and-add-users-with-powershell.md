@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要： 使用 Office 365 PowerShell，可以创建新的 SharePoint Online 网站，并将这些网站中添加用户和组。
-ms.openlocfilehash: 41ca26249bd494d5603a425689e47f9fe6809f1a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975200"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897165"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户
 
@@ -32,7 +32,7 @@ ms.locfileid: "23975200"
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>步骤 1：使用 Office 365 PowerShell 创建新的网站集
 
-使用 Office 365 PowerShell 和你使用提供的示例代码和记事本创建的 .csv 文件创建多个网站。在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。此过程使你能够创建单个文件并运行一个使用该文件的 Office 365 PowerShell 命令。这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。此步骤包括两个部分。首先，你要创建一个 .csv 文件，然后使用 Office 365 PowerShell 引用该 .csv 文件，从而利用该文件的内容来创建网站。
+创建多个网站使用 Office 365 PowerShell 和使用示例代码提供和记事本创建的.csv 文件。对于本过程，您将替换占位符信息与您自己网站和租户特定的信息的括号中所示。此过程可创建单个文件和运行使用该文件的单个 Office 365 PowerShell 命令。这使可重复和可移植所执行的操作，并消除了许多，如果可以来自在 SharePoint Online Management Shell 中键入长命令的不是所有错误。有两个部分此过程。首先，您将创建.csv 文件，然后将引用使用 Office 365 PowerShell，将使用其内容来创建网站的.csv 文件。
 
 Office 365 PowerShell cmdlet 导入 .csv 文件并将其通过管道传递到大括号内的循环中，该循环将读取文件的第一行作为列标题。然后，Office 365 PowerShell cmdlet 循环访问剩余的记录，为每个记录创建一个新的网站集，并根据列标题指定网站集的属性。
 

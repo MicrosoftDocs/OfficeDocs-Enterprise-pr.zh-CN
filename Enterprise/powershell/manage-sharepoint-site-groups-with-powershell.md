@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要： 使用 Office 365 PowerShell 管理 SharePoint Online 网站用户组。
-ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 62643cabb2377c07117299dc25314cd515a06791
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975140"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897155"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 SharePoint Online 网站用户组
 
@@ -69,7 +69,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 ![SharePoint Online 网站用户组](media/SPO-site-groups.png)
 
-这是已创建的网站的所有组`https://litwareinc.sharepoint.com/sites/finance`、，以及分配给这些组的所有用户。组名称是黄色可帮助您从其成员的单独的组名称。
+这是已创建的网站的所有组`https://litwareinc.sharepoint.com/sites/finance`，和分配给这些组的所有用户。组名称是黄色可帮助您从其成员的单独的组名称。
 
 又如，下面是一个命令集，列出的组和所有的组成员身份，所有的 SharePoint Online 网站。
 

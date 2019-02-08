@@ -3,7 +3,6 @@ title: 修复 Office 365 的目录同步问题
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍 Office 365 中目录同步问题的常见原因并提供一些方法，以帮助用户排除和解决这些问题。
-ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
-ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
+ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25405125"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897305"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>修复 Office 365 的目录同步问题
 
@@ -54,12 +53,12 @@ ms.locfileid: "25405125"
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**同步的对象不显示或联机，更新或从服务都得到同步错误报告。**
 
-- [标识同步和重复属性恢复能力](https://go.microsoft.com/fwlink/p/?LinkID=798300)
+- [标识同步和重复属性恢复能力](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**我在 Office 365 管理中心中，有通知或我接到尚未被新的同步事件的自动电子邮件**
-- [解决与 Azure AD 连接的连接问题](https://go.microsoft.com/fwlink/p/?LinkId=820597)
+- [解决与 Azure AD 连接的连接问题](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD 连接帐户和权限](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure AD 连接同步： 如何管理 Azure AD 服务帐户](https://go.microsoft.com/fwlink/p/?LinkId=820599)
+- [Azure AD 连接同步： 如何管理 Azure AD 服务帐户](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [目录同步到 Azure Active Directory 停止或您正在同步不起作用注册多个一天中收到警告](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**密码哈希值不同步，或我能看到不起作用已最新的密码哈希同步在 Office 365 管理中心内通知**
@@ -79,7 +78,7 @@ ms.locfileid: "25405125"
    
 ## <a name="other-resources"></a>其他资源
 
-- [脚本以修复重复用户主体名称](https://go.microsoft.com/fwlink/p/?LinkId=396725)
+- [用于修复用户主体名称重复的脚本](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
 - [如何准备目录同步非可路由域 （如.local 域）](prepare-a-non-routable-domain-for-directory-synchronization.md)
     

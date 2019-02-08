@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 摘要：了解为何必须使用 Office 365 PowerShell 管理 Office 365，这在某些情况下可以变得更高效，在其他情况下则可能是必备要求。
-ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575266"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897465"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>为什么您需要使用 Office 365 PowerShell
 
@@ -65,7 +65,7 @@ Office 365 管理中心显示大量有用的信息，但这并不意味着它会
   
 ![在 Office 365 管理中心显示的用户和组的示例。](media/o365-powershell-users-and-groups.png)
   
-出于多种目的，这显示了你需要知道的信息。但是，有时你需要了解更多。例如，Office 365 授权（以及用户可用的 Office 365 功能）在一定程度上取决于用户的地理位置。向居住在美国的用户扩展的策略和功能可能与向居住在印度或比利时的用户扩展的策略和功能不同。可以通过以下步骤使用 Office 365 管理中心确定用户的地理位置：
+用于多种用途，这将显示您需要了解的信息。但是，有时您需要更多的时间。例如，Office 365 许可 （和提供给用户的 Office 365 功能） 取决于部分该用户的地理位置。策略和功能可以扩展到在美国居住用户可能不是相同的策略和驻留在印度或比利时的用户可以扩展的功能。在 Office 365 管理中心可用于确定用户的地理位置通过执行这些步骤：
   
 1. 双击用户的"显示名称"。
     
@@ -329,7 +329,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell 方便打印或保存数据
 
-Office 365 管理中心允许你查看数据列表。下面是显示已启用 Skype for Business Online 的用户列表的 Skype for Business Online 管理中心的一个示例：
+在 Office 365 管理中心中，可以查看数据的列表。下面是业务 Online 管理中心显示业务 online 的 Skype 中启用的用户列表 Skype 的一个示例：
   
 ![用于显示已为 Skype for Business Online 启用的用户列表的 Skype for Business Online 管理中心的示例。](media/o365-powershell-lync-users.png)
   

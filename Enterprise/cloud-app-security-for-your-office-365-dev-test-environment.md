@@ -16,23 +16,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 摘要： 配置和演示 Office 365 开发/测试环境中的 Office 365 云应用程序安全性。
-ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915757"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897055"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的云应用安全
 
  **摘要：** 配置和演示 Office 365 开发/测试环境中的 Office 365 云应用程序安全性。
   
-Office 365 云应用程序安全性，以前称为 Office 365 高级安全管理，允许您创建的监视和通知您在 Office 365 订阅中，可疑活动，以便可以调查，并采取可能的策略修复操作。有关详细信息，请参阅[概述的云应用程序中的安全性 Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)。
+Office 365 云应用程序安全性，以前称为 Office 365 高级安全管理，您可以创建的用于监视和通知您在 Office 365 订阅中，可疑活动，以便可以调查，并采取可能修正策略操作。有关详细信息，请参阅[概述的云应用程序中的安全性 Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)。
   
 使用本文中的说明，您可以启用和测试您的 Office 365 试用版订阅中的云应用程序安全性。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
+> 单击[此处](http://aka.ms/catlgstack)可以在 One Microsoft 云测试实验室指南堆栈图中直观转到相应的任何文章。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>第 1 阶段：构建轻型或模拟的企业 Office 365 开发/测试环境
 
@@ -81,13 +81,13 @@ Office 365 云应用程序安全性，以前称为 Office 365 高级安全管理
 
 1. 转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com)) 和 Office 365 试用版订阅与全局管理员帐户登录。
     
-2. 单击**管理员**图块。在**Office Admin center**选项卡上单击**管理中心 > 安全和合规性**。
+2. 单击**管理员**图块。在**Office Admin center**选项卡，单击**管理中心 > 安全 & 合规性**。
     
 3. 在左侧的导航窗格中，单击**通知 > 管理高级通知**。
     
 4. 在**高级通知的管理**页上，单击**打开 Office 365 云应用程序安全性**，然后单击**转到 Office 365 云应用程序安全性**。
     
-5. 在新的**仪表板**选项卡，单击**控件 > 策略**。
+5. 在新**仪表板**选项卡，单击**控件 > 策略**。
     
 6. 在**策略**页上，单击**创建策略**，，然后单击**活动策略**。
     
@@ -111,7 +111,7 @@ Office 365 云应用程序安全性，以前称为 Office 365 高级安全管理
 
 1. 在右上角，单击用户图标，然后单击**注销**。
     
-2. 转到[https://portal.office.com](https://portal.office.com)。
+2. 转到 [https://portal.office.com](https://portal.office.com)。
     
 3. 在 Office 365 登录页面上，单击“**使用其他帐户**”。
     
@@ -135,7 +135,7 @@ Office 365 云应用程序安全性，以前称为 Office 365 高级安全管理
     
 13. 单击右上角中的用户图标，然后单击**注销**。 
     
-14. 转到[https://portal.office.com](https://portal.office.com)。
+14. 转到 [https://portal.office.com](https://portal.office.com)。
     
 15. 在“**Office 365 登录**”页面上，单击你的全局管理员帐户名。
     

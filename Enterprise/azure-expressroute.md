@@ -3,7 +3,7 @@ title: 适用于 Office 365 的 Azure ExpressRoute
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 了解如何使用 Office 365 使用 Azure ExpressRoute 以及如何规划如果您用于 Office 365 部署 Azure ExpressRoute 都需要网络实施项目。
-ms.openlocfilehash: 5a82576b541e27c70bca490ff8dfe887ee879c83
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c8cff4ef85c4383ba04829cf3cf8da3a1bc36715
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539570"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25911396"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
-了解如何使用 Office 365 使用 Azure ExpressRoute 以及如何规划如果您用于 Office 365 部署 Azure ExpressRoute 都需要网络实施项目。在 Azure 中运行的基础结构和平台服务将通常受益寻址网络体系结构和性能注意事项。在这些情况下，我们建议对 Azure ExpressRoute。作为像已生成 Office 365 和 Dynamics 365 通过 Internet 访问安全可靠地服务产品的软件。因此，我们只建议 ExpressRoute 在特定情况下这些应用程序。您可以阅读有关 Internet 性能和安全性以及当您可能需要 for Office 365 的 Azure ExpressRoute 考虑[网络连接到 Office 365](network-connectivity.md)一文中。
+了解如何使用 Office 365 使用 Azure ExpressRoute 以及如何规划如果您用于 Office 365 部署 Azure ExpressRoute 都需要网络实施项目。在 Azure 中运行的基础结构和平台服务将通常受益寻址网络体系结构和性能注意事项。在这些情况下，我们建议对 Azure ExpressRoute。作为像已生成 Office 365 和 Dynamics 365 通过 Internet 访问安全可靠地服务产品的软件。您可以阅读有关 Internet 性能和安全性以及当您可能需要 for Office 365 的 Azure ExpressRoute 考虑[网络连接到 Office 365](network-connectivity.md)一文中。
 
 > [!NOTE]
-> 启动 2017 年 7 月 31，您可以直接从 Azure 管理控制台或使用 PowerShell 启用 Microsoft Peering。启用 Microsoft Peering 后，您可以创建路由筛选器以接收特定 BGP 路由广告。您将需要授权 Office 365 创建筛选器，并可以随时创建 Dynamics 365 客户服务应用程序 （以前称为，CRM Online） 筛选器。有关获取授权，以创建 Office 365 路由筛选器的过程与您的 Microsoft 帐户团队。尝试 Office 365 中创建路由筛选器的未经授权的订阅将收到[错误消息](https://support.microsoft.com/kb/3181709)
+> Microsoft 授权需要对 Office 365 使用 ExpressRoute。Microsoft 审阅每个客户请求和客户的法规要求规定直接连接时，Office 365 使用授权 ExpressRoute。如果您具有此类要求，请提供指向其解释为表示直接连接需要[ExpressRoute Office 365 请求窗体](https://aka.ms/O365ERReview)中开始 Microsoft 回顾法规的文本摘要和 web 链接。尝试 Office 365 中创建路由筛选器的未经授权的订阅将收到[错误消息](https://support.microsoft.com/kb/3181709)。 
 
 为所选的 Office 365 网络流量，现在可以添加直接网络连接到 Office 365。Azure ExpressRoute 提供直接连接，可预测的性能，并附带了 Microsoft 网络组件的运行时间 SLA 的 99.95%。您仍将通过 Azure ExpressRoute 不支持的服务需要 internet 连接。
 
@@ -96,33 +96,32 @@ ms.locfileid: "22539570"
 
 要为 Office 365 购买 ExpressRoute，您将需要使用一个或多个[批准提供程序](https://azure.microsoft.com/documentation/articles/expressroute-locations/)设置的所需的数量和大小电路使用 ExpressRoute Premium 订阅。没有要从 Office 365 购买附加许可证。
 
-这是一个简短的链接，您可以使用回来：[https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
+以下是可以用于返回的简短链接：[https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
 为注册[Office 365 ExpressRoute](https://aka.ms/ert)准备？
 
 ([Office 365 的 azure ExpressRoute](azure-expressroute.md#BKMK_HOME))
 
 ## <a name="related-topics"></a>相关主题
-<a name="BKMK_End"> </a>
 
 [与 Office 365 的网络连接](network-connectivity.md)
 
 [管理 ExpressRoute for Office 365 连接](managing-expressroute-for-connectivity.md)
 
-[ExpressRoute for Office 365 路由](routing-with-expressroute.md)
+[使用 ExpressRoute for Office 365 路由](routing-with-expressroute.md)
 
-[ExpressRoute for Office 365 网络规划](network-planning-with-expressroute.md)
+[ExpressRoute for Office 365 网络计划](network-planning-with-expressroute.md)
 
 [实现 ExpressRoute for Office 365](implementing-expressroute.md)
 
-[使用 Office 365 方案 (preview) 中 ExpressRoute BGP 社区 （英文）](bgp-communities-in-expressroute.md)
+[在 ExpressRoute for Office 365 方案中使用 BGP 社区（预览版）](bgp-communities-in-expressroute.md)
 
-[媒体质量和 Skype 中的网络连接性能 for Business 联机](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
 [使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
 
-[Office 365 的性能疑难解答计划](performance-troubleshooting-plan.md)
+[Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
 
-[Office 365 URL 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Office 365 网络和性能优化](network-planning-and-performance.md)

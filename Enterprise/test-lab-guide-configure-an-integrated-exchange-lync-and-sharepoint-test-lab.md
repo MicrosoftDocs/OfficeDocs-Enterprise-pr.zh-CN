@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 摘要： 了解如何创建包含运行 Exchange Server 2013 的服务器、 运行 Lync Server 2013 的服务器和运行 SharePoint Server 2013 的服务器集成的测试实验室。
-ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915597"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897045"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>测试实验室指南：配置集成的 Exchange、Lync 和 SharePoint 测试实验室
 
@@ -30,7 +30,7 @@ ms.locfileid: "22915597"
  
 测试实验室生成此配置中，其中包括所有三种类型的服务器之间的服务器到服务器身份验证，可用于构建和演示多产品应用场景和解决方案的使用运行 Exchange Server 2013 的服务器运行 Lync Server 2013 的服务器和运行 SharePoint Server 2013 的服务器。
   
-本文档包含如下说明：
+本文档包含的说明：
   
 1. 配置 Windows Server 2012 基本配置测试实验。
     

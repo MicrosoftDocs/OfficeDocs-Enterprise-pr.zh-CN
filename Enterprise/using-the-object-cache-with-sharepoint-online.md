@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: 本文介绍使用对象缓存中部署 SharePoint Server 2013 和 SharePoint Online 之间的差异。
-ms.openlocfilehash: 8aa505645bb5f39c65684412ddebbd2b02baa13f
-ms.sourcegitcommit: 7cd210c44622ea2de5fb0e8e91c7be4839c80205
+ms.openlocfilehash: 59f3a69199893cb367d4d28c0c545ebd9dfd1236
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24056161"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25769851"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>在 SharePoint Online 中使用对象缓存
 
@@ -34,7 +34,7 @@ ms.locfileid: "24056161"
   
 因此，当用户第二次访问页面时，页面加载时间将有所改善。加载同一页面至少四次后，页面将缓存在所有前端 Web 服务器上。
   
-相比之下，SharePoint Online 中有很多更多的服务器，但也很多更多的网站。每个用户可以连接到的其他前端 web 服务器上没有填充缓存。或者，也许执行获取缓存填充的一个服务器，但该前端 web 服务器的下一个用户请求中不同网站的页面。或者，即使下一个用户请求与对其前一次访问同一页面，它们是到其缓存中没有该页面的其他前端 web 服务器负载平衡。在此最后的情况下，缓存不帮助用户在所有。
+相比之下，SharePoint Online 中有很多更多的服务器，但也很多更多的网站。每个用户可以连接到的其他前端 web 服务器上没有填充缓存。或者，也许执行获取填充缓存的一个服务器，但该下一个用户的页上的前端 web 服务器请求从其他网站。或者，即使下一个用户请求与对其前一次访问同一页面，它们是到其缓存中没有该页面的其他前端 web 服务器负载平衡。在此最后的情况下，缓存不帮助用户在所有。
   
 在下图中，每个圆点表示用户正在请求的页面和它缓存的页面。不同的颜色代表不同的客户正在共享 SaaS 基础结构。
   
