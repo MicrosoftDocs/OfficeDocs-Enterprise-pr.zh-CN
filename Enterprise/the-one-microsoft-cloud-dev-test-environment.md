@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 摘要：使用本测试实验室指南创建包含所有 Microsoft 云产品/服务的开发/测试环境。
-ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915627"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897145"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft 云开发/测试环境
 
@@ -139,7 +139,7 @@ ms.locfileid: "22915627"
     
     等待设置完成。
     
-    设置完成后，它会基于试用订阅中示例数据显示一个销售活动仪表板。请花点时间来观看“欢迎使用试用版”**** 视频。完成后关闭视频窗口。
+    设置完成后，它会基于试用订阅中的示例数据显示一个销售活动仪表板。请花点时间来观看“欢迎使用试用版”**** 视频。完成后关闭视频窗口。
     
 3. 在顶部工具栏上，单击“销售”旁边的向下箭头，单击“设置”，然后单击“安全”************。
     

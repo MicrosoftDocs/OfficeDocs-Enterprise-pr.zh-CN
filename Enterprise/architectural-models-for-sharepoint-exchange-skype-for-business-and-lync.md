@@ -17,12 +17,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 摘要：获取介绍 SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型、部署和平台选项的 IT 海报。
-ms.openlocfilehash: 0965a4389ef61c981e30aeec8dd3b3dcff90d20e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 28cfc1073d54a46976224f115cce43315c7c43fb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915537"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897525"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型
 
@@ -138,7 +138,7 @@ ms.locfileid: "22915537"
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![SharePoint 2013 平台选项的缩略图](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |对于业务决策者 (BDM) 和架构师，此模型说明了 SharePoint 2013、Office 365 中的 SharePoint、与 Office 365 的本地混合、Azure 以及仅本地的平台选项。它包括每个体系结构的概述、建议、许可证要求，以及每个平台的架构师和 IT 专业人员任务列表。重点介绍了有关 Azure 的多个 SharePoint 解决方案。<br/><br/>有关此海报的可访问文本版本，请访问[可访问关系图 - Microsoft SharePoint 2013 平台选项](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![SharePoint 2013 平台选项的缩略图](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |对于业务决策者 (BDM) 和架构师，此模型介绍了 SharePoint 2013、Office 365 中的 SharePoint、与 Office 365 的本地混合、Azure 以及仅本地部署的平台选项。它包括每个体系结构的概述、建议、许可证要求，以及每个平台的架构师和 IT 专业人员任务列表。重点介绍了有关 Azure 的多个 SharePoint 解决方案。<br/><br/>有关此海报的可访问文本版本，请访问[可访问关系图 - Microsoft SharePoint 2013 平台选项](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Exchange 2013 平台选项
@@ -188,7 +188,7 @@ ms.locfileid: "22915537"
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![到 Azure 的 SharePoint 灾难恢复过程](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |此 IT 海报演示了 Azure 中的灾难恢复环境的体系结构原则。有关此海报的可访问文本版本，请参阅[可访问关系图 - Microsoft Azure 的 SharePoint 灾难恢复](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)。<br/><br/> 有关详细信息，请参阅以下文章：  <br/><br/> - [Microsoft Azure 中的 SharePoint Server 2013 灾难恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [用于 SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![到 Azure 的 SharePoint 灾难恢复过程](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |此 IT 海报显示了 Azure 中的灾难恢复环境的体系结构原则。有关此海报的可访问文本版本，请参阅[可访问关系图 - Microsoft Azure 的 SharePoint 灾难恢复](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)。<br/><br/> 有关详细信息，请参阅以下文章：  <br/><br/> - [Microsoft Azure 中的 SharePoint Server 2013 灾难恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [用于 SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="see-also"></a>另请参阅

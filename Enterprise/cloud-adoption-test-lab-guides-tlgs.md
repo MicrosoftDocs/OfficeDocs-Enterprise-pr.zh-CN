@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365、Dynamics 365 和 Office Server 产品的开发/测试环境。
-ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: df4729c93f3665bdfe072102f2952d7432ad22f0
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "23041496"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897235"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>使用云应用测试实验室指南 (TLG) 测试 Office 365
 
@@ -68,7 +68,7 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
 - [用于 Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-    通过配置和演示 Office 365 云应用安全，你可以创建策略来监视 Office 365 订阅中的可疑活动并发送通知。
+    通过配置和演示 Office 365 云应用安全，用户可以创建策略来监视 Office 365 订阅中的可疑活动并发送通知。
     
 - [Office 365 开发/测试环境中的高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
@@ -76,7 +76,7 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
 - [用于 Office 365 开发/测试环境的高级电子数据展示](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-    添加示例数据并演示高级电子数据展示以支持快速查找并分析 Office 365 中所存储的数据（包括电子邮件和文档）。
+    通过添加示例数据并演示高级电子数据展示，用户可以快速查找并分析 Office 365 中所存储的数据（包括电子邮件和文档）。
     
 - [Office 365 开发/测试环境中的敏感文件保护](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     

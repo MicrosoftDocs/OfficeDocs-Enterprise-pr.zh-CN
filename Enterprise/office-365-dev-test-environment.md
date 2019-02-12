@@ -3,11 +3,13 @@ title: Office 365 开发/测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/11/2018
+ms.date: 08/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 摘要：使用此测试实验室指南创建用于评估或开发/测试的 Office 365 试用订阅。
-ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897265"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
@@ -38,7 +41,7 @@ ms.lasthandoff: 05/19/2018
 > [!NOTE]
 > 不妨打印这篇文章，以便记录在 30 天的 Office 365 试用订阅期内需要对此环境使用的特定值。可以轻松地将该订阅的试用期再延长 30 天。对于永久性开发/测试环境，请使用少量许可证创建新的付费订阅。 
   
-![Microsoft 云中的测试实验室指南](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Microsoft 云中的测试实验室指南](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
@@ -51,7 +54,7 @@ ms.lasthandoff: 05/19/2018
   
 下面是生成的配置。
   
-![Azure 中的基础配置开发/测试环境](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Azure 中的基础配置开发/测试环境](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
 
 
   
@@ -61,13 +64,13 @@ ms.lasthandoff: 05/19/2018
 
 要启动 Office 365 E5 试用订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
-1. 我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称：![](./images/Common_Images/TableLine.png)
+1. 我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称：![](./media/Common-Images/TableLine.png)
     
 2. 要注册新的 Microsoft 帐户，请转到 [https://outlook.com](https://outlook.com)，然后使用新的电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
     
-  - 在此记录新帐户的名字和姓氏：![](./images/Common_Images/TableLine.png)
+  - 在此记录新帐户的名字和姓氏：![](./media/Common-Images/TableLine.png)
     
-  - 在此记录新的电子邮件帐户地址：![](./images/Common_Images/TableLine.png)@outlook.com
+  - 在此记录新的电子邮件帐户地址：![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>注册 Office 365 E5 试用订阅
 
@@ -97,7 +100,7 @@ ms.lasthandoff: 05/19/2018
     
     将你键入的密码记录在安全的位置。
     
-    在此记录你的虚构公司名称，将其称为“组织名称”****：![](./images/Common_Images/TableLine.png)
+    在此记录你的虚构公司名称，将其称为“组织名称”****：![](./media/Common-Images/TableLine.png)
     
 5. 单击“创建我的帐户”****。
     
@@ -105,9 +108,9 @@ ms.lasthandoff: 05/19/2018
     
 7. 键入短信中收到的验证代码，然后单击“下一步”****。
     
-8. 在此记录登录页面 URL（选择并复制）：![](./images/Common_Images/TableLine.png)
+8. 在此记录登录页面 URL（选择并复制）：![](./media/Common-Images/TableLine.png)
     
-9. 在此记录用户 ID（选择并复制）：![](./images/Common_Images/TableLine.png).onmicrosoft.com
+9. 在此记录用户 ID（选择并复制）：![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     此值将被称为“Office 365 全局管理员名称”****。
     
@@ -119,7 +122,7 @@ ms.lasthandoff: 05/19/2018
   
 对于模拟的企业 Office 365 的开发/测试环境，以下是你的结果配置。
   
-![Office 365 开发/测试环境](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Office 365 开发/测试环境](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 此配置包括： 
   
@@ -151,9 +154,9 @@ $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 > [!TIP]
-> 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)，可获取包含本文中所有 PowerShell 命令的文本文件。
+> 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)可获取包含本文中所有 PowerShell 命令的文本文件。
 
-在显示的 **New-MsolUser** 命令中，请注意为 User 2 帐户生成的密码并将其记录在安全的位置。
+在显示的 **New-MsolUser** 命令中，请注意 User 2 帐户的生成密码并将其记录在安全的位置。
   
 从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
   
@@ -184,8 +187,10 @@ New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalNam
   
 接下来，为销售、生产和支持部门创建三个新的 SharePoint Online 团队网站。
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>创建 3 个新的 SharePoint Online 团队网站
+## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>第 4 阶段：创建 3 个新的 SharePoint Online 团队网站（可选）
 
+在本阶段，配置一组 SharePoint Online 团队网站。
+  
 1. 安装 [SharePoint Online 命令行管理程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)（x64 版本）。
     
 2. 单击“启动”****，键入 **sharepoint**，然后单击“SharePoint Online 命令行管理程序”****。
@@ -223,11 +228,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 记录这些值，以便用于或部署此测试环境中的其他测试实验室指南：
   
-- Office 365 全局管理员名称：![](./images/Common_Images/TableLine.png).onmicrosoft.com（在第 2 阶段的第 9 步中）
+- Office 365 全局管理员名称：![](./media/Common-Images/TableLine.png).onmicrosoft.com（在第 2 阶段的第 9 步中）
     
     此外，还应将此帐户的密码记录在安全位置。
     
-- 试用订阅组织名称：![](./images/Common_Images/TableLine.png)（在第 2 阶段的第 4 步中）
+- 试用订阅组织名称：![](./media/Common-Images/TableLine.png)（在第 2 阶段的第 4 步中）
     
 - 要列出 User 2、User 3、User 4 和 User 5 的帐户，从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
     
@@ -237,27 +242,27 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
     在此记录帐户名称：
     
-  - User 2 的帐户名称：user2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - User 2 的帐户名称：user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 3 的帐户名称：user3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - User 3 的帐户名称：user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 4 的帐户名称：user4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - User 4 的帐户名称：user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 5 的帐户名称：user5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - User 5 的帐户名称：user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-    此外，还应将这些帐户的密码记录在安全位置。
+    此外，在安全位置记录这些帐户的密码。
     
-- 若要列出销售、生产和支持团队网站的 URL，从 SharePoint Online 命令行管理程序提示符处运行以下命令：
+- （可选）若要列出销售、生产和支持团队网站的 URL，从 SharePoint Online 命令行管理程序提示符运行以下命令：
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 生产网站 URL：https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
+  - 生产网站 URL：https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/production
     
-  - 销售网站 URL：https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - 销售网站 URL：https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/sales
     
-  - 支持网站 URL：https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - 支持网站 URL：https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>后续步骤
 

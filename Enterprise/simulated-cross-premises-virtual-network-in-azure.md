@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为开发/测试环境。
-ms.openlocfilehash: 0aee14af136e0874c259faac26d83d85b188a7c7
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7341c8cc412636e633001882edfdfc661cce9a11
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915337"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897135"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure 中的模拟跨界虚拟网络
 
@@ -79,9 +79,9 @@ ms.locfileid: "22915337"
 首先，在本地计算机上启动 Azure PowerShell 提示符。
   
 > [!NOTE]
-> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Azure PowerShell cmdlet 使用入门](https://docs.microsoft.com/zh-CN/powershell/azureps-cmdlets-docs/)。 
+> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/zh-CN/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
   
-使用以下命令登录 Azure 帐户。
+使用此命令登录 Azure 帐户。
   
 ```
 Login-AzureRMAccount
@@ -90,7 +90,7 @@ Login-AzureRMAccount
 > [!TIP]
 > 单击[此处](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)可获取包含本文中所有 PowerShell 命令的文本文件。
   
-使用以下命令获得订阅名称。
+使用此命令获取订阅名称。
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name
