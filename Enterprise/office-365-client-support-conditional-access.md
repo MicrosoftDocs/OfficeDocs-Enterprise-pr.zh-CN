@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 了解 Office 365 客户端应用程序支持的条件的访问
-ms.openlocfilehash: c03d7f1cc2f1a80abb7227a40eb606a3f40cd214
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 063363e4216a5bab46871421fc4028b760c2df2c
+ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29771101"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29887588"
 ---
 # <a name="office-365-client-app-support---conditional-access"></a>Office 365 客户端应用程序支持的条件的访问
 
@@ -32,6 +32,8 @@ ms.locfileid: "29771101"
  - Android
  - iOS
  - macOS
+
+有关 Office 365 中的平台支持的详细信息，请参阅[Office 365 系统要求](https://products.office.com/office-system-requirements)。
 
 ## <a name="supported-clients"></a>支持的客户端
 
