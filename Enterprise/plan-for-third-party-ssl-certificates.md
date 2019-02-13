@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 摘要：介绍了 Exchange 内部部署和混合部署、使用 AD FS 的 SSO、Exchange Online 服务和 Exchange Web 服务所需的 SSL 证书。
-ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 1746cf5059ba83e225e4a2d55c8eebc082366362
+ms.sourcegitcommit: bdd0083dc9dc62994de29421a1f4056ebe27f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546513"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29952468"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365 第三方 SSL 证书计划
 
@@ -49,7 +49,7 @@ ms.locfileid: "27546513"
   
 ## <a name="certificates-for-single-sign-on"></a>单一登录的证书
 
-若要为用户提供的简化单一登录体验，其中包括可靠的安全性，联合服务器或联合服务器代理上需要下表中所示的证书。下表重点介绍 Active Directory 联合身份验证服务 (AD FS)，我们还必须[使用第三方身份提供程序](https://go.microsoft.com/fwlink/?LinkId=532869)的详细信息。
+若要为用户提供的简化单一登录体验，其中包括可靠的安全性，联合服务器或联合服务器代理上需要下表中所示的证书。下表重点介绍 Active Directory 联合身份验证服务 (AD FS)，我们还必须[使用第三方身份提供程序](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility)的详细信息。
   
 ||||
 |:-----|:-----|:-----|
