@@ -8,92 +8,95 @@ ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
-description: 介绍 Office 365 中目录同步问题的常见原因并提供一些方法，以帮助用户排除和解决这些问题。
-ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 介绍了 Office 365 中的目录同步问题的常见原因, 并提供了几种帮助排除和解决这些问题的方法。
+ms.openlocfilehash: e83ca495ca96ac41fb2f79775c3d5970a6b538fb
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897305"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085391"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a><span data-ttu-id="f7e76-103">修复 Office 365 的目录同步问题</span><span class="sxs-lookup"><span data-stu-id="f7e76-103">Fixing problems with directory synchronization for Office 365</span></span>
+# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a><span data-ttu-id="5be26-103">修复 Office 365 的目录同步问题</span><span class="sxs-lookup"><span data-stu-id="5be26-103">Fixing problems with directory synchronization for Office 365</span></span>
 
-<span data-ttu-id="f7e76-p101">通过目录同步，您可以继续管理用户和组内部部署和同步添加、 删除或更改到云中。安装程序有点复杂，但它有时可能很难确定问题的根源。我们有资源可帮助您识别潜在问题和解决这些问题。</span><span class="sxs-lookup"><span data-stu-id="f7e76-p101">With directory synchronization, you can continue to manage users and groups on-premises and synchronize additions, deletions, and changes to the cloud. But setup is a little complicated and it can sometimes be difficult to identify the source of problems. We have resources to help you identify potential issues and fix them.</span></span>
+<span data-ttu-id="5be26-p101">通过目录同步, 您可以继续管理本地用户和组, 并同步对云的添加、删除和更改。但安装程序有点复杂, 有时可能很难确定问题的根源。我们有一些资源, 可帮助你找出潜在问题并解决这些问题。</span><span class="sxs-lookup"><span data-stu-id="5be26-p101">With directory synchronization, you can continue to manage users and groups on-premises and synchronize additions, deletions, and changes to the cloud. But setup is a little complicated and it can sometimes be difficult to identify the source of problems. We have resources to help you identify potential issues and fix them.</span></span>
   
-## <a name="how-do-i-know-if-something-is-wrong"></a><span data-ttu-id="f7e76-107">如何知道是否有问题？</span><span class="sxs-lookup"><span data-stu-id="f7e76-107">How do I know if something is wrong?</span></span>
+## <a name="how-do-i-know-if-something-is-wrong"></a><span data-ttu-id="5be26-107">如何知道是否出现了问题？</span><span class="sxs-lookup"><span data-stu-id="5be26-107">How do I know if something is wrong?</span></span>
 
-<span data-ttu-id="f7e76-108">在 Office 365 管理中心中的目录同步状态平铺指示问题时出错的第一个提示：</span><span class="sxs-lookup"><span data-stu-id="f7e76-108">The first indication that something is wrong is when the DirSync Status tile in the Office 365 admin center indicates there is a problem:</span></span>
+<span data-ttu-id="5be26-108">第一个表明出现错误的情况是, 当 Office 365 管理中心中的 DirSync 状态磁贴指示存在问题时:</span><span class="sxs-lookup"><span data-stu-id="5be26-108">The first indication that something is wrong is when the DirSync Status tile in the Office 365 admin center indicates there is a problem:</span></span>
   
-![目录同步状态平铺在管理中心预览](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+![管理员中心预览中的 DirSync 状态磁贴](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-<span data-ttu-id="f7e76-p102">您还将指示您的租户遇到目录同步错误的 Office 365 中收到邮件 （到备选电子邮件和管理电子邮件）。有关详细信息，请参阅[Office 365 中的标识目录同步错误](identify-directory-synchronization-errors.md)。</span><span class="sxs-lookup"><span data-stu-id="f7e76-p102">You will also receive a mail (to the alternate email and to your admin email) from Office 365 that indicates your tenant has encountered directory synchronization errors. For details see [Identify directory synchronization errors in Office 365](identify-directory-synchronization-errors.md).</span></span>
+<span data-ttu-id="5be26-p102">你还将收到来自 Office 365 的邮件 (到备用电子邮件和管理员电子邮件), 指示你的租户遇到目录同步错误。有关详细信息, 请参阅[识别 Office 365 中的目录同步错误](identify-directory-synchronization-errors.md)。</span><span class="sxs-lookup"><span data-stu-id="5be26-p102">You will also receive a mail (to the alternate email and to your admin email) from Office 365 that indicates your tenant has encountered directory synchronization errors. For details see [Identify directory synchronization errors in Office 365](identify-directory-synchronization-errors.md).</span></span>
   
-## <a name="how-do-i-get-azure-active-directory-connect-tool"></a><span data-ttu-id="f7e76-112">如何获取 Azure Active Directory 连接工具？</span><span class="sxs-lookup"><span data-stu-id="f7e76-112">How do I get Azure Active Directory Connect tool?</span></span>
+## <a name="how-do-i-get-azure-active-directory-connect-tool"></a><span data-ttu-id="5be26-112">如何获取 Azure Active Directory Connect 工具？</span><span class="sxs-lookup"><span data-stu-id="5be26-112">How do I get Azure Active Directory Connect tool?</span></span>
 
-<span data-ttu-id="f7e76-p103">在 Office 365 管理中心中，导航到 \* \* 用户 \* \* \> **活动用户**。单击**详细**菜单并选择**目录同步**。</span><span class="sxs-lookup"><span data-stu-id="f7e76-p103">In the Office 365 admin center, navigate to \*\* Users \*\* \> **Active users**. Click the **More** menu and select **Directory synchronization**.</span></span> 
+<span data-ttu-id="5be26-p103">在 Office 365 管理中心中, 导航到 "\* \* 用户" \* \> \* "**活动用户**"。单击 "**更多**" 菜单, 然后选择 "**目录同步**"。</span><span class="sxs-lookup"><span data-stu-id="5be26-p103">In the Office 365 admin center, navigate to \*\* Users \*\* \> **Active users**. Click the **More** menu and select **Directory synchronization**.</span></span> 
   
-![在详细菜单中，选择目录同步](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+![在 "更多" 菜单中选择 "目录同步"](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-<span data-ttu-id="f7e76-116">在旧的 Office 365 管理中心，导航到**用户** \> **活动用户**，并选择**设置** **Active Directory 同步**旁边。</span><span class="sxs-lookup"><span data-stu-id="f7e76-116">In the old Office 365 admin center, navigate to **USERS** \> **Active Users**, and select **Set up** next to **Active Directory synchronization**.</span></span> 
+<span data-ttu-id="5be26-116">在旧的 Office 365 管理中心中, 导航到 "**用户** \> **活动用户**", 然后选择 " **active Directory 同步**" 旁边的 "**设置**"。</span><span class="sxs-lookup"><span data-stu-id="5be26-116">In the old Office 365 admin center, navigate to **USERS** \> **Active Users**, and select **Set up** next to **Active Directory synchronization**.</span></span> 
   
-![选择设置 Active Directory 同步旁边](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
+![选择 "Active Directory 同步" 旁边的 "设置"](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
   
-<span data-ttu-id="f7e76-118">按照[向导中的说明](set-up-directory-synchronization.md)下载 Azure AD 连接。</span><span class="sxs-lookup"><span data-stu-id="f7e76-118">Follow the [instructions in the wizard](set-up-directory-synchronization.md) to download Azure AD Connect.</span></span> 
+<span data-ttu-id="5be26-118">按照[向导中的说明](set-up-directory-synchronization.md)下载 Azure AD Connect。</span><span class="sxs-lookup"><span data-stu-id="5be26-118">Follow the [instructions in the wizard](set-up-directory-synchronization.md) to download Azure AD Connect.</span></span> 
   
-<span data-ttu-id="f7e76-119">如果您仍在使用 Azure Active Directory 同步 (DirSync)，看看[如何解决 Azure Active Directory 同步工具安装和配置向导在 Office 365 中的错误消息](https://go.microsoft.com/fwlink/p/?LinkId=396717)有关安装的系统要求的信息目录同步、 所需，权限和如何解决常见错误。</span><span class="sxs-lookup"><span data-stu-id="f7e76-119">If you are still using Azure Active Directory Sync (DirSync), take a look at [How to troubleshoot Azure Active Directory Sync Tool installation and Configuration Wizard error messages in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) for information about the system requirements to install dirsync, the permissions you need, and how to troubleshoot common errors.</span></span> 
+<span data-ttu-id="5be26-119">如果仍在使用 azure active directory 同步 (DirSync), 请参阅[如何对 Office 365 中的 Azure Active Directory 同步工具安装和配置向导错误消息进行故障排除](https://go.microsoft.com/fwlink/p/?LinkId=396717), 以了解有关安装的系统要求的信息dirsync、所需的权限以及如何对常见错误进行故障排除。</span><span class="sxs-lookup"><span data-stu-id="5be26-119">If you are still using Azure Active Directory Sync (DirSync), take a look at [How to troubleshoot Azure Active Directory Sync Tool installation and Configuration Wizard error messages in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) for information about the system requirements to install dirsync, the permissions you need, and how to troubleshoot common errors.</span></span> 
   
-<span data-ttu-id="f7e76-120">若要从 Azure Active Directory 同步更新到 Azure AD 连接，请参阅[的升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。</span><span class="sxs-lookup"><span data-stu-id="f7e76-120">To update from Azure Active Directory Sync to Azure AD Connect, see [the upgrade instructions](https://go.microsoft.com/fwlink/p/?LinkId=733240).</span></span>
+<span data-ttu-id="5be26-120">若要从 azure Active Directory 同步更新到 azure AD Connect, 请参阅[升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。</span><span class="sxs-lookup"><span data-stu-id="5be26-120">To update from Azure Active Directory Sync to Azure AD Connect, see [the upgrade instructions](https://go.microsoft.com/fwlink/p/?LinkId=733240).</span></span>
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a><span data-ttu-id="f7e76-121">Office 365 中目录同步问题的解决常见原因</span><span class="sxs-lookup"><span data-stu-id="f7e76-121">Resolving common causes of problems with directory synchronization in Office 365</span></span>
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a><span data-ttu-id="5be26-121">解决 Office 365 中的目录同步问题的常见原因</span><span class="sxs-lookup"><span data-stu-id="5be26-121">Resolving common causes of problems with directory synchronization in Office 365</span></span>
 
-### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a><span data-ttu-id="f7e76-122">**同步的对象不显示或联机，更新或从服务都得到同步错误报告。**</span><span class="sxs-lookup"><span data-stu-id="f7e76-122">**Synchronized objects aren't appearing or updating online, or I'm getting synchronization error reports from the Service.**</span></span>
+### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a><span data-ttu-id="5be26-122">**同步的对象不会显示或联机更新, 或者我将从服务中获取同步错误报告。**</span><span class="sxs-lookup"><span data-stu-id="5be26-122">**Synchronized objects aren't appearing or updating online, or I'm getting synchronization error reports from the Service.**</span></span>
 
-- [<span data-ttu-id="f7e76-123">标识同步和重复属性恢复能力</span><span class="sxs-lookup"><span data-stu-id="f7e76-123">Identity synchronization and duplicate attribute resiliency</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
+- [<span data-ttu-id="5be26-123">标识同步和重复属性弹性</span><span class="sxs-lookup"><span data-stu-id="5be26-123">Identity synchronization and duplicate attribute resiliency</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a><span data-ttu-id="f7e76-124">**我在 Office 365 管理中心中，有通知或我接到尚未被新的同步事件的自动电子邮件**</span><span class="sxs-lookup"><span data-stu-id="f7e76-124">**I have an alert in the Office 365 admin center, or am receiving automated emails that there hasn't been a recent synchronization event**</span></span>
-- [<span data-ttu-id="f7e76-125">解决与 Azure AD 连接的连接问题</span><span class="sxs-lookup"><span data-stu-id="f7e76-125">Troubleshoot connectivity issues with Azure AD Connect</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
-- [<span data-ttu-id="f7e76-126">Azure AD 连接帐户和权限</span><span class="sxs-lookup"><span data-stu-id="f7e76-126">Azure AD Connect Accounts and permissions</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [<span data-ttu-id="f7e76-127">Azure AD 连接同步： 如何管理 Azure AD 服务帐户</span><span class="sxs-lookup"><span data-stu-id="f7e76-127">Azure AD Connect sync: How to manage the Azure AD service account</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
-- [<span data-ttu-id="f7e76-128">目录同步到 Azure Active Directory 停止或您正在同步不起作用注册多个一天中收到警告</span><span class="sxs-lookup"><span data-stu-id="f7e76-128">Directory synchronization to Azure Active Directory stops or you're warned that sync hasn't registered in more than a day</span></span>](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
+### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a><span data-ttu-id="5be26-124">**我在 Office 365 管理中心发出通知, 或者收到最近未进行同步事件的自动电子邮件**</span><span class="sxs-lookup"><span data-stu-id="5be26-124">**I have an alert in the Office 365 admin center, or am receiving automated emails that there hasn't been a recent synchronization event**</span></span>
+- [<span data-ttu-id="5be26-125">解决 Azure AD Connect 的连接问题</span><span class="sxs-lookup"><span data-stu-id="5be26-125">Troubleshoot connectivity issues with Azure AD Connect</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
+- [<span data-ttu-id="5be26-126">Azure AD Connect 帐户和权限</span><span class="sxs-lookup"><span data-stu-id="5be26-126">Azure AD Connect Accounts and permissions</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=820598)
+- [<span data-ttu-id="5be26-127">Azure ad Connect sync: 如何管理 azure ad 服务帐户</span><span class="sxs-lookup"><span data-stu-id="5be26-127">Azure AD Connect sync: How to manage the Azure AD service account</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [<span data-ttu-id="5be26-128">到 Azure Active Directory 的目录同步停止, 或者你收到同步未在一天内注册的警告</span><span class="sxs-lookup"><span data-stu-id="5be26-128">Directory synchronization to Azure Active Directory stops or you're warned that sync hasn't registered in more than a day</span></span>](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a><span data-ttu-id="f7e76-129">**密码哈希值不同步，或我能看到不起作用已最新的密码哈希同步在 Office 365 管理中心内通知**</span><span class="sxs-lookup"><span data-stu-id="f7e76-129">**Password hashes aren't synchronizing, or I'm seeing an alert in the Office 365 admin center that there hasn't been a recent password hash synchronization**</span></span>
-- [<span data-ttu-id="f7e76-130">实现与 Azure AD 连接同步的密码哈希同步</span><span class="sxs-lookup"><span data-stu-id="f7e76-130">Implementing password hash synchronization with Azure AD Connect sync</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a><span data-ttu-id="5be26-129">**密码哈希未同步, 或者我在 Office 365 管理中心中看到一个警报, 表明最近未进行过密码哈希同步**</span><span class="sxs-lookup"><span data-stu-id="5be26-129">**Password hashes aren't synchronizing, or I'm seeing an alert in the Office 365 admin center that there hasn't been a recent password hash synchronization**</span></span>
+- [<span data-ttu-id="5be26-130">使用 Azure AD Connect 同步实现密码哈希同步</span><span class="sxs-lookup"><span data-stu-id="5be26-130">Implementing password hash synchronization with Azure AD Connect sync</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
-### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a><span data-ttu-id="f7e76-131">**我能看到一条警报，超出对象配额**</span><span class="sxs-lookup"><span data-stu-id="f7e76-131">**I'm seeing an alert that Object quota exceeded**</span></span>
-- <span data-ttu-id="f7e76-p104">我们有内置对象配额以帮助保护本服务。如果您有太多的对象，您需要同步到 Office 365 的目录中，您必须对[业务产品支持的联系人](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)以增加配额。</span><span class="sxs-lookup"><span data-stu-id="f7e76-p104">We have a built-in object quota to help protect the service. If you have too many objects in your directory that need to sync to Office 365, you'll have to [Contact support for business products](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) to increase your quota.</span></span>
+### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a><span data-ttu-id="5be26-131">**我看到一个警报, 指出对象配额已超出**</span><span class="sxs-lookup"><span data-stu-id="5be26-131">**I'm seeing an alert that Object quota exceeded**</span></span>
+- <span data-ttu-id="5be26-p104">我们有一个内置的对象配额, 可帮助保护服务。如果目录中的对象太多, 需要同步到 Office 365, 您必须[联系支持人员以获取业务产品](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b), 以增加配额。</span><span class="sxs-lookup"><span data-stu-id="5be26-p104">We have a built-in object quota to help protect the service. If you have too many objects in your directory that need to sync to Office 365, you'll have to [Contact support for business products](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) to increase your quota.</span></span>
 
-### <a name="i-need-to-know-which-attributes-are-synchronized"></a><span data-ttu-id="f7e76-134">**我需要知道哪些属性已同步**</span><span class="sxs-lookup"><span data-stu-id="f7e76-134">**I need to know which attributes are synchronized**</span></span>
-- <span data-ttu-id="f7e76-135">您可以找到所有内部部署和云[此处](https://go.microsoft.com/fwlink/p/?LinkId=396719)之间同步的属性的列表。</span><span class="sxs-lookup"><span data-stu-id="f7e76-135">You can find a list of all the attributes that are synced between on-premises and the cloud [right here](https://go.microsoft.com/fwlink/p/?LinkId=396719).</span></span>
+### <a name="i-need-to-know-which-attributes-are-synchronized"></a><span data-ttu-id="5be26-134">**我需要知道哪些属性已同步**</span><span class="sxs-lookup"><span data-stu-id="5be26-134">**I need to know which attributes are synchronized**</span></span>
+- <span data-ttu-id="5be26-135">您可以在[此处](https://go.microsoft.com/fwlink/p/?LinkId=396719)找到在内部部署和云之间同步的所有属性的列表。</span><span class="sxs-lookup"><span data-stu-id="5be26-135">You can find a list of all the attributes that are synced between on-premises and the cloud [right here](https://go.microsoft.com/fwlink/p/?LinkId=396719).</span></span>
 
-### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a><span data-ttu-id="f7e76-136">**我无法管理或删除已同步到云的对象**</span><span class="sxs-lookup"><span data-stu-id="f7e76-136">**I can't manage or remove objects that were synchronized to the cloud**</span></span>
-- <span data-ttu-id="f7e76-p105">是否已准备好管理中仅限云对象？或者是存在的对象已删除内部部署，但在云中陷入？了解一下此[同步过程中解决错误](https://go.microsoft.com/fwlink/p/?linkid=842044)和指南[支持文章](https://go.microsoft.com/fwlink/p/?LinkId=396720)如何解决这些问题。</span><span class="sxs-lookup"><span data-stu-id="f7e76-p105">Are you ready to manage objects in the cloud only? Or is there an object that was deleted on-premises, but is stuck in the cloud? Take a look at this [Troubleshooting Errors during synchronization](https://go.microsoft.com/fwlink/p/?linkid=842044) and [support article](https://go.microsoft.com/fwlink/p/?LinkId=396720) for guidance on how to resolve these issues.</span></span>
+### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a><span data-ttu-id="5be26-136">**我无法管理或删除已同步到云的对象**</span><span class="sxs-lookup"><span data-stu-id="5be26-136">**I can't manage or remove objects that were synchronized to the cloud**</span></span>
+- <span data-ttu-id="5be26-p105">你是否已准备好仅在云中管理对象？或者是否存在本地删除的对象, 但它在云中被卡住？请查看同步和[支持文章](https://go.microsoft.com/fwlink/p/?LinkId=396720)中的此[故障排除错误](https://go.microsoft.com/fwlink/p/?linkid=842044), 以获取有关如何解决这些问题的指南。</span><span class="sxs-lookup"><span data-stu-id="5be26-p105">Are you ready to manage objects in the cloud only? Or is there an object that was deleted on-premises, but is stuck in the cloud? Take a look at this [Troubleshooting Errors during synchronization](https://go.microsoft.com/fwlink/p/?linkid=842044) and [support article](https://go.microsoft.com/fwlink/p/?LinkId=396720) for guidance on how to resolve these issues.</span></span>
 
-### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a><span data-ttu-id="f7e76-140">**当公司超过可同步的对象数量时，收到错误消息。**</span><span class="sxs-lookup"><span data-stu-id="f7e76-140">**I got an error message that my company has exceeded the number of objects that can be synchronized**</span></span>
-- <span data-ttu-id="f7e76-141">您可以阅读更多有关此问题[此处](https://go.microsoft.com/fwlink/p/?LinkId=396721)。</span><span class="sxs-lookup"><span data-stu-id="f7e76-141">You can read more about this issue [here](https://go.microsoft.com/fwlink/p/?LinkId=396721).</span></span>
+### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a><span data-ttu-id="5be26-140">**当公司超过可同步的对象数量时，收到错误消息。**</span><span class="sxs-lookup"><span data-stu-id="5be26-140">**I got an error message that my company has exceeded the number of objects that can be synchronized**</span></span>
+- <span data-ttu-id="5be26-141">你可以在[此处](https://go.microsoft.com/fwlink/p/?LinkId=396721)阅读有关此问题的详细信息。</span><span class="sxs-lookup"><span data-stu-id="5be26-141">You can read more about this issue [here](https://go.microsoft.com/fwlink/p/?LinkId=396721).</span></span>
    
-## <a name="other-resources"></a><span data-ttu-id="f7e76-142">其他资源</span><span class="sxs-lookup"><span data-stu-id="f7e76-142">Other resources</span></span>
+## <a name="other-resources"></a><span data-ttu-id="5be26-142">其他资源</span><span class="sxs-lookup"><span data-stu-id="5be26-142">Other resources</span></span>
 
-- [<span data-ttu-id="f7e76-143">用于修复用户主体名称重复的脚本</span><span class="sxs-lookup"><span data-stu-id="f7e76-143">Script to fix duplicate user principal names</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396725)
+- [<span data-ttu-id="5be26-143">用于修复用户主体名称重复的脚本</span><span class="sxs-lookup"><span data-stu-id="5be26-143">Script to fix duplicate user principal names</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
-- [<span data-ttu-id="f7e76-144">如何准备目录同步非可路由域 （如.local 域）</span><span class="sxs-lookup"><span data-stu-id="f7e76-144">How to prepare a non-routable domain (such as .local domain) for directory synchronization</span></span>](prepare-a-non-routable-domain-for-directory-synchronization.md)
+- [<span data-ttu-id="5be26-144">如何为目录同步准备不可路由的域 (例如, 本地域)</span><span class="sxs-lookup"><span data-stu-id="5be26-144">How to prepare a non-routable domain (such as .local domain) for directory synchronization</span></span>](prepare-a-non-routable-domain-for-directory-synchronization.md)
     
-- [<span data-ttu-id="f7e76-145">脚本来计算总同步的对象</span><span class="sxs-lookup"><span data-stu-id="f7e76-145">Script to count total synchronized objects</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396726)
+- [<span data-ttu-id="5be26-145">计算同步对象总数的脚本</span><span class="sxs-lookup"><span data-stu-id="5be26-145">Script to count total synchronized objects</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396726)
     
-- [<span data-ttu-id="f7e76-146">排除 AD FS 2.0</span><span class="sxs-lookup"><span data-stu-id="f7e76-146">Troubleshoot AD FS 2.0</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396727)
+- [<span data-ttu-id="5be26-146">AD FS 2.0 故障排除</span><span class="sxs-lookup"><span data-stu-id="5be26-146">Troubleshoot AD FS 2.0</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396727)
     
-- [<span data-ttu-id="f7e76-147">使用 PowerShell 修复启用邮件的组的空 DisplayName 属性</span><span class="sxs-lookup"><span data-stu-id="f7e76-147">Use PowerShell to fix empty DisplayName attributes for mail-enabled groups</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396728)
+- [<span data-ttu-id="5be26-147">使用 PowerShell 为已启用邮件的组修复空的 DisplayName 属性</span><span class="sxs-lookup"><span data-stu-id="5be26-147">Use PowerShell to fix empty DisplayName attributes for mail-enabled groups</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396728)
     
-- [<span data-ttu-id="f7e76-148">使用 PowerShell 修复重复 UPN</span><span class="sxs-lookup"><span data-stu-id="f7e76-148">Use PowerShell to fix duplicate UPN</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396730)
+- [<span data-ttu-id="5be26-148">使用 PowerShell 修复重复的 UPN</span><span class="sxs-lookup"><span data-stu-id="5be26-148">Use PowerShell to fix duplicate UPN</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396730)
     
-- [<span data-ttu-id="f7e76-149">使用 PowerShell 修复重复电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="f7e76-149">Use PowerShell to fix duplicate email addresses</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396731)
+- [<span data-ttu-id="5be26-149">使用 PowerShell 修复重复的电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="5be26-149">Use PowerShell to fix duplicate email addresses</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=396731)
     
-## <a name="diagnostic-tools"></a><span data-ttu-id="f7e76-150">诊断工具</span><span class="sxs-lookup"><span data-stu-id="f7e76-150">Diagnostic tools</span></span>
+## <a name="diagnostic-tools"></a><span data-ttu-id="5be26-150">诊断工具</span><span class="sxs-lookup"><span data-stu-id="5be26-150">Diagnostic tools</span></span>
 
-<span data-ttu-id="f7e76-p106">[IDFix 工具](prepare-directory-attributes-for-synch-with-idfix.md)用于在迁移到 Office 365 准备本地 Active Directory 环境中执行发现和修复标识对象及其属性。IDFix 适用于负责与 Office 365 服务目录同步的 Active Directory 管理员。</span><span class="sxs-lookup"><span data-stu-id="f7e76-p106">[IDFix tool](prepare-directory-attributes-for-synch-with-idfix.md) is used to perform discovery and remediation of identity objects and their attributes in an on-premises Active Directory environment in preparation for migration to Office 365. IDFix is intended for the Active Directory administrators responsible for DirSync with the Office 365 service.</span></span> 
+<span data-ttu-id="5be26-p106">[IDFix 工具](prepare-directory-attributes-for-synch-with-idfix.md)用于在准备迁移到 Office 365 时, 在本地 Active Directory 环境中执行 identity 对象及其属性的发现和修正。IDFix 适用于负责与 Office 365 service 同步的 Active Directory 管理员。</span><span class="sxs-lookup"><span data-stu-id="5be26-p106">[IDFix tool](prepare-directory-attributes-for-synch-with-idfix.md) is used to perform discovery and remediation of identity objects and their attributes in an on-premises Active Directory environment in preparation for migration to Office 365. IDFix is intended for the Active Directory administrators responsible for DirSync with the Office 365 service.</span></span> 
 
-<span data-ttu-id="f7e76-153">从 Microsoft 下载中心下载[下载 IDFix 工具](https://go.microsoft.com/fwlink/p/?LinkId=396718)。</span><span class="sxs-lookup"><span data-stu-id="f7e76-153">[Download the IDFix tool](https://go.microsoft.com/fwlink/p/?LinkId=396718) from the Microsoft download center.</span></span>
+<span data-ttu-id="5be26-153">从 Microsoft 下载中心[下载 IDFix 工具](https://go.microsoft.com/fwlink/p/?LinkId=396718)。</span><span class="sxs-lookup"><span data-stu-id="5be26-153">[Download the IDFix tool](https://go.microsoft.com/fwlink/p/?LinkId=396718) from the Microsoft download center.</span></span>
