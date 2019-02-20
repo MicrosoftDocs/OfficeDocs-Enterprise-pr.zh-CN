@@ -10,67 +10,70 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
-description: 如何安装和运行 Office 365 IdFix 工具以帮助清理您的 active directory 同步到 Office 365 之前。
-ms.openlocfilehash: c485d8397aa32005a34b77f886b9bc8f4e857f1b
-ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
+description: 如何在将 active directory 同步到 Office 365 之前安装和运行 Office 365 IdFix 工具以帮助清理 active directory。
+ms.openlocfilehash: a35b2a476f2b30eccc955b980eda6315b146af27
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "26674426"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085401"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>安装并运行 Office 365 IdFix 工具
 
-同步到 Office 365 之前，IdFix 标识错误例如重复项和在您的目录的格式问题。 
+IdFix 在同步到 Office 365 之前识别目录中的错误 (如复制和格式问题)。 
   
-要成功完成此任务，您应该能够轻松处理用户、 组和 Active Directory 中的联系人对象。
+若要成功完成此任务, 您应该能够轻松处理 Active Directory 中的用户、组和联系人对象。
   
-如果您不能完成该任务中，有几个您可以执行其他操作。这些方法可能更方便，但也可能还需要更长时间，或具有其他缺点。它们是：
+如果无法完成此任务, 您还可以执行几个其他操作。这些方法可能更简单, 但它们可能会花费更长或其他缺点。它们是:
   
-- **运行目录同步时没有运行 IdFix。** 您可以将您的目录同步时没有运行 IdFix 工具，但我们不建议这样。同步之前修复错误的时间少并通常提供到云中更平稳转换。 
+- 在**不运行 IdFix 的情况下运行目录同步。** 您可以在不运行 IdFix 工具的情况下同步目录, 但我们不建议这样做。在同步之前修复错误需要较少的时间, 并且通常会使到云的过渡更平稳。 
 - **聘请顾问。** 获得专家的帮助可以让您的用户正常工作并提高运行速度，使您的目录顺利实现同步。 
     
 ## <a name="what-you-need-to-run-idfix"></a>运行 IdFix 所需内容
 
-最简单方式来获取 IdFix 和运行时将其安装在加入到域的计算机上。如果您希望，但它并不需要，您可以在域控制器上运行它。
+获取和运行 IdFix 的最简单方法是将其安装在加入您的域的计算机上。如果需要, 可以在域控制器上运行它, 但这并不是必需的。
   
 ### <a name="idfix-hardware-requirements"></a>IdFix 硬件要求
 
-您安装了 IdFix 的计算机需要满足以下最低硬件要求：
+您在其上安装 IdFix 的计算机需要满足以下最低硬件要求:
   
 - 4GB RAM
 - 2 GB 的硬盘空间
     
 ### <a name="idfix-software-requirements"></a>IdFix 软件要求
 
-您安装了 IdFix 的计算机需要加入到想要将用户同步到 Office 365 的同一个 Active Directory 域。计算机还需要有.NET Framework 4.0 安装。 
+需要将 IdFix 安装到的计算机连接到要将用户同步到 Office 365 的同一 Active Directory 域。计算机还需要安装 .net Framework 4.0。 
   
-如果您运行的 Windows Server 2008 或 Windows Server 2012，则可能已经安装.NET Framework。如果不需要，您可以[下载从下载中心下载.NET 4.0](https://go.microsoft.com/fwlink/p/?LinkId=400475)或通过 Windows Update。 
+如果您运行的是 windows server 2008 或 windows server 2012, 则可能已安装 .net Framework。如果不是, 则可以从下载中心或通过 Windows Update[下载 .net 4.0](https://go.microsoft.com/fwlink/p/?LinkId=400475) 。 
   
 ### <a name="idfix-permissions-requirements"></a>IdFix 权限要求
 
 您用来运行 IdFix 的用户帐户需要具有对目录的读/写访问权限。
   
-如果您不确定您的用户帐户满足这些要求，并且您不确定如何检查，您仍可以安装和运行 IdFix。如果您的用户帐户没有正确的权限，IdFix 将只会显示错误，当您尝试运行它。
+如果您不确定您的用户帐户是否满足这些要求, 并且不确定如何进行检查, 则仍可以安装和运行 IdFix。如果您的用户帐户没有适当的权限, 则 IdFix 将在您尝试运行它时只显示错误。
   
 ## <a name="install-idfix"></a>安装 IdFix
 
-若要安装 IdFix，下载并解压缩**IdFix.exe**: 
+若要安装 IdFix, 请下载并解压缩**IdFix**: 
   
 1. 登录到您要安装 IdFix 工具的计算机。
     
-2. 转到 Microsoft 下载网站 for [IdFix 目录同步错误修复工具](https://go.microsoft.com/fwlink/?linkid=867219)。
+2. 请转到 Microsoft 下载中心网站, 获取[IdFix DirSync 错误修正工具](https://go.microsoft.com/fwlink/?linkid=867219)。
     
 3. 选择“下载”****。
     
-4. 出现提示时，选择**运行**。
+4. 出现提示时, 选择 "**运行**"。
     
-5. 在**WinZip 自动解压缩程序**对话框中**解压缩到文件夹**文本框中，键入或浏览到要安装 IdFix 工具的位置。默认情况下，IdFix 安装到`C:\Deployment Tools\`。 
+5. 在 " **WinZip 自动解压缩程序**" 对话框的 "**解压缩到文件夹**" 文本框中, 键入或浏览到要安装 IdFix 工具的位置。默认情况下, IdFix 安装到`C:\Deployment Tools\`。 
     
-6. 选择**解压缩**。
+6. 选择 "**解压缩**"。
     
 ## <a name="run-the-idfix-tool"></a>运行 IdFix 工具
 
@@ -78,50 +81,50 @@ ms.locfileid: "26674426"
   
 1. 使用对目录具有读/写访问权限的帐户登录到您安装 IdFix 的计算机。
     
-2. 在文件资源管理器，转到您安装 IdFix 的位置。如果在安装过程中选择默认文件夹，请转到`C:\Deployment Tools\IdFix`。
+2. 在文件资源管理器中, 转到安装 IdFix 的位置。如果您在安装过程中选择了默认文件夹, `C:\Deployment Tools\IdFix`请转到。
     
 3. 双击“IdFix.exe”****。 
     
-    ![选择 IdFix.exe 文件。](media/a9387bbc-991f-41c2-a500-45e3ce574285.JPG)
+    ![选择 "IdFix" 文件。](media/a9387bbc-991f-41c2-a500-45e3ce574285.JPG)
   
-4. 默认情况下，IdFix 使用的多租户规则集测试您的目录中的条目。这是为 Office 365 的大多数客户的右规则。但是，如果您是 Office 365 专用或 ITAR （国际流量 Arm 法规） 客户，您可以配置 IdFix 使用专用的规则设置而不是。如果不确定哪种类型的客户后，您可以安全跳过此步骤。要设置设置为专用的规则，请单击菜单栏中的齿轮图标，然后选择**专用**。
+4. 默认情况下, IdFix 使用多租户规则集测试目录中的条目。这是大多数 Office 365 客户的正确规则集。但是, 如果您是 Office 365 专用或 ITAR (arm 规章中的国际流量) 客户, 则可以将 IdFix 配置为改用专用规则集。如果您不确定您是哪种类型的客户, 则可以安全地跳过此步骤。若要将规则集设置为专用, 请单击菜单栏中的齿轮图标, 然后选择 "**专用**"。
     
-5. 选择**查询**。
+5. 选择 "**查询**"。
     
-    ![在 IdFix 中选择查询。](media/a07a7aa7-d0ac-4817-8757-946019813a57.JPG)
+    ![在 IdFix 中选择 "查询"。](media/a07a7aa7-d0ac-4817-8757-946019813a57.JPG)
   
 6. 默认情况下，IdFix 对整个目录搜索错误。
     
-    根据您的目录的大小，运行查询可能需要一段。您可以观看该工具主窗口底部的进度。如果单击**取消**，您需要重新启动从头开始。
+    运行查询可能需要一段时间, 具体取决于目录的大小。您可以在该工具的主窗口的底部观看进度。如果单击 "**取消**", 则需要从头开始重新启动。
     
-    ![IdFix 查询和错误数。](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
+    ![IdFix 查询和错误计数。](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
   
-7. IdFix 完成查询后，您可以继续操作，并将目录同步，如果没有任何错误。如果您目录中有错误，建议同步之前修复这些。如果您希望有关的错误类型的更多特定信息和有关每个修复的最佳方法的建议，请参阅本主题末尾的链接。 
+7. 完成查询后, 如果没有任何错误, 则可以继续并同步您的目录。如果目录中有错误, 建议您在同步之前对其进行修复。如果您需要有关错误类型的更多具体信息, 以及有关修复每个错误的最佳方法的建议, 请参阅本主题末尾的链接。 
     
     虽然对同步之前修复错误的做法不是强制性的，但我们还是强烈建议您至少检查一下由 IdFix 返回的所有错误。
     
-    每个错误显示在该工具主窗口中单独的行中。 
+    每个错误都显示在该工具的主窗口中的单独行中。 
     
 8. 如果您同意“UPDATE”**** 列中的更改建议，请在“ACTION”**** 列中选择 IdFix 要实现此更改应执行的操作，然后单击“应用”****。当您单击“应用”**** 时，该工具会在目录中做出更改。
     
-    您无需在每个更新后单击**应用**。相反，可以解决几个错误之前单击**应用**，IdFix 将所有在同时更改它们。可以通过单击**错误**顶部列出了错误类型的列的排序错误类型的错误。 
+    无需在每次更新后单击 "**应用**"。相反, 您可以先修复几个错误, 然后再单击 "**应用**", IdFix 将同时更改所有这些错误。您可以通过单击列出错误类型的列顶部的 "**错误**", 按错误类型对错误进行排序。 
     
-    一种策略是修复的相同类型; 所有错误例如，首先，修复所有重复项，并应用这些更改。接下来，修复字符格式错误，等等。每次应用所做的更改，IdFix 工具创建单独的日志文件可用于犯的情况下撤消所做的更改。[事务日志](idfix-transaction-log.md)存储在您安装 IdFix 中的文件夹。 默认情况下_C:\Deployment Tools\IdFix_ 。 
+    一种策略是修复相同类型的所有错误;例如, 先修复所有重复项, 并应用它们。接下来, 修复字符格式错误, 等等。每次应用更改时, IdFix 工具都会创建一个单独的日志文件, 您可以使用该文件来撤消所做的更改, 以防您犯错误。[事务日志](idfix-transaction-log.md)存储在 IdFix 中安装的文件夹中。 默认情况下, _C:\Deployment Tools\IdFix_ 。 
     
-    ![解决 IdFix 中的错误。](media/5f051070-652c-4be7-98bf-312295e32371.png)
+    ![修正 IdFix 中的错误。](media/5f051070-652c-4be7-98bf-312295e32371.png)
   
-9. 毕竟所做更改的所做的目录，并运行 IdFix 再次以确保您所做的修补程序未引入了新的错误。您可以重复这些步骤，根据需要多次。最好进入流程几次同步之前。
+9. 对目录进行所有更改后, 再次运行 IdFix 以确保您所做的修补程序未引入新的错误。您可以根据需要多次重复这些步骤。在同步之前, 最好先完成几次此过程。
     
 ## <a name="i-want-to-refine-my-search-or-dig-deeper-into-the-errors-what-else-can-i-do-with-idfix"></a>我想优化我的搜索或深入研究错误，我还能用 IdFix 来做些什么？
 
 以下主题可提供更深入的信息：
   
-- [准备目录属性与通过使用 IdFix 工具的 Office 365 进行同步](prepare-directory-attributes-for-synch-with-idfix.md)。您已安装的工具，跳转到本主题的更详细说明有关运行该工具之后, 会遇到的常见错误建议的修补程序、 示例和要执行的操作数量较大的错误后的最佳做法。 
+- [使用 IdFix 工具准备要与 Office 365 同步的目录属性](prepare-directory-attributes-for-synch-with-idfix.md)。安装该工具后, 请跳转到本主题, 以获取有关运行该工具的更多详细说明、您将遇到的常见错误、建议的修补程序、示例和最佳做法, 以了解在遇到大量错误时应采取的操作。 
 - [参考：IdFix 排除和支持的对象和属性](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [参考：Office 365 IdFix 事务日志](idfix-transaction-log.md)
     
 ## <a name="video-training"></a>视频培训
 
-有关详细信息，请参阅进入您的 LinkedIn 学习课[安装和使用 IDFix 工具](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US)。
+有关详细信息, 请参阅 LinkedIn[安装和使用 IDFix 工具, 此](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US)课程由 LinkedIn 学习版提供。
   
 

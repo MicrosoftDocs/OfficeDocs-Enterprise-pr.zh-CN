@@ -1,5 +1,5 @@
 ---
-title: Office 365 与内部部署环境的集成
+title: Office 365 与本地环境的集成
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
 search.appverid:
 - MET150
 - LYN150
@@ -16,56 +18,56 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
-description: 了解如何将 Office 365 与您现有的目录服务集成。
-ms.openlocfilehash: b660dda74303a3bf0fa92bc8e3146cd2c9add662
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: 了解如何将 Office 365 与您的现有目录服务集成。
+ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539694"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085331"
 ---
-# <a name="office-365-integration-with-on-premises-environments"></a>Office 365 与内部部署环境的集成
+# <a name="office-365-integration-with-on-premises-environments"></a>Office 365 与本地环境的集成
 
-可以将 Office 365 与您现有的目录服务和内部部署安装 Exchange Server、 Skype 集成业务服务器 2015年或 SharePoint Server 2013。
+您可以将 Office 365 与您现有的目录服务以及 Exchange server、Skype for business Server 2015 或 SharePoint server 2013 的本地安装集成。
   
- - 当您将与目录服务集成时，您可以同步并管理这两种环境的用户帐户。您还可以添加密码哈希同步或单一登录 (SSO) 使用户可以登录到这两种环境与内部部署凭据。
- - 当您将与内部部署服务器产品集成时，您将创建混合环境。混合环境可帮助您迁移到 Office 365 用户或信息或您可以继续有一些用户或一些信息内部部署和云中的一些。有关混合环境的详细信息，请参阅[Office 365 的混合云解决方案概述](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7)。
+ - 当您与目录服务集成时, 您可以同步和管理这两个环境的用户帐户。您还可以添加密码哈希同步或单一登录 (SSO), 以便用户可以使用其本地凭据登录到这两个环境。
+ - 当您与本地服务器产品集成时, 将创建混合环境。当您将用户或信息迁移到 Office 365 时, 混合环境可帮助您, 也可以继续在本地使用某些用户或某些信息以及在云中使用一些信息。有关混合环境的详细信息, 请参阅[Office 365 混合云解决方案概述](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7)。
 
-您还可以使用 Azure AD 顾问的自定义安装程序指南：
-- [Azure AD 连接顾问](https://aka.ms/aadconnectpwsync)
+您还可以使用 Azure AD 顾问获取自定义设置指南:
+- [Azure AD Connect advisor](https://aka.ms/aadconnectpwsync)
 - [AD FS 部署顾问](https://aka.ms/adfsguidance)
 - [Azure RMS 部署向导](https://aka.ms/azuremsguidance)
-- [Azure AD Premium 安装指南](https://aka.ms/aadpguidance)
+- [Azure AD Premium 设置指南](https://aka.ms/aadpguidance)
    
 ## <a name="before-you-begin"></a>准备工作
-集成 Office 365 和本地环境之前，您还需要为[网络规划和性能优化 Office 365](network-planning-and-performance.md)参加。您还需要了解 Office 365 中可用[的身份模型](about-office-365-identity.md)。 
+在集成 office 365 和本地环境之前, 还需要参加[office 365 的网络规划和性能调整](network-planning-and-performance.md)。您还需要了解 Office 365 中可用的[标识模型](about-office-365-identity.md)。 
 
-请参阅[管理 Office 365 用户帐户其中](manage-office-365-accounts.md)工具可用于管理 Office 365 用户帐户和帐户的列表。 
+有关可用于管理 office 365 用户和帐户的工具列表, 请参阅[管理 office 365 用户帐户的位置](manage-office-365-accounts.md)。 
   
 ## <a name="integrate-office-365-with-directory-services"></a>将 Office 365 与目录服务集成
-如果已在内部部署目录中现有的用户帐户，您不希望重新创建的所有 Office 365 和简介差异内容还是环境之间的错误的风险中这些帐户。目录同步将帮助您镜像之间联机这些帐户和本地环境。通过目录同步，用户无需记住为每个环境中，新信息，您无需创建或更新帐户两次。您将需要目录同步[准备内部部署目录](prepare-for-directory-synchronization.md)，可以手动执行此操作，也可以使用[IdFix 工具](install-and-run-idfix.md)（IdFix 工具仅适用于与 Active Directory）。 
+如果您在本地目录中有现有的用户帐户, 则不需要在 Office 365 中重新创建所有这些帐户, 并且在环境之间引入差异或错误的风险。目录同步可帮助您在您的联机和本地环境中镜像这些帐户。通过目录同步, 用户不必记住每个环境的新信息, 也不必创建或更新帐户两次。您需要为[本地目录准备](prepare-for-directory-synchronization.md)目录同步, 您可以手动执行此操作, 也可以使用[IdFix 工具](install-and-run-idfix.md)(IdFix 工具仅适用于 Active directory)。 
   
-![使用目录同步将保留在本地和联机用户同步的帐户信息](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
+![使用目录同步将本地和联机用户帐户信息保持同步](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   
-如果您希望用户能够使用其内部部署凭据登录到 Office 365，您还可以配置 SSO。与 SSO 功能，Office 365 配置为信任进行用户身份验证的内部部署环境。
+如果您希望用户能够使用他们的本地凭据登录到 Office 365, 您还可以配置 SSO。使用 SSO, Office 365 配置为信任本地环境以进行用户身份验证。
   
-![使用单一登录，相同的帐户是在本地和联机环境中可用](media/d76235f2-8a53-405e-b8ef-dfa4cfc208b8.png)
+![使用单一登录, 在本地和联机环境中都可以使用相同的帐户。](media/d76235f2-8a53-405e-b8ef-dfa4cfc208b8.png)
   
-下表中所示，不同的用户帐户管理技术为您的用户提供不同的体验。
+不同的用户帐户管理技术为用户提供了不同的体验, 如下表所示。
  
-### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication"></a>**使用或不密码哈希同步或传递身份验证目录同步**
-用户登录到其内部部署环境与他们的用户帐户 （域 \ 用户名）。当他们转到 Office 365 时，他们必须再次使用登录其工作或学校帐户 (user@domain.com)。在这两个环境中相同的用户的用户名。当您添加密码哈希同步还是传递身份验证时，用户具有对于这两个环境，相同的密码，但必须重新提供这些凭据登录到 Office 365 时。使用密码哈希同步的目录同步是最常使用的目录同步方案。
+### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication"></a>**具有或不具有密码哈希同步或传递身份验证的目录同步**
+用户使用其用户帐户 (域 \ 用户名) 登录到本地环境。当他们转到 Office 365 时, 他们必须使用其工作或学校帐户 (user@domain.com) 重新登录。这两个环境中的用户名相同。当您添加密码哈希同步或传递身份验证时, 用户在这两种环境中都具有相同的密码, 但在登录到 Office 365 时将不得不再次提供这些凭据。使用密码哈希同步的目录同步是最常用的目录同步方案。
 
-若要设置目录同步，使用 Azure Active Directory 连接。有关说明，阅读[Set up Office 365 的目录同步](set-up-directory-synchronization.md)和[使用 Azure AD 连接使用 express 设置](https://go.microsoft.com/fwlink/p/?LinkId=698537)。
+若要设置目录同步, 请使用 Azure Active directory Connect。有关说明, 请参阅[设置 Office 365 的目录同步](set-up-directory-synchronization.md), 并[将 Azure AD Connect 与 express 设置一起使用](https://go.microsoft.com/fwlink/p/?LinkId=698537)。
 
-详细了解如何[设置用户通过目录同步到 Office 365 准备](prepare-for-directory-synchronization.md)和[集成本地标识与 Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=518101)。
+了解有关[准备通过目录同步将用户预配到 Office 365](prepare-for-directory-synchronization.md)并将[本地标识与 Azure Active directory 集成](https://go.microsoft.com/fwlink/?LinkId=518101)的详细信息。
 
-### <a name="directory-synchronization-with-sso"></a>**与 SSO 的目录同步**
-用户登录到其内部部署环境与他们的用户帐户。当他们转到 Office 365 时，它们可以自动登录，或使用用于其内部部署环境 （域 \ 用户名） 相同的凭据进行登录。
+### <a name="directory-synchronization-with-sso"></a>**使用 SSO 同步目录**
+用户使用其用户帐户登录到本地环境。当他们转到 Office 365 时, 它们要么是自动登录, 要么使用它们用于本地环境的相同凭据 (域 \ 用户名) 登录。
 
-若要设置 SSO 也使用 Azure AD 连接。有关说明，请阅读[使用 Azure AD 连接使用自定义设置](https://go.microsoft.com/fwlink/p/?LinkID=698430)。
+若要设置 SSO, 您还可以使用 Azure AD Connect。有关说明, 请参阅[使用自定义设置的 Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkID=698430)。
 
-了解[应用程序访问和使用 Azure Active Directory 单一登录](https://go.microsoft.com/fwlink/p/?LinkId=698604)的详细信息。
+了解有关[Azure Active Directory 的应用程序访问和单一登录](https://go.microsoft.com/fwlink/p/?LinkId=698604)的详细信息。
 
 ## <a name="azure-ad-connect"></a>Azure AD Connect
-Azure AD 连接替换较旧版本的标识集成工具，例如目录同步和 Azure AD 同步。有关详细信息，请参阅[将您的本地标识与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkId=527969)。如果您想要从 Azure Active Directory 同步更新到 Azure AD 连接，请参阅[的升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。请参阅[Microsoft Azure 中](https://go.microsoft.com/fwlink/?LinkId=517887)的 Office 365 目录同步 (DirSync) 构建的解决方案体系结构。
+Azure AD Connect 替代了较早版本的身份集成工具, 如 DirSync 和 Azure AD 同步。有关详细信息, 请参阅[将本地标识与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkId=527969)。如果要从 azure Active Directory 同步更新到 azure AD Connect, 请参阅[升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。请参阅[在 Microsoft Azure 中为 Office 365 目录同步 (DirSync)](https://go.microsoft.com/fwlink/?LinkId=517887)构建的解决方案体系结构。

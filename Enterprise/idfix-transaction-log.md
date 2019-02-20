@@ -9,25 +9,28 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: 提供一个示例，并介绍的命名约定和默认日志级别的 Office 365 IdFix 事务日志。
-ms.openlocfilehash: 016318c7e771ec6c5f90336e11c5dd011144d12e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: 提供了一个示例, 并介绍了 Office 365 IdFix 事务日志的命名约定和默认日志级别。
+ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539684"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085061"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix 事务日志
 
-提供一个示例，并介绍的命名约定和默认日志级别的 Office 365 IdFix 事务日志。
+提供了一个示例, 并介绍了 Office 365 IdFix 事务日志的命名约定和默认日志级别。
   
 ## <a name="idfix-transaction-log-location"></a>IdFix 事务日志位置
 
-Office 365 IdFix 工具在每次单击**应用**IdFix 中并将更改应用于 Active Directory 林中创建新的事务日志。您安装 IdFix 的同一文件夹中保存的事务日志。默认情况下，此文件夹是 C:\Deployment Tools\IDFix。事务日志文件的名称使用日期和时间戳格式，例如 Verbose 6-1-2018年 6-17 22 PM 指示在 PM.6:17:22 2018 年 6 月 1，在生成的文件详细指示的日志记录级别。 
+每次单击 IdFix 中的 "**应用**" 并将更改应用于 Active Directory 林时, Office 365 IdFix 工具都会创建一个新的事务日志。事务日志保存在您安装 IdFix 的同一文件夹中。默认情况下, 此文件夹为 C:\Deployment Tools\IDFix。事务日志文件名使用日期和时间戳格式, 例如, 详细 6-1-2018 6-17-22 pm 表示在2018年6月1日 (6:17:22 PM) 生成的文件。详细说明日志记录级别。 
   
 ## <a name="idfix-transaction-log-logging-level"></a>IdFix 事务日志的日志记录级别
 
@@ -35,7 +38,7 @@ Office 365 IdFix 工具在每次单击**应用**IdFix 中并将更改应用于 A
   
 ## <a name="idfix-transaction-log-format"></a>IdFix 事务日志格式
 
-IdFix 将每个**更新**操作的结果写入到一个事务日志，如下面的示例中所示：
+IdFix 将每个**更新**操作的结果写入事务日志, 如以下示例所示:
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant

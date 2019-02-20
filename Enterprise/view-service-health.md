@@ -13,25 +13,28 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: 查看 Office 365 服务的运行状况状态之前调用支持，以了解是否有有效的服务中断
-ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
-ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
+description: 在呼叫支持之前查看 Office 365 服务的运行状况状态, 以查看是否有活动的服务中断
+ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29696349"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085291"
 ---
 # <a name="how-to-check-office-365-service-health"></a>如何查看 Office 365 服务运行状况
 
-在管理中心中的 Office 365**服务运行状况**页上，您可以查看 Office 365、 Yammer、 Microsoft Dynamics CRM 和 Microsoft Intune 云服务的运行状况。如果遇到被云服务的问题，您可以检查服务运行状况，以确定是否正在解析的已知的问题之前呼叫支持或花时间进行故障排除。 
+您可以在管理中心的 "office 365**服务运行状况**" 页上查看 office 365、Yammer、microsoft Dynamics CRM 和 microsoft Intune 云服务的运行状况。如果您在云服务中遇到问题, 则可以检查服务运行状况, 以确定这是否是在致电支持或花时间故障排除之前进行的解决方案中存在的已知问题。 
 
-如果您不能登录到服务门户，您可以使用[服务状态页](https://status.office365.com)以检查阻止您登录到您的租户的已知问题。
+如果无法登录到服务门户, 则可以使用 "[服务状态" 页](https://status.office365.com)来检查阻止你登录租户的已知问题。
   
 ### <a name="how-to-check-service-health"></a>如何查看服务运行状况
 
@@ -40,7 +43,7 @@ ms.locfileid: "29696349"
     > [!NOTE]
     > 分配为全局管理员或服务管理员角色的人员可以查看服务运行状况。若要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，必须向他们分配服务管理员角色。
   
-2. 若要打开在管理中心的服务运行状况，转到**运行状况** > **服务运行状况**，或单击**主页仪表板**上的**服务运行状况卡片**。仪表板卡片指示是否存在活动服务问题和详细的服务运行状况页面的链接。
+2. 若要打开服务运行状况, 请在管理中心中, 转到**运行状况** > **服务运行状况**, 或单击**主页仪表板**上的**服务运行状况卡片**。仪表板卡片指示是否存在活动的服务问题, 以及指向详细服务运行状况页面的链接。
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -51,13 +54,13 @@ ms.locfileid: "29696349"
   
 ### <a name="view-details-of-posted-service-health"></a>查看已发布服务的运行状况详细信息
 
-在默认视图中，将显示所有服务和及其当前运行状况状态。若要筛选视图服务当前遇到一个事件，请从左侧的灰色栏中选择**事件**。选择**通报**会显示当前具有安全公告发布的服务。从**的所有服务**视图中，单击显示的服务状态将打开 advisory 或事件的摘要视图。 
+在默认视图中, 将显示所有服务及其当前运行状况状态。若要将视图筛选为当前遇到事件的服务, 请从左侧的阴影条中选择 "**事件**"。选择 "**建议**" 将仅显示当前已发布建议的服务。从 "**所有服务**" 视图中, 单击显示的服务状态将打开公告或事件的摘要视图。 
   
 ![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
 公告或事件摘要提供以下信息： 
   
-![标记服务通报中的字段的屏幕截图](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
+![标记服务公告中的字段的屏幕截图](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
   
 1. 该问题的问题标识符和摘要语句。
     
@@ -104,11 +107,11 @@ ms.locfileid: "29696349"
 |**延期恢复** | 此状态表示正在执行纠正措施，为大多数用户恢复服务，但恢复所有受影响的系统仍需一些时间。如果我们为了减轻影响，而在实施永久解决措施前实施临时措施，你也可能看到此状态。 |
 |**调查暂停** | 如果对潜在问题的详细调查需要请求客户提供其他信息，以便进行进一步的调查，则你将看到此状态。如果我们需要你的参与，我们会告知你所需的数据或日志。 |
 |**已还原服务** | 我们确认纠正措施已解决基础问题，且服务已还原到正常状态。若要了解出了什么问题，请查看问题详细信息。 |
-|**发布后事件报告** | 我们已发布的特定问题包含根原因信息和下一步步骤，以确保类似问题不会再次发生 Post 事件报告。 |
+|**已发布事件后报告** | 我们已发布了一个针对特定问题的公告事件报告, 其中包括根本原因信息和后续步骤, 以确保不会发生类似的问题。 |
    
 ## <a name="history"></a>“历史记录”
 
-服务运行状况，可以查看当前运行状况和查看任何服务咨询和已过去 30 天内影响您的租户的事件的历史记录。若要查看过去的所有服务运行状况，选择**服务运行状况**页上的**查看历史记录**。 
+服务运行状况允许你查看当前运行状况状态, 并查看在过去30天内受影响的租户的任何服务通知和事件的历史记录。若要查看所有服务的过去运行状况, 请选择 "**服务运行状况**" 页上的 "**查看历史记录**"。 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -116,9 +119,9 @@ ms.locfileid: "29696349"
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-最近 7 天或 30 天内，您可以查看运行状况历史记录。选择要查看有关该问题的更多详细信息任何行。
+您可以查看最近7天或最近30天的运行状况历史记录。选择任意行以查看有关该问题的更多详细信息。
   
-有关我们承诺正常运行时间的详细信息，请参阅[从 Office 365 的透明操作](https://go.microsoft.com/fwlink/?linkid=848695)。
+有关我们对运行时间的承诺的详细信息, 请参阅[Office 365 中的透明操作](https://go.microsoft.com/fwlink/?linkid=848695)。
   
 ## <a name="leave-feedback"></a>提供反馈
 
