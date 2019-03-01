@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些企业网络限制对通用 internet 位置的访问, 或者包括大量 backhaul 或网络流量的处理。为了确保这些网络上的计算机可以访问 office 365, 网络和代理管理员需要管理组成 office 365 终结点列表的 fqdn、url 和 IP 地址的列表。需要将它们添加到直接路由、代理旁路、和/或防火墙规则和 PAC 文件中, 以确保网络请求能够到达 Office 365。
-ms.openlocfilehash: 469c1fa91fc2695c4175a4eccea26a0ffc46c52a
-ms.sourcegitcommit: bc565081b64d374d43b1bf3bb3d92edaaa24e4c2
+ms.openlocfilehash: d9138dd5d583b684c82d525001faee4d06e0fbe5
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30176742"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341983"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -75,7 +75,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 |**ClientRequestId** <br/> |这是必需的, 它是传递给 web 服务的 GUID, 表示进行呼叫的客户端计算机。 <br/> |
 |**Instance** <br/> |默认为 "全球" 的 Office 365 服务实例。也传递到 web 服务。 <br/> |
 |**TenantName** <br/> |Office 365 租户名称。传递到 web 服务, 并在某些 Office 365 url 中用作可替换参数。 <br/> |
-|**Type** <br/> |要生成的代理 PAC 文件的类型。 <br/> |
+|**类型** <br/> |要生成的代理 PAC 文件的类型。 <br/> |
 
 以下是使用其他参数调用 PowerShell 脚本的另一个示例。
 
