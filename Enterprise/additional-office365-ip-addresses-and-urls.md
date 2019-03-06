@@ -3,7 +3,7 @@ title: Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/16/2019
+ms.date: 03/04/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新终结点 Web 服务不包含特定应用场景的少量终结点。
 hideEdit: true
-ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: f226e48fa6512e32e505d7ca1a35ab1fec390488
+ms.sourcegitcommit: c0d3007e51950b041569c28a495ee16d51783f28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242084"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30374405"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 
@@ -52,7 +52,7 @@ ms.locfileid: "30242084"
 | 6  | 邮箱迁移。从本地 [Exchange 混合部署](https://docs.microsoft.com/exchange/exchange-deployment-assistant)向 Office 365 进行邮箱迁移时，Office 365 将连接到你已发布的 Exchange Web 服务 (EWS)/邮箱复制服务 (MRS) 服务器。如果你需要了解 Exchange Online 服务器使用的 NAT IP 地址，以限制来自特定源 IP 范围的入站连接，可在“Exchange Online”服务区域下的 [Office 365 URL 和 IP 范围](urls-and-ip-address-ranges.md)中找到相关信息。请注意确保不会影响对已发布 EWS 端点（如 OWA）的访问，这就需要确保 MRS 代理会在限制来自特定源 IP 范围的 TCP 443 连接之前先解析至独立的 FQDN 和公共 IP 地址。 | 客户本地 EWS/MRS 代理<br> TCP 端口 443 | 入站服务器流量 |
 | 7  | [Exchange 混合部署](https://docs.microsoft.com/exchange/exchange-deployment-assistant)共存功能，例如忙/闲共享。 | 客户本地 Exchange 服务器 | 入站服务器流量 |
 | 8  | [Exchange 混合部署](https://docs.microsoft.com/exchange/exchange-deployment-assistant)代理身份验证 | 客户本地 STS | 入站服务器流量 |
-| 9  | 用于使用 Exchange 混合部署配置向导来配置 [Exchange 混合配置](https://docs.microsoft.com/exchange/exchange-deployment-assistant)。 <br> 注意：这些终结点仅用于配置 Exchange 混合  | TCP 端口 80 和 443 上的 ```domains.live.com```，仅用于 Exchange 2010 SP3 混合配置向导。 | 仅出站服务器流量 |
+| 9  | 用于使用 [Exchange 混合配置向导](https://docs.microsoft.com/exchange/hybrid-configuration-wizard)来配置 [Exchange 混合](https://docs.microsoft.com/exchange/exchange-deployment-assistant) <br> 注意：这些终结点仅用于配置 Exchange 混合  | TCP 端口 80 和 443 上的 domains.live.com，仅用于 Exchange 2010 SP3 混合配置向导。<BR> <BR> GCC High，DoD IP 地址：40.118.209.192/32；168.62.190.41/32 <BR> <BR> Worldwide Commercial & GCC: *.store.core.windows.net; asl.configure.office.com; mshrcstorageprod.blob.core.windows.net; tds.configure.office.com; mshybridservice.trafficmanager.net <BR>  | 仅出站服务器流量 |
 | 10  | AutoDetect 服务用于 [Exchange 混合部署](https://docs.microsoft.com/exchange/exchange-deployment-assistant)应用场景，可实现[适用于 iOS 和 Android 的 Outlook 的混合型新式验证](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | TCP 443 上的客户本地 Exchange 服务器 | 入站服务器流量 |
 | 11  | Office 2016 中的 Skype for Business 包括使用 UDP 端口的基于视频的屏幕共享。Office 2013 和早期版本中的先前 Skype for Business 客户端使用 RDP over TCP 端口 443。 | TCP 端口 443 对 52.112.0.0/14 开放 | Office 2013 和早期版本中的 Skype for Business 早期客户端版本 |
 | 12  | Skype for Business 混合内部部署服务器与 Skype for Business Online 之间的连接 | 13.107.64.0/18，52.112.0.0/14 UDP 端口 50,000-59,999 <BR>  TCP 端口 50,000-59,999 | Skype for Business 内部部署服务器出站连接 |
