@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何将 OneDrive 站点移到其他地理位置。
-ms.openlocfilehash: 4d55ce087b475b9364a4e1584a1ac4947cc1ba85
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29547130"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458322"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 
@@ -68,6 +68,8 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 要确保所有地理位置都可兼容，请运行：
 
 `Get-SPOGeoMoveCrossCompatibilityStatus`
+
+你将会看到可以在其中移动的地理位置和天气内容列表将显示为“兼容”。 如果命令返回“不兼容”，请稍后重新验证状态。
 
 如果 OneDrive 在法定保留下，或如果它包含子网站，则不能移动它。你可以将 Start-SPOUserAndContentMove cmdlet 与 -ValidationOnly 参数结合使用，以验证 OneDrive 是否可以移动：
 
