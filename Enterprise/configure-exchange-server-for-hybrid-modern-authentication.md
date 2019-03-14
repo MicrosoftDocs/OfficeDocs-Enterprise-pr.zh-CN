@@ -1,5 +1,5 @@
 ---
-title: 如何配置本地 Exchange Server 以使用混合新式验证
+title: 如何将 Exchange Server 本地配置为使用混合新式身份验证
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -11,57 +11,59 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
-description: 混合现代身份验证 (HMA)，是一种身份管理提供更安全的用户身份验证和授权，并适用于 Exchange server 内部部署混合部署的方法。
-ms.openlocfilehash: df5ea03b06ee1c101b03e19c7acb445c9543586b
-ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
+ms.collection:
+- M365-security-compliance
+description: 混合新式身份验证 (HMA) 是一种身份管理方法, 它提供更安全的用户身份验证和授权, 并可用于 Exchange server 本地混合部署。
+ms.openlocfilehash: 364f95bbbc06f477d258ed55a8711864e7a87e69
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547154"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372859"
 ---
-# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
+# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何将 Exchange Server 本地配置为使用混合新式身份验证
 
-混合现代身份验证 (HMA)，是一种身份管理提供更安全的用户身份验证和授权，并适用于 Exchange server 内部部署混合部署的方法。
+混合新式身份验证 (HMA) 是一种身份管理方法, 它提供更安全的用户身份验证和授权, 并可用于 Exchange server 本地混合部署。
   
-## <a name="fyi"></a>注意
+## <a name="fyi"></a>仅供参考
 
-我们开始之前，请调用：
+在开始之前, 我称之为:
   
-- 混合现代身份验证\>HMA
+- 混合新式身份\>验证 HMA
     
-- Exchange 内部部署\>EXCH
+- Exchange 本地\> EXCH
     
 - Exchange Online \> EXO
     
-此外，*如果中的图形本文具有已灰显或变暗这意味着，以灰色显示的元素未包括在 HMA 特定的配置对象*。 
+此外,*如果本文中的图形有一个 "灰显" 或 "变暗" 的对象, 则表示以灰色显示的元素不包含在 HMA 的特定配置中*。 
   
-## <a name="enabling-hybrid-modern-authentication"></a>启用混合现代身份验证
+## <a name="enabling-hybrid-modern-authentication"></a>启用混合新式身份验证
 
-HMA 开启方法：
+启用 HMA 的打开方式:
   
-1. 要确保在开始之前满足先决条件。
+1. 在开始之前, 请务必满足先决条件。
     
-1. 以来多个**必备组件**是常见的业务和 Exchange[混合现代身份验证概述和必备软件以便使用其本地 Skype 业务和 Exchange 服务器的](hybrid-modern-auth-overview.md)两个 Skype。在开始任何本文中的步骤之前执行此操作。
+1. 由于很多**先决条件**对于 Skype for business 和 exchange 都是常见的, 因此[混合新式身份验证概述和用于在本地 Skype for business 和 exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md)。 在开始本文中的任何步骤之前, 请执行此操作。
     
-2. 添加内部部署 web 服务 Url 为服务主体名称 (Spn) 在 Azure AD。
+2. 在 Azure AD 中将本地 web 服务 url 添加为服务主体名称 (spn)。
     
-3. 确保所有虚拟目录启用了 HMA
+3. 确保为 HMA 启用所有虚拟目录
     
-4. 检查 EvoSTS 身份验证服务器对象
+4. 检查 EvoSTS Auth Server 对象
     
-5. 汇兑损益在启用 HMA
+5. 在 EXCH 中启用 HMA。
     
- **注释**您的 Office 版本是否支持 MA？请参阅[如何现代身份验证适用于 Office 2013 和 Office 2016 客户端应用程序](modern-auth-for-office-2013-and-2016.md)。
+ **注释**您的 Office 版本是否支持 MA？ 请参阅[如何在 office 2013 和 office 2016 客户端应用程序中运行新式验证](modern-auth-for-office-2013-and-2016.md)。
   
-## <a name="make-sure-you-meet-all-the-pre-reqs"></a>请确保您满足所有前要求
+## <a name="make-sure-you-meet-all-the-pre-reqs"></a>请确保满足所有预 reqs
 
-由于多个必备组件以针对常用于这两个 Skype 商业和 Exchange，查看[混合现代身份验证概述和使用它与业务和 Exchange 服务器的内部部署 Skype 的先决条件](hybrid-modern-auth-overview.md)。执行此*之前*开始任何本文中的步骤。 
+由于很多先决条件对于 Skype for business 和 exchange 都是常见的, 因此请参阅[混合新式身份验证概述和在本地 skype for business 和 exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md)。 在开始本文中的任何步骤*之前*, 请执行此操作。 
   
-## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>添加内部部署 Azure AD 中为 Spn web 服务 Url
+## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>在 Azure AD 中将本地 web 服务 url 添加为 spn
 
-运行命令的 Azure AD Spn。 Spn 的身份验证和授权过程中使用的客户端计算机和设备分配在本地 web 服务 Url。必须在 AAD （这包括内部和外部的命名空间） 中注册所有可能会用于从内部连接到 Azure Active Directory (AAD) 的 Url。
+运行将本地 web 服务 url 分配为 Azure AD spn 的命令。 在身份验证和授权过程中, 客户端计算机和设备使用 spn。 所有可用于从本地连接到 Azure Active Directory (AAD) 的 url 都必须在 AAD 中注册 (这包括内部和外部命名空间)。
   
-首先，收集所有 AAD 中添加所需的 Url。运行这些命令在本地：
+首先, 收集您需要在 AAD 中添加的所有 url。 在本地运行以下命令:
   
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
@@ -70,21 +72,21 @@ Get-ActiveSyncVirtualDirectory | FL server,*url*
 Get-OABVirtualDirectory | FL server,*url*
 ```
     
-确保客户端可以连接到列为 HTTPS AAD 中的服务主体名称的 Url。
+确保客户端可以连接的 url 在 AAD 中列为 HTTPS 服务主体名称。
   
-1. 首先，连接到 AAD 与[这些说明](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。 
+1. 首先, 使用[这些说明](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)连接到 AAD。 
 
- **注释**您需要使用此页中的 Connect-msolservice 选项以能够使用下面的命令。 
+ **注释**您需要使用此页面中的 connect-msolservice 选项, 才能使用下面的命令。 
     
-2. 对于 Exchange 相关的 Url，键入以下命令：
+2. 对于与 Exchange 相关的 url, 请键入以下命令:
     
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
 ```
 
-执行此命令，其中应包括 https:// *autodiscover.yourdomain.com*和 https:// *mail.yourdomain.com* URL，但主要包含开头的 Spn 的输出的注释 （和更高版本比较的屏幕快照）00000002-0000-0ff1-ce00-000000000000 /。从内部部署的缺少的 https:// Url 时我们将需要这些特定记录添加到此列表。 
+记下 (和屏幕截图以供稍后比较) 此命令的输出应包括 https:// *autodiscover.yourdomain.com*和 https:// *mail.yourdomain.com* URL, 但主要由以以下开头的 spn 组成00000002-0000-0ff1-ce00-000000000000/。 如果缺少内部部署中的 https://url, 我们需要将这些特定记录添加到此列表中。 
   
-3. 如果看不到您内部和外部 MAPI/HTTP、 EWS、 ActiveSync、 OAB 和自动发现记录此列表中的，您必须添加它们使用下面的命令 (示例 Url 是`mail.corp.contoso.com`和`owa.contoso.com`，但您必须**替换为您自己的示例 Url** ): <br/>
+3. 如果您在此列表中看不到内部和外部 MAPI/HTTP、EWS、ActiveSync、OAB 和自动发现记录, 则必须使用下面的命令添加它们 (示例 url 是`mail.corp.contoso.com`' ' and`owa.contoso.com`' ', 但您需要将**示例 url 替换为您自己的 url** ): <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
@@ -93,11 +95,11 @@ $x.ServicePrincipalnames.Add("https://eas.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
-4. 确认通过 Get MsolServicePrincipal 命令从步骤 2 再次运行，并将输出通过查找已添加新记录。比较列表 / 屏幕截图从之前对新列表的 Spn （您还可以屏幕截图新列表的记录）。如果您已成功完成，您将看到列表中的两个新 Url。通过我们的示例转，Spn 的列表将现已包括特定的 Url`https://mail.corp.contoso.com`和`https://owa.contoso.com`。 
+4. 再次运行步骤2中的 new-msolserviceprincipal 命令, 并查看输出, 以验证新记录是否已添加。 将列表/屏幕截图从早到新的 spn 列表进行比较 (您还可能会为您的记录提供新列表的屏幕截图)。 如果成功, 您将在列表中看到两个新的 url。 根据我们的示例, spn 列表现在将包含特定的 url `https://mail.corp.contoso.com`和。 `https://owa.contoso.com` 
   
-## <a name="verify-virtual-directories-are-properly-configured"></a>确认正确配置虚拟目录
+## <a name="verify-virtual-directories-are-properly-configured"></a>验证是否正确配置了虚拟目录
 
-现在验证中正确启用 OAuth 在所有虚拟目录 Outlook 上的 Exchange 可能使用通过运行以下命令：
+现在, 验证是否已在 Outlook 的所有虚拟目录上通过运行以下命令, 正确启用了 OAuth:
 
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*,*auth* 
@@ -106,7 +108,7 @@ Get-OABVirtualDirectory | FL server,*url*,*oauth*
 Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
-检查以确保**OAuth**的输出启用每个这些 VDirs，它看起来如下所示 （和需要查看的重要一点是 OAuth）; 
+检查输出以确保每个 VDirs 上启用了**OAuth** , 它将如下所示 (要查看的关键内容是 ' OAuth '); 
 
 ```powershell
 Get-MapiVirtualDirectory | fl server,*url*,*auth*
@@ -121,40 +123,40 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
   
-如果您需将其使用相关的命令，然后再继续添加 OAuth 缺少来自任何服务器和任何四个虚拟目录。
+如果任何服务器和四个虚拟目录中的任何一个都缺少 OAuth, 则需要先使用相关命令添加它, 然后再继续。
   
-## <a name="confirm-the-evosts-auth-server-object-is-present"></a>确认存在 EvoSTS 身份验证服务器对象
+## <a name="confirm-the-evosts-auth-server-object-is-present"></a>确认 EvoSTS Auth Server 对象是否存在
 
-返回到此最后一个命令的本地 Exchange 命令行管理程序。现在您可以验证本地 evoSTS 身份验证提供程序有一项：
+返回到此最后一个命令的内部部署 Exchange 命令行管理程序。 现在, 您可以验证您的内部部署是否具有 evoSTS 身份验证提供程序的条目:
   
 ```powershell
 Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
-输出应显示的名称 EvoSts 认证服务器和已启用状态应该为 True。如果您看不到此，您应下载并运行混合配置向导的最新版本。
+您的输出应显示名称 EvoSts 的 get-authserver, 并且 "已启用" 状态应为 True。 如果看不到此内容, 应下载并运行 "混合配置" 向导的最新版本。
   
- **重要**如果您在您的环境中运行 Exchange 2010，不会创建 EvoSTS 身份验证提供程序。 
+ **重要说明**如果您的环境中运行的是 Exchange 2010, 则不会创建 EvoSTS 身份验证提供程序。 
   
 ## <a name="enable-hma"></a>启用 HMA
 
-在 Exchange Management Shell 中，在本地运行以下命令：
+在 Exchange 命令行管理程序 (本地) 中运行以下命令:
 
 ```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
     
-## <a name="verify"></a>“验证”
+## <a name="verify"></a>Verify
 
-一旦您启用 HMA，下次登录时的客户端将使用新的身份验证流。请注意刚打开 HMA 不会触发重新进行身份验证的任何客户端。客户端重新进行身份验证基于身份验证令牌和/或拥有的证书的生存期。
+启用 HMA 后, 客户端的下一次登录将使用新的身份验证流。 请注意, 仅打开 HMA 不会触发任何客户端的重新身份验证。 客户端将根据身份验证令牌和/或证书的有效期重新进行身份验证。
   
-您还应右键单击该图标的 Outlook 客户端 （还在 Windows 通知任务栏中） 的同时按住 CTRL 键，然后单击连接状态。查找针对的身份验证类型的客户端的 SMTP 地址持有者\*，它代表用于 OAuth 持有者令牌。
+您还应按住 CTRL 键, 同时右键单击 Outlook 客户端的图标 (也在 Windows 通知栏中), 然后单击 "连接状态"。 针对 "身份验证" 类型的 "载荷\*" 查找客户端的 SMTP 地址, 该类型表示在 OAuth 中使用的持有者令牌。
   
- **注释**需要配置 HMA Skype for Business？您将需要两篇文章： 一个列出了[受支持的拓扑](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，，另一个演示[如何执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。
+ **注释**是否需要使用 HMA 配置 Skype for business？ 您将需要两个文章: 一个列出[受支持的拓扑](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), 另一个演示[如何执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。
   
 
 ## <a name="related-topics"></a>相关主题
 
-[混合现代身份验证概述和使用内部部署 Skype 使用的业务和 Exchange 服务器的先决条件](hybrid-modern-auth-overview.md) 
+[混合新式身份验证概述和在本地 Skype for business 和 Exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md) 
   
 

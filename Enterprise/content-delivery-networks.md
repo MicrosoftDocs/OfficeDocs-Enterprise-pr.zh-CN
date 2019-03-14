@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息可了解内容传递网络 (cdn) 以及 Office 365 如何利用它们。 cdn 帮助使最终用户的 Office 365 快速而可靠。 借助 cdn, 云服务 (如 Office 365) 在使用通过 web 客户端的服务时, 会快速将常规内容 (如图标) 下载到用户的浏览器。
-ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 0c44cb1a17b64f1b2f14cc34e1207f450dbd5bbf
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458332"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492952"
 ---
 # <a name="content-delivery-networks"></a>内容分发网络
 
@@ -77,7 +77,7 @@ Office 365 中使用的 cdn 始终可能会发生更改, 在许多情况下, 事
   
 ## <a name="is-my-data-safe"></a>我的数据是否安全？
 
-我们非常小心, 帮助确保我们保护业务运营。 存储在 cdn 中的特定于客户的数据在传输和 rest 中进行加密, 并受与 CDN 中存储的数据相同的文件级别权限的保护。
+我们非常小心, 帮助确保我们保护业务运营。 存储在 cdn 中的客户特定数据在传输和静止时都进行加密。
 
 CDN 提供程序可能具有与 Office 365 信任中心所述的承诺不同的隐私和合规性标准。 通过 CDN 服务缓存的数据可能不符合 Microsoft 数据处理术语 (DPT), 并且可能位于 Office 365 信任中心合规性边界之外。
 
@@ -89,7 +89,7 @@ CDN 提供程序可能具有与 Office 365 信任中心所述的承诺不同的�
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>如何使用所有这些第三方服务保护我的网络？
 
-利用广泛的合作伙伴服务集, office 365 可以在使用 office 365 时扩展和满足可用性要求, 并增强用户体验。 第三方服务 Office 365 利用了证书吊销列表, 它们包括:如 crl.microsoft.com 或 sa.symcb.com, 以及 cdn;例如 r3.res.outlook.com。 每个 CDN FQDN Office 365 使用的是 office 365 的自定义 fqdn, 如果你在 office 365 的请求中发送到 fqdn, 则可以确保我们控制该位置的 fqdn 和基础内容。
+利用广泛的合作伙伴服务集, office 365 可以在使用 office 365 时扩展和满足可用性要求, 并增强用户体验。 第三方服务 Office 365 利用了证书吊销列表, 它们包括:如 crl.microsoft.com 或 sa.symcb.com, 以及 cdn;例如 r3.res.outlook.com。 每个 CDN FQDN Office 365 使用是 Office 365 的自定义 fqdn。 如果您是在 Office 365 请求时发送到 FQDN, 则可以确保 CDN 提供程序控制该位置的 fqdn 和基础内容。
   
 对于仍要将来自第三方的请求与 Microsoft 或 Office 365 数据中心的请求隔离的客户, 我们编写了有关[管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)的指南。
   
