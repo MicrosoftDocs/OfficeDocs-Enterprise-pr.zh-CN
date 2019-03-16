@@ -1,9 +1,9 @@
 ---
-title: 如何请求数据移动
+title: 如何请求移动数据
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -11,113 +11,112 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
-description: 现有的 Office 365 客户需要让其参与的 Office 365 服务移动到其新的地理位置的客户数据之前其国家/地区的最终期限提交一个请求。
-ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
-ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
+description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求, 以便将参与 Office 365 服务的客户数据移到其新地理位置。
+ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604503"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650075"
 ---
-# <a name="how-to-request-your-data-move"></a>如何请求数据移动
+# <a name="how-to-request-your-data-move"></a>如何请求移动数据
 
 > [!NOTE]
-> 此页上的信息仅适用于新的数据中心中其地理启动之前现有 Office 365 租户的客户。 
+> 此页面上的信息仅适用于在其 geo 中的新数据中心启动前拥有现有 Office 365 租户的客户。 
   
-现有的 Office 365 客户需要让其参与的 Office 365 服务移动到其新的地理位置的客户数据之前其国家/地区的最终期限提交一个请求。 
+现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求, 以便将参与 Office 365 服务的客户数据移到其新地理位置。 
   
-我们不能接受请求中每个地理位置期限结束之后移动。 
+在每个地理位置的最后期限后, 我们无法接受要移动的请求。 
   
-## <a name="when-can-i-request-a-move"></a>何时请求移动？
+## <a name="when-can-i-request-a-move"></a>何时可以请求移动？
 
-|**客户与帐单中的地址**|**请求时间段开始**|**请求最终期限**|
+|**中付费地址的客户**|**请求时间段开始**|**请求截止日期**|
 |:-----|:-----|:-----|
-|日本  <br/> |2016 年 8 月 1日，  <br/> |2016 年 10 月 31日，  <br/> |
-|澳大利亚，新西兰，斐济  <br/> |2016 年 8 月 1日，  <br/> |2016 年 10 月 31日，  <br/> |
-|印度  <br/> |2016 年 8 月 1日，  <br/> |2016 年 10 月 31日，  <br/> |
-|加拿大  <br/> |2016 年 8 月 1日，  <br/> |2016 年 10 月 31日，  <br/> |
-|英国  <br/> |2017 年 3 月 15 日  <br/> |2017 年 9 月 15 日  <br/> |
-|韩国  <br/> |2017 年 5 月 1 日  <br/> |2017 年 10 月 31 日  <br/> |
-|法国  <br/> |2018 年 3 月 14 日  <br/> |2018 年 9 月 15 日  <br/> |
+|日本  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
+|澳大利亚、新西兰、斐济  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
+|印度  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
+|加拿大  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
+|United Kingdom  <br/> |2017年3月15日  <br/> |2017年9月15日  <br/> |
+|韩国  <br/> |5月1日, 2017  <br/> |2017年10月31日  <br/> |
+|法国  <br/> |2018年3月14日  <br/> |2018年9月15日  <br/> |
+|阿拉伯联合酋长国  <br/> |相同  <br/> |相同  <br/> |
+|南非  <br/> |相同  <br/> |相同  <br/> |
    
-## <a name="how-to-request-a-move"></a>如何移动请求
+## <a name="how-to-request-a-move"></a>如何请求移动
 
-> [!NOTE]
-> 在预览的 Office 365 管理中心，此选项才可用。有关如何访问此，请参阅[Office 365 业务-管理员技术](https://aka.ms/365admin)的说明。移动所有请求都需要通过 Office 365 管理中心内完成。支持不能为您选择或覆盖您所选内容。 
+符合条件的客户将在其[Office 365 管理中心](https://aka.ms/365admin)中看到一个页面, 这将允许他们请求将其核心客户数据移动到其新的数据中心区域。  
   
-合格的客户将看到其[Office 365 管理中心](https://aka.ms/365admin)，这将允许其请求具有核心客户数据移动到其新的数据中心区域中的页面。  
-  
-若要访问 Office 365 管理中心中，在左侧导航窗格中的页展开**设置**，然后单击**组织配置文件**。
+若要访问 Office 365 管理中心中的页面, 请在左侧的导航窗格中, 展开 "**设置**", 然后单击 "**组织配置文件**"。
   
 ![将具有组织配置文件的设置菜单突出显示](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
-在**组织配置文件**页上，向下滚动**数据住所选项**部分。 
+在 "**组织配置文件**" 页上, 向下滚动到 "**数据常驻选项**" 部分。 
   
 ![数据派驻卡](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
-**您可能不会看到此部分中，如果以下项之一**：
-- 您的租户不合格移动计划。 
-- 您的所有数据已位于新的地理位置 （请参阅页的数据位置部分）。 
+**如果应用了以下情况之一, 则可能不会看到此部分**:
+- 你的租户不符合移动计划。 
+- 您的所有数据都已位于 "新建地理位置 (请参阅" 页面的 "数据位置" 部分)。 
   
 > [!IMPORTANT]
-> **您即将进行重要选择为您的组织。确认后下面的选项，您无法撤消它。支持不能反向以及此决定。**
+> **你将为你的组织做出重要选择。确认下面的选项后, 将无法撤消。支持也无法撤消此决定。**
   
-如果您的组织有数据住所要求，您需要申请移动，请单击**编辑**顶部右侧的部分。新的部分将显示在解释移动程序的详细信息屏幕的右侧。选择切换按钮旁边显示**是，我的组织具有数据住所要求**的文本。然后，单击**保存**。
+如果您的组织具有数据驻留要求, 而您需要请求移动, 请单击该部分右上部的 "**编辑**"。 屏幕右侧将显示一个新分区, 说明移动程序的详细信息。 选择显示 "是" 的文本旁边的切换按钮 **, 我的组织具有数据驻留要求**。 然后，单击“保存”****。
   
 ![数据中心选择操作屏幕](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
   
-您应看到的文本**数据住所选项**部分更改，以指示在**您的组织已请求将其核心客户数据。** 您还必须在邮件中心确认消息。这将确定已成功请求移动。 
+您应该会看到 "**数据驻留选项**" 部分中的文本发生更改, 以指示**您的组织已请求移动其核心客户数据。** 您的邮件中心中也会有一条确认消息。 这将确认您是否已成功请求移动。 
 
 
   
-## <a name="what-happens-after-requesting-a-move"></a>请求移动后会发生什么情况？
+## <a name="what-happens-after-requesting-a-move"></a>请求移动后会发生什么？
 
-后请求移动，我们将计划将您尽快我们操作限制允许移动。由于不可预测的许多约束性质，我们不能共享特定日期或移动的时间范围。移动完成后，您将看到一个通知。
+在请求移动后, 我们将计划在运营限制允许的情况下尽快移动你。 由于许多约束的不可预知的性质, 我们无法共享特定的移动日期或时间范围。 在移动完成后, 你将看到一条通知。
   
-移动可能需要从您的国家/地区完成的请求截止时间最多 24 个月。
+在您的国家/地区的请求期限内, 可能需要花费最长24个月的时间才能完成移动。
   
-请求移动之后, 就不能更改您的选择，在我们开始后所做的请求处理，移。
+请求移动后, 不能更改所选内容, 因为我们在发出请求后开始处理移动。
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft 团队还不支持客户的内容进行 rest 从区域中的 Microsoft 团队的数据住所位于中-国家/地区数据中心到的迁移。 因此，只有新客户都会将所有其数据存储中的新区域的 Microsoft 团队其中支持数据住所的国家/地区内。 了解有关 Office 365 在您公司所在的数据住所[其中是位于数据？](https://products.office.com/where-is-your-data-located)   
+microsoft 团队尚不支持将 rest 中的客户内容从区域迁移到国家/地区数据中心, 在这些数据中心中, 可以使用 microsoft 团队的数据派驻服务。  因此, 在 Microsoft 团队支持数据驻留的新区域中, 只有新客户的所有数据都存储在国家/地区。  详细了解 Office 365 数据驻留在你的公司位置, 你的[数据位于何处？](https://products.office.com/where-is-your-data-located)   
 
-## <a name="optional-actions-before-you-request-a-move"></a>可选操作之前请求移动
+## <a name="optional-actions-before-you-request-a-move"></a>请求移动前的可选操作
 
-执行以下步骤根据。
+根据需要执行以下步骤。
   
-### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>如果您使用基于 IP 的防火墙，则添加允许为新的 IP 地址的规则
+### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>如果使用基于 IP 的防火墙, 请为新 IP 地址添加允许规则
 
-我们建议使用 DNS 筛选防火墙而不是 IP 地址。没有新所需的 DNS 条目。
+我们建议使用防火墙而不是 IP 地址的 DNS 筛选。 不需要任何新的 DNS 条目。
   
-如果您使用基于 IP 的防火墙的 Internet 连接，您必须添加允许的目标数据中心按地理新的 IP 地址的规则。除了新服务器的新数据中心 geo 的 IP 地址将持续添加到[Office 365 Url 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkId=229631)。
+如果使用基于 IP 的防火墙进行 Internet 连接, 则必须为目标数据中心地理位置的新 ip 地址添加允许规则。 新的数据中心信息的 IP 地址除了新服务器外, 还会连续添加到[Office 365 url 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkId=229631)。
   
-有关如何添加防火墙文档允许的咨询规则 （也称为白。）
+有关如何添加允许规则 (也称为 "白名单") 的信息, 请参阅防火墙文档。
   
-后添加 IP 地址，您可能希望测试连接到新的数据中心按地理。若要执行此操作，建议为新的数据中心按地理可创建[新的 30 天免费试用](https://go.microsoft.com/fwlink/?LinkId=522463)租户。 
+添加 IP 地址后, 您可能需要测试与新数据中心地理位置的连接。 为此, 我们建议您在新的数据中心 geo 推出后立即创建一个[新的免费试用版](https://go.microsoft.com/fwlink/?LinkId=522463)租户。 
   
-### <a name="test-using-a-new-tenant"></a>测试使用一个新的租户
+### <a name="test-using-a-new-tenant"></a>使用新租户进行测试
 
-如果您想要测试连接移动之前，您可以新数据中心按地理可用后, 设置[新的免费 30 天试用版租户](https://go.microsoft.com/fwlink/?LinkId=522463)和使用它来体验中新数据中心按地理托管的 Office 365。 
+如果您想要在移动之前测试连接, 可以在新的数据中心 geo 可用后设置一个[新的免费30天试用租户](https://go.microsoft.com/fwlink/?LinkId=522463), 并使用它来体验新的数据中心地理位置承载的 Office 365。 
   
-不能使用您现有的租户组合试用租户：
+试用租户无法与现有租户结合使用:
   
-- 用户必须为其测试使用单独的试用帐户。
+- 用户必须使用单独的试用帐户进行测试。
     
-- 没有任何办法租户之间移动数据。
+- 没有办法在租户之间移动数据。
     
-### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>通知用户更新移动设备上的过期 Exchange 设置
+### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>通知用户在移动设备上更新过期的 Exchange 设置
 
-如果用户具有与 Exchange 服务器设置为**m.outlook.com**或**podxxxxx.outlook.com**移动设备，我们建议他们就改为**outlook.office365.com**，向上移动设备同步[组中的说明使用您的帐户](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)。
+如果用户具有将 Exchange Server 设置为 " **m.outlook.com** " 或 " **podxxxxx.outlook.com**" 的移动设备, 则建议他们切换到**outlook.office365.com**, 按照设置要[同步的移动设备中的说明进行操作。帐户](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)。
 
 ## <a name="related-topics"></a>相关主题
 
-[将核心数据移动到新的 Office 365 数据中心 geo](moving-data-to-new-datacenter-geos.md)
+[将核心数据移动到新的 Office 365 数据中心信息](moving-data-to-new-datacenter-geos.md)
 
-[数据移动常见问题解答](data-move-faq.md)
+[数据移动常规常见问题](data-move-faq.md)
 
-[Microsoft Dynamics CRM online 的新数据中心 geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[适用于 Microsoft Dynamics CRM Online 的新数据中心信息](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Azure 服务区域](https://azure.microsoft.com/en-us/regions/)
+[按区域的 Azure 服务](https://azure.microsoft.com/en-us/regions/)
   
 
