@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 摘要：使用本测试实验室指南创建包含所有 Microsoft 云产品/服务的开发/测试环境。
-ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897145"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573656"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft 云开发/测试环境
 
@@ -59,7 +59,7 @@ ms.locfileid: "25897145"
 
 在此阶段，注册 EMS 试用订阅，并将其作为 Office 365 试用订阅添加到同一组织。
   
-1. 通过台式计算机或 CLIENT1 上的浏览器，使用全局管理员帐户的凭据登录 Office 365 门户（地址为 [https://portal.office.com](https://portal.office.com)）。
+1. 通过台式计算机或 CLIENT1 上的浏览器，使用全局管理员帐户的凭据登录 Office 365 门户（地址为 [https://www.office.com](https://www.office.com)）。
     
 2. 单击“管理员”磁贴****。
     
@@ -102,11 +102,11 @@ ms.locfileid: "25897145"
 
 在此阶段，注册 Dynamics 365 试用订阅，并将其作为 Office 365 和 EMS 试用订阅添加到同一组织。
   
-1. 通过台式计算机或 CLIENT1 上的浏览器，使用全局管理员帐户的凭据登录 Office 365 门户（地址为 [https://portal.office.com](https://portal.office.com)）。
+1. 通过台式计算机或 CLIENT1 上的浏览器，使用全局管理员帐户的凭据登录 Office 365 门户（地址为 [https://www.office.com](https://www.office.com)）。
     
 2. 单击“管理员”磁贴****。
     
-3. 在“Office 365 管理中心”标签页上的左侧导航栏中，单击“帐单”>“购买服务”********。
+3. 在“**Microsoft 365 管理中心**”选项卡上的左侧导航栏中，单击“**计费 > 购买服务**”。
     
 4. 在“购买服务”页上，找到“Dynamics 365 计划 1 企业版”项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”************。
     
@@ -119,7 +119,7 @@ ms.locfileid: "25897145"
   
 使用以下步骤将 Dynamics 365 许可证分配给全局管理员、用户 2 和用户 3 的帐户并使之成为系统管理员。
   
-1. 在“Office 365 管理中心”选项卡上，单击“用户”>“活动用户”********。
+1. 在“**Microsoft 365 管理中心**”选项卡上，单击“**用户 > 活动用户**”。
     
 2. 在活动用户列表中，单击全局管理员帐户，然后针对“产品许可证”**** 单击“编辑”****。
     
@@ -127,7 +127,7 @@ ms.locfileid: "25897145"
     
 4. 为用户 2 和用户 3 的帐户执行步骤 2 和步骤 3。
     
-5. 关闭“Office 管理中心”**** 选项卡。
+5. 关闭 **Microsoft 365 管理员中心**选项卡。
     
 使用以下步骤将用户 2 和用户 3 的帐户配置为 Dynamics 365 系统管理员。
   

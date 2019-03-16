@@ -1,9 +1,9 @@
 ---
-title: 高可用性联合身份验证阶段 1 配置 Azure
+title: 高可用性联合身份验证阶段1配置 Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,25 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 摘要：配置 Microsoft Azure 基础结构以托管 Office 365 的高可用性联合身份验证。
-ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: '摘要: 配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。'
+ms.openlocfilehash: a57085ef066aeaf14235b8901c045911ef97ceed
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897475"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650155"
 ---
-# <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1:配置 Azure
+# <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1: 配置 Azure
 
- **摘要：** 配置 Microsoft Azure 基础结构以托管 Office 365 的高可用性联合身份验证。
+ **摘要:** 配置 Microsoft Azure 基础结构以托管 Office 365 的高可用性联合身份验证。
   
-在此阶段中，您将创建的资源组、 阶段 2、 3 和 4 中将承载虚拟机的 Azure 中的虚拟网络 (VNet) 和可用性集。您必须完成之后才能接着到此阶段[高可用性联合身份验证第 2 阶段： 配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。为所有阶段，请参阅[在 Azure 中的 Office 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
+在此阶段中, 将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集, 这些集将承载第2阶段、3步和第4阶段的虚拟机。 必须先完成这一阶段, 然后才能继续进行[高可用性联合身份验证阶段 2: 配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
   
-Azure 必须设置与这些基本组件：
+必须使用以下基本组件预配 Azure:
   
 - 资源组
     
-- 使用子网托管 Azure 虚拟机的跨界 Azure 虚拟网络 (VNet)
+- 包含用于托管 Azure 虚拟机的子网的跨界 azure 虚拟网络 (VNet)
     
 - 执行子网隔离的网络安全组
     
@@ -37,11 +37,11 @@ Azure 必须设置与这些基本组件：
     
 ## <a name="configure-azure-components"></a>配置 Azure 组件
 
-在开始配置 Azure 组件之前，请填充下表中。为了帮助您配置 Azure 的过程，打印本节并记下所需的信息或复制到文档的本部分并填写。VNet 的设置，填写表 V。
+开始配置 Azure 组件之前，请填写下表。 为了帮助你完成配置 Azure 的过程，请打印此部分并记下所需的信息，或将此部分复制到文档中进行填写。 对于 VNet 的设置, 请填写表 V。
   
-|**项**|**配置设置**|**说明**|**值**|
+|**Item**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称 (示例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -51,22 +51,22 @@ Azure 必须设置与这些基本组件：
   
 接下来，填写针对此解决方案的子网的表 S。所有地址空间应为无类别域际路由选择 (CIDR) 格式，也称为网络前缀格式。例如，10.24.64.0/20。
   
-对于前三个子网，请指定名称和基于虚拟网络地址空间的单个 IP 地址空间。对于网关子网，请通过以下过程为 Azure 网关子网确定 27 位地址空间（带有 /27 前缀长度）：
+对于前三个子网, 请根据虚拟网络地址空间指定一个名称和一个 IP 地址空间。 对于网关子网, 请使用以下命令确定 Azure 网关子网的27位地址空间 (带 a/27 前缀长度):
   
 1. 将 VNet 地址空间的可变位设置为 1，直到用于网关子网的位，然后将剩余位设置为 0。
     
 2. 将生成位转换为十进制并表示为一个地址空间，其中将前缀长度设置为网关子网的大小。
     
-PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计算，请参阅[Azure 网关子网的地址空间计算器](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)。
+有关为您执行此计算的 PowerShell 命令块和 c # 或 Python 控制台应用程序, 请参阅[Azure 网关子网的地址空间计算器](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)。
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
-|**项**|**子网名称**|**子网地址空间**|**用途**|
+|**Item**|**子网名称**|**子网地址空间**|**目的**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) 域控制器和目录同步服务器虚拟机 (VM) 使用的子网。  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM 使用的子网。  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理 VM 使用的子网。  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 网关 VM 使用的子网。  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) 域控制器和目录同步服务器虚拟机 (vm) 使用的子网。  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS vm 使用的子网。  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |web 应用程序代理虚拟机使用的子网。  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 网关虚拟机使用的子网。  <br/> |
    
  **表 S：虚拟网络中的子网**
   
@@ -76,25 +76,25 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |目录同步服务器的静态 IP 地址  <br/> |在表 S 的第 1 项中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |AD FS 服务器内部负载均衡器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |DirSync 服务器的静态 IP 地址  <br/> |在表 S 的项目1中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |AD FS 服务器的内部负载平衡器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |5.  <br/> |第一个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |6.  <br/> |第二个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |第一个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |第二个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |第一个 web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |第二个 web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 I：虚拟网络中的静态 IP 地址**
   
-对于本地网络中你最初在虚拟网络中设置域控制器时想要使用的两个域名系统 (DNS) 服务器，请填写表 D。与 IT 部门协作，以确定该列表。
+对于您希望在最初设置虚拟网络中的域控制器时使用的本地网络中的两个域名系统 (DNS) 服务器, 请填写表 D。与 IT 部门合作以确定此列表。
   
-|**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
+|**Item**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 D：本地 DNS 服务器**
   
-若要跨站点到站点 VPN 连接路由到您的组织的网络从跨界网络数据包，必须配置虚拟网络与包含列表的地址空间 （以 CIDR 表示） 的访问所有本地网络贵组织的本地网络上的位置。定义您的本地网络的地址空间的列表必须是唯一的并且必须使用用于其他虚拟网络或其他本地网络地址空间不重叠。
+若要通过站点到站点 VPN 连接将数据包从跨界网络路由到组织网络, 您必须为虚拟网络配置具有所有可访问的地址空间列表 (在 CIDR 表示法中) 的本地网络。组织的本地网络上的位置。 定义本地网络的地址空间列表必须是唯一的, 并且不得与用于其他虚拟网络或其他本地网络的地址空间重叠。
   
 对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
@@ -106,43 +106,45 @@ PowerShell 命令块和 C# 或 Python 控制台应用程序，为您执行此计
    
  **表 L：本地网络的地址前缀**
   
-现在让我们开始构建 Azure 基础结构来托管你的 Office 365 联合身份验证。
+现在, 让我们开始构建 Azure 基础结构以托管 Office 365 的联合身份验证。
   
 > [!NOTE]
-> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Azure PowerShell cmdlet 使用入门](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/) 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
   
 首先，启动 Azure PowerShell 提示符并登录到你的帐户。
   
 ```
-Login-AzureRMAccount
+Connect-AzAccount
 ```
 
+<!--
 > [!TIP]
-> 对于所有这篇文章并生成即点即已准备 PowerShell 命令块，根据您的自定义设置 Microsoft Excel 配置工作簿中的 PowerShell 命令的文本文件，请参阅在 Azure 中的[for Office 365 联合身份验证部署工具包](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)。 
+> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+-->
   
 使用以下命令获得订阅名称。
   
 ```
-Get-AzureRMSubscription | Sort Name | Select Name
+Get-AzSubscription | Sort Name | Select Name
 ```
 
-为 Azure PowerShell 旧版本，而是使用此命令。
+对于较旧版本的 Azure PowerShell, 请改为使用此命令。
   
 ```
-Get-AzureRMSubscription | Sort Name | Select SubscriptionName
+Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-设置 Azure 订阅。使用正确的名称替换引号内的所有内容（包括 \< 和 > 字符）。
+设置 Azure 订阅。 使用正确的名称替换引号内的\<所有内容, 包括和 > 字符。
   
 ```
 $subscr="<subscription name>"
-Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
+Select-AzSubscription -SubscriptionName $subscrName -Current
 ```
 
-接下来，创建新的资源组。要确定唯一的一组资源组名称，请使用此命令列出现有的资源组。
+接下来, 创建新的资源组。 要确定唯一的一组资源组名称，请使用此命令列出现有的资源组。
   
 ```
-Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 为一组唯一资源组名称填写下表。
@@ -161,16 +163,16 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 $locName="<an Azure location, such as West US>"
 $rgName="<Table R - Item 1 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 2 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 3 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 4 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-接下来，请创建 Azure 虚拟网络及其子网。
+接下来, 创建 Azure 虚拟网络及其子网。
   
 ```
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -179,43 +181,43 @@ $vnetName="<Table V - Item 1 - Value column>"
 $vnetAddrPrefix="<Table V - Item 4 - Value column>"
 $dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
-$locShortName=(Get-AzureRmResourceGroup -Name $rgName).Location
+$locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
 # Create the subnets
 $subnet1Name="<Table S - Item 1 - Subnet name column>"
 $subnet1Prefix="<Table S - Item 1 - Subnet address space column>"
-$subnet1=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet1Name -AddressPrefix $subnet1Prefix
+$subnet1=New-AzVirtualNetworkSubnetConfig -Name $subnet1Name -AddressPrefix $subnet1Prefix
 $subnet2Name="<Table S - Item 2 - Subnet name column>"
 $subnet2Prefix="<Table S - Item 2 - Subnet address space column>"
-$subnet2=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet2Name -AddressPrefix $subnet2Prefix
+$subnet2=New-AzVirtualNetworkSubnetConfig -Name $subnet2Name -AddressPrefix $subnet2Prefix
 $subnet3Name="<Table S - Item 3 - Subnet name column>"
 $subnet3Prefix="<Table S - Item 3 - Subnet address space column>"
-$subnet3=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet3Name -AddressPrefix $subnet3Prefix
+$subnet3=New-AzVirtualNetworkSubnetConfig -Name $subnet3Name -AddressPrefix $subnet3Prefix
 $gwSubnet4Prefix="<Table S - Item 4 - Subnet address space column>"
-$gwSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnet4Prefix
+$gwSubnet=New-AzVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnet4Prefix
 
 # Create the virtual network
-New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gwSubnet,$subnet1,$subnet2,$subnet3 -DNSServer $dnsServers
+New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gwSubnet,$subnet1,$subnet2,$subnet3 -DNSServer $dnsServers
 
 ```
 
-接下来，您创建网络具有虚拟机的每个子网的安全组。若要执行子网隔离，您可以添加流量允许或拒绝网络安全组的子网的特定类型的规则。
+接下来, 为每个具有虚拟机的子网创建网络安全组。 若要执行子网隔离，可以添加规则，指定允许或拒绝进入子网的网络安全组的特定类型流量。
   
 ```
 # Create network security groups
-$vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
+$vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 
-New-AzureRMNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet1Name -AddressPrefix $subnet1Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet1Name -AddressPrefix $subnet1Prefix -NetworkSecurityGroup $nsg
 
-New-AzureRMNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -AddressPrefix $subnet2Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -AddressPrefix $subnet2Prefix -NetworkSecurityGroup $nsg
 
-New-AzureRMNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
 ```
 
 下一步，请使用这些命令来创建站点间 VPN 连接的网关。
@@ -224,40 +226,40 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
-$subnet=Get-AzureRmVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "GatewaySubnet"
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$subnet=Get-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "GatewaySubnet"
 
 # Attach a virtual network gateway to a public IP address and the gateway subnet
 $publicGatewayVipName="PublicIPAddress"
 $vnetGatewayIpConfigName="PublicIPConfig"
-New-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
-$publicGatewayVip=Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
-$vnetGatewayIpConfig=New-AzureRMVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -Subnet $subnet
+New-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+$publicGatewayVip=Get-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
+$vnetGatewayIpConfig=New-AzVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -Subnet $subnet
 
 # Create the Azure gateway
 $vnetGatewayName="AzureGateway"
-$vnetGateway=New-AzureRMVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
+$vnetGateway=New-AzVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
 
 # Create the gateway for the local network
 $localGatewayName="LocalNetGateway"
 $localGatewayIP="<Table V - Item 3 - Value column>"
 $localNetworkPrefix=@( <comma-separated, double-quote enclosed list of the local network address prefixes from Table L, example: "10.1.0.0/24", "10.2.0.0/24"> )
-$localGateway=New-AzureRMLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
+$localGateway=New-AzLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
 
 # Define the Azure virtual network VPN connection
 $vnetConnectionName="S2SConnection"
 $vnetConnectionKey="<Table V - Item 5 - Value column>"
-$vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
+$vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
 
 ```
 
 > [!NOTE]
-> 联合身份验证的单个用户不依赖的任何本地资源。但是，如果此站点到站点 VPN 连接变得不可用，VNet 中的域控制器不会收到对用户帐户和组在内部部署 Windows Server AD 中所做的更新。若要确保这不会发生，可以为站点到站点 VPN 连接配置高可用性。有关详细信息，请参阅[高度可用跨内部部署和 VNet 到 VNet 连接](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> 各个用户的联合身份验证不依赖任何本地资源。 但是, 如果此站点到站点 VPN 连接不可用, 则 VNet 中的域控制器将不会收到在内部部署 Windows Server AD 中对用户帐户和组所做的更新。 若要确保不会发生这种情况, 可以为站点到站点 VPN 连接配置高可用性。 有关详细信息，请参阅[高可用性跨界连接与 VNet 到 VNet 连接](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 接下来，从此命令的显示内容中，记录用于虚拟网络的 Azure VPN 网关的公用 IPv4 地址。
   
 ```
-Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
+Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
 接下来，请将本地 VPN 设备配置为连接到 Azure VPN 网关。有关详细信息，请参阅[配置 VPN 设备](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
@@ -270,9 +272,9 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
     
 接下来，请确保虚拟网络的地址空间是可以从本地网络访问。这通常是通过以下操作完成：将对应于虚拟网络地址空间的路由添加到 VPN 设备中，然后将该路由公布到组织网络中其余的路由基础结构。与 IT 部门协作，以确定如何完成上述操作。
   
-接下来，定义三个可用性集的名称。填写表 A。 
+接下来, 定义三个可用性集的名称。 填写表 A。 
   
-|**项**|**用途**|**可用性集的名称**|
+|**项目**|**用途**|**可用性集的名称**|
 |:-----|:-----|:-----|
 |1.  <br/> |域控制器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS 服务器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -282,30 +284,30 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 在第 2、3 和 4 阶段中创建虚拟机时，将需要这些名称。
   
-通过这些 Azure PowerShell 命令创建新的可用性集。
+使用这些 Azure PowerShell 命令创建新的可用性集。
   
 ```
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 2 - Resource group name column>"
 $avName="<Table A - Item 2 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 3 - Resource group name column>"
 $avName="<Table A - Item 3 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 ```
 
 这是该阶段成功完成后生成的配置。
   
-**阶段 1：用于 Office 365 高可用性联合身份验证的 Azure 基础结构**
+**第1阶段: 适用于 Office 365 的高可用性联合身份验证的 Azure 基础结构**
 
-![阶段 1：在包含 Azure 基础结构的 Azure 中配置高可用性 Office 365 联合身份验证](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![azure 基础结构在 azure 中实现高可用性 Office 365 联合身份验证的第1阶段](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>后续步骤
 
-使用 [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 继续配置此工作负载。
+使用[高可用性联合身份验证阶段 2: 配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)以继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 
