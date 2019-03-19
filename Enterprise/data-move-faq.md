@@ -1,5 +1,5 @@
 ---
-title: 数据移动常见问题解答
+title: 数据移动常规常见问题
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -11,150 +11,148 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
-description: 以下是有关将核心数据移动到新的数据中心按地理的常见问题的解答。
-ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
+ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839590"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "30665235"
 ---
-# <a name="data-move-general-faq"></a><span data-ttu-id="5adde-103">数据移动常见问题解答</span><span class="sxs-lookup"><span data-stu-id="5adde-103">Data move general FAQ</span></span>
+# <a name="data-move-general-faq"></a><span data-ttu-id="8f8fa-103">数据移动常规常见问题</span><span class="sxs-lookup"><span data-stu-id="8f8fa-103">Data move general FAQ</span></span>
 
-<span data-ttu-id="5adde-104">以下是有关将核心数据移动到新的数据中心按地理的常见问题的解答。</span><span class="sxs-lookup"><span data-stu-id="5adde-104">Here are answers to general questions about moving core data to a new datacenter geo.</span></span>
+<span data-ttu-id="8f8fa-104">以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-104">Here are answers to general questions about moving core data to a new datacenter geo.</span></span>
   
- <span data-ttu-id="5adde-105">**问： 如何确保我客户数据是在移动过程中的安全和我不经历停机时间？**</span><span class="sxs-lookup"><span data-stu-id="5adde-105">**Q. How do you make sure my customer data is safe during the move and that I won't experience downtime?**</span></span>
+## <a name="what-customers-are-eligible-to-request-a-move"></a><span data-ttu-id="8f8fa-105">哪些客户有资格请求移动？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-105">What customers are eligible to request a move?</span></span>
   
-<span data-ttu-id="5adde-p101">答： 数据移动是对最终用户影响最小的后端服务操作。在[过程中和数据移动后](during-and-after-your-data-move.md)列出了可能会影响的功能。我们遵守[Microsoft Online Services 服务级别协议 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)的可用性，客户需要准备或在移动过程中监视的不存在。</span><span class="sxs-lookup"><span data-stu-id="5adde-p101">A. Data moves are a back-end service operation with minimal impact to end-users. Features that can be impacted are listed in [During and after your data move](during-and-after-your-data-move.md). We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move.</span></span> 
-  
-<span data-ttu-id="5adde-p102">所有 Office 365 服务在数据中心中, 都运行的相同版本，以便您可以确保一致的功能。在整个过程完全支持您的服务。</span><span class="sxs-lookup"><span data-stu-id="5adde-p102">All Office 365 services run the same versions in the datacenters, so you can be assured of consistent functionality. Your service is fully supported throughout the process.</span></span>
-  
- <span data-ttu-id="5adde-112">**问： 什么是具有位于不同 geo 的不同服务的影响？**</span><span class="sxs-lookup"><span data-stu-id="5adde-112">**Q. What is the impact of having different services located in different geos?**</span></span>
-  
-<span data-ttu-id="5adde-p103">答： 对于某些现有客户和移动过程的中间的客户，Office 365 服务的一些可能会出现在不同 geo。我们的服务运行独立于每个其他并如果这种情况，则不会影响用户。</span><span class="sxs-lookup"><span data-stu-id="5adde-p103">A. For some existing customers and customers in the middle of the move process, some of the Office 365 services may be located in different geos. Our services run independently of each other and there is no user impact if this is the case.</span></span>
-  
- <span data-ttu-id="5adde-116">**问： 将新的 Office 365 客户自动设置新的数据中心 geo 中？**</span><span class="sxs-lookup"><span data-stu-id="5adde-116">**Q. Will new Office 365 customers be automatically provisioned in the new datacenter geos?**</span></span>
-  
-<span data-ttu-id="5adde-p104">答: 是。新的数据中心按地理可用后，新的 Office 365 的业务用户在注册期间选择作为其国家/地区的国家/地区合格的新地理位置将具有中新数据中心按地理承载其核心数据。</span><span class="sxs-lookup"><span data-stu-id="5adde-p104">A. Yes. Once a new datacenter geo is available, new Office 365 for business customers who select a country eligible for the new geo as their country during sign-up will have their core data hosted in the new datacenter geo.</span></span>
-  
- <span data-ttu-id="5adde-120">**问： 在哪里是我的数据是位于？**</span><span class="sxs-lookup"><span data-stu-id="5adde-120">**Q. Where is my data is located?**</span></span>
-  
-<span data-ttu-id="5adde-p105">我们将发布的数据中心 geo 和数据中心，位置上的[Office 365 交互式数据中心映射](https://o365datacentermap.azurewebsites.net)的客户数据的位置。从 8 月 1 日，您将能够验证您的客户数据在通过数据位置部分下您的组织配置文件在 Office 365 管理中心中的其余部分的位置。</span><span class="sxs-lookup"><span data-stu-id="5adde-p105">We publish the location of datacenter geos, datacenters, and location of customer data on the [ Office 365 interactive datacenter maps ](https://o365datacentermap.azurewebsites.net). As of August 1, you will be able to verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Office 365 Admin Center.</span></span>
-  
- <span data-ttu-id="5adde-123">**问： 将现有 Office 365 客户被移动到新的数据中心 geo？**</span><span class="sxs-lookup"><span data-stu-id="5adde-123">**Q. Will existing Office 365 customers be moved to the new datacenter geos?**</span></span>
-  
-<span data-ttu-id="5adde-p106">答： 合格的 Office 365 客户可以请求已移至新 geo 其核心数据。客户需要之前及其地理位置的截止时间才能参加提交一个请求。</span><span class="sxs-lookup"><span data-stu-id="5adde-p106">A. Eligible Office 365 customers can request to have their core data moved to the new geos. Customers will need to submit a request before the deadline for their geo in order to participate.</span></span> 
-  
- <span data-ttu-id="5adde-127">**问： 什么客户有资格请求移动？**</span><span class="sxs-lookup"><span data-stu-id="5adde-127">**Q. What customers are eligible to request a move?**</span></span>
-  
-<span data-ttu-id="5adde-p107">答： 现有的 Office 365 商业客户选择国家/地区合格的新数据中心按地理都将能够请求移动。</span><span class="sxs-lookup"><span data-stu-id="5adde-p107">A. Existing Office 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move.</span></span> 
-  
- <span data-ttu-id="5adde-130">**问： 何时都将能够请求移动？**</span><span class="sxs-lookup"><span data-stu-id="5adde-130">**Q. When will I be able to request a move?**</span></span>
-  
-<span data-ttu-id="5adde-p108">A.将[如何请求数据移动](request-your-data-move.md)上宣布请求期限。</span><span class="sxs-lookup"><span data-stu-id="5adde-p108">A. The request period will be announced on the [How to request your data move](request-your-data-move.md) page.</span></span> 
-  
- <span data-ttu-id="5adde-133">**问： 如何可以请求移动？**</span><span class="sxs-lookup"><span data-stu-id="5adde-133">**Q. How can I request to be moved?**</span></span>
-  
-<span data-ttu-id="5adde-p109">答： 合格的客户将看到其[Office 365 管理门户](https://portal.office.com/)中的页面。请有关如何移动请求的说明，参阅[如何请求数据移动](request-your-data-move.md)。</span><span class="sxs-lookup"><span data-stu-id="5adde-p109">A. Eligible customers will see a page in their [Office 365 Admin Portal](https://portal.office.com/). Please see [How to request your data move](request-your-data-move.md) for instructions on how to request a move.</span></span> 
-  
- <span data-ttu-id="5adde-137">**问： 是否可以更改请求移动之后我选择？**</span><span class="sxs-lookup"><span data-stu-id="5adde-137">**Q. Can I change my selection after requesting a move?**</span></span>
-  
-<span data-ttu-id="5adde-p110">答： 这不是我们可以您删除过程后提交您的请求。</span><span class="sxs-lookup"><span data-stu-id="5adde-p110">A. It is not possible for us to remove you from the process after you submit your request.</span></span>
-  
- <span data-ttu-id="5adde-140">**问： 什么情况，我不请求在截止日期前的移动？**</span><span class="sxs-lookup"><span data-stu-id="5adde-140">**Q. What happens if I do not request a move before the deadline?**</span></span>
-  
-<span data-ttu-id="5adde-p111">答： 我们不能接受请求中每个地理位置期限结束之后移动。</span><span class="sxs-lookup"><span data-stu-id="5adde-p111">A. We are unable to accept requests to be moved after the deadline in each geo.</span></span>
-  
- <span data-ttu-id="5adde-143">**问： 如果我想才能获得更好的网络性能移动我的数据？**</span><span class="sxs-lookup"><span data-stu-id="5adde-143">**Q. What if I want to move my data in order to get better network performance?**</span></span>
-  
-<span data-ttu-id="5adde-p112">Office 365 数据中心接近正在不是更好的网络性能保证。有许多因素和影响最终用户和 Office 365 服务之间的网络性能的组件。有关更多有关此信息和优化性能，请参阅[网络规划和性能优化 Office 365](network-planning-and-performance.md)。</span><span class="sxs-lookup"><span data-stu-id="5adde-p112">Being close to an Office 365 datacenter is not a guarantee for a better networking performance. There are many factors and components that impact the network performance between the end user and the Office 365 service. For more information about this and performance tuning see [Network planning and performance tuning for Office 365](network-planning-and-performance.md).</span></span>
-  
- <span data-ttu-id="5adde-147">**问： 所有服务将其数据都移动在同一天？**</span><span class="sxs-lookup"><span data-stu-id="5adde-147">**Q. Do all the services move their data on the same day?**</span></span>
-  
-<span data-ttu-id="5adde-p113">答： 服务不会同时移动其数据。每个服务能够独立移动，并且可能会在不同时间移动其数据。</span><span class="sxs-lookup"><span data-stu-id="5adde-p113">A. The services do not move their data at the same time. Each service will move independently and will likely move their data at different times.</span></span>
-  
- <span data-ttu-id="5adde-151">**问： 是否可以选择时，我希望我要移动的数据？**</span><span class="sxs-lookup"><span data-stu-id="5adde-151">**Q. Can I choose when I want my data to be moved?**</span></span>
-  
-<span data-ttu-id="5adde-p114">A.客户不能够选择特定的日期，它们能延迟其移动，以及我们不能共享特定日期或时间范围的移动。</span><span class="sxs-lookup"><span data-stu-id="5adde-p114">A. Customers are not able to select a specific date, they cannot delay their move, and we cannot share a specific date or timeframe for the moves.</span></span>
-  
- <span data-ttu-id="5adde-154">**问： 是否可以共享我的数据将移动时？**</span><span class="sxs-lookup"><span data-stu-id="5adde-154">**Q. Can you share when my data will be be moved?**</span></span>
-  
-<span data-ttu-id="5adde-p115">答： 数据移动是对最终用户影响最小的后端操作。复杂性、 精度和刻度我们需要执行全局操作和自动环境中的数据移动禁止我们共享后的数据移动预计完成您的租户或任何其他单租户。客户将收到一个确认在邮件中心每个参与的服务完成后其数据移动。</span><span class="sxs-lookup"><span data-stu-id="5adde-p115">A. Data moves are a back-end operation with minimal impact to end-users. The complexity, precision and scale at which we need to perform data moves within a globally operated and automated environment prohibit us from sharing when a data move is expected to complete for your tenant or any other single tenant. Customers will receive one confirmation in Message Center per participating service when its data move has completed.</span></span> 
-  
- <span data-ttu-id="5adde-159">**问： 什么情况，用户在移动数据时访问服务？**</span><span class="sxs-lookup"><span data-stu-id="5adde-159">**Q. What happens if users access services while the data is being moved?**</span></span>
-  
-<span data-ttu-id="5adde-p116">答： 有关期间数据移动的每个服务的部分可能会受到限制的功能的完整列表，请参阅[期间和之后数据移动](during-and-after-your-data-move.md)。</span><span class="sxs-lookup"><span data-stu-id="5adde-p116">A. See [During and after your data move](during-and-after-your-data-move.md) for a complete list of features that may be limited during portions of the data move for each service.</span></span> 
-  
- <span data-ttu-id="5adde-162">**问： 如何知道移动是否完成？**</span><span class="sxs-lookup"><span data-stu-id="5adde-162">**Q. How do I know the move is complete?**</span></span>
-  
-<span data-ttu-id="5adde-p117">答： 观看 Office 365 邮件中心确认每个服务的数据的移动完成。当每个服务的数据会移时，因此您将获取三次完成通知，我们将公布完成通知： 两个分别用于 Exchange Online、 SharePoint Online 和 Skype 业务 online。</span><span class="sxs-lookup"><span data-stu-id="5adde-p117">A. Watch the Office 365 message center for confirmation that the move of each service's data is complete. When each service's data is moved, we'll post a completion notice so you'll get three completion notices: one each for Exchange Online, SharePoint Online, and Skype for Business Online.</span></span>
-  
-<span data-ttu-id="5adde-166">如果在迁移之后，您看到的任何问题，请与[Office 365 支持](https://go.microsoft.com/fwlink/p/?LinkID=522459)以获得帮助。</span><span class="sxs-lookup"><span data-stu-id="5adde-166">If you see any issues after the move, contact [Office 365 Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) to get assistance.</span></span> 
-  
- <span data-ttu-id="5adde-167">**问： Office 365 的数据存储在新的数据中心 geo？**</span><span class="sxs-lookup"><span data-stu-id="5adde-167">**Q. What data for Office 365 is stored in the new datacenter geos?**</span></span>
-  
-<span data-ttu-id="5adde-p118">答： 如果客户设置新的数据中心 geo，Microsoft 之一其租户存储在地理位置中的其余部分的以下客户数据：</span><span class="sxs-lookup"><span data-stu-id="5adde-p118">A. If a customer provisions its tenant in one of the new datacenter geos, Microsoft stores the following customer data at rest within the geo:</span></span>
-  
-- <span data-ttu-id="5adde-170">Exchange Online 邮箱内容 （电子邮件正文、 日历项和电子邮件附件的内容）</span><span class="sxs-lookup"><span data-stu-id="5adde-170">Exchange Online mailbox content (e-mail body, calendar entries, and the content of email attachments)</span></span>
-    
-- <span data-ttu-id="5adde-171">SharePoint Online 网站内容和该网站，包括 Project Online 和访问联机内容中存储的文件。</span><span class="sxs-lookup"><span data-stu-id="5adde-171">SharePoint Online site content and the files stored within that site, including Project Online and Access Online content.</span></span>
-    
-<span data-ttu-id="5adde-172">此外，此数据不会复制之外地理位置中。</span><span class="sxs-lookup"><span data-stu-id="5adde-172">In addition, this data is not replicated outside of the geo.</span></span>
-  
- <span data-ttu-id="5adde-173">**问： 我是在一个新的数据中心 geo，Office 365 客户，但当注册我，我选择不同的国家/地区。可以我将如何移动到新的数据中心按地理？**</span><span class="sxs-lookup"><span data-stu-id="5adde-173">**Q. I am an Office 365 customer in one of the new datacenter geos, but when I signed up, I selected a different country. How can I be moved to the new datacenter geo?**</span></span>
-  
-<span data-ttu-id="5adde-p119">答： 遗憾的是，不能更改您的租户相关联的国家或地区。相反，您需要使用新的订阅创建一个新的 Office 365 租户和手动将您的用户和数据移动到新的租户。</span><span class="sxs-lookup"><span data-stu-id="5adde-p119">A. Unfortunately, it is not possible to change the country associated with your tenant. Instead, you need to create a new Office 365 tenant with a new subscription and manually move your users and data to the new tenant.</span></span>
-  
- <span data-ttu-id="5adde-177">**问： 是否有我 bill 上的任何更改？**</span><span class="sxs-lookup"><span data-stu-id="5adde-177">**Q. Will there be any changes on my bill?**</span></span>
-  
-<span data-ttu-id="5adde-p120">答： 在大多数情况下有中的客户将在其帐单看到的任何更改。</span><span class="sxs-lookup"><span data-stu-id="5adde-p120">A. In most cases there are no changes that customers in will see on their billing statement.</span></span>
-  
-<span data-ttu-id="5adde-p121">Microsoft 将其他数量等于 for Office 365 服务澳大利亚 GST 收取所有澳大利亚客户的 Office 365，并将发出税费 invoices。因为澳大利亚 GST 应付上应纳税提供的商品和服务提供，并能提供澳大利亚中，将发生此更改。</span><span class="sxs-lookup"><span data-stu-id="5adde-p121">Microsoft will charge all Australian customers of Office 365 an additional amount equal to the Australian GST for Office 365 services and will issue tax invoices. This change will occur because Australian GST is payable on taxable supplies of goods and services provided and offered in Australia.</span></span>
-  
- <span data-ttu-id="5adde-182">**问： 什么情况，我们的过程在 Exchange Online 的移动电子邮件数据迁移到 Office 365？**</span><span class="sxs-lookup"><span data-stu-id="5adde-182">**Q. What happens if we are in process of email data migration to Office 365 during the Exchange Online move?**</span></span>
-  
-<span data-ttu-id="5adde-p122">答： 如果电子邮件迁移正在进行，租户移动完成，并在目标数据中心中租户后，将自动重新启动这些邮箱的迁移时，将被取消当前迁移对单个邮箱。</span><span class="sxs-lookup"><span data-stu-id="5adde-p122">A. If email migrations are in progress, any individual mailboxes that are currently being migrated will be canceled while the tenant move finalizes, and migration of those mailboxes will automatically restart once the tenant is in the target datacenters.</span></span>
-  
- <span data-ttu-id="5adde-185">**问： 数据会移出以前的数据中心按地理后，它已从这些数据中心？**</span><span class="sxs-lookup"><span data-stu-id="5adde-185">**Q. After data is moved out of the previous datacenter geo, is it removed from those datacenters?**</span></span>
-  
-<span data-ttu-id="5adde-p123">答: 是，将在一段时间后清除旧数据。</span><span class="sxs-lookup"><span data-stu-id="5adde-p123">A. Yes, the old data will be purged after a period of time.</span></span>
-  
- <span data-ttu-id="5adde-188">**问： 是否可以试运行某些用户？**</span><span class="sxs-lookup"><span data-stu-id="5adde-188">**Q. Can I pilot some users?**</span></span>
-  
-<span data-ttu-id="5adde-p124">答： 当您的 Office 365 租户移至新的数据中心按地理，同时移动所有用户。您可以创建单独的试用版租户来测试连接，但试用租户不能以任何方式与您现有的租户组合使用。</span><span class="sxs-lookup"><span data-stu-id="5adde-p124">A. When your Office 365 tenant is moved to a new datacenter geo, all users are moved at once. You can create a separate trial tenant to test connectivity, but the trial tenant can't be combined in any way with your existing tenant.</span></span>
-  
- <span data-ttu-id="5adde-192">**问： 如何会通知有关移动和谁在我的公司是否将会通知？**</span><span class="sxs-lookup"><span data-stu-id="5adde-192">**Q. How will I be notified about the move and who at my company will be notified?**</span></span>
-  
-<span data-ttu-id="5adde-p125">答： 我们将使用 Office 365 邮件中心，这是与 Office 365 中的任何管理员权限的任何人都可见。</span><span class="sxs-lookup"><span data-stu-id="5adde-p125">A. We'll use the Office 365 message center, which is visible to anyone with any admin permissions in Office 365.</span></span>
-  
- <span data-ttu-id="5adde-195">**问： 我不想要等待的 Microsoft 将我的数据。可以只创建一个新的租户和移动自己？**</span><span class="sxs-lookup"><span data-stu-id="5adde-195">**Q. I don't want to wait for Microsoft to move my data. Can I just create a new tenant and move myself?**</span></span>
-  
-<span data-ttu-id="5adde-p126">答： 是的但是的过程将不会像 Microsoft 是执行数据移动无缝。</span><span class="sxs-lookup"><span data-stu-id="5adde-p126">A. Yes, however the process will not be as seamless as if Microsoft were to perform the data move.</span></span>
-  
-<span data-ttu-id="5adde-p127">如果您创建一个新的租户，新的数据中心按地理可用后，将在新的地理位置承载新的租户。此新的租户是完全分开您以前的租户，您将负责移动所有用户邮箱、 网站内容、 域名称和任何其他数据。请注意，不能到另一个，从一个租户移动租户名称。我们建议您等待移动程序由 Microsoft 提供的我们将负责移动所有设置、 数据和用户的订阅。</span><span class="sxs-lookup"><span data-stu-id="5adde-p127">If you create a new tenant after the new datacenter geo is available, the new tenant will be hosted in the new geo. This new tenant is completely separate from your previous tenant and you would be responsible for moving all user mailboxes, site content, domain names, and any other data. Note that you can't move the tenant name from one tenant to another. We recommend that you wait for the move program provided by Microsoft as we'll take care of moving all settings, data, and subscriptions for your users.</span></span>
-  
- <span data-ttu-id="5adde-202">**问： 我不准备好移动，可以选择特定 move date？**</span><span class="sxs-lookup"><span data-stu-id="5adde-202">**Q. I'm not ready to be moved, can I pick a specific move date?**</span></span>
-  
-<span data-ttu-id="5adde-p128">答： 不能为您要更改时将移动每个服务的客户数据。数据移动是对最终用户影响最小的后端操作。</span><span class="sxs-lookup"><span data-stu-id="5adde-p128">A. It is not possible for you to change when each service's customer data will be moved. Data moves are a back-end operation with minimal impact to end-users.</span></span>
-  
- <span data-ttu-id="5adde-206">**问： 我的客户数据已移动到新的数据中心按地理。是否可以返回迁移？**</span><span class="sxs-lookup"><span data-stu-id="5adde-206">**Q. My customer data has already been moved to a new datacenter geo. Can I move back?**</span></span>
-  
-<span data-ttu-id="5adde-p129">答： 此方法不可行。无法移回客户已移至新的地理位置数据中心。作为任何地理位置中的客户，将会遇到相同质量服务、 性能和安全控制，像往常一样。</span><span class="sxs-lookup"><span data-stu-id="5adde-p129">A. This is not possible. Customers who have been moved to new geo datacenters cannot be moved back. As a customer in any geo, you will experience the same quality of service, performance, and security controls as you did before.</span></span>
-  
- <span data-ttu-id="5adde-211">**问： 是否新的数据中心 geo 使用当前的数据中心 geo 作为 Office 365 服务的相同版本？**</span><span class="sxs-lookup"><span data-stu-id="5adde-211">**Q. Do the new datacenter geos use the same versions of Office 365 services as the current datacenter geos?**</span></span>
-  
-<span data-ttu-id="5adde-p130">答: 是。</span><span class="sxs-lookup"><span data-stu-id="5adde-p130">A. Yes.</span></span>
-  
- <span data-ttu-id="5adde-214">**问： 将 Office 365 租户中新数据中心托管可向之外的国家/地区的用户？**</span><span class="sxs-lookup"><span data-stu-id="5adde-214">**Q. Will Office 365 tenants hosted in the new datacenters be available to users outside of the country?**</span></span>
-  
-<span data-ttu-id="5adde-p131">答: 是。Microsoft 维护大型全局网络有 50 多个位置中对等协议 1,500 个以上 Internet 服务提供商 (Isp) 与世界各地的 23 国家/地区的公共 Internet 连接。用户将能够从所在 Internet 上访问数据中心。</span><span class="sxs-lookup"><span data-stu-id="5adde-p131">A. Yes. Microsoft maintains a large global network with public Internet connections in more than 50 locations in 23 countries around the world with peering agreements with more than 1,500 Internet Service Providers (ISPs). Users will be able to access the datacenters from wherever they are on the Internet.</span></span>
-  
-## <a name="related-topics"></a><span data-ttu-id="5adde-219">相关主题</span><span class="sxs-lookup"><span data-stu-id="5adde-219">Related topics</span></span>
+<span data-ttu-id="8f8fa-106">选择符合新数据中心地理位置的国家/地区的现有 Office 365 商业客户将能够请求移动。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-106">Existing Office 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move.</span></span>  <span data-ttu-id="8f8fa-107">此程序仅适用于分配有符合条件的国家/地区代码的租户, 可将核心客户数据迁移到 office 365 租户, 以将适用工作负载的核心客户数据迁移到相应的 office 365 数据中心地理位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-107">The program exists only for tenants with an eligible country code assigned to the Office 365 tenant to migrate core customer data at rest for eligible workloads to the corresponding Office 365 datacenter geo.</span></span>  <span data-ttu-id="8f8fa-108">请参阅 how [to request the data move](request-your-data-move.md) page, 确认国家/地区的资格。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-108">Please refer to the [How to request your data move](request-your-data-move.md) page to confirm country eligibility.</span></span>   
 
-[<span data-ttu-id="5adde-220">将核心数据移动到新的 Office 365 数据中心 geo</span><span class="sxs-lookup"><span data-stu-id="5adde-220">Moving core data to new Office 365 datacenter geos</span></span>](moving-data-to-new-datacenter-geos.md)
+## <a name="how-do-we-define-core-customer-data"></a><span data-ttu-id="8f8fa-109">如何定义核心客户数据？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-109">How do we define Core Customer Data?</span></span>
+ 
+<span data-ttu-id="8f8fa-110">Core customer data 是一个术语, 指的是在[Microsoft Online Services 术语](https://go.microsoft.com/fwlink/p/?LinkID=249048)中定义的客户数据子集:</span><span class="sxs-lookup"><span data-stu-id="8f8fa-110">Core customer data is a term that refers to a subset of customer data defined in the [Microsoft Online Services Terms](https://go.microsoft.com/fwlink/p/?LinkID=249048):</span></span> 
+- <span data-ttu-id="8f8fa-111">Exchange Online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容)</span><span class="sxs-lookup"><span data-stu-id="8f8fa-111">Exchange Online mailbox content (email body, calendar entries, and the content of email attachments)</span></span>
+- <span data-ttu-id="8f8fa-112">SharePoint Online 网站内容和该网站中存储的文件</span><span class="sxs-lookup"><span data-stu-id="8f8fa-112">SharePoint Online site content and the files stored within that site</span></span>
+- <span data-ttu-id="8f8fa-113">上载到 OneDrive for business 的文件</span><span class="sxs-lookup"><span data-stu-id="8f8fa-113">Files uploaded to OneDrive for Business</span></span> 
 
-[<span data-ttu-id="5adde-221">如何请求数据移动</span><span class="sxs-lookup"><span data-stu-id="5adde-221">How to request your data move</span></span>](request-your-data-move.md)
+## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a><span data-ttu-id="8f8fa-114">在什么时候完成了我的迁移, 以便我的租户的核心客户数据存储在我的新 geo 中的地方？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-114">At what point is my migration complete so that my tenant’s core customer data is being stored at rest in my new geo?</span></span>
 
-[<span data-ttu-id="5adde-222">Microsoft Dynamics CRM online 的新数据中心 geo</span><span class="sxs-lookup"><span data-stu-id="5adde-222">New datacenter geos for Microsoft Dynamics CRM Online</span></span>](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+<span data-ttu-id="8f8fa-115">由于 Exchange online 和 SharePoint online/OneDrive for business 之间存在共享依赖关系, 因此在迁移这两个服务之前, 不能将任何迁移都视为已完成。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-115">Due to shared dependencies between Exchange Online and SharePoint Online/OneDrive for Business, any migration cannot be considered completed until both services are migrated.</span></span>  <span data-ttu-id="8f8fa-116">Exchange online 和 SharePoint online/OneDrive for business 通常分别以不同的时间进行迁移, 且相互独立。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-116">Exchange Online and SharePoint Online/OneDrive for Business often migrate at separate times and independently from one another.</span></span>  <span data-ttu-id="8f8fa-117">在每个服务迁移完成时, 租户管理员会在邮件中心中接收确认, 并且可以随时查看管理中心中的数据位置卡, 以确认每个服务的 rest 位置的核心客户数据。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-117">Tenant admins receive confirmation in Message Center when each service migration is completed and can view the data location card in the Admin Center at any time to confirm the core customer data at rest location for each service.</span></span>
+
+## <a name="will-my-tenant-automatically-be-moved-to-the-new-datacenter-geo"></a><span data-ttu-id="8f8fa-118">我的租户是否会自动移到新的数据中心地理位置？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-118">Will my tenant automatically be moved to the new datacenter geo?</span></span>
+ 
+<span data-ttu-id="8f8fa-119">您可以将两个操作作为租户管理员来执行。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-119">There are two actions that you can take as a tenant administrator.</span></span>
+
+- <span data-ttu-id="8f8fa-120">选择加入。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-120">Opt-in.</span></span><span data-ttu-id="8f8fa-121">注册 Office 365 移动程序并接收服务的承诺截止时间, 以将 rest 上的核心客户数据迁移到新的数据中心地理位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-121">  Enroll in the Office 365 Move Program and receive a committed deadline for your services to migrate core customer data at rest to the new datacenter geo.</span></span><span data-ttu-id="8f8fa-122">请参阅 how [to request the data move](request-your-data-move.md) page, 获取有关如何选择程序的说明。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-122">  See the [How to request your data move](request-your-data-move.md) page for instructions on how to opt-in to the program.</span></span>
+- <span data-ttu-id="8f8fa-123">不执行任何操作。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-123">Do nothing.</span></span><span data-ttu-id="8f8fa-124">不执行任何操作, 这将导致 Microsoft 能够将您的核心客户数据同时移动到新的数据中心地理位置, 作为服务管理和优化的一部分。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-124">  Take no action, which results in Microsoft being able to move your core customer data at rest to your new datacenter geo over time as part of service management and optimization.</span></span><span data-ttu-id="8f8fa-125">您的数据只能移动到新的数据中心地理位置, 而不能移动到任何其他地理位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-125">  Your data can only potentially move to your new datacenter geo, not to any other geo.</span></span><span data-ttu-id="8f8fa-126">当此类服务管理移动完成时, 我们会通过消息中心通知。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-126">  We notify via Message Center when such a service management move has completed.</span></span>
+
+## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a><span data-ttu-id="8f8fa-127">如何确保移动过程中的客户数据是安全的, 并且不会经历停机时间？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-127">How do you make sure my customer data is safe during the move and that I won't experience downtime?</span></span>
   
-[<span data-ttu-id="5adde-223">Azure 服务区域</span><span class="sxs-lookup"><span data-stu-id="5adde-223">Azure services by region</span></span>](https://azure.microsoft.com/en-us/regions/)
+<span data-ttu-id="8f8fa-128">数据移动是一种后端服务操作, 对最终用户影响最小。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-128">Data moves are a back-end service operation with minimal impact to end-users.</span></span> <span data-ttu-id="8f8fa-129">在[数据移动期间和之后](during-and-after-your-data-move.md)会列出受影响的功能。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-129">Features that can be impacted are listed in [During and after your data move](during-and-after-your-data-move.md).</span></span> <span data-ttu-id="8f8fa-130">我们遵循[Microsoft Online Services 服务级别协议 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)的可用性, 以便客户无需准备或在移动过程中进行监视。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-130">We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move.</span></span> 
+  
+<span data-ttu-id="8f8fa-131">所有 Office 365 服务在数据中心中运行相同的版本, 因此您可以确保功能的一致性。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-131">All Office 365 services run the same versions in the datacenters, so you can be assured of consistent functionality.</span></span> <span data-ttu-id="8f8fa-132">您的服务在整个过程中完全受支持。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-132">Your service is fully supported throughout the process.</span></span>
+  
+## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a><span data-ttu-id="8f8fa-133">在不同的信息中具有不同的服务会有什么影响？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-133">What is the impact of having different services located in different geos?</span></span>
+
+<span data-ttu-id="8f8fa-134">某些 Office 365 服务可能位于不同的信息中, 用于某些现有客户和移动过程中间的客户。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-134">Some of the Office 365 services may be located in different geos for some existing customers and for customers that are in the middle of the move process.</span></span>  <span data-ttu-id="8f8fa-135">我们的服务独立运行, 在这种情况下, 不会对用户体验产生任何影响。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-135">Our services run independently of each other and there is no impact to the user experience if this is the case.</span></span><span data-ttu-id="8f8fa-136">但是, 出于数据驻留目的, 在 Exchange online 和 SharePoint online/OneDrive for business 都迁移到同一数据中心地理位置之前, 不能认为租户迁移已完成。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-136">  However, for data residency purposes, a tenant migration cannot be considered as complete until both Exchange Online and SharePoint Online/OneDrive for Business are migrated to the same datacenter geo.</span></span>
+  
+## <a name="will-new-office-365-customers-be-automatically-provisioned-in-the-new-datacenter-geos"></a><span data-ttu-id="8f8fa-137">在新的数据中心信息中是否会自动预配新的 Office 365 客户？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-137">Will new Office 365 customers be automatically provisioned in the new datacenter geos?</span></span>
+  
+<span data-ttu-id="8f8fa-138">是。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-138">Yes.</span></span> <span data-ttu-id="8f8fa-139">在新的数据中心地理位置可用后, 在注册过程中选择符合新地理位置的国家/地区的企业客户的新 Office 365 将把其核心客户数据存储在新的数据中心地理位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-139">Once a new datacenter geo is available, new Office 365 for Business customers who select a country eligible for the new geo as their country during sign-up will have their core customer data stored at rest in the new datacenter geo.</span></span>
+  
+ ## <a name="where-is-my-core-customer-data-is-located"></a><span data-ttu-id="8f8fa-140">我的核心客户数据位于何处？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-140">Where is my core customer data is located?</span></span>
+
+<span data-ttu-id="8f8fa-141">租户管理员可随时查看管理中心内的数据位置卡, 以确认每个服务的 rest 位置的核心客户数据, 尤其针对其租户。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-141">Tenant admins can view the data location card in the Admin Center at any time to confirm the core customer data at rest location for each service, specifically for their tenant.</span></span><span data-ttu-id="8f8fa-142">我们还发布了 [office 365 交互式数据中心](https://office.com/datamaps)的数据中心信息、数据中心和位置的位置, 作为对新租户的当前默认核心客户数据的参考。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-142">  We also publish the location of datacenter geos, datacenters, and location of Office 365 customer data on the [ Office 365 interactive datacenter maps ](https://office.com/datamaps) as a reference for the current default core customer data at rest locations for new tenants.</span></span>  <span data-ttu-id="8f8fa-143">您可以通过 Office 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-143">You can verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Office 365 Admin Center.</span></span>  
+ 
+## <a name="when-will-i-be-able-to-request-a-move"></a><span data-ttu-id="8f8fa-144">何时我将能够请求移动？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-144">When will I be able to request a move?</span></span>
+  
+<span data-ttu-id="8f8fa-145">请参阅 how [to request the data move](request-your-data-move.md) page for a datacenter geo 支持的时间段。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-145">Please refer to the [How to request your data move](request-your-data-move.md) page for supported timeframes for your datacenter geo.</span></span>
+  
+## <a name="how-can-i-request-to-be-moved"></a><span data-ttu-id="8f8fa-146">如何请求移动？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-146">How can I request to be moved?</span></span>
+  
+<span data-ttu-id="8f8fa-147">符合条件的客户将在其[Office 365 管理门户](https://portal.office.com/)中看到一个页面。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-147">Eligible customers will see a page in their [Office 365 Admin Portal](https://portal.office.com/).</span></span> <span data-ttu-id="8f8fa-148">请参阅[如何请求数据移动](request-your-data-move.md)以获取有关如何请求移动的说明。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-148">Please see [How to request your data move](request-your-data-move.md) for instructions on how to request a move.</span></span> 
+  
+## <a name="can-i-change-my-selection-after-requesting-a-move"></a><span data-ttu-id="8f8fa-149">在请求移动后, 是否可以更改我的选定内容？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-149">Can I change my selection after requesting a move?</span></span>
+  
+<span data-ttu-id="8f8fa-150">提交请求后, 我们无法将您从进程中删除。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-150">It is not possible for us to remove you from the process after you submit your request.</span></span>
+  
+## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a><span data-ttu-id="8f8fa-151">如果我在最后期限之前未请求移动, 会发生什么情况？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-151">What happens if I do not request a move before the deadline?</span></span>
+  
+ <span data-ttu-id="8f8fa-152">我们可能会根据异常接受请求, 以向你的租户授予完成移动的承诺期限。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-152">We may be able to accept request on an exception basis to grant your tenant a committed deadline to complete the move.</span></span><span data-ttu-id="8f8fa-153">请 联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以发出请求。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-153">  Please  contact [Office 365 Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) to make the request.</span></span>  <span data-ttu-id="8f8fa-154">请注意, 即使不采取自愿加入请求, 一些工作负载也可能会移到你的新地理位置, 因为 Microsoft 能够在服务管理和优化过程中将你的核心客户数据同时移到新的数据中心地理位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-154">Recall that some workloads may move to your new geo even without an opt-in request as taking no action results in Microsoft being able to move your core customer data at rest to your new datacenter geo over time as part of service management and optimization.</span></span><span data-ttu-id="8f8fa-155">您的数据只能移动到新的数据中心地理位置, 而不能移动到任何其他地理位置。 </span><span class="sxs-lookup"><span data-stu-id="8f8fa-155">  Your data can only potentially move to your new datacenter geo, not to any other geo. </span></span> <span data-ttu-id="8f8fa-156">当此类服务管理移动完成时, 我们会通过消息中心通知。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-156">We notify via Message Center when such a service management move has completed.</span></span>
+  
+ ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a><span data-ttu-id="8f8fa-157">如果我想要移动数据以便获得更好的网络性能, 该怎么办？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-157">What if I want to move my data in order to get better network performance?</span></span>
+  
+<span data-ttu-id="8f8fa-158">接近于 Office 365 datacenter 不能保证更好的网络性能。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-158">Being close to an Office 365 datacenter is not a guarantee for a better networking performance.</span></span> <span data-ttu-id="8f8fa-159">有许多因素和组件会影响最终用户与 Office 365 服务之间的网络性能。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-159">There are many factors and components that impact the network performance between the end user and the Office 365 service.</span></span> <span data-ttu-id="8f8fa-160">有关此和性能调整的详细信息, 请参阅[Office 365 的网络规划和性能调整](network-planning-and-performance.md)。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-160">For more information about this and performance tuning see [Network planning and performance tuning for Office 365](network-planning-and-performance.md).</span></span>
+  
+ ## <a name="do-all-the-services-move-their-data-on-the-same-day"></a><span data-ttu-id="8f8fa-161">所有服务是否都在同一天移动其数据？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-161">Do all the services move their data on the same day?</span></span>
+ 
+<span data-ttu-id="8f8fa-162">每个服务都独立移动, 并且可能会在不同时间移动其数据。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-162">Each service moves independently and will likely move their data at different times.</span></span>
+  
+ ## <a name="can-i-choose-when-i-want-my-data-to-be-moved"></a><span data-ttu-id="8f8fa-163">我是否可以选择何时移动数据？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-163">Can I choose when I want my data to be moved?</span></span>
+ 
+ <span data-ttu-id="8f8fa-164">客户无法选择特定日期, 它们不能延迟移动, 也不能共享特定的移动日期或时间范围。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-164">Customers are not able to select a specific date, they cannot delay their move, and we cannot share a specific date or timeframe for the moves.</span></span>
+  
+ ## <a name="can-you-share-when-my-data-will-be-be-moved"></a><span data-ttu-id="8f8fa-165">是否可以在移动数据时共享？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-165">Can you share when my data will be be moved?</span></span>
+  
+<span data-ttu-id="8f8fa-166">数据移动是一种后端操作, 对最终用户影响最小。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-166">Data moves are a back-end operation with minimal impact to end-users.</span></span> <span data-ttu-id="8f8fa-167">我们需要在全局运营和自动环境中执行数据移动的复杂性、精度和规模将禁止我们在对你的租户或任何其他单一租户完成数据移动时进行共享。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-167">The complexity, precision and scale at which we need to perform data moves within a globally operated and automated environment prohibit us from sharing when a data move is expected to complete for your tenant or any other single tenant.</span></span> <span data-ttu-id="8f8fa-168">客户在其数据移动完成后, 每个参与的服务都会在邮件中心收到一条确认消息。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-168">Customers will receive one confirmation in Message Center per participating service when its data move has completed.</span></span> 
+  
+ ## <a name="what-happens-if-users-access-services-while-the-data-is-being-moved"></a><span data-ttu-id="8f8fa-169">如果用户在移动数据时访问服务, 会发生什么情况？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-169">What happens if users access services while the data is being moved?</span></span>
+
+<span data-ttu-id="8f8fa-170">在[数据移动过程中和之后, 请参阅数据移动](during-and-after-your-data-move.md)的完整列表, 在每个服务的部分数据移动过程中可能会受到限制。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-170">See [During and after your data move](during-and-after-your-data-move.md) for a complete list of features that may be limited during portions of the data move for each service.</span></span> 
+  
+ ## <a name="how-do-i-know-the-move-is-complete"></a><span data-ttu-id="8f8fa-171">如何知道移动已完成？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-171">How do I know the move is complete?</span></span>
+  
+<span data-ttu-id="8f8fa-172">观看 Office 365 消息中心, 以确认每个服务的数据移动是否已完成。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-172">Watch the Office 365 Message Center for confirmation that the move of each service's data is complete.</span></span> <span data-ttu-id="8f8fa-173">移动每个服务的数据后, 我们将发布一个完成通知, 以便您将获得三个完成通知: 每个完成通知分别对应于 Exchange online、SharePoint online 和 Skype for business Online。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-173">When each service's data is moved, we'll post a completion notice so you'll get three completion notices: one each for Exchange Online, SharePoint Online, and Skype for Business Online.</span></span>  <span data-ttu-id="8f8fa-174">您还可以通过 Office 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-174">You can also verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Office 365 Admin Center.</span></span>  
+  
+## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a><span data-ttu-id="8f8fa-175">我是一个新的数据中心信息中的 Office 365 客户, 但当我注册时, 我选择了其他国家/地区。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-175">I am an Office 365 customer in one of the new datacenter geos, but when I signed up, I selected a different country.</span></span> <span data-ttu-id="8f8fa-176">如何将移动到新的数据中心地理位置？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-176">How can I be moved to the new datacenter geo?</span></span>
+
+<span data-ttu-id="8f8fa-177">无法更改与你的租户关联的注册国家/地区。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-177">It is not possible to change the signup country associated with your tenant.</span></span> <span data-ttu-id="8f8fa-178">而是需要使用新订阅创建新的 Office 365 租户, 并将用户和数据手动移动到新的租户。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-178">Instead, you need to create a new Office 365 tenant with a new subscription and manually move your users and data to the new tenant.</span></span>
+  
+## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-office-365-during-the-exchange-online-move"></a><span data-ttu-id="8f8fa-179">如果我们在 Exchange Online 移动过程中将电子邮件数据迁移到 Office 365, 会发生什么情况？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-179">What happens if we are in process of email data migration to Office 365 during the Exchange Online move?</span></span>
+
+<span data-ttu-id="8f8fa-180">这是一种非常常见的方案, 完全受支持。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-180">This is a very common scenario and is fully supported.</span></span>  <span data-ttu-id="8f8fa-181">datacenter 信息之间的云迁移不会干扰任何 on premisis to 云邮箱迁移。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-181">Cloud migration between datacenter geos does not interfere with any on-premisis to cloud mailbox migrations.</span></span>
+  
+ ## <a name="can-i-pilot-some-users"></a><span data-ttu-id="8f8fa-182">我可以试运行某些用户吗？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-182">Can I pilot some users?</span></span>
+  
+<span data-ttu-id="8f8fa-183">您可以创建单独的试用租户来测试连接, 但不能以任何方式将试用租户与现有租户组合在一起。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-183">You can create a separate trial tenant to test connectivity, but the trial tenant can't be combined in any way with your existing tenant.</span></span>
+
+## <a name="i-dont-want-to-wait-for-microsoft-to-move-my-data-can-i-just-create-a-new-tenant-and-move-myself"></a><span data-ttu-id="8f8fa-184">我不想等待 Microsoft 移动我的数据。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-184">I don't want to wait for Microsoft to move my data.</span></span> <span data-ttu-id="8f8fa-185">我是否可以只创建一个新的租户并移动自己？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-185">Can I just create a new tenant and move myself?</span></span>
+  
+<span data-ttu-id="8f8fa-186">是的, 但是此过程不会像 Microsoft 执行数据移动那样顺畅。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-186">Yes, however the process will not be as seamless as if Microsoft were to perform the data move.</span></span>
+  
+<span data-ttu-id="8f8fa-187">如果在新的数据中心地理位置之后创建新租户, 新租户将托管在新地理位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-187">If you create a new tenant after the new datacenter geo is available, the new tenant will be hosted in the new geo.</span></span> <span data-ttu-id="8f8fa-188">此新租户完全独立于以前的租户, 您将负责移动所有用户邮箱、网站内容、域名和其他任何数据。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-188">This new tenant is completely separate from your previous tenant and you would be responsible for moving all user mailboxes, site content, domain names, and any other data.</span></span> <span data-ttu-id="8f8fa-189">请注意, 不能将租户名称从一个租户移动到另一个租户。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-189">Note that you can't move the tenant name from one tenant to another.</span></span> <span data-ttu-id="8f8fa-190">我们建议您等待 Microsoft 提供的移动程序, 因为我们将负责移动用户的所有设置、数据和订阅。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-190">We recommend that you wait for the move program provided by Microsoft as we'll take care of moving all settings, data, and subscriptions for your users.</span></span>
+  
+ ## <a name="im-not-ready-to-be-moved-can-i-pick-a-specific-move-date"></a><span data-ttu-id="8f8fa-191">我不准备移动, 是否可以选择特定的移动日期？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-191">I'm not ready to be moved, can I pick a specific move date?</span></span>
+  
+<span data-ttu-id="8f8fa-192">否, 不能更改每个服务的核心客户数据的移动时间。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-192">No, it is not possible for you to change when each service's core customer data will be moved.</span></span>
+  
+ ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a><span data-ttu-id="8f8fa-193">我的客户数据已移动到新的数据中心地理位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-193">My customer data has already been moved to a new datacenter geo.</span></span> <span data-ttu-id="8f8fa-194">我可以向后移动吗？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-194">Can I move back?</span></span>
+ 
+<span data-ttu-id="8f8fa-195">否, 这是不可能的。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-195">No, this is not possible.</span></span> <span data-ttu-id="8f8fa-196">已移动到新 geo 数据中心的客户不能移动回来。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-196">Customers who have been moved to new geo datacenters cannot be moved back.</span></span> <span data-ttu-id="8f8fa-197">作为任何地区的客户, 你将体验到以前所做的相同质量的服务、性能和安全控制。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-197">As a customer in any geo, you will experience the same quality of service, performance, and security controls as you did before.</span></span>  <span data-ttu-id="8f8fa-198">[Office 365 多地理](https://aka.ms/multi-geo)位置可供某些客户作为加载项, 让单个租户可以创建多个附属信息, 并可将用户数据移动到具有数据派驻服务承诺的这些信息中。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-198">[Office 365 Multi Geo](https://aka.ms/multi-geo) is available to some customers as an add-on and lets a single tenant create multiple satellite geos and move user data to those geos with data residency commitments.</span></span>
+  
+ ## <a name="do-the-new-datacenter-geos-use-the-same-versions-of-office-365-services-as-the-current-datacenter-geos"></a><span data-ttu-id="8f8fa-199">新的数据中心信息是否使用与当前数据中心信息相同版本的 Office 365 服务？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-199">Do the new datacenter geos use the same versions of Office 365 services as the current datacenter geos?</span></span>
+
+<span data-ttu-id="8f8fa-200">是。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-200">Yes.</span></span>
+  
+## <a name="will-office-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a><span data-ttu-id="8f8fa-201">在新数据中心托管的 Office 365 租户是否适用于该国家/地区之外的用户？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-201">Will Office 365 tenants hosted in the new datacenters be available to users outside of the country?</span></span>
+  
+<span data-ttu-id="8f8fa-202">A.</span><span class="sxs-lookup"><span data-stu-id="8f8fa-202">A.</span></span> <span data-ttu-id="8f8fa-203">是。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-203">Yes.</span></span> <span data-ttu-id="8f8fa-204">Microsoft 在全球范围内的35国家/地区内的国家/地区的多达130个位置维护一个大型的全球网络, 其 Internet 服务提供商 (isp) 数量超过2700的对等协议。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-204">Microsoft maintains a large global network with public Internet connections in more than 130 locations in 35 countries around the world with peering agreements with more than 2,700 Internet Service Providers (ISPs).</span></span> <span data-ttu-id="8f8fa-205">用户将能够从 Internet 上的任何位置访问数据中心。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-205">Users will be able to access the datacenters from wherever they are on the Internet.</span></span>
+
+## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a><span data-ttu-id="8f8fa-206">我的租户是为[Office 365 多地理](https://aka.ms/multi-geo)位置配置的。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-206">My tenant is configured for [Office 365 Multi Geo](https://aka.ms/multi-geo).</span></span>  <span data-ttu-id="8f8fa-207">我是否可以在 Office 365 移动程序中注册我的租户以更改我的默认地理位置并将任何用户不在附属区域中移动到新的默认地理位置？</span><span class="sxs-lookup"><span data-stu-id="8f8fa-207">Can I still enroll in my tenant in the Office 365 Move Program to change my default geo and move any user not in a satellite region to the new default geo?</span></span>
+
+<span data-ttu-id="8f8fa-208">是的, 你的租户符合注册条件。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-208">Yes, your tenant is eligible to enroll.</span></span>  <span data-ttu-id="8f8fa-209">我们会将所有 EXO 邮箱从当前的默认地理位置移动到新的本地数据中心地理位置。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-209">We will move all EXO mailboxes from your current default geo to your new local datacenter geo.</span></span>  <span data-ttu-id="8f8fa-210">我们不会移动在 "多地理" 卫星区域中配置的任何 EXO 邮箱, 而是按预期继续遵循卫星区域数据派驻服务。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-210">We will not move any EXO mailboxes configured in Multi Geo satellite regions to continue to respect satellite region data residency as you’ve intended.</span></span>  <span data-ttu-id="8f8fa-211">SharePoint Online 和 OneDrive for business 无法迁移到新的数据中心地理位置作为移动程序的一部分, 但您可以通过多地理程序将 OneDrive for business 共享配置为移动到您想要的任何区域。</span><span class="sxs-lookup"><span data-stu-id="8f8fa-211">SharePoint Online and OneDrive for Business cannot migrate to the new datacenter geo as part of the Move Program, though you can configure OneDrive for Business shares to move to any region you wish via the Multi Geo program.</span></span>
+  
+## <a name="related-topics"></a><span data-ttu-id="8f8fa-212">相关主题</span><span class="sxs-lookup"><span data-stu-id="8f8fa-212">Related topics</span></span>
+
+[<span data-ttu-id="8f8fa-213">将核心数据移动到新的 Office 365 数据中心信息</span><span class="sxs-lookup"><span data-stu-id="8f8fa-213">Moving core data to new Office 365 datacenter geos</span></span>](moving-data-to-new-datacenter-geos.md)
+
+[<span data-ttu-id="8f8fa-214">如何请求移动数据</span><span class="sxs-lookup"><span data-stu-id="8f8fa-214">How to request your data move</span></span>](request-your-data-move.md)
+
+[<span data-ttu-id="8f8fa-215">Office 365 多地理位置</span><span class="sxs-lookup"><span data-stu-id="8f8fa-215">Office 365 Multi Geo</span></span>](https://aka.ms/multi-geo)
+
+[<span data-ttu-id="8f8fa-216">Office 365 交互式数据中心映射</span><span class="sxs-lookup"><span data-stu-id="8f8fa-216">Office 365 interactive datacenter map</span></span>](https://office.com/datamaps)
+
+[<span data-ttu-id="8f8fa-217">Office 365 支持</span><span class="sxs-lookup"><span data-stu-id="8f8fa-217">Office 365 Support</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=522459)
+
+[<span data-ttu-id="8f8fa-218">适用于 Microsoft Dynamics CRM Online 的新数据中心信息</span><span class="sxs-lookup"><span data-stu-id="8f8fa-218">New datacenter geos for Microsoft Dynamics CRM Online</span></span>](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[<span data-ttu-id="8f8fa-219">按区域的 Azure 服务</span><span class="sxs-lookup"><span data-stu-id="8f8fa-219">Azure services by region</span></span>](https://azure.microsoft.com/en-us/regions/)
