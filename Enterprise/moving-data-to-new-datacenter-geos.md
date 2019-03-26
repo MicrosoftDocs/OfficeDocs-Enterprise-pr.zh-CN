@@ -1,9 +1,9 @@
 ---
-title: 将核心数据移动到新的 Office 365 数据中心 geo
+title: 将核心数据移动到新的 Office 365 数据中心信息
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -11,66 +11,64 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
-description: 新的数据中心 geo 增加容量和计算资源以支持我们的日常客户需求和使用情况增长。此外，新的数据中心 geo 提供在地理位置数据住所的核心客户数据。核心客户数据是一个术语，指的是在 Microsoft Online 服务条款中定义的客户数据子集： Exchange Online 邮箱内容 （电子邮件正文、 日历项和电子邮件附件的内容） 和 SharePoint Online 网站内容和文件存储在该站点，并上载到 OneDrive for Business 文件。
-ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+description: '新数据中心信息添加容量和计算资源, 以支持我们持续的客户需求和使用情况增长。 此外, 新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一个术语, 指在 Microsoft Online Services 术语: Exchange online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容)、SharePoint online 网站内容和文件中定义的客户数据子集。存储在该网站中, 并将文件上传到 OneDrive for business。'
+ms.openlocfilehash: d30ad64c96a3a2e790b911845141e1601758d384
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839580"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30647980"
 ---
-# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>将核心数据移动到新的 Office 365 数据中心 geo
+# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>将核心数据移动到新的 Office 365 数据中心信息
 
-我们继续 business services for Office 365 中打开新的数据中心 geo。这些新的数据中心 geo 增加容量和计算资源以支持我们的日常客户需求和使用情况增长。此外，新的数据中心 geo 提供在地理位置数据住所的核心客户数据。 
+我们继续为 Office 365 for business 服务打开新的数据中心信息。 这些新数据中心信息添加容量和计算资源, 以支持我们持续的客户需求和使用情况增长。 此外, 新的数据中心信息为核心客户数据提供了地理位置数据常驻。 
 
-核心客户数据是指的是在[Microsoft Online 服务条款](https://go.microsoft.com/fwlink/p/?LinkID=249048)中定义的客户数据子集术语： 
-- Exchange Online 邮箱内容 （电子邮件正文、 日历项和电子邮件附件的内容）
-- SharePoint Online 网站内容以及该网站中存储的文件
-- 文件上载到 OneDrive for Business 
+Core customer data 是一个术语, 指的是在[Microsoft Online Services 术语](https://go.microsoft.com/fwlink/p/?LinkID=249048)中定义的客户数据子集: 
+- Exchange Online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容)
+- SharePoint Online 网站内容和该网站中存储的文件
+- 上载到 OneDrive for business 的文件 
   
-已存在的数据中心按地理中存储其核心客户数据的现有客户不受的新的数据中心按地理启动。我们将介绍一些没有各自的独特功能、 功能或与新的数据中心按地理合规性认证。作为任何这些两个 geo 客户，将会遇到相同的服务质量、 性能和安全控制，像往常一样。我们提供了现有客户具有严格数据住所要求，并列出下面的表中，选择在其移动到新的地理位置的核心客户数据。
+启动新的数据中心地理位置不会影响已在现有数据中心地理位置存储其核心客户数据的现有客户。 我们不会通过新的数据中心地理位置引入独特的功能、功能或合规性认证。 作为这两个信息中任何一个的客户, 你将遇到与以前一样的服务质量、性能和安全控制。 我们提供了具有严格的数据常驻要求的现有客户, 并在下表中列出了将其核心客户数据移动到新地理位置的选项。
   
-|以通知支付的客户地址中 ***|上一个数据中心按地理 ***|新数据中心按地理 ***|地理位置可用相 ***|
+|在 * * * * 中使用帐单地址的客户|以前的数据中心地理位置 * * * *|新数据中心地理位置 * * * *|Geo (自 * * * *) 后可用|
 |:-----|:-----|:-----|:-----|
-|日本 ***| 亚太地区 | 日本 | 2014 年 12 月 |
-|澳大利亚，新西兰，斐济 ***| 亚太地区 | 澳大利亚 | 2015 年 3 月 |
-|印度 ***| 亚太地区 | 印度 | 2015 年 10 月 |
-|加拿大 ***| 北美 | 加拿大 | 2016 年 5 月 |
-|英国 ***| 欧洲 | 英国 | 2016 年 9 月 |
-|韩国 ***| 亚太地区 | 韩国 | 2017 年 4 月 |
-|法国 ***| 欧洲 | 法国 | 2018 年 3 月 |
+|日本 * * * *| 亚洲/太平洋 | 日本 | 2014 年 12 月 |
+|澳大利亚、新西兰、斐济 * * * * *| 亚洲/太平洋 | 澳大利亚 | 2015 年 3 月 |
+|印度 * * * *| 亚洲/太平洋 | 印度 | 2015 年 10 月 |
+|加拿大 * * * *| 北美 | 加拿大 | 2016 年 5 月 |
+|英国 * * * * *| 地区 | United Kingdom | 2016 年 9 月 |
+|韩国 * * * *| 亚洲/太平洋 | 韩国 | 2017 年 4 月 |
+|法国 * * * *| 地区 | 法国 | 2018 年 3 月 |
+|阿拉伯联合酋长国 * * * *| 地区 | 阿拉伯联合酋长国 | 公告 |
+|南非 * * * *| 地区 | 南非 | 公告 |
    
 > [!NOTE]
-> 数据居住权选项和可用性，将客户数据移动到新的地理位置，不是我们启动每个新的地理位置的默认。随着我们将来扩展到新 geo，我们将评估可用性并按地理位置基础上地理位置移动数据的条件。 
+> 数据常驻选项以及将客户数据移动到新地理位置的可用性并不是我们启动的每个新 geo 的默认值。 在将来我们扩展到新的信息中, 我们将根据地理位置评估数据的可用性和条件。 
   
-新客户或 Office 365 租户创建的新数据中心按地理可用性后会自动存储中新数据中心按地理 rest 其核心客户数据。
+在新的数据中心地理位置推出之后创建的新客户或 Office 365 租户将在新的数据中心地理位置自动将其核心客户数据存储在 rest 上。
   
-提供了所有数据中心 geo、 数据中心和静态客户数据的位置的完整列表[映射交互式数据中心](https://aka.ms/dcmaps)的一部分。 
+所有数据中心信息、数据中心和 rest 上的客户数据位置的完整列表都可用作[交互式数据中心地图](https://office.com/datamaps)的一部分。 
   
-## <a name="data-residency-option"></a>数据住所选项
+## <a name="data-residency-option"></a>数据常驻选项
 
-我们向涵盖数据中心 geo 上面表中列出的现有 Office 365 客户提供数据住所选项。使用此选项，可以请求数据住所要求的客户将其核心客户数据移到新的地理位置。除非组织需要存储在其各自的新数据中心按地理中 rest 核心客户数据，我们建议不要执行任何操作，我们的客户。通过选择要从中移动其数据，客户限制优化的核心客户数据在 rest 其当前或新的数据中心按地理位置的 Microsoft 的可能性。作为任何这些两个 geo 客户，将会遇到相同的服务质量、 性能和安全控制，像往常一样。
+我们为在上表中列出的数据中心信息所涵盖的现有 Office 365 客户提供数据派驻选项。 使用此选项, 具有数据驻留要求的客户可以请求将其核心客户数据移到新的地理位置。 我们建议客户不执行任何操作, 除非他们的组织需要将核心客户数据存储在其各自的新数据中心地理位置的 rest 中。 通过选择移动其数据, 客户可以限制 Microsoft 在其当前或新的数据中心地域中优化核心客户数据的位置。 作为这两个信息中任何一个的客户, 你将遇到与以前一样的服务质量、性能和安全控制。
   
-客户需要其核心数据移动到新的地理位置：
-  
-- 客户需要请求已设置注册窗口内移动其数据。查看[如何请求数据移动](request-your-data-move.md)页上的注册窗口中将地理位置和注册加入计划的步骤的详细信息。 
+需要将核心数据从 Microsoft 请求中的承诺期限移动到新地理位置的客户, 将其数据移动到 "设置注册" 窗口中。  查看[如何请求数据移动](request-your-data-move.md)页面, 以获取有关你的地理位置的注册窗口的更多详细信息以及注册到程序中的步骤。  在请求期结束后, 数据移动可能需要长达24个月。
+
+- 如果不执行任何操作, Microsoft 能够在服务管理和优化过程中随着时间推移将您的核心客户数据移动到新的数据中心地理位置。您的核心 csutomer 数据只能移动到新的数据中心地理位置, 而不能移动到任何其他地理位置。当此类服务管理移动完成时, 我们将通过消息中心通知租户管理员。
+   
+- 我们不会通过新的数据中心地理位置引入独特的功能、功能或合规性认证。
     
-- 数据移动可能需要之后要完成的请求期间达 24 个月。
+- 我们需要在全局运营和自动环境中执行数据移动的复杂性、精度和规模将禁止我们在对你的租户或任何其他单一租户完成数据移动时进行共享。 客户在其数据移动完成后, 每个参与的服务都会在邮件中心收到一条确认消息。 
     
-- 我们将介绍一些没有各自的独特功能、 功能或与新的数据中心按地理合规性认证。
-    
-- 复杂性、 精度和刻度我们需要执行全局操作和自动环境中的数据移动禁止我们共享后的数据移动预计完成您的租户或任何其他单租户。客户将收到一个确认在邮件中心每个参与的服务完成后其数据移动。 
-    
-- 数据移动是对最终用户影响最小的后端服务操作。在[过程中和数据移动后](during-and-after-your-data-move.md)页上列出了可能会影响的功能。我们遵守[Microsoft Online Services 服务级别协议 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)的可用性，客户需要准备或在移动过程中监视的不存在。如果需要，完成的任何服务维护的通知。 
+- 数据移动是一种后端服务操作, 对最终用户影响最小。 可受影响的功能将在[数据移动页面的过程中和之后](during-and-after-your-data-move.md)列出。 我们遵循[Microsoft Online Services 服务级别协议 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)的可用性, 以便客户无需准备或在移动过程中进行监视。 如果需要, 将执行任何服务维护的通知。 
     
 ## <a name="related-topics"></a>相关主题 
  
-[如何请求数据移动](request-your-data-move.md)
+[如何请求移动数据](request-your-data-move.md)
     
-[数据移动常见问题解答](data-move-faq.md)
+[数据移动常规常见问题](data-move-faq.md)
   
-[Microsoft Dynamics CRM online 的新数据中心 geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[适用于 Microsoft Dynamics CRM Online 的新数据中心信息](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Azure 服务区域](https://azure.microsoft.com/en-us/regions/)
-  
-
+[按区域的 Azure 服务](https://azure.microsoft.com/en-us/regions/)

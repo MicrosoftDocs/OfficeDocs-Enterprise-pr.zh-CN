@@ -11,11 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的直接转换迁移。
-ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574076"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>使用 PowerShell 执行直接转换迁移以迁移到 Office 365
 
@@ -74,13 +75,13 @@ ms.lasthandoff: 05/19/2018
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **分配所需的权限访问 Exchange 组织中的邮箱的内部部署用户帐户。** 用于连接到内部部署 Exchange 组织 （也称为迁移管理员） 的内部部署用户帐户必须具有访问您想要迁移到 Office 365 的内部部署邮箱的必要权限。此用户帐户用于创建迁移终结点到内部部署组织。
+- **为内部部署用户帐户分配访问 Exchange 组织中的邮箱所需的权限。** 用于连接到内部部署 Exchange 组织的本地用户帐户 (也称为迁移管理员) 必须具有访问要迁移到 Office 365 的本地邮箱的必要权限。。 该用户帐户用于创建内部部署组织的迁移终结点。
     
     以下列表显示了使用直接转换迁移迁移邮箱所需的管理权限。有三个可能的选项。
     
   - 迁移管理员必须是内部部署组织的 Active Directory 中的 **Domain Admins** 组成员。
     
-    或
+    或者
     
   - 必须为迁移管理员分配对每个内部部署邮箱的 **FullAccess** 权限。
     
@@ -194,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>第 7 部分：分配用户许可证
 <a name="BK_Step7"> </a>
 
- **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。** 如果您不分配许可证，则在宽限期（30 天）结束后将禁用该邮箱。若要在 Office 365 管理中心 中分配许可证，请参阅[为 Office 365 商业版分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
+ **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在 Microsoft 365 管理中心中分配许可证, 请参阅为[Office 365 for business 分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Step8"> </a>

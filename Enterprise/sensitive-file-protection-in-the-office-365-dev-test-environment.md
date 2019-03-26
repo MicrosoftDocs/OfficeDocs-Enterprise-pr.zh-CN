@@ -15,24 +15,24 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: 摘要： 配置和演示如何 Office 365 信息权限管理保护敏感文件，即使它们发布到错误的 SharePoint Online 网站集。
-ms.openlocfilehash: d866c8ef9d81ec3a80c466040dab34de8af2c1de
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: '摘要: 配置和演示 Office 365 信息权限管理如何保护您的敏感文件, 即使这些文件发布到错误的 SharePoint Online 网站集也是如此。'
+ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915697"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574066"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的敏感文件保护
 
- **摘要：** 配置和演示如何 Office 365 信息权限管理保护敏感文件，即使它们发布到错误的 SharePoint Online 网站集。
+ **摘要:** 配置并演示 Office 365 信息权限管理如何保护您的敏感文件, 即使这些文件发布到错误的 SharePoint Online 网站集也是如此。
   
 Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Online 库和列表下载的文档的功能。下载的文件经加密处理并且包含显示存储文件的 SharePoint Online 库的打开、复制、保存和打印权限。
   
 使用本文中的说明进行操作，你可以启用和测试 Office 365 中的 IRM，以查看 Office 365 试用订阅中的文件是否包含潜在敏感信息。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
+> 单击[此处](http://aka.ms/catlgstack)，可以在“One Microsoft 云测试实验室指南”堆栈图中直观转到相应的文章。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>第 1 阶段：构建 Office 365 开发/测试环境
 
@@ -49,11 +49,11 @@ Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Onlin
   
 首先，你可以添加三个新的代表执行人员的用户帐户，并为他们分配 Office 365 E5 许可证。
   
-使用[连接到 Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx)中的说明安装 PowerShell 模块 （如果需要），并连接到您新建的 Office 365 订阅：
+使用[连接到 Office 365 powershell](https://technet.microsoft.com/library/dn975125.aspx)中的说明安装 powershell 模块 (如果需要), 并连接到你的新 Office 365 订阅 (如果需要):
   
 - 你的计算机（对于轻量级的 Office 365 开发/测试环境）。
     
-- CLIENT1 虚拟机（对于模拟的企业 Office 365 开发/测试环境）。
+- CLIENT1 虚拟机（对于企业 Office 365 开发/测试环境）。
     
 在“**Windows PowerShell 凭据请求**”对话框中，键入 Office 365 试用订阅中的 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码。
   
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 接下来，创建一个专用的执行人员组，并向其添加新的执行帐户。
   
-1. 在浏览器中，转到 Office 门户[http://portal.office.com](http://portal.office.com)和登录到 Office 365 试用版订阅与全局管理员帐户。
+1. 在浏览器中, 转到 office 门户, [http://admin.microsoft.com](http://admin.microsoft.com)并使用全局管理员帐户登录到你的 office 365 试用订阅。
     
   - 如果使用的是轻型 Office 365 开发/测试环境，请打开 Internet Explorer 或浏览器的专用会话并从本地计算机登录。
     
@@ -124,41 +124,41 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 接下来，创建一个执行人员网站集，并仅允许执行人员组的成员对其进行访问。
   
-1. 在“**Microsoft Office 主页**”标签页上，单击“**管理员**”磁贴。
+1. 在 " **Microsoft Office 主页**" 选项卡上, 单击 "**管理**" 磁贴。
     
-2. 在**Office Admin center**选项卡上单击**管理中心 > SharePoint**。
+2. 在 " **Office 管理中心**" 选项卡上, 单击 "管理中心" " **> SharePoint**"。
     
-3. 在**SharePoint 管理中心**选项卡上单击**新建 > 专用网站集**。
+3. 在 " **SharePoint 管理中心**" 选项卡上, 单击 "**新建 > 专用网站集**"。
     
-4. 在新的网站集窗格中，在**标题**executives URL 框中键入**Executives**在**管理员**，指定您的全局管理员帐户的名称，然后单击**确定**。
+4. 在 "新建网站集" 窗格中, 在****"URL" 框中键入**行政主管**, 在 "**管理员**" 中指定全局管理员帐户的名称, 然后单击 **"确定"**。
     
-5. 等待，直到已创建新的网站集。完成后，复制新的执行官网站集的 URL，并将其粘贴到浏览器的新选项卡。
+5. 等到创建新网站集。 完成后, 复制新的 "执行人员" 网站集的 URL, 并将其粘贴到浏览器的新选项卡中。
     
 6. 在“**执行人员**”网站集的右上方，单击设置图标，然后单击“**共享**”。
     
-7. 在**共享 Executives**，单击**高级**。
+7. 在**共享 "高级管理人员"** 中, 单击 "**高级**"。
     
 8. 在 SharePoint 组列表中，单击“**执行人员成员**”。
     
 9. 在“人员和组”页中，单击“新建”********。
     
-10. 在**共享 Executives**，键入**Executives**，单击**Executives**组中，，然后单击**共享**。
+10. 在 **"共享 ' 执行人员 '"** 中, 键入**主管**, 单击 "**主管**" 组, 然后单击 "**共享**"。
     
-11. 关闭**人员和组**选项卡。
+11. 关闭 "**人员和组**" 选项卡。
     
 接下来，允许每个人访问销售网站集。
   
-1. 从**SharePoint 管理中心**选项卡中，复制销售网站集的 URL，并将其粘贴到浏览器的新选项卡正在
+1. 在 " **SharePoint 管理中心**" 选项卡上, 复制 "销售" 网站集的 URL, 并将其粘贴到浏览器的新选项卡中。
     
-2. 右上角，单击设置图标，然后单击**共享**。
+2. 在右上方，单击“设置”图标，然后单击“**共享**”。
     
-3. 在**共享销售网站集**，单击**高级**。
+3. 在 **"共享 ' 销售 ' 网站集 '"** 中, 单击 "**高级**"。
     
 4. 在 SharePoint 组列表中，单击“**销售网站集成员**”。
     
-5. 在“人员和组”页中，单击“新建”********。
+5. 在“**人员和组**”页面上，单击“**新建**”。
     
-6. 在**共享销售网站集**，键入**Everyone**，单击**除外部用户**，然后单击**共享**。
+6. 在 **"共享" "销售网站集"** 中, 键入**everyone**, 单击 "**除外部用户之外的所有人**", 然后单击 "**共享**"。
     
 7. 关闭“**销售网站集**”和“**SharePoint**”选项卡。
     
@@ -166,15 +166,15 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. 在“**Microsoft Office 主页**”选项卡上，单击右上方的用户图标，然后单击“**注销**”。
     
-2. 转到[http://portal.office.com](http://portal.office.com)。
+2. 转到 [http://admin.microsoft.com](http://admin.microsoft.com)。
     
-3. 在**Office 365 登录**页上，单击**使用其他帐户**。
+3. 在“**Office 365 登录**”页面上，单击“**使用其他帐户**”。
     
 4. 键入 **CEO** 帐户名及其密码，然后单击“**登录**”。
     
-5. 在浏览器的新建选项卡上，键入 Executives 网站集的 URL ( **https://**\<组织名称 >**.sharepoint.com/sites/executives**)。
+5. 在浏览器的新选项卡上, 键入 "执行人员" 网站集 ( **https://**\<组织 name>**sharepoint.com/sites/executives**) 的 URL。
     
-6. 单击**文档**，单击**新建**，然后单击**Word 文档**。
+6. 单击 "**文档**", 单击 "**新建",** 然后单击 " **Word 文档**"。
     
 7. 单击“标题栏”并键入 **SensitiveData BeforeIRM**。
     
@@ -184,13 +184,13 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 接下来，下载 SensitiveData BeforeIRM.docx 文档的本地副本，然后再意外地将其发布到销售网站集。
   
-1. 在本地计算机上创建一个新的文件夹 (例如，c:\\Tlg\\SensitiveDataTestFiles)。
+1. 在您的本地计算机上, 创建一个新文件夹 (例如, C\\:\\tlg SensitiveDataTestFiles)。
     
 2. 在浏览器的“**文档**”选项卡上，选择 **SensitiveData BeforeIRM.docx** 文档，单击省略号，然后单击“**下载**”。
     
 3. 将 **SensitiveData BeforeIRM.docx** 文档存储在步骤 1 中创建的文件夹中。
     
-4. 在浏览器的新建选项卡上，键入销售网站集的 URL ( **https://**\<组织名称 >**.sharepoint.com/sites/sales**)。
+4. 在浏览器的新选项卡上, 键入销售网站集的 URL ( **https://**\<组织 name>**sharepoint.com/sites/sales**)。
     
 5. 单击**销售网站集**的“**文档**”文件夹。
     
@@ -204,13 +204,13 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. 在“**Microsoft Office 主页**”选项卡上，单击右上方的用户图标，然后单击“**注销**”。
     
-2. 转到[http://portal.office.com](http://portal.office.com)。
+2. 转到 [http://admin.microsoft.com](http://admin.microsoft.com)。
     
-3. 在**Office 365 登录**页上，单击**使用其他帐户**。
+3. 在“**Office 365 登录**”页面上，单击“**使用其他帐户**”。
     
 4. 键入 User 5 帐户名及其密码，然后单击“**登录**”。
     
-5. 在浏览器的新建选项卡上，键入销售网站集的 URL。
+5. 在浏览器的新选项卡上, 键入销售网站集的 URL。
     
 6. 在**销售网站集**的**文档**文件夹中，单击“**SensitiveData BeforeIRM.docx**”文档。 
     
@@ -224,7 +224,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. 在“**Microsoft Office 主页**”选项卡上，单击右上方的用户图标，然后单击“**注销**”。
     
-2. 转到[http://portal.office.com](http://portal.office.com)。
+2. 转到 [http://admin.microsoft.com](http://admin.microsoft.com)。
     
 3. 在“**Office 365 登录**”页，单击全局管理员帐户名，键入其密码，然后单击“**登录**”。
     
@@ -242,7 +242,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 首先，可以为执行人员网站集文档库启用和配置 IRM。  
   
-1. 在浏览器的新建选项卡上，键入的执行官网站集的 URL。
+1. 在浏览器的新选项卡上, 键入 "执行人员" 网站集的 URL。
     
 2. 单击“文档”****。
     
@@ -258,7 +258,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
   - 对于**添加权限策略说明**，键入**针对执行人员的 IRM**。
     
-6. 单击"显示选项"。
+6. 单击“**显示选项**”。
     
 7. 在“**设置其他 IRM 库设置**”下方，选择“**不允许用户上载不支持 IRM 的文档**”。
     
@@ -266,7 +266,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 9. 在“**设置组保护和凭据时间间隔**”下方，选择“**允许组保护**”和“**默认组**”，键入“**执行人员**”。
     
-10. 单击" **确定**"。
+10. 单击“**确定**”。
     
 接下来，以 CEO 身份进行操作，将新文档上载到执行人员文档文件夹，下载它，再意外地将其上载到销售文档文件夹。
   
@@ -276,15 +276,15 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 3. 在该文件夹内右键单击，然后单击“**粘贴**”。
     
-4. 将新的**SensitiveData BeforeIRM-Copy.docx**文件重命名为**SensitiveData AfterIRM.docx**。
+4. 将新的**SensitiveData-BeforeIRM-复制的 .docx**文件重命名为**sensitivedata afterirm.docx**。
     
 5. 在浏览器的“**Microsoft Office 主页**”选项卡上，单击右上方的用户图标，然后单击“**注销**”。
     
-6. 转到[http://portal.office.com](http://portal.office.com)。
+6. 转到 [http://admin.microsoft.com](http://admin.microsoft.com)。
     
 7. 在“**Office 365 登录**”页，单击 CEO 帐户名，键入其密码，然后单击“**登录**”。
     
-8. 在浏览器的新建选项卡上，键入的执行官网站集的 URL。
+8. 在浏览器的新选项卡上, 键入 "执行人员" 网站集的 URL。
     
 9. 在“**文档**”页上，单击“**上载**”，指定本地文件夹中的 **SensitiveData AfterIRM.docx** 文档，然后单击“**打开**”。
     
@@ -294,7 +294,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 12. 关闭“**文档**”页的选项卡。
     
-13. 在浏览器的新建选项卡上，键入销售网站集的 URL。
+13. 在浏览器的新选项卡上, 键入销售网站集的 URL。
     
 14. 单击“文档”****。
     
@@ -306,11 +306,11 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. 在浏览器的“**Microsoft Office 主页**”选项卡上，单击右上方的用户图标，然后单击“**注销**”。
     
-2. 转到[http://portal.office.com](http://portal.office.com)。
+2. 转到 [http://admin.microsoft.com](http://admin.microsoft.com)。
     
-3. 在**Office 365 登录**页上，单击 User5 帐户名，请键入其密码，，然后单击**登录**。
+3. 在 " **Office 365 登录**" 页上, 单击 User5 帐户名, 键入其密码, 然后单击 "**登录**"。
     
-4. 在浏览器的新建选项卡上，键入销售网站集的 URL。
+4. 在浏览器的新选项卡上, 键入销售网站集的 URL。
     
 5. 单击“文档”****。
     

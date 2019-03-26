@@ -16,18 +16,18 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '摘要: 将 windows powershell 连接到单个 Windows powershell 窗口中的所有 Office 365 服务。'
-ms.openlocfilehash: 38221a2c9b50aaeab217016336cf4d020abd706a
-ms.sourcegitcommit: 2e5e2c65a1b785e229f1f7fd5b219f1b3de96f97
+ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339510"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573966"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
  **摘要:** 无需在单独的 PowerShell 控制台窗口中管理不同的 office 365 服务, 您可以连接到所有 Office 365 服务并从单个控制台窗口管理这些服务。
   
-在使用 PowerShell 管理 Office 365 时, 可以在与 Office 365 管理中心、SharePoint online、Exchange online、Skype for business Online 和安全性&amp;合规性中心。 在单独的 Windows PowerShell 会话中有五种不同的连接方法, 你的桌面可能如下所示:
+使用 PowerShell 管理 Office 365 时, 可以在与 Microsoft 365 管理中心、SharePoint online、Exchange online、Skype for business Online 和安全性相关的同时同时打开最长五个不同的 Windows PowerShell 会话&amp;合规性中心。 在单独的 Windows PowerShell 会话中有五种不同的连接方法, 你的桌面可能如下所示:
   
 ![五个同时运行的 Windows PowerShell 控制台](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   

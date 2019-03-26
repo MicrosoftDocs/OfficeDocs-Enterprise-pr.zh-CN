@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: 摘要：使用此测试实验室指南可以实现 Office 365 试用订阅中 Exchange Online 的 Dynamics 365 集成。
-ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897115"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574016"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境的 Exchange Online 集成
 
@@ -42,11 +42,11 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
 
 使用下列步骤配置 Dynamics 365 和 Exchange Online 集成的全局管理员邮箱：
   
-1. 使用专用会话的浏览器中，转到[http://portal.office.com](http://portal.office.com)和使用 Office 365 全局管理员帐户登录。
+1. 使用您的浏览器的专用会话, 转[http://admin.microsoft.com](http://admin.microsoft.com)到并使用 Office 365 全局管理员帐户登录。
     
 2. 在"Microsoft Office 主页"页上，单击"邮件"磁贴。
     
-3. 新**邮件**选项卡在浏览器中，单击**新建**，您会看到如何为键入一条消息框下方窗格的底部角具有图标的我的模板。
+3. 在浏览器的 "新建**邮件**" 选项卡上, 单击 "**新建**", 并注意键入邮件的框下的窗格的下角是否有 "我的模板" 图标。
     
      ![空白的新电子邮件未与 Dynamics 365 集成。](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
     
 5. 单击浏览器中的"Microsoft Office 主页"选项卡，然后单击"邮件"磁贴。
     
-6. 在新**邮件**选项卡在浏览器中，单击**新建**。请注意用于现在键入一条消息框下方窗格的底部角的 Dynamics 365 都有一个图标。
+6. 在浏览器中新的"邮件"选项卡上，单击"新建"。 请注意, 现在用于键入邮件的框下的窗格的下角具有一个用于 Dynamics 365 的图标。
     
      ![空白的新电子邮件与 Dynamics 365 集成，显示新图标。](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

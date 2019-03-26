@@ -3,7 +3,7 @@ title: 面向 Microsoft 云连接的 ExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/02/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。
-ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
-ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
+ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "27470164"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574006"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>面向 Microsoft 云连接的 ExpressRoute
 
@@ -51,7 +51,7 @@ Internet 中的用户，例如漫游或远程用户，通过 Internet 将他们�
   
 图 2 显示了两个网络路径。到 Microsoft Intune 的流量与普通 Internet 流量的路径相同。Office 365、Microsoft Azure 和 Dynamics 365 的流量经过 ExpressRoute 连接，这是内部部署网络边缘与 Microsoft 云边缘之间的专用路径。
   
-ExpressRoute 连接，您现在可以控制，通过与服务提供商的关系，通过从您边缘到 Microsoft 的整个流量路径云边缘。可预测的性能和[99.95%运行时间 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)可以提供此连接。
+如果有 ExpressRoute 连接，你现在可以通过与服务提供商之间的关系控制从你的边缘到 Microsoft 云边缘的整个流量路径。 此连接可以提供可预测的性能和[99.95% 的正常运行时间 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)。
   
 基于服务提供商到 Office 365、Azure 和 Dynamics 365 服务的连接，现在可以依靠可预测的吞吐量和延迟。目前不支持 ExpressRoute 到 Microsoft Intune 的连接。
   
@@ -96,30 +96,30 @@ ExpressRoute 连接不能保证每一种配置的性能都会提高。通过低�
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>ExpressRoute 与 Microsoft 云服务的对等关系
 
-单个 ExpressRoute 连接支持最多两个不同边框网关协议 (BGP) 对等关系向 Microsoft 云的不同部分。BPG 使用对等关系建立信任和 exchange 路由信息。
+单个 ExpressRoute 连接支持与 Microsoft 云不同部分的两个不同的边界网关协议 (BGP) 对等关系。 BPG 使用对等关系建立信任和交换路由信息。
   
-**图 3: 两个不同 BGP 关系中的单个 ExpressRoute 连接**
+**图 3: 单个 ExpressRoute 连接中的两个不同的 BGP 关系**
 
-![图 3: 两个不同 BGP 关系中的单个 ExpressRoute 连接](media/Network-Poster/ERPeering.png)
+![图 3: 单个 ExpressRoute 连接中的两个不同的 BGP 关系](media/Network-Poster/ERPeering.png)
   
-图 3 显示了从本地网络 ExpressRoute 连接。ExpressRoute 连接都有两个逻辑的对等关系。Microsoft 对等关系转到 Microsoft SaaS 服务，包括 Office 365、 Dynamcs 365 和 Azure PaaS 服务。专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
+图 3 显示了内部部署网络中的 ExpressRoute 连接。 ExpressRoute 连接具有两个逻辑对等关系。 microsoft 的对等关系转到 microsoft SaaS 服务, 包括 Office 365、Dynamcs 365 和 Azure PaaS 服务。 专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
   
-Microsoft 对等 BGP 关系： 
+Microsoft 对等 BGP 关系：  
   
-- 是从 dmz 路由器到 Office 365、 Dynamics 365 和 Azure 服务公共地址。 
+- 是从 DMZ 中的某个路由器到 Office 365、Dynamics 365 和 Azure 服务的公用地址。 
     
-- 支持双向启动的通信。
+- 	支持双向启动的通信。
     
 专用的对等 BGP 关系：
   
-- 是从组织网络边缘上的某个路由器到分配给 Azure VNets 的专用 IP 地址。
+- 	是从组织网络边缘上的某个路由器到分配给 Azure VNets 的专用 IP 地址。
     
-- 支持双向启动的通信。
+- 	支持双向启动的通信。
     
-- 是从组织网络到 Microsoft 云的扩展，配有内部一致的寻址和路由。
+- 	是从组织网络到 Microsoft 云的扩展，配有内部一致的寻址和路由。
 
 >[!Note]
->本文的早期版本中所述的公共对等 BGP 关系已被弃用。
+>以前版本的本文中所述的公共对等 BGP 关系已弃用。
 >
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>通过 ExpressRoute 的应用程序部署和流量的示例
@@ -151,7 +151,7 @@ Microsoft 对等 BGP 关系：
     
 - 从内部部署网络边缘中，Azure VNet 的专用 IP 地址和 Office 365 的公用 IP 地址可通过 ExpressRoute 连接提供。
     
-当应用程序访问 SharePoint Online 的 URL 时，它通过 ExpressRoute 连接将其流量转发到边缘的代理服务器。 
+当应用程序访问 SharePoint Online 的 URL 时，它通过 ExpressRoute 连接将其流量转发到边缘的代理服务器。  
   
 当代理服务器找到 SharePoint Online 的 IP 地址时，它将通过 ExpressRoute 连接转发回流量。响应流量通过反向路径。
   
@@ -184,9 +184,9 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 这可能会导致任意对任意连接模型的本地 Microsoft 数据中心的传送达不到最佳状态。
   
-**使用的单个 ExpressRoute 连接的地理位置分散的组织的图 7： 示例**
+**图 7: 使用单个 ExpressRoute 连接的地理位置分散的组织的示例**
 
-![使用的单个 ExpressRoute 连接的地理位置分散的组织的图 7： 示例](media/Network-Poster/MSNet1.png)
+![图 7: 使用单个 ExpressRoute 连接的地理位置分散的组织的示例](media/Network-Poster/MSNet1.png)
   
 图 7 显示了具有两个位置的组织：美国西北部的位置 1 和东北部的位置 2。它们由任意对任意 WAN 提供程序连接。该组织还有到西海岸的 Microsoft 对等位置的 ExpressRoute 连接。来自东北部的位置 2 且发往东海岸数据中心的流量，必须一直流经组织的 WAN 直到西海岸、Microsoft 对等位置，然后通过 Microsoft 云网络流经全国，返回东海岸数据中心。
   
@@ -200,7 +200,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 多个 ExpressRoute 连接可以：
   
-- 提高本地 Microsoft 数据中心位置的性能。
+- 	提高本地 Microsoft 数据中心位置的性能。
     
 - 在本地 ExpressRoute 连接不可用时提高 Microsoft 云的可用性。
     
@@ -210,17 +210,17 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 ### <a name="expressroute-premium"></a>ExpressRoute Premium
 
-对于分布在各洲的组织，你可以使用 ExpressRoute Premium。 
+对于分布在各洲的组织，你可以使用 ExpressRoute Premium。  
   
 通过 ExpressRoute Premium，可以从任何洲的任何 Microsoft 对等位置到达任何洲的任何 Microsoft 数据中心。洲之间的流量通过 Microsoft 云网络传送。
   
 通过多个 ExpressRoute Premium 连接，你可以：
   
-- 提高洲本地 Microsoft 数据中心位置的性能。
+- 	提高洲本地 Microsoft 数据中心位置的性能。
     
 - 在本地 ExpressRoute 连接不可用时提高全局 Microsoft 云的可用性。
     
-基于 Office 365 ExpressRoute 连接需要 ExpressRoute Premium。
+基于 Office 365 的 ExpressRoute 连接需要 ExpressRoute Premium。
   
 **图 9：全球范围内的 Microsoft 云网络**
 
@@ -232,7 +232,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 - 通过该洲内的 Microsoft 云网络传送至 Office 365 洲数据中心。
     
-- 通过洲际 Microsoft 云网络传送至另一个洲的Office 365 数据中心。
+- 	通过洲际 Microsoft 云网络传送至另一个洲的Office 365 数据中心。
     
 有关详细信息，请参阅：
   
@@ -240,15 +240,13 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
     
 - [Office 365 的网络规划和性能调整 365](https://aka.ms/tune)
     
-- [Office 365 Performance Management](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)（Office 365 的性能管理）
-    
 ## <a name="expressroute-options"></a>ExpressRoute 选项
 
 你也可以将以下选项纳入到 ExpressRoute 部署中：
   
 - **边缘的安全性：** 要实现通过 ExpressRoute 连接发送和接收的流量的高级安全性，如流量检查或入侵/恶意软件检测，请将安全装置放入 DMZ 内的流量路径下或 Intranet 边界。
     
-- **虚拟机的 Internet 通信：** 若要防止 Azure 虚拟机启动直接与 Internet 位置的流量，公布到 Microsoft 的默认路由。通过 ExpressRoute 连接并通过您的本地代理服务器路由到 Internet 的流量。返回通过 ExpressRoute 连接路由到 Azure PaaS 服务或 Office 365 的 Azure 虚拟机流量。
+- **vm 的 Internet 流量:** 若要阻止 Azure vm 直接与 Internet 位置启动流量, 请将默认路由播发到 Microsoft。 Internet 流量通过 ExpressRoute 连接和内部部署代理服务器传送。 从 Azure 虚拟机到 Azure PaaS 服务或 Office 365 的流量将通过 ExpressRoute 连接传送回去。
     
 - **WAN 优化程序：** 你可以在跨界部署的 Azure 虚拟网络 (VNet) 的专用对等连接两端部署 WAN 优化程序。在 Azure VNet 内部，使用 Azure 市场的 WAN 优化网络设备和用户定义路由通过该设备传送流量。
     

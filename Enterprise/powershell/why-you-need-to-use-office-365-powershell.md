@@ -12,22 +12,22 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 摘要：了解为何必须使用 Office 365 PowerShell 管理 Office 365，这在某些情况下可以变得更高效，在其他情况下则可能是必备要求。
-ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
-ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
+ms.openlocfilehash: f63f1a2361b225eed5d771b06b07f00bba26c392
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30538990"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574096"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>为什么您需要使用 Office 365 PowerShell
 
  **摘要：** 了解为什么必须使用 Office 365 PowerShell 管理 Office 365：在一些情况下是因为它更为高效，在另外一些情况下是因为必须这样做。
   
-借助 Office 365 管理中心不仅可以管理你的 Office 365 用户帐户和许可证，还可以管理你的 Office 365 服务器产品：Exchange、Skype for Business Online 和 SharePoint Online。但是，也可以使用 Office 365 PowerShell 命令来管理这些元素，充分利用针对速度、自动化和其他功能的命令行和脚本语言环境。
+使用 Microsoft 365 管理中心, 不仅可以管理 office 365 用户帐户和许可证, 还可以管理 office 365 服务器产品: Exchange、Skype for business online 和 SharePoint online。 但是，也可以使用 Office 365 PowerShell 命令来管理这些元素，充分利用针对速度、自动化和其他功能的命令行和脚本语言环境。
   
 在本文中，我们将向您展示使用 Office 365 PowerShell 管理 Office 365 的各种方式。
   
-- Office 365 PowerShell 可能会显示通过 Office 365 管理中心无法看到的其他信息。
+- Office 365 PowerShell 可能会显示你无法通过 Microsoft 365 管理中心看到的其他信息
     
 - Office 365 拥有仅可使用 Office 365 PowerShell 配置的功能
     
@@ -45,9 +45,9 @@ ms.locfileid: "30538990"
 Get-Mailbox
 ```
 
-使用 Office 365 管理中心可以轻松获取邮箱列表，但无法轻松计算所有 Web 应用的所有网站的所有列表中的项目数量。
+使用 Microsoft 365 管理中心也可以轻松地获取邮箱的列表, 但计算所有 web 应用程序的所有网站的所有列表中的项目数无法轻松完成。
   
-请注意，Office 365 PowerShell 旨在补充和增强管理 Office 365 的能力，而非取代 Office 365 管理中心。作为 Office 365 管理员，必须至少习惯使用 Office 365 PowerShell，因为有些配置程序只能通过 Office 365 PowerShell 命令完成。在这些情况下，需要了解如何：
+请注意, office 365 PowerShell 旨在增强和增强管理 office 365 的能力, 而不是替换 Microsoft 365 管理中心。 作为 Office 365 管理员，必须至少习惯使用 Office 365 PowerShell，因为有些配置程序只能通过 Office 365 PowerShell 命令完成。 在这些情况下，需要了解如何：
   
 - 安装 Office 365 PowerShell 模块（每台管理员计算机只能安装一次）。
     
@@ -59,13 +59,13 @@ Get-Mailbox
     
 在学过这些基本技巧之后，您不需要使用 **Get-Mailbox** 命令列出您的邮箱用户，也不需要明白如何创建像前一个命令那样的新命令来计算您的所有 Web 应用的所有网站的所有列表中的项目数量。如果需要，Microsoft 和 Office 365 管理员社区可以帮到您。
   
-## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-office-365-admin-center"></a>Office 365 PowerShell 可以显示无法在 Office 365 管理中心内看到的其他信息
+## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-microsoft-365-admin-center"></a>Office 365 PowerShell 可能会显示你无法通过 Microsoft 365 管理中心看到的其他信息
 
-Office 365 管理中心显示大量有用的信息，但这并不意味着它会显示 Office 365 存储在用户、许可证、邮箱和网站上的所有可能信息。下面是 Office 365 管理中心中 **用户和组** 的一个示例：
+Microsoft 365 管理中心显示了大量有用的信息, 但这并不意味着它会显示 Office 365 存储在用户、许可证、邮箱和网站上的所有可能的信息。 下面的示例展示了 Microsoft 365 管理中心中的**用户和组**:
   
-![在 Office 365 管理中心显示的用户和组的示例。](media/o365-powershell-users-and-groups.png)
+![Microsoft 365 管理中心中的用户和组的显示示例。](media/o365-powershell-users-and-groups.png)
   
-出于多种目的，这显示了你需要知道的信息。 但是，有时你需要了解更多。 例如, office 365 许可 (和用户可使用的 office 365 功能) 取决于该用户的地理位置。 向居住在美国的用户扩展的策略和功能可能与向居住在印度或比利时的用户扩展的策略和功能不同。 可以通过以下步骤使用 Office 365 管理中心确定用户的地理位置：
+出于多种目的，这显示了你需要知道的信息。 但是，有时你需要了解更多。 例如, office 365 许可 (和用户可使用的 office 365 功能) 取决于该用户的地理位置。 向居住在美国的用户扩展的策略和功能可能与向居住在印度或比利时的用户扩展的策略和功能不同。 您可以使用 Microsoft 365 管理中心来确定用户的地理位置, 步骤如下:
   
 1. 双击用户的"显示名称"。
     
@@ -75,7 +75,7 @@ Office 365 管理中心显示大量有用的信息，但这并不意味着它会
     
 4. 向下滚动，直到看见"国家或地区"标题：
     
-     ![用户在 Office 365 管理中心的区域信息的示例。](media/o365-powershell-usage-location.png)
+     ![Microsoft 365 管理中心中用户的区域信息示例。](media/o365-powershell-usage-location.png)
   
 5. 在一张纸上记下用户的显示名称和位置，或将其复制并粘贴至记事本中。 
     
@@ -166,7 +166,7 @@ $x | Select DisplayName, UsageLocation
   
 ## <a name="office-365-has-features-that-you-can-only-configure-with-office-365-powershell"></a>Office 365 具有只能使用 Office 365 PowerShell 配置的功能
 
-Office 365 管理中心旨在为大多数人提供对最常见或最有意义的适用管理任务的访问权限。换句话说，Office 365 管理中心的设计目标是让典型的管理员能够使用工具来执行最常见的管理任务。根据定义，这意味着某些任务无法通过 Office 365 管理中心完成。
+Microsoft 365 管理中心旨在提供对大多数用户适用的最常见或有意义的管理任务的访问权限。 换句话说, Microsoft 365 管理中心的设计是为了使典型管理员可以使用该工具执行最常见的管理任务。 通过此定义, 意味着有一些任务无法使用 Microsoft 365 管理中心完成。
   
 例如，Skype for Business Online 管理中心提供用于创建自定义会议邀请的几个选项：
   
@@ -202,11 +202,11 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
   
 ## <a name="office-365-powershell-is-great-at-carrying-out-bulk-operations"></a>Office 365 PowerShell 善于执行批量操作
 
-一直以来，当要执行单个操作时，诸如 Office 365 管理中心这样的可视化界面最有价值。例如，如果需要禁用一个用户帐户，可以使用 Office 365 管理中心快速查找并清除复选框。这可能比在 Office 365 PowerShell中执行类似操作更简单。
+以往, 当你执行一个操作时, 像 Microsoft 365 管理中心这样的可视界面非常有用。 例如, 如果您需要禁用一个用户帐户, 则可以使用 Microsoft 365 管理中心快速查找并清除复选框。 这可能比在 Office 365 PowerShell中执行类似操作更简单。
   
-但是，如果必须更改一大组其他事项中的许多事项或某些所选事项，Office 365 管理中心也许未必是最佳选择。例如，如果不得不更改数千个电话号码的前缀或需要从所有 SharePoint Online 网站删除特定用户 Ken Myer，那么如何在 Office 365 管理中心 进行该操作呢？
+但是, 如果您必须在一大范围的其他内容中更改许多内容或所选的内容, Microsoft 365 管理中心可能无法充分利用你的时间。 例如, 如果您必须更改数以千计的电话号码前缀, 或者您需要从所有 SharePoint Online 网站中删除特定用户 (Ken Myer), 那么如何在 Microsoft 365 管理中心中执行此操作？
   
-关于后一个示例，你拥有数百个 SharePoint Online 网站，但甚至不知道 Ken Meyer 是哪个群组的成员。这意味着你需要从 Office 365 管理中心开始，然后再为每个网站执行此过程：
+关于后一个示例，你拥有数百个 SharePoint Online 网站，但甚至不知道 Ken Meyer 是哪个群组的成员。 这意味着您必须从 Microsoft 365 管理中心开始, 然后对每个网站执行此过程:
   
 1. 单击网站的"URL"。
     
@@ -236,7 +236,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!TIP]
 >  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有 SharePoint 网站 (**Get-SPOSite**)，并对每个网站从可以访问它的用户列表中删除 Ken Meyer (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**)。
   
-因为我们让 Office 365 从每个网站删除 Ken Meyer，包括那些他无权访问的网站，此命令的显示将对他当前无权访问的那些网站显示错误。我们可以对此命令使用一个附加条件，使其仅从其登录列表中有 Key Meyer 的网站中删除他，但所列错误对网站本身没有任何坏处。此命令运行数百个网站可能需要几分钟的时间，而通过 Office 365 管理中心运行则需要数小时。
+因为我们让 Office 365 从每个网站删除 Ken Meyer，包括那些他无权访问的网站，此命令的显示将对他当前无权访问的那些网站显示错误。 我们可以对此命令使用一个附加条件，使其仅从其登录列表中有 Key Meyer 的网站中删除他，但所列错误对网站本身没有任何坏处。 此命令可能需要几分钟的时间才能运行数百个网站, 而不是通过 Microsoft 365 管理中心工作数小时。
   
 下面是另一个批量操作示例。使用此命令将新 SharePoint 管理员 Bonnie Kearney 添加到组织中的所有网站：
   
@@ -249,9 +249,9 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
   
 ## <a name="office-365-powershell-is-great-at-filtering-data"></a>Office 365 PowerShell 善于筛选数据
 
-Office 365 管理中心提供几种不同的方法来筛选数据，以快速而轻松地查找信息的目标子集。例如，可以通过 Exchange 轻松筛选用户邮箱的几乎所有属性。例如，下面是居住在布卢明顿市的所有用户的邮箱列表：
+Microsoft 365 管理中心提供了几种不同的筛选数据的方法, 以便快速轻松地找到目标信息子集。 例如，可以通过 Exchange 轻松筛选用户邮箱的几乎所有属性。 例如，下面是居住在布卢明顿市的所有用户的邮箱列表：
   
-![在 Office 365 管理中心对居住在布卢明顿市的所有用户的邮箱列表执行高级搜索的示例。](media/o365-powershell-advanced-search.png)
+![在 Microsoft 365 管理中心中执行高级搜索的示例, 用于居住在布卢明顿城市的所有用户的邮箱列表。](media/o365-powershell-advanced-search.png)
   
 Exchange 管理中心还允许您组合筛选条件。例如，您可以查找居住在布卢明顿和在财务部门工作的所有用户的邮箱。 
   
@@ -263,7 +263,7 @@ Exchange 管理中心还允许您组合筛选条件。例如，您可以查找�
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
 ```
 
-下面展示了显示内容示例：
+下面是显示的一个示例：
   
 ```
 DisplayName                              City
@@ -307,7 +307,7 @@ Janet Schorr                              Bellevue
   
 您也可以在 Office 365 PowerShell 筛选器中使用通配符匹配部分名称。例如，假设您正在查找某个用户帐户，但是只记得其姓氏是 Anderson，或也许是 Henderson 或 Jorgenson。
   
-可以使用搜索工具并执行三种不同的搜索在 Office 365 管理中心中找到该用户：
+您可以使用搜索工具在 Microsoft 365 管理中心内跟踪该用户并执行三种不同的搜索:
   
 - 一次是搜索  *Anderson* 
     
@@ -326,11 +326,11 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell 方便打印或保存数据
 
-通过 Office 365 管理中心, 您可以查看数据列表。 下面是显示已启用 Skype for Business Online 的用户列表的 Skype for Business Online 管理中心的一个示例：
+Microsoft 365 管理中心允许你查看数据列表。 下面是显示已启用 Skype for Business Online 的用户列表的 Skype for Business Online 管理中心的一个示例：
   
 ![用于显示已为 Skype for Business Online 启用的用户列表的 Skype for Business Online 管理中心的示例。](media/o365-powershell-lync-users.png)
   
-若要将该信息保存到一个文件，必须复制并将其粘贴到一个文档或 Excel。在任一种情况下，该副本可能需要附加的格式设置。此外，Office 365 管理中心不提供直接打印所显示的列表的方法。
+若要将该信息保存到一个文件，必须复制并将其粘贴到一个文档或 Excel。 在任一种情况下，该副本可能需要附加的格式设置。 此外, Microsoft 365 管理中心不提供直接打印显示列表的方法。
   
 幸运的是，您不仅可以使用 Office 365 PowerShell 显示列表，而且还可以将其保存到可轻松导入 Excel 的文件。下面是一个将 Skype for Business Online 用户数据保存为逗号分隔值 (CSV) 文件（一个可轻松导入为 Excel 工作表中的表的文件）的示例命令：
   
@@ -378,7 +378,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
     
 - 用户是否已启用 Skype for Business Online
     
-当前无法使用 Office 365 管理中心轻松地生成报告。相反，必须创建一个单独的文档来存储信息（如 Excel 工作表），并从 Office 365 管理中心获取所有用户名称和许可信息，从 Exchange 管理中心获取邮箱信息，从 Skype for Business Online 管理中心获取 Skype for Business Online 信息，然后整理和组合该信息。
+您当前无法使用 Microsoft 365 管理中心来轻松生成此类报告。 相反, 您必须创建单独的文档来存储信息 (如 Excel 工作表), 并从 Microsoft 365 管理中心获取所有用户名和许可信息, 从 Exchange 管理中心获取邮箱信息, 获取 Skype for来自 Skype for business online 管理中心的商业在线信息, 然后整理和组合这些信息。
   
 另一种方法是使用 Office 365 PowerShell 脚本编译该报告。
   

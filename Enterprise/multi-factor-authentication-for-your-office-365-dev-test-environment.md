@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 摘要：使用发送到 Office 365 开发/测试环境中的智能手机的短信来配置多重身份验证。
-ms.openlocfilehash: 453dbc6bda3cfbc6806159d53c9a805c4c6cac97
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242074"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573976"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的多重身份验证
 
  **摘要：** 使用发送到 Office 365 开发/测试环境中的智能手机的短信来配置多重身份验证。
   
-有关登录到 Office 365 订阅的其他安全级别, 可以启用 Azure 多重身份验证, 这需要使用用户名和密码才能对帐户进行身份验证。对于 Office 365 的多重身份验证, 用户需要确认电话呼叫、在短信中键入验证代码, 或者在正确输入密码后在智能手机上指定应用密码。只有在满足第二个身份验证因素之后, 他们才能登录。 
+有关登录到 Office 365 订阅的其他安全级别, 可以启用 Azure 多重身份验证, 这需要使用用户名和密码才能对帐户进行身份验证。 使用适用于 Office 365 的多重身份验证时，用户需要在正确输入密码后确认智能手机上的电话呼叫、键入通过短信发送的验证码或指定应用密码。 仅在满足第二个身份验证因素时才能登录。 
   
 本文介绍如何为特定 Office 365 帐户启用和测试基于短信的身份验证。
   
@@ -53,7 +53,7 @@ ms.locfileid: "30242074"
 
 通过以下步骤为 User 2 帐户启用多重身份验证：
   
-1. 打开浏览器的单独实例, 转到 office 365 门户 ([https://portal.office.com](https://portal.office.com)), 然后使用全局管理员帐户登录到 office 365 试用订阅。
+1. 打开浏览器的单独实例, 转到 office 365 门户 ([https://www.office.com](https://www.office.com)), 然后使用全局管理员帐户登录到 office 365 试用订阅。
     
 2. 在主门户页上，单击“管理员”****。
     
@@ -63,13 +63,13 @@ ms.locfileid: "30242074"
     
 5. 在列表中, 选择 "**用户 2** " 帐户。
     
-6. 在 "**用户 2** " 部分的 "**快速步骤**" 下, 单击 "**启用**"。
+6. 在“User 2”**** 部分的“快速步骤”**** 下，单击“启用”****。
     
-7. 在 "**关于启用多重身份验证**" 对话框中, 单击 "**启用多重身份验证**"。
+7. 在“关于启用多重身份验证”**** 对话框中，单击“启用多重身份验证”****。
     
 8. 在 "**更新成功**" 对话框中, 单击 "**关闭**"。
     
-9. 在 " **Microsoft Office 主页**" 选项卡上, 单击右上角的 "用户帐户" 图标, **** 然后单击 "注销"。
+9. 在“Microsoft Office 主页”**** 选项卡上，单击右上方的用户帐户图标，然后单击“注销”****。
     
 10. 关闭浏览器实例。
     
@@ -77,11 +77,11 @@ ms.locfileid: "30242074"
   
 1. 打开浏览器的新实例。
     
-2. 转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com)), 并使用 User 2 帐户 (用户2、\<组织 name>) 和密码登录。
+2. 转到 Office 365 门户 ([https://www.office.com](https://www.office.com)), 并使用 User 2 帐户 (用户2、\<组织 name>) 和密码登录。
     
-3. 登录后, 系统会提示您设置帐户以进行其他安全验证。单击 "**立即设置**"。
+3. 登录后，系统将提示你设置帐户以进行其他安全验证。单击“立即设置”****。
     
-4. 在 "**其他安全验证**" 页上:
+4. 在“其他安全性验证”**** 页上： 
     
   - 选择你所在的国家或地区。
     
@@ -89,13 +89,13 @@ ms.locfileid: "30242074"
     
   - 在**方法**中, 单击 "**通过短信向我发送代码**"。
     
-5. 单击“下一步”。****
+5. 单击“下一步”。
     
-6. 输入智能手机上收到的短信中的验证码, 然后单击 "**验证**"。
+6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     
-7. 在 "**步骤 3: 保留现有应用程序**" 页上, 将 "User 2" 帐户的显示应用密码记录在安全位置, 然后单击 "**完成**"。
+7. 在“第 3 步: 保留现有应用程序”**** 页上，将显示的 User 2 帐户的应用密码记录在安全位置，然后单击“完成”****。
     
-8. 如果这是第一次使用用户2帐户登录, 则系统会提示您更改密码。键入原始密码和新密码两次, 然后单击 "**更新密码" 和 "登录**"。将新密码记录在安全位置。
+8. 如果这是你第一次使用 User 2 帐户登录，那么系统将提示你更改密码。键入原始密码和新密码两次，然后单击“更新密码并登录”****。将新密码记录在安全位置。
     
     您应在浏览器的 " **Microsoft Office 主页**" 选项卡上看到 "用户 2" 的 Office 365 门户。
     
@@ -109,5 +109,5 @@ ms.locfileid: "30242074"
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 部署的多重身份验证计划](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[规划 Office 365 部署的多因素身份验证](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

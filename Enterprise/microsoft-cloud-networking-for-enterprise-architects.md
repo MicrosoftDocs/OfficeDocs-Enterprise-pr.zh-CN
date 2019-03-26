@@ -3,7 +3,7 @@ title: 面向企业架构师的 Microsoft 云网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 摘要： 设计用于 Microsoft 云服务和平台的网络。
-ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 6b224ce2db0d247c553428a2e4bfd6ba475fc89a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123349"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573896"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云网络
 
@@ -63,8 +63,6 @@ ms.locfileid: "27123349"
     
     逐步完成设计过程以创建最佳的 Azure 虚拟网络 (VNet)，以便托管基于服务器的 IT 工作负载，包括子网、地址空间、路由、DNS、负载平衡以及本地网络的连接性、其他 VNet 和 Internet。
     
-有关此海报要点的 30 分钟内容摘要，请学习 Microsoft Virtual Academy 课程[让网络更适合 Microsoft 云产品/服务](https://mva.microsoft.com/zh-CN/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)。
-  
 > [!NOTE]
 > 这些文章反映了面向企业架构师的 Microsoft 云网络的 **2018 年 12 月**版本的海报。
   
