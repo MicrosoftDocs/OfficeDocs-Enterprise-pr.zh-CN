@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 摘要：在 Azure 虚拟机上部署 Azure AD Connect，以在本地目录和 Office 365 订阅的 Azure AD 租户之间同步帐户。
-ms.openlocfilehash: c2aba481f789e52d027ccd8f5a91217e825ed8bf
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 4b248dd0a5f6fc775fca322b696703545a1ef465
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25976698"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574026"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Office 365 目录同步
 
@@ -119,9 +119,11 @@ Azure Active Directory (AD) Connect（以前称为 Directory Synchronization 工
 - 阶段 3：安装和配置 Azure AD Connect
     
 部署之后，还必须为 Office 365 中的新用户帐户分配位置和许可证。
-  
+
+<!--  
 > [!TIP]
-> [Azure 部署工具包中的目录同步服务器](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)包含构建此解决方案所需的全部 Azure PowerShell 块、Microsoft PowerPoint 和 Visio 格式的关系图，以及生成专为你的设置自定义的 Azure PowerShell 命令块的 Microsoft Excel 配置工作簿。
+> The [Directory Synchronization Server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) has all of the Azure PowerShell blocks to build out this solution, the diagrams in Microsoft PowerPoint and Visio format, and a Microsoft Excel configuration workbook that generates Azure PowerShell command blocks customized for your settings.
+-->
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>第 1 阶段：创建和配置 Azure 虚拟网络
 
@@ -176,7 +178,7 @@ Azure Active Directory (AD) Connect（以前称为 Directory Synchronization 工
 
 Azure AD Connect 将帐户从本地 Windows Server AD 添加到 Office 365 订阅，但为了使用户能够登录到 Office 365 并使用其服务，必须使用位置和许可证配置这些帐户。使用下列步骤为适当的用户帐户添加位置和激活许可证：
   
-1. 登录到 [Office 365 门户页](https://portal.office.com)，然后单击“管理员”****。
+1. 登录到 [Office 365 门户页](https://www.office.com)，然后单击“管理员”****。
     
 2. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
@@ -200,7 +202,8 @@ Azure AD Connect 将帐户从本地 Windows Server AD 添加到 Office 365 订�
   
 [设置 Office 365 的目录同步](set-up-directory-synchronization.md)
   
-[Azure 部署工具包中的目录同步服务器](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
-
+<!--
+[Directory Synchronization server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
+-->
 
 
