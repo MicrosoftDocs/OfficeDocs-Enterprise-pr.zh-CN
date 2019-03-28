@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的暂存迁移。
-ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 3e390502e239573f1b3c93f5e3d46c0aa0f4579a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504365"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574106"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>使用 PowerShell 执行暂存迁移以迁移到 Office 365
 
@@ -236,7 +236,7 @@ Get-MigrationBatch StagedBatch1
 ### <a name="step7-assign-licenses-to-office-365-users"></a>步骤 7：将许可证分配给 Office 365 用户
 <a name="BK_Endpoint"> </a>
 
-通过分配许可证，激活迁移帐户的 Office 365 用户帐户。如果您不分配许可证，则在宽限期（30 天）结束后将禁用该邮箱。若要在 Office 365 管理中心 中分配许可证，请参阅[为 Office 365 商业版分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
+通过分配许可证，激活迁移帐户的 Office 365 用户帐户。 如果您不分配许可证，则在宽限期（30 天）结束后将禁用该邮箱。 若要在 Microsoft 365 管理中心分配许可证，请参阅[分配或取消分配 Office 365 商业版许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Postmigration"> </a>

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 4705e8315b2ff0943749518034d63bad58ba178f
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897315"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574046"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -145,14 +145,14 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Office 365、
   
 ||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |NA  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |从 Office 365 门户向你的组织添加 Intune/EMS 订阅。  <br/> |从 Office 365 门户向你的组织添加 Dynamics 365 订阅。  <br/> |
+|**Office 365** <br/> |NA  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |从 Microsoft 365 管理中心向你的组织添加 Intune/EMS 订阅。  <br/> |从 Microsoft 365 管理中心向你的组织添加 Dynamics 365 订阅。  <br/> |
 |**Azure** <br/> |向你的组织添加 Office 365 订阅。  <br/> |NA  <br/> |向你的组织添加 Intune/EMS 订阅。  <br/> |向你的组织添加 Dynamics 365 订阅。  <br/> |
 |**Intune/EMS** <br/> |向你的组织添加 Office 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |NA  <br/> |向你的组织添加 Dynamics 365 订阅。  <br/> |
 |**Dynamics 365** <br/> |向你的组织添加 Office 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |向你的组织添加 Intune/EMS 订阅。  <br/> |NA  <br/> |
    
 为组织添加基于 Microsoft SaaS 的服务订阅的简便方法是通过 Office 365 Admin 中心来完成：
   
-1. 使用你的全局管理员帐户登录到 Office 365 门户 ([https://portal.office.com](https://portal.office.com))，然后单击“管理员”****。
+1. 使用全局管理员帐户登录 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
 2. 从“管理中心”**** 主页的左侧导航栏，依次单击“帐单”**** 和“购买服务”****。
     

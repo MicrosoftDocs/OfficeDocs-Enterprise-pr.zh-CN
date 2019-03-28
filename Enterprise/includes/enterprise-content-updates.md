@@ -3,7 +3,7 @@
 
 
 
-## <a name="week-of-march-04-2019"></a>2019年3月4日一周
+## <a name="week-of-march-04-2019"></a>2019 年 3 月 4 日那周
 
 
 | 发布日期 |主题标题 | 更改 |
@@ -19,10 +19,10 @@
 | 3/4/2019 | [Office 365 的会话超时](/Office365/Enterprise/session-timeouts) | 修改时间 |
 | 3/4/2019 | [调整 Exchange Online 性能](/Office365/Enterprise/tune-exchange-online-performance) | 修改时间 |
 | 3/4/2019 | [Office 365 IP 地址和 URL Web 服务中未包含的其他终结点](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 修改时间 |
-| 3/6/2019 | [内容分发网络](/Office365/Enterprise/content-delivery-networks) | 修改时间 |
-| 3/6/2019 | [混合新式身份验证概述和在本地 Skype for business 和 Exchange 服务器上使用它的先决条件](/Office365/Enterprise/hybrid-modern-auth-overview) | 修改时间 |
-| 3/6/2019 | [管理 Office 365 终结点](/Office365/Enterprise/managing-office-365-endpoints) | 修改时间 |
-| 3/6/2019 | [将 OneDrive 站点移动到其他地理位置](/Office365/Enterprise/move-onedrive-between-geo-locations) | 修改时间 |
+| 2019 年 3 月 6 日 | [内容分发网络](/Office365/Enterprise/content-delivery-networks) | 修改时间 |
+| 2019 年 3 月 6 日 | [混合新式身份验证概述和在本地 Skype for business 和 Exchange 服务器上使用它的先决条件](/Office365/Enterprise/hybrid-modern-auth-overview) | 修改时间 |
+| 2019 年 3 月 6 日 | [管理 Office 365 终结点](/Office365/Enterprise/managing-office-365-endpoints) | 修改时间 |
+| 2019 年 3 月 6 日 | [将 OneDrive 站点移动到其他地理位置](/Office365/Enterprise/move-onedrive-between-geo-locations) | 修改时间 |
 | 3/7/2019 | [使用 Office 365 PowerShell 删除用户帐户的许可证](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | 修改时间 |
 | 3/8/2019 | [设置 Office 365 的目录同步](/Office365/Enterprise/set-up-directory-synchronization) | 修改时间 |
 | 3/8/2019 | [调整 SharePoint Online 性能](/Office365/Enterprise/tune-sharepoint-online-performance) | 修改时间 |
@@ -85,19 +85,17 @@
 | 3/15/2019 | [Azure 中的模拟跨界虚拟网络](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | 修改时间 |
 
 
-## <a name="week-of-february-11-2019"></a>2019 年 2 月 11 日所在周
+## <a name="week-of-march-18-2019"></a>2019年3月18日一周
 
 
 | 发布日期 |主题标题 | 更改 |
 |------|------------|--------|
-| 2/11/2019 | [Office 365 客户端应用支持-条件访问](/Office365/Enterprise/office-365-client-support-conditional-access) | 修改时间 |
-| 2/11/2019 | [Office 365 客户端应用程序支持-移动应用程序管理](/Office365/Enterprise/office-365-client-support-mobile-application-management) | 修改时间 |
-| 2/11/2019 | [Office 365 客户端应用程序支持-新式验证](/Office365/Enterprise/office-365-client-support-modern-authentication) | 修改时间 |
-| 2/12/2019 | [规划 Office 365 的第三方 SSL 证书](/Office365/Enterprise/plan-for-third-party-ssl-certificates) | 修改时间 |
-| 2/14/2019 | [管理 Office 365 终结点](/Office365/Enterprise/managing-office-365-endpoints) | 修改时间 |
-| 2/14/2019 | [Office 365 的 OneDrive 中的多地理位置功能](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | 修改时间 |
-| 2/14/2019 | [Office 365 网络连接原则](/Office365/Enterprise/office-365-network-connectivity-principles) | 修改时间 |
-| 2/14/2019 | [使用 Office 365 PowerShell 查看帐户许可证和服务详细信息](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | 修改时间 |
+| 3/18/2019 | [数据移动常规常见问题](/Office365/Enterprise/data-move-faq) | 修改时间 |
+| 3/18/2019 | [数据移动期间和之后](/Office365/Enterprise/during-and-after-your-data-move) | 修改时间 |
+| 3/18/2019 | 
+  [容量规划和负载测试 SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | 修改时间 |
+| 3/18/2019 | [Office 365 内部租户协作](/Office365/Enterprise/office-365-inter-tenant-collaboration) | 修改时间 |
+| 3/19/2019 | [查看用户帐户与 Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | 修改时间 |
 
 
 ## <a name="week-of-february-18-2019"></a>2019 年 2 月 18 日一周

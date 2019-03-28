@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 摘要：使用本测试实验室指南将 Dynamics 365 添加到 Office 365 开发/测试环境。
-ms.openlocfilehash: 195e5ab4fd96d1f238c96d47cc7406a45e0e02b1
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9e4c98129c68ab5d2f0d9fc486ab62740c625af5
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915207"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574056"
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境
 
@@ -66,11 +66,11 @@ ms.locfileid: "22915207"
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>注册 Dynamics 365 试用订阅
 
-1. 通过台式计算机（轻型）或 CLIENT1（模拟企业）上的浏览器，使用全局管理员帐户的凭据登录 Office 365 门户（地址为 [https://portal.office.com](https://portal.office.com)）。
+1. 通过台式计算机（轻型）或 CLIENT1（模拟企业）上的浏览器，使用全局管理员帐户登录至 Microsoft 365 管理中心（地址为 [https://admin.microsoft.com](https://admin.microsoft.com)）。
     
 2. 单击“管理员”磁贴****。
     
-3. 在“Office 365 管理中心”标签页上的左侧导航栏中，单击“帐单”>“购买服务”********。
+3. 在“**Microsoft 365 管理中心**”选项卡上的左侧导航栏中，单击“**计费 > 购买服务**”。
     
 4. 在“购买服务”页上，找到“Dynamics 365 计划 1 企业版”项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”************。
     
@@ -89,7 +89,7 @@ ms.locfileid: "22915207"
   
 使用下列步骤分配 Dynamics 365 许可证。
   
-1. 在“Office 管理中心”**** 选项卡上，单击“用户”>“活动用户”****。
+1. 在“**Microsoft 365 管理中心**”选项卡上，单击“**用户 > 活动用户**”。
     
 2. 在活动用户列表中，单击全局管理员帐户，然后针对“产品许可证”**** 单击“编辑”****。
     
@@ -97,7 +97,7 @@ ms.locfileid: "22915207"
     
 4. 为用户 2 和用户 3 的帐户执行步骤 2 和步骤 3。
     
-5. 关闭“Office 管理中心”**** 选项卡。
+5. 关闭 **Microsoft 365 管理员中心**选项卡。
     
 使用以下步骤将用户 2 和用户 3 的帐户配置为 Dynamics 365 系统管理员。
   
