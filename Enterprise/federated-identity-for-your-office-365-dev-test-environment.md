@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Office 365 开发/测试环境配置联合身份验证。
-ms.openlocfilehash: 74ea602e867e97d3db3ceb3d9656cfe0132b4298
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b016e168ac1bfcf180c1c4ba04846416dbd098f4
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574086"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948633"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的联合身份
 
@@ -86,10 +86,10 @@ AD FS 服务器在 Office 365 和 DC1 上托管的 corp.contoso.com 域中的帐
 若要为 ADFS1 创建 Azure 虚拟机，请填写基础配置的订阅和资源组名称及 Azure 位置，然后在本地计算机上的 Azure PowerShell 命令提示符处运行下面这些命令。
   
 ```
-$subscr="<your Azure subscription name>"
+$subscrName="<your Azure subscription name>"
 $rgName="<the resource group name of your Base Configuration>"
 Connect-AzAccount
-Select-AzSubscription -SubscriptionName $subscrName -Current
+Select-AzSubscription -SubscriptionName $subscrName
 $staticIP="10.0.0.100"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName

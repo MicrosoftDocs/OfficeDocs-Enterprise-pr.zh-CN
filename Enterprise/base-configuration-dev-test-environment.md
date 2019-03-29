@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 摘要：在 Microsoft Azure 中创建一个简化的内部网作为开发/测试环境。
-ms.openlocfilehash: 6180f9f87509d6ef29c52223c47726ff549de8d5
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650095"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948613"
 ---
 # <a name="base-configuration-devtest-environment"></a>基础配置开发/测试环境
 
@@ -135,8 +135,8 @@ Get-AzSubscription | Sort Name | Select Name
 设置 Azure 订阅。使用正确的名称替换引号内的所有内容（包括 < 和 > 字符）。
   
 ```
-$subscr="<subscription name>"
-Select-AzSubscription -SubscriptionName $subscrName -Current
+$subscrName="<subscription name>"
+Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 接下来，为基础配置测试实验室创建一个新的资源组。要确定一个唯一的资源组名称，请使用此命令列出现有的资源组。

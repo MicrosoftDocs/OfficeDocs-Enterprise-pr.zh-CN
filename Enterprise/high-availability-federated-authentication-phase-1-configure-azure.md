@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '摘要: 配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。'
-ms.openlocfilehash: a57085ef066aeaf14235b8901c045911ef97ceed
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 0268178b12374f200181c0f1b8a38de6a39e7173
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650155"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948603"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1: 配置 Azure
 
@@ -61,7 +61,7 @@ ms.locfileid: "30650155"
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
-|**Item**|**子网名称**|**子网地址空间**|**目的**|
+|**Item**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) 域控制器和目录同步服务器虚拟机 (vm) 使用的子网。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS vm 使用的子网。  <br/> |
@@ -72,7 +72,7 @@ ms.locfileid: "30650155"
   
 下一步，针对分配给虚拟机和负载平衡器实例的静态 IP 地址填写表 I。
   
-|**项目**|**用途**|**子网的 IP 地址**|**值**|
+|**Item**|**用途**|**子网的 IP 地址**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ ms.locfileid: "30650155"
   
 对于您希望在最初设置虚拟网络中的域控制器时使用的本地网络中的两个域名系统 (DNS) 服务器, 请填写表 D。与 IT 部门合作以确定此列表。
   
-|**Item**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
+|**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -137,8 +137,8 @@ Get-AzSubscription | Sort Name | Select SubscriptionName
 设置 Azure 订阅。 使用正确的名称替换引号内的\<所有内容, 包括和 > 字符。
   
 ```
-$subscr="<subscription name>"
-Select-AzSubscription -SubscriptionName $subscrName -Current
+$subscrName="<subscription name>"
+Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 接下来, 创建新的资源组。 要确定唯一的一组资源组名称，请使用此命令列出现有的资源组。
