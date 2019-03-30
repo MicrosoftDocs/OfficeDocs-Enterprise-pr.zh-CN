@@ -3,11 +3,10 @@ title: 为组织部署 Office 365 企业版
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 这些概述步骤旨在帮助你部署 Office 365、连接 Active Directory、迁移数据以及帮助组织中的人员开始使用最新版本的 Office 2016。
-ms.openlocfilehash: 76421a7870358e48798f21866d69672509084c6a
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303596"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004403"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>为组织部署 Office 365 企业版
 准备部署 Office 365 企业版并将其与本地基础结构集成？这些概述步骤旨在帮助你连接目录、迁移数据并帮助组织中的人员开始使用最新版本的 Office 2016。

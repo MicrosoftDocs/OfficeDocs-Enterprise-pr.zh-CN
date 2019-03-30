@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Office 365 中管理用户标识。
-ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372889"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001555"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>了解 Office 365 标识和 Azure Active Directory
 
@@ -37,7 +37,7 @@ Office 365 使用基于云的用户标识和身份验证服务 azure Active Dire
   
 ### <a name="cloud-only"></a>仅限云
 
-使用仅限云的模型, 可以在 Office 365 中管理用户帐户。 不需要本地服务器;Azure AD 将全部在云中进行处理。 您可以在 Office 365 管理中心中创建和管理用户, 也可以使用 Windows powershell [cmdlet](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)和标识和身份验证在云中由 Azure AD 完全处理。 通常情况下, 仅云模型是一个好的选择: 
+使用仅限云的模型, 可以在 Office 365 中管理用户帐户。 不需要本地服务器;Azure AD 将全部在云中进行处理。 您可以在[Microsoft 365 管理中心](https://admin.microsoft.com)中创建和管理用户, 也可以使用 Windows powershell [cmdlet](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)和标识和身份验证在云中由 Azure AD 完全处理。 通常情况下, 仅云模型是一个好的选择: 
   
 - 您没有其他本地用户目录。
     

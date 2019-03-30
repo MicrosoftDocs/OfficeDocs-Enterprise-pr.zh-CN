@@ -3,11 +3,10 @@ title: 配置 Office 365 企业版服务和应用程序
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: deployment
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -17,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 description: 配置 Office 365 企业版服务和应用程序
-ms.openlocfilehash: cc94d8ee39611f01e2058273e92b845cdcc0c6d8
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
-ms.translationtype: HT
+ms.openlocfilehash: 2782d4501eb1e0b9d9d6fc40c251e1db065c86be
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085451"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004359"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>配置 Office 365 企业版服务和应用程序
 
@@ -39,7 +38,7 @@ ms.locfileid: "30085451"
 |**网站** <br> (SharePoint Online) | - 在 [SharePoint Server 2013](https://technet.microsoft.com/library/jj838715) 和 Office 365 之间配置混合功能 <br> - [创建并使用网站模板](https://support.office.com/article/Create-and-use-site-templates-60371B0F-00E0-4C49-A844-34759EBDD989)来自定义 SharePoint Online 的外观 <br> - 使用 [SharePoint Online 规划指南](https://support.office.com/article/SharePoint-Online-Planning-Guide-for-Office-365-for-business-d5089cdf-3fd2-4230-acbd-20ecda2f9bb8)或 [SharePoint Online 部署顾问](https://aka.ms/spoguidance)来规划和配置其他功能 <br> - 管理 [Office 365 视频门户](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da) |
 |**IM 和在线会议** <br> (Skype for Business Online) | - 在现有的 [Lync Server 2013](https://technet.microsoft.com/library/jj204805) 或 [Skype for Business 2015](https://technet.microsoft.com/library/jj205403) 环境与 Office 365 之间配置混合功能  <br> - [设置 Skype for Business Online](https://support.office.com/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e) 并配置通用功能，如呼叫路由、电话会议和共享  <br> - 使用 [Skype for Business 部署顾问](https://aka.ms/skypeguidance)获取自定义设置指南 |
 | **文件存储和共享** <br> （OneDrive for Business 和 SharePoint Online） | - [设置 Office 365 文件存储和共享](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_WhatDif)：了解何时应使用 OneDrive for Business 存储文件以及何时应使用 Office 365 团队网站 <br> - [设置 Office 365 文件存储和共享](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_MoveDocsVideo)：了解在 OneDrive for Business 和 Office 365 团队网站上传文件的难易程度 <br> - [设置 Office 365 文件存储和共享](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_Store)：获取将文件上传到 OneDrive for Business 和 Office 365 团队网站的所有步骤。了解文件共享的提示<br> - 使用 [OneDrive for Business 设置指南](https://aka.ms/OD4Bguidance)获取自定义设置指南 |
-|**Office 365 应用程序** | - Office 365 管理员应使用[适用于 Mac、PC 或移动设备的 Office 2016 部署指南](https://technet.microsoft.com/library/cc303401%28v=office.16%29.aspx)来获取有关规划企业 Office 365 ProPlus 部署或升级的帮助。  <br> - [Power BI for Office 365 管理中心](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office Delve for Office 365 管理员](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [有关 Sway 的常见问题](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Project Online 入门](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11).  <br> - [Microsoft Intune 部署顾问](https://aka.ms/intuneguidance) |
+|**Office 365 应用程序** | - Office 365 管理员应使用[适用于 Mac、PC 或移动设备的 Office 2016 部署指南](https://technet.microsoft.com/library/cc303401%28v=office.16%29.aspx)来获取有关规划企业 Office 365 ProPlus 部署或升级的帮助。  <br> - [Power BI for Microsoft 365 管理中心](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office Delve for Office 365 管理员](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [有关 Sway 的常见问题](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Project Online 入门](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11).  <br> - [Microsoft Intune 部署顾问](https://aka.ms/intuneguidance) |
 |**企业社交** <br> (Yammer) | - [将 Yammer 与 Office 365 结合使用](https://support.office.com/article/Plan-for-Yammer-integration-with-Office-365-4086681f-6de1-4d39-aa72-752b2af1cbd7)  <br> - 使用 [Yammer Enterprise 设置指南](https://aka.ms/yammerdeploy)，获取自定义设置指南 |
    
 ## <a name="were-here-to-help"></a>我们随时提供帮助！

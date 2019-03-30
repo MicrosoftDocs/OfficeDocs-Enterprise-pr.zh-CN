@@ -3,7 +3,6 @@ title: 电子数据展示文件收集自动化
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 摘要：了解如何从用户计算机中自动收集文件以用于电子数据展示。
-ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915747"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001605"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>电子数据展示文件收集自动化
 
@@ -330,7 +329,7 @@ $AllFiles | ForEach-Object {
 |**行号**|**需更改的内容**|**必需/可选**|
 |:-----|:-----|:-----|
 |12  <br/> |**$FolderIdentifier** 标记在其中导入 PST 的邮箱文件夹。根据需要更改此变量。<br/> |可选  <br/> |
-|17  <br/> |**$ConnectionUri** 需设置为您自己的服务器。 <br/> > [!IMPORTANT]> 确保您的 **$ConnectionUri** 指向 http 位置，而不是 https。它不适用于 https:。          |必需  <br/> |
+|×  <br/> |**$ConnectionUri** 需设置为您自己的服务器。 <br/> > [!IMPORTANT]> 确保您的 **$ConnectionUri** 指向 http 位置，而不是 https。它不适用于 https:。          |必需  <br/> |
    
 4. 确认 Exchange 受信任子系统帐户具有 \\\\Staging\\Cases$ 共享的读取、写入和执行权限。
     
@@ -364,7 +363,7 @@ $AllFiles | ForEach-Object {
     
 4. 依次选择"导入 Runbook"和"导入 Orchestrator 加密数据"。清除"计数器"、"计划"、"变量"、"计算机组"、"导入全局配置"和"覆盖现有全局配置"。
     
-5. 单击"完成"。
+5. 单击“完成”****。
     
 6. 编辑 **MoveFilesToColdStorage** 运行手册，如下所述：
     

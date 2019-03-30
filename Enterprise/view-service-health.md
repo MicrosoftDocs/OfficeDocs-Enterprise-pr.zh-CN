@@ -23,16 +23,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在呼叫支持之前查看 Office 365 服务的运行状况状态, 以查看是否有活动的服务中断
-ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085291"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001575"
 ---
 # <a name="how-to-check-office-365-service-health"></a>如何查看 Office 365 服务运行状况
 
-您可以在管理中心的 "office 365**服务运行状况**" 页上查看 office 365、Yammer、microsoft Dynamics CRM 和 microsoft Intune 云服务的运行状况。如果您在云服务中遇到问题, 则可以检查服务运行状况, 以确定这是否是在致电支持或花时间故障排除之前进行的解决方案中存在的已知问题。 
+您可以在[Microsoft 365 管理中心](https://admin.microsoft.com)的 "office 365**服务运行状况**" 页上查看 office 365、Yammer、microsoft Dynamics CRM 和 microsoft Intune 云服务的运行状况。 If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting. 
 
 如果无法登录到服务门户, 则可以使用 "[服务状态" 页](https://status.office365.com)来检查阻止你登录租户的已知问题。
   
@@ -43,7 +43,7 @@ ms.locfileid: "30085291"
     > [!NOTE]
     > 分配为全局管理员或服务管理员角色的人员可以查看服务运行状况。若要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，必须向他们分配服务管理员角色。
   
-2. 若要打开服务运行状况, 请在管理中心中, 转到**运行状况** > **服务运行状况**, 或单击**主页仪表板**上的**服务运行状况卡片**。仪表板卡片指示是否存在活动的服务问题, 以及指向详细服务运行状况页面的链接。
+2. 若要打开服务运行状况, 请在管理中心中, 转到**运行状况** > **服务运行状况**, 或单击**主页仪表板**上的**服务运行状况卡片**。 仪表板卡片指示是否存在未解决的服务问题，并提供指向服务运行状况详细信息页的链接。
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -54,7 +54,7 @@ ms.locfileid: "30085291"
   
 ### <a name="view-details-of-posted-service-health"></a>查看已发布服务的运行状况详细信息
 
-在默认视图中, 将显示所有服务及其当前运行状况状态。若要将视图筛选为当前遇到事件的服务, 请从左侧的阴影条中选择 "**事件**"。选择 "**建议**" 将仅显示当前已发布建议的服务。从 "**所有服务**" 视图中, 单击显示的服务状态将打开公告或事件的摘要视图。 
+默认视图中显示所有服务及其当前的运行状况状态。 若要将视图筛选为当前遇到事件的服务, 请从左侧的阴影条中选择 "**事件**"。 选择 "**建议**" 将仅显示当前已发布建议的服务。 从 "**所有服务**" 视图中, 单击显示的服务状态将打开公告或事件的摘要视图。 
   
 ![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
@@ -109,9 +109,9 @@ ms.locfileid: "30085291"
 |**已还原服务** | 我们确认纠正措施已解决基础问题，且服务已还原到正常状态。若要了解出了什么问题，请查看问题详细信息。 |
 |**已发布事件后报告** | 我们已发布了一个针对特定问题的公告事件报告, 其中包括根本原因信息和后续步骤, 以确保不会发生类似的问题。 |
    
-## <a name="history"></a>“历史记录”
+## <a name="history"></a>历史记录
 
-服务运行状况允许你查看当前运行状况状态, 并查看在过去30天内受影响的租户的任何服务通知和事件的历史记录。若要查看所有服务的过去运行状况, 请选择 "**服务运行状况**" 页上的 "**查看历史记录**"。 
+服务运行状况允许你查看当前运行状况状态, 并查看在过去30天内受影响的租户的任何服务通知和事件的历史记录。 若要查看所有服务以往的运行状况，请在" **服务运行状况**"页上选择" **查看历史记录**"。 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -119,7 +119,7 @@ ms.locfileid: "30085291"
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-您可以查看最近7天或最近30天的运行状况历史记录。选择任意行以查看有关该问题的更多详细信息。
+您可以查看最近7天或最近30天的运行状况历史记录。 选择任意行以查看有关该问题的更多详细信息。
   
 有关我们对运行时间的承诺的详细信息, 请参阅[Office 365 中的透明操作](https://go.microsoft.com/fwlink/?linkid=848695)。
   
@@ -127,9 +127,6 @@ ms.locfileid: "30085291"
 
 我们的目标是确保向你及时、准确地提供仍在持续的问题的有用信息。若要告知我们采取的操作是否切实有效，请选择一个星级评分。给我们评出 1 - 5 星的分数后，你可以提供有关任何特定详细信息的反馈。我们将使用你的反馈微调服务运行状况系统。
   
-![Feedback form for service health issues](media/fd083fdb-fde8-47b4-9136-b90d1d003864.png)
-  
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 管理中心内的活动报表](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-
+[Microsoft 365 管理中心中的活动报告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
