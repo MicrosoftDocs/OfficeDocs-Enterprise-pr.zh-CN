@@ -1,5 +1,5 @@
 ---
-title: Office 365 的 OneDrive 中的多地理位置功能
+title: OneDrive 和 SharePoint Online 中的多地理位置功能
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -11,77 +11,45 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 利用 OneDrive Online 中的多地理位置功能将 Office 365 的触及范围扩展到多个地理区域。
-ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30052986"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948583"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a><span data-ttu-id="897fc-103">Office 365 的 OneDrive 中的多地理位置功能</span><span class="sxs-lookup"><span data-stu-id="897fc-103">Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365</span></span>
+# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a><span data-ttu-id="d75fb-103">OneDrive 和 SharePoint Online 中的多地理位置功能</span><span class="sxs-lookup"><span data-stu-id="d75fb-103">Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365</span></span>
 
-<span data-ttu-id="897fc-p101">借助 OneDrive Online 中的多地理位置功能，你的组织可将其 Office 365 触及范围扩展到你的现有租户中的多个地理区域和/或国家。请联系 Microsoft 客户团队，为你的跨国公司注册 OneDrive for Business 多地理位置功能。</span><span class="sxs-lookup"><span data-stu-id="897fc-p101">With Multi-Geo capabilities in OneDrive and SharePoint Online, your organization can expand its Office 365 presence to multiple geographic regions and/or countries within your existing tenant. Reach out to your Microsoft Account Team to sign up your Multi-National Company for OneDrive for Business Multi-Geo.</span></span>
-  
-<span data-ttu-id="897fc-106">通过 OneDrive 多地理位置，你可以在选择的地理位置中预配和存储静态数据，以满足数据驻留要求，与此同时，开启面向员工的现代生产力体验的全球推广。</span><span class="sxs-lookup"><span data-stu-id="897fc-106">With OneDrive Multi-Geo, you can provision and store data at rest in the geo locations that you've chosen to meet data residency requirements, and at the same time unlock your global roll out of modern productivity experiences to your workforce.</span></span>
-  
-<span data-ttu-id="897fc-107">下面说明了多地理位置功能如何让你的组织受益：</span><span class="sxs-lookup"><span data-stu-id="897fc-107">Here's how multi-geo features can benefit your organization:</span></span>
-  
-- <span data-ttu-id="897fc-108">使用跨多个地理位置的单个 Office 365 租户作为一个全球互联组织运营。</span><span class="sxs-lookup"><span data-stu-id="897fc-108">Operate as one global connected organization with a single Office 365 tenant spanning multiple geo locations.</span></span>
-    
-- <span data-ttu-id="897fc-109">通过在指定的地理位置内创建和托管静态数据，满足数据驻留要求。</span><span class="sxs-lookup"><span data-stu-id="897fc-109">Meet data residency requirements by creating and hosting data-at-rest within a specified geo location.</span></span>
-    
-- <span data-ttu-id="897fc-110">为附属地理位置的用户提供与中心位置用户享受的同等现代生产力体验。</span><span class="sxs-lookup"><span data-stu-id="897fc-110">Empower your satellite users with the same modern productivity experiences enjoyed by your central location users.</span></span>
-    
-- <span data-ttu-id="897fc-111">允许用户在其角色更改时在各地理位置之间移动，同时保持其内容访问的完整。</span><span class="sxs-lookup"><span data-stu-id="897fc-111">Enable your users to move across geo locations as their role changes, while access to their content is kept intact.</span></span>
-    
-- <span data-ttu-id="897fc-112">定制每个地理位置的共享策略和每个网站的数据丢失防护策略。</span><span class="sxs-lookup"><span data-stu-id="897fc-112">Tailor your sharing policies per geo location and data loss prevention policies per site.</span></span>
-    
-- <span data-ttu-id="897fc-113">指定每个地理位置的电子数据展示管理器并允许根据地理位置定制管理案例。</span><span class="sxs-lookup"><span data-stu-id="897fc-113">Designate eDiscovery managers per geo location and allow governing cases tailored to your geo location.</span></span>
-    
-- <span data-ttu-id="897fc-114">为其他地理位置选择唯一的 URL 命名空间（例如 ContosoEUR.sharepoint.com）。</span><span class="sxs-lookup"><span data-stu-id="897fc-114">Choose unique URL namespaces (for example, ContosoEUR.sharepoint.com) for your additional geo locations.</span></span>
-    
-- <span data-ttu-id="897fc-115">将你区域的本地数据整合到 Office 365 多地理位置租户。</span><span class="sxs-lookup"><span data-stu-id="897fc-115">Consolidate your regional on-premises data into your Office 365 multi-geo tenant.</span></span>
-    
-<span data-ttu-id="897fc-p102">在多地理位置配置中，Office 365 租户由中心位置（即 Office 365 订阅的初始预配位置）和一个或多个附属地理位置组成。多地理位置的关键概念是单个租户将跨越多个地理位置。在多地理位置租户中，有关地理位置、组和用户信息的信息在 Azure Active Directory (AAD) 中进行管控。由于你的租户信息被集中管控并同步到每个地理位置，因此，涉及你公司任何人的共享和经验都包含全球意识。</span><span class="sxs-lookup"><span data-stu-id="897fc-p102">In a multi-geo configuration, your Office 365 tenant consists of a central location (where your Office 365 subscription was originally provisioned) and one or more satellite geo locations. The key concept of multi-geo is that a single tenancy will span across one multiple geo locations. In a multi-geo tenant, the information about geo locations, groups, and user information, is mastered in Azure Active Directory (AAD). Because your tenant information is mastered centrally and synchronized into each geo location, sharing and experiences involving anyone from your company contain global awareness.</span></span>
+<span data-ttu-id="d75fb-104">利用 OneDrive 和 SharePoint Online 中的多地理位置功能，可以控制在其中静态存储共享资源（比如 SharePoint 团队站点和 Office 365 组邮箱）的国家或地区。</span><span class="sxs-lookup"><span data-stu-id="d75fb-104">Multi-Geo capabilities in OneDrive and SharePoint Online enables control of the country or region where shared resources like SharePoint team sites and Office 365 Group mailboxes are stored at rest.</span></span>
 
-## <a name="video-introducing-office-365-multi-geo"></a><span data-ttu-id="897fc-120">视频：Office 365 多地理位置简介</span><span class="sxs-lookup"><span data-stu-id="897fc-120">Video: Introducing Office 365 Multi-Geo</span></span>
+<span data-ttu-id="d75fb-105">每个用户、组邮箱和 SharePoint 站点都有一个首选数据位置 (PDL)，表示要在其中存储相关数据的地理位置。</span><span class="sxs-lookup"><span data-stu-id="d75fb-105">Each user, Group mailbox, and SharePoint site has a Preferred Data Location (PDL) which denotes the geo location where related data is to be stored.</span></span> <span data-ttu-id="d75fb-106">可将用户的个人数据（Exchange 邮箱和 OneDrive）以及用户创建的任何 Office 365 组或 SharePoint 站点存储在指定地理位置，以满足数据驻留要求。</span><span class="sxs-lookup"><span data-stu-id="d75fb-106">Users' personal data (Exchange mailbox and OneDrive) along with any Office 365 Groups or SharePoint sites that they create can be stored in the specified geo location to meet data residency requirements.</span></span> <span data-ttu-id="d75fb-107">你可以[为每个地理位置指定不同的管理员](add-a-sharepoint-geo-admin.md)。</span><span class="sxs-lookup"><span data-stu-id="d75fb-107">You can [specify different administrators for each geo location](add-a-sharepoint-geo-admin.md).</span></span>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
-  
-## <a name="get-multi-geo-features-in-three-simple-steps"></a><span data-ttu-id="897fc-121">通过简单的三步获取多地理位置功能</span><span class="sxs-lookup"><span data-stu-id="897fc-121">Get multi-geo features in three simple steps</span></span>
+<span data-ttu-id="d75fb-108">用户在使用 Office 365 服务（包括 Office 应用程序、OneDrive 和搜索）时将能获得无缝体验。</span><span class="sxs-lookup"><span data-stu-id="d75fb-108">Users get a seamless experience when using Office 365 services, including Office applications, OneDrive, and Search.</span></span> <span data-ttu-id="d75fb-109">有关详细信息，请参阅[多地理位置环境中的用户体验](multi-geo-user-experience.md)。</span><span class="sxs-lookup"><span data-stu-id="d75fb-109">See [User experience in a multi-geo environment](multi-geo-user-experience.md) for details.</span></span>
 
-<span data-ttu-id="897fc-122">配置多地理位置非常简单：</span><span class="sxs-lookup"><span data-stu-id="897fc-122">Configuring multi-geo is easy:</span></span>
-  
-1. <span data-ttu-id="897fc-p103">与帐户团队协作，_在 Office 365 服务计划中添加多地理位置功能_。他们将指导你添加所需数量的许可证。</span><span class="sxs-lookup"><span data-stu-id="897fc-p103">Work with your account team to add the _Multi-Geo Capabilities in Office 365_ service plan. They will guide you to add the number of licenses needed.</span></span>
-    
-2. <span data-ttu-id="897fc-125">添加附属位置。</span><span class="sxs-lookup"><span data-stu-id="897fc-125">Add your satellite locations.</span></span>
-    
-3. <span data-ttu-id="897fc-126">配置相应位置的用户帐户。</span><span class="sxs-lookup"><span data-stu-id="897fc-126">Configure your user accounts for the appropriate location.</span></span>
-    
-## <a name="multi-geo-status-and-availability"></a><span data-ttu-id="897fc-127">多地理位置状态和可用性</span><span class="sxs-lookup"><span data-stu-id="897fc-127">Multi-Geo status and availability</span></span>
+## <a name="onedrive"></a><span data-ttu-id="d75fb-110">OneDrive</span><span class="sxs-lookup"><span data-stu-id="d75fb-110">OneDrive</span></span>
 
-<span data-ttu-id="897fc-128">目前在以下这些地区和国家提供 OneDrive 多地理位置：</span><span class="sxs-lookup"><span data-stu-id="897fc-128">OneDrive Multi-Geo is currently offered in these regions and countries:</span></span>
-  
-- <span data-ttu-id="897fc-129">亚太地区</span><span class="sxs-lookup"><span data-stu-id="897fc-129">Asia-Pacific</span></span>
+<span data-ttu-id="d75fb-111">管理员可依据用户的 PDL 配置每个用户的 OneDrive，或[将其移至](move-onedrive-between-geo-locations.md)附属位置。</span><span class="sxs-lookup"><span data-stu-id="d75fb-111">Each user's OneDrive can be provisioned in or [moved by an administrator](move-onedrive-between-geo-locations.md) to a satellite location in accordance with the user's PDL.</span></span> <span data-ttu-id="d75fb-112">个人文件随后保留在该地理位置中，不过可以将这些文件与其他地理位置中的用户共享。</span><span class="sxs-lookup"><span data-stu-id="d75fb-112">Personal files are then kept in that geo location, though they can be shared with users in other geo locations.</span></span>
 
-- <span data-ttu-id="897fc-130">澳大利亚</span><span class="sxs-lookup"><span data-stu-id="897fc-130">Australia</span></span>
+## <a name="sites-and-groups"></a><span data-ttu-id="d75fb-113">站点和组</span><span class="sxs-lookup"><span data-stu-id="d75fb-113">Active Directory Sites and Routing Groups tab</span></span>
 
-- <span data-ttu-id="897fc-131">加拿大</span><span class="sxs-lookup"><span data-stu-id="897fc-131">Canada</span></span>
+<span data-ttu-id="d75fb-114">当用户创建 SharePoint 组连接的站点时，将使用他们的 PDL 来确定在其中创建站点及其关联组邮箱的地理位置。</span><span class="sxs-lookup"><span data-stu-id="d75fb-114">When a user creates a SharePoint group-connected site, their PDL is used to determine the geo location where the site and its associated Group mailbox is created.</span></span> <span data-ttu-id="d75fb-115">（如果尚未设置用户的 PDL 值，或已将其设置为未配置为附属位置的地理位置，则会在中心位置创建站点和邮箱。）</span><span class="sxs-lookup"><span data-stu-id="d75fb-115">(If the user's PDL value hasn't been set, or has been set to geo location that hasn't been configured as a satellite location, then the site and mailbox are created in the central location.)</span></span>
 
-- <span data-ttu-id="897fc-132">欧盟 (EMEA)</span><span class="sxs-lookup"><span data-stu-id="897fc-132">European Union (EMEA)</span></span>
+<span data-ttu-id="d75fb-116">除 Exchange、OneDrive 和 SharePoint 外的其他 Office 365 服务都不是多地理位置服务。</span><span class="sxs-lookup"><span data-stu-id="d75fb-116">Office 365 services other than Exchange, OneDrive, and SharePoint are not Multi-Geo.</span></span> <span data-ttu-id="d75fb-117">但是，通过这些服务创建的 Office 365 组带有创建者的 PDL 的印记，并将在对应的地理位置中设置其 Exchange 组邮箱和 SharePoint O365 组站点。</span><span class="sxs-lookup"><span data-stu-id="d75fb-117">However, Office 365 Groups that are created by these services will be stamped with the PDL of the creator and their Exchange Group mailbox and SharePoint O365 Group Site provisioned in the corresponding geo.</span></span> 
 
-- <span data-ttu-id="897fc-133">法国</span><span class="sxs-lookup"><span data-stu-id="897fc-133">France</span></span>
+## <a name="managing-the-multi-geo-environment"></a><span data-ttu-id="d75fb-118">管理多地理位置环境</span><span class="sxs-lookup"><span data-stu-id="d75fb-118">Managing the multi-geo environment</span></span>
 
-- <span data-ttu-id="897fc-134">印度</span><span class="sxs-lookup"><span data-stu-id="897fc-134">India</span></span>
+<span data-ttu-id="d75fb-119">多地理位置环境的设置和管理是通过 SharePoint 管理中心完成的。</span><span class="sxs-lookup"><span data-stu-id="d75fb-119">Setting up and managing your multi-geo environment is done through the SharePoint admin center.</span></span> 
 
-- <span data-ttu-id="897fc-135">日本</span><span class="sxs-lookup"><span data-stu-id="897fc-135">Japan</span></span>
+![SharePoint 管理中心中地理位置页面的屏幕截图](media/sharepoint-multi-geo-admin-center.png)
 
-- <span data-ttu-id="897fc-136">英国</span><span class="sxs-lookup"><span data-stu-id="897fc-136">United Kingdom</span></span>
+<span data-ttu-id="d75fb-121">（诸如移动 SharePoint 站点或 OneDrive 站点的某些操作需要 Microsoft PowerShell。）</span><span class="sxs-lookup"><span data-stu-id="d75fb-121">(Some actions, such as moving a SharePoint site or a OneDrive site require Microsoft PowerShell.)</span></span>
 
-- <span data-ttu-id="897fc-137">美国（北美）</span><span class="sxs-lookup"><span data-stu-id="897fc-137">United States (North America)</span></span>
+## <a name="see-also"></a><span data-ttu-id="d75fb-122">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d75fb-122">See also</span></span>
 
-- <span data-ttu-id="897fc-138">韩国</span><span class="sxs-lookup"><span data-stu-id="897fc-138">Korea</span></span>
+[<span data-ttu-id="d75fb-123">亦称 ms/GetMultiGeo </span><span class="sxs-lookup"><span data-stu-id="d75fb-123">Aka.ms/GetMultiGeo </span></span>](https://Aka.ms/GetMultiGeo)
 
-## <a name="getting-started"></a><span data-ttu-id="897fc-139">入门</span><span class="sxs-lookup"><span data-stu-id="897fc-139">Getting started</span></span>
+[<span data-ttu-id="d75fb-124">管理多地理位置环境</span><span class="sxs-lookup"><span data-stu-id="d75fb-124">Administering a multi-geo environment</span></span>](administering-a-multi-geo-environment.md)
 
-<span data-ttu-id="897fc-p104">要开始使用 OneDrive for Business 多地理位置，第一步是[规划 OneDrive for Business 多地理位置环境](plan-for-multi-geo.md)。接下来，[了解如何管理多地理位置环境](administering-a-multi-geo-environment.md)，以及[用户将如何体验多地理位置环境](multi-geo-user-experience.md)。当准备好设置 OneDrive for Business 多地理位置时，[为租户配置多地理位置](multi-geo-tenant-configuration.md)，然后[将所有现有 OneDrive 站点移动到新地理位置](move-onedrive-between-geo-locations.md)，并[设置搜索](configure-search-for-multi-geo.md)。</span><span class="sxs-lookup"><span data-stu-id="897fc-p104">To get started with OneDrive for Business Multi-Geo, the first step is to [plan your OneDrive for Business Multi-Geo environment](plan-for-multi-geo.md). Next, [learn about administering a multi-geo environment](administering-a-multi-geo-environment.md) and [how your users will experience a multi-geo environment](multi-geo-user-experience.md). When you are ready to set up OneDrive for Business Multi-Geo, [configure your tenant for multi-geo](multi-geo-tenant-configuration.md), then [move any existing OneDrive sites to thier new geo-locations](move-onedrive-between-geo-locations.md) and [set up search](configure-search-for-multi-geo.md).</span></span>
+[<span data-ttu-id="d75fb-125">多地理位置环境中的 SharePoint 存储配额</span><span class="sxs-lookup"><span data-stu-id="d75fb-125">SharePoint storage quotas in multi-geo environments</span></span>](sharepoint-multi-geo-storage-quota.md)
+
+[<span data-ttu-id="d75fb-126">在多地理位置环境中管理 Exchange Online 邮箱</span><span class="sxs-lookup"><span data-stu-id="d75fb-126">Administering Exchange Online mailboxes in a multi-geo environment</span></span>](administering-exchange-online-multi-geo.md)
