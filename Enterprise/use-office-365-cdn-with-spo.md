@@ -1,9 +1,9 @@
 ---
-title: 与 SharePoint Online 中使用 Office 365 内容交付网络
-ms.author: krowley
-author: kccross
+title: 结合使用 Office 365 内容分发网络和 SharePoint Online
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 4/2/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -14,345 +14,709 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: 介绍如何使用 Office 365 的内置内容交付网络 (CDN) 来加快您的 SharePoint Online 资产传递到您的所有用户，无论位于何处或访问您的内容的方式。
-ms.openlocfilehash: fd118e8df404961e1c35c6297a788397f810d1a2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 介绍如何使用 Office 365 内容传送网络 (CDN) 加快将 SharePoint Online 资产传递给所有用户, 无论它们位于何处或如何访问你的内容。
+ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
+ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29547110"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31039499"
 ---
-# <a name="use-the-office-365-content-delivery-network-with-sharepoint-online"></a><span data-ttu-id="12450-103">与 SharePoint Online 中使用 Office 365 内容交付网络</span><span class="sxs-lookup"><span data-stu-id="12450-103">Use the Office 365 content delivery network with SharePoint Online</span></span>
+# <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a><span data-ttu-id="1009a-103">结合使用 Office 365 内容分发网络和 SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="1009a-103">Use the Office 365 Content Delivery Network (CDN) with SharePoint Online</span></span>
 
-<span data-ttu-id="12450-p101">您可以承载静态资产 Office 365 内容交付网络 (CDN) 中，以提供更好的性能的 SharePoint Online 网页。静态资产是不常改动，如图像、 视频和音频、 样式表、 字体和 JavaScript 文件的文件。CDN 工作为异地分布式缓存代理，方式是缓存静态资产接近浏览器请求它们。</span><span class="sxs-lookup"><span data-stu-id="12450-p101">You can host static assets in the Office 365 content delivery network (CDN) to provide better performance for your SharePoint Online pages. Static assets are files that don't change very often, like images, video and audio, style sheets, fonts, and JavaScript files. The CDN works as a geographically distributed caching proxy, by caching static assets closer to the browsers requesting them.</span></span> 
-  
-<span data-ttu-id="12450-p102">如果您已经熟悉 Cdn 工作的方式，您只需完成几个步骤，将它设置。本主题介绍如何。阅读有关 Office 365 CDN 和如何开始承载您的静态资产的信息。</span><span class="sxs-lookup"><span data-stu-id="12450-p102">If you are already familiar with the way that CDNs work, you only need to complete a few steps to set it up. This topic describes how. Read on for information about the Office 365 CDN and how to get started hosting your static assets.</span></span>
-  
- <span data-ttu-id="12450-110">**在 Head 回[网络规划和性能优化 Office 365](https://aka.ms/tune)。**</span><span class="sxs-lookup"><span data-stu-id="12450-110">**Head back to [Network planning and performance tuning for Office 365](https://aka.ms/tune).**</span></span>
-  
-## <a name="office-365-cdn-basics"></a><span data-ttu-id="12450-111">Office 365 CDN 基本知识</span><span class="sxs-lookup"><span data-stu-id="12450-111">Office 365 CDN basics</span></span>
+<span data-ttu-id="1009a-104">可以使用内置的 Office 365 内容分发网络 (CDN) 来托管静态资产，以便提高 SharePoint Online 页面的性能。</span><span class="sxs-lookup"><span data-stu-id="1009a-104">You can use the built-in Office 365 Content Delivery Network (CDN) to host static assets to provide better performance for your SharePoint Online pages.</span></span> <span data-ttu-id="1009a-105">Office 365 CDN 将静态资产缓存到距离请求这些资产的浏览器更近的位置，这样可以加快下载速度并减少延迟，进而提高性能。</span><span class="sxs-lookup"><span data-stu-id="1009a-105">The Office 365 CDN improves performance by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency.</span></span> <span data-ttu-id="1009a-106">此外, Office 365 CDN 使用[HTTP/2 协议](https://en.wikipedia.org/wiki/HTTP/2)改进了压缩和 HTTP 流水线功能。</span><span class="sxs-lookup"><span data-stu-id="1009a-106">Also, the Office 365 CDN uses the [HTTP/2 protocol](https://en.wikipedia.org/wiki/HTTP/2) for improved compression and HTTP pipelining.</span></span> <span data-ttu-id="1009a-107">Office 365 CDN 服务被归入 SharePoint Online 订阅。</span><span class="sxs-lookup"><span data-stu-id="1009a-107">The Office 365 CDN service is included as part of your SharePoint Online subscription.</span></span>
 
-<span data-ttu-id="12450-p103">Office 365 CDN 是作为您的 SharePoint Online 订阅的一部分包含。您无需额外支付它。Office 365 提供支持两个专用和公共访问，并允许您在多个位置或来源主机静态资产。Office 365 CDN 不 Azure CDN 相同。如果需要有关为什么使用 CDN 或 CDN 的一般概念的详细信息，请参阅[内容交付网络](content-delivery-networks.md)。</span><span class="sxs-lookup"><span data-stu-id="12450-p103">The Office 365 CDN is included as part of your SharePoint Online subscription. You don't have to pay extra for it. Office 365 provides support for both private and public access and allows you to host static assets in multiple locations, or origins. The Office 365 CDN is not the same as the Azure CDN. If you need more information about why to use a CDN or about general CDN concepts, see [Content delivery networks](content-delivery-networks.md).</span></span>
-  
-## <a name="how-the-cdn-grants-access-to-end-users"></a><span data-ttu-id="12450-117">CDN 如何为最终用户授予访问权限</span><span class="sxs-lookup"><span data-stu-id="12450-117">How the CDN grants access to end users</span></span>
+<span data-ttu-id="1009a-108">Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即_源_）托管静态资产，并从全局高速网络提供这些资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-108">The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks.</span></span> <span data-ttu-id="1009a-109">可以添加**公共**源、**私有**源或同时添加这两种源，具体取决于想要托管在 Office 365 CDN 中的内容种类。</span><span class="sxs-lookup"><span data-stu-id="1009a-109">Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins or both.</span></span> <span data-ttu-id="1009a-110">若要详细了解公共和专用来源之间的差异, 请参阅[选择每个来源是否应为公共的或专用](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)的。</span><span class="sxs-lookup"><span data-stu-id="1009a-110">See [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) for more information on the difference between public and private origins.</span></span>
 
-<span data-ttu-id="12450-p104">授予对 Office 365 CDN 中的静态资产的专用访问令牌由 SharePoint Online 生成。用户已有权访问的文件夹或指定原点的库将自动被授予令牌。SharePoint Online 不支持项目级权限的 CDN。</span><span class="sxs-lookup"><span data-stu-id="12450-p104">Private access to static assets in the Office 365 CDN is granted by tokens generated by SharePoint Online. Users who already have permission to access to the folder or library designated by the origin will automatically be granted tokens. SharePoint Online does not support item-level permissions for the CDN.</span></span>
-  
-<span data-ttu-id="12450-121">例如，对于文件位于`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`，提供以下：</span><span class="sxs-lookup"><span data-stu-id="12450-121">For example, for a file located at `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, given the following:</span></span>
-  
-- <span data-ttu-id="12450-122">用户 1 有权访问 folder1 和 image1.jpg</span><span class="sxs-lookup"><span data-stu-id="12450-122">User 1 has access to folder1 and to image1.jpg</span></span>
-    
-- <span data-ttu-id="12450-123">2 用户不具有访问 folder1</span><span class="sxs-lookup"><span data-stu-id="12450-123">User 2 does not have access to folder1</span></span>
-    
-- <span data-ttu-id="12450-124">用户 3 不具有访问 folder1，但是被授予访问 image1.jpg 通过 SharePoint Online 的显式权限</span><span class="sxs-lookup"><span data-stu-id="12450-124">User 3 does not have access to folder1 but is granted explicit permission to access image1.jpg through SharePoint Online</span></span>
-    
-- <span data-ttu-id="12450-125">4 用户有权访问 folder1，但已被明确拒绝访问 image1.jpg</span><span class="sxs-lookup"><span data-stu-id="12450-125">User 4 has access to folder1 but has been explicitly denied access to image1.jpg</span></span>
-    
-<span data-ttu-id="12450-126">然后存在下列情况：</span><span class="sxs-lookup"><span data-stu-id="12450-126">Then the following are true:</span></span>
-  
-- <span data-ttu-id="12450-127">用户 1 和 4 时用户将能够通过 CDN 访问 image1.jpg。</span><span class="sxs-lookup"><span data-stu-id="12450-127">User 1 and User 4 will be able to access image1.jpg through the CDN.</span></span>
-    
-- <span data-ttu-id="12450-128">2 用户和用户 3 将不能通过 CDN 访问 image1.jpg。</span><span class="sxs-lookup"><span data-stu-id="12450-128">User 2 and User 3 will not be able to access image1.jpg through the CDN.</span></span>
-    
-    <span data-ttu-id="12450-129">但是，用户 3 仍可以访问资产 image1.jpg 直接通过 SharePoint Online 时用户 4 无法通过 SharePoint Online 访问资产。</span><span class="sxs-lookup"><span data-stu-id="12450-129">However, User 3 can still access the asset image1.jpg directly through SharePoint Online while User 4 cannot access the asset through SharePoint Online.</span></span>
-    
-## <a name="overview-of-working-with-the-office-365-cdn"></a><span data-ttu-id="12450-130">使用 Office 365 CDN 的概述</span><span class="sxs-lookup"><span data-stu-id="12450-130">Overview of working with the Office 365 CDN</span></span>
+<span data-ttu-id="1009a-111">![Office 365 CDN 概念图](media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN 概念图")</span><span class="sxs-lookup"><span data-stu-id="1009a-111">![Office 365 CDN conceptual diagram](media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN conceptual diagram")</span></span>
 
-<span data-ttu-id="12450-131">若要设置 Office 365 CDN，请按照下列基本步骤操作：</span><span class="sxs-lookup"><span data-stu-id="12450-131">To set up the Office 365 CDN, you follow these basic steps:</span></span>
-  
-- <span data-ttu-id="12450-132">CDN 部署规划：</span><span class="sxs-lookup"><span data-stu-id="12450-132">Plan for CDN deployment:</span></span>
-    
-  - <span data-ttu-id="12450-p105">确定要在 Office 365 CDN 上承载的静态资产。有关如何使这些选项的详细信息，请参阅[内容交付网络](content-delivery-networks.md)。</span><span class="sxs-lookup"><span data-stu-id="12450-p105">Determine which static assets you want to host on the Office 365 CDN. For detailed information about how to make these choices, refer to [Content delivery networks](content-delivery-networks.md).</span></span>
-    
-  - <span data-ttu-id="12450-p106">[确定要用于存储您的资产](use-office-365-cdn-with-spo.md#CDNStoreAssets)。该位置是一个文件夹或 SharePoint 库，并调用来源。</span><span class="sxs-lookup"><span data-stu-id="12450-p106">[Determine where you want to store your assets](use-office-365-cdn-with-spo.md#CDNStoreAssets). This location is a folder or SharePoint library and is called an origin.</span></span>
-    
-  - <span data-ttu-id="12450-p107">确定是否应公开或保密资产。执行此时您[选择每个来源是否应为公共或专用](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)。如果您希望，您可以在其中一些公共的多个来源和一些专用。</span><span class="sxs-lookup"><span data-stu-id="12450-p107">Determine whether the assets should be made public or kept private. You do this when you [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). If you want, you can have multiple origins in which some are public, and some are private.</span></span>
-    
-- <span data-ttu-id="12450-p108">[设置并使用 SharePoint Online Management Shell 配置 Office 365 CDN](use-office-365-cdn-with-spo.md#CDNSetupinPShell)。完成此步骤后，您将具有：</span><span class="sxs-lookup"><span data-stu-id="12450-p108">[Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell](use-office-365-cdn-with-spo.md#CDNSetupinPShell). When you complete this step, you will have:</span></span>
-    
-  - <span data-ttu-id="12450-142">启用组织 CDN。</span><span class="sxs-lookup"><span data-stu-id="12450-142">Enabled the CDN for your organization.</span></span>
-    
-  - <span data-ttu-id="12450-p109">添加您来源。标识为公共或专用的每个来源。</span><span class="sxs-lookup"><span data-stu-id="12450-p109">Added your origins. You identify each origin as public or private.</span></span>
-    
-<span data-ttu-id="12450-145">一次在完成安装，[管理 Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage)段的时间：</span><span class="sxs-lookup"><span data-stu-id="12450-145">Once you're done with setup, [Manage the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) over time by:</span></span> 
-  
-- <span data-ttu-id="12450-146">添加、 更新和删除资产</span><span class="sxs-lookup"><span data-stu-id="12450-146">Adding, updating, and removing assets</span></span>
-    
-- <span data-ttu-id="12450-147">添加和删除来源</span><span class="sxs-lookup"><span data-stu-id="12450-147">Adding and removing origins</span></span>
-    
-- <span data-ttu-id="12450-148">配置 CDN 策略</span><span class="sxs-lookup"><span data-stu-id="12450-148">Configuring CDN policies</span></span>
-    
-- <span data-ttu-id="12450-149">如有必要，禁用 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="12450-149">If necessary, disabling the Office 365 CDN</span></span>
-    
-## <a name="determine-where-you-want-to-store-your-assets"></a><span data-ttu-id="12450-150">确定要用于存储您的资产</span><span class="sxs-lookup"><span data-stu-id="12450-150">Determine where you want to store your assets</span></span>
+<span data-ttu-id="1009a-112">如果您已经熟悉 cdn 的工作方式, 则只需完成几个步骤即可为租户启用 Office 365 CDN。</span><span class="sxs-lookup"><span data-stu-id="1009a-112">If you are already familiar with the way that CDNs work, you only need to complete a few steps to enable the Office 365 CDN for your tenant.</span></span> <span data-ttu-id="1009a-113">本主题介绍如何操作。</span><span class="sxs-lookup"><span data-stu-id="1009a-113">This topic describes how.</span></span> <span data-ttu-id="1009a-114">请参阅, 了解有关如何开始托管静态资产的信息。</span><span class="sxs-lookup"><span data-stu-id="1009a-114">Read on for information about how to get started hosting your static assets.</span></span>
 
-<span data-ttu-id="12450-p110">CDN 从称为原点位置提取您的资产。Office 365 的原点而言是 SharePoint 库或由 URL 可访问的文件夹。当您为您的组织指定来源，您可以非常灵活。例如，您可以指定多个来源，或要放入您的所有 CDN 资产的其中一个来源。您可以选择已为您的组织的公共或专用来源。大多数组织将选择实现的两个组合。</span><span class="sxs-lookup"><span data-stu-id="12450-p110">The CDN fetches your assets from a location called an origin. For Office 365, an origin is a SharePoint library or folder that is accessible by a URL. You have great flexibility when you specify origins for your organization. For example, you can specify multiple origins, or, a single origin where you want to put all your CDN assets. You can choose to have both public or private origins for your organization. Most organizations will choose to implement a combination of the two.</span></span>
-  
-<span data-ttu-id="12450-p111">如果您定义数百来源，它将在处理请求所花费的时间可能产生负面影响。我们建议，如果您有超过 100 来源您可能需要重新考虑您的体系结构。</span><span class="sxs-lookup"><span data-stu-id="12450-p111">If you define hundreds of origins, it will likely have a negative impact on the time it takes to process requests. We recommend that if you have more than about 100 origins you might want to rethink your architecture.</span></span>
-  
-## <a name="choose-whether-each-origin-should-be-public-or-private"></a><span data-ttu-id="12450-159">选择每个来源是否应为公共或专用</span><span class="sxs-lookup"><span data-stu-id="12450-159">Choose whether each origin should be public or private</span></span>
+> [!TIP]
+> <span data-ttu-id="1009a-115">还有其他 Microsoft 托管的 cdn, 可用于专门使用方案的 Office 365, 但不会在本主题中进行讨论, 因为它们超出了 Office 365 CDN 的范围。</span><span class="sxs-lookup"><span data-stu-id="1009a-115">There are other Microsoft-hosted CDNs that can be used with Office 365 for specialized usage scenarios, but are not discussed in this topic because they fall outside the scope of the Office 365 CDN.</span></span> <span data-ttu-id="1009a-116">有关详细信息, 请参阅[其他 Microsoft cdn](content-delivery-networks.md#other-microsoft-cdns)。</span><span class="sxs-lookup"><span data-stu-id="1009a-116">For more information, see [Other Microsoft CDNs](content-delivery-networks.md#other-microsoft-cdns).</span></span>
 
-<span data-ttu-id="12450-p112">标识来源，您可以指定是否应使其成为公共或专用。无论您选择哪个选项，Microsoft 会执行所有繁重，当谈到的 CDN 本身管理。此外，还可以更高版本，更改主意，设置 CDN 并标识您来源之后。</span><span class="sxs-lookup"><span data-stu-id="12450-p112">When you identify an origin, you specify whether it should be made public or private. Regardless of which option you choose, Microsoft does all the heavy lifting for you when it comes to administration of the CDN itself. Also, you can change your mind later, after you've set up the CDN and identified your origins.</span></span>
+ **<span data-ttu-id="1009a-117">[面向 Office 365 的网络规划和性能调整的](https://aka.ms/tune)封底。</span><span class="sxs-lookup"><span data-stu-id="1009a-117">Head back to [Network planning and performance tuning for Office 365](https://aka.ms/tune).</span></span>**
+
+## <a name="overview-of-working-with-the-office-365-cdn-in-sharepoint-online"></a><span data-ttu-id="1009a-118">在 SharePoint Online 中使用 Office 365 CDN 的概述</span><span class="sxs-lookup"><span data-stu-id="1009a-118">Overview of working with the Office 365 CDN in SharePoint Online</span></span>
+
+<span data-ttu-id="1009a-119">若要为您的组织设置 Office 365 CDN, 请按照以下基本步骤操作:</span><span class="sxs-lookup"><span data-stu-id="1009a-119">To set up the Office 365 CDN for your organization, you follow these basic steps:</span></span>
+
+- [<span data-ttu-id="1009a-120">规划 Office 365 CDN 的部署</span><span class="sxs-lookup"><span data-stu-id="1009a-120">Plan for deployment of the Office 365 CDN</span></span>](use-office-365-cdn-with-spo.md#plan-for-deployment-of-the-office-365-cdn)
+
+  - <span data-ttu-id="1009a-121">[确定要在 CDN 上托管的静态资产](use-office-365-cdn-with-spo.md#CDNAssets)。</span><span class="sxs-lookup"><span data-stu-id="1009a-121">[Determine which static assets you want to host on the CDN](use-office-365-cdn-with-spo.md#CDNAssets).</span></span>
+  - <span data-ttu-id="1009a-122">[确定要存储资产的位置](use-office-365-cdn-with-spo.md#CDNStoreAssets)。</span><span class="sxs-lookup"><span data-stu-id="1009a-122">[Determine where you want to store your assets](use-office-365-cdn-with-spo.md#CDNStoreAssets).</span></span> <span data-ttu-id="1009a-123">此位置可以是 SharePoint 网站、库或文件夹, 也可以称为 "_源_"。</span><span class="sxs-lookup"><span data-stu-id="1009a-123">This location can be a SharePoint site, library or folder and is called an _origin_.</span></span>
+  - <span data-ttu-id="1009a-124">[选择每个源应该是公共的还是私有](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)的。</span><span class="sxs-lookup"><span data-stu-id="1009a-124">[Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate).</span></span> <span data-ttu-id="1009a-125">您可以添加公共类型和私有类型的多个源。</span><span class="sxs-lookup"><span data-stu-id="1009a-125">You can add multiple origins of both public and private types.</span></span>
+
+- <span data-ttu-id="1009a-126">使用 PowerShell 或 SharePoint Online CLI 设置和配置 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-126">Set up and configure the CDN, using either PowerShell or the SharePoint Online CLI</span></span>
+
+  - [<span data-ttu-id="1009a-127">使用 SharePoint Online 命令行管理程序设置和配置 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-127">Set up and configure the CDN by using the SharePoint Online Management Shell</span></span>](use-office-365-cdn-with-spo.md#CDNSetupinPShell)
+  - [<span data-ttu-id="1009a-128">使用 Office 365 CLI 设置和配置 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-128">Set up and configure the CDN by using the Office 365 CLI</span></span>](use-office-365-cdn-with-spo.md#CDNSetupinCLI)
+
+  <span data-ttu-id="1009a-129">完成此步骤后, 您将拥有:</span><span class="sxs-lookup"><span data-stu-id="1009a-129">When you complete this step, you will have:</span></span>
+
+  - <span data-ttu-id="1009a-130">已为你的组织启用 CDN。</span><span class="sxs-lookup"><span data-stu-id="1009a-130">Enabled the CDN for your organization.</span></span>
+  - <span data-ttu-id="1009a-131">添加了将每个源标识为公用或专用的来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-131">Added your origins, identifying each origin as public or private.</span></span>
+
+<span data-ttu-id="1009a-132">完成设置后, 可以通过以下方式[管理 Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage)一段时间:</span><span class="sxs-lookup"><span data-stu-id="1009a-132">Once you're done with setup, you can [Manage the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) over time by:</span></span>
   
-<span data-ttu-id="12450-163">公用和专用选项提供性能改进，但每个具有唯一的属性和优点。</span><span class="sxs-lookup"><span data-stu-id="12450-163">Both public and private options provide performance improvements, but each has unique attributes and advantages.</span></span>
+- <span data-ttu-id="1009a-133">添加、更新和删除资产</span><span class="sxs-lookup"><span data-stu-id="1009a-133">Adding, updating, and removing assets</span></span>
+- <span data-ttu-id="1009a-134">添加和删除源</span><span class="sxs-lookup"><span data-stu-id="1009a-134">Adding and removing origins</span></span>
+- <span data-ttu-id="1009a-135">配置 CDN 策略</span><span class="sxs-lookup"><span data-stu-id="1009a-135">Configuring CDN policies</span></span>
+- <span data-ttu-id="1009a-136">如有必要, 禁用 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-136">If necessary, disabling the CDN</span></span>
+
+<span data-ttu-id="1009a-137">最后, 请参阅[使用 cdn 资产](use-office-365-cdn-with-spo.md#using-your-cdn-assets)了解如何从公共来源和专用来源访问 cdn 资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-137">Finally, see [Using your CDN assets](use-office-365-cdn-with-spo.md#using-your-cdn-assets) to learn about accessing your CDN assets from both public and private origins.</span></span>
+
+<span data-ttu-id="1009a-138">有关解决常见问题的指南, 请参阅[Office 365 CDN 故障排除](use-office-365-cdn-with-spo.md#CDNTroubleshooting)。</span><span class="sxs-lookup"><span data-stu-id="1009a-138">See [Troubleshooting the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNTroubleshooting) for guidance on resolving common issues.</span></span>
+
+## <a name="plan-for-deployment-of-the-office-365-cdn"></a><span data-ttu-id="1009a-139">规划 Office 365 CDN 的部署</span><span class="sxs-lookup"><span data-stu-id="1009a-139">Plan for deployment of the Office 365 CDN</span></span>
+
+<span data-ttu-id="1009a-140">在部署 office 365 租户的 office 365 CDN 之前, 应考虑以下因素作为规划过程的一部分。</span><span class="sxs-lookup"><span data-stu-id="1009a-140">Before you deploy the Office 365 CDN for your Office 365 tenant, you should consider the following factors as part of your planning process.</span></span>
+
+  - [<span data-ttu-id="1009a-141">确定要在 CDN 上托管的静态资产</span><span class="sxs-lookup"><span data-stu-id="1009a-141">Determine which static assets you want to host on the CDN</span></span>](use-office-365-cdn-with-spo.md#CDNAssets)
+  - [<span data-ttu-id="1009a-142">确定要存储资产的位置</span><span class="sxs-lookup"><span data-stu-id="1009a-142">Determine where you want to store your assets</span></span>](use-office-365-cdn-with-spo.md#CDNStoreAssets)
+  - [<span data-ttu-id="1009a-143">选择每个来源是公共还是私有</span><span class="sxs-lookup"><span data-stu-id="1009a-143">Choose whether each origin should be public or private</span></span>](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
+
+### <a name="determine-which-static-assets-you-want-to-host-on-the-cdn"></a><span data-ttu-id="1009a-144">确定要在 CDN 上托管的静态资产</span><span class="sxs-lookup"><span data-stu-id="1009a-144">Determine which static assets you want to host on the CDN</span></span>
+<a name="CDNAssets"> </a>
+
+<span data-ttu-id="1009a-145">通常情况下, cdn 在承载_静态资产_或不经常更改的资产时最为有效。</span><span class="sxs-lookup"><span data-stu-id="1009a-145">In general, CDNs are most effective for hosting _static assets_, or assets that don't change very often.</span></span> <span data-ttu-id="1009a-146">最好的经验法则是确定满足部分或所有条件的文件:</span><span class="sxs-lookup"><span data-stu-id="1009a-146">A good rule of thumb is to identify files that meet some or all of these conditions:</span></span>
+
+- <span data-ttu-id="1009a-147">嵌入在页面中的静态文件 (如脚本和图像) 可能会对页面加载时间产生重大的增量影响</span><span class="sxs-lookup"><span data-stu-id="1009a-147">Static files embedded in a page (like scripts and images) that may have a significant incremental impact on page load times</span></span>
+- <span data-ttu-id="1009a-148">可执行文件和安装文件等大型文件</span><span class="sxs-lookup"><span data-stu-id="1009a-148">Large files like executables and installation files</span></span>
+- <span data-ttu-id="1009a-149">流式媒体文件</span><span class="sxs-lookup"><span data-stu-id="1009a-149">Streaming media files</span></span>
+- <span data-ttu-id="1009a-150">支持客户端代码的资源库</span><span class="sxs-lookup"><span data-stu-id="1009a-150">Resource libraries that support client-side code</span></span>
+
+<span data-ttu-id="1009a-151">例如, 在将 SharePoint Online 网站添加到 CDN 源时, 重复请求的小型文件 (如网站图像和脚本) 可以显著改进网站呈现性能, 并在您的 SharePoint Online 网站上以增量方式减少负载。</span><span class="sxs-lookup"><span data-stu-id="1009a-151">For example, small files that are repeatedly requested like site images and scripts can significantly improve site rendering performance and incrementally reduce the load on your SharePoint Online sites when you add them to a CDN origin.</span></span> <span data-ttu-id="1009a-152">可以从 CDN 下载或流式处理更大的文件 (如安装可执行文件或视频文件), 从而对 SharePoint Online 网站上的负载进行积极的性能影响和后续缩减, 即使不经常访问这些文件也是如此。</span><span class="sxs-lookup"><span data-stu-id="1009a-152">Larger files such as installation executables or video files can be downloaded or streamed from the CDN, delivering a positive performance impact and subsequent reduction of the load on your SharePoint Online site, even if they are not accessed as often.</span></span>
+
+<span data-ttu-id="1009a-153">每个文件的性能改进取决于许多因素, 包括客户端离最近的 CDN 终结点、本地网络中的暂时条件等等。</span><span class="sxs-lookup"><span data-stu-id="1009a-153">Performance improvement on a per-file basis is dependent on many factors, including the client's proximity to the nearest CDN endpoint, transient conditions on the local network, and so forth.</span></span> <span data-ttu-id="1009a-154">许多静态文件非常小, 可以从 Office 365 下载, 不应超过一秒钟。</span><span class="sxs-lookup"><span data-stu-id="1009a-154">Many static files are quite small, and can be downloaded from Office 365 in less than a second.</span></span> <span data-ttu-id="1009a-155">但是, 网页可能包含多个嵌入文件, 累积下载时间为几秒。</span><span class="sxs-lookup"><span data-stu-id="1009a-155">However, a web page may contain many embedded files with a cumulative download time of several seconds.</span></span> <span data-ttu-id="1009a-156">从 CDN 提供这些文件可显著缩短总页面加载时间。</span><span class="sxs-lookup"><span data-stu-id="1009a-156">Serving these files from the CDN can significantly reduce the overall page load time.</span></span> <span data-ttu-id="1009a-157">请参阅[CDN 提供了哪些性能增益？](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide)示例。</span><span class="sxs-lookup"><span data-stu-id="1009a-157">See [What performance gains does a CDN provide?](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide) for an example.</span></span>
+
+### <a name="determine-where-you-want-to-store-your-assets"></a><span data-ttu-id="1009a-158">确定要存储资产的位置</span><span class="sxs-lookup"><span data-stu-id="1009a-158">Determine where you want to store your assets</span></span>
+<a name="CDNStoreAssets"> </a>
+
+<span data-ttu-id="1009a-159">CDN 从称为 "_来源_" 的位置提取资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-159">The CDN fetches your assets from a location called an _origin_.</span></span> <span data-ttu-id="1009a-160">来源可以是可通过 URL 访问的 SharePoint 网站、文档库或文件夹。</span><span class="sxs-lookup"><span data-stu-id="1009a-160">An origin can be a SharePoint site, document library or folder that is accessible by a URL.</span></span> <span data-ttu-id="1009a-161">为您的组织指定源时具有极大的灵活性。</span><span class="sxs-lookup"><span data-stu-id="1009a-161">You have great flexibility when you specify origins for your organization.</span></span> <span data-ttu-id="1009a-162">例如, 您可以指定多个来源或要放置所有 CDN 资产的单个原点。</span><span class="sxs-lookup"><span data-stu-id="1009a-162">For example, you can specify multiple origins or a single origin where you want to put all your CDN assets.</span></span> <span data-ttu-id="1009a-163">您可以选择同时为您的组织提供公共来源或专用来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-163">You can choose to have both public or private origins for your organization.</span></span> <span data-ttu-id="1009a-164">大多数组织将选择实现这两个的组合。</span><span class="sxs-lookup"><span data-stu-id="1009a-164">Most organizations will choose to implement a combination of the two.</span></span>
+
+<span data-ttu-id="1009a-165">您可以为您的起源 (如文件夹或文档库) 创建新的容器, 并添加要从 CDN 中获取的文件。</span><span class="sxs-lookup"><span data-stu-id="1009a-165">You can create new container for your origins such as folders or document libraries, and add files you want to make available from the CDN.</span></span> <span data-ttu-id="1009a-166">如果要从 cdn 中获取一组特定的资产, 并且希望仅将一组 CDN 资产限制为容器中的那些文件, 这是一种很棒的方法。</span><span class="sxs-lookup"><span data-stu-id="1009a-166">This is a good approach if you have a specific set of assets you want to be available from the CDN, and want to restrict the set of CDN assets to only those files in the container.</span></span>
+
+<span data-ttu-id="1009a-167">您还可以将现有网站集、网站、库或文件夹配置为源, 这将使容器中的所有符合条件的资产都可从 CDN 中获取。</span><span class="sxs-lookup"><span data-stu-id="1009a-167">You can also configure an existing site collection, site, library or folder as an origin, which will make all eligible assets in the container available from the CDN.</span></span> <span data-ttu-id="1009a-168">在将现有容器添加为源之前, 请务必确保您了解其内容和权限, 以便不会无意中将资产暴露给匿名访问或未经授权的用户。</span><span class="sxs-lookup"><span data-stu-id="1009a-168">Before you add an existing container as an origin, it's important to make sure you are aware of its contents and permissions so you do not inadvertently expose assets to anonymous access or unauthorized users.</span></span>
+
+<span data-ttu-id="1009a-169">您可以定义_cdn 策略_以从 CDN 中排除来源的内容。</span><span class="sxs-lookup"><span data-stu-id="1009a-169">You can define _CDN policies_ to exclude content in your origins from the CDN.</span></span> <span data-ttu-id="1009a-170">CDN 策略通过属性 (如_文件类型_和_网站分类_) 排除公用或专用来源的资产, 并将其应用于您在策略中指定的 CdnType (private 或 public) 的所有来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-170">CDN policies exclude assets in public or private origins by attributes such as _file type_ and _site classification_, and are applied to all origins of the CdnType (private or public) you specify in the policy.</span></span> <span data-ttu-id="1009a-171">例如, 如果添加了包含多个子网站的网站的专用源, 则可以定义一个策略以排除标记为**机密**的网站, 以便不会从 CDN 为应用了该分类的网站提供内容。</span><span class="sxs-lookup"><span data-stu-id="1009a-171">For example, if you add a private origin consisting of a site that contains multiple subsites, you can define a policy to exclude sites marked as **Confidential** so content from sites with that classification applied will not be served from the CDN.</span></span> <span data-ttu-id="1009a-172">该策略将应用于已添加到 CDN 的_所有_私人来源的内容。</span><span class="sxs-lookup"><span data-stu-id="1009a-172">The policy will apply to content from _all_ private origins you have added to the CDN.</span></span>
   
- <span data-ttu-id="12450-164">**属性和托管中公共原点的资产的优点**</span><span class="sxs-lookup"><span data-stu-id="12450-164">**Attributes and advantages of hosting assets in a public origin**</span></span>
+<span data-ttu-id="1009a-173">请注意, 源数量越多, 对 CDN 服务处理请求的时间会产生更大的影响。</span><span class="sxs-lookup"><span data-stu-id="1009a-173">Keep in mind that the greater the number of origins, the greater the impact on the time it takes the CDN service to process requests.</span></span> <span data-ttu-id="1009a-174">建议尽可能多地限制源的数量。</span><span class="sxs-lookup"><span data-stu-id="1009a-174">We recommend that you limit the number of origins as much as possible.</span></span>
   
-- <span data-ttu-id="12450-165">在公共原点中公开的资产进行匿名访问由每个人。</span><span class="sxs-lookup"><span data-stu-id="12450-165">Assets exposed in a public origin are accessible by everyone anonymously.</span></span>
-    
+### <a name="choose-whether-each-origin-should-be-public-or-private"></a><span data-ttu-id="1009a-175">选择每个来源是公共还是私有</span><span class="sxs-lookup"><span data-stu-id="1009a-175">Choose whether each origin should be public or private</span></span>
+<a name="CDNOriginChoosePublicPrivate"> </a>
+
+<span data-ttu-id="1009a-176">在标识原点时, 指定是应将其设为_公共_的还是_私有_的。</span><span class="sxs-lookup"><span data-stu-id="1009a-176">When you identify an origin, you specify whether it should be made _public_ or _private_.</span></span> <span data-ttu-id="1009a-177">对公共起源中的 cdn 资产的访问权限是匿名的, 并且专用来源的 cdn 内容通过动态生成的令牌进行保护以实现更高的安全性。</span><span class="sxs-lookup"><span data-stu-id="1009a-177">Access to CDN assets in public origins is anonymous, and CDN content in private origins is secured by dynamically generated tokens for greater security.</span></span> <span data-ttu-id="1009a-178">无论您选择哪个选项, 当涉及 CDN 本身的管理时, Microsoft 都会为你执行所有繁重的操作。</span><span class="sxs-lookup"><span data-stu-id="1009a-178">Regardless of which option you choose, Microsoft does all the heavy lifting for you when it comes to administration of the CDN itself.</span></span> <span data-ttu-id="1009a-179">此外, 您还可以在设置完 CDN 并确定来源之后, 再改变主意。</span><span class="sxs-lookup"><span data-stu-id="1009a-179">Also, you can change your mind later, after you've set up the CDN and identified your origins.</span></span>
+
+<span data-ttu-id="1009a-180">公用和专用选项都提供了类似的性能提升, 但各自具有独特的特性和优势。</span><span class="sxs-lookup"><span data-stu-id="1009a-180">Both public and private options provide similar performance gains, but each has unique attributes and advantages.</span></span>
+
+<span data-ttu-id="1009a-181">可以以匿名方式访问 Office 365 CDN 内的**公共**来源, 拥有该资产的 URL 的任何人都可以访问托管资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-181">**Public** origins within the Office 365 CDN are accessible anonymously, and hosted assets can be accessed by anyone who has the URL to the asset.</span></span> <span data-ttu-id="1009a-182">由于对公共源中内容的访问属于匿名访问，因此只能使用它们缓存非敏感的常规内容，如 javascript 文件、脚本、图标和图片。</span><span class="sxs-lookup"><span data-stu-id="1009a-182">Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as javascript files, scripts, icons and images.</span></span>
+
+<span data-ttu-id="1009a-183">Office 365 CDN 内的**私有**源提供对用户内容的专用访问权限，这些内容包括 SharePoint Online 文档库、站点和媒体（如视频）。</span><span class="sxs-lookup"><span data-stu-id="1009a-183">**Private** origins within the Office 365 CDN provide private access to user content such as SharePoint Online document libraries, sites and media such as videos.</span></span> <span data-ttu-id="1009a-184">对私人来源中的内容的访问受动态生成的令牌的保护, 因此只能由对原始文档库或存储位置具有权限的用户访问。</span><span class="sxs-lookup"><span data-stu-id="1009a-184">Access to content in private origins is secured by dynamically generated tokens so it can only be accessed by users with permissions to the original document library or storage location.</span></span> <span data-ttu-id="1009a-185">Office 365 CDN 中的专用来源仅可用于 sharepoint online 内容, 并且您只能通过重定向从 sharepoint online 租户访问私人来源的资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-185">Private origins in the Office 365 CDN can only be used for SharePoint Online content, and you can only access assets in private origins through redirection from your SharePoint Online tenant.</span></span>
+
+<span data-ttu-id="1009a-186">您可以详细了解如何在专用来源中[使用资产](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)的 CDN 访问在专用资源中的工作方式。</span><span class="sxs-lookup"><span data-stu-id="1009a-186">You can read more about how CDN access to assets in a private origin works in [Using assets in private origins](use-office-365-cdn-with-spo.md#using-assets-in-private-origins).</span></span>
+
+#### <a name="attributes-and-advantages-of-hosting-assets-in-public-origins"></a><span data-ttu-id="1009a-187">托管资产在公共起源中的特性和优势</span><span class="sxs-lookup"><span data-stu-id="1009a-187">Attributes and advantages of hosting assets in public origins</span></span>
+  
+- <span data-ttu-id="1009a-188">每个人都能匿名访问公用源中公开的资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-188">Assets exposed in a public origin are accessible by everyone anonymously.</span></span>
     > [!IMPORTANT]
-    > <span data-ttu-id="12450-166">如果在您 CDN 识别公共的原点而言，应该从不将被视为对您的组织敏感公共原点或 SharePoint Online 的库中的资源。</span><span class="sxs-lookup"><span data-stu-id="12450-166">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in a public origin or SharePoint Online library.</span></span> 
-  
-- <span data-ttu-id="12450-167">如果您从公共原点删除某项资产，资产可能继续提供最多 30 天从缓存;但是，我们将使 CDN 中的资源的链接无效 15 分钟内。</span><span class="sxs-lookup"><span data-stu-id="12450-167">If you remove an asset from a public origin, the asset may continue to be available for up to 30 days from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
-    
-- <span data-ttu-id="12450-p113">当主机中公共原点的样式表 （CSS 文件） 时，您可以使用代码中的相对路径和 Uri。这意味着您可以引用的背景图像和其他对象相对于调用它资产的位置的位置。</span><span class="sxs-lookup"><span data-stu-id="12450-p113">When you host style sheets (CSS files) in a public origin, you can use relative paths and URIs within the code. This means that you can reference the location of background images and other objects relative to the location of the asset that's calling it.</span></span>
-    
-- <span data-ttu-id="12450-p114">尽管您可以硬编码公共源的 URL，这样做，以便不建议。如果访问 CDN 变得不可用，URL 将自动解析为您的组织在 SharePoint Online 并可能导致断开的链接和其他错误的原因。</span><span class="sxs-lookup"><span data-stu-id="12450-p114">While you can hard code a public origin's URL, doing so is not recommended. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors.</span></span>
-    
-- <span data-ttu-id="12450-p115">可供公共来源的默认文件类型是.css、.eot、.gif、.ico、.jpeg、.jpg、.js、.map、.png、.svg、.ttf 和.woff。您可以指定其他文件类型。</span><span class="sxs-lookup"><span data-stu-id="12450-p115">The default file types that are included for public origins are .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, and .woff. You can specify additional file types.</span></span>
-    
-- <span data-ttu-id="12450-p116">如果您希望，您可以配置要排除的已标识按您指定的网站分类资产的策略。例如，您可以选择要排除即使它们是允许的文件类型，并且位于公用原点标记为"confidential"或"受限"的所有资产。</span><span class="sxs-lookup"><span data-stu-id="12450-p116">If you want, you can configure a policy to exclude assets that have been identified by site classifications that you specify. For example, you can choose to exclude all assets that are marked as "confidential" or "restricted" even if they are an allowed file type and are located in a public origin.</span></span>
-    
- <span data-ttu-id="12450-176">**属性和托管在专用的原点而言的资产的优点**</span><span class="sxs-lookup"><span data-stu-id="12450-176">**Attributes and advantages of hosting assets in a private origin**</span></span>
-  
-- <span data-ttu-id="12450-p117">如果他们有权这样，用户仅可以从专用原点访问资产。阻止对这些资产的匿名访问。</span><span class="sxs-lookup"><span data-stu-id="12450-p117">Users can only access the assets from a private origin if they are authorized to do so. Anonymous access to these assets is prevented.</span></span>
-    
-- <span data-ttu-id="12450-179">如果专用原点中移除某项资产，可以继续资产以供最多为一个小时从缓存;但是，我们将使 CDN 中的资源的链接无效 15 分钟内。</span><span class="sxs-lookup"><span data-stu-id="12450-179">If you remove an asset from the private origin, the asset may continue to be available for up to an hour from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
-    
-- <span data-ttu-id="12450-p118">默认文件类型都包括的专用的来源是.gif、.ico、.jpeg、.jpg、.js 和.png。您可以指定其他文件类型。</span><span class="sxs-lookup"><span data-stu-id="12450-p118">The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png. You can specify additional file types.</span></span>
-    
-- <span data-ttu-id="12450-182">一样公共来源，您可以配置策略以排除资产已由网站分类指定即使使用通配符来包括文件夹或网站库内的所有资产的标识。</span><span class="sxs-lookup"><span data-stu-id="12450-182">Just like public origins, you can configure a policy to exclude assets that have been identified by site classifications that you specify even if you use wildcards to include all assets within a folder or Site Library.</span></span>
-    
-## <a name="default-office-365-cdn-origins"></a><span data-ttu-id="12450-183">默认 Office 365 CDN 来源</span><span class="sxs-lookup"><span data-stu-id="12450-183">Default Office 365 CDN origins</span></span>
+    > <span data-ttu-id="1009a-189">永远不应将包含用户信息或被视为对您的组织敏感的资源置于公共来源中。</span><span class="sxs-lookup"><span data-stu-id="1009a-189">You should never place resources that contain user information or are considered sensitive to your organization in a public origin.</span></span>
+- <span data-ttu-id="1009a-190">如果从公用源中删除某资产，缓存会继续保留此资产最多 30 天；但此 CDN 资产的链接会在 15 分钟内失效。</span><span class="sxs-lookup"><span data-stu-id="1009a-190">If you remove an asset from a public origin, the asset may continue to be available for up to 30 days from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
+- <span data-ttu-id="1009a-191">如果将样式表（CSS 文件）托管到公用源，可以在代码内使用相对路径和 URI。</span><span class="sxs-lookup"><span data-stu-id="1009a-191">When you host style sheets (CSS files) in a public origin, you can use relative paths and URIs within the code.</span></span> <span data-ttu-id="1009a-192">也就是说，可以引用背景图像和其他对象相对于调用它的资产的位置。</span><span class="sxs-lookup"><span data-stu-id="1009a-192">This means that you can reference the location of background images and other objects relative to the location of the asset that's calling it.</span></span>
+- <span data-ttu-id="1009a-193">虽然可以硬编码公用源的 URL，但并不建议这样做。</span><span class="sxs-lookup"><span data-stu-id="1009a-193">While you can hard code a public origin's URL, doing so is not recommended.</span></span> <span data-ttu-id="1009a-194">这是因为，如果无法访问 CDN，URL 就不会在 SharePoint Online 中自动解析为相应组织，进而可能会导致链接失效和其他错误抛出。</span><span class="sxs-lookup"><span data-stu-id="1009a-194">The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors.</span></span>
+- <span data-ttu-id="1009a-195">默认情况下，支持向公用源添加下列类型的文件：.css、.eot、.gif、.ico、.jpeg、.jpg、.js、.map、.png、.svg、.ttf 和 .woff。</span><span class="sxs-lookup"><span data-stu-id="1009a-195">The default file types that are included for public origins are .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, and .woff.</span></span> <span data-ttu-id="1009a-196">您可以指定其他文件类型。</span><span class="sxs-lookup"><span data-stu-id="1009a-196">You can specify additional file types.</span></span>
+- <span data-ttu-id="1009a-197">您可以配置策略以排除已由指定的网站分类标识的资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-197">You can configure a policy to exclude assets that have been identified by site classifications that you specify.</span></span> <span data-ttu-id="1009a-198">例如，可以选择排除所有标记为“机密”或“受限”的资产，即使它们的文件类型受支持且位于公用源中，也不例外。</span><span class="sxs-lookup"><span data-stu-id="1009a-198">For example, you can choose to exclude all assets that are marked as "confidential" or "restricted" even if they are an allowed file type and are located in a public origin.</span></span>
 
-<span data-ttu-id="12450-p119">除非另外指定，否则 Office 365 设置某些默认来源，如果启用了 Office 365 CDN。如果您最初排除它们，您可以添加这些来源，完成安装之后。</span><span class="sxs-lookup"><span data-stu-id="12450-p119">Unless you specify otherwise, Office 365 sets up some default origins for you when you enable the Office 365 CDN. If you initially exclude them, you can add these origins after you complete setup.</span></span>
+#### <a name="attributes-and-advantages-of-hosting-assets-in-private-origins"></a><span data-ttu-id="1009a-199">托管资产在专用来源中的属性和优点</span><span class="sxs-lookup"><span data-stu-id="1009a-199">Attributes and advantages of hosting assets in private origins</span></span>
+
+- <span data-ttu-id="1009a-200">专用来源仅可用于 SharePoint Online 资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-200">Private origins can only be used for SharePoint Online assets.</span></span>
+- <span data-ttu-id="1009a-201">如果用户具有访问容器的权限, 则用户只能从私有来源访问资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-201">Users can only access the assets from a private origin if they have permissions to access the container.</span></span> <span data-ttu-id="1009a-202">禁止匿名访问这些资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-202">Anonymous access to these assets is prevented.</span></span>
+- <span data-ttu-id="1009a-203">私人来源中的资产必须从 SharePoint Online 租户中引用。</span><span class="sxs-lookup"><span data-stu-id="1009a-203">Assets in private origins must be referred from the SharePoint Online tenant.</span></span> <span data-ttu-id="1009a-204">对专用 CDN 资产的直接访问不起作用。</span><span class="sxs-lookup"><span data-stu-id="1009a-204">Direct access to private CDN assets does not work.</span></span>
+- <span data-ttu-id="1009a-205">如果从专用来源中删除资产, 该资产可能会从缓存中持续到一小时的可用状态;但是, 在资产删除的15分钟内, 我们将使 CDN 中的资产链接无效。</span><span class="sxs-lookup"><span data-stu-id="1009a-205">If you remove an asset from the private origin, the asset may continue to be available for up to an hour from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes of the asset's removal.</span></span>
+- <span data-ttu-id="1009a-206">默认情况下，支持为专用源添加下列类型的文件：.gif、.ico、.jpeg、.jpg、.js 和 .png。</span><span class="sxs-lookup"><span data-stu-id="1009a-206">The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png.</span></span> <span data-ttu-id="1009a-207">您可以指定其他文件类型。</span><span class="sxs-lookup"><span data-stu-id="1009a-207">You can specify additional file types.</span></span>
+- <span data-ttu-id="1009a-208">与公共起源一样, 您可以将策略配置为排除已由您指定的网站分类标识的资产, 即使您使用通配符来包含文件夹或文档库中的所有资产也是如此。</span><span class="sxs-lookup"><span data-stu-id="1009a-208">Just like with public origins, you can configure a policy to exclude assets that have been identified by site classifications that you specify even if you use wildcards to include all assets within a folder or document library.</span></span>
+
+<span data-ttu-id="1009a-209">有关使用 office 365 CDN 的原因的详细信息, 请参阅常规 CDN 概念和可与 office 365 租户一起使用的其他 Microsoft cdn。请参阅[Content 传递网络](content-delivery-networks.md)。</span><span class="sxs-lookup"><span data-stu-id="1009a-209">For more information about why to use the Office 365 CDN, general CDN concepts, and other Microsoft CDNs you can use with your Office 365 tenant, see [Content Delivery Networks](content-delivery-networks.md).</span></span>
+
+### <a name="default-cdn-origins"></a><span data-ttu-id="1009a-210">默认 CDN 来源</span><span class="sxs-lookup"><span data-stu-id="1009a-210">Default CDN origins</span></span>
+
+<span data-ttu-id="1009a-211">除非另行指定, 否则 office 365 会在您启用 Office 365 CDN 时为您设置一些默认来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-211">Unless you specify otherwise, Office 365 sets up some default origins for you when you enable the Office 365 CDN.</span></span> <span data-ttu-id="1009a-212">如果最初选择不设置它们, 则可以在完成安装后添加这些来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-212">If you initially opt not to provision them, you can add these origins after you complete setup.</span></span> <span data-ttu-id="1009a-213">除非您了解跳过默认来源设置并有特定原因需要执行此操作, 否则应允许在启用 CDN 时创建这些后果。</span><span class="sxs-lookup"><span data-stu-id="1009a-213">Unless you understand the consequences of skipping the setup of default origins and have a specific reason for doing so, you should allow them to be created when you enable the CDN.</span></span>
   
-<span data-ttu-id="12450-186">默认专用来源：</span><span class="sxs-lookup"><span data-stu-id="12450-186">Default private origins:</span></span>
+<span data-ttu-id="1009a-214">默认专用 CDN 来源:</span><span class="sxs-lookup"><span data-stu-id="1009a-214">Default private CDN origins:</span></span>
   
-- <span data-ttu-id="12450-187">\*/userphoto.aspx</span><span class="sxs-lookup"><span data-stu-id="12450-187">\*/userphoto.aspx</span></span>
-    
-- <span data-ttu-id="12450-188">\*/siteassets</span><span class="sxs-lookup"><span data-stu-id="12450-188">\*/siteassets</span></span>
-    
-<span data-ttu-id="12450-189">默认公共来源：</span><span class="sxs-lookup"><span data-stu-id="12450-189">Default public origins:</span></span>
+- <span data-ttu-id="1009a-215">\*/userphoto.aspx</span><span class="sxs-lookup"><span data-stu-id="1009a-215">\*/userphoto.aspx</span></span>
+- <span data-ttu-id="1009a-216">\*/siteassets</span><span class="sxs-lookup"><span data-stu-id="1009a-216">\*/siteassets</span></span>
+
+<span data-ttu-id="1009a-217">默认公共 CDN 来源:</span><span class="sxs-lookup"><span data-stu-id="1009a-217">Default public CDN origins:</span></span>
   
-- <span data-ttu-id="12450-190">\*/masterpage</span><span class="sxs-lookup"><span data-stu-id="12450-190">\*/masterpage</span></span>
-    
-- <span data-ttu-id="12450-191">\*/style 库</span><span class="sxs-lookup"><span data-stu-id="12450-191">\*/style library</span></span>
+- <span data-ttu-id="1009a-218">\*/masterpage</span><span class="sxs-lookup"><span data-stu-id="1009a-218">\*/masterpage</span></span>
+- <span data-ttu-id="1009a-219">\*/style 库</span><span class="sxs-lookup"><span data-stu-id="1009a-219">\*/style library</span></span>
+- <span data-ttu-id="1009a-220">\*/clientsideassets</span><span class="sxs-lookup"><span data-stu-id="1009a-220">\*/clientsideassets</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="12450-p120">Clientsideassets 默认公共来源，以便如果必须公共 CDN 该时间之前，您将不会看到项自动添加，但如果以后创建已添加的 2017 年 12 月中，您将自动看到此更改。如果您想要阅读使用此 CDN 原点的示例，请参阅：[主机您从 Office 365 CDN （Hello World 第 4 部分） 的客户端 web 部件](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)</span><span class="sxs-lookup"><span data-stu-id="12450-p120">Clientsideassets is a default public origin that was added in Dec of 2017 so that, if you had a public CDN before that time, you wouldn't see the entry automatically added, but if you created afterward, you'd see this change automatically. If you'd like to read an example of using this CDN origin, see: [Host your client-side web part from Office 365 CDN (Hello World part 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)</span></span>
-    
-## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a><span data-ttu-id="12450-194">设置和配置 Office 365 CDN 使用 SharePoint Online Management Shell</span><span class="sxs-lookup"><span data-stu-id="12450-194">Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell</span></span>
+> <span data-ttu-id="1009a-221">_clientsideassets_是在12月2017的 Office 365 CDN 服务中添加的默认公共来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-221">_clientsideassets_ is a default public origin that was added to the Office 365 CDN service in December 2017.</span></span> <span data-ttu-id="1009a-222">为使 CDN 中的 SharePoint 框架解决方案正常工作, 必须存在此来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-222">This origin must be present in order for SharePoint Framework solutions in the CDN to work.</span></span> <span data-ttu-id="1009a-223">如果在12月2017之前启用了 Office 365 CDN, 或者在启用 CDN 时跳过了默认来源的设置, 则可以手动添加此来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-223">If you enabled the Office 365 CDN prior to December 2017, or if you skipped setup of default origins when you enabled the CDN, you can manually add this origin.</span></span> <span data-ttu-id="1009a-224">有关详细信息, 请参阅[我的客户端 web 部件或 SharePoint 框架解决方案不起作用](use-office-365-cdn-with-spo.md#my-client-side-web-part-or-sharepoint-framework-solution-isnt-working)。</span><span class="sxs-lookup"><span data-stu-id="1009a-224">For more information, see [My client-side web part or SharePoint Framework solution isn't working](use-office-365-cdn-with-spo.md#my-client-side-web-part-or-sharepoint-framework-solution-isnt-working).</span></span>
 
-<span data-ttu-id="12450-p121">本主题中的过程要求您要用于连接到 SharePoint Online SharePoint Online Management Shell。有关说明，请参阅[Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。</span><span class="sxs-lookup"><span data-stu-id="12450-p121">The procedures in this topic require you to use the SharePoint Online Management Shell to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
-  
-<span data-ttu-id="12450-197">完成这些步骤来设置和配置 Office 365 CDN，以承载您在 SharePoint Online 中的静态资产。</span><span class="sxs-lookup"><span data-stu-id="12450-197">Complete these steps to set up and configure the Office 365 CDN to host your static assets in SharePoint Online.</span></span>
-  
-### <a name="to-enable-your-organization-to-use-the-office-365-cdn"></a><span data-ttu-id="12450-198">若要启用您的组织使用 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="12450-198">To enable your organization to use the Office 365 CDN</span></span>
+## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a><span data-ttu-id="1009a-225">使用 SharePoint Online 命令行管理程序设置和配置 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-225">Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell</span></span>
+<a name="CDNSetupinPShell"> </a>
 
-<span data-ttu-id="12450-p122">使用**组 SPOTenantCdnEnabled** cmdlet 可让您的组织使用 Office 365 CDN。您可以让您的组织使用公共来源、 专用来源，或同时使用 CDN。您还可以配置 Office 365 CDN，以跳过的默认来源设置时启用它。本主题中所述稍后始终可以添加这些来源。</span><span class="sxs-lookup"><span data-stu-id="12450-p122">Use the **Set-SPOTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN. You can enable your organization to use either public origins, private origins, or both with the CDN. You can also configure the Office 365 CDN to skip the setup of default origins when you enable it. You can always add these origins later as described in this topic.</span></span> 
+<span data-ttu-id="1009a-226">本节中的过程要求您使用 sharepoint online 命令行管理程序连接到 sharepoint online。</span><span class="sxs-lookup"><span data-stu-id="1009a-226">The procedures in this section require you to use the SharePoint Online Management Shell to connect to SharePoint Online.</span></span> <span data-ttu-id="1009a-227">有关说明，请参阅[Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。</span><span class="sxs-lookup"><span data-stu-id="1009a-227">For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
   
-<span data-ttu-id="12450-203">在 SharePoint Online 的 Windows Powershell:</span><span class="sxs-lookup"><span data-stu-id="12450-203">In Windows Powershell for SharePoint Online:</span></span>
+<span data-ttu-id="1009a-228">完成这些步骤, 在 sharepoint online 中使用 sharepoint online 命令行管理程序设置和配置 CDN 以托管你的资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-228">Complete these steps to set up and configure the CDN to host your assets in SharePoint Online using the SharePoint Online Management Shell.</span></span>
   
+### <a name="enable-your-organization-to-use-the-office-365-cdn"></a><span data-ttu-id="1009a-229">使你的组织能够使用 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-229">Enable your organization to use the Office 365 CDN</span></span>
+
+<span data-ttu-id="1009a-230">在对租户 CDN 设置进行更改之前, 应在 Office 365 租户中检索专用 CDN 配置的当前状态。</span><span class="sxs-lookup"><span data-stu-id="1009a-230">Before you make changes to the tenant CDN settings, you should retrieve the current status of the private CDN configuration in your Office 365 tenant.</span></span> <span data-ttu-id="1009a-231">使用 SharePoint Online 命令行管理程序连接到你的租户:</span><span class="sxs-lookup"><span data-stu-id="1009a-231">Connect to your tenant using the SharePoint Online Management Shell:</span></span>
+
+``` powershell
+Connect-SPOService -Url https://contoso-admin.sharepoint.com
 ```
+
+<span data-ttu-id="1009a-232">现在, 使用**SPOTenantCdnEnabled** cmdlet 检索租户中的 CDN 状态设置:</span><span class="sxs-lookup"><span data-stu-id="1009a-232">Now use the **Get-SPOTenantCdnEnabled** cmdlet to retrieve the CDN status settings from the tenant:</span></span>
+
+``` powershell
+Get-SPOTenantCdnEnabled -CdnType <Public | Private>
+```
+
+<span data-ttu-id="1009a-233">指定 CdnType 的 CDN 状态将输出到屏幕上。</span><span class="sxs-lookup"><span data-stu-id="1009a-233">The status of the CDN for the specified CdnType will output to the screen.</span></span>
+
+<span data-ttu-id="1009a-234">使用**SPOTenantCdnEnabled** cmdlet 可使您的组织使用 Office 365 CDN。</span><span class="sxs-lookup"><span data-stu-id="1009a-234">Use the **Set-SPOTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN.</span></span> <span data-ttu-id="1009a-235">您可以让您的组织同时使用公用来源、私人来源或同时使用这两者。</span><span class="sxs-lookup"><span data-stu-id="1009a-235">You can enable your organization to use public origins, private origins, or both at once.</span></span> <span data-ttu-id="1009a-236">您还可以将 CDN 配置为在启用时跳过默认来源的设置。</span><span class="sxs-lookup"><span data-stu-id="1009a-236">You can also configure the CDN to skip the setup of default origins when you enable it.</span></span> <span data-ttu-id="1009a-237">您随时可以按照本主题中所述, 在以后添加这些来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-237">You can always add these origins later as described in this topic.</span></span>
+  
+<span data-ttu-id="1009a-238">在 Windows Powershell for SharePoint Online 中:</span><span class="sxs-lookup"><span data-stu-id="1009a-238">In Windows Powershell for SharePoint Online:</span></span>
+
+``` powershell
 Set-SPOTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
 ```
 
-<span data-ttu-id="12450-204">例如，若要启用您的组织使用 CDN 公用和专用来源，请键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="12450-204">For example, to enable your organization to use both public and private origins with the CDN, type the following command:</span></span>
-  
-```
+<span data-ttu-id="1009a-239">例如, 若要使组织能够使用公共来源和专用来源, 请键入以下命令:</span><span class="sxs-lookup"><span data-stu-id="1009a-239">For example, to enable your organization to use both public and private origins, type the following command:</span></span>
+
+``` powershell
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 ```
 
-<span data-ttu-id="12450-205">若要启用您的组织使用 CDN 公用和专用来源但跳过设置默认来源，请键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="12450-205">To enable your organization to use both public and private origins with the CDN but skip setting up the default origins, type the following command:</span></span>
-  
-```
+<span data-ttu-id="1009a-240">若要使组织能够使用公共来源和专用来源, 但跳过设置默认来源, 请键入以下命令:</span><span class="sxs-lookup"><span data-stu-id="1009a-240">To enable your organization to use both public and private origins but skip setting up the default origins, type the following command:</span></span>
+
+``` powershell
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
-<span data-ttu-id="12450-206">若要启用您的组织使用 CDN 公共来源，请键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="12450-206">To enable your organization to use public origins with the CDN, type the following command:</span></span>
-  
-```
+<span data-ttu-id="1009a-241">有关在启用 Office 365 CDN 时默认设置的来源的信息以及跳过默认来源设置的潜在影响, 请参阅[默认 CDN 来源](use-office-365-cdn-with-spo.md#default-cdn-origins)。</span><span class="sxs-lookup"><span data-stu-id="1009a-241">See [Default CDN origins](use-office-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN, and the potential impact of skipping the setup of default origins.</span></span>
+
+<span data-ttu-id="1009a-242">若要使组织能够使用公共来源, 请键入以下命令:</span><span class="sxs-lookup"><span data-stu-id="1009a-242">To enable your organization to use public origins, type the following command:</span></span>
+
+``` powershell
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
-<span data-ttu-id="12450-207">若要启用您的组织使用 CDN 的专用来源，请键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="12450-207">To enable your organization to use private origins with the CDN, type the following command:</span></span>
-  
-```
+<span data-ttu-id="1009a-243">若要使您的组织使用专用来源, 请键入以下命令:</span><span class="sxs-lookup"><span data-stu-id="1009a-243">To enable your organization to use private origins, type the following command:</span></span>
+
+``` powershell
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-<span data-ttu-id="12450-208">有关此 cmdlet 的详细信息，请参阅[设置 SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-208">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
+<span data-ttu-id="1009a-244">有关此 cmdlet 的详细信息, 请参阅[SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-244">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
   
-### <a name="optional-to-change-the-list-of-file-types-to-include-in-the-office-365-cdn"></a><span data-ttu-id="12450-209">（可选）若要更改要在 Office 365 CDN 中包括的文件类型的列表</span><span class="sxs-lookup"><span data-stu-id="12450-209">(Optional) To change the list of file types to include in the Office 365 CDN</span></span>
-<span data-ttu-id="12450-210"><a name="Office365CDNforSPOFileType"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-210"></span></span>
+### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a><span data-ttu-id="1009a-245">更改要包含在 Office 365 CDN 中的文件类型列表 (可选)</span><span class="sxs-lookup"><span data-stu-id="1009a-245">Change the list of file types to include in the Office 365 CDN (Optional)</span></span>
+<a name="Office365CDNforSPOFileType"> </a>
 
 > [!TIP]
-> <span data-ttu-id="12450-p123">使用**组 SPOTenantCdnPolicy** cmdlet 定义文件类型时，您会覆盖当前定义的列表。如果您想要向列表添加其他文件类型，该 cmdlet 首先使用以找出文件类型已允许和其包含新自以及列表中。</span><span class="sxs-lookup"><span data-stu-id="12450-p123">When you define file types by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.</span></span> 
+> <span data-ttu-id="1009a-246">使用**运行 set-spotenantcdnpolicy** cmdlet 定义文件类型时, 将覆盖当前定义的列表。</span><span class="sxs-lookup"><span data-stu-id="1009a-246">When you define file types by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list.</span></span> <span data-ttu-id="1009a-247">如果要向列表中添加其他文件类型, 请先使用 cmdlet 找出已允许的文件类型, 并将它们包含在列表中以及新的文件类型。</span><span class="sxs-lookup"><span data-stu-id="1009a-247">If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.</span></span>
   
-<span data-ttu-id="12450-p124">使用**组 SPOTenantCdnPolicy** cmdlet 可定义的可由 CDN 中的公用和专用来源承载静态文件类型。默认情况下，将为示例.css、.gif、.jpg 和.js 允许常见的资源类型。</span><span class="sxs-lookup"><span data-stu-id="12450-p124">Use the **Set-SPOTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN. By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.</span></span> 
-  
-<span data-ttu-id="12450-215">在 SharePoint Online 的 Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="12450-215">In Windows PowerShell for SharePoint Online:</span></span>
-  
-```
+<span data-ttu-id="1009a-248">使用**运行 set-spotenantcdnpolicy** cmdlet 可以定义可由 CDN 中的公共和专用来源承载的静态文件类型。</span><span class="sxs-lookup"><span data-stu-id="1009a-248">Use the **Set-SPOTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN.</span></span> <span data-ttu-id="1009a-249">默认情况下, 允许使用常见资产类型, 例如 .css、.gif、.jpg 和 .js。</span><span class="sxs-lookup"><span data-stu-id="1009a-249">By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.</span></span>
+
+<span data-ttu-id="1009a-250">在 Windows PowerShell for SharePoint Online 中:</span><span class="sxs-lookup"><span data-stu-id="1009a-250">In Windows PowerShell for SharePoint Online:</span></span>
+
+``` powershell
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
-<span data-ttu-id="12450-216">若要查看的 CDN 当前允许哪些文件类型，使用**Get-SPOTenantCdnPolicies** cmdlet:</span><span class="sxs-lookup"><span data-stu-id="12450-216">To see what file types are currently allowed by the CDN, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
-  
+<span data-ttu-id="1009a-251">例如, 若要启用 CDN 以承载 .css 和 .png 文件, 您需要输入以下命令:</span><span class="sxs-lookup"><span data-stu-id="1009a-251">For example, to enable the CDN to host .css and .png files, you would enter the command:</span></span>
+
+``` powershell
+Set-SPOTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
 ```
+
+<span data-ttu-id="1009a-252">若要查看 CDN 当前允许的文件类型, 请使用**请运行 get-spotenantcdnpolicies** cmdlet:</span><span class="sxs-lookup"><span data-stu-id="1009a-252">To see what file types are currently allowed by the CDN, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span>
+
+``` powershell
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-<span data-ttu-id="12450-217">有关这些 cmdlet 的详细信息，请参阅[设置 SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)和[Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-217">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
+<span data-ttu-id="1009a-253">有关这些 cmdlet 的详细信息, 请参阅[运行 set-spotenantcdnpolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)和[请运行 get-spotenantcdnpolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-253">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
   
-### <a name="optional-to-change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a><span data-ttu-id="12450-218">（可选）若要更改您要从 Office 365 CDN 排除网站分类的列表</span><span class="sxs-lookup"><span data-stu-id="12450-218">(Optional) To change the list of site classifications you want to exclude from the Office 365 CDN</span></span>
-<span data-ttu-id="12450-219"><a name="Office365CDNforSPOSiteClassification"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-219"></span></span>
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a><span data-ttu-id="1009a-254">更改要从 Office 365 CDN 中排除的网站分类列表 (可选)</span><span class="sxs-lookup"><span data-stu-id="1009a-254">Change the list of site classifications you want to exclude from the Office 365 CDN (Optional)</span></span>
+<a name="Office365CDNforSPOSiteClassification"> </a>
 
 > [!TIP]
-> <span data-ttu-id="12450-p125">排除时网站分类使用**集 SPOTenantCdnPolicy** cmdlet，您会覆盖当前定义的列表。如果您想要排除其他网站分类，使用 cmdlet 首先了解已排除哪些分类并然后将其添加以及您新的。</span><span class="sxs-lookup"><span data-stu-id="12450-p125">When you exclude site classifications by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude additional site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.</span></span> 
-  
-<span data-ttu-id="12450-p126">使用**组 SPOTenantCdnPolicy** cmdlet 可以排除不希望公开通过 CDN 的网站分类。默认情况下，没有网站分类会被排除。</span><span class="sxs-lookup"><span data-stu-id="12450-p126">Use the **Set-SPOTenantCdnPolicy** cmdlet to exclude site classifications that you do not want to make available over the CDN. By default, no site classifications are excluded.</span></span> 
-  
-<span data-ttu-id="12450-224">在 SharePoint Online 的 Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="12450-224">In Windows PowerShell for SharePoint Online:</span></span>
-  
-```
+> <span data-ttu-id="1009a-255">当您使用**运行 set-spotenantcdnpolicy** cmdlet 排除网站分类时, 将覆盖当前定义的列表。</span><span class="sxs-lookup"><span data-stu-id="1009a-255">When you exclude site classifications by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list.</span></span> <span data-ttu-id="1009a-256">如果要排除其他网站分类, 请先使用 cmdlet 找出已排除的分类, 然后将其添加到新的分类中。</span><span class="sxs-lookup"><span data-stu-id="1009a-256">If you want to exclude additional site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.</span></span>
+
+<span data-ttu-id="1009a-257">运行 **Set-SPOTenantCdnPolicy** cmdlet 可以排除不想通过 CDN 提供的网站分类。</span><span class="sxs-lookup"><span data-stu-id="1009a-257">Use the **Set-SPOTenantCdnPolicy** cmdlet to exclude site classifications that you do not want to make available over the CDN.</span></span> <span data-ttu-id="1009a-258">默认情况下，不排除任何网站分类。</span><span class="sxs-lookup"><span data-stu-id="1009a-258">By default, no site classifications are excluded.</span></span>
+
+<span data-ttu-id="1009a-259">在 Windows PowerShell for SharePoint Online 中:</span><span class="sxs-lookup"><span data-stu-id="1009a-259">In Windows PowerShell for SharePoint Online:</span></span>
+
+``` powershell
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications >"
 ```
 
-<span data-ttu-id="12450-225">若要查看当前限制哪些网站分类，使用**Get-SPOTenantCdnPolicies** cmdlet:</span><span class="sxs-lookup"><span data-stu-id="12450-225">To see what site classifications are currently restricted, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
-  
-```
+<span data-ttu-id="1009a-260">若要查看当前受限制的网站分类, 请使用**请运行 get-spotenantcdnpolicies** cmdlet:</span><span class="sxs-lookup"><span data-stu-id="1009a-260">To see what site classifications are currently restricted, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span>
+
+``` powershell
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-<span data-ttu-id="12450-226">有关这些 cmdlet 的详细信息，请参阅[设置 SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)和[Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-226">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
-  
-### <a name="to-add-an-origin-for-your-assets"></a><span data-ttu-id="12450-227">若要添加您的资产的来源</span><span class="sxs-lookup"><span data-stu-id="12450-227">To add an origin for your assets</span></span>
-<span data-ttu-id="12450-228"><a name="Office365CDNforSPOOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-228"></span></span>
+<span data-ttu-id="1009a-261">将返回的属性为_IncludeFileExtensions_、 _ExcludeRestrictedSiteClassifications_和_ExcludeIfNoScriptDisabled_。</span><span class="sxs-lookup"><span data-stu-id="1009a-261">The properties that will be returned are _IncludeFileExtensions_, _ExcludeRestrictedSiteClassifications_ and _ExcludeIfNoScriptDisabled_.</span></span>
 
-<span data-ttu-id="12450-p127">使用**添加 SPOTenantCdnOrigin** cmdlet 可以定义来源。您可以定义多个来源。原点是指向 SharePoint 库或包含您想要承载的 CDN 的资产的文件夹的 URL。</span><span class="sxs-lookup"><span data-stu-id="12450-p127">Use the **Add-SPOTenantCdnOrigin** cmdlet to define an origin. You can define multiple origins. The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.</span></span> 
+<span data-ttu-id="1009a-262">_IncludeFileExtensions_属性包含将从 CDN 提供服务的文件扩展名的列表。</span><span class="sxs-lookup"><span data-stu-id="1009a-262">The _IncludeFileExtensions_ property contains the list of file extensions that will be served from the CDN.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1009a-263">公用和专用的默认文件扩展名是不同的。</span><span class="sxs-lookup"><span data-stu-id="1009a-263">The default file extensions are different between public and private.</span></span>
+
+<span data-ttu-id="1009a-264">_ExcludeRestrictedSiteClassifications_属性包含要从 CDN 中排除的网站分类。</span><span class="sxs-lookup"><span data-stu-id="1009a-264">The _ExcludeRestrictedSiteClassifications_ property contains the site classifications that you want to exclude from the CDN.</span></span> <span data-ttu-id="1009a-265">例如, 您可以排除标记为**机密**的网站, 以便不会从 CDN 为应用了该分类的网站中的内容提供服务。</span><span class="sxs-lookup"><span data-stu-id="1009a-265">For example, you can exclude sites marked as **Confidential** so content from sites with that classification applied will not be served from the CDN.</span></span>
+
+<span data-ttu-id="1009a-266">_ExcludeIfNoScriptDisabled_属性基于网站级_NoScript_属性设置从 CDN 中排除内容。</span><span class="sxs-lookup"><span data-stu-id="1009a-266">The _ExcludeIfNoScriptDisabled_ property excludes content from the CDN based on the site-level _NoScript_ attribute settings.</span></span> <span data-ttu-id="1009a-267">默认情况下, _NoScript_属性设置为 "为_新式_网站**启用**", 并对_经典_网站**禁用**。</span><span class="sxs-lookup"><span data-stu-id="1009a-267">By default, the _NoScript_ attribute is set to **Enabled** for _Modern_ sites and **Disabled** for _Classic_ sites.</span></span> <span data-ttu-id="1009a-268">这取决于租户设置。</span><span class="sxs-lookup"><span data-stu-id="1009a-268">This depends on your tenant settings.</span></span>
+
+<span data-ttu-id="1009a-269">有关这些 cmdlet 的详细信息, 请参阅[运行 set-spotenantcdnpolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)和[请运行 get-spotenantcdnpolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-269">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
+  
+### <a name="add-an-origin-for-your-assets"></a><span data-ttu-id="1009a-270">为你的资产添加来源</span><span class="sxs-lookup"><span data-stu-id="1009a-270">Add an origin for your assets</span></span>
+<a name="Office365CDNforSPOOrigin"> </a>
+
+<span data-ttu-id="1009a-271">使用**SPOTenantCdnOrigin** cmdlet 可以定义原点。</span><span class="sxs-lookup"><span data-stu-id="1009a-271">Use the **Add-SPOTenantCdnOrigin** cmdlet to define an origin.</span></span> <span data-ttu-id="1009a-272">可以定义多个源。</span><span class="sxs-lookup"><span data-stu-id="1009a-272">You can define multiple origins.</span></span> <span data-ttu-id="1009a-273">源是 SharePoint 库或文件夹的 URL，其中包含要由 CDN 托管的资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-273">The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="12450-232">如果在您 CDN 识别公共的原点而言，应永远不会将被视为对您的组织敏感的原点而言的公共或 SharePoint Online 的库中的资源。</span><span class="sxs-lookup"><span data-stu-id="12450-232">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in the public origin or SharePoint Online library.</span></span> 
-  
-```
-Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path >
+> <span data-ttu-id="1009a-274">永远不应将包含用户信息或被视为对您的组织敏感的资源置于公共来源中。</span><span class="sxs-lookup"><span data-stu-id="1009a-274">You should never place resources that contain user information or are considered sensitive to your organization in a public origin.</span></span>
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-<span data-ttu-id="12450-p128">其中路径是包含资产的文件夹的路径。您可以使用通配符除了相对路径。例如，要包含的所有资产在您的所有站点的 masterpages 文件夹中作为内 CDN 公共来源，请键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="12450-p128">Where path is the path to the folder that contains the assets. You can use wildcards in addition to relative paths. For example, to include all of the assets in the masterpages folder for all of your sites as a public origin within the CDN, type the following command:</span></span>
-  
-```
+<span data-ttu-id="1009a-275">_path_的值是指向包含资产的库或文件夹的路径。</span><span class="sxs-lookup"><span data-stu-id="1009a-275">The value of _path_ is the path to the library or folder that contains the assets.</span></span> <span data-ttu-id="1009a-276">除了相对路径之外，还可以使用通配符。</span><span class="sxs-lookup"><span data-stu-id="1009a-276">You can use wildcards in addition to relative paths.</span></span> <span data-ttu-id="1009a-277">来源支持附加到 URL 的通配符。</span><span class="sxs-lookup"><span data-stu-id="1009a-277">Origins support wildcards prepended to the URL.</span></span> <span data-ttu-id="1009a-278">这使您可以创建跨多个网站的来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-278">This allows you to create origins that span multiple sites.</span></span> <span data-ttu-id="1009a-279">例如, 若要将所有网站的 masterpages 文件夹中的所有资源作为 CDN 中的公共来源包括在内, 请键入以下命令:</span><span class="sxs-lookup"><span data-stu-id="1009a-279">For example, to include all of the assets in the masterpages folder for all of your sites as a public origin within the CDN, type the following command:</span></span>
+
+``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-<span data-ttu-id="12450-236">有关此命令和语法的详细信息，请参阅[添加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-236">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
-  
-<span data-ttu-id="12450-p129">运行此命令之后，系统将跨数据中心同步配置。这需要 15 分钟。</span><span class="sxs-lookup"><span data-stu-id="12450-p129">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
-  
-### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a><span data-ttu-id="12450-239">示例： 为 SharePoint Online 中配置公共的原点为您的母版页和样式库</span><span class="sxs-lookup"><span data-stu-id="12450-239">Example: Configure a public origin for your master pages and for your style library for SharePoint Online</span></span>
-<span data-ttu-id="12450-240"><a name="ExamplePublicOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-240"></span></span>
+- <span data-ttu-id="1009a-280">通配符修饰符 \***/** 仅可在路径的开头使用, 并将与指定 URL 下的所有 URL 段匹配。</span><span class="sxs-lookup"><span data-stu-id="1009a-280">The wildcard modifier \***/** can only be used at the beginning of the path, and will match all URL segments under the specified URL.</span></span>
+- <span data-ttu-id="1009a-281">路径可以指向文档库、文件夹或网站。</span><span class="sxs-lookup"><span data-stu-id="1009a-281">The path can point to a document library, folder or site.</span></span> <span data-ttu-id="1009a-282">例如, 路径 _\*/site1_将与网站下的所有文档库相匹配。</span><span class="sxs-lookup"><span data-stu-id="1009a-282">For example, the path _\*/site1_ will match all the document libraries under the site.</span></span>
 
-<span data-ttu-id="12450-p130">通常，这些来源是为您设置默认情况下当为 Office 365 CDN 启用公共来源。但是，如果您想要手动启用这些，请按照下列步骤。</span><span class="sxs-lookup"><span data-stu-id="12450-p130">Normally, these origins are set up for you by default when you enable public origins for the Office 365 CDN. However, if you want to enable them manually, follow these steps.</span></span>
-  
-- <span data-ttu-id="12450-243">使用**添加 SPOTenantCdnOrigin** cmdlet 可定义为公共原点而言的 Office 365 CDN 中的样式库。</span><span class="sxs-lookup"><span data-stu-id="12450-243">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the style library as a public origin within the Office 365 CDN.</span></span> 
-    
-  ```
-  Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
-  ```
+<span data-ttu-id="1009a-283">您可以使用相对路径或完整路径, 添加具有特定路径的原点。</span><span class="sxs-lookup"><span data-stu-id="1009a-283">You can add an origin with a specific path using either a relative path or a full path.</span></span>
 
-- <span data-ttu-id="12450-244">使用**添加 SPOTenantCdnOrigin** cmdlet 可定义为公共原点而言的 Office 365 CDN 中的母版页。</span><span class="sxs-lookup"><span data-stu-id="12450-244">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the master pages as a public origin within the Office 365 CDN.</span></span> 
-    
-  ```
-  Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
-  ```
+<span data-ttu-id="1009a-284">本示例使用相对路径在特定网站上添加 siteassets 库的专用原点:</span><span class="sxs-lookup"><span data-stu-id="1009a-284">This example adds a private origin of the siteassets library on a specific site using a relative path:</span></span>
 
-- <span data-ttu-id="12450-245">有关此命令和语法的详细信息，请参阅[添加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-245">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
-    
-    <span data-ttu-id="12450-p131">运行此命令之后，系统将跨数据中心同步配置。这需要 15 分钟。</span><span class="sxs-lookup"><span data-stu-id="12450-p131">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
-    
-### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a><span data-ttu-id="12450-248">示例： 配置 SharePoint online 专用原点而言的网站资产、 网站页面和发布图像</span><span class="sxs-lookup"><span data-stu-id="12450-248">Example: Configure a private origin for your site assets, site pages, and publishing images for SharePoint Online</span></span>
-<span data-ttu-id="12450-249"><a name="ExamplePrivateOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-249"></span></span>
-
-- <span data-ttu-id="12450-250">使用**添加 SPOTenantCdnOrigin** cmdlet 可定义为私有原点而言的 Office 365 CDN 中的网站资产文件夹。</span><span class="sxs-lookup"><span data-stu-id="12450-250">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site assets folder as a private origin within the Office 365 CDN.</span></span> 
-    
-  ```
-  Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
-  ```
-
-- <span data-ttu-id="12450-251">使用**添加 SPOTenantCdnOrigin** cmdlet 可定义为私有原点而言的 Office 365 CDN 中的网站页面文件夹。</span><span class="sxs-lookup"><span data-stu-id="12450-251">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site pages folder as a private origin within the Office 365 CDN.</span></span> 
-    
-  ```
-  Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
-  ```
-
-- <span data-ttu-id="12450-252">使用**添加 SPOTenantCdnOrigin** cmdlet 可定义为私有原点而言的 Office 365 CDN 中的发布图像文件夹。</span><span class="sxs-lookup"><span data-stu-id="12450-252">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the publishing images folder as a private origin within the Office 365 CDN.</span></span> 
-    
-  ```
-  Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
-  ```
-
-    <span data-ttu-id="12450-253">有关此命令和语法的详细信息，请参阅[添加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-253">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
-    
-    <span data-ttu-id="12450-p132">运行此命令之后，系统将跨数据中心同步配置。这需要 15 分钟。</span><span class="sxs-lookup"><span data-stu-id="12450-p132">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
-    
-### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a><span data-ttu-id="12450-256">示例： SharePoint online 中配置网站集的专用来源</span><span class="sxs-lookup"><span data-stu-id="12450-256">Example: Configure a private origin for a site collection for SharePoint Online</span></span>
-<span data-ttu-id="12450-257"><a name="ExamplePrivateOriginSiteCollection"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-257"></span></span>
-
-<span data-ttu-id="12450-p133">使用**添加 SPOTenantCdnOrigin** cmdlet 可定义为私有原点而言的 Office 365 CDN 中的网站集。例如，</span><span class="sxs-lookup"><span data-stu-id="12450-p133">Use the **Add-SPOTenantCdnOrigin** cmdlet to define a site collection as a private origin within the Office 365 CDN. For example,</span></span> 
-  
-```
+``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-<span data-ttu-id="12450-260">有关此命令和语法的详细信息，请参阅[添加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-260">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
-  
-<span data-ttu-id="12450-p134">运行此命令之后，系统将跨数据中心同步配置。这需要 15 分钟。</span><span class="sxs-lookup"><span data-stu-id="12450-p134">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
-  
-## <a name="manage-the-office-365-cdn"></a><span data-ttu-id="12450-263">管理 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="12450-263">Manage the Office 365 CDN</span></span>
-<span data-ttu-id="12450-264"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-264"></span></span>
+<span data-ttu-id="1009a-285">本示例使用完整路径在网站集的 "网站资产" 库中添加_folder1_文件夹的专用原点:</span><span class="sxs-lookup"><span data-stu-id="1009a-285">This example adds a private origin of the _folder1_ folder in the site collection's site assets library using the full path:</span></span>
 
-<span data-ttu-id="12450-265">一旦您已设置 CDN，您可以更改您的配置随着更新内容或更改您的需求，本节中所述。</span><span class="sxs-lookup"><span data-stu-id="12450-265">Once you've set up the CDN, you can make changes to your configuration as you update content or as your needs change, as described in this section.</span></span>
-  
-### <a name="to-add-update-or-remove-assets-from-the-office-365-cdn"></a><span data-ttu-id="12450-266">若要添加、 更新或删除 Office 365 CDN 的资产</span><span class="sxs-lookup"><span data-stu-id="12450-266">To add, update, or remove assets from the Office 365 CDN</span></span>
-<span data-ttu-id="12450-267"><a name="Office365CDNforSPOaddremoveasset"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-267"></span></span>
-
-<span data-ttu-id="12450-p135">完成安装步骤之后，您可以添加新资产和更新或删除现有资产，只要您希望。只需对标识为原点的 SharePoint 库或文件夹中的资产进行更改。如果您添加新的资源，可通过 CDN 立即是。但是，如果您更新资产，它需要 15 分钟传播和成为 CDN 中提供的新副本。</span><span class="sxs-lookup"><span data-stu-id="12450-p135">Once you've completed the setup steps, you can add new assets, and update or remove existing assets whenever you want. Just make your changes to the assets in the folder or SharePoint library that you identified as an origin. If you add a new asset, it is available through the CDN immediately. However, if you update the asset, it will take up to 15 minutes for the new copy to propagate and become available in the CDN.</span></span>
-  
-<span data-ttu-id="12450-p136">如果您需要检索的原点位置，您可以使用**Get-SPOTenantCdnOrigins** cmdlet。有关如何使用此 cmdlet 的信息，请参阅[Get SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-p136">If you need to retrieve the location of the origin, you can use the **Get-SPOTenantCdnOrigins** cmdlet. For information on how to use this cmdlet, see [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).</span></span>
-  
-### <a name="to-remove-an-origin-from-the-office-365-cdn"></a><span data-ttu-id="12450-274">若要从 Office 365 CDN 删除来源</span><span class="sxs-lookup"><span data-stu-id="12450-274">To remove an origin from the Office 365 CDN</span></span>
-<span data-ttu-id="12450-275"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-275"></span></span>
-
-<span data-ttu-id="12450-p137">如果需要则可以删除对文件夹或标识为原点的 SharePoint 库的访问。若要执行此操作，使用**删除 SPOTenantCdnOrigin** cmdlet。有关如何使用此 cmdlet 的信息，请参阅[删除 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-p137">If you need to, you can remove access to a folder or SharePoint library that you identified as an origin. To do this, use the **Remove-SPOTenantCdnOrigin** cmdlet. For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).</span></span>
-  
-### <a name="to-modify-an-origin-in-the-office-365-cdn"></a><span data-ttu-id="12450-279">若要修改在 Office 365 CDN 来源</span><span class="sxs-lookup"><span data-stu-id="12450-279">To modify an origin in the Office 365 CDN</span></span>
-<span data-ttu-id="12450-280"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-280"></span></span>
-
-<span data-ttu-id="12450-p138">不能修改您已创建来源。相反，删除原点，然后添加一个新。有关详细信息，请参阅[删除从 Office 365 CDN 原点](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin)和[添加您的资产的来源](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin)。</span><span class="sxs-lookup"><span data-stu-id="12450-p138">You can't modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) and [To add an origin for your assets](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin).</span></span>
-  
-### <a name="to-disable-the-office-365-cdn"></a><span data-ttu-id="12450-284">若要禁用 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="12450-284">To disable the Office 365 CDN</span></span>
-<span data-ttu-id="12450-285"><a name="Office365CDNforSPODisable"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-285"></span></span>
-
-<span data-ttu-id="12450-p139">使用**组 SPOTenantCdnEnabled** cmdlet 禁用组织 CDN。如果必须启用了 CDN 的两个公用和专用来源，您需要运行 cmdlet 的以下示例所示的两倍。</span><span class="sxs-lookup"><span data-stu-id="12450-p139">Use the **Set-SPOTenantCdnEnabled** cmdlet to disable the CDN for your organization. If you have both the public and private origins enabled for the CDN, you need to run the cmdlet twice as shown in the following examples.</span></span> 
-  
-<span data-ttu-id="12450-288">若要禁用的 CDN，在 Windows Powershell for SharePoint Online 中的公共来源使用输入以下命令：</span><span class="sxs-lookup"><span data-stu-id="12450-288">To disable use of public origins in the CDN, in Windows Powershell for SharePoint Online, enter the following command:</span></span>
-  
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
 ```
+
+<span data-ttu-id="1009a-286">有关此命令及其语法的详细信息, 请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-286">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1009a-287">在专用来源中, 从来源共享的资产必须先发布主要版本, 然后才能从 CDN 访问它们。</span><span class="sxs-lookup"><span data-stu-id="1009a-287">In private origins, assets being shared from an origin must have a major version published before they can be accessed from the CDN.</span></span>
+  
+<span data-ttu-id="1009a-288">运行命令后, 系统将同步整个数据中心的配置。</span><span class="sxs-lookup"><span data-stu-id="1009a-288">Once you've run the command, the system synchronizes the configuration across the datacenter.</span></span> <span data-ttu-id="1009a-289">这最长可能需要15分钟。</span><span class="sxs-lookup"><span data-stu-id="1009a-289">This can take up to 15 minutes.</span></span>
+  
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a><span data-ttu-id="1009a-290">示例: 为您的母版页和为 SharePoint Online 的样式库配置公共原点</span><span class="sxs-lookup"><span data-stu-id="1009a-290">Example: Configure a public origin for your master pages and for your style library for SharePoint Online</span></span>
+<a name="ExamplePublicOrigin"> </a>
+
+<span data-ttu-id="1009a-291">通常情况下, 当您启用 Office 365 CDN 时, 将为您设置这些来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-291">Normally, these origins are set up for you by default when you enable the Office 365 CDN.</span></span> <span data-ttu-id="1009a-292">但是, 如果要手动启用它们, 请按照以下步骤操作。</span><span class="sxs-lookup"><span data-stu-id="1009a-292">However, if you want to enable them manually, follow these steps.</span></span>
+  
+- <span data-ttu-id="1009a-293">使用**SPOTenantCdnOrigin** cmdlet 可将样式库定义为公共来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-293">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the style library as a public origin.</span></span>
+
+``` powershell
+  Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
+  ```
+
+- <span data-ttu-id="1009a-294">使用**SPOTenantCdnOrigin** cmdlet 可将母版页定义为公共源。</span><span class="sxs-lookup"><span data-stu-id="1009a-294">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the master pages as a public origin.</span></span>
+
+``` powershell
+  Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
+  ```
+
+<span data-ttu-id="1009a-295">有关此命令及其语法的详细信息, 请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-295">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+
+<span data-ttu-id="1009a-296">运行命令后, 系统将同步整个数据中心的配置。</span><span class="sxs-lookup"><span data-stu-id="1009a-296">Once you've run the command, the system synchronizes the configuration across the datacenter.</span></span> <span data-ttu-id="1009a-297">这最长可能需要15分钟。</span><span class="sxs-lookup"><span data-stu-id="1009a-297">This can take up to 15 minutes.</span></span>
+
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a><span data-ttu-id="1009a-298">示例: 为 SharePoint Online 的网站资产、网站页面和发布图像配置专用来源</span><span class="sxs-lookup"><span data-stu-id="1009a-298">Example: Configure a private origin for your site assets, site pages, and publishing images for SharePoint Online</span></span>
+<a name="ExamplePrivateOrigin"> </a>
+
+- <span data-ttu-id="1009a-299">使用**SPOTenantCdnOrigin** cmdlet 可以将 "网站资产" 文件夹定义为专用来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-299">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site assets folder as a private origin.</span></span>
+
+``` powershell
+  Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
+  ```
+
+- <span data-ttu-id="1009a-300">使用**SPOTenantCdnOrigin** cmdlet 可将 "网站页面" 文件夹定义为专用来源。</span><span class="sxs-lookup"><span data-stu-id="1009a-300">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site pages folder as a private origin.</span></span>
+
+``` powershell
+  Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
+  ```
+
+- <span data-ttu-id="1009a-301">使用**SPOTenantCdnOrigin** cmdlet 可以将发布映像文件夹定义为专用源。</span><span class="sxs-lookup"><span data-stu-id="1009a-301">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the publishing images folder as a private origin.</span></span>
+
+``` powershell
+  Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
+  ```
+
+<span data-ttu-id="1009a-302">有关此命令及其语法的详细信息, 请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-302">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+
+<span data-ttu-id="1009a-303">运行命令后, 系统将同步整个数据中心的配置。</span><span class="sxs-lookup"><span data-stu-id="1009a-303">Once you've run the command, the system synchronizes the configuration across the datacenter.</span></span> <span data-ttu-id="1009a-304">这最长可能需要15分钟。</span><span class="sxs-lookup"><span data-stu-id="1009a-304">This can take up to 15 minutes.</span></span>
+
+### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a><span data-ttu-id="1009a-305">示例: 为 SharePoint Online 的网站集配置专用来源</span><span class="sxs-lookup"><span data-stu-id="1009a-305">Example: Configure a private origin for a site collection for SharePoint Online</span></span>
+<a name="ExamplePrivateOriginSiteCollection"> </a>
+
+<span data-ttu-id="1009a-306">使用**SPOTenantCdnOrigin** cmdlet 可将网站集定义为私有源。</span><span class="sxs-lookup"><span data-stu-id="1009a-306">Use the **Add-SPOTenantCdnOrigin** cmdlet to define a site collection as a private origin.</span></span> <span data-ttu-id="1009a-307">例如：</span><span class="sxs-lookup"><span data-stu-id="1009a-307">For example:</span></span>
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
+```
+
+<span data-ttu-id="1009a-308">有关此命令及其语法的详细信息, 请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-308">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+  
+<span data-ttu-id="1009a-309">运行命令后, 系统将同步整个数据中心的配置。</span><span class="sxs-lookup"><span data-stu-id="1009a-309">Once you've run the command, the system synchronizes the configuration across the datacenter.</span></span> <span data-ttu-id="1009a-310">您可能会看到一个预期的_配置挂起_消息, 因为 SharePoint Online 租户连接到 CDN 服务。</span><span class="sxs-lookup"><span data-stu-id="1009a-310">You may see a _Configuration pending_ message which is expected as the SharePoint Online tenant connects to the CDN service.</span></span> <span data-ttu-id="1009a-311">这最长可能需要15分钟。</span><span class="sxs-lookup"><span data-stu-id="1009a-311">This can take up to 15 minutes.</span></span>
+
+### <a name="manage-the-office-365-cdn"></a><span data-ttu-id="1009a-312">管理 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-312">Manage the Office 365 CDN</span></span>
+<a name="CDNManage"> </a>
+
+<span data-ttu-id="1009a-313">设置 CDN 后, 您可以在更新内容或需要更改时对配置进行更改, 如本节中所述。</span><span class="sxs-lookup"><span data-stu-id="1009a-313">Once you've set up the CDN, you can make changes to your configuration as you update content or as your needs change, as described in this section.</span></span>
+  
+#### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a><span data-ttu-id="1009a-314">在 Office 365 CDN 中添加、更新或删除资产</span><span class="sxs-lookup"><span data-stu-id="1009a-314">Add, update, or remove assets from the Office 365 CDN</span></span>
+<a name="Office365CDNforSPOaddremoveasset"> </a>
+
+<span data-ttu-id="1009a-315">完成设置步骤后, 可以在需要时添加新资产, 并更新或删除现有资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-315">Once you've completed the setup steps, you can add new assets, and update or remove existing assets whenever you want.</span></span> <span data-ttu-id="1009a-316">只需对您标识为来源的文件夹或 SharePoint 库中的资产进行更改即可。</span><span class="sxs-lookup"><span data-stu-id="1009a-316">Just make your changes to the assets in the folder or SharePoint library that you identified as an origin.</span></span> <span data-ttu-id="1009a-317">如果添加新资产, 可立即通过 CDN 使用它。</span><span class="sxs-lookup"><span data-stu-id="1009a-317">If you add a new asset, it is available through the CDN immediately.</span></span> <span data-ttu-id="1009a-318">但是, 如果您更新资产, 最长需要15分钟才能在 CDN 中传播并变为可用的新副本。</span><span class="sxs-lookup"><span data-stu-id="1009a-318">However, if you update the asset, it will take up to 15 minutes for the new copy to propagate and become available in the CDN.</span></span>
+  
+<span data-ttu-id="1009a-319">如果需要检索原点的位置, 则可以使用**运行 get-spotenantcdnorigins** cmdlet。</span><span class="sxs-lookup"><span data-stu-id="1009a-319">If you need to retrieve the location of the origin, you can use the **Get-SPOTenantCdnOrigins** cmdlet.</span></span> <span data-ttu-id="1009a-320">有关如何使用此 cmdlet 的信息, 请参阅[运行 get-spotenantcdnorigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-320">For information on how to use this cmdlet, see [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).</span></span>
+  
+#### <a name="remove-an-origin-from-the-office-365-cdn"></a><span data-ttu-id="1009a-321">从 Office 365 CDN 中删除源</span><span class="sxs-lookup"><span data-stu-id="1009a-321">Remove an origin from the Office 365 CDN</span></span>
+<a name="Office365CDNforSPORemoveOrigin"> </a>
+
+<span data-ttu-id="1009a-322">您可以删除您标识为来源的文件夹或 SharePoint 库的访问权限。</span><span class="sxs-lookup"><span data-stu-id="1009a-322">You can remove access to a folder or SharePoint library that you identified as an origin.</span></span> <span data-ttu-id="1009a-323">为此, 请使用**SPOTenantCdnOrigin** cmdlet。</span><span class="sxs-lookup"><span data-stu-id="1009a-323">To do this, use the **Remove-SPOTenantCdnOrigin** cmdlet.</span></span>
+
+``` powershell
+Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
+```
+
+<span data-ttu-id="1009a-324">有关如何使用此 cmdlet 的信息, 请参阅[SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-324">For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).</span></span>
+  
+#### <a name="modify-an-origin-in-the-office-365-cdn"></a><span data-ttu-id="1009a-325">在 Office 365 CDN 中修改原点</span><span class="sxs-lookup"><span data-stu-id="1009a-325">Modify an origin in the Office 365 CDN</span></span>
+<a name="Office365CDNforSPORemoveOrigin"> </a>
+
+<span data-ttu-id="1009a-326">您不能修改已创建的原点。</span><span class="sxs-lookup"><span data-stu-id="1009a-326">You cannot modify an origin you've created.</span></span> <span data-ttu-id="1009a-327">相反, 请删除该原点, 然后添加一个新的原点。</span><span class="sxs-lookup"><span data-stu-id="1009a-327">Instead, remove the origin and then add a new one.</span></span> <span data-ttu-id="1009a-328">有关详细信息, 请参阅[从 Office 365 CDN 中删除原点](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin)和[为资产添加来源](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin)。</span><span class="sxs-lookup"><span data-stu-id="1009a-328">For more information, see [To remove an origin from the Office 365 CDN](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) and [To add an origin for your assets](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin).</span></span>
+  
+#### <a name="disable-the-office-365-cdn"></a><span data-ttu-id="1009a-329">禁用 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-329">Disable the Office 365 CDN</span></span>
+<a name="Office365CDNforSPODisable"> </a>
+
+<span data-ttu-id="1009a-330">使用**SPOTenantCdnEnabled** cmdlet 为您的组织禁用 CDN。</span><span class="sxs-lookup"><span data-stu-id="1009a-330">Use the **Set-SPOTenantCdnEnabled** cmdlet to disable the CDN for your organization.</span></span> <span data-ttu-id="1009a-331">如果您同时启用了 CDN 的公共和专用来源, 则需要运行 cmdlet 两次, 如以下示例所示。</span><span class="sxs-lookup"><span data-stu-id="1009a-331">If you have both the public and private origins enabled for the CDN, you need to run the cmdlet twice as shown in the following examples.</span></span>
+  
+<span data-ttu-id="1009a-332">若要禁用 CDN 中的公共来源, 请输入以下命令:</span><span class="sxs-lookup"><span data-stu-id="1009a-332">To disable use of public origins in the CDN, enter the following command:</span></span>
+
+``` powershell
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
 ```
 
-<span data-ttu-id="12450-289">若要禁用的专用来源 CDN 中使用，请输入以下命令：</span><span class="sxs-lookup"><span data-stu-id="12450-289">To disable use of the private origins in the CDN, enter the following command:</span></span>
-  
-```
+<span data-ttu-id="1009a-333">若要禁用 CDN 中的专用来源的使用, 请输入以下命令:</span><span class="sxs-lookup"><span data-stu-id="1009a-333">To disable use of the private origins in the CDN, enter the following command:</span></span>
+
+``` powershell
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-<span data-ttu-id="12450-290">有关此 cmdlet 的详细信息，请参阅[设置 SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)。</span><span class="sxs-lookup"><span data-stu-id="12450-290">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
-  
-## <a name="troubleshooting-your-office-365-cdn-configuration"></a><span data-ttu-id="12450-291">Office 365 CDN 配置疑难解答</span><span class="sxs-lookup"><span data-stu-id="12450-291">Troubleshooting your Office 365 CDN configuration</span></span>
-<span data-ttu-id="12450-292"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="12450-292"></span></span>
+<span data-ttu-id="1009a-334">有关此 cmdlet 的详细信息, 请参阅[SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1009a-334">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
 
-<span data-ttu-id="12450-p140">终结点将立即不可可供使用，直至扫描仪登记传播到整个 CDN 的时间。配置需要 15 分钟。</span><span class="sxs-lookup"><span data-stu-id="12450-p140">The endpoint will not immediately be available for use, as it takes time for the registration to propagate through the CDN. Configuration takes 15 minutes.</span></span>
-  
+## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a><span data-ttu-id="1009a-335">使用 Office 365 CLI 设置和配置 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-335">Set up and configure the Office 365 CDN using the Office 365 CLI</span></span>
+<a name="CDNSetupinCLI"> </a>
+
+<span data-ttu-id="1009a-336">本节中的过程要求您已安装[Office 365 CLI](https://aka.ms/o365cli)。</span><span class="sxs-lookup"><span data-stu-id="1009a-336">The procedures in this section require that you have installed the [Office 365 CLI](https://aka.ms/o365cli).</span></span> <span data-ttu-id="1009a-337">接下来，运行 [spo connect](https://pnp.github.io/office365-cli/cmd/spo/connect/) 命令，连接到 SharePoint Online 租户。</span><span class="sxs-lookup"><span data-stu-id="1009a-337">Next, connect to your SharePoint Online tenant using the [spo connect](https://pnp.github.io/office365-cli/cmd/spo/connect/) command.</span></span>
+
+<span data-ttu-id="1009a-338">完成这些步骤, 在 SharePoint Online 中使用 Office 365 CLI 设置和配置 CDN 以托管你的资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-338">Complete these steps to set up and configure the CDN to host your assets in SharePoint Online using the Office 365 CLI.</span></span>
+
+### <a name="enable-the-office-365-cdn"></a><span data-ttu-id="1009a-339">启用 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-339">Enable the Office 365 CDN</span></span>
+
+<span data-ttu-id="1009a-340">可以运行 [spo cdn set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-set/) 命令，在租户中管理 Office 365 CDN 的状态。</span><span class="sxs-lookup"><span data-stu-id="1009a-340">You can manage the state of the Office 365 CDN in your tenant using the [spo cdn set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-set/) command.</span></span>
+
+<span data-ttu-id="1009a-341">若要在租户中启用 Office 365 公用 CDN，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="1009a-341">To enable the Office 365 Public CDN in your tenant execute:</span></span>
+
+```sh
+spo cdn set --type Public --enabled true
+```
+
+<span data-ttu-id="1009a-342">若要启用 Office 365 SharePoint CDN, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="1009a-342">To enable the Office 365 SharePoint CDN, execute:</span></span>
+
+```sh
+spo cdn set --type Private --enabled true
+```
+
+#### <a name="view-the-current-status-of-the-office-365-cdn"></a><span data-ttu-id="1009a-343">查看 Office 365 CDN 的当前状态</span><span class="sxs-lookup"><span data-stu-id="1009a-343">View the current status of the Office 365 CDN</span></span>
+
+<span data-ttu-id="1009a-344">若要检查是否已启用或禁用特定类型的 Office 365 cdn, 请使用[spo CDN get](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-get/)命令。</span><span class="sxs-lookup"><span data-stu-id="1009a-344">To check if the particular type of Office 365 CDN is enabled or disabled, use the [spo cdn get](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-get/) command.</span></span>
+
+<span data-ttu-id="1009a-345">若要检查 Office 365 公用 CDN 是否已启用，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="1009a-345">To check if the Office 365 Public CDN is enabled, execute:</span></span>
+
+```sh
+spo cdn get --type Public
+```
+
+### <a name="view-the-office-365-cdn-origins"></a><span data-ttu-id="1009a-346">查看 Office 365 CDN 来源</span><span class="sxs-lookup"><span data-stu-id="1009a-346">View the Office 365 CDN origins</span></span>
+
+<span data-ttu-id="1009a-347">若要查看当前配置的 Office 365 公用 CDN 源，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="1009a-347">To view the currently configured Office 365 Public CDN origins execute:</span></span>
+
+```sh
+spo cdn origin list --type Public
+```
+
+<span data-ttu-id="1009a-348">有关启用 Office 365 CDN 时默认设置的来源的信息, 请参阅[默认 CDN 来源](use-office-365-cdn-with-spo.md#default-cdn-origins)。</span><span class="sxs-lookup"><span data-stu-id="1009a-348">See [Default CDN origins](use-office-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN.</span></span>
+
+### <a name="add-an-office-365-cdn-origin"></a><span data-ttu-id="1009a-349">添加 Office 365 CDN 源</span><span class="sxs-lookup"><span data-stu-id="1009a-349">Add an Office 365 CDN origin</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1009a-350">永远不要在配置为公共来源的 SharePoint 文档库中将被视为对您的组织敏感的资源放置。</span><span class="sxs-lookup"><span data-stu-id="1009a-350">You should never place resources that are considered sensitive to your organization in a SharePoint document library configured as a public origin.</span></span>
+
+<span data-ttu-id="1009a-351">运行 [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) 命令可以定义 CDN 源。</span><span class="sxs-lookup"><span data-stu-id="1009a-351">Use the [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) command to define a CDN origin.</span></span> <span data-ttu-id="1009a-352">可以定义多个源。</span><span class="sxs-lookup"><span data-stu-id="1009a-352">You can define multiple origins.</span></span> <span data-ttu-id="1009a-353">源是 SharePoint 库或文件夹的 URL，其中包含要由 CDN 托管的资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-353">The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.</span></span>
+
+```sh
+spo cdn origin add --type [Public | Private] --origin <path>
+```
+
+<span data-ttu-id="1009a-354">其中，`path` 是包含资产的文件夹的路径。</span><span class="sxs-lookup"><span data-stu-id="1009a-354">Where `path` is the path to the folder that contains the assets.</span></span> <span data-ttu-id="1009a-355">除了相对路径之外，还可以使用通配符。</span><span class="sxs-lookup"><span data-stu-id="1009a-355">You can use wildcards in addition to relative paths.</span></span>
+
+<span data-ttu-id="1009a-356">若要将所有网站的**母版页样式库**中的所有资产包含为公共来源, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="1009a-356">To include all assets in the **Master Page Gallery** of all sites as a public origin, execute:</span></span>
+
+```sh
+spo cdn origin add --type Public --origin */masterpage
+```
+
+<span data-ttu-id="1009a-357">若要配置特定网站集的专用源，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="1009a-357">To configure a private origin for a specific site collection, execute:</span></span>
+
+```sh
+spo cdn origin add --type Private --origin sites/site1/siteassets
+```
+
+> [!NOTE]
+> <span data-ttu-id="1009a-358">添加 CDN 源后，最长可能需要 15 分钟，才能通过 CDN 服务检索文件。</span><span class="sxs-lookup"><span data-stu-id="1009a-358">After adding a CDN origin, it might take up to 15 minutes for you to be able to retrieve files via the CDN service.</span></span> <span data-ttu-id="1009a-359">可以运行 [spo cdn origin list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) 命令，验证特定源是否已启用。</span><span class="sxs-lookup"><span data-stu-id="1009a-359">You can verify if the particular origin has already been enabled using the [spo cdn origin list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) command.</span></span>
+
+### <a name="remove-an-office-365-cdn-origin"></a><span data-ttu-id="1009a-360">删除 Office 365 CDN 源</span><span class="sxs-lookup"><span data-stu-id="1009a-360">Remove an Office 365 CDN origin</span></span>
+
+<span data-ttu-id="1009a-361">运行 [spo cdn origin remove](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-remove/) 命令可以删除指定类型 CDN 的 CDN 源。</span><span class="sxs-lookup"><span data-stu-id="1009a-361">Use the [spo cdn origin remove](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-remove/) command to remove a CDN origin for the specified CDN type.</span></span>
+
+<span data-ttu-id="1009a-362">若要从 CDN 配置中删除公用源, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="1009a-362">To remove a public origin from the CDN configuration, execute:</span></span>
+
+```sh
+spo cdn origin remove --type Public --origin */masterpage
+```
+
+> [!NOTE]
+> <span data-ttu-id="1009a-363">删除 CDN 源不会影响与该来源相匹配的任何文档库中存储的文件。</span><span class="sxs-lookup"><span data-stu-id="1009a-363">Removing a CDN origin doesn't affect the files stored in any document library matching that origin.</span></span> <span data-ttu-id="1009a-364">如果使用 sharepoint URL 引用这些资产, SharePoint 将自动切换回指向文档库的原始 URL。</span><span class="sxs-lookup"><span data-stu-id="1009a-364">If these assets have been referenced using their SharePoint URL, SharePoint will automatically switch back to the original URL pointing to the document library.</span></span> <span data-ttu-id="1009a-365">但是, 如果已使用公用 CDN URL 引用资产, 则删除该原点将断开链接, 您将需要手动更改它们。</span><span class="sxs-lookup"><span data-stu-id="1009a-365">If, however, assets have been referenced using a public CDN URL, then removing the origin will break the link and you will need to manually change them.</span></span>
+
+### <a name="modify-an-office-365-cdn-origin"></a><span data-ttu-id="1009a-366">修改 Office 365 CDN 源</span><span class="sxs-lookup"><span data-stu-id="1009a-366">Modify an Office 365 CDN origin</span></span>
+
+<span data-ttu-id="1009a-367">无法修改现有 CDN 源。</span><span class="sxs-lookup"><span data-stu-id="1009a-367">It's not possible to modify an existing CDN origin.</span></span> <span data-ttu-id="1009a-368">而应运行 `spo cdn origin remove` 命令删除以前定义的 CDN 源，并运行 `spo cdn origin add` 命令添加新源。</span><span class="sxs-lookup"><span data-stu-id="1009a-368">Instead, you should remove the previously defined CDN origin using the `spo cdn origin remove` command and add a new one using the `spo cdn origin add` command.</span></span>
+
+### <a name="change-the-types-of-files-to-include-in-the-office-365-cdn"></a><span data-ttu-id="1009a-369">更改要包含在 Office 365 CDN 中的文件类型</span><span class="sxs-lookup"><span data-stu-id="1009a-369">Change the types of files to include in the Office 365 CDN</span></span>
+
+<span data-ttu-id="1009a-370">默认情况下，支持向 CDN 添加下列类型的文件：_.css、.eot、.gif、.ico、.jpeg、.jpg、.js、.map、.png、.svg、.ttf 和 .woff_。</span><span class="sxs-lookup"><span data-stu-id="1009a-370">By default, the following file types are included in the CDN: _.css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, and .woff_.</span></span> <span data-ttu-id="1009a-371">如果需要在 CDN 中添加其他类型的文件，可以运行 [spo cdn policy set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) 命令更改 CDN 配置。</span><span class="sxs-lookup"><span data-stu-id="1009a-371">If you need to include additional file types in the CDN, you can change the CDN configuration using the [spo cdn policy set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) command.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1009a-372">如果更改文件类型列表，也就是覆盖当前定义的列表。</span><span class="sxs-lookup"><span data-stu-id="1009a-372">When changing the list of file types, you overwrite the currently defined list.</span></span> <span data-ttu-id="1009a-373">若要添加其他文件类型，请先运行 [spo cdn policy list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) 命令，确定当前配置的文件类型。</span><span class="sxs-lookup"><span data-stu-id="1009a-373">If you want to include additional file types, first use the [spo cdn policy list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) command to find out which file types are currently configured.</span></span>
+
+<span data-ttu-id="1009a-374">若要将_JSON_文件类型添加到公用 CDN 中包含的文件类型的默认列表中, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="1009a-374">To add the _JSON_ file type to the default list of file types included in the public CDN, execute:</span></span>
+
+```sh
+spo cdn policy set --type Public --policy IncludeFileExtensions --value "CSS,EOT,GIF,ICO,JPEG,JPG,JS,MAP,PNG,SVG,TTF,WOFF,JSON"
+```
+
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a><span data-ttu-id="1009a-375">更改要从 Office 365 CDN 中排除的网站分类列表</span><span class="sxs-lookup"><span data-stu-id="1009a-375">Change the list of site classifications you want to exclude from the Office 365 CDN</span></span>
+
+<span data-ttu-id="1009a-376">运行 [spo cdn policy set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) 命令可以排除不想通过 CDN 提供的网站分类。</span><span class="sxs-lookup"><span data-stu-id="1009a-376">Use the [spo cdn policy set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) command to exclude site classifications that you do not want to make available over the CDN.</span></span> <span data-ttu-id="1009a-377">默认情况下，不排除任何网站分类。</span><span class="sxs-lookup"><span data-stu-id="1009a-377">By default, no site classifications are excluded.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1009a-378">如果更改已排除的网站分类列表，也就是覆盖当前定义的列表。</span><span class="sxs-lookup"><span data-stu-id="1009a-378">When changing the list of excluded site classifications, you overwrite the currently defined list.</span></span> <span data-ttu-id="1009a-379">若要排除其他分类，请先运行 [spo cdn policy list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-list/) 命令，确定当前配置的分类。</span><span class="sxs-lookup"><span data-stu-id="1009a-379">If you want to exclude additional classifications, first use the [spo cdn policy list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-list/) command to find out which classifications are currently configured.</span></span>
+
+<span data-ttu-id="1009a-380">若要从公用 CDN 中排除作为_HBI_分类的站点, 请执行</span><span class="sxs-lookup"><span data-stu-id="1009a-380">To exclude sites classified as _HBI_ from the public CDN, execute</span></span>
+
+```sh
+spo cdn policy set --type Public --policy ExcludeRestrictedSiteClassifications --value "HBI"
+```
+
+### <a name="disable-the-office-365-cdn"></a><span data-ttu-id="1009a-381">禁用 Office 365 CDN</span><span class="sxs-lookup"><span data-stu-id="1009a-381">Disable the Office 365 CDN</span></span>
+
+<span data-ttu-id="1009a-382">若要禁用 Office 365 CDN，请运行 `spo cdn set` 命令。例如：</span><span class="sxs-lookup"><span data-stu-id="1009a-382">To disable the Office 365 CDN use the `spo cdn set` command, for example:</span></span>
+
+```sh
+spo cdn set --type Public --enabled false
+```
+
+## <a name="using-your-cdn-assets"></a><span data-ttu-id="1009a-383">使用 CDN 资产</span><span class="sxs-lookup"><span data-stu-id="1009a-383">Using your CDN assets</span></span>
+
+<span data-ttu-id="1009a-384">现在, 您已启用 cdn 和已配置的来源和策略, 您可以开始使用 cdn 资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-384">Now that you have enabled the CDN and configured origins and policies, you can begin using your CDN assets.</span></span>
+
+<span data-ttu-id="1009a-385">本部分将帮助您了解如何在 SharePoint 页面和内容中使用 CDN url, 以便 SharePoint 将公用源和专用来源的资产的请求重定向到 CDN。</span><span class="sxs-lookup"><span data-stu-id="1009a-385">This section will help you understand how to use CDN URLs in your SharePoint pages and content so that SharePoint redirects requests for assets in both public and private origins to the CDN.</span></span>
+
+- [<span data-ttu-id="1009a-386">更新与 CDN 资产的链接</span><span class="sxs-lookup"><span data-stu-id="1009a-386">Updating links to CDN assets</span></span>](use-office-365-cdn-with-spo.md#updating-links-to-cdn-assets)
+- [<span data-ttu-id="1009a-387">在公共来源中使用资产</span><span class="sxs-lookup"><span data-stu-id="1009a-387">Using assets in public origins</span></span>](use-office-365-cdn-with-spo.md#using-assets-in-public-origins)
+- [<span data-ttu-id="1009a-388">在专用来源中使用资产</span><span class="sxs-lookup"><span data-stu-id="1009a-388">Using assets in private origins</span></span>](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
+
+<span data-ttu-id="1009a-389">有关如何使用 CDN 来承载客户端 web 部件的信息, 请参阅[从 Office 365 CDN 托管客户端 web 部件 (Hello World 第4部分)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)。</span><span class="sxs-lookup"><span data-stu-id="1009a-389">For information on how to use the CDN for hosting client-side web parts, see the topic [Host your client-side web part from Office 365 CDN (Hello World part 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).</span></span>
+
+### <a name="updating-links-to-cdn-assets"></a><span data-ttu-id="1009a-390">更新与 CDN 资产的链接</span><span class="sxs-lookup"><span data-stu-id="1009a-390">Updating links to CDN assets</span></span>
+
+<span data-ttu-id="1009a-391">若要使用已添加到源中的资产, 只需将指向原始文件的链接与原始文件的路径一起更新到原始文件。</span><span class="sxs-lookup"><span data-stu-id="1009a-391">To use assets that you have added to an origin, you simply update links to the original file with the path to the file in the origin.</span></span>
+
+- <span data-ttu-id="1009a-392">编辑包含已添加到来源的资产链接的页面或内容。</span><span class="sxs-lookup"><span data-stu-id="1009a-392">Edit the page or content that contains links to assets you have added to an origin.</span></span> <span data-ttu-id="1009a-393">如果要更新指向给定资产的链接, 则可以使用以下几种方法之一在进入网站或网站集中进行全局搜索和替换链接。</span><span class="sxs-lookup"><span data-stu-id="1009a-393">You can also use one of several methods to globally search and replace links across an enter site or site collection if you want to update the link to a given asset everywhere it appears.</span></span>
+- <span data-ttu-id="1009a-394">对于指向源中的资产的每个链接, 将路径替换为 CDN 源中的文件路径。</span><span class="sxs-lookup"><span data-stu-id="1009a-394">For each link to an asset in an origin, replace the path with the path to the file in the CDN origin.</span></span> <span data-ttu-id="1009a-395">您可以使用相对路径。</span><span class="sxs-lookup"><span data-stu-id="1009a-395">You can use relative paths.</span></span>
+- <span data-ttu-id="1009a-396">保存页面或内容。</span><span class="sxs-lookup"><span data-stu-id="1009a-396">Save the page or content.</span></span>
+
+<span data-ttu-id="1009a-397">例如, 请考虑已复制到文档库文件夹 _/site/CDN_origins/public/_ 的图像 _/site/SiteAssets/images/image.png_。</span><span class="sxs-lookup"><span data-stu-id="1009a-397">For example, consider the image _/site/SiteAssets/images/image.png_, which you have copied to the document library folder _/site/CDN_origins/public/_.</span></span> <span data-ttu-id="1009a-398">若要使用 CDN 资产, 请将原始路径替换为指向原始路径的图像文件位置, 以使新的 URL _/site/CDN_origins/public/image.png_。</span><span class="sxs-lookup"><span data-stu-id="1009a-398">To use the CDN asset, replace the original path to the image file location with the path to the origin to make the new URL _/site/CDN_origins/public/image.png_.</span></span>
+
+<span data-ttu-id="1009a-399">如果要将完整 URL 用于资产而不是相对路径, 请按如下所示构造链接:</span><span class="sxs-lookup"><span data-stu-id="1009a-399">If you want to use the full URL to the asset instead of a relative path, construct the link like so:</span></span>
+
+`https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
+
+> [!NOTE]
+> <span data-ttu-id="1009a-400">通常情况下, 不应直接将 url 硬编码到 CDN 中的资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-400">In general, you should not hardcode URLs directly to assets in the CDN.</span></span> <span data-ttu-id="1009a-401">但是, 如果需要, 您可以在公用源中手动构造资产的 url。</span><span class="sxs-lookup"><span data-stu-id="1009a-401">However, you can manually construct URLs for assets in public origins if needed.</span></span> <span data-ttu-id="1009a-402">有关详细信息, 请参阅[Hardcoding CDN url for 公共资产](use-office-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets)。</span><span class="sxs-lookup"><span data-stu-id="1009a-402">For more information, see [Hardcoding CDN URLs for public assets](use-office-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets).</span></span>
+
+<span data-ttu-id="1009a-403">若要了解如何验证资产是否通过 cdn 提供, 请参阅[如何确认资产是否受 cdn 的服务？](use-office-365-cdn-with-spo.md#CDNConfirm)在 " [Office 365 CDN 的疑难解答](use-office-365-cdn-with-spo.md#CDNTroubleshooting)" 部分中。</span><span class="sxs-lookup"><span data-stu-id="1009a-403">To learn about how to verify that assets are being served from the CDN, see [How do I confirm that assets are being served by the CDN?](use-office-365-cdn-with-spo.md#CDNConfirm) in the [Troubleshooting the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNTroubleshooting) section.</span></span>
+
+### <a name="using-assets-in-public-origins"></a><span data-ttu-id="1009a-404">在公共来源中使用资产</span><span class="sxs-lookup"><span data-stu-id="1009a-404">Using assets in public origins</span></span>
+
+<span data-ttu-id="1009a-405">SharePoint Online 中的**发布功能**会自动将公共起源中存储的资产的 url 重写为其 CDN 等效项, 以便从 cdn 服务而不是 SharePoint 提供资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-405">The **Publishing feature** in SharePoint Online automatically rewrites URLs of assets stored in public origins to their CDN equivalents so that assets are served from the CDN service instead of SharePoint.</span></span>
+
+<span data-ttu-id="1009a-406">如果您的源位于启用了 "发布" 功能的网站中, 并且您要向 CDN 中转移的资产属于以下类别之一, 则 SharePoint 将自动重写源中资产的 url, 前提是该资产尚未被 CDN 排除 政策.</span><span class="sxs-lookup"><span data-stu-id="1009a-406">If your origin is in a site with the Publishing feature enabled, and the assets you want to offload to the CDN are in one of the following categories, SharePoint will automatically rewrite URLs for assets in the origin, provided that the asset has not been excluded by a CDN policy.</span></span>
+
+<span data-ttu-id="1009a-407">下面概述了 SharePoint 发布功能自动重写的链接：</span><span class="sxs-lookup"><span data-stu-id="1009a-407">The following is an overview of which links are automatically rewritten by the SharePoint Publishing feature:</span></span>
+
+- <span data-ttu-id="1009a-408">经典发布页面 HTML 响应中的 IMG/LINK/CSS URL</span><span class="sxs-lookup"><span data-stu-id="1009a-408">IMG/LINK/CSS URLs in classic publishing page HTML responses</span></span>
+  - <span data-ttu-id="1009a-409">这包括作者在页面的 HTML 内容中添加的图像</span><span class="sxs-lookup"><span data-stu-id="1009a-409">This includes images added by authors within the HTML content of a page</span></span>
+- <span data-ttu-id="1009a-410">图片库幻灯片 Web 部件图像 URL</span><span class="sxs-lookup"><span data-stu-id="1009a-410">Picture Library SlideShow webpart image URLs</span></span>
+- <span data-ttu-id="1009a-411">SPList REST API (RenderListDataAsStream) 结果中的图像字段</span><span class="sxs-lookup"><span data-stu-id="1009a-411">Image fields in SPList REST API (RenderListDataAsStream) results</span></span>
+  - <span data-ttu-id="1009a-412">使用新的属性_ImageFieldsToTryRewriteToCdnUrls_提供以逗号分隔的字段列表</span><span class="sxs-lookup"><span data-stu-id="1009a-412">Use the new property _ImageFieldsToTryRewriteToCdnUrls_ to provide a comma separated list of fields</span></span>
+  - <span data-ttu-id="1009a-413">支持 hyperlink 字段和 PublishingImage 字段</span><span class="sxs-lookup"><span data-stu-id="1009a-413">Supports hyperlink fields and PublishingImage fields</span></span>
+- <span data-ttu-id="1009a-414">SharePoint 图像呈现形式</span><span class="sxs-lookup"><span data-stu-id="1009a-414">SharePoint image renditions</span></span>
+
+<span data-ttu-id="1009a-415">下图演示了 SharePoint 收到来自公共来源的资产的页面请求时的工作流。</span><span class="sxs-lookup"><span data-stu-id="1009a-415">The following diagram illustrates the workflow when SharePoint receives a request for a page containing assets from a public origin.</span></span>
+
+<span data-ttu-id="1009a-416">![工作流图表: 从公共来源检索 Office 365 CDN 资产](media/O365-CDN/o365-cdn-public-steps-transparent.svg "工作流: 从公共来源检索 Office 365 CDN 资产")</span><span class="sxs-lookup"><span data-stu-id="1009a-416">![Workflow diagram: Retrieving Office 365 CDN assets from a public origin](media/O365-CDN/o365-cdn-public-steps-transparent.svg "Workflow: Retrieving Office 365 CDN assets from a public origin")</span></span>
+
+> [!TIP]
+> <span data-ttu-id="1009a-417">如果要对页面上的特定 url 禁用自动重写, 则可以签出该页面, 并将查询字符串参数 **?NoAutoReWrites = true**添加到要禁用的每个链接的末尾。</span><span class="sxs-lookup"><span data-stu-id="1009a-417">If you want to disable auto-rewriting for specific URLs on a page, you can check out the page and add the query string parameter **?NoAutoReWrites=true** to the end of each link you want to disable.</span></span>
+
+#### <a name="hardcoding-cdn-urls-for-public-assets"></a><span data-ttu-id="1009a-418">Hardcoding 适用于公共资产的 CDN url</span><span class="sxs-lookup"><span data-stu-id="1009a-418">Hardcoding CDN URLs for public assets</span></span>
+
+<span data-ttu-id="1009a-419">如果没有为公用源启用_发布_功能, 或者资产不是 cdn 服务自动重写功能支持的链接类型之一, 则可以手动构建指向资产的 CDN 位置的 url, 并在内容中使用这些 url。</span><span class="sxs-lookup"><span data-stu-id="1009a-419">If the _Publishing_ feature is not enabled for a public origin, or the asset is not one of the link types supported by the auto-rewrite feature of the CDN service, you can manually construct URLs to the CDN location of the assets and use these URLs in your content.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1009a-420">您不能将 CDN url 硬编码到私有源中的资产, 因为在请求资源时, 会生成构成 URL 最后一部分的必需访问令牌。</span><span class="sxs-lookup"><span data-stu-id="1009a-420">You cannot hardcode CDN URLs to assets in a private origin because the required access token that forms the last section of the URL is generated at the time the resource is requested.</span></span>
+
+<span data-ttu-id="1009a-421">对于公共 CDN 资产, URL 格式将如下所示:</span><span class="sxs-lookup"><span data-stu-id="1009a-421">For public CDN assets, the URL format will look like the following:</span></span>
+
+``` html
+https://publiccdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
+```
+
+<span data-ttu-id="1009a-422">将**TenantHostName**替换为你的租户名称。</span><span class="sxs-lookup"><span data-stu-id="1009a-422">Replace **TenantHostName** with your tenant name.</span></span> <span data-ttu-id="1009a-423">示例：</span><span class="sxs-lookup"><span data-stu-id="1009a-423">Example:</span></span>
+
+``` html
+https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png
+```
+
+### <a name="using-assets-in-private-origins"></a><span data-ttu-id="1009a-424">在专用来源中使用资产</span><span class="sxs-lookup"><span data-stu-id="1009a-424">Using assets in private origins</span></span>
+
+<span data-ttu-id="1009a-425">使用专用来源的资产不需要额外的配置。</span><span class="sxs-lookup"><span data-stu-id="1009a-425">No additional configuration is required to use assets in private origins.</span></span> <span data-ttu-id="1009a-426">SharePoint Online 会自动为私人来源中的资产重写 url, 因此这些资产的请求将始终通过 CDN 提供。</span><span class="sxs-lookup"><span data-stu-id="1009a-426">SharePoint Online automatically rewrites URLs for assets in private origins so requests for those assets will always be served from the CDN.</span></span> <span data-ttu-id="1009a-427">无法在专用来源中手动生成 CDN 资产的 url, 因为这些 url 包含在请求资产时必须由 SharePoint Online 自动生成的令牌。</span><span class="sxs-lookup"><span data-stu-id="1009a-427">You cannot manually build URLs to CDN assets in private origins because these URLs contain tokens that must be auto-generated by SharePoint Online at the time the asset is requested.</span></span>
+
+<span data-ttu-id="1009a-428">对私人来源资产的访问受基于用户权限对源的动态生成令牌的保护, 以及以下各节中介绍的注意事项。</span><span class="sxs-lookup"><span data-stu-id="1009a-428">Access to assets in private origins is protected by dynamically generated tokens based on user permissions to the origin, with the caveats described in the following sections.</span></span> <span data-ttu-id="1009a-429">用户必须至少具有对 CDN 的**读取**访问权限才能呈现内容。</span><span class="sxs-lookup"><span data-stu-id="1009a-429">Users must have at least **read** access to the origins for the CDN to render content.</span></span>
+
+<span data-ttu-id="1009a-430">下图说明了在 SharePoint 收到来自专用来源的资产的请求时, 该工作流的工作流。</span><span class="sxs-lookup"><span data-stu-id="1009a-430">The following diagram illustrates the workflow when SharePoint receives a request for a page containing assets from a private origin.</span></span>
+
+<span data-ttu-id="1009a-431">![工作流图表: 从私有源检索 Office 365 CDN 资产](media/O365-CDN/o365-cdn-private-steps-transparent.svg "工作流: 从私有源检索 Office 365 CDN 资产")</span><span class="sxs-lookup"><span data-stu-id="1009a-431">![Workflow diagram: Retrieving Office 365 CDN assets from a private origin](media/O365-CDN/o365-cdn-private-steps-transparent.svg "Workflow: Retrieving Office 365 CDN assets from a private origin")</span></span>
+
+#### <a name="token-based-authorization-in-private-origins"></a><span data-ttu-id="1009a-432">专用来源的基于令牌的授权</span><span class="sxs-lookup"><span data-stu-id="1009a-432">Token-based authorization in private origins</span></span>
+
+<span data-ttu-id="1009a-433">在 Office 365 CDN 中对私人来源的资产的访问权限由 SharePoint Online 生成的令牌授予。</span><span class="sxs-lookup"><span data-stu-id="1009a-433">Access to assets in private origins in the Office 365 CDN is granted by tokens generated by SharePoint Online.</span></span> <span data-ttu-id="1009a-434">如果用户已有权访问由来源指定的文件夹或库, 则会自动向其授予允许用户根据其权限级别访问文件的令牌。</span><span class="sxs-lookup"><span data-stu-id="1009a-434">Users who already have permission to access to the folder or library designated by the origin are automatically granted tokens that permit the user to access the file based on their permission level.</span></span> <span data-ttu-id="1009a-435">这些访问令牌在生成后有效期为30至90分钟, 以帮助防止令牌重播攻击。</span><span class="sxs-lookup"><span data-stu-id="1009a-435">These access tokens are valid for 30 to 90 minutes after they are generated to help prevent token replay attacks.</span></span>
+
+<span data-ttu-id="1009a-436">在生成访问令牌后, SharePoint Online 将向客户端返回一个自定义 URI, 其中包含两个授权参数_吃_(边缘授权令牌) 和_oat_ (原始授权令牌)。</span><span class="sxs-lookup"><span data-stu-id="1009a-436">Once the access token is generated, SharePoint Online returns a custom URI to the client containing two authorization parameters _eat_ (edge authorization token) and _oat_ (origin authorization token).</span></span> <span data-ttu-id="1009a-437">每个令牌的结构是 _<'expiration time format'>__<'secure signature'>_。</span><span class="sxs-lookup"><span data-stu-id="1009a-437">The structure of each token is _<'expiration time in Epoch time format'>__<'secure signature'>_.</span></span> <span data-ttu-id="1009a-438">例如：</span><span class="sxs-lookup"><span data-stu-id="1009a-438">For example:</span></span>
+
+``` html
+https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
+```
+
+> [!NOTE]
+> <span data-ttu-id="1009a-439">拥有令牌的任何人都可以访问 CDN 中的资源。</span><span class="sxs-lookup"><span data-stu-id="1009a-439">Anyone in possession of the token can access the resource in the CDN.</span></span> <span data-ttu-id="1009a-440">但是, 包含这些访问令牌的 url 仅通过 HTTPS 共享, 因此, 除非最终用户在令牌过期之前显式共享该 url, 否则, 未经授权的用户将无法访问该资源。</span><span class="sxs-lookup"><span data-stu-id="1009a-440">However, URLs containing these access tokens are only shared over HTTPS, so unless the URL is explicitly shared by an end user before the token expires, the asset won’t be accessible to unauthorized users.</span></span>
+
+#### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a><span data-ttu-id="1009a-441">私人来源的资产不支持项目级权限</span><span class="sxs-lookup"><span data-stu-id="1009a-441">Item-level permissions are not supported for assets in private origins</span></span>
+
+<span data-ttu-id="1009a-442">请务必注意, SharePoint Online 不支持私人来源资产的项目级权限。</span><span class="sxs-lookup"><span data-stu-id="1009a-442">It is important to note that SharePoint Online does not support item-level permissions for assets in private origins.</span></span> <span data-ttu-id="1009a-443">例如, 对于位于的文件, 在`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`以下情况下, 用户可以有效访问文件:</span><span class="sxs-lookup"><span data-stu-id="1009a-443">For example, for a file located at `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, users have effective access to the file given the following conditions:</span></span>
+
+|<span data-ttu-id="1009a-444">用户</span><span class="sxs-lookup"><span data-stu-id="1009a-444">User</span></span>  |<span data-ttu-id="1009a-445">权限</span><span class="sxs-lookup"><span data-stu-id="1009a-445">Permissions</span></span>  |<span data-ttu-id="1009a-446">有效访问</span><span class="sxs-lookup"><span data-stu-id="1009a-446">Effective access</span></span>  |
+|---------|---------|---------|
+|<span data-ttu-id="1009a-447">用户1</span><span class="sxs-lookup"><span data-stu-id="1009a-447">User 1</span></span>     |<span data-ttu-id="1009a-448">有权访问 folder1</span><span class="sxs-lookup"><span data-stu-id="1009a-448">Has access to folder1</span></span>         |<span data-ttu-id="1009a-449">可以从 CDN 访问 image1</span><span class="sxs-lookup"><span data-stu-id="1009a-449">Can access image1.jpg from the CDN</span></span>         |
+|<span data-ttu-id="1009a-450">用户2</span><span class="sxs-lookup"><span data-stu-id="1009a-450">User 2</span></span>     |<span data-ttu-id="1009a-451">不具有对 folder1 的访问权限</span><span class="sxs-lookup"><span data-stu-id="1009a-451">Does not have access to folder1</span></span>         |<span data-ttu-id="1009a-452">无法从 CDN 访问 image1</span><span class="sxs-lookup"><span data-stu-id="1009a-452">Cannot access image1.jpg from the CDN</span></span>         |
+|<span data-ttu-id="1009a-453">用户3</span><span class="sxs-lookup"><span data-stu-id="1009a-453">User 3</span></span>     |<span data-ttu-id="1009a-454">不具有对 folder1 的访问权限, 但被授予了在 SharePoint Online 中访问 image1 的显式权限</span><span class="sxs-lookup"><span data-stu-id="1009a-454">Does not have access to folder1, but is granted explicit permission to access image1.jpg in SharePoint Online</span></span>         |<span data-ttu-id="1009a-455">可以直接从 SharePoint Online 访问资产 image1, 但不能从 CDN 访问</span><span class="sxs-lookup"><span data-stu-id="1009a-455">Can access the asset image1.jpg directly from SharePoint Online, but not from the CDN</span></span>         |
+|<span data-ttu-id="1009a-456">用户4</span><span class="sxs-lookup"><span data-stu-id="1009a-456">User 4</span></span>     |<span data-ttu-id="1009a-457">有权访问 folder1, 但已明确拒绝对 SharePoint Online 中的 image1 的访问</span><span class="sxs-lookup"><span data-stu-id="1009a-457">Has access to folder1, but has been explicitly denied access to image1.jpg in SharePoint Online</span></span>         |<span data-ttu-id="1009a-458">无法从 sharepoint online 访问资产, 但可以从 CDN 访问资产, 尽管在 SharePoint online 中拒绝对文件的访问</span><span class="sxs-lookup"><span data-stu-id="1009a-458">Cannot access the asset from SharePoint Online, but can access the asset from the CDN despite being denied access to the file in SharePoint Online</span></span>         |
+
+## <a name="troubleshooting-the-office-365-cdn"></a><span data-ttu-id="1009a-459">Office 365 CDN 故障排除</span><span class="sxs-lookup"><span data-stu-id="1009a-459">Troubleshooting the Office 365 CDN</span></span>
+<a name="CDNTroubleshooting"> </a>
+
+### <a name="how-do-i-confirm-that-assets-are-being-served-by-the-cdn"></a><span data-ttu-id="1009a-460">如何确认 CDN 是否正在为资产提供服务？</span><span class="sxs-lookup"><span data-stu-id="1009a-460">How do I confirm that assets are being served by the CDN?</span></span>
+<a name="CDNConfirm"> </a>
+
+<span data-ttu-id="1009a-461">将 CDN 资产的链接添加到页面后, 您可以通过浏览页面来确认是否已从 CDN 提供资产, 在呈现并查看图像 URL 后, 右键单击该图像。</span><span class="sxs-lookup"><span data-stu-id="1009a-461">Once you have added links to CDN assets to a page, you can confirm that the asset is being served from the CDN by browsing to the page, right clicking on the image once it has rendered and reviewing the image URL.</span></span>
+
+<span data-ttu-id="1009a-462">您还可以使用浏览器的开发人员工具来查看页面上每个资源的 URL, 或使用第三方网络跟踪工具。</span><span class="sxs-lookup"><span data-stu-id="1009a-462">You can also use your browser's developer tools to view the URL for each asset on a page, or use a 3rd party network trace tool.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1009a-463">如果使用网络工具 (例如 Fiddler) 在从 SharePoint 页面呈现资产的外部测试您的资产, 您必须手动将引用的邮件头 "定位: `https://yourdomain.sharepoint.com`" 添加到 URL 为 sharepoint Online 租户的根 url 的 GET 请求中。</span><span class="sxs-lookup"><span data-stu-id="1009a-463">If you use a network tool such as Fiddler to test your assets outside of rendering the asset from a SharePoint page, you must manually add the referrer header “Referrer: `https://yourdomain.sharepoint.com`” to the GET request where the URL is the root URL of your SharePoint Online tenant.</span></span>
+
+<span data-ttu-id="1009a-464">您不能直接在 web 浏览器中测试 CDN url, 因为您必须具有来自 SharePoint Online 的引用。</span><span class="sxs-lookup"><span data-stu-id="1009a-464">You cannot test CDN URLs directly in a web browser because you must have a referrer coming from SharePoint Online.</span></span> <span data-ttu-id="1009a-465">但是, 如果将 cdn 资产 URL 添加到 SharePoint 页面, 然后在浏览器中打开该页面, 则会看到页面上呈现的 cdn 资产。</span><span class="sxs-lookup"><span data-stu-id="1009a-465">However, if you add the CDN asset URL to a SharePoint page and then open the page in a browser, you will see the CDN asset rendered on the page.</span></span>
+
+<span data-ttu-id="1009a-466">有关在 microsoft edge 浏览器中使用开发人员工具的详细信息, 请参阅[microsoft edge 开发人员工具](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)。</span><span class="sxs-lookup"><span data-stu-id="1009a-466">For more information on using the developer tools in the Microsoft Edge browser, see [Microsoft Edge Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide).</span></span>
+
+### <a name="why-are-assets-from-a-new-origin-unavailable"></a><span data-ttu-id="1009a-467">为什么来自新来源的资产不可用？</span><span class="sxs-lookup"><span data-stu-id="1009a-467">Why are assets from a new origin unavailable?</span></span>
+<span data-ttu-id="1009a-468">新资源源中的资产不会立即可供使用, 因为注册通过 CDN 传播以及将资产从来源上载到 CDN 存储需要花费时间。</span><span class="sxs-lookup"><span data-stu-id="1009a-468">Assets in new origins will not immediately be available for use, as it takes time for the registration to propagate through the CDN and for the assets to be uploaded from the origin to CDN storage.</span></span> <span data-ttu-id="1009a-469">在 CDN 中提供资产所需的时间取决于资产和文件的大小。</span><span class="sxs-lookup"><span data-stu-id="1009a-469">The time required for assets to be available in the CDN depends on how many assets and the files sizes.</span></span>
+
+### <a name="my-client-side-web-part-or-sharepoint-framework-solution-isnt-working"></a><span data-ttu-id="1009a-470">我的客户端 web 部件或 SharePoint 框架解决方案不起作用</span><span class="sxs-lookup"><span data-stu-id="1009a-470">My client-side web part or SharePoint Framework solution isn't working</span></span>
+
+<span data-ttu-id="1009a-471">为公共起源启用 Office 365 CDN 时, CDN 服务会自动创建以下默认来源:</span><span class="sxs-lookup"><span data-stu-id="1009a-471">When you enable the Office 365 CDN for public origins, the CDN service automatically creates these default origins:</span></span>
+
+- <span data-ttu-id="1009a-472">\*/MASTERPAGE</span><span class="sxs-lookup"><span data-stu-id="1009a-472">\*/MASTERPAGE</span></span>
+- <span data-ttu-id="1009a-473">\*/STYLE 库</span><span class="sxs-lookup"><span data-stu-id="1009a-473">\*/STYLE LIBRARY</span></span>
+- <span data-ttu-id="1009a-474">\*/CLIENTSIDEASSETS</span><span class="sxs-lookup"><span data-stu-id="1009a-474">\*/CLIENTSIDEASSETS</span></span>
+
+<span data-ttu-id="1009a-475">如果缺少 \*/clientsideassets 原点, SharePoint 框架解决方案将失败, 并且不会生成警告或错误消息。</span><span class="sxs-lookup"><span data-stu-id="1009a-475">If the \*/clientsideassets origin is missing, SharePoint Framework solutions will fail, and no warning or error messages are generated.</span></span> <span data-ttu-id="1009a-476">由于启用了 _-NoDefaultOrigins_参数设置为 **$true**, 或者已手动删除了来源, 因此此来源可能丢失。</span><span class="sxs-lookup"><span data-stu-id="1009a-476">This origin may be missing either because the CDN was enabled with the _-NoDefaultOrigins_ parameter set to **$true**, or because the origin was manually deleted.</span></span>
+
+<span data-ttu-id="1009a-477">您可以使用以下 PowerShell 命令查看 \*/CLIENTSIDEASSETS 源是否存在:</span><span class="sxs-lookup"><span data-stu-id="1009a-477">You can check to see if the \*/CLIENTSIDEASSETS origin is present with the following PowerShell command:</span></span>
+
+``` powershell
+Get-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+```
+
+<span data-ttu-id="1009a-478">或者, 您可以使用 Office 365 CLI 进行检查:</span><span class="sxs-lookup"><span data-stu-id="1009a-478">Or you can check with the Office 365 CLI:</span></span>
+
+``` powershell
+spo cdn origin list
+```
+
+<span data-ttu-id="1009a-479">若要在 PowerShell 中添加源, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="1009a-479">To add the origin in PowerShell:</span></span>
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+```
+
+<span data-ttu-id="1009a-480">若要在 Office 365 CLI 中添加原点, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="1009a-480">To add the origin in the Office 365 CLI:</span></span>
+
+``` powershell
+spo cdn origin add --origin */CLIENTSIDEASSETS
+```
+
+### <a name="what-powershell-modules-and-cli-shells-do-i-need-to-work-with-the-office-365-cdn"></a><span data-ttu-id="1009a-481">我需要哪些 PowerShell 模块和 CLI shell 才能与 Office 365 CDN 配合使用？</span><span class="sxs-lookup"><span data-stu-id="1009a-481">What PowerShell modules and CLI shells do I need to work with the Office 365 CDN?</span></span>
+
+<span data-ttu-id="1009a-482">您可以使用**SharePoint Online 命令行管理**程序 PowerShell 模块或**office 365 CLI**选择使用 office 365 CDN。</span><span class="sxs-lookup"><span data-stu-id="1009a-482">You can choose to work with the Office 365 CDN using either the **SharePoint Online Management Shell** PowerShell module or the **Office 365 CLI**.</span></span>
+
+- [<span data-ttu-id="1009a-483">SharePoint Online 命令行管理程序入门</span><span class="sxs-lookup"><span data-stu-id="1009a-483">Getting started with SharePoint Online Management Shell</span></span>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+- [<span data-ttu-id="1009a-484">安装 Office 365 CLI</span><span class="sxs-lookup"><span data-stu-id="1009a-484">Installing the Office 365 CLI</span></span>](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
+
+## <a name="see-also"></a><span data-ttu-id="1009a-485">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1009a-485">See also</span></span>
+
+[<span data-ttu-id="1009a-486">内容传递网络</span><span class="sxs-lookup"><span data-stu-id="1009a-486">Content Delivery Networks</span></span>](https://aka.ms/o365cdns)
+
+[<span data-ttu-id="1009a-487">Office 365 的网络规划和性能调整</span><span class="sxs-lookup"><span data-stu-id="1009a-487">Network planning and performance tuning for Office 365</span></span>](https://aka.ms/tune)
 
