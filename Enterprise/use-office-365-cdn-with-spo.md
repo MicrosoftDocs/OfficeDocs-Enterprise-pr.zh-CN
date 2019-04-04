@@ -3,7 +3,7 @@ title: 结合使用 Office 365 内容分发网络和 SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 4/3/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 介绍如何使用 Office 365 内容传送网络 (CDN) 加快将 SharePoint Online 资产传递给所有用户, 无论它们位于何处或如何访问你的内容。
-ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
+ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039499"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31396920"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -288,7 +288,7 @@ _ExcludeIfNoScriptDisabled_属性基于网站级_NoScript_属性设置从 CDN �
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-_path_的值是指向包含资产的库或文件夹的路径。 除了相对路径之外，还可以使用通配符。 来源支持附加到 URL 的通配符。 这使您可以创建跨多个网站的来源。 例如, 若要将所有网站的 masterpages 文件夹中的所有资源作为 CDN 中的公共来源包括在内, 请键入以下命令:
+_path_的值是包含这些资产的库或文件夹的相对路径。 除了相对路径之外，还可以使用通配符。 来源支持附加到 URL 的通配符。 这使您可以创建跨多个网站的来源。 例如, 若要将所有网站的 masterpages 文件夹中的所有资源作为 CDN 中的公共来源包括在内, 请键入以下命令:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -297,18 +297,18 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 - 通配符修饰符 ***/** 仅可在路径的开头使用, 并将与指定 URL 下的所有 URL 段匹配。
 - 路径可以指向文档库、文件夹或网站。 例如, 路径 _*/site1_将与网站下的所有文档库相匹配。
 
-您可以使用相对路径或完整路径, 添加具有特定路径的原点。
+您可以添加具有特定相对路径的原点。 您不能使用完整路径添加原点。
 
-本示例使用相对路径在特定网站上添加 siteassets 库的专用原点:
+本示例在特定网站上添加 siteassets 库的专用原点:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-本示例使用完整路径在网站集的 "网站资产" 库中添加_folder1_文件夹的专用原点:
+本示例在网站集的 "网站资产" 库中添加 " _folder1_ " 文件夹的专用原点:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
 ```
 
 有关此命令及其语法的详细信息, 请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。
@@ -469,7 +469,7 @@ spo cdn origin list --type Public
 
 ### <a name="add-an-office-365-cdn-origin"></a>添加 Office 365 CDN 源
 
-> [!NOTE]
+> [!IMPORTANT]
 > 永远不要在配置为公共来源的 SharePoint 文档库中将被视为对您的组织敏感的资源放置。
 
 运行 [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) 命令可以定义 CDN 源。 可以定义多个源。 源是 SharePoint 库或文件夹的 URL，其中包含要由 CDN 托管的资产。
@@ -478,7 +478,7 @@ spo cdn origin list --type Public
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-其中，`path` 是包含资产的文件夹的路径。 除了相对路径之外，还可以使用通配符。
+其中`path` , 是包含资产的文件夹的相对路径。 除了相对路径之外，还可以使用通配符。
 
 若要将所有网站的**母版页样式库**中的所有资产包含为公共来源, 请执行以下操作:
 
