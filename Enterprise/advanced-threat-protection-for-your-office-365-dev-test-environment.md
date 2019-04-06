@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '摘要: 在 office 365 开发/测试环境中配置和演示 office 365 高级威胁防护。'
-ms.openlocfilehash: 9870f666a979d00ce6621e9459a1f9ad236f9799
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 4ef057480f0ebfb2e64529f39d0db65031b75010
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573826"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037936"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境中的高级威胁防护
 
@@ -38,7 +38,7 @@ Office 365 高级威胁防护 (ATP) 是 Exchange Online Protection (EOP) 的一�
 如果要在模拟企业版中测试 ATP, 请按照[您的 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试 ATP 不需要模拟的企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Windows Server AD 林的目录同步。 此处提供它作为选项, 以便您可以在代表典型组织的环境中测试 ATP 并进行实验。 
+> 测试 ATP 不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供它作为选项, 以便您可以在代表典型组织的环境中测试 ATP 并进行实验。 
   
 ## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>第2阶段: 演示 Office 365 的默认电子邮件传递行为
 

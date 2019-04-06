@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: 了解如何在 Office 365 管理中心中查看目录同步错误。
-ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: 了解如何在 Microsoft 365 管理中心中查看目录同步错误。
+ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085031"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001805"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>查看 Office 365 中的目录同步错误
 
-您可以在 Office 365 管理中心中查看目录同步错误。仅显示用户对象错误。若要使用 PowerShell 查看错误, 请参阅[使用 DirSyncProvisioningErrors 标识对象](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)。
+您可以在[Microsoft 365 管理中心](https://admin.microsoft.com)中查看目录同步错误。 仅显示用户对象错误。 若要使用 PowerShell 查看错误, 请参阅[使用 DirSyncProvisioningErrors 标识对象](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)。
 
 查看后, 请参阅[解决 Office 365 的目录同步问题](fix-problems-with-directory-synchronization.md)以更正任何已确定的问题。
   
@@ -38,7 +38,7 @@ ms.locfileid: "30085031"
   
 1. 使用工作或学校帐户登录 Office 365。 
     
-2. 请转到[关于 Office 365 管理中心的信息](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23)。
+2. 转到[有关管理中心](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23)的 "关于"。
     
 3. 在**主页**上, 您将看到**DirSync 状态**磁贴。 
     

@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 了解如何设置 Office 365 和本地 Active directory 之间的目录同步。
-ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492942"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001745"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>设置 Office 365 的目录同步
 
@@ -56,7 +56,7 @@ Office 365 使用基于云的用户标识管理服务 Azure Active Directory 来
 |**Windows Server 2008** | -支持的最新版本的 PowerShell 可在 Windows Management Framework 3.0 中提供, 可在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)上找到。  <br> -.net 4.5.1 及更高版本在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)提供。 |
 
 > [!NOTE]
-> 如果使用的是 Azure active directory DirSync, 可以从本地 Active directory 同步到 Azure active directory 的通讯组成员的最大数量为15000。 对于 Azure AD Connect, 该号码为50000。 
+> 如果使用的是 Azure active directory DirSync, 可以从本地 Active directory 同步到 Azure active directory 的通讯组成员的最大数量为15000。 对于 Azure AD Connect, 该号码为50000。
   
 若要更仔细地查看硬件、软件、帐户和权限要求、SSL 证书要求以及 azure AD connect 的对象限制, 请阅读[azure Active Directory connect 的先决条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)。
   
@@ -64,8 +64,8 @@ Office 365 使用基于云的用户标识管理服务 Azure Active Directory 来
 
 ## <a name="to-set-up-directory-synchronization"></a>设置目录同步
 
-1. 登录到 Office 365 管理中心, 然后选择左侧导航栏中的 "**用户** \> **活动用户**"。
-2. 在 Office 365 管理中心的 "**活动用户**" 页上, 选择 "**更多** \> **目录同步**"。
+1. 登录到[Microsoft 365 管理中心](https://admin.microsoft.com)并选择左侧导航栏中的 "**用户** \> **活动用户**"。
+2. 在管理中心的 "**活动用户**" 页上, 选择 "**更多** \> **目录同步**"。
 
     ![在 "更多" 菜单中选择 "目录同步"](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   

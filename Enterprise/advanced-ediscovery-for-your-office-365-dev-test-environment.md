@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 摘要：在 Office 365 开发/测试环境中使用示例数据配置并演示 Office 365 高级电子数据展示。
-ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573816"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038016"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的高级电子数据展示
 
@@ -39,7 +39,7 @@ office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
 如果要在模拟企业版中测试高级电子数据展示, 请按照[Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试高级电子数据展示不需要模拟的企业环境，该环境中包括连接到 Internet 的模拟内部网和 Windows Server AD 林的目录同步。 此处提供了此选项, 以便您可以在代表典型组织的环境中执行测试和实验。 
+> 测试高级电子数据展示不需要模拟的企业环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以在代表典型组织的环境中执行测试和实验。 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>第 2 阶段：创建高级电子数据展示的示例数据
 

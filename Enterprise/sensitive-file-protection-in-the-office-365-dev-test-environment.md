@@ -3,7 +3,7 @@ title: Office 365 开发/测试环境中的敏感文件保护
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '摘要: 配置和演示 Office 365 信息权限管理如何保护您的敏感文件, 即使这些文件发布到错误的 SharePoint Online 网站集也是如此。'
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574066"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037966"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的敏感文件保护
 
@@ -53,7 +53,7 @@ Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Onlin
   
 - 你的计算机（对于轻量级的 Office 365 开发/测试环境）。
     
-- CLIENT1 虚拟机（对于企业 Office 365 开发/测试环境）。
+- CLIENT1 虚拟机（对于模拟的企业 Office 365 开发/测试环境）。
     
 在“**Windows PowerShell 凭据请求**”对话框中，键入 Office 365 试用订阅中的 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码。
   
@@ -140,7 +140,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. 在 SharePoint 组列表中，单击“**执行人员成员**”。
     
-9. 在“人员和组”页中，单击“新建”********。
+9. 在“**人员和组**”页中，单击“**新建**”。
     
 10. 在 **"共享 ' 执行人员 '"** 中, 键入**主管**, 单击 "**主管**" 组, 然后单击 "**共享**"。
     
@@ -232,7 +232,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 5. 在“**SharePoint 管理中心**”选项卡上，单击“**设置**”。
     
-6. 在“**设置**”页的“**信息权限管理 (IRM)**”部分，选择“**使用配置中指定的 IRM 服务**”，然后选择“**刷新 IRM 设置**”。
+6. 在页面上的 "**信息权限管理 (IRM)** " 部分中, 选择 "**使用您的配置中指定的 IRM 服务"**, 然后选择 "**刷新 IRM 设置**"。
     
 7. 关闭“**SharePoint 管理中心**”选项卡。
     
@@ -264,7 +264,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. 在“**配置文档访问权限**”下方，选择“**允许查看者打印**”和“**允许查看者写入下载文档副本**”。
     
-9. 在“**设置组保护和凭据时间间隔**”下方，选择“**允许组保护**”和“**默认组**”，键入“**执行人员**”。
+9. 在 "**设置组保护和凭据间隔**" 下, 选择 "**允许组保护"。默认组**, 然后键入**高级管理人员**。
     
 10. 单击“**确定**”。
     

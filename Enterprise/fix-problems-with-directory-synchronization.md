@@ -17,34 +17,30 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍了 Office 365 中的目录同步问题的常见原因, 并提供了几种帮助排除和解决这些问题的方法。
-ms.openlocfilehash: e83ca495ca96ac41fb2f79775c3d5970a6b538fb
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085391"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001835"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>修复 Office 365 的目录同步问题
 
-通过目录同步, 您可以继续管理本地用户和组, 并同步对云的添加、删除和更改。但安装程序有点复杂, 有时可能很难确定问题的根源。我们有一些资源, 可帮助你找出潜在问题并解决这些问题。
+通过目录同步, 您可以继续管理本地用户和组, 并同步对云的添加、删除和更改。 但安装程序有点复杂, 有时可能很难确定问题的根源。 我们有一些资源, 可帮助你找出潜在问题并解决这些问题。
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>如何知道是否出现了问题？
 
-第一个表明出现错误的情况是, 当 Office 365 管理中心中的 DirSync 状态磁贴指示存在问题时:
+如果 Microsoft 365 管理中心中的 DirSync 状态磁贴指示存在问题, 则第一表明出现了错误:
   
 ![管理员中心预览中的 DirSync 状态磁贴](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-你还将收到来自 Office 365 的邮件 (到备用电子邮件和管理员电子邮件), 指示你的租户遇到目录同步错误。有关详细信息, 请参阅[识别 Office 365 中的目录同步错误](identify-directory-synchronization-errors.md)。
+你还将收到来自 Office 365 的邮件 (到备用电子邮件和管理员电子邮件), 指示你的租户遇到目录同步错误。 有关详细信息, 请参阅[识别 Office 365 中的目录同步错误](identify-directory-synchronization-errors.md)。
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>如何获取 Azure Active Directory Connect 工具？
 
-在 Office 365 管理中心中, 导航到 "* * 用户" * \> * "**活动用户**"。单击 "**更多**" 菜单, 然后选择 "**目录同步**"。 
+在[Microsoft 365 管理中心](https://admin.microsoft.com), 导航到 "* * 用户" * * \> "**活动用户**"。 单击 "**更多**" 菜单, 然后选择 "**目录同步**"。 
   
 ![在 "更多" 菜单中选择 "目录同步"](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
-  
-在旧的 Office 365 管理中心中, 导航到 "**用户** \> **活动用户**", 然后选择 " **active Directory 同步**" 旁边的 "**设置**"。 
-  
-![选择 "Active Directory 同步" 旁边的 "设置"](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
   
 按照[向导中的说明](set-up-directory-synchronization.md)下载 Azure AD Connect。 
   
@@ -58,25 +54,25 @@ ms.locfileid: "30085391"
 
 - [标识同步和重复属性弹性](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**我在 Office 365 管理中心发出通知, 或者收到最近未进行同步事件的自动电子邮件**
+### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**我在管理中心发出通知, 或者收到最近未进行同步事件的自动电子邮件**
 - [解决 Azure AD Connect 的连接问题](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD Connect 帐户和权限](https://go.microsoft.com/fwlink/p/?LinkId=820598)
 - [Azure ad Connect sync: 如何管理 azure ad 服务帐户](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [到 Azure Active Directory 的目录同步停止, 或者你收到同步未在一天内注册的警告](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**密码哈希未同步, 或者我在 Office 365 管理中心中看到一个警报, 表明最近未进行过密码哈希同步**
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**密码哈希未同步, 或者我在管理中心内看到一个警报, 表明最近密码哈希同步**
 - [使用 Azure AD Connect 同步实现密码哈希同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**我看到一个警报, 指出对象配额已超出**
-- 我们有一个内置的对象配额, 可帮助保护服务。如果目录中的对象太多, 需要同步到 Office 365, 您必须[联系支持人员以获取业务产品](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b), 以增加配额。
+- 我们有一个内置的对象配额, 可帮助保护服务。 如果目录中的对象太多, 需要同步到 Office 365, 您必须[联系支持人员以获取业务产品](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b), 以增加配额。
 
-### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**我需要知道哪些属性已同步**
+### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**我需要知道哪些属性是同步的**
 - 您可以在[此处](https://go.microsoft.com/fwlink/p/?LinkId=396719)找到在内部部署和云之间同步的所有属性的列表。
 
 ### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**我无法管理或删除已同步到云的对象**
-- 你是否已准备好仅在云中管理对象？或者是否存在本地删除的对象, 但它在云中被卡住？请查看同步和[支持文章](https://go.microsoft.com/fwlink/p/?LinkId=396720)中的此[故障排除错误](https://go.microsoft.com/fwlink/p/?linkid=842044), 以获取有关如何解决这些问题的指南。
+- 你是否已准备好仅在云中管理对象？ 或者是否存在本地删除的对象, 但它在云中被卡住？ 请查看同步和[支持文章](https://go.microsoft.com/fwlink/p/?LinkId=396720)中的此[故障排除错误](https://go.microsoft.com/fwlink/p/?linkid=842044), 以获取有关如何解决这些问题的指南。
 
-### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**当公司超过可同步的对象数量时，收到错误消息。**
+### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**我收到一条错误消息, 指出我的公司已超出可同步的对象数**
 - 你可以在[此处](https://go.microsoft.com/fwlink/p/?LinkId=396721)阅读有关此问题的详细信息。
    
 ## <a name="other-resources"></a>其他资源
@@ -97,6 +93,6 @@ ms.locfileid: "30085391"
     
 ## <a name="diagnostic-tools"></a>诊断工具
 
-[IDFix 工具](prepare-directory-attributes-for-synch-with-idfix.md)用于在准备迁移到 Office 365 时, 在本地 Active Directory 环境中执行 identity 对象及其属性的发现和修正。IDFix 适用于负责与 Office 365 service 同步的 Active Directory 管理员。 
+[IDFix 工具](prepare-directory-attributes-for-synch-with-idfix.md)用于在准备迁移到 Office 365 时, 在本地 Active Directory 环境中执行 identity 对象及其属性的发现和修正。 IDFix 适用于负责与 Office 365 service 同步的 Active Directory 管理员。 
 
 从 Microsoft 下载中心[下载 IDFix 工具](https://go.microsoft.com/fwlink/p/?LinkId=396718)。

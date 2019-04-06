@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '摘要: 在 office 365 开发/测试环境中配置和演示 office 365 云应用安全性。'
-ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573676"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038032"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的云应用安全
 
@@ -41,7 +41,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
 如果要在模拟的企业中测试云应用安全性, 请按照[您的 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试云应用安全不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Windows Server AD 林的目录同步。 此处提供它作为选项, 以便您可以测试云应用安全性并在代表典型组织的环境中进行试验。 
+> 测试云应用安全不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供它作为选项, 以便您可以测试云应用安全性并在代表典型组织的环境中进行试验。 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>第2阶段: 启用云应用安全性和创建策略之前
 
@@ -81,7 +81,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
 
 1. 转到 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)), 并使用全局管理员帐户登录到你的 Office 365 试用订阅。
     
-2. 单击“管理员”磁贴****。 在 " **Office 管理中心**" 选项卡上, 单击 "**管理中心" > Security & 合规性**。
+2. 单击“管理”磁贴****。 在 " **Office 管理中心**" 选项卡上, 单击 "**管理中心" > Security & 合规性**。
     
 3. 在左侧导航窗格中, 单击 "**通知 > 管理高级警报**"。
     
@@ -123,9 +123,9 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
     
 7. 如果需要，请在系统提示更新管理员联系信息时单击“**取消**”。
     
-8. 在主要门户页面上，单击“**管理员**”。
+8. 在主门户页上，单击“管理员”****。
     
-9. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
+9. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
 10. 单击“**User 5**”帐户。
     

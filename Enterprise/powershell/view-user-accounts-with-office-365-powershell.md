@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '摘要: 使用 Office 365 PowerShell 以多种方式查看、列出或显示您的用户帐户。'
-ms.openlocfilehash: 717a7c11f4e7f6d2e5e0c452854df7d4c419007e
-ms.sourcegitcommit: 1dc7b4731cf9899c5ae867624ed142dbab0c517f
+ms.openlocfilehash: 2858efef6220beed76894414ea99ed922353afc3
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30683699"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037916"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>查看用户帐户与 Office 365 PowerShell
 
@@ -217,7 +217,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 您可以使用以下命令检查用户帐户的阻止状态:
   
 ```
-Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
+Get-MsolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
 ### <a name="view-additional-property-values-for-accounts"></a>查看帐户的其他属性值

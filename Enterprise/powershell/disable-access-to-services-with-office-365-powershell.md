@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 禁止访问服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 03/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,50 +14,54 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: 介绍如何使用 Office 365 PowerShell 中禁用对 Office 365 服务的组织中用户的访问。
-ms.openlocfilehash: 66f6c04c1488f14d5752974a5475e7ef11279406
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 使用 office 365 PowerShell 禁用对用户的 Office 365 服务的访问。
+ms.openlocfilehash: 0f2c603edd624c9d53a28b37c1c9795bad05ec0f
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897415"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001815"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 禁止访问服务
 
-**摘要：** 介绍如何使用 Office 365 PowerShell 中禁用对 Office 365 服务的组织中用户的访问。
+**摘要:** 介绍如何使用 office 365 PowerShell 为组织中的用户禁用对 Office 365 服务的访问。
   
-在 Office 365 帐户分配许可证从许可计划时，Office 365 服务可供用户从该许可证。但是，您可以控制用户可以访问 Office 365 服务。例如，即使许可证允许访问 SharePoint Online 服务，您可以禁用对其进行访问。您可以使用 Office 365 PowerShell 中禁用对任意数量的特定许可计划为服务的访问权限：
+从许可计划中为 office 365 帐户分配许可证时, 用户将从该许可证中获取 office 365 服务。 但是, 您可以控制用户可以访问的 Office 365 服务。 例如, 即使许可证允许访问 SharePoint Online 服务, 也可以禁用对它的访问。 您可以使用 PowerShell 针对特定许可计划禁用对任意数量的服务的访问:
 
 - 单个帐户。
     
 - 一组帐户。
     
 - 组织中的所有帐户。
-    
-## <a name="before-you-begin"></a>准备工作
-<a name="RTT"> </a>
 
-- 若要执行此主题中的过程，必须连接到 Office 365 PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
+
+首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+
+接下来, 使用此命令查看可用的许可计划, 也称为 "AccountSkuIds":
+
+```
+Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
+```
+
+有关详细信息, 请参阅[使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。
     
-- 使用**Get-msolaccountsku** cmdlet 可以查看您可用的许可计划，以及这些计划中可用的 Office 365 服务。有关详细信息，请参阅[查看许可证和身份验证服务与 Office 365 PowerShell 中](view-licenses-and-services-with-office-365-powershell.md)。
+若要查看本主题中的过程的前后结果, 请参阅[使用 Office 365 PowerShell 查看帐户许可证和服务详细信息](view-account-license-and-service-details-with-office-365-powershell.md)。
     
-- 若要查看之前和之后的此主题中的过程的结果，请参阅[查看帐户许可证和服务的详细信息与 Office 365 PowerShell 中](view-account-license-and-service-details-with-office-365-powershell.md)。
+PowerShell 脚本可自动执行本主题中描述的过程。 具体来说, 该脚本允许您查看和禁用 Office 365 组织中的服务, 包括 Sway。 有关详细信息，请参阅[Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md)。
     
-- PowerShell 脚本是可用的自动执行本主题中所述的过程。具体而言，该脚本允许您查看和 Office 365 组织，包括 Sway 中禁用这些服务。有关详细信息，请参阅[禁用对 Sway 与 Office 365 PowerShell 中的访问](disable-access-to-sway-with-office-365-powershell.md)。
     
-- 如果不使用的_所有_参数的情况下使用**Get-msoluser** cmdlet，则返回仅的第一个 500 的用户帐户。
-    
-## <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>禁用特定的 Office 365 服务的特定用户特定的许可计划
+### <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>针对特定用户禁用特定许可计划的特定 Office 365 服务
   
-若要禁用一组特定的 Office 365 服务的用户特定的许可计划，请执行以下步骤：
+若要为用户禁用特定许可计划的一组特定的 Office 365 服务, 请执行以下步骤:
   
-1. 许可计划中的不需要的服务标识使用以下语法：
+1. 使用以下语法确定许可计划中不希望的服务:
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-  下面的示例创建一个名为许可计划中禁用的 Office Online 和 SharePoint Online 服务的**LicenseOptions**对象`litwareinc:ENTERPRISEPACK`(Office 365 企业版 E3)。
+  下面的示例创建一个**LicenseOptions**对象, 该对象禁用名为`litwareinc:ENTERPRISEPACK` (Office 365 企业版 E3) 的许可计划中的 Office online 和 SharePoint online services。
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -71,13 +75,13 @@ ms.locfileid: "25897415"
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
-  下面的示例创建新帐户的 Allie Bellew 分配许可证和禁用在步骤 1 中所描述的服务。
+  下面的示例为 Allie Bellew 创建了一个新帐户, 该帐户分配许可证并禁用步骤1中所述的服务。
     
   ```
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-  有关 Office 365 PowerShell 中创建用户帐户的详细信息，请参阅[使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)。
+  有关在 office 365 powershell 中创建用户帐户的详细信息, 请参阅[Create user accounts with office 365 powershell](create-user-accounts-with-office-365-powershell.md)。
     
   - 若要禁用现有授权用户的服务，请使用下面的语法：
     
@@ -91,7 +95,7 @@ ms.locfileid: "25897415"
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
   ```
 
-  - 若要禁用所有现有的授权用户在步骤 1 中所描述的服务，请指定从的**Get-msolaccountsku** cmdlet （如**litwareinc: enterprisepack**)，显示在 Office 365 计划的名称，然后运行以下命令：
+  - 若要禁用步骤1中对所有现有许可用户所述的服务, 请从**get-msolaccountsku** cmdlet (如**litwareinc: ENTERPRISEPACK**) 的显示中指定 Office 365 计划的名称, 然后运行以下命令:
     
   ```
   $acctSKU="<AccountSkuId>"
@@ -99,23 +103,26 @@ ms.locfileid: "25897415"
   $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
+  如果使用**get-msoluser** cmdlet, 而不使用_All_参数, 则仅返回前500个用户帐户。
+
+
   - 若要对一组现有用户禁用服务，请使用下列两种方法之一来确定用户：
     
-  - **筛选器基于现有帐户属性的帐户**若要执行此操作，使用以下语法：
+  - **基于现有帐户属性筛选帐户**为此, 请使用以下语法:
     
   ```
   $x = Get-MsolUser -All <FilterableAttributes>
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  以下示例禁止在美国销售部门中的用户的服务。
+  下面的示例为美国的销售部门中的用户禁用服务。
     
   ```
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
   $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  - **使用特定帐户的列表**若要执行此操作，执行以下步骤：
+  - **使用特定帐户的列表**为此, 请执行以下步骤:
     
 1. 创建一个文本文件，在它的每一行上包含一个帐户，如下所示：
     
@@ -125,7 +132,7 @@ ms.locfileid: "25897415"
   kakers@contoso.com
   ```
 
-  此示例中，在文本文件是 c:\\My Documents\\Accounts.txt。
+  在此示例中, 文本文件为 C:\\我的文档\\帐户 .txt。
     
 2. 运行以下命令：
     
@@ -133,12 +140,12 @@ ms.locfileid: "25897415"
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
-如果您想要禁用访问服务的多个许可计划，对每个许可计划，确保重复上述说明：
+如果要对多个许可计划禁用服务访问, 请针对每个许可计划重复上述说明, 以确保:
 
-- 许可计划已分配的用户帐户。
-- 若要禁用的服务是许可计划中可用。
+- 已为用户帐户分配许可计划。
+- 要禁用的服务在许可计划中可用。
 
-若要禁用 Office 365 服务的用户，而您要将其分配给许可计划，请参阅[禁用访问时分配用户许可证的服务](disable-access-to-services-while-assigning-user-licenses.md)。
+若要在向用户分配许可计划时为其禁用 Office 365 服务, 请参阅在[分配用户许可证时禁用对服务的访问](disable-access-to-services-while-assigning-user-licenses.md)。
 
 
 ## <a name="new-to-office-365"></a>刚开始接触 Office 365？
@@ -153,7 +160,7 @@ ms.locfileid: "25897415"
   
 - [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [使用 Office 365 PowerShell 删除和还原用户帐户](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [使用 Office 365 PowerShell 冻结用户账户](block-user-accounts-with-office-365-powershell.md)
     
@@ -161,23 +168,3 @@ ms.locfileid: "25897415"
     
 - [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
     
-有关在这些步骤中使用的 cmdlet 的详细信息，请参阅下列主题：
-  
-- [获取内容](https://go.microsoft.com/fwlink/p/?LinkId=289917)
-    
-- [Get-msolaccountsku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
-    
-- [新 MsolLicenseOptions](https://go.microsoft.com/fwlink/p/?LinkId=691546)
-    
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
-    
-- [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
-    
-- [Set-msoluserlicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
-    
-- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
-    
-- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
-    
-  
-

@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: 摘要：使用此测试实验室指南可以实现 Office 365 试用订阅中 Exchange Online 的 Dynamics 365 集成。
-ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 47153f9321284d0bb30f59645dfe56ab40cb7982
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574016"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037996"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 和 Dynamics 365 开发/测试环境的 Exchange Online 集成
 
@@ -36,7 +36,7 @@ Microsoft Dynamics 365 的一个重要作用是将所有客户通信都存储在
 请按照 [Office 365 和 Dynamics 365 开发/测试环境](office-365-and-dynamics-365-dev-test-environment.md) 中的说明创建一个轻型或模拟的企业版 Office 365 和 Dynamics 365 开发/测试环境。
   
 > [!NOTE]
-> 本文中的配置不需要模拟的企业开发/测试环境，该环境中包括连接到 Internet 的模拟内部网和 Windows Server Active Directory (AD) 林的目录同步。它在此处作为一个选项提供，以便你可以测试 Office 365 和 Dynamics 365，并在代表典型组织的环境中对其进行试验 
+> 本文中的配置不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试 Office 365 和 Dynamics 365，并在代表典型组织的环境中对其进行试验 
   
 ## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a>第 2 阶段：配置和演示 Exchange Online 中的 Dynamics 365 集成
 
