@@ -1,9 +1,8 @@
 ---
-title: 为 OneDrive for Business 多地理位置配置搜索
+title: 为 Office 365 多地理位置配置搜索
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,20 +10,18 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何在多地理位置环境中配置搜索。
-ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "26705456"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931831"
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>为 OneDrive for Business 多地理位置配置搜索
+# <a name="configure-search-for-office-365-multi-geo"></a>为 Office 365 多地理位置配置搜索
 
-在 OneDrive for Business 多地理位置环境中，一个组织可以具有一个 Office 365 租户，但可在多个地理位置存储其 OneDrive 内容 - 一个中央位置和一个或多个附属位置。
+在多地理位置环境中，每个地理位置都有自己的搜索索引和搜索中心。 在用户搜索时，查询会扇出以覆盖所有索引，并合并返回的结果。
 
-每个地理位置都有其各自的搜索索引和搜索中心。在用户搜索时，查询会扇出所有索引，并合并返回的结果。
-
-例如，位于一个地理位置的用户可以搜索在另一个地理位置中存储的内容，也可以搜索只限不同地理位置的 SharePoint 网站内容。如果用户有访问此内容的权限，则搜索将显示结果。
+例如，位于一个地理位置的用户可以搜索在另一个地理位置中存储的内容，也可以搜索只限不同地理位置的 SharePoint 网站内容。 如果用户有权访问此内容，便会看到搜索结果。
 
 ## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>在多地理位置环境中可以运行哪些搜索客户端？
 
@@ -48,7 +45,7 @@ ms.locfileid: "26705456"
 
 多地理位置环境一旦设置，在 Delve 中搜索的用户即可获得来自所有地理位置的结果。
 
-Delve 源和个人资料卡片只能显示存储在**中央**位置中的文件预览。对于存储在附属位置的文件，将改为显示文件类型的图标。
+Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 对于存储在附属位置的文件，则会显示文件类型的图标。
 
 ### <a name="the-sharepoint-home-page"></a>SharePoint 主页
 
@@ -70,20 +67,20 @@ Delve 源和个人资料卡片只能显示存储在**中央**位置中的文件�
 <thead>
 <tr class="header">
 <th align="left"><strong>功能</strong></th>
-<th align="left"><strong>功能的运行方式</strong></th>
+<th align="left"><strong>工作原理</strong></th>
 <th align="left"><strong>解决方法</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">升级的结果</td>
-<td align="left">你可以在不同级别使用升级的结果来创建查询规则：针对整个租户、针对网站集或针对网站。在多地理位置环境中，如果想要将结果升级到<strong>所有</strong>地理位置中的搜索中心，请在<strong></strong>“租户”级别定义升级的结果。如果<strong>只</strong>想在位于网站集或网站的地理位置中的搜索中心升级结果，请在“网站集”<strong></strong>或“网站”<strong></strong>级别定义结果。</td>
+<td align="left">您可以在不同级别创建具有升级的结果的查询规则：整个租户、网站集或网站。 在多地理位置环境中的租户级别定义升级的结果，以便将结果升级到所有地理位置中的搜索中心。 如果只想升级位于站点集或站点的搜索中心中的结果，请在站点集或站点级别定义升级的结果。 不会升级位于其他地理位置的结果。</td>
 <td align="left">如果不需要对每个地理位置使用不同的升级结果（例如，在出差时使用不同的规则），我们建议在租户级别定义升级的结果。</td>
 </tr>
 <tr class="even">
 <td align="left">搜索精简</td>
 <td align="left">搜索将返回来自租户的所有地理位置的精简内容，然后对其进行聚合。聚合是最佳做法，意味着精简计数可能并非 100% 准确。对于大部分搜索驱动的方案，此准确度已足够。 </td>
-<td align="left">对于依赖于精简完整度的搜索驱动的应用程序，在不使用多地理位置扇出的情况下单独查询每个地理位置。</td>
+<td align="left">对于依赖于精简完整度的搜索驱动的应用程序，请单独查询每个地理位置。</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -93,11 +90,16 @@ Delve 源和个人资料卡片只能显示存储在**中央**位置中的文件�
 <tr class="even">
 <td align="left">文档 ID</td>
 <td align="left">如果正在开发依赖于文档 ID 的搜索驱动的应用程序，请注意，多地理位置环境中的文档 ID 对所有地理位置来说并不是唯一的，它们只对每个地理位置来说是唯一的。</td>
-<td align="left">我们已添加了标识地理位置的列。使用此列来实现唯一性。此列被称为“GeoLocationSource”。</td>
+<td align="left">我们添加了用于标识地理位置的列。 使用此列来实现唯一性。 此列名为“GeoLocationSource”。</td>
 </tr>
 <tr class="odd">
 <td align="left">结果数</td>
 <td align="left">搜索结果页将显示来自地理位置的组合结果，但该页显示的结果不能超过 500 个。</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">混合搜索</td>
+<td align="left">在具有<a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">云混合搜索</a>的混合 SharePoint 环境中，本地内容将添加到中心位置的 Office 365 索引。</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -128,7 +130,7 @@ Delve 源和个人资料卡片只能显示存储在**中央**位置中的文件�
 
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>如何在多地理位置环境中进行搜索？
 
-**** 所有搜索客户端均使用现有 SharePoint Search REST API 与搜索索引进行交互。
+所有搜索客户端均使用现有 SharePoint Search REST API 与搜索索引进行交互。
 
 <img src="media/configure-search-for-multi-geo-image1-1.png" />
 
@@ -139,7 +141,7 @@ Delve 源和个人资料卡片只能显示存储在**中央**位置中的文件�
 
 
 
-<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>注意：在收到来自所有地理位置的结果前，我们不会合并搜索结果。这意味着，与在仅有一个地理位置的环境中的搜索相比，多地理位置搜索具有额外的延迟性。
+<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>请注意，在收到来自所有地理位置的结果之前，我们不会合并搜索结果。 这意味着，与仅包含一个地理位置的环境中的搜索相比，多地理位置搜索会有额外的延迟。
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
 ## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>获取搜索中心以显示来自所有地理位置的结果
@@ -153,7 +155,7 @@ Delve 源和个人资料卡片只能显示存储在**中央**位置中的文件�
 3.  选择要设置的类别，单击右上角的“设置”**** 齿轮图标，然后单击“编辑页面”****。搜索结果页将在编辑模式下打开。
 
      ![](media/configure-search-for-multi-geo-image2.png)
-1.  在搜索结果 Web 部件中，将指针移至 Web 部件的右上角，单击箭头，然后单击菜单上的“编辑 Web 部件”****。“搜索结果 Web 部件”工具窗格将在页面右上角的功能区下方打开。![](media/configure-search-for-multi-geo-image3.png)
+1.  在搜索结果 Web 部件中，将鼠标指针移动到 Web 部件的右上角，单击箭头，然后单击菜单上的“** 编辑 Web 部件** ”。 搜索结果 Web 部件工具窗格在页面右上角的功能区下方打开。 ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  在 Web 部件工具窗格中的“设置”**** 部分，在“结果控制设置”**** 下，选择“显示多地理位置结果”****，获取搜索结果 Web 部件，以显示来自所有地理位置的结果。
 
@@ -168,21 +170,22 @@ Delve 源和个人资料卡片只能显示存储在**中央**位置中的文件�
 
 自定义搜索应用程序通过指定对 SharePoint Search REST API 的请求的查询参数获取来自所有（或部分）地理位置的结果。根据查询参数，查询将被扇出到所有（或部分）地理位置。例如，如果只需要查询地理位置的子集来查找相关信息，可以控制仅扇出到这些子集。如果请求成功，则 SharePoint Search REST API 将返回响应数据。
 
-#### <a name="requirement"></a>要求 #### 
+**要求**
+
 对于每个地理位置，必须确保组织中的所有用户都已授予根网站（例如 contoso**APAC**.sharepoint.com/ and contoso**EU**.sharepoint.com/）的**读取**权限级别。[了解权限](https://support.office.com/zh-CN/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
 ### <a name="query-parameters"></a>查询参数
 
-EnableMultiGeoSearch - 这是一个布尔值，指定是否应将查询扇出到多地理位置租户的其他地理位置的索引。将其设置为 **true** 可扇出查询；将其设置为 **false** 则不扇出查询。默认值为 **false**。如未包含此参数，则查询**** 不会被扇出到其他地理位置。如果在不是多地理位置的环境中使用该参数，则该参数将被忽略。
+EnableMultiGeoSearch - 此布尔值指定是否应将查询扇出到多地理位置租户的其他地理位置的索引。 将其设置为 **true** 以扇出查询；设置为 **false** 则不扇出查询。 默认值为 **False**。 如果不包括此参数，则不会将查询扇出到其他地理位置。 如果在非多地理位置环境中使用该参数，则会忽略该参数。
 
-ClientType - 这是一个字符串。为每个搜索应用程序输入唯一客户端名称。如果未包含此参数，则该查询不会**** 被扇出到其他地理位置。
+ClientType - 此参数为字符串。 输入每个搜索应用程序的唯一客户端名称。 如果不包括此参数，则不会将查询扇出到其他地理位置。
 
-MultiGeoSearchConfiguration - 这是一个可选列表，显示当 **EnableMultiGeoSearch** 为 **true** 时在多地理位置租户中要将查询扇出到的地理位置。如果未包含此参数，或将其留空，则查询将被扇出到所有地理位置。对于每个地理位置，请使用 JSON 格式输入以下项：
+MultiGeoSearchConfiguration - 这是一个可选列表，其中包含多地理位置租户中的一些地理位置，当 **EnableMultiGeoSearch** 为 **true** 时，会将查询扇出到这些地理位置。 如果不包括此参数，或将其保留为空白，则会将查询扇出到所有地理位置。 对于每个地理位置，请以 JSON 格式输入以下各项：
 
 <table>
 <thead>
 <tr class="header">
-<th align="left">Item</th>
+<th align="left">项目</th>
 <th align="left">说明</th>
 </tr>
 </thead>
@@ -250,7 +253,7 @@ MultiGeoSearchStatus - 这是 SharePoint Search API 响应请求返回的属性�
 </tbody>
 </table>
 
-#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>扇出到所有**** 地理位置的示例 GET 请求
+#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>扇出到**所有**地理位置的示例 GET 请求
 
 https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
 
@@ -259,7 +262,7 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
-> MultiGeoSearchConfiguration 属性的地理位置列表中的逗号和冒号前面有**反斜杠**字符。这是因为 GET 请求使用冒号将属性和逗号分隔为单独的属性参数。如果没有反斜杠作为转义字符，则系统会错误地解释 MultiGeoSearchConfiguration 属性。
+> MultiGeoSearchConfiguration 属性的地理位置列表中的逗号和冒号前面带有**反斜杠**字符。 这是因为 GET 请求使用冒号分隔属性，并使用逗号分隔属性的参数。 如果不使用反斜杠作为转义字符，则 MultiGeoSearchConfiguration 属性会被错误解读。
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>扇出到**所有**地理位置的示例 POST 请求
 
@@ -285,7 +288,7 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
     }
 
 
-#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>扇出到部分**** 地理位置的示例 POST 请求
+#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>扇出到**部分**地理位置的示例 POST 请求
 
 
     {
@@ -315,7 +318,7 @@ https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id
 
 ### <a name="query-using-csom"></a>使用 CSOM 查询
 
-以下是扇出到所有**** 地理位置的示例 CSOM 请求：
+以下是扇出到**所有**地理位置的示例 CSOM 请求：
 
     var keywordQuery = new KeywordQuery(ctx);
     keywordQuery.QueryText = query.SearchQueryText;

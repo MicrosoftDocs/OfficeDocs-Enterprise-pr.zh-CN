@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 摘要：使用本测试实验室指南创建包含所有 Microsoft 云产品/服务的开发/测试环境。
-ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: b8ffd01c9d129d4537c82f0e1f74bd7c1be1388b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573656"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037946"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft 云开发/测试环境
 
@@ -46,7 +46,7 @@ ms.locfileid: "30573656"
 
 按照[适用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md) 中的说明进行操作。
   
-图 1 显示了你生成的配置，其中包括 Office 365 和在 Azure 基础结构服务中运行的模拟 Intranet，以及本地 Windows Server Active Directory (AD) 林中的目录同步。
+图 1 显示了你生成的配置，其中包括 Office 365 和在 Azure 基础结构服务中运行的模拟 Intranet，以及本地 Active Directory 域服务 (AD DS) 林中的目录同步。
   
 **图 1：包含 Office 365 的 Azure 中的模拟 Intranet**
 

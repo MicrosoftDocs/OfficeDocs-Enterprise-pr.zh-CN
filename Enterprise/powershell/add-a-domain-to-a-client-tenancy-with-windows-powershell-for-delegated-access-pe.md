@@ -3,29 +3,30 @@ title: 使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有的客户租户。
-ms.openlocfilehash: f99039ffa9f921b33829767a08f33db500a5d2ed
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 85cddd28b72a3b03e9157a28c3fd1dc101a167e0
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "17114691"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001775"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
  **摘要：** 使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有客户租户。
   
-您可以使用适用于 Office 365 的 Windows PowerShell 创建新域并将其与您的客户租户相关联，其速度比使用 Office 365 管理中心要快。
+你可以使用适用于 Office 365 的 Windows PowerShell 创建新域并将其与您的客户租户相关联，其速度比使用 Microsoft 365 管理中心要快。
   
-委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。他们通常是面向其他公司的网络或电信提供商。他们将 Office 365 订阅捆绑到为其客户提供的服务产品中。 当他们销售 Office 365 订阅时，会自动获得对客户租赁的"代表以下方管理"(AOBO) 权限，这样他们便可以管理客户租赁并生成相应报告。
+委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Office 365 订阅捆绑到为其客户提供的服务产品中。 当他们销售 Office 365 订阅时，会自动获得对客户租赁的“代表以下方管理”(AOBO) 权限，这样他们便可以管理客户租赁并生成相应报告。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
 UNRESOLVED_TOKEN_VAL(GENL_O365_PowerShell_BeforeYouBegin)
@@ -49,7 +50,7 @@ UNRESOLVED_TOKEN_VAL(GENL_O365_PowerShell_BeforeYouBegin)
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>在 Azure Active Directory 中创建域
 
-此命令在 Azure Active Directory 中创建域，但不会将其与公开注册的域相关联。当您向 Microsoft Office 365 企业版 证明您拥有公开注册的域时，这一问题将随之而来。
+此命令在 Azure Active Directory 中创建域，但不会将其与公开注册的域相关联。 当你向 Microsoft Office 365 企业版证明你拥有公开注册的域时，这一问题将随之而来。
   
 ```
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
@@ -63,7 +64,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-您将获得如下所示的输出：
+你将获得如下所示的输出：
   
  `Label: domainname.com`
   
@@ -72,11 +73,11 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
  `Ttl: 3600`
   
 > [!NOTE]
-> 您将需要此文本以在公开注册的 DNS 区域中创建 TXT 记录。请确保将其复制并保存。 
+> 你将需要此文本以在公开注册的 DNS 区域中创建 TXT 记录。 请确保将其复制并保存。 
   
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>在公开注册的 DNS 区域中添加 TXT 记录
 
-在 Office 365 开始接受定向到公开注册的域名的流量之前，您必须证明您拥有域并且具有域的管理员权限。您可通过在域中创建 TXT 记录来证明您拥有该域。TXT 记录不会在您的域中执行任何操作，并且可以在建立您对域的所有权后删除。若要创建 TXT 记录，请按照[在任何 DNS 托管提供商处为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=532542)中的过程执行操作。如果这些步骤对您不适用，您需要查找适用于您的 DNS 注册机构的过程。
+在 Office 365 开始接受定向到公开注册的域名的流量之前，你必须证明你拥有域并且具有域的管理员权限。 您可通过在域中创建 TXT 记录来证明您拥有该域。 TXT 记录不会在您的域中执行任何操作，并且可以在建立您对域的所有权后删除。 若要创建 TXT 记录，请按照[在任何 DNS 托管提供商处为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=532542)中的过程执行操作。 如果这些步骤对您不适用，您需要查找适用于您的 DNS 注册机构的过程。
   
 通过 nslookup 确认已成功创建 TXT 记录。遵循下面的语法。
   
@@ -117,5 +118,5 @@ Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 
 #### 
 
-[适于合作伙伴的帮助](https://go.microsoft.com/fwlink/p/?LinkID=533477)
+[适用于合作伙伴的帮助](https://go.microsoft.com/fwlink/p/?LinkID=533477)
 

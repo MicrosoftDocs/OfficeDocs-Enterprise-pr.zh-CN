@@ -18,25 +18,25 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 摘要：为 Office 365 开发/测试环境配置目录同步。
-ms.openlocfilehash: 374d99bc2433f539451882e1c2affe7bd41290db
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: d5aff42837d3cf4789cf8785383ad213f98d35a3
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573946"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037906"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的目录同步
 
  **摘要：** 为 Office 365 开发/测试环境配置目录同步。
   
-许多组织使用 Azure AD Connect 和目录同步，将其本地 Windows Server Active Directory (AD) 林中的帐户集同步到 Office 365 中的帐户集。本文介绍了如何使用密码哈希同步将目录同步添加到 Office 365 开发/测试环境，从而生成以下配置。
+许多组织使用 Azure AD Connect 和目录同步，将其本地 Active Directory 域服务 (AD DS) 林中的帐户集同步到 Office 365 中的帐户集。本文介绍了如何使用密码哈希同步将目录同步添加到 Office 365 开发/测试环境，从而生成以下配置。
   
 ![具有目录同步的 Office 365 开发/测试环境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 此配置包括： 
   
 - Office 365 E5 试用订阅，从你创建它起 30 天内过期。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的三个虚拟机（DC1、APP1 和 CLIENT1）。Azure AD Connect 在 APP1 上运行以便使 Windows Server AD 域同步到 Office 365。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的三个虚拟机（DC1、APP1 和 CLIENT1）。Azure AD Connect 在 APP1 上运行以便使 AD DS 域同步到 Office 365。
     
 设置此开发/测试环境包含两个阶段：
   
@@ -59,7 +59,7 @@ ms.locfileid: "30573946"
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>第 2 阶段：在 APP1 上安装 Azure AD Connect
 
-安装和配置后，Azure AD Connect 将 CORP Windows Server AD 域中的帐户集与 Office 365 试用订阅中的帐户集同步。下面的过程将引导你完成在 APP1 上安装 Azure AD Connect 并查看它是否可以工作的步骤。
+安装和配置后，Azure AD Connect 将 CORP AD DS 域中的帐户集与 Office 365 试用订阅中的帐户集同步。下面的过程将引导你完成在 APP1 上安装 Azure AD Connect 并查看它是否可以工作的步骤。
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>在 APP1 上安装和配置 Azure AD Connect
 
@@ -98,7 +98,7 @@ Stop-Process -Name Explorer -Force
     
 14. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
-    请注意，该帐户名为 **User1**。此帐户来自 CORP Windows Server AD 域，证明目录同步已正常工作。
+    请注意，该帐户名为 **User1**。此帐户来自 CORP AD DS 域，证明目录同步已正常工作。
     
 15. 单击 **User1** 帐户。对于产品许可证，请单击“编辑”****。
     
@@ -111,7 +111,7 @@ Stop-Process -Name Explorer -Force
 此配置包括： 
   
 - Office 365 E5 试用订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。Azure AD Connect 在 APP1 上运行以便每隔 30 分钟使 Windows Server AD 域同步到 Office 365。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。Azure AD Connect 在 APP1 上运行以便每隔 30 分钟使 CORP AD DS 域同步到 Office 365。
     
 ## <a name="next-step"></a>后续步骤
 

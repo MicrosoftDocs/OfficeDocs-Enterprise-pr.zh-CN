@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 摘要：在 Microsoft Azure 中为 Office 365 订阅配置高可用性联合身份验证。
-ms.openlocfilehash: 7c039cd72fabdd6c3ab66a61ce9fd7b861a97f8e
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 9e671cabf2e9ca764f4948822da6aa0fb57ef5b5
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650115"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038046"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>在 Azure 中部署 Office 365 的高可用性联合身份验证
 
@@ -47,7 +47,7 @@ ms.locfileid: "30650115"
 所有虚拟机都位于一个跨界 Azure 虚拟网络 (VNet) 中。 
   
 > [!NOTE]
-> 各个用户的联合身份验证不依赖任何本地资源。不过，如果跨界连接变得不可用，VNet 中的域控制器将无法接收本地 Windows Server AD 中执行的用户帐户和组更新。若要确保此问题不会发生，可以为跨界连接配置高可用性设置。有关详细信息，请参阅[高可用性跨界连接与 VNet 到 VNet 连接](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> 各个用户的联合身份验证不依赖任何本地资源。不过，如果跨界连接变得不可用，VNet 中的域控制器将无法接收本地 Active Directory 域服务 (AD DS) 中执行的用户帐户和组更新。若要确保此问题不会发生，可以为跨界连接配置高可用性设置。有关详细信息，请参阅[高可用性跨界连接与 VNet 到 VNet 连接](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 用于特定角色的每对虚拟机都位于自己的子网和可用性集中。
   
@@ -90,7 +90,7 @@ ms.locfileid: "30650115"
   
 - [阶段 1：配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。创建资源组、存储帐户、可用性集和跨界虚拟网络。
     
-- [阶段 2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。创建和配置副本 Windows Server Active Directory (AD) 域控制器和 DirSync 服务器。
+- [阶段 2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。创建和配置副本 Active Directory 域服务 (AD DS) 域控制器和 DirSync 服务器。
     
 - [阶段 3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。创建和配置两个 AD FS 服务器。
     
