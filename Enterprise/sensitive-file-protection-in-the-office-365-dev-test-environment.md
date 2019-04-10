@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '摘要: 配置和演示 Office 365 信息权限管理如何保护您的敏感文件, 即使这些文件发布到错误的 SharePoint Online 网站集也是如此。'
-ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037966"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741298"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的敏感文件保护
 
@@ -32,7 +32,7 @@ Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Onlin
 使用本文中的说明进行操作，你可以启用和测试 Office 365 中的 IRM，以查看 Office 365 试用订阅中的文件是否包含潜在敏感信息。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)，可以在“One Microsoft 云测试实验室指南”堆栈图中直观转到相应的文章。
+> 单击[此处](http://aka.ms/catlgstack)可查看 Office 365 测试实验室指南堆栈中所有文章的直观映射。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>第 1 阶段：构建 Office 365 开发/测试环境
 
@@ -41,7 +41,7 @@ Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Onlin
 如果你想要测试模拟企业中的敏感文件保护，请按照 [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md) 中的说明进行操作。
   
 > [!NOTE]
-> 测试敏感文件保护不需要模拟的企业开发/测试环境，该环境中包括连接到 Internet 的模拟内部网和 Windows Server AD 林的目录同步。它在此处作为一个选项提供，以便你可以测试敏感文件保护，并在代表典型组织的环境中对其进行试验。 
+> 测试敏感文件保护不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试敏感文件保护，并在代表典型组织的环境中对其进行试验。 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>阶段 2：演示受权限保护的站点中的文档如何被泄漏
 
@@ -55,7 +55,7 @@ Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Onlin
     
 - CLIENT1 虚拟机（对于模拟的企业 Office 365 开发/测试环境）。
     
-在“**Windows PowerShell 凭据请求**”对话框中，键入 Office 365 试用订阅中的 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码。
+在 " **Windows PowerShell 凭据请求**" 对话框中, 键入 office 365 试用订阅的 office 365 全局jdoe@contosotoycompany.onmicrosoft.com管理员名称 (示例:) 和密码。
   
 填写组织名称（示例：contosotoycompany）以及你所在位置的两位字符的国家/地区代码，然后从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
   

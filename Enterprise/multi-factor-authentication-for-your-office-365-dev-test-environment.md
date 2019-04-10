@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 摘要：使用发送到 Office 365 开发/测试环境中的智能手机的短信来配置多重身份验证。
-ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573976"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741218"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的多重身份验证
 
@@ -38,7 +38,7 @@ ms.locfileid: "30573976"
 2. 为 User 2 帐户启用并测试多重身份验证。
     
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可以在 One Microsoft 云测试实验室指南堆栈图中直观转到相应的任何文章。
+> 单击[此处](http://aka.ms/catlgstack)可查看 Office 365 测试实验室指南堆栈中所有文章的直观映射。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>第 1 阶段：构建轻型或模拟的企业 Office 365 开发/测试环境
 
@@ -47,7 +47,7 @@ ms.locfileid: "30573976"
 如果要在模拟的企业中测试多重身份验证, 请按照[DirSync for Office 365 开发/测试环境](dirsync-for-your-office-365-dev-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试多重身份验证不需要模拟的企业开发/测试环境，该环境中包括连接到 Internet 的模拟内部网和 Windows Server AD 林的目录同步。它在此处作为一个选项提供，以便你可以测试多重身份验证，并在代表典型组织的环境中对其进行试验。 
+> 测试多重身份验证不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试多重身份验证，并在代表典型组织的环境中对其进行试验。 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>阶段 2：启用和测试 User 2 帐户的多重身份验证
 
@@ -89,7 +89,7 @@ ms.locfileid: "30573976"
     
   - 在**方法**中, 单击 "**通过短信向我发送代码**"。
     
-5. 单击“下一步”。
+5. 单击“**下一步**”。
     
 6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     
@@ -109,5 +109,5 @@ ms.locfileid: "30573976"
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
-[规划 Office 365 部署的多因素身份验证](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Office 365 部署的多重身份验证计划](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

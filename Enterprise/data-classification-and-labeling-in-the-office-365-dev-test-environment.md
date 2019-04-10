@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: '摘要: 使用 Office 365 开发/测试环境中的 Azure 信息保护 (AIP) 客户端配置和演示数据分类和标记。'
-ms.openlocfilehash: ff8533cc6f1a5a34335f6ea469f7a8ec0a6be4da
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573956"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741348"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的数据分类和标记
 
@@ -30,7 +30,7 @@ ms.locfileid: "30573956"
 Azure 信息保护客户端允许您在将文档上载到 Office 365 中的 SharePoint Online 文件夹之前对文档进行分类。 使用本文中的说明, 您可以安装 Azure 信息保护客户端并演示数据分类。 有关详细信息, 请参阅[Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)，可以在“One Microsoft 云测试实验室指南”堆栈图中直观转到相应的文章。
+> 单击[此处](http://aka.ms/catlgstack)可查看 Office 365 测试实验室指南堆栈中所有文章的直观映射。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>第 1 阶段：构建 Office 365 开发/测试环境
 
@@ -140,7 +140,7 @@ Azure 信息保护客户端允许您在将文档上载到 Office 365 中的 Shar
     
 5. 在 SharePoint 组列表中, 单击 "**支持网站集成员**"。
     
-6. 在“人员和组”页中，单击“新建”********。
+6. 在“**人员和组**”页中，单击“**新建**”。
     
 7. 在**共享 "支持网站集"** 中, 键入**everyone**, 单击 "**除外部用户之外的所有人**", 然后单击 "**共享"。**
     
@@ -166,6 +166,6 @@ Azure 信息保护客户端允许您在将文档上载到 Office 365 中的 Shar
 
 [Office 365 和 EMS 开发/测试环境](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
-[Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)（Azure 信息保护）
+[Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 

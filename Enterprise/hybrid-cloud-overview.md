@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 摘要： 了解 Microsoft 混合云的定义和元素。
-ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327344"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741428"
 ---
 # <a name="hybrid-cloud-overview"></a>混合云概述
 
@@ -29,13 +29,13 @@ ms.locfileid: "28327344"
   
 ## <a name="microsoft-hybrid-cloud"></a>Microsoft 混合云
 
-Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用的业务方案，如： 
+Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用的业务方案，如：  
   
 - 从本地 SharePoint 场中的内容和 Office 365 的 SharePoint Online 中的内容获取搜索结果。
     
 - 在查询本地数据存储的 Azure 中运行的移动应用。
     
-- 在 Azure 虚拟机上运行的 Intranet IT 工作负载。
+- 在 Azure 虚拟机上运行的 Intranet IT 工作负荷。
     
 **图 1：Microsoft 混合云的组件**
 
@@ -55,7 +55,7 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
   
 - SaaS
     
-    Saas 与 Microsoft 服务包括 Office 365、 Microsoft Intune 和 Microsoft Dynamics 365。与 Microsoft SaaS 混合云方案的本地服务或应用程序中结合这些服务。例如，Exchange Online 在 Office 365 中运行可与集成业务 2019 的本地部署的 Skype。
+    Microsoft SaaS 服务包括 Office 365、Microsoft Intune 和 Microsoft Dynamics 365。 采用 Microsoft SaaS 的混合云方案将这些服务与本地服务或应用程序相结合。 例如, 在 Office 365 中运行的 Exchange Online 可以与部署在本地的 Skype for business 2019 集成。
     
 - Azure PaaS
     
@@ -73,9 +73,9 @@ Microsoft 混合云是一组将 Microsoft 云平台与本地组件结合使用�
     
     混合云方案的网络包括到 Microsoft 云平台和服务的连接，以及可在峰值负载下保持性能的足够带宽。有关详细信息，请参阅 [面向企业架构师的 Microsoft 云网络](microsoft-cloud-networking-for-enterprise-architects.md)。
     
-- Identity
+- 标识
     
-    SaaS 和 Azure PaaS 混合方案的标识可以包括作为通用标识提供程序的 Azure AD，它可以与本地 Windows Server AD 同步，或与 Windows Sever AD 或其他标识提供程序联盟。还可以将本地标识基础结构扩展到 Azure IaaS。有关详细信息，请参阅 [企业级结构设计版的 Microsoft 云标识](microsoft-cloud-it-architecture-resources.md#identity)。
+    SaaS 和 Azure PaaS 混合方案的标识可包含 Azure AD 作为公用标识提供程序, 该提供程序可以与本地 Active Directory 域服务 (AD ds) 同步, 也可以与 AD ds 或其他标识提供程序联合。 还可以将本地标识基础结构扩展到 Azure IaaS。 有关详细信息，请参阅 [企业级结构设计版的 Microsoft 云标识](microsoft-cloud-it-architecture-resources.md#identity)。
     
 - 安全性
     

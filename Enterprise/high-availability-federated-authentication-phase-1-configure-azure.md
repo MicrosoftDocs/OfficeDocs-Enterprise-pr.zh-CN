@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '摘要: 配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。'
-ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037956"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741308"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "31037956"
 
 开始配置 Azure 组件之前，请填写下表。 为了帮助你完成配置 Azure 的过程，请打印此部分并记下所需的信息，或将此部分复制到文档中进行填写。 对于 VNet 的设置, 请填写表 V。
   
-|**项**|**配置设置**|**说明**|**值**|
+|**Item**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称 (示例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ ms.locfileid: "31037956"
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
-|**项**|**子网名称**|**子网地址空间**|**用途**|
+|**Item**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务 (AD DS) 域控制器和 DirSync server 虚拟机 (vm) 使用的子网。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS vm 使用的子网。  <br/> |
@@ -72,7 +72,7 @@ ms.locfileid: "31037956"
   
 下一步，针对分配给虚拟机和负载平衡器实例的静态 IP 地址填写表 I。
   
-|**项**|**用途**|**子网的 IP 地址**|**值**|
+|**Item**|**用途**|**子网的 IP 地址**|**Value**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ ms.locfileid: "31037956"
   
 对于您希望在最初设置虚拟网络中的域控制器时使用的本地网络中的两个域名系统 (DNS) 服务器, 请填写表 D。与 IT 部门合作以确定此列表。
   
-|**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
+|**Item**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -98,7 +98,7 @@ ms.locfileid: "31037956"
   
 对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
-|**项**|**本地网络地址空间**|
+|**Item**|**本地网络地址空间**|
 |:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -149,7 +149,7 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 为一组唯一资源组名称填写下表。
   
-|**项目**|**资源组名称**|**用途**|
+|**Item**|**资源组名称**|**用途**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |域控制器  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS 服务器  <br/> |
@@ -254,7 +254,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> 各个用户的联合身份验证不依赖任何本地资源。 但是, 如果此站点到站点 VPN 连接不可用, 则 VNet 中的域控制器将不会收到在内部部署 Windows Server AD 中对用户帐户和组所做的更新。 若要确保不会发生这种情况, 可以为站点到站点 VPN 连接配置高可用性。 有关详细信息，请参阅[高可用性跨界连接与 VNet 到 VNet 连接](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> 各个用户的联合身份验证不依赖任何本地资源。 但是, 如果此站点到站点 VPN 连接变得不可用, VNet 中的域控制器将不会收到在本地 Active Directory 域服务中进行的用户帐户和组的更新。 若要确保不会发生这种情况, 可以为站点到站点 VPN 连接配置高可用性。 有关详细信息，请参阅[高可用性跨界连接与 VNet 到 VNet 连接](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 接下来，从此命令的显示内容中，记录用于虚拟网络的 Azure VPN 网关的公用 IPv4 地址。
   
@@ -274,7 +274,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 接下来, 定义三个可用性集的名称。 填写表 A。 
   
-|**项目**|**用途**|**可用性集的名称**|
+|**Item**|**用途**|**可用性集的名称**|
 |:-----|:-----|:-----|
 |1.  <br/> |域控制器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS 服务器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |

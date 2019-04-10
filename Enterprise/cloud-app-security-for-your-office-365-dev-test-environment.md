@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '摘要: 在 office 365 开发/测试环境中配置和演示 office 365 云应用安全性。'
-ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038032"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741258"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的云应用安全
 
@@ -32,7 +32,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
 使用本文中的说明, 可以在 Office 365 试用订阅中启用和测试云应用安全性。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可以在 One Microsoft 云测试实验室指南堆栈图中直观转到相应的任何文章。
+> 单击[此处](http://aka.ms/catlgstack)可查看 Office 365 测试实验室指南堆栈中所有文章的直观映射。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>第 1 阶段：构建轻型或模拟的企业 Office 365 开发/测试环境
 
@@ -63,9 +63,9 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
     
 5. 在“**User 4**”页面上，针对“**角色**”行单击“**编辑**”。
     
-6. 在“**编辑用户角色**”页面上，单击“**全局管理员**”，在“**备选电子邮件地址**”中键入“**user4@contoso.com**”，然后单击“**保存**”。单击“**关闭**”两次。
+6. 在 "**编辑用户角色**" 页上, 单击 "**全局管理员**", 键入**user4@contoso.com** **备选电子邮件地址**, 然后单击 "**保存**"。 单击“**关闭**”两次。
     
-7. 	选择左上角的应用启动器图标，然后选择“**邮件**”。
+7. 选择左上角的应用启动器图标，然后选择“**邮件**”。
     
 8. 等待 30 分钟。 请注意, 收件箱中没有电子邮件通知你将用户4的角色更改为全局管理员。
     
@@ -81,7 +81,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
 
 1. 转到 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)), 并使用全局管理员帐户登录到你的 Office 365 试用订阅。
     
-2. 单击“管理”磁贴****。 在 " **Office 管理中心**" 选项卡上, 单击 "**管理中心" > Security & 合规性**。
+2. 单击“管理员”磁贴****。 在 " **Office 管理中心**" 选项卡上, 单击 "**管理中心" > Security & 合规性**。
     
 3. 在左侧导航窗格中, 单击 "**通知 > 管理高级警报**"。
     
@@ -131,7 +131,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
     
 11. 在“**User 5**”页面上，针对“**角色**”行单击“**编辑**”。
     
-12. 在“**编辑用户角色**”页面上，依次单击“**自定义管理员**”、“**密码管理员**”和“**用户管理管理员**”，在“**备选电子邮件地址**”中键入“**user5@contoso.com**”，然后单击“**保存**”。单击“**关闭**”两次。
+12. 在 "**编辑用户角色**" 页上, 单击 "**自定义管理员**", 单击 "**密码管理员**和**用户管理管理员**", 键入**user5@contoso.com** **备选电子邮件地址**, 然后单击 "**保存**"。 单击“**关闭**”两次。
     
 13. 单击右上方的用户图标，然后单击“**注销**”。 
     

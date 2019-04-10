@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '摘要: 了解 Microsoft 在 Azure 中基于服务 (IaaS) 的云产品的混合体系结构和方案。'
-ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037926"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741358"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>适用于 Azure IaaS 的混合云方案
 
@@ -41,7 +41,7 @@ ms.locfileid: "31037926"
     
 - 标识
     
-    将标识服务器（如 Windows Sever AD 域控制器）添加到一组在 Azure VNet 中运行的服务器，以进行本地身份验证。
+    将标识服务器 (如 Active Directory 域服务 (AD DS) 域控制器) 添加到在 Azure vnet 中运行以进行本地身份验证的服务器集。
     
 - 网络
     
@@ -59,13 +59,13 @@ ms.locfileid: "31037926"
 
 ![Azure IaaS 中的 Office 365 的目录同步服务器](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-在图 2 中，本地网络托管 Windows Server AD 基础结构，并在其边缘设置代理服务器和路由器。 路由器通过站点到站点 VPN 或 ExpressRoute 连接与 azure VNet 边缘的 azure 网关连接。 在 VNet 中, 目录同步服务器运行 Azure AD Connect。
+在图2中, 本地网络承载 AD DS 基础结构, 并在其边缘使用代理服务器和路由器。 路由器通过站点到站点 VPN 或 ExpressRoute 连接与 azure VNet 边缘的 azure 网关连接。 在 VNet 中, 目录同步服务器运行 Azure AD Connect。
   
-office 365 的目录同步服务器将 Windows server AD 中的帐户列表与 Office 365 订阅的 Azure AD 租户同步。
+office 365 的目录同步服务器将 AD DS 中的帐户列表与 Office 365 订阅的 Azure AD 租户同步。
   
 目录同步服务器是一台运行 Azure AD Connect 的基于 Windows 的服务器。 为了加快资源调配或减少组织中的内部部署服务器数, 请在 Azure IaaS 中的虚拟网络 (VNet) 中部署目录同步服务器。
   
-目录同步服务器轮询 Windows server AD 以进行更改, 然后将其与 Office 365 订阅同步。
+目录同步服务器轮询 AD DS 的更改, 然后将其与 Office 365 订阅进行同步。
   
 有关详细信息, 请参阅[在 Microsoft Azure 中部署 Office 365 目录同步](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)。
   
@@ -163,7 +163,7 @@ Azure 中的多层高可用性 LOB 应用程序的另一个示例是联合身份
   
 此配置具有 Azure 中 LOB 应用程序的以下属性： 
   
-- **层:** web 代理服务器、ad FS 服务器和 Windows Server AD 域控制器有层次。
+- **层:** web 代理服务器、ad FS 服务器和 ad DS 域控制器都有层次。
     
 - **负载分布:** 外部 azure 负载平衡器将传入客户端身份验证请求分发到 web 代理, 并将内部 azure 负载平衡器分发到 AD FS 服务器的身份验证请求。
     

@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 摘要：在 Office 365 开发/测试环境中使用示例数据配置并演示 Office 365 高级电子数据展示。
-ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038016"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741449"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的高级电子数据展示
 
@@ -30,7 +30,7 @@ office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
 借助本文中的说明可以创建一个虚构的合同纠纷的一小组数据，并使用高级电子数据展示对数据进行分析。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)，可以在“One Microsoft 云测试实验室指南”堆栈图中直观转到相应的文章。
+> 单击[此处](http://aka.ms/catlgstack)可查看 Office 365 测试实验室指南堆栈中所有文章的直观映射。
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>第 1 阶段：创建 Office 365 开发/测试环境
 
@@ -53,7 +53,7 @@ office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
     
 2. 在“**Outlook 邮件**”选项卡上，单击“**新建**”。
     
-3. 在 " **To**" 中, 键入试用订阅的 User6 帐户的电子邮件地址 ( **User6 @。**<organization name> **. onmicrosoft.com**)。
+3. 在 " **To**" 中, 键入试用订阅的 User6 帐户的电子邮件地址 ( ** user6@。**<organization name> **. onmicrosoft.com**)。
     
 4. 在主题中，键入“**测试电子邮件 1**”。
     

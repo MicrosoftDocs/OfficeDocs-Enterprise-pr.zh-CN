@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '摘要: 在 office 365 开发/测试环境中配置和演示 office 365 高级威胁防护。'
-ms.openlocfilehash: 4ef057480f0ebfb2e64529f39d0db65031b75010
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037936"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741338"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境中的高级威胁防护
 
@@ -156,7 +156,7 @@ Office 365 高级威胁防护 (ATP) 是 Exchange Online Protection (EOP) 的一�
 现在, 您可以使用此环境创建新策略并试用 ATP。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)，可以在“One Microsoft 云测试实验室指南”堆栈图中直观转到相应的文章。
+> 单击[此处](http://aka.ms/catlgstack)可查看 Office 365 测试实验室指南堆栈中所有文章的直观映射。
   
 ## <a name="see-also"></a>另请参阅
 

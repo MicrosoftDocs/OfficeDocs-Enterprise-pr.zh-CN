@@ -1,5 +1,5 @@
 ---
-title: Azure PaaS 的混合云方案
+title: 适用于 Azure PaaS 的混合云方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 摘要： 了解在 Azure 中基于 Microsoft 平台即服务 (PaaS) 云产品的混合体系结构和方案。
-ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123329"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741368"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS 的混合云方案
 
@@ -69,7 +69,7 @@ ms.locfileid: "27123329"
     
 Azure 应用可以使用以下程序提供的凭据：
   
-- Azure AD，它可以与本地标识提供程序（如 Windows Server AD）同步。
+- Azure AD, 可与本地标识提供程序同步, 例如 Active Directory 域服务 (AD DS)。
     
 - 第三方标识提供程序。
     
