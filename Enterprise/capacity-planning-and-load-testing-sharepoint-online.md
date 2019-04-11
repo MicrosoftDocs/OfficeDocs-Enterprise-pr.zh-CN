@@ -1,9 +1,9 @@
 ---
 title: 容量规划和负载测试 SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/14/2019
+ms.date: 04/10/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 本文介绍如何在不执行传统负载测试的情况下部署到 SharePoint Online, 因为这是不允许的。
-ms.openlocfilehash: 16525e461d9c6e04b03ffc19376f9a7d93c6aab1
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
+ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665185"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31765054"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>SharePoint Online 的容量规划和负载测试。
 
@@ -44,7 +44,7 @@ ms.locfileid: "30665185"
 - 用于云消耗量的任何页面/功能/自定义应针对多个位置进行优化, 以便不同区域或区域中的用户具有一致的体验。 云提供了优化, 如内容传递网络 (CDN), 可针对分布式用户群进行优化。
 
 对于 SharePoint Online 中的经典发布页面, 可以使用 "[页面诊断工具](https://aka.ms/perftool)" Chrome 扩展名, 该扩展将帮助分析用户使用的主登录页。
-浏览器或[Fiddler](https://www.telerik.com/download/fiddler)中的 F12 开发人员工具可用于查看页面的重量, 以及应检查和优化整个页面负载影响的呼叫和元素的数量。 可以在 "[优化 SharePoint Online 性能](https://aka.ms/spoperformance)" 文章中查看包括使用内容传递网络和其他优化的建议列表。
+浏览器或[Fiddler](https://www.telerik.com/download/fiddler)中的 F12 开发人员工具可用于查看页面的重量, 以及应检查和优化整个页面负载影响的呼叫和元素的数量。 可以在 "[优化 SharePoint Online 性能](https://aka.ms/tuneSPO)" 文章中查看包括使用内容传递网络和其他优化的建议列表。
 
 ### <a name="wave--phase-approach"></a>波形/相位方法
 用于站点启动的传统的大做法不会有效地允许验证自定义、外部源、服务或流程是否已在适当的规模进行了测试。 作为服务的 SharePoint 还可以根据使用情况和预测使用率来扩展容量, 同时我们不需要你通知网站发布, 您应遵循以下指南以确保成功。
