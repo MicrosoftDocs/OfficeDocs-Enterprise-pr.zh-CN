@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574046"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741318"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -85,11 +85,11 @@ ms.locfileid: "30574046"
   
 ### <a name="user-accounts"></a>用户帐户
 
-所有 Microsoft 云服务的用户帐户均存储在 Active Directory (AD) 租户中，其中包含用户帐户和组。通过使用基于 Windows 服务器的服务 Azure AD Connect，Azure AD 租户可与你现有的 Windows Server AD 帐户同步。这叫做目录同步 (DirSync)。
+所有 Microsoft 云服务的用户帐户均存储在 Active Directory (AD) 租户中，其中包含用户帐户和组。通过使用基于 Windows 服务器的服务 Azure AD Connect，Azure AD 租户可与你现有的 Active Directory 域服务 (AD DS) 帐户同步。这叫做目录同步 (DirSync)。
   
 图 3 显示了某个组织使用包含组织帐户的常见 Azure AD 租户进行多个订阅的示例。
   
-**图 3：组织使用同一 Azure AD 租户进行的多个订阅**
+**图 3：使用同一 Azure AD 租户的组织的多个订阅**
 
 ![组织使用同一个 Azure AD 租户进行多个订阅的示例。](media/Subscriptions/Subscriptions-Fig3.png)
   
@@ -129,13 +129,13 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Office 365、
     
   - 常见 Azure AD 租户中的组织的用户帐户。
     
-多个 Microsoft 云服务订阅可使用同一 Azure AD 租户作为通用标识提供程序。包含本地 Windows Server AD 的同步帐户的中心 Azure AD 租户可为组织提供基于云的标识即服务 (IDaaS)。如图 4 中所示。
+多个 Microsoft 云服务订阅可使用同一 Azure AD 租户作为通用标识提供程序。包含本地 AD DS 的同步帐户的中心 Azure AD 租户可为组织提供基于云的标识即服务 (IDaaS)。如图 4 中所示。
   
 **图 4：适用于组织的同步本地帐户和 IDaaS**
 
 ![适用于组织的标识即服务 (IaaS) IDaaS。](media/Subscriptions/Subscriptions-Fig4.png)
   
-图 4 显示了如何将常见的 Azure AD 租户用于 Microsoft 的 SaaS 云产品、Azure PaaS 应用以及 Azure IaaS 中使用 Azure AD 域服务的虚拟机。Azure AD Connect 将本地 Windows Server AD 林与 Azure AD 租户同步。
+图 4 显示了如何将常见的 Azure AD 租户用于 Microsoft 的 SaaS 云产品、Azure PaaS 应用以及 Azure IaaS 中使用 Azure AD 域服务的虚拟机。Azure AD Connect 将本地 AD DS 林与 Azure AD 租户同步。
   
 有关 Microsoft 云产品/服务中标识集成的详细信息，请参阅[面向企业架构师的 Microsoft 云标识](https://aka.ms/cloudarchidentity)。
   

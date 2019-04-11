@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 摘要：在 Microsoft Azure 中为 Office 365 订阅配置高可用性联合身份验证。
-ms.openlocfilehash: 9e671cabf2e9ca764f4948822da6aa0fb57ef5b5
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 9139019cf53b3a43bcc6d8ebcfbad5d4f7f5506f
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038046"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741268"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>在 Azure 中部署 Office 365 的高可用性联合身份验证
 
@@ -54,7 +54,7 @@ ms.locfileid: "31038046"
 > [!NOTE]
 > 由于此 VNet 连接到本地网络，所以此配置不包括管理子网上的跳转框或监视虚拟机。有关详细信息，请参阅 [Running Windows VMs for an N-tier architecture](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)（运行用于 N 层体系结构的 Windows VM）。 
   
-此配置的结果是，将对所有 Office 365 用户使用联合身份验证，即可以使用自己的 Windows Server Active Directory 凭据（而不是 Office 365 帐户）进行登录。联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
+此配置的结果是，将对所有 Office 365 用户使用联合身份验证，即可以使用自己的 Active Directory 域服务凭据（而不是 Office 365 帐户）进行登录。联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
   
 ## <a name="bill-of-materials"></a>物料清单
 
@@ -72,7 +72,7 @@ ms.locfileid: "31038046"
     
 这里是针对此配置的虚拟机及其默认大小。
   
-|**项**|**虚拟机说明**|**Azure 库图像**|**默认大小**|
+|**项目**|**虚拟机说明**|**Azure 库图像**|**默认大小**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |2.  <br/> |第二个域控制器  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
