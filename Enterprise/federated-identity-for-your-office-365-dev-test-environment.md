@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Office 365 开发/测试环境配置联合身份验证。
-ms.openlocfilehash: b016e168ac1bfcf180c1c4ba04846416dbd098f4
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948633"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741418"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的联合身份
 
@@ -41,7 +41,7 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
   
 - Office 365 E5 试用订阅，从你创建它起 30 天内过期。
     
-- 连接 Internet 的简化组织 Intranet，由 Azure 虚拟网络子网中的五个虚拟机（DC1、APP1、CLIENT1、ADFS1 和 PROXY1）组成。Azure AD Connect 在 APP1 上运行，以便将 Windows Server AD 域中的帐户列表同步到 Office 365。PROXY1 接收传入的身份验证请求。ADFS1 使用 DC1 验证凭据并颁发安全令牌。
+- 连接 Internet 的简化组织 Intranet，由 Azure 虚拟网络子网中的五个虚拟机（DC1、APP1、CLIENT1、ADFS1 和 PROXY1）组成。Azure AD Connect 在 APP1 上运行，以便将 Active Directory 域服务域中的帐户列表同步到 Office 365。PROXY1 接收传入的身份验证请求。ADFS1 使用 DC1 验证凭据并颁发安全令牌。
     
 设置此开发/测试环境分为五个阶段：
   
@@ -61,11 +61,11 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
 > 无法使用 Azure 试用订阅配置此开发/测试环境。 
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>阶段 1：创建包含 DirSync 的模拟企业 Office 365 开发/测试环境
 
-按照[适用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md) 中的说明操作，创建模拟企业 Office 365 开发/测试环境，使用 APP1 作为 DirSync 服务器，并在 Office 365 和 DC1 上的 Windows Server AD 帐户之间同步身份。
+按照[适用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md) 中的说明操作，创建模拟企业 Office 365 开发/测试环境，使用 APP1 作为 DirSync 服务器，并在 Office 365 和 DC1 上的 AD DS 帐户之间同步身份。
   
 接下来，根据当前的域名新建一个公共 DNS 域名，然后将其添加到 Office 365 订阅中。建议命名为 **testlab.**\<公共域>。例如，如果你的公共域名是 contoso.com，请添加公共域名 testlab.contoso.com。
   
@@ -422,7 +422,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
     应该会看到“Microsoft Office 主页”页面。****
     
-此过程证明了 Office 365 试用订阅与 DC1 上托管的 Windows Server AD corp.contoso.com 域进行了联合。下面介绍基本的身份验证过程：
+此过程证明了 Office 365 试用订阅与 DC1 上托管的 AD DS corp.contoso.com 域进行了联合。下面介绍基本的身份验证过程：
   
 1. 在登录帐户名称中使用在阶段 1 创建的联盟域后，Office 365 将浏览器重定向到联合身份验证服务 FQDN 和 PROXY1。
     
@@ -444,7 +444,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   
 ## <a name="see-also"></a>另请参阅
 
-[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[云应用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [基础配置开发/测试环境](base-configuration-dev-test-environment.md)
   
