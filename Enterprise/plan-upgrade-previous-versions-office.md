@@ -1,9 +1,9 @@
 ---
-title: 规划从 Office 2007 或 2010年服务器和客户端升级
+title: 规划从 Office 2007 或2010服务器和客户端升级
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 04/12/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,83 +12,92 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: 如果您使用的 Office 2007 或 Office 2010，则时间来规划您的升级。不会被固定过时相关应用程序。使用这些资源以开始使用您的计划。
-ms.openlocfilehash: e14479e9c313b228dc42f0c3da0d945ddd563a13
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 如果您使用的是 office 2007 或 office 2010, 请随时规划升级。 不会堵塞过期的应用程序。 使用这些资源开始使用您的计划。
+ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
+ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25911406"
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "31838224"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 Office 2010 的服务器和客户端升级
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 office 2010 服务器和客户端升级
 
-如果您的组织使用早期版本的 Office 产品和服务器，这是很好的时间，以开始规划您的升级。Office 2007 产品和服务已到达其结束的支持，和 Office 2010 产品和服务即将其结束的支持。使用本节中的资源开始。
+如果您的组织使用的是较旧版本的 Office 产品和服务器, 这是开始规划升级的良好时间。 office 2007 产品和服务已达到其支持的终止, office 2010 产品和服务即将提供支持的终止。 使用此部分中的资源即可开始。
 
 - [从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)
 
 - [从 Office 2007 服务器和客户端升级](upgrade-from-office-2007-servers-and-products.md)
 
-## <a name="what-happens-if-i-dont-upgrade"></a>如果不升级，则会发生什么情况？
+## <a name="what-happens-if-i-dont-upgrade"></a>如果我不升级, 会发生什么情况？
 
-您可以选择不进行这一次升级。您的内部服务器和应用程序将继续运行。但是，当您不再接收安全更新或支持选项，您或您的组织可能安全轻易地受到。我们强烈建议是否到 Office 365 或您的内部服务器和应用程序的较新版本尽快，规划您的升级。
+你现在可以选择不升级。 您的内部部署服务器和应用程序将继续运行。 但是, 当您不能再收到安全更新或支持选项时, 您或您的组织可能容易受到安全破坏。 强烈建议您尽快规划升级, 以确定是 Office 365, 还是本地服务器和应用程序的较新版本。
 
-## <a name="what-upgrade-options-are-available"></a>哪些升级选项是否可用？      
+## <a name="what-upgrade-options-are-available"></a>有哪些升级选项可用？      
 
-组织有几个选项，请考虑：
+组织可考虑以下几个选项:
 
-- **将移动到 Microsoft 365**： 对于许多客户迁移到云是高效经济的解决方案。安装和维护更容易，而且您获取所有的最新功能和安全更新。若要了解详细信息，请参阅[什么是 Microsoft 365？](#what-is-microsoft-365)（本文中）。
+- **迁移到 Microsoft 365**: 对于许多客户来说, 迁移到云是一种高效且经济高效的解决方案。 设置和维护更为轻松, 您将获得所有最新的功能和安全更新。 若要了解详细信息, 请参阅**[什么是 Microsoft 365？](#what-is-microsoft-365)** (在本文中)。
     
-- **升级您的内部服务器和应用程序。** 如果您在本地使用 Office 产品和服务器应用程序，请参阅[Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)、 [Exchange](exchange-2010-end-of-support.md)、 [SharePoint](upgrade-from-sharepoint-2010.md)、 [Project Server 和 Project Online](project-server-2010-end-of-support.md)和[for Business 的 Skype](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)规划内容。 
+- **升级您的本地服务器和应用程序。** 如果你在本地使用 Office 产品和服务器应用程序, 请参阅以下规划内容:<br/> 
+
     
-- **实现包括 Office 365 的混合解决方案**和您的内部服务器和应用程序。请参阅[Office 365 的混合云解决方案概述。](hybrid-cloud-overview.md)
+    |Office 2007 产品和服务  |Office 2010 产品和服务  |
+    |---------|---------|
+    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap)Desktop | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)Desktop |
+    |[Exchange 2007](exchange-2007-end-of-support.md) |[Exchange 2010](exchange-2010-end-of-support.md) |
+    |[SharePoint 2007](sharepoint-2007-end-of-support.md) |[SharePoint 2010](upgrade-from-sharepoint-2010.md) |
+    |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |
+    |[Project Server 2007](project-server-2007-end-of-support.md) |[Project Server 2010](project-server-2010-end-of-support.md) |
+    |[PerformancePoint Server 2007](pps-2007-end-of-support.md) | |
+ 
+- **实施混合解决方案, 包括 Office 365**和本地服务器和应用程序。 如果你要分阶段移动到云, 或者必须将一些服务器和应用程序保留在本地, 则混合解决方案可能对你的组织非常合适。 请参阅**[Office 365 混合云解决方案概述 ...](hybrid-cloud-overview.md)**。 
     
-### <a name="help-is-available-for-your-organization"></a>为组织提供了帮助
+### <a name="help-is-available-for-your-organization"></a>帮助适用于你的组织
 
-如果您希望帮助规划您的升级，请考虑一个或多个下列选项：
+如果您需要有关规划升级的帮助, 请考虑以下一个或多个选项:
 
-- 工作与合作伙伴或批量许可专家。**[查找您的 Office 365 合作伙伴或经销商](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**。 
+- 与合作伙伴或批量许可专家合作。 **[查找你的 Office 365 合作伙伴或经销商](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**。 
 
-- 如果您的组织购买了一定数量的 Microsoft 云许可证，我们 FastTrack 团队可以帮助您完成安装过程。若要了解详细信息，请参阅[Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)。
+- 如果您的组织购买了一定数量的 Microsoft 云许可证, 我们的 FastTrack 团队可以帮助您完成设置过程。 若要了解详细信息, 请参阅**[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)**。
 
-- 如果您属于较小的组织，或如果您希望处理贵组织的 Office 升级自己，请参阅[升级到最新 Office 客户端的业务用户的 Office 365](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)。 
+- 如果您是较小组织的一部分, 或者如果您希望自己处理组织的 office 升级, 请参阅将**[office 365 for business 用户升级到最新的 Office 客户端](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)**。 
   
-## <a name="im-a-home-user-what-do-i-do"></a>我家庭用户。我该怎么办？
+## <a name="im-a-home-user-what-do-i-do"></a>我是家庭用户。 What do I do?
 
-如果您使用的 Office 2007 或 Office 2010 在家，请考虑以下选项：
+如果使用的是 office 2007 或 office 2010 (在家中), 请考虑以下选项:
 
-- **使用 Office Online 的忙**。创建、 查看和编辑 Office 文件在浏览器中，和从具有 internet 访问权限的任何设备有权访问这些文件。[Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)包括[Word Online](http://go.microsoft.com/fwlink/p/?linkid=746664)、 [Excel Online](http://go.microsoft.com/fwlink/p/?linkid=746665)、[联机 PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666)、 [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674)、 [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675)、[电子邮件](http://go.microsoft.com/fwlink/p/?linkid=746676)、[日历](http://go.microsoft.com/fwlink/p/?linkid=746678)和[OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)。若要开始，请访问[office.com](https://office.com) ，并使用您的[Microsoft 帐户](https://account.microsoft.com/account)登录。（如果您没有 Microsoft 帐户，您可以创建一个在[office.com](https://office.com)上。）
+- **免费使用 Office Online**。 在浏览器中创建、查看和编辑 Office 文件, 并可从任何具有 internet 访问权限的设备访问这些文件。 [Office online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)包括[Word Online](http://go.microsoft.com/fwlink/p/?linkid=746664)、 [Excel Online](http://go.microsoft.com/fwlink/p/?linkid=746665)、 [PowerPoint online](http://go.microsoft.com/fwlink/p/?linkid=746666)、 [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674)、 [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675)、[电子邮件](http://go.microsoft.com/fwlink/p/?linkid=746676)、[日历](http://go.microsoft.com/fwlink/p/?linkid=746678)和[OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)。 若要开始, 请访问[office.com](https://office.com) , 并使用你的[Microsoft 帐户](https://account.microsoft.com/account)登录。 (如果你没有 Microsoft 帐户, 可以在[office.com](https://office.com)创建一个。)
 
-- **供家庭使用试用 Office 365**。[Office 365 家庭](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm)或[Office 365 个人](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)订阅之间进行选择。和注册试用。注册，并在 Windows 或 Mac 计算机、 您 iOS 或 Android 智能手机，和您 iOS 或 Android 平板电脑上安装 Office 的最新版本。与 Office 365 将享受 OneDrive 云存储，您将获取移动 Skype 调用的 60 分钟和固定电话号码，每月以及您将获取很多其他重要的功能。[请参阅 Office 365 计划和定价的主页](https://products.office.com/explore-office-for-home)。
+- **试用 Office 365 供家庭使用**。 查看[要求](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), 然后在[office 365 家庭](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm)版或[office 365 个人](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)版中进行选择。 启动试用版, 了解 Office 365 的工作原理。 使用 Office 365, 你将享受 OneDrive 的云存储, 你每月将会收到60分钟的 Skype 呼叫和座机号码, 你将获得许多其他有用的功能。 若要了解详细信息, 请参阅[使用 office 365 获取最大限度的 office](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)。
     
-- **购买 Office 主页&amp;学生 2016年**。如果选择此选项，您将进行一次性购买，然后安装[Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc)或[Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac)上的 Office 2016。这不是订阅;它是一台计算机的一次性、 永久使用许可证。
+- **购买 Office 家庭&amp;学生版**。 如果选择此选项, 你将进行一次性购买, 然后在你的 Windows 电脑或 Mac 上安装 Office。 这不是订阅;它是一台计算机的一次性、永久使用许可证。 查看[要求](http://office.com/systemrequirements), 然后选择要使用的版本。
+    - 如果你的 windows 电脑运行的是 windows 10, 请考虑获取[Office 家庭 & 学生 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)。
+    - 如果你的 windows 电脑运行的是 windows 7、8或 8.1, 并且你现在不升级到 Windows 10, 请考虑从授权的经销商处获取 Office Home & 学生版 2016 (或其他版本的 Microsoft Office)。
 
-您还可以选择不此时升级。Office 应用程序将继续运行。但是，升级将提供访问新的和改进功能，包括安全更新的功能。 
+你也可以选择现在不升级。 你的 Office 应用将继续运行。 ([此处](https://go.microsoft.com/fwlink/p/?linkid=2085724)提供了 Office 支持日期的日程表。)但是, 升级将允许您访问新的和改进的功能, 包括安全更新。 
    
 ## <a name="what-is-microsoft-365"></a>什么是 Microsoft 365？
 
-Microsoft 365 是 Office 365，Windows 10 和企业移动 + 安全 (EMS) 提供为所有人都是创作和提供强大功能的完整、 智能解决方案的组合在一起，安全地。 
+[Microsoft 365](https://www.microsoft.com/microsoft-365)是 Office 365、Windows 10 和企业移动性 + 安全性 (EMS) 的组合, 它提供了一个完整的智能解决方案, 可让每个人都具有创造性且安全地协同工作。 
   
-尽管您可以将您的 Office 2007 或 Office 2010 的服务器和客户端迁移到 Office 365，Microsoft 365 包括许可证和功能，以确保您的组织正在从事最新的 Windows 操作系统和设备 — 包括Windows、 iOS 和 Android — 是注册和保留与需要身份验证和数据保护策略安全。此外，Windows 10 和 Office 365 客户端软件更新上可持续要包含的最新功能和安全更新。
+虽然您可以将 office 2007 或 office 2010 服务器和客户端迁移到 office 365, 但 Microsoft 365 包含的许可证和功能可确保您的组织使用最新的 Windows 操作系统和设备 (包括Windows、iOS 和 Android —使用需要身份验证和数据保护的策略进行了注册并保持安全。 此外, 还会不断更新 Windows 10 和 Office 365 客户端软件, 以包括最新的功能和安全更新。
   
-Microsoft 365 是数字转换与不断改善设备和生产力体验，启用和保护 Microsoft 云业务的方式。
+microsoft 云可以通过 microsoft 云提供不断改进的设备和工作效率体验, 以数字方式为你的企业进行数字转换。
   
-|**资源**|**说明**|
+|**Resource**|**说明**|
 |:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |获取 Microsoft 365 在不同版本的信息。  <br/> |
-|[Microsoft 365 业务文档](https://docs.microsoft.com/microsoft-365/business/) <br/> |获得小型和中型企业的 Microsoft 365 版本的详细的信息。  <br/> |
-|[Microsoft 365 教育版文档](https://docs.microsoft.com/microsoft-365/education/) <br/> |获得的教育组织在版本的 Microsoft 365 的详细的信息。  <br/> |
-|[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |获取企业组织在版本的 Microsoft 365 的详细的信息。  <br/> |
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |获取有关不同版本的 Microsoft 365 的信息。  <br/> |
+|[Microsoft 365 业务文档](https://docs.microsoft.com/microsoft-365/business/) <br/> |获取适用于中小型企业的 Microsoft 365 版本的详细信息。  <br/> |
+|[Microsoft 365 教育文档](https://docs.microsoft.com/microsoft-365/education/) <br/> |获取有关适用于教育组织的 Microsoft 365 版本的详细信息。  <br/> |
+|[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |获取有关适用于企业组织的 Microsoft 365 版本的详细信息。  <br/> |
 
    
 ## <a name="related-topics"></a>相关主题
   
 [Microsoft 生命周期策略](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Office 退休组 （Microsoft 技术社区）](https://go.microsoft.com/fwlink/?linkid=842065)
+[Office 退休组 (Microsoft 技术社区)](https://go.microsoft.com/fwlink/?linkid=842065)
 
-[从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)
-
-[从 Office 2007 服务器和客户端升级](upgrade-from-office-2007-servers-and-products.md)
 
 
 
