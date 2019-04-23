@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 摘要：使用适用于 Microsoft Exchange Online 的远程 Windows PowerShell 检索单个客户租户的报告。
-ms.openlocfilehash: 8df88e8b00cbd8e14558e423f41f45ea5f9bf26a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 478cd8736a837dae571e20f38187be087b48231a
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992822"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴检索客户报告数据
 
@@ -26,8 +26,7 @@ ms.locfileid: "31001755"
   
 在本文中，您使用适用于 Exchange Online 的远程 Windows PowerShell 连接到单个客户租赁并检索报告。默认情况下，Windows PowerShell 不支持聚合多个客户租赁中的报告数据。通过此过程检索的报告仅适用于您连接到的  _DelegatedOrg_。
   
-如果您想要检索所有客户租赁的一个报告，可以在[通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴聚合客户报告数据](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)中找到执行此操作的示例脚本。
-  
+ 
 ## <a name="before-you-begin"></a>准备工作
 
 - 您需要使用远程 Windows PowerShell 连接到您的 Exchange Online 租户。有关说明，请参阅[通过远程 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴连接到 Exchange Online 租户](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)。

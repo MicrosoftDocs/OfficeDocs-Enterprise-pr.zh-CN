@@ -3,60 +3,6 @@
 
 
 
-## <a name="week-of-march-11-2019"></a>2019年3月11日一周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 3/11/2019 | [Microsoft 云 IT 体系结构资源](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 修改内容 |
-| 3/11/2019 | [查看用户帐户与 Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | 修改内容 |
-| 3/11/2019 | [需要使用 Office 365 PowerShell 的原因](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | 修改内容 |
-| 3/13/2019 | [用于 Office 365 开发/测试环境的高级电子数据展示](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [Office 365 开发/测试环境中的高级威胁防护](/Office365/Enterprise/advanced-threat-protection-for-your-office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [使用云采用测试实验室指南 (tlg) 测试 Office 365](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | 修改内容 |
-| 3/13/2019 | [用于 Office 365 开发/测试环境的云应用安全](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [Office 365 开发/测试环境中的数据分类和标记](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [在 Microsoft Azure 中部署 Office 365 目录同步](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 修改内容 |
-| 3/13/2019 | [Office 365 开发/测试环境的目录同步](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [Office 365 和 Dynamics 365 开发/测试环境的 Exchange Online 集成](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | 修改内容 |
-| 3/13/2019 | [适用于 Microsoft 云连接的 ExpressRoute](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | 修改内容 |
-| 3/13/2019 | [用于 Office 365 开发/测试环境的联合身份](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [面向企业架构师的 Microsoft 云网络](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | 修改内容 |
-| 3/13/2019 | [用于 Office 365 开发/测试环境的多重身份验证](/Office365/Enterprise/multi-factor-authentication-for-your-office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [Office 365 的网络和迁移规划](/Office365/Enterprise/network-and-migration-planning) | 修改内容 |
-| 3/13/2019 | [Office 365 和 Dynamics 365 开发/测试环境](/Office365/Enterprise/office-365-and-dynamics-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [Office 365 开发/测试环境](/Office365/Enterprise/office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [在单个 Windows PowerShell 窗口中连接所有 Office 365 服务](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | 修改内容 |
-| 3/13/2019 | [使用 Office 365 PowerShell 管理 Exchange Online](/Office365/Enterprise/powershell/manage-exchange-online-with-office-365-powershell) | 修改内容 |
-| 3/13/2019 | [使用 Office 365 PowerShell 管理 SharePoint Online](/Office365/Enterprise/powershell/manage-sharepoint-online-with-office-365-powershell) | 修改内容 |
-| 3/13/2019 | [Manage SharePoint Online site groups with Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-site-groups-with-powershell) | 修改内容 |
-| 3/13/2019 | [使用 Office 365 PowerShell 管理 SharePoint Online 用户和组](/Office365/Enterprise/powershell/manage-sharepoint-users-and-groups-with-powershell) | 修改内容 |
-| 3/13/2019 | [使用 Office 365 PowerShell 管理用户帐户和许可证](/Office365/Enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell) | 修改内容 |
-| 3/13/2019 | [使用 PowerShell 执行到 Office 365 的直接转换迁移](/Office365/Enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365) | 修改内容 |
-| 3/13/2019 | [使用 PowerShell 执行到 Office 365 的暂存迁移](/Office365/Enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365) | 修改内容 |
-| 3/13/2019 | [需要使用 Office 365 PowerShell 的原因](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | 修改内容 |
-| 3/13/2019 | [保护 Office 365 全局管理员帐户](/Office365/Enterprise/protect-your-global-administrator-accounts) | 修改内容 |
-| 3/13/2019 | [Office 365 开发/测试环境中的敏感文件保护](/Office365/Enterprise/sensitive-file-protection-in-the-office-365-dev-test-environment) | 修改内容 |
-| 3/13/2019 | [适用于 Microsoft 云产品/服务的订阅、许可证、帐户和租户](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | 修改内容 |
-| 3/13/2019 | [唯一 Microsoft 云开发/测试环境](/Office365/Enterprise/the-one-microsoft-cloud-dev-test-environment) | 修改内容 |
-| 3/14/2019 | [内容分发网络](/Office365/Enterprise/content-delivery-networks) | 修改内容 |
-| 3/14/2019 | [Office 365 视频网络常见问题](/Office365/Enterprise/office-365-video-networking-faq) | 修改内容 |
-| 3/15/2019 | [将核心数据移动到新的 Office 365 数据中心信息](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 修改内容 |
-| 3/15/2019 | [数据移动期间和数据移动之后](/Office365/Enterprise/during-and-after-your-data-move) | 修改内容 |
-| 3/15/2019 | [基础配置开发/测试环境](/Office365/Enterprise/base-configuration-dev-test-environment) | 修改内容 |
-| 3/15/2019 | [将本地网络连接到 Microsoft Azure 虚拟网络](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 修改内容 |
-| 3/15/2019 | [在 Azure 中为 Office 365 部署高可用性联合身份验证](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 修改内容 |
-| 3/15/2019 | [在 Microsoft Azure 中部署 Office 365 目录同步](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 修改内容 |
-| 3/15/2019 | [用于 Office 365 开发/测试环境的联合身份](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | 修改内容 |
-| 3/15/2019 | [高可用性联合身份验证阶段1配置 Azure](/Office365/Enterprise/high-availability-federated-authentication-phase-1-configure-azure) | 修改内容 |
-| 3/15/2019 | [高可用性联合身份验证阶段2配置域控制器](/Office365/Enterprise/high-availability-federated-authentication-phase-2-configure-domain-controllers) | 修改内容 |
-| 3/15/2019 | [高可用性联合身份验证阶段3配置 AD FS 服务器](/Office365/Enterprise/high-availability-federated-authentication-phase-3-configure-ad-fs-servers) | 修改内容 |
-| 3/15/2019 | [高可用性联合身份验证阶段4配置 web 应用程序代理](/Office365/Enterprise/high-availability-federated-authentication-phase-4-configure-web-application-pro) | 修改内容 |
-| 3/15/2019 | [Office 365 开发/测试环境](/Office365/Enterprise/office-365-dev-test-environment) | 修改内容 |
-| 3/15/2019 | [如何请求数据移动](/Office365/Enterprise/request-your-data-move) | 修改内容 |
-| 3/15/2019 | [Azure 中的模拟跨界虚拟网络](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | 修改内容 |
-
-
 ## <a name="week-of-march-18-2019"></a>2019 年 3 月 18 日所在周
 
 
@@ -198,4 +144,16 @@
 | 2019 年 4 月 10 日 | [Exchange 多地理位置](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | 修改内容 |
 | 4/12/2019 | [Microsoft 云 IT 体系结构资源](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 修改内容 |
 | 4/12/2019 | [规划从 Office 2007 或2010服务器和客户端升级](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 修改内容 |
-| 4/12/2019 | [可帮助您从 Office 2007 服务器和客户端进行升级的资源](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | 修改时间 |
+| 4/12/2019 | [可帮助您从 Office 2007 服务器和客户端进行升级的资源](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | 修改内容 |
+
+
+## <a name="week-of-april-15-2019"></a>2019年4月15日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 4/18/2019 | [如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 修改内容 |
+| 4/18/2019 | [使用 Office 365 PowerShell 向用户帐户分配许可证](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 修改内容 |
+| 4/18/2019 | [将角色分配给用户帐户与 Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 修改内容 |
+| 4/18/2019 | [使用 ExpressRoute for Office 365 路由](/Office365/Enterprise/routing-with-expressroute) | 修改内容 |
+| 4/18/2019 | [使用集中部署 PowerShell cmdlet 管理加载项](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) 。 | 修改时间 |
