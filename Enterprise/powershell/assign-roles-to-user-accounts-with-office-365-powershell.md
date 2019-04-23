@@ -3,7 +3,7 @@ title: 将角色分配给用户帐户与 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/31/2019
+ms.date: 04/18/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,86 +14,98 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 摘要： 使用 Office 365 PowerShell，可以将角色分配给用户帐户。
-ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
-ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
+description: '摘要: 使用 Office 365 PowerShell 向用户帐户分配角色。'
+ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957703"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>将角色分配给用户帐户与 Office 365 PowerShell
 
-您可以快速、 方便地向分配角色使用 Office 365 PowerShell 中的用户帐户。
+您可以使用 Office 365 PowerShell 快速而轻松地向用户帐户分配角色。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-第一个、[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)使用全局管理员帐户。
+首先, 使用全局管理员帐户[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
-接下来，确定要向角色添加用户帐户的登录名 (示例： fredsm@contoso.com)。这也称为是用户主体名称 (UPN)。
+接下来, 确定要添加到角色的用户帐户的登录名 (例如: fredsm@contoso.com)。 这也称为用户主体名称 (UPN)。
 
-接下来，确定角色的名称。使用此命令列出您可以使用 PowerShell 分配的角色。
+接下来, 确定角色的名称。 [在 Azure Active Directory 中使用此管理员角色权限列表](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
-````
-Get-AzureADDirectoryRole
-````
+>[!Note]
+>请注意本文中的注释。 对于 Azure AD PowerShell, 某些角色名称不同。 例如, Microsoft 365 管理中心中的 "sharepoint 管理员" 角色为 Azure AD PowerShell 命名为 "sharepoint 服务管理员"。
+>
 
-接下来，填写的登录和角色名称，然后运行以下命令。
+接下来, 填写登录名和角色名称, 并运行这些命令。
   
 ```
 $userName="<sign-in name of the account>"
 $roleName="<role name>"
-Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+}
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-下面是一个已完成的命令集的示例：
+下面的示例展示了已完成的命令集:
   
 ```
 $userName="belindan@contoso.com"
-$roleName="Lync Service Administrator"
-Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$roleName="SharePoint Service Administrator"
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+}
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-若要显示的特定角色的用户名称列表，请使用以下命令。
+若要显示特定角色的用户名列表, 请使用这些命令。
 
 ```
 $roleName="<role name>"
 Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-第一个、[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)使用全局管理员帐户。
+首先, 使用全局管理员帐户[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
-### <a name="for-a-single-role-change"></a>单个角色更改
+### <a name="for-a-single-role-change"></a>对于单个角色更改
 
-确定以下信息：
+确定下列事项：
   
-- 您想要配置用户帐户。
+- 要配置的用户帐户。
     
-    若要指定的用户帐户，您必须确定其显示名称。要获取的完整列表帐户，请使用以下命令：
+    若要指定用户帐户, 必须确定其显示名称。 若要获取完整的列表帐户, 请使用以下命令:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    此命令列出的用户帐户，按显示名称，一次一屏的显示名称。可以使用**其中**cmdlet 来筛选一较小的列表。下面是一个示例：
+    此命令将列出用户帐户的显示名称, 按显示名称排序, 一次显示一个屏幕。 您可以使用**Where** cmdlet 将列表筛选为一个较小的集。 如以下示例所示：
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
-    此命令将列出其显示名称开头"John"的用户帐户。
+    此命令仅列出其显示名称以 "John" 开头的用户帐户。
     
-- 您要分配的角色。
+- 要分配的角色。
     
-    要显示可用的角色，您可以分配给用户帐户的列表，请使用以下命令：
+    若要显示可分配给用户帐户的可用角色的列表, 请使用以下命令:
     
   ```
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-一旦您已确定的帐户的显示名称和角色的名称，使用这些命令将角色分配给该帐户：
+确定帐户的显示名称和角色的名称后, 请使用以下命令将角色分配给帐户:
   
 ```
 $dispName="<The Display Name of the account>"
@@ -101,9 +113,9 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-复制命令，并将它们粘贴到记事本。**$DispName**和 **$roleName**变量的值替换的说明文本、 删除\<和 > 字符，并将保留为引号。复制已修改的行并将它们粘贴到您的 Windows Azure Active Directory 模块用于 Windows PowerShell 窗口来运行它们。或者，也可以使用 Windows PowerShell 集成脚本环境 (ISE)。
+复制命令并将其粘贴到记事本中。 对于 **$dispName**和 **$roleName**变量, 将说明文本替换为它们的值, 删除\<和 > 字符, 并保留引号。 复制修改过的行并将其粘贴到 windows PowerShell 的 windows Azure Active Directory 模块中, 以运行它们。 或者, 也可以使用 Windows PowerShell 集成脚本环境 (ISE)。
   
-下面是一个已完成的命令集的示例：
+下面的示例展示了已完成的命令集:
   
 ```
 $dispName="Scott Wallace"
@@ -111,35 +123,35 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-### <a name="for-multiple-role-changes"></a>多个角色更改
+### <a name="for-multiple-role-changes"></a>对于多个角色更改
 
-确定以下信息：
+确定下列事项：
   
-- 哪些用户帐户想要配置。
+- 要配置的用户帐户。
     
-    若要指定的用户帐户，您必须确定其显示名称。要获取列表帐户，请使用以下命令：
+    若要指定用户帐户, 必须确定其显示名称。 若要获取列表帐户, 请使用以下命令:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    此命令将列出所有用户帐户，按显示名称，一次一个屏幕显示名称。可以使用**其中**cmdlet 来筛选一较小的列表。下面是一个示例：
+    此命令将列出所有用户帐户的显示名称, 按显示名称排序, 一次显示一个屏幕。 您可以使用**Where** cmdlet 将列表筛选为一个较小的集。 如以下示例所示：
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
-    此命令将列出其显示名称开头"John"的用户帐户。
+    此命令仅列出其显示名称以 "John" 开头的用户帐户。
     
 - 要分配给每个用户帐户的角色。
     
-    要显示可用的角色，您可以分配给用户帐户的列表，请使用以下命令：
+    若要显示可分配给用户帐户的可用角色的列表, 请使用以下命令:
     
   ```
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-接下来，创建具有显示名称和角色的以逗号分隔值 (CSV) 文本文件名称字段。下面是一个示例：
+接下来, 创建一个包含 "DisplayName" 和 "角色名称" 字段的逗号分隔值 (CSV) 文本文件。 如以下示例所示：
   
 ```
 DisplayName,RoleName
@@ -148,7 +160,7 @@ DisplayName,RoleName
 "Alice Smithers","Lync Service Administrator"
 ```
 
-接下来，填写 CSV 文件的位置，然后在 PowerShell 命令提示符处运行生成命令。
+接下来, 填写 CSV 文件的位置, 并在 PowerShell 命令提示符处运行生成的命令。
   
 ```
 $fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"

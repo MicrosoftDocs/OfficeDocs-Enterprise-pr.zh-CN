@@ -1,5 +1,5 @@
 ---
-title: 新式身份验证对于 office 2013 和 office 2016 客户端应用程序的工作方式
+title: 适用于 Office 2013 和 Office 2016 客户端应用的新式验证工作原理
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -21,17 +21,20 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 了解 office 365 新式验证在 office 2013 和2016客户端应用中的工作方式不同。
-ms.openlocfilehash: 0e7b1a91a13fdd1ea5bb5fd3b42fcda60c704d6f
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: 5e42ec2fcf8f27990af187e4ad26ba65909ac709
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957693"
 ---
-# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>新式身份验证对于 office 2013 和 office 2016 客户端应用程序的工作方式
+# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>适用于 Office 2013 和 Office 2016 客户端应用的新式验证工作原理
 
 阅读本文, 了解 office 2013 和 Office 2016 客户端应用程序如何根据 office 365 租户 (适用于 Exchange online、SharePoint online 和 Skype for business Online) 上的身份验证配置使用新式身份验证功能。
-  
+
+> [!NOTE]
+> 旧版客户端应用 (例如 office 2010 和 office for Mac 2011) 不支持新式身份验证, 只能与基本身份验证一起使用。
+
 ## <a name="availability-of-modern-authentication-for-office-365-services"></a>Office 365 服务的新式验证的可用性
 
 对于 Office 365 服务, 新式验证的默认状态为:
