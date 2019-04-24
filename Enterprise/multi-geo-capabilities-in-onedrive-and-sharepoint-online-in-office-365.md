@@ -11,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 利用 OneDrive Online 中的多地理位置功能将 Office 365 的触及范围扩展到多个地理区域。
-ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: ce5a846391fd62daafd174baea4144ac1d1aba37
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992842"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive 和 SharePoint Online 中的多地理位置功能
 
@@ -30,7 +30,9 @@ ms.locfileid: "30948583"
 
 管理员可依据用户的 PDL 配置每个用户的 OneDrive，或[将其移至](move-onedrive-between-geo-locations.md)附属位置。 个人文件随后保留在该地理位置中，不过可以将这些文件与其他地理位置中的用户共享。
 
-## <a name="sites-and-groups"></a>站点和组
+## <a name="sharepoint-sites-and-groups"></a>SharePoint 网站和组
+
+可通过 SharePoint 管理中心管理多地理位置功能。 可在[相应的博客文章](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)中找到详细信息。
 
 当用户创建 SharePoint 组连接的站点时，将使用他们的 PDL 来确定在其中创建站点及其关联组邮箱的地理位置。 （如果尚未设置用户的 PDL 值，或已将其设置为未配置为附属位置的地理位置，则会在中心位置创建站点和邮箱。）
 
@@ -46,7 +48,7 @@ ms.locfileid: "30948583"
 
 ## <a name="see-also"></a>另请参阅
 
-[亦称 ms/GetMultiGeo ](https://Aka.ms/GetMultiGeo)
+[SharePoint 和 Office 365 组中的多地理位置功能](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
 
 [管理多地理位置环境](administering-a-multi-geo-environment.md)
 
