@@ -37,7 +37,6 @@
 ### [使用 Windows PowerShell 为委派访问权限合作伙伴将域添加到客户端租赁](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [通过远程 Windows PowerShell 为委派访问权限合作伙伴连接到 Exchange Online](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [通过 Windows PowerShell 为委派访问权限合作伙伴检索客户报告数据](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-### [通过 Windows PowerShell 为委派访问权限合作伙伴聚合客户报告数据](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
 ## [管理 Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [管理 Skype for Business Online 策略](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [分配每用户 Skype for Business Online 策略](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
