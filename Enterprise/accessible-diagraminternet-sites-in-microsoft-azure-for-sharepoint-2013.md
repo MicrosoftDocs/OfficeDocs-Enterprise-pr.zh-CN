@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: 本文是名为“Microsoft Azure for SharePoint 2013 中的 Internet 网站”的图的可访问文本版本。
 ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17503045"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487688"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>可访问的图 - Microsoft Azure for SharePoint 2013 中的 Internet 站点
 
-**摘要：** 这篇文章是图为 SharePoint 2013 名 Microsoft Azure 中的 Internet 站点的辅助功能的文本版本。
+**摘要:** 本文是 Microsoft Azure for SharePoint 2013 中名为 Internet 站点的图表的可访问文本版本。
   
 此海报介绍并演示了面向公众的 Internet 网站如何从针对客户帐户的云弹性和 Azure AD 中受益。有六个不同的方案描述了 Internet 网站如何从 Azure 中受益：  
   
@@ -38,15 +38,15 @@ ms.locfileid: "17503045"
     
 ## <a name="design-and-size-the-farm-topology"></a>设计服务器场拓扑并调整其大小
 
-使用 SharePoint 2013 在 TechNet 上的拓扑结构、 容量和性能指南设计服务器场拓扑结构。 
+在 TechNet 上使用 SharePoint 2013 的拓扑、容量和性能指南来设计服务器场拓扑。 
   
 确保您设计的服务器场满足容量和性能目标。  
   
 ### <a name="example-medium-internet-sites-farm-85-page-views-per-second"></a>示例：中等 Internet 网站场（每秒约 85 个页面视图）
 
-此服务器场提供了容错功能的 SharePoint 2013 搜索服务器场拓扑结构优化的 corpus 3,400,000 项。 
+此服务器场提供了容错的 SharePoint 2013 搜索服务器场拓扑, 该拓扑是针对包含3400000项的文档集进行优化的。 
   
-示例场处理 100-200 每秒，具体取决于所选语言的文档，它接纳每秒第二个和 100 查询每 85 页视图。 
+示例服务器场每秒处理100-200 个文档, 具体取决于语言, 并且每秒有85个页面视图, 每秒100个查询。 
   
 随附的图显示了具有三类服务器的中型 Internet 网站：  
   
@@ -84,7 +84,7 @@ SharePoint 服务器场可能需要在 Azure 平台中针对可用性集进行�
     
 - 三台应用程序服务器的配置不相同。这些服务器角色需要针对 Azure 中的可用性集进行优化。 
     
-### <a name="before"></a>之前
+### <a name="before"></a>Before
 
 图中的顶部显示了在针对 Azure 中的可用性集进行优化之前的 SharePoint 服务器场。图中三台主机应用程序服务器的配置不相同。组件的数量取决于服务器场的性能和容量目标。三台服务器的配置如下所示：  
   
@@ -94,9 +94,9 @@ SharePoint 服务器场可能需要在 Azure 平台中针对可用性集进行�
     
 - 主机 F 应用程序服务器配置了爬网和内容处理角色。  
     
-### <a name="after"></a>之后
+### <a name="after"></a>段后
 
-图中的这一部分显示在 Azure 的 SharePoint 场后它已被微调的可用性设置。Azure 的适应这种体系结构，我们将在所有三个服务器之间复制的四个组件。这增加了超出所需的性能和容量的组件数。代价是，这种设计可以确保高可用性在 Azure 平台中的所有四个组件的这些三个虚拟机分配到可用性组时。 
+图中的此部分显示已针对 Azure 中的可用性集进行微调后的 SharePoint 服务器场。 要调整 Azure 的此体系结构，我们将在所有三个服务器之间复制这四个组件。 这将增加除性能和容量所需组件以外的组件数量。 权衡点是当将这三个虚拟机分配至某个可用性集时，此设计确保了 Azure 平台中所有四个组件的高可用性。 
   
 三台服务器均配置为全部具有爬网、管理、分析和内容处理角色。  
   
@@ -104,9 +104,9 @@ SharePoint 服务器场可能需要在 Azure 平台中针对可用性集进行�
 
 所有 SharePoint 解决方案都需要 Windows Active Directory 域服务 (AD DS)。目前，Azure 中的 SharePoint 解决方案具有两个选项。   
   
-- 选项 1： 专用的域 — — 您可以部署到 Azure 支持 SharePoint 场专门和独立的域。这是一个不错的选择，为面向公众的 Internet 站点。 
+- 选项 1: 专用域-您可以将专用域和独立域部署到 Azure 以支持 SharePoint 场。 这是面向公众的 Internet 站点的最佳选择。 
     
-- 选项 2： 扩展通过站点到站点 VPN 连接的内部域。扩展的内部域通过站点到站点 VPN 连接时，用户会访问 SharePoint 场当作承载的内部部署。您可以利用您的现有活动目录和 DNS 实现。 
+- 选项 2: 通过站点到站点 VPN 连接扩展本地域。 当您通过站点到站点 VPN 连接扩展内部部署域时，用户将访问 SharePoint 服务器场，就像它在内部部署中承载一样。 您可以利用您现有的 Active Directory 和 DNS 实现。 
     
 ## <a name="design-for-identity-management-zones-and-authentication"></a>身份管理、区域和身份验证的设计
 
@@ -148,11 +148,11 @@ SharePoint 服务器场可能需要在 Azure 平台中针对可用性集进行�
     
 - 配置 Internet 区域以进行匿名访问。 
     
-不要使用所有已通过身份验证的用户被配置为使用默认区域的两个区域设计。 
+请勿使用配置为使用默认区域的所有经过身份验证的用户的双区域设计。 
   
 随附的图显示了将内部帐户和客户帐户区分开来的三区域设计。   
   
-访问者和客户访问 SharePoint 2013 场内 Azure AD 租户通过 web 应用程序在两个区域之一。包括两个区域： 
+访问者和客户通过两个区域之一中的 web 应用程序访问 SharePoint 2013 场中的 Azure AD 租户。 两个区域包括： 
   
 - 区域：针对匿名用户的 Internet  
     
@@ -166,7 +166,7 @@ SharePoint 服务器场可能需要在 Azure 平台中针对可用性集进行�
   
 随附的图显示了以下方案：  
   
-当与 Azure Active Directory 集成 SharePoint 2013，Azure 访问控制服务 (ACS) 将有两个目的： 
+将 SharePoint 2013 与 Azure Active Directory 集成时, azure 访问控制服务 (ACS) 有两个用途: 
   
 -   Azure AD 使用 SAML 2.0，SharePoint 仅适用于 SAML 1.1。ACS 了解这两种格式，并充当在 SharePoint 和 Azure AD 之间转换令牌格式的中介。   
     
@@ -198,9 +198,9 @@ Web 应用程序和根网站 URL 
     
 随附的图显示了应用程序池服务，例如使用 Web 应用程序与网站集交互的 Search。所示网站集包括：  
   
-- 基于路径的网站集，位于 http://internal:8000（根网站）。  
+- 位于http://internal:8000 (根网站) 的基于路径的网站集。 
     
-- 爬网：基于主机的网站集，位于以下类似地址：https://authoring.contoso.com:8000。  
+- 爬网: 位于地址 (如) https://authoring.contoso.com:8000上的以主机命名的网站集。 
     
 - 查询：两个单独的主机命名网站集，位于以下类似地址：  
     

@@ -16,11 +16,11 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些企业网络限制对通用 internet 位置的访问, 或者包括大量 backhaul 或网络流量的处理。 为了确保这些网络上的计算机可以访问 office 365, 网络和代理管理员需要管理组成 office 365 终结点列表的 fqdn、url 和 IP 地址的列表。 需要将它们添加到直接路由、代理旁路、和/或防火墙规则和 PAC 文件中, 以确保网络请求能够到达 Office 365。
 ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458352"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487080"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -70,7 +70,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 您可以传递给脚本的参数有很多:
 
-|**参数**|**描述**|
+|**参数**|**说明**|
 |:-----|:-----|
 |**ClientRequestId** <br/> |这是必需的, 它是传递给 web 服务的 GUID, 表示进行呼叫的客户端计算机。 <br/> |
 |**实例** <br/> |默认为 "全球" 的 Office 365 服务实例。 也传递到 web 服务。 <br/> |
@@ -221,6 +221,6 @@ Office 365 套件分为主要的服务领域。 可以有选择地为连接启�
   
 [Office 365 URL 和 IP 地址范围](urls-and-ip-address-ranges.md)
   
-[管理适用于 Office 365 连接的 ExpressRoute](managing-expressroute-for-connectivity.md)
+[管理 ExpressRoute for Office 365 连接](managing-expressroute-for-connectivity.md)
   
 [Office 365 网络连接原则](office-365-network-connectivity-principles.md)

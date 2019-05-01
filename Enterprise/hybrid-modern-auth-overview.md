@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: 新式身份验证是标识管理的一种方法, 可提供更安全的用户身份验证和授权。 它可用于本地的 skype for business server 本地和 Exchange server 的混合部署, 以及拆分域 Skype for business 混合。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档 (如 Outlook 和 Skype 客户端) 信息。
-ms.openlocfilehash: 26efa77e3c98c0395188e6ca7a2f65cd3b8b939e
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: d8d06a3e2d178f68bcb130228ed1834f4eb878f8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458342"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491398"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式身份验证概述和在本地 Skype for business 和 Exchange 服务器上使用它的先决条件
 
@@ -90,6 +90,18 @@ ms.locfileid: "30458342"
   - 您的 SIP 域作为 Office 365 中的联合域添加
     
   - 所有 SFB 前端必须具有到 internet 的出站连接, 在[office 125 url 和 IP 的 "Microsoft 365 通用和 Office Online" 部分的行56和365中列出了 office 365 身份验证 url (tcp 443) 和知名证书根 crl (tcp 80)地址范围](urls-and-ip-address-ranges.md)。
+  
+- **混合 Office 365 环境中的 Skype for business 本地部署**
+  - 一个 skype for business server 2019 部署, 其中包含运行 skype for business Server 2019 的所有服务器。
+  
+  - 一个 skype for business server 2015 部署, 其中包含运行 skype for business Server 2015 的所有服务器。
+  
+  - 一种部署, 其最多包含两个不同的服务器版本, 如下所示:
+  
+     - Skype for business server 2015 和 skype for business server 2019
+     
+  - 所有 Skype for business 服务器都必须安装最新的 cummulative 更新, 请参阅[Skype for business Server updates](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates)以查找和管理所有可用更新。
+  - 混合环境中没有 Lync Server 2010 或2013。
     
  **注释**如果 Skype for business 前端服务器使用代理服务器进行 Internet 访问, 则必须在每个前端的 web.config 文件的配置部分中输入所使用的代理服务器 IP 和端口号。 
   
@@ -120,7 +132,17 @@ ms.locfileid: "30458342"
     
   - 未配置 SSL 卸载。 支持 SSL 终止和重新加密。
     
-  - 在您的环境使用代理服务器基础结构以允许服务器连接到 Internet 时, 请确保所有 Exchange 服务器都在[InternetWebProxy](https://technet.microsoft.com/en-us/library/bb123716%28v=exchg.160%29.aspx)属性中定义了代理服务器。
+  - 在您的环境使用代理服务器基础结构以允许服务器连接到 Internet 时, 请确保所有 Exchange 服务器都在[InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx)属性中定义了代理服务器。
+  
+- **混合 Office 365 环境中的本地 Exchange Server**
+
+  - 如果使用的是 Exchange server 2013, 则必须至少有一台服务器安装了邮箱和客户端访问服务器角色。 虽然可以在单独的服务器上安装邮箱和客户端访问角色, 但强烈建议您在每台服务器上安装这两个角色, 以提供更高的可靠性和改进的性能。
+  
+  - 如果您使用的是 Exchange server 2016 或更高版本, 则必须至少有一台服务器安装了邮箱服务器角色。
+  
+  - 混合环境中没有 Exchange server 2007 或2010。
+  
+  - 所有 Exchange 服务器都必须安装最新的 cummulative 更新, 请参阅将[Exchange 升级到最新累积更新](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019)以查找和管理所有可用更新。
     
 - **Exchange 客户端和协议要求**
   
@@ -164,6 +186,6 @@ ms.locfileid: "30458342"
     
 - [如何配置 Skype for business 本地以使用新式验证](configure-skype-for-business-for-hybrid-modern-authentication.md)
     
-- [从 Skype for business 和 Exchange 中删除或禁用混合新式身份验证](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
+- [从 Skype for Business 和 Exchange 删除或禁用混合新式验证](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
     
 

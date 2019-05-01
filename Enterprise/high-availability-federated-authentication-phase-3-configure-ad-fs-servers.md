@@ -13,11 +13,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证创建和配置 Active Directory 联合身份验证服务 (AD FS) 服务器。
 ms.openlocfilehash: add154dbce67c76b3f88e205c683711f72cb7b9a
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741158"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487840"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 

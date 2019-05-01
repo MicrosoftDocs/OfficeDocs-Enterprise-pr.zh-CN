@@ -1,5 +1,5 @@
 ---
-title: 内容传递网络
+title: 内容分发网络
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息了解 Office 365 如何使用内容传递网络 (cdn) 来提高性能。
 ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039479"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490416"
 ---
 # <a name="content-delivery-networks-cdns"></a>内容传递网络 (cdn)
 

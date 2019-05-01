@@ -14,11 +14,11 @@ search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 本文介绍如何在不执行传统负载测试的情况下部署到 SharePoint Online, 因为这是不允许的。
 ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765054"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490210"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>SharePoint Online 的容量规划和负载测试。
 

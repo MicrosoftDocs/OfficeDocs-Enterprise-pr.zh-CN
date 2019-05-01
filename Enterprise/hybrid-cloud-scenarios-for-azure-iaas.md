@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '摘要: 了解 Microsoft 在 Azure 中基于服务 (IaaS) 的云产品的混合体系结构和方案。'
 ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741358"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487618"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>适用于 Azure IaaS 的混合云方案
 

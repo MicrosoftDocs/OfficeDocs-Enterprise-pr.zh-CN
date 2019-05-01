@@ -3,7 +3,7 @@ title: Office 365 美国政府 DoD 终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/28/2019
+ms.date: 04/29/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,20 +17,20 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
-description: '摘要: Office 365 要求连接到 Internet。下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。'
+description: '摘要: Office 365 要求连接到 Internet。 下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。'
 hideEdit: true
-ms.openlocfilehash: d51d44a4793d476f2083e5bb66b766b4e52fb3d9
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: 08c78c38d97c2cd1e7ea5478a9effd235b06b3fb
+ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341953"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497664"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 美国政府 DoD 终结点
 
 *适用于: Office 365 管理员*
 
- **摘要:** Office 365 要求连接到 Internet。下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。
+ **摘要:** Office 365 要求连接到 Internet。 下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。
   
 > [!NOTE]
 > Microsoft 针对此页上的 IP 地址和 FQDN 条目发布了基于 REST 的 Web 服务。这项新服务有助于配置和更新网络外围设备，如防火墙和代理服务器。可以下载终结点列表，无论是列表的当前版本，还是应用了特定更改的列表。这项服务会替换从此页面链接到的 XML 文档（已于 2018 年 10 月 2 日遭弃用）。若要试用这项新服务，请转到 [Web 服务](office-365-ip-web-service.md)。
@@ -39,9 +39,9 @@ ms.locfileid: "30341953"
   
 |||
 |:-----|:-----|
-|**上次更新时间:** 02/28/2019 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载:** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
+|**上次更新时间:** 04/29/2019 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载:** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
    
- 从[管理 Office 365 终结点](managing-office-365-endpoints.md)开始, 了解我们关于使用此数据管理网络连接的建议。终结点数据在每月开始时更新, 并在30天内发布新的 IP 地址和 url, 并在处于活动状态之前发布。这样一来, 在需要新的连接之前, 尚不具有自动更新的客户即可完成其过程。如果需要, 还可以更新终结点, 以解决支持升级、安全事件或其他立即运行的要求。以下页面上显示的数据都是从基于 REST 的 web 服务生成的。如果使用脚本或网络设备访问此数据, 则应直接转到[Web 服务](office-365-ip-web-service.md)。
+ 从[管理 Office 365 终结点](managing-office-365-endpoints.md)开始, 了解我们关于使用此数据管理网络连接的建议。 终结点数据在每月开始时更新, 并在30天内发布新的 IP 地址和 url, 并在处于活动状态之前发布。 这样一来, 在需要新的连接之前, 尚不具有自动更新的客户即可完成其过程。 如果需要, 还可以更新终结点, 以解决支持升级、安全事件或其他立即运行的要求。 以下页面上显示的数据都是从基于 REST 的 web 服务生成的。 如果使用脚本或网络设备访问此数据, 则应直接转到[Web 服务](office-365-ip-web-service.md)。
 
 下面的终结点数据列出了从用户计算机到 Office 365 的连接要求。它不包括从 Microsoft 到客户网络的网络连接（有时称为混合或入站网络连接）。
 
@@ -53,7 +53,7 @@ ms.locfileid: "30341953"
 
 - **类别**：显示终结点集是分类为“优化”、“允许”还是“默认”。可以在 [http://aka.ms/pnc](http://aka.ms/pnc) 上了解管理它们的这些类别和指南。此列还列出了哪些终结点集需要具有网络连接。对于不需要具有网络连接的终结点集，我们在此字段中提供备注，以指示在终结点集被阻止时将丢失哪些功能。如果要排除整个服务区域，则根据需要列出的终结点集不需要连接。
 
-- **ER**: 如果终结点设置通过 Azure ExpressRoute (使用 Office 365 路由前缀) 支持, 则为 **"是"** 。包含路由前缀的 BGP 社区与所列的服务区域对齐。当 ER 为 "**否**" 时, 这意味着此终结点集不支持 ExpressRoute。但是, 不应假定在 ER 为**no**时没有为终结点集播发任何路由。如果您计划使用 Azure ad connect, 请阅读[特殊注意事项部分](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud), 以确保您具有适当的 Azure ad connect 配置。
+- **ER**: 如果终结点设置通过 Azure ExpressRoute (使用 Office 365 路由前缀) 支持, 则为 **"是"** 。 包含路由前缀的 BGP 社区与所列的服务区域对齐。 当 ER 为 "**否**" 时, 这意味着此终结点集不支持 ExpressRoute。 但是, 不应假定在 ER 为**no**时没有为终结点集播发任何路由。 如果您计划使用 Azure ad connect, 请阅读[特殊注意事项部分](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud), 以确保您具有适当的 Azure ad connect 配置。
 
 - **地址**：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
  
@@ -63,6 +63,6 @@ ms.locfileid: "30341953"
   
 关于此表的注释：
 
-- 安全与合规中心 (SCC) 提供对适用于 Office 365 的 Azure ExpressRoute 的支持。这同样适用于通过 SCC 公开的许多功能, 如报告、审核、高级电子数据展示、统一 DLP 和数据管理。两种特定功能 (PST 导入和电子数据展示导出) 目前不支持仅具有 Office 365 路由筛选器的 azure ExpressRoute, 因为它们依赖于 azure Blob 存储。若要使用这些功能, 您需要使用任何支持的 azure 连接选项 (包括 Internet 连接或具有 azure 公用路由筛选器的 azure ExpressRoute) 以独立方式连接到 azure Blob 存储。您必须评估这两个功能的建立此类连接。office 365 信息保护团队了解此限制, 并积极努力为 office 365 提供对 Azure ExpressRoute 的支持, 这些功能仅限于 office 365 的路由筛选器。
+- 安全与合规中心 (SCC) 提供对适用于 Office 365 的 Azure ExpressRoute 的支持。 这同样适用于通过 SCC 公开的许多功能, 如报告、审核、高级电子数据展示、统一 DLP 和数据管理。 两种特定功能 (PST 导入和电子数据展示导出) 目前不支持仅具有 Office 365 路由筛选器的 azure ExpressRoute, 因为它们依赖于 azure Blob 存储。 若要使用这些功能, 您需要使用任何支持的 azure 连接选项 (包括 Internet 连接或具有 azure 公用路由筛选器的 azure ExpressRoute) 以独立方式连接到 azure Blob 存储。 您必须评估这两个功能的建立此类连接。 office 365 信息保护团队了解此限制, 并积极努力为 office 365 提供对 Azure ExpressRoute 的支持, 这些功能仅限于 office 365 的路由筛选器。
 
-- Office 365 专业增强版有其他可选终结点, 这些终结点未列出, 用户无需启动 office 365 专业增强版应用程序和编辑文档。可选的终结点托管在 Microsoft 数据中心中, 不会处理、传输或存储客户数据。建议将指向这些终结点的用户连接定向到默认 Internet 出局外围。
+- Office 365 专业增强版有其他可选终结点, 这些终结点未列出, 用户无需启动 office 365 专业增强版应用程序和编辑文档。 可选的终结点托管在 Microsoft 数据中心中, 不会处理、传输或存储客户数据。 建议将指向这些终结点的用户连接定向到默认 Internet 出局外围。

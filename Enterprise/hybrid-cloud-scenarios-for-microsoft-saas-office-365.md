@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: '摘要: 了解 Microsoft 基于 SaaS 的云产品的混合体系结构和方案 (Office 365)。'
 ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741388"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487488"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>适用于 Microsoft SaaS (Office 365) 的混合云方案
 

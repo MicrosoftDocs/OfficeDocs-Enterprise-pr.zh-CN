@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: '了解用于管理 Office 365 用户的工具, 以及您可以使用的工具取决于管理用户身份的方式。 '
 ms.openlocfilehash: fb98c7103aaadb16ac6f7d459a2595022110bb94
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001765"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487068"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>用于管理 Office 365 帐户的工具
 

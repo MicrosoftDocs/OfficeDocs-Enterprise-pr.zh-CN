@@ -1,5 +1,5 @@
 ---
-title: 如何将 Exchange Server 本地配置为使用混合新式身份验证
+title: 如何配置本地 Exchange Server 以使用混合新式验证
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: 混合新式身份验证 (HMA) 是一种身份管理方法, 它提供更安全的用户身份验证和授权, 并可用于 Exchange server 本地混合部署。
 ms.openlocfilehash: 364f95bbbc06f477d258ed55a8711864e7a87e69
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372859"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490088"
 ---
-# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何将 Exchange Server 本地配置为使用混合新式身份验证
+# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
 混合新式身份验证 (HMA) 是一种身份管理方法, 它提供更安全的用户身份验证和授权, 并可用于 Exchange server 本地混合部署。
   

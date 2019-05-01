@@ -19,11 +19,11 @@ ms.collection:
 - Ent_O365
 description: 有几种简单的方法可以检查 Office 365 与您的业务之间的连接性能, 让您能够建立连接的粗略基准。 了解客户端计算机连接的性能历史记录可帮助您及早检测新兴问题, 识别和预测问题。
 ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372939"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491806"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>使用基线和性能历史记录优化 Office 365 性能
 

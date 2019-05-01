@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍了 Office 365 中的目录同步问题的常见原因, 并提供了几种帮助排除和解决这些问题的方法。
 ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001835"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487452"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>修复 Office 365 的目录同步问题
 

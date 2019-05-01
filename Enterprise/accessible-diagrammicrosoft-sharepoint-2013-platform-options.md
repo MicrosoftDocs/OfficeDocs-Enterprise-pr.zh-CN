@@ -12,23 +12,23 @@ localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: 本文是名为“Microsoft SharePoint 2013 平台选项”的图的可访问文本版本。
 ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504315"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487818"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>可访问的图 - Microsoft SharePoint 2013 平台选项
 
-**摘要：** 这篇文章是图名为 Microsoft SharePoint 2013 平台选项的辅助功能的文本版本。
+**摘要:** 本文是名为 Microsoft SharePoint 2013 平台选项的图表的可访问文本版本。
   
-哪些业务决策者 (Bdm) 和架构师需要了解有关 Office 365、 Microsoft Azure 和内部部署。 
+业务决策者 (bdm) 和架构师需要了解 Office 365、Microsoft Azure 和本地部署。 
   
 此海报有两个部分： 
   
-- 四种不同的部署的 SharePoint 2013 的比较： SharePoint 中 Office 365，SharePoint 2013、 Azure，和内部部署的 SharePoint 2013 在内部部署 Office 365 的混合。 
+- sharepoint 2013 的四种不同部署的比较: office 365 中的 sharepoint、office 365 的混合, 以及 sharepoint 的本地部署 sharepoint 2013、Azure 和本地部署的 sharepoint 2013。 
     
-- 三个典型的工作负载，将移动到 Azure 的说明。 
+- 对要移动到 Azure 的三个典型工作负荷的说明。 
     
 ## <a name="comparison-of-four-different-deployments-for-the-sharepoint-2013-platform"></a>SharePoint 2013 平台的四种不同部署比较
 
@@ -46,11 +46,11 @@ ms.locfileid: "17504315"
     
 ### <a name="overview"></a>概述
 
-#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013 年
+#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013
 
-获得效率和优化用 Office 365 的多组织计划的成本。 
+使用 Office 365 多租户计划提高效率并优化成本。 
   
-随附的图表显示 SharePoint Online Azure Active Directory 租户，其帐户名和密码的内部部署 Active Directory 环境和 Azure Active Directory 租户之间进行同步。 
+随附的图显示了具有 Azure active directory 租户的 SharePoint Online, 这将同步本地 Active directory 环境和 Azure Active directory 租户之间的帐户名称和密码。 
   
 功能说明： 
   
@@ -58,9 +58,9 @@ ms.locfileid: "17504315"
     
 - 丰富功能集始终保持最新。  
     
-- 包括 Azure Active Directory 租户 （可以与其他应用程序使用）。 
+- 包含 Azure Active Directory 租户 (可用于其他应用程序)。 
     
-- 目录集成包括帐户名和密码的内部部署 Active Directory 环境和 Azure Active Directory 租户之间进行同步。 
+- 目录集成包括在本地 Active directory 环境和 Azure Active directory 租户之间同步帐户名称和密码。 
     
 - 如果需要单一登录 (SSO)，可实施 Active Directory 联合身份验证服务 (AD FS)。   
     
@@ -72,9 +72,9 @@ ms.locfileid: "17504315"
     
 #### <a name="hybrid-with-office-365"></a>与 Office 365 的混合
 
-结合内部部署的 SharePoint 2013 Office 365 的好处。 
+将 Office 365 的优势与 SharePoint 2013 的本地部署结合使用。 
   
-伴随的图显示了使用 Business Connectivity Services (BCS) 连接到内部部署 SharePoint Server 2013 场与 SharePoint Online 的 Office 365。 
+随附的图显示了使用 Business Connectivity Services (BCS) 连接到本地 sharepoint Server 2013 场的 Office 365 with sharepoint Online。 
   
 选择要集成下列哪一项功能：  
   
@@ -96,11 +96,11 @@ Duet Enterprise Online
 
 保留对平台和功能的完全控制权的同时利用云的优势。   
   
-伴随的图显示了 Azure，包含两个云服务、 SharePoint 2013 服务器场，以及使用 DNS 通过 Internet 连接到用户或连接到 VPN 隧道通过内部部署 Active Directory 的 Windows 服务器活动目录。 
+随附的图显示了 Azure, 其中包含两个云服务、一个 SharePoint 2013 服务器场和 Windows Server Active directory, 并通过 Internet 连接到用户或通过 VPN 隧道连接到本地 Active directory。 
   
 这些功能包括：  
   
--  Azure 是承载 SharePoint 2013 群所需的基础结构和应用程序服务提供了一个平台。
+-  Azure 是一个平台, 可提供托管 SharePoint 2013 服务器场所需的基础结构和应用程序服务。
     
 - 基础结构服务。 
     
@@ -126,11 +126,11 @@ Duet Enterprise Online
   
 - 容量规划和大小调整。 
     
-- 服务器购置和设置。 
+- 服务器购置和设置。  
     
 - 部署。 
     
-- 横向扩展、修补和操作。 
+- 横向扩展、修补和操作。   
     
 - 备份数据。 
     
@@ -140,7 +140,7 @@ Duet Enterprise Online
     
 ### <a name="deployment-type-is-best-for---"></a>部署类型最适用于. . .
 
-#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013 年
+#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013
 
 - 安全的外部共享和协作。（独特的功能！）  
     
@@ -150,7 +150,7 @@ Duet Enterprise Online
     
 - 面向公众的基本网站。  
     
-与 Office 365 专门订阅计划的附加功能： 
+Office 365 专用订阅计划的附加功能: 
   
 - 专用于您的组织，且不与任何其他组织共享的 Microsoft 数据中心设备。   
     
@@ -162,17 +162,17 @@ Duet Enterprise Online
     
 #### <a name="hybrid-with-office-365"></a>与 Office 365 的混合
 
-- 用于外部共享和协作而不是设置外部网环境中使用 Office 365。 
+- 使用 Office 365 进行外部共享和协作, 而不是设置 extranet 环境。 
     
 - 将“我的网站”(OneDrive for Business) 移动到云，使用户更易于远程访问文件。   
     
-- Office 365 中启动新的工作组站点。 
+- 在 Office 365 中启动新的团队网站。 
     
-- 与内部 BCS SharePoint 环境中集成 Office 365 站点。 
+- 将 Office 365 网站与本地 BCS SharePoint 环境集成。 
     
 #### <a name="azure"></a>Azure
 
-- 互联网网站的 SharePoint — — 公共对称的站点。利用 Azure 广告客户帐户和身份验证。 
+- Internet 网站的 SharePoint — 面向公众的网站。 充分利用 Azure AD 进行客户帐户和身份验证。 
     
 - 开发人员、测试和暂存环境 — 快速设置整个环境和取消整个环境的设置。  
     
@@ -196,17 +196,17 @@ Duet Enterprise Online
     
 - 高度自定义的解决方案。 
     
-- 与第三方组件取决于硬件和软件 Azure 的基础结构服务不支持旧式解决方案。 
+- 具有第三方组件的旧版解决方案, 这些组件依赖于 Azure 基础结构服务不支持的硬件和软件。 
     
-- 隐私限制来防止同步的 Active Directory 帐户使用 Azure Active Directory （Office 365 的要求）。 
+- 防止 active directory 帐户与 Azure active directory 同步的隐私限制 (Office 365 的要求)。 
     
 - 希望保持对整个平台和解决方案的控制的组织。 
     
 ### <a name="license-requirements"></a>许可要求
 
-#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013 年
+#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013
 
-订阅模型。无需其他许可证。  
+订阅模型。 无需其他许可证。 
   
 #### <a name="hybrid-with-office-365"></a>与 Office 365 的混合
 
@@ -216,7 +216,7 @@ Duet Enterprise Online
     
 #### <a name="azure"></a>Azure
 
--  Azure 订阅 （包括服务器操作系统）
+-  Azure 订阅 (包括服务器操作系统)
     
 - SQL Server 
     
@@ -236,11 +236,11 @@ Duet Enterprise Online
     
 ### <a name="architecture-tasks"></a>体系结构任务
 
-#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013 年
+#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013
 
-- 规划和设计目录集成。两个选项。这两个选项可以部署在内部或在 Azure 中: （需要一台 64 位服务器） 的密码同步。SSO （需要 AD FS 和多个服务器）。 
+- 规划和设计目录集成。 两个选项。 这两个选项都可以在本地部署或在 Azure 中部署: 密码同步 (需要 1 64 位服务器)。 SSO（需要 AD FS 和多个服务器）。 
     
-- 确保通过防火墙、代理服务器、网关以及跨 WAN 链接的网络容量和可用性。 
+- 确保通过防火墙、代理服务器、网关以及跨 WAN 链接的网络容量和连接。 
     
 - 获取第三方 SSL 证书，提供 Office 365 服务/产品的企业安全性。 
     
@@ -248,7 +248,7 @@ Duet Enterprise Online
     
 - 针对 SharePoint Online 规划自定义项、解决方案和应用程序。  
     
-- 如果您要通过使用 Internet 协议 6 (IPv6) 连接到 Office 365 的决定。这是不常见的。 
+- 决定是否要使用 Internet 协议 6 (IPv6) 连接到 Office 365。 这并不常见。 
     
 #### <a name="hybrid-with-office-365"></a>与 Office 365 的混合
 
@@ -260,9 +260,9 @@ Duet Enterprise Online
     
 #### <a name="azure"></a>Azure
 
-设计 Azure 的网络环境： 
+设计 Azure 网络环境: 
   
-- 在 Azure，包括子网内的虚拟网络。 
+- Azure 中的虚拟网络, 包括子网。 
     
 - 域环境及与本地服务器的集成。  
     
@@ -270,11 +270,11 @@ Duet Enterprise Online
     
 - 地缘组和存储帐户。  
     
-设计在 Azure 中的 SharePoint 环境中： 
+在 Azure 中设计 SharePoint 环境: 
   
 - SharePoint 场拓扑和逻辑体系结构。  
     
--  Azure 可用性设置和更新域。
+-  Azure 可用性集和更新域。
     
 - 虚拟机大小。   
     
@@ -302,15 +302,15 @@ Duet Enterprise Online
     
 ### <a name="it-pro-responsibilities"></a>IT 专业人员的职责
 
-#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013 年
+#### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013
 
-- 确保用户工作站满足 Office 365 提供客户端系统必备组件。 
+- 确保用户工作站满足 Office 365 客户端的先决条件。 
     
 - 实施目录集成计划。 
     
 - 规划和实施内部和外部 DNS 记录和路由。 
     
-- 配置代理服务器或防火墙进行 Office 365 IP 地址和 URL 的要求。 
+- 为 Office 365 IP 地址和 URL 要求配置代理或防火墙。 
     
 - 创建并分配权限给网站集。  
     
@@ -330,9 +330,9 @@ Duet Enterprise Online
     
 #### <a name="azure"></a>Azure
 
-部署和管理的 Azure 和 SharePoint 环境： 
+部署和管理 Azure 和 SharePoint 环境: 
   
-- 实施和管理 Azure 的网络环境。 
+- 实施和管理 Azure 网络环境。 
     
 - 部署 SharePoint 环境。 
     
@@ -362,33 +362,33 @@ Duet Enterprise Online
     
 - 实施灾难恢复环境和协议。  
     
-## <a name="three-typical-workloads-to-move-to-azure"></a>三个典型的工作负载，将移动到 Azure
+## <a name="three-typical-workloads-to-move-to-azure"></a>移动到 Azure 的三个典型工作负载
 
-### <a name="office-365-plus-directory-components-in-azure"></a>Office 365 加在 Azure 中的目录组件
+### <a name="office-365-plus-directory-components-in-azure"></a>Azure 中的 Office 365 和目录组件
 
-更快地部署 Office 365 Azure 中的目录集成组件是，因为它可以部署虚拟机需求。 
+在 Azure 中部署 Office 365 目录集成组件的速度更快, 因为它可以按需部署虚拟机。 
   
 #### <a name="directory-synchronization-server-only"></a>仅限目录同步服务器。
 
-而不是部署 64 位目录同步服务器在您的内部环境，而是设置 Azure 中的虚拟机。 
+而不是在本地环境中部署64位目录同步服务器, 而是在 Azure 中设置虚拟机。 
   
-随附的图表显示 SharePoint Online Azure Active Directory 租户，其帐户名和密码的内部部署 Active Directory 环境和 Azure Active Directory 租户之间进行同步。 
+随附的图显示了具有 Azure active directory 租户的 SharePoint Online, 这将同步本地 Active directory 环境和 Azure Active directory 租户之间的帐户名称和密码。 
   
 #### <a name="directory-synchronization-plus-ad-fs"></a>目录同步 + AD FS
 
-此选项允许您添加到您的内部部署基础结构硬件支持 Office 365 联合标识 (SSO)。如果内部部署 Active Directory 环境不可用，它还提供可恢复性。 
+此选项使您可以支持 Office 365 联合身份 (SSO)，而无需将硬件添加到内部部署基础架构。 如果本地 Active Directory 环境不可用，它还可以提供复原。 
   
-- 目录集成组件驻留在 Azure。 
+- 目录集成组件驻留在 Azure 中。 
     
-- AD FS 到 Azure 中的 AD FS 代理服务器通过互联网发布。 
+- ad fs 通过 Azure 中的 ad fs 代理发布到 Internet。 
     
-- 由 AD FS 服务器和代理服务器部署在 Azure 处理客户端身份验证通信，从任意位置，连接的用户。 
+- 对于从任何位置连接的用户, 客户端身份验证流量由在 Azure 上部署的 AD FS 服务器和代理进行处理。 
     
-### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>面向公众的互联网网站和 Azure 广告客户身份验证
+### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>面向公众的 Internet 站点和用于客户身份验证的 Azure AD
 
-利用能够容易地进行扩展的需求放在 Azure 的 Internet 站点。使用 Azure AD 存储客户帐户。 
+通过在 Azure 中放置 Internet 网站, 可以充分利用轻松扩展到需求的功能。 使用 Azure AD 存储客户帐户。 
   
-#### <a name="azure-advantages-for-internet-sites"></a>Azure 的互联网网站的优点
+#### <a name="azure-advantages-for-internet-sites"></a>Internet 站点的 Azure 优势
 
 - 通过根据场使用情况增加或减少虚拟机数量，从而仅针对所需资源付费。  
     
@@ -398,21 +398,21 @@ Duet Enterprise Online
     
 #### <a name="azure-ad"></a>Azure AD
 
-Azure AD 提供云服务的管理和访问控制功能。功能包括目录数据和一套核心标识服务，包括用户登录进程、 身份验证服务和 AD FS 的云存储。附带 Azure AD 身份服务轻松地集成与内部部署 Active Directory 部署和全面支持第三方身份提供程序。 
+Azure AD 为云服务提供了身份管理和访问控制功能。 功能包括目录数据的基于云的存储和一组核心标识服务, 包括用户登录过程、身份验证服务和 AD FS。 Azure AD 附带的标识服务可轻松地与本地 Active Directory 部署集成, 并完全支持第三方标识提供程序。 
   
-伴随图表显示区域和重要的面向 Internet 站点的身份验证的配置。该图显示了 Azure 活动目录租户，其中包含了两个区域在 Azure 上 SharePoint 服务器场： 
+随附的图显示了对于面向 Internet 的站点非常重要的区域和身份验证配置。 该图显示了 azure Active Directory 租户, 其中包含包含两个区域的 azure 上的 SharePoint 场: 
   
 - 与网络外的匿名和经过身份验证的访客和客户进行交互的 Internet 区域  
     
 - 包含用于爬网的 NTLM 和 Windows 身份验证的默认区域，通过 VPN 隧道与本地 Active Directory 部署交互。   
     
-### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a>内部部署服务器场加 Azure 中的灾难恢复
+### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a>内部部署服务器场和 Azure 中的灾难恢复
 
-选择一种灾难恢复选项满足您的业务要求。Azure 提供入门级的公司开始使用灾难恢复选项和高级选项具有高的弹性需求的企业。 
+选择与您的业务需求相符的灾难恢复选项。 Azure 为具有高恢复能力要求的企业开始使用灾难恢复和高级选项, 提供了入门级选项。 
   
 #### <a name="cold-standby"></a>冷备用
 
-- 场完全生成的但虚拟机都已停止。（您付钱让他们只能在运行时 ！） 
+- 服务器场已完全构建，但虚拟机已停止。 (仅在正在运行时付费!) 
     
 - 维护环境包括偶尔启动虚拟机，以及修补、更新和验证环境。 
     
@@ -430,6 +430,6 @@ Azure AD 提供云服务的管理和访问控制功能。功能包括目录数�
 
 设置一个完全大小的服务器场，且以备用状态运行。 
   
-伴随图显示内部场相互作用在 Azure 上 SharePoint 灾难恢复环境。内部数据库使用 SQL Server 日志传送通过 VPN 隧道访问 SharePoint 灾难恢复环境，其中包括两个包含 SharePoint 数据库、 两个 Web 前端服务器和两个 SharePoint 的 SQL 数据库服务器应用程序服务器。 
+随附的图显示了与 Azure 上的 SharePoint 灾难恢复环境交互的本地服务器场。 内部部署数据库使用 SQL Server 日志传送通过 VPN 隧道访问 SharePoint 灾难恢复环境，其中包括两台包含 SharePoint 数据库的 SQL 数据库服务器、两台 Web 前端服务器和两台 SharePoint 应用程序服务器。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: 数据移动期间和之后
+title: 数据移动期间和数据移动之后
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作, 对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时, 无需执行任何操作。 数据传输和验证在后台进行, 并对用户影响最小。
 ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647990"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487228"
 ---
-# <a name="during-and-after-your-data-move"></a>数据移动期间和之后
+# <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
 数据移动是一种后端操作, 对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时, 无需执行任何操作。 数据传输和验证在后台进行, 并对用户影响最小。
   
@@ -36,7 +36,7 @@ ms.locfileid: "30647990"
 |印度  <br/> |2018年10月31日  <br/> |
 |加拿大  <br/> |2019年6月30日  <br/> |
 |韩国  <br/> |2018年10月31日  <br/> |
-|United Kingdom  <br/> |2019年9月15日  <br/> |
+|英国  <br/> |2019年9月15日  <br/> |
 |法国  <br/> |2020年9月15日  <br/> |
 |阿拉伯联合酋长国  <br/> |公告  <br/> |
 |南非  <br/> |公告  <br/> |
@@ -129,9 +129,9 @@ ms.locfileid: "30647990"
   
 ## <a name="related-topics"></a>相关主题 
  
-[如何请求移动数据](request-your-data-move.md)
+[如何请求数据移动](request-your-data-move.md)
     
-[数据移动常规常见问题](data-move-faq.md)
+[数据移动常见问题解答](data-move-faq.md)
   
 [适用于 Microsoft Dynamics CRM Online 的新数据中心信息](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

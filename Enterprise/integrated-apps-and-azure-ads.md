@@ -1,5 +1,5 @@
 ---
-title: 面向 Office 365 管理员的集成应用和 Azure AD
+title: 适用于 Office 365 管理员的集成应用和 Azure AD
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: 了解如何在 Azure AD 中注册和管理 O365 集成应用程序
 ms.openlocfilehash: f4e2061c952a09c4e23aa50bd294b7391e1ca3e6
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001875"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487118"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>面向 Office 365 管理员的集成应用和 Azure AD
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>适用于 Office 365 管理员的集成应用和 Azure AD
 
 除了仅[打开或关闭集成应用](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114)之外, 还可以管理集成的应用程序。 随着 Office 365 REST api 的出现, 用户可以授予应用对其 Office 365 数据 (如邮件、日历、联系人、用户、组、文件和文件夹) 的访问权限。 默认情况下, 用户需要单独向每个应用程序授予权限, 但如果要在全局管理员级别对应用程序进行授权, 并通过应用启动器将其部署到整个组织, 则不能很好地进行扩展。 若要执行此操作, 必须在 Azure AD 中注册应用程序。 在 Azure AD 中注册应用程序之前需要执行一些步骤, 以及您应该知道哪些可帮助您在 Office 365 组织中管理应用程序的背景信息。 本文将向您指出这些资源。
   

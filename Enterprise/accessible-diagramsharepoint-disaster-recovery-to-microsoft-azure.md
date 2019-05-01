@@ -1,5 +1,5 @@
 ---
-title: "可访问的图表 - SharePoint 灾难恢复到 Microsoft Azure"
+title: 可访问的图表 - SharePoint 灾难恢复到 Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
-description: "本文是名为“SharePoint 灾难恢复到 Microsoft Azure”的图的可访问文本版本。"
+description: 本文是名为“SharePoint 灾难恢复到 Microsoft Azure”的图的可访问文本版本。
 ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487718"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>可访问的图表 - SharePoint 灾难恢复到 Microsoft Azure
 
-**摘要：**这篇文章是图名为 SharePoint 灾难恢复到 Microsoft Azure 的辅助功能的文本版本。
+**摘要:** 本文是名为 "SharePoint 灾难恢复到 Microsoft Azure" 的图表的可访问文本版本。
   
 此海报提供了用于在 Azure 中构建恢复环境的体系结构的示例。  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 02/09/2018
   
 - 后端服务  
     
-- 管理员 
+- Admin 
     
 - 工作流管理器 
     
@@ -75,7 +76,7 @@ ms.lasthandoff: 02/09/2018
   
 ### <a name="overview"></a>概述
 
-可以在 Azure 中承载内部部署 SharePoint 2013 场灾难恢复环境。 
+本地 SharePoint 2013 场的灾难恢复环境可以托管在 Azure 中。 
   
 -   Azure 基础结构服务提供辅助的数据中心。 
     
@@ -185,7 +186,7 @@ Azure 虚拟网络中具有三项云服务：
   
 - 第一项云服务具有两台具有可用性集的 Active Directory 和 DNS 服务器。  
     
-- 第二个云服务都有三套服务器： 两个分布式缓存服务器的可用性设置。两个前端服务器的可用性设置。三个后端服务器的可用性设置。
+- 第二项云服务有三个服务器组： 两台具有可用性集的分布式缓存服务器。 两台具有可用性集的前端服务器。 三台具有可用性集的后端服务器。
     
 - 第三项云服务具有三台具有可用性集的数据库服务器。其中一台数据库服务器是用于日志传送的文件共享以及 SQL Server AlwaysOn 节点多数的第三个节点。  
     
@@ -193,9 +194,9 @@ Azure 虚拟网络中具有三项云服务：
 
 此解决方案的 AD DS 配置构成混合部署方案，其中 AD DS 一部分部署在本地，一部分部署在 Azure 虚拟机上。  
   
-重要说明 — 在 Azure 中部署 AD DS 之前，请阅读《在 Microsoft Azure 虚拟机上部署 Windows Server Active Directory 的指南》(http://msdn.microsoft.com/zh-cn/library/windowsazure/jj156090.aspx)。  
+重要说明: 在 Azure 中部署 AD DS 之前, 请阅读在 Microsoft Azure 虚拟机 (http://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)) 上部署 Windows Server Active Directory 的指南。 
   
-有关设计和部署 Active Directory 环境的完整指南，请参阅 http://TechNet.microsoft.com。  
+有关设计和部署 Active Directory 环境的完整指南, 请http://TechNet.microsoft.com参阅。 
   
 此参考体系结构包括两个配置为域控制器的虚拟机。每个虚拟机配置如下：  
   

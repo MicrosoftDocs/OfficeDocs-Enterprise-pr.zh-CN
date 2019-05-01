@@ -1,5 +1,5 @@
 ---
-title: Office 365 服务的部署顾问
+title: Office 365 服务部署顾问
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -19,13 +19,13 @@ search.appverid:
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: office 365 的部署顾问为您提供了设置 office 365 的自助式支持。
 ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741469"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490078"
 ---
-# <a name="deployment-advisors-for-office-365-services"></a>Office 365 服务的部署顾问
+# <a name="deployment-advisors-for-office-365-services"></a>Office 365 服务部署顾问
 
 Office 365 的部署顾问为你的组织设置 office 365 提供了自助支持。 只需选择安装指南或 advisor 并登录到 Office 365。 
 
@@ -40,7 +40,7 @@ Microsoft 365 是一个完整的智能解决方案, 包括 Office 365、Windows 
 
 ## <a name="mail-migration-and-protection"></a>邮件迁移和保护
 
-### <a name="prepare-your-environment"></a>准备您的环境 
+### <a name="prepare-your-environment"></a>准备环境 
 [准备环境指南](https://go.microsoft.com/fwlink/?linkid=2005213)是开始的地方。 请告知我们你的部署目标, 以确保添加域、创建用户并按正确的顺序分配许可证。 如果您打算迁移电子邮件或配置混合部署, 这一点尤其重要。 
 
 ### <a name="exchange-migration-advisor"></a>Exchange 迁移顾问
@@ -73,7 +73,7 @@ Microsoft [Exchange Online Protection (EOP)](https://aka.ms/EOPguidance)是一�
 ### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>azure Active Directory Connect (Azure AD connect) 顾问
 [Azure AD Connect advisor](https://aka.ms/aadconnectpwsync)是一个分步指南, 介绍了如何向 Office 365 添加用户帐户信息, 而无需手动创建每个用户。 此外, 它还介绍了如何配置密码哈希同步或传递身份验证, 以便用户可以使用相同的密码登录到其电子邮件和域。 如果选择使用 AD fs 设置联合登录, 本指南还提供了在新服务器或现有 Windows server 2012 R2 场中部署 AD fs 的步骤。 azure AD Connect 替代了较早版本的身份集成工具, 如 DirSync 和 Azure AD 同步, 主要用于向 Azure Active Directory for Office 365 添加用户和其他数据。
   
-### <a name="azure"></a>蔚蓝色
+### <a name="azure"></a>Azure
 [azure AD Basic 设置指南](https://aka.ms/azureadbasic)可帮助您设置功能, 如基于组的访问管理、云应用程序的自助服务密码重置以及用于发布本地 web 应用程序的 Azure Active Directory 应用程序代理。
   
 [azure AD Premium 设置指南](https://aka.ms/aadpguidance)可帮助你启用 Azure Active Directory Premium (azure AD premium) 的许多功能, 该功能提供了身份管理功能, 如多重身份验证、单一登录 (SSO)、设备注册自助服务密码和组管理, 以及安全监控。
@@ -139,7 +139,7 @@ Microsoft StaffHub 是一种可在所有设备上工作的基于云的平台。 
 
 ### <a name="mail-migration-and-protection"></a>邮件迁移和保护
 
-[准备您的环境](https://go.microsoft.com/fwlink/?linkid=2043822)
+[准备环境](https://go.microsoft.com/fwlink/?linkid=2043822)
 
 
 ### <a name="office-365-proplus"></a>Office 365 专业增强版

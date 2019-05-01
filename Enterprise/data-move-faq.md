@@ -1,5 +1,5 @@
 ---
-title: 数据移动常规常见问题
+title: 数据移动常见问题解答
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
 ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665235"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490060"
 ---
-# <a name="data-move-general-faq"></a>数据移动常规常见问题
+# <a name="data-move-general-faq"></a>数据移动常见问题解答
 
 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
   
@@ -145,7 +145,7 @@ A. 是。 Microsoft 在全球范围内的35国家/地区内的国家/地区的�
 
 [将核心数据移动到新的 Office 365 数据中心信息](moving-data-to-new-datacenter-geos.md)
 
-[如何请求移动数据](request-your-data-move.md)
+[如何请求数据移动](request-your-data-move.md)
 
 [Office 365 多地理位置](https://aka.ms/multi-geo)
 

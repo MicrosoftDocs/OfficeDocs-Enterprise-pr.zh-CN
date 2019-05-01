@@ -15,17 +15,17 @@ ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 摘要：了解如何优化你的网络以便访问 Microsoft Azure PaaS。
 ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872233"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491354"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>为 Microsoft Azure PaaS 设计网络
 
  **摘要：** 了解如何优化你的网络以便访问 Microsoft Azure PaaS。
   
-优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，并可以要求网络流量跨多个站点或应用分布。
+优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，可能还会要求网络流量跨多个站点或应用分布。
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>计划将组织 PaaS 应用程序驻留在 Azure 中的步骤
 

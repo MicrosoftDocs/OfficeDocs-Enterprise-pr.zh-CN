@@ -13,11 +13,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '摘要: 配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。'
 ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741308"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487422"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -72,7 +72,7 @@ ms.locfileid: "31741308"
   
 下一步，针对分配给虚拟机和负载平衡器实例的静态 IP 地址填写表 I。
   
-|**Item**|**用途**|**子网的 IP 地址**|**Value**|
+|**Item**|**用途**|**子网的 IP 地址**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ ms.locfileid: "31741308"
   
 对于您希望在最初设置虚拟网络中的域控制器时使用的本地网络中的两个域名系统 (DNS) 服务器, 请填写表 D。与 IT 部门合作以确定此列表。
   
-|**Item**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
+|**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -98,7 +98,7 @@ ms.locfileid: "31741308"
   
 对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
-|**Item**|**本地网络地址空间**|
+|**项**|**本地网络地址空间**|
 |:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -149,7 +149,7 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 为一组唯一资源组名称填写下表。
   
-|**Item**|**资源组名称**|**用途**|
+|**项目**|**资源组名称**|**用途**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |域控制器  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS 服务器  <br/> |
@@ -274,7 +274,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 接下来, 定义三个可用性集的名称。 填写表 A。 
   
-|**Item**|**用途**|**可用性集的名称**|
+|**项目**|**用途**|**可用性集的名称**|
 |:-----|:-----|:-----|
 |1.  <br/> |域控制器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS 服务器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |

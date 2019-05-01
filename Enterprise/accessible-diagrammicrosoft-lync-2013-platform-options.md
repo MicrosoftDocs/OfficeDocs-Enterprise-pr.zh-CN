@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: 本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。
 ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504085"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487782"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>可访问的图 - Microsoft Lync 2013 平台选项
 
@@ -91,11 +91,11 @@ ms.locfileid: "17504085"
   
 - 容量规划和大小。
     
-- 服务器购置和设置。
+- 服务器购置和设置。 
     
 - 部署。
     
-- 横向扩展、修补和操作。
+- 横向扩展、修补和操作。  
     
 - 备份数据。
     
@@ -113,11 +113,11 @@ ms.locfileid: "17504085"
   
 - 容量规划和大小。
     
-- 服务器购置和设置。
+- 服务器购置和设置。 
     
 - 部署。
     
-- 横向扩展、修补和操作。
+- 横向扩展、修补和操作。  
     
 - 备份数据。
     

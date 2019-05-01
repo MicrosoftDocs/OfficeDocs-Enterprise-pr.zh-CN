@@ -13,11 +13,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
 ms.openlocfilehash: bda22a1df0165724f660019e28a9f088280fea4f
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741248"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491330"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
@@ -32,17 +32,17 @@ ms.locfileid: "31741248"
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>在 Azure 中创建域控制器虚拟机
 
-首先，需要填写表 M 的**虚拟机名称**列，并根据需要在**最小大小**列修改虚拟机大小。
+首先，需要填写表 M 的 **虚拟机名称** 列，并根据需要在 **最小大小** 列修改虚拟机大小。
   
-|**Item**|**虚拟机名称**|**库图像**|**存储类型**|**最小大小**|
+|**项**|**虚拟机名称**|**库图像**|**存储类型**|**最小大小**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png) （第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png) （第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png) (DirSync server, 示例 DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png) (第一个 AD FS 服务器, 示例 ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./media/Common-Images/TableLine.png) (第二个 AD FS 服务器, 示例 ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./media/Common-Images/TableLine.png) (第一个 web 应用程序代理服务器, 示例 WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png) (第二个 web 应用程序代理服务器, 示例 WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)（第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)（第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(DirSync server, 示例 DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)(第一个 AD FS 服务器, 示例 ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png)(第二个 AD FS 服务器, 示例 ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png)(第一个 web 应用程序代理服务器, 示例 WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)(第二个 web 应用程序代理服务器, 示例 WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **表 M-Azure 中适用于 Office 365 的高可用性联合身份验证的虚拟机**
   

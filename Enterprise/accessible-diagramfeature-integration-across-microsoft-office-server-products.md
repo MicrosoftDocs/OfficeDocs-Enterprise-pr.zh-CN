@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: 本文是名为“跨 Microsoft Office Server 产品的功能集成 - SharePoint Server、Exchange Server、Lync Server 和 Office Online”的图的可访问文本版本。
 ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504215"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487808"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>可访问的图 - 跨 Microsoft Office Server 产品的功能集成
 
-**摘要：** 这篇文章是图名为功能集成在 Microsoft Office 服务器产品-SharePoint 服务器、 Exchange Server、 Lync Server 和 Office Online 的辅助功能的文本版本。
+**摘要:** 本文是在 Microsoft Office Server 产品-SharePoint server、Exchange server、Lync server 和 Office Online 中名为 "功能集成" 的图表的可访问文本版本。
   
-该图表包含几个选项卡，由该文档的节标题。
+图包含多个选项卡, 如本文档的部分标题中所示。
   
 ## <a name="introduction-tab"></a>“简介”选项卡
 
@@ -46,7 +46,7 @@ ms.locfileid: "17504215"
     
 - Outlook Web App 中的 Lync 状态 
     
-- 语音邮件
+- Voicemail
     
 - 会议录制 
     
@@ -56,19 +56,19 @@ ms.locfileid: "17504215"
 
 每个选项卡的页面大小为 22 x 17 英寸（大约为 ANSI 工程图的四分之一）。您可以在两个小报大小的纸张（17 x 11 英寸）或四张信纸大小的纸张（11 x 8.5 英寸）上打印此页。如果您有绘图仪，可以按照这些海报的实际尺寸进行打印。若无绘图仪，则按照以下步骤在较小纸张上打印。  
   
- **在较小的纸张上打印海报**
+ **在较小纸张上打印海报**
   
 1. 在 Visio 中打开海报。 
     
-2. 在**文件**菜单上，单击**页面设置**。 
+2. 在“文件”**** 菜单上，单击“页面设置”****。 
     
-3. 在**打印设置**选项卡上**打印机纸张**部分中，选择要打印的纸张大小。
+3. 在“打印设置”**** 选项卡上的“打印纸”**** 部分，选择要用于打印的纸张的大小。
     
-4. 在**打印设置**选项卡中的**打印缩放比例**部分中，单击**调整为**，然后输入**1 页宽乘以 1 页高**。 
+4. 在“打印设置”**** 选项卡上的“打印缩放比例”**** 部分，单击“调整为”****，然后输入“1 页宽 x 1 页高”****。 
     
-5. 在**页面尺寸**选项卡上单击**调整大小以适应绘图内容**，然后单击**确定**。 
+5. 在“页面大小”**** 选项卡上，单击“调整大小以适应绘图内容”****，然后单击“确定”****。 
     
-6. 在**文件**菜单上单击**打印**。 
+6. 在“文件”**** 菜单上单击“打印”****。 
     
 ### <a name="microsoft-tags-and-qr-codes"></a>Microsoft 标记和 QR 代码
 
@@ -132,7 +132,7 @@ Outlook Web App 中的 Lync 状态。此功能适用于： 
 
 Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件提供基于浏览器的文件查看和编辑服务。Office Web Apps Server 适用于支持 Web 应用程序开放平台接口协议 (WOPI) 的产品和服务。这些产品也称为主机，包括 SharePoint 2013、Lync Server 2013 和 Exchange Server 2013。   
   
-要了解有关 Office Web Apps Server 的详细信息，请从 http://aka.ms/OfficeWebAppsPoster 下载Office Web Apps 部署简化海报。  
+若要了解有关 Office web apps Server 的详细信息, 请下载 office web apps 部署http://aka.ms/OfficeWebAppsPoster简化的海报。 
   
 ## <a name="server-to-server-authentication-tab"></a>“服务器到服务器身份验证”选项卡。
 
@@ -140,7 +140,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
 
 服务器到服务器身份验证是 Exchange Server 2013、Lync Server 2013 和 SharePoint Server 2013 的一项新功能，它允许服务器代表用户请求另一台服务器的资源。此功能使用业界标准开放授权 (OAuth) 2.0 协议。服务器到服务器身份验证启用了电子数据展示、高分辨率用户照片和网站邮箱等许多新的方案。  
   
- **服务器产品**
+ **服务器产品** 
   
 - Exchange Server 2013 
     
@@ -162,11 +162,11 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
   
 下表列出了每个服务器的 JSON 元数据终结点。下表显示了：  
   
-- Exchange 服务器使用 https:// 的 JSON 元数据终结点<server name>/autodiscover/metadata/json/1 
+- 具有 https://<server name>/autodiscover/metadata/json/1 的 JSON 元数据终结点的 Exchange 服务器 
     
-- 用 JSON 元数据终结点的 https:// Lync server<server name>/metadata/json/1 
+- 具有 https://<server name>/metadata/json/1 的 JSON 元数据终结点的 Lync 服务器 
     
-- 使用 https:// 的 JSON 元数据终结点的 SharePoint 服务器<web app name>/_layouts/15/metadata/json/1 
+- 具有 https://<web app name>/_layouts/15/metadata/json/1 的 JSON 元数据终结点的 SharePoint 服务器 
     
 ### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>示例：SharePoint 和 Exchange 之间的电子数据展示的服务器到服务器身份验证工作原理
 
@@ -184,15 +184,15 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 4. Exchange 服务器验证访问令牌，然后发送查询结果。  
     
-5. 服务器运行 SharePoint 服务器发送到 eDiscovery 管理员计算机 eDiscovery 查询结果。 
+5. 运行 SharePoint server 的服务器将电子数据展示查询结果发送到电子数据展示管理员的计算机。 
     
 ## <a name="high-resolution-user-photos-tab"></a>“高分辨率用户照片”选项卡
 
 ### <a name="larger-profile-picture-used-across-all-office-applications"></a>跨所有 Office 应用程序使用的较大个人资料图片
 
-使用**高分辨率的用户照片**选项卡，您可以存储照片为 648 x 648 个像素在 Exchange 2013。然后可以通过客户端应用程序，包括 Outlook、 Outlook Web App，SharePoint 2013，Lync 2013 和移动电子邮件客户端访问他们。低分辨率的照片也将存储在 Active Directory 中。
+通过使用“高分辨率用户照片”**** 选项卡，您可以在 Exchange 2013 中存储最大为 648 x 648 像素的照片。然后可以供客户端应用程序访问，包括 Outlook、Outlook Web App、SharePoint 2013、Lync 2013 和移动电子邮件客户端。Active Directory 中也会存储低分辨率照片。
   
- **服务器产品**
+ **服务器产品** 
   
 - Exchange Server 2013 
     
@@ -208,19 +208,19 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 - 在 Exchange 2013 和 Lync 2013 之间。  
     
- **在 Exchange Server 2013**
+ **在 Exchange Server 2013 上**
   
 - 启动并配置 Exchange 2013 自动发现服务。  
     
 - 设置 SharePoint 的外部 URL。这是 SharePoint 访问 Exchange 中的照片时使用的 URL。  
     
- **在 SharePoint Server 2013**
+ **在 SharePoint Server 2013 上**
   
 - 安装 Exchange Web 服务托管 API。使用 GacUtil 将 Microsoft.Exchange.WebServices.dll 加载到全局程序集缓存 (GAC) 中。   
     
 - 使用 Windows PowerShell 配置与 Exchange 的照片同步。  
     
- **它的工作原理**
+ **工作原理**
   
 - 用户在 Outlook Web App (OWA) 中使用“我的帐户”页面，或者在 Outlook 2013 中使用帐户设置上载照片。  
     
@@ -234,11 +234,11 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 - 648 × 648 用于 Lync Web Access 和 Lync 2013。  
     
-例如配置脚本，请参阅 Jens Trier 开始博客文章： 
+有关示例配置脚本, 请参阅 Jens Trier Rasmussen 的博客文章: 
   
-- 使用 SharePoint Server 2013 中的 Exchange 2013 高分辨率照片 (http://aka.ms/Bhr4d2)   
+- 使用来自 SharePoint Server 2013 的 Exchange 2013 高分辨率照片 (http://aka.ms/Bhr4d2) 
     
-- 将 Exchange 2013 和 Lync Server 2013 (http://aka.ms/Pn08dw) 集成 
+- 集成 Exchange 2013 和 Lync Server 2013 (http://aka.ms/Pn08dw) 
     
 海报中还包含这两篇博客文章的 QR 代码。  
   
@@ -253,7 +253,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
   - “我的网站”通过 HTTP 或 HTTPS 连接到 SharePoint 服务器。SharePoint 在 MySite 数据库 (Https:443) 中对用户进行缓存。SharePoint 服务器使用在 Exchange 中设置的外部 URL 与 Exchange 客户端访问服务器进行交互。  
     
-  - Lync 2013 客户，维护与 Exchange 服务器的 GetConnection 以获取照片更新 （HTTPS Get 请求-443）。 
+  - Lync 2013 客户端, 它将维护与 Exchange 服务器的 GetConnection, 以获取照片更新 (HTTPS get 请求-443)。 
     
 4. Exchange 客户端访问服务器使用内部 Exchange 通信连接到 Exchange 邮箱服务器。   
     
@@ -269,7 +269,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
 
 统一联系人存储 (UCS) 可跨 Microsoft Office 产品提供一致的联系人体验。用户在其 Exchange 2013 邮箱中存储所有联系人信息。这些联系人信息在 Lync、Exchange、Outlook 和 Outlook Web App 之间全局可用。   
   
- **服务器产品**
+ **服务器产品** 
   
 - Exchange Server 2013 
     
@@ -281,11 +281,11 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 - 在 Lync 2013 中，启用统一联系人存储策略（默认为启用）。  
     
-例如，配置脚本，看到 Jens Trier 开始博客文章： 
+有关示例配置脚本, 请参阅 Jens Trier Rasmussen 的博客文章: 
   
-- 将 Exchange 2013 与 Lync Server 2013 集成 (http://aka.ms/Oyg7fh)   
+- 集成 Exchange 2013 和 Lync Server 2013 (http://aka.ms/Oyg7fh) 
     
- **它的工作原理**
+ **工作原理** 
   
 - 当用户使用 Lync 2013 登录时，用户的 Lync 联系人将自动迁移到 Exchange 2013。  
     
@@ -293,11 +293,11 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 当用户处于以下情况时，会自动将用户的联系人迁移到 Exchange 2013 服务器： 
   
-1. 已分配用户服务策略具有 UcsAllowed 设置为**True**。 
+1. 为其分配了将 UcsAllowed 设置为 **True** 的用户服务策略。 
     
 2. 为其设置了 Exchange 2013 邮箱并且该用户至少已登录该邮箱一次。 
     
-3. 使用 Lync 2013 富客户端登录到 Lync。  
+3. 使用 Lync 2013 富客户端登录到 Lync。 
     
 使用 Lync 2013 富客户端登录到 Lync。  
   
@@ -307,7 +307,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 3. Lync 客户端通知 Lync 服务器已通过 SIP/5061 为统一联系人存储启用用户。  
     
-4. Lync server 使用 Lync 存储服务迁移到 Exchange 2013 Exchange 客户端访问服务器上的用户的联系人。 
+4. lync server 使用 Lync Storage Service 将用户的联系人迁移到 exchange 客户端访问服务器上的 exchange 2013。 
     
 5. 用户必须注销然后登录到 Lync 2013，以使更改显示（图中未显示）。  
     
@@ -319,7 +319,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
 
 网站邮箱通过允许使用相同客户端接口同时访问 SharePoint 中的文档和 Exchange 中的电子邮件，从而改进协作和提高用户工作效率。 
   
- **服务器产品**
+ **服务器产品** 
   
 - Exchange Server 2013 
     
@@ -347,7 +347,7 @@ Exchange 配置： 
     
 - 配置网站邮箱名前缀（可选）。 
     
- **它的工作原理**
+ **工作原理**
   
 网站邮箱在功能上由 SharePoint 2013 站点成员资格（所有者和成员）、共享存储（对于电子邮件，通过 Exchange 2013 邮箱来实现，对于文档则通过 SharePoint 2013 站点来实现）以及满足设置和生命周期需求的管理接口组成。 
   
@@ -385,7 +385,7 @@ SharePoint 网站成员资格确定谁可以访问网站邮箱。  
   
 #### <a name="exchange"></a>Exchange
 
-该图显示网站邮箱资源调配策略。这是有需要设置网站邮箱的 Exchange 组件。
+图中显示了网站邮箱设置策略。 这是预配网站邮箱所需的 Exchange 组件。
   
 在 Exchange 服务器上，您可以定义网站邮箱设置策略。这些策略控制发送到网站邮箱及从中接收的电子邮件特性、Exchange Server 上的网站邮箱大小，并让您可以定义网站邮箱电子邮件地址的前缀。   
   
@@ -397,7 +397,7 @@ SharePoint 网站成员资格确定谁可以访问网站邮箱。  
 
 通过使用 Exchange 任务同步，您可以将 SharePoint Server 2013 和 Project Server 2013 中的任务与 Exchange Server 2013 同步。用户可以在 Outlook 2013 或“我的网站”上查看和管理其任务。  
   
- **服务器产品**
+ **服务器产品** 
   
 - Exchange Server 2013 
     
@@ -405,7 +405,7 @@ SharePoint 网站成员资格确定谁可以访问网站邮箱。  
     
 - Project Server 2013（可选） 
     
- **系统必备组件**
+ **先决条件**
   
 在 Exchange 2013 上：  
   
@@ -431,7 +431,7 @@ SharePoint 网站成员资格确定谁可以访问网站邮箱。  
   
 - 创建 Project Web 应用程序网站。 
     
- **它的工作原理**
+ **工作原理**
   
 “我的网站”上的“我的任务”视图何时打开或刷新：  
   
@@ -457,7 +457,7 @@ SharePoint Server 2013 运行下列作业和应用程序： 
     
 - Exchange 同步计时器作业，如下所述。  
     
-- SharePoint Server 2013 包含用户的我的网站和其他网站中，并运行大量的用户任务。 
+- SharePoint Server 2013 包含用户的 "我的网站" 和其他网站, 并运行多个用户任务。 
     
 - SharePoint Server 2013 包含搜索索引。  
     
@@ -509,9 +509,9 @@ Exchange 同步计时器作业： 
   
 客户端产品：  
   
-- Outlook 2013  
+- Outlook 2013 
     
-- Lync 2013  
+- Lync 2013 
     
 服务器产品：  
   
@@ -521,13 +521,13 @@ Exchange 同步计时器作业： 
     
 - SharePoint Server 2013 
     
- **它的工作原理**
+ **工作原理** 
   
 只要 Lync 2013 安装在用户的本地计算机上，Outlook 和 SharePoint Server 就会自动显示用户的状态信息。  
   
 对于 Outlook Web App 用户，Exchange CAS 代表用户查询状态。  
   
- **有两个附带的关系图**
+ **有两个随附的图**
   
 第一个图显示用户如何登录到 Outlook Web App，然后 Exchange 向 Lync Server 查询状态信息。  
   
@@ -535,7 +535,7 @@ Exchange 同步计时器作业： 
     
 2. 用户登录到 Exchange 2013 邮箱，Exchange CAS 通过 SIP/MTLS:5061 向 Lync Server 查询状态信息。  
     
-有关详细信息，请参阅[集成 Microsoft Lync Server 2013 和 Microsoft Outlook Web App 2013年](https://go.microsoft.com/fwlink/?LinkId=313522)。
+有关详细信息, 请参阅[集成 Microsoft Lync Server 2013 和 Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522)。
   
 第二个图显示 Outlook 和 SharePoint Server 如何使用 Lync 2013 显示用户的状态信息。  
   
@@ -555,21 +555,21 @@ Exchange 同步计时器作业： 
 
 语音邮件使呼叫者可以使用 Exchange 统一消息 (UM)，向 Lync 用户留下语音邮件。   
   
-客户端产品：  
+客户端产品： 
   
-- Lync 2013  
+- Lync 2013 
     
 - PSTN 设备（PBX、移动电话、POTS）  
     
-服务器产品：  
+服务器产品： 
   
 - Exchange Server 2013 
     
 - Exchange Server 2013 
     
- **它的工作原理**
+ **工作原理** 
   
-当调用方的当前终结点的任何调用方得不到回应时，Lync Server UM 交换 （即 Exchange 邮箱服务器） 上的路由到语音邮件调用。 
+当被呼叫者的任何活动终结点上的被呼叫方不应答呼叫时, Lync Server 会将呼叫路由到 exchange UM (即 exchange 邮箱服务器) 上的语音邮件。 
   
 随附的图显示了两种方案下的呼叫路由：  
   
@@ -581,21 +581,21 @@ Exchange 同步计时器作业： 
   
 1. 呼叫者 A 使用 Lync 2013 对被呼叫者启动呼叫。呼叫启动并发送至 Lync Server。  
     
-2. 呼叫被路由到被调用方的 Lync 主服务器。 
+2. 将呼叫路由到被呼叫者的 Lync 主服务器。 
     
-3. Lync Server 振铃 Lync 2013 的被调用方的当前终结点。 
+3. lync Server 在 Lync 2013 上响铃被呼叫者的活动终结点。 
     
 4. 当呼叫未得到回应时，呼叫将在 Exchange CAS（呼叫路由器）上被路由到语音邮件 (Exchange UM)。  
     
 呼叫者使用 Lync 2013 启动呼叫：  
   
-1. 调用方 B 拨打 PSTN 使用方的电话号码。 
+1. 呼叫者 B 使用 PSTN 拨打被叫方的电话号码。 
     
 2. PSTN 呼叫从 IP 网关路由到中介服务器，即 Lync 服务器。  
     
-3. 中介服务器 routs 调用被调用方的 Lync 主服务器。 
+3. 中介服务器将调用被呼叫者的 Lync 主服务器。 
     
-4. Lync Server 振铃 Lync 2013 的被调用方的当前终结点。 
+4. lync Server 在 Lync 2013 上响铃被呼叫者的活动终结点。 
     
 5. 当呼叫未得到回应时，呼叫将在 Exchange CAS（呼叫路由器）上被路由到语音邮件 (Exchange UM)。  
     
@@ -607,27 +607,27 @@ Exchange 同步计时器作业： 
   
 客户端产品：  
   
-- Lync 2013  
+- Lync 2013 
     
 服务器产品：  
   
 - 服务器产品：  
     
-- SharePoint 2013  
+- SharePoint 2013 
     
-先决条件： 
+组件 
   
 - Lync 2013 — 会议录制是 Lync 2013 中的客户端功能。   
     
 - SharePoint 2013 — 您希望在其中存储会议录制的工作组网站已启动并运行。  
     
- **什么被记录？**
+ **记录内容是什么？**
   
 在会议期间，会将以下内容录制到 MP4 文件中（每个项目符号点前面有一个图标，表示录制类型）：  
   
 - 所有音频  
     
-- 活动发言人的视频 （如果使用） 
+- 活动扬声器的视频 (如果使用) 
     
 - 全景视频（如果使用）  
     
@@ -657,9 +657,9 @@ Exchange 同步计时器作业： 
   
 IIS 服务器包含 IIS 设置。  
   
-准备发布会议录制：  
+准备发布会议录制： 
   
-1. 在 SharePoint 工作组网站上，添加资源库应用程序 （可选） 如果您不能上载大小限制或连接超时的会议录制，请执行附加的步骤 2 和 3。 
+1. 在 SharePoint 工作组网站上，添加资产库应用程序。 （可选）如果由于大小限制或连接超时无法上载会议录制，请执行附加的步骤 2 和 3。 
     
 2. 在 SharePoint 管理中心中，更改包含工作组网站集的 Web 应用程序的最大上载大小设置。  
     
@@ -667,26 +667,26 @@ IIS 服务器包含 IIS 设置。 
     
  **数字资产库**
   
-数字资产库是包含具有特定容量和性能含义的视频的资产库。有关详细信息，请参阅“在 SharePoint Server 2013 中规划数字资产库”(http://aka.ms/O1vq5w)。此海报中还包含用于访问此信息的 QR 代码。  
+数字资产库是包含具有特定容量和性能含义的视频的资产库。 有关详细信息, 请参阅在中规划位于http://aka.ms/O1vq5w的 SharePoint Server 2013 中的数字资源库。 此海报中还包含用于访问此信息的 QR 代码。 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>使用 Lync 客户端录制和发布会议
 
 图中显示用户使用 Lync 加入会议。会议使用 Lync 客户端录制，这将创建一个包含会议内容的 MP4 文件。MP4 录制将保存到计算机上的 Lync 录制文件夹。您可以将 MP4 录制移到会议资产库中，从中可以将录制插入到 Wiki、SharePoint 页面或博客。  
   
- **记录并发布会议使用 Lync 客户端**
+ **使用 Lync 客户端录制和发布会议** 
   
 1. 开始使用 Lync 客户端录制会议。  
     
 2. 在会议期间，会议内容会录制到一个 MP4 文件中。  
     
-3. MP4 录制会议结束后，出现在您计算机上的录制文件夹 (c:\\用户\\<username>\\视频\\Lync 录制)。（可选） 您可以自定义使用 Lync 记录管理器应用程序，它使用 Lync 客户端安装在该会议录制。 
+3. 会议结束后, 工作时录制会显示在计算机上的 "录制" 文件夹中 (\\C\\<username>\\:\\用户视频 Lync 录制)。 （可选）您可以使用随 Lync 客户端一起安装的 Lync 录制管理器应用程序对会议录制进行自定义。 
     
-4. 将会议录制拖放到 SharePoint 资产库中。  
+4. 将会议录制拖放到 SharePoint 资产库中。 
     
-5. 可选： 一旦录制在资源库中，您可以将其插入任何 SharePoint 页面中。有关此步骤的详细信息，请参阅 Office 365 的博客条目，创建和发布与 SharePoint 和 Lync Online 的培训视频位于 http://aka.ms/R61q35。 
+5. 可选：录制位于资产库中之后，即可将其插入到任何 SharePoint 页面。 有关此步骤的详细信息, 请参阅 Office 365 博客条目, 创建并发布带有 SharePoint 和 Lync Online 的培训视频, 位于http://aka.ms/R61q35。 
     
  **视频缩略图**
   
-视频缩略图改进了资产库的外观。要了解有关创建会议录制的缩略图的详细信息，请参阅“捕获或更改视频缩略图”(http://aka.ms/Kupj85)。此海报中还包含用于访问此信息的 QR 代码。  
+视频缩略图改进了资产库的外观。 若要了解有关创建会议录制的缩略图的详细信息, 请参阅捕获或更改视频缩略http://aka.ms/Kupj85图 (位于)。 此海报中还包含用于访问此信息的 QR 代码。 
   
 

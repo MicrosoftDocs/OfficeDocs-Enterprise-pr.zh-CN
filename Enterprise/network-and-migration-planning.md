@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
 ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574036"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487270"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
@@ -108,7 +108,7 @@ ms.locfileid: "30574036"
     
 - [Office 365 视频网络常见问题 (FAQ)](office-365-video-networking-faq.md)
     
-- [规划连接到 Office 365 服务的网络设备](plan-for-network-devices.md)
+- [有关连接到 Office 365 服务的网络设备的计划](plan-for-network-devices.md)
     
 - [Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)
     

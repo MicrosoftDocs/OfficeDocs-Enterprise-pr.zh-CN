@@ -18,26 +18,26 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。检查表中的阶段和步骤与 "加入中心" 提供的指导保持一致。
+description: 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。 检查表中的阶段和步骤与 "加入中心" 提供的指导保持一致。
 ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085301"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490098"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 部署计划清单
 
-将企业组织迁移到 Office 365 时, 务必要准确规划要执行的步骤、执行时间以及执行这些步骤的用户。此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。检查表中的阶段和步骤与 "[加入中心](https://go.microsoft.com/fwlink/?LinkId=517115)" 提供的指导保持一致。你可以根据组织的需要自由调整此检查表。
+将企业组织迁移到 Office 365 时, 务必要准确规划要执行的步骤、执行时间以及执行这些步骤的用户。 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。 检查表中的阶段和步骤与 "[加入中心](https://go.microsoft.com/fwlink/?LinkId=517115)" 提供的指导保持一致。 你可以根据组织的需要自由调整此检查表。
 
 ## <a name="need-help-with-your-deployment"></a>您的部署是否需要帮助？
-您是否希望获得 Office 365 设置的帮助？请考虑使用[FastTrack](https://fasttrack.microsoft.com/office)或[Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)。
+您是否希望获得 Office 365 设置的帮助？ 请考虑使用[FastTrack](https://fasttrack.microsoft.com/office)或[Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)。
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Office 365 企业版部署的示例清单
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**部署任务/事件** <br/> |**开始日期** <br/> |**完成日期** <br/> |**资源** <br/> |**相关性** <br/> |
+|**部署任务/Events** <br/> |"开始日期" <br/> |**完成日期** <br/> |**资源** <br/> |**依赖项** <br/> |
 |**确定您的部署目标** <br/> |||||
 | 与您的内部和外部利益干系人:<br>  -在范围和时间线上达成一致 <br>  -同意项目跟踪机制  <br>  -开发成功条件和[开始使用 Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)的[通信](https://fasttrack.microsoft.com/office) / |||||
 |**清点当前环境并做出主要部署决策** |||||

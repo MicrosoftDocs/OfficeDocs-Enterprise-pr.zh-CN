@@ -16,11 +16,11 @@ ms.custom:
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 摘要：了解如何使用 Office 365 PowerShell 管理 Office 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和 Office 365 安全与合规中心。
 ms.openlocfilehash: eb5b9a91a81d03a2de14d3507ef9a9172f44ec58
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "18609004"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491168"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Office 365
 
