@@ -13,82 +13,82 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: 讨论网络优化为何重要 SaaS 服务，Office 365 网络的目标和如何 SaaS 需要从其他工作负荷的不同网络。
+description: 讨论为什么网络优化对 SaaS 服务非常重要, Office 365 网络的目标, 以及 SaaS 如何从其他工作负载中获得不同的网络。
 ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897205"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491900"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 网络连接概述
 
-Office 365 提供通过多种多样微服务和应用程序的工作效率和协作方案分布式的软件作为-服务 (SaaS) 云。如 Outlook、 Word 和 PowerPoint 的 Office 365 的客户端组件在用户计算机上运行并连接到 Microsoft 数据中心中运行 Office 365 的其他组件。确定 Office 365 最终用户体验质量最重要的因素是网络可靠性和 Office 365 客户端和 Office 365 服务前盖之间的低延迟。
+Office 365 是分布式软件即服务 (SaaS) 云, 它通过一组不同的微服务和应用程序提供工作效率和协作方案。 office 365 的客户端组件 (如 Outlook、Word 和 PowerPoint) 在用户计算机上运行, 并连接到在 Microsoft 数据中心中运行的 office 365 的其他组件。 确定 office 365 最终用户体验质量的最重要因素是网络可靠性和 office 365 客户端与 office 365 服务前盖之间的低延迟。
 
-本文中，您将了解 Office 365 网络、 目标和 Office 365 网络为什么需要比一般 Internet 通信优化的不同方法。
+在本文中, 您将了解 office 365 网络的目标, 以及为什么 office 365 网络需要不同的优化方法来优化常规 Internet 流量。
 
 ## <a name="office-365-networking-goals"></a>Office 365 网络目标
 
-Office 365 网络的最终目标是最松散访问客户端之间的关系较好的 Office 365 终结点，从而优化的最终用户体验。最终用户体验质量直接与的性能和用户使用的应用程序的响应。例如，Microsoft 团队依赖低延迟，以便用户电话呼叫、 会议和共享的屏幕协作是小故障释放，并 Outlook 依赖利用服务器端索引和 AI 的即时搜索功能强大的网络连接能力功能。
+Office 365 网络的最终目标是通过在客户端和最接近的 Office 365 终结点之间启用限制性最少的访问来优化最终用户体验。 最终用户体验的质量与用户正在使用的应用程序的性能和响应直接相关。 例如, Microsoft 团队依赖较低的延迟, 以便用户电话呼叫、会议和共享屏幕协作免费, 并且 Outlook 依靠强大的网络连接实现即时搜索功能, 从而利用服务器端索引和 AI能力.
 
-网络设计中的主要目标应以减少延迟通过减少的往返时间 (RTT) 从客户端计算机与 Microsoft 全局网络，Microsoft 的公用网络中枢的互连所有 Microsoft 数据中心的低延迟在世界各地分布的高可用性云应用程序入口点。您可以了解有关在[Microsoft 如何构建其快速且可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)的 Microsoft 全局网络的详细信息。
+网络设计中的主要目标是将客户端计算机的往返时间 (RTT) 从客户端计算机减少到 microsoft 全局网络, 从而将所有 microsoft 的数据中心互连到低延迟的 microsoft 公共网络骨干, 从而最大限度地减少延迟, 高可用性云应用程序入口点分布在世界各地。 你可以在[microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)中了解有关 microsoft 全球网络的详细信息。
 
-优化 Office 365 网络性能不需要很复杂。通过以下几项主要原则，可获得最佳性能：
+优化 Office 365 网络性能不需要太复杂。 您可以通过遵循以下几个关键原则获取最佳性能:
 
 - 确定 Office 365 网络流量
-- 到 internet 的 Office 365 网络流量的本地分支出口允许从每个用户连接到 Office 365 的位置的位置
-- 允许 Office 365 流量以绕过代理服务器和数据包检查设备
+- 允许从用户连接到 office 365 的每个位置将 Office 365 网络流量的本地分支出口到 internet
+- 允许 Office 365 流量绕过代理和数据包检查设备
 
-Office 365 网络连接原则的详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)。
+有关 office 365 网络连接原则的详细信息, 请参阅[office 365 网络连接原则](office-365-network-connectivity-principles.md)。
 
 ## <a name="traditional-network-architectures-and-saas"></a>传统网络体系结构和 SaaS
 
-客户端/服务器工作负荷的传统网络体系结构原则设计周围客户端和终结点之间的通信不会扩展外部企业网络外围假设。此外，在很多企业网络中，所有出站的 Internet 连接遍历企业网络和出口从一个中心位置。
+传统的网络体系结构针对客户端/服务器工作负载的原则旨在假定客户端和终结点之间的通信不会延伸到公司网络外围之外。 此外, 在许多企业网络中, 所有出站 Internet 连接都在企业网络中, 并从中心位置外出。
 
-在传统网络体系结构，更高延迟的一般 Internet 通信是必要权衡为了维护网络外围安全和 Internet 通信的性能优化通常需要升级或向外扩展在网络出口点的设备。但是，此方法不能解决 SaaS 服务，例如 Office 365 的理想的网络性能的要求。
+在传统网络体系结构中, 常规 Internet 流量的较高延迟是维护网络外围安全所必需的, 并且 Internet 流量的性能优化通常涉及升级或扩展网络出局点的设备。 但是, 此方法并不能满足针对 SaaS 服务 (如 Office 365) 的最佳网络性能要求。
 
-## <a name="identifying-office-365-network-traffic"></a>确定 Office 365 网络流量
+## <a name="identifying-office-365-network-traffic"></a>识别 Office 365 网络流量
 
-我们正在使其更轻松地识别 Office 365 网络通信，并使其更易于管理网络标识。
+我们可以更轻松地识别 Office 365 网络流量, 并简化管理网络标识的过程。
 
-- 新类别的网络终结点的不受影响的 Internet 延迟网络流量从区分高度重要的网络通信。有刚才的几个 Url 和支持的最重要的"优化"类别中的 IP 地址。
-- 脚本使用情况或直接设备配置和更改管理的 Office 365 网络标识用于 web 服务。更改可从 web 服务，或以 RSS 格式，或使用 Microsoft 流模板的电子邮件。
-- [Office 365 网络合作伙伴计划](http://aka.ms/Office365NPP)与 Microsoft 合作伙伴提供设备或服务，请按照 Office 365 网络连接原则和具有简单的配置。
+- 新类别的网络终结点, 用于将高度关键的网络流量与不受 Internet 延迟影响的网络流量区分开来。 在最关键的 "优化" 类别中, 只提供了少量 url 和支持 IP 地址。
+- 用于脚本使用情况的 Web 服务、Office 365 网络标识的直接设备配置和更改管理。 可以通过 web 服务或 RSS 格式, 或使用 Microsoft Flow 模板在电子邮件上获取更改。
+- Microsoft 合作伙伴提供的[Office 365 网络合作伙伴计划](http://aka.ms/Office365NPP), 其中提供了遵循 Office 365 网络连接原则并具有简单配置的设备或服务。
 
 ## <a name="securing-office-365-connections"></a>保护 Office 365 连接
 
-传统网络安全的目标是强化企业网络外围免受入侵和恶意攻击。大多数企业网络强制实施网络安全的 Internet 通信使用代理服务器、 防火墙、 SSL 中断的技术，并检查，深度数据包检查和数据丢失防护系统。这些技术提供的通用 Internet 请求的重要风险缓解时，但可以显著减少性能、 可伸缩性和应用到 Office 365 终结点时的最终用户体验质量。
+传统网络安全的目标是强化公司网络外围, 以防受到入侵和恶意攻击。 大多数企业网络使用代理服务器、防火墙、SSL 中断和检查、深度数据包检查和数据丢失防护系统等技术强制 Internet 流量的网络安全。 这些技术为常规 Internet 请求提供了重要风险缓解, 但在应用于 Office 365 终结点时, 可以显著降低性能、可伸缩性和最终用户体验的质量。
 
-Office 365 帮助满足您组织需求的内容安全性和数据使用率遵守内置的安全和管理功能，专为 Office 365 功能和工作负荷设计。有关 Office 365 安全性和遵从性的详细信息，请参阅[Office 365 安全指南](https://docs.microsoft.com/en-us/office365/securitycompliance/security-roadmap)。有关 Microsoft 的建议以及支持位置对 Office 365 流量执行高级处理的高级的网络解决方案的详细信息，请参阅[使用第三方网络设备或在 Office 365 通信解决方案](https://support.microsoft.com/en-us/help/2690045)。
+Office 365 通过专为 Office 365 功能和工作负载设计的内置安全和治理功能, 帮助满足您组织的内容安全性和数据使用合规性的需求。 有关 office 365 安全性和合规性的详细信息, 请参阅[Office 365 安全指南](https://docs.microsoft.com/en-us/office365/securitycompliance/security-roadmap)。 有关在 office 365 流量上执行高级处理的高级网络解决方案的 Microsoft 建议和支持位置的详细信息, 请参阅[在 office 365 流量上使用第三方网络设备或解决方案](https://support.microsoft.com/en-us/help/2690045)。
 
-## <a name="why-is-office-365-networking-different"></a>Office 365 网络连接不同
+## <a name="why-is-office-365-networking-different"></a>为什么 Office 365 网络是不同的？
 
-Office 365 专为终结点的安全和加密的网络连接，可减少外围安全实施的最佳性能。Office 365 数据中心位于世界各地，该服务旨在用于客户端连接到最佳可用的服务终结点的各种方法。用户数据和处理许多 Microsoft 数据中心之间分布，因为机可以连接到哪些客户端没有单个网络终结点。实际上，数据和 Office 365 租户中的服务动态优化的 Microsoft 全局网络以适应从中被最终用户访问的地理位置。
+Office 365 设计为使用端点安全性和加密网络连接实现最佳性能, 从而减少了对外围安全强制实施的需求。 Office 365 数据中心位于世界各地, 服务旨在使用各种方法将客户端连接到最佳可用服务终结点。 由于用户数据和处理分布在许多 Microsoft 数据中心之间, 因此客户端计算机可以连接到的单个网络终结点。 事实上, Office 365 租户中的数据和服务由 Microsoft 全球网络进行动态优化, 以适应最终用户访问它们的地理位置。
 
-Office 365 流量受制数据包检测和集中的外出时，将创建某些常见的性能问题：
+当 Office 365 流量受到数据包检查和集中出站的制约时, 将会创建某些常见的性能问题:
 
-- 高延迟可能导致极差的视频和音频流的性能和数据检索、 搜索、 实时协作、 日历忙/闲信息、 产品内内容和其他服务的响应速度慢
-- Egressing 从中心位置破坏了动态路由功能的 Office 365 全局网络连接，增加延迟和往返时间
-- 解密受 SSL 保护 Office 365 网络流量和重新加密会导致协议错误并且具有安全风险
+- 高延迟可能会导致视频和音频流性能极差, 以及数据检索、搜索、实时协作、日历忙/闲信息、产品内容和其他服务的响应速度较慢
+- 来自中心位置的附近连接破坏了 Office 365 全局网络的动态路由功能, 从而增加了延迟和往返时间
+- 解密受 SSL 保护的 Office 365 网络流量并对其进行重新加密可能会导致协议错误并具有安全风险
 
-客户端通信及其地理位置尽可能近出口，从而缩短 Office 365 入口点的网络路径可以提高连接 Office 365 中的性能和最终用户体验。它还有助于降低到在 Office 365 性能和可靠性的网络体系结构的未来更改的影响。获得最佳 connectivity 模型是始终提供在用户的位置，而不考虑此位于企业网络或远程位置，如 home、 酒店或、 咖啡馆和机场网络出口。一般 Internet 通信和 WAN 基于企业网络流量将单独路由和不使用本地直接出口模型。下图中表示此本地直接出口模型。
+通过允许客户端流量尽可能接近其地理位置来缩短 office 365 入口点的网络路径, 可以提高连接性能和 office 365 中的最终用户体验。 它还有助于降低对 Office 365 性能和可靠性的网络体系结构的未来更改的影响。 最佳连接模型是始终提供用户位置的网络出口, 无论是在公司网络上还是在远程位置 (例如, 家庭、旅馆、咖啡店和机场)。 一般 Internet 流量和基于 WAN 的企业网络流量将单独路由, 而不使用本地直接传出模型。 此本地直接出口模型在下图中表示。
 
 ![本地出口网络体系结构](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
-本地出口体系结构的优点如下的 Office 365 网络流量通过传统的模型：
+本地出口体系结构对通过传统模型的 Office 365 网络通信有以下好处:
   
-- 通过 Office 365 的最佳性能优化路由长度。最终用户连接由 Microsoft 全球网络_分布式服务前盖_基础结构，动态路由到最接近的 Office 365 入口点，然后路由流量内部到数据和服务的终结点通过 Microsoft 的超低的延迟高可用性暗光纤。
-- 对于 Office 365 流量，绕过代理服务器和流量检查设备的本地出口，从而减少了企业网络基础结构上的负载。
-- 利用客户端终结点安全和云安全功能，避免冗余网络安全技术的应用程序保护两端的连接。
+- 通过优化路由长度提供最佳的 Office 365 性能。 最终用户连接通过 microsoft 全球网络的_分布式服务前端_基础结构动态路由到最接近的 Office 365 入口点, 然后将流量内部路由到 microsoft 的数据和服务终结点。超低延迟高可用性深光纤。
+- 通过允许 Office 365 流量的本地出口 (绕过代理和流量检查设备) 降低了企业网络基础结构的负载。
+- 通过利用客户端终结点安全性和云安全功能来保护两端的连接, 从而避免应用冗余网络安全技术。
 
 > [!NOTE]
-> _分布式服务前盖_基础结构是具有地理上分散的位置的 Microsoft 全局网络的高可用性和可扩展性网络边缘。它终止最终用户的连接，并高效地将其路由 Microsoft 全球网络内。您可以了解有关在[Microsoft 如何构建其快速且可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)的 Microsoft 全局网络的详细信息。
+> _分布式服务前端_基础结构是 Microsoft 全球网络的高度可用且可扩展的网络边缘 (地理位置分散)。 它会终止最终用户连接, 并在 Microsoft 全局网络中有效地路由它们。 你可以在[microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)中了解有关 microsoft 全球网络的详细信息。
 
-了解并应用 Office 365 网络连接原则的详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)。
+有关了解和应用 office 365 网络连接原则的详细信息, 请参阅[office 365 网络连接原则](office-365-network-connectivity-principles.md)。
 
-## <a name="conclusion"></a>结束语
+## <a name="conclusion"></a>总结
 
-优化 Office 365 网络性能真正涉及删除不必要的障碍。通过将 Office 365 连接视为受信任流量，您可以防止数据包检测和代理带宽的竞争引入延迟。允许客户端计算机和 Office 365 终结点之间的本地连接启用动态路由通过 Microsoft 全局网络通信。
+优化 Office 365 网络性能实际上是为了消除不必要的障碍。 通过将 Office 365 连接视为受信任的流量, 可以防止数据包检查和针对代理带宽的竞争引入延迟。 如果允许客户端计算机和 Office 365 终结点之间的本地连接, 则可以通过 Microsoft 全局网络动态路由通信。
 
 ## <a name="related-topics"></a>相关主题
 
@@ -108,4 +108,4 @@ Office 365 流量受制数据包检测和集中的外出时，将创建某些常
 
 [Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
 
-[Microsoft 如何构建其快速且可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)

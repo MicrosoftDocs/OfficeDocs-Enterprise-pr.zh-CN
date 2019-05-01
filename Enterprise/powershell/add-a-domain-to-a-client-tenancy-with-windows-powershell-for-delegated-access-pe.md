@@ -14,11 +14,11 @@ ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有的客户租户。
 ms.openlocfilehash: 85cddd28b72a3b03e9157a28c3fd1dc101a167e0
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001775"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492058"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 内部租户协作
+title: Office 365 租户间协作
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: 了解 Office 365 协作在租户和组织中如何工作。
 ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665245"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492088"
 ---
-# <a name="office-365-inter-tenant-collaboration"></a>Office 365 内部租户协作
+# <a name="office-365-inter-tenant-collaboration"></a>Office 365 租户间协作
 
 本文介绍了在两个 Office 365 租户之间进行协作的几种方法。 它适用于 Office 365 管理员。
   
@@ -99,7 +99,7 @@ Office 365-租户之间的协作选项包括使用文件和对话的中央位置
     
 ### <a name="can-we-share-domain-namespaces-across-office-365-tenants"></a>我们是否可以跨 Office 365 租户共享域命名空间？
 
-不可以。 虚域 (例如 fabrikam.com 或 tailspintoys.com) 一次只能与一个租户关联和使用。 每个租户都必须具有自己的命名空间;UPN、SMTP 和 SIP 命名空间无法在租户之间共享。
+否。 虚域 (例如 fabrikam.com 或 tailspintoys.com) 一次只能与一个租户关联和使用。 每个租户都必须具有自己的命名空间;UPN、SMTP 和 SIP 命名空间无法在租户之间共享。
   
 ### <a name="what-about-hybrid-components-and-office-365-inter-tenant-collaboration"></a>混合组件和 Office 365 之间的协作是什么？
 

@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 description: Office 365 视频存储库和流服务使您的组织内的存储和流式处理视频更加简单。 有关 Office 365 视频的很多重要信息, 请参阅。此网络常见问题解答旨在回答有关带宽规划、加密和服务如何利用内容传递网络 (cdn) 的常见问题。
 ms.openlocfilehash: f11bd8baff7c2527287f6e1249ad4dae1928bdd2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30641519"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491920"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 视频网络常见问题
 

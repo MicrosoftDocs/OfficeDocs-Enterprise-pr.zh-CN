@@ -12,36 +12,36 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: Office 365 网络合作伙伴计划允许您的设备，以使用 Office 365 成为认证。
+description: office 365 网络合作伙伴计划可让你的设备在使用 Office 365 时获得认证。
 hideEdit: true
 ms.openlocfilehash: 41dc90c95fff9b3abb7d4ed90f9e1ee6f5f35a17
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539693"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492028"
 ---
 # <a name="office-365-networking-partner-program"></a>Office 365 网络合作伙伴计划
 
-现代，可扩展软件作为服务 (SaaS) 云就绪网络连接到与 Microsoft Office 365 成功数字转换的键。  
+新式、可扩展的软件即服务 (SaaS) 云就绪, 网络连接是 Microsoft Office 365 成功进行数字转换的关键所在。  
 
-Microsoft 客户的业务生产力采用 Office 365，出现网络性能和生成的最终用户协作体验 Office 365 中的常见趋势直接受用户之间的路径中的网络解决方案和Office 365。  
+随着客户采用 Office 365 的业务效率, Microsoft 已观察到网络性能和 Office 365 中最终用户协作体验直接受网络解决方案影响的常见趋势在用户与之间的路径中,Office 365。  
 
-从开始到云其旅程客户通常面临着转换从旧、 辐射状、 为中心数据中心的企业网络和安全体系结构。和 Office 365 中使用的丰富的协作功能时，旧的网络连接到 Office 365 的客户可能会遇到性能问题。为 Office 365 客户端的目标是实现现代化，并优化其企业网络，若要为其员工和合作伙伴提供一流协作体验，简化 IT 管理，并降低成本。 
+如果客户开始将其进入云, 则通常会面临从旧版、中心辐射、集中式企业网络和安全体系结构过渡的挑战。 通过旧网络连接到 office 365 的客户在使用 Office 365 中的丰富协作功能时可能会遇到性能问题。 Office 365 客户的最终目标是现代化并优化其企业网络, 为其员工和合作伙伴提供一流的协作体验、简化 IT 管理并降低成本。 
 
-若要实现现代化绝佳连接到 Office 365 的企业网络，客户通常依赖于网络解决方案提供商、 本地或基于云的安全服务和系统集成商规划、 设计和实现针对云的网络连接服务。客户通常要求 Microsoft 其网络体系结构和解决方案工作与 Office 365 和它们是否与 Microsoft 的[Office 365 的网络连接原则](http://aka.ms/PNC)对齐。  
+若要现代化企业网络以实现与 Office 365 的良好连接, 客户通常依赖网络解决方案提供商、内部部署或基于云的安全服务和系统集成商来规划、设计和实现云的网络连接服务行业. 客户通常会询问 Microsoft 其网络体系结构和解决方案是否适用于 office 365, 以及它们是否与 Microsoft[针对 office 365 的网络连接原则](http://aka.ms/PNC)相一致。  
 
-Microsoft 致力帮助客户构建和优化获得最佳的 Office 365 体验其网络体系结构连接。Office 365 团队使用多个网络行业合作伙伴，以帮助确保最佳连接项主要原则本机构建到他们的网络产品和解决方案。 
+Microsoft 致力于帮助我们的客户构建和优化其网络体系结构连接, 以实现最佳 Office 365 体验。 Office 365 团队与许多网络行业合作伙伴合作, 以帮助确保在其网络产品和解决方案中本机内置了最佳连接的关键原则。 
 
-这，我们俩地宣布 Office 365 网络合作伙伴应用程序，以深化与网络合作伙伴协作和确定关键产品和遵守 Microsoft 的 Office 365 网络要求，建议的解决方案的目标和最佳做法。 
+为此, 我们 thrilled 宣布推出 office 365 网络合作伙伴计划, 其目标是加深与网络合作伙伴的协作, 并确定遵循 Microsoft Office 365 网络要求的关键产品和解决方案 (建议)和最佳做法。 
 
-Microsoft Office 365 网络合作伙伴计划指定为"适用于 Office 365"限定网络解决方案。  
+Microsoft Office 365 网络合作伙伴计划将合格的网络解决方案指定为 "适用于 Office 365"。  
 
-仅设备或满足 Microsoft 的严格测试需求的解决方案具有无缝体验的安装程序，并且演示高质量网络体验与 Office 365 一起使用时将收到"适用于 Office 365"的名称。  
+仅适用于满足 Microsoft 严格测试要求的设备或解决方案, 能够在安装过程中实现无缝体验, 并演示在 office 365 中使用时的高质量网络体验将会收到 "使用 office 365" 称号。  
 
-当前正在与 Microsoft 合作满足要求才能接收"适用于 Office 365"指定多个网络的解决方案提供商。此页上，将发布有关如何设置这些解决方案的最佳的 Office 365 连接性和性能的详细信息。  
+目前, 有几个网络解决方案提供商正在与 Microsoft 合作, 满足接收 "使用 Office 365" 的要求。 有关如何设置这些解决方案以实现最佳 Office 365 连接和性能的详细信息将在此页面上发布。  
 
-如果您是 Office 365 客户，则可以使网络解决方案提供商了解此程序通过此链接[http://aka.ms/Office365NPP](http://aka.ms/Office365NPP)。
+如果你是 Office 365 客户, 则可以通过此链接[http://aka.ms/Office365NPP](http://aka.ms/Office365NPP)使网络解决方案提供商了解此程序。
 
-对于网络解决方案提供商想要查询有关 Office 365 网络合作伙伴计划，[填写此窗体](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyOZxByRF1dLgv7k6ye5z8pUMTNCVTYyVk9GNEYzWjFOVkI1SzdJNUkyWi4u)，我们将为联系。感谢您感兴趣，我们期待美观合作关系。 
+对于想要咨询 Office 365 网络合作伙伴计划的网络解决方案提供商, 请[填写此表格](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyOZxByRF1dLgv7k6ye5z8pUMTNCVTYyVk9GNEYzWjFOVkI1SzdJNUkyWi4u), 我们将进行联系。 感谢你的关注, 我们期待成为可爱的合作伙伴关系。 
 

@@ -14,167 +14,167 @@ search.appverid:
 - WSU140
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
-description: SharePoint 2010 和 SharePoint Server 2010 即将结束的支持。使用本文作为指南升级到 SharePoint Online 或 SharePoint Server 内部部署的更新版本。
+description: sharepoint 2010 和 sharepoint Server 2010 即将结束支持。 使用本文作为升级到 sharepoint Online 或本地 sharepoint Server 的更新版本的指南。
 ms.openlocfilehash: c88c6010aa398d8076fce59976bf6f5c0aa1a743
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169864"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492038"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>从 SharePoint 2010 升级
 
-在 Oct 13 2020年上 Microsoft Office SharePoint Server 2010 达到结束的支持。本文介绍可帮助用户迁移到 SharePoint Online，他们现有的 SharePoint Server 2010 数据或升级 SharePoint Server 本地资源。
+在10月13日, 2020, Microsoft Office SharePoint Server 2010 达到支持的结尾。 本文详细介绍了可帮助用户将其现有的 sharepoint server 2010 数据迁移到 SharePoint Online 或在本地升级 sharepoint server 的资源。
   
-## <a name="what-is-end-of-support"></a>什么是支持的结束？
+## <a name="what-is-end-of-support"></a>什么是支持结束？
 
-SharePoint Server 2010 和 SharePoint Foundation 2010 软件达到其支持生命周期 （在此期间 Microsoft 提供的新功能、 bug 修复、 安全修补程序、 等的时间） 的末尾时这称为软件末端支持，或，有时，其退休。在产品的支持 （或 EOS） 结束时，nothing 实际关闭或停止工作;但是，在软件支持的结束时，Microsoft 不再提供：
+当您的 sharepoint server 2010 和 sharepoint Foundation 2010 软件达到其支持生命周期的结束时间 (Microsoft 提供新功能、缺陷修补程序、安全修补程序等) 时, 这称为软件的 "支持终止", 或有时, 它是 "退休"。 在产品的支持 (或 EOS) 结束时, 什么都不会真正关闭或停止工作;但是, 在软件支持结束时, Microsoft 不再提供:
   
-- 可能出现; 的问题的技术支持
+- 可能出现的问题的技术支持;
     
-- Bug 修复的问题的发现以及可能影响的稳定性和可用性的服务器。
+- 针对已发现且可能影响服务器的稳定性和可用性的问题的 Bug 修补程序。
     
-- 安全漏洞的发现和可能使该服务器安全轻易; 地受到修补程序
+- 已发现的漏洞安全修补程序以及可能会使服务器易受安全威胁的安全修补程序。
     
-- 更新所在的时区。
+- 时区更新。
     
-这意味着，将不再更新、 修补程序，或修补程序将传送的产品 （包括安全修补程序修补程序） 和 Microsoft 支持将具有完全改在其支持的努力较新版本。随着临近结束的 SharePoint Server 2010 的支持，您应利用修整不再需要升级该产品、 和/或迁移重要数据之前的数据的机会。
+这意味着将不会为产品提供任何进一步的更新、修补程序或修补程序 (包括安全修补程序/修补程序), 并且 Microsoft 支持会将其支持工作完全转移到更新的最新版本。 在支持 SharePoint Server 2010 方法之后, 您应该利用机会在升级产品和/或迁移重要数据之前, 对不再需要的数据进行修整。
   
 > [!NOTE]
-> 从产品的初始发行版的日期 10 年通常持续软件生命周期。您可以搜索与升级到下一个版本的软件，或 Office 365 迁移 （或两者） 可帮助的[Microsoft 合作伙伴](https://go.microsoft.com/fwlink/?linkid=841249)。请确保您知道的末尾，关键基础技术支持日期特别是您与 SharePoint 结合使用的 SQL server 的版本。 
+> 软件生命周期通常从产品初始发布之日起10年后持续。 你可以搜索可帮助升级到下一版本软件或使用 Office 365 迁移 (或两者) 的[Microsoft 合作伙伴](https://go.microsoft.com/fwlink/?linkid=841249)。 一定要确保您了解关键基础技术的支持日期的结束日期, 尤其是您在使用 SharePoint 时使用的 SQL server 版本。 
   
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
-首先，检查[产品生命周期网站](https://support.microsoft.com/en-us/lifecycle/search?alpha=SharePoint%20Server%202010)上支持结束日期。接下来，请务必规划此日期的知识与您升级或迁移的时间。请记住，您产品*不会停止工作*日期列出，并且您可以继续使用，但是，因为不再将该日期后修补安装，您需要将帮助您更平稳转换到下一个版本的策略产品。 
+首先, 检查[产品生命周期网站](https://support.microsoft.com/en-us/lifecycle/search?alpha=SharePoint%20Server%202010)上的支持结束的日期。 接下来, 请务必通过了解此日期来规划升级或迁移时间。 请注意, 你的产品不会在列出的日期*停止工作*, 并且你可以继续使用它, 但是, 因为在该日期之后安装不再会修补, 所以你将需要一种策略来帮助你更顺利地转换到下一个版本产品的。 
   
-此矩阵有助于绘制课程，当谈到迁移产品功能和用户数据：
+此矩阵有助于在迁移产品功能和用户数据时绘制课程:
   
-|**支持产品的末尾**|**较好**|**最好**|
+|**支持产品的结束**|**Good**|**最好**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
-||SharePoint 混合  <br/> |SharePoint Server 2016 （本地）  <br/> |
+||SharePoint 混合  <br/> |SharePoint Server 2016 (本地)  <br/> |
 |||SharePoint 云混合搜索  <br/> |
    
-如果您选择的低末尾扩展 （良好选项） 上的选项，您需要开始推出后从 SharePoint Server 2010 的迁移完成规划另一个升级。（结束的支持的 SharePoint Server 2010 和 SharePoint Foundation 2010 计划为 2020，Oct 13，但*请注意*您应始终检查[产品生命周期网站](https://support.microsoft.com/en-us/lifecycle)您最准确日期 ！） 
+如果您在规模的低端 (好的选项) 上选择选项, 则在从 SharePoint Server 2010 迁移完成后, 你将需要立即开始规划另一次升级。 (sharepoint server 2010 和 sharepoint Foundation 2010 的支持已计划为 Oct 13、2020, 但*请注意*, 应始终检查[产品生命周期网站](https://support.microsoft.com/en-us/lifecycle)以查看最准确的日期!) 
   
-## <a name="where-should-i-go-next"></a>其中应转下？
+## <a name="where-should-i-go-next"></a>下一步应转到哪里？
 
-SharePoint Server 2013 和 SharePoint Foundation 2013 可以安装在本地您自己的服务器上。否则，您可以使用 SharePoint Online，这是 Microsoft Office 365 的一部分的联机服务。您可以选择：
+可以在自己的服务器上的本地安装 sharepoint Server 2013 和 sharepoint Foundation 2013。 否则, 您可以使用 SharePoint online, 这是 Microsoft Office 365 中的一种联机服务。 您可以选择执行以下操作:
   
 - 迁移到 SharePoint Online
     
-- 升级 SharePoint 服务器或 SharePoint Foundation 本地
+- 本地升级 sharepoint server 或 sharepoint Foundation
     
-- 执行以上两项操作
+- 执行上述两项操作
     
 - 实现[SharePoint 混合](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)解决方案 
     
-注意隐藏相关的成本与维护服务器场循序，维护或自定义项，迁移和升级 SharePoint 服务器所依赖的硬件。如果您知道并具有所有这些占，它将可以更轻松地继续升级内部部署。否则，如果没有大量自定义的旧 SharePoint 服务器上运行您的服务器场，您可以受益于计划迁移到 SharePoint Online。还有可能的内部部署 SharePoint Server 在咖啡馆，只要可能选择将某些数据放入 SharePoint Online，从而减少硬件管理保留所有其数据的本地涉及的量。它可能更为经济将某些数据移到 SharePoint Online。
+了解与维护服务器场以继续、维护或迁移自定义设置以及升级 SharePoint server 所依赖的硬件相关的隐藏成本。 如果你意识到所有这些都是在内的, 则继续在本地进行升级会更容易。 否则, 如果在不进行大量自定义的旧版 SharePoint 服务器上运行服务器场, 则可以从计划迁移到 SharePoint Online 中获益。 此外, 在本地 SharePoint Server 商店中也可能选择将一些数据放入 SharePoint Online 中, 以减少在本地保存所有数据的硬件管理量。 将一些数据移动到 SharePoint Online 可能会更经济。
   
 > [!NOTE]
-> SharePoint 管理员可能[创建 Office 365 订阅](https://go.microsoft.com/fwlink/?linkid=843152)，请设置全新的 SharePoint Online 网站，然后完全，剪切离开 SharePoint Server 2010 的全新的 SharePoint Online 站点采用仅的最重要的文档。从，任何剩余的数据可能会耗尽从 SharePoint Server 2010 网站到内部部署存档。 
+> SharePoint 管理员可以[创建 Office 365 订阅](https://go.microsoft.com/fwlink/?linkid=843152), 设置全新的 SharePoint Online 网站, 然后将其完全从 sharepoint Server 2010 中裁出, 将最重要的文档完全放在新的 SharePoint online 网站中。 在这里, 任何剩余的数据可能会从 SharePoint Server 2010 网站排出到本地存档中。 
   
-|**SharePoint Online (SPO)**|**SharePoint Server 内部部署**|
+|**SharePoint Online (SPO)**|**SharePoint Server 本地**|
 |:-----|:-----|
-|时间跟踪成本很高 (计划 / 执行 / 验证)  <br/> |时间跟踪成本很高 (计划 / 执行 / 验证)  <br/> |
-|资金 （没有硬件购买） 中降低成本  <br/> |资金 （购买的硬件） 中的成本较高  <br/> |
-|一次性迁移中的成本  <br/> |一次性成本重复每未来迁移  <br/> |
-|较低的总体拥有成本 / 维护  <br/> |总体拥有成本高 / 维护  <br/> |
+|较高的时间成本 (规划/执行/验证)  <br/> |较高的时间成本 (规划/执行/验证)  <br/> |
+|降低资金成本 (无需购买硬件)  <br/> |资金成本较高 (硬件购买)  <br/> |
+|迁移的一次性成本  <br/> |每次迁移时重复的一次性成本  <br/> |
+|低总拥有成本/维护  <br/> |高总拥有成本/维护  <br/> |
    
-迁移到 Office 365 时，一次性移动将时间粗成本花费了规划，前期 （时您组织的数据，还可以决定要让进入云内容和要留下）。但是，一旦迁移数据时，升级将自动从那时，这在您不再需要管理硬件和软件更新，并将一个 Microsoft 服务级别协议 ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) 备份服务器场的运行时间。
+当迁移到 Office 365 时, 一次性移动将有较重的时间花在计划内 (在组织数据和决定对云执行的操作以及留下的准备工作的过程中) 的一段时间。 但是, 一旦迁移了数据, 升级将从该点自动进行查看, 因为您不再需要管理硬件和软件更新, 并且您的服务器场的启动时间将由 Microsoft 服务级别协议 ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) 进行支持。
   
 ### <a name="migrate-to-sharepoint-online"></a>迁移到 SharePoint Online
 
-确保 SharePoint Online 提供了您需要通过查看关联的服务说明的所有功能。下面是指向所有 Office 365 服务说明的链接：
+请确保 SharePoint Online 通过查看关联的服务说明来提供你所需的所有功能。 以下是指向所有 Office 365 服务说明的链接:
   
 [Office 365 服务说明](https://go.microsoft.com/fwlink/?linkid=272060)
   
-当前没有依据您可以直接从迁移 SharePoint Server 2010 （或 SharePoint Foundation 2010） 到 SharePoint Online 一种方法，因此多工作是手动。这确实为您提供机会到存档和修剪数据和不再需要再移动的网站。您可以存档存储到的其他数据。此外，请记住 SharePoint Server 2010 和 SharePoint Foundation 2010 都不将停止运行末尾支持，因此管理员可以在此期间 SharePoint 仍在运行如果他们的客户忘记将其数据的一些移动一段时间。
+目前尚无可直接从 sharepoint Server 2010 (或 sharepoint Foundation 2010) 迁移到 sharepoint Online 的方法, 因此大部分工作是手动进行的。 这将使您有机会在移动之前存档和修剪不再需要的数据和网站。 您可以将其他数据存档到存储中。 另请注意, sharepoint server 2010 和 sharepoint Foundation 2010 都不会在支持结束时停止工作, 因此, 如果客户忘记移动某些数据, 则管理员可能会有一段时间, 在此期间, sharepoint 仍在运行。
   
-如果您升级到 SharePoint Server 2013 或 SharePoint Server 2016，并决定将数据放入 SharePoint Online，您移动还可能涉及使用[SharePoint 迁移 API](https://support.office.com/en-us/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) （要迁移到 OneDrive for Business 的信息）。 
+如果升级到 sharepoint server 2013 或 sharepoint server 2016, 并决定将数据放入 sharepoint Online 中, 则移动可能还涉及使用[SharePoint 迁移 API](https://support.office.com/en-us/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) (将信息迁移到 OneDrive for business)。 
   
-|**联机 Pro**|**联机手段**|
+|**Online Pro**|**联机 Con**|
 |:-----|:-----|
-|Microsoft 提供 SPO 硬件和所有硬件管理。  <br/> |可用的功能可能不同于 SharePoint Server 本地和 SPO。  <br/> |
-|是您的订阅的全局管理员和可能向 SPO 网站分配管理员。  <br/> |为 SharePoint Server 内部部署中的服务器场管理员可用某些操作不存在 （或不是必需的） 在 Office 365 中，但 SharePoint 管理中的 SharePoint 管理员角色，网站集管理和网站所有权是本地您的组织  <br/> |
-|Microsoft 应用修补程序和修复基础硬件和软件 （包括 SQL server 的 SharePoint Online 运行） 的更新。  <br/> |因为没有基础服务中的文件系统无法访问，一些自定义项将受到限制。  <br/> |
-|Microsoft 发布[服务级别协议](https://go.microsoft.com/fwlink/?linkid=843153)，并移动快速以解决服务级别的事件。  <br/> |备份和还原和其他恢复选项自动通过 SharePoint Online 中的服务-备份将覆盖否则使用。  <br/> |
-|安全测试和服务器性能优化持续服务中由执行 Microsoft。  <br/> |对用户界面和其他 SharePoint 功能安装服务，可能需要进行切换打开或关闭的更改。  <br/> |
-|Office 365 满足很多行业标准： [Office 365 合规性](https://go.microsoft.com/fwlink/?linkid=843165)。  <br/> |迁移[FastTrack](https://go.microsoft.com/fwlink/?linkid=518597)协助是有限的。  <br/> 大部分升级将手动，或通过 SPO 迁移 API 中所述的[SharePoint Online 和 OneDrive 迁移内容指南](https://go.microsoft.com/fwlink/?linkid=843184)。  <br/> |
-|Microsoft 支持工程师和数据中心中的员工都不具有无管理员访问权限限制到您的订阅。  <br/> |如果硬件基础结构需要升级以支持使用较新版本的 SharePoint，或者如果辅助服务器场上的升级需要，可以是额外的成本。  <br/> |
-|合作伙伴可与一次性作业将数据迁移到 SharePoint Online 的帮助。  <br/> |在控件内将对 SharePoint Online 的不是所有更改。迁移后，设计差异菜单、 库和其他功能可能暂时会影响可用性。  <br/> |
-|联机产品会自动更新跨这意味着可能废弃功能，但没有任何结束，则返回 true 的支持生命周期的服务。  <br/> |以及基础 SQL 服务器没有结束的支持生命周期的 SharePoint 服务器 （或 SharePoint Foundation）。  <br/> |
+|Microsoft 提供 SPO 硬件和所有硬件管理。  <br/> |SharePoint Server 本地和 SPO 之间的可用功能可能有所不同。  <br/> |
+|你是订阅的全局管理员, 并且可能会向管理员分配 SPO 网站。  <br/> |在本地 sharepoint Server 中, 对服务器场管理员可用的某些操作在 Office 365 中的 sharepoint 管理员角色中不存在 (或不是必需的), 但 sharepoint 管理、网站集管理和网站所有权是本地的你的组织。  <br/> |
+|Microsoft 会对底层硬件和软件 (包括 SharePoint Online 运行的 SQL server) 应用修补程序、修补程序和更新。  <br/> |由于对服务中的基础文件系统没有访问权限, 因此某些自定义项受到限制。  <br/> |
+|Microsoft 发布[服务级别协议](https://go.microsoft.com/fwlink/?linkid=843153)并快速移动以解决服务级别事件。  <br/> |备份和还原和其他恢复选项通过 SharePoint Online 中的服务自动进行, 如果不使用, 则会覆盖备份。  <br/> |
+|Microsoft 在服务中不断执行安全测试和服务器性能调整。  <br/> |对用户界面和其他 SharePoint 功能的更改由服务安装, 并且可能需要开启或关闭。  <br/> |
+|office 365 符合多种行业标准: [office 365 合规性](https://go.microsoft.com/fwlink/?linkid=843165)。  <br/> |迁移的[FastTrack](https://go.microsoft.com/fwlink/?linkid=518597)协助受到限制。  <br/> 大部分升级都是手动进行的, 也可以通过[SharePoint Online 和 OneDrive 迁移内容路线图](https://go.microsoft.com/fwlink/?linkid=843184)中介绍的 SPO 迁移 API 进行。  <br/> |
+|Microsoft 支持工程师和数据中心中的员工都不受无限制地对订阅进行管理员访问。  <br/> |如果需要升级硬件基础结构以支持较新版本的 SharePoint, 或者如果升级需要辅助服务器场, 则可能会有额外的成本。  <br/> |
+|合作伙伴可协助将数据迁移到 SharePoint Online 的一次性作业。  <br/> |并非对 SharePoint Online 所做的所有更改都在您的控制范围内。 迁移之后, 菜单、库和其他功能中的设计差异可能会暂时影响可用性。  <br/> |
+|在线产品通过服务自动更新意味着, 尽管功能可能弃用, 但没有真正的支持生命周期的结束。  <br/> |SharePoint Server (或 sharepoint Foundation) 和基础 SQL server 的支持生命周期已结束。  <br/> |
    
-如果您决定创建新的 Office 365 网站，并将手动将数据迁移到它所需，您可以查看您的 Office 365 选项权利：
+如果您已决定创建新的 Office 365 网站, 并将在需要时手动将数据迁移到它, 则可以在此处查看 Office 365 选项:
   
 [Office 365 计划选项](https://go.microsoft.com/fwlink/?linkid=843151)
   
-### <a name="upgrade-sharepoint-server-on-premises"></a>升级 SharePoint Server 内部部署
+### <a name="upgrade-sharepoint-server-on-premises"></a>升级本地 SharePoint Server
 
-为 SharePoint 内部部署产品 (SharePoint Server 2016) 的最新版本，必须*顺次*转 SharePoint 服务器升级，这意味着没有方法来从 SharePoint Server 2010 升级到 SharePoint Server 2016 直接。 
+从最新版本的 sharepoint 本地产品 (sharepoint server 2016) 开始, sharepoint server 升级必须以*串行*方式进行, 这意味着无法直接从 sharepoint server 2010 升级到 sharepoint server 2016。 
   
 |||
 |:-----|:-----|
-||串行升级路径 ***: SharePoint Server 2010 **\>** SharePoint Server 2013 **\>** SharePoint Server 2016 |
+||串行升级路径 * * * *: sharepoint server 2010 **\>** sharepoint server 2013 **\>** sharepoint server 2016 |
    
-如果您选择从 SharePoint 2010 到 SharePoint Server 2016 遵循的完整路径，这将花费时间和规划。升级涉及方面 （注意 SQL 服务器也必须进行升级） 的已升级的硬件、 软件和管理成本。此外，自定义项可能需要升级，或甚至放弃。确保升级 SharePoint 服务器场之前，在所有关键自定义收集注释。
+如果选择跟踪从 sharepoint 2010 到 sharepoint Server 2016 的整个路径, 将需要花费时间和进行规划。 升级涉及升级的硬件方面的成本 (请注意, 还必须升级 SQL server)、软件和管理。 此外, 可能还需要升级自定义项, 甚至放弃自定义项。 在升级 SharePoint Server 服务器场之前, 请务必先收集所有关键自定义项的注释。
   
 > [!NOTE]
-> 可以维护您的支持 SharePoint 2010 服务器场这一端，安装 SharePoint Server 2016 场在新硬件上 （以便在单独的服务器场运行的并行），然后规划和执行手动 （对于下载和重新将内容上载的内容的迁移示例）。有 （如文档来自 2010年具有与执行手动移动操作的帐户的别名当前的最后一个修改的帐户的），这些手动移动到的潜在缺陷和提早制定必须完成的一些工作 (重新创建网站、 子网站、 权限和列表结构）。它是合适的时间考虑的数据您可以将移入存储，或不再需要哪种产品。这样可以减少迁移的影响。无论进行上述，清理升级您的环境之前。在某些现有服务器场升级，才能正常运行，并且 （确定） 之前停用 ！ 
+> 可以保持您的 sharepoint Server 2016 的最终安装服务器场, 在新硬件上安装 sharepoint Server 场 (因此单独的服务器场并行运行), 然后计划并执行手动的内容迁移 (用于下载和重新上载内容)。示例)。 这些手动移动 (例如, 来自2010的文档拥有具有执行手动移动的帐户别名的当前最后修改的帐户) 以及某些工作必须提前完成 (重新创建网站、子网站、权限和列表结构)。 最好是考虑哪些数据可以移动到存储, 或者不再需要。 这样可以降低迁移的影响。 无论哪种方式, 都要在升级之前清理环境。 请确保你的现有服务器场在升级之前运行正常, 并在停止之前 (确保) 运行! 
   
-请记住，若要查看**支持和不支持的升级途径**： 
+请记住查看**支持的和不受支持的升级路径**: 
   
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
     
-如果您有**自定义项**，它非常重要的迁移路径中有一个计划升级每个步骤： 
+如果您具有**自定义项**, 则在迁移路径中为每个步骤规划升级都很重要: 
   
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
     
-|**内部部署 Pro**|**在本地手段**|
+|**本地 Pro**|**本地 Con**|
 |:-----|:-----|
-|设置从服务器硬件完全控制的 SharePoint 服务器场 （和它的 SQL） 的所有方面。  <br/> |所有换和修补程序都发生的公司责任 （但如果您的产品不支持的末尾，您可以进行付费的 Microsoft 支持）：  <br/> |
-|SharePoint Server 的完整功能集在本地与 SharePoint Online 订阅通过混合连接的本地服务器场的选项。  <br/> |升级、 修补程序、 安全修补程序、 硬件升级和 SharePoint Server 并 SQL 服务器场的所有维护是本地托管。  <br/> |
-|更高版本比使用 SharePoint Online 的自定义选项的完全访问权限。  <br/> |[支持的 Office 365 的合规性标准](https://go.microsoft.com/fwlink/?linkid=843165)必须是本地手动配置。  <br/> |
-|安全，执行测试和服务器性能调整，在您的本地 （由您控制）。  <br/> |Office 365 可能使功能可供 SharePoint Online 的不能与部署 SharePoint Server 互操作  <br/> |
-|合作伙伴可帮助迁移到下一个版本的 SharePoint Server （及其他认证实战） 的数据。  <br/> |SharePoint Server 网站不会自动使用[SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167)证书中所示是 SharePoint Online。  <br/> |
-|完全控制权限的命名约定、 备份和还原和部署 SharePoint Server 中的其他恢复选项。  <br/> |SharePoint Server 本地非常重视产品生命周期。  <br/> |
+|从服务器硬件上完全控制 SharePoint 场的所有方面 (以及 SQL)。  <br/> |所有中断和修复都是贵公司的责任 (但如果你的产品不支持, 你可以联系付费 Microsoft 支持):  <br/> |
+|SharePoint Server 本地的完整功能集以及通过混合将本地服务器场连接到 SharePoint Online 订阅的选项。  <br/> |SharePoint Server 的升级、修补程序、安全修补程序、硬件升级和所有维护都将在本地管理其 SQL 服务器场。  <br/> |
+|对比 SharePoint Online 更高的自定义选项的完全访问权限。  <br/> |[Office 365 支持的合规性标准](https://go.microsoft.com/fwlink/?linkid=843165)必须在本地手动配置。  <br/> |
+|在您的内部部署 (在您的控制之下) 执行安全测试和服务器性能调整。  <br/> |Office 365 可能会对 sharepoint Online 可用的功能, 这些功能无法与本地 SharePoint Server 进行互操作  <br/> |
+|合作伙伴可协助将数据迁移到 SharePoint Server 的下一个版本 (和更高版本)。  <br/> |您的 sharepoint Server 网站不会自动使用在 SharePoint Online 中显示的[SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167)证书。  <br/> |
+|在本地 SharePoint Server 中完全控制命名约定、备份和还原以及其他恢复选项。  <br/> |本地 SharePoint Server 对产品生命周期非常敏感。  <br/> |
    
-### <a name="upgrade-resources"></a>升级的资源
+### <a name="upgrade-resources"></a>升级资源
 
-首先比较硬件和软件要求。如果您不能满足基本升级上当前的硬件要求，可以意味着您需要先，升级中的服务器场或 SQL server 的硬件或还可以决定将您的网站的一些百分比移动到的 SharePoint Online 长绿硬件。一旦您已进行评估，按照支持的升级途径和方法。
+首先比较硬件和软件要求。 如果您不符合对当前硬件的升级的基本要求, 这可能意味着您需要先升级服务器场或 SQL server 中的硬件, 或者您可能决定将一些站点的一部分移动到 SharePoint Online 的 "长绿" 硬件。 完成评估后, 请遵循受支持的升级途径和方法。
   
-- **硬件/软件要求**： 
+- **的硬件/软件要求**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
-- **软件边界和限制**： 
+- **的软件边界和限制**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
-- **升级过程概述**： 
+- 以下项**的升级过程概述**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
-### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>创建 SharePoint Online 和 SharePoint Server 本地之间的 SharePoint 混合解决方案
+### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>在 sharepoint Online 和本地 sharepoint Server 之间创建 sharepoint 混合解决方案
 
-（可能在本地和一些迁移的联机领域的优势的需要） 的另一种选择是混合，可以将 SharePoint Server 2013 或 2016年服务器场连接到 SharePoint Online，从而创建 SharePoint 混合：[了解有关 SharePoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx).
+另一个选项 (可能是用于某些迁移需求的本地和在线领域的最佳选择) 是一种混合部署, 您可以将 SharePoint Server 2013 或2016场连接到 SharePoint online 以创建 sharepoint 混合:[了解 sharepoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx).
   
-如果您决定迁移目标是混合 SharePoint 服务器场，请确保规划哪些站点和用户应将移动到联机状态，并且其需要保持内部部署。查看和 SharePoint Server 服务器场的内容 （确定哪些数据如何提高公司的高、 中型或低影响） 的排名可能非常有帮助进行此决定。可能的唯一需要与 SharePoint Online 共享是 （a） 用户帐户登录和 （b） 的 SharePoint Server 搜索索引-这可能不是清除直到一下如何使用您的网站。如果您的公司稍后决定将您的所有内容迁移到 SharePoint Online，您可以联机移动所有剩余的帐户和数据并停用的本地服务器场，并管理 SharePoint 场将通过 Office 365从上的点的控制台。
+如果你决定将 SharePoint Server 场混合为你的迁移目标, 请务必规划应将哪些网站和用户移动到联机, 以及需要在本地部署。 对 SharePoint Server 服务器场内容的审阅和排名 (确定对公司的高、中或低影响的数据) 可能有助于做出此决定。 您可能只需要与 sharepoint Online 共享 (a) 用户帐户进行登录, 并且 (b) sharepoint Server 搜索索引--这可能不会很清楚, 除非您了解如何使用您的网站。 如果您的公司后来决定将所有内容迁移到 SharePoint Online, 您可以将所有剩余的帐户和数据联机移动, 并使您的本地服务器场退役, 并且 SharePoint 服务器场的管理/管理将通过 Office 365 完成。来自该点的控制台。
   
-请务必熟悉现有的混合以及如何配置您的本地 SharePoint 场和 Office 365 订阅之间的连接类型。
+请务必熟悉混合的现有类型, 以及如何配置您的本地 SharePoint 场和 Office 365 订阅之间的连接。
   
-请参阅混合 SharePoint 服务器场的工作原理一个好方法是通过创建[Office 365 开发/测试环境](https://go.microsoft.com/fwlink/?linkid=843152)。一旦您具有试用版或购买 Office 365 订阅，您就会在您的方式在 SharePoint Online，您可以向其迁移数据中创建网站集、 web 和文档库 (请手动，通过使用的迁移 api，或-如果您想要迁移我网站内容到 OneDrive for Business-通过混合向导）。
+通过创建[Office 365 开发/测试环境](https://go.microsoft.com/fwlink/?linkid=843152), 了解混合 SharePoint 服务器场的工作方式的一个不错的方法。 拥有试用版或购买的 Office 365 订阅后, 您将能够在 SharePoint Online 中创建网站集、web 和文档库, 您可以在其中迁移数据 (通过使用迁移 API 手动进行), 或者-如果您想要迁移我的通过混合向导将网站内容传递到 OneDrive for business。
   
 > [!NOTE]
-> 请记住在 SharePoint Server 2010 服务器场将首先需要升级，本地、 SharePoint Server 2013 或 SharePoint Server 2016 用于混合选项。SharePoint Foundation 2010 和 SharePoint Foundation 2013 无法使用 SharePoint Online 创建混合连接。 
+> 请注意, 您的 sharepoint server 2010 服务器场首先需要升级到 sharepoint server 2013 或 sharepoint server 2016, 才能使用 "混合" 选项。 sharepoint foundation 2010 和 sharepoint foundation 2013 无法创建与 SharePoint Online 的混合连接。 
   
 ## <a name="related-topics"></a>相关主题
 
-[资源以帮助您从 Office 2007 升级或 2010年服务器和客户端](upgrade-from-office-2010-servers-and-products.md)
+[可帮助您从 Office 2007 或2010服务器和客户端进行升级的资源](upgrade-from-office-2010-servers-and-products.md)
   
 [Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/en-us/library/mt493301%28v=office.16%29.aspx)
   
@@ -182,7 +182,7 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以安装在本地您�
   
 [在 SharePoint 2013 中解决数据库升级问题](https://go.microsoft.com/fwlink/?linkid=843195)
   
-[搜索 Microsoft 合作伙伴，从而帮助进行升级](https://go.microsoft.com/fwlink/?linkid=841249)
+[搜索 Microsoft 合作伙伴以帮助进行升级](https://go.microsoft.com/fwlink/?linkid=841249)
   
 [SharePoint 2013 的更新产品服务策略](https://technet.microsoft.com/en-us/library/mt493253%28v=office.16%29.aspx)
   

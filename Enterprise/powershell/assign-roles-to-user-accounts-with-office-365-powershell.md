@@ -16,11 +16,11 @@ ms.custom:
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '摘要: 使用 Office 365 PowerShell 向用户帐户分配角色。'
 ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957703"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491988"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>将角色分配给用户帐户与 Office 365 PowerShell
 
