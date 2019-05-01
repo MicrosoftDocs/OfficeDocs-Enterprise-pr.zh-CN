@@ -1,6 +1,6 @@
 ---
 title: 企业云解决方案
-description: 通过使用 Microsoft 云解决业务问题。了解最新的混合和安全云解决方案、云采用等方面的信息。
+description: 使用 Microsoft 云解决业务问题。了解最新的混合和安全云解决方案、云采用等方面的信息。
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: Ent_O365
 ms.date: 2/14/2018
 ms.openlocfilehash: 52eb23707077151ae4876381a03db3e9a4bdb33b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915707"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490048"
 ---
 <h1>企业云解决方案</h1>
 <p>通过使用 Microsoft 云解决业务问题。了解最新的混合和安全云解决方案、云采用等方面的信息。</p>
