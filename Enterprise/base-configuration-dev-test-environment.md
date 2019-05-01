@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 摘要：在 Microsoft Azure 中创建一个简化的内部网作为开发/测试环境。
 ms.openlocfilehash: 68edf0dea20674a7dadb4d1e50b8151a9ce13c7b
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741378"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490514"
 ---
 # <a name="base-configuration-devtest-environment"></a>基础配置开发/测试环境
 

@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 摘要：在 Azure 虚拟机上部署 Azure AD Connect，以在本地目录和 Office 365 订阅的 Azure AD 租户之间同步帐户。
 ms.openlocfilehash: 02706235d2de816ff5dd4ceeced8b7158ab7c2ce
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038056"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490466"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Office 365 目录同步
 

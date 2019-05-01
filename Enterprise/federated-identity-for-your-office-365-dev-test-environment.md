@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Office 365 开发/测试环境配置联合身份验证。
 ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741418"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487952"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的联合身份
 
@@ -444,7 +444,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   
 ## <a name="see-also"></a>另请参阅
 
-[云应用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 [基础配置开发/测试环境](base-configuration-dev-test-environment.md)
   

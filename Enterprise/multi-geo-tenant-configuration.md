@@ -11,11 +11,11 @@ localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: 了解如何配置 Office 365 多地理位置。
 ms.openlocfilehash: 6a3282c65da79480fe9d7ed1aac24b5e7941c1fc
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30931811"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487544"
 ---
 # <a name="office-365-multi-geo-tenant-configuration"></a>Office 365 多地理位置租户配置
 

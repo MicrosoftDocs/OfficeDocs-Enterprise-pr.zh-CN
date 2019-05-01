@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 摘要：在 Microsoft Azure 中为 Office 365 订阅配置高可用性联合身份验证。
 ms.openlocfilehash: 9139019cf53b3a43bcc6d8ebcfbad5d4f7f5506f
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741268"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490158"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>在 Azure 中部署 Office 365 的高可用性联合身份验证
 
@@ -72,7 +72,7 @@ ms.locfileid: "31741268"
     
 这里是针对此配置的虚拟机及其默认大小。
   
-|**项目**|**虚拟机说明**|**Azure 库图像**|**默认大小**|
+|**项**|**虚拟机说明**|**Azure 库图像**|**默认大小**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |2.  <br/> |第二个域控制器  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |

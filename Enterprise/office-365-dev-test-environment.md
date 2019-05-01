@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 摘要：使用此测试实验室指南创建用于评估或开发/测试的 Office 365 试用订阅。
 ms.openlocfilehash: 3e7aafc847b28ad7a81373539c2ea30ce304725a
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741238"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487582"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
@@ -68,7 +68,7 @@ ms.locfileid: "31741238"
     
 2. 要注册新的 Microsoft 帐户，请转到 [https://outlook.com](https://outlook.com)，然后使用新的电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
     
-  - 在此记录新帐户的名字和姓氏： ![](./media/Common-Images/TableLine.png)
+  - 在此记录新帐户的名字和姓氏：![](./media/Common-Images/TableLine.png)
     
   - 在此记录新的电子邮件帐户地址：![](./media/Common-Images/TableLine.png)@outlook.com
     
@@ -100,7 +100,7 @@ ms.locfileid: "31741238"
     
     将你键入的密码记录在安全的位置。
     
-    在此记录你的虚构公司名称，将其称为“组织名称”****： ![](./media/Common-Images/TableLine.png)
+    在此记录你的虚构公司名称，将其称为“组织名称”****：![](./media/Common-Images/TableLine.png)
     
 5. 单击“创建我的帐户”****。
     
@@ -108,7 +108,7 @@ ms.locfileid: "31741238"
     
 7. 键入短信中收到的验证代码，然后单击“下一步”****。
     
-8. 在此记录登录页面 URL（选择并复制）： ![](./media/Common-Images/TableLine.png)
+8. 在此记录登录页面 URL（选择并复制）：![](./media/Common-Images/TableLine.png)
     
 9. 在此记录用户 ID（选择并复制）：![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
@@ -265,7 +265,7 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   
 - [Office 365 开发/测试环境的目录同步](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [Office 365 开发/测试环境的多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [用于 Office 365 开发/测试环境的多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
 - [用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
     
@@ -283,7 +283,7 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
     
 ## <a name="see-also"></a>另请参阅
 
-- [云应用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+- [云采用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
