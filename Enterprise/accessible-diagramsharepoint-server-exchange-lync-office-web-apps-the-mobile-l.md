@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: 本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。
 ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17503405"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487678"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>可访问图表 - SharePoint Server、Exchange、Lync、Office Web Apps - 移动前景
 
@@ -188,9 +188,9 @@ Microsoft 提供了新的跨多个设备品牌的设备管理产品。Windows In
 
 随附的图显示了 SharePoint Server 2013 的 Extranet 部署。建议使用类似于 SSL 或 VPN 网关的选项将设备安全连接到 SharePoint 2013 Web 前端服务器，例如安全套接字层 (SSL)。
   
-SharePoint 可以使用 TCP 端口 443 (SSL) 处理设备和反向代理之间的加密通信。对于来自 Internet 的外部访问，必须为所有防火墙或路由器上的入站和出站通信打开此端口。 
+SharePoint 可以使用 TCP 端口 443 (SSL) 处理设备和反向代理之间的加密通信。对于来自 Internet 的外部访问，必须为所有防火墙或路由器上的入站和出站通信打开此端口。  
   
-移动浏览器从 Web 前端服务器访问网站时，就向 IIS 发送了 http 请求。在 http 请求中，USERAGENT 字段包含有关发送请求的移动浏览器的信息。此信息可用于浏览器重定向决定现成的现代视图，或使用"设备通道"功能的自定义网站实施。
+移动浏览器从 Web 前端服务器访问网站时，就向 IIS 发送了 http 请求。在 http 请求中，USERAGENT 字段包含有关发送请求的移动浏览器的信息。此信息可用于浏览器重定向决定现成的现代视图，或使用“设备通道”功能的自定义网站实施。
   
 对于 SharePoint 2013，Office Web Apps 已从安装中分离，现在是一款独立的产品。若要提供对 Office Web Apps 的客户端访问权限（包括移动电话），需要配置 SharePoint 2013 以使用 Office Web Apps Server 的安装。可以使用以下 SharePoint 2013 命令行管理程序 cmdlet 来执行此操作：
   
@@ -202,9 +202,9 @@ New-SPWOPIBinding -ServerName <ServerName>, where <ServerName> is the FQDN name 
 
 连接到托管应用程序（如 Microsoft Exchange ActiveSync 和 Outlook Web app）的本地 Exchange 客户端访问服务器并提供 Exchange 自动发现服务的设备。建议您在外部设备和 Exchange 客户端访问服务器之间使用 SSL 加密。
   
-类似于 Exchange 自动发现和 Exchange ActiveSync 的设备通信通过端口 443 (HTTPS) 处理。Exchange 2013 中的"直推"功能通过移动电话网络连接或无线网络连接使移动设备保持为当前状态。当有新内容可以准备同步时，它将通知移动设备。您组织中和运营商的所有防火墙务必支持长期 HTTPS 请求。默认情况下，直推配置为对所有文件夹中的所有更改进行 15 分钟的轮询，并更新设备。如果降到默认的 15 分钟的直推配置以下，您可能需要增加防火墙的超时值。
+类似于 Exchange 自动发现和 Exchange ActiveSync 的设备通信通过端口 443 (HTTPS) 处理。Exchange 2013 中的“直推”功能通过移动电话网络连接或无线网络连接使移动设备保持为当前状态。当有新内容可以准备同步时，它将通知移动设备。您组织中和运营商的所有防火墙务必支持长期 HTTPS 请求。默认情况下，直推配置为对所有文件夹中的所有更改进行 15 分钟的轮询，并更新设备。如果降到默认的 15 分钟的直推配置以下，您可能需要增加防火墙的超时值。
   
-Exchange 客户端访问服务器 (CAS) 托管 Exchange ActiveSync 服务。您可以通过它同步手机或平板电脑与 Exchange 2013 之间的数据。 
+Exchange 客户端访问服务器 (CAS) 托管 Exchange ActiveSync 服务。您可以通过它同步手机或平板电脑与 Exchange 2013 之间的数据。  
   
 ### <a name="lync-deployment"></a>Lync 部署
 
@@ -212,7 +212,7 @@ Exchange 客户端访问服务器 (CAS) 托管 Exchange ActiveSync 服务。您�
   
 在前端服务器上，自动发现服务检索用户主池的 Web 服务 URL，并将该信息通过反向代理服务器返回至移动设备。通过自动发现服务，移动设备无需要求用户手动输入 URL 就可以找到 Lync Server Web 服务。
   
-如果移动设备是在防火墙内登录，HTTPS Get 命令会直接发送至 Lync 前端池（如 LyncDiscoverInternal.com）。端口 443 接收请求，这是自动发现服务用来重新与移动设备通信的同一端口。
+如果移动设备日志位于防火墙内，将直接向 Lync 前端池发送一个 HTTPS Get 命令，例如 LyncDiscoverInternal.com。请求在端口 443 上接收，这是自动发现服务用于向移动设备传回通信的同一端口。
   
 您必须配置两条 DNS 记录以支持移动性：一条针对 LyncDiscover.contoso.com，另一条针对 LyncDiscoverInternal.com。外部 FQDN 应仅可从防火墙外部访问；内部 FQDN 应仅可从防火墙内部访问。
   

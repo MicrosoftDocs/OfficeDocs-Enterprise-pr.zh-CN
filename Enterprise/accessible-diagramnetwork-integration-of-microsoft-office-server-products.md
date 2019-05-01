@@ -1,5 +1,5 @@
 ---
-title: "可访问的图 - Microsoft Office Server 产品的网络集成"
+title: 可访问的图 - Microsoft Office Server 产品的网络集成
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,18 +10,19 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
-description: "本文是名为“Microsoft Office Server 产品的网络集成”的图的可访问文本版本。"
+description: 本文是名为“Microsoft Office Server 产品的网络集成”的图的可访问文本版本。
 ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487767"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>可访问的图 - Microsoft Office Server 产品的网络集成
 
-**摘要：**这篇文章是图名为网络集成的 Microsoft Office 服务器产品辅助功能的文本版本。
+**摘要:** 本文是名为 "Microsoft Office Server 产品的网络集成" 的图表的可访问文本版本。
   
-本宣传海报提供了网络环境，包括 Lync Server 2013、 SharePoint 2013 和 Exchange Server 2013年常规图。它还演示了以下网络元素的这些产品共有： 远程和内部访问、 身份验证、 客户端通讯，以及通过共享设备的路由通信。 
+此海报提供了包含 Lync Server 2013、SharePoint 2013 和 Exchange Server 2013 的网络环境的一般说明。 它还演示了这些产品通用的网络元素：远程和内部访问、身份验证、客户端通信以及通过共享设备路由流量。 
   
 ## <a name="high-level-concepts-for-lync-exchange-sharepoint-server-and-office-web-apps"></a>Lync、Exchange、SharePoint Server 和 Office Web Apps 的高级概念
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 02/09/2018
 
 #### <a name="streamlined-network-design"></a>简化的网络设计
 
-这种拓扑说明了内部网络部署 SharePoint 2013、 Exchange Server 2013 和 Lync Server 2013。它还演示如何使用 Microsoft 的基于云的服务，Exchange 在线保护，从互联网提供的简单邮件传输协议 (SMTP) 的入站通信的垃圾邮件和恶意软件保护。 
+此拓扑说明了 SharePoint 2013、Exchange Server 2013 和 Lync server 2013 的本地网络部署。 它还演示了如何使用基于云的 Microsoft 服务 Exchange Online Protection，该服务为从 Internet 发送的入站简单邮件传输协议 (SMTP) 通信提供垃圾邮件和恶意软件保护。 
   
 此网络设计已简化为最低要求的网络功能集。此设计不会考虑部分组织可能需要的附加安全或基础结构功能。   
   
@@ -41,9 +42,9 @@ ms.lasthandoff: 02/09/2018
     
 - 详细介绍了从客户端到每个平台服务器层的 SharePoint、Exchange 和 Lync 通信。  
     
-- 基于客户（例如合作伙伴或员工）或所用的身份验证方法识别远程或内部访问连接的类型。  
+- 基于客户（例如合作伙伴或员工）或所用的身份验证方法识别远程或内部访问连接的类型。 
     
-- 冲破 SharePoint 和 Exchange，Lync 平台识别的前端、 应用程序、 数据库和其他级别的必需的服务器角色。 
+- 按所需的服务器角色分解 SharePoint、Exchange 和 Lync 平台，以识别前端、应用程序、数据库和其他级别。 
     
 此处用于 SharePoint、Lync 和 Exchange 的体系结构未建议实施这些平台的首选方式。它只是提供一个示例，拓扑因具体的网络要求和安全注意事项而异。  
   
@@ -53,21 +54,21 @@ ms.lasthandoff: 02/09/2018
   
 #### <a name="load-balancer-and-reverse-proxy-devices"></a>负载平衡器和反向代理设备
 
-您可以使用硬件或软件的负载平衡解决方案重定向通信段包括 SharePoint 前端 web 服务器和 Exchange 客户端访问服务器 (CASs) 的。在某些情况下是因为它可以通过使用请求，例如 cookie 或标头中的信息更好地执行有关持久性要求使用第 7 层基于硬件的负载平衡器的最佳。但是，因素，如成本和提高的利用率，这种解决方案的工作负载可能适用于您的特定需求。请考虑下列几点跨 SharePoint 和 Exchange，Lync 负载平衡： 
+您可以使用硬件或软件负载平衡解决方案重定向各个分段的通信，包括 SharePoint 前端 Web 服务器和 Exchange 客户端访问服务器 (CAS)。 在某些情况下, 最好将基于第7层硬件的负载平衡器用于持续性要求, 因为它可以通过使用请求中的信息 (如 cookie 或标头) 来更好地运行。 但是，此类解决方案中的成本、提升的利用率和工作负载等因素可能不是您的特定需求所需要的。 对于跨 SharePoint、Exchange 和 Lync 的负载平衡，请考虑以下几点： 
   
-- SharePoint 的 SharePoint 2013 的您不需要启用关联的前端 web 服务器。通常情况下，这将用于创建粘滞会话并避免了多个来自客户端的每个前端 web 服务器的身份验证请求。在 SharePoint 2013 新的分布式缓存服务存储并在 SharePoint 服务器场的 web 服务器之间分布的登录令牌。 
+- sharepoint-对于 sharepoint 2013, 无需为前端 web 服务器启用相关性。 通常，这将用于创建粘滞会话并避免每个前端 Web 服务器收到来自客户端的多个身份验证请求。 sharepoint 2013 中的新分布式缓存服务在 sharepoint 服务器场的 web 服务器上存储和分发登录令牌。 
     
-- 交换的交换 2013，CA 角色设计为使用第 4 层负载平衡，分发请求在传输层。这可以显著降低负载平衡器的利用率和工作负荷。 
+- exchange In exchange 2013, CAS 角色旨在使用第4层负载平衡, 在传输层分发请求。 这可以大大降低负载平衡器的利用率和工作负载。 
     
-- Lync-Lync 池的会话启动协议 (SIP) 通信建议使用域名系统 (DNS) 的负载平衡。硬件负载平衡 (HLB) 是必需的 Lync Web (HTTPS) 通信。 
+- lync 池的会话初始协议 (SIP) 流量建议使用 Lync 域名系统 (DNS) 负载平衡。 Lync Web (HTTPS) 通信需要硬件负载平衡 (HLB)。 
     
 ### <a name="remote-access-options"></a>远程访问选项
 
 有多个选项可以为 Internet 上的合作伙伴发布 Intranet 资源，或者为远程或漫游员工提供安全远程访问。例如反向代理、DirectAccess 和第三方 VPN 网关。本节稍后讨论的远程访问解决方案可能会用于本地部署中的 SharePoint、Lync 和 Exchange，或者用于这些服务器的任意组合。但是，某些远程选项可能不适用于特定的解决方案。   
   
-反向代理服务器的反向代理服务器支持通信进行加密，如安全套接字层 (SSL)，并且内部网应用程序和 web 资源，您就可以将发布与经过身份验证的用户和合作伙伴在 Internet 上。例如，Microsoft 最前沿统一访问网关 (UAG)。许多硬件负载平衡器还支持反向代理服务器的功能。但是，有的使用基于您的需要和要求，如通信隔离、 安全性分布和性能优化的独立解决方案仍然有效方案。 
+反向代理-反向代理支持流量加密 (如安全套接字层 (SSL)), 您可以使用它将 intranet 应用程序和 web 资源发布到 Internet 上的经过身份验证的用户和合作伙伴。 例如 Microsoft Forefront 统一访问网关 (UAG)。 许多硬件负载平衡器也支持反向代理功能。 但是, 仍有适用于使用独立解决方案的有效方案, 具体取决于您的需求和要求, 例如流量隔离、安全 compartmentalization 和性能优化。 
   
-反向代理的优点和注意事项：  
+反向代理的优点和注意事项： 
   
 - 为访问 Intranet 资源的合作伙伴或用户提供经过身份验证的安全访问（使用客户端和反向代理服务器之间的 SSL (TCP 443)）。  
     
@@ -75,9 +76,9 @@ ms.lasthandoff: 02/09/2018
     
 - 对于 Exchange 和 SharePoint，Forefront UAG 等解决方案可以终止 SSL 连接，并在提供单一证书管理点时减少 Intranet 资源服务器的负载。  
     
-- Lync，对于 Web (HTTPS) 通信都要通过客户端通信的反向代理服务器 (TCP 443)。反向代理服务器代理服务器 HTTPS 连接 Lync Web 服务、 交换 CAS 和 Office Web 应用程序。Lync Server 2013 UAG 不支持。 
+- 对于 Lync，Web (HTTPS) 通信通过反向代理 (TCP 443) 进行客户端通信。 反向代理可代理到 Lync Web 服务、Exchange CAS 和 Office Web Apps 的 HTTPS 连接。 Lync Server 2013 不支持 UAG。 
     
-DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 DirectAccess 客户端和服务器之间的通信的远程访问技术。而无需启动连接 DirectAccess 提供漫游和远程员工同时访问互联网和内联网的资源。 
+DirectAccess-依靠 Internet 协议安全性 (IPsec) 进行身份验证和在 DirectAccess 客户端与服务器之间加密流量的远程访问技术。 DirectAccess 无需启动连接，即可为漫游和远程员工提供对 Internet 和 Intranet 资源的同时访问。 
   
 关于 DirectAccess 要考虑的事项：  
   
@@ -85,9 +86,9 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
     
 - 适用于 Windows Server 2012 和 Windows 8 的 DirectAccess 不需要部署公钥基础结构 (PKI) 来实现服务器和客户端身份验证。  
     
-- 我们建议您不要使用 Lync Server 2013 DirectAccess 由于 IPsec 加密和解密与相关的音频和视频的滞后时间问题。 
+- 我们建议您不要将 DirectAccess 与 Lync Server 2013 结合使用, 因为与 IPsec 加密和解密相关的音频和视频延迟问题。 
     
-    VPN 网关的典型 VPN 网关提供远程访问连接的远程访问客户端计算机逻辑上投影到通过隧道和用户启动连接的 intranet。可以使用 Windows Server 2012 或几种第三方解决方案中统一远程访问漫游或远程员工提供安全的访问企业内部网。Lync 不建议使用 VPN。远程 Lync 通信应使用边缘服务器和拆分隧道。 
+    vpn 网关-典型的 vpn 网关提供远程访问客户端计算机通过通过隧道和用户启动的连接在逻辑上投影到 intranet 的远程访问连接。 您可以在 Windows Server 2012 或多个第三方解决方案中使用统一远程访问，为漫游或远程员工提供对 Intranet 的安全访问。 Lync 不建议使用 VPN。 远程 Lync 通信应使用边缘服务器和拆分隧道。 
     
 ### <a name="domain-name-system-dns-considerations"></a>域名系统 (DNS) 的注意事项
 
@@ -115,7 +116,7 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
     
 - 说明通信如何通过组件传送到 SharePoint、Exchange、Lync 和 Office Web Apps 服务器层。  
     
-#### <a name="description-of-components-shown-in-the-diagram"></a>图中所示组件的说明 
+#### <a name="description-of-components-shown-in-the-diagram"></a>图中所示组件的说明
 
 #### <a name="user-types"></a>用户类型
 
@@ -149,9 +150,9 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
 
 您可以使用硬件或软件负载平衡解决方案重定向各个分段的通信，包括 SharePoint 前端 Web 服务器和 Exchange 客户端访问服务器 (CAS)。此拓扑显示负载平衡器中的 Lync VIP、SharePoint VIP 和 Exchange VIP 组件。  
   
-#### <a name="servers"></a>服务器
+#### <a name="servers"></a>Servers
 
-有四个服务器： Lync、 SharePoint、 交换和 Office Web 应用程序服务器。每个服务器可以有三个层次： 前端、 客户端访问层、 应用层和数据库中的存储层。
+有四台服务器: Lync、SharePoint、Exchange 和 Office Web Apps Server。 每个服务器可以有三个层级：前端客户端访问层、应用程序层和数据库/存储层。
   
 #### <a name="front-end-client-access-tier"></a>前端客户端访问层
 
@@ -183,7 +184,7 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
     
 - Exchange 邮箱服务器。该图显示两个 Exchange 邮箱数据库。  
     
-每个 SharePoint 服务器角色上安装的组件有关的详细信息，请参阅[SharePoint 2013 的拓扑优化](https://aka.ms/Ma5cgk)。 
+有关安装在每个 SharePoint 服务器角色上的组件的详细信息, 请参阅[精简拓扑 for sharepoint 2013](https://aka.ms/Ma5cgk)。 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>说明通信如何通过组件传递到不同的服务器层
 
@@ -201,7 +202,7 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
     
 每种外部用户类型的身份验证和路由过程分别如下所述。  
   
-#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>合作伙伴公司（企业对企业）(https://partnerweb.contoso.com)
+#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>合作伙伴公司 (企业对企业) (https://partnerweb.contoso.com)
 
 - Lync：与其他组织建立联合信任，Skype 通过公共 IM 连接 (PIC) 与 AOL 建立联合信任。Lync 联合通信通过网关路由器依次传递到 Lync 边缘服务器、Lync VIP（负载平衡器/反向代理服务器）和 Lync Server。  
     
@@ -211,7 +212,7 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
     
 - SMTP 客户端通信通过网关路由器依次传递到 Exchange VIP（负载平衡器/反向代理服务器）和 Exchange Server。  
     
-#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>个人合作伙伴 (SharePoint) 和匿名 (Lync) (https://partnerweb.contoso.com and https://meet.contoso.com)
+#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>单个合作伙伴 (SharePoint) 和匿名 (Lync) (https://partnerweb.contoso.com和https://meet.contoso.com)
 
 - Lync：匿名用户只能加入员工组织的 Lync 会议。Lync 联合通信通过网关路由器依次传递到 Lync 边缘服务器、Lync VIP（负载平衡器/反向代理服务器）和 Lync Server。   
     
@@ -231,13 +232,13 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
     
 4. https://partnerweb.contoso.com 
     
-5. https://mail.contoso.com * 
+5. https://mail.contoso.com* 
     
-6. https://dial.contoso.com *
+6. https://dial.contoso.com*
     
-7. https://meet.contoso.com *
+7. https://meet.contoso.com*
     
-* 交换 URL 具有下列虚拟目录： 自动发现，ecp，EWS，Microsoft 的服务器-ActiveSync，OAB，owa，PowerShell 
+* Exchange URL 具有以下虚拟目录: 自动发现、ecp、EWS、Microsoft-服务器-ActiveSync、OAB、owa、PowerShell 
   
 - Lync：TLS-DSK 或 NTLM 身份验证。Lync 客户端通信通过网关路由器依次传递到 Lync 边缘服务器、Lync VIP（负载平衡器/反向代理服务器）和 Lync Server。  
     
@@ -259,7 +260,7 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
     
 > https://partnerweb.contoso.com
     
-> https://mail.contoso.com * 
+> https://mail.contoso.com* 
     
 > https://dial.contoso.com 
     
@@ -277,7 +278,7 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
     
 #### <a name="cloud-based-email-traffic"></a>基于云的电子邮件通信
 
-基于 SMTP 的电子邮件通讯的基于云的组件由 Internet 邮件主机或 Exchange 在线保护。
+基于 SMTP 的电子邮件通信的基于云的组件由 Internet 邮件主机或 Exchange Online Protection 组成。
   
 这些组件使用 SMTP 在网络上移动电子邮件流量。通信通过网关路由器依次传递到 Exchange VIP（负载平衡器/反向代理服务器）和 Exchange Server。  
   
@@ -285,7 +286,7 @@ DirectAccess-依赖网际协议安全 (IPsec) 进行身份验证和加密 Direct
 
 图例方框以图形的形式显示不同类型的通信，如图中不同颜色的线条所示：  
   
-- 绿色线： Lync SIP 通信 
+- 绿色线条: Lync SIP 流量 
     
 - 蓝色线条：Lync Web 通信  
     
@@ -317,12 +318,12 @@ SharePoint 可以使用 TCP 端口 443 (SSL) 处理客户端和负载平衡器�
   
 #### <a name="exchange-client-traffic-and-exchange-mail-server-traffic"></a>Exchange 客户端通信和 Exchange 邮件服务器通信
 
-Exchange 使用 TCP 端口 25 (SMTP) 服务器到服务器通信。大多数客户端通信 （OWA、 动态同步、 自动发现、 Outlook 无处） 处理通过端口 443 (HTTPS)。如果您的 POP 或 IMAP 客户端，还使用端口 110 (POP3)、 995 (加密 POP3)、 143 (IMAP4)、 993 (加密 IMAP4) 和 587 (SMTP) 以支持这些客户端。 
+Exchange 使用 TCP 端口 25 (SMTP) 处理服务器到服务器通信。 大部分客户端通信（OWA、ActiveSync、自动发现、Outlook 无处不在）均通过端口 443 (HTTPS) 进行处理。 如果您具有 POP 或 IMAP 客户端，则还会使用端口 110 (POP3)、995（加密 POP3）、143 (IMAP4)、993（加密 IMAP4）和 587 (SMTP) 来支持这些客户端。 
   
 #### <a name="more-on-lync-network-traffic"></a>有关 Lync 网络通信的更多信息？
 
-了解 Lync Server 可以如何帮助您的组织提供即时消息、 web 会议、 共享应用程序和语音通信。有关详细信息，请参阅[Microsoft Lync 2013 协议工作负载海报](https://aka.ms/G5jzjo)。 
+了解 Lync Server 如何帮助您的组织提供即时消息、Web 会议、应用程序共享和语音通信。 有关详细信息, 请参阅[Microsoft Lync Server 2013 协议工作负荷海报](https://aka.ms/G5jzjo)。 
   
-此海报中还包含用于访问此信息的 QR 代码。  
+此海报中还包含用于访问此信息的 QR 代码。 
   
 

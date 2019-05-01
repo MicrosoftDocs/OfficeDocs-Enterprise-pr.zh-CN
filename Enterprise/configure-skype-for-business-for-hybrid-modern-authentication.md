@@ -1,5 +1,5 @@
 ---
-title: 如何配置 Skype for business 本地以使用混合新式身份验证
+title: 如何配置本地 Skype for Business 以使用混合新式验证
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,14 +14,14 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法, 适用于本地 skype for business server 本地和 Exchange server 以及拆分域 Skype for business 混合。
-ms.openlocfilehash: 23a9262659ae47f5aeb5577b9bb45ea2c1aad235
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: a9fb93d0269628c0c1d4cd374e3bca36482f7eee
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372929"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490312"
 ---
-# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>如何配置 Skype for business 本地以使用混合新式身份验证
+# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Skype for Business 以使用混合新式验证
 
 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法, 适用于本地 skype for business server 本地和 Exchange server 以及拆分域 Skype for business 混合。
   
@@ -87,8 +87,10 @@ ms.locfileid: "30372929"
     
 您将需要部署的所有 SfB 2015 池的内部和外部 web 服务 URL。 若要获取这些内容, 请从 Skype for business 命令行管理程序运行以下命令:
   
-get-csservice-web 访问选择-Object PoolFqdn、InternalFqdn、ExternalFqdn |FL
-  
+```
+Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
+```
+
 - Ex. 里面https://lyncwebint01.contoso.com
     
 - Ex. 对外https://lyncwebext01.contoso.com
@@ -115,41 +117,46 @@ get-csservice-web 访问选择-Object PoolFqdn、InternalFqdn、ExternalFqdn |FL
   
  **注释**服务主体名称 (spn) 标识 web 服务并将它们与安全主体 (如帐户名或组) 相关联, 以便该服务可以代表授权的用户执行操作。 对服务器进行身份验证的客户端使用 spn 中包含的信息。 
   
-1. 首先, 使用[这些说明](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)连接到 AAD。
+1. 首先, 使用[这些说明](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)连接到 AAD。
     
 2. 运行此命令 (本地) 以获取 SFB web 服务 url 的列表。
+
+   请注意, AppPrincipalId 以开头`00000004`。 这对应于 Skype for business Online。
     
-  - new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 |选择-ExpandProperty ServicePrincipalNames
+   记下 (以及稍后比较的屏幕截图) 此命令的输出将包含 SE 和 WS URL, 但主要由以开头的 spn 组成`00000004-0000-0ff1-ce00-000000000000/`。
     
-    请注意, AppPrincipalId 以 "00000004" 开头。 这对应于 Skype for business Online。
-    
-    记下 (和屏幕截图以供稍后比较) 此命令的输出将包含 SE 和 WS URL, 但主要是由以 00000004-0000-0ff1-ce00-000000000000/开头的 spn 组成。
+```
+Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
+```
     
 3. 如果内部**或**外部 SFB url 缺少内部部署 (例如, https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com)我们需要将这些特定记录添加到此列表。 
     
     请务必将下面的*示例 url*替换为添加命令中的实际 url! 
-    
-  - $x = new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
-    
-  - $x ServicePrincipalnames (" *https://lyncwebint01.contoso.com/* ") 
-    
-  - $x ServicePrincipalnames (" *https://lyncwebext01.contoso.com/* ") 
-    
-  - new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000-ServicePrincipalNames $x ServicePrincipalNames
-    
-4. 再次运行步骤2中的 new-msolserviceprincipal 命令, 并查看输出, 以验证新记录是否已添加。 将列表/屏幕截图从早到新的 spn 列表进行比较 (您还可能会为您的记录提供新列表的屏幕截图)。 如果成功, 您将在列表中看到两个新的 url。 根据我们的示例, spn 列表现在将包含特定的 url https://lyncweb01.contoso.com和。 https://autodiscover.contoso.com
+  
+```  
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
+$x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
+$x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```
+  
+4. 再次运行步骤2中的 new-msolserviceprincipal 命令, 并查看输出, 以验证新记录是否已添加。 将列表/屏幕截图从早到新的 spn 列表进行比较 (您还可能会为您的记录提供新列表的屏幕截图)。 如果成功, 您将在列表中看到两个新的 url。 根据我们的示例, spn 列表现在将包含特定的 url https://lyncweb01.contoso.com和。 https://lyncwebext01.contoso.com/
     
 ### <a name="create-the-evosts-auth-server-object"></a>创建 EvoSTS Auth Server 对象
 
 在 Skype for business 命令行管理程序中运行以下命令。
   
-- CsOAuthServer-Identity evoSTS-MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true 类型 AzureAD
+```
+New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
+```
     
 ### <a name="enable-hybrid-modern-authentication"></a>启用混合新式身份验证
 
 这是实际打开 MA 的步骤。 前面的所有步骤都可以提前运行, 而无需更改客户端身份验证流。 当您准备好更改身份验证流时, 请在 Skype for business 命令行管理程序中运行此命令。 
   
-- set-csoauthconfiguration-ClientAuthorizationOAuthServerIdentity evoSTS
+```
+Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
+```
     
 ## <a name="verify"></a>Verify
 
