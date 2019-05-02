@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解如何使用 Microsoft PowerShell 管理 Exchange Online 多地理位置设置。
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765044"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490878"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 
@@ -42,7 +42,7 @@ ms.locfileid: "31765044"
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
 
-   例如，如果 olga@contoso.onmicrosoft.com 是要连接的地理位置中某个有效邮箱的电子邮件地址，则运行以下命令：
+   例如，如果 olga@contoso.onmicrosoft.com 是你想要连接的地理位置的有效邮箱地址，则运行以下命令：
 
    ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection

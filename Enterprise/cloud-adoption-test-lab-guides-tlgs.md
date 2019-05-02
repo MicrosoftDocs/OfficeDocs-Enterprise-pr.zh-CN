@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365 的开发/测试环境。
 ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741168"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490228"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>使用云应用测试实验室指南 (TLG) 测试 Office 365
 
@@ -54,7 +54,7 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
 针对你的 Office 365 开发/测试环境，可使用这些文章来演示 Office 365 的企业功能：
   
-- [Office 365 开发/测试环境的多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [用于 Office 365 开发/测试环境的多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
     使用发送到智能手机的短信，为 Office 365 订阅中的帐户配置和测试辅助身份验证。
     
@@ -82,7 +82,7 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
     演示如何使用 Azure 信息保护客户端对具有不同安全级别的文档进行分类。
     
-- [独立的 SharePoint Online 团队网站开发/测试环境](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [独立 SharePoint Online 团队网站开发/测试环境](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
     演示如何创建因敏感或高度机密资源而与组织其他部分隔离的 SharePoint Online 团队网站。
     
