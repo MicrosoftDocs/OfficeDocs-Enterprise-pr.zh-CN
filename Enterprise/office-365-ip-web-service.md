@@ -3,7 +3,7 @@ title: Office 365 IP 地址和 URL Web 服务
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/4/2018
+ms.date: 4/30/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - BCS160
 description: 为了帮助你更好地标识和区分 Office 365 网络流量，我们推出了一项用于发布 Office 365 终结点的新 Web 服务，以方便你更轻松地评估、配置并掌握最新变更。这项新 Web 服务取代了目前可用的 XML 可下载文件。
-ms.openlocfilehash: 8a9b3981f833705b0d77e87a6f0588730b9fb170
-ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
+ms.openlocfilehash: 8dedb88c830d51d9d2cf16df783be75fc9d66450
+ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26985767"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497694"
 ---
-# <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP 地址和 URL Web 服务**
+# <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务
 
 为了帮助你更好地标识和区分 Office 365 网络流量，我们推出了一项用于发布 Office 365 终结点的新 Web 服务，以方便你更轻松地评估、配置并掌握最新变更。这项新 Web 服务取代了目前可用的 XML 可下载文件。XML 格式计划将于 2018 年 10 月 2 日起逐步淘汰。
 
@@ -46,27 +46,30 @@ ms.locfileid: "26985767"
 - 检查当前版本。
 - 获取最新变更。
 
+> [!NOTE]
+> 如果正在使用 Azure ExpressRoute 连接到 Office 365，请查看[适用于 Office 365 的 Azure ExpressRoute](https://docs.microsoft.com/office365/enterprise/azure-expressroute) 以熟悉 Azure expressroute 支持的 Office 365 服务。 另请查看 [Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)，以了解 Office 365 应用程序的哪些网络请求需要 Internet 连接。 这有助于更好地配置外围安全设备。
+
 有关详细信息，请参阅：
 
 - [Office 365 技术社区论坛中的“公告”博客文章](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
 - [Office 365 技术社区论坛中有关如何使用 Web 服务的提问](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
 
-## <a name="common-parameters"></a>**通用参数**
+## <a name="common-parameters"></a>通用参数
 
 下面两个参数是所有 Web 服务方法的通用参数：
 
-- **format=CSV | JSON** - 查询字符串参数。默认数据返回格式为 JSON。添加此可选参数，可以逗号分隔值 (CSV) 格式返回数据。
-- **ClientRequestId** - 查询字符串参数。执行客户端关联必须要生成的 GUID。应为每台调用 Web 服务的计算机都生成 GUID。请勿使用下面示例中的 GUID，因为这项 Web 服务将来可能会屏蔽它们。GUID 格式为 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_，其中 x 表示十六进制数。若要生成 GUID，请运行 [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell 命令。
+- **format=<JSON | CSV>** - 默认情况下，返回数据的格式为 JSON。 使用此可选参数返回采用逗号分隔值 (CSV) 格式的数据。
+- **ClientRequestId=\<guid>** - 为客户端关联生成的所需 GUID。 应为每台调用 Web 服务的计算机生成一个 GUID。 请勿使用以下示例中所示的 GUID，因为它们将来可能会被 Web 服务阻止。 GUID 格式为 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_，其中 x 表示一个十六进制数字。 若要生成 GUID，请使用 [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell 命令。
 
-## <a name="version-web-method"></a>**版本 Web 方法**
+## <a name="version-web-method"></a>版本 Web 方法
 
 Microsoft 在每月底更新 Office 365 IP 地址和 FQDN 条目，有时也会因运营或支持要求而不定期更新。每个已发布实例的数据都分配有版本号。借助版本 Web 方法，可以轮询每个 Office 365 服务实例的最新版本。建议每天或至多每小时检查一次版本。新版本应在每月初生成。有时，鉴于支持事件、安全性或其他运营要求，新版本还会在每月其他时间生成。
 
-版本 Web 方法需要使用下面各个参数：
+版本 Web 服务的参数如下：
 
-- **AllVersions=true** - 查询字符串参数。默认返回最新版本。添加此可选参数，可请求获取所有已发布版本。
-- **Format=JSON** | **CSV** | **RSS** - 除了 JSON 和 CSV 格式以外，版本 Web 方法还支持 RSS。可将此参数与 allVersions=true 参数结合使用，以请求获取能用于 Outlook 或其他 RSS 阅读器的 RSS 源。
-- **Instance** - 路由参数。此可选参数指定要返回哪个实例的版本。如果省略，将返回所有实例的版本。有效实例为 Worldwide、China、Germany、USGovDoD 和 USGovGCCHigh。
+- **AllVersions=<true | false>** - 默认情况下，返回的版本为最新的。 包括此可选参数，以请求首次发布 Web 服务之后的所有已发布版本。
+- **Format=<JSON | CSV | RSS>** – 除了 JSON 和 CSV 格式，版本 Web 服务还支持 RSS。 可以结合使用此可选参数及 _AllVersions=true_ 参数，以请求可用于 Outlook 或其他 RSS 读取器的 RSS 源。
+- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - 此可选参数用于指定返回其版本的实例。 如果圣罗，则会返回所有实例。 有效实例包括：Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
 版本 Web 方法不受速率限制，并且不会返回 429 HTTP 响应代码。版本 Web 方法的响应确实包括，建议将数据缓存 1 小时的缓存控制标头。版本 Web 方法的结果可以是一条记录，也可以是一组记录。每条记录都由以下元素构成：
 
@@ -76,7 +79,7 @@ Microsoft 在每月底更新 Office 365 IP 地址和 FQDN 条目，有时也会�
 
 可以使用 Microsoft Flow 来获取对 IP 地址和 URL 所做的更改的电子邮件通知。请参阅[使用 Microsoft Flow 接收对 Office 365 IP 地址和 URL 所做的更改的电子邮件](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)。
 
-### <a name="examples"></a>**示例：**
+### <a name="examples"></a>示例：
 
 示例 1 请求 URI：[https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
@@ -166,16 +169,18 @@ Worldwide,2018063000
 ...
 ```
 
-## <a name="endpoints-web-method"></a>**终结点 Web 方法**
+## <a name="endpoints-web-method"></a>终结点 Web 方法
 
-终结点 Web 方法返回组成 Office 365 服务的 IP 地址范围和 URL 的所有记录。虽然来自终结点 Web 方法的最新数据应该用于网络设备配置，但由于有提前发出的附加通知，数据在发布后最多可缓存 30 天。建议仅在版本 Web 方法指明有新版数据时，才重新调用终结点 Web 方法。终结点 Web 方法需要使用以下参数：
+终结点 Web 方法可返回组成 Office 365 服务的 IP 地址范围和 URL 的所有记录。 尽管应使用最新的终结点 Web 方法数据来进行网络设备配置，但得益于添加功能中所提供的提前通知，数据在发布之后可以缓存长达 30 天。 建议你仅在版本 Web 方法表示存在新的数据版本时才再次调用终结点 Web 方法。
 
-- **ServiceAreas** - 查询字符串参数。此参数指定服务区域的逗号分隔列表。有效项为 Common、Exchange、SharePoint 和 Skype。因为 Common 服务区域项是其他所有服务区域的先决条件，所以 Web 服务始终包含此项。如果你不添加此参数，将返回所有服务区域。
-- **TenantName** - 查询字符串参数。此参数指定 Office 365 租户名称。这项 Web 服务获取你提供的名称，并将它插入包含租户名称的 URL 部分中。如果你未提供租户名称，这些 URL 部分包含的是通配符 (\*)。
-- **NoIPv6** - 查询字符串参数。将此属性设置为 true，可从输出中排除 IPv6 地址（例如，你在网络中没有使用 IPv6 的话）。
-- **Instance** - 路由参数。此必需参数指定要返回哪个实例的终结点。有效实例为 Worldwide、China、Germany、USGovDoD 和 USGovGCCHigh。
+终结点 Web 方法的参数如下：
 
-如果从同一客户端 IP 地址调用不合理次数的终结点 Web 方法，可能会收到 HTTP 响应代码 429“请求次数过多”。大多数人永远不会看到此代码。如果收到此响应代码，应先等待 1 小时，再重新调用方法。计划仅在版本 Web 方法指明有新版本时，才调用终结点 Web 方法。 
+- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** - 以逗号分隔的服务区域列表。 有效项为 _Common_、_Exchange_、_SharePoint_ 和 _Skype_。 Common 服务区域项为所有其他服务区域的先决条件，但是 Web fuwu 始终包括它们。 如果不包括此参数，则会返回所有服务区域。
+- **TenantName=<tenant_name>** - 你的 Office 365 租户名称。 Web 服务采用所提供的名称，并将其插入到包含租户名称的 URL 中。 如果未提供租户名称，则这些 URL 的部分具有通配符字符 (\*)。
+- **NoIPv6=<true | false>** - 将此属性设置为 true，可从输出中排除 IPv6 地址，例如，你在网络中没有使用 IPv6 的话。
+- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - 此必填参数用于指定返回其终结点的实例。 有效实例包括：Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+
+如果多次从相同客户端 IP 地址调用终结点 Web 方法，则可能会收到 HTTP 响应代码 429（请求过多）。 大部分用户不会看到此代码。 如果收到此响应代码，则应先等待 1 小时，然后再再次调用此方法。 计划仅在版本 Web 方法表示存在新的可用版本时才调用终结点 Web 方法。
 
 终结点 Web 方法的结果是一组记录，每条记录均代表一个终结点集。每条记录均包含以下元素：
 
@@ -185,7 +190,7 @@ Worldwide,2018063000
 - tcpPorts - 终结点集的 TCP 端口。所有端口元素都格式化为端口的逗号分隔列表，或用短划线字符 (-) 分隔的端口范围。端口适用于相应类别的特定终结点集中的所有 IP 地址和所有 URL。若为空白，将省略此元素。
 - udpPorts - 此终结点集中 IP 地址范围的 UDP 端口。若为空白，将省略此元素。
 - ips - 与此终结点关联的 IP 地址范围，设置为与列出的 TCP 或 UDP 端口关联。IP 地址范围的 JSON 数组。若为空白，将省略此元素。
-- category - 端点集的连接类别。有效值为 Optimize、Allow 和 Default。如果使用端点数据搜索某个类别的 IP 地址或 URL，查询可能会返回多个类别。出现这种情况的原因有多种。此时，你应该遵循针对最高优先级类别的建议。例如，如果既有 Optimize 类别又有 Allow 类别的端点，则应遵循针对 Optimize 的要求。必须提供。 
+- category - 端点集的连接类别。有效值为 Optimize、Allow 和 Default。如果使用端点数据搜索某个类别的 IP 地址或 URL，查询可能会返回多个类别。出现这种情况的原因有多种。此时，你应该遵循针对最高优先级类别的建议。例如，如果既有 Optimize 类别又有 Allow 类别的端点，则应遵循针对 Optimize 的要求。必须提供。
 - expressRoute - True 或 False，表示此终结点集是否通过 ExpressRoute 进行路由。
 - required - 如果此终结点集必须有连接才能支持 Office 365，则为 True。如果此终结点集是可选的，则为 false。
 - notes - 对于可选终结点，此文本描述了无法在网络层访问此终结点集中 IP 地址或 URL 的情况下缺少的 Office 365 功能。若为空白，将省略此元素。
@@ -237,17 +242,17 @@ Worldwide,2018063000
 
 变更 Web 方法返回已发布的最新更新。这通常是上月的 IP 地址范围和 URL 变更。要处理的最关键变更是添加新 URL 或 IP 地址，因为如果无法将 IP 地址添加到防火墙访问控制列表，或无法将 URL 添加到代理服务器跳过列表，可能会导致相应网络设备后的 Office 365 用户遇到服务中断。尽管有运营要求，但 _Add_ 操作会在添加前提前 30 天发出通知，以免发生此类服务中断。
 
-变更 Web 方法需要使用以下参数：
+变更 Web 方法需要使用以下必填参数：
 
-- **Version** - 必需的 URL 路由参数。此参数指定当前实现的版本，且要查看自这一版本起的变更。格式是 _YYYYMMDDNN_。
+- **Version=<YYYYMMDDNN>** - 所需的 URL 路由参数。 此值应为当前实施的版本。 Web 服务应返回自该版本之后发生的变更。 格式为 _YYYYMMDDNN_。
 
-变更 Web 方法受速率限制，与终结点 Web 方法受限于速率一样。如果收到 429 HTTP 响应代码，应先等待 1 小时，再重新调用方法。 
+变更 Web 方法受速率限制，与终结点 Web 方法受限于速率一样。如果收到 429 HTTP 响应代码，应先等待 1 小时，再重新调用方法。
 
 变更 Web 方法的结果是一组记录，每条记录均代表特定版本终结点中的变更。每条记录均包含以下元素：
 
 - id - 变更记录的不可变 ID。
-- endpointSetId - 变更的终结点集记录的 ID。此为必需元素。
-- disposition - 这可以是两种变更之一（add 或 remove），描述了终结点集记录有何变更。此为必需元素。
+- endpointSetId - 变更的终结点集记录的 ID。
+- disposition - 这可以是两种变更之一（add 或 remove），描述了终结点集记录有何变更。
 - impact - 并非所有变更都对每个环境同样重要。此元素说明了相应更改对企业网络外围环境的预期影响。此属性仅包含在版本 2018112800 及更高版本的变更记录中。impact 选项包括：
   - AddedIp - IP 地址已添加到 Office 365，且很快就会对服务生效。这表示需要更改防火墙或其他第 3 层网络外围设备。如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
   - AdedUrl - URL 已添加到 Office 365，且很快就会对服务生效。这表示需要更改代理服务器或 URL 分析网络外围设备。如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
@@ -259,16 +264,16 @@ Worldwide,2018063000
   - OtherNonPriorityChanges - 更改了一些不如其他所有选项（如注释字段）重要的某内容
 - version - 引入变更的已发布终结点集的版本。版本号格式为 _YYYYMMDDNN_，其中 NN 是必须在一天内发布多个版本时递增的自然数。
 - previous - 详细说明终结点集中已变更元素的旧值的子结构。对于新添加的终结点集，不包含此元素。此元素包括 tcpPorts、udpPorts、ExpressRoute、category、required 和 notes。
-- current - 详细说明终结点集中已变更元素的更新值的子结构。此元素包括 tcpPorts、udpPorts、ExpressRoute、category、required 和 notes。
+- current - 详细说明终结点集上的更新变更元素值的子结构。 包括 _tcpPorts_、_udpPorts_、_ExpressRoute_、_category_、_required_ 和 _notes_。
 - add - 详细说明要添加到终结点集集合的项的子结构。如果没有要添加的项，将省略此元素。
   - effectiveDate - 定义添加项在服务中的生效日期。
-  - ips - 要添加到 ips 数组的项。
-  - urls - 要添加到 urls 数组的项。
-- remove - 详细说明要从终结点集中删除的项的子结构。如果没有要删除的项，将省略此元素。
-  - ips - 要从 ips 数组中删除的项。
-  - urls - 要从 urls 数组中删除的项。
+  - ips - 要添加到 _ips_ 数组的项。
+  - urls - 要添加到 _urls_ 数组的项。
+- remove - 详细说明要从终结点集中删除的项的子结构。 如果没有删除项，则省略。
+  - ips - 要从 _ips_ 数组中删除的项。
+  - urls - 要从 _urls_ 数组中删除的项。
 
-### <a name="examples"></a>**示例：**
+### <a name="examples"></a>示例：
 
 示例 1 请求 URI：[https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
@@ -340,9 +345,9 @@ Worldwide,2018063000
 ]
 ```
 
-## <a name="example-powershell-script"></a>**示例 PowerShell 脚本**
+## <a name="example-powershell-script"></a>示例 PowerShell 脚本
 
-运行下面的 PowerShell 脚本，可确定是否需要对已更新数据执行操作。此脚本检查 Office 365 全球实例终结点的版本号。若有变更，它就会下载终结点，并筛选出 &quot;Allow&quot; 和 &quot;Optimize&quot; 类别终结点。它还会跨多个调用使用唯一 ClientRequestId，并将找到的最新版本保存到临时文件中。应每小时调用一次此脚本，以检查是否有版本更新。
+你可以通过运行以下 PowerShell 脚本来查看是否需要为更新的数据采取操作。 此脚本将检查 Office 365 全球实例终结点的版本号。 存在变更时，它将会下载终结点并筛选出“允许”和“优化”类别终结点。 它还在多个调用中使用唯一的 _ClientRequestId_，并保存临时文件中出现的最新版本。 应一小时调用一次此脚本，以检查是否存在版本更新。
 
 ```powershell
 # webservice root URL
@@ -416,7 +421,7 @@ else {
 }
 ```
 
-## <a name="example-python-script"></a>**示例 Python 脚本**
+## <a name="example-python-script"></a>示例 Python 脚本
 
 运行下面的 Python 脚本（已使用 Windows 10 上的 Python 3.6.3 进行测试），可确定是否需要对已更新数据执行操作。此脚本检查 Office 365 全球实例终结点的版本号。若有变更，它就会下载终结点，并筛选出 _Allow_ 和 _Optimize_ 类别终结点。它还会跨多个调用使用唯一 ClientRequestId，并将找到的最新版本保存到临时文件中。应每小时调用一次此脚本，以检查是否有版本更新。
 
@@ -482,13 +487,62 @@ else:
     print('Office 365 worldwide commercial service instance endpoints are up-to-date')
 ```
 
-## <a name="web-service-interface-versioning"></a>**Web 服务接口版本控制**
+## <a name="web-service-interface-versioning"></a>Web 服务接口版本控制
 
 日后可能需要更新这些 Web 服务方法的参数或结果。在这些 Web 服务的正式版本发布后，Microsoft 将做出合理的努力，以事先通知 Web 服务的实质性更新。如果认为更新必须变更使用 Web 服务的客户端，Microsoft 将在新版本发布后的至少十二 (12) 个月内保留旧版（上一版）Web 服务。在此期间未升级的客户可能无法访问 Web 服务及其方法。如果 Web 服务接口签名发生以下变更，客户必须确保 Web 服务的客户端能继续正常运行，而不出现错误：
 
 - 将新的可选参数添加到现有 Web 方法中，此参数既不必由旧客户端提供，也不会影响旧客户端收到的结果。
 - 将响应 REST 项之一或其他列中的新命名特性添加到响应 CSV。
 - 添加新 Web 方法，其使用旧客户端未调用的新名称。
+
+## <a name="office-365-endpoint-functions-module"></a>Office 365 终结点功能模块
+
+Microsoft 托管 REST 服务以获取最新的 Office 365 服务的 URL。  若要能够将 URL 用作集合，可以结合使用此方法及一些有用的 cmdlet。
+
+### <a name="calling-the-rest-service"></a>调用 REST 服务
+
+若要使用此模块，只需将模块文件 [O365EndpointFunctions.psm1](https://github.com/samurai-ka/PS-Module-O365EndpointService/blob/master/O365EndpointFunctions.psm1) 复制到硬盘上的某个位置并使用此命令直接将其导入：
+
+```powershell
+    Import-Module O365EndpointFunctions.psm1
+```
+
+导入此模块之后，你将能够调用 REST 服务。 这会将 URL 返回为集合，你可以在 PowerShell 中直接进行处理。 必须输入 Office 365 租户的名称，如以下命令中所示：
+
+```powershell
+    Invoke-O365EnpointService -tenantName [Name of your tenant]
+```
+
+> [!NOTE]
+> cmdlet 的拼写为 **Invoke-O365EnpointService**，没有字母 _d_。 这不是拼写错误。
+
+#### <a name="parameters"></a>参数
+
+- **tenantName** - Office 365 租户的名称。 此参数为必填参数。
+- **ForceLatest** - 此开关将强制 REST API 始终返回完整的最新 URL 列表。
+- **IPv6** - 此开关也会返回 IPv6 地址。 默认情况下将仅返回 IPv4。
+
+### <a name="examples"></a>示例
+
+返回使用 IPv6 地址的所有 URL 的完整列表
+
+```powershell
+    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
+```
+
+仅返回 Exchange Online 服务的 IP 地址
+
+```powershell
+    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
+```
+
+### <a name="exporting-a-proxy-pac-file"></a>导出代理 PAC 文件
+
+可以使用此模块创建代理 PAC 文件。 在此示例中，先获取终结点，然后筛选结果以选择 URL。 这些 URL 将进入要导入的管道。  
+
+```powershell
+ Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
+```
 
 ## <a name="related-topics"></a>相关主题
   
