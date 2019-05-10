@@ -65,7 +65,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 -->
   
 <a name="cloudarch"></a>
-<span data-ttu-id="1fe4c-128">##面向企业架构师的 Microsoft 云系列</span><span class="sxs-lookup"><span data-stu-id="1fe4c-128">## Microsoft cloud for enterprise architects series</span></span>
+## <span data-ttu-id="1fe4c-128">面向企业架构师的 Microsoft 云系列</span><span class="sxs-lookup"><span data-stu-id="1fe4c-128">Microsoft cloud for enterprise architects series</span></span>
 
 <span data-ttu-id="1fe4c-p105">这些云体系结构海报提供有关 Microsoft 云服务的信息，其中包括 Office 365、Azure Active Directory、Microsoft Intune、Microsoft Dynamics CRM Online 以及本地混合和云解决方案。IT 决策者和架构师可以使用这些资源来确定其工作负载的理想解决方案，并做出有关核心基础结构组件的决策，如标识和安全性。</span><span class="sxs-lookup"><span data-stu-id="1fe4c-p105">These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.</span></span>
 
@@ -82,7 +82,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
    
 <a name="identity"></a>
-<span data-ttu-id="1fe4c-131">###面向企业架构师的 Microsoft 云标识</span><span class="sxs-lookup"><span data-stu-id="1fe4c-131">### Microsoft cloud identity for enterprise architects</span></span>
+### <span data-ttu-id="1fe4c-131">面向企业架构师的 Microsoft 云标识</span><span class="sxs-lookup"><span data-stu-id="1fe4c-131">Microsoft cloud identity for enterprise architects</span></span>
 
 <span data-ttu-id="1fe4c-132">关于使用 Microsoft 云服务和平台为组织设计标识，IT 架构师需要了解的信息。</span><span class="sxs-lookup"><span data-stu-id="1fe4c-132">What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.</span></span>
   
@@ -137,7 +137,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 |[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
    
 <a name="BKMK_o365solutions"></a>
-<span data-ttu-id="1fe4c-189">## Microsoft 365 企业版解决方案系列</span><span class="sxs-lookup"><span data-stu-id="1fe4c-189">## Microsoft 365 enterprise solution series</span></span>
+## <span data-ttu-id="1fe4c-189">Microsoft 365 企业版解决方案系列</span><span class="sxs-lookup"><span data-stu-id="1fe4c-189">Microsoft 365 enterprise solution series</span></span>
 
 <span data-ttu-id="1fe4c-190">Microsoft 365 企业版解决方案系列介绍了如何实现 Microsoft 365 功能，尤其是其中一些跨技术的功能。</span><span class="sxs-lookup"><span data-stu-id="1fe4c-190">The Microsoft 365 enterprise solution series provides guidance for implementing Microsoft 365 capabilities, especially where capabilities cross technologies.</span></span>
 
