@@ -3,7 +3,7 @@ title: Office 365 IP 地址和 URL Web 服务
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/1/2019
+ms.date: 5/7/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 为了帮助你更好地标识和区分 Office 365 网络流量，我们推出了一项用于发布 Office 365 终结点的新 Web 服务，以方便你更轻松地评估、配置并掌握最新变更。这项新 Web 服务取代了目前可用的 XML 可下载文件。
-ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
-ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
+ms.openlocfilehash: c87f297c6bc1fc4cf317db60d3fd2ef2e4b8443b
+ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33512678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33655786"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务
 
@@ -122,7 +122,6 @@ Microsoft 在每月底更新 Office 365 IP 地址和 FQDN 条目，有时也会�
  "instance": "Worldwide",
  "latest": "2018063000"
 }
-
 ```
 
 示例 3 请求 URI：[https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
@@ -166,7 +165,6 @@ Worldwide,2018063000
 <link>https://endpoints.office.com/changes/Worldwide/2018080200?singleVersion&clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7</link> <description>Version 2018080200 includes 2 changes. IPs: 2 added and 0 removed.</description>
 <pubDate>Thu, 02 Aug 2018 00:00:00 Z</pubDate>
 </item>
-...
 ```
 
 ## <a name="endpoints-web-method"></a>终结点 Web 方法
@@ -178,7 +176,7 @@ Worldwide,2018063000
 - **ServiceAreas=<Common | Exchange | SharePoint | Skype>** - 以逗号分隔的服务区域列表。 有效项为 _Common_、_Exchange_、_SharePoint_ 和 _Skype_。 Common 服务区域项为所有其他服务区域的先决条件，但是 Web fuwu 始终包括它们。 如果不包括此参数，则会返回所有服务区域。
 - **TenantName=<tenant_name>** - 你的 Office 365 租户名称。 Web 服务采用所提供的名称，并将其插入到包含租户名称的 URL 中。 如果未提供租户名称，则这些 URL 的部分具有通配符字符 (\*)。
 - **NoIPv6=<true | false>** - 将此属性设置为 true，可从输出中排除 IPv6 地址，例如，你在网络中没有使用 IPv6 的话。
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - 此必填参数用于指定返回其终结点的实例。 有效实例包括：Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - 此必填参数用于指定返回其终结点的实例。 有效实例包括：_Worldwide_、_China_、_Germany_、_USGovDoD_ 和 _USGovGCCHigh_。
 
 如果多次从相同客户端 IP 地址调用终结点 Web 方法，则可能会收到 HTTP 响应代码 429（请求过多）。 大部分用户不会看到此代码。 如果收到此响应代码，请先等待 1 小时，然后再重复你的请求。 计划仅在版本 Web 方法表示存在新的可用版本时才调用终结点 Web 方法。
 
@@ -243,7 +241,7 @@ Worldwide,2018063000
 
 变更 Web 方法需要使用以下必填参数：
 
-- **Version=\<YYYYMMDDNN>** - 所需的 URL 路由参数。 此值应为当前实施的版本。 Web 服务应返回自该版本之后发生的变更。 格式是 _YYYYMMDDNN_，其中 _NN_ 为零。 Web 服务要求此参数包含 10 个数字。
+- **Version=\<YYYYMMDDNN>** - 所需的 URL 路由参数。 此值应为当前实施的版本。 Web 服务应返回自该版本之后发生的变更。 格式为 _YYYYMMDDNN_；如果需要在一天内发布多个版本，则 _NN_ 是一个递增的自然数，而 _00_ 表示给定日期的第一个更新。 Web 服务要求 _version_ 参数恰好包含 10 位数。
 
 变更 Web 方法受速率限制，与终结点 Web 方法受限于速率一样。 如果收到 429 HTTP 响应代码，请先等待 1 小时，然后再重复你的请求。
 
@@ -252,7 +250,7 @@ Worldwide,2018063000
 - id - 变更记录的不可变 ID。
 - endpointSetId - 变更的终结点集记录的 ID。
 - disposition - 这可以是两种变更之一（add 或 remove），描述了终结点集记录有何变更。
-- impact - 并非所有变更都对每个环境同样重要。此元素说明了相应更改对企业网络外围环境的预期影响。此属性仅包含在版本 2018112800 及更高版本的变更记录中。impact 选项包括：
+- impact - 并非所有变更都对每个环境同样重要。此元素说明了相应更改对企业网络外围环境的预期影响。此属性仅包含在版本 **2018112800** 及更高版本的变更记录中。impact 选项包括：
   - AddedIp - IP 地址已添加到 Office 365，且很快就会对服务生效。这表示需要更改防火墙或其他第 3 层网络外围设备。如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
   - AddedUrl – URL 已添加到 Office 365，且很快就会对服务生效。 这表示需要更改代理服务器或 URL 分析网络外围设备。 如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
   - AddedIpAndUrl - IP 地址和 URL 均已添加。这表示需要更改防火墙第 3 层设备、代理服务器或 URL 分析设备。如果你并没有在我们开始使用此元素之前添加它，可能会遇到故障。
@@ -508,11 +506,8 @@ Microsoft 托管 REST 服务以获取最新的 Office 365 服务的 URL。  若�
 导入此模块之后，你将能够调用 REST 服务。 这会将 URL 返回为集合，你可以在 PowerShell 中直接进行处理。 必须输入 Office 365 租户的名称，如以下命令中所示：
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant]
+    Invoke-O365EndpointService -tenantName [Name of your tenant]
 ```
-
-> [!NOTE]
-> cmdlet 的拼写为 **Invoke-O365EnpointService**，没有字母 _d_。 这不是拼写错误。
 
 #### <a name="parameters"></a>参数
 
@@ -525,13 +520,13 @@ Microsoft 托管 REST 服务以获取最新的 Office 365 服务的 URL。  若�
 返回使用 IPv6 地址的所有 URL 的完整列表
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
 ```
 
 仅返回 Exchange Online 服务的 IP 地址
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
 ```
 
 ### <a name="exporting-a-proxy-pac-file"></a>导出代理 PAC 文件
@@ -539,7 +534,7 @@ Microsoft 托管 REST 服务以获取最新的 Office 365 服务的 URL。  若�
 可以使用此模块创建代理 PAC 文件。 在此示例中，先获取终结点，然后筛选结果以选择 URL。 这些 URL 将进入要导入的管道。  
 
 ```powershell
- Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
+ Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
 ```
 
 ## <a name="related-topics"></a>相关主题

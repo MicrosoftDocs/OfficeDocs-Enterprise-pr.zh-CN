@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为开发/测试环境。
-ms.openlocfilehash: 57262ee58f539fffbb0fc5b92c3a24f4c9204293
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 1eefbf94549d8af927d93a554418cb2642d1b447
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741208"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867717"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure 中的模拟跨界虚拟网络
 
@@ -117,6 +117,7 @@ New-AzNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName -Location 
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name XPrem
 $nsg=Get-AzNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "Testnet" -AddressPrefix 192.168.0.0/24 -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 接下来，使用下面这些命令在 TestLab 和 XPrem VNet 之间创建 VNet 对等关系。

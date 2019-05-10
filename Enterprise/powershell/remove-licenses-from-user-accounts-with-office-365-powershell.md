@@ -15,17 +15,17 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: 介绍如何使用 office 365 PowerShell 删除之前分配给用户的 office 365 许可证。
-ms.openlocfilehash: 66ffe7275bcfd936c7df70d3969b96fefafb355d
-ms.sourcegitcommit: 0a99abcb67fc8ee7594cb66f5f7fd0e6e94eb3fd
+description: 介绍如何使用 Office 365 PowerShell 删除之前分配给用户的 Office 365 许可证。
+ms.openlocfilehash: f5154bbec90bc7b9d0a7d944ab1cfaefd401ae87
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474173"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867747"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户的许可证
 
-**摘要:** 介绍如何使用 office 365 PowerShell 删除之前分配给用户的 office 365 许可证。
+**摘要:** 介绍如何使用 Office 365 PowerShell 删除之前分配给用户的 Office 365 许可证。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -82,6 +82,10 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
+>[!Note]
+>您不能使用 Set-msoluserlicense cmdlet 从*已取消*的许可证中取消分配用户。 您必须为 Microsoft 365 管理中心中的每个用户帐户单独执行此操作。
+>
+
 要从一组现有的授权用户中删除许可证，请使用下列方法之一：
   
 - **基于现有帐户属性筛选帐户**为此, 请使用以下语法:
@@ -134,7 +138,7 @@ $x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
 $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-释放许可证的另一种方法是删除用户帐户。 有关详细信息, 请参阅[Delete and restore user accounts with Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)。
+释放许可证的另一种方法是删除用户帐户。 有关详细信息, 请参阅[Delete and restore user accounts With Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)。
   
 ## <a name="see-also"></a>另请参阅
 

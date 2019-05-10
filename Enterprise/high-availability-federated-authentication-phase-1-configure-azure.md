@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '摘要: 配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。'
-ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487422"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867707"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -29,7 +29,7 @@ ms.locfileid: "33487422"
   
 - 资源组
     
-- 包含用于托管 Azure 虚拟机的子网的跨界 azure 虚拟网络 (VNet)
+- 包含用于托管 Azure 虚拟机的子网的跨界 Azure 虚拟网络 (VNet)
     
 - 执行子网隔离的网络安全组
     
@@ -39,7 +39,7 @@ ms.locfileid: "33487422"
 
 开始配置 Azure 组件之前，请填写下表。 为了帮助你完成配置 Azure 的过程，请打印此部分并记下所需的信息，或将此部分复制到文档中进行填写。 对于 VNet 的设置, 请填写表 V。
   
-|**Item**|**配置设置**|**说明**|**值**|
+|**项**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称 (示例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,18 +61,18 @@ ms.locfileid: "33487422"
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
-|**Item**|**子网名称**|**子网地址空间**|**用途**|
+|**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务 (AD DS) 域控制器和 DirSync server 虚拟机 (vm) 使用的子网。  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS vm 使用的子网。  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |web 应用程序代理虚拟机使用的子网。  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务 (AD DS) 域控制器和 DirSync server 虚拟机 (Vm) 使用的子网。  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS Vm 使用的子网。  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理虚拟机使用的子网。  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 网关虚拟机使用的子网。  <br/> |
    
  **表 S：虚拟网络中的子网**
   
 下一步，针对分配给虚拟机和负载平衡器实例的静态 IP 地址填写表 I。
   
-|**Item**|**用途**|**子网的 IP 地址**|**值**|
+|**项**|**用途**|**子网的 IP 地址**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -218,6 +218,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -Addre
 New-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
 $nsg=Get-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 下一步，请使用这些命令来创建站点间 VPN 连接的网关。
@@ -303,7 +304,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 **第1阶段: 适用于 Office 365 的高可用性联合身份验证的 Azure 基础结构**
 
-![azure 基础结构在 azure 中实现高可用性 Office 365 联合身份验证的第1阶段](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Azure 基础结构在 Azure 中实现高可用性 Office 365 联合身份验证的第1阶段](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>后续步骤
 

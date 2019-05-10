@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-ms.openlocfilehash: f6ee25d7e1564ce5770bada709934e68dd6888ee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 894d2ae7392b5365c4c074a3c7d48dd815c5b7d1
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490608"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867756"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
@@ -271,6 +271,7 @@ New-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName -Locatio
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 $nsg=Get-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 下面是生成的配置。
