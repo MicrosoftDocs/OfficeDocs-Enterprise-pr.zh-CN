@@ -3,19 +3,19 @@ title: 为 Office 365 多地理位置配置搜索
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何在多地理位置环境中配置搜索。
-ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490374"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068068"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>为 Office 365 多地理位置配置搜索
 
@@ -85,7 +85,7 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 <tr class="odd">
 <td align="left"></td>
 <td align="left">多地理位置搜索不支持数值精简的动态存储桶。</td>
-<td align="left">对于数值精简，请使用<a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”参数</a>。</td>
+<td align="left">对于数值精简，请使用<a href="https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”参数</a>。</td>
 </tr>
 <tr class="even">
 <td align="left">文档 ID</td>
