@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/07/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：请参阅以下文章，了解不同 Office 365 云的 Internet 端点。
-ms.openlocfilehash: 1312dd80130d99dba24b0c99f7570a57e70982ac
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 372986a8ed6b8d7ced8912712d0546082b957b79
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492008"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069649"
 ---
 # <a name="office-365-endpoints"></a>Office 365 端点
 

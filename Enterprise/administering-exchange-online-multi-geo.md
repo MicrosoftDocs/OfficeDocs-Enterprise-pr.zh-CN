@@ -3,18 +3,18 @@ title: 在多地理位置环境中管理 Exchange Online 邮箱
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: 了解如何使用 Microsoft PowerShell 管理 Exchange Online 多地理位置设置。
-ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: adb8871a08c627d2ed2dd084283c31b8241e9152
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490878"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068458"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 

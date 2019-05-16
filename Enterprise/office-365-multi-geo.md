@@ -3,19 +3,19 @@ title: Office 365 多地理位置
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 利用 Office 365 多地理位置将 Office 365 触及范围扩展到多个地理区域。
-ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 25621a0a8c833c4334fe6f70e7cb04d15690ba71
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069748"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 多地理位置
 

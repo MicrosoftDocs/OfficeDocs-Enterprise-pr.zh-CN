@@ -3,19 +3,19 @@ title: 删除附属位置
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何删除 Office 365 多地理位置中的附属位置。
-ms.openlocfilehash: 2c9c69abeb0bc13c85ec05207336c246f350383d
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 6e9de4fe90f94cafec92b6ff48277711f4146bfb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067948"
 ---
 # <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>删除 Office 365 多地理位置中的附属位置
 

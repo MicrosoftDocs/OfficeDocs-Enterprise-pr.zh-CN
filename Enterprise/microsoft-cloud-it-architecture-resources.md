@@ -3,7 +3,7 @@ title: Microsoft 云 IT 体系结构资源
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Office 专业增强版部署新式安全桌面。
-ms.openlocfilehash: adc6e2c5992f7a9b146eca1b8b9b04c4f7aed115
-ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
+ms.openlocfilehash: ca62612dd76b3ada07dba0e58f92f36e2bf8e1cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "31838194"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070298"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 

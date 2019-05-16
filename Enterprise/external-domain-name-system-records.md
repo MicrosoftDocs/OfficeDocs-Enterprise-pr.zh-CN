@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 2/14/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 摘要：在计划 Office 365 部署时要使用的 DNS 记录的引用列表。
-ms.openlocfilehash: c172275e43b4703172f58287c086562da352f5e9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bc1bb822bc0baf376c96c95ff637b93f131605e9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487250"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067658"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -31,7 +31,7 @@ ms.locfileid: "33487250"
   
 |||
 |:-----|:-----|
-|![域](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**想要查看 Office 365 组织的 DNS 记录的自定义列表？** 可以在 Office 365 中找到为你的域[创建 Office 365 DNS 记录所需的信息](https://support.office.microsoft.com/zh-CN/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)。<br/> **需要在你的域的 DNS 主机（例如 GoDaddy 或 eNom）中添加这些记录的分步帮助？**[查找有关许多热门 DNS 主机的分步说明的链接](https://go.microsoft.com/fwlink/?LinkId=286745)。<br/> **返回到** [Office 365 的网络规划和性能优化](https://aka.ms/tune)。  <br/> |
+|![域](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**想要查看 Office 365 组织的 DNS 记录的自定义列表？** 可以在 Office 365 中找到为你的域[创建 Office 365 DNS 记录所需的信息](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)。<br/> **需要在你的域的 DNS 主机（例如 GoDaddy 或 eNom）中添加这些记录的分步帮助？**[查找有关许多热门 DNS 主机的分步说明的链接](https://go.microsoft.com/fwlink/?LinkId=286745)。<br/> **返回到** [Office 365 的网络规划和性能优化](https://aka.ms/tune)。  <br/> |
 
  **是否坚持使用自己自定义部署的引用列表？** 下方的列表应该用作你的自定义 Office 365 部署的引用。需要选择将哪些记录应用于你的组织并填写适当的值。
   

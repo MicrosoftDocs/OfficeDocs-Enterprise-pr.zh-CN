@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/12/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 9df81d14cbd18246bf10e66002d9042a3b3d9384
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741318"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070428"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -89,7 +89,7 @@ ms.locfileid: "31741318"
   
 图 3 显示了某个组织使用包含组织帐户的常见 Azure AD 租户进行多个订阅的示例。
   
-**图 3：使用同一 Azure AD 租户的组织的多个订阅**
+**图 3：组织使用同一 Azure AD 租户进行的多个订阅**
 
 ![组织使用同一个 Azure AD 租户进行多个订阅的示例。](media/Subscriptions/Subscriptions-Fig3.png)
   
