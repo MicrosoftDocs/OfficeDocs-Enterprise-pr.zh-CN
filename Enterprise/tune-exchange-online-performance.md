@@ -1,10 +1,10 @@
 ---
-title: 调整 Exchange Online 性能
+title: 优化 Exchange Online 性能
 ms.author: krowley
 author: tracyp
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,14 +14,14 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: 本文包含一般提示和指向其他资源的链接, 这些链接告诉您如何提高 Exchange Online 的性能。
-ms.openlocfilehash: f75869ba6d83a92b1e19743c8b38c4bcbb6762cf
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: d736568687da5ffe0ebed5a57a6afa6f93173c54
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372849"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070348"
 ---
-# <a name="tune-exchange-online-performance"></a>调整 Exchange Online 性能
+# <a name="tune-exchange-online-performance"></a>优化 Exchange Online 性能
 
 本文包含的常规提示和指向其他资源的链接, 这些链接告诉您如何提高 Exchange Online 的性能 (尤其是在迁移之前)。 本文是 Office 365 项目的[网络规划和性能调整](https://aka.ms/tune)的一部分。
    

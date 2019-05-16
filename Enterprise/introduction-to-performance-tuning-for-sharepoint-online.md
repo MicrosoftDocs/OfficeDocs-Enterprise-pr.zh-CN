@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/22/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: 本文介绍在设计页面以在 SharePoint Online 中实现最佳性能时需要考虑的特定方面。
-ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4743364f6e8a1e84800085d0875abad84491780b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487152"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067208"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online 性能优化简介
 
@@ -44,7 +44,7 @@ SharePoint Online 的以下广义指标提供了有关性能的真实世界数�
     
 - 非自定义页面的加载速度非常快。
     
-- OneDrive for business、工作组网站和系统页面 (如 _layouts 等) 都快速加载。
+- OneDrive for Business、工作组网站和系统页面 (如 _layouts 等) 都快速加载。
     
 - 最慢的 1% 的 SharePoint Online 页面的加载时间超过5000毫秒。
     
@@ -54,7 +54,7 @@ SharePoint Online 的以下广义指标提供了有关性能的真实世界数�
 
 网站集管理员、网站所有者、编辑者或参与者属于其他安全组, 具有其他权限, 因此在页面上有 SharePoint 加载的其他元素。
   
-这适用于 sharepoint 本地和 sharepoint online, 但在本地方案中, 差别并不像在 SharePoint Online 中那样容易察觉。
+这适用于 SharePoint 本地和 SharePoint Online, 但在本地方案中, 差别并不像在 SharePoint Online 中那样容易察觉。
   
 为了正确评估页面对用户的执行方式, 应使用标准用户帐户来避免加载创作控件以及与安全组相关的其他流量。
   
@@ -82,7 +82,7 @@ SharePoint Online 的以下广义指标提供了有关性能的真实世界数�
     
 ### <a name="server-connection"></a>服务器连接
 
-许多影响 sharepoint 本地的性能的问题也适用于 sharepoint Online。
+许多影响 SharePoint 本地的性能的问题也适用于 SharePoint Online。
   
 正如您所期望的那样, 您可以在多大程度上控制服务器如何使用本地 SharePoint 进行操作。 SharePoint Online 的内容稍有不同。 您所做的工作越多, 呈现页面所需的时间就越长。 在 SharePoint 中, 此方面最大的原因是具有多个 web 部件的复杂页面。
   
@@ -98,7 +98,7 @@ SharePoint Online
   
 这些服务器与服务器交互的示例如下:
   
-- Web 到 SQL server
+- Web 到 SQL Server
     
 - Web 到应用程序服务器
     
@@ -124,7 +124,7 @@ SharePoint Online
     
 - 与服务器的物理距离较大
     
-您可以在 SharePoint Online 中使用的一项功能是 Microsoft CDN (内容传递网络)。 CDN 基本上是跨多个数据中心部署的服务器的分布式集合。 利用 CDN, 页面上的内容可以托管在服务器附近, 即使客户端离原始 SharePoint 服务器远。 Microsoft 将在将来使用此信息来存储无法自定义的页面的本地实例, 例如 SharePoint Online 管理中心主页。 有关 cdn 的详细信息, 请参阅[Content 传递网络](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)。
+您可以在 SharePoint Online 中使用的一项功能是 Microsoft CDN (内容传递网络)。 CDN 基本上是跨多个数据中心部署的服务器的分布式集合。 利用 CDN, 页面上的内容可以托管在服务器附近, 即使客户端离原始 SharePoint 服务器远。 Microsoft 将在将来使用此信息来存储无法自定义的页面的本地实例, 例如 SharePoint Online 管理中心主页。 有关 Cdn 的详细信息, 请参阅[Content 传递网络](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)。
   
 您需要注意但可能无法完成的操作是您的 ISP 的连接速度。 简单的速度测试工具将告诉您连接速度。
   
@@ -132,7 +132,7 @@ SharePoint Online
 
 从性能角度来看, 有几个因素需要考虑 web 浏览器。
   
-访问复杂页面会影响性能。 大多数浏览器只有较小的缓存 (围绕 90MB), 而平均网页通常约为 1.6 mb。 使用此设置不需要很长时间。
+访问复杂页面会影响性能。 大多数浏览器只有较小的缓存 (围绕 90MB), 而平均网页通常约为 1。6 MB。 使用此设置不需要很长时间。
   
 带宽也可能是一个问题。 例如, 如果用户在另一个会话中观看视频, 这将影响 SharePoint 页面的性能。 虽然您无法阻止用户处理媒体, 但您可以控制页面加载用户的方式。
   
@@ -151,12 +151,12 @@ SharePoint Online
     
 - [使用内容交付网络](using-content-delivery-networks-with-sharepoint-online.md)
     
-- [使用内容搜索 web 部件而不是内容查询 web 部件来提高 SharePoint Online 中的性能](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [使用内容搜索 Web 部件而不是内容查询 Web 部件来提高 SharePoint Online 中的性能](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
 - 
   [容量规划和负载测试 SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
     
-- [Diagnosing performance issues with SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
+- [诊断 SharePoint Online 性能问题](diagnosing-performance-issues-with-sharepoint-online.md)
     
 - [在 SharePoint Online 中使用对象缓存](using-the-object-cache-with-sharepoint-online.md)
     
