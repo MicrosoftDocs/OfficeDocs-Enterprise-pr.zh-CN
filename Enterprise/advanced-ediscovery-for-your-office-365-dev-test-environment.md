@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 摘要：在 Office 365 开发/测试环境中使用示例数据配置并演示 Office 365 高级电子数据展示。
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068338"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的高级电子数据展示
 
  **摘要：** 在 Office 365 开发/测试环境中使用示例数据配置并演示 Office 365 高级电子数据展示。
   
-office 365 高级电子数据展示使您能够快速查找和分析存储在 Office 365 中的数据 (包括电子邮件和文档) 中的相关信息。 这样则可以节省大量时间和费用，尤其是在诉讼情景中。 有关详细信息，请参阅 [Office 365 高级电子数据展示](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)。
+Office 365 高级电子数据展示使您能够快速查找和分析存储在 Office 365 中的数据 (包括电子邮件和文档) 中的相关信息。 这样则可以节省大量时间和费用，尤其是在诉讼情景中。 有关详细信息，请参阅 [Office 365 高级电子数据展示](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)。
   
 借助本文中的说明可以创建一个虚构的合同纠纷的一小组数据，并使用高级电子数据展示对数据进行分析。
   
@@ -39,7 +39,7 @@ office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
 如果要在模拟企业版中测试高级电子数据展示, 请按照[Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试高级电子数据展示不需要模拟的企业环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以在代表典型组织的环境中执行测试和实验。 
+> 测试高级电子数据展示不需要模拟的企业环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以在代表典型组织的环境中执行测试和实验。 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>第 2 阶段：创建高级电子数据展示的示例数据
 
@@ -53,7 +53,7 @@ office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
     
 2. 在“**Outlook 邮件**”选项卡上，单击“**新建**”。
     
-3. 在 " **To**" 中, 键入试用订阅的 User6 帐户的电子邮件地址 ( **User6 @。**<organization name> **. onmicrosoft.com**)。
+3. 在 " **To**" 中, 键入试用订阅的 User6 帐户的电子邮件地址 ( **User6 @。**<organization name> **。 onmicrosoft.com**)。
     
 4. 在主题中，键入“**测试电子邮件 1**”。
     

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 摘要：了解如何优化网络以便访问 Microsoft SaaS 服务，包括 Office 365、Microsoft Intune 和 Dynamics 365。
-ms.openlocfilehash: 3d47c53de1bc1121ef72eb519c51c0ad9423fff9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 695e3255bf1afcb5314985caccb15ead410d93f6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487290"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067768"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>为 Microsoft SaaS 设计网络
 
@@ -35,7 +35,7 @@ ms.locfileid: "33487290"
     
 2. 向每个办公室添加 Internet 连接。
     
-3. 确保所有 Internet 连接的 isp 都使用具有本地 IP 地址的 DNS 服务器。
+3. 确保所有 Internet 连接的 Isp 都使用具有本地 IP 地址的 DNS 服务器。
     
 4. 检查您的网络回流, 中间目标 (如基于云的安全服务), 并在可能的情况下将其删除。
     
@@ -47,7 +47,7 @@ Microsoft SaaS 流量有三种类别:
 
 - 优化
 
-  与每个 microsoft saas 服务的连接所必需, 表示 microsoft saas 带宽、连接数和数据量的 75%。
+  与每个 Microsoft SaaS 服务的连接所必需, 表示 Microsoft SaaS 带宽、连接数和数据量的 75%。
 
 - 允许
 

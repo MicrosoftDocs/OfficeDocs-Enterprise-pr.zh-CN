@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: '摘要: 在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。'
-ms.openlocfilehash: c5472c8c7268d39dd6d3ca5ef78bde9e4bdde7a3
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: fa8f5d278283f66bda0aa9efb0dddf40e52ee1a6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491280"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067328"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 本文介绍如何在不执行传统负载测试的情况下部署到 SharePoint Online, 因为这是不允许的。
-ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f8de9ee2eb28b4cafef469a078a3700b1ffbbbb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490210"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068158"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>SharePoint Online 的容量规划和负载测试。
 
-本文介绍了如何在不进行传统负载测试的情况下部署到 sharepoint online, 因为 sharepoint Online 不允许进行负载测试。 SharePoint Online 是一项云服务, 服务中负载的负载功能、运行状况和总体平衡由 Microsoft 进行管理。
+本文介绍了如何在不进行传统负载测试的情况下部署到 SharePoint Online, 因为 SharePoint Online 不允许进行负载测试。 SharePoint Online 是一项云服务, 服务中负载的负载功能、运行状况和总体平衡由 Microsoft 进行管理。
   
 确保网站启动成功的最佳方法是遵循下面突出显示的基本原则、做法和建议。
   
@@ -37,7 +37,7 @@ ms.locfileid: "33490210"
 ## <a name="how-do-i-plan-for-a-site-launch"></a>如何规划网站启动？
 
 ### <a name="optimize-pages-by-following-recommended-guidelines"></a>按照建议的准则优化页面
-不应简单地将本地部署中的页面视为 sharepoint online, 而不是针对 sharepoint online 的建议准则进行评审。
+不应简单地将本地部署中的页面视为 SharePoint Online, 而不是针对 SharePoint Online 的建议准则进行评审。
 
 应考虑以下几个关键因素:
 - 内部部署可以利用传统的服务器端缓存 (如对象缓存), 但在云中的拓扑差异, 这些选项不可用。

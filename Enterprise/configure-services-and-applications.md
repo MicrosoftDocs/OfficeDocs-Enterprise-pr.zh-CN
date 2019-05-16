@@ -1,9 +1,9 @@
 ---
 title: 配置 Office 365 企业版服务和应用程序
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: deployment
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 description: 配置 Office 365 企业版服务和应用程序
-ms.openlocfilehash: 2782d4501eb1e0b9d9d6fc40c251e1db065c86be
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 15c6086e90ad982c61c70fab95add2a20ca6473d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067931"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>配置 Office 365 企业版服务和应用程序
 

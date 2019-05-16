@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 Azure AD Connect。
-ms.openlocfilehash: e5a4381b6795a1159c1398f4155b059998a30818
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a4c8a76a322824bfdb4df88600881d76cb3e378c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487922"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067318"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证
 
@@ -87,7 +87,7 @@ Azure AD Connect 工具通过以下步骤配置 AD FS 服务器、Web 应用程�
     
 8. 在"连接到 Azure AD"页上，键入 Office 365 订阅全局管理员帐户的名称和密码，然后单击"下一步"。
     
-9. 在 "**连接目录**" 页上, 确保在 "**林**" 中选择了 "本地 Active Directory 域服务 (AD DS) 林", 键入域管理员帐户的名称和密码, 单击 "**添加目录**", 然后单击 "**下一步**"。
+9. 在 "**连接目录**" 页上, 确保在 "**林**" 中选择了 "本地 Active DIRECTORY 域服务 (AD DS) 林", 键入域管理员帐户的名称和密码, 单击 "**添加目录**", 然后单击 "**下一步**"。
     
 10. 在"Azure AD 登录配置"页上，单击"下一步"。
     

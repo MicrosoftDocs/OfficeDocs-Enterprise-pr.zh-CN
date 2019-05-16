@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: '摘要: 使用 Office 365 开发/测试环境中的 Azure 信息保护 (AIP) 客户端配置和演示数据分类和标记。'
-ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cf369894eb87381e3837a52946a0ba2b9705bf70
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490059"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067929"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的数据分类和标记
 
@@ -48,13 +48,13 @@ Azure 信息保护客户端允许您在将文档上载到 Office 365 中的 Shar
     
 2. 在 " **Microsoft Office 主页**" 选项卡上, 单击 "**管理**" 磁贴。
     
-3. 在左侧导航栏中的 "Office 365 管理" 选项卡上, 单击 "**付费 > 购买服务**"。
+3. 在左侧导航栏中的 "Office 365 管理" 选项卡上, 单击 "**付费 _GT_ 购买服务**"。
     
 4. 在 "**购买服务**" 页上, 找到 " **Azure 信息保护高级 P2** " 项。 将鼠标悬停在它上, 然后单击 "**开始免费试用**"。
     
 5. 在“确认订单”页上，单击“立即试用”********。
     
-6. 在“订单签收”页上，单击“继续”********。
+6. 在“订单签收”页中，单击“继续”********。
     
 接下来, 为所有用户帐户启用 Azure 信息保护许可证。
   
@@ -74,13 +74,13 @@ Azure 信息保护客户端允许您在将文档上载到 Office 365 中的 Shar
     
 ## <a name="phase-3-demonstrate-data-classification"></a>第3阶段: 演示数据分类
 
-在此阶段中, 您将使用 Azure 信息保护客户端和默认的 azure 信息保护策略演示数据分类。
+在此阶段中, 您将使用 Azure 信息保护客户端和默认的 Azure 信息保护策略演示数据分类。
   
 如果使用的是模拟企业 Office 365 开发/测试环境, 则必须先在 CLIENT1 上安装 Office 2016。
   
 1. 使用你的浏览器, 然后转到[Azure 门户](http://portal.azure.com)。
     
-2. 单击 "**资源组 >** [您的资源组名称] **> CLIENT1 > Connect**"。
+2. 单击 "**资源组 >** [您的资源组名称] **_GT_ CLIENT1 > Connect**"。
     
 3. 从 CLIENT1 中, 运行 Internet Explorer, 转到 Office 门户, [http://admin.microsoft.com](http://admin.microsoft.com)网址为, 然后使用 User5 帐户名称和密码登录。
     
@@ -98,7 +98,7 @@ Azure 信息保护客户端允许您在将文档上载到 Office 365 中的 Shar
     
 2. 在 " **Microsoft Azure 信息保护**下载" 页上, 单击 "**下载**", 单击 " **azinfoprotection.exe**", 然后单击 "**下一步**"。
     
-3. 出现提示时, 运行 azinfoprotection.exe。
+3. 出现提示时, 运行 Azinfoprotection.exe。
     
 4. 在 "**安装 Azure 信息保护**客户端" 框中, 单击 "**我同意**", 然后在出现用户帐户控制提示时单击 **"是"** 。
     
@@ -118,11 +118,11 @@ Azure 信息保护客户端允许您在将文档上载到 Office 365 中的 Shar
     
 5. 在空白文档中, 键入一些文本。
     
-6. 单击 "**文件 > 保存**", 键入名称**BeforeAIP**, 然后单击 **"确定"**。 
+6. 单击 "**文件 _GT_ 保存**", 键入名称**BeforeAIP**, 然后单击 **"确定"**。 
     
 7. 在文档类的行中, 单击 "**机密**" 的下箭头, 然后单击 "**所有公司**"。
     
-8. 单击 "**文件 > 保存为**", 键入名称**AfterAIP**, 然后单击 **"确定"**。
+8. 单击 "**文件 _GT_ 保存为**", 键入名称**AfterAIP**, 然后单击 **"确定"**。
     
 9. 单击任务栏中的 "**文件资源管理器**", 然后打开 "**文档**" 文件夹。
     

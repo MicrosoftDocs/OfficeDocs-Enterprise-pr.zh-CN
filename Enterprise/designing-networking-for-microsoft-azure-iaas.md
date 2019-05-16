@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: '摘要: 了解如何在 Microsoft Azure IaaS 中设计工作负荷的优化网络。'
-ms.openlocfilehash: c41e92445dd01a94b7d305b521bbd4330311fcb4
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b06564c8a86c59dac4ac9a5380cd88cf9d045974
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490986"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068128"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>为 Microsoft Azure IaaS 设计网络
 
  **摘要:** 了解如何在 Microsoft Azure IaaS 中设计工作负荷的优化网络。
   
-若要优化 azure IaaS 中承载的 IT 工作负载的网络, 需要了解 azure 虚拟网络 (vnet)、地址空间、路由、DNS 和负载平衡。
+若要优化 Azure IaaS 中承载的 IT 工作负载的网络, 需要了解 Azure 虚拟网络 (Vnet)、地址空间、路由、DNS 和负载平衡。
   
 ## <a name="planning-steps-for-any-vnet"></a>针对任何 VNet 的规划步骤
 
@@ -61,16 +61,16 @@ ms.locfileid: "33490986"
   
 ### <a name="step-4-determine-the-address-space-of-the-vnet"></a>步骤 4: 确定 VNet 的地址空间。
 
-表1显示了不同类型的 vnet 的地址空间。
+表1显示了不同类型的 Vnet 的地址空间。
   
 |**VNet 类型**|**虚拟网络地址空间**|
 |:-----|:-----|
 |仅限云  <br/> |任意专用地址空间  <br/> |
-|互连仅限云  <br/> |任意专用, 但不与其他连接的 vnet 重叠  <br/> |
+|互连仅限云  <br/> |任意专用, 但不与其他连接的 Vnet 重叠  <br/> |
 |跨界  <br/> |专用, 但不与内部部署重叠  <br/> |
-|相互连接的跨界  <br/> |专用, 但不与内部部署和其他连接的 vnet 重叠  <br/> |
+|相互连接的跨界  <br/> |专用, 但不与内部部署和其他连接的 Vnet 重叠  <br/> |
    
- **表 1: vnet 的类型及其相应的地址空间**
+ **表 1: Vnet 的类型及其相应的地址空间**
   
 从子网的地址空间为虚拟机分配地址配置的方式为 DHCP:
   
@@ -94,7 +94,7 @@ VNet 中有两种类型的子网, 即网关子网和虚拟机托管子网。
   
 图3显示了包含具有 Azure 网关的网关子网和一组包含虚拟机的虚拟机托管子网的 VNet。
   
-azure 需要 azure 网关子网, 以托管 azure 网关的两台虚拟机。 指定至少具有29位前缀长度的地址空间 (示例: 192.168.15.248/29)。 建议使用27位或更小的前缀长度, 尤其是在计划使用 ExpressRoute 时。
+Azure 需要 azure 网关子网, 以托管 Azure 网关的两台虚拟机。 指定至少具有29位前缀长度的地址空间 (示例: 192.168.15.248/29)。 建议使用27位或更小的前缀长度, 尤其是在计划使用 ExpressRoute 时。
   
 确定 Azure 网关子网的地址空间的最佳做法是:
   
@@ -113,8 +113,8 @@ azure 需要 azure 网关子网, 以托管 azure 网关的两台虚拟机。 指
 1. 确定网关子网的大小。 在我们的示例中, 我们选择/28。
 2. 为网关子网位 (G) 将 VNet 地址空间 (b) 的变量部分中的位设置为 0, 否则为 1 (V)。 对于我们的示例, 我们使用的是 VNet 的 10.119.0.0/16 地址空间。
 <br/>
-<br/>10.119。 bbbbbbbb。 bbbbbbbb
-<br/>10.119。 VVVVVVVV。 VVVVGGGG
+<br/>10.119。 bbbbbbbb . bbbbbbbb
+<br/>10.119。 VVVVVVVV . VVVVGGGG
 <br/>10.119。 11111111。 11110000
 <br/><br/>
 3. 将步骤2中的结果转换为 "小数", 并将其表示为地址空间。 对于我们的示例, 为10.119。 11111111。 11110000为 10.119.255.240, 并使用步骤1中的前缀长度 (在示例中为 28), 生成的网关子网地址前缀是 10.119.255.240/28。
@@ -139,7 +139,7 @@ Azure 使用每个子网上的前3个地址。 因此, Azure 子网上的可能�
   
 有关详细信息, 请参阅[规划和设计 Azure 虚拟网络](https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/)。
   
-### <a name="step-6-determine-the-dns-server-configuration-and-the-addresses-of-the-dns-servers-to-assign-to-vms-in-the-vnet"></a>步骤 6: 确定要分配给 VNet 中的 vm 的 dns 服务器配置和 dns 服务器的地址。
+### <a name="step-6-determine-the-dns-server-configuration-and-the-addresses-of-the-dns-servers-to-assign-to-vms-in-the-vnet"></a>步骤 6: 确定要分配给 VNet 中的 Vm 的 DNS 服务器配置和 DNS 服务器的地址。
 
 Azure 通过 DHCP 为虚拟机分配 DNS 服务器的地址。 DNS 服务器可以是:
   
@@ -154,7 +154,7 @@ Azure 通过 DHCP 为虚拟机分配 DNS 服务器的地址。 DNS 服务器可�
 |仅限云  <br/> |Azure 为本地和 Internet 名称解析提供  <br/> 用于本地和 Internet 名称解析的 Azure 虚拟机 (DNS 转发)  <br/> |
 |跨界  <br/> |本地, 用于本地和 intranet 名称解析  <br/> 用于本地和 intranet 名称解析的 Azure 虚拟机 (DNS 复制和转发)  <br/> |
    
- **表 4: 两种不同类型的 vnet 的 DNS 服务器选项**
+ **表 4: 两种不同类型的 Vnet 的 DNS 服务器选项**
   
 有关详细信息, 请参阅[vm 和角色实例的名称解析](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)。
   
@@ -162,7 +162,7 @@ Azure 通过 DHCP 为虚拟机分配 DNS 服务器的地址。 DNS 服务器可�
 
 在某些情况下, 您需要将传入流量分发到具有相同角色的一组服务器。 Azure IaaS 具有内置功能, 可用于对面向 Internet 和内部流量的负载执行此操作。
   
-Azure 面向 internet 的负载平衡将未经请求的传入流量从 Internet 随机分配给负载平衡集的成员。
+Azure 面向 Internet 的负载平衡将未经请求的传入流量从 Internet 随机分配给负载平衡集的成员。
   
 **图 4: Azure 中的外部负载平衡器**
 
@@ -200,10 +200,10 @@ Azure 内部负载平衡将来自其他 Azure 虚拟机或 intranet 计算机的
   
 |**方法**|**部署模式**|
 |:-----|:-----|
-|1. 在云服务上配置的终结点和 acl  <br/> |风格  <br/> |
-|2. 网络安全组  <br/> |资源管理器和经典  <br/> |
-|3. 具有入站 NAT 规则的面向 Internet 的负载平衡器  <br/> |资源经理  <br/> |
-|4. Azure Marketplace 中的网络安全设备 (未显示)  <br/> |资源管理器和经典  <br/> |
+|1。在云服务上配置的终结点和 Acl  <br/> |风格  <br/> |
+|2。网络安全组  <br/> |资源管理器和经典  <br/> |
+|3。具有入站 NAT 规则的面向 Internet 的负载平衡器  <br/> |资源经理  <br/> |
+|4。 Azure Marketplace 中的网络安全设备 (未显示)  <br/> |资源管理器和经典  <br/> |
    
  **表 5: 连接到虚拟机及其对应的 Azure 部署模型的方法**
   
@@ -225,33 +225,33 @@ Azure 内部负载平衡将来自其他 Azure 虚拟机或 intranet 计算机的
     
 有关详细信息, 请参阅[适用于企业架构师](https://aka.ms/cloudarchsecurity)和[Azure 网络安全性](https://azure.microsoft.com/blog/azure-network-security/)的 Microsoft 云安全性。
   
-### <a name="step-10-for-multiple-vnets-determine-the-vnet-to-vnet-connection-topology"></a>步骤 10: 对于多个 vnet, 确定 vnet 到 vnet 连接拓扑。
+### <a name="step-10-for-multiple-vnets-determine-the-vnet-to-vnet-connection-topology"></a>步骤 10: 对于多个 Vnet, 确定 VNet 到 VNet 连接拓扑。
 
-可以使用与用于连接组织站点的拓扑一样的拓扑来连接彼此的 vnet。
+可以使用与用于连接组织站点的拓扑一样的拓扑来连接彼此的 Vnet。
   
-菊花链配置连接系列中的 vnet。
+菊花链配置连接系列中的 Vnet。
   
-**图 8: vnet 的菊花链配置**
+**图 8: Vnet 的菊花链配置**
 
 ![图 8: Azure 虚拟网络的菊花链配置](media/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
   
-图8显示了使用菊花链配置在系列中连接的五个 vnet。
+图8显示了使用菊花链配置在系列中连接的五个 Vnet。
   
-分支和中心配置将多个 vnet 连接到一组中央 vnet, 它们本身相互连接。
+分支和中心配置将多个 Vnet 连接到一组中央 Vnet, 它们本身相互连接。
   
-**图 9: vnet 的分支和中心配置**
+**图 9: Vnet 的分支和中心配置**
 
 ![图 9: Azure 虚拟网络的分支和中心配置](media/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
   
-图9显示了六个 vnet, 两个 vnet 是相互连接的集线器, 另外还有两个其他分支 vnet。
+图9显示了六个 Vnet, 两个 Vnet 是相互连接的集线器, 另外还有两个其他分支 Vnet。
   
 完全网格配置将每个 VNet 相互连接。
   
-**图 10: vnet 的完整网格配置**
+**图 10: Vnet 的完整网格配置**
 
 ![图 10: Azure 虚拟网络的网格配置](media/9dda0738-10db-4a63-95b3-79851a399b71.png)
   
-图10显示了四个相互连接的 vnet, 总共使用6个 vnet 到 vnet 连接。
+图10显示了四个相互连接的 Vnet, 总共使用6个 VNet 到 VNet 连接。
   
 ## <a name="planning-steps-for-a-cross-premises-vnet"></a>跨界 VNet 的规划步骤
 <a name="cross_prem"> </a>
@@ -267,38 +267,38 @@ Azure 内部负载平衡将来自其他 Azure 虚拟机或 intranet 计算机的
   
 |**连接类型**|**用途**|
 |:-----|:-----|
-|站点到站点 (S2S) VPN  <br/> |将1-10 网站 (包括其他 vnet) 连接到单个 VNet。  <br/> |
+|站点到站点 (S2S) VPN  <br/> |将1-10 网站 (包括其他 Vnet) 连接到单个 VNet。  <br/> |
 |ExpressRoute  <br/> |通过 Internet Exchange 提供商 (IXP) 或网络服务提供商 (NSP) 对 Azure 的专用安全链接。  <br/> |
 |点到站点 (P2S) VPN  <br/> |将一台计算机连接到 VNet。  <br/> |
-|vnet 对等或 vnet 到 vnet (V2V) VPN  <br/> |将 VNet 连接到另一个 vnet。  <br/> |
+|VNet 对等或 VNet 到 VNet (V2V) VPN  <br/> |将 VNet 连接到另一个 VNet。  <br/> |
    
- **表 6: 跨界 vnet 的连接类型**
+ **表 6: 跨界 Vnet 的连接类型**
   
 有关最大连接数的详细信息, 请参阅[网络限制](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits)。
   
 有关 VPN 设备的详细信息, 请参阅[用于站点到站点虚拟网络连接的 VPN 设备](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
   
-有关 vnet 对等的详细信息, 请参阅[VNet 对等](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。
+有关 VNet 对等的详细信息, 请参阅[VNet 对等](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。
   
 **图 11: 连接到跨界 VNet 的四种方式**
 
 ![图 11: 连接到跨界 Azure 虚拟网络的三种方法](media/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
   
-图11显示了具有四种类型的连接的 VNet: 来自计算机的 P2S 连接、来自本地网络的 S2S VPN 连接、来自本地网络的 ExpressRoute 连接以及来自另一个 vnet 的 vnet 到 vnet 连接。 
+图11显示了具有四种类型的连接的 VNet: 来自计算机的 P2S 连接、来自本地网络的 S2S VPN 连接、来自本地网络的 ExpressRoute 连接以及来自另一个 VNet 的 VNet 到 VNet 连接。 
   
-您可以通过以下方式连接到 VNet 中的 vm:
+您可以通过以下方式连接到 VNet 中的 Vm:
   
-- 从你的本地网络或 Internet 管理 VNet vm
+- 从你的本地网络或 Internet 管理 VNet Vm
     
 - 来自你的本地网络的 IT 工作负载访问
     
-- 通过其他 vnet 的网络扩展
+- 通过其他 Vnet 的网络扩展
     
 连接的安全性由以下项提供:
   
 - P2S 使用安全套接字隧道协议 (SSTP) 
     
-- S2S 和 vnet 到 vnet VPN 连接在 AES256 中使用 IPsec 隧道模式
+- S2S 和 VNet 到 VNet VPN 连接在 AES256 中使用 IPsec 隧道模式
     
 - ExpressRoute 是一种专用 WAN 连接
     
@@ -322,11 +322,11 @@ Azure 内部负载平衡将来自其他 Azure 虚拟机或 intranet 计算机的
   
 ### <a name="step-3-add-routes-to-your-intranet-to-make-the-address-space-of-the-vnet-reachable"></a>步骤 3: 将路由添加到 intranet 以使 VNet 的地址空间可访问。
 
-从内部部署到 vnet 的路由包括以下内容:
+从内部部署到 Vnet 的路由包括以下内容:
   
 1. 指向你的 VPN 设备的 VNet 地址空间的路由。
     
-2. 指向 vpn 设备上的 VNet 地址空间的路由, 指向 S2S VPN 或 ExpressRoute 连接
+2. 指向 VPN 设备上的 VNet 地址空间的路由, 指向 S2S VPN 或 ExpressRoute 连接
     
 **图 13: 使 VNet 可以访问所需的本地路由**
 
@@ -354,7 +354,7 @@ Azure 内部负载平衡将来自其他 Azure 虚拟机或 intranet 计算机的
   
 ### <a name="step-5-determine-the-local-network-address-space-for-the-azure-gateway"></a>步骤 5: 确定 Azure 网关的本地网络地址空间。
 
-若要从 VNet 路由到内部部署或其他 vnet, azure 会将流量转发到与分配给该网关的本地网络地址空间匹配的 azure 网关之间。
+若要从 VNet 路由到内部部署或其他 Vnet, Azure 会将流量转发到与分配给该网关的本地网络地址空间匹配的 Azure 网关之间。
   
 **图 15: 跨界 VNet 的本地网络地址空间**
 
@@ -378,31 +378,31 @@ Azure 内部负载平衡将来自其他 Azure 虚拟机或 intranet 计算机的
   
 下面的示例为在 VNet 创建的地址空间 "洞" 周围定义本地网络地址空间的前缀:
   
-- 组织在其本地网络中使用部分专用地址空间 (10.0.0.0/8、172.16.0.0/12 和 192.168.0.0/16)。 他们选择选项2和 10.100.100.0/24 作为 VNet 地址空间。
+- 组织在其本地网络中使用部分专用地址空间 (10.0.0。0/8、172.16.0。0/12 和 192.168.0。0/16)。 他们选择选项2和 10.100.100.0/24 作为 VNet 地址空间。
     
 表7显示了为此示例定义本地网络地址空间的步骤和生成的前缀。
   
 |**步骤**|**结果**|
 |:-----|:-----|
-|1. 列出不是 VNet 地址空间的根空间的前缀。  <br/> |172.16.0.0/12 和 192.168.0.0/16  <br/> |
-|2. 在 VNet 地址空间中列出可变八进制数的非重叠前缀, 但不包括最后使用的八进制数。  <br/> |10.0.0.0/16、10.1.0.0/16 .。。10.99.0.0/16、10.101.0.0/16 .。。10.254.0.0/16、10.255.0.0/16 (255 前缀, 跳过 10.100.0.0/16)  <br/> |
-|3. 列出最近在使用的 VNet 地址空间的八位字节内的非重叠前缀。  <br/> |10.100.0.0/24、10.100.1.0/24 .。。10.100.99.0/24、10.100.101.0/24 .。。10.100.254.0/24, 10.100.0.255.0/24 (255 个前缀, 跳过 10.100.100.0/24)  <br/> |
+|1。列出不是 VNet 地址空间的根空间的前缀。  <br/> |172.16.0。0/12 和 192.168.0。0/16  <br/> |
+|2。在 VNet 地址空间中列出可变八进制数的非重叠前缀, 但不包括最后使用的八进制数。  <br/> |10.0.0。0/16、10.1.0.0/16 .。。10.99.0.0/16、10.101.0.0/16 .。。10.254.0.0/16、10.255.0.0/16 (255 前缀, 跳过 10.100.0.0/16)  <br/> |
+|3。列出最近在使用的 VNet 地址空间的八位字节内的非重叠前缀。  <br/> |10.100.0.0/24、10.100.1.0/24 .。。10.100.99.0/24、10.100.101.0/24 .。。10.100.254.0/24, 10.100.0.255.0/24 (255 个前缀, 跳过 10.100.100.0/24)  <br/> |
    
  **表 7: 本地地址网络空间示例**
   
-### <a name="step-6-configure-on-premises-dns-servers-for-dns-replication-with-dns-servers-hosted-in-azure"></a>步骤 6: 为托管在 Azure 中的 dns 服务器的 dns 复制配置内部部署 dns 服务器。
+### <a name="step-6-configure-on-premises-dns-servers-for-dns-replication-with-dns-servers-hosted-in-azure"></a>步骤 6: 为托管在 Azure 中的 DNS 服务器的 DNS 复制配置内部部署 DNS 服务器。
 
-若要确保本地计算机可以解析基于 azure 的服务器的名称, 并且基于 azure 的服务器可以解析本地计算机的名称, 请配置:
+若要确保本地计算机可以解析基于 Azure 的服务器的名称, 并且基于 Azure 的服务器可以解析本地计算机的名称, 请配置:
   
-- VNet 中的 dns 服务器转发到本地 DNS 服务器
+- VNet 中的 DNS 服务器转发到本地 DNS 服务器
     
-- 本地和 VNet 中的 dns 服务器之间的适当区域的 DNS 复制
+- 本地和 VNet 中的 DNS 服务器之间的适当区域的 DNS 复制
     
-**图 17: 跨界 VNet 中的 dns 服务器的 dns 复制和转发**
+**图 17: 跨界 VNet 中的 DNS 服务器的 DNS 复制和转发**
 
-![图 17: 跨界 Azure 虚拟网络中 dns 服务器的 dns 复制和转发](media/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
+![图 17: 跨界 Azure 虚拟网络中 DNS 服务器的 DNS 复制和转发](media/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
   
-图17显示了包含本地网络中的 DNS 服务器和 VNet 中的子网的跨界 VNet。 在两台 dns 服务器之间配置了 DNS 复制和转发。
+图17显示了包含本地网络中的 DNS 服务器和 VNet 中的子网的跨界 VNet。 在两台 DNS 服务器之间配置了 DNS 复制和转发。
   
 ### <a name="step-7-determine-the-use-of-forced-tunneling"></a>步骤 7: 确定使用强制隧道。
 
@@ -426,7 +426,7 @@ Azure 子网的默认系统路由指向 Internet。 若要确保来自虚拟机�
 图19显示了在跨界 VNet 中部署的 SharePoint Server 2016 场的九个服务器, 该服务器场使用内部负载平衡器进行前端和数据层。 有关详细信息, 包括分步设计和部署说明, 请参阅[Microsoft Azure 中的 SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure)。
   
 > [!TIP]
-> 若要在模拟的跨界 VNet 中创建单个服务器的 sharepoint server 2016 场, 请参阅[Azure 开发/测试环境中的 Intranet sharepoint server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)。 
+> 若要在模拟的跨界 VNet 中创建单个服务器的 SharePoint Server 2016 场, 请参阅[Azure 开发/测试环境中的 Intranet Sharepoint server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)。 
   
 有关在跨界 Azure 虚拟网络中的虚拟机上部署的 IT 工作负载的其他示例, 请参阅[适用于 Azure IaaS 的混合云方案](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas)。
   

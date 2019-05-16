@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '摘要：使用这些文章以在 Microsoft Azure 中部署 Office Server 工作负荷。 '
-ms.openlocfilehash: c648ecb7df1a4604960a5b0445ce3de7a74c9acf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 8f418c6fda9fb40ba0a714fd164ab3c1fe11f79e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487188"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067238"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 

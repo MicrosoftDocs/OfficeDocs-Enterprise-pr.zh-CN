@@ -3,7 +3,7 @@ title: 使用 PowerShell 执行直接转换迁移以迁移到 Office 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的直接转换迁移。
-ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 669aa3dc728b41bdc2ba8cc467943db5eb2005d9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071198"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>使用 PowerShell 执行直接转换迁移以迁移到 Office 365
 
@@ -81,7 +81,7 @@ ms.locfileid: "30574076"
     
   - 迁移管理员必须是内部部署组织的 Active Directory 中的 **Domain Admins** 组成员。
     
-    或者
+    或
     
   - 必须为迁移管理员分配对每个内部部署邮箱的 **FullAccess** 权限。
     
@@ -195,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>第 7 部分：分配用户许可证
 <a name="BK_Step7"> </a>
 
- **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在 Microsoft 365 管理中心中分配许可证, 请参阅为[Office 365 for business 分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
+ **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在 Microsoft 365 管理中心中分配许可证, 请参阅为[Office 365 for Business 分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Step8"> </a>

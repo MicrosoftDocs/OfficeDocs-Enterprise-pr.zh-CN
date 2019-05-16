@@ -1,9 +1,9 @@
 ---
 title: 查看 Office 365 中的目录同步错误
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: 了解如何在 Microsoft 365 管理中心中查看目录同步错误。
-ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1cda68590131967ea2fe91506c8e71769f4c32b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491252"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067518"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>查看 Office 365 中的目录同步错误
 

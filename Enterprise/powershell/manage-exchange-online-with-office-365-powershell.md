@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 摘要：使用 Office 365 PowerShell 管理 Microsoft Exchange Online，包括显示邮箱配置和显示高级报告。
-ms.openlocfilehash: 93eb2ca11544139f3904126c0ec04fc1ab02ec1b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f60c28be58796d16d4b04e42e421ed97475cc8e0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068958"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Exchange Online
 

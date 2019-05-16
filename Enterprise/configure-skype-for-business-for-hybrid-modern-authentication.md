@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,19 +13,19 @@ search.appverid:
 ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
-description: 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法, 适用于本地 skype for business server 本地和 Exchange server 以及拆分域 Skype for business 混合。
-ms.openlocfilehash: a9fb93d0269628c0c1d4cd374e3bca36482f7eee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法, 适用于本地 Skype for business server 本地和 Exchange server 以及拆分域 Skype for Business 混合。
+ms.openlocfilehash: a6f1b64aade9cd7c2fa5b44e18e1075008676f90
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490312"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067988"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Skype for Business 以使用混合新式验证
 
-新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法, 适用于本地 skype for business server 本地和 Exchange server 以及拆分域 Skype for business 混合。
+新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法, 适用于本地 Skype for business server 本地和 Exchange server 以及拆分域 Skype for Business 混合。
   
- **重要说明**您想了解有关新式验证 (MA) 的详细信息, 以及您希望在贵公司或组织中使用它的原因吗？ 查看[此文档](hybrid-modern-auth-overview.md)以了解概述。 如果需要了解 MA 支持的 Skype for business 拓扑, 此处对此进行了介绍! 
+ **重要说明**您想了解有关新式验证 (MA) 的详细信息, 以及您希望在贵公司或组织中使用它的原因吗？ 查看[此文档](hybrid-modern-auth-overview.md)以了解概述。 如果需要了解 MA 支持的 Skype for Business 拓扑, 此处对此进行了介绍! 
   
  **在开始之前**, 我称之为: 
   
@@ -37,9 +37,9 @@ ms.locfileid: "33490312"
     
 - Exchange Online \> EXO
     
-- Skype for business 本地\> SFB
+- Skype for Business 本地\> SFB
     
-- 和 Skype for business Online \> SFBO
+- 和 Skype for Business Online \> SFBO
     
 此外, * 如果本文中的图形具有 "灰显" 或 "变暗" 的对象, 则表示在 MA 特定的配置中**不**包含以灰色显示的元素。 * 
   
@@ -49,7 +49,7 @@ ms.locfileid: "33490312"
   
 1. 首先, 请确保满足所有先决条件。
     
-1. 由于许多**先决条件**对于 Skype for business 和 Exchange 都是常见的,[请参阅预先申请清单的概述文章](hybrid-modern-auth-overview.md)。 在开始本文中的任何步骤*之前*, 请执行此操作。 
+1. 由于许多**先决条件**对于 Skype for Business 和 Exchange 都是常见的,[请参阅预先申请清单的概述文章](hybrid-modern-auth-overview.md)。 在开始本文中的任何步骤*之前*, 请执行此操作。 
     
 2. 收集您在文件或 OneNote 中需要的 HMA 特定信息。
     
@@ -65,7 +65,7 @@ ms.locfileid: "33490312"
   
 ![混合的6个 Skype for business HMA 拓扑在所有四个可能的位置都有 MA。](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
-正如您所看到的, 有四个不同的位置可以打开 MA! 为获得最佳用户体验, 建议您在所有四个位置都打开 MA。 如果无法在所有这些位置启用 ma, 请调整步骤, 以便仅在环境所需的位置启用 ma。
+正如您所看到的, 有四个不同的位置可以打开 MA! 为获得最佳用户体验, 建议您在所有四个位置都打开 MA。 如果无法在所有这些位置启用 MA, 请调整步骤, 以便仅在环境所需的位置启用 MA。
   
 有关支持的拓扑, 请参阅[Skype for](https://technet.microsoft.com/en-us/library/mt803262.aspx) business 的可支持性主题 (MA 为 MA)。 
   
@@ -83,9 +83,9 @@ ms.locfileid: "33490312"
     
   - 表示 Office 365 租户的 GUID (在 contoso.onmicrosoft.com 的登录名处)。
     
-- **SFB 2015 CU5 Web 服务 url**
+- **SFB 2015 CU5 Web 服务 Url**
     
-您将需要部署的所有 SfB 2015 池的内部和外部 web 服务 URL。 若要获取这些内容, 请从 Skype for business 命令行管理程序运行以下命令:
+您将需要部署的所有 SfB 2015 池的内部和外部 web 服务 URL。 若要获取这些内容, 请从 Skype for Business 命令行管理程序运行以下命令:
   
 ```
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -103,7 +103,7 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
   
 ## <a name="turn-on-modern-authentication-for-sfbo"></a>打开 SFBO 的新式验证
 
-请按照以下说明操作: [Skype for business Online: 为你的租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
+请按照以下说明操作: [Skype For Business Online: 为你的租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。
   
 ## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a>启用本地 Exchange 的混合新式身份验证
 
@@ -111,19 +111,19 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
   
 ## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>启用本地 Skype for business 的混合新式身份验证
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>在 Azure AD 中将本地 web 服务 url 添加为 spn
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>在 Azure AD 中将本地 web 服务 Url 添加为 Spn
 
-现在, 您需要运行命令以在 SFBO 中添加 url (之前收集的) 作为服务主体。
+现在, 您需要运行命令以在 SFBO 中添加 Url (之前收集的) 作为服务主体。
   
- **注释**服务主体名称 (spn) 标识 web 服务并将它们与安全主体 (如帐户名或组) 相关联, 以便该服务可以代表授权的用户执行操作。 对服务器进行身份验证的客户端使用 spn 中包含的信息。 
+ **注释**服务主体名称 (Spn) 标识 web 服务并将它们与安全主体 (如帐户名或组) 相关联, 以便该服务可以代表授权的用户执行操作。 对服务器进行身份验证的客户端使用 Spn 中包含的信息。 
   
 1. 首先, 使用[这些说明](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)连接到 AAD。
     
-2. 运行此命令 (本地) 以获取 SFB web 服务 url 的列表。
+2. 运行此命令 (本地) 以获取 SFB web 服务 Url 的列表。
 
-   请注意, AppPrincipalId 以开头`00000004`。 这对应于 Skype for business Online。
+   请注意, AppPrincipalId 以开头`00000004`。 这对应于 Skype for Business Online。
     
-   记下 (以及稍后比较的屏幕截图) 此命令的输出将包含 SE 和 WS URL, 但主要由以开头的 spn 组成`00000004-0000-0ff1-ce00-000000000000/`。
+   记下 (以及稍后比较的屏幕截图) 此命令的输出将包含 SE 和 WS URL, 但主要由以开头的 Spn 组成`00000004-0000-0ff1-ce00-000000000000/`。
     
 ```
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
@@ -140,11 +140,11 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. 再次运行步骤2中的 new-msolserviceprincipal 命令, 并查看输出, 以验证新记录是否已添加。 将列表/屏幕截图从早到新的 spn 列表进行比较 (您还可能会为您的记录提供新列表的屏幕截图)。 如果成功, 您将在列表中看到两个新的 url。 根据我们的示例, spn 列表现在将包含特定的 url https://lyncweb01.contoso.com和。 https://lyncwebext01.contoso.com/
+4. 再次运行步骤2中的 New-msolserviceprincipal 命令, 并查看输出, 以验证新记录是否已添加。 将列表/屏幕截图从早到新的 Spn 列表进行比较 (您还可能会为您的记录提供新列表的屏幕截图)。 如果成功, 您将在列表中看到两个新的 Url。 根据我们的示例, Spn 列表现在将包含特定的 Url https://lyncweb01.contoso.com和。 https://lyncwebext01.contoso.com/
     
 ### <a name="create-the-evosts-auth-server-object"></a>创建 EvoSTS Auth Server 对象
 
-在 Skype for business 命令行管理程序中运行以下命令。
+在 Skype for Business 命令行管理程序中运行以下命令。
   
 ```
 New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
@@ -152,7 +152,7 @@ New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common
     
 ### <a name="enable-hybrid-modern-authentication"></a>启用混合新式身份验证
 
-这是实际打开 MA 的步骤。 前面的所有步骤都可以提前运行, 而无需更改客户端身份验证流。 当您准备好更改身份验证流时, 请在 Skype for business 命令行管理程序中运行此命令。 
+这是实际打开 MA 的步骤。 前面的所有步骤都可以提前运行, 而无需更改客户端身份验证流。 当您准备好更改身份验证流时, 请在 Skype for Business 命令行管理程序中运行此命令。 
   
 ```
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
@@ -164,7 +164,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
   
 若要测试 HMA 在启用后是否正常工作, 请注销测试 SFB Windows 客户端, 并确保单击 "删除我的凭据"。 重新登录。 客户端现在应使用新式的身份验证流, 并且您的登录现在将包含**Office 365**提示 "工作或学校" 帐户, 在客户端与服务器联系并登录之前, 请立即看到该帐户。 
   
-您还应检查 "OAuth 颁发机构" 的 Skype for business 客户端的 "配置信息"。 若要在客户端计算机上执行此操作, 请按住 CTRL 键, 同时右键单击 Windows 通知托盘中的 "Skype for business" 图标。 在出现的菜单中单击 "配置信息"。 在将出现在桌面上的 "Skype for business 配置信息" 窗口中, 查找以下内容:
+您还应检查 "OAuth 颁发机构" 的 Skype for business 客户端的 "配置信息"。 若要在客户端计算机上执行此操作, 请按住 CTRL 键, 同时右键单击 Windows 通知托盘中的 "Skype for Business" 图标。 在出现的菜单中单击 "配置信息"。 在将出现在桌面上的 "Skype for Business 配置信息" 窗口中, 查找以下内容:
   
 ![使用新式验证的 Skype for business 客户端的配置信息显示了的 Lync 和 EWS OAUTH 授权 URL https://login.windows.net/common/oauth2/authorize。](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   

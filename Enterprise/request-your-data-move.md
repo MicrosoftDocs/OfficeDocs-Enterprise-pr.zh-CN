@@ -1,10 +1,10 @@
 ---
-title: 如何请求移动数据
+title: 如何请求数据移动
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求, 以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650075"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071008"
 ---
-# <a name="how-to-request-your-data-move"></a>如何请求移动数据
+# <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
 > [!NOTE]
 > 此页面上的信息仅适用于在其 geo 中的新数据中心启动前拥有现有 Office 365 租户的客户。 
@@ -36,7 +36,7 @@ ms.locfileid: "30650075"
 |澳大利亚、新西兰、斐济  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
 |印度  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
 |加拿大  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
-|United Kingdom  <br/> |2017年3月15日  <br/> |2017年9月15日  <br/> |
+|英国  <br/> |2017年3月15日  <br/> |2017年9月15日  <br/> |
 |韩国  <br/> |5月1日, 2017  <br/> |2017年10月31日  <br/> |
 |法国  <br/> |2018年3月14日  <br/> |2018年9月15日  <br/> |
 |阿拉伯联合酋长国  <br/> |相同  <br/> |相同  <br/> |
@@ -79,7 +79,7 @@ ms.locfileid: "30650075"
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-microsoft 团队尚不支持将 rest 中的客户内容从区域迁移到国家/地区数据中心, 在这些数据中心中, 可以使用 microsoft 团队的数据派驻服务。  因此, 在 Microsoft 团队支持数据驻留的新区域中, 只有新客户的所有数据都存储在国家/地区。  详细了解 Office 365 数据驻留在你的公司位置, 你的[数据位于何处？](https://products.office.com/where-is-your-data-located)   
+Microsoft 团队尚不支持将 rest 中的客户内容从区域迁移到国家/地区数据中心, 在这些数据中心中, 可以使用 Microsoft 团队的数据派驻服务。  因此, 在 Microsoft 团队支持数据驻留的新区域中, 只有新客户的所有数据都存储在国家/地区。  详细了解 Office 365 数据驻留在你的公司位置, 你的[数据位于何处？](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>请求移动前的可选操作
 
@@ -89,7 +89,7 @@ microsoft 团队尚不支持将 rest 中的客户内容从区域迁移到国家/
 
 我们建议使用防火墙而不是 IP 地址的 DNS 筛选。 不需要任何新的 DNS 条目。
   
-如果使用基于 IP 的防火墙进行 Internet 连接, 则必须为目标数据中心地理位置的新 ip 地址添加允许规则。 新的数据中心信息的 IP 地址除了新服务器外, 还会连续添加到[Office 365 url 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkId=229631)。
+如果使用基于 IP 的防火墙进行 Internet 连接, 则必须为目标数据中心地理位置的新 IP 地址添加允许规则。 新的数据中心信息的 IP 地址除了新服务器外, 还会连续添加到[Office 365 url 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkId=229631)。
   
 有关如何添加允许规则 (也称为 "白名单") 的信息, 请参阅防火墙文档。
   
@@ -113,7 +113,7 @@ microsoft 团队尚不支持将 rest 中的客户内容从区域迁移到国家/
 
 [将核心数据移动到新的 Office 365 数据中心信息](moving-data-to-new-datacenter-geos.md)
 
-[数据移动常规常见问题](data-move-faq.md)
+[数据移动常见问题解答](data-move-faq.md)
 
 [适用于 Microsoft Dynamics CRM Online 的新数据中心信息](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

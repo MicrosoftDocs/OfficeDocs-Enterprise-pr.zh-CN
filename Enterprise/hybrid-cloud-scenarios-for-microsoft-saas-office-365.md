@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: '摘要: 了解 Microsoft 基于 SaaS 的云产品的混合体系结构和方案 (Office 365)。'
-ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 84092fe419ab31fca7763f434e328eb855d46835
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487488"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067218"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>适用于 Microsoft SaaS (Office 365) 的混合云方案
 
@@ -43,13 +43,13 @@ ms.locfileid: "33487488"
     
   - 与 Skype for Business Online 结合使用的 Skype for Business Server 和新的 Cloud PBX 以及云连接器版本方案
     
-  - sharepoint server 2019、sharepoint server 2016 或 sharepoint server 2013 与 sharepoint Online 结合使用 (多个方案)
+  - SharePoint Server 2019、SharePoint Server 2016 或 SharePoint Server 2013 与 SharePoint Online 结合使用 (多个方案)
     
     还有采用本地 Skype for Business Server 的 Exchange Online，一个跨产品的混合方案。
     
 - 标识
     
-    可以包含与您的内部部署 Active directory 域服务 (AD DS) 的目录同步。 或者，可以配置 Azure AD 来与第三方标识提供程序进行联合。
+    可以包含与您的内部部署 Active Directory 域服务 (AD DS) 的目录同步。 或者，可以配置 Azure AD 来与第三方标识提供程序进行联合。
     
 - 网络
     
@@ -59,39 +59,39 @@ ms.locfileid: "33487488"
     
     可由现有的适用于 Exchange、SharePoint 和 Skype for Business 的服务器组成，应将其更新到最新版本。可以将它们与对应的 Office 365 相结合以实现混合方案。
     
-设置您自己的 office 365 开发/测试环境, 请参阅[office 365 测试实验室指南](cloud-adoption-test-lab-guides-tlgs.md)。
+设置您自己的 Office 365 开发/测试环境, 请参阅[office 365 测试实验室指南](cloud-adoption-test-lab-guides-tlgs.md)。
   
-## <a name="skype-for-business-hybrid"></a>Skype for business 混合
+## <a name="skype-for-business-hybrid"></a>Skype for Business 混合
 
-skype for business 混合允许你将现有的本地部署与 Skype for business Online 结合使用。 部分用户位于本地，部分用户处于联机状态，但用户共享同一个 会话初始协议 (SIP) 域，例如 contoso.com。 按照日程安排，可以在一段时间内使用此混合配置从本地迁移到 Office 365。 Skype for business 也可以与[Exchange Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint)集成。
+Skype for Business 混合允许你将现有的本地部署与 Skype for Business Online 结合使用。 部分用户位于本地，部分用户处于联机状态，但用户共享同一个 会话初始协议 (SIP) 域，例如 contoso.com。 按照日程安排，可以在一段时间内使用此混合配置从本地迁移到 Office 365。 Skype for Business 也可以与[Exchange Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint)集成。
   
-**图 2: Skype for business 混合配置**
+**图 2: Skype for Business 混合配置**
 
-![Skype for business 混合配置](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
+![Skype for Business 混合配置](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
-图2显示了 skype for business 混合配置, 其中包括与 Office 365 中的 skype for business Online 通信的本地 Skype for business 前端池和边缘服务器。
+图2显示了 Skype for Business 混合配置, 其中包括与 Office 365 中的 Skype for business Online 通信的本地 Skype for business 前端池和边缘服务器。
   
-有关详细信息, 请参阅[规划 skype for business Server 和 skype for business Online 之间的混合连接](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity)。
+有关详细信息, 请参阅[规划 skype For Business Server 和 skype For Business Online 之间的混合连接](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity)。
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>使用 Skype for Business Server 的云 PBX
 
-使用具有 Skype for business server 的云 PBX, 可以将现有的 skype for business server 本地部署转换为具有本地公共交换电话网络 (PSTN) 连接的拓扑。 
+使用具有 Skype for Business Server 的云 PBX, 可以将现有的 Skype for Business Server 本地部署转换为具有本地公共交换电话网络 (PSTN) 连接的拓扑。 
   
 **图 3：使用 Skype for Business Server 的云 PBX**
 
 ![使用 Skype for Business Server 的云 PBX](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
-图3显示了具有 skype for business Server 配置的云 PBX, 其中包括本地现有 PBX 或电信网关、Skype for business Server 以及连接到 Office 365 中的 Microsoft 云 PBX 的 PSTN, 其中包括 Skype for business隐私声明.
+图3显示了具有 Skype for Business Server 配置的云 PBX, 其中包括本地现有 PBX 或电信网关、Skype for Business Server 以及连接到 Office 365 中的 Microsoft 云 PBX 的 PSTN, 其中包括 Skype for Business隐私声明.
   
 组织中处于云中的用户能够接收来自 Microsoft 云的专用交换机 (PBX) 服务，包括信号和语音邮件，但 PSTN 连接（拨号音）通过来自本地 Skype for Business Server 部署的企业语音提供。
   
 这是允许您逐步迁移到基于云的服务的混合配置的一个很好的示例。 开始将其移动到 Skype for Business Online 时，可以保留用户的语音功能。 可以按照自己的节奏移动用户，要了解的一点是，无论用户身在何处，其语音功能将继续保留。 
   
-有关详细信息, 请参阅[规划 skype for business Server 和 skype for business Online 之间的混合连接](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity)。
+有关详细信息, 请参阅[规划 skype For Business Server 和 skype For Business Online 之间的混合连接](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity)。
   
 如果还没有现有的 Lync Server 或 Skype for Business Server 部署，可以使用 Skype for Business 云连接器版本，一组通过云 PBX 实现本地 PSTN 连接的封装的虚拟机 (VM)。
   
-有关详细信息, 请参阅[Plan for Skype for business Cloud Connector Edition](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition)。
+有关详细信息, 请参阅[Plan For Skype For Business Cloud Connector Edition](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition)。
 
   
 ## <a name="sharepoint-hybrid"></a>SharePoint 混合
@@ -102,7 +102,7 @@ SharePoint 混合将 Office 365 中的 SharePoint Online 与本地 SharePoint �
 
 ![SharePoint 混合配置](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
-图4显示了 SharePoint 混合配置, 其中包括与 Office 365 中的 sharepoint Online 进行通信的本地 SharePoint 场。
+图4显示了 SharePoint 混合配置, 其中包括与 Office 365 中的 SharePoint Online 进行通信的本地 SharePoint 场。
   
 SharePoint 混合方案：
   
@@ -132,7 +132,7 @@ SharePoint 混合方案：
 
 ![Exchange 2016 混合配置](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
-图5显示了 exchange 2016 混合配置, 其中包括与 Office 365 中的 exchange Online Protection 和邮箱进行通信的本地 Exchange 邮箱服务器。
+图5显示了 Exchange 2016 混合配置, 其中包括与 Office 365 中的 Exchange Online Protection 和邮箱进行通信的本地 Exchange 邮箱服务器。
   
 一些用户具有本地电子邮件服务器，而一些用户使用 Exchange Online，但所有用户都共享相同的电子邮件地址空间。  
   

@@ -1,9 +1,9 @@
 ---
 title: 修复 Office 365 的目录同步问题
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍了 Office 365 中的目录同步问题的常见原因, 并提供了几种帮助排除和解决这些问题的方法。
-ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487452"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067668"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>修复 Office 365 的目录同步问题
 
@@ -44,9 +44,9 @@ ms.locfileid: "33487452"
   
 按照[向导中的说明](set-up-directory-synchronization.md)下载 Azure AD Connect。 
   
-如果仍在使用 azure active directory 同步 (DirSync), 请参阅[如何对 Office 365 中的 Azure Active Directory 同步工具安装和配置向导错误消息进行故障排除](https://go.microsoft.com/fwlink/p/?LinkId=396717), 以了解有关安装的系统要求的信息dirsync、所需的权限以及如何对常见错误进行故障排除。 
+如果仍在使用 Azure Active Directory 同步 (DirSync), 请参阅[如何对 Office 365 中的 Azure Active Directory 同步工具安装和配置向导错误消息进行故障排除](https://go.microsoft.com/fwlink/p/?LinkId=396717), 以了解有关安装的系统要求的信息dirsync、所需的权限以及如何对常见错误进行故障排除。 
   
-若要从 azure Active Directory 同步更新到 azure AD Connect, 请参阅[升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。
+若要从 Azure Active Directory 同步更新到 Azure AD Connect, 请参阅[升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。
   
 ## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>解决 Office 365 中的目录同步问题的常见原因
 
@@ -57,7 +57,7 @@ ms.locfileid: "33487452"
 ### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**我在管理中心发出通知, 或者收到最近未进行同步事件的自动电子邮件**
 - [解决 Azure AD Connect 的连接问题](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD Connect 帐户和权限](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure ad Connect sync: 如何管理 azure ad 服务帐户](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [Azure AD Connect sync: 如何管理 Azure AD 服务帐户](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [到 Azure Active Directory 的目录同步停止, 或者你收到同步未在一天内注册的警告](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**密码哈希未同步, 或者我在管理中心内看到一个警报, 表明最近密码哈希同步**

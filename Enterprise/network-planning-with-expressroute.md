@@ -1,10 +1,10 @@
 ---
-title: ExpressRoute for Office 365 网络计划
+title: 使用适用于 Office 365 的 ExpressRoute 进行网络规划
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 2/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,175 +15,175 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: Office 365 ExpressRoute 提供之间的第 3 层连接网络和 Microsoft 数据中心。电路使用 Office 365 的前端服务器的边框网关协议 (BGP) 路由的广告。从内部部署的设备的角度来看，当他们需要选择正确的 TCP/IP 路径到 Office 365 Azure ExpressRoute 被看作到 Internet 的替代项。
-ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 适用于 Office 365 的 ExpressRoute 在网络和 Microsoft 数据中心之间提供第3层连接。 电路使用 Office 365 前端服务器的边界网关协议 (BGP) 路由播发。 从本地设备的角度来看, 当他们需要选择到 Office 365 的正确 TCP/IP 路径时, Azure ExpressRoute 被视为是 Internet 的替代方法。
+ms.openlocfilehash: 459850a29e87650f1aecfc6a6977cd6e5b77ae07
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069698"
 ---
-# <a name="network-planning-with-expressroute-for-office-365"></a>ExpressRoute for Office 365 网络计划
+# <a name="network-planning-with-expressroute-for-office-365"></a>使用适用于 Office 365 的 ExpressRoute 进行网络规划
 
-Office 365 ExpressRoute 提供之间的第 3 层连接网络和 Microsoft 数据中心。电路使用 Office 365 的前端服务器的边框网关协议 (BGP) 路由的广告。从内部部署的设备的角度来看，当他们需要选择正确的 TCP/IP 路径到 Office 365 Azure ExpressRoute 被看作到 Internet 的替代项。
+适用于 Office 365 的 ExpressRoute 在网络和 Microsoft 数据中心之间提供第3层连接。 电路使用 Office 365 前端服务器的边界网关协议 (BGP) 路由播发。 从本地设备的角度来看, 当他们需要选择到 Office 365 的正确 TCP/IP 路径时, Azure ExpressRoute 被视为是 Internet 的替代方法。
   
-Azure ExpressRoute 将直接路径添加到一组特定的受支持的功能和由 Microsoft 数据中心内的 Office 365 服务器提供的服务。Azure ExpressRoute 不替换 Internet 连接到 Microsoft 数据中心或基本 Internet 服务，如域名解析。Azure ExpressRoute 和 Internet 电路应安全和冗余。
+Azure ExpressRoute 添加了指向由 Microsoft 数据中心内的 Office 365 服务器提供的一组特定支持的功能和服务的直接路径。 Azure ExpressRoute 不会将 Internet 连接替换为 Microsoft 数据中心或基本 Internet 服务 (如域名解析)。 Azure ExpressRoute 和你的 Internet 电路应受到保护和冗余。
   
-下表重点介绍以下几点差异的 internet 和上下文中的 Office 365 的 Azure ExpressRoute 连接。
+下表重点介绍了 Office 365 上下文中的 internet 和 Azure ExpressRoute 连接之间的一些差异。
 
-|**网络规划的差异**|**Internet 网络连接**|**ExpressRoute 网络连接**|
+|**网络规划的区别**|**Internet 网络连接**|**ExpressRoute 网络连接**|
 |:-----|:-----|:-----|
-| 访问所需的 internet 服务，包括：  <br/>  DNS 名称解析  <br/>  证书吊销验证  <br/>  内容分发网络  <br/> |是  <br/> |向 Microsoft 请求拥有 DNS 和/或 CDN 基础结构可能使用 ExpressRoute 网络。  <br/> |
-| 访问 Office 365 服务，包括：  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office Online  <br/>  Office 365 门户和身份验证  <br/> |是，所有应用程序和功能  <br/> |是的[特定应用程序和功能](https://aka.ms/o365endpoints) <br/> |
-|在部署外围安全。  <br/> |是  <br/> |可访问  <br/> |
-|规划高可用性。  <br/> |故障转移到备用 internet 网络连接  <br/> |故障转移到的备用 ExpressRoute 连接  <br/> |
-|与可预测的网络配置文件的直接连接。  <br/> |否  <br/> |是  <br/> |
-|IPv6 连接。  <br/> |是  <br/> |可访问  <br/> |
+| 访问所需的 internet 服务, 包括;  <br/>  DNS 名称解析  <br/>  证书吊销验证  <br/>  内容分发网络  <br/> |是  <br/> |对 Microsoft 拥有的 DNS 和/或 CDN 基础结构的请求可能使用 ExpressRoute 网络。  <br/> |
+| 对 Office 365 服务的访问权限, 包括;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office Online  <br/>  Office 365 门户和身份验证  <br/> |是, 所有应用程序和功能  <br/> |是,[特定的应用程序和功能](https://aka.ms/o365endpoints) <br/> |
+|外围环境的本地安全性。  <br/> |是  <br/> |是  <br/> |
+|高可用性规划。  <br/> |故障转移到备用 internet 网络连接  <br/> |故障转移到备用 ExpressRoute 连接  <br/> |
+|与可预测网络配置文件的直接连接。  <br/> |否  <br/> |可访问  <br/> |
+|IPv6 连接。  <br/> |是  <br/> |是  <br/> |
 
-展开标题下方的规划指南的更多网络。我们还录制 10 部分的公开跳水更深入地介绍[有关 Office 365 培训 Azure ExpressRoute](https://channel9.msdn.com/series/aer)系列。
+若要详细了解网络规划指南, 请展开下面的标题。 我们还记录了10部分[Azure ExpressRoute For Office 365 培训](https://channel9.msdn.com/series/aer)系列, dives 更深入。
 
-## <a name="existing-azure-expressroute-customers"></a>现有的 Azure ExpressRoute 客户
+## <a name="existing-azure-expressroute-customers"></a>现有 Azure ExpressRoute 客户
 
-如果您正在使用现有的 Azure ExpressRoute 电路，并且想要通过此电路添加 Office 365 连接，您应查看电路、 出口位置和大小电路以确保它们将满足您的 Office 365 使用的数量。大多数客户需要额外带宽，并且许多需要其他电路。
+如果使用的是现有 Azure ExpressRoute 电路, 并且想要通过此线路添加 Office 365 连接, 应查看电路的数量、出局位置和大小, 以确保它们满足你的 Office 365 使用的需求。 大多数客户需要额外的带宽, 并且许多客户需要额外的电路。
   
-若要通过您现有的 Azure ExpressRoute 电路到 Office 365 的访问，请[配置路由筛选器](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)以确保 Office 365 服务进行访问。
+若要通过现有 Azure ExpressRoute 线路启用对 Office 365 的访问, 请[配置路由筛选器](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)以确保 Office 365 服务可供访问。
   
-Azure ExpressRoute 订阅是以中心，含义订阅与客户的客户。作为客户，您可以有多个 Azure ExpressRoute 电路，并可以通过这些电路访问许多 Microsoft 云资源。例如，您可以选择访问 Azure 通过冗余 Azure ExpressRoute 电路一对承载虚拟机的 Office 365 测试租户和 Office 365 生产租户。
+Azure ExpressRoute 订阅是以客户为中心的, 这意味着订阅与客户关联。 作为客户, 你可以拥有多个 Azure ExpressRoute 电路, 并且可以通过这些电路访问多个 Microsoft 云资源。 例如, 可以选择通过一对冗余 Azure ExpressRoute 电路访问 Azure 托管虚拟机、Office 365 测试租户和 Office 365 生产租户。
   
-此表列出了可以选择在电路通过实现的对等关系的两种类型。
+此表概述了可以选择通过线路实施的两种类型的对等关系。
 
 |**对等关系**|**Azure 专用**|**Microsoft**|
 |:-----|:-----|:-----|
-|**服务** <br/> |IaaS: Azure 虚拟机  <br/> |PaaS: Azure 公共服务  <br/> Saas 与： Office 365  <br/> Saas 与： Dynamics 365  <br/> |
-|连接初始 *** <br/> |客户-Microsoft  <br/> Microsoft 向客户  <br/> |客户-Microsoft  <br/> Microsoft 向客户  <br/> |
-|**QoS 支持** <br/> |没有 QoS  <br/> |QoS<sup>1</sup> <br/> |
+|**服务** <br/> |IaaS: Azure 虚拟机  <br/> |PaaS: Azure 公共服务  <br/> SaaS: Office 365  <br/> SaaS: Dynamics 365  <br/> |
+|连接启动 * * * * <br/> |客户到 Microsoft  <br/> Microsoft 到客户  <br/> |客户到 Microsoft  <br/> Microsoft 到客户  <br/> |
+|**QoS 支持** <br/> |无 QoS  <br/> |QoS<sup>1</sup> <br/> |
 
-<sup>1</sup>QoS 此时仅支持业务 Skype。
+<sup>1</sup>目前, QoS 仅支持 Skype for Business。
   
-## <a name="bandwidth-planning-for-azure-expressroute"></a>规划 Azure ExpressRoute 带宽
+## <a name="bandwidth-planning-for-azure-expressroute"></a>Azure ExpressRoute 的带宽规划
 
-每个 Office 365 客户在每个位置，它们是与 Office 365 每个应用程序，如使用内部部署或混合设备和网络的安全配置的其他因素活动具有独特的带宽需求，具体取决于的人数。
+每个 Office 365 客户都有独特的带宽需求, 具体取决于每个位置的人员数量、每个 Office 365 应用程序的活动情况以及使用内部部署或混合设备和网络安全配置等其他因素。
   
-具有太小带宽将导致拥塞现象，重新传输的数据和不可预测的延迟。具有太多带宽将导致不必要的成本。在现有的网络带宽通常称为方面的可用空间量电路百分比。无 10%空间将可能导致拥塞，通常具有 80%空间意味着不必要的成本。典型的空间目标分配是 20%到 50%。
+带宽过小将导致拥塞、数据重新传输以及不可预测的延迟。 带宽过多将导致不必要的成本。 在现有网络上, 带宽通常以百分比形式在电路上的可用空间量方面进行引用。 拥有 10% 的空间很可能导致拥塞, 并且具有 80% 的余地通常意味着不必要的成本。 典型的余地目标分配是 20% 到 50%。
   
-若要找到适当级别，最好机制是带宽的测试您现有的网络消耗。这是唯一的方法，则返回 true 命中的使用率，需要为每个网络配置和应用程序中唯一的一些方法。当测量您需要注意消耗的总带宽、 延迟和 TCP 拥塞了解您的网络需求。
+若要查找正确的带宽级别, 最好的机制是测试现有网络消耗。 这是在每个网络配置和应用程序以独特的方式实现的真正的使用和需要的唯一方法。 在测量时, 需要密切注意总带宽消耗、延迟和 TCP 拥塞, 以了解你的网络需求。
   
-一次您已包括所有网络应用程序，包括不同的配置文件的组织中的人员以确定实际使用，一小组试点 Office 365 预计的基准和两个度量值用于估计量您将需要为每个办事处的带宽。如果有任何延迟或您在测试中发现的 TCP 拥塞问题，您可能需要将出口接近移动到使用 Office 365 的人员或删除密集型网络，例如 SSL 解密/检查扫描。
+拥有包含所有网络应用程序的估计基准后, 使用包含组织中人员的不同配置文件的小组的试点 Office 365, 以确定实际使用情况, 并使用这两个度量估计的量每个办公地点所需的带宽。 如果在测试中发现任何延迟或 TCP 拥塞问题, 则可能需要将传出的距离移至使用 Office 365 的人员, 或删除大量网络扫描 (如 SSL 解密/检查)。
   
-我们建议使用网络处理哪些类型的建议的所有适用于 ExpressRoute 和 Internet 电路。同样适用于我们[性能优化网站](https://aka.ms/tune)上的指南的其余部分。
+我们建议的所有建议的网络处理类型适用于 ExpressRoute 和 Internet 电路。 对于我们的[性能调整网站](https://aka.ms/tune)的其余指南, 情况也是如此。
   
-## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>将安全控件的 Office 365 方案应用于 Azure ExpressRoute
+## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>将安全控制应用于 Office 365 方案的 Azure ExpressRoute
 
-保护 Azure ExpressRoute 连接开头保护 Internet 连接相同的准则。许多客户选择部署网络和外围控件沿其本地网络连接到 Office 365 和其他 Microsoft 云 ExpressRoute 路径。这些控件可能包括防火墙、 应用程序代理、 数据泄露，入侵检测、 入侵防御系统等。在许多情况下客户将控件的不同级别应用于从本地转到 Microsoft，而不从 Microsoft 转到客户的本地网络，而不是从本地转到常规启动通信量启动通信量启动的通信Internet 目标。
+确保 Azure ExpressRoute 连接的安全与保护 Internet 连接的原理相同。 许多客户选择将网络和外围控制以及将其本地网络连接到 Office 365 和其他 Microsoft 云的 ExpressRoute 路径进行部署。 这些控件可能包括防火墙、应用程序代理、数据泄露预防、入侵检测、入侵防护系统等。 在许多情况下, 客户会将不同级别的控制应用于从内部部署转到 Microsoft 的流量, 而不是从 Microsoft 发起的流量发送到客户本地网络, 而是从内部部署转到一般的流量。Internet 目标。
   
-下面是与您选择部署[ExpressRoute connectivity 模型](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models)集成安全性的几个示例。
+下面的示例展示了将安全性与您选择部署的[ExpressRoute 连接模型](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models)相集成的几个示例。
 
 |**ExpressRoute 集成选项**|**网络安全外围模型**|
 |:-----|:-----|
-|在云交换中归置  <br/> |安装新或利用现有的安全/外围基础架构，其中建立 ExpressRoute 连接共同位置功能。  <br/> 利用共同位置实用程序仅仅是用于路由 interconnect 用途和后距离连接到本地安全/外围基础结构中的共同位置设施。  <br/> |
-|点对点以太网  <br/> |终止中现有的本地安全/外围基础结构位置的点对点 ExpressRoute 连接。  <br/> 安装到 ExpressRoute 路径特定新安全/外围基础结构和终止的点对点连接。  <br/> |
-|任意到任意 IPVPN  <br/> |利用现有的本地安全/外围基础结构到 Office 365 连接用于 ExpressRoute IPVPN 出口的所有位置。  <br/> 用于对 ExpressRoute 的 Office 365 到特定的内部部署位置 IPVPN 指定用作安全/外围发夹。  <br/> |
+|在云交换中归置  <br/> |在建立 ExpressRoute 连接的归置设施中安装新的或利用现有的安全/外围基础结构。  <br/> 充分利用仅用于路由/互连目的的归置功能, 以及从归置设备到内部部署安全/外围基础结构的后部通信连接。  <br/> |
+|点到点以太网  <br/> |终止现有本地安全/外围基础结构位置中的点到点 ExpressRoute 连接。  <br/> 安装特定于 ExpressRoute 路径的新安全/外围基础结构, 并在此处终止点到点的连接。  <br/> |
+|任意对任意 IPVPN  <br/> |充分利用现有的本地安全/外围基础结构, 使其进入 IPVPN 的所有位置, 用于实现用于 ExpressRoute 的 Office 365 连接。  <br/> 发夹用于 Office 365 的 ExpressRoute 的 IPVPN 分配给指定为安全/外围的特定本地位置。  <br/> |
 
-某些服务提供商还提供托管的安全外围功能与 Azure ExpressRoute 他们集成的解决方案的一部分。
+一些服务提供商还提供托管安全/外围功能作为使用 Azure ExpressRoute 的集成解决方案的一部分。
   
-在考虑为 ExpressRoute 用于 Office 365 连接的网络/安全外围选项的拓扑位置时，以下是其他注意事项
+在考虑用于用于适用于用于使用适用于用于 ExpressRoute 的适用于 Office 365 连接的网络/安全外围选项的拓扑放置时, 以下是其他注意事项
   
-- 深度和类型网络/安全控件可能产生的性能和可伸缩性的 Office 365 用户体验的影响。
+- 网络/安全控制的深度和类型可能影响 Office 365 用户体验的性能和可伸缩性。
 
-- 出站 (在-部署-\>Microsoft) 和入站 (Microsoft-\>本地) [如果启用] 流可能具有不同的要求。它们可能不同于出站到常规 Internet 目标。
+- 出站 (本地-\>microsoft) 和入站 (microsoft\>本地) [如果已启用] 流可能具有不同的要求。 它们可能与常规 Internet 目标的出站不同。
 
-- 是否通过 Office 365 ExpressRoute 或通过 Internet 路由流量，端口/协议和所需的 IP 子网的 office 365 要求都是相同的。
+- 对于端口/协议和必需的 IP 子网, Office 365 的要求与通过 ExpressRoute 为 Office 365 或通过 Internet 路由通信的情况相同。
 
-- 客户网络/安全控件的拓扑布置确定最终用户和 Office 365 服务之间的端到端网络，并且可以具有对网络延迟和拥塞的重大影响。
+- 客户网络/安全控制的拓扑放置决定了用户与 Office 365 服务之间的最终到端网络, 并且可能会对网络延迟和拥塞产生重大影响。
 
-- 建议的 Office 365 设计用于带有 ExpressRoute 其安全/外围拓扑，按照冗余、 高可用性和灾难恢复的最佳实践的客户。
+- 鼓励客户根据冗余性、高可用性和灾难恢复的最佳做法, 设计其安全/外围拓扑以与适用于 Office 365 的 ExpressRoute 结合使用。
 
-下面是与上面讨论的外围安全模型之间的比较不同的 Azure ExpressRoute 连接选项的 Woodgrove 银行的一个示例。
+下面是一个 Woodgrove Bank 示例, 它将不同的 Azure ExpressRoute 连接选项与上面讨论的外围安全模型进行比较。
   
-### <a name="example-1-securing-azure-expressroute"></a>示例 1： 保护 Azure ExpressRoute
+### <a name="example-1-securing-azure-expressroute"></a>示例 1: 保护 Azure ExpressRoute
   
-Woodgrove 银行正在考虑部署 Azure ExpressRoute 以及规划的最佳体系结构[与 Office 365 ExpressRoute 路由](routing-with-expressroute.md)之后和之后使用上述指南以了解带宽要求，它们确定用于保护其外围的最佳方法。
+Woodgrove Bank 正在考虑实现 Azure ExpressRoute, 并在规划最佳体系结构以实现针对[Office 365 的 ExpressRoute 路由](routing-with-expressroute.md), 并在使用上述指导以了解带宽要求之后, 确定保护其外围环境的最佳方法。
   
-Woodgrove，具有多个大洲中的位置的多个国家/地区组织的安全必须跨越所有外围环境。Woodgrove 的最佳连接选项是与服务的每个大陆中其员工需要在全球范围内的多个对等位置的多点连接。每个大陆包含冗余 Azure ExpressRoute 电路内洲和安全必须跨越所有这些。
+对于 Woodgrove (具有多个洲的多国组织), 安全性必须跨越所有外围环境。 Woodgrove 的最佳连接选项是与全球各地的多个对等位置的多点连接, 可满足每个洲的员工的需求。 每个洲在洲中包含冗余的 Azure ExpressRoute 电路, 安全性必须涵盖所有这些电路。
   
-Woodgrove 的现有基础结构可靠，并可以处理其他工作，因此，Woodgrove 银行是能够使用其 Azure ExpressRoute 和 internet 外围安全的基础结构。如果这不是这种情况，无法选择 Woodgrove 购买其他设备进行了补充其现有的设备或处理不同类型的连接。
+Woodgrove 的现有基础结构是可靠的, 并且可以处理额外的工作, 因此, Woodgrove Bank 能够将基础结构用于其 Azure ExpressRoute 和 internet 外围安全性。 如果不是这样, Woodgrove 可以选择购买其他设备来补充其现有设备或处理不同类型的连接。
   
-## <a name="high-availability-and-failover-with-azure-expressroute"></a>高可用性和故障转移与 Azure ExpressRoute
+## <a name="high-availability-and-failover-with-azure-expressroute"></a>Azure ExpressRoute 的高可用性和故障转移
 <a name="BKMK_high-availability"> </a>
 
-我们建议设置从 ExpressRoute 与每个出口到 ExpressRoute 供应商的至少两个活动的电路。这是最常见的地方我们客户看到失败，您可以通过设置主动/主动 ExpressRoute 电路一对轻松地避免。因为许多 Office 365 服务仅可通过 Internet，我们还建议至少两个主动/主动 Internet 电路。
+我们建议将每个传出的活动电路至少设置为 ExpressRoute 提供程序。 这是我们看到客户失败的最常见的地方, 您可以通过设置一对主动/主动 ExpressRoute 电路来轻松地避免这一对。 我们还建议至少两个主动/主动 Internet 电路, 因为许多 Office 365 服务仅在 Internet 上可用。
   
-内部网络的出口点是许多其他设备和关键作用的人员如何感知可用性的电路。连接方案这些部分不涵盖 ExpressRoute 或 Office 365 服务级别协议，但它们在关键作用的端到端服务可用性中播放您的组织中的人员的角度。
+在网络的出局点内, 还有许多其他设备和电路, 它们在人们如何感觉可用性方面扮演着关键角色。 这些部分的连接方案不受 ExpressRoute 或 Office 365 Sla 的涵盖, 但它们在端到端服务可用性方面起着重要作用, 如组织中的人员所感知。
   
-关注的人员使用和运行 Office 365 中，如果的任何一个组件故障会影响人们的体验使用服务、 查找的方式来限制受影响的人员的总百分比。如果操作复杂的故障转移模式，考虑恢复很长时间人们的体验并查找哪些内容简单和自动故障转移模式。
+重点关注使用和操作 Office 365 的人员。如果任何一个组件的失败都会影响人员使用服务的体验, 请查看限制受影响的人员总数百分比的方法。 如果故障转移模式在操作上很复杂, 请考虑使用体验很长时间才能进行恢复, 并查找操作简单且自动的故障转移模式。
   
-外部网络、 Office 365、 ExpressRoute，和 ExpressRoute 提供程序，所有具有不同的可用性级别。
+在网络外部, Office 365、ExpressRoute 和 ExpressRoute 提供程序都具有不同级别的可用性。
   
 ### <a name="service-availability"></a>服务可用性
   
-- Office 365 服务将涵盖定义完善的[服务级别协议](https://technet.microsoft.com/library/office-365-service-level-agreement.aspx)，其中包括单个服务正常运行时间和可用性的指标。Office 365 可以维护此类高服务可用性级别是无缝地使用全局 Microsoft 网络许多 Microsoft 数据中心之间的故障转移的各个组件的原因之一。此故障转移的数据中心和网络从扩展到多个 Internet 出口点，并启用使用服务的人员的角度来看从无缝故障转移。
+- Office 365 服务受明确定义的[服务级别协议](https://technet.microsoft.com/library/office-365-service-level-agreement.aspx)的涵盖, 其中包括各个服务的正常运行时间和可用性指标。 Office 365 可以维护这样的高可用性级别的一个原因是, 单个组件能够在多个 Microsoft 数据中心之间使用全局 Microsoft 网络无缝地进行故障转移。 此故障转移将从数据中心和网络扩展到多个 Internet 出局点, 并通过使用该服务的人员的角度无缝地进行故障转移。
 
-- ExpressRoute[提供 99.9%可用性 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_0/) Microsoft 网络边缘和 ExpressRoute 提供商或合作伙伴基础结构之间的单个专用电路。这些服务级别于 ExpressRoute 电路级别的冗余的 Microsoft 设备和在每个对等位置的网络提供程序设备之间的[两个独立于互连](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)组成。
+- ExpressRoute 在 Microsoft 网络边缘与 ExpressRoute 提供程序或合作伙伴基础结构之间的各个专用线路上[提供了 99.9% 的可用性 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_0/) 。 这些服务级别在 ExpressRoute 电路级别应用, 这由每个对等位置中的冗余 Microsoft 设备和网络提供商设备之间的[两个独立互连](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)组成。
 
 ### <a name="provider-availability"></a>提供程序可用性
   
-- 在您 ExpressRoute 提供商或合作伙伴处停止 Microsoft 的服务级别安排。这也是您可以选择将影响您的可用性级别的第一个位置。外围网络和在每个 Microsoft 对等位置的提供程序连接之间紧密应评估体系结构、 可用性和恢复能力 ExpressRoute 提供商提供的特征。请特别注意冗余、 对等设备提供的运营商 WAN 电路的逻辑和物理方面和任何其他值添加如 NAT 服务或托管的防火墙服务。
+- Microsoft 的服务级别排列在你的 ExpressRoute 提供程序或合作伙伴处停止。 这也是可以做出影响可用性级别的选择的第一个位置。 您应仔细评估您的 ExpressRoute 提供商在每个 Microsoft 对等位置上的网络外围和提供程序连接之间提供的体系结构、可用性和恢复性特征。 请密切注意冗余和物理方面的冗余、对等设备、运营商提供的 WAN 电路以及任何其他价值添加服务 (如 NAT 服务或托管防火墙)。
 
-### <a name="designing-your-availability-plan"></a>设计您的可用性计划
+### <a name="designing-your-availability-plan"></a>正在设计可用性计划
   
-我们强烈建议您规划和 Office 365 到您的端到端连接方案设计高可用性和恢复能力。设计应包括;
+强烈建议您规划和设计适用于 Office 365 的端到端连接方案的高可用性和弹性。 设计应包括;
   
-- 没有单点故障，包括 Internet 和 ExpressRoute 电路。
+- 无单点故障, 包括 Internet 和 ExpressRoute 电路。
 
-- 受影响的人员的数目和持续时间的影响的最预期失败模式，最小化。
+- 最大程度地减少受影响的人员数量和对最预期的故障模式造成的影响的持续时间。
 
-- 优化从最预期失败模式的简单、 可重复的和自动恢复过程。
+- 从最预期的故障模式优化简单、可重复和自动恢复过程。
 
-- 支持网络流量和冗余的路径，而不会大大降低通过功能的完整的需求。
+- 通过冗余路径支持网络流量和功能的全部需求, 而不会显著降低。
 
-连接方案应为到 Office 365 的多个独立并处于活动状态的网络路径优化网络拓扑。这将产生一个拓扑，以便仅适合在单独的设备或设备级别冗余比更好地端到端可用性。
+连接方案应包含为 Office 365 的多个独立和主动网络路径优化的网络拓扑。 这将比仅针对单个设备或设备级别的冗余而优化的拓扑相比, 提供了更好的端到端可用性。
   
 > [!TIP]
-> 如果您的用户分布在多个大洲或地理区域以及每个位置连接到单个 ExpressRoute 电路所在的单一本地位置冗余 WAN 电路通过您的用户将体验小于端到端服务可用性包括连接到最接近的对等的不同区域的独立 ExpressRoute 电路网络拓扑设计比位置。
+> 如果您的用户分布在多个洲或地理区域, 并且这些位置中的每个位置都将通过冗余 WAN 环路连接到单个 ExpressRoute 电路所在的单个本地位置, 则您的用户将经历较少端到端服务可用性: 一种网络拓扑设计, 其中包括将不同区域连接到最近的对等位置的独立 ExpressRoute 电路。
   
-我们建议设置与每个电路连接到与不同地理对等位置的至少两个 ExpressRoute 电路。应设置用户将使用 ExpressRoute 连接 for Office 365 服务的每个区域的电路此活动-活动的对。这将允许每个区域来影响如数据中心的主要位置或对等位置的灾难恢复期间保持连接。将其配置为主动/主动允许最终用户通信分布于多个网络路径。这会减少人员在设备或网络设备停机期间受影响的范围。
+我们建议为每个电路至少预配两个与不同地理位置对等位置相连的 ExpressRoute 电路。 应为每个用户使用适用于 Office 365 服务的 ExpressRoute 连接的区域设置这一对主动-主动的电路。 这样一来, 每个区域都可以在发生灾难时保持连接, 以影响一个主要位置, 如数据中心或对等位置。 将它们配置为主动/主动, 可以跨多个网络路径分布最终用户通信。 这样可以减少设备或网络设备中断期间受影响的人员的范围。
   
-我们不建议使用 Internet 作为备份单个 ExpressRoute 电路。
+我们建议您不要将单个 ExpressRoute 电路与 Internet 作为备份使用。
   
-### <a name="example-2-failover-and-high-availability"></a>示例 2： 故障转移和高可用性
+### <a name="example-2-failover-and-high-availability"></a>示例 2: 故障转移和高可用性
   
-Woodgrove 银行的多个地理设计都经过路由、 带宽、 安全性、 回顾，并且现在必须经过高可用性审阅。Woodgrove 认为有关作为介绍三种类别; 的高可用性恢复能力、 可靠性和冗余。
+Woodgrove 银行的多地理位置设计已完成路由、带宽、安全性的审查, 现在必须进行高可用性审查。 Woodgrove 认为有三种类别的高可用性;恢复能力、可靠性和冗余。
   
-恢复能力允许 Woodgrove 快速从故障恢复。可靠性允许 Woodgrove 提供一致的结果在系统中。冗余允许 Woodgrove 的基础结构的一个或多个镜像实例之间移动。
+通过弹性, Woodgrove 可以快速从故障中恢复。 可靠性使 Woodgrove 能够在系统中提供一致的结果。 通过冗余, Woodgrove 可以在基础结构的一个或多个镜像实例之间移动。
   
-每个边缘配置内, Woodgrove 具有冗余防火墙、 代理和 ID。北美，Woodgrove 都有其达拉斯数据中心中的一个边缘配置和其弗吉尼亚数据中心中的另一个边缘配置。在每个位置的冗余设备提供了到该位置的恢复能力。
+在每个边缘配置中, Woodgrove 都有冗余的防火墙、代理和 ID。 对于北美, Woodgrove 在其达拉斯数据中心中有一个边缘配置, 在其弗吉尼亚数据中心中有另一个边缘配置。 每个位置的冗余设备可为该位置提供恢复能力。
   
-基于几项主要原则构建在 Woodgrove 银行网络配置：
+Woodgrove Bank 上的网络配置基于几个关键原则构建:
   
-- 每个地理区域中有多个 Azure ExpressRoute 电路。
+- 在每个地理区域内, 有多个 Azure ExpressRoute 电路。
 
-- 区域内的每个电路可以支持所有该区域中的网络流量。
+- 区域中的每个电路都可以支持该区域中的所有网络流量。
 
-- 路由将明确首选一项或可用性，位置，根据其他路径，依此类推。
+- 路由将明确考虑使用一个或另一个路径, 具体取决于可用性、位置等。
 
-- Azure ExpressRoute 电路之间进行故障转移自动发生无需其他配置或所需的 Woodgrove 的操作。
+- Azure ExpressRoute 电路之间的故障转移会自动发生, 而 Woodgrove 不需要其他配置或操作。
 
-- Internet 电路之间进行故障转移自动发生无需其他配置或所需的 Woodgrove 的操作。
+- Internet 电路之间的故障转移会自动发生, 而 Woodgrove 不需要其他配置或操作。
 
-在此配置中，在物理和虚拟级别冗余 Woodgrove 银行是能够为本地恢复能力、 区域的恢复能力和全局恢复能力提供可靠的方式。Woodgrove 选择出现在评估每个区域，以及进行故障转移到 internet 的可能性单个 Azure ExpressRoute 电路此配置。
+在此配置中, 在物理和虚拟级具有冗余, Woodgrove Bank 能够以可靠的方式提供本地恢复能力、区域恢复能力和全局恢复能力。 Woodgrove 在评估每个地区的单个 Azure ExpressRoute 电路以及故障转移到 internet 的可能性之后选择此配置。
   
-如果 Woodgrove 无法每个地区具有多个 Azure ExpressRoute 电路，路由到亚太地区中的 Azure ExpressRoute 电路源自北美的通信将添加不可接受级别的延迟和所需的 DNS 转发器配置增加复杂性。
+如果 Woodgrove 无法为每个地区提供多个 Azure ExpressRoute 电路, 请将来自北美的流量路由到亚太地区的 Azure ExpressRoute 电路, 以添加不可接受的延迟级别和所需的 DNS 转发器配置增加了复杂性。
   
-利用备份配置为 internet 不建议。这将中断 Woodgrove 的可靠性原则，以此来使用连接不一致的体验。此外，手动配置都需要考虑 BGP 广告已配置的故障转移、 NAT 配置、 DNS 配置，和代理配置。这添加故障转移复杂性增加恢复的时间和减小其能够诊断和疑难解答所涉及的步骤。
+建议不要将 internet 用作备份配置。 这将中断 Woodgrove 的可靠性原则, 从而导致使用连接时体验不一致。 此外, 还需要手动配置, 以确保已配置的 BGP 播发、NAT 配置、DNS 配置和代理配置的故障转移。 这种增加的故障转移复杂性增加了恢复时间并降低了其诊断和解决步骤所涉及步骤的能力。
   
-仍有有关如何规划和实现流量管理或 Azure ExpressRoute 问题？我们[网络和性能指南](https://aka.ms/tune)或[Azure ExpressRoute 常见问题](https://azure.microsoft.com/documentation/articles/expressroute-faqs/)的其余部分读取。
+是否仍有关于如何规划和实现流量管理或 Azure ExpressRoute 的问题？ 阅读我们的[网络和性能指南](https://aka.ms/tune)的其余部分或[Azure ExpressRoute 常见问题解答](https://azure.microsoft.com/documentation/articles/expressroute-faqs/)。
   
 ## <a name="working-with-azure-expressroute-providers"></a>使用 Azure ExpressRoute 提供程序
 <a name="BKMK_high-availability"> </a>
 
-选择基于您带宽、 延迟、 安全性和高可用性规划您电路的位置。一旦您知道您想要放置的最佳位置电路[查看当前区域的提供程序的列表](https://azure.microsoft.com/documentation/articles/expressroute-locations/)。
+根据带宽、延迟、安全性和高可用性规划选择你的电路的位置。 知道要放置电路的最佳位置之后, 将[按地区查看当前的提供商列表](https://azure.microsoft.com/documentation/articles/expressroute-locations/)。
   
-使用您的提供程序或提供程序以选择最佳的连接选项，点对点的多点或托管。请记住，您可以混合和只要带宽和其他冗余组件支持您的路由和高可用性设计匹配连接选项。
+与提供程序或提供程序配合使用, 以选择最佳连接选项、点对点、多点或托管。 请记住, 只要带宽和其他冗余组件支持您的路由和高可用性设计, 您就可以混合和匹配连接选项。
   
 以下是可以用于返回的简短链接：[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
@@ -200,7 +200,7 @@ Woodgrove 银行的多个地理设计都经过路由、 带宽、 安全性、 �
   
 [实现 ExpressRoute for Office 365](implementing-expressroute.md)
   
-[在 ExpressRoute for Office 365 方案中使用 BGP 社区（预览版）](bgp-communities-in-expressroute.md)
+[在 ExpressRoute for Office 365 场景中使用 BGP 社区 (预览)](bgp-communities-in-expressroute.md)
   
 [Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

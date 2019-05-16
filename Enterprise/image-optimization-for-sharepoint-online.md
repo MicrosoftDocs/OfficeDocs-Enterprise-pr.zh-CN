@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/19/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 了解如何使用格式副本和子画面提高 SharePoint Online 网站上的图像性能。
-ms.openlocfilehash: 313046dec885a38062635254699301bcf556d698
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1210146aa3efb042937abeece4df0e62a579b94
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487346"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067368"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>SharePoint Online 的图像优化
 
@@ -28,7 +28,7 @@ ms.locfileid: "33487346"
 
 |||
 |:-----|:-----|
-| 图像子画面包含许多较小的图像。 使用 CSS 选择复合图像的一部分, 以在页面的特定部分显示绝对定位。 通常情况下, 您可以在页面上移动单个图像, 而不是加载多个图像, 并使该图像的一小部分在显示给最终用户的 sprite 图像所需部分的小窗口中可见。 SharePoint Online 使用子画面在 sprite spcommon 中显示其各种图标。  <br/>  这里讲述的内容:  <br/>  图像压缩  <br/>  图像优化  <br/>  SharePoint 图像呈现形式  <br/> |![spcommon 的屏幕截图](media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+| 图像子画面包含许多较小的图像。 使用 CSS 选择复合图像的一部分, 以在页面的特定部分显示绝对定位。 通常情况下, 您可以在页面上移动单个图像, 而不是加载多个图像, 并使该图像的一小部分在显示给最终用户的 sprite 图像所需部分的小窗口中可见。 SharePoint Online 使用子画面在 sprite spcommon 中显示其各种图标。  <br/>  这里讲述的内容:  <br/>  图像压缩  <br/>  图像优化  <br/>  SharePoint 图像呈现形式  <br/> |![Spcommon 的屏幕截图](media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
    
 这样可以提高性能, 因为只需下载一幅图像而不是多个图像, 然后再缓存并重新使用该图像。 即使图像未保持缓存, 通过使用单个图像 (而不是多个图像), 此方法也可减少对服务器的 HTTP 请求总数, 从而减少页面加载时间。 这实际上是一种图像绑定形式。 如果图像不经常更改 (如上面提供的 SharePoint 示例中所示), 这是一项非常有用的技术。 您可以使用[Web Essentials](http://vswebessentials.com/)(一种基于第三方的开放源代码的基于社区的项目) 在 Microsoft Visual Studio 中轻松实现此目的。 有关详细信息, 请参阅[SharePoint Online 中的缩小和捆绑](https://go.microsoft.com/fwlink/?LinkId=708698)。
   
@@ -45,9 +45,9 @@ ms.locfileid: "33487346"
 > [!NOTE]
 > 仅当启用发布时, 才可使用 SharePoint 的呈现形式。 你可以在 "设置\> " 网站设置\>下启用发布\> "管理网站功能" SharePoint Server 发布。 否则, 此选项将不会显示。 
   
-通过获取定义的最小尺寸 (宽度或高度), 然后调整图像大小, 以便根据锁定纵横比自动调整其他尺寸的大小, 从而使图像呈现形式的大小调整正常。 默认情况下, 它会将图像从中心裁剪到剩余的尺寸。 例如, 如果您定义100px 宽和50px 的一个格式副本, 并且原始图像为1000px 宽且800px 高, 则将调整其大小, 以便800px 维度现在为 50px, 而1000px 维度 ("now 62.5 px") 将从图像的中心进行裁剪。
+通过获取定义的最小尺寸 (宽度或高度), 然后调整图像大小, 以便根据锁定纵横比自动调整其他尺寸的大小, 从而使图像呈现形式的大小调整正常。 默认情况下, 它会将图像从中心裁剪到剩余的尺寸。 例如, 如果您定义100px 宽和50px 的一个格式副本, 并且原始图像为1000px 宽且800px 高, 则将调整其大小, 以便800px 维度现在为 50px, 而1000px 维度 ("now 62。5 px") 将从图像的中心进行裁剪。
   
-这些步骤相对简单, 但要使用呈现形式的图像, 在添加图像之前, 必须在 SharePoint 网站上的呈现形式。 此外, 还需要启用 sharepoint server 发布基础结构 (网站集级别) 和 sharepoint server 发布 (网站级别) 功能。
+这些步骤相对简单, 但要使用呈现形式的图像, 在添加图像之前, 必须在 SharePoint 网站上的呈现形式。 此外, 还需要启用 SharePoint Server 发布基础结构 (网站集级别) 和 SharePoint Server 发布 (网站级别) 功能。
   
  **添加图像呈现形式以加快页面加载速度**
   

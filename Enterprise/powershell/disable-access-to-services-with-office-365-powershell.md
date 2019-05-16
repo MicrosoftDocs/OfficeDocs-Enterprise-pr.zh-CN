@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/28/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: 使用 office 365 PowerShell 禁用对用户的 Office 365 服务的访问。
-ms.openlocfilehash: 0f2c603edd624c9d53a28b37c1c9795bad05ec0f
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+description: 使用 Office 365 PowerShell 禁用对用户的 Office 365 服务的访问。
+ms.openlocfilehash: bd6961f0de52d95026bae3a743613b33a4af918b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001815"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069028"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 禁止访问服务
 
-**摘要:** 介绍如何使用 office 365 PowerShell 为组织中的用户禁用对 Office 365 服务的访问。
+**摘要:** 介绍如何使用 Office 365 PowerShell 为组织中的用户禁用对 Office 365 服务的访问。
   
-从许可计划中为 office 365 帐户分配许可证时, 用户将从该许可证中获取 office 365 服务。 但是, 您可以控制用户可以访问的 Office 365 服务。 例如, 即使许可证允许访问 SharePoint Online 服务, 也可以禁用对它的访问。 您可以使用 PowerShell 针对特定许可计划禁用对任意数量的服务的访问:
+从许可计划中为 Office 365 帐户分配许可证时, 用户将从该许可证中获取 Office 365 服务。 但是, 您可以控制用户可以访问的 Office 365 服务。 例如, 即使许可证允许访问 SharePoint Online 服务, 也可以禁用对它的访问。 您可以使用 PowerShell 针对特定许可计划禁用对任意数量的服务的访问:
 
 - 单个帐户。
     
@@ -81,7 +81,7 @@ PowerShell 脚本可自动执行本主题中描述的过程。 具体来说, 该
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-  有关在 office 365 powershell 中创建用户帐户的详细信息, 请参阅[Create user accounts with office 365 powershell](create-user-accounts-with-office-365-powershell.md)。
+  有关在 Office 365 PowerShell 中创建用户帐户的详细信息, 请参阅[Create user accounts With office 365 powershell](create-user-accounts-with-office-365-powershell.md)。
     
   - 若要禁用现有授权用户的服务，请使用下面的语法：
     

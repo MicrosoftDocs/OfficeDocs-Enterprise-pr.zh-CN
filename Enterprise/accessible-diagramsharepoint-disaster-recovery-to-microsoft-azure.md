@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: 本文是名为“SharePoint 灾难恢复到 Microsoft Azure”的图的可访问文本版本。
-ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487718"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068518"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>可访问的图表 - SharePoint 灾难恢复到 Microsoft Azure
 

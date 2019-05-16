@@ -4,7 +4,7 @@ ms.author: twerner
 author: twernermsft
 manager: scotv
 ms.date: 5/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,17 +15,17 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
-description: 使用集中部署 PowerShell cmdlet 可帮助您部署和管理 office 365 组织的 office 外接程序。
-ms.openlocfilehash: ec851fc85273e9f871c20d5075b16cb97472f975
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+description: 使用集中部署 PowerShell cmdlet 可帮助您部署和管理 Office 365 组织的 Office 外接程序。
+ms.openlocfilehash: 34040d11a1ef4d5da2d7a0e980b28e7ef0eba7fb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957633"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070498"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
-作为 office 365 管理员, 您可以通过集中部署功能向用户部署 office 外接程序 (请参阅[在 office 365 管理中心部署 office 加载项](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx))。 除了通过 office 365 管理中心部署 office 外接程序之外, 还可以使用 Microsoft PowerShell。 安装[适用于 Windows PowerShell 的 O365 集中外接程序部署模块](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
+作为 Office 365 管理员, 您可以通过集中部署功能向用户部署 Office 外接程序 (请参阅[在 office 365 管理中心部署 Office 加载项](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx))。 除了通过 Office 365 管理中心部署 Office 外接程序之外, 还可以使用 Microsoft PowerShell。 安装[适用于 Windows PowerShell 的 O365 集中外接程序部署模块](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
     
 ## <a name="connect-using-your-admin-credentials"></a>使用管理员凭据连接
 
@@ -54,13 +54,13 @@ ms.locfileid: "31957633"
   
 ## <a name="upload-an-add-in-manifest"></a>上载外接程序清单
 
-运行 organizationadd-in cmdlet 以从路径 (可以是文件位置或 URL) 上传外接程序清单。 下面的示例演示_ManifestPath_参数值的文件位置。 
+运行 Organizationadd-in cmdlet 以从路径 (可以是文件位置或 URL) 上传外接程序清单。 下面的示例演示_ManifestPath_参数值的文件位置。 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-您还可以运行 organizationadd-in cmdlet 以上载外接程序, 并使用_Members_参数直接将其分配给用户或组, 如下面的示例所示。 使用逗号分隔成员的电子邮件地址。 
+您还可以运行 Organizationadd-in cmdlet 以上载外接程序, 并使用_Members_参数直接将其分配给用户或组, 如下面的示例所示。 使用逗号分隔成员的电子邮件地址。 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
@@ -81,7 +81,7 @@ New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-
 _Locale_参数和_ContentMarket_参数的值是相同的, 并指示您要从中安装外接程序的国家/地区。 格式为 en-us, fr-fr。 等。 
   
 > [!NOTE]
-> 从 office 应用商店上传的外接程序将在 office 应用商店上的最新更新更新几天内自动更新。 
+> 从 Office 应用商店上传的外接程序将在 Office 应用商店上的最新更新更新几天内自动更新。 
   
 ## <a name="get-details-of-an-add-in"></a>获取外接程序的详细信息
 
@@ -152,7 +152,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> 从 office 应用商店上传的外接程序将在 office 应用商店上的最新更新更新几天内自动更新。 
+> 从 Office 应用商店上传的外接程序将在 Office 应用商店上的最新更新更新几天内自动更新。 
   
 ## <a name="delete-an-add-in"></a>删除外接程序
 
@@ -164,7 +164,7 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>获取每个 cmdlet 的详细帮助
 
-您可以使用 get-help cmdlet 查看每个 cmdlet 的详细帮助信息。 例如, 以下 cmdlet 提供有关 OrganizationAddIn cmdlet 的详细信息。
+您可以使用 Get-help cmdlet 查看每个 cmdlet 的详细帮助信息。 例如, 以下 cmdlet 提供有关 OrganizationAddIn cmdlet 的详细信息。
   
 ```
 Get-help Remove-OrganizationAddIn -Full

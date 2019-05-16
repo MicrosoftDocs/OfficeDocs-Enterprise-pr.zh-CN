@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 摘要： 了解 ExpressRoute 如何帮助你更快、更可靠地与 Microsoft 云服务和平台相连接。
-ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0bab6cf3d400293221692a595346445afd242e48
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067678"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>面向 Microsoft 云连接的 ExpressRoute
 
@@ -102,7 +102,7 @@ ExpressRoute 连接不能保证每一种配置的性能都会提高。通过低�
 
 ![图 3: 单个 ExpressRoute 连接中的两个不同的 BGP 关系](media/Network-Poster/ERPeering.png)
   
-图 3 显示了内部部署网络中的 ExpressRoute 连接。 ExpressRoute 连接具有两个逻辑对等关系。 microsoft 的对等关系转到 microsoft SaaS 服务, 包括 Office 365、Dynamcs 365 和 Azure PaaS 服务。 专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
+图 3 显示了内部部署网络中的 ExpressRoute 连接。 ExpressRoute 连接具有两个逻辑对等关系。 Microsoft 的对等关系转到 Microsoft SaaS 服务, 包括 Office 365、Dynamcs 365 和 Azure PaaS 服务。 专用的对等关系转到 Azure IaaS 和承载虚拟机的虚拟网络网关。
   
 Microsoft 对等 BGP 关系：  
   
@@ -246,7 +246,7 @@ Microsoft 数据中心和云对等位置都连接到 Microsoft 云网络。
   
 - **边缘的安全性：** 要实现通过 ExpressRoute 连接发送和接收的流量的高级安全性，如流量检查或入侵/恶意软件检测，请将安全装置放入 DMZ 内的流量路径下或 Intranet 边界。
     
-- **vm 的 Internet 流量:** 若要阻止 Azure vm 直接与 Internet 位置启动流量, 请将默认路由播发到 Microsoft。 Internet 流量通过 ExpressRoute 连接和内部部署代理服务器传送。 从 Azure 虚拟机到 Azure PaaS 服务或 Office 365 的流量将通过 ExpressRoute 连接传送回去。
+- **Vm 的 Internet 流量:** 若要阻止 Azure Vm 直接与 Internet 位置启动流量, 请将默认路由播发到 Microsoft。 Internet 流量通过 ExpressRoute 连接和内部部署代理服务器传送。 从 Azure 虚拟机到 Azure PaaS 服务或 Office 365 的流量将通过 ExpressRoute 连接传送回去。
     
 - **WAN 优化程序：** 你可以在跨界部署的 Azure 虚拟网络 (VNet) 的专用对等连接两端部署 WAN 优化程序。在 Azure VNet 内部，使用 Azure 市场的 WAN 优化网络设备和用户定义路由通过该设备传送流量。
     

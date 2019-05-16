@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 search.appverid:
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作, 对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时, 无需执行任何操作。 数据传输和验证在后台进行, 并对用户影响最小。
-ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067728"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -26,7 +26,7 @@ ms.locfileid: "33487228"
 > [!NOTE]
 > 每个服务的移动发生在不同的时间。 因此, 你将在不同时间看到每个服务的已描述缩减功能。 
   
-在 Exchange online、SharePoint online 和 Skype for business 移动时, 请观看 Office 365 消息中心, 以确认是否已完成。 如下表所示, 在注册期结束后, 可能需要长达24个月, 以完成针对特定地理位置的所有客户的所有请求的数据移动。 如果你在移动后发现租户出现任何问题, 请联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以获取帮助。 
+在 Exchange Online、SharePoint Online 和 Skype for Business 移动时, 请观看 Office 365 消息中心, 以确认是否已完成。 如下表所示, 在注册期结束后, 可能需要长达24个月, 以完成针对特定地理位置的所有客户的所有请求的数据移动。 如果你在移动后发现租户出现任何问题, 请联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以获取帮助。 
   
 
 |**中付费地址的客户**|**所有移动完成者**|
@@ -51,8 +51,8 @@ ms.locfileid: "33487228"
   
 |**配置**|**说明**|
 |:-----|:-----|
-|用户拥有对另一个邮箱的邮箱文件夹权限  <br/> |可能受到限制。  <br/> 如果在租户移动过程中, 用户 a 和邮箱 B 不在同一地理位置, 如果用户 a 对邮箱 b 中的特定文件夹有权限, 则用户 a 无法在 Outlook Web Access 中打开邮箱 b 的文件夹。  <br/> 若要添加共享文件夹, 请右键单击左侧导航面板中的用户名, 然后选择 "**添加共享文件夹**"。  <br/> |
-|具有对另一个邮箱的 "完全邮箱" 权限的用户  <br/> |完全支持。  <br/> 如果用户 a 对邮箱 b 具有 "完全访问权限" 权限, 则用户 a 可以在 Outlook Web Access 的左侧导航窗格中单击共享文件夹以打开显示邮箱 B 的窗口。 在移动过程中, 用户可以使用 Outlook Web Access 打开共享邮箱, 而不会产生任何负面影响。 限制仅适用于邮箱中的文件夹级共享。           |
+|用户拥有对另一个邮箱的邮箱文件夹权限  <br/> |可能受到限制。  <br/> 如果在租户移动过程中, 用户 A 和邮箱 B 不在同一地理位置, 如果用户 A 对邮箱 B 中的特定文件夹有权限, 则用户 A 无法在 Outlook Web Access 中打开邮箱 B 的文件夹。  <br/> 若要添加共享文件夹, 请右键单击左侧导航面板中的用户名, 然后选择 "**添加共享文件夹**"。  <br/> |
+|具有对另一个邮箱的 "完全邮箱" 权限的用户  <br/> |完全支持。  <br/> 如果用户 A 对邮箱 B 具有 "完全访问权限" 权限, 则用户 A 可以在 Outlook Web Access 的左侧导航窗格中单击共享文件夹以打开显示邮箱 B 的窗口。 在移动过程中, 用户可以使用 Outlook Web Access 打开共享邮箱, 而不会产生任何负面影响。 限制仅适用于邮箱中的文件夹级共享。           |
    
 ### <a name="public-folders"></a>公用文件夹
 
@@ -60,7 +60,7 @@ ms.locfileid: "33487228"
   
 ### <a name="online-archives"></a>在线存档
 
-在移动过程中, 通过 Outlook for Mac 连接的用户可能无法连接到其联机存档邮箱。 支持通过 outlook 和 outlook Web Access 连接用户对存档邮箱的访问。
+在移动过程中, 通过 Outlook for Mac 连接的用户可能无法连接到其联机存档邮箱。 支持通过 Outlook 和 Outlook Web Access 连接用户对存档邮箱的访问。
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -98,11 +98,11 @@ ms.locfileid: "33487228"
   
 - 搜索结果和搜索 Web 部件: 结果中不包含迁移之后发生的更改, 直到爬网进行挑选。 
     
-- delve: delve 不包含迁移之后发生的更改, 直到爬网对其进行挑选。
+- Delve: Delve 不包含迁移之后发生的更改, 直到爬网对其进行挑选。
     
 - 网站的热门程度和搜索报告: 新位置中 Excel 报告的计数仅包括在完成移动 SharePoint Online 数据后运行的使用率报告中的已迁移计数和计数。 来自临时时段的任何计数都将丢失, 且无法恢复。 此期间通常为几天。 有些客户可能会遇到较短或更长的损失。
     
-- 视频门户: 查看视频门户的计数和统计信息取决于 excel 报告的统计信息, 因此, 在与 excel 报告相同的时间段内, 视频门户的查看次数和统计信息将会丢失。
+- 视频门户: 查看视频门户的计数和统计信息取决于 Excel 报告的统计信息, 因此, 在与 Excel 报告相同的时间段内, 视频门户的查看次数和统计信息将会丢失。
     
 - 电子数据展示: 在爬网选取更改之前, 不会显示在迁移过程中更改的项目。
     
@@ -110,7 +110,7 @@ ms.locfileid: "33487228"
     
 ## <a name="skype-for-business"></a>Skype for Business
 
-在剪切转移过程中, 所有用户都将从 Skype for business 客户端软件注销。 自动登录将在两分钟内重新连接用户。
+在剪切转移过程中, 所有用户都将从 Skype for Business 客户端软件注销。 自动登录将在两分钟内重新连接用户。
   
 |**在整个移动过程中工作的功能**|**移动过程中可能会受到限制的功能**|
 |:-----|:-----|
@@ -118,14 +118,14 @@ ms.locfileid: "33487228"
    
 |**移动后**|
 |:-----|
-| 会议数据 (上载的演示文稿等) 将不会移动, 需要重新上载。  <br/>  较旧的 lync 客户端 (如 lync 2010 客户端和 lync for Mac 2011 客户端) 被识别为导致登录问题的服务缓存 DNS 信息。 如果用户不在最新的 Skype for business Windows 客户端上, 则可能需要清除 DNS 缓存。 要求用户运行[疑难解答向导](https://support.microsoft.com/en-us/kb/2541980), 并按照说明清除客户端缓存。 适用于 Mac 客户端用户的 Lync 应按照[这些说明](https://support.microsoft.com/en-us/kb/2629861)操作。  <br/> |
+| 会议数据 (上载的演示文稿等) 将不会移动, 需要重新上载。  <br/>  较旧的 Lync 客户端 (如 Lync 2010 客户端和 Lync for Mac 2011 客户端) 被识别为导致登录问题的服务缓存 DNS 信息。 如果用户不在最新的 Skype for Business Windows 客户端上, 则可能需要清除 DNS 缓存。 要求用户运行[疑难解答向导](https://support.microsoft.com/en-us/kb/2541980), 并按照说明清除客户端缓存。 适用于 Mac 客户端用户的 Lync 应按照[这些说明](https://support.microsoft.com/en-us/kb/2629861)操作。  <br/> |
    
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>涉及第三方音频会议提供商的 Skype for business 移动
+### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>涉及第三方音频会议提供商的 Skype for Business 移动
 适用于 Skype for business 的第三方音频会议提供商附加服务不适用于驻留在新地理位置的新数据中心中的用户。  使用第三方音频会议提供商服务的现有客户不应请求移动到新的特定地理位置的数据中心。  如果新客户部署到新的特定地理位置数据中心, 则需要请求移动到区域数据中心以使用第三方音频会议提供商。
 
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>其他服务 (包括团队、Yammer 和 power BI) 的数据
+## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>其他服务 (包括团队、Yammer 和 Power BI) 的数据
 
-我们仅移动 Exchange online、SharePoint online 和 Skype for business 的客户数据。 我们不会移动其他服务的数据。 您不会像客户或其他这些服务的用户那样对您做任何更改或影响。 移动过程不会影响它们, 客户数据的位置保持不变。
+我们仅移动 Exchange Online、SharePoint Online 和 Skype for Business 的客户数据。 我们不会移动其他服务的数据。 您不会像客户或其他这些服务的用户那样对您做任何更改或影响。 移动过程不会影响它们, 客户数据的位置保持不变。
   
 ## <a name="related-topics"></a>相关主题 
  

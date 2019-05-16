@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '摘要: 配置和演示 Office 365 信息权限管理如何保护您的敏感文件, 即使这些文件发布到错误的 SharePoint Online 网站集也是如此。'
-ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070888"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的敏感文件保护
 
@@ -32,7 +32,7 @@ Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Onlin
 使用本文中的说明进行操作，你可以启用和测试 Office 365 中的 IRM，以查看 Office 365 试用订阅中的文件是否包含潜在敏感信息。
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可查看 Office 365 测试实验室指南堆栈中所有文章的直观映射。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>第 1 阶段：构建 Office 365 开发/测试环境
 
@@ -41,7 +41,7 @@ Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Onlin
 如果你想要测试模拟企业中的敏感文件保护，请按照 [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md) 中的说明进行操作。
   
 > [!NOTE]
-> 测试敏感文件保护不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试敏感文件保护，并在代表典型组织的环境中对其进行试验。 
+> 测试敏感文件保护不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试敏感文件保护，并在代表典型组织的环境中对其进行试验。 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>阶段 2：演示受权限保护的站点中的文档如何被泄漏
 
@@ -55,7 +55,7 @@ Office 365 中的信息权限管理 (IRM) 是一系列保护从 SharePoint Onlin
     
 - CLIENT1 虚拟机（对于模拟的企业 Office 365 开发/测试环境）。
     
-在 " **Windows PowerShell 凭据请求**" 对话框中, 键入 office 365 试用订阅的 office 365 全局jdoe@contosotoycompany.onmicrosoft.com管理员名称 (示例:) 和密码。
+在“**Windows PowerShell 凭据请求**”对话框中，键入 Office 365 试用订阅中的 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码。
   
 填写组织名称（示例：contosotoycompany）以及你所在位置的两位字符的国家/地区代码，然后从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
   
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 接下来，创建一个专用的执行人员组，并向其添加新的执行帐户。
   
-1. 在浏览器中, 转到 office 门户, [http://admin.microsoft.com](http://admin.microsoft.com)并使用全局管理员帐户登录到你的 office 365 试用订阅。
+1. 在浏览器中, 转到 Office 门户, [http://admin.microsoft.com](http://admin.microsoft.com)并使用全局管理员帐户登录到你的 office 365 试用订阅。
     
   - 如果使用的是轻型 Office 365 开发/测试环境，请打开 Internet Explorer 或浏览器的专用会话并从本地计算机登录。
     
@@ -140,7 +140,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. 在 SharePoint 组列表中，单击“**执行人员成员**”。
     
-9. 在“**人员和组**”页中，单击“**新建**”。
+9. 在“人员和组”页中，单击“新建”********。
     
 10. 在 **"共享 ' 执行人员 '"** 中, 键入**主管**, 单击 "**主管**" 组, 然后单击 "**共享**"。
     

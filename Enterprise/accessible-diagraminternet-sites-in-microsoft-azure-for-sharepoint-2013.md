@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: 本文是名为“Microsoft Azure for SharePoint 2013 中的 Internet 网站”的图的可访问文本版本。
-ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487688"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068638"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>可访问的图 - Microsoft Azure for SharePoint 2013 中的 Internet 站点
 
@@ -166,7 +166,7 @@ SharePoint 服务器场可能需要在 Azure 平台中针对可用性集进行�
   
 随附的图显示了以下方案：  
   
-将 SharePoint 2013 与 Azure Active Directory 集成时, azure 访问控制服务 (ACS) 有两个用途: 
+将 SharePoint 2013 与 Azure Active Directory 集成时, Azure 访问控制服务 (ACS) 有两个用途: 
   
 -   Azure AD 使用 SAML 2.0，SharePoint 仅适用于 SAML 1.1。ACS 了解这两种格式，并充当在 SharePoint 和 Azure AD 之间转换令牌格式的中介。   
     

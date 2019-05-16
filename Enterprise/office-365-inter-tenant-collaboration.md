@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: 了解 Office 365 协作在租户和组织中如何工作。
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cedeab08cf6daf3817179bcf770eda6598361e67
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492088"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069668"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Office 365 租户间协作
 
@@ -44,32 +44,32 @@ Office 365-租户之间的协作选项包括使用文件和对话的中央位置
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
 |与外部用户共享网站和文档  <br/> |管理员在租户或网站集级别配置 Microsoft 帐户身份验证、工作或学校帐户身份验证或来宾帐户的网站集级别的共享  <br/> |[管理 SharePoint Online 环境的外部共享](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Office 365 SharePoint Online 和 OneDrive for business 中的受限制域共享](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [将 SharePoint Online 用作企业到企业 (B2B) extranet 解决方案](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
-|跟踪和控制最终用户的外部共享  <br/> |OneDrive for business 文件所有者和 SharePoint Online 最终用户配置网站和文档共享并建立通知以跟踪共享  <br/> |[为 OneDrive for business 的外部共享配置通知](https://support.office.com/en-US/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [在 Office 365 中共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
+|跟踪和控制最终用户的外部共享  <br/> |OneDrive for Business 文件所有者和 SharePoint Online 最终用户配置网站和文档共享并建立通知以跟踪共享  <br/> |[为 OneDrive for business 的外部共享配置通知](https://support.office.com/en-US/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [在 Office 365 中共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
-## <a name="skype-for-business-collaboration-options"></a>Skype for business 协作选项
+## <a name="skype-for-business-collaboration-options"></a>Skype for Business 协作选项
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|skype for business Online-与其他 Skype for business 用户的 IM、呼叫和状态  <br/> |管理员可以为其 Skype for business Online 用户启用 IM、进行音频/视频通话, 并与其他 Office 365 租户中的用户查看状态。  <br/> |[允许用户连接外部 Skype for Business 用户](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
-|skype for business Online-skype (消费者) 用户的 IM、呼叫和状态  <br/> |管理员可以为其 skype for business Online 用户启用 IM、打电话和查看 skype (消费者) 用户的状态。  <br/> |[允许 skype for business 用户添加 skype 联系人](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
+|Skype for business Online-与其他 Skype for Business 用户的 IM、呼叫和状态  <br/> |管理员可以为其 Skype for business Online 用户启用 IM、进行音频/视频通话, 并与其他 Office 365 租户中的用户查看状态。  <br/> |[允许用户连接外部 Skype for Business 用户](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
+|Skype for business Online-Skype (消费者) 用户的 IM、呼叫和状态  <br/> |管理员可以为其 Skype for business Online 用户启用 IM、打电话和查看 Skype (消费者) 用户的状态。  <br/> |[允许 Skype for Business 用户添加 Skype 联系人](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
    
 ## <a name="azure-ad-b2b-collaboration-options"></a>Azure AD B2B 协作选项
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|Azure AD B2B 协作-通过将外部用户添加到组织目录中的组中的内容共享  <br/> |一个 office 365 租户的全局管理员可以邀请另一个 office 365 租户中的人员加入其目录, 将这些外部用户添加到一个组, 并授予对内容的访问权限, 如组的 SharePoint 网站和库。  <br/> |[什么是 Azure AD B2B 协作预览？](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: 新的更新使跨业务 collab 变得轻松](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365 外部共享和 Azure Active Directory B2B 协作](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory B2B 协作 API 和自定义](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-api) <br/> [azure ad 和 Identity Show: azure ad B2B 协作 (企业到企业)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
+|Azure AD B2B 协作-通过将外部用户添加到组织目录中的组中的内容共享  <br/> |一个 Office 365 租户的全局管理员可以邀请另一个 Office 365 租户中的人员加入其目录, 将这些外部用户添加到一个组, 并授予对内容的访问权限, 如组的 SharePoint 网站和库。  <br/> |[什么是 Azure AD B2B 协作预览？](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: 新的更新使跨业务 collab 变得轻松](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365 外部共享和 Azure Active Directory B2B 协作](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory B2B 协作 API 和自定义](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-api) <br/> [Azure AD 和 Identity Show: Azure AD B2B 协作 (企业到企业)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
    
 ## <a name="office-365-collaboration-options"></a>Office 365 协作选项
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|Office 365 组-电子邮件、日历、OneNote 和共享文件位于一个中心位置  <br/> |在业务重点、商业高级版、教育版、企业版 E1、E3 和 E5 计划中支持组。 一个 office 365 租户中的人员可以创建一个组, 并将另一个 office 365 租户中的人员邀请为来宾用户。 也适用于 Dynamics CRM。  <br/> |[了解 Office 365 组](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) <br/> [Office 365 组中的来宾访问](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) <br/> [部署 Office 365 组](https://technet.microsoft.com/en-us/library/dn896591.aspx) <br/> |
+|Office 365 组-电子邮件、日历、OneNote 和共享文件位于一个中心位置  <br/> |在业务重点、商业高级版、教育版、企业版 E1、E3 和 E5 计划中支持组。 一个 Office 365 租户中的人员可以创建一个组, 并将另一个 Office 365 租户中的人员邀请为来宾用户。 也适用于 Dynamics CRM。  <br/> |[了解 Office 365 组](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) <br/> [Office 365 组中的来宾访问](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) <br/> [部署 Office 365 组](https://technet.microsoft.com/en-us/library/dn896591.aspx) <br/> |
    
 ## <a name="yammer-collaboration-options"></a>Yammer 协作选项
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|Yammer-通过企业社交媒体进行协作  <br/> |除非 Yammer 管理员禁用了创建外部组的功能, 否则用户可以创建外部组以通过对话、喜欢和关注帖子、共享文件和在线聊天的能力在 yammer 中进行协作。  <br/> |[在 Yammer 中创建和管理外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
+|Yammer-通过企业社交媒体进行协作  <br/> |除非 Yammer 管理员禁用了创建外部组的功能, 否则用户可以创建外部组以通过对话、喜欢和关注帖子、共享文件和在线聊天的能力在 Yammer 中进行协作。  <br/> |[在 Yammer 中创建和管理外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
    
 ## <a name="teams-collaboration-options"></a>团队协作选项
 
@@ -91,9 +91,9 @@ Office 365-租户之间的协作选项包括使用文件和对话的中央位置
 
 每个组织都维护自己的用户帐户、标识、安全组、订阅、许可证和存储。 用户将 Office 365 中的协作功能与共享策略和安全设置结合使用, 以提供对所需信息的访问权限, 同时保持对公司资产的控制。
   
-- **用户帐户:** 帐户无法共享, 并且在内部部署 Active directory 目录服务中的租户或分区之间无法复制帐户。 
+- **用户帐户:** 帐户无法共享, 并且在内部部署 Active Directory 目录服务中的租户或分区之间无法复制帐户。 
     
-- **许可证&amp;订阅:** 在 Office 365 中, 许可计划 (也称为 sku 或 Office 365 计划) 的许可证为用户提供了对为这些计划定义的 Office 365 服务的访问权限。 
+- **许可证&amp;订阅:** 在 Office 365 中, 许可计划 (也称为 Sku 或 Office 365 计划) 的许可证为用户提供了对为这些计划定义的 Office 365 服务的访问权限。 
     
 - **存储:** 在 Office 365 计划中, SharePoint Online 的软件边界和限制与邮箱存储限制分开管理。 邮箱存储限制通过使用 Exchange Online 进行设置和管理。 在这两种情况下, 存储不能跨租户共享。 
     

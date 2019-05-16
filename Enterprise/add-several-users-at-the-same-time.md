@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365P_AddUsersCSV
@@ -24,18 +24,18 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Office 365 for business 中添加多个用户。 观看 YouTube 上的视频, 说明如何将帐户添加到 Office 365。 在此过程结束时, 拥有帐户的每位用户都将拥有一个 Office 365 邮箱。 '
-ms.openlocfilehash: 1f91821ee552b59201ca01bdbce7edc0406929d6
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491468"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068688"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同时向 Office 365 添加多个用户 - 管理员帮助
 
-团队中的每个人都需要用户帐户, 才能登录并访问 office 365 服务 (如电子邮件和 Office)。 如果有很多人, 则可以从 Excel 电子表格或以 CSV 格式保存的其他文件中一次添加所有帐户。 [不确定哪种 CSV 格式？](add-several-users-at-the-same-time.md#__toc316652088)
+团队中的每个人都需要用户帐户, 才能登录并访问 Office 365 服务 (如电子邮件和 Office)。 如果有很多人, 则可以从 Excel 电子表格或以 CSV 格式保存的其他文件中一次添加所有帐户。 [不确定哪种 CSV 格式？](add-several-users-at-the-same-time.md#__toc316652088)
   
-## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>将多个用户添加到 office 365 管理中心中的 office 365
+## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>将多个用户添加到 Office 365 管理中心中的 Office 365
 
 1. 使用工作或学校帐户登录 Office 365。 
     
@@ -51,7 +51,7 @@ ms.locfileid: "33491468"
   
     您的电子表格需要包含与样本 1 (用户名、名字等)**完全相同的列标题**。如果使用模板, 请在文本编辑工具 (如记事本) 中打开它, 并考虑仅保留第1行中的所有数据, 并且仅在第2行和更低的行中输入数据。 
     
-    您的电子表格还需要包含用户名的值 (如 bob@contoso.com) 和每个用户的显示名称 (如 bob 凯利)。 
+    您的电子表格还需要包含用户名的值 (如 bob@contoso.com) 和每个用户的显示名称 (如 Bob 凯利)。 
     
   ```
   User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Fax,Address,City,State or Province,ZIP or Postal Code,Country or Region
@@ -83,9 +83,9 @@ ms.locfileid: "33491468"
 ## <a name="next-steps"></a>后续步骤
 <a name="bk_preview"> </a>
 
-- 现在, 这些人具有帐户, 需要在[电脑或 Mac 上下载并安装或重新安装 office 365 或 office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)。 您的团队中的每个人都可以在最高5台电脑或 mac 上安装 Office 365。 
+- 现在, 这些人具有帐户, 需要在[电脑或 Mac 上下载并安装或重新安装 office 365 或 office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)。 您的团队中的每个人都可以在最高5台电脑或 Mac 上安装 Office 365。 
     
-- 每个人还可以在最大5个平板电脑和5个电话 (例如 iphone、ipad 和 Android 电话和平板电脑) 上的[移动设备上设置 Office 应用和电子邮件](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f)。 这样一来, 他们就可以从任何位置编辑 Office 文件。 
+- 每个人还可以在最大5个平板电脑和5个电话 (例如 Iphone、Ipad 和 Android 电话和平板电脑) 上的[移动设备上设置 Office 应用和电子邮件](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f)。 这样一来, 他们就可以从任何位置编辑 Office 文件。 
     
     有关安装步骤的端到端列表, 请参阅[设置 Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 。 
     
@@ -116,7 +116,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
     
 - * * 电子表格是否可以小或大？ * * 电子表格必须至少有两行。 一个用于列标题 (用户数据列标签), 另一个用于用户。 行数不能超过251。 如果需要导入多于250个用户, 可以创建多个电子表格。 
     
-- * * 我可以使用哪些语言？ * * 创建电子表格时, 可以输入任何语言或字符形式的用户数据列标签, 但不能更改标签的顺序, 如示例中所示。 然后, 可以使用任何语言或字符将条目输入到字段中, 并将文件保存为 Unicode 或 utf-8 格式。 
+- * * 我可以使用哪些语言？ * * 创建电子表格时, 可以输入任何语言或字符形式的用户数据列标签, 但不能更改标签的顺序, 如示例中所示。 然后, 可以使用任何语言或字符将条目输入到字段中, 并将文件保存为 Unicode 或 UTF-8 格式。 
     
 - **如果我要从不同的国家或地区添加用户, 该怎么办？** 为每个区域创建单独的电子表格。 您需要逐步完成每个电子表格的 "批量添加用户" 向导, 为所使用的文件中包含的所有用户提供一个位置。 
     
@@ -146,13 +146,13 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
     
 - * * 如果你没有立即在 Office 365 中看到新用户, 请稍等几分钟。 * * Office 365 中的所有服务所做的更改可能需要一些时间。 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>将多个用户添加到旧版 office 365 管理中心中的 office 365
+## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>将多个用户添加到旧版 Office 365 管理中心中的 Office 365
 
 1. 下载[此示例电子表格](https://www.microsoft.com/en-us/download/details.aspx?id=45485)并在 Excel 中打开它。 
     
     您的电子表格需要包含与样本 1 (用户名、名字等)**完全相同的列标题**。如果使用模板, 请考虑仅将行1中的所有数据保留, 并且仅在第2行和更低的行中输入数据。 
     
-    您的电子表格还需要包含用户名的值 (如 bob@contoso.com) 和每个用户的显示名称 (如 bob 凯利)。 若要将其他字段保留为空, 请在字段中输入空格以及逗号, 如下图所示。 
+    您的电子表格还需要包含用户名的值 (如 bob@contoso.com) 和每个用户的显示名称 (如 Bob 凯利)。 若要将其他字段保留为空, 请在字段中输入空格以及逗号, 如下图所示。 
     
     ![指定了空行的示例 CVS 文件](media/9c596ba1-1053-4687-a46c-c9359e9818c9.png)
   
@@ -208,6 +208,6 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
     
     ![批量添加用户向导的步骤 6-发送结果](media/0cd43832-071b-4b33-b57a-5d07959985ad.png)
   
-12. 将用户添加到 Office 365 后, 需要告诉他们 office 365 帐户信息。 使用正常的过程传递新密码。
+12. 将用户添加到 Office 365 后, 需要告诉他们 Office 365 帐户信息。 使用正常的过程传递新密码。
     
 

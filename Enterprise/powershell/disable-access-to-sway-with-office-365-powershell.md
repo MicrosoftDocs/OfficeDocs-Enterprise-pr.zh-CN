@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
 description: 了解从何处下载 ManageSway.ps1 PowerShell 脚本，使用此脚本，可以禁用对 Office 365 组织中的 Sway 的访问。
-ms.openlocfilehash: 38f50a483f7bb42ad2d944cf95c49050cf35bfb1
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 23927adbd8ab63161b6c53efc36e49317f930a6c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068978"
 ---
 # <a name="disable-access-to-sway-with-office-365-powershell"></a>使用 Office 365 PowerShell 禁止访问 Sway
 

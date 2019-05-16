@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/18/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: 说明如何使用 office 365 PowerShell 将 office 365 许可证分配给未经许可的用户。
-ms.openlocfilehash: ac2cdb8c303cacc5c9664b877ba86a5b196432b1
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+description: 说明如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
+ms.openlocfilehash: 91fe9f3a14663ebb9adb61700de3004edd236e0c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069278"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 向用户帐户分配许可证
 
-**摘要:** 说明如何使用 office 365 PowerShell 将 office 365 许可证分配给未经许可的用户。
+**摘要:** 说明如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
   
 用户在向其帐户分配许可计划中的许可证之前, 不能使用任何 Office 365 服务。 您可以使用 Office 365 PowerShell 将许可证快速分配给未经许可的帐户。 
 

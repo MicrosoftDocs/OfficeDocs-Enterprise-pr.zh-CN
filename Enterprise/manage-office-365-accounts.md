@@ -1,10 +1,9 @@
 ---
 title: 用于管理 Office 365 帐户的工具
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 5/3/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: '了解用于管理 Office 365 用户的工具, 以及您可以使用的工具取决于管理用户身份的方式。 '
-ms.openlocfilehash: fb98c7103aaadb16ac6f7d459a2595022110bb94
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a9bd7cd75902d2b3b3ff17572849fb1a46053eb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487068"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067188"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>用于管理 Office 365 帐户的工具
 
@@ -66,7 +65,7 @@ ms.locfileid: "33487068"
 |Windows PowerShell  <br/> |[使用 Windows PowerShell 管理 Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  允许您使用 Windows PowerShell 脚本在批量用户中添加用户。  <br/>  可用于将位置和许可证分配给帐户, 而不考虑帐户的创建方式。  <br/> |
 |批量导入  <br/> |[同时向 Office 365 添加多个用户 - 管理员帮助](add-several-users-at-the-same-time.md) <br/>  允许您导入 CSV 文件以将一组用户添加到 Office 365。  <br/>  不能与 SSO 选项一起使用。  <br/> |
 |Azure Active Directory  <br/> |你可以使用 Office 365 订阅获取 Azure Active Directory 的免费版本。 您可以为云用户执行自助密码重置等功能, 并使用免费版本自定义登录和访问面板页。 若要获取增强的功能, 您可以升级到基本版本或高级版。 有关支持的功能的列表, 请参阅[Azure Active Directory 版本](https://go.microsoft.com/fwlink/p/?LinkId=698465)。  <br/> |
-|目录同步  <br/> |[将本地标识与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  对于使用或不使用密码同步进行目录同步, 请将[Azure AD Connect 与 express 设置结合](https://go.microsoft.com/fwlink/p/?LinkID=698537)使用。  <br/>  对于多个林和 SSO 选项, 请使用[自定义安装的 Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430)。  <br/>  提供启用 SSO 所需的基础结构。  <br/>  对于很多混合方案是必需的:  <br/>  暂存迁移  <br/>  混合 Exchange  <br/>  将本地目录中的安全和已启用邮件的组同步。  <br/> |
+|目录同步  <br/> |[将本地标识与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  对于使用或不使用密码同步进行目录同步, 请将[AZURE AD Connect 与 express 设置结合](https://go.microsoft.com/fwlink/p/?LinkID=698537)使用。  <br/>  对于多个林和 SSO 选项, 请使用[自定义安装的 AZURE AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430)。  <br/>  提供启用 SSO 所需的基础结构。  <br/>  对于很多混合方案是必需的:  <br/>  暂存迁移  <br/>  混合 Exchange  <br/>  将本地目录中的安全和已启用邮件的组同步。  <br/> |
    
 - 无论您打算如何将用户帐户添加到 Office 365, 您都需要管理多个帐户功能, 例如分配许可证、指定位置等。 可以从管理中心管理这些功能, 也可以[使用 Office 365 PowerShell 来创建用户帐户](https://go.microsoft.com/fwlink/p/?LinkId=717083)。
     

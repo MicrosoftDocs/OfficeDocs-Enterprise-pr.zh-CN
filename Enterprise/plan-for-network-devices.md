@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '摘要: 介绍用于连接到 Office 365 的网络容量、WAN 加速器和负载平衡设备的注意事项。'
-ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 6ff63232d4efe581ed4a6ba0a83730a5362ecff7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492065"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069368"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 
@@ -33,16 +33,16 @@ ms.locfileid: "33492065"
 |:-----|
 | 本文是[Office 365 的网络规划和性能调整](https://aka.ms/tune)的一部分。|
 
-内部部署传出 Internet 代理设置还会影响到适用于客户端应用程序的 Office 365 服务的连接。 您还必须将网络代理设备配置为允许与 Microsoft 云服务 url 和应用程序建立连接。 每个组织都不同。 若要了解 Microsoft 如何管理此过程以及我们预配的带宽量, 请[阅读案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)。
+内部部署传出 Internet 代理设置还会影响到适用于客户端应用程序的 Office 365 服务的连接。 您还必须将网络代理设备配置为允许与 Microsoft 云服务 Url 和应用程序建立连接。 每个组织都不同。 若要了解 Microsoft 如何管理此过程以及我们预配的带宽量, 请[阅读案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)。
   
-以下 skype for business 帮助文章包含有关 Skype for business 设置的详细信息:
+以下 Skype for Business 帮助文章包含有关 Skype for Business 设置的详细信息:
   
 - [对适用于管理员的 Skype for business Online 登录错误进行故障排除](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [无法连接到 Skype for business, 或某些功能不起作用, 因为本地防火墙阻止了连接](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
-> 虽然这些设置中的许多都是 Skype for business, 但有关网络配置的一般指导对所有 Office 365 服务都很有用。
+> 虽然这些设置中的许多都是 Skype for Business, 但有关网络配置的一般指导对所有 Office 365 服务都很有用。
   
 ## <a name="determining-network-capacity"></a>确定网络容量
 
@@ -54,7 +54,7 @@ ms.locfileid: "33492065"
   
 ## <a name="wan-accelerators"></a>WAN 加速器
 
-如果您的组织使用广域网络 (WAN) 加速代理设备, 则在访问 Office 365 服务时可能会遇到问题。 你可能需要优化你的网络设备或设备, 以确保你的用户在访问 Office 365 时具有一致的体验。 例如, office 365 服务对某些 Office 365 内容和 TCP 标头进行加密。 你的设备可能无法处理此类流量。
+如果您的组织使用广域网络 (WAN) 加速代理设备, 则在访问 Office 365 服务时可能会遇到问题。 你可能需要优化你的网络设备或设备, 以确保你的用户在访问 Office 365 时具有一致的体验。 例如, Office 365 服务对某些 Office 365 内容和 TCP 标头进行加密。 你的设备可能无法处理此类流量。
   
 阅读我们关于将[WAN 优化控制器或流量/检查设备与 Office 365 结合使用的](https://support.microsoft.com/kb/2690045)支持声明。
   

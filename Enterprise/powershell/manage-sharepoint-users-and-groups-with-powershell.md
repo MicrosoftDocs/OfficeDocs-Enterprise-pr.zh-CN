@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/07/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '摘要: 使用 Office 365 PowerShell 管理 SharePoint Online 用户、组和网站。'
-ms.openlocfilehash: 747371b6ea63431fedb60fa9165fe496acb5b7c7
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573986"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068818"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 SharePoint Online 用户和组
 
@@ -27,7 +27,7 @@ ms.locfileid: "30573986"
 
 如果您是使用大型用户帐户或组列表的 SharePoint Online 管理员, 并且想要更轻松地管理它们, 则可以使用 Office 365 PowerShell。 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 本主题中的过程要求您连接到 SharePoint Online。 有关说明, 请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -167,7 +167,7 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>自动化管理大型用户和组列表
 
-若要向 SharePoint 网站添加大量帐户并向其授予权限, 可以使用 Microsoft 365 管理中心、各个 powershell 命令或 powershell a CSV 文件。 在这些选择中，CSV 文件是自动执行此任务的最快方法。
+若要向 SharePoint 网站添加大量帐户并向其授予权限, 可以使用 Microsoft 365 管理中心、各个 PowerShell 命令或 PowerShell a CSV 文件。 在这些选择中，CSV 文件是自动执行此任务的最快方法。
 
 基本过程是，创建具有与 Windows PowerShell 脚本所需的参数对应的标头（列）的 CSV 文件。 您可以在 Excel 中轻松创建这样的列表, 然后将其导出为 CSV 文件。 然后使用 Windows PowerShell 脚本循环访问 CSV 文件中的记录（行），将用户添加到组，将组添加到网站。 
 
@@ -268,7 +268,7 @@ $site = "Project01"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-请注意, 我们只需要更改 **$site**变量。 **$tenant**变量通过命令的所有三个运行保留其值。
+请注意, 我们只需要更改 **$site**变量。 **$Tenant**变量通过命令的所有三个运行保留其值。
 
 但是，如果要对每个网站进行此操作，应该怎么做？通过使用以下命令，您无需键入所有这些网站就可以进行操作：
 
@@ -276,7 +276,7 @@ Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wra
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-此报告相当简单，你可以添加更多代码以创建更多特定报告或包括更多详细信息的报告。 但这将使您了解如何使用 sharepoint online 命令行管理程序来管理 sharepoint online 环境中的用户。
+此报告相当简单，你可以添加更多代码以创建更多特定报告或包括更多详细信息的报告。 但这将使您了解如何使用 SharePoint Online 命令行管理程序来管理 SharePoint Online 环境中的用户。
    
 ## <a name="see-also"></a>另请参阅
 

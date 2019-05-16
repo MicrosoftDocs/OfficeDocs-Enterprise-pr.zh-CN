@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 2/23/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: 本文介绍如何使用 Internet Explorer 开发人员工具诊断 SharePoint Online 网站的常见问题。
-ms.openlocfilehash: 89d4544bfabf6424b5f401bad7d63bd7fa41b5ca
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: dfc66822a98ce26bfd9fd94d9d58882b8b140831
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492248"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067858"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>诊断 SharePoint Online 的性能问题
 
@@ -60,12 +60,12 @@ ms.locfileid: "33492248"
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>为 SharePoint Online 设置非自定义基准
 <a name="F12ToolInfo"> </a>
 
-确定网站性能薄弱点的最佳方式是在 SharePoint Online 中设置完全开箱即用的网站集。 通过这种方式, 您可以将网站的各个方面与在页面上没有自定义的内容进行比较。 OneDrive for business 主页是一个不太可能具有任何自定义项的单独网站集的一个很有用的示例。
+确定网站性能薄弱点的最佳方式是在 SharePoint Online 中设置完全开箱即用的网站集。 通过这种方式, 您可以将网站的各个方面与在页面上没有自定义的内容进行比较。 OneDrive for Business 主页是一个不太可能具有任何自定义项的单独网站集的一个很有用的示例。
   
 ## <a name="viewing-sharepoint-response-header-information"></a>查看 SharePoint 响应头信息
 <a name="F12ToolInfo"> </a>
 
-在 sharepoint Online 和 sharepoint Server 2013 中, 可以访问发送回每个文件的响应头中的浏览器的信息。 诊断性能问题的两个最有用的值是 SPRequestDuration 和 X-SharePointHealthScore:
+在 SharePoint Online 和 SharePoint Server 2013 中, 可以访问发送回每个文件的响应头中的浏览器的信息。 诊断性能问题的两个最有用的值是 SPRequestDuration 和 X-SharePointHealthScore:
   
 - **SPRequestDuration**
     

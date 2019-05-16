@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
-ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487270"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069918"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
@@ -36,7 +36,7 @@ ms.locfileid: "33487270"
 
 |||
 |:-----|:-----|
-|![请参阅适用于企业架构师的 Microsoft 云网络海报](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|有关为 Office 365 和其他 Microsoft 云平台和服务优化网络的步骤, 请参阅适用于[企业架构师的 microsoft 云网络](https://aka.ms/cloudarchnetworking)海报。 |
+|![请参阅适用于企业架构师的 Microsoft 云网络海报](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)|有关为 Office 365 和其他 Microsoft 云平台和服务优化网络的步骤, 请参阅适用于[企业架构师的 Microsoft 云网络](https://aka.ms/cloudarchnetworking)海报。 |
    
 ## <a name="estimate-network-bandwidth-requirements"></a>估计网络带宽要求
 <a name="EstimateBandwidthRequirements"> </a>
@@ -69,13 +69,13 @@ ms.locfileid: "33487270"
 
 深入了解这些最佳做法, 以了解有关改进 Office 365 体验的详细信息。
   
-1. 想要立即开始帮助你的用户吗？ 有关在[慢速网络上使用 office 365 的最佳实践](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166), 请参阅在网络不合作时使用 office 365 的提示 (包括 SharePoint online、Exchange online 和 Lync online)。 本文链接到 TechNet 和 Support.office.com 上的内容加载以优化 office 365 体验, 其中包括有关自定义网页的简单方法以及如何设置 Internet Explorer 设置以实现最佳 office 365 体验的信息。 
+1. 想要立即开始帮助你的用户吗？ 有关在[慢速网络上使用 office 365 的最佳实践](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166), 请参阅在网络不合作时使用 office 365 的提示 (包括 SharePoint Online、Exchange Online 和 Lync online)。 本文链接到 TechNet 和 Support.office.com 上的内容加载以优化 Office 365 体验, 其中包括有关自定义网页的简单方法以及如何设置 Internet Explorer 设置以实现最佳 Office 365 体验的信息。 
     
 2. 阅读[office 365 网络连接原则](https://aka.ms/o365networkingprinciples), 了解用于安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。 
     
 3. 通过仔细管理 Windows 更新的日程安排, 提高邮件迁移性能。 您可以成批更新客户端计算机, 并确保在迁移到 Office 365 之前更新所有客户端计算机, 以控制网络带宽的使用。 有关详细信息, 请参阅为[Office 365 手动更新和配置桌面, 以获取最新更新](https://support.microsoft.com/gp/office-2013-365-update)。
     
-4. Office 365 网络流量在被视为受信任的 internet 服务时执行得最佳, 并允许绕过大部分传统筛选和扫描, 以避免某些组织将网络流量置于不受信任的 internet 服务中。 这通常包括删除出站处理 (如代理用户身份验证和数据包检查), 并确保使用正确的网络地址转换 (NAT) 和足够的带宽容量来处理已增加的 Internet 的本地出口。网络请求。 有关配置网络以将 office 365 作为受信任的 Internet 服务在网络上进行处理的其他指导, 请参阅[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。
+4. Office 365 网络流量在被视为受信任的 Internet 服务时执行得最佳, 并允许绕过大部分传统筛选和扫描, 以避免某些组织将网络流量置于不受信任的 Internet 服务中。 这通常包括删除出站处理 (如代理用户身份验证和数据包检查), 并确保使用正确的网络地址转换 (NAT) 和足够的带宽容量来处理已增加的 Internet 的本地出口。网络请求。 有关配置网络以将 Office 365 作为受信任的 Internet 服务在网络上进行处理的其他指导, 请参阅[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。
     
 1. 确保[管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。 转到 Office 365 的其他流量会导致出站代理连接的增加以及通过 TLS/SSL 的安全通信的增长。
     
@@ -85,7 +85,7 @@ ms.locfileid: "33487270"
     
 4. 确定公共 IP 地址支持的最大设备数以及如何在多个 IP 地址之间实现负载平衡。 有关详细信息，请参阅[与 Office 365 的 NAT 支持](nat-support-with-office-365.md)。
     
-5. 如果要检查来自网络上的计算机的出站连接, 则绕过对 Office 365 域的此筛选可提高连接性和性能。 此外, 绕过出站检查通常无需进行单个 Internet 出口, 并为 Office 365 发来的网络请求启用本地 internet 出口。
+5. 如果要检查来自网络上的计算机的出站连接, 则绕过对 Office 365 域的此筛选可提高连接性和性能。 此外, 绕过出站检查通常无需进行单个 Internet 出口, 并为 Office 365 发来的网络请求启用本地 Internet 出口。
     
 6. 某些客户发现内部网络设置可能会影响性能。 指向 Internet 的最大传输单位 (MTU) 大小、网络自动协商或自动检测以及子最佳路由等设置是常见的外观。
     

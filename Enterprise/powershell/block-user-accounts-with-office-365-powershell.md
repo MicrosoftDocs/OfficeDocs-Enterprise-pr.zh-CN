@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,19 +13,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: 介绍如何使用 office 365 PowerShell 阻止和取消阻止对 Office 365 帐户的访问。
-ms.openlocfilehash: 0e1ac3f61acafedd77c2af760b8316aa6b936e7b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 介绍如何使用 Office 365 PowerShell 阻止和取消阻止对 Office 365 帐户的访问。
+ms.openlocfilehash: a2edecf7bc47d39aa9aeb965c7b2834e37820a36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491388"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069208"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 冻结用户账户
 
-**摘要:** 介绍如何使用 office 365 PowerShell 阻止和取消阻止对 Office 365 帐户的访问。
+**摘要:** 介绍如何使用 Office 365 PowerShell 阻止和取消阻止对 Office 365 帐户的访问。
   
-阻止访问 office 365 帐户将阻止任何人使用该帐户登录并访问 Office 365 组织中的服务和数据。 您可以使用 Office 365 PowerShell 阻止对单个和多个用户帐户的访问。
+阻止访问 Office 365 帐户将阻止任何人使用该帐户登录并访问 Office 365 组织中的服务和数据。 您可以使用 Office 365 PowerShell 阻止对单个和多个用户帐户的访问。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -93,7 +93,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-在以下命令中, 示例文本文件为 C:\My Documents\Accounts.txt。 将此替换为您的文本文件的路径和文件名。
+在以下命令中, 示例文本文件为 C:\My Documents\Accounts.txt. 将此替换为您的文本文件的路径和文件名。
   
 若要阻止访问该文本文件中列出的帐户，请运行以下命令：
     
@@ -147,7 +147,7 @@ akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
   ```
-在以下命令中, 示例文本文件为 C:\My Documents\Accounts.txt。 将此替换为您的文本文件的路径和文件名。
+在以下命令中, 示例文本文件为 C:\My Documents\Accounts.txt. 将此替换为您的文本文件的路径和文件名。
     
 若要阻止访问该文本文件中列出的帐户，请运行以下命令：
     

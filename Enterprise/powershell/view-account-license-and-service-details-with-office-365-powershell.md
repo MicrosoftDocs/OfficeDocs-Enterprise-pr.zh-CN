@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/13/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: 说明如何使用 office 365 PowerShell 确定已分配给用户的 office 365 服务。
-ms.openlocfilehash: 113107df75880a21210991d5b301245d75c5c739
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+description: 说明如何使用 Office 365 PowerShell 确定已分配给用户的 Office 365 服务。
+ms.openlocfilehash: 608d26dfc4aa1be782f94aa3b1ba5f66a0378f1e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30052966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071118"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 
-**摘要:** 说明如何使用 office 365 PowerShell 确定已分配给用户的 office 365 服务。
+**摘要:** 说明如何使用 Office 365 PowerShell 确定已分配给用户的 Office 365 服务。
   
-在 Office 365 中, 许可计划 (也称为 sku 或 Office 365 计划) 的许可证为用户提供了对为这些计划定义的 Office 365 服务的访问权限。但是, 用户可能无法访问当前分配给他们的许可证中可用的所有服务。您可以使用 Office 365 PowerShell 来查看用户帐户上的服务的状态。 
+在 Office 365 中, 许可计划 (也称为 Sku 或 Office 365 计划) 的许可证为用户提供了对为这些计划定义的 Office 365 服务的访问权限。 但是, 用户可能无法访问当前分配给他们的许可证中可用的所有服务。 您可以使用 Office 365 PowerShell 来查看用户帐户上的服务的状态。 
 
 有关许可计划、许可证和服务的详细信息, 请参阅[使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。
 
@@ -98,13 +98,13 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
-本示例显示用户 BelindaN@litwareinc.com 有权访问的服务。这将显示与分配给她的帐户相关联的所有许可证相关联的服务。
+本示例显示用户 BelindaN@litwareinc.com 有权访问的服务。 这将显示与分配给她的帐户相关联的所有许可证相关联的服务。
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
-本示例说明了用户 BelindaN@litwareinc.com 使用向她的帐户（索引号是 0）分配的第一个许可证有权访问的服务。
+本示例显示了用户 BelindaN@litwareinc.com 可以从分配给她的帐户 (索引号为 0) 的第一个许可证访问的服务。
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus

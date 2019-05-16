@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: '摘要: 使用 office 365 PowerShell 配置 office 365 租户中单个或多个用户帐户的属性。'
-ms.openlocfilehash: 4db63482fdcc1d6cb186e663fd55c13186b33813
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: '摘要: 使用 Office 365 PowerShell 配置 Office 365 租户中单个或多个用户帐户的属性。'
+ms.openlocfilehash: 3fdf5c4c5dbb4c44a3c91d343bd77810a1411a20
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069234"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>使用 Office 365 PowerShell 配置用户帐户的属性
 
- **摘要:** 使用 office 365 PowerShell 配置 office 365 租户中单个或多个用户帐户的属性。
+ **摘要:** 使用 Office 365 PowerShell 配置 Office 365 租户中单个或多个用户帐户的属性。
   
-虽然您可以使用 office 365 管理中心来配置 office 365 租户的用户帐户的属性, 但您也可以使用 office 365 PowerShell 并执行 office 365 管理中心无法执行的某些操作。
+虽然您可以使用 Office 365 管理中心来配置 Office 365 租户的用户帐户的属性, 但您也可以使用 Office 365 PowerShell 并执行 Office 365 管理中心无法执行的某些操作。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -40,13 +40,13 @@ ms.locfileid: "33491428"
   
 - -部门 "\<部门 name>"
     
-- -DisplayName "\<full user name>"
+- -DisplayName "\<Full user name>"
     
 - -FacsimilieTelephoneNumber "\<fax number>"
     
-- -GivenName "\<user first name>"
+- -GivenName "\<User first name>"
     
-- -姓 "\<user last name>"
+- -姓 "\<User last name>"
     
 - -移动电话\<"移动电话 number>"
     
@@ -58,13 +58,13 @@ ms.locfileid: "33491428"
     
 - -市/\<县 "city name>"
     
-- -state "\<state name>"
+- -State "\<state name>"
     
 - -邮政编码 "\<邮政 code>"
     
 - -国家/\<地区国家/地区的 "name>"
     
-- -TelephoneNumber "\<office phone number>"
+- -TelephoneNumber "\<Office phone number>"
     
 - -UsageLocation "\<2 个字符的国家或地区 code>"
     
@@ -141,7 +141,7 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-若要使用适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块配置用户帐户的属性, 请使用 get-msoluser cmdlet 并指定要设置或更改的属性。 
+若要使用适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块配置用户帐户的属性, 请使用 Get-msoluser cmdlet 并指定要设置或更改的属性。 
 
 首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
@@ -157,29 +157,29 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
     
 - -部门 "\<部门 name>"
     
-- -DisplayName "\<full user name>"
+- -DisplayName "\<Full user name>"
     
-- -fax "\<fax number>"
+- -Fax "\<fax number>"
     
-- -FirstName "\<user first name>"
+- -FirstName "\<User first name>"
     
-- -LastName "\<user last name>"
+- -LastName "\<User last name>"
     
 - -MobilePhone "\<移动电话 number>"
     
-- -office "\<office location>"
+- -Office "\<office location>"
     
-- -PhoneNumber "\<office phone number>"
+- -PhoneNumber "\<Office phone number>"
     
 - -邮政编码 "\<邮政 code>"
     
 - -PreferredLanguage "\<language>"
     
-- -state "\<state name>"
+- -State "\<state name>"
     
 - -StreetAddress "\<街道 address>"
     
-- -title "\<title name>"
+- -Title "\<title name>"
     
 - -UsageLocation "\<2 个字符的国家或地区 code>"
     

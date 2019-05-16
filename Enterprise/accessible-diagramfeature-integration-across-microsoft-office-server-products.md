@@ -4,23 +4,23 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: 本文是名为“跨 Microsoft Office Server 产品的功能集成 - SharePoint Server、Exchange Server、Lync Server 和 Office Online”的图的可访问文本版本。
-ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487808"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068768"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>可访问的图 - 跨 Microsoft Office Server 产品的功能集成
 
-**摘要:** 本文是在 Microsoft Office Server 产品-SharePoint server、Exchange server、Lync server 和 Office Online 中名为 "功能集成" 的图表的可访问文本版本。
+**摘要:** 本文是在 Microsoft Office Server 产品-SharePoint Server、Exchange Server、Lync Server 和 Office Online 中名为 "功能集成" 的图表的可访问文本版本。
   
 图包含多个选项卡, 如本文档的部分标题中所示。
   
@@ -132,7 +132,7 @@ Outlook Web App 中的 Lync 状态。此功能适用于： 
 
 Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件提供基于浏览器的文件查看和编辑服务。Office Web Apps Server 适用于支持 Web 应用程序开放平台接口协议 (WOPI) 的产品和服务。这些产品也称为主机，包括 SharePoint 2013、Lync Server 2013 和 Exchange Server 2013。   
   
-若要了解有关 Office web apps Server 的详细信息, 请下载 office web apps 部署http://aka.ms/OfficeWebAppsPoster简化的海报。 
+若要了解有关 Office Web Apps Server 的详细信息, 请下载 Office Web Apps 部署http://aka.ms/OfficeWebAppsPoster简化的海报。 
   
 ## <a name="server-to-server-authentication-tab"></a>“服务器到服务器身份验证”选项卡。
 
@@ -162,11 +162,11 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
   
 下表列出了每个服务器的 JSON 元数据终结点。下表显示了：  
   
-- 具有 https://<server name>/autodiscover/metadata/json/1 的 JSON 元数据终结点的 Exchange 服务器 
+- 具有 https://<server name>/AUTODISCOVER/METADATA/JSON/1 的 JSON 元数据终结点的 Exchange 服务器 
     
-- 具有 https://<server name>/metadata/json/1 的 JSON 元数据终结点的 Lync 服务器 
+- 具有 https://<server name>/METADATA/JSON/1 的 JSON 元数据终结点的 Lync 服务器 
     
-- 具有 https://<web app name>/_layouts/15/metadata/json/1 的 JSON 元数据终结点的 SharePoint 服务器 
+- 具有 https://<web app name>/_LAYOUTS/15/METADATA/JSON/1 的 JSON 元数据终结点的 SharePoint 服务器 
     
 ### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>示例：SharePoint 和 Exchange 之间的电子数据展示的服务器到服务器身份验证工作原理
 
@@ -184,7 +184,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 4. Exchange 服务器验证访问令牌，然后发送查询结果。  
     
-5. 运行 SharePoint server 的服务器将电子数据展示查询结果发送到电子数据展示管理员的计算机。 
+5. 运行 SharePoint Server 的服务器将电子数据展示查询结果发送到电子数据展示管理员的计算机。 
     
 ## <a name="high-resolution-user-photos-tab"></a>“高分辨率用户照片”选项卡
 
@@ -253,7 +253,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
   - “我的网站”通过 HTTP 或 HTTPS 连接到 SharePoint 服务器。SharePoint 在 MySite 数据库 (Https:443) 中对用户进行缓存。SharePoint 服务器使用在 Exchange 中设置的外部 URL 与 Exchange 客户端访问服务器进行交互。  
     
-  - Lync 2013 客户端, 它将维护与 Exchange 服务器的 GetConnection, 以获取照片更新 (HTTPS get 请求-443)。 
+  - Lync 2013 客户端, 它将维护与 Exchange 服务器的 GetConnection, 以获取照片更新 (HTTPS Get 请求-443)。 
     
 4. Exchange 客户端访问服务器使用内部 Exchange 通信连接到 Exchange 邮箱服务器。   
     
@@ -307,7 +307,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 3. Lync 客户端通知 Lync 服务器已通过 SIP/5061 为统一联系人存储启用用户。  
     
-4. lync server 使用 Lync Storage Service 将用户的联系人迁移到 exchange 客户端访问服务器上的 exchange 2013。 
+4. Lync server 使用 Lync Storage Service 将用户的联系人迁移到 Exchange 客户端访问服务器上的 Exchange 2013。 
     
 5. 用户必须注销然后登录到 Lync 2013，以使更改显示（图中未显示）。  
     
@@ -569,7 +569,7 @@ Exchange 同步计时器作业： 
     
  **工作原理** 
   
-当被呼叫者的任何活动终结点上的被呼叫方不应答呼叫时, Lync Server 会将呼叫路由到 exchange UM (即 exchange 邮箱服务器) 上的语音邮件。 
+当被呼叫者的任何活动终结点上的被呼叫方不应答呼叫时, Lync Server 会将呼叫路由到 Exchange UM (即 Exchange 邮箱服务器) 上的语音邮件。 
   
 随附的图显示了两种方案下的呼叫路由：  
   
@@ -583,7 +583,7 @@ Exchange 同步计时器作业： 
     
 2. 将呼叫路由到被呼叫者的 Lync 主服务器。 
     
-3. lync Server 在 Lync 2013 上响铃被呼叫者的活动终结点。 
+3. Lync Server 在 Lync 2013 上响铃被呼叫者的活动终结点。 
     
 4. 当呼叫未得到回应时，呼叫将在 Exchange CAS（呼叫路由器）上被路由到语音邮件 (Exchange UM)。  
     
@@ -595,7 +595,7 @@ Exchange 同步计时器作业： 
     
 3. 中介服务器将调用被呼叫者的 Lync 主服务器。 
     
-4. lync Server 在 Lync 2013 上响铃被呼叫者的活动终结点。 
+4. Lync Server 在 Lync 2013 上响铃被呼叫者的活动终结点。 
     
 5. 当呼叫未得到回应时，呼叫将在 Exchange CAS（呼叫路由器）上被路由到语音邮件 (Exchange UM)。  
     

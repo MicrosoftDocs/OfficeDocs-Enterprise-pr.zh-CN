@@ -1,10 +1,9 @@
 ---
 title: Office 365 部署计划清单
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。 检查表中的阶段和步骤与 "加入中心" 提供的指导保持一致。
-ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490098"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067878"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 部署计划清单
 
@@ -80,4 +79,4 @@ ms.locfileid: "33490098"
 |验证功能, 然后完成最后的步骤 |||||
 | [将 DNS 设置迁移为指向 Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
 | 告诉用户何时可以[开始使用 Office 365](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
-| 重新配置客户端系统以连接到 office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[移动设备](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||
+| 重新配置客户端系统以连接到 Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [Outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[移动设备](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

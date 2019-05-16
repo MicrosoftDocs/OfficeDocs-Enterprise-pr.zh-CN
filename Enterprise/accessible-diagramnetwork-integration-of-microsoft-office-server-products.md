@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
 description: 本文是名为“Microsoft Office Server 产品的网络集成”的图的可访问文本版本。
-ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d63b3b581a03840676393657d6ed641e11046ef9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068558"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>可访问的图 - Microsoft Office Server 产品的网络集成
 
@@ -30,7 +30,7 @@ ms.locfileid: "33487767"
 
 #### <a name="streamlined-network-design"></a>简化的网络设计
 
-此拓扑说明了 SharePoint 2013、Exchange Server 2013 和 Lync server 2013 的本地网络部署。 它还演示了如何使用基于云的 Microsoft 服务 Exchange Online Protection，该服务为从 Internet 发送的入站简单邮件传输协议 (SMTP) 通信提供垃圾邮件和恶意软件保护。 
+此拓扑说明了 SharePoint 2013、Exchange Server 2013 和 Lync Server 2013 的本地网络部署。 它还演示了如何使用基于云的 Microsoft 服务 Exchange Online Protection，该服务为从 Internet 发送的入站简单邮件传输协议 (SMTP) 通信提供垃圾邮件和恶意软件保护。 
   
 此网络设计已简化为最低要求的网络功能集。此设计不会考虑部分组织可能需要的附加安全或基础结构功能。   
   
@@ -56,11 +56,11 @@ ms.locfileid: "33487767"
 
 您可以使用硬件或软件负载平衡解决方案重定向各个分段的通信，包括 SharePoint 前端 Web 服务器和 Exchange 客户端访问服务器 (CAS)。 在某些情况下, 最好将基于第7层硬件的负载平衡器用于持续性要求, 因为它可以通过使用请求中的信息 (如 cookie 或标头) 来更好地运行。 但是，此类解决方案中的成本、提升的利用率和工作负载等因素可能不是您的特定需求所需要的。 对于跨 SharePoint、Exchange 和 Lync 的负载平衡，请考虑以下几点： 
   
-- sharepoint-对于 sharepoint 2013, 无需为前端 web 服务器启用相关性。 通常，这将用于创建粘滞会话并避免每个前端 Web 服务器收到来自客户端的多个身份验证请求。 sharepoint 2013 中的新分布式缓存服务在 sharepoint 服务器场的 web 服务器上存储和分发登录令牌。 
+- SharePoint-对于 SharePoint 2013, 无需为前端 web 服务器启用相关性。 通常，这将用于创建粘滞会话并避免每个前端 Web 服务器收到来自客户端的多个身份验证请求。 SharePoint 2013 中的新分布式缓存服务在 SharePoint 服务器场的 web 服务器上存储和分发登录令牌。 
     
-- exchange In exchange 2013, CAS 角色旨在使用第4层负载平衡, 在传输层分发请求。 这可以大大降低负载平衡器的利用率和工作负载。 
+- Exchange In Exchange 2013, CAS 角色旨在使用第4层负载平衡, 在传输层分发请求。 这可以大大降低负载平衡器的利用率和工作负载。 
     
-- lync 池的会话初始协议 (SIP) 流量建议使用 Lync 域名系统 (DNS) 负载平衡。 Lync Web (HTTPS) 通信需要硬件负载平衡 (HLB)。 
+- Lync 池的会话初始协议 (SIP) 流量建议使用 Lync 域名系统 (DNS) 负载平衡。 Lync Web (HTTPS) 通信需要硬件负载平衡 (HLB)。 
     
 ### <a name="remote-access-options"></a>远程访问选项
 
@@ -88,7 +88,7 @@ DirectAccess-依靠 Internet 协议安全性 (IPsec) 进行身份验证和在 Di
     
 - 我们建议您不要将 DirectAccess 与 Lync Server 2013 结合使用, 因为与 IPsec 加密和解密相关的音频和视频延迟问题。 
     
-    vpn 网关-典型的 vpn 网关提供远程访问客户端计算机通过通过隧道和用户启动的连接在逻辑上投影到 intranet 的远程访问连接。 您可以在 Windows Server 2012 或多个第三方解决方案中使用统一远程访问，为漫游或远程员工提供对 Intranet 的安全访问。 Lync 不建议使用 VPN。 远程 Lync 通信应使用边缘服务器和拆分隧道。 
+    VPN 网关-典型的 VPN 网关提供远程访问客户端计算机通过通过隧道和用户启动的连接在逻辑上投影到 intranet 的远程访问连接。 您可以在 Windows Server 2012 或多个第三方解决方案中使用统一远程访问，为漫游或远程员工提供对 Intranet 的安全访问。 Lync 不建议使用 VPN。 远程 Lync 通信应使用边缘服务器和拆分隧道。 
     
 ### <a name="domain-name-system-dns-considerations"></a>域名系统 (DNS) 的注意事项
 
@@ -184,7 +184,7 @@ DirectAccess-依靠 Internet 协议安全性 (IPsec) 进行身份验证和在 Di
     
 - Exchange 邮箱服务器。该图显示两个 Exchange 邮箱数据库。  
     
-有关安装在每个 SharePoint 服务器角色上的组件的详细信息, 请参阅[精简拓扑 for sharepoint 2013](https://aka.ms/Ma5cgk)。 
+有关安装在每个 SharePoint 服务器角色上的组件的详细信息, 请参阅[精简拓扑 For sharepoint 2013](https://aka.ms/Ma5cgk)。 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>说明通信如何通过组件传递到不同的服务器层
 

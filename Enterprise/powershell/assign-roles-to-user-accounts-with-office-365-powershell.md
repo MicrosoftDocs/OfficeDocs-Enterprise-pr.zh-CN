@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/18/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '摘要: 使用 Office 365 PowerShell 向用户帐户分配角色。'
-ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d7177dc05aff8725a72edf7c9ab7b6ef93c36aaf
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069218"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>将角色分配给用户帐户与 Office 365 PowerShell
 
@@ -35,7 +35,7 @@ ms.locfileid: "33491988"
 接下来, 确定角色的名称。 [在 Azure Active Directory 中使用此管理员角色权限列表](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 >[!Note]
->请注意本文中的注释。 对于 Azure AD PowerShell, 某些角色名称不同。 例如, Microsoft 365 管理中心中的 "sharepoint 管理员" 角色为 Azure AD PowerShell 命名为 "sharepoint 服务管理员"。
+>请注意本文中的注释。 对于 Azure AD PowerShell, 某些角色名称不同。 例如, Microsoft 365 管理中心中的 "SharePoint 管理员" 角色为 Azure AD PowerShell 命名为 "SharePoint 服务管理员"。
 >
 
 接下来, 填写登录名和角色名称, 并运行这些命令。
@@ -113,7 +113,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-复制命令并将其粘贴到记事本中。 对于 **$dispName**和 **$roleName**变量, 将说明文本替换为它们的值, 删除\<和 > 字符, 并保留引号。 复制修改过的行并将其粘贴到 windows PowerShell 的 windows Azure Active Directory 模块中, 以运行它们。 或者, 也可以使用 Windows PowerShell 集成脚本环境 (ISE)。
+复制命令并将其粘贴到记事本中。 对于 **$dispName**和 **$roleName**变量, 将说明文本替换为它们的值, 删除\<和 > 字符, 并保留引号。 复制修改过的行并将其粘贴到 windows PowerShell 的 Windows Azure Active Directory 模块中, 以运行它们。 或者, 也可以使用 Windows PowerShell 集成脚本环境 (ISE)。
   
 下面的示例展示了已完成的命令集:
   

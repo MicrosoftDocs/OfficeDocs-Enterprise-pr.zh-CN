@@ -1,9 +1,9 @@
 ---
 title: 如何查看 Office 365 服务运行状况
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365P_ServiceHealthModern
@@ -23,16 +23,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在呼叫支持之前查看 Office 365 服务的运行状况状态, 以查看是否有活动的服务中断
-ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 67595bddaed23222d09c0e7f6f5353b764722f83
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001575"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071218"
 ---
 # <a name="how-to-check-office-365-service-health"></a>如何查看 Office 365 服务运行状况
 
-您可以在[Microsoft 365 管理中心](https://admin.microsoft.com)的 "office 365**服务运行状况**" 页上查看 office 365、Yammer、microsoft Dynamics CRM 和 microsoft Intune 云服务的运行状况。 If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting. 
+您可以在[Microsoft 365 管理中心](https://admin.microsoft.com)的 "Office 365**服务运行状况**" 页上查看 office 365、YAMMER、Microsoft Dynamics CRM 和 microsoft Intune 云服务的运行状况。 If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting. 
 
 如果无法登录到服务门户, 则可以使用 "[服务状态" 页](https://status.office365.com)来检查阻止你登录租户的已知问题。
   

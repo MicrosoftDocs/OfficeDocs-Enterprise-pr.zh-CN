@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '摘要: 配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。'
-ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
-ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
+ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867707"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067498"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "33867707"
 
 开始配置 Azure 组件之前，请填写下表。 为了帮助你完成配置 Azure 的过程，请打印此部分并记下所需的信息，或将此部分复制到文档中进行填写。 对于 VNet 的设置, 请填写表 V。
   
-|**项**|**配置设置**|**说明**|**值**|
+|**Item**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称 (示例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ ms.locfileid: "33867707"
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
-|**项**|**子网名称**|**子网地址空间**|**用途**|
+|**Item**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务 (AD DS) 域控制器和 DirSync server 虚拟机 (Vm) 使用的子网。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS Vm 使用的子网。  <br/> |
@@ -72,7 +72,7 @@ ms.locfileid: "33867707"
   
 下一步，针对分配给虚拟机和负载平衡器实例的静态 IP 地址填写表 I。
   
-|**项**|**用途**|**子网的 IP 地址**|**值**|
+|**Item**|**用途**|**子网的 IP 地址**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |

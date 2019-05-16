@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '摘要: 了解 Microsoft 在 Azure 中基于服务 (IaaS) 的云产品的混合体系结构和方案。'
-ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 429af408ca3f21fe667b36cdb9767d3916a6b1a4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487618"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067348"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>适用于 Azure IaaS 的混合云方案
 
@@ -41,7 +41,7 @@ ms.locfileid: "33487618"
     
 - 标识
     
-    将标识服务器 (如 Active Directory 域服务 (AD DS) 域控制器) 添加到在 Azure vnet 中运行以进行本地身份验证的服务器集。
+    将标识服务器 (如 Active Directory 域服务 (AD DS) 域控制器) 添加到在 Azure Vnet 中运行以进行本地身份验证的服务器集。
     
 - 网络
     
@@ -59,9 +59,9 @@ ms.locfileid: "33487618"
 
 ![Azure IaaS 中的 Office 365 的目录同步服务器](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-在图2中, 本地网络承载 AD DS 基础结构, 并在其边缘使用代理服务器和路由器。 路由器通过站点到站点 VPN 或 ExpressRoute 连接与 azure VNet 边缘的 azure 网关连接。 在 VNet 中, 目录同步服务器运行 Azure AD Connect。
+在图2中, 本地网络承载 AD DS 基础结构, 并在其边缘使用代理服务器和路由器。 路由器通过站点到站点 VPN 或 ExpressRoute 连接与 Azure VNet 边缘的 Azure 网关连接。 在 VNet 中, 目录同步服务器运行 Azure AD Connect。
   
-office 365 的目录同步服务器将 AD DS 中的帐户列表与 Office 365 订阅的 Azure AD 租户同步。
+Office 365 的目录同步服务器将 AD DS 中的帐户列表与 Office 365 订阅的 Azure AD 租户同步。
   
 目录同步服务器是一台运行 Azure AD Connect 的基于 Windows 的服务器。 为了加快资源调配或减少组织中的内部部署服务器数, 请在 Azure IaaS 中的虚拟网络 (VNet) 中部署目录同步服务器。
   
@@ -139,7 +139,7 @@ Azure 中一个多层、高可用性 LOB 应用程序的示例是 SharePoint Ser
   
 1. 计算和试验
     
-    请参阅[Microsoft azure 中的 sharepoint server 2016](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) , 了解在 Azure 中运行 SharePoint server 2016 的好处。
+    请参阅[Microsoft azure 中的 Sharepoint server 2016](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) , 了解在 Azure 中运行 SharePoint server 2016 的好处。
     
     请参阅[在 Azure 开发/测试环境中使用 Intranet SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)构建模拟的开发/测试环境
     
@@ -149,7 +149,7 @@ Azure 中一个多层、高可用性 LOB 应用程序的示例是 SharePoint Ser
     
 3. 部署
     
-    请参阅在[Azure 中部署 SharePoint server 2016 with SQL Server AlwaysOn 可用性组](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in), 以通过五个阶段逐步完成高可用性服务器场的端到端配置。
+    请参阅在[Azure 中部署 SharePoint server 2016 WITH SQL Server AlwaysOn 可用性组](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in), 以通过五个阶段逐步完成高可用性服务器场的端到端配置。
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Azure 中适用于 Office 365 的联合身份
 
@@ -159,13 +159,13 @@ Azure 中的多层高可用性 LOB 应用程序的另一个示例是联合身份
 
 ![Azure 中的高可用性 Office 365 联合身份验证基础结构](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
-在图5中, 本地网络承载标识基础结构和用户。 它通过站点到站点 VPN 或 ExpressRoute 连接来连接到 Azure IaaS 网关。 Azure VNet 包含 web 代理服务器、active directory 联合身份验证服务 (ad FS) 服务器和 active directory 域服务 (ad DS) 域控制器。
+在图5中, 本地网络承载标识基础结构和用户。 它通过站点到站点 VPN 或 ExpressRoute 连接来连接到 Azure IaaS 网关。 Azure VNet 包含 web 代理服务器、Active Directory 联合身份验证服务 (AD FS) 服务器和 Active Directory 域服务 (AD DS) 域控制器。
   
 此配置具有 Azure 中 LOB 应用程序的以下属性： 
   
-- **层:** web 代理服务器、ad FS 服务器和 ad DS 域控制器都有层次。
+- **层:** Web 代理服务器、AD FS 服务器和 AD DS 域控制器都有层次。
     
-- **负载分布:** 外部 azure 负载平衡器将传入客户端身份验证请求分发到 web 代理, 并将内部 azure 负载平衡器分发到 AD FS 服务器的身份验证请求。
+- **负载分布:** 外部 Azure 负载平衡器将传入客户端身份验证请求分发到 web 代理, 并将内部 Azure 负载平衡器分发到 AD FS 服务器的身份验证请求。
     
 按照此方法实现成功的应用：
   

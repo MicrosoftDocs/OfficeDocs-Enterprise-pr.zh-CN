@@ -1,10 +1,9 @@
 ---
 title: IdFix 排除和支持的对象和属性
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: 列出 IdFix 工具排除并支持的属性。
-ms.openlocfilehash: d6b7aac023e9fe96b8308483322e718937ab1355
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bf88fea3592860a89d69717177593b6553318ee4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067268"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>IdFix 排除和支持的对象和属性
 有两组由 IdFix 维护的规则;多租户和专用/ITAR。 此时, 这两个规则集将从其搜索中排除相同的对象、属性和属性值。 这可能会在将来的版本中发生变化。
@@ -35,9 +34,9 @@ ms.locfileid: "33487178"
 |**排除**|**示例**|
 |:-----|:-----|
 |Admini\* |管理员 |
-|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
+|CAS_{\*  |CAS_{fe35fc98e69e4d08} |
 |DiscoverySearchMailbox\*  |DiscoverySearchMailbox  |
-|FederatedEmail\* |FederatedEmail。 *GUID* |
+|FederatedEmail\* |FederatedEmail. *GUID* |
 |Guest\* ||
 |HTTPConnector\*  |HTTPConnector |
 |krbtgt\* |ms-DS-链接 |

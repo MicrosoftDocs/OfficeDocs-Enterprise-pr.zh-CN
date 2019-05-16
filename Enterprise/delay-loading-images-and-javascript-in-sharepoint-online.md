@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: 本文介绍如何通过使用 JavaScript 来延迟加载图像以及在页面加载后等待加载非基本 JavaScript, 从而减少 SharePoint Online 页面的加载时间。
-ms.openlocfilehash: b8b052d85c99e51dff4b0fc747b3b52c17de8d8b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 6b2e91ca4b8642ac7129e353f2527db60a32d75b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490282"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067978"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>在 SharePoint Online 中延迟加载图像和 JavaScript
 
@@ -90,15 +90,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-将文本文件另存为带有扩展名 .js 的 JavaScript 文件, 例如 delayloadimages.js。
+将文本文件另存为带有扩展名 .js 的 JavaScript 文件, 例如 Delayloadimages.js。
   
-编写完 delayloadimages.js 后, 可以将文件的内容添加到 SharePoint Online 中的母版页。 为此, 请将脚本链接添加到母版页中的标头。 在母版页中, JavaScript 将应用于使用该母版页布局的 SharePoint Online 网站中的所有页面。 或者, 如果您打算仅在网站的一个页面上使用此项, 请使用脚本编辑器 Web 部件将 JavaScript 嵌入到页面中。 有关详细信息, 请参阅以下主题:
+编写完 Delayloadimages.js 后, 可以将文件的内容添加到 SharePoint Online 中的母版页。 为此, 请将脚本链接添加到母版页中的标头。 在母版页中, JavaScript 将应用于使用该母版页布局的 SharePoint Online 网站中的所有页面。 或者, 如果您打算仅在网站的一个页面上使用此项, 请使用脚本编辑器 Web 部件将 JavaScript 嵌入到页面中。 有关详细信息, 请参阅以下主题:
   
 - [如何：向 SharePoint 2013 中的网站应用母版页](https://go.microsoft.com/fwlink/p/?LinkId=525627)
     
 - [如何：在 SharePoint 2013 中创建页面布局](https://go.microsoft.com/fwlink/p/?LinkId=525628)
     
- **示例: 在 SharePoint Online 中引用母版页中的 JavaScript delayloadimages.js 文件**
+ **示例: 在 SharePoint Online 中引用母版页中的 JavaScript Delayloadimages.js 文件**
   
 若要使其正常工作, 您还需要在母版页中引用 jQuery。 在下面的示例中, 您可以在初始页面加载中看到仅加载了一个图像, 但在页面上有多个。
   
@@ -116,7 +116,7 @@ $('#s4-workspace').on("scroll", function () {
   
 ## <a name="see-also"></a>另请参阅
 
-[office 2013 和 office 365 专业增强版中支持的浏览器](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Office 2013 和 Office 365 专业增强版中支持的浏览器](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [如何：向 SharePoint 2013 中的网站应用母版页](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

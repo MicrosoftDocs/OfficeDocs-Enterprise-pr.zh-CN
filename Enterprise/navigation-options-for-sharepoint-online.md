@@ -3,7 +3,7 @@ title: SharePoint Online 的导航选项
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,112 +11,112 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: 本文介绍与 SharePoint 发布 SharePoint Online 中启用导航选项网站。选择和配置导航显著影响性能和可伸缩性的 SharePoint Online 中的网站。
-ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
-ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
+description: 本文介绍 SharePoint Online 中启用了 SharePoint 发布的导航选项网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。
+ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069938"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 
-本文介绍与 SharePoint 发布 SharePoint Online 中启用导航选项网站。选择和配置导航显著影响性能和可伸缩性的 SharePoint Online 中的网站。
+本文介绍 SharePoint Online 中启用了 SharePoint 发布的导航选项网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。
 
 ## <a name="overview"></a>概述
 
-导航提供程序配置显著影响整个网站的性能和必须采取仔细考虑选取的导航提供程序和有效地调整您的 SharePoint 网站的要求的配置。有两个开的导航提供程序，以及自定义导航实现。
+导航提供程序配置会显著影响整个网站的性能, 并且必须仔细考虑选择一个导航提供程序和配置, 以便有效地扩展以满足 SharePoint 网站的要求。 有两个现成的导航提供程序, 以及自定义导航实现。
 
-第一个选项[**（元数据） 的托管导航**](#using-managed-navigation-and-metadata-in-sharepoint-online)，建议，并且是在 SharePoint Online; 默认选项之一但是，我们建议除非必需的情况下禁用安全修整。作为通过默认安全设置的此导航提供程序; 启用安全修整但是，多个网站不需要安全修整自从导航元素通常都是一致的网站的所有用户的开销。若要禁用安全修整推荐配置，此导航提供程序不需要枚举网站结构，是高度可扩展的可接受的性能影响。
+建议使用第一个选项 "[**托管 (元数据) 导航**](#using-managed-navigation-and-metadata-in-sharepoint-online)", 这是 SharePoint Online 中的默认选项之一;但是, 建议禁用安全修整, 除非需要。 将安全修整启用为此导航提供程序的默认安全设置;但是, 许多网站不需要安全修整的开销, 因为导航元素通常对网站的所有用户都是一致的。 使用建议的配置禁用安全修整后, 此导航提供程序不需要枚举网站结构, 且高度可扩展, 性能影响可接受。
 
-第二个选项，[**结构导航**](#using-structural-navigation-in-sharepoint-online)，**是 SharePoint Online 中的建议的导航选项**。此导航提供程序的 SharePoint Online 中的支持有限的内部部署拓扑结构设计。虽然它提供了一些其他的一组与其他导航选项的功能，这些功能，包括安全修整和网站结构枚举时，因服务器调用影响的可伸缩性和性能的成本使用它。使用 structed 导航的使用过多的资源的网站可能会受到限制。
+第二个选项是[**结构导航**](#using-structural-navigation-in-sharepoint-online),**在 SHAREPOINT Online 中不是一个推荐的导航选项**。 此导航提供程序是为本地拓扑设计的, 在 SharePoint Online 中支持有限。 虽然它提供了一些额外的功能集, 而不是其他导航选项, 但这些功能 (包括安全修整和网站结构枚举) 的成本是过多的服务器调用, 并且会在使用时影响可伸缩性和性能。 使用占用过多资源的 structed 导航的网站可能会受到限制。
 
-除了开的导航提供程序，许多客户已成功实现替代的自定义导航实现。一个公共类的自定义导航实现坚信存储的导航节点的本地缓存的客户端呈现的设计模式。（请参阅**[搜索驱动客户端脚本编写](#using-search-driven-client-side-scripting)** 这篇文章中。）
+除了现成的导航提供程序之外, 许多客户还成功实现了替代的自定义导航实现。 自定义导航实现的一个常见类涵盖了用于存储导航节点的本地缓存的客户端呈现的设计模式。 (请参阅本文中的**[搜索驱动的客户端脚本](#using-search-driven-client-side-scripting)**。)
 
-这些导航提供程序有两种关键优势： 
-- 他们通常很好地使用响应页面设计。
-- 它们是极大可伸缩性和性能，因为它们可能造成没有资源成本 （和刷新后超时在后台）。 
-- 这些导航提供程序可以检索使用各种策略，从到各种动态数据提供程序的简单静态配置导航数据。 
+这些导航提供程序具有以下几个主要优势: 
+- 它们通常适用于响应页面设计。
+- 它们的可伸缩性和性能极高, 因为它们在呈现时无需资源成本 (并在超时后在后台进行刷新)。 
+- 这些导航提供程序可以使用各种策略检索导航数据, 范围从简单静态配置到各种动态数据提供程序。 
 
-数据提供程序的示例是使用**搜索驱动的导航**，从而枚举导航节点和处理安全修整高效的灵活性。 
+数据提供程序的一个示例是使用**搜索驱动的导航**, 这样可以灵活地枚举导航节点和有效处理安全修整。 
 
-有其他受欢迎的选项，以构建**自定义导航提供程序**。请有关更多有关构建自定义导航提供程序的指南，查看[SharePoint Online 的门户导航解决方案](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation)。
+有其他常用选项可用于生成**自定义导航提供程序**。 请查看[SharePoint Online 门户导航解决方案](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation), 以获取有关构建自定义导航提供程序的详细指南。
   
-## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>专业人员和 SharePoint Online 的缺点导航选项
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>SharePoint Online 导航选项的优点和缺点
 
-下表总结了每个选项的优缺点。 
+下表总结了每个选项的优点和缺点。 
 
 
 |托管导航  |结构导航  |搜索驱动的导航  |自定义导航提供程序  |
 |---------|---------|---------|---------|
-|优点：<br/><br/>易于维护<br/>建议使用该选项<br/>     |优点：<br/><br/>易于配置<br/>安全修整<br/>添加内容将自动更新<br/>|优点：<br/><br/>安全修整<br/>当添加网站时自动更新<br/>加载时间快，本地缓存的导航结构<br/>|优点：<br/><br/>更广泛的可用选项选择<br/>Fast 加载缓存时正确使用<br/>多个选项很好地响应页面设计<br/>|
-|缺点：<br/><br/>不会自动更新以反映网站结构<br/>如果启用了安全修整对性能产生影响<br/>|缺点：<br/><br/>**不建议**<br/>**影响性能和可伸缩性**<br/>**受限制**<br/>|缺点：<br/><br/>不能轻松地对网站排序<br/>需要对母版页进行自定义（需要具备技术技能）<br/>|缺点：<br/><br/>自定义开发，则需要<br/>外部数据源缓存存储所需 / 例如 Azure<br/>|
+|供<br/><br/>易于维护<br/>推荐选项<br/>     |供<br/><br/>易于配置<br/>安全修整<br/>添加内容时自动更新<br/>|供<br/><br/>安全修整<br/>添加网站时自动更新<br/>快速加载时间和本地缓存导航结构<br/>|供<br/><br/>可用选项的更宽选择<br/>正确使用缓存时的快速加载<br/>许多选项在使用快速响应页面设计时非常有效<br/>|
+|消耗<br/><br/>不会自动更新以反映网站结构<br/>如果启用了安全修整, 则会影响性能<br/>|消耗<br/><br/>**不建议**<br/>**影响性能和可伸缩性**<br/>**受限制的主题**<br/>|消耗<br/><br/>无法轻松订购网站<br/>需要自定义母版页 (需要技术技能)<br/>|消耗<br/><br/>需要进行自定义开发<br/>需要存储外部数据源/缓存, 例如 Azure<br/>|
 
-最适合您的网站的选项将取决于您的网站要求和您的技术功能。如果您希望可扩展开的导航提供程序，然后托管导航与禁用的安全修整是一个很好的选项。 
+最适合您的网站的选项取决于您的网站要求和您的技术能力。 如果您需要一个可扩展的现成导航提供程序, 则禁用安全修整的托管导航是一个非常不错的选择。 
 
-可以通过维护托管导航选项配置，不涉及代码自定义文件，并且会显著比结构的导航。如果需要安全修整和便于使用自定义母版页并维护更改可能出现的默认母版页中的 SharePoint Online 的组织中有一些功能，通过然后搜索驱动选项可能会产生更佳用户体验。如果您有更复杂的要求，自定义导航提供程序可能是正确的选择。不建议结构的导航。
+托管导航选项可通过配置进行维护, 不涉及代码自定义文件, 并且比结构导航快得多。 如果您需要安全修整并且能够使用自定义母版页, 并且组织中有一些功能来维护在 SharePoint Online 的默认母版页中可能发生的更改, 则搜索驱动的选项可能会产生更好的效果用户体验。 如果您具有更复杂的要求, 则自定义导航提供程序可能是正确的选择。 不建议使用结构导航。
 
-最后，务必要注意 SharePoint 正在添加其他导航提供程序和功能利用多扁平的网站层次结构和使用 SharePoint 中心网站的中心辐射型模型的现代 SharePoint 网站体系结构。这将允许多个要实现的方案不需要使用 SharePoint 发布功能，并且这些导航配置经过优化以可伸缩性和 SharePoint Online 中的延迟。请注意，通常应用相同的原则-简化逼真的内容的结构，SharePoint 发布网站的总体结构的总体绩效有助于和以及缩放。这意味着，而不是让数以百计的网站 （子网站） 与单个网站集，更好的方法是有大量的网站集具有很少的子网站 （子网站）。
+最后, 请务必注意, SharePoint 正在为新式 SharePoint 网站体系结构添加更多导航提供程序和功能, 以利用更平展的网站层次结构和包含 SharePoint 中心网站的中心辐射型模型。 这允许实现许多不需要使用 SharePoint 发布功能的方案, 并且这些导航配置针对 SharePoint Online 中的可伸缩性和延迟进行了优化。 请注意, 应用相同的原则-将 SharePoint 发布网站的整体结构简化为更简单的结构, 通常也有助于整体性能和规模的扩展。 这意味着, 它不是拥有数百个网站 (子网站) 的单个网站集, 更好的方法是拥有很少子网站 (子网站) 的多个网站集。
 
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>在 SharePoint Online 中使用托管的导航和元数据
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>在 SharePoint Online 中使用托管导航和元数据
 
-托管的导航是功能的另一个开的选项，您可以使用重新创建大部分结构导航相同。可以配置托管元数据进行安全修整启用或禁用。配置与禁用的安全修整，托管的导航时非常高效加载所有的常量服务器呼叫数的导航链接。启用安全修整，但是，不具备的某些托管导航的优点和客户可以选择浏览以获得最佳性能和可伸缩性的自定义导航解决方案之一。
+托管导航是另一个现成的选项, 您可以使用它来重新创建大部分与结构导航相同的功能。 可将托管元数据配置为启用或禁用安全修整。 在禁用安全修整的情况下进行配置时, 托管导航相当高效, 因为它会加载具有固定数量的服务器调用的所有导航链接。 但是, 启用安全修整会对托管导航的一些优势产生否定, 客户可以选择浏览其中一个自定义导航解决方案, 以实现最佳性能和可伸缩性。
 
-多个网站的导航结构通常是一致的网站的所有用户，不需要安全修整。如果禁用安全修整的链接添加到并非所有用户都有权访问的导航以及链接仍会显示，但将导致拒绝访问的消息。没有可以防止由于无意访问内容无风险。
+许多网站不需要安全修整, 因为导航结构通常对网站的所有用户都是一致的。 如果禁用安全修整并向导航添加了一个不是所有用户都有权访问的链接, 则该链接仍将显示, 但会导致访问被拒绝消息。 对内容的意外访问没有风险。
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>如何实现托管导航和结果
 
-有一些文章 Docs.Microsoft.com 上有关托管导航的详细信息，例如，请参阅[Overview of SharePoint Server 中的托管导航](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)。
+有关托管导航的详细信息, 请参阅 Docs.Microsoft.com 的几篇文章, 例如, 请参阅[SharePoint Server 中的托管导航概述](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)。
 
-为了实现托管的导航，您设置条款 Url 与对应的网站的导航结构。托管的导航可以甚至是手动 curated 替换在许多情况下的结构化导航。例如：
+为了实现托管导航, 请使用与网站的导航结构相对应的 Url 设置术语。 在许多情况下, 甚至可以手动 curated 托管导航以替换结构导航。 例如：
 
 ![SharePoint Online 网站结构](media/SPONavOptionsListOfSites.png)
 
-下面的示例显示使用托管导航的复杂导航的性能。
+下面的示例展示了使用托管导航的复杂导航的性能。
 
-![使用托管的导航的复杂导航的性能](media/SPONavOptionsComplexNavPerf.png)
+![使用托管导航的复杂导航的性能](media/SPONavOptionsComplexNavPerf.png)
 
-始终使用托管的导航可以提高性能与结构导航方法相比。
+与结构导航方法相比, 使用托管导航可一致地提高性能。
   
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>在 SharePoint Online 中使用结构导航
 
-这是默认情况下使用开的导航和是最简单的解决方案，但此类具有高性能权衡。它不需要任何自定义和非技术用户可以方便地添加项目、 隐藏项目，请从设置页管理导航。这是，但是也可以还方便地管理和控制以及与托管导航，因此建议使用托管导航作为 true 改进性能。
+这是默认情况下使用的现成导航, 它是最简单的解决方案, 但这是一种昂贵的性能平衡。 它不需要任何自定义设置, 非技术性用户也可以轻松地添加项目、隐藏项目以及从 "设置" 页面管理导航。 这也适用于托管导航, 因此建议使用托管导航, 因为也可以轻松地管理和控制这些功能, 并提高性能。
 
-![具有选中显示子网站的结构导航](media/SPONavOptionsStructuredShowSubsites.png)
+![选择了 "显示子网站" 的结构导航](media/SPONavOptionsStructuredShowSubsites.png)
   
-### <a name="turning-on-structural-navigation-in-sharepoint-online"></a>在 SharePoint Online 中启用结构导航
+### <a name="turning-on-structural-navigation-in-sharepoint-online"></a>在 SharePoint Online 中打开结构导航
 
-为了说明如何使用结构导航和显示 SharePoint Online 标准解决方案中的性能子网站选项打开。下面是在**网站设置**页上找到的设置的屏幕截图\>**导航**。
+演示如何在结构化导航和 "显示子网站" 选项处于打开状态的标准 SharePoint Online 解决方案中进行性能。 下面是在 "页面**网站设置** \> "**导航**中找到的设置的屏幕截图。
   
 ![显示子网站的屏幕截图](media/5b6a8841-34ed-4f61-b6d3-9d3e78d393e7.png)
   
-### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>分析 SharePoint Online 中的结构导航性能
+### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>在 SharePoint Online 中分析结构导航性能
 
-若要分析 SharePoint 页的性能，请在 Internet Explorer 中使用 F12 开发人员工具的**网络**选项的卡。 
+若要分析 SharePoint 页面的性能, 请使用 Internet Explorer 中的 F12 开发人员工具的 "**网络**" 选项卡。 
   
 ![显示 F12 开发工具“网络”选项卡的屏幕截图](media/SPONavOptionsNetworks.png)
   
-1. 在“网络”**** 选项卡，单击正在加载的 .aspx 页面，然后单击“详细信息”**** 选项卡。<br/> ![显示详细信息选项卡的屏幕截图](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
-2. 单击“响应头”****。 <br/>![“详细信息”选项卡的屏幕截图](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint 返回其响应标头中的一些有用的诊断信息。 
-3. 信息的最有用部分之一是**SPRequestDuration**值，以毫秒为单位的时间长度请求处理所用的服务器上。在下面的屏幕快照**显示子网站**未选中的结构的导航。这意味着在全局导航中存在仅网站集的链接：<br/>![显示加载时间为请求持续时间的屏幕截图](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
-4. **SPRequestDuration**键的值为 245 毫秒。这表示返回请求所花的时间。由于在网站上只有一个导航项，这是如何 SharePoint Online 执行大流量的导航不好基准。下一步的屏幕截图显示了如何在子网站中添加影响此项。<br/>![显示请求持续时间为 2502 毫秒的屏幕截图](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
+1. 在 "**网络**" 选项卡上, 单击要加载的 .aspx 页面, 然后单击 "**详细信息**" 选项卡。<br/> ![显示详细信息选项卡的屏幕截图](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
+2. 单击 "**响应头**"。 <br/>![“详细信息”选项卡的屏幕截图](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint 在其响应标头中返回一些有用的诊断信息。 
+3. 最有用的信息片段之一是**SPRequestDuration** , 这是在服务器上处理请求所需时间的值 (以毫秒为单位)。 在以下屏幕截图中, 将取消选中结构导航的**子网站**。 这意味着全局导航中只有 "网站集" 链接:<br/>![显示加载时间为请求持续时间的屏幕截图](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
+4. **SPRequestDuration**项的值为245毫秒。 这表示返回请求所花的时间。 由于网站上只有一个导航项, 因此这是在不进行大量导航的情况下, SharePoint Online 执行方式的一个很好的基准。 下一个屏幕截图显示了如何将子网站中的添加影响此项。<br/>![显示请求持续时间为 2502 毫秒的屏幕截图](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
   
-添加子网站显著增加返回此相对简单示例网站页请求所花费的时间。复杂的网站层次结构，包括配置和其他拓扑选项页面导航窗格中，可以显著增加此影响进一步。
+添加子网站会显著增加为此相对简单的示例网站返回页面请求所需的时间。 复杂的网站层次结构 (包括导航中的页面) 和其他配置和拓扑选项可能会显著增加此影响。
 
 ## <a name="using-search-driven-client-side-scripting"></a>使用搜索驱动的客户端脚本
 
-使用搜索，您可以利用使用连续爬网在后台建立索引。搜索结果来自搜索索引，并且的结果是安全修整。需要安全修整时，这是通常比开的导航提供程序。使用搜索结构导航，尤其是具有一个复杂的网站结构中，将加快页面加载时间显著。此通过托管导航的主要优点是受益于安全修整。
+使用搜索可以利用连续爬网在后台中构建的索引。 搜索结果从搜索索引中提取, 结果将进行安全修整。 当需要安全修整时, 这通常比现成的导航提供程序更快。 使用搜索结构导航, 尤其是在您有复杂的网站结构时, 将会显著加快页面加载时间。 此优先于托管导航的主要优势是, 您可以从安全修整中获益。
 
-此方法包括创建自定义母版页和即开导航代码替换为自定义 HTML。按照此过程，按照下面的示例以替换该文件中的导航代码`seattle.html`。在此示例中，您将打开`seattle.html`文件并将整个元素`id=”DeltaTopNavigation”`与自定义 HTML 代码。
+此方法涉及到创建自定义母版页并将现成的导航代码替换为自定义 HTML。 按照以下示例中概述的此过程操作, 以替换文件`seattle.html`中的导航代码。 在此示例中, 将打开`seattle.html`文件, 并将整个元素`id=”DeltaTopNavigation”`替换为自定义 HTML 代码。
 
-### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>示例： 母版页中的即开导航代码替换
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>示例: 将现成的导航代码替换为母版页
 
-1.  导航到“网站设置”页面。
-2.  单击“母版页”**** 打开母版页样式库。
-3.  从此处导航库和下载文件`seattle.master`。
-4.  使用文本编辑器编辑代码，并删除下面的屏幕截图中的代码块。<br/>![删除所示的代码块](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. 删除之间的代码`<SharePoint:AjaxDelta id=”DeltaTopNavigation”>`和`<\SharePoint:AjaxDelta>`标签，并将其替换为以下代码段：<br/>
+1.  导航到 "网站设置" 页。
+2.  通过单击 "**母版页**" 打开母版页样式库。
+3.  从这里, 您可以在库中导航并下载该`seattle.master`文件。
+4.  使用文本编辑器编辑代码, 并删除以下屏幕截图中的代码块。<br/>![删除显示的代码块](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+5. 删除`<SharePoint:AjaxDelta id=”DeltaTopNavigation”>`和`<\SharePoint:AjaxDelta>`标记之间的代码, 并将其替换为以下代码段:<br/>
 
 ```
 <div id="loading">
@@ -186,26 +186,26 @@ ms.locfileid: "26547174"
 </div>
 ```
 <br/>
-6. 替换中加载的 URL 图像开头，网站集加载图像的链接的定位标记。所做的更改后，重命名该文件，然后将其上载到母版页样式库。这会生成新的.master 文件。<br/>
-7. 此 HTML 是将使用从 JavaScript 代码返回的搜索结果填充的基本标记。您将需要编辑来更改 var 根的值的代码 ="网站集 URL"，如以下代码段中所示：<br/>
+6. 使用网站集中加载图像的链接替换开头的加载图像定位标记中的 URL。 进行更改后, 请重命名该文件, 然后将其上传到母版页样式库。 这将生成一个新的 .master 文件。<br/>
+7. 此 HTML 是由 JavaScript 代码返回的搜索结果将填充的基本标记。 您需要编辑代码以更改 var root = "网站集 URL" 的值, 如以下代码段所示:<br/>
 
 ```
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. 结果将分配给 self.nodes 数组和层次结构构建利用使用 linq.js 将输出分配给数组 self.hierarchy 对象。此数组是绑定到 HTML 的对象。这是通过将自我对象传递给 ko.applyBinding() 函数完成 toggleView() 函数中。<br/>然后，这会导致要绑定到以下 HTML 的层次结构数组：<br/>
+8. 将结果分配给 self。节点数组, 并使用使用 linq 将输出分配给数组 self 层次结构的对象生成层次结构。 此数组是绑定到 HTML 的对象。 这是通过将 self 对象传递给 applyBinding () 函数在 toggleView () 函数中完成的。<br/>然后, 这会将层次结构数组绑定到以下 HTML:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
-事件处理程序`mouseenter`和`mouseexit`添加到用于处理的子网站下拉列表菜单是完成中的顶级导航`addEventsToElements()`函数。
+和的事件处理程序将被添加到顶级导航中, 以处理在`addEventsToElements()`函数中完成的子网站下拉菜单。 `mouseexit` `mouseenter`
 
-在我们复杂导航的示例，一个全新页面负载而无需从基准结构导航，若要获取的托管的导航方法类似结果已减少服务器上所用的时间本地缓存显示。
+在复杂的导航示例中, 没有本地缓存的新页面加载将显示服务器上所用的时间已从基准结构导航中减少, 以获取与托管导航方法类似的结果。
 
-### <a name="about-the-javascript-file"></a>有关 JavaScript 文件...
+### <a name="about-the-javascript-file"></a>有关 JavaScript 文件 .。。
 
-整个 JavaScript 文件如下所示：
+整个 JavaScript 文件如下所示:
 
 ```
 //Models and Namespaces
@@ -440,27 +440,27 @@ function addEventsToElements() {
 
 ``` 
 
-汇总中上述代码`jQuery $(document).ready`函数没有`viewModel object`创建然后`loadNavigationNodes()`调用该对象上的函数。此函数可以加载以前生成的导航层次结构存储在客户端浏览器的 HTML5 本地存储区或其调用函数`queryRemoteInterface()`。
+若要汇总上面的`jQuery $(document).ready`函数中显示的`viewModel object`代码, 则表示已创建, `loadNavigationNodes()`然后调用该对象上的函数。 此函数会加载以前在客户端浏览器的 HTML5 本地存储中存储的导航层次结构, 或者调用该`queryRemoteInterface()`函数。
 
-`QueryRemoteInterface()`生成请求使用`getRequest()`，查询参数的函数之前在脚本中定义，然后从服务器返回数据。此数据是本质上一个数组作为数据传输对象处理各种属性所表示的网站集合中的所有网站。 
+`QueryRemoteInterface()`生成一个请求, 并`getRequest()`将该函数与脚本中先前定义的查询参数一起使用, 然后从服务器返回数据。 此数据实质上是网站集中所有网站的数组, 这些网站表示为具有各种属性的数据传输对象。 
 
-然后分析此数据到以前定义`SPO.Models.NavigationNode`对象使用`Knockout.js`创建数据绑定到我们之前定义的 HTML 的值用于可观察的属性。 
+然后, 将此数据解析为之前定义`SPO.Models.NavigationNode`的对象, `Knockout.js`这些对象使用创建可观察到的属性以供将值绑定到我们之前定义的 HTML 中的数据。 
 
-对象然后置于结果数组。分析到 JSON 使用 Knockout 和存储在将来的页面加载性能改进的本地浏览器存储在此数组。
+然后, 将这些对象放入结果数组中。 使用挖空将此数组解析为 JSON, 并将其存储在本地浏览器存储中, 以改进将来页面加载的性能。
 
 ### <a name="benefits-of-this-approach"></a>此方法的优点
 
-[此方法](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)的一个主要好处是，通过使用 HTML5 本地存储，导航存储在本地用户的下次它们加载页。我们获得主要性能改进的结构导航; 使用 API 中的搜索但是，计一些技术的功能，能够执行和自定义此功能。 
+[此方法](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)的一个主要优点是, 通过使用 HTML5 本地存储, 在下次加载页面时, 将为用户本地存储导航。 我们从使用搜索 API 进行结构导航中获得重大性能改进;但是, 它需要一些技术功能来执行和自定义此功能。 
 
-在[实现示例](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)中，网站进行排序的框结构导航; 相同的方式按字母顺序排列顺序。如果您想要偏离此顺序，它将为可进行更为复杂开发和维护。此外，通过此方法需要偏离受支持的母版页。如果不保留自定义母版页，您的网站会错过了解的更新和 Microsoft 向母版页的改进。
+在[示例实现](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)中, 网站的排序方式与开箱即用的结构导航相同;字母顺序。 如果您想要与此订单有偏离之处, 则开发和维护会更复杂。 此外, 此方法还需要您从受支持的母版页中偏离。 如果不维护自定义母版页, 则网站将错过 Microsoft 对母版页所做的更新和改进。
 
-[代码之上](#about-the-javascript-file)具有以下依赖项：
+[上面的代码](#about-the-javascript-file)具有以下依赖项:
 
-- jQuery-http://jquery.com/
-- KnockoutJS-http://knockoutjs.com/
-- Linq.js- http://linqjs.codeplex.com/，或 github.com/neuecc/linq.js
+- jQueryhttp://jquery.com/
+- KnockoutJS -http://knockoutjs.com/
+- http://linqjs.codeplex.com/Linq 或 github.com/neuecc/linq.js
 
-当前版本的 LinqJS 不包含上面的代码中使用 ByHierarchy 方法，并将中断导航代码。若要解决此问题，请将以下方法添加到行之前 Linq.js 文件`Flatten: function ()`。
+当前版本的 LinqJS 不包含在上面的代码中使用的 ByHierarchy 方法, 将断开导航代码。 若要解决此问题, 请将以下方法添加到行`Flatten: function ()`之前的 Linq 文件中。
 
 ```
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

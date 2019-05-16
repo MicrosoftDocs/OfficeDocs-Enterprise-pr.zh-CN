@@ -3,7 +3,7 @@ title: 电子数据展示文件收集自动化
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 摘要：了解如何从用户计算机中自动收集文件以用于电子数据展示。
-ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490772"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068418"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>电子数据展示文件收集自动化
 
@@ -328,7 +328,7 @@ $AllFiles | ForEach-Object {
     
 |**行号**|**需更改的内容**|**必需/可选**|
 |:-----|:-----|:-----|
-|12   <br/> |**$FolderIdentifier** 标记在其中导入 PST 的邮箱文件夹。根据需要更改此变量。<br/> |可选  <br/> |
+|12  <br/> |**$FolderIdentifier** 标记在其中导入 PST 的邮箱文件夹。根据需要更改此变量。<br/> |可选  <br/> |
 |×  <br/> |**$ConnectionUri** 需设置为您自己的服务器。 <br/> > [!IMPORTANT]> 确保您的 **$ConnectionUri** 指向 http 位置，而不是 https。它不适用于 https:。          |必需  <br/> |
    
 4. 确认 Exchange 受信任子系统帐户具有 \\\\Staging\\Cases$ 共享的读取、写入和执行权限。

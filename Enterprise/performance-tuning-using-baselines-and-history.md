@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: 有几种简单的方法可以检查 Office 365 与您的业务之间的连接性能, 让您能够建立连接的粗略基准。 了解客户端计算机连接的性能历史记录可帮助您及早检测新兴问题, 识别和预测问题。
-ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491806"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069518"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>使用基线和性能历史记录优化 Office 365 性能
 
@@ -36,10 +36,10 @@ ms.locfileid: "33491806"
     
 ## <a name="something-you-should-know-about-office-365-performance"></a>您应该了解的有关 Office 365 性能的事项
 
-Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动化的监视, 而是真实人员。 维护 Office 365 云的角色的一部分是在实现性能调整和简化的情况下进行优化。 由于 office 365 云的客户端必须通过 Internet 进行连接, 因此在不同的 office 365 服务中进行微调的速度也会不断提高。 性能改进决不会真正在云中停止, 并且在保持云正常运行和快速的情况方面有很多积累的体验。 如果从您的位置连接到 Office 365 时遇到性能问题, 最好不要从支持用例开始, 再等待。 相反, 应开始调查 "内部输出" 中的问题。 也就是说, 从你的网络中开始, 然后向 Office 365 推出。 在使用 Office 365 支持打开事例之前, 您可以收集数据并执行操作, 并可能会解决问题。
+Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动化的监视, 而是真实人员。 维护 Office 365 云的角色的一部分是在实现性能调整和简化的情况下进行优化。 由于 Office 365 云的客户端必须通过 Internet 进行连接, 因此在不同的 Office 365 服务中进行微调的速度也会不断提高。 性能改进决不会真正在云中停止, 并且在保持云正常运行和快速的情况方面有很多积累的体验。 如果从您的位置连接到 Office 365 时遇到性能问题, 最好不要从支持用例开始, 再等待。 相反, 应开始调查 "内部输出" 中的问题。 也就是说, 从你的网络中开始, 然后向 Office 365 推出。 在使用 Office 365 支持打开事例之前, 您可以收集数据并执行操作, 并可能会解决问题。
   
 > [!IMPORTANT]
-> 请注意 Office 365 中的容量规划和限制。 当您尝试解决性能问题时, 该信息将使您排在曲线的前面。 以下是指向[Office 365 平台服务说明](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx)的链接。 这是一个中心中心, Office 365 提供的所有服务都有一个从此处转到其自己的服务说明的链接。 这意味着, 如果您需要查看 sharepoint online 的标准限制, 请单击 " [sharepoint online 服务说明](https://technet.microsoft.com/en-us/library/sharepoint-online-service-description.aspx)" 并找到其 " [sharepoint online 限制" 部分](https://go.microsoft.com/fwlink/p/?LinkID=856113)。 
+> 请注意 Office 365 中的容量规划和限制。 当您尝试解决性能问题时, 该信息将使您排在曲线的前面。 以下是指向[Office 365 平台服务说明](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx)的链接。 这是一个中心中心, Office 365 提供的所有服务都有一个从此处转到其自己的服务说明的链接。 这意味着, 如果您需要查看 SharePoint Online 的标准限制, 请单击 " [Sharepoint Online 服务说明](https://technet.microsoft.com/en-us/library/sharepoint-online-service-description.aspx)" 并找到其 " [sharepoint online 限制" 部分](https://go.microsoft.com/fwlink/p/?LinkID=856113)。 
   
 请务必进行故障排除, 了解性能是一个可调的尺度, 而不是将 idealized 值永久保留 (如果您认为这是如此, 则偶尔会出现高带宽任务, 如 "留出"大量用户或执行大型数据迁移将会非常紧张--因此需要对性能影响进行规划。 你可以且应该能够大致了解性能目标, 但很多变量在性能上会发挥作用, 因此性能各不相同。 这就是性能的性质。 
   
@@ -103,7 +103,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
     
 - 你在世界上的位置是什么？
     
-其中一些问题比其他问题更明显。 大多数人都要了解故障排除程序需要的具体步骤才能再现问题。 毕竟, 如何记录错误, 以及如何在问题修复时测试其他信息？ 不太明显, 如 "您看到问题的日期和时间是什么？" 和 "世界上的位置是什么？", 可以串联使用的信息。 根据用户的工作时间, 几个小时的差异可能意味着维护已在公司网络的各个部分进行。 例如, 如果您的公司有混合实施, 如混合 sharepoint 搜索 (可以同时在 sharepoint Online 和本地 SharePoint Server 2013 实例中查询搜索索引), 则可能会在内部部署服务器场中进行更新。 如果您的公司都在云中, 则系统维护可能包括添加或删除网络硬件、推出公司范围的更新, 或者对 DNS 或其他核心基础结构进行更改。
+其中一些问题比其他问题更明显。 大多数人都要了解故障排除程序需要的具体步骤才能再现问题。 毕竟, 如何记录错误, 以及如何在问题修复时测试其他信息？ 不太明显, 如 "您看到问题的日期和时间是什么？" 和 "世界上的位置是什么？", 可以串联使用的信息。 根据用户的工作时间, 几个小时的差异可能意味着维护已在公司网络的各个部分进行。 例如, 如果您的公司有混合实施, 如混合 SharePoint 搜索 (可以同时在 SharePoint Online 和本地 SharePoint Server 2013 实例中查询搜索索引), 则可能会在内部部署服务器场中进行更新。 如果您的公司都在云中, 则系统维护可能包括添加或删除网络硬件、推出公司范围的更新, 或者对 DNS 或其他核心基础结构进行更改。
   
 当您解决性能问题时, 我们有点像犯罪场景, 您需要精确而 observant 地从证据中得出任何结论。 若要执行此操作, 您必须通过收集证据获取一个正常的问题声明。 它应包括计算机的上下文、用户的上下文、问题开始时的上下文以及暴露性能问题的确切步骤。 此问题语句应和在您的笔记中的最顶层页面保持不变。 通过在解决解决方案后再次浏览问题声明, 您将采取相应步骤来测试并证明您执行的操作是否已解决问题。 在完成工作时, 了解这一点非常关键。
   
@@ -135,7 +135,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
     
 - 从传出点到 Office 365 的时间 (以毫秒为单位)
     
-- 在浏览时解析 Office 365 url 的服务器世界上的位置
+- 在浏览时解析 Office 365 URL 的服务器世界上的位置
     
 - 您的 ISP 的 DNS 解析速度 (毫秒)、数据包到达时不一致 (网络抖动)、上载和下载时间 (以毫秒为单位)
     
@@ -198,17 +198,17 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
 ![包含客户端、代理和云的基本网络以及工具建议 PSPing、TraceTCP 和网络跟踪。](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP 包含在此屏幕截图中, 因为它是一种有用的工具, 用于显示请求处理所需的时间, 以及从一台计算机到下一台计算机的网络跃距或从一台计算机到下一台计算机之间的连接要到达目标所需的时间 (以毫秒为单位)。 TraceTCP 还可以提供在跃点期间使用的服务器的名称, 这对于支持中的 Microsoft Office 365 疑难解答非常有用。 > TraceTCP 命令可能非常简单, 例如: > `tracetcp.exe outlook.office365.com:443`> 请务必在命令中包含端口号! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html)是免费下载, 但依赖于 Wincap。 Wincap 是一种也由 Netmon 使用和安装的工具。 我们还在 "高级方法" 部分中使用 Netmon。 
+> TraceTCP 包含在此屏幕截图中, 因为它是一种有用的工具, 用于显示请求处理所需的时间, 以及从一台计算机到下一台计算机的网络跃距或从一台计算机到下一台计算机之间的连接要到达目标所需的时间 (以毫秒为单位)。 TraceTCP 还可以提供在跃点期间使用的服务器的名称, 这对于支持中的 Microsoft Office 365 疑难解答非常有用。 > TraceTCP 命令可能非常简单, 例如: > `tracetcp.exe outlook.office365.com:443`_GT_ 请务必在命令中包含端口号! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html)是免费下载, 但依赖于 Wincap。 Wincap 是一种也由 Netmon 使用和安装的工具。 我们还在 "高级方法" 部分中使用 Netmon。 
   
- 如果有多个办公室, 则还需要在每个位置的客户端中保留一组数据。 此测试可衡量延迟, 在这种情况下, 它是一个数字值, 它描述客户端向 office 365 发送请求与 office 365 响应请求之间的时间量。 测试源于客户端计算机上的域, 并在 Internet 中从传出点传出网络中的往返行程, 并将其从 Internet 发送到 Office 365, 然后再到上一页进行测量。 
+ 如果有多个办公室, 则还需要在每个位置的客户端中保留一组数据。 此测试可衡量延迟, 在这种情况下, 它是一个数字值, 它描述客户端向 Office 365 发送请求与 Office 365 响应请求之间的时间量。 测试源于客户端计算机上的域, 并在 Internet 中从传出点传出网络中的往返行程, 并将其从 Internet 发送到 Office 365, 然后再到上一页进行测量。 
   
-在这种情况下, 有几种方法可以处理出局点 (在此示例中为代理服务器)。 您可以从1到2进行跟踪, 然后从2到3进行跟踪, 然后以毫秒为单位添加数字以获得网络边缘的最终总计。 或者, 可以将连接配置为绕过 Office 365 地址的代理。 在具有防火墙、反向代理或两者的某个组合的大型网络中, 可能需要在代理服务器上发出例外, 允许流量传递给大量 url。 有关 office 365 使用的终结点列表, 请参阅[office 365 url 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)。 如果您有身份验证代理, 请首先测试以下项的异常:
+在这种情况下, 有几种方法可以处理出局点 (在此示例中为代理服务器)。 您可以从1到2进行跟踪, 然后从2到3进行跟踪, 然后以毫秒为单位添加数字以获得网络边缘的最终总计。 或者, 可以将连接配置为绕过 Office 365 地址的代理。 在具有防火墙、反向代理或两者的某个组合的大型网络中, 可能需要在代理服务器上发出例外, 允许流量传递给大量 Url。 有关 Office 365 使用的终结点列表, 请参阅[office 365 url 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)。 如果您有身份验证代理, 请首先测试以下项的异常:
   
 - 端口80和443
     
 - TCP 和 HTTPs
     
-- 出站到以下任意 url 的连接:
+- 出站到以下任意 Url 的连接:
     
 - \*。 microsoftonline.com
     
@@ -224,9 +224,9 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
     
 必须允许所有用户访问这些地址, 而无需任何代理干扰或身份验证。 在小型网络中, 应将它们添加到 web 浏览器中的代理绕过列表中。 
   
-若要将它们添加到 Internet Explorer 中的代理绕过列表, 请转到**Tools** \> **Internet Options** \> **Connections** \> **LAN settings** \> **Advanced**。 您还可以在 "高级" 选项卡中找到代理服务器和代理服务器端口。 您可能需要单击 "**为 LAN 使用代理服务器**" 复选框, 以访问 "**高级**" 按钮。 您需要确保选中 "**对本地地址绕过代理服务器**"。 单击 "**高级**" 后, 您将看到一个可在其中输入例外的文本框。 使用分号分隔上面列出的通配符 url, 例如:
+若要将它们添加到 Internet Explorer 中的代理绕过列表, 请转到**Tools** \> **Internet Options** \> **Connections** \> **LAN settings** \> **Advanced**。 您还可以在 "高级" 选项卡中找到代理服务器和代理服务器端口。 您可能需要单击 "**为 LAN 使用代理服务器**" 复选框, 以访问 "**高级**" 按钮。 您需要确保选中 "**对本地地址绕过代理服务器**"。 单击 "**高级**" 后, 您将看到一个可在其中输入例外的文本框。 使用分号分隔上面列出的通配符 Url, 例如:
   
-\*. microsoftonline.com;\*。 sharepoint.com
+\*。 microsoftonline.com;\*。 sharepoint.com
   
 绕过代理之后, 您应该能够直接在 Office 365 URL 上使用 ping 或 PsPing。 下一步将测试 ping **outlook.office365.com**。 或者, 如果您正在使用 PsPing 或另一个工具, 以允许您向命令提供端口号, PsPing 将根据**portal.microsoftonline.com:443**查看平均往返时间 (以毫秒为单位)。 
   
@@ -244,7 +244,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
     
 3. 如果出现“**用户帐户控制**”对话框，请确认所显示的是您想要执行的操作，然后单击“**继续**”。
     
-2. 导航到安装工具 (在此示例中为 PsPing) 的文件夹, 并测试这些 Office 365 url:
+2. 导航到安装工具 (在此示例中为 PsPing) 的文件夹, 并测试这些 Office 365 Url:
     
   - psping portal.office.com:443
     
@@ -262,7 +262,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
   
 如果您不熟悉代理旁路, 并且想要分步采取措施, 则需要先找出代理服务器的名称。 在 internet Explorer 中, 转到**工具** \> **Internet 选项** \> **连接** \> **LAN 设置** \> **高级**。 "**高级**" 选项卡是您将在其中看到列出的代理服务器的位置。 通过完成此任务在命令提示符处 Ping 代理服务器: 
   
- **ping 代理服务器并获取阶段1到2的往返行程值 (以毫秒为单位)**
+ **Ping 代理服务器并获取阶段1到2的往返行程值 (以毫秒为单位)**
   
 1. 通过完成以下步骤运行提升的命令提示符:
     
@@ -296,7 +296,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
   
 如果您的客户端计算机是对代理 (或传出) 服务器的访问权限之一的选择, 则可以通过远程连接到该计算机来运行下一条测试, 从那里运行命令提示符 PsPing 到 Office 365 URL。 如果您没有对该计算机的访问权限, 则可以联系网络资源, 以获取下一条腿的帮助, 并获得确切的号码。 如果不可能, 请针对相关 Office 365 URL 采取 PsPing, 并将其与 PsPing 或 Ping time 相对于代理服务器进行比较。 
   
-例如, 如果从客户端到 office 365 URL 的51.84 毫秒, 并且从客户端到代理 (或传出点) 的时间为2.8 毫秒, 则从传出到 Office 365 中有49.04 毫秒。 同样, 如果从客户端到代理的 PsPing 为12.25 毫秒, 在一天的高度和从客户端到 office 365 url 的62.01 毫秒之间, 则到 office 365 url 的代理传出的平均值为49.76 毫秒。
+例如, 如果从客户端到 Office 365 URL 的51.84 毫秒, 并且从客户端到代理 (或传出点) 的时间为2.8 毫秒, 则从传出到 Office 365 中有49.04 毫秒。 同样, 如果从客户端到代理的 PsPing 为12.25 毫秒, 在一天的高度和从客户端到 Office 365 URL 的62.01 毫秒之间, 则到 Office 365 URL 的代理传出的平均值为49.76 毫秒。
   
 ![显示从客户端到 Office 365 旁边的 ping 的其他图形 (以毫秒为单位), 以便可以减去这些值。](media/cd764e77-5154-44ba-a5cd-443a628eb2d9.PNG)
   
@@ -316,7 +316,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
     
 - SPO 的基线列表-**步骤 4:** 浏览 OneDrive 网站的主页并执行网络跟踪。 保存跟踪。 
     
-此列表应包括用户对 SharePoint Online 所执行的最重要的常见操作。 请注意, 最后一步是跟踪到 OneDrive for business, 生成 SharePoint Online 主页 (通常由公司自定义) 和 OneDrive for business 主页 (很少自定义) 的加载项之间的比较。 当遇到速度较慢的 SharePoint Online 网站时, 这是一个非常基本的测试。 你可以将此差异的记录构建到测试中。
+此列表应包括用户对 SharePoint Online 所执行的最重要的常见操作。 请注意, 最后一步是跟踪到 OneDrive for business, 生成 SharePoint Online 主页 (通常由公司自定义) 和 OneDrive for Business 主页 (很少自定义) 的加载项之间的比较。 当遇到速度较慢的 SharePoint Online 网站时, 这是一个非常基本的测试。 你可以将此差异的记录构建到测试中。
   
 如果您处于性能问题的中间部分, 则许多步骤与采用比较基准时相同。 网络跟踪变得至关重要, 因此我们将** 处理下一步的重要跟踪。 
   

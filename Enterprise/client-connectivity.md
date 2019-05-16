@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: '摘要: 介绍了客户端计算机如何连接到 Office 365 租户, 具体取决于客户端计算机和 Office 365 租户数据中心的位置。'
-ms.openlocfilehash: 9455147e70a391619e1602f2e36d9162ff2c0928
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490556"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068198"
 ---
 # <a name="client-connectivity"></a>客户端连接
 
@@ -31,13 +31,13 @@ ms.locfileid: "33490556"
   
 Office 365 位于世界各地的 Microsoft 数据中心, 可帮助保持服务正常运行, 即使一个区域中存在重大问题 (例如地震或断电) 也是如此。 当您连接到 Office 365 租户时, 客户端连接将定向到承载租户的相应数据中心。 确定租户的托管位置的规则是由与 Microsoft 的协议定义的。 确定客户端从该数据中心位置获取数据的方式取决于您所使用的服务的体系结构的规则。
   
-例如, 当您登录到 Office 365 门户时, 通常是连接到客户端的最接近的数据中心, 然后根据您下一步使用的服务进行定向。 如果你启动电子邮件, 则显示 UI 的初始连接可能仍来自最近的数据中心, 但在最近的数据中心和你的租户所在的数据中心之间可能会打开第二个连接, 以向你显示阅读的电子邮件中的内容。 Microsoft 在世界上十大网络中的一种是快速快速实现数据中心到数据中心连接的操作。
+例如, 当您登录到 Office 365 门户时, 通常是连接到客户端的最接近的数据中心, 然后根据您下一步使用的服务进行定向。 如果你启动电子邮件, 则显示 UI 的初始连接可能仍来自最近的数据中心, 但在最近的数据中心和你的租户所在的数据中心之间可能会打开第二个连接, 以向你显示阅读的电子邮件中的内容。 Microsoft 在世界上十大网络中的一种, 这导致数据中心到数据中心之间的连接速度非常惊人。
   
 阅读本文后, 您很可能了解为什么我们不提供每个数据中心的[Office 365 url 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2), 它们只是相互互联且相互依赖以使这一点成为可行的。
   
-如果您使用的是适用于 office 365 的 Azure ExpressRoute, 在大多数情况下, 连接将通过与 Office 365 的专用连接 (而不是此处介绍的公用连接) 进行。 有关客户端连接方式的原则仍是准确的。 了解有关[Office 365 的 Azure ExpressRoute 的](azure-expressroute.md)详细信息。
+如果您使用的是适用于 Office 365 的 Azure ExpressRoute, 在大多数情况下, 连接将通过与 Office 365 的专用连接 (而不是此处介绍的公用连接) 进行。 有关客户端连接方式的原则仍是准确的。 了解有关[Office 365 的 Azure ExpressRoute 的](azure-expressroute.md)详细信息。
   
-有关 skype for business 网络请求的更多详细信息, 请阅读[skype for business Online 中的文章媒体质量和网络连接性能](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)。
+有关 Skype for business 网络请求的更多详细信息, 请阅读[skype For Business Online 中的文章媒体质量和网络连接性能](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)。
 
 ||
 |:-----|
@@ -62,7 +62,7 @@ Exchange Online 将进一步执行操作。 将客户端计算机连接到最接
   
 1. 客户端计算机将为与 Office 365 关联的 IP 地址请求本地 DNS 服务器。
 
-2. 客户端计算机的本地 dns 服务器会向 Microsoft dns 服务器询问与 Office 365 关联的 IP 地址。
+2. 客户端计算机的本地 DNS 服务器会向 Microsoft DNS 服务器询问与 Office 365 关联的 IP 地址。
 
 3. Microsoft 的 DNS 服务器返回区域服务器名称 (基于客户端的 DNS 服务器的位置), 客户端计算机重复步骤1和步骤 2, 以获取区域 Office 365 数据中心的 IP 地址。
 
@@ -74,11 +74,11 @@ Exchange Online 将进一步执行操作。 将客户端计算机连接到最接
   
 ## <a name="how-does-this-work-for-sovereign-cloud-offerings"></a>如何使用 sovereign 云产品？
 
-此连接在 sovereign 云产品 (如由 21 Vianet 运营的 Office 365) 中略有不同。 使用 office 365 的 sovereign 实例中的租户, 将接受门户连接的最近的 Office 365 服务器是租户驻留的 sovereign 区域内的服务器。 同样, 在我们的 sovereign 云或标准产品中访问 SharePoint Online 的客户将被定向到租户所在的前端服务器。 请参阅下面的连接到活动数据中心。
+此连接在 sovereign 云产品 (如由 21 Vianet 运营的 Office 365) 中略有不同。 使用 Office 365 的 sovereign 实例中的租户, 将接受门户连接的最近的 Office 365 服务器是租户驻留的 sovereign 区域内的服务器。 同样, 在我们的 sovereign 云或标准产品中访问 SharePoint Online 的客户将被定向到租户所在的前端服务器。 请参阅下面的连接到活动数据中心。
   
 1. 客户端计算机将为与 Office 365 关联的 IP 地址请求本地 DNS 服务器。
 
-2. 客户端计算机的本地 dns 服务器会向 Microsoft dns 服务器询问与 Office 365 关联的 IP 地址。
+2. 客户端计算机的本地 DNS 服务器会向 Microsoft DNS 服务器询问与 Office 365 关联的 IP 地址。
 
 3. Microsoft 的 DNS 服务器返回区域服务器名称 (基于客户端的 DNS 服务器的位置), 客户端计算机重复步骤1和步骤 2, 以获取区域 Office 365 数据中心的 IP 地址。
 
@@ -94,11 +94,11 @@ Exchange Online 将进一步执行操作。 将客户端计算机连接到最接
   
 ## <a name="how-does-this-work"></a>这是如何工作的？
 
-当客户端计算机从不同的区域连接到 SharePoint online 时, 该连接将重定向到活动的 SharePoint Online 数据中心。 在这种情况下, 客户使用的是标准产品, 导致门户连接保持在本地, 并且 SharePoint Online 连接将定向到活动数据中心。
+当客户端计算机从不同的区域连接到 SharePoint Online 时, 该连接将重定向到活动的 SharePoint Online 数据中心。 在这种情况下, 客户使用的是标准产品, 导致门户连接保持在本地, 并且 SharePoint Online 连接将定向到活动数据中心。
   
 1. 客户端计算机将为与 Office 365 关联的 IP 地址请求本地 DNS 服务器。
 
-2. 客户端计算机的本地 dns 服务器会向 Microsoft dns 服务器询问与 Office 365 关联的 IP 地址。
+2. 客户端计算机的本地 DNS 服务器会向 Microsoft DNS 服务器询问与 Office 365 关联的 IP 地址。
 
 3. Microsoft 的 DNS 服务器返回活动 SharePoint Online datacenter 的服务器名称 (基于客户端的 Office 365 租户的位置), 客户端计算机重复步骤1和步骤2以获取活动 Office 365 数据中心的 IP 地址。
 
@@ -106,13 +106,13 @@ Exchange Online 将进一步执行操作。 将客户端计算机连接到最接
 
 ![活动的美国数据中心](media/c6d2933f-49cb-4536-bea7-c868707755ae.png)
   
-## <a name="connecting-over-virtual-private-networks-vpns"></a>通过虚拟专用网络 (vpn) 连接
+## <a name="connecting-over-virtual-private-networks-vpns"></a>通过虚拟专用网络 (Vpn) 连接
 
-仅当客户端计算机使用虚拟专用网络 (VPN) 时, 此类型的连接才适用。 实际上, 由于使用了 VPN, Office 365 的行为不会发生更改, 但 vpn 通常用于控制客户端计算机如何建立到 Office 365 的连接, 并且通常会导致性能下降, 因此必须进行覆盖。
+仅当客户端计算机使用虚拟专用网络 (VPN) 时, 此类型的连接才适用。 实际上, 由于使用了 VPN, Office 365 的行为不会发生更改, 但 Vpn 通常用于控制客户端计算机如何建立到 Office 365 的连接, 并且通常会导致性能下降, 因此必须进行覆盖。
   
 ## <a name="how-does-this-work"></a>这是如何工作的？
 
-当客户端计算机在不同区域建立与企业办公室的 VPN 连接时, 将使用该办公室中的 dns 服务器, 而不是客户端计算机位置的 dns 服务器。 在大多数情况下, 此额外的 VPN 连接会降低 Office 365 体验。 Office 365 服务已经过优化, 可尽可能接近最终用户的服务客户连接。 许多服务利用 Azure edge 网络、内容传递网络以及 Microsoft 网络上的可靠网络容量, 在对 Office 365 服务的网络请求在客户端计算机附近的接近时提供最佳的用户体验尽可能。
+当客户端计算机在不同区域建立与企业办公室的 VPN 连接时, 将使用该办公室中的 DNS 服务器, 而不是客户端计算机位置的 DNS 服务器。 在大多数情况下, 此额外的 VPN 连接会降低 Office 365 体验。 Office 365 服务已经过优化, 可尽可能接近最终用户的服务客户连接。 许多服务利用 Azure edge 网络、内容传递网络以及 Microsoft 网络上的可靠网络容量, 在对 Office 365 服务的网络请求在客户端计算机附近的接近时提供最佳的用户体验尽可能。
   
 1. 客户端计算机会向 VPN DNS 服务器请求与 Office 365 关联的 IP 地址。
 

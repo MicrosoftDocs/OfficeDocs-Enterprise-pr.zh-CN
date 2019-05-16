@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 摘要：了解 Office 365 PowerShell 的重要性，连接到 Office 365 租户，并获取帮助。
-ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: aeabc0b4ab799f542a05e5279b8ff5cb7123abd8
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068948"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Office 365 PowerShell 入门
 

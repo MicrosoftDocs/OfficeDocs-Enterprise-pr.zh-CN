@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
-ms.openlocfilehash: bda22a1df0165724f660019e28a9f088280fea4f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f04488ad9a99111734d476725eb8e9d423c167cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491330"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067478"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
@@ -26,7 +26,7 @@ ms.locfileid: "33491330"
 在为 Azure 基础结构服务中的 Office 365 联合身份验证部署高可用性的这一阶段中，可以在 Azure 虚拟网络中配置两个域控制器和目录同步服务器。然后用于身份验证的客户端 Web 请求可以在 Azure 虚拟网络中进行身份验证，而不是将通过站点到站点 VPN 连接的该身份验证流量发送到本地网络。
   
 > [!NOTE]
-> active directory 联合身份验证服务 (AD FS) 无法使用 Azure active directory 域服务代替 Active directory 域服务域控制器。 
+> Active Directory 联合身份验证服务 (AD FS) 无法使用 Azure Active Directory 域服务代替 Active Directory 域服务域控制器。 
   
 必须先完成这一阶段，然后才能移至[High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
   

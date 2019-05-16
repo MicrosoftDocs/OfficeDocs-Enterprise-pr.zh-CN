@@ -3,19 +3,19 @@ title: 可访问的图 - Microsoft Exchange 2013 平台选项
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: 本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。
-ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487783"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068588"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>可访问的图 - Microsoft Exchange 2013 平台选项
 
@@ -23,7 +23,7 @@ ms.locfileid: "33487783"
   
 本海报介绍哪些业务决策者 (BDM) 和架构师需要了解 Exchange Online 与 Exchange Server 部署，其中包含以下内容： 
   
-- exchange 2013 的四个可用平台选项的比较: exchange Online (Office 365)、exchange 混合、exchange Server 本地和提供商托管的 exchange。 
+- Exchange 2013 的四个可用平台选项的比较: Exchange Online (Office 365)、Exchange 混合、Exchange Server 本地和提供商托管的 Exchange。 
     
 - 描述 Exchange 2013 中的三项新功能或更新功能。 
     
@@ -47,7 +47,7 @@ ms.locfileid: "33487783"
 
 使用 Office 365 可提高效率并降低成本。
   
-随附的图显示了具有 Azure active directory 租户的 Exchange Online, 该租户可同步内部部署 Active directory 域服务 (AD DS) 环境和 Azure Active directory 租户之间的帐户名称和密码。 Active Directory 联合身份验证服务 (AD FS) 是单一登录的必要条件。 
+随附的图显示了具有 Azure Active Directory 租户的 Exchange Online, 该租户可同步内部部署 Active Directory 域服务 (AD DS) 环境和 Azure Active Directory 租户之间的帐户名称和密码。 Active Directory 联合身份验证服务 (AD FS) 是单一登录的必要条件。 
   
 功能描述：
   
@@ -61,13 +61,13 @@ ms.locfileid: "33487783"
     
 - 通过 99.9% 服务级别协议 (SLA) 实现的内置高可用性。
     
-- 目录同步, 包括本地 Active directory 域服务 (AD DS) 和 Azure Active directory 租户之间的密码。 Active Directory 联合身份验证服务 (AD FS) 是单一登录的必要条件。
+- 目录同步, 包括本地 Active Directory 域服务 (AD DS) 和 Azure Active Directory 租户之间的密码。 Active Directory 联合身份验证服务 (AD FS) 是单一登录的必要条件。
     
 #### <a name="exchange-hybrid"></a>Exchange 混合
 
 您可以利用 Office 365 的优势, 同时维护本地 Exchange Server。
   
-随附的图显示了 Office 365 Exchange Online, 其中某些用户驻留在本地, 并且某些用户是在线托管的。 它还显示了在内部部署 Active directory 域服务 (AD DS) 环境和 Azure active directory 租户之间同步帐户名称和密码的 Azure Active directory 租户。
+随附的图显示了 Office 365 Exchange Online, 其中某些用户驻留在本地, 并且某些用户是在线托管的。 它还显示了在内部部署 Active Directory 域服务 (AD DS) 环境和 Azure Active Directory 租户之间同步帐户名称和密码的 Azure Active Directory 租户。
   
 功能描述：
   
@@ -77,7 +77,7 @@ ms.locfileid: "33487783"
     
 - 按照您的安排，在一段时间后从 Exchange 内部部署迁移到 Exchange Online。
     
-- 与其他 Office 365 应用程序集成, 包括 Lync online 和 SharePoint online。
+- 与其他 Office 365 应用程序集成, 包括 Lync Online 和 SharePoint Online。
     
 #### <a name="exchange-server-on-premises"></a>Exchange Server 内部部署
 
@@ -121,7 +121,7 @@ ms.locfileid: "33487783"
   
 - 希望降低内部部署 Exchange 的运营成本的组织。
     
-- 计划利用其他 Office 365 产品的组织, 如 SharePoint online 和 Lync online。
+- 计划利用其他 Office 365 产品的组织, 如 SharePoint Online 和 Lync Online。
     
 #### <a name="exchange-hybrid"></a>Exchange 混合
 
@@ -222,7 +222,7 @@ ms.locfileid: "33487783"
   
 - 配置 Active Directory 联合身份验证服务 (AD FS) 以实现单一登录（如果需要）。
     
-- 配置 exchange 证书以用于在 exchange 2013 服务器和 Office 365 之间进行安全通信。
+- 配置 exchange 证书以用于在 Exchange 2013 服务器和 Office 365 之间进行安全通信。
     
 - 为所需的入站 Internet 邮件路径配置 DNS 记录。
     
@@ -264,7 +264,7 @@ IT 员工在您的组织中的职责包括创建和管理用户帐户。
     
 要了解有关 Exchange 混合的详细信息，请参阅以下内容：
   
-- [Exchange 2013 混合部署](https://aka.ms/ExchangeHybrid)。 应注意, 混合服务器许可证仅在以下情况下是必需的: exchange 2010 组织 with exchange 2013 混合服务器和 exchange 2007 组织与 exchange 2013 或 exchange 2010 混合服务器。
+- [Exchange 2013 混合部署](https://aka.ms/ExchangeHybrid)。 应注意, 混合服务器许可证仅在以下情况下是必需的: exchange 2010 组织 with Exchange 2013 混合服务器和 Exchange 2007 组织与 Exchange 2013 或 Exchange 2010 混合服务器。
     
 - [Office 365 登录](https://aka.ms/HybridKey)
     
@@ -296,7 +296,7 @@ Exchange Server 部署助理是一个基于 web 的工具，它会询问您几�
   
 ### <a name="integration-with-lync-and-sharepoint"></a>与 Lync 和 SharePoint 集成
 
-Exchange Server 2013 包括与 Lync Server 2013 和 SharePoint server 2013 集成的许多功能。 这些产品将一起提供一整套丰富的功能并改进整个组织的协作。 
+Exchange Server 2013 包括与 Lync Server 2013 和 SharePoint Server 2013 集成的许多功能。 这些产品将一起提供一整套丰富的功能并改进整个组织的协作。 
   
 随附的图显示了服务器与服务器之间的身份验证海报并提供了海报的链接。 
   

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/11/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,18 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 摘要：了解为何必须使用 Office 365 PowerShell 管理 Office 365，这在某些情况下可以变得更高效，在其他情况下则可能是必备要求。
-ms.openlocfilehash: f63f1a2361b225eed5d771b06b07f00bba26c392
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: be117dd2e4eaa7f3e2e95cd0d2444bd5b813bccb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574096"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071148"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>为什么您需要使用 Office 365 PowerShell
 
  **摘要：** 了解为什么必须使用 Office 365 PowerShell 管理 Office 365：在一些情况下是因为它更为高效，在另外一些情况下是因为必须这样做。
   
-使用 Microsoft 365 管理中心, 不仅可以管理 office 365 用户帐户和许可证, 还可以管理 office 365 服务器产品: Exchange、Skype for business online 和 SharePoint online。 但是，也可以使用 Office 365 PowerShell 命令来管理这些元素，充分利用针对速度、自动化和其他功能的命令行和脚本语言环境。
+使用 Microsoft 365 管理中心, 不仅可以管理 Office 365 用户帐户和许可证, 还可以管理 Office 365 服务器产品: Exchange、Skype for Business Online 和 SharePoint Online。 但是，也可以使用 Office 365 PowerShell 命令来管理这些元素，充分利用针对速度、自动化和其他功能的命令行和脚本语言环境。
   
 在本文中，我们将向您展示使用 Office 365 PowerShell 管理 Office 365 的各种方式。
   
@@ -47,7 +47,7 @@ Get-Mailbox
 
 使用 Microsoft 365 管理中心也可以轻松地获取邮箱的列表, 但计算所有 web 应用程序的所有网站的所有列表中的项目数无法轻松完成。
   
-请注意, office 365 PowerShell 旨在增强和增强管理 office 365 的能力, 而不是替换 Microsoft 365 管理中心。 作为 Office 365 管理员，必须至少习惯使用 Office 365 PowerShell，因为有些配置程序只能通过 Office 365 PowerShell 命令完成。 在这些情况下，需要了解如何：
+请注意, Office 365 PowerShell 旨在增强和增强管理 Office 365 的能力, 而不是替换 Microsoft 365 管理中心。 作为 Office 365 管理员，必须至少习惯使用 Office 365 PowerShell，因为有些配置程序只能通过 Office 365 PowerShell 命令完成。 在这些情况下，需要了解如何：
   
 - 安装 Office 365 PowerShell 模块（每台管理员计算机只能安装一次）。
     
@@ -65,7 +65,7 @@ Microsoft 365 管理中心显示了大量有用的信息, 但这并不意味着�
   
 ![Microsoft 365 管理中心中的用户和组的显示示例。](media/o365-powershell-users-and-groups.png)
   
-出于多种目的，这显示了你需要知道的信息。 但是，有时你需要了解更多。 例如, office 365 许可 (和用户可使用的 office 365 功能) 取决于该用户的地理位置。 向居住在美国的用户扩展的策略和功能可能与向居住在印度或比利时的用户扩展的策略和功能不同。 您可以使用 Microsoft 365 管理中心来确定用户的地理位置, 步骤如下:
+出于多种目的，这显示了你需要知道的信息。 但是，有时你需要了解更多。 例如, Office 365 许可 (和用户可使用的 Office 365 功能) 取决于该用户的地理位置。 向居住在美国的用户扩展的策略和功能可能与向居住在印度或比利时的用户扩展的策略和功能不同。 您可以使用 Microsoft 365 管理中心来确定用户的地理位置, 步骤如下:
   
 1. 双击用户的"显示名称"。
     
@@ -378,7 +378,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
     
 - 用户是否已启用 Skype for Business Online
     
-您当前无法使用 Microsoft 365 管理中心来轻松生成此类报告。 相反, 您必须创建单独的文档来存储信息 (如 Excel 工作表), 并从 Microsoft 365 管理中心获取所有用户名和许可信息, 从 Exchange 管理中心获取邮箱信息, 获取 Skype for来自 Skype for business online 管理中心的商业在线信息, 然后整理和组合这些信息。
+您当前无法使用 Microsoft 365 管理中心来轻松生成此类报告。 相反, 您必须创建单独的文档来存储信息 (如 Excel 工作表), 并从 Microsoft 365 管理中心获取所有用户名和许可信息, 从 Exchange 管理中心获取邮箱信息, 获取 Skype for来自 Skype for Business Online 管理中心的商业在线信息, 然后整理和组合这些信息。
   
 另一种方法是使用 Office 365 PowerShell 脚本编译该报告。
   

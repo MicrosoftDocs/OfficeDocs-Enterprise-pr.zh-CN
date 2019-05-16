@@ -3,7 +3,7 @@ title: 使用 PowerShell 管理 Office 365 组
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,18 +17,18 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 了解如何在 Microsoft PowerShell 中执行 Office 365 组的常见管理任务。
-ms.openlocfilehash: 6d7841595315507b0b7f28f6b86f9349705f1d8b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491744"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069018"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>使用 PowerShell 管理 Office 365 组
 
  *最后更新了18年4月2018* 
   
-本文提供在 Microsoft PowerShell 中对组执行常见管理任务的步骤。 此外, 它还列出了组的 PowerShell cmdlet。 有关管理 sharepoint 网站的信息, 请参阅[使用 PowerShell 管理 sharepoint Online 网站](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)。
+本文提供在 Microsoft PowerShell 中对组执行常见管理任务的步骤。 此外, 它还列出了组的 PowerShell cmdlet。 有关管理 SharePoint 网站的信息, 请参阅[使用 PowerShell 管理 Sharepoint Online 网站](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)。
 
 ## <a name="link-to-your-office-365-groups-usage-guidelines"></a>链接到 Office 365 组使用指南
 <a name="BK_LinkToGuideLines"> </a>
@@ -44,7 +44,7 @@ ms.locfileid: "33491744"
 ## <a name="allow-users-to-send-as-the-office-365-group"></a>允许用户以 Office 365 组的形式发送
 <a name="BK_LinkToGuideLines"> </a>
   
-如果要将 Office 365 组启用为 "代理发送", 请使用[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission)和[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) cmdlet 对此进行配置。 启用此设置后, office 365 组用户可以使用 outlook 或 web 上的 outlook 以电子邮件的形式发送和回复电子邮件作为 Office 365 组。 用户可以转到组, 创建新的电子邮件, 并将 "代理发送" 字段更改为组的电子邮件地址。 
+如果要将 Office 365 组启用为 "代理发送", 请使用[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission)和[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) cmdlet 对此进行配置。 启用此设置后, Office 365 组用户可以使用 Outlook 或 web 上的 Outlook 以电子邮件的形式发送和回复电子邮件作为 Office 365 组。 用户可以转到组, 创建新的电子邮件, 并将 "代理发送" 字段更改为组的电子邮件地址。 
 
 ([也可以在 Exchange 管理中心中执行此操作](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。)
   
@@ -65,7 +65,7 @@ Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAli
 
 ## <a name="create-classifications-for-office-groups-in-your-organization"></a>为组织中的 Office 组创建分类
 
-您可以创建组织中的用户在创建 Office 365 组时可以设置的分类。 例如, 您可以允许用户在其创建的组上设置 "Standard"、"Secret" 和 "Top secret"。 默认情况下, 不会设置组分类, 您需要创建它才能使用户对其进行设置。 使用 Azure Active Directory PowerShell 将用户指向组织的 Office 365 组的使用指南。
+您可以创建组织中的用户在创建 Office 365 组时可以设置的分类。 例如, 您可以允许用户在其创建的组上设置 "Standard"、"Secret" 和 "Top Secret"。 默认情况下, 不会设置组分类, 您需要创建它才能使用户对其进行设置。 使用 Azure Active Directory PowerShell 将用户指向组织的 Office 365 组的使用指南。
   
 查看[用于配置组设置的 Azure Active Directory cmdlet](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) , 并按照在**目录级别创建设置**中的步骤定义 Office 365 组的分类。 
   
@@ -99,9 +99,9 @@ Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact>
 New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public> 
 ```
 
-请查看[使用 PowerShell with exchange online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) , 并[连接到 Exchange online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) , 了解有关使用 exchange online powershell 的更多详细信息。 
+请查看[使用 PowerShell With Exchange online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) , 并[连接到 Exchange online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) , 了解有关使用 exchange online powershell 的更多详细信息。 
   
-启用这些设置后, 组所有者将能够从 Web 上的 outlook 和 outlook 中的下拉菜单中选择一个分类, 并将其保存在 "**编辑**组" 页面中。 
+启用这些设置后, 组所有者将能够从 Web 上的 Outlook 和 Outlook 中的下拉菜单中选择一个分类, 并将其保存在 "**编辑**组" 页面中。 
   
 ![选择 Office 365 组分类](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
   
@@ -119,7 +119,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 
 如果不希望其他组织中的用户向 Office 365 组发送电子邮件, 则可以更改该组的设置。 仅允许内部用户向你的组发送电子邮件。 如果外部用户尝试向该组发送邮件, 则会被拒绝。
   
-运行 remove-unifiedgroup cmdlet 以更新此设置, 如下所示:
+运行 Remove-unifiedgroup cmdlet 以更新此设置, 如下所示:
 
 ```
 Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthenticationEnabled $true
@@ -144,7 +144,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-display-name-of-the-office-365-group"></a>更改 Office 365 组的显示名称
 
-"显示名称" 指定 Office 365 组的名称。 您可以在 exchange 管理中心或 Office 365 管理门户中看到此名称。 您可以编辑组的显示名称, 或通过运行 remove-unifiedgroup 命令为现有的 Office 365 组分配显示名称:
+"显示名称" 指定 Office 365 组的名称。 您可以在 exchange 管理中心或 Office 365 管理门户中看到此名称。 您可以编辑组的显示名称, 或通过运行 Remove-unifiedgroup 命令为现有的 Office 365 组分配显示名称:
 
 ```
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -173,16 +173,16 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
   
 |**Cmdlet 名称**|**说明**|
 |:-----|:-----|
-|[remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |使用此 cmdlet 可查找现有的 Office 365 组, 并查看组对象的属性  <br/> |
-|[remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |更新特定 Office 365 组的属性  <br/> |
-|[新 remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |创建新的 Office 365 组。 此 cmdlet 提供了一组最少的参数, 用于设置扩展属性的值在创建新组后使用 remove-unifiedgroup  <br/> |
-|[remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |删除现有的 Office 365 组  <br/> |
+|[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |使用此 cmdlet 可查找现有的 Office 365 组, 并查看组对象的属性  <br/> |
+|[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |更新特定 Office 365 组的属性  <br/> |
+|[新 Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |创建新的 Office 365 组。 此 cmdlet 提供了一组最少的参数, 用于设置扩展属性的值在创建新组后使用 Remove-unifiedgroup  <br/> |
+|[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |删除现有的 Office 365 组  <br/> |
 |[UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |检索 Office 365 组的成员资格和所有者信息  <br/> |
 |[外接 UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |向现有 Office 365 组添加成百上千个用户或新所有者  <br/> |
 |[UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |从现有 Office 365 组中删除所有者和成员  <br/> |
-|[set-userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |用于查看有关与帐户关联的用户照片的信息。 用户照片存储在 Active Directory 中  <br/> |
-|[set-userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |用于将用户照片与帐户关联。 用户照片存储在 Active Directory 中  <br/> |
-|[set-userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |删除 Office 365 组的照片  <br/> |
+|[Set-userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |用于查看有关与帐户关联的用户照片的信息。 用户照片存储在 Active Directory 中  <br/> |
+|[Set-userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |用于将用户照片与帐户关联。 用户照片存储在 Active Directory 中  <br/> |
+|[Set-userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |删除 Office 365 组的照片  <br/> |
 
 ## <a name="related-topics"></a>相关主题
 

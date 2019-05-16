@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
 description: 本文是名为“本地电子数据展示流程”的图的可访问文本版本。
-ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487697"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068528"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>可访问的图 - 内部部署电子数据展示流程
 
@@ -26,7 +26,7 @@ ms.locfileid: "33487697"
   
 ## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>跨 SharePoint、Exchange、Lync 和文件共享
 
-该图显示了一个用户, 该用户发送的查询可访问两个服务器场、一个 sharepoint 2013 企业应用程序场和一个 sharepoint 2013 服务场。 sharepoint 2013 服务场与 sharepoint 2013 内容场进行通信, Exchange Server 2013 (与 Lync 2013 通信) 和 Windows 文件共享。 
+该图显示了一个用户, 该用户发送的查询可访问两个服务器场、一个 SharePoint 2013 企业应用程序场和一个 SharePoint 2013 服务场。 SharePoint 2013 服务场与 SharePoint 2013 内容场进行通信, Exchange Server 2013 (与 Lync 2013 通信) 和 Windows 文件共享。 
   
 电子数据展示流程列表介绍了数据流以及电子数据展示查询操作跨 SharePoint、Exchange、Lync 和文件共享发生的顺序。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "33487697"
     
 7. 将 SharePoint 2013 内容场中名称为 "CONTOSO" 的任何内容的保留请求由 SSA 发送到内容服务器场中的电子数据展示就地保留计时器作业。 
     
-8. 电子数据展示就地保留计时器作业将 "contoso Site" 和 "contoso content" 置于保留状态。 
+8. 电子数据展示就地保留计时器作业将 "CONTOSO Site" 和 "CONTOSO content" 置于保留状态。 
     
 9. 电子数据展示就地保留计时器作业将定期在企业应用程序场中运行，以检查发现操作的状态，并更新状态。  
     
@@ -70,7 +70,7 @@ ms.locfileid: "33487697"
     
 ### <a name="description-of-components-in-the-diagram"></a>图中所示组件的说明
 
-该图显示了一个用户发送查询, 该查询可访问两个服务器场、一个 sharepoint 2013 企业应用程序场和一个 sharepoint 2013 服务场。 sharepoint Services 场与 sharepoint 2013 内容场的接口, Exchange Server 2013 (与 Lync 2013 的接口) 和 Windows 文件共享。 
+该图显示了一个用户发送查询, 该查询可访问两个服务器场、一个 SharePoint 2013 企业应用程序场和一个 SharePoint 2013 服务场。 SharePoint Services 场与 SharePoint 2013 内容场的接口, Exchange Server 2013 (与 Lync 2013 的接口) 和 Windows 文件共享。 
   
 #### <a name="sharepoint-2013-enterprise-app-farm"></a>SharePoint 2013 企业应用程序场
 
@@ -168,9 +168,9 @@ Windows 文件共享组件提供对 SharePoint 服务场中 SSA 的爬网结果�
     
 - 绿线: 状态查询/响应-电子数据展示状态查询/响应数据 
     
-- 紫色线条: exchange 操作/状态请求-针对 Exchange 流量的操作状态的电子数据展示请求。 
+- 紫色线条: Exchange 操作/状态请求-针对 Exchange 流量的操作状态的电子数据展示请求。 
     
-- 红线: exchange 数据/状态响应-来自 Exchange 的电子数据展示查询或状态响应。 
+- 红线: Exchange 数据/状态响应-来自 Exchange 的电子数据展示查询或状态响应。 
     
 - 黑色虚线：服务器到服务器信任/OAuth  
     

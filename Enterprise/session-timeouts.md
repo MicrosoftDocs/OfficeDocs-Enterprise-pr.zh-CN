@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
 description: 会话超时用于在 Office 365 客户端应用程序中平衡 securtiy 和轻松访问。
-ms.openlocfilehash: 05e0ddbfb569f476986567e55bbf93428125b3af
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: d43bc123de982f3ebf55f05f48e53debe7df036b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372879"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070848"
 ---
 # <a name="session-timeouts-for-office-365"></a>Office 365 的会话超时
 

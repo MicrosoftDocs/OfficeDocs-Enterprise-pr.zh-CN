@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 4/10/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,18 +17,18 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 使用以下三个步骤保护对 Office 365 订阅的全局管理员访问。
-ms.openlocfilehash: 23d47ec1f5fc4126113dd69e1ac6400d003ca41f
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: bb1b19a7ac0ec8e32c23303e8acf2b7ee42f0532
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573916"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071018"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>保护 Office 365 全局管理员帐户
 
  **摘要:** 根据全局管理员帐户的危害, 保护 Office 365 订阅免受攻击。 
   
-office 365 订阅的安全违规 (包括信息收集和网络钓鱼攻击) 通常是通过威胁 office 365 全局管理员帐户的凭据来实现的。 云中的安全性是您和 Microsoft 之间的合作关系:
+Office 365 订阅的安全违规 (包括信息收集和网络钓鱼攻击) 通常是通过威胁 Office 365 全局管理员帐户的凭据来实现的。 云中的安全性是您和 Microsoft 之间的合作关系:
   
 - Microsoft 云服务是基于信任和安全性的基础建立的。 Microsoft 为您提供安全控件和功能, 以帮助保护您的数据和应用程序。
     
@@ -69,13 +69,13 @@ Microsoft 提供的功能可帮助保护你的组织, 但只有在你使用它�
     
   - 删除全局管理员角色。
     
-  - 将管理员角色分配给适合该用户的工作职能和责任的帐户。 有关 office 365 中的各种管理员角色的详细信息, 请参阅[关于 office 365 管理员角色](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)。
+  - 将管理员角色分配给适合该用户的工作职能和责任的帐户。 有关 Office 365 中的各种管理员角色的详细信息, 请参阅[关于 office 365 管理员角色](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)。
     
 8. 注销 Office 365。
     
 结果应为:
   
-- 订阅中唯一具有全局管理员角色的用户帐户是一组新的专用全局管理员帐户。 使用以下 PowerShell 命令对此进行验证:
+- 订阅中唯一具备全局管理员角色的用户帐户是一组新的专用全局管理员帐户。 使用以下 PowerShell 命令对此进行验证:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId
@@ -112,7 +112,7 @@ Microsoft 提供的功能可帮助保护你的组织, 但只有在你使用它�
     
 2. 为[Office 365 设置2步验证](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14), 为每个专用全局管理员帐户配置相应的验证方法。 
     
-如果所需的更强验证方法的安全基础结构未就绪且无法正常运行, 则强烈建议使用电话呼叫或短信将专用全局管理员帐户配置为使用 MFA。以临时安全措施的形式为全局管理员帐户发送到智能手机的验证代码。 请勿离开专用全局管理员帐户, 而不会通过 MFA 提供额外的保护。
+如果所需的更强验证方法的安全基础结构未就绪且无法正常运行, 则强烈建议使用电话呼叫或短信将专用全局管理员帐户配置为使用 MFA 365。以临时安全措施的形式为全局管理员帐户发送到智能手机的验证代码。 请勿离开专用全局管理员帐户, 而不会通过 MFA 提供额外的保护。
   
 有关详细信息，请参阅 [Office 365 部署的多重身份验证计划](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)。
   
@@ -150,7 +150,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress  $upn -RoleName "Compliance Administr
   
 ### <a name="privileged-access-workstation-paw"></a>特权访问工作站 (PAW)
 
-若要确保高特权任务的执行尽可能安全, 请使用 PAW。 PAW 是一台专用计算机, 仅用于敏感配置任务, 如需要全局管理员帐户的 Office 365 配置。 由于此计算机不会每天用于 internet 浏览或电子邮件, 因此它会更好地受到 internet 攻击和威胁的保护。
+若要确保高特权任务的执行尽可能安全, 请使用 PAW。 PAW 是一台专用计算机, 仅用于敏感配置任务, 如需要全局管理员帐户的 Office 365 配置。 由于此计算机不会每天用于 Internet 浏览或电子邮件, 因此它会更好地受到 Internet 攻击和威胁的保护。
   
 有关如何设置 PAW 的说明, 请参阅[http://aka.ms/cyberpaw](http://aka.ms/cyberpaw)。
   
@@ -162,7 +162,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress  $upn -RoleName "Compliance Administr
   
 使用 PIM 和此过程可大大减少全局管理员帐户易受恶意用户攻击和使用的时间量。
   
-有关详细信息, 请参阅[Configure Azure AD 特权 Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。
+有关详细信息, 请参阅[Configure AZURE AD 特权 Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。
   
 > [!NOTE]
 > PIM 可与 Azure Active Directory Premium P2 (包含在企业移动性 + 安全性 (EMS) E5 中) 一起使用, 也可以为全局管理员帐户购买单独的许可证。 

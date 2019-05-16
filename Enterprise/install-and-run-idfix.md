@@ -1,9 +1,9 @@
 ---
 title: 安装和运行 Office 365 IdFix 工具
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 f1_keywords:
 - O365E_HRCSetupAADConnectIDFixLM617036
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: 如何在将 active directory 同步到 Office 365 之前安装和运行 Office 365 IdFix 工具以帮助清理 active directory。
-ms.openlocfilehash: a35b2a476f2b30eccc955b980eda6315b146af27
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4197694ce90ab600652aa729809ef0ddb0647e03
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487986"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067288"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>安装和运行 Office 365 IdFix 工具
 
@@ -49,9 +49,9 @@ IdFix 在同步到 Office 365 之前识别目录中的错误 (如复制和格式
     
 ### <a name="idfix-software-requirements"></a>IdFix 软件要求
 
-需要将 IdFix 安装到的计算机连接到要将用户同步到 Office 365 的同一 Active Directory 域。 计算机还需要安装 .net Framework 4.0。 
+需要将 IdFix 安装到的计算机连接到要将用户同步到 Office 365 的同一 Active Directory 域。 计算机还需要安装 .NET Framework 4.0。 
   
-如果您运行的是 windows server 2008 或 windows server 2012, 则可能已安装 .net Framework。 如果不是, 则可以从下载中心或通过 Windows Update[下载 .net 4.0](https://go.microsoft.com/fwlink/p/?LinkId=400475) 。 
+如果您运行的是 Windows Server 2008 或 Windows Server 2012, 则可能已安装 .NET Framework。 如果不是, 则可以从下载中心或通过 Windows Update[下载 .net 4.0](https://go.microsoft.com/fwlink/p/?LinkId=400475) 。 
   
 ### <a name="idfix-permissions-requirements"></a>IdFix 权限要求
 
@@ -87,7 +87,7 @@ IdFix 在同步到 Office 365 之前识别目录中的错误 (如复制和格式
     
     ![选择 "IdFix" 文件。](media/a9387bbc-991f-41c2-a500-45e3ce574285.JPG)
   
-4. 默认情况下, IdFix 使用多租户规则集测试目录中的条目。 这是大多数 Office 365 客户的正确规则集。 但是, 如果您是 Office 365 专用或 ITAR (arm 规章中的国际流量) 客户, 则可以将 IdFix 配置为改用专用规则集。 如果您不确定您是哪种类型的客户, 则可以安全地跳过此步骤。 若要将规则集设置为专用, 请单击菜单栏中的齿轮图标, 然后选择 "**专用**"。
+4. 默认情况下, IdFix 使用多租户规则集测试目录中的条目。 这是大多数 Office 365 客户的正确规则集。 但是, 如果您是 Office 365 专用或 ITAR (Arm 规章中的国际流量) 客户, 则可以将 IdFix 配置为改用专用规则集。 如果您不确定您是哪种类型的客户, 则可以安全地跳过此步骤。 若要将规则集设置为专用, 请单击菜单栏中的齿轮图标, 然后选择 "**专用**"。
     
 5. 选择 "**查询**"。
     

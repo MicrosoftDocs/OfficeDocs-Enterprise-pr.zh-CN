@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
-description: 了解如何将 azure expressroute 与 office 365 结合使用, 以及如何规划在部署 Azure expressroute 以用于 Office 365 时所需的网络实施项目。
-ms.openlocfilehash: c8cff4ef85c4383ba04829cf3cf8da3a1bc36715
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 了解如何将 Azure ExpressRoute 与 Office 365 结合使用, 以及如何规划在部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。
+ms.openlocfilehash: 26aa65cdec5e9e37ee99a283d600d56f79fd85a4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490342"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068268"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
-了解如何将 azure expressroute 与 office 365 结合使用, 以及如何规划在部署 Azure expressroute 以用于 Office 365 时所需的网络实施项目。 在 Azure 中运行的基础结构和平台服务通常可解决网络体系结构和性能注意事项的好处。 在这些情况下, 我们建议为 Azure 提供 ExpressRoute。 作为服务产品 (如 Office 365 和 Dynamics 365) 构建为通过 Internet 安全可靠地访问。 您可以阅读有关 Internet 性能和安全性的信息, 以及在将[网络连接到 office 365](network-connectivity.md)中时, 您可能会考虑 office 365 的 Azure ExpressRoute。
+了解如何将 Azure ExpressRoute 与 Office 365 结合使用, 以及如何规划在部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。 在 Azure 中运行的基础结构和平台服务通常可解决网络体系结构和性能注意事项的好处。 在这些情况下, 我们建议为 Azure 提供 ExpressRoute。 作为服务产品 (如 Office 365 和 Dynamics 365) 构建为通过 Internet 安全可靠地访问。 您可以阅读有关 Internet 性能和安全性的信息, 以及在将[网络连接到 office 365](network-connectivity.md)中时, 您可能会考虑 office 365 的 Azure ExpressRoute。
 
 > [!NOTE]
-> 需要 Microsoft 授权才能使用适用于 Office 365 的 ExpressRoute。 当客户的法规要求要求直接连接时, Microsoft 会检查每个客户请求并授权 ExpressRoute for Office 365 的使用情况。 如果您有这样的要求, 请提供指向您所解释的法规的文本摘录和 web 链接, 这意味着在从[Office 365 请求的 ExpressRoute for Office 请求](https://aka.ms/O365ERReview)中需要直接连接才能开始 Microsoft 评审。 尝试为 Office 365 创建路由筛选器的未授权订阅将收到一[条错误消息](https://support.microsoft.com/kb/3181709)。 
+> 需要 Microsoft 授权才能使用适用于 Office 365 的 ExpressRoute。 当客户的法规要求要求直接连接时, Microsoft 会检查每个客户请求并授权 ExpressRoute for Office 365 的使用情况。 如果您有这样的要求, 请提供指向您所解释的法规的文本摘录和 web 链接, 这意味着在从[Office 365 请求的 ExpressRoute For Office 请求](https://aka.ms/O365ERReview)中需要直接连接才能开始 Microsoft 评审。 尝试为 Office 365 创建路由筛选器的未授权订阅将收到一[条错误消息](https://support.microsoft.com/kb/3181709)。 
 
-现在, 您可以为选定的 office 365 网络流量添加到 office 365 的直接网络连接。 Azure ExpressRoute 提供了一个直接连接, 可预测的性能, 并附带了适用于 Microsoft 网络组件的 99.95% 的正常运行时间 SLA。 对于不受 Azure ExpressRoute 支持的服务, 您仍需要 internet 连接。
+现在, 您可以为选定的 Office 365 网络流量添加到 Office 365 的直接网络连接。 Azure ExpressRoute 提供了一个直接连接, 可预测的性能, 并附带了适用于 Microsoft 网络组件的 99.95% 的正常运行时间 SLA。 对于不受 Azure ExpressRoute 支持的服务, 您仍需要 internet 连接。
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>规划适用于 Office 365 的 Azure ExpressRoute
 
@@ -40,7 +40,7 @@ ms.locfileid: "33490342"
 
 无论您是否具有现有 MPLS WAN, 可以通过三种方式之一将 ExpressRoute 添加到网络体系结构中;通过受支持的云交换共同位置提供程序、以太网点到点连接提供程序或通过 MPLS 连接提供程序。 查看[您的区域中提供了哪些提供程序](https://azure.microsoft.com/documentation/articles/expressroute-locations/)。 直接 ExpressRoute 连接将启用与在[其中包含 Office 365 服务](azure-expressroute.md#BKMK_WhatDoIGet)的应用程序的连接 (如下所示)。 所有其他应用程序和服务的网络流量将继续穿越 internet。
 
-请考虑以下高级网络图表, 该图显示了通过 internet 连接到 microsoft 数据中心的典型 office 365 客户, 可访问所有 Microsoft 应用程序, 如 Office 365、Windows Update 和 TechNet。 客户使用类似的网络路径, 无论是从本地网络还是独立的 internet 连接进行连接。
+请考虑以下高级网络图表, 该图显示了通过 internet 连接到 Microsoft 数据中心的典型 Office 365 客户, 可访问所有 Microsoft 应用程序, 如 Office 365、Windows Update 和 TechNet。 客户使用类似的网络路径, 无论是从本地网络还是独立的 internet 连接进行连接。
 
 ![Office 365 网络连接](media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "33490342"
 
 ![使用 ExpressRoute 的 Office 365 连接](media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
-是否仍需要详细信息？ 了解如何[使用 azure expressroute for office 365 管理网络流量](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), 并了解如何为[office 365 配置 azure expressroute](https://azure.microsoft.com/documentation/articles/expressroute-faqs/)。 我们还在频道9上记录了10部分[Azure ExpressRoute for Office 365 培训](https://channel9.msdn.com/series/aer)系列, 以帮助更全面地解释这些概念。
+是否仍需要详细信息？ 了解如何[使用 Azure expressroute For office 365 管理网络流量](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), 并了解如何为[Office 365 配置 azure expressroute](https://azure.microsoft.com/documentation/articles/expressroute-faqs/)。 我们还在频道9上记录了10部分[Azure ExpressRoute For Office 365 培训](https://channel9.msdn.com/series/aer)系列, 以帮助更全面地解释这些概念。
 
 ([适用于 Office 365 的 Azure ExpressRoute](azure-expressroute.md#BKMK_HOME))
 
@@ -60,13 +60,13 @@ ms.locfileid: "33490342"
 |**包含的应用程序**|
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
-|Skype for business Online<sup>1</sup> <br/> |
-|SharePoint Online<sup>1</sup> <br/> OneDrive for business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
+|Skype for Business Online<sup>1</sup> <br/> |
+|SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
 |门户和共享<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD 连接<sup>1</sup> <br/> Office Online<sup>1</sup> <br/> |
 
 <sup>1</sup>这些应用程序中的每个应用程序都具有不受 ExpressRoute 支持的 internet 连接要求, 请参阅[Office 365 终结点一文](https://aka.ms/o365endpoints)以了解详细信息。
 
-适用于 office 365 的 ExpressRoute 不包含在 office 365 专业增强版客户端下载、内部部署标识提供程序登录和 office 365 (由 21 Vianet (在 21) 服务中) 的服务在中国。
+适用于 Office 365 的 ExpressRoute 不包含在 Office 365 专业增强版客户端下载、内部部署标识提供程序登录和 Office 365 (由 21 Vianet (在 21) 服务中) 的服务在中国。
 
 ([适用于 Office 365 的 Azure ExpressRoute](azure-expressroute.md#BKMK_HOME))
 
@@ -74,7 +74,7 @@ ms.locfileid: "33490342"
 
 实施 ExpressRoute 需要参与网络和应用程序所有者, 并需要仔细规划以确定新的[网络路由体系结构](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408)、实现安全的带宽要求、高可用性等。 若要实现 ExpressRoute, 需要执行以下操作:
 
-1. 全面了解 Office 365 连接规划中的需要 ExpressRoute 满足。 了解哪些应用程序将使用 internet 或 expressroute, 并在使用 internet 和 ExpressRoute for Office 365 流量的上下文中全面规划网络容量、安全性和高可用性需求。
+1. 全面了解 Office 365 连接规划中的需要 ExpressRoute 满足。 了解哪些应用程序将使用 internet 或 ExpressRoute, 并在使用 internet 和 ExpressRoute for Office 365 流量的上下文中全面规划网络容量、安全性和高可用性需求。
 
 2. 确定 internet 和 ExpressRoute 流量<sup>1</sup>的出口和对等位置。
 

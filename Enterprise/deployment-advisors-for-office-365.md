@@ -1,10 +1,10 @@
 ---
 title: Office 365 服务部署顾问
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: office 365 的部署顾问为您提供了设置 office 365 的自助式支持。
-ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Office 365 的部署顾问为您提供了设置 Office 365 的自助式支持。
+ms.openlocfilehash: 7aec5d6b59500fb092ab8d0e8a7f952997ebd1bb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067889"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Office 365 服务部署顾问
 
-Office 365 的部署顾问为你的组织设置 office 365 提供了自助支持。 只需选择安装指南或 advisor 并登录到 Office 365。 
+Office 365 的部署顾问为你的组织设置 Office 365 提供了自助支持。 只需选择安装指南或 advisor 并登录到 Office 365。 
 
 当您选择要部署的功能和选项时, advisor 将根据您的需求来构建一个自定义的分步安装计划。 你将获得完整的说明、视频、参考文章和脚本集。 某些顾问具有将更改某些设置的自动化功能, 而在 advisor 的其他区域中, 你可以使用 advisor 更改你的设置和数据, 以指导你。 您可以随时使用这些顾问, 甚至在规划过程中或在已设置好服务之后, 了解有关 Office 365 功能和选项的详细信息。
   
@@ -35,7 +35,7 @@ Office 365 的部署顾问为你的组织设置 office 365 提供了自助支持
 
 [Microsoft 365 部署顾问](https://aka.ms/microsoft365setupguide)
   
-Microsoft 365 是一个完整的智能解决方案, 包括 Office 365、Windows 10 和企业移动性 + 安全性。 Microsoft 365 使每个人都能进行创作, 并安全地协同工作。 使用此顾问可以设置 windows 10 设备或将用户计算机升级到 Windows 10, 并可选择部署 Office 应用、windows Analytics 和 windows Defender 高级威胁防护 (仅限 Microsoft 365 企业版 E5 计划)。
+Microsoft 365 是一个完整的智能解决方案, 包括 Office 365、Windows 10 和企业移动性 + 安全性。 Microsoft 365 使每个人都能进行创作, 并安全地协同工作。 使用此顾问可以设置 Windows 10 设备或将用户计算机升级到 Windows 10, 并可选择部署 Office 应用、Windows Analytics 和 Windows Defender 高级威胁防护 (仅限 Microsoft 365 企业版 E5 计划)。
 
 
 ## <a name="mail-migration-and-protection"></a>邮件迁移和保护
@@ -44,9 +44,9 @@ Microsoft 365 是一个完整的智能解决方案, 包括 Office 365、Windows 
 [准备环境指南](https://go.microsoft.com/fwlink/?linkid=2005213)是开始的地方。 请告知我们你的部署目标, 以确保添加域、创建用户并按正确的顺序分配许可证。 如果您打算迁移电子邮件或配置混合部署, 这一点尤其重要。 
 
 ### <a name="exchange-migration-advisor"></a>Exchange 迁移顾问
-[office 365 邮件迁移顾问](https://aka.ms/office365setup)可帮助你将邮箱从当前邮件系统移动到 Office 365 中的 Exchange Online, 并提供了自动化的工具和分步指南。 我们将根据您当前的邮件系统、您要迁移的邮箱数以及计划管理用户和用户访问的方式推荐您的组织的最佳迁移路径。
+[Office 365 邮件迁移顾问](https://aka.ms/office365setup)可帮助你将邮箱从当前邮件系统移动到 Office 365 中的 Exchange Online, 并提供了自动化的工具和分步指南。 我们将根据您当前的邮件系统、您要迁移的邮箱数以及计划管理用户和用户访问的方式推荐您的组织的最佳迁移路径。
   
-[gmail "联系人" 和 "日历助理](https://aka.ms/gmailcontactscalendar)" 提供了将 Gmail 联系人和 Google calendar 项目迁移到 Office 365 的分步说明。 将用户的 Gmail 邮箱迁移到 Office 365 时, 将迁移电子邮件, 但不会迁移 "联系人" 和 "日历" 项目。 本指南提供将 Gmail 联系人和 Google Calendar 项目导入 Office 365 的步骤。
+[Gmail "联系人" 和 "日历助理](https://aka.ms/gmailcontactscalendar)" 提供了将 Gmail 联系人和 Google calendar 项目迁移到 Office 365 的分步说明。 将用户的 Gmail 邮箱迁移到 Office 365 时, 将迁移电子邮件, 但不会迁移 "联系人" 和 "日历" 项目。 本指南提供将 Gmail 联系人和 Google Calendar 项目导入 Office 365 的步骤。
   
 ### <a name="exchange-online-protection"></a>Exchange Online Protection
 Microsoft [Exchange Online Protection (EOP)](https://aka.ms/EOPguidance)是一项基于云的电子邮件筛选服务, 可帮助组织抵御垃圾邮件和恶意软件, 并包括保护组织不受邮件策略冲突的功能。
@@ -55,12 +55,12 @@ Microsoft [Exchange Online Protection (EOP)](https://aka.ms/EOPguidance)是一�
 ## <a name="file-creation-storage-and-sharing"></a>文件创建、存储和共享
 
 ### <a name="office-365-proplus"></a>Office 365 专业增强版
-[office 专业增强版快速入门指南](https://aka.ms/OPPquickstartguide)将指导您完成在公司的电脑或 Mac 上安装 Office 的步骤, 并提供了有关让每个人开始使用 office 的提示。
+[Office 专业增强版快速入门指南](https://aka.ms/OPPquickstartguide)将指导您完成在公司的电脑或 Mac 上安装 Office 的步骤, 并提供了有关让每个人开始使用 office 的提示。
 
-[office 专业增强版部署顾问](https://aka.ms/o365proplusdeploy)可帮助你在 office 的最新版本上运行并运行你的用户。 本顾问将引导您完成以下步骤: 帮助用户直接从 office 365 门户安装 office 或从本地位置向用户部署 office。 包括有关使用 System Center Configuration Manager、组策略启动脚本、操作系统磁盘映像或远程桌面服务 (RDS) 共享激活的说明。
+[Office 专业增强版部署顾问](https://aka.ms/o365proplusdeploy)可帮助你在 office 的最新版本上运行并运行你的用户。 本顾问将引导您完成以下步骤: 帮助用户直接从 Office 365 门户安装 Office 或从本地位置向用户部署 Office。 包括有关使用 System Center Configuration Manager、组策略启动脚本、操作系统磁盘映像或远程桌面服务 (RDS) 共享激活的说明。
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
-使用 onedrive for business[快速入门指南](https://aka.ms/ODfBquickstartguide)快速入门获取文件存储、共享和同步的 OneDrive for business。
+使用 Onedrive for business[快速入门指南](https://aka.ms/ODfBquickstartguide)快速入门获取文件存储、共享和同步的 OneDrive for business。
   
 ### <a name="sharepoint-online"></a>SharePoint Online
   
@@ -70,13 +70,13 @@ Microsoft [Exchange Online Protection (EOP)](https://aka.ms/EOPguidance)是一�
   
 ## <a name="security-and-identity"></a>安全性和标识
 
-### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>azure Active Directory Connect (Azure AD connect) 顾问
-[Azure AD Connect advisor](https://aka.ms/aadconnectpwsync)是一个分步指南, 介绍了如何向 Office 365 添加用户帐户信息, 而无需手动创建每个用户。 此外, 它还介绍了如何配置密码哈希同步或传递身份验证, 以便用户可以使用相同的密码登录到其电子邮件和域。 如果选择使用 AD fs 设置联合登录, 本指南还提供了在新服务器或现有 Windows server 2012 R2 场中部署 AD fs 的步骤。 azure AD Connect 替代了较早版本的身份集成工具, 如 DirSync 和 Azure AD 同步, 主要用于向 Azure Active Directory for Office 365 添加用户和其他数据。
+### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>Azure Active Directory Connect (Azure AD Connect) 顾问
+[AZURE AD Connect advisor](https://aka.ms/aadconnectpwsync)是一个分步指南, 介绍了如何向 Office 365 添加用户帐户信息, 而无需手动创建每个用户。 此外, 它还介绍了如何配置密码哈希同步或传递身份验证, 以便用户可以使用相同的密码登录到其电子邮件和域。 如果选择使用 AD FS 设置联合登录, 本指南还提供了在新服务器或现有 Windows Server 2012 R2 场中部署 AD FS 的步骤。 Azure AD Connect 替代了较早版本的身份集成工具, 如 DirSync 和 Azure AD 同步, 主要用于向 Azure Active Directory for Office 365 添加用户和其他数据。
   
 ### <a name="azure"></a>Azure
-[azure AD Basic 设置指南](https://aka.ms/azureadbasic)可帮助您设置功能, 如基于组的访问管理、云应用程序的自助服务密码重置以及用于发布本地 web 应用程序的 Azure Active Directory 应用程序代理。
+[AZURE AD Basic 设置指南](https://aka.ms/azureadbasic)可帮助您设置功能, 如基于组的访问管理、云应用程序的自助服务密码重置以及用于发布本地 web 应用程序的 Azure Active Directory 应用程序代理。
   
-[azure AD Premium 设置指南](https://aka.ms/aadpguidance)可帮助你启用 Azure Active Directory Premium (azure AD premium) 的许多功能, 该功能提供了身份管理功能, 如多重身份验证、单一登录 (SSO)、设备注册自助服务密码和组管理, 以及安全监控。
+[AZURE AD Premium 设置指南](https://aka.ms/aadpguidance)可帮助你启用 Azure Active Directory Premium (Azure AD premium) 的许多功能, 该功能提供了身份管理功能, 如多重身份验证、单一登录 (SSO)、设备注册自助服务密码和组管理, 以及安全监控。
   
 ### <a name="verify-your-domain"></a>Verify your domain
 通过在[office 365 advisor 中验证](https://aka.ms/verifyyourdomaino365)您的域, 可帮助您通过添加自己的域名 (也称为您的网站名称) 来自定义 office 365。
@@ -92,17 +92,17 @@ Office 365 组是电子邮件、对话、文件和事件的共享工作区, 组�
 
 [团队部署顾问](https://aka.ms/teamsguidance)
   
-Microsoft 团队是 Office 365 中基于聊天的协作服务, 它为聊天、呼叫、会议和私人邮件提供团队工作区。 适用于团队的部署顾问可帮助您设置和配置使用 Exchange online、SharePoint online、OneDrive for business 和 Office 365 组的最佳团队体验。 其中包括有关为项目、呼叫和会议、邮件和选项卡配置租户设置、团队和渠道等方面的信息。可快速访问应用程序、信息 bot 和向第三方服务提供连接器。
+Microsoft 团队是 Office 365 中基于聊天的协作服务, 它为聊天、呼叫、会议和私人邮件提供团队工作区。 适用于团队的部署顾问可帮助您设置和配置使用 Exchange Online、SharePoint Online、OneDrive for Business 和 Office 365 组的最佳团队体验。 其中包括有关为项目、呼叫和会议、邮件和选项卡配置租户设置、团队和渠道等方面的信息。可快速访问应用程序、信息 Bot 和向第三方服务提供连接器。
   
 ### <a name="skype-for-business"></a>Skype for Business
 
-[Skype for business 快速入门指南](https://aka.ms/SfBquickstartguide)
+[Skype for Business 快速入门指南](https://aka.ms/SfBquickstartguide)
   
-在 Skype for business 中快速了解即时消息 (IM)、状态、联机会议和屏幕共享。 如果不需要高级功能, 则需要进行这一基本设置。
+在 Skype for Business 中快速了解即时消息 (IM)、状态、联机会议和屏幕共享。 如果不需要高级功能, 则需要进行这一基本设置。
   
-[Skype for business 部署顾问](https://aka.ms/skypeguidance)
+[Skype for Business 部署顾问](https://aka.ms/skypeguidance)
   
-skype for business 部署顾问可帮助你获取并运行 Skype for business Online。 本顾问将向您介绍如何设置 Skype for business 功能, 如即时消息 (IM)、联机会议、视频会议、公用电话交换网 (PSTN) 会议、云专用品牌交换 (PBX) 和 Skype 会议直播。 包含用于设置混合环境的步骤, 在此环境中, 您可以将 skype for business Online 连接到本地 skype for business 部署。
+Skype for Business 部署顾问可帮助你获取并运行 Skype for Business Online。 本顾问将向您介绍如何设置 Skype for business 功能, 如即时消息 (IM)、联机会议、视频会议、公用电话交换网 (PSTN) 会议、云专用品牌交换 (PBX) 和 Skype 会议直播。 包含用于设置混合环境的步骤, 在此环境中, 您可以将 Skype for business Online 连接到本地 Skype for Business 部署。
   
 ### <a name="yammer"></a>Yammer
 
@@ -112,7 +112,7 @@ skype for business 部署顾问可帮助你获取并运行 Skype for business On
   
 [Yammer Enterprise 设置指南](https://aka.ms/yammerdeploy)
   
-yammer enterprise 部署顾问可帮助你使用 yammer enterprise 让你的组织正常运行。 它包括有关连接现有 Yammer 网络的指南。您可能需要使用 Office 365 或设置新的 yammer 域。 如果您有多个 Yammer 网络, 还介绍了如何将 Yammer 网络合并到单个 Yammer 企业网络中。
+Yammer Enterprise 部署顾问可帮助你使用 Yammer Enterprise 让你的组织正常运行。 它包括有关连接现有 Yammer 网络的指南。您可能需要使用 Office 365 或设置新的 Yammer 域。 如果您有多个 Yammer 网络, 还介绍了如何将 Yammer 网络合并到单个 Yammer 企业网络中。
   
 ## <a name="business-apps"></a>业务应用程序
 
@@ -151,7 +151,7 @@ Microsoft StaffHub 是一种可在所有设备上工作的基于云的平台。 
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-[OneDrive for business 集成优势](https://aka.ms/f66hqa)
+[OneDrive for Business 集成优势](https://aka.ms/f66hqa)
 
 [欢迎使用 OneDrive: 来自其他云存储提供程序](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432)
 
@@ -176,7 +176,7 @@ Microsoft StaffHub 是一种可在所有设备上工作的基于云的平台。 
   
 ### <a name="skype-for-business"></a>Skype for Business
 
-[Skype for business 支持快速入门](https://aka.ms/cjfutd)
+[Skype for Business 支持快速入门](https://aka.ms/cjfutd)
 
 [Skype 入门](https://aka.ms/ofg77x)
 

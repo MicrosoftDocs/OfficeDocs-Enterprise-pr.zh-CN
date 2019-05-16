@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/20/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 摘要：使用发送到 Office 365 开发/测试环境中的智能手机的短信来配置多重身份验证。
-ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069948"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的多重身份验证
 
@@ -38,28 +38,28 @@ ms.locfileid: "31741218"
 2. 为 User 2 帐户启用并测试多重身份验证。
     
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可查看 Office 365 测试实验室指南堆栈中所有文章的直观映射。
+> 单击[此处](http://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>第 1 阶段：构建轻型或模拟的企业 Office 365 开发/测试环境
 
 如果只想使用最低要求以轻型方式测试多重身份验证, 请按照[Office 365 开发/测试环境](office-365-dev-test-environment.md)的第2阶段和第3阶段中的说明进行操作。
   
-如果要在模拟的企业中测试多重身份验证, 请按照[DirSync for Office 365 开发/测试环境](dirsync-for-your-office-365-dev-test-environment.md)中的说明进行操作。
+如果要在模拟的企业中测试多重身份验证, 请按照[DirSync For Office 365 开发/测试环境](dirsync-for-your-office-365-dev-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试多重身份验证不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试多重身份验证，并在代表典型组织的环境中对其进行试验。 
+> 测试多重身份验证不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试多重身份验证，并在代表典型组织的环境中对其进行试验。 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>阶段 2：启用和测试 User 2 帐户的多重身份验证
 
 通过以下步骤为 User 2 帐户启用多重身份验证：
   
-1. 打开浏览器的单独实例, 转到 office 365 门户 ([https://www.office.com](https://www.office.com)), 然后使用全局管理员帐户登录到 office 365 试用订阅。
+1. 打开浏览器的单独实例, 转到 Office 365 门户 ([https://www.office.com](https://www.office.com)), 然后使用全局管理员帐户登录到 office 365 试用订阅。
     
 2. 在主门户页上，单击“管理员”****。
     
 3. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
-4. 在 "活动用户" 窗格中, 单击 "**更多 > 多重身份验证设置**"。
+4. 在 "活动用户" 窗格中, 单击 "**更多 _GT_ 多重身份验证设置**"。
     
 5. 在列表中, 选择 "**用户 2** " 帐户。
     
@@ -89,7 +89,7 @@ ms.locfileid: "31741218"
     
   - 在**方法**中, 单击 "**通过短信向我发送代码**"。
     
-5. 单击“**下一步**”。
+5. 单击“下一步”。****
     
 6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     
@@ -109,5 +109,5 @@ ms.locfileid: "31741218"
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 部署的多重身份验证计划](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[规划 Office 365 部署的多因素身份验证](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

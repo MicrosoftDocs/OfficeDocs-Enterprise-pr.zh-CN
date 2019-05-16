@@ -3,7 +3,7 @@ title: 使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有的客户租户。
-ms.openlocfilehash: 85cddd28b72a3b03e9157a28c3fd1dc101a167e0
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9b65a5665ce8aa7205db733a2d0e0969e5cd401d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069268"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 

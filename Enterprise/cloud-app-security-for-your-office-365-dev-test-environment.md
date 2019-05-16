@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
-description: '摘要: 在 office 365 开发/测试环境中配置和演示 office 365 云应用安全性。'
-ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: '摘要: 在 Office 365 开发/测试环境中配置和演示 Office 365 云应用安全性。'
+ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490118"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068098"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的云应用安全
 
- **摘要:** 在 office 365 开发/测试环境中配置和演示 office 365 云应用安全性。
+ **摘要:** 在 Office 365 开发/测试环境中配置和演示 Office 365 云应用安全性。
   
-office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允许您创建策略来监视 Office 365 订阅中的可疑活动并告知这些活动, 以便您可以调查并采取补救措施退货. 有关详细信息, 请参阅[Office 365 中的云应用安全概述](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)。
+Office 365 云应用安全性 (以前称为 "Office 365 高级安全管理") 允许您创建策略来监视 Office 365 订阅中的可疑活动并告知这些活动, 以便您可以调查并采取补救措施退货. 有关详细信息, 请参阅[Office 365 中的云应用安全概述](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)。
   
 使用本文中的说明, 可以在 Office 365 试用订阅中启用和测试云应用安全性。
   
@@ -41,7 +41,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
 如果要在模拟的企业中测试云应用安全性, 请按照[您的 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试云应用安全不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供它作为选项, 以便您可以测试云应用安全性并在代表典型组织的环境中进行试验。 
+> 测试云应用安全不需要模拟企业开发/测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供它作为选项, 以便您可以测试云应用安全性并在代表典型组织的环境中进行试验。 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>第2阶段: 启用云应用安全性和创建策略之前
 
@@ -57,7 +57,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
     
 2. 在主门户页上，单击“管理员”****。
     
-3. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
+3. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
 4. 	单击“**User 4**”帐户。
     
@@ -81,11 +81,11 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
 
 1. 转到 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)), 并使用全局管理员帐户登录到你的 Office 365 试用订阅。
     
-2. 单击“管理员”磁贴****。 在 " **Office 管理中心**" 选项卡上, 单击 "**管理中心" > Security & 合规性**。
+2. 单击“管理员”磁贴****。 在 " **Office 管理中心**" 选项卡上, 单击 "**管理中心" _GT_ Security & 合规性**。
     
-3. 在左侧导航窗格中, 单击 "**通知 > 管理高级警报**"。
+3. 在左侧导航窗格中, 单击 "**通知 _GT_ 管理高级警报**"。
     
-4. 在 "**管理高级通知**" 页面上, 单击 "**启用 office 365 云应用安全性**", 然后单击 "**转到 office 365 云应用安全性**"。
+4. 在 "**管理高级通知**" 页面上, 单击 "**启用 Office 365 云应用安全性**", 然后单击 "**转到 office 365 云应用安全性**"。
     
 5. 在 "新建**仪表板**" 选项卡上, 单击 "**控制 > 策略**"。
     
@@ -125,7 +125,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
     
 8. 在主门户页上，单击“管理员”****。
     
-9. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
+9. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
 10. 单击“**User 5**”帐户。
     
@@ -145,7 +145,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
     
 18. 单击 "**安全&amp;符合性**磁贴"。
     
-19. 在左侧导航窗格中, 单击 "**通知 > 管理高级警报**"。
+19. 在左侧导航窗格中, 单击 "**通知 _GT_ 管理高级警报**"。
     
 20. 在 "**管理高级通知**" 页上, 单击 "**转到 Office 365 云应用安全性**"。
     
@@ -153,7 +153,7 @@ office 365 云应用安全性 (以前称为 "office 365 高级安全管理") 允
     
 22. 在 " **Microsoft Office 主页**" 选项卡上, 单击 "**邮件**"。 最多等待 30 分钟。 
     
-    您应该会在收件箱中看到两封新电子邮件, 标题为**Microsoft Azure AD 通知服务**。 一条消息指示已将用户5帐户添加到**密码管理员**角色, 另一条消息指示已将用户5帐户添加到**用户管理员**角色 (等于中的用户管理管理员角色)。Office 365 管理中心)。
+    您应该会在收件箱中看到两封新电子邮件, 标题为**Microsoft AZURE AD 通知服务**。 一条消息指示已将用户5帐户添加到**密码管理员**角色, 另一条消息指示已将用户5帐户添加到**用户管理员**角色 (等于中的用户管理管理员角色)。Office 365 管理中心)。
     
 现在, 你可以使用此环境创建新策略, 并对 Office 365 云应用安全性进行进一步实验。 有关指向其他配置文章的链接, 请参阅[获取 Office 365 云应用安全性的准备](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)工作。
   

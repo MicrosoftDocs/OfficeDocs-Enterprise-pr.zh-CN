@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
-ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490060"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067893"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -25,7 +25,7 @@ ms.locfileid: "33490060"
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>哪些客户有资格请求移动？
   
-选择符合新数据中心地理位置的国家/地区的现有 Office 365 商业客户将能够请求移动。  此程序仅适用于分配有符合条件的国家/地区代码的租户, 可将核心客户数据迁移到 office 365 租户, 以将适用工作负载的核心客户数据迁移到相应的 office 365 数据中心地理位置。  请参阅 how [to request the data move](request-your-data-move.md) page, 确认国家/地区的资格。   
+选择符合新数据中心地理位置的国家/地区的现有 Office 365 商业客户将能够请求移动。  此程序仅适用于分配有符合条件的国家/地区代码的租户, 可将核心客户数据迁移到 Office 365 租户, 以将适用工作负载的核心客户数据迁移到相应的 Office 365 数据中心地理位置。  请参阅 how [to request the data move](request-your-data-move.md) page, 确认国家/地区的资格。   
 
 ## <a name="how-do-we-define-core-customer-data"></a>如何定义核心客户数据？
  
@@ -36,7 +36,7 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
 
 ## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a>在什么时候完成了我的迁移, 以便我的租户的核心客户数据存储在我的新 geo 中的地方？
 
-由于 Exchange online 和 SharePoint online/OneDrive for business 之间存在共享依赖关系, 因此在迁移这两个服务之前, 不能将任何迁移都视为已完成。  Exchange online 和 SharePoint online/OneDrive for business 通常分别以不同的时间进行迁移, 且相互独立。  在每个服务迁移完成时, 租户管理员会在邮件中心中接收确认, 并且可以随时查看管理中心中的数据位置卡, 以确认每个服务的 rest 位置的核心客户数据。
+由于 Exchange Online 和 SharePoint Online/OneDrive for Business 之间存在共享依赖关系, 因此在迁移这两个服务之前, 不能将任何迁移都视为已完成。  Exchange Online 和 SharePoint Online/OneDrive for Business 通常分别以不同的时间进行迁移, 且相互独立。  在每个服务迁移完成时, 租户管理员会在邮件中心中接收确认, 并且可以随时查看管理中心中的数据位置卡, 以确认每个服务的 rest 位置的核心客户数据。
 
 ## <a name="will-my-tenant-automatically-be-moved-to-the-new-datacenter-geo"></a>我的租户是否会自动移到新的数据中心地理位置？
  
@@ -53,7 +53,7 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>在不同的信息中具有不同的服务会有什么影响？
 
-某些 Office 365 服务可能位于不同的信息中, 用于某些现有客户和移动过程中间的客户。  我们的服务独立运行, 在这种情况下, 不会对用户体验产生任何影响。但是, 出于数据驻留目的, 在 Exchange online 和 SharePoint online/OneDrive for business 都迁移到同一数据中心地理位置之前, 不能认为租户迁移已完成。
+某些 Office 365 服务可能位于不同的信息中, 用于某些现有客户和移动过程中间的客户。  我们的服务独立运行, 在这种情况下, 不会对用户体验产生任何影响。但是, 出于数据驻留目的, 在 Exchange Online 和 SharePoint Online/OneDrive for business 都迁移到同一数据中心地理位置之前, 不能认为租户迁移已完成。
   
 ## <a name="will-new-office-365-customers-be-automatically-provisioned-in-the-new-datacenter-geos"></a>在新的数据中心信息中是否会自动预配新的 Office 365 客户？
   
@@ -61,7 +61,7 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>我的核心客户数据位于何处？
 
-租户管理员可随时查看管理中心内的数据位置卡, 以确认每个服务的 rest 位置的核心客户数据, 尤其针对其租户。我们还发布了 [office 365 交互式数据中心](https://office.com/datamaps)的数据中心信息、数据中心和位置的位置, 作为对新租户的当前默认核心客户数据的参考。  您可以通过 Office 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。  
+租户管理员可随时查看管理中心内的数据位置卡, 以确认每个服务的 rest 位置的核心客户数据, 尤其针对其租户。我们还发布了 office 365 交互式数据中心的数据中心信息、数据中心和365位置的位置, 作为对新租户的当前默认核心客户数据的参考。  您可以通过 Office 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>何时我将能够请求移动？
   
@@ -101,7 +101,7 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>如何知道移动已完成？
   
-观看 Office 365 消息中心, 以确认每个服务的数据移动是否已完成。 移动每个服务的数据后, 我们将发布一个完成通知, 以便您将获得三个完成通知: 每个完成通知分别对应于 Exchange online、SharePoint online 和 Skype for business Online。  您还可以通过 Office 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。  
+观看 Office 365 消息中心, 以确认每个服务的数据移动是否已完成。 移动每个服务的数据后, 我们将发布一个完成通知, 以便您将获得三个完成通知: 每个完成通知分别对应于 Exchange Online、SharePoint Online 和 Skype for Business Online。  您还可以通过 Office 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>我是一个新的数据中心信息中的 Office 365 客户, 但当我注册时, 我选择了其他国家/地区。 如何将移动到新的数据中心地理位置？
 
@@ -109,7 +109,7 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-office-365-during-the-exchange-online-move"></a>如果我们在 Exchange Online 移动过程中将电子邮件数据迁移到 Office 365, 会发生什么情况？
 
-这是一种非常常见的方案, 完全受支持。  datacenter 信息之间的云迁移不会干扰任何 on premisis to 云邮箱迁移。
+这是一种非常常见的方案, 完全受支持。  Datacenter 信息之间的云迁移不会干扰任何 on premisis to 云邮箱迁移。
   
  ## <a name="can-i-pilot-some-users"></a>我可以试运行某些用户吗？
   
@@ -135,11 +135,11 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
   
 ## <a name="will-office-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>在新数据中心托管的 Office 365 租户是否适用于该国家/地区之外的用户？
   
-A. 是。 Microsoft 在全球范围内的35国家/地区内的国家/地区的多达130个位置维护一个大型的全球网络, 其 Internet 服务提供商 (isp) 数量超过2700的对等协议。 用户将能够从 Internet 上的任何位置访问数据中心。
+A. 是。 Microsoft 在全球范围内的35国家/地区内的国家/地区的多达130个位置维护一个大型的全球网络, 其 Internet 服务提供商 (Isp) 数量超过2700的对等协议。 用户将能够从 Internet 上的任何位置访问数据中心。
 
 ## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>我的租户是为[Office 365 多地理](https://aka.ms/multi-geo)位置配置的。  我是否可以在 Office 365 移动程序中注册我的租户以更改我的默认地理位置并将任何用户不在附属区域中移动到新的默认地理位置？
 
-是的, 你的租户符合注册条件。  我们会将所有 EXO 邮箱从当前的默认地理位置移动到新的本地数据中心地理位置。  我们不会移动在 "多地理" 卫星区域中配置的任何 EXO 邮箱, 而是按预期继续遵循卫星区域数据派驻服务。  SharePoint Online 和 OneDrive for business 无法迁移到新的数据中心地理位置作为移动程序的一部分, 但您可以通过多地理程序将 OneDrive for business 共享配置为移动到您想要的任何区域。
+是的, 你的租户符合注册条件。  我们会将所有 EXO 邮箱从当前的默认地理位置移动到新的本地数据中心地理位置。  我们不会移动在 "多地理" 卫星区域中配置的任何 EXO 邮箱, 而是按预期继续遵循卫星区域数据派驻服务。  SharePoint Online 和 OneDrive for business 无法迁移到新的数据中心地理位置作为移动程序的一部分, 但您可以通过多地理程序将 OneDrive for Business 共享配置为移动到您想要的任何区域。
   
 ## <a name="related-topics"></a>相关主题
 
