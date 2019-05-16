@@ -21,7 +21,8 @@
 ### [有关连接到 Office 365 服务的网络设备的计划](plan-for-network-devices.md)
 ### [Office 365 第三方 SSL 证书计划](plan-for-third-party-ssl-certificates.md)
 ### [了解 Office 365 标识和 Azure Active Directory](about-office-365-identity.md)
-### [在 MDM 和 Intune 之间进行选择](https://docs.microsoft.com/zh-CN/office365/securitycompliance/choose-between-mdm-and-intune)
+### 
+  [在 MDM 和 Intune 之间进行选择](https://docs.microsoft.com/zh-CN/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Office 365 的网络和迁移规划](network-and-migration-planning.md)
 ### [与 Office 365 的网络连接](network-connectivity.md)
 ### [Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)
@@ -32,9 +33,11 @@
 ### [如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](modern-auth-for-office-2013-and-2016.md)
 ### [Office 365 租户间协作](office-365-inter-tenant-collaboration.md)
 ## Office 365 客户端支持
+### [基于证书的身份验证](office-365-client-support-certificate-based-authentication.md)
 ### [条件访问](office-365-client-support-conditional-access.md)
 ### [移动应用管理](office-365-client-support-mobile-application-management.md)
 ### [新式验证](office-365-client-support-modern-authentication.md)
+### [单一登录](office-365-client-support-single-sign-on.md)
 ## 混合选项
 ### [Skype for Business Server 和 Exchange Server 的混合新式验证和先决条件](hybrid-modern-auth-overview.md)
 ### [如何配置本地 Exchange Server 以使用混合新式验证](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -72,7 +75,7 @@
 ## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
 ## [为组织部署 Office 365 企业版](setup-overview-for-enterprises.md)
 ### [Office 365 部署计划清单](deployment-planning-checklist.md)
-### [Office 365 的安全最佳做法](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
+### [Office 365 的安全最佳做法](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
 ## [设置网络](set-up-network-for-office-365.md)
 ### [Office 365 网络连接概述](office-365-networking-overview.md)
 ### [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
@@ -161,8 +164,10 @@
 # 管理 Office 365
 ## [服务运行状况](view-service-health.md)
 ### [监视连接性](monitor-connectivity.md)
-### [支持选项](https://support.office.com/zh-CN/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [管理工具](https://support.office.com/zh-CN/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### 
+  [支持选项](https://support.office.com/zh-CN/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## 
+  [管理工具](https://support.office.com/zh-CN/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [用于管理 Office 365 帐户的工具](manage-office-365-accounts.md)
 ### [同时向 Office 365 添加多个用户 - 管理员帮助](add-several-users-at-the-same-time.md)
 ### [恢复用户邮箱中已删除的项目 - 管理员帮助](recover-deleted-items-in-a-mailbox.md)
