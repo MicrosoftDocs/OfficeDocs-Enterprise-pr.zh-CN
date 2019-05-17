@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
@@ -14,31 +14,32 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: '摘要: 使用 Office 365 PowerShell 连接到 Office 365 组织以通过命令行执行管理中心任务。'
-ms.openlocfilehash: 4c70f067558773ce7e2a6e27bab78f5c64965872
-ms.sourcegitcommit: 0516a15c72f4bc8423a1d8112fd4d3e5f69896c8
-ms.translationtype: MT
+description: 摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行管理中心任务。
+ms.openlocfilehash: aea7cb638cb866374af6b33d6d1848a7cb6d304c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639773"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069088"
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
- **摘要:** 使用 Office 365 PowerShell 连接到 Office 365 组织, 从命令行执行管理任务。
+ **摘要：** 使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行管理中心任务。
   
-Office 365 PowerShell 允许您从命令行管理 Office 365 设置。 连接到 Office 365 PowerShell 是一个简单的过程, 您可以在其中安装必需的软件, 然后连接到 Office 365 组织。 
+借助 Office 365 PowerShell，可以通过命令行管理 Office 365 设置。 连接到 Office 365 PowerShell 是一个非常简单的过程：安装必需软件，然后连接到 Office 365 组织。 
 
-有两个版本的 PowerShell 模块可用于连接到 Office 365 并管理用户帐户、组和许可证:
+可以使用两种版本的 PowerShell 模块连接至 Office 365 和管理员用户帐户、组和许可证：
 
-- 适用于 Graph 的 Azure Active Directory PowerShell (cmdlet 在其名称中包含**AzureAD** ) 
-- 适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 (cmdlet 在其名称中包含**MSol** ) 
+- Azure Active Directory PowerShell Graph（cmdlets 包括其名称中的 **AzureAD**） 
+- 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块（cmdlets 包括其名称中的 **MSol**） 
 
-从本文的日期起, Azure Active Directory PowerShell for Graph 模块未完全替换 Microsoft Azure Active Directory Module for Windows PowerShell 模块的 cmdlet 中的功能, 用于用户、组和许可证管理. 在许多情况下, 您需要使用这两个版本。 您可以安全地在同一台计算机上安装这两个版本。
+自本文发布之日起，对于用户、组和许可证管理，Azure Active Directory PowerShell Graph 模块不能完全替代用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的 cmdlets 中的功能。 在大多数情况下，需要使用两种版本。 可以在同一计算机上安全地安装两种版本。
 
 > [!TIP]
-> **刚开始接触 PowerShell？** 请观看领英学习提供的 [PowerShell 概述](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
+> 
+  **刚开始接触 PowerShell？** 请观看领英学习提供的 [PowerShell 概述](https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
 - 估计完成时间：5 分钟
     
@@ -51,17 +52,17 @@ Office 365 PowerShell 允许您从命令行管理 Office 365 设置。 连接到
     > [!NOTE]
     >请使用 64 位版 Windows。2014 年 10 月，用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块已不再支持 32 位版。
     
--  这些过程适用于作为 Office 365 管理员角色的成员的用户。 有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
+-  这些步骤适合于属于 Office 365 管理员角色成员的用户。 有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
 
 
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>与 Azure Active Directory PowerShell for Graph 模块进行连接
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>连接到 Azure Active Directory PowerShell Graph 模块
 
-[用于 Graph 模块的 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)中的命令在其 cmdlet 名称中有**AzureAD** 。
+[Azure Active Directory PowerShell Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 模块中的命令在其 cmdlet 名称中包含 **AzureAD**。
 
-对于需要 Azure Active Directory PowerShell for Graph 模块中的新 cmdlet 的过程, 请按照以下步骤操作, 以安装该模块并连接到 Office 365 订阅。
+有关在 Azure Active Directory PowerShell Graph 模块中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅。
 
 >[!Note]
->有关 Microsoft Windows 的不同版本支持的信息, 请参阅[Azure Active Directory PowerShell For Graph 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)。
+>有关不同版本的 Microsoft Windows 的支持信息，请参阅 [Azure Active Directory PowerShell Graph 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)。
 >
 
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
@@ -70,33 +71,33 @@ Office 365 PowerShell 允许您从命令行管理 Office 365 设置。 连接到
   
 1. 打开提升的 Windows PowerShell 命令提示符（以管理员身份运行 Windows PowerShell）。
     
-2. 在“管理员: Windows PowerShell”**** 命令窗口中，运行以下命令：
+2. 在"管理员: Windows PowerShell"命令窗口中，运行以下命令：
     
   ```
   Install-Module -Name AzureAD
   ```
 
-如果系统提示从不受信任的存储库安装模块，请键入“Y”****，再按 ENTER。
+如果系统提示从不受信任的存储库安装模块，请键入 **Y**，然后按 Enter 键。
 
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2: 连接到 Office 365 订阅的 Azure AD
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2：连接到 Office 365 订阅的 Azure AD
 
-若要使用帐户名和密码或*多重身份验证 (MFA)* 连接到 Office 365 订阅的 Azure AD, 请从 Windows PowerShell 命令提示符运行以下命令之一 (无需提升)。
+若要使用帐户名称和密码或者*多重身份验证 (MFA)* 连接到 Office 365 订阅的 Azure AD，请在 Windows PowerShell 命令提示符中运行这些命令之一（不必进行提升）。
 
 |||
 |:-------|:-----|
-| **Office 365 云** | **Command** |
-| Office 365 全球版本 (+ GCC) | `Connect-AzureAD` |
-| 由 21 Vianet 运营的 Office 365 | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
-| Office 365 Germany | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
-| Office 365 美国政府 DoD 和 Office 365 美国政府版 (GCC) 高 | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+| **Office 365 云** | **命令** |
+| Office 365 全球 (+GCC) | `Connect-AzureAD` |
+| 由世纪互联运营的 Office 365 | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 德国 | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 美国政府版 DoD 和 Office 365 美国政府版 GCC 高 | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-在 "**登录帐户**" 对话框中, 键入 Office 365 的工作或学校帐户用户名和密码, 然后单击 **"确定"**。
+在“**登录到你的帐户**”对话框中，键入 Office 365工作或学校帐户用户名和密码，再单击“**确定**”。
 
-如果使用的是 MFA, 请按照其他对话框中的说明操作, 以提供更多的身份验证信息, 如验证代码。
+如果使用的是 MFA，请按照其他对话框中的说明提供更多身份验证信息，例如验证码。
 
 
-连接后, 可以对[Azure Active Directory PowerShell For Graph 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用新 cmdlet。
+连接后，可以对 [Azure Active Directory PowerShell Graph 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用这些新的 cmdlet。
   
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>与用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块连接
@@ -116,38 +117,38 @@ Office 365 PowerShell 允许您从命令行管理 Office 365 设置。 连接到
   - 如果系统提示安装 NuGet 提供程序，请键入 **Y**，然后按 Enter 键。
   - 如果系统提示从 PSGallery 安装模块，请键入 **Y**，然后按 Enter 键。
     
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2: 连接到 Office 365 订阅的 Azure AD
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2：连接到 Office 365 订阅的 Azure AD
 
-若要使用帐户名和密码或*多重身份验证 (MFA)* 连接到 Office 365 订阅的 Azure AD, 请从 Windows PowerShell 命令提示符运行以下命令之一 (无需提升)。
+若要使用帐户名称和密码或者*多重身份验证 (MFA)* 连接到 Office 365 订阅的 Azure AD，请在 Windows PowerShell 命令提示符中运行这些命令之一（不必进行提升）。
 
 |||
 |:-------|:-----|
-| **Office 365 云** | **Command** |
-| Office 365 全球版本 (+ GCC) | `Connect-MsolService` |
-| 由 21 Vianet 运营的 Office 365 | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
-| Office 365 Germany | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
-| Office 365 美国政府 DoD 和 Office 365 美国政府版 (GCC) 高 | `Connect-MsolService -AzureEnvironment USGovernment` |
+| **Office 365 云** | **命令** |
+| Office 365 全球 (+GCC) | `Connect-MsolService` |
+| 由世纪互联运营的 Office 365 | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
+| Office 365 德国 | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
+| Office 365 美国政府版 DoD 和 Office 365 美国政府版 GCC 高 | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-在 "**登录帐户**" 对话框中, 键入 Office 365 的工作或学校帐户用户名和密码, 然后单击 **"确定"**。
+在“**登录到你的帐户**”对话框中，键入 Office 365工作或学校帐户用户名和密码，再单击“**确定**”。
 
-如果使用的是 MFA, 请按照其他对话框中的说明操作, 以提供更多的身份验证信息, 如验证代码。
+如果使用的是 MFA，请按照其他对话框中的说明提供更多身份验证信息，例如验证码。
 
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 如果未收到任何错误，则说明连接成功。一个快速测试是运行 Office 365 cmdlet（例如 **Get-MsolUser** ），然后查看结果。
   
 如果收到错误，则查看以下要求：
   
-- **一个常见的问题是不正确的密码**。 再次运行步骤2。 , 请密切注意你输入的用户名和密码。
+- **常见问题是密码错误**。 重新运行步骤 2， 并仔细查看你输入的用户名和密码。
     
-- **适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块要求安装 Microsoft .net Framework 3.5。* x * 功能在计算机上启用 * *。您的计算机可能安装了更新的版本 (例如, 4 或4.5。* x *), 但可以启用或禁用与 .NET Framework 早期版本的向后兼容性。 有关详细信息，请参阅下列主题：
+- **用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块要求在计算机上启用 Microsoft .NET Framework 3.5.* x* 功能。很可能你的计算机已安装了较新的版本（例如 4 或 4.5.* x*），但可以启用或禁用与 .NET Framework 的早期版本的向后兼容性。 有关详细信息，请参阅下列主题：
     
   - 对于 Windows Server 2012 或 Windows Server 2012 R2，请参阅[使用“添加角色和功能”向导启用 .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkId=532368)
     
   - 对于 Windows 7 或 Windows Server 2008 R2，请参阅[不能打开用于 Windows PowerShell 的 Azure Active Directory 模块](https://go.microsoft.com/fwlink/p/?LinkId=532370)
 
-  - 对于 Windows 10、Windows 8.1 和 Windows 8, 请参阅[在 windows 10、windows 8.1 和 windows 8 上安装 .Net Framework 3.5](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10)
+  - 对于 Windows 10、Windows 8.1 和 Windows 8，请参阅[在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](https://docs.microsoft.com/zh-CN/dotnet/framework/install/dotnet-35-windows-10)
 
   
 - **您的 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 版本可能已过期。** 若要进行检查，请在 Office 365 PowerShell 或 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 中运行以下命令：
