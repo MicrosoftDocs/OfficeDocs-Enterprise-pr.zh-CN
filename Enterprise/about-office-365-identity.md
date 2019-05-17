@@ -1,5 +1,5 @@
 ---
-title: 了解 Office 365 标识和 Azure Active Directory
+title: Office 365 标识模型和 Azure Active Directory
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,69 +18,81 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Office 365 中管理用户标识。
-ms.openlocfilehash: 85cfce4b08236bfcee74b6fe6d9c29766e7211c6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cd7fb1db2d5372097f3da0e6a2521335d7933015
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068758"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102453"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>了解 Office 365 标识和 Azure Active Directory
+# <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 标识模型和 Azure Active Directory
 
-Office 365 使用基于云的用户标识和身份验证服务 Azure Active Directory (Azure AD) 管理用户。 选择是否在内部部署组织和 Office 365 之间配置标识管理是早期决定, 这是云基础结构的基础知识之一。 由于稍后更改此配置可能很困难, 因此请仔细考虑这些选项以确定最适合您的组织需求的功能。 您可以从 Office 365 中的两个主要身份验证模型中进行选择, 以设置和管理用户帐户;**云身份验证**和**联合身份验证**。
-  
-务必仔细考虑使用哪些身份验证和标识模型来启动和运行。 考虑实施和维护每个身份验证和标识选项的时间、现有复杂性和成本。 这些因素对于每个组织都是不同的;您应了解标识选项的关键概念, 以帮助您选择要用于部署的身份验证和标识模型。
-  
-## <a name="cloud-authentication"></a>云身份验证
+Office 365 使用 Azure Active Directory (Azure AD), 这是 Office 365 订阅附带的基于云的用户标识和身份验证服务, 用于管理 Office 365 的标识和身份验证。 正确配置标识基础结构是管理组织的 Office 365 用户访问和权限的关键。
 
-根据您在本地有或没有现有 Active Directory 环境的情况, 您可以使用多个选项来管理使用 Office 365 的用户的身份验证和标识服务。
-  
-### <a name="cloud-only"></a>仅限云
+开始之前, 请观看此视频, 了解有关 Office 365 和 Microsoft 365 的标识模型和身份验证的概述。
 
-使用仅限云的模型, 可以在 Office 365 中管理用户帐户。 不需要本地服务器;Azure AD 将全部在云中进行处理。 您可以在[Microsoft 365 管理中心](https://admin.microsoft.com)中创建和管理用户, 也可以使用 Windows powershell [cmdlet](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)和标识和身份验证在云中由 Azure AD 完全处理。 通常情况下, 仅云模型是一个好的选择: 
-  
-- 您没有其他本地用户目录。
-    
-- 您有一个非常复杂的本地目录, 只是想避免工作与它集成。
-    
-- 您有一个现有的本地目录, 但您想要运行 Office 365 的试用版或试验版。 稍后, 当您准备好连接到本地目录时, 您可以将云用户与本地用户进行匹配。
-    
-若要开始使用云标识, 请参阅[设置 Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)。
-  
-### <a name="password-hash-sync-with-seamless-single-sign-on"></a>使用无缝单一登录的密码哈希同步
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-为 Azure AD 中的本地目录对象启用身份验证的最简单方法。 使用密码哈希同步 (PHS), 您可以将内部部署 Active Directory 用户帐户对象与 Office 365 同步并在本地管理您的用户。 用户密码的哈希将从本地 Active Directory 同步到 Azure AD, 以便用户在本地和在云中具有相同的密码。 更改密码或在本地重置密码时, 新的密码哈希将同步到 Azure AD, 以便您的用户始终可以对云资源和本地资源使用相同的密码。 从不以明文形式将密码发送到 Azure AD 或以明文形式存储在 Azure AD 中。 Azure AD 的一些高级功能 (如标识保护) 需要 PHS, 而不管选择了哪种身份验证方法。 通过无缝单一登录, 用户在其公司设备上并连接到公司网络时, 将自动登录到 Azure AD。
-  
-了解有关[选择 "密码哈希同步](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) [" 和 "无缝单一登录"](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)的详细信息。
-  
-### <a name="pass-through-authentication-with-seamless-single-sign-on"></a>带有无缝单一登录的传递身份验证
+您的第一次规划选择是 Office 365 身份模型。
 
-使用在一个或多个本地服务器上运行的软件代理为 Azure AD 身份验证服务提供简单的密码验证, 以直接使用本地 Active Directory 验证用户。 通过传递身份验证 (PTA), 您可以将内部部署 Active Directory 用户帐户对象与 Office 365 同步并在本地管理您的用户。 允许你的用户使用其内部部署帐户和密码登录到本地和 Office 365 资源和应用程序。 此配置将直接对本地 Active Directory 验证用户密码, 而不会将密码哈希发送到 Office 365。 具有安全要求的公司立即强制实施本地用户帐户状态、密码策略和登录时间将使用此身份验证方法。 通过无缝单一登录, 用户在其公司设备上并连接到公司网络时, 将自动登录到 Azure AD。
-  
-了解有关[选择传递身份验证](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)和[无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)的详细信息。
-  
-## <a name="federated-authentication-options"></a>联合身份验证选项
+## <a name="office-365-identity-models"></a>Office 365 标识模型
 
-如果您在本地有一个现有的 Active Directory 环境, 则可以使用联合身份验证来管理 Office 365 中用户的身份验证和标识服务, 从而将 Office 365 集成到您的目录中。
-  
-### <a name="federated-identity-with-active-directory-federation-services-ad-fs"></a>使用 Active Directory 联合身份验证服务 (AD FS) 的联合身份
+若要规划用户帐户, 首先需要了解 Microsoft 365 中的两个标识模型。 您可以仅在云中维护组织的标识, 也可以维护内部部署 Active Directory 域服务 (AD DS) 标识, 并在用户访问 Microsoft 365 云服务时使用它们进行身份验证。  
 
-主要针对具有更复杂的身份验证要求的大型企业组织, 本地目录对象与 Office 365 同步, 并且用户帐户在本地进行管理。 使用 AD FS 时, 用户在本地和在云中具有相同的密码, 且无需再次登录才能使用 Office 365。 此联合身份验证模型可以提供其他身份验证要求, 例如基于智能卡的身份验证或第三方多重身份验证, 通常在组织具有身份验证要求时需要这些要求Azure AD 本身不受支持。
-  
-了解有关[选择与 AD FS 联合身份的](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)详细信息。
-  
-### <a name="third-party-authentication-and-identity-providers"></a>第三方身份验证和标识提供程序
+下面是两种类型的标识及其最佳优势。
 
-内部部署目录对象可能会同步到 Office 365, 并且云资源访问主要由第三方标识提供程序 (IdP) 进行管理。 如果您的组织使用第三方联合解决方案, 则可以使用适用于 Office 365 的解决方案配置登录, 前提是第三方联合解决方案与 Azure AD 兼容。
-  
-了解有关[AZURE AD 联合身份验证兼容性](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)的详细信息。
-  
-## <a name="configuring-identity-and-authentication-with-office-365"></a>使用 Office 365 配置标识和身份验证
+|||
+|:-------|:-----|:-----|
+|  | 仅限云的标识 | 混合标识 |
+| 定义 | 用户帐户仅存在于适用于 Microsoft 365 订阅的 Azure Active Directory (Azure AD) 租户中。 | 用户帐户存在于 AD DS 中, 并且副本也位于 Microsoft 365 订阅的 Azure AD 租户中。 Azure AD 中的用户帐户也可能包含用户帐户密码的哈希版本。 |
+| Microsoft 365 如何对用户凭据进行身份验证 | Microsoft 365 订阅的 Azure AD 租户将使用云标识帐户执行身份验证。 | Microsoft 365 订阅的 Azure AD 租户可以处理身份验证过程, 也可以将用户重定向到另一个标识提供程序。 |
+| 最适用于 .。。 | 不具有或不需要本地 AD DS 的组织。 | 使用 AD DS 或其他标识提供程序的组织。 |
+| 最大好处 | 易于使用。 无需额外的目录工具或服务器。 | 在访问本地或基于云的资源时, 用户可以使用相同的凭据。 |
+||||
 
-使用[AZURE Ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)简化了你的本地目录与 Office 365 和 Azure Ad 的集成。 Azure AD Connect 是连接目录的最佳方式, 并且是 Microsoft 对组织将其用户同步到云的建议。
+### <a name="cloud-only-identity"></a>仅限云的标识
+
+仅限云的标识使用仅存在于 Azure AD 中的用户帐户。 云标识通常由没有本地服务器或不使用 AD DS 来管理本地标识的小型组织使用。 
+
+下面是仅限云身份的基本组件。
+ 
+![](./media/about-office-365-identity/cloud-only-identity.png)
+
+内部部署和远程 (联机) 用户使用其 Azure AD 用户帐户和密码来访问 Office 365 云服务。 Azure AD 根据其存储用户帐户和密码对用户凭据进行身份验证。
+
+#### <a name="administration"></a>管理
+由于用户帐户仅存储在 Azure AD 中, 因此, 可以使用[Microsoft 365 管理中心](https://admin.microsoft.com)和 Windows PowerShell 等工具管理云标识, 其中包含适用于 Graph 模块的 Azure Active Directory PowerShell。 
+
+## <a name="hybrid-identity"></a>混合标识
+
+混合标识使用源自内部部署 AD DS 的帐户, 并在 Microsoft 365 订阅的 Azure AD 租户中拥有副本。 但是, 大多数更改仅以单向方式流动。 对 AD DS 用户帐户所做的更改将同步到其在 Azure AD 中的副本。 但是, 在 Azure AD 中对基于云的帐户所做的更改 (例如, 新用户帐户) 不会与 AD DS 同步。
+
+Azure AD Connect 提供了持续的帐户同步。 它在本地服务器上运行, 检查 AD DS 中的更改, 并将这些更改转发到 Azure AD。 Azure AD Connect 提供了筛选要同步的帐户以及是否同步用户密码的哈希版本 (称为密码哈希同步 (PHS)) 的功能。
+
+在实现混合标识时, 内部部署 AD DS 是帐户信息的权威源。 这意味着您在内部部署中经常执行管理任务, 这些任务随后将同步到 Azure AD。 
+
+下面是混合标识的组件。
+
+![](./media/about-office-365-identity/hybrid-identity.png)
+
+Azure AD 租户具有 AD DS 帐户的副本。 在此配置中, 本地用户和远程用户都在访问 Microsoft 365 云服务, 并针对 Azure AD 进行身份验证。
+
+>[!Note]
+>始终需要使用 Azure AD Connect 为混合标识同步用户帐户。 您需要在 Azure AD 中同步用户帐户, 才能执行许可证分配和组管理、配置权限以及其他涉及用户帐户的管理任务。
+>
+
+#### <a name="administration"></a>管理
+
+由于原始和权威用户帐户存储在内部部署 AD DS 中, 因此, 可以使用与 AD DS 相同的工具 (如 Active Directory 用户和计算机工具) 管理您的标识。 
+
+您不使用 Microsoft 365 管理中心或 Windows PowerShell 管理 Azure AD 中的同步用户帐户。
+
+
+## <a name="next-step"></a>后续步骤
+
+如果需要混合标识模型, 请参阅[规划同步标识和身份验证方法](plan-for-directory-synchronization.md)。
   
-您还可以使用 Azure ad 顾问: [AZURE Ad Connect advisor](https://aka.ms/aadconnectpwsync)、 [AD FS 部署顾问](https://aka.ms/adfsguidance)和[azure AD Premium 设置指南](https://aka.ms/aadpguidance)。
-  
+
 ## <a name="video-training"></a>视频培训
 
-有关详细信息, 请参阅视频课程[Office 365: 使用 AZURE AD Connect 管理标识](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx)(通过 LinkedIn 学习)。
+请参阅视频课程[Office 365: 使用 AZURE AD Connect 管理标识](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx)(通过 LinkedIn 学习)。

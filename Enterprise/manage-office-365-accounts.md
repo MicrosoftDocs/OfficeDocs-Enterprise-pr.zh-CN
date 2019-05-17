@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: '了解用于管理 Office 365 用户的工具, 以及您可以使用的工具取决于管理用户身份的方式。 '
-ms.openlocfilehash: a9bd7cd75902d2b3b3ff17572849fb1a46053eb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067188"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102440"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>用于管理 Office 365 帐户的工具
 
@@ -35,15 +35,15 @@ ms.locfileid: "34067188"
   
 ### <a name="cloud-authentication"></a>云身份验证
 
-- [云身份验证](about-office-365-identity.md#cloud-authentication)-创建和管理用户在管理中心中, 您还可以使用 Windows PowerShell 或 Azure Active Directory 管理用户。 
+- 云身份验证-创建和管理用户在管理中心中, 您还可以使用 Windows PowerShell 或 Azure Active Directory 管理用户。 
     
-- [带有无缝单一登录的密码哈希同步](about-office-365-identity.md)-为 Azure AD 中的本地目录对象启用身份验证的最简单方法。 使用密码哈希同步 (PHS), 您可以将内部部署 Active Directory 用户帐户对象与 Office 365 同步并在本地管理您的用户。 
+- 带有无缝单一登录的密码哈希同步-为 Azure AD 中的本地目录对象启用身份验证的最简单方法。 使用密码哈希同步 (PHS), 您可以将内部部署 Active Directory 用户帐户对象与 Office 365 同步并在本地管理您的用户。 
     
-- [带有无缝单一登录的传递身份验证](about-office-365-identity.md)-使用在一个或多个本地服务器上运行的软件代理, 为 Azure AD 身份验证服务提供简单的密码验证, 以直接通过您的用户身份验证用户内部部署 Active Directory。 
+- 带有无缝单一登录的传递身份验证-使用在一个或多个本地服务器上运行的软件代理, 为 Azure AD 身份验证服务提供简单的密码验证, 以直接在本地活动中验证用户。文件夹. 
     
 ### <a name="federated-authentication"></a>联合身份验证
 
-- [联合身份验证选项](about-office-365-identity.md#federated-authentication-options)-主要针对具有更复杂的身份验证要求的大型企业组织, 本地目录对象与 Office 365 同步, 并且用户帐户在本地进行管理。 
+- 联合身份验证选项-主要针对具有更复杂的身份验证要求的大型企业组织, 本地目录对象与 Office 365 同步, 并且用户帐户在本地进行管理。 
     
 - [第三方身份验证和标识提供程序](about-office-365-identity.md)-内部部署目录对象可能会同步到 Office 365, 并且云资源访问主要由第三方标识提供程序 (IdP) 进行管理。 
     

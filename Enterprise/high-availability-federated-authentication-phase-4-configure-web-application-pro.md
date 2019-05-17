@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: '摘要: 在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。'
-ms.openlocfilehash: fa8f5d278283f66bda0aa9efb0dddf40e52ee1a6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe98657f1298021d9ed2c32a357051b5faeb4f21
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067328"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102530"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
@@ -66,13 +66,13 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
   
 在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。
   
-|**Name**|**Type**|**TTL**|**值**|
+|**名称**|**Type**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |联合身份验证服务 FDQN  <br/> |A  <br/> |3600  <br/> |面向 Internet 的 Azure 负载均衡器的公用 IP 地址（通过上一节中的 **Write-Host** 命令显示) <br/> |
    
 下面是一个示例：
   
-|**Name**|**Type**|**TTL**|**值**|
+|**名称**|**Type**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -171,7 +171,4 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 [用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
-
-[联合身份验证选项](about-office-365-identity.md#federated-authentication-options)
-
 

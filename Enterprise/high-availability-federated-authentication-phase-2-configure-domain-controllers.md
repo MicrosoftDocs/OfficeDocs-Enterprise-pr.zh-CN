@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
-ms.openlocfilehash: f04488ad9a99111734d476725eb8e9d423c167cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 299723c8f49cddd4a30ba2defc73dd156792f337
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067478"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102520"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
@@ -260,7 +260,5 @@ Restart-Computer
 [用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
-
-[联合身份验证选项](about-office-365-identity.md#federated-authentication-options)
 
 

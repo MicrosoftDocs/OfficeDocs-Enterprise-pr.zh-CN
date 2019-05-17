@@ -13,20 +13,20 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: 如果您使用的是 Office 2007 或 Office 2010, 请随时规划升级。 不会堵塞过期的应用程序。 使用这些资源开始使用您的计划。
-ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3af3b366aa8ae7b9e70169ca0885959fe2b6f8dd
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069328"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102430"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 Office 2010 服务器和客户端升级
 
-如果您的组织使用的是较旧版本的 Office 产品和服务器, 这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其支持的终止, Office 2010 产品和服务即将提供支持的终止。 使用此部分中的资源即可开始。
-
-- [从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)
+如果您的组织使用的是较旧版本的 Office 产品和服务器, 这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其支持的最终期限, Office 2010 产品和服务将在**10 月13日的 2020**中达到其支持的终止。 使用此部分中的资源即可开始。
 
 - [从 Office 2007 服务器和客户端升级](upgrade-from-office-2007-servers-and-products.md)
+
+- [从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>如果我不升级, 会发生什么情况？
 
