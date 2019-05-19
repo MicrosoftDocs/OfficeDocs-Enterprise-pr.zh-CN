@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: 提供有关如何使用 IdFix 在同步到 Office 365 之前准备和清理本地目录的说明。
-ms.openlocfilehash: 134f9cd60e65b64b91fb42fd7cbfa300626fc867
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071068"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162365"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>使用 IdFix 工具准备好与 Office 365 进行同步的目录属性
 本主题包含有关运行 IdFix 工具的详细说明、可能遇到的一些常见错误、建议的修补程序、示例和最佳做法, 以了解在遇到大量错误时应采取的操作。
@@ -81,3 +81,7 @@ ms.locfileid: "34071068"
   
 ## <a name="rolling-back-your-changes-by-using-the-idfix-gui"></a>通过使用 IdFix GUI 回滚您的更改
 每次单击 "**应用**" 以应用更改时, IdFix 工具将创建一个名为 "事务日志" 的单独文件, 其中列出了刚才所做的更改。 您可以使用事务日志回滚在最近的日志中进行的更改, 以防您犯错误。 如果在更新过程中出现错误, 则可以通过单击 "**撤消**" 来撤消最近应用的更改。 当您单击 "**撤消**" 时, IdFix 将使用事务日志回滚在最近的事务日志中的更改。 有关使用事务日志的详细信息, 请参阅[Reference: Office 365 IdFix transaction log](idfix-transaction-log.md)。
+
+## <a name="next-step"></a>后续步骤
+
+[设置目录同步](set-up-directory-synchronization.md)

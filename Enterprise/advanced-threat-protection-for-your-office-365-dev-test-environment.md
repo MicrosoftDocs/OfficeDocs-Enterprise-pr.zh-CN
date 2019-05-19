@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '摘要: 在 Office 365 开发/测试环境中配置和演示 Office 365 高级威胁防护。'
-ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068298"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162415"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境中的高级威胁防护
 
@@ -52,7 +52,7 @@ Office 365 高级威胁防护 (ATP) 是 Exchange Online Protection (EOP) 的一�
     
 2. 运行记事本并输入一些文本。
     
-3. 将文件作为**Getkeys.js**保存到 Documents 文件夹中。
+3. 将文件作为**getkeys.js**保存到 Documents 文件夹中。
     
 4. 在 Internet Explorer 的 "Outlook 邮件" 选项卡上, 单击 "**新建**"。
     
@@ -167,8 +167,6 @@ Office 365 高级威胁防护 (ATP) 是 Exchange Online Protection (EOP) 的一�
 [Office 365 开发/测试环境](office-365-dev-test-environment.md)
   
 [用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[用于 Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md) 
 

@@ -19,62 +19,81 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 了解如何设置 Office 365 和本地 Active Directory 之间的目录同步。
-ms.openlocfilehash: d5c09b006c4e4b9ca9fbe3b0d673435a8ea6637e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1798c54854bc5ecc82481aaabca3690e7212e135
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070868"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162475"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>设置 Office 365 目录同步
 
-Office 365 使用基于云的用户标识管理服务 Azure Active Directory 来管理用户。 您还可以通过将本地环境与 Office 365 同步, 将本地 Active Directory 与 Azure AD 集成。 设置同步后, 您可以决定在 Azure AD 中或在本地目录中进行用户身份验证。
-  
-## <a name="office-365-directory-synchronization"></a>Office 365 目录同步
+Office 365 使用 Azure Active Directory (Azure AD) 租户存储和管理用于访问基于云的资源的身份验证和权限的标识。 
 
-您可以使用本地组织与 Office 365 之间的同步标识或联合身份。 使用同步标识, 可以在本地管理用户, 并在 Azure AD 在本地使用云中的相同密码时对它们进行身份验证。 这是最常见的目录同步方案。 传递身份验证或联合身份允许您在本地管理用户, 并通过本地目录进行身份验证。 联合身份需要进行额外的配置, 并允许用户仅登录一次。 有关详细信息, 请阅读[了解 Office 365 标识和 Azure Active Directory](about-office-365-identity.md)。
-  
-## <a name="want-to-upgrade-from-windows-azure-active-directory-sync-dirsync-to-azure-active-directory-connect"></a>要从 Windows Azure Active Directory 同步 (DirSync) 升级到 Azure Active Directory Connect？
+如果你具有本地 Active Directory 域服务 (AD DS), 则可以将 AD DS 用户帐户、组和联系人与 Office 365 订阅的 Azure AD 租户同步。 这是 Office 365 的混合标识。 以下是它的组件。
 
-如果你当前正在使用 DirSync 并希望升级, 请转到[azure.com](https://azure.com)以获取[升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。
-  
-## <a name="prerequisites-for-azure-ad-connect"></a>Azure AD Connect 的先决条件
+![](./media/about-office-365-identity/hybrid-identity.png)
 
-你可以使用 Office 365 订阅获取 Azure AD 的免费订阅。 设置目录同步时, 将在其中一台本地服务器上安装 Azure Active Directory Connect。
-  
-对于 Office 365, 你将需要:
-  
-- 验证您的内部部署域 (此过程将指导您完成此过程)。
-- 在[office 365 中分配管理员角色](https://support.office.com/article/EAC4D046-1AFD-4F1A-85FC-8219C79E1504), 以获取 office 365 租户和本地 Active Directory 的业务权限。
+Azure AD Connect 在本地服务器上运行, 并将 AD DS 与 Azure AD 租户同步。 除了目录同步, 您还可以指定以下身份验证选项:
 
-对于您在其上安装 Azure AD Connect 的本地服务器, 你将需要以下软件:
+- 密码哈希同步 (PHS)
+
+  Azure AD 执行身份验证本身。
+
+- 直通身份验证 (PTA)
+
+  Azure AD 具有 AD DS 执行身份验证。
+
+- 联合身份验证
+
+  Azure AD 重定向请求身份验证的客户端计算机, 以联系另一个标识提供程序。
+
+有关详细信息, 请参阅[混合标识](plan-for-directory-synchronization.md)。
+  
+## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. 查看 Azure AD Connect 的先决条件
+
+您可以使用 Office 365 订阅获取免费的 Azure AD 订阅。 设置目录同步时, 将在其中一台本地服务器上安装 Azure AD Connect。
+  
+对于 Office 365, 你需要执行以下操作:
+  
+- 验证您的内部部署域。 Azure AD Connect 向导将指导你完成此步骤。
+- 获取 Office 365 租户和 AD DS 的管理员帐户的用户名和密码。
+
+对于您在其上安装 Azure AD Connect 的本地服务器, 你将需要:
   
 |**服务器操作系统**|**其他软件**|
 |:-----|:-----|
-|**Windows Server 2012 R2** | -默认情况下, 安装了 PowerShell, 无需执行任何操作。  <br> -通过 Windows 更新提供 Net 4.5。1及更高版本。 确保已在控制面板中将最新的更新安装到 Windows Server。 |
-|**Windows server 2008 R2 Service Pack 1 (SP1)** 或**windows server 2012** | -Windows Management Framework 4.0 中提供了最新版本的 PowerShell。 在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)搜索它。  <br> -.Net 4.5。1及更高版本在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)提供。 |
-|**Windows Server 2008** | -支持的最新版本的 PowerShell 可在 Windows Management Framework 3.0 中提供, 可在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)上找到。  <br> -.Net 4.5。1及更高版本在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)提供。 |
+|Windows Server 2012 R2 及更高版本 | -默认情况下, 安装了 PowerShell, 无需执行任何操作。  <br> -通过 Windows 更新提供 Net 4.5.1 及更高版本。 确保已在控制面板中将最新的更新安装到 Windows Server。 |
+|Windows Server 2008 R2 Service Pack 1 (SP1) * * 或 Windows Server 2012 | -Windows Management Framework 4.0 中提供了最新版本的 PowerShell。 在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)搜索它。  <br> -.Net 4.5.1 及更高版本在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)提供。 |
+|Windows Server 2008 | -支持的最新版本的 PowerShell 可在 Windows Management Framework 3.0 中提供, 可在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)上找到。  <br> -.Net 4.5.1 及更高版本在[Microsoft 下载中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)提供。 |
 
-> [!NOTE]
-> 如果使用的是 Azure Active Directory DirSync, 可以从本地 Active Directory 同步到 Azure Active Directory 的通讯组成员的最大数量为15000。 对于 Azure AD Connect, 该号码为50000。
-  
-若要更仔细地查看硬件、软件、帐户和权限要求、SSL 证书要求以及 Azure AD Connect 的对象限制, 请阅读[Azure Active Directory connect 的先决条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)。
+有关 azure AD Connect 的硬件、软件、帐户和权限要求、SSL 证书要求和对象限制的详细信息, 请参阅[Azure Active Directory connect 的先决条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)。
   
 您还可以查看 Azure AD Connect[版本的历史记录](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history), 以查看每个版本中包含和修复的内容。
 
-## <a name="to-set-up-directory-synchronization"></a>设置目录同步
+## <a name="2-install-azure-ad-connect-and-configure-directory-synchronization"></a>2. 安装 Azure AD Connect 和配置目录同步
 
-1. 登录到[Microsoft 365 管理中心](https://admin.microsoft.com)并选择左侧导航栏中的 "**用户** \> **活动用户**"。
+在开始之前, 请确保您具有:
+
+- Office 365 全局管理员的用户名和密码
+- AD DS 域管理员的用户名和密码
+- 哪种身份验证方法 (PHS、PTA、联合)
+- 是否要使用[AZURE AD 无缝单一登录 (SSO)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
+
+请按以下步骤操作：
+
+1. 登录到[Microsoft 365 管理中心](https://admin.microsoft.com)(https://admin.microsoft.com)并选择左侧导航栏中的 "**用户** \> **活动用户**"。
 2. 在管理中心的 "**活动用户**" 页上, 选择 "**更多** \> **目录同步**"。
 
     ![在 "更多" 菜单中选择 "目录同步"](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-3. 在 " **Active directory 准备**" 页上, 选择 "**下载 Microsoft Azure Active Directory Connect 工具**" 链接开始。 有关 Azure Active Directory Connect 安装过程的详细信息, 请参阅[AZURE Ad connect 和 AZURE AD Connect Health 安装路线图](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap)。
+3. 在 " **Active directory 准备**" 页上, 选择 "**下载 Microsoft Azure Active Directory Connect 工具**" 链接开始。 
+4. 按照[AZURE Ad connect 和 AZURE Ad Connect Health 安装路线图](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap)中的步骤操作。
 
-## <a name="assign-licenses-to-synchronized-users"></a>将许可证分配给同步用户
-
-将用户同步到 Office 365 之后, 将会创建这些用户, 但需要向其分配许可证, 以便它们可以使用 Office 365 功能 (如 mail)。 有关说明, 请参阅[在 Office 365 for business 中向用户分配许可证](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。
-
-## <a name="finish-setting-up-domains"></a>完成域设置
+## <a name="3-finish-setting-up-domains"></a>3. 完成域设置
 
 当您管理 DNS 记录以完成域设置时, 请按照[为 Office 365 创建 dns 记录](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)中的步骤操作。
+
+## <a name="next-step"></a>后续步骤
+
+[将许可证分配给用户帐户](assign-licenses-to-user-accounts.md)。

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: 在开始规划网络的 Office 365 网络连接之前, 请务必了解安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。
-ms.openlocfilehash: 2d8b629d291be44da3d3360e676e7a01d9cd5a35
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069818"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162495"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 网络连接原则
 
@@ -200,7 +200,7 @@ Microsoft 提供了各种 Office 365 安全功能, 并提供了用于确保 Offi
   
 - **使用多重身份验证 (MFA)** 通过在正确输入密码后, 通过请求用户在智能手机上确认电话呼叫、短信或应用程序通知, MFA 向强密码策略添加了一层额外的保护。
 
-- **使用 Office 365 云应用安全**设置策略以跟踪异常活动并对其执行操作。 设置与 Office 365 云应用安全有关的通知, 以便管理员可以查看异常或风险的用户活动, 如下载大量数据、多个失败的登录尝试或来自未知或危险的 IP 地址的连接。
+- **使用 Microsoft 云应用安全**设置策略以跟踪异常活动并对其执行操作。 使用 Microsoft 云应用安全设置通知, 以便管理员可以查看异常或风险的用户活动, 如下载大量数据、多个失败的登录尝试或来自未知或危险的 IP 地址的连接。
 
 - **配置数据丢失防护 (DLP)** DLP 允许您标识敏感数据, 并创建有助于防止用户意外或有意地共享数据的策略。 DLP 在 Office 365 中工作, 包括 Exchange Online、SharePoint Online 和 OneDrive, 以便您的用户在不中断其工作流的情况下保持合规性。
 

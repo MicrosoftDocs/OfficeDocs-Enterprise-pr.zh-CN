@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Office 365 中管理用户标识。
-ms.openlocfilehash: cd7fb1db2d5372097f3da0e6a2521335d7933015
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102453"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162385"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 标识模型和 Azure Active Directory
 
@@ -43,14 +43,14 @@ Office 365 使用 Azure Active Directory (Azure AD), 这是 Office 365 订阅附
 
 |||
 |:-------|:-----|:-----|
-|  | 仅限云的标识 | 混合标识 |
-| 定义 | 用户帐户仅存在于适用于 Microsoft 365 订阅的 Azure Active Directory (Azure AD) 租户中。 | 用户帐户存在于 AD DS 中, 并且副本也位于 Microsoft 365 订阅的 Azure AD 租户中。 Azure AD 中的用户帐户也可能包含用户帐户密码的哈希版本。 |
-| Microsoft 365 如何对用户凭据进行身份验证 | Microsoft 365 订阅的 Azure AD 租户将使用云标识帐户执行身份验证。 | Microsoft 365 订阅的 Azure AD 租户可以处理身份验证过程, 也可以将用户重定向到另一个标识提供程序。 |
-| 最适用于 .。。 | 不具有或不需要本地 AD DS 的组织。 | 使用 AD DS 或其他标识提供程序的组织。 |
-| 最大好处 | 易于使用。 无需额外的目录工具或服务器。 | 在访问本地或基于云的资源时, 用户可以使用相同的凭据。 |
+|  | **仅限云的标识** | **混合标识** |
+| **定义** | 用户帐户仅存在于适用于 Microsoft 365 订阅的 Azure Active Directory (Azure AD) 租户中。 | 用户帐户存在于 AD DS 中, 并且副本也位于 Microsoft 365 订阅的 Azure AD 租户中。 Azure AD 中的用户帐户也可能包含用户帐户密码的哈希版本。 |
+| **Microsoft 365 如何对用户凭据进行身份验证** | Microsoft 365 订阅的 Azure AD 租户将使用云标识帐户执行身份验证。 | Microsoft 365 订阅的 Azure AD 租户可以处理身份验证过程, 也可以将用户重定向到另一个标识提供程序。 |
+| **最适用于** | 不具有或不需要本地 AD DS 的组织。 | 使用 AD DS 或其他标识提供程序的组织。 |
+| **最大好处** | 易于使用。 无需额外的目录工具或服务器。 | 在访问本地或基于云的资源时, 用户可以使用相同的凭据。 |
 ||||
 
-### <a name="cloud-only-identity"></a>仅限云的标识
+## <a name="cloud-only-identity"></a>仅限云的标识
 
 仅限云的标识使用仅存在于 Azure AD 中的用户帐户。 云标识通常由没有本地服务器或不使用 AD DS 来管理本地标识的小型组织使用。 
 
@@ -60,7 +60,7 @@ Office 365 使用 Azure Active Directory (Azure AD), 这是 Office 365 订阅附
 
 内部部署和远程 (联机) 用户使用其 Azure AD 用户帐户和密码来访问 Office 365 云服务。 Azure AD 根据其存储用户帐户和密码对用户凭据进行身份验证。
 
-#### <a name="administration"></a>管理
+### <a name="administration"></a>管理
 由于用户帐户仅存储在 Azure AD 中, 因此, 可以使用[Microsoft 365 管理中心](https://admin.microsoft.com)和 Windows PowerShell 等工具管理云标识, 其中包含适用于 Graph 模块的 Azure Active Directory PowerShell。 
 
 ## <a name="hybrid-identity"></a>混合标识
@@ -81,14 +81,15 @@ Azure AD 租户具有 AD DS 帐户的副本。 在此配置中, 本地用户和�
 >始终需要使用 Azure AD Connect 为混合标识同步用户帐户。 您需要在 Azure AD 中同步用户帐户, 才能执行许可证分配和组管理、配置权限以及其他涉及用户帐户的管理任务。
 >
 
-#### <a name="administration"></a>管理
+### <a name="administration"></a>管理
 
 由于原始和权威用户帐户存储在内部部署 AD DS 中, 因此, 可以使用与 AD DS 相同的工具 (如 Active Directory 用户和计算机工具) 管理您的标识。 
 
 您不使用 Microsoft 365 管理中心或 Windows PowerShell 管理 Azure AD 中的同步用户帐户。
 
-
 ## <a name="next-step"></a>后续步骤
+
+如果您需要仅限云的标识模型, 请参阅[仅限云](cloud-only-identities.md)的标识。
 
 如果需要混合标识模型, 请参阅[规划同步标识和身份验证方法](plan-for-directory-synchronization.md)。
   

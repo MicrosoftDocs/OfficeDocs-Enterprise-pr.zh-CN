@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365 的开发/测试环境。
-ms.openlocfilehash: a61716ae34d8dbe3f710696570c46cefd0f4aa4c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 37a99c313339f0894bf6fba0040bf2f7c2160fa6
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068138"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162375"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>使用云应用测试实验室指南 (TLG) 测试 Office 365
 
@@ -61,10 +61,6 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
 - [用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
     
     使用 Active Directory 域服务 (AD DS) 域帐户配置并演示联合身份验证。
-    
-- [用于 Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
-    
-    通过配置和演示 Office 365 云应用安全，用户可以创建策略来监视 Office 365 订阅中的可疑活动并发送通知。
     
 - [Office 365 开发/测试环境中的高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     

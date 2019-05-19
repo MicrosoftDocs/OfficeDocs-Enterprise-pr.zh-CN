@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 摘要：使用此测试实验室指南创建用于评估或开发/测试的 Office 365 试用订阅。
-ms.openlocfilehash: ac234d783685f3812b899491d6c28ffb46a2ecf7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2f1856d203e892c98b44ccc1dbe1598d527165de
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069786"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162505"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
@@ -268,8 +268,6 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 - [用于 Office 365 开发/测试环境的多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
 - [用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
-    
-- [用于 Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
 - [Office 365 开发/测试环境中的高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     

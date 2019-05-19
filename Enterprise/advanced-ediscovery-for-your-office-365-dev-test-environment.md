@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 摘要：在 Office 365 开发/测试环境中使用示例数据配置并演示 Office 365 高级电子数据展示。
-ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068338"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162405"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的高级电子数据展示
 
@@ -53,7 +53,7 @@ Office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
     
 2. 在“**Outlook 邮件**”选项卡上，单击“**新建**”。
     
-3. 在 " **To**" 中, 键入试用订阅的 User6 帐户的电子邮件地址 ( **User6 @。**<organization name> **。 onmicrosoft.com**)。
+3. 在 " **To**" 中, 键入试用订阅的 User6 帐户的电子邮件地址 ( **User6 @。**<organization name> **. onmicrosoft.com**)。
     
 4. 在主题中，键入“**测试电子邮件 1**”。
     
@@ -190,8 +190,6 @@ Office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
 [Office 365 开发/测试环境](office-365-dev-test-environment.md)
   
 [用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[用于 Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
 

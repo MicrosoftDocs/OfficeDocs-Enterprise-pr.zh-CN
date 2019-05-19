@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 摘要：为 Office 365 开发/测试环境配置目录同步。
-ms.openlocfilehash: 0b51e3cb6c348c5c6f9bb1a6d818a18fb123e1b6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c1596b12ab3c6c8feda3063134cc53a5f18919af
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067758"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162425"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的目录同步
 
@@ -124,8 +124,6 @@ Stop-Process -Name Explorer -Force
 [基础配置开发/测试环境](base-configuration-dev-test-environment.md)
 
 [Office 365 开发/测试环境](office-365-dev-test-environment.md)
-
-[用于 Office 365 开发/测试环境的云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
 
 [Office 365 开发/测试环境中的高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 
