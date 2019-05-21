@@ -31,7 +31,7 @@
 
 ### [Office 365 第三方 SSL 证书计划](plan-for-third-party-ssl-certificates.md)
 ### [Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)
-### [面向 Office 365 管理员的集成应用和 Azure AD](integrated-apps-and-azure-ads.md)
+### [集成应用和 Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Office 365 集成
 #### [与内部部署集成](office-365-integration.md)
@@ -80,7 +80,6 @@
 ### [目录同步](dirsync-for-your-office-365-dev-test-environment.md)
 ### [多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [联合标识](federated-identity-for-your-office-365-dev-test-environment.md)
-### [云应用安全](cloud-app-security-for-your-office-365-dev-test-environment.md)
 ### [高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 ### [高级电子数据展示](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 ### [敏感文件保护](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
@@ -123,21 +122,24 @@
 #### [使用 ExpressRoute for Office 365 路由](routing-with-expressroute.md)
 
 ## 2. 设置标识
-### [准备进行目录同步](prepare-for-directory-synchronization.md)
-### 使用 IdFix 工具
-#### [使用 IdFix 工具准备好目录属性](prepare-directory-attributes-for-synch-with-idfix.md)
-#### [安装并运行 IdFix 工具](install-and-run-idfix.md)
-#### [IdFix 排除和支持的对象和属性](idfix-excluded-and-supported-objects-and-attributes.md)
-#### [IdFix 事务日志](idfix-transaction-log.md)
-### [设置目录同步](set-up-directory-synchronization.md)
 ### [保护全局管理员帐户](protect-your-global-administrator-accounts.md)
+### [仅限云标识](cloud-only-identities.md)
+### 混合标识
+#### [准备进行目录同步](prepare-for-directory-synchronization.md)
+#### 使用 IdFix 工具
+##### [使用 IdFix 工具准备好目录属性](prepare-directory-attributes-for-synch-with-idfix.md)
+##### [安装并运行 IdFix 工具](install-and-run-idfix.md)
+##### [IdFix 排除和支持的对象和属性](idfix-excluded-and-supported-objects-and-attributes.md)
+##### [IdFix 事务日志](idfix-transaction-log.md)
+#### [设置目录同步](set-up-directory-synchronization.md)
+### [向用户帐户分配许可证](assign-licenses-to-user-accounts.md)
 
 ## 3. 部署客户端软件
 ### [部署 Office 365 专业增强版](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [部署 Skype for Business 客户端](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [部署和管理移动应用](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. 使用 Intune 配置设备管理](https://docs.microsoft.com/intune/setup-steps)
+## [4. 配置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
 ## 5. 配置服务和应用程序
 ### [准备就绪](configure-services-and-applications.md)
