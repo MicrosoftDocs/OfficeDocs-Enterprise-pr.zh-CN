@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Office 365 中管理用户标识。
-ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162385"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249460"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 标识模型和 Azure Active Directory
 
@@ -91,7 +91,7 @@ Azure AD 租户具有 AD DS 帐户的副本。 在此配置中, 本地用户和�
 
 如果您需要仅限云的标识模型, 请参阅[仅限云](cloud-only-identities.md)的标识。
 
-如果需要混合标识模型, 请参阅[规划同步标识和身份验证方法](plan-for-directory-synchronization.md)。
+如果需要混合标识模型, 请参阅[目录同步](plan-for-directory-synchronization.md)。
   
 
 ## <a name="video-training"></a>视频培训
