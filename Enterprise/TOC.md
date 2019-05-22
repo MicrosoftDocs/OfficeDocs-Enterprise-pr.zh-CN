@@ -202,8 +202,7 @@
 ### [关闭目录同步](turn-off-directory-synchronization.md)
 
 ## 用户
-### 
-  [Office 365 Admin 帮助中心](https://support.office.com/zh-CN/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Office 365 Admin 帮助中心](https://support.office.com/zh-CN/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [用于管理用户帐户的工具](manage-office-365-accounts.md)
 ### [同时添加多个用户](add-several-users-at-the-same-time.md)
 ### [恢复用户邮箱中的已删除项目](recover-deleted-items-in-a-mailbox.md)
@@ -221,8 +220,7 @@
 
 ## 服务运行状况
 ### [检查方法](view-service-health.md)
-### 
-  [支持选项](https://support.office.com/zh-CN/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+### [支持选项](https://support.office.com/zh-CN/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## 性能
 ### [优化 Office 365 性能](tune-office-365-performance.md)
