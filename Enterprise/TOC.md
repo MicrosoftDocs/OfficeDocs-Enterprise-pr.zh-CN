@@ -42,8 +42,7 @@
 ## Office 365 客户端支持
 ### [基于证书的身份验证](office-365-client-support-certificate-based-authentication.md)
 ### [条件访问](office-365-client-support-conditional-access.md)
-### 
-  [在 MDM 和 Intune 之间进行选择](https://docs.microsoft.com/zh-CN/office365/securitycompliance/choose-between-mdm-and-intune)
+### [在 MDM 和 Intune 之间进行选择](https://docs.microsoft.com/zh-CN/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [移动应用管理](office-365-client-support-mobile-application-management.md)
 ### [新式验证](office-365-client-support-modern-authentication.md)
 ### [单一登录](office-365-client-support-single-sign-on.md)
