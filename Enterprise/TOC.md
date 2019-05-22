@@ -14,8 +14,7 @@
 ### [Azure IaaS 混合云方案](hybrid-cloud-scenarios-for-azure-iaas.md)
 ## [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# Office 365 计划
-## [使组织准备就绪](get-your-organization-ready-for-office-365.md)
+# [Office 365 计划](get-your-organization-ready-for-office-365.md)
 
 ## Office 365 租户
 ### [订阅、许可证和租户](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
@@ -26,7 +25,7 @@
 #### [Office 365 的网络和迁移规划](network-and-migration-planning.md)
 
 ### 规划标识
-#### [Office 365 标识模型](about-office-365-identity.md)
+#### [标识模型](about-office-365-identity.md)
 #### [混合标识](plan-for-directory-synchronization.md)
 
 ### [Office 365 第三方 SSL 证书计划](plan-for-third-party-ssl-certificates.md)
@@ -86,12 +85,7 @@
 ### [数据分类和标签](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Azure 中的模拟跨界虚拟网络](simulated-cross-premises-virtual-network-in-azure.md)
 
-# 部署 Office 365
-
-## 清单和最佳实践
-### [为组织部署 Office 365 企业版](setup-overview-for-enterprises.md)
-### [部署规划清单](deployment-planning-checklist.md)
-### [Office 365 安全路线图](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+# [部署 Office 365 企业版](setup-overview-for-enterprises.md)
 
 ## 1. 设置网络
 ### [设置企业网络](set-up-network-for-office-365.md)
@@ -134,14 +128,16 @@
 #### [设置目录同步](set-up-directory-synchronization.md)
 ### [向用户帐户分配许可证](assign-licenses-to-user-accounts.md)
 
-## 3. 部署客户端软件
+## [3. 实施安全功能](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+
+## 4. 部署客户端软件
 ### [部署 Office 365 专业增强版](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [部署 Skype for Business 客户端](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [部署和管理移动应用](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. 配置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+## [5. 设置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-## 5. 配置服务和应用程序
+## 6. 配置服务和应用程序
 ### [准备就绪](configure-services-and-applications.md)
 ### [将数据迁移到 Office 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
@@ -152,7 +148,7 @@
 ### [激活权限管理](activate-rms-in-office-365.md)
 ### [配置发布选项](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
 
-## [6. 培训用户](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
+## [7. 培训用户](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
 ## 高级部署
 
