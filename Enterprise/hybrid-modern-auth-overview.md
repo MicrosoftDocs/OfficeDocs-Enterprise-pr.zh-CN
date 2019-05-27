@@ -4,7 +4,6 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: 新式身份验证是标识管理的一种方法, 可提供更安全的用户身份验证和授权。 它可用于本地的 Skype for Business server 本地和 Exchange server 的混合部署, 以及拆分域 Skype for Business 混合。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档 (如 Outlook 和 Skype 客户端) 信息。
-ms.openlocfilehash: 17c61b028aacd5abaf72450e197475fa2c0a2589
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
+ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067198"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34404214"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件
 
@@ -30,7 +29,7 @@ ms.locfileid: "34067198"
     
 - [检查您的本地环境的新式身份验证状态](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
     
-- [您是否满足新式身份验证先决条件？](hybrid-modern-auth-overview.md#BKMK_MeetPrereq)
+- [您是否满足新式身份验证先决条件？](#do-you-meet-modern-authentication-prerequisites)
     
 - [在开始之前, 我还需要了解哪些信息？](hybrid-modern-auth-overview.md#BKMK_Whatelse)
     
@@ -43,7 +42,7 @@ ms.locfileid: "34067198"
   
 新式身份验证是一种用于身份验证和授权方法组合的伞术语, 以及一些依赖您可能已经熟悉的访问策略的安全措施。 这包括：
   
-- **身份验证方法**: 多因素身份验证;基于客户端证书的身份验证;和 Active Directory 身份验证库 ( [ADAL](https://technet.microsoft.com/en-us/library/mt710548.aspx))。
+- **身份验证方法**: 多因素身份验证;基于客户端证书的身份验证。
     
 - **授权方法**: Microsoft 的开放授权 (OAuth) 实现。 
     
