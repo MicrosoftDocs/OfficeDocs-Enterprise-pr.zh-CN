@@ -121,7 +121,7 @@
 #### [准备进行目录同步](prepare-for-directory-synchronization.md)
 #### 使用 IdFix 工具
 ##### [使用 IdFix 工具准备好目录属性](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [安装并运行 IdFix 工具](install-and-run-idfix.md)
+##### [下载并运行 IdFix 工具](install-and-run-idfix.md)
 ##### [IdFix 排除和支持的对象和属性](idfix-excluded-and-supported-objects-and-attributes.md)
 ##### [IdFix 事务日志](idfix-transaction-log.md)
 #### [设置目录同步](set-up-directory-synchronization.md)
