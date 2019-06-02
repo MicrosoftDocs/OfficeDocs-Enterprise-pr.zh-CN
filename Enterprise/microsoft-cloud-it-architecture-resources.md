@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Office 专业增强版部署新式安全桌面。
-ms.openlocfilehash: ca62612dd76b3ada07dba0e58f92f36e2bf8e1cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070298"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539320"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
@@ -38,6 +38,7 @@ ms.locfileid: "34070298"
     - [面向企业架构师的 Microsoft 云网络](microsoft-cloud-it-architecture-resources.md#networking)
     - [面向企业架构师的 Microsoft 混合云](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [常见攻击和保护组织的 Microsoft 功能](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
+    - [Microsoft 365 企业版底层基础结构](#m365foundationinfra)
     
 - **[Microsoft 365 企业版解决方案系列](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**：
     - [面向 IT 架构师的 Microsoft 365 中的 Microsoft Teams 和相关生产力服务](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -49,8 +50,6 @@ ms.locfileid: "34070298"
     - [Microsoft 电话解决方案](#microsoft-telephony-solutions) 
     - [通过 Microsoft 部署新式安全桌面](microsoft-cloud-it-architecture-resources.md#msd)
     
-
-  
 请将你的想法告诉我们！向我们 ([cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)) 发送电子邮件。 
 
 <!--
@@ -125,6 +124,15 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 |**项**|**说明**|
 |:-----|:-----|
 |[![常见攻击海报缩略图。](media/common%20attacks-thumb3.png)](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | 该海报展示了常见攻击的路径，并说明了哪些功能有助于在攻击的每个阶段阻止攻击者。 <br/>|
+
+<a name="m365foundationinfra"></a>
+### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
+
+快速了解 Microsoft 365 Enterprise 的[底层基础结构](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure)以开始部署。
+  
+|**Item**|**说明**|
+|:-----|:-----|
+|[![Microsoft 365 企业版底层基础结构海报缩略图图像](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [联机查看](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | 此海报概述了底层基础结构的各个阶段，包括目标、功能和工具、设计决策、配置结果、载入及持续监视和更新。 <br/>| 
 
 
 <!--<a name="santa"></a>
