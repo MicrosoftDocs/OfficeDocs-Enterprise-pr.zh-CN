@@ -3,30 +3,6 @@
 
 
 
-## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日所在周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 4/18/2019 | [如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 修改内容 |
-| 4/18/2019 | [使用 Office 365 PowerShell 向用户帐户分配许可证](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 修改内容 |
-| 4/18/2019 | [将角色分配给用户帐户与 Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 修改内容 |
-| 4/18/2019 | [使用 ExpressRoute for Office 365 路由](/Office365/Enterprise/routing-with-expressroute) | 修改内容 |
-| 4/18/2019 | [使用集中部署 PowerShell cmdlet 管理加载项](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) 。 | 修改内容 |
-
-
-## <a name="week-of-april-22-2019"></a>2019 年 4 月 22 日所在周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 4/22/2019 | [OneDrive 和 SharePoint Online 中的多地理位置功能](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | 修改内容 |
-| 4/22/2019 | [Office 365 多地理位置](/Office365/Enterprise/office-365-multi-geo) | 修改内容 |
-| 4/22/2019 | 通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴聚合客户报告数据 | 拆卸 |
-| 4/22/2019 | [使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴管理 Office 365](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | 修改内容 |
-| 4/22/2019 | [通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴检索客户报告数据](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | 修改内容 |
-
-
 ## <a name="week-of-april-29-2019"></a>2019年4月29日一周
 
 
@@ -343,3 +319,38 @@
 | 5/17/2019 | [保护 Office 365 全局管理员帐户](/Office365/Enterprise/protect-your-global-administrator-accounts) | 修改内容 |
 | 5/17/2019 | [设置 Office 365 的目录同步](/Office365/Enterprise/set-up-directory-synchronization) | 修改内容 |
 | 5/17/2019 | [Azure 中的模拟跨界虚拟网络](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | 修改内容 |
+
+
+## <a name="week-of-may-20-2019"></a>2019年5月20日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 5/20/2019 | [Office 365 标识模型和 Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | 修改内容 |
+| 5/20/2019 | [Office 365 部署计划清单](/Office365/Enterprise/deployment-planning-checklist) | 修改内容 |
+| 5/20/2019 | [规划 Office 365 企业版](/Office365/Enterprise/get-your-organization-ready-for-office-365) | 修改内容 |
+| 5/20/2019 | [为组织部署 Office 365 企业版](/Office365/Enterprise/setup-overview-for-enterprises) | 修改内容 |
+| 5/21/2019 | [如何配置本地 Exchange Server 以使用混合新式验证](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | 修改内容 |
+| 5/21/2019 | 在 SharePoint Online 中使用内容交付网络 | 拆卸 |
+| 5/22/2019 | [混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件](/Office365/Enterprise/hybrid-modern-auth-overview) | 修改内容 |
+| 5/22/2019 | 使用 Azure AD 进行 SharePoint Server 身份验证 | 拆卸 |
+
+
+## <a name="week-of-may-27-2019"></a>5月27日一周, 2019
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 5/28/2019 | [Office 365 企业版](/Office365/Enterprise/index) | 修改内容 |
+| 5/28/2019 | [下载并运行 Office 365 IdFix 工具](/Office365/Enterprise/install-and-run-idfix) | 修改内容 |
+| 5/28/2019 | [用于管理 Office 365 帐户的工具](/Office365/Enterprise/manage-office-365-accounts) | 修改内容 |
+| 5/28/2019 | [使用 IdFix 工具准备好与 Office 365 进行同步的目录属性](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | 修改内容 |
+| 5/28/2019 | [准备将目录同步到 Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | 修改内容 |
+| 5/28/2019 | [用于管理 Office 365 帐户的工具](/Office365/Enterprise/tools-to-manage-office-365-accounts) | 修改内容 |
+| 5/28/2019 | [Office 365 美国政府 DoD 终结点](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 修改内容 |
+| 5/28/2019 | [Office 365 美国政府版 (GCC) 高终结点](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 修改内容 |
+| 5/28/2019 | [Office 365 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges) | 修改内容 |
+| 5/29/2019 | [Microsoft 云 IT 体系结构资源](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 修改内容 |
+| 5/29/2019 | [规划从 Office 2007 或2010服务器和客户端升级](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 修改内容 |
+| 5/29/2019 | [可帮助您从 Office 2010 服务器和客户端进行升级的资源](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 修改内容 |
+| 5/30/2019 | [将角色分配给用户帐户与 Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 修改内容 |

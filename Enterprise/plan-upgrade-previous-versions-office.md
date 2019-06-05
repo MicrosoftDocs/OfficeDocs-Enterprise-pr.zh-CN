@@ -3,7 +3,7 @@ title: 规划从 Office 2007 或2010服务器和客户端升级
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2019
+ms.date: 06/04/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: 如果您使用的是 Office 2007 或 Office 2010, 请随时规划升级。 不会堵塞过期的应用程序。 使用这些资源开始使用您的计划。
-ms.openlocfilehash: 0ef77765b2f75bc0c8680c5fb93167ad1a32983a
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 1867661c158667a6da6108380841f8d9d692ba15
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539274"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704103"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 Office 2010 服务器和客户端升级
 
-如果您的组织使用的是较旧版本的 Office 产品和服务器, 这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其支持的最终期限, Office 2010 产品和服务将在**10 月13日的 2020**中达到其支持的终止。 使用此部分中的资源即可开始。
+如果您的组织使用的是较旧版本的 Office 产品和服务器, 这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其支持的最终期限。 Exchange 2010 将于在**2020 年1月 14**日到达其支持的结束。 其他 Office 2010 产品和服务将在**10 月13日 (2020)** 达到其支持的终止。 使用此部分中的资源即可开始。
 
 - [从 Office 2007 服务器和客户端升级](upgrade-from-office-2007-servers-and-products.md)
 
@@ -71,8 +71,8 @@ ms.locfileid: "34539274"
 - **试用 Office 365 供家庭使用**。 查看[要求](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), 然后在[office 365 家庭](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm)版或[office 365 个人](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)版中进行选择。 启动试用版, 了解 Office 365 的工作原理。 使用 Office 365, 你将享受 OneDrive 的云存储, 你每月将会收到60分钟的 Skype 呼叫和座机号码, 你将获得许多其他有用的功能。 若要了解详细信息, 请参阅[使用 office 365 获取最大限度的 office](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)。
     
 - **购买 Office 家庭&amp;学生版**。 如果选择此选项, 你将进行一次性购买, 然后在你的 Windows 电脑或 Mac 上安装 Office。 这不是订阅;它是一台计算机的一次性、永久使用许可证。 查看[要求](http://office.com/systemrequirements), 然后选择要使用的版本。
-    - 如果你的 Windows 电脑运行的是 Windows 10, 请考虑获取[Office 家庭 _AMP_ 学生 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)。
-    - 如果你的 Windows 电脑运行的是 Windows 7、8或 8.1, 并且你现在不升级到 Windows 10, 请考虑从授权的经销商处获取 Office Home & 学生版 2016 (或其他版本的 Microsoft Office)。
+    - 如果你的 Windows 电脑运行的是 Windows 10, 请考虑获取[Office 家庭 & 学生 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)。
+    - 如果你的 Windows 电脑运行的是 Windows 7、8或 8.1, 并且你现在不升级到 Windows 10, 请考虑从授权的经销商处获取 Office 家庭版 & 学生版 2016 (或其他版本的 Microsoft Office)。
 
 你也可以选择现在不升级。 你的 Office 应用将继续运行。 ([此处](https://go.microsoft.com/fwlink/p/?linkid=2085724)提供了 Office 支持日期的日程表。)但是, 升级将允许您访问新的和改进的功能, 包括安全更新。 
    

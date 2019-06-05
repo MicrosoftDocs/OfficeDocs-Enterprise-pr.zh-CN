@@ -3,7 +3,7 @@ title: 可帮助您从 Office 2010 服务器和客户端进行升级的资源
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2019
+ms.date: 06/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,16 +21,20 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 服务器和客户端应用程序的支持即将结束, 自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 11bd2e7acf5c35a427b2acd04fd37605615b42ed
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539208"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704082"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可帮助您从 Office 2010 服务器和客户端进行升级的资源
 
-如果你使用的是 Office 2010 产品和服务, 你可能会注意到 Office 2010 产品和服务将在**10 月13日的 2020**上达到其支持的终止。 在规划升级时, 这是一个很好的时间来考虑转到 Office 365。 Office 365 针对 Office 2010 服务器产品 (如 Exchange Server 和 SharePoint Server) 以及新服务 (如团队和 OneDrive for Business) 提供基于云的服务。 Office 365 专业增强版是您在本地设备上安装的 Office 2010 客户端应用程序, 并通过 Microsoft 云以 ongoign 为基础更新了新的工作效率和安全功能。 Office 365 专业增强版包含在 Office 365 E3 和 E5 中。
+Exchange 2010 将于在**2020 年1月 14**日到达其支持的结束。 其他 Office 2010 产品和服务将在**10 月13日 (2020)** 达到其支持的终止。 在规划升级时, 这是一个很好的时间来考虑转到 Office 365。 
+
+Office 365 针对 Office 2010 服务器产品 (如 Exchange Server 和 SharePoint Server) 以及新服务 (如团队和 OneDrive for Business) 提供基于云的服务。 
+
+Office 365 专业增强版 (包含在 Office 365 E3 和 E5 中) 是您在本地设备上安装的一组 Office 客户端应用程序。 通过与 Microsoft 云不断更新的新的工作效率和安全功能进行更新。
 
 使用本文作为查看选项的起始点。
       
