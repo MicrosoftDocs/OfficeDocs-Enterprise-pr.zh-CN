@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 摘要：在 Office 365 开发/测试环境中使用示例数据配置并演示 Office 365 高级电子数据展示。
-ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162405"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726228"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的高级电子数据展示
 
@@ -95,11 +95,11 @@ Office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
     
 3. 在“**生产网站集**”选项卡的“**文档**”下，单击“**新建 > Word 文档**”。
     
-4. 在“**Word Online**”页面，键入“**Tailspin 草案合同**”，等待标题中显示“**已保存**”，然后关闭“**Word Online**”页面选项卡。
+4. 在**Word**页面上, 键入**Tailspin 草稿合同**, 等待它在标题中显示 "**已保存**", 然后关闭 " **Word**页面" 选项卡。
     
 5. 在“**生产网站集**”选项卡的“**文档**”下，单击“**新建 > Word 文档**”。
     
-6. 	在“**Word Online**”选项卡上，键入“**Tailspin 合同争议说明**”，等待标题中显示“**已保存**”，然后关闭“**Word Online**”选项卡。
+6. 在 " **Word** " 选项卡上, 键入 " **Tailspin 合同争议说明**", 等待它在标题中显示 "**已保存**", 然后关闭 " **Word** " 选项卡。
     
 7. 在“**生产网站集**”选项卡上，你应该会在文档列表中看到“**文档**”和“**文档1**”。
     
@@ -139,7 +139,7 @@ Office 365 高级电子数据展示使您能够快速查找和分析存储在 Of
     
 11. 在“**角色组**”窗口中，单击“**保存**”。
     
-12. 在左侧导航栏中, 单击 "**搜索&amp;调查 > 内容搜索**"。
+12. 在左侧导航中, 单击 **" &amp;搜索调查 > 内容搜索**"。
     
 13. 单击加号添加搜索。
     

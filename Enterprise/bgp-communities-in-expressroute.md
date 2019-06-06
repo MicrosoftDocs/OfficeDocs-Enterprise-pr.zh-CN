@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: '使用 Azure ExpressRoute 连接到 Office 365 基于特定 IP 子网的 BGP 播发, 这些子网代表部署 Office 365 终结点的网络。 由于 Office 365 的全球性质以及构成 Office 365 的服务的数量, 客户通常需要在其网络上管理他们接受的广告。 减少 IP 子网的数量;在本文的其余部分中称为 IP 前缀, 以与 BGP 网络管理术语保持一致, 为客户提供以下最终目标:'
-ms.openlocfilehash: 2cce550aa4c14eb0de9daa6eac85cde6d1754add
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 57b957d151bf49d67577ebd0d75f3a87e102d904
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068178"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722571"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>在 ExpressRoute for Office 365 方案中使用 BGP 社区
 
@@ -61,7 +61,7 @@ Contoso Corporation 是一家50000个人公司, 目前使用 Office 365 for Exch
   
 ### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>方案 2: 对某些 Office 365 服务应用范围的 ExpressRoute 和内部带宽使用
 
-Fabrikam Inc。 (一个大型多国企业, 具有分布式异类网络) 是许多 Office 365 服务的订阅者, 包括:Exchange Online、SharePoint Online 和 Skype for Business Online。 Fabrikam 的内部路由基础结构可以在其路由表中处理数千个 IP 前缀;但是, Fabrikam 只需要为 Office 365 应用程序设置 ExpressRoute 和内部带宽, 这些应用程序对网络性能敏感, 并对所有其他 Office 365 应用程序使用其现有 Internet 带宽。
+Fabrikam Inc. (一个大型多国企业, 具有分布式异类网络) 是许多 Office 365 服务的订阅者, 包括:Exchange Online、SharePoint Online 和 Skype for Business Online。 Fabrikam 的内部路由基础结构可以在其路由表中处理数千个 IP 前缀;但是, Fabrikam 只需要为 Office 365 应用程序设置 ExpressRoute 和内部带宽, 这些应用程序对网络性能敏感, 并对所有其他 Office 365 应用程序使用其现有 Internet 带宽。
   
 因此, Fabrikam 将其 Azure ExpressRoute 带宽限定为 Skype for business Online BGP 社区价值 12076:5030, 通过 ExpressRoute Microsoft 对等的 Microsoft 对等。 与 Office 365 关联的其余网络流量将继续使用 internet 出局点。
 
@@ -103,7 +103,7 @@ Woodgrove Bank 是几个 Microsoft 云服务 (包括 Office 365) 的客户。 �
   
 ## <a name="related-topics"></a>相关主题
 
-[与 Office 365 的网络连接](network-connectivity.md)
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
   
 [Azure ExpressRoute for Office 365](azure-expressroute.md)
   
