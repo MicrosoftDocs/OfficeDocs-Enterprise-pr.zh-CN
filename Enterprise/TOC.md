@@ -20,7 +20,7 @@
 ### [订阅、许可证和租户](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### 规划网络
-#### [与 Office 365 的网络连接](network-connectivity.md)
+#### [评估 Office 365 网络连接](assessing-network-connectivity.md)
 #### [有关连接到 Office 365 服务的网络设备的计划](plan-for-network-devices.md)
 #### [Office 365 的网络和迁移规划](network-and-migration-planning.md)
 
@@ -92,7 +92,7 @@
 ### [Office 365 网络连接概述](office-365-networking-overview.md)
 ### [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
 ### [Office 365 网络计划和性能优化](network-planning-and-performance.md)
-### [与 Office 365 的网络连接](network-connectivity.md)
+### [评估 Office 365 网络连接](assessing-network-connectivity.md)
 ### [Office 365 网络合作伙伴计划](office-365-networking-partner-program.md)
 ### Office 365 IP 地址和 URL
 #### [Office 365 终结点](office-365-endpoints.md)
