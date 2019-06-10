@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 服务器和客户端应用程序的支持即将结束, 自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: 4c0c5101a7d1dbd068fe4bbbd03eb1bdd41b3b05
+ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704082"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780861"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可帮助您从 Office 2010 服务器和客户端进行升级的资源
 
-Exchange 2010 将于在**2020 年1月 14**日到达其支持的结束。 其他 Office 2010 产品和服务将在**10 月13日 (2020)** 达到其支持的终止。 在规划升级时, 这是一个很好的时间来考虑转到 Office 365。 
+Exchange Server 2010 将在**2020 年1月 14**日到达其支持的结束。 Office 2010、SharePoint 2010 和 Project Server 2010 将在**10 月13日 (2020)** 达到其支持的终止。 在规划升级时, 这是一个很好的时间来考虑转到 Office 365。 
 
 Office 365 针对 Office 2010 服务器产品 (如 Exchange Server 和 SharePoint Server) 以及新服务 (如团队和 OneDrive for Business) 提供基于云的服务。 
 
