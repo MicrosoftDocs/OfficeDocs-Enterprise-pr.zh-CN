@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支持结束时间为2020年10月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
-ms.openlocfilehash: 277c41b96afa3b2424b0943427eff6a0a1f6dc1c
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: 8cdfc4a8362df65ca238b9478061dc8e9bda1166
+ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704113"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780871"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 结束支持路线图
 
