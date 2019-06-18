@@ -3,7 +3,7 @@ title: Office 365 网络连接原则
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/14/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,18 +14,18 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: 在开始规划网络的 Office 365 网络连接之前, 请务必了解安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。
-ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162495"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017292"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 网络连接原则
 
 在开始规划网络的 Office 365 网络连接之前, 请务必了解安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。
   
-传统的企业网络主要用于向用户提供对公司运营数据中心内托管的应用程序和数据的访问, 具有强大的外围安全机制。 传统模型假定用户将从公司网络外围、来自分支机构的 WAN 链接或通过 VPN 连接的远程访问应用程序和数据。 
+传统的企业网络主要用于向用户提供对公司运营数据中心内托管的应用程序和数据的访问, 具有强大的外围安全机制。 传统模型假定用户将从公司网络外围、来自分支机构的 WAN 链接或通过 VPN 连接的远程访问应用程序和数据。
   
 采用 SaaS 应用程序 (如 Office 365) 会在网络外围之外移动一些服务和数据组合。 如果不进行优化, 用户和 SaaS 应用程序之间的流量将受到数据包检查、网络回流、无意连接到地理位置较远的终结点和其他因素所引入的延迟的影响。 您可以通过了解和实现关键优化准则来确保最佳的 Office 365 性能和可靠性。
   
@@ -37,6 +37,7 @@ ms.locfileid: "34162495"
 - [新的 Office 365 终结点类别](office-365-network-connectivity-principles.md#BKMK_Categories)和优化指南
 - [将网络外围安全性与终结点安全性进行比较](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Office 365 流量的[增量优化](office-365-network-connectivity-principles.md#BKMK_IncOpt)选项
+- [Office 365 网络载入工具](https://aka.ms/netonboard), 用于测试与 Office 365 的基本连接的新工具
 
 ## <a name="office-365-architecture"></a>Office 365 体系结构
 <a name="BKMK_Architecture"> </a>
@@ -61,7 +62,7 @@ Microsoft 建议采用以下原则来实现最佳的 Office 365 连接和性能�
   
 若要能够区分来自通用 Internet 绑定网络流量的通信, 第一步是确定 Office 365 网络流量。 可以通过实现网络路由优化、防火墙规则、浏览器代理设置以及针对特定终结点的网络检查设备旁路等方法的组合来优化 Office 365 连接。
   
-以前的 Office 365 优化指南将 Office 365 终结点分为两个类别, "**必需**" 和 "**可选**"。 由于添加终结点以支持新的 Office 365 服务和功能, 我们已将 Office 365 终结点重新组织为三个类别:**优化**、**允许**和**默认**。 每个类别的准则适用于类别中的所有终结点, 使优化更易于理解和实现。 
+以前的 Office 365 优化指南将 Office 365 终结点分为两个类别, "**必需**" 和 "**可选**"。 由于添加终结点以支持新的 Office 365 服务和功能, 我们已将 Office 365 终结点重新组织为三个类别:**优化**、**允许**和**默认**。 每个类别的准则适用于类别中的所有终结点, 使优化更易于理解和实现。
   
 有关 Office 365 终结点类别和优化方法的详细信息, 请参阅 "[新建 Office 365 终结点类别](office-365-network-connectivity-principles.md#BKMK_Categories)" 部分。
   
@@ -149,7 +150,7 @@ Office 365 端点代表一组不同的网络地址和子网。 终结点可以�
 > [!NOTE]
 > 网络中的 Office 365 终结点的位置并不直接与 Office 365 租户数据的位置相关。 出于此原因, 客户应查看 Office 365 作为分布式和全局服务, 不应尝试根据地理条件阻止与 Office 365 终结点的网络连接。
   
-在我们关于管理 Office 365 流量的前一指南中, 终结点分为两类:**必需**和**可选**。 每个类别中的终结点需要不同的优化, 具体取决于服务的关键程度, 而许多客户在论证对 Office 365 Url 和 IP 地址的完整列表中的相同网络优化的应用程序时面临的挑战。 
+在我们关于管理 Office 365 流量的前一指南中, 终结点分为两类:**必需**和**可选**。 每个类别中的终结点需要不同的优化, 具体取决于服务的关键程度, 而许多客户在论证对 Office 365 Url 和 IP 地址的完整列表中的相同网络优化的应用程序时面临的挑战。
   
 在新模型中, 终结点分为三个类别: "**优化**"、"**允许**" 和 "**默认**", 提供基于优先级的数据透视, 以实现最佳性能改进和返回的重点关注的网络优化工作。投资回报。 根据有效用户体验对应用场景的有效用户体验、容量和性能信封以及易于实现的敏感度, 在上述类别中整合终结点。 对于给定类别中的所有终结点, 推荐的优化可以采用相同的方式。
   
@@ -240,3 +241,31 @@ Microsoft 提供了各种 Office 365 安全功能, 并提供了用于确保 Offi
 |绕过代理和检查设备  <br/> |使用将 Office 365 请求直接发送到出局点的 PAC 文件配置浏览器。  <br/> 配置边缘路由器和防火墙以允许不进行检查的 Office 365 流量。  <br/> | 最小化延迟  <br/>  减少网络设备上的负载  <br/> |
 |为 VPN 用户启用直接连接  <br/> |对于 VPN 用户, 启用 Office 365 连接以直接从用户网络进行连接, 而不是通过实现拆分隧道的方式连接到 VPN 隧道。  <br/> | 最小化延迟  <br/>  改进与最近的 Office 365 入口点的可靠连接  <br/> |
 |从传统 WAN 迁移到 SD-WAN  <br/> |SD-Wan (软件定义的广域网络) 简化了 WAN 管理, 并通过将传统 WAN 路由器替换为虚拟设备来提高性能, 类似于使用虚拟机 (Vm) 计算资源的虚拟化。  <br/> | 改进 WAN 流量的性能和可管理性  <br/>  减少网络设备上的负载  <br/> |
+
+## <a name="related-topics"></a>相关主题
+
+[Office 365 网络连接概述](office-365-networking-overview.md)
+
+[管理 Office 365 终结点](managing-office-365-endpoints.md)
+
+[Office 365 URL 和 IP 地址范围](urls-and-ip-address-ranges.md)
+
+[Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)
+
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
+
+[Office 365 网络和性能优化](network-planning-and-performance.md)
+
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
+
+[使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
+
+[Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
+
+[内容分发网络](content-delivery-networks.md)
+
+[Office 365 网络载入工具](https://aka.ms/netonboard)
+
+[Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Office 365 网络博客](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

@@ -3,7 +3,7 @@ title: Office 365 网络连接概述
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/12/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 讨论为什么网络优化对 SaaS 服务非常重要, Office 365 网络的目标, 以及 SaaS 如何从其他工作负载中获得不同的网络。
-ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069615"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017282"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 网络连接概述
 
@@ -94,18 +94,26 @@ Office 365 设计为使用端点安全性和加密网络连接实现最佳性能
 
 [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
 
-[Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)
-
 [管理 Office 365 终结点](managing-office-365-endpoints.md)
 
+[Office 365 URL 和 IP 地址范围](urls-and-ip-address-ranges.md)
+
 [Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)
 
-[与 Office 365 的网络连接](network-connectivity.md)
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
 
 [Office 365 网络和性能优化](network-planning-and-performance.md)
+
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
 
 [使用基线和性能历史记录优化 Office 365 性能](performance-tuning-using-baselines-and-history.md)
 
 [Office 365 性能疑难解答计划](performance-troubleshooting-plan.md)
 
+[内容分发网络](content-delivery-networks.md)
+
+[Office 365 网络载入工具](https://aka.ms/netonboard)
+
 [Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Office 365 网络博客](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

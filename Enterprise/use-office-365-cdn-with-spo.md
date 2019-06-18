@@ -3,7 +3,7 @@ title: 结合使用 Office 365 内容分发网络和 SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2019
+ms.date: 5/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +15,21 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 介绍如何使用 Office 365 内容传送网络 (CDN) 加快将 SharePoint Online 资产传递给所有用户, 无论它们位于何处或如何访问你的内容。
-ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070628"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017312"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
 可以使用内置的 Office 365 内容分发网络 (CDN) 来托管静态资产，以便提高 SharePoint Online 页面的性能。 Office 365 CDN 将静态资产缓存到距离请求这些资产的浏览器更近的位置，这样可以加快下载速度并减少延迟，进而提高性能。 此外, Office 365 CDN 使用[HTTP/2 协议](https://en.wikipedia.org/wiki/HTTP/2)改进了压缩和 HTTP 流水线功能。 Office 365 CDN 服务被归入 SharePoint Online 订阅。
+
+> [!NOTE]
+> 对 Office 365 CDN 的使用限制:
+> + Office 365 CDN 仅适用于**生产**(全球) 云中的租户。 美国政府、中国和德国云中的租户目前不支持 Office 365 CDN。
+> + Office 365 CDN 目前不支持使用自定义或 "虚" 域配置的租户。 如果已使用主题 "[向 Office 365 添加域](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)" 中的说明向租户添加了域, 则当您尝试访问 CDN 中的内容时, OFFICE 365 CDN 将返回错误。
 
 Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即_源_）托管静态资产，并从全局高速网络提供这些资产。 可以添加**公共**源、**私有**源或同时添加这两种源，具体取决于想要托管在 Office 365 CDN 中的内容种类。 若要详细了解公共和专用来源之间的差异, 请参阅[选择每个来源是否应为公共的或专用](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)的。
 
@@ -308,7 +313,17 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 本示例在网站集的 "网站资产" 库中添加 " _folder1_ " 文件夹的专用原点:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
+```
+
+如果路径中有空格, 可以将路径括在双引号中, 或将空格替换为 URL 编码% 20。 下面的示例将在网站集的 "网站资产" 库中添加_文件夹 1_文件夹的专用来源:
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
+```
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
 有关此命令及其语法的详细信息, 请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。
@@ -598,7 +613,7 @@ SharePoint Online 中的**发布功能**会自动将公共起源中存储的资�
 ![工作流图表: 从公共来源检索 Office 365 CDN 资产](media/O365-CDN/o365-cdn-public-steps-transparent.svg "工作流: 从公共来源检索 Office 365 CDN 资产")
 
 > [!TIP]
-> 如果要对页面上的特定 Url 禁用自动重写, 则可以签出该页面, 并将查询字符串参数 **?NoAutoReWrites = true**添加到要禁用的每个链接的末尾。
+> 如果要对页面上的特定 Url 禁用自动重写, 则可以签出该页面并添加查询字符串参数 **？NoAutoReWrites = true**指向要禁用的每个链接的末尾。
 
 #### <a name="hardcoding-cdn-urls-for-public-assets"></a>Hardcoding 适用于公共资产的 CDN Url
 
@@ -633,7 +648,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 在 Office 365 CDN 中对私人来源的资产的访问权限由 SharePoint Online 生成的令牌授予。 如果用户已有权访问由来源指定的文件夹或库, 则会自动向其授予允许用户根据其权限级别访问文件的令牌。 这些访问令牌在生成后有效期为30至90分钟, 以帮助防止令牌重播攻击。
 
-在生成访问令牌后, SharePoint Online 将向客户端返回一个自定义 URI, 其中包含两个授权参数_吃_(边缘授权令牌) 和_oat_ (原始授权令牌)。 每个令牌的结构是 _<'expiration Time Format'>__<'secure signature'>_。 例如：
+在生成访问令牌后, SharePoint Online 将向客户端返回一个自定义 URI, 其中包含两个授权参数_吃_(边缘授权令牌) 和_oat_ (原始授权令牌)。 每个令牌的结构在 " _Epoch 时间格式" 中< "到期时间" >__< "安全签名" >_。 例如：
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
