@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 利用 Office 365 多地理位置将 Office 365 触及范围扩展到多个地理区域。
-ms.openlocfilehash: 25621a0a8c833c4334fe6f70e7cb04d15690ba71
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
+ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069748"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078506"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 多地理位置
 
@@ -55,7 +55,7 @@ Office 365 多地理位置当前在以下国家和地区提供：
 
 请按照以下步骤开始使用多地理位置：
 
-1. 与你的帐户团队协作，_在 Office 365 服务计划中添加多地理位置功能_。 他们将指导你添加需要的许可证数量。 Office 365 订阅数至少为 2,500 个的客户可以使用多地理位置功能。
+1. 与你的帐户团队协作，_在 Office 365 服务计划中添加多地理位置功能_。 他们将指导你添加需要的许可证数量。 Office 365 订阅数至少为 500 个的客户可以使用多地理位置功能。
 
    Microsoft 需要为多地理位置支持配置你的 Exchange Online 租户，然后你才能开始使用 Office 365 多地理位置。 这个一次性配置流程在你订购“*Office 365 中的多地理位置功能*”服务计划之后触发，并且许可证将显示在你的租户中。 应用了多地理位置许可证之后，你将在 [Office 365 消息中心](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093)中收到通知，你随后就可以开始配置和使用 Office 365 多地理位置功能。
 
