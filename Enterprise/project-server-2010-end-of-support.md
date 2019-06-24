@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支持结束时间为2020年10月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
-ms.openlocfilehash: 8cdfc4a8362df65ca238b9478061dc8e9bda1166
-ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
+ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
+ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780871"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35128699"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 结束支持路线图
 
@@ -186,10 +186,6 @@ Project Server 2010 与 Project Server 2019 之间的体系结构差异可防止
 
 - 升级后, 请注意 Project Web App 中的几项更改。  有关这些内容的说明, 请参阅[Project Server 2019 中的新增功能](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
 
-
-## <a name="migrate-from-portfolio-server-2010"></a>从项目组合服务器2010迁移
-
-项目组合服务器2010与 Project Server 2010 结合使用, 以实现项目组合策略、优先顺序和优化。 在此版本之后, 不会创建任何其他版本的 Project 项目组合服务器。 但是, 项目组合管理功能在后续 Project Server 版本和 Project Online 的 Premium 版本中可用。 无法将 Project 项目组合服务器2010中的数据迁移到其中一个。 将需要重新创建业务驱动因素等数据。
   
 其他资源:
   
