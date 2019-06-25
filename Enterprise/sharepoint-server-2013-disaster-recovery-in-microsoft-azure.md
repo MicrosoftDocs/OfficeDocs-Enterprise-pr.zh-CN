@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 摘要：使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
-ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070438"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203641"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
@@ -36,34 +36,6 @@ ms.locfileid: "34070438"
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-本文内容：
-  
-- [使用 Azure 基础结构服务进行灾难恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
-    
-- [解决方案描述](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
-    
-- [详细体系结构](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
-    
-- [灾难恢复路线图](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
-    
-- [阶段 1：设计灾难恢复环境](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase1)
-    
-- [阶段 2：创建 Azure 虚拟网络和 VPN 连接](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase2)
-    
-- [阶段 3：将 Active Directory 和域名服务部署到 Azure 虚拟网络](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase3)
-    
-- [阶段 4：在 Azure 中部署 SharePoint 恢复场](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase4)
-    
-- [阶段 5：设置场之间的 DFSR](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase5)
-    
-- [阶段 6：设置到恢复场的日志传送](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase6)
-    
-- [阶段 7：验证故障转移和恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase7)
-    
-- [Microsoft 概念证明环境](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
-    
-- [疑难解答提示](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
-    
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>使用 Azure 基础结构服务进行灾难恢复
 
 很多组织没有 SharePoint 的灾难恢复环境，因为在内部构建和维护此环境非常昂贵。Azure 基础结构服务提供了灾难恢复环境极具吸引力的选项，这些选项更加灵活且成本比内部部署方案要低。
@@ -297,7 +269,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果你计划�
   
 **图：混合 Active Directory 域配置**
 
-![部署到 Azure 虚拟网络和 SharePoint 场子网的 STwo 虚拟机是域控制器和 DNS 服务器的副本](media/AZarch-HyADdomainConfig.png)
+![部署到 Azure 虚拟网络和 SharePoint 服务器场子网的两个虚拟机是副本域控制器和 DNS 服务器](media/AZarch-HyADdomainConfig.png)
   
 在此图中，将两个虚拟机部署到相同的子网中。这两个虚拟机分别托管两个角色：Active Directory 和 DNS。
   

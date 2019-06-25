@@ -20,27 +20,27 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: 如果您在与 Office 365 同步之前拥有与本地用户关联的非 routale 域, 请了解要执行的操作。
-ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071078"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203631"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>为目录同步准备不可路由的域
-当您将本地目录与 Office 365 同步时, 您必须在 Azure Active Directory 中有一个经验证的域。 仅同步与本地域关联的用户主体名称 (UPN)。 但是, 任何包含非可路由域的 UPN (如 billa @ contoso。 local) 都将同步到 onmicrosoft.com 域 (如 billa@contoso.onmicrosoft.com)。 
+当您将本地目录与 Office 365 同步时, 您必须在 Azure Active Directory 中有一个经验证的域。 仅同步与本地域关联的用户主体名称 (UPN)。 但是, 任何包含非可路由域的 UPN (如 billa @ contoso. local) 都将同步到 onmicrosoft.com 域 (如 billa@contoso.onmicrosoft.com)。 
 
-如果你当前对 Active Directory 中的用户帐户使用的是。本地域, 建议您将其更改为使用经验证的域 (如 billa@contoso.com), 以便与 Office 365 域正确同步。
+如果你当前对 Active Directory 中的用户帐户使用的是. 本地域, 建议您将其更改为使用经验证的域 (如 billa@contoso.com), 以便与 Office 365 域正确同步。
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>如果我只有一个本地域, 该怎么办？
 
 你可用于将 Active Directory 同步到 Azure Active Directory 的最新工具称为 "Azure AD Connect"。 有关详细信息，请参阅[将您的本地标识与 Azure Active Directory 集成](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)。
   
-Azure AD Connect 同步你的用户的 UPN 和密码, 以便用户可以使用内部部署中使用的相同凭据登录。 但是, Azure AD Connect 仅将用户同步到 Office 365 验证的域。 这意味着域也会由 Azure Active Directory 进行验证, 因为 Office 365 身份由 Azure Active Directory 管理。 换句话说, 域必须是有效的 Internet 域 (例如 .com、。 org、.net、。 us 等)。 如果内部 Active Directory 仅使用不可路由的域 (例如, "本地"), 则这将无法与 Office 365 中的已验证域匹配。 您可以通过在本地 Active Directory 中更改主要域, 或通过添加一个或多个 UPN 后缀来修复此问题。
+Azure AD Connect 同步你的用户的 UPN 和密码, 以便用户可以使用内部部署中使用的相同凭据登录。 但是, Azure AD Connect 仅将用户同步到 Office 365 验证的域。 这意味着域也会由 Azure Active Directory 进行验证, 因为 Office 365 身份由 Azure Active Directory 管理。 换句话说, 域必须是有效的 Internet 域 (例如 .com、. org、.net、. us 等)。 如果内部 Active Directory 仅使用不可路由的域 (例如, "本地"), 则这将无法与 Office 365 中的已验证域匹配。 您可以通过在本地 Active Directory 中更改主要域, 或通过添加一个或多个 UPN 后缀来修复此问题。
   
 ### <a name="change-your-primary-domain"></a>**更改你的主要域**
 
-将您的主域更改为在 Office 365 中验证的域, 例如 contoso.com。 然后, 会将拥有域 contoso。本地的每个用户更新为 contoso.com。 有关说明, 请参阅[域重命名的工作原理](https://go.microsoft.com/fwlink/p/?LinkId=624174)。 这是一个非常涉及的过程, 但更简单的解决方案是[添加 UPN 后缀并将用户更新到这些后缀](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), 如下一节所示。
+将您的主域更改为在 Office 365 中验证的域, 例如 contoso.com。 然后, 会将拥有域 contoso. 本地的每个用户更新为 contoso.com。 有关说明, 请参阅[域重命名的工作原理](https://go.microsoft.com/fwlink/p/?LinkId=624174)。 这是一个非常涉及的过程, 但在下一节中介绍了更简单的解决方案。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**添加 UPN 后缀并将你的用户更新到这些后缀**
 
@@ -84,13 +84,12 @@ Azure AD Connect 同步你的用户的 UPN 和密码, 以便用户可以使用�
   
 4. 为每个用户完成这些步骤。
     
-    此外, 还可以批量更新 UPN 后缀。[也可以使用 Windows PowerShell 更改所有用户的 UPN 后缀](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh)。
-    
+   
 ### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**您还可以使用 Windows PowerShell 为所有用户更改 UPN 后缀**
 
-如果有大量用户要更新, 则使用 Windows PowerShell 更为简单。 下面的示例使用 cmdlet [microsoft.rtc.management.adconnect.schema.aduser](https://go.microsoft.com/fwlink/p/?LinkId=624312)和[microsoft.rtc.management.adconnect.schema.aduser](https://go.microsoft.com/fwlink/p/?LinkId=624313)将所有 contoso。本地后缀更改为 contoso.com。 
+如果有大量用户要更新, 则使用 Windows PowerShell 更为简单。 下面的示例使用 cmdlet [microsoft.rtc.management.adconnect.schema.aduser](https://go.microsoft.com/fwlink/p/?LinkId=624312)和[microsoft.rtc.management.adconnect.schema.aduser](https://go.microsoft.com/fwlink/p/?LinkId=624313)将所有 contoso. 本地后缀更改为 contoso.com。 
 
-运行以下 Windows PowerShell 命令, 将所有 contoso。本地后缀更新为 contoso.com:
+运行以下 Windows PowerShell 命令, 将所有 contoso. 本地后缀更新为 contoso.com:
     
   ```
   $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null

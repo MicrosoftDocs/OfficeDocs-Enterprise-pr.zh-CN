@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 新式验证在 Office 2013 和2016客户端应用中的工作方式不同。
-ms.openlocfilehash: 80a5f557fc1f3d189e8852ac3039521cfc31fb2c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070058"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203621"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>适用于 Office 2013 和 Office 2016 客户端应用的新式验证工作原理
 
@@ -61,6 +61,7 @@ ms.locfileid: "34070058"
     
 - [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
+<a name="BK_EchangeOnline"> </a>
 ### <a name="exchange-online"></a>Exchange Online
 
 下表介绍了 Office 2013 或 Office 2016 客户端应用程序在使用或不使用新式身份验证连接到 Exchange Online 时的身份验证行为。
@@ -73,8 +74,8 @@ ms.locfileid: "34070058"
 |Office 2013  <br/> |否  <br/> |否  <br/> |基本身份验证  <br/> |基本身份验证  <br/> |
 |Office 2013  <br/> |是, EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接, 则使用基本身份验证。 当租户未启用时, 服务器将拒绝新式身份验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接, 则使用基本身份验证。 当租户未启用时, 服务器将拒绝新式身份验证。  <br/> |
    
-### <a name="sharepoint-online"></a>SharePoint Online
 <a name="BK_SharePointOnline"> </a>
+### <a name="sharepoint-online"></a>SharePoint Online
 
 下表介绍了 Office 2013 或 Office 2016 客户端应用程序在使用或不使用新式身份验证连接到 SharePoint Online 时的身份验证行为。
   

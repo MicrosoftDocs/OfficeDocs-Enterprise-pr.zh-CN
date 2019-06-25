@@ -16,13 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: '这篇文章面向对象为管理员。 用户是否从其 Outlook 邮箱中永久删除了项目？ 用户希望它们回退, 但无法恢复它们。 如果清除的项目尚未从用户的邮箱中永久删除, 则可以恢复这些清除的项目。 '
-ms.openlocfilehash: 5ec1ba41924d773859d742bc06bbfe76582072c1
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071208"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203651"
 ---
+<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>恢复用户邮箱中已删除的项目 - 管理员帮助
 
 **本文适用于管理员。您是否正在尝试恢复您自己的邮箱中的已删除邮件？** 尝试执行下列操作之一：
@@ -230,7 +231,8 @@ ms.locfileid: "34071208"
     
 下一节中的步骤由用户执行, 以将已删除的项目还原到其邮箱。
   
- **使用 PST 文件将已删除邮件还原到邮箱**
+ <a name="restoredeleteditems"></a>
+**使用 PST 文件将已删除邮件还原到邮箱**
   
 您必须使用 Outlook 桌面应用程序使用 PST 文件还原已删除的项目。 您不能使用 Outlook Web App 或 Web 上的 Outlook 打开 PST 文件。
   
