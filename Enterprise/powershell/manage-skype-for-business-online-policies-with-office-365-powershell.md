@@ -3,7 +3,7 @@ title: 管理 Skype 与 Office 365 PowerShell 的在线业务策略
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: '摘要: 使用 Office 365 PowerShell, 通过策略管理 Skype for business Online 用户帐户属性。'
-ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f19e262947b40b3e61dc8376b8e2e9c8ec984ff7
+ms.sourcegitcommit: c115a3554647167e3770dda6b69dbf5c5de11ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068838"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253682"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>管理 Skype 与 Office 365 PowerShell 的在线业务策略
 
@@ -84,15 +84,14 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 此命令可查找分配给用户的策略, 然后查找该策略中启用或禁用的功能。
   
-请注意, 没有用于创建或修改策略的 cmdlet。 您必须使用由 Office 365 预提供的策略。 若要查看可用的不同策略, 可以使用以下命令:
-  
-- Set-csclientpolicy       
-- Set-csconferencingpolicy        
-- Grant-csdialplan            
-- Set-csexternalaccesspolicy                         
-- CsHostedVoicemailPolicy                        
-- CsPresencePolicy                               
-- Set-csvoicepolicy                                  
+若要使用 PowerShell 管理 Skype for Business Online 策略, 请参阅以下 cmdlet:
+
+- [客户端策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [会议策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [移动策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [联机语音邮件策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [语音路由策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+
 
 > [!NOTE]
 > Skype for Business Online 拨号计划是除了名称之外的每个方面的策略。 已选择名称 "拨号计划", 而不是 "拨号策略", 以便提供与 Office 通信服务器和 Exchange 的向后兼容性。 
