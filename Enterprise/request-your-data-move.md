@@ -3,7 +3,7 @@ title: 如何请求数据移动
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +12,19 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求, 以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
+ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071008"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35392352"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
 > [!NOTE]
 > 此页面上的信息仅适用于在其 geo 中的新数据中心启动前拥有现有 Office 365 租户的客户。 
   
-现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求, 以便将参与 Office 365 服务的客户数据移到其新地理位置。 
-  
-在每个地理位置的最后期限后, 我们无法接受要移动的请求。 
+现有 Office 365 客户有资格在 rest 上为整个组织的核心客户数据请求提前迁移。  
   
 ## <a name="when-can-i-request-a-move"></a>何时可以请求移动？
 
@@ -55,13 +53,10 @@ ms.locfileid: "34071008"
 ![数据派驻卡](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
 **如果应用了以下情况之一, 则可能不会看到此部分**:
-- 你的租户不符合移动计划。 
+- 你的租户不符合移动计划。  资格由租户注册国家/地区决定。
 - 您的所有数据都已位于 "新建地理位置 (请参阅" 页面的 "数据位置" 部分)。 
   
-> [!IMPORTANT]
-> **你将为你的组织做出重要选择。确认下面的选项后, 将无法撤消。支持也无法撤消此决定。**
-  
-如果您的组织具有数据驻留要求, 而您需要请求移动, 请单击该部分右上部的 "**编辑**"。 屏幕右侧将显示一个新分区, 说明移动程序的详细信息。 选择显示 "是" 的文本旁边的切换按钮 **, 我的组织具有数据驻留要求**。 然后，单击“保存”****。
+如果您的组织具有数据驻留要求, 并且您需要提前请求迁移, 请单击该部分右上部的 "**编辑**"。 屏幕右侧将显示一个新分区, 说明移动程序的详细信息。 选择显示 "是" 的文本旁边的切换按钮 **, 我的组织具有数据驻留要求**。 然后，单击“保存”****。
   
 ![数据中心选择操作屏幕](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
   
@@ -71,11 +66,9 @@ ms.locfileid: "34071008"
   
 ## <a name="what-happens-after-requesting-a-move"></a>请求移动后会发生什么？
 
-在请求移动后, 我们将计划在运营限制允许的情况下尽快移动你。 由于许多约束的不可预知的性质, 我们无法共享特定的移动日期或时间范围。 在移动完成后, 你将看到一条通知。
+在请求移动后, 我们将计划在运营限制允许时尽快移动你。 由于许多约束的不可预知的性质, 我们无法共享特定的移动日期或时间范围。 在移动完成后, 你将看到一条通知。
   
 在您的国家/地区的请求期限内, 可能需要花费最长24个月的时间才能完成移动。
-  
-请求移动后, 不能更改所选内容, 因为我们在发出请求后开始处理移动。
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
