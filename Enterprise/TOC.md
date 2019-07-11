@@ -204,7 +204,9 @@
 ### [Office 365 Admin 帮助中心](https://support.office.com/zh-CN/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [用于管理用户帐户的工具](manage-office-365-accounts.md)
 ### [同时添加多个用户](add-several-users-at-the-same-time.md)
-### [恢复用户邮箱中的已删除项目](recover-deleted-items-in-a-mailbox.md)
+### [恢复用户邮箱中的已删除邮件](recover-deleted-items-in-a-mailbox.md)
+### 与来宾协作
+#### [来宾共享参考](microsoft-365-guest-settings.md)
 
 ## 设备
 ### [在 MDM 和 Intune 之间进行选择](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
