@@ -1,7 +1,7 @@
 ---
 title: 在 SharePoint Online 中使用对象缓存
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/20/2015
 audience: Admin
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: 本文说明在 SharePoint Server 2013 本地和 SharePoint Online 中使用对象缓存的区别。
-ms.openlocfilehash: 16805aee0c6c6828fc2bf81370046dfd0f1c5a70
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 8ae2e2675444c023b69030f3f46f170b450fb390
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070538"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616835"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>在 SharePoint Online 中使用对象缓存
 

@@ -1,7 +1,7 @@
 ---
 title: Office 365 中的 NAT 支持
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/24/2017
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: '摘要: 提供了有关如何使用网络地址转换 (NAT) 对组织中的每个 IP 地址使用的客户端的正确数量的详细信息。'
-ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63180faab720e32c1066dcca60536db492d52734
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069878"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616865"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 中的 NAT 支持
 
@@ -50,15 +50,15 @@ Outlook 可能会打开八个或更多的连接 (在有加载项、共享日历�
   
  **例如, 如果满足以下条件:**
   
-- **受限端口:** 针对操作系统的4000 
-    
-- **峰值端口消耗:** 每个设备6个 
-    
-- **峰值因子:** 4 
-    
+- **受限端口:** 针对操作系统的4000
+
+- **峰值端口消耗:** 每个设备6个
+
+- **峰值因子:** 4
+
 然后, 单个公共 IP 地址后的最大支持设备数 = (64000-4000)/(6 + 4) = 6000
   
-发布 office 365 托管包, 包括在 microsoft Office Outlook 2007 的9月2011更新中, 或 microsoft Outlook 2010 的 11 2011 月, 或后续更新中, 来自 Outlook 的连接数 (两个 office outlook 2007 with ServicePack 2 和 Outlook 2010) 到 Exchange 可以只是2个。 您需要考虑不同的操作系统、用户行为等, 以确定您的网络在高峰期所需的最小和最大端口数。
+发布 Office 365 托管包, 包括在 Microsoft Office Outlook 2007 的9月2011更新中, 或 Microsoft Outlook 2010 的 11 2011 月, 或后续更新中, 来自 Outlook 的连接数 (两个 Office Outlook 2007 with ServicePack 2 和 Outlook 2010) 到 Exchange 可以只是2个。 您需要考虑不同的操作系统、用户行为等, 以确定您的网络在高峰期所需的最小和最大端口数。
   
 如果要支持单个公用 IP 地址后面的更多设备, 请按照概述的步骤来评估可支持的最大设备数:
   
@@ -79,4 +79,3 @@ Outlook 可能会打开八个或更多的连接 (在有加载项、共享日历�
 [管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Office 365 终结点 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
-

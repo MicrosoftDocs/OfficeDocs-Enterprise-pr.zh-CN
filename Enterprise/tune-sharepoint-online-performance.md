@@ -1,7 +1,7 @@
 ---
 title: 优化 SharePoint Online 性能
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/21/2018
 audience: Admin
@@ -15,12 +15,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: 包含指向其他文章的链接, 这些文章介绍如何提高 SharePoint Online 的页面下载时间的性能。
-ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9049041be082aae0f574a8bd2f8ac3c5729f50d2
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070668"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616745"
 ---
 # <a name="tune-sharepoint-online-performance"></a>优化 SharePoint Online 性能
 
@@ -36,6 +36,8 @@ ms.locfileid: "34070668"
     
 - 
   [SharePoint Online 的导航选项](navigation-options-for-sharepoint-online.md)
+
+- [SharePoint Online 门户性能指南](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
     
 - [SharePoint Online 的图像优化](image-optimization-for-sharepoint-online.md)
     

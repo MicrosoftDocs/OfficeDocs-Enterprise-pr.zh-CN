@@ -1,7 +1,7 @@
 ---
 title: 优化 Office 365 性能
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/09/2019
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: 指向培训课程、博客、文章和其他资源的链接, 这些课程将介绍如何提高 Office 365 的性能。
-ms.openlocfilehash: 8369bf15d25d4c2aad00c2de4b21e4585056c04d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fc4a173fb04e91d298d82a6d3d2b30a9b0add3ef
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070708"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616825"
 ---
 # <a name="tune-office-365-performance"></a>优化 Office 365 性能
 

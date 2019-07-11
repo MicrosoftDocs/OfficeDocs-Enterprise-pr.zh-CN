@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online 的导航选项
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 本文介绍 SharePoint Online 中启用了 SharePoint 发布的导航选项网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。
-ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b3194009d21f60093ec80cb2e138df34df60e22e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069938"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616855"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 
@@ -29,7 +29,7 @@ ms.locfileid: "34069938"
 
 建议使用第一个选项 "[**托管 (元数据) 导航**](#using-managed-navigation-and-metadata-in-sharepoint-online)", 这是 SharePoint Online 中的默认选项之一;但是, 建议禁用安全修整, 除非需要。 将安全修整启用为此导航提供程序的默认安全设置;但是, 许多网站不需要安全修整的开销, 因为导航元素通常对网站的所有用户都是一致的。 使用建议的配置禁用安全修整后, 此导航提供程序不需要枚举网站结构, 且高度可扩展, 性能影响可接受。
 
-第二个选项是[**结构导航**](#using-structural-navigation-in-sharepoint-online),**在 SHAREPOINT Online 中不是一个推荐的导航选项**。 此导航提供程序是为本地拓扑设计的, 在 SharePoint Online 中支持有限。 虽然它提供了一些额外的功能集, 而不是其他导航选项, 但这些功能 (包括安全修整和网站结构枚举) 的成本是过多的服务器调用, 并且会在使用时影响可伸缩性和性能。 使用占用过多资源的 structed 导航的网站可能会受到限制。
+第二个选项是[**结构导航**](#using-structural-navigation-in-sharepoint-online),**在 SHAREPOINT Online 中不是一个推荐的导航选项**。 此导航提供程序是为本地拓扑设计的, 在 SharePoint Online 中支持有限。 虽然它提供了一些额外的功能集, 而不是其他导航选项, 但这些功能 (包括安全修整和网站结构枚举) 的成本是过多的服务器调用, 并且会在使用时影响可伸缩性和性能。 使用占用过多资源的结构化导航的网站可能会受到限制。
 
 除了现成的导航提供程序之外, 许多客户还成功实现了替代的自定义导航实现。 自定义导航实现的一个常见类涵盖了用于存储导航节点的本地缓存的客户端呈现的设计模式。 (请参阅本文中的**[搜索驱动的客户端脚本](#using-search-driven-client-side-scripting)**。)
 
@@ -52,7 +52,7 @@ ms.locfileid: "34069938"
 |供<br/><br/>易于维护<br/>推荐选项<br/>     |供<br/><br/>易于配置<br/>安全修整<br/>添加内容时自动更新<br/>|供<br/><br/>安全修整<br/>添加网站时自动更新<br/>快速加载时间和本地缓存导航结构<br/>|供<br/><br/>可用选项的更宽选择<br/>正确使用缓存时的快速加载<br/>许多选项在使用快速响应页面设计时非常有效<br/>|
 |消耗<br/><br/>不会自动更新以反映网站结构<br/>如果启用了安全修整, 则会影响性能<br/>|消耗<br/><br/>**不建议**<br/>**影响性能和可伸缩性**<br/>**受限制的主题**<br/>|消耗<br/><br/>无法轻松订购网站<br/>需要自定义母版页 (需要技术技能)<br/>|消耗<br/><br/>需要进行自定义开发<br/>需要存储外部数据源/缓存, 例如 Azure<br/>|
 
-最适合您的网站的选项取决于您的网站要求和您的技术能力。 如果您需要一个可扩展的现成导航提供程序, 则禁用安全修整的托管导航是一个非常不错的选择。 
+最适合您的网站的选项取决于您的网站要求和您的技术能力。 如果您需要一个可扩展的现成导航提供程序, 则禁用安全修整的托管导航是一个非常不错的选择。
 
 托管导航选项可通过配置进行维护, 不涉及代码自定义文件, 并且比结构导航快得多。 如果您需要安全修整并且能够使用自定义母版页, 并且组织中有一些功能来维护在 SharePoint Online 的默认母版页中可能发生的更改, 则搜索驱动的选项可能会产生更好的效果用户体验。 如果您具有更复杂的要求, 则自定义导航提供程序可能是正确的选择。 不建议使用结构导航。
 
@@ -193,7 +193,7 @@ ms.locfileid: "34069938"
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. 将结果分配给 self。节点数组, 并使用使用 linq 将输出分配给数组 self 层次结构的对象生成层次结构。 此数组是绑定到 HTML 的对象。 这是通过将 self 对象传递给 applyBinding () 函数在 toggleView () 函数中完成的。<br/>然后, 这会将层次结构数组绑定到以下 HTML:<br/>
+8. 将结果分配给 self. 节点数组, 并使用使用 linq 将输出分配给数组 self 层次结构的对象生成层次结构。 此数组是绑定到 HTML 的对象。 这是通过将 self 对象传递给 applyBinding () 函数在 toggleView () 函数中完成的。<br/>然后, 这会将层次结构数组绑定到以下 HTML:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>

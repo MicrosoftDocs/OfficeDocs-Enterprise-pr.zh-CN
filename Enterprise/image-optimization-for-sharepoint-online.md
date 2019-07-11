@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online 的图像优化
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/19/2018
 audience: Admin
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 了解如何使用格式副本和子画面提高 SharePoint Online 网站上的图像性能。
-ms.openlocfilehash: b1210146aa3efb042937abeece4df0e62a579b94
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e82cde7cd45ac1cf6f416b1b26ff97f2ab588f1a
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067368"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616715"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>SharePoint Online 的图像优化
 
@@ -45,7 +45,7 @@ ms.locfileid: "34067368"
 > [!NOTE]
 > 仅当启用发布时, 才可使用 SharePoint 的呈现形式。 你可以在 "设置\> " 网站设置\>下启用发布\> "管理网站功能" SharePoint Server 发布。 否则, 此选项将不会显示。 
   
-通过获取定义的最小尺寸 (宽度或高度), 然后调整图像大小, 以便根据锁定纵横比自动调整其他尺寸的大小, 从而使图像呈现形式的大小调整正常。 默认情况下, 它会将图像从中心裁剪到剩余的尺寸。 例如, 如果您定义100px 宽和50px 的一个格式副本, 并且原始图像为1000px 宽且800px 高, 则将调整其大小, 以便800px 维度现在为 50px, 而1000px 维度 ("now 62。5 px") 将从图像的中心进行裁剪。
+通过获取定义的最小尺寸 (宽度或高度), 然后调整图像大小, 以便根据锁定纵横比自动调整其他尺寸的大小, 从而使图像呈现形式的大小调整正常。 默认情况下, 它会将图像从中心裁剪到剩余的尺寸。 例如, 如果您定义100px 宽和50px 的一个格式副本, 并且原始图像为1000px 宽且800px 高, 则将调整其大小, 以便800px 维度现在为 50px, 而1000px 维度 ("now 62.5 px") 将从图像的中心进行裁剪。
   
 这些步骤相对简单, 但要使用呈现形式的图像, 在添加图像之前, 必须在 SharePoint 网站上的呈现形式。 此外, 还需要启用 SharePoint Server 发布基础结构 (网站集级别) 和 SharePoint Server 发布 (网站级别) 功能。
   

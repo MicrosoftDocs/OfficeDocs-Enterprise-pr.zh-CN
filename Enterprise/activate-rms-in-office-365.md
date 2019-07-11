@@ -1,5 +1,5 @@
 ---
-title: 激活 Office 365 管理中心的权限管理
+title: 指向有关 Office 365 管理中心中的权限管理的信息的指针
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: 指向介绍如何在 Office 365 中激活和使用 Rights Management service 的主题。
-ms.openlocfilehash: ffbb88de88b5f90d239698c0600e914266e84048
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ae954eafacb196dc85f3e4c084de2f704f4ddce
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068448"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616705"
 ---
-# <a name="activate-rights-management-in-the-office-365-admin-center"></a>激活 Office 365 管理中心的权限管理
+# <a name="pointers-to-information-about-rights-management-in-the-office-365-admin-center"></a>指向有关 Office 365 管理中心中的权限管理的信息的指针
 
 本主题指向介绍如何在 Office 365 中启用和使用 RMS 的主题。
   
@@ -34,13 +34,11 @@ ms.locfileid: "34068448"
 有关 RMS 的详细信息, 请使用以下链接:
   
 - 若要了解有关 RMS 的详细信息, 请参阅[什么是 Azure 权限管理](https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms)。
-    
-- 如果你不熟悉 RMS, 请参阅[Azure 权限管理概述](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management)。
-    
-- 有关部署步骤的概述, 请参阅[Azure 权限管理部署路线图](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap)。
-    
-- 有关激活适用于 Office 365 的 RMS 的说明, 请参阅[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)。
-    
-- 对 Office 中的 Azure RMS 和 IRM 之间的区别有了困惑吗？ 想要有关其他权限管理条款的帮助吗？ 请参阅[Rights Management 术语](https://technet.microsoft.com/library/dn595132.aspx)。
-    
 
+- 如果你不熟悉 RMS, 请参阅[Azure 权限管理概述](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management)。
+
+- 有关部署步骤的概述, 请参阅[Azure 权限管理部署路线图](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap)。
+
+- 有关激活适用于 Office 365 的 RMS 的说明, 请参阅[激活 Azure 权限管理](https://technet.microsoft.com/library/jj658941.aspx)。
+
+- 对 Office 中的 Azure RMS 和 IRM 之间的区别有了困惑吗？ 想要有关其他权限管理条款的帮助吗？ 请参阅[Rights Management 术语](https://technet.microsoft.com/library/dn595132.aspx)。

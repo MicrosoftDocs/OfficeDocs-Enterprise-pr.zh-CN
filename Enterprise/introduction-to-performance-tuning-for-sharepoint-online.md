@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online 性能调整简介
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/22/2018
 audience: Admin
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: 本文介绍在设计页面以在 SharePoint Online 中实现最佳性能时需要考虑的特定方面。
-ms.openlocfilehash: 4743364f6e8a1e84800085d0875abad84491780b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d0dc4d6eac1a8711d1c93b97eccbf5474092d3af
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067208"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616675"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online 性能优化简介
 
@@ -132,7 +132,7 @@ SharePoint Online
 
 从性能角度来看, 有几个因素需要考虑 web 浏览器。
   
-访问复杂页面会影响性能。 大多数浏览器只有较小的缓存 (围绕 90MB), 而平均网页通常约为 1。6 MB。 使用此设置不需要很长时间。
+访问复杂页面会影响性能。 大多数浏览器只有较小的缓存 (围绕 90MB), 而平均网页通常约为 1.6 MB。 使用此设置不需要很长时间。
   
 带宽也可能是一个问题。 例如, 如果用户在另一个会话中观看视频, 这将影响 SharePoint 页面的性能。 虽然您无法阻止用户处理媒体, 但您可以控制页面加载用户的方式。
   

@@ -1,7 +1,7 @@
 ---
 title: 在 SharePoint Online 中延迟加载图像和 JavaScript
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/29/2016
 audience: Admin
@@ -13,24 +13,24 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: 本文介绍如何通过使用 JavaScript 来延迟加载图像以及在页面加载后等待加载非基本 JavaScript, 从而减少 SharePoint Online 页面的加载时间。
-ms.openlocfilehash: 6b2e91ca4b8642ac7129e353f2527db60a32d75b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067978"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616782"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>在 SharePoint Online 中延迟加载图像和 JavaScript
 
-本文介绍如何通过使用 JavaScript 来延迟加载图像以及在页面加载后等待加载非基本 JavaScript, 从而减少 SharePoint Online 页面的加载时间。 
+本文介绍如何通过使用 JavaScript 来延迟加载图像以及在页面加载后等待加载非基本 JavaScript, 从而减少 SharePoint Online 页面的加载时间。
   
-图像会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下, 大多数新式 Internet 浏览器在加载 HTML 页面时预提取映像。 如果在用户向下滚动之前图像在屏幕上不可见, 则这可能会导致页面的加载速度不必要。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题, 可以使用 JavaScript 先跳过加载图像。 此外, 加载非基本 JavaScript 也可能会减慢 SharePoint 页面上的加载时间。 本主题介绍可用于在 SharePoint Online 中使用 JavaScript 改进页面加载时间的一些方法。 
+图像会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下, 大多数新式 Internet 浏览器在加载 HTML 页面时预提取映像。 如果在用户向下滚动之前图像在屏幕上不可见, 则这可能会导致页面的加载速度不必要。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题, 可以使用 JavaScript 先跳过加载图像。 此外, 加载非基本 JavaScript 也可能会减慢 SharePoint 页面上的加载时间。 本主题介绍可用于在 SharePoint Online 中使用 JavaScript 改进页面加载时间的一些方法。
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>通过使用 JavaScript 延迟 SharePoint Online 页面中的图像加载, 提高页面加载时间
 
 您可以使用 JavaScript 阻止 web 浏览器预先获取图像。 这将加快整体文档呈现速度。 若要执行此操作, 请从\<img\>标记中删除 src 属性的值, 并将其替换为 data 属性中的文件的路径, 如 data-src。例如:
   
-```
+```txt
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
@@ -40,7 +40,7 @@ ms.locfileid: "34067978"
   
 在文本文件中, 定义**isElementInViewport ()** 函数, 以检查元素是否位于浏览器中对用户可见的部分。 
   
-```
+```txt
 function isElementInViewport(el) {
   if (!el)
     return false;
@@ -52,7 +52,6 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
   );
 }
-
 ```
 
 接下来, 在**loadItemsInView ()** 函数中使用**isElementInViewport ()** 。 如果包含数据 src 属性值的所有图像位于用户可见的浏览器部分中, 则**loadItemsInView ()** 函数将加载这些图像。 将以下函数添加到文本文件中: 
