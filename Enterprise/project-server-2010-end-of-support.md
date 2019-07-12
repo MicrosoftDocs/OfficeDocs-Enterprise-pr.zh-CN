@@ -3,7 +3,7 @@ title: Project Server 2010 终止支持路线图
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 06/03/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支持结束时间为2020年10月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
-ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
-ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
+ms.openlocfilehash: 8001a3e3c9cb40d23f60a6d38aceca55e4838831
+ms.sourcegitcommit: 19de9984f47a1490e277848f079088685ad22a63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35128699"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630391"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 结束支持路线图
 
@@ -56,6 +56,11 @@ Project Server 2010 将于**10 月13日 (2020)** 到达支持结束。 如果你
 - 迁移到 Project Online
     
 - 迁移到 Project Server 的较新的本地版本 (最好是 Project Server 2019)。
+
+若要避免停止对 Project Server 2010 的支持, 可以采用以下两种途径。
+
+![Project Server 2010 升级路径](./media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
+
     
 |**为什么我更愿意迁移到 Project Online？**|**为什么我更喜欢迁移到 Project Server 2019？**|
 |:-----|:-----|
