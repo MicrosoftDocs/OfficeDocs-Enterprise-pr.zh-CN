@@ -3,7 +3,7 @@ title: 从 SharePoint 2010 升级
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 06/04/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 和 SharePoint Server 2010 的支持结束时间在13年10月 13 2020 日结束。 使用本文作为升级到 SharePoint Online 或本地 SharePoint Server 的更新版本的指南。
-ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
+ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203611"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35643055"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>从 SharePoint 2010 升级
 
@@ -57,12 +57,14 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
    
 如果您在规模的低端 (好的选项) 上选择选项, 则在从 SharePoint Server 2010 迁移完成后, 你将需要立即开始规划另一次升级。 
 
+若要避免停止 SharePoint Server 2010 支持, 可以采用三种途径。
+
+![SharePoint Server 2010 升级路径](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
+
 >[!Note]
 >SharePoint Server 2010 和 SharePoint Foundation 2010 的支持结束时间为 Oct 13、2020, 但*请注意*, 应始终检查[产品生命周期网站](https://support.microsoft.com/en-us/lifecycle)的最新日期。
 >
 
-
- 
   
 ## <a name="where-should-i-go-next"></a>下一步应转到哪里？
 
