@@ -59,5 +59,4 @@ ms.locfileid: "34068468"
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-
-  [为安全组设置别名 (MailNickName)](https://docs.microsoft.com/zh-CN/powershell/module/azuread/set-azureadgroup)
+[为安全组设置别名 (MailNickName)](https://docs.microsoft.com/zh-CN/powershell/module/azuread/set-azureadgroup)

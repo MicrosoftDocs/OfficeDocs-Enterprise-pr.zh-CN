@@ -64,8 +64,7 @@ ms.locfileid: "34069418"
 
 创建一个用户列表，并包含他们的用户主体名称 (UPN) 和相应首选数据位置的位置代码。首先包含你的测试用户和初始试点组。在配置过程中你将需要使用这个列表。
 
-如果用户是从本地 Active Directory 系统同步到 Azure Active Directory，你必须将首选数据位置设置为 Active Directory 属性，并使用 Azure Active Directory Connect 同步它。 无法使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。 
-  [Azure Active Directory Connect 同步：配置 Office 365 资源的首选数据位置](https://docs.microsoft.com/zh-CN/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)中介绍了在 Active Directory 中设置并同步 PDL 的步骤。
+如果用户是从本地 Active Directory 系统同步到 Azure Active Directory，你必须将首选数据位置设置为 Active Directory 属性，并使用 Azure Active Directory Connect 同步它。 无法使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。 [Azure Active Directory Connect 同步：配置 Office 365 资源的首选数据位置](https://docs.microsoft.com/zh-CN/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)中介绍了在 Active Directory 中设置并同步 PDL 的步骤。
 
 多地理位置租户的管理可能与非多地理位置租户不同，因为许多 SharePoint 和 OneDrive 设置和服务都具有多地理位置意识。我们建议你在继续配置之前先查看[管理多地理位置环境](administering-a-multi-geo-environment.md)。
 

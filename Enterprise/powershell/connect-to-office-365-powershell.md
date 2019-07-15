@@ -36,8 +36,7 @@ ms.locfileid: "34069088"
 自本文发布之日起，对于用户、组和许可证管理，Azure Active Directory PowerShell Graph 模块不能完全替代用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的 cmdlets 中的功能。 在大多数情况下，需要使用两种版本。 可以在同一计算机上安全地安装两种版本。
 
 > [!TIP]
-> 
-  **刚开始接触 PowerShell？** 请观看领英学习提供的 [PowerShell 概述](https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
+> **刚开始接触 PowerShell？** 请观看领英学习提供的 [PowerShell 概述](https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
