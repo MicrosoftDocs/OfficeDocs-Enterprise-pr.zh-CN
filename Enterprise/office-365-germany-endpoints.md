@@ -3,7 +3,7 @@ title: Office 365 Germany 终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/29/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: 如果您的组织使用 Office 365 并限制网络中的计算机连接到 Internet, 则在下面将找到应包含在出站允许列表中的终结点 (Fqdn、端口、Url 以及 IPv4 和 IPv6 地址范围), 以确保您的计算机可以成功使用 Office 365。
 hideEdit: true
-ms.openlocfilehash: ccc8d82abf9640a17140fba6b341bfbfb61a903e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ba35f79132733ab3f35000a799ebf6dba843a826
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069768"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781914"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 终结点
 
@@ -36,7 +36,7 @@ ms.locfileid: "34069768"
   
 |||
 |:-----|:-----|
-|**上次更新时间：** 2019 年 4 月 29 日 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。  <br/> |
+|**上次更新时间:** 06/28/2019 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。  <br/> |
 
 从[管理 Office 365 终结点](managing-office-365-endpoints.md)开始, 了解我们关于使用此数据管理网络连接的建议。 终结点数据在每月开始时更新, 并在30天内发布新的 IP 地址和 Url, 并在处于活动状态之前发布。 这样一来, 在需要新的连接之前, 尚不具有自动更新的客户即可完成其过程。 如果需要, 还可以更新终结点, 以解决支持升级、安全事件或其他立即运行的要求。 您始终可以引用[更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "34069768"
 
 下面的终结点数据列出了从用户计算机到 Office 365 的连接要求。它不包括从 Microsoft 到客户网络的网络连接（有时称为混合或入站网络连接）。
 
-终结点分为四个服务区域。可以独立选择前三个服务区域进行连接。第四个服务区域是一个常见的依赖项（称为 Microsoft 365 Common and Office Online），并且必须始终具有网络连接。
+这些终结点分为四个服务区域。 前三个服务区域可独立于连接选择。 第四个服务区域是常见的依赖项 (称为 Microsoft 365 通用和 Office), 必须始终具有网络连接。
 
 显示的数据列是：
 

@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 说明如何使用 Office 365 PowerShell 查看有关 Office 365 组织中可用的许可计划、服务和许可证的信息。
-ms.openlocfilehash: 9e84797de29337d9414d9a578a98f6799ee816cb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 18444f76f312c75bc95645d17c48c996f1a3bfc7
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071088"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782032"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看许可证和服务
 
@@ -74,7 +74,7 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ````
 
-\<index> 是一个整数, 它指定从`Get-AzureADSubscribedSku | Select SkuPartNumber`命令的显示 (减 1) 开始的许可证计划的行号。
+\<index> 是一个整数, 它指定从`Get-AzureADSubscribedSku | Select SkuPartNumber`命令的显示 (减 1) 的许可证计划的行数。
 
 例如, 如果`Get-AzureADSubscribedSku | Select SkuPartNumber`命令的显示为:
 
@@ -137,7 +137,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure 权限管理 (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 计划 2  <br/> |
    

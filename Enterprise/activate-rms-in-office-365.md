@@ -1,5 +1,5 @@
 ---
-title: 指向有关 Office 365 管理中心中的权限管理的信息的指针
+title: 指向有关管理中心权限管理的信息的指针
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: 指向介绍如何在 Office 365 中激活和使用 Rights Management service 的主题。
-ms.openlocfilehash: 7ae954eafacb196dc85f3e4c084de2f704f4ddce
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: dca4b547ceee9af32caaaead32dd5251157ca00e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616705"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782362"
 ---
-# <a name="pointers-to-information-about-rights-management-in-the-office-365-admin-center"></a>指向有关 Office 365 管理中心中的权限管理的信息的指针
+# <a name="pointers-to-information-about-rights-management-in-the-admin-center"></a>指向有关管理中心权限管理的信息的指针
 
 本主题指向介绍如何在 Office 365 中启用和使用 RMS 的主题。
   

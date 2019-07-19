@@ -28,7 +28,7 @@ ID | 类别 | ER | Addresses | 端口
 utf-8 | 默认<BR>必填 | 是 | `*.gov.teams.microsoft.us, *.infra.gov.skypeforbusiness.us, *.online.gov.skypeforbusiness.us, gov.teams.microsoft.us` | **TCP：** 5061、50000-59999<BR>**UDP：** 50000-59999
 不足 | 默认<BR>必填 | 是 | `statics.teams.microsoft.com` | **TCP：** 443
 
-## <a name="microsoft-365-common-and-office-online"></a>Microsoft 365 Common 和 Office Online
+## <a name="microsoft-365-common-and-office"></a>Microsoft 365 常见和 Office 
 
 ID | 类别 | ER | Addresses | 端口
 -- | ------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------

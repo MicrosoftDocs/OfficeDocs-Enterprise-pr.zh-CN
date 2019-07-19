@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '摘要: 使用 Office 365 PowerShell 以多种方式查看、列出或显示您的用户帐户。'
-ms.openlocfilehash: e1a99aef4f2045dcba8d7f3894ef82f9e7c36a15
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c23e9106873aa32e8daccb1e35a16862e6f9bb7d
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071098"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782062"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>查看用户帐户与 Office 365 PowerShell
 
 **摘要:** 使用 Office 365 PowerShell 以多种方式查看您的用户帐户。
   
-虽然您可以使用 Office 365 管理中心来查看 Office 365 租户的帐户, 但您也可以使用 Office 365 PowerShell, 并执行 Office 365 管理中心无法执行的某些操作。
+虽然您可以使用 Microsoft 365 管理中心来查看 Office 365 租户的帐户, 但您也可以使用 Office 365 PowerShell, 并执行管理中心无法执行的某些操作。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -122,7 +122,7 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  在这些示例中显示的 " **Where 对象**" cmdlet 的语法为 **-object {$\_。** [用户帐户属性名称][比较运算符]增值 **}**> [比较运算符] 为 **-eq** , 用于等号 **,-ne**不等于, **-lt**表示小于、 **-gT**表示大于, 其他。  [value] 通常是一个字符串 (一系列字母、数字和其他字符)、一个数值或 **$Null**的 unspecified>。若要了解详细信息, 请参阅[Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) 。
+>  在这些示例中显示的 " **Where 对象**" cmdlet 的语法为 **-object {$\_。** [用户帐户属性名称][比较运算符]增值 **}**. > [比较运算符] 为 **-eq** for equals, **-ne**不等于, **-lt**表示小于, **-gt**表示大于, 其他。  [value] 通常是一个字符串 (字母、数字和其他字符的序列)、数值或未指定的 **$Null**> 请参阅[Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1)获取详细信息。
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。

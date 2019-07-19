@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
-ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067893"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782322"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -61,7 +61,7 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>我的核心客户数据位于何处？
 
-租户管理员可随时查看管理中心内的数据位置卡, 以确认每个服务的 rest 位置的核心客户数据, 尤其针对其租户。我们还发布了 office 365 交互式数据中心的数据中心信息、数据中心和365位置的位置, 作为对新租户的当前默认核心客户数据的参考。  您可以通过 Office 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。  
+租户管理员可随时查看管理中心内的数据位置卡, 以确认每个服务的 rest 位置的核心客户数据, 尤其针对其租户。我们还发布了 [office 365 交互式数据中心](https://office.com/datamaps)的数据中心信息、数据中心和365位置的位置, 作为对新租户的当前默认核心客户数据的参考。  您可以通过 Microsoft 365 管理中心内组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>何时我将能够请求移动？
   
@@ -101,7 +101,7 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>如何知道移动已完成？
   
-观看 Office 365 消息中心, 以确认每个服务的数据移动是否已完成。 移动每个服务的数据后, 我们将发布一个完成通知, 以便您将获得三个完成通知: 每个完成通知分别对应于 Exchange Online、SharePoint Online 和 Skype for Business Online。  您还可以通过 Office 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。  
+观看 Office 365 消息中心, 以确认每个服务的数据移动是否已完成。 移动每个服务的数据后, 我们将发布一个完成通知, 以便您将获得三个完成通知: 每个完成通知分别对应于 Exchange Online、SharePoint Online 和 Skype for Business Online。  您还可以通过 Microsoft 365 管理中心中组织配置文件下的 "数据位置" 部分, 验证 rest 上的客户数据的位置。  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>我是一个新的数据中心信息中的 Office 365 客户, 但当我注册时, 我选择了其他国家/地区。 如何将移动到新的数据中心地理位置？
 

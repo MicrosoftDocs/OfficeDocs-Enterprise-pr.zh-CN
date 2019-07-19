@@ -13,12 +13,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Office for Mac 应用程序在 macOS 平台上提供了本机应用程序体验。 每个应用程序设计为在各种情况下运行, 包括在没有网络访问权限的情况下使用的状态。 当计算机连接到网络时, 应用程序将自动连接到一系列基于 web 的服务, 以提供增强功能。 本白皮书介绍了应用程序尝试访问的终结点和 Url, 以及提供的服务。 此信息在对网络配置问题进行故障排除以及为网络代理服务器设置策略时非常有用。 本文中的详细信息旨在补充 Office 365 URL 和地址范围文章。
-ms.openlocfilehash: 0493fcc0954456ed190791b089fe4e0a568e82d7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069650"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781952"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac 中的网络请求
 
@@ -68,7 +68,7 @@ URL 类型定义如下:
 |```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Office 规则遥测下载-通知客户端要上载到遥测服务的数据和事件。  <br/> |
 |```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |客户  <br/> |OneNote 遥测服务  <br/> |
 |```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Office 遥测上载报告-将客户端上发生的 "Heartbeart" 和错误事件上传到遥测服务。  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |客户  <br/> |Office Online 模板服务-为用户提供联机文档模板。  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |客户  <br/> |Office 模板服务-为用户提供联机文档模板。  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |客户  <br/> |Office 模板下载-PNG 模板图像的存储。  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |客户  <br/> |Office 应用的存储配置。  <br/> |
 |```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |Office Document Integration Services 目录 (服务和终结点列表) 和主领域发现。  <br/> |

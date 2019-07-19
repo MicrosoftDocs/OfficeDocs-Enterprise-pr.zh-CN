@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '摘要: 在 Office 365 开发/测试环境中配置和演示 Office 365 云应用安全性。'
-ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068098"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782252"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的云应用安全
 
@@ -81,9 +81,9 @@ Office 365 云应用安全性 (以前称为 "Office 365 高级安全管理") 允
 
 1. 转到 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)), 并使用全局管理员帐户登录到你的 Office 365 试用订阅。
     
-2. 单击“管理员”磁贴****。 在 " **Office 管理中心**" 选项卡上, 单击 "**管理中心" _GT_ Security & 合规性**。
+2. 单击“管理员”磁贴****。 在 " **Office 管理中心**" 选项卡上, 单击 "**管理中心" > 安全 & 合规性**。
     
-3. 在左侧导航窗格中, 单击 "**通知 _GT_ 管理高级警报**"。
+3. 在左侧导航窗格中, 单击 "**警报" > "管理高级警报**"。
     
 4. 在 "**管理高级通知**" 页面上, 单击 "**启用 Office 365 云应用安全性**", 然后单击 "**转到 office 365 云应用安全性**"。
     
@@ -145,7 +145,7 @@ Office 365 云应用安全性 (以前称为 "Office 365 高级安全管理") 允
     
 18. 单击 "**安全&amp;符合性**磁贴"。
     
-19. 在左侧导航窗格中, 单击 "**通知 _GT_ 管理高级警报**"。
+19. 在左侧导航窗格中, 单击 "**警报" > "管理高级警报**"。
     
 20. 在 "**管理高级通知**" 页上, 单击 "**转到 Office 365 云应用安全性**"。
     
@@ -153,7 +153,7 @@ Office 365 云应用安全性 (以前称为 "Office 365 高级安全管理") 允
     
 22. 在 " **Microsoft Office 主页**" 选项卡上, 单击 "**邮件**"。 最多等待 30 分钟。 
     
-    您应该会在收件箱中看到两封新电子邮件, 标题为**Microsoft AZURE AD 通知服务**。 一条消息指示已将用户5帐户添加到**密码管理员**角色, 另一条消息指示已将用户5帐户添加到**用户管理员**角色 (等于中的用户管理管理员角色)。Office 365 管理中心)。
+    您应该会在收件箱中看到两封新电子邮件, 标题为**Microsoft AZURE AD 通知服务**。 一条消息指示已将用户5帐户添加到**密码管理员**角色, 另一条消息指示已将用户5帐户添加到**用户管理员**角色 (等于中的用户管理管理员角色)。Microsoft 365 管理中心)。
     
 现在, 你可以使用此环境创建新策略, 并对 Office 365 云应用安全性进行进一步实验。 有关指向其他配置文章的链接, 请参阅[获取 Office 365 云应用安全性的准备](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)工作。
   

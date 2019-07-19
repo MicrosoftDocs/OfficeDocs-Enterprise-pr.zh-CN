@@ -19,12 +19,12 @@ ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
 description: 会话超时用于在 Office 365 客户端应用程序中平衡安全性和轻松访问。
-ms.openlocfilehash: 82ce98de440175f2190d5da6e4d1c02b8b678b89
-ms.sourcegitcommit: 237e1c485214c2ff75375988febfd7fb70faa5f3
+ms.openlocfilehash: 6c37f53086a840a05e879682c95d6a4f25463707
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35746690"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782012"
 ---
 # <a name="session-timeouts-for-office-365"></a>Office 365 的会话超时
 
@@ -38,7 +38,7 @@ ms.locfileid: "35746690"
   
 |**Office 365 服务**|**会话超时**|
 |:-----|:-----|
-|Office 365 管理中心  <br/> |系统将要求你为管理中心每隔8小时提供凭据。  <br/> |
+|Microsoft 365 管理中心  <br/> |系统将要求你为管理中心每隔8小时提供凭据。  <br/> |
 |SharePoint Online  <br/> |只要用户选择 "**让我进入登录**状态", 5 天的非活动状态。 如果用户在24小时或更长时间后再次访问 SharePoint Online, 则超时值将重置为5天。  <br/> |
 |Outlook Web App  <br/> |6小时。  <br/> 您可以使用[set-organizationconfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) cmdlet 中的_ActivityBasedAuthenticationTimeoutInterval_参数更改此值。  <br/> |
 |Azure Active Directory  <br/> (由启用新式验证的 Office 2013 Windows 客户端使用)  <br/> | 新式验证使用访问令牌和刷新令牌向用户授予使用 Azure Active Directory 的 Office 365 资源的访问权限。 访问令牌是在成功进行身份验证后提供的 JSON Web 令牌, 有效期为1小时。 此外, 还提供刷新令牌的生存期较长。 当访问令牌过期时, Office 客户端将使用有效的刷新令牌获取新的访问令牌。 如果用户的初始身份验证仍然有效, 则 exchange 将成功。  <br/>  刷新令牌有效期为90天, 且持续使用, 它们在被吊销前可有效。  <br/>  刷新令牌可能会因以下几个事件而无效:  <br/>  用户的密码自发出刷新令牌后已更改。  <br/>  管理员可以应用条件访问策略, 该策略将限制对用户尝试访问的资源的访问。  <br/> |

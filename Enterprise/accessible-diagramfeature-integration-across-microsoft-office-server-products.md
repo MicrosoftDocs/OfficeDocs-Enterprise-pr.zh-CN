@@ -10,17 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: 本文是名为“跨 Microsoft Office Server 产品的功能集成 - SharePoint Server、Exchange Server、Lync Server 和 Office Online”的图的可访问文本版本。
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 本文是在 Microsoft Office Server 产品-SharePoint Server、Exchange Server、Lync Server 和 Office Online Server 中名为 "功能集成" 的图表的可访问文本版本。
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068768"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782242"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>可访问的图 - 跨 Microsoft Office Server 产品的功能集成
 
-**摘要:** 本文是在 Microsoft Office Server 产品-SharePoint Server、Exchange Server、Lync Server 和 Office Online 中名为 "功能集成" 的图表的可访问文本版本。
+**摘要:** 本文是在 Microsoft Office Server 产品-SharePoint Server、Exchange Server、Lync Server 和 Office Online Server 中名为 "功能集成" 的图表的可访问文本版本。
   
 图包含多个选项卡, 如本文档的部分标题中所示。
   
@@ -86,7 +86,7 @@ ms.locfileid: "34068768"
     
 - Lync
     
-- Office Online（以前称为 Office Web Apps）  
+- Office Online Server (以前称为 Office Web Apps) 
     
 高分辨率用户照片。此功能适用于：  
   

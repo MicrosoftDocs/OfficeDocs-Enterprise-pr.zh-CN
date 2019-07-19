@@ -13,18 +13,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 摘要：使用适用于 Office 365 的 Windows PowerShell 管理客户租赁。
-ms.openlocfilehash: 0c7e4cd737a2e83a4d82c566ecd248501d780c54
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b38c1862a0cf2db4a751d1690686baeead8ae9ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068938"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781852"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴管理 Office 365 租户
 
  **摘要：** 使用适用于 Office 365 的 Windows PowerShell 管理客户租赁。
   
-Windows PowerShell 允许 联合和云解决方案提供商 (CSP) 合作伙伴 轻松地管理和报告 Office 365 管理中心中不可用的客户租赁设置。请注意，合作伙伴管理员帐户要连接到其客户租赁，需要代表以下方管理 (AOBO) 权限。
+Windows PowerShell 允许联合和云解决方案提供商 (CSP) 合作伙伴轻松管理和报告 Microsoft 365 管理中心中不可用的客户租赁设置。 请注意，合作伙伴管理员帐户要连接到其客户租赁，需要代表以下方管理 (AOBO) 权限。
   
 委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Office 365 订阅捆绑到为其客户提供的服务产品中。 当他们销售 Office 365 订阅时，会自动获得对客户租赁的“代表以下方管理”(AOBO) 权限，这样他们便可以管理客户租赁并生成相应报告。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？

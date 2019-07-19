@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: 适用于 Office 365 的 ExpressRoute 在网络和 Microsoft 数据中心之间提供第3层连接。 电路使用 Office 365 前端服务器的边界网关协议 (BGP) 路由播发。 从本地设备的角度来看, 当他们需要选择到 Office 365 的正确 TCP/IP 路径时, Azure ExpressRoute 被视为是 Internet 的替代方法。
-ms.openlocfilehash: 459850a29e87650f1aecfc6a6977cd6e5b77ae07
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069698"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782232"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>使用适用于 Office 365 的 ExpressRoute 进行网络规划
 
@@ -34,7 +34,7 @@ Azure ExpressRoute 添加了指向由 Microsoft 数据中心内的 Office 365 �
 |**网络规划的区别**|**Internet 网络连接**|**ExpressRoute 网络连接**|
 |:-----|:-----|:-----|
 | 访问所需的 internet 服务, 包括;  <br/>  DNS 名称解析  <br/>  证书吊销验证  <br/>  内容分发网络  <br/> |是  <br/> |对 Microsoft 拥有的 DNS 和/或 CDN 基础结构的请求可能使用 ExpressRoute 网络。  <br/> |
-| 对 Office 365 服务的访问权限, 包括;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office Online  <br/>  Office 365 门户和身份验证  <br/> |是, 所有应用程序和功能  <br/> |是,[特定的应用程序和功能](https://aka.ms/o365endpoints) <br/> |
+| 对 Office 365 服务的访问权限, 包括;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  浏览器中的 Office  <br/>  Office 365 门户和身份验证  <br/> |是, 所有应用程序和功能  <br/> |是,[特定的应用程序和功能](https://aka.ms/o365endpoints) <br/> |
 |外围环境的本地安全性。  <br/> |是  <br/> |是  <br/> |
 |高可用性规划。  <br/> |故障转移到备用 internet 网络连接  <br/> |故障转移到备用 ExpressRoute 连接  <br/> |
 |与可预测网络配置文件的直接连接。  <br/> |否  <br/> |可访问  <br/> |
@@ -190,7 +190,7 @@ Woodgrove Bank 上的网络配置基于几个关键原则构建:
 ## <a name="related-topics"></a>相关主题
 <a name="BKMK_high-availability"> </a>
 
-[与 Office 365 的网络连接](network-connectivity.md)
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
   
 [Azure ExpressRoute for Office 365](azure-expressroute.md)
   

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: 在开始规划网络的 Office 365 网络连接之前, 请务必了解安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。
-ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: 9444cef0a93d10953a726da40d24ab18e29d8f24
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017292"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782202"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 网络连接原则
 
@@ -42,7 +42,7 @@ ms.locfileid: "35017292"
 ## <a name="office-365-architecture"></a>Office 365 体系结构
 <a name="BKMK_Architecture"> </a>
 
-Office 365 是分布式软件即服务 (SaaS) 云, 它通过多种微服务和应用程序 (如 Exchange Online、SharePoint Online、Skype for business Online、Microsoft) 提供工作效率和协作方案。团队、Exchange Online Protection、Office Online 和许多其他团队。 虽然特定的 Office 365 应用程序可能会将其独特的功能应用于客户网络和与云的连接, 但它们都共享一些关键主体、目标和体系结构模式。 这些适用于连接的这些主体和体系结构模式对于许多其他 SaaS 云来说是典型的, 同时与平台即服务和基础结构即服务云 (如 Microsoft) 的典型部署模型非常不同。Azure.
+Office 365 是分布式软件即服务 (SaaS) 云, 它通过多种微服务和应用程序 (如 Exchange Online、SharePoint Online、Skype for business Online、Microsoft) 提供工作效率和协作方案。团队、Exchange Online Protection、Office 在浏览器中以及其他许多。 虽然特定的 Office 365 应用程序可能会将其独特的功能应用于客户网络和与云的连接, 但它们都共享一些关键主体、目标和体系结构模式。 这些适用于连接的这些主体和体系结构模式对于许多其他 SaaS 云来说是典型的, 同时与平台即服务和基础结构即服务云 (如 Microsoft) 的典型部署模型非常不同。Azure.
   
 Office 365 的最重要的体系结构功能之一 (通常是网络规划者未错过或误解的) 是, 它是真正的全局分布式服务, 在用户连接到它的上下文中。 目标 Office 365 租户的位置对于了解在云中存储客户数据的位置非常重要, 但 Office 365 的用户体验并不涉及直接连接到包含数据的磁盘。 Office 365 中的用户体验 (包括性能、可靠性和其他重要质量特征) 涉及到跨全球数百个 Microsoft 地区扩展的高分布式服务前盖的连接性。 在大多数情况下, 通过允许客户网络将用户请求路由到最近的 Office 365 服务入口点来实现最佳用户体验, 而不是通过中心位置或区域中的传出点连接到 Office 365。
   

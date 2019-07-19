@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: 使用 Office 365 PowerShell 禁用对用户的 Office 365 服务的访问。
-ms.openlocfilehash: bd6961f0de52d95026bae3a743613b33a4af918b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 32c43a47e1547e85488cb5158bd7392d79c8a4fb
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069028"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781832"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 禁止访问服务
 
@@ -61,7 +61,7 @@ PowerShell 脚本可自动执行本主题中描述的过程。 具体来说, 该
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-  下面的示例创建一个**LicenseOptions**对象, 该对象禁用名为`litwareinc:ENTERPRISEPACK` (Office 365 企业版 E3) 的许可计划中的 Office online 和 SharePoint online services。
+  下面的示例创建一个**LicenseOptions**对象, 该对象禁用名为`litwareinc:ENTERPRISEPACK` (Office 365 企业版 E3) 的许可计划中的 Office 和 SharePoint Online services。
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"

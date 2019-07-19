@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: 有几种简单的方法可以检查 Office 365 与您的业务之间的连接性能, 让您能够建立连接的粗略基准。 了解客户端计算机连接的性能历史记录可帮助您及早检测新兴问题, 识别和预测问题。
-ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 755f4c4bde7e040638e768002a528710bcdd48fd
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069518"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781902"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>使用基线和性能历史记录优化 Office 365 性能
 
@@ -49,7 +49,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
 
 首先, 你需要确保你遇到的问题确实是性能问题, 而不是服务事件。 性能问题与 Office 365 中的服务事件不同。 下面介绍如何区分这些内容。
   
-如果 Office 365 服务有问题, 这就是服务事件。 您将在 Office 365 管理中心的 "**当前运行状况**" 下看到红色或黄色图标, 在连接到 Office 365 的客户端计算机上, 您可能还会注意到性能较慢。 例如, 如果当前运行状况报告了一个红色的图标, 并且你在 Exchange 旁边看到了**调查**, 则你可能还会收到来自组织中的人员的一组呼叫, 他们抱怨使用 Exchange Online 的客户端邮箱执行时错误。 在这种情况下, 假定您的 Exchange Online 性能仅成为服务中的问题的牺牲品是合理的。 
+如果 Office 365 服务有问题, 这就是服务事件。 您将在 Microsoft 365 管理中心的 "**当前运行状况**" 下看到红色或黄色图标, 在连接到 Office 365 的客户端计算机上, 您可能还会注意到性能较慢。 例如, 如果当前运行状况报告了一个红色的图标, 并且你在 Exchange 旁边看到了**调查**, 则你可能还会收到来自组织中的人员的一组呼叫, 他们抱怨使用 Exchange Online 的客户端邮箱执行时错误。 在这种情况下, 假定您的 Exchange Online 性能仅成为服务中的问题的牺牲品是合理的。 
   
 ![Office 365 运行状况仪表板, 所有工作负荷显示为绿色, Exchange 除外, 后者显示服务已还原。](media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -59,7 +59,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
   
 性能问题不是服务事件, 即使事件可能导致性能降低。 性能问题如下所示:
   
-- 无论 Office 365 管理员中心的**当前运行状况**为该服务报告什么, 都会发生性能问题。 
+- 无论管理员中心的**当前运行状况**是为服务报告的, 都会发生性能问题。 
     
 -  用于相对无缝的行为需要很长时间才能完成或永远不会完成。 
     
@@ -198,7 +198,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
 ![包含客户端、代理和云的基本网络以及工具建议 PSPing、TraceTCP 和网络跟踪。](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP 包含在此屏幕截图中, 因为它是一种有用的工具, 用于显示请求处理所需的时间, 以及从一台计算机到下一台计算机的网络跃距或从一台计算机到下一台计算机之间的连接要到达目标所需的时间 (以毫秒为单位)。 TraceTCP 还可以提供在跃点期间使用的服务器的名称, 这对于支持中的 Microsoft Office 365 疑难解答非常有用。 > TraceTCP 命令可能非常简单, 例如: > `tracetcp.exe outlook.office365.com:443`_GT_ 请务必在命令中包含端口号! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html)是免费下载, 但依赖于 Wincap。 Wincap 是一种也由 Netmon 使用和安装的工具。 我们还在 "高级方法" 部分中使用 Netmon。 
+> TraceTCP 包含在此屏幕截图中, 因为它是一种有用的工具, 用于显示请求处理所需的时间, 以及从一台计算机到下一台计算机的网络跃距或从一台计算机到下一台计算机之间的连接要到达目标所需的时间 (以毫秒为单位)。 TraceTCP 还可以提供在跃点期间使用的服务器的名称, 这对于支持中的 Microsoft Office 365 疑难解答非常有用。 > TraceTCP 命令可能非常简单, 例如: > `tracetcp.exe outlook.office365.com:443`> 请务必在命令中包括端口号! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html)是免费下载, 但依赖于 Wincap。 Wincap 是一种也由 Netmon 使用和安装的工具。 我们还在 "高级方法" 部分中使用 Netmon。 
   
  如果有多个办公室, 则还需要在每个位置的客户端中保留一组数据。 此测试可衡量延迟, 在这种情况下, 它是一个数字值, 它描述客户端向 Office 365 发送请求与 Office 365 响应请求之间的时间量。 测试源于客户端计算机上的域, 并在 Internet 中从传出点传出网络中的往返行程, 并将其从 Internet 发送到 Office 365, 然后再到上一页进行测量。 
   
@@ -226,7 +226,7 @@ Office 365 位于高容量专用 Microsoft 网络中, 该网络不只受自动�
   
 若要将它们添加到 Internet Explorer 中的代理绕过列表, 请转到**Tools** \> **Internet Options** \> **Connections** \> **LAN settings** \> **Advanced**。 您还可以在 "高级" 选项卡中找到代理服务器和代理服务器端口。 您可能需要单击 "**为 LAN 使用代理服务器**" 复选框, 以访问 "**高级**" 按钮。 您需要确保选中 "**对本地地址绕过代理服务器**"。 单击 "**高级**" 后, 您将看到一个可在其中输入例外的文本框。 使用分号分隔上面列出的通配符 Url, 例如:
   
-\*。 microsoftonline.com;\*。 sharepoint.com
+\*. microsoftonline.com;\*。 sharepoint.com
   
 绕过代理之后, 您应该能够直接在 Office 365 URL 上使用 ping 或 PsPing。 下一步将测试 ping **outlook.office365.com**。 或者, 如果您正在使用 PsPing 或另一个工具, 以允许您向命令提供端口号, PsPing 将根据**portal.microsoftonline.com:443**查看平均往返时间 (以毫秒为单位)。 
   
