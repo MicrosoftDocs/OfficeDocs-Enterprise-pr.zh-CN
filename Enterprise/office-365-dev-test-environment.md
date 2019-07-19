@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 摘要：使用此测试实验室指南创建用于评估或开发/测试的 Office 365 试用订阅。
-ms.openlocfilehash: 2f1856d203e892c98b44ccc1dbe1598d527165de
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 06ffed9ab4b41c5e164cfadb951181a3406c67a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162505"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781932"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
@@ -118,7 +118,7 @@ ms.locfileid: "34162505"
     
 11. 在下一页，等到 Office 365 完成设置并且显示所有标题。
     
-你应可看到 Office 365 门户主页，可从该页访问 Office Online 服务和 Microsoft 365 管理中心。
+你应可看到 Office 365 门户主页，可从该页访问 Office 服务和 Microsoft 365 管理中心。
   
 对于模拟的企业 Office 365 的开发/测试环境，以下是你的结果配置。
   
