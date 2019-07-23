@@ -3,7 +3,7 @@ title: 如何请求数据移动
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求, 以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
+ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392352"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35818016"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -37,20 +37,20 @@ ms.locfileid: "35392352"
 |英国  <br/> |2017年3月15日  <br/> |2017年9月15日  <br/> |
 |韩国  <br/> |5月1日, 2017  <br/> |2017年10月31日  <br/> |
 |法国  <br/> |2018年3月14日  <br/> |2018年9月15日  <br/> |
-|阿拉伯联合酋长国  <br/> |相同  <br/> |相同  <br/> |
+|阿拉伯联合酋长国  <br/> |2019年7月15日  <br/> |2020年1月31日  <br/> |
 |南非  <br/> |相同  <br/> |相同  <br/> |
    
 ## <a name="how-to-request-a-move"></a>如何请求移动
 
-符合条件的客户将在其[Office 365 管理中心](https://aka.ms/365admin)中看到一个页面, 这将允许他们请求将其核心客户数据移动到其新的数据中心区域。  
+符合条件的客户将在其[管理中心](https://aka.ms/365admin)中看到一个页面, 这将允许他们请求将其核心客户数据移动到其新的数据中心区域。  
   
-若要访问 Office 365 管理中心中的页面, 请在左侧的导航窗格中, 展开 "**设置**", 然后单击 "**组织配置文件**"。
+若要访问 Microsoft 365 管理中心中的页面, 请在左侧的导航窗格中, 展开 "**设置**", 然后单击 "**组织配置文件**"。
   
-![将具有组织配置文件的设置菜单突出显示](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
+![突出显示了组织配置文件的 "设置" 菜单](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
 在 "**组织配置文件**" 页上, 向下滚动到 "**数据常驻选项**" 部分。 
   
-![数据派驻卡](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
+![数据派驻卡](media/dataresidencyae.jpg)
   
 **如果应用了以下情况之一, 则可能不会看到此部分**:
 - 你的租户不符合移动计划。  资格由租户注册国家/地区决定。
@@ -58,7 +58,7 @@ ms.locfileid: "35392352"
   
 如果您的组织具有数据驻留要求, 并且您需要提前请求迁移, 请单击该部分右上部的 "**编辑**"。 屏幕右侧将显示一个新分区, 说明移动程序的详细信息。 选择显示 "是" 的文本旁边的切换按钮 **, 我的组织具有数据驻留要求**。 然后，单击“保存”****。
   
-![数据中心选择操作屏幕](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
+![数据中心选择操作屏幕](media/dataresidencyflyoutae.jpg)
   
 您应该会看到 "**数据驻留选项**" 部分中的文本发生更改, 以指示**您的组织已请求移动其核心客户数据。** 您的邮件中心中也会有一条确认消息。 这将确认您是否已成功请求移动。 
 
