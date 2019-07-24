@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 使用集中部署 PowerShell cmdlet 可帮助您部署和管理 Office 365 组织的 Office 外接程序。
-ms.openlocfilehash: c63a48d212bba4eda25fb6b8843f6321892dc54b
-ms.sourcegitcommit: d53033c2d2d41d52047e3e2644d77373d4a5dd9a
+ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
+ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35791247"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834232"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
@@ -171,6 +171,8 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>为你的组织自定义 Microsoft Store 外接程序
 
 必须先自定义外接程序, 然后才能将其部署到组织中。 此功能不支持早于版本1.1 的外接程序。 
+
+我们建议您先将自定义加载项部署到自己, 以确保它按预期工作, 然后再将其部署到整个组织。
 
 另请注意以下限制:
 - 所有 Url 都必须是绝对 Url (包括 http 或 https) 且有效。

@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 删除用户帐户的许可证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/07/2019
+ms.date: 07/23/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: 介绍如何使用 Office 365 PowerShell 删除之前分配给用户的 Office 365 许可证。
-ms.openlocfilehash: 80b708e5ce2d16f65ed02681d8f3e00a7fe33fcb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: aebb74404d2f1e40ed65580df2dc114a3645091a
+ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068738"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834222"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户的许可证
 
@@ -40,7 +40,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 接下来, 获取要删除其许可证的帐户的登录名, 也称为用户主体名称 (UPN)。
 
-最后, 指定用户登录名和许可证计划名称, 删除 "<" 和 ">" 字符, 并运行这些命令。
+最后, 指定用户登录和许可证计划名称, 删除 "<" 和 ">" 字符, 然后运行这些命令。
 
 ```
 $userUPN="<user sign-in name (UPN)>"
@@ -115,13 +115,13 @@ kakers@contoso.com
 2. 使用以下语法：
     
   ```
-  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
+  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
   ```
 
 本示例从文本文件`litwareinc:ENTERPRISEPACK` C:\My Documents\Accounts.txt. 中定义的用户帐户中删除 (Office 365 企业版 E3) 许可证。
     
   ```
-  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
+  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
   ```
 
 要从所有现有的用户帐户中删除许可证，请使用以下语法：
