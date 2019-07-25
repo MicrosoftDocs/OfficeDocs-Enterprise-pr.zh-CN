@@ -172,10 +172,10 @@
 ##### [在卫星定位中启用 SharePoint 多地理位置功能](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [管理 Exchange 多地理位置](administering-exchange-online-multi-geo.md)
 
-#### [移动到新的 Office 365 数据中心地区](moving-data-to-new-datacenter-geos.md)
-##### [如何请求数据移动](request-your-data-move.md)
-##### [数据移动期间和数据移动之后](during-and-after-your-data-move.md)
-##### [数据移动常见问题解答](data-move-faq.md)
+### [移动到新的 Office 365 数据中心地区](moving-data-to-new-datacenter-geos.md)
+#### [如何请求数据移动](request-your-data-move.md)
+#### [数据移动期间和数据移动之后](during-and-after-your-data-move.md)
+#### [数据移动常见问题解答](data-move-faq.md)
 
 ### 混合解决方案
 #### [将 Azure Active Directory 用于 SharePoint Server 2016 身份验证](using-azure-ad-for-sharepoint-server-authentication.md)
