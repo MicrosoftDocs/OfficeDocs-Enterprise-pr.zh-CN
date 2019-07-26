@@ -3,7 +3,7 @@ title: 将核心数据移动到新的 Office 365 数据中心信息
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: '新数据中心信息添加容量和计算资源, 以支持我们持续的客户需求和使用情况增长。 此外, 新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一个术语, 指在 Microsoft Online Services 术语: Exchange Online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容)、SharePoint Online 网站内容和文件中定义的客户数据子集。存储在该网站中, 并将文件上传到 OneDrive for business。'
-ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392342"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907635"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>将核心数据移动到新的 Office 365 数据中心信息
 
@@ -39,8 +39,8 @@ Core customer data 是一个术语, 指的是在[Microsoft Online Services 术�
 |英国 * * * * *| 欧洲 | 英国 | 2016 年 9 月 |
 |韩国 * * * *| 亚洲/太平洋 | 韩国 | 2017 年 4 月 |
 |法国 * * * *| 欧洲 | 法国 | 2018 年 3 月 |
-|阿拉伯联合酋长国 * * * *| 欧洲 | 阿拉伯联合酋长国 | 公告 |
-|南非 * * * *| 欧洲 | 南非 | 公告 |
+|阿拉伯联合酋长国 * * * *| 欧洲 | 阿拉伯联合酋长国 | 6月2019 |
+|南非 * * * *| 欧洲 | 南非 | 2019月 |
   
 在新的数据中心地理位置推出之后创建的新客户或 Office 365 租户将在新的数据中心地理位置自动将其核心客户数据存储在 rest 上。
   

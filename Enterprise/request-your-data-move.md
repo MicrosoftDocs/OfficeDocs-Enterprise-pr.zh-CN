@@ -3,7 +3,7 @@ title: 如何请求数据移动
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/22/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求, 以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
-ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
+ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "35818016"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907645"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -38,7 +38,7 @@ ms.locfileid: "35818016"
 |韩国  <br/> |5月1日, 2017  <br/> |2017年10月31日  <br/> |
 |法国  <br/> |2018年3月14日  <br/> |2018年9月15日  <br/> |
 |阿拉伯联合酋长国  <br/> |2019年7月15日  <br/> |2020年1月31日  <br/> |
-|南非  <br/> |相同  <br/> |相同  <br/> |
+|南非  <br/> |2019年7月25日  <br/> |2020年1月31日  <br/> |
    
 ## <a name="how-to-request-a-move"></a>如何请求移动
 
@@ -53,14 +53,14 @@ ms.locfileid: "35818016"
 ![数据派驻卡](media/dataresidencyae.jpg)
   
 **如果应用了以下情况之一, 则可能不会看到此部分**:
-- 你的租户不符合移动计划。  资格由租户注册国家/地区决定。
-- 您的所有数据都已位于 "新建地理位置 (请参阅" 页面的 "数据位置" 部分)。 
+- 你的租户不符合 Office 365 移动程序的条件。  资格由租户注册国家/地区决定。
+- Rest 上的所有核心客户数据都已位于新地理位置 (请参阅页面的 "数据位置" 部分)。 
   
-如果您的组织具有数据驻留要求, 并且您需要提前请求迁移, 请单击该部分右上部的 "**编辑**"。 屏幕右侧将显示一个新分区, 说明移动程序的详细信息。 选择显示 "是" 的文本旁边的切换按钮 **, 我的组织具有数据驻留要求**。 然后，单击“保存”****。
+如果您的组织具有数据驻留要求, 并且您需要请求提前迁移, 请单击部分右上方的 "**选择**"。 屏幕右侧将显示一个新分区, 说明 Office 365 移动程序的详细信息。 选择 "**我想要迁移的我的组织的核心客户数据**" 的文本旁边的切换按钮。 然后，单击“保存”****。
   
 ![数据中心选择操作屏幕](media/dataresidencyflyoutae.jpg)
   
-您应该会看到 "**数据驻留选项**" 部分中的文本发生更改, 以指示**您的组织已请求移动其核心客户数据。** 您的邮件中心中也会有一条确认消息。 这将确认您是否已成功请求移动。 
+您应该会看到 "**数据驻留**" 部分的文本更改, 以指示**您的组织已请求移动其核心客户数据。** 您的邮件中心中也会有一条确认消息。 这将确认您是否已成功请求移动。 
 
 
   
