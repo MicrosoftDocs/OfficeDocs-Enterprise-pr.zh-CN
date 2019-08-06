@@ -1,6 +1,6 @@
 ---
-title: Office 365 企业版
-description: Microsoft Office 365 提供功能强大的在线云服务, 可实现协作、安全性和合规性、移动性以及 intellgence 和分析。 此页面为管理员和 IT 专业人员提供指导, 这些人员正在部署、配置和管理企业组织中的 Office 365 服务。
+title: Office 365 Enterprise
+description: Microsoft Office 365 提供强大的在线云服务, 从而实现协作、安全性和合规性、移动性和智能化和分析。 此页面为管理员和 IT 专业人员提供指导, 这些人员正在部署、配置和管理企业组织中的 Office 365 服务。
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -14,15 +14,15 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487128"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490725"
 ---
-<h1>Office 365 企业版</h1>
-<p>Microsoft Office&nbsp;365 提供功能强大的在线云服务, 可实现协作、安全性和合规性、移动性以及 intellgence 和分析。 此页面提供了有关在企业组织中部署、配置和管理 Office&nbsp;365 服务的管理员和 IT 专业人员的指南的链接。</p>
+<h1>Office 365 Enterprise</h1>
+<p>Microsoft Office&nbsp;365 提供强大的在线云服务, 从而实现协作、安全性和合规性、移动性和智能化和分析。 此页面提供了有关在企业组织中部署、配置和管理 Office&nbsp;365 服务的管理员和 IT 专业人员的指南的链接。</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -36,7 +36,7 @@ ms.locfileid: "33487128"
                     </div>
                     <div class="cardText">
                         <h3>带有 FastTrack 的引导部署</h3>
-                <p>使用适用于 office&nbsp;365 的 FastTrack 中心权益, 在规划、部署和推动组织采用 Office&nbsp;365 服务时为此采用引导式协助。</p>
+                <p>使用适用于 Office&nbsp;365 的 FastTrack 中心权益, 在规划、部署和推动组织采用 Office&nbsp;365 服务时为此采用引导式协助。</p>
                     </div>
                 </div>
             </div>
