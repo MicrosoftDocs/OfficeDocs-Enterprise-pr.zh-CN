@@ -23,12 +23,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备使用目录同步将用户预配到 Office 365, 以及使用此方法的长期好处。
-ms.openlocfilehash: 2361f4484f00d61fda90fed407bf3c287bbc2bc1
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
+ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162465"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35249193"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>准备将目录同步到 Office 365
 
@@ -113,7 +113,7 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
   - 每个值的最大字符数: 256
   - 属性值不能包含空格。
   - 属性值在目录中必须是唯一的。
-  - 无效字符: \< \> ();, [ ] "
+  - 无效字符: \< \> ();, [ ] " '
     
     请注意, 无效字符适用于类型分隔符后面的字符和 ":", 因此允许 SMTP:User@contso.com, 但 SMTP:user:M@contoso.com 不是。
     
@@ -124,7 +124,7 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
     
   - 最大字符数：20
   - 属性值在目录中必须是唯一的。
-  - 无效字符: [\ "|,/: \< \> + =;？ \* ]
+  - 无效字符: [\ "|,/: \< \> + =;？ \* ']
   - 如果用户具有无效的**sAMAccountName**属性, 但具有有效的**userPrincipalName**属性, 则会在 Office 365 中创建该用户帐户。 
   - 如果**sAMAccountName**和**userPrincipalName**都无效, 则必须更新 AD DS **userPrincipalName**属性。 
     
@@ -148,7 +148,7 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
   - **UserPrincipalName**属性的最大字符数为113。 在 at 符号 (@) 的前面和后面允许使用特定数量的字符, 如下所示: 
   - 位于 at 符号 (@) 前面的用户名的最大字符数 (@):64
   - At 符号 (@) 后面的域名的最大字符数:48
-  - 无效字符: \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] "
+  - 无效字符: \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] " '
   - 元音变音符也是一个无效字符。
   - 每个**userPrincipalName**值中都需要 @ 字符。 
   - @ 符在每个 **userPrincipalName** 值中不能作为第一个字符。 
@@ -160,9 +160,9 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
 
 请参阅使用[IdFix 工具准备目录属性](prepare-directory-attributes-for-synch-with-idfix.md), 以使用 IdFix 工具识别 AD DS 的属性中的错误。
     
-## <a name="2-prepare-the-userprincipalname-attribute"></a>2. 准备 userPrincipalName 属性
+## <a name="3-prepare-the-userprincipalname-attribute"></a>3. 准备 userPrincipalName 属性
 
-Active Directory 旨在允许组织中的最终用户使用**sAMAccountName**或**userPrincipalName**登录到您的目录。 同样, 最终用户可以使用其工作或学校帐户的用户主体名称 (UPN) 登录 Office 365。 目录同步尝试使用 AD SD 中的同一 UPN 在 Azure Active Directory 中创建新用户。 UPN 的格式类似于电子邮件地址。 
+Active Directory 旨在允许组织中的最终用户使用**sAMAccountName**或**userPrincipalName**登录到您的目录。 同样, 最终用户可以使用其工作或学校帐户的用户主体名称 (UPN) 登录 Office 365。 目录同步尝试使用 AD DS 中的同一个 UPN 在 Azure Active Directory 中创建新用户。 UPN 的格式类似于电子邮件地址。 
 
 在 Office 365 中, UPN 是用于生成电子邮件地址的默认属性。 可以轻松获取**userPrincipalName** (在 ad DS 和 Azure AD 中) 和**proxyAddresses**中的主电子邮件地址设置为不同的值。 当它们设置为不同的值时, 管理员和最终用户可能会感到困惑。 
   

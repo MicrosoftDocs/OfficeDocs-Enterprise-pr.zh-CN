@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '摘要: 配置和演示 Office 365 信息权限管理如何保护您的敏感文件, 即使这些文件发布到错误的 SharePoint Online 网站集也是如此。'
-ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070888"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782492"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的敏感文件保护
 
@@ -126,7 +126,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. 在 " **Microsoft Office 主页**" 选项卡上, 单击 "**管理**" 磁贴。
     
-2. 在 " **Office 管理中心**" 选项卡上, 单击 "管理中心" " **> SharePoint**"。
+2. 在 " **Office 管理中心**" 选项卡上, 单击 "**管理员中心 > SharePoint**"。
     
 3. 在 " **SharePoint 管理中心**" 选项卡上, 单击 "**新建 > 专用网站集**"。
     
@@ -172,7 +172,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. 键入 **CEO** 帐户名及其密码，然后单击“**登录**”。
     
-5. 在浏览器的新选项卡上, 键入 "执行人员" 网站集 ( **https://**\<组织 name>**sharepoint.com/sites/executives**) 的 URL。
+5. 在浏览器的新选项卡上, 键入 "执行人员" 网站集的 URL ( **https://**\<组织名称>**sharepoint.com/sites/executives**)。
     
 6. 单击 "**文档**", 单击 "**新建",** 然后单击 " **Word 文档**"。
     
@@ -190,7 +190,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 3. 将 **SensitiveData BeforeIRM.docx** 文档存储在步骤 1 中创建的文件夹中。
     
-4. 在浏览器的新选项卡上, 键入销售网站集的 URL ( **https://**\<组织 name>**sharepoint.com/sites/sales**)。
+4. 在浏览器的新选项卡上, 键入 "销售" 网站集的 URL ( **https://**\<组织名称>**sharepoint.com/sites/sales**)。
     
 5. 单击**销售网站集**的“**文档**”文件夹。
     
@@ -316,7 +316,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 6. 在“**文档**”页上，打开 **SensitiveData AfterIRM.docx** 文档。 
     
-    应该会看到一条消息显示“很抱歉，Word Online 无法打开此文档，因为它受信息权限管理 (IRM) 的保护”。  
+    您应该会看到一条消息, 提示 "对不起, Word 无法打开此文档, 因为它受信息权限管理 (IRM) 保护"。 
     
 7. 单击“**在 Word 中编辑**”。如果要打开文件，系统会提示你。单击“**是**”。
     

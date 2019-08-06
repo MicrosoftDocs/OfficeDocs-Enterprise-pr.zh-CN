@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: 适用于 Office 365 的 ExpressRoute 提供了到多个面向 internet 的 Office 365 服务的备用路由路径。 适用于 Office 365 的 ExpressRoute 体系结构基于 Office 365 服务的广告公共 IP 前缀, 这些前缀已在 Internet 上可通过 Internet 访问, 以便随后将这些 IP 前缀再分发到你的网络。 通过 ExpressRoute, 可以有效地通过 internet 和 ExpressRoute 为许多 Office 365 服务启用几种不同的路由路径。 你的网络上的路由状态可能会对你的内部网络拓扑的设计进行重大更改。
-ms.openlocfilehash: c9e4fa4f5c8cb46d32e1b0de6f18f66b3a971aa6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067398"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722721"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 
@@ -112,7 +112,7 @@ ms.locfileid: "34067398"
 |**公共终结点的 IP 广告** <br/> |**到 Internet**: 5.5.0.0/16  <br/> **到 ExpressRoute**: 5.5.5.0/24  <br/> |
 |**安全性/外围控件** <br/> |**Internet 路径**: DeviceID_002  <br/> **ExpressRoute 路径**: DeviceID_003  <br/> |
 |**高可用性** <br/> |跨2地域冗余的主动/主动  <br/> ExpressRoute 电路-芝加哥和达拉斯  <br/> |
-|**路径对称控制** <br/> |**方法**: 源 NAT  <br/> **Internet 路径**: 源 NAT 到192.168.5.5 的入站连接  <br/> |**ExpressRoute 路径**: 源 NAT 与 192.168.1。0 (芝加哥) 和 192.168.2.0 (达拉斯) 的连接  <br/> |
+|**路径对称控制** <br/> |**方法**: 源 NAT  <br/> **Internet 路径**: 源 NAT 到192.168.5.5 的入站连接  <br/> |**ExpressRoute 路径**: 源 NAT 与 192.168.1.0 (芝加哥) 和 192.168.2.0 (达拉斯) 的连接  <br/> |
 
 以下是仅出站的服务示例:
 
@@ -122,7 +122,7 @@ ms.locfileid: "34067398"
 |**服务** <br/> |SharePoint Online  <br/> |
 |**内部部署终结点 (源)** <br/> |用户工作站  <br/> |
 |**公共 Office 365 终结点 (目标)** <br/> |SharePoint Online (IP 地址)  <br/> |
-|**公用 (Internet) DNS 条目** <br/> |\*。 sharepoint.com (以及其他 Fqdn)  <br/> |
+|**公用 (Internet) DNS 条目** <br/> |\*. sharepoint.com (以及其他 Fqdn)  <br/> |
 |**CDN 检索** <br/> |cdn.sharepointonline.com (和其他 Fqdn)-由 CDN 提供程序维护的 IP 地址  <br/> |
 |**正在使用的 IP 播发和 NAT** <br/> |**Internet 路径/源 NAT**: 1.1.1.0/24  <br/> **ExpressRoute 路径/源 NAT**: 1.1.2.0/24 (芝加哥) 和 1.1.3.0/24 (达拉斯)  <br/> |
 |**Connectivity 方法** <br/> |**Internet**: via 第7层代理 (pac 文件)  <br/> **ExpressRoute**: 直接路由 (无代理)  <br/> |
@@ -255,7 +255,7 @@ Skype for Business Online 还具有特定的其他网络要求, 这些要求在[
   
 #### <a name="plan-for-network-security-requirements"></a>规划网络安全要求
   
-创建符合网络安全要求的计划, 并将其合并到更新后的网络拓扑图中。 阅读使用 ExpressRoute for office 365 在网络规划中将安全控制应用于 Azure 365 ExpressRoute 的一节。
+创建符合网络安全要求的计划, 并将其合并到更新后的网络拓扑图中。 阅读[使用 ExpressRoute For office 365 在网络规划](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)中**将安全控制应用于 Azure 365 ExpressRoute**的一节。
   
 ### <a name="design-outbound-service-connectivity"></a>设计出站服务连接
 <a name="outbound"> </a>
@@ -568,7 +568,7 @@ Skype for Business Online 还具有特定的其他网络要求, 这些要求在[
   
 ## <a name="related-topics"></a>相关主题
 
-[与 Office 365 的网络连接](network-connectivity.md)
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
   
 [Azure ExpressRoute for Office 365](azure-expressroute.md)
   

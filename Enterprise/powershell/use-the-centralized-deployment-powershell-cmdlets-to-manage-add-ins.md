@@ -15,16 +15,16 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 使用集中部署 PowerShell cmdlet 可帮助您部署和管理 Office 365 组织的 Office 外接程序。
-ms.openlocfilehash: 404085d79827664437f3ad327fac4a99166adcf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071138"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782582"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
-作为 Office 365 管理员, 您可以通过集中部署功能向用户部署 Office 外接程序 (请参阅在[office 365 管理中心中管理 office 365 外接程序的部署](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f))。 除了通过 Office 365 管理中心部署 Office 外接程序之外, 还可以使用 Microsoft PowerShell。 从 Microsoft 下载中心[下载](https://go.microsoft.com/fwlink/p/?linkid=850850)集中部署 PowerShell cmdlet。 
+作为 Office 365 管理员, 您可以通过集中部署功能向用户部署 Office 外接程序 (请参阅[在管理中心中管理 Office 365 外接程序的部署](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f))。 除了通过管理中心部署 Office 加载项外, 还可以使用 Microsoft PowerShell。 从 Microsoft 下载中心[下载](https://go.microsoft.com/fwlink/p/?linkid=850850)集中部署 PowerShell cmdlet。 
   
 ## <a name="what-do-you-want-to-do"></a>要执行什么操作？
 

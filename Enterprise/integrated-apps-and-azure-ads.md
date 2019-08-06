@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: 了解如何在 Azure AD 中注册和管理 O365 集成应用程序
-ms.openlocfilehash: 01bd932ed12e040a0e6dae517d7b4fd360b5da80
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c52b4beefaefd4a115c132c6f82e7f1d20564b46
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067248"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782522"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>适用于 Office 365 管理员的集成应用和 Azure AD
 
@@ -32,7 +32,7 @@ ms.locfileid: "34067248"
   
 |**先决条件**|**Comments**|
 |:-----|:-----|
-|[注册免费的 Azure Active Directory 订阅](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |每个付费的 Office 365 订阅都附带了 Azure Active Directory 的免费订阅。 您可以使用 Azure AD 管理您的应用程序, 并创建和管理用户和组帐户。 若要激活此订阅并访问 Azure 管理门户, 您必须完成一次性注册过程。 之后, 你可以从 Office 365 管理中心转到 Azure AD。  <br/> |
+|[注册免费的 Azure Active Directory 订阅](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |每个付费的 Office 365 订阅都附带了 Azure Active Directory 的免费订阅。 您可以使用 Azure AD 管理您的应用程序, 并创建和管理用户和组帐户。 若要激活此订阅并访问 Azure 管理门户, 您必须完成一次性注册过程。 之后, 你可以从 Microsoft 365 管理中心转到 Azure AD。  <br/> |
 |[打开或关闭集成应用](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |您必须为您的用户启用集成应用程序, 以允许第三方应用访问其 Office 365 信息, 并让您在 Azure AD 中注册应用程序。 例如, 当某人使用第三方应用程序时, 该应用可能会请求权限来访问其日历, 并编辑 OneDrive for business 文件夹中的文件。  <br/> |
    
 管理 Office 365 应用程序需要你了解 Azure AD 中的应用程序。 这些文章可帮助你为你提供所需的背景。

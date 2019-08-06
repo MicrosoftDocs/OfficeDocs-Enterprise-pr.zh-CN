@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '摘要: 介绍用于连接到 Office 365 的网络容量、WAN 加速器和负载平衡设备的注意事项。'
-ms.openlocfilehash: 6ff63232d4efe581ed4a6ba0a83730a5362ecff7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069368"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722621"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 
@@ -66,7 +66,7 @@ ms.locfileid: "34069368"
   
 ## <a name="firewalls-and-proxies"></a>防火墙和代理
 
-有关配置防火墙和代理以连接到 Office 365 的更多详细信息, 请阅读[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)、[到 office 365 的网络连接](network-connectivity.md)和[office 365 终结点常见问题解答](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)以了解有关设备和电路选择的详细信息。
+有关配置防火墙和代理以连接到 Office 365 的更多详细信息, 请阅读[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)、[评估 office 365 网络连接](assessing-network-connectivity.md)和[office 365 终结点常见问题解答](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)以了解有关设备和电路的详细信息选框.
   
 ## <a name="see-also"></a>另请参阅
 

@@ -3,29 +3,6 @@
 
 
 
-## <a name="week-of-june-24-2019"></a>2019年6月24日一周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 6/24/2019 | [Office 365 IP 地址和 URL Web 服务中未包含的其他终结点](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 修改内容 |
-| 6/24/2019 | [如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 修改内容 |
-| 6/24/2019 | [为目录同步准备不可路由的域](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | 修改内容 |
-| 6/24/2019 | [恢复用户邮箱中已删除的项目 - 管理员帮助](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | 修改内容 |
-| 6/24/2019 | [Microsoft Azure 中的 SharePoint Server 2013 灾难恢复](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | 修改内容 |
-| 6/24/2019 | [从 SharePoint 2010 升级](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 修改内容 |
-| 6/26/2019 | [管理 Skype 与 Office 365 PowerShell 的在线业务策略](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | 修改内容 |
-| 6/26/2019 | [准备将目录同步到 Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | 修改内容 |
-| 6/26/2019 | [优化 SharePoint Online 性能](/Office365/Enterprise/tune-sharepoint-online-performance) | 修改内容 |
-| 6/28/2019 | [Office 365 Germany 终结点](/Office365/Enterprise/office-365-germany-endpoints) | 修改内容 |
-| 6/28/2019 | [Office 365 美国政府 DoD 终结点](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 修改内容 |
-| 6/28/2019 | [Office 365 美国政府版 (GCC) 高终结点](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 修改内容 |
-| 6/28/2019 | [由世纪互联运营的 Office 365 的 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 修改内容 |
-| 6/28/2019 | [Office 365 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges) | 修改内容 |
-| 6/28/2019 | [将核心数据移动到新的 Office 365 数据中心信息](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 修改内容 |
-| 6/28/2019 | [如何请求数据移动](/Office365/Enterprise/request-your-data-move) | 修改内容 |
-
-
 ## <a name="week-of-july-01-2019"></a>2019年7月1日一周
 
 
@@ -132,3 +109,15 @@
 | 7/24/2019 | [使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁](/Office365/Enterprise/powershell/add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe) | 修改内容 |
 | 7/25/2019 | [将核心数据移动到新的 Office 365 数据中心信息](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 修改内容 |
 | 7/25/2019 | [如何请求数据移动](/Office365/Enterprise/request-your-data-move) | 修改内容 |
+
+
+## <a name="week-of-july-29-2019"></a>2019年7月29日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 7/29/2019 | [Office 365 Germany 终结点](/Office365/Enterprise/office-365-germany-endpoints) | 修改内容 |
+| 7/29/2019 | [Office 365 美国政府 DoD 终结点](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 修改内容 |
+| 7/29/2019 | [Office 365 美国政府版 (GCC) 高终结点](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 修改内容 |
+| 7/29/2019 | [由世纪互联运营的 Office 365 的 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 修改内容 |
+| 7/29/2019 | [Office 365 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges) | 修改内容 |

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: '这篇文章面向对象为管理员。 用户是否从其 Outlook 邮箱中永久删除了项目？ 用户希望它们回退, 但无法恢复它们。 如果清除的项目尚未从用户的邮箱中永久删除, 则可以恢复这些清除的项目。 '
-ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203651"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782612"
 ---
 <a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>恢复用户邮箱中已删除的项目 - 管理员帮助
@@ -48,7 +48,7 @@ ms.locfileid: "35203651"
     
 2. 在左上角的 Office ![365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)中选择应用启动器图标, 然后单击 "**管理**"。
     
-3. 在 Office 365 管理中心的左侧导航栏中, 展开 "**管理中心**", 然后单击 " **Exchange**"。
+3. 在 Microsoft 365 管理中心的左侧导航中, 展开 "**管理中心**", 然后单击 " **Exchange**"。
     
     ![管理中心列表](media/7d308eb7-ba63-4156-a845-3770facc5de4.PNG)
   
@@ -85,7 +85,7 @@ ms.locfileid: "35203651"
     
 2. 在左上角的 Office ![365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)中选择应用启动器图标, 然后单击 "**管理**"。
     
-3. 在 Office 365 管理中心的左侧导航中, 展开 "**管理员**", 然后单击 " **Exchange**"。
+3. 在 Microsoft 365 管理中心的左侧导航中, 展开 "**管理员**", 然后单击 " **Exchange**"。
     
 4. 在 Exchange 管理中心中, 单击 "**合规性管理**", 单击 "**就地&amp;电子数据展示保留**", 然后单击](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)"**新建**![添加图标"。
     

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: '了解用于管理 Office 365 用户的工具, 以及您可以使用的工具取决于管理用户身份的方式。 '
-ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102440"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490735"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>用于管理 Office 365 帐户的工具
 
@@ -53,7 +53,7 @@ ms.locfileid: "34102440"
   
 - 目录同步软件需要安装在本地环境中的服务器上, 以连接 Office 365 和本地目录之间的标识。
     
-- 任何目录同步选项 (包括 SSO 选项) 都需要您的本地目录属性满足标准。 在目录中使用哪些属性以及需要清除的内容 (如果有) 的具体说明,[准备通过目录同步将用户预配到 Office 365](prepare-for-directory-synchronization.md)。 有关如何使用 IdFix 自动执行目录清理的说明, 请参阅[安装和运行 Office 365 IdFix 工具](install-and-run-idfix.md)。 
+- 任何目录同步选项 (包括 SSO 选项) 都需要您的本地目录属性满足标准。 在目录中使用哪些属性以及需要清除的内容 (如果有) 的具体说明,[准备通过目录同步将用户预配到 Office 365](prepare-for-directory-synchronization.md)。 有关如何使用 IdFix 自动执行目录清理的说明, 请参阅[下载并运行 Office 365 IdFix 工具](install-and-run-idfix.md)。 
     
 - 规划如何创建 Office 365 帐户。
     

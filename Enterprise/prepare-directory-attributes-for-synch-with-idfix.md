@@ -16,17 +16,18 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: 提供有关如何使用 IdFix 在同步到 Office 365 之前准备和清理本地目录的说明。
-ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162365"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490785"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>使用 IdFix 工具准备好与 Office 365 进行同步的目录属性
 本主题包含有关运行 IdFix 工具的详细说明、可能遇到的一些常见错误、建议的修补程序、示例和最佳做法, 以了解在遇到大量错误时应采取的操作。
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>使用 IdFix GUI 修复目录中的错误
+
 [运行 Office 365 IdFix 工具](install-and-run-idfix.md)以搜索目录中的问题, 然后按照本主题中所述修复 GUI 中的错误。 如果该工具返回一个空白表, 则不会发现任何错误。 如果目录中存在很多问题, 则当该工具返回错误时, 可能会很困难。 解决此问题的一种方法是先修复一种类型的所有错误, 然后再移到下一种类型。 
   
 1. 在开始进行更改之前, 请查看 IdFix 提供的建议。

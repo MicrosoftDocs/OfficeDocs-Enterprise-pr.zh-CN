@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007、ProClarity 和 SharePoint Server 2007 已到达支持的结束。 阅读本文以规划您的 BI 解决方案升级。
-ms.openlocfilehash: fb4efa9bb98ba7460b777d8974f8c8888a5d7046
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9fde75724bf82a37f98fd98ddda1017198b850dd
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071058"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782532"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 停止提供支持路线图
 
@@ -27,7 +27,7 @@ Office 2007 服务器和应用程序已达到其支持的结尾, 包括您可能
   
 |**Microsoft BI 应用程序**|**日期支持结束**|
 |:-----|:-----|
-|ProClarity Analytics Server 6.3 Service Pack 3  <br/> ProClarity Desktop Professional 6.3  <br/> ProClarity SharePoint Viewer 6.3  <br/> |2017 年 7 月 11 日  <br/> |
+|ProClarity Analytics Server 6.3 Service Pack 3  <br/> ProClarity Desktop Professional 6。3  <br/> ProClarity SharePoint Viewer 6。3  <br/> |2017 年 7 月 11 日  <br/> |
 |SharePoint Server 2007 Service Pack 3  <br/> |2017 年 10 月 10 日  <br/> |
 |PerformancePoint Server 2007 Service Pack 3  <br/> |2018 年 1 月 9 日  <br/> |
    
@@ -53,10 +53,10 @@ Microsoft 产品 (例如 PerformancePoint Server 2007 SP3、ProClarity 软件和
   
 |**如果您使用的是 .。。**|**浏览这些选项 .。。**|**请记住这一点 .。。**|
 |:-----|:-----|:-----|
-| PerformancePoint Server 2007 监视&amp;分析功能, 包括:  <br/><br/>  PerformancePoint 监控服务器  <br/><br/>  PerformancePoint 仪表板设计器  <br/><br/>  SharePoint Services 的仪表板查看器 (用于呈现 PerformancePoint 仪表板、记分卡和报表)  <br/> |**Excel Online 中的 excel**(在云中或本地)。 有关概述, 请参阅[BI 功能在 Excel 和 Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/><br/> **POWER BI**(在云中或本地)。 有关概述, 请参阅[什么是 POWER BI？](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services**(本地)。 有关概述, 请参阅[SQL Server Reporting Services (SSRS): 创建、部署和管理移动和分页报告](https://go.microsoft.com/fwlink/?linkid=841342) <br/><br/> **PerformancePoint Services**(本地)。 有关概述, 请参阅[什么是针对 PerformancePoint Services 的新增功能 (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343) <br/> |Excel 和 Excel Online 可用作联机 (基于云的) 解决方案或本地解决方案。 Excel Online 的 Excel 功能可以满足许多报告和仪表板的需求。  <br/><br/> Power BI 可用作联机或本地解决方案。 Power BI 不包括在 Office 365 中, 但你可以开始使用 Power BI 免费版, 然后根据你的数据使用和业务需求升级到 Power BI Pro。 <br/> <br/> Reporting Services 和 PerformancePoint Services 都是本地解决方案。  <br/><br/> PerformancePoint Services 在 SharePoint Server 2010、SharePoint Server 2013 和 SharePoint Server 2016 中可用。 <br/> <br/> PerformancePoint Server 2007 中提供的某些功能和报告类型在 Excel、Power BI、Reporting Services 或 PerformancePoint Services 中不可用。 你将需要查看可用的功能, 以确定满足你的业务需求的最佳解决方案。  <br/> |
-| ProClarity 软件, 包括: <br/> <br/>  ProClarity Desktop Professional  <br/> <br/> ProClarity Analytics Server  <br/> <br/> ProClarity SharePoint Viewer  <br/> |**与 Microsoft 合作伙伴合作**, 确定最符合您的需求的解决方案。 访问[Microsoft 合作伙伴中心](https://go.microsoft.com/fwlink/?linkid=841249) <br/><br/> 您还可以考虑使用 Excel Online、Power BI、SQL Server Reporting Services 或 PerformancePoint Services。  <br/> |其他 Microsoft 产品 (包括 Excel、Power BI、Reporting Services 和 PerformancePoint Services) 中提供了在 ProClarity 软件中可用的几种 (但并非全部) 的特性和功能。  <br/> |
-|SharePoint Server 2007 Kpi (也称为 MOSS Kpi)  <br/> |Excel **Services 的 excel**(Excel Services 现在称为 Excel Online)。 有关概述, 请参阅[excel 和 Excel Services 中的商业智能 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |使用 SharePoint Server 2007 创建的 MOSS Kpi 可在 SharePoint Server 2010、SharePoint Server 2013 和 SharePoint Server 2016 中使用。但是, 不能创建新的 MOSS Kpi。  <br/> |
-|Excel 2007  <br/> |**Excel Online 中的 excel**(在云中或本地)。 有关概述, 请参阅[BI 功能在 Excel 和 Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/><br/> **POWER BI**(在云中或本地)。 有关概述, 请参阅[什么是 POWER BI？](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Excel Online 和 Power BI 这两个 Excel 都为您的组织提供基于云的和内部部署解决方案, 并支持多种数据源。  <br/> |
+| PerformancePoint Server 2007 监视&amp;分析功能, 包括:  <br/><br/>  PerformancePoint 监控服务器  <br/><br/>  PerformancePoint 仪表板设计器  <br/><br/>  SharePoint Services 的仪表板查看器 (用于呈现 PerformancePoint 仪表板、记分卡和报表)  <br/> |**Excel 在浏览器中使用 excel**(在云中或本地)。 有关概述, 请参阅[BI 功能在 Excel 和 Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/><br/> **POWER BI**(在云中或本地)。 有关概述, 请参阅[什么是 POWER BI？](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services**(本地)。 有关概述, 请参阅[SQL Server Reporting Services (SSRS): 创建、部署和管理移动和分页报告](https://go.microsoft.com/fwlink/?linkid=841342) <br/><br/> **PerformancePoint Services**(本地)。 有关概述, 请参阅[什么是针对 PerformancePoint Services 的新增功能 (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343) <br/> |Excel 可用作联机 (基于云) 解决方案或本地解决方案。 Excel 的功能可以满足许多报告和仪表板需求。  <br/><br/> Power BI 可用作联机或本地解决方案。 Power BI 不包括在 Office 365 中, 但你可以开始使用 Power BI 免费版, 然后根据你的数据使用和业务需求升级到 Power BI Pro。 <br/> <br/> Reporting Services 和 PerformancePoint Services 都是本地解决方案。  <br/><br/> PerformancePoint Services 在 SharePoint Server 2010、SharePoint Server 2013 和 SharePoint Server 2016 中可用。 <br/> <br/> PerformancePoint Server 2007 中提供的某些功能和报告类型在 Excel、Power BI、Reporting Services 或 PerformancePoint Services 中不可用。 你将需要查看可用的功能, 以确定满足你的业务需求的最佳解决方案。  <br/> |
+| ProClarity 软件, 包括: <br/> <br/>  ProClarity Desktop Professional  <br/> <br/> ProClarity Analytics Server  <br/> <br/> ProClarity SharePoint Viewer  <br/> |**与 Microsoft 合作伙伴合作**, 确定最符合您的需求的解决方案。 访问[Microsoft 合作伙伴中心](https://go.microsoft.com/fwlink/?linkid=841249) <br/><br/> 您还可以考虑在浏览器、Power BI、SQL Server Reporting Services 或 PerformancePoint Services 中使用 excel 和 Excel。  <br/> |其他 Microsoft 产品 (包括 Excel、Power BI、Reporting Services 和 PerformancePoint Services) 中提供了在 ProClarity 软件中可用的几种 (但并非全部) 的特性和功能。  <br/> |
+|SharePoint Server 2007 Kpi (也称为 MOSS Kpi)  <br/> |Excel **Services 的 excel**。 有关概述, 请参阅[excel 和 Excel Services 中的商业智能 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |使用 SharePoint Server 2007 创建的 MOSS Kpi 可在 SharePoint Server 2010、SharePoint Server 2013 和 SharePoint Server 2016 中使用。但是, 不能创建新的 MOSS Kpi。  <br/> |
+|Excel 2007  <br/> |**Excel**(在云中或本地)。 有关概述, 请参阅[BI 功能在 Excel 和 Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/><br/> **POWER BI**(在云中或本地)。 有关概述, 请参阅[什么是 POWER BI？](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Excel 和 Power BI 都为你的组织提供基于云的解决方案和内部部署解决方案, 并支持多种数据源。  <br/> |
    
 ### <a name="what-if-i-need-help-selecting-a-solution"></a>如果我需要有关选择解决方案的帮助, 该怎么办？
 
@@ -72,38 +72,38 @@ Microsoft 产品 (例如 PerformancePoint Server 2007 SP3、ProClarity 软件和
   
 |**选项**|**在云中还是内部部署？**|
 |:-----|:-----|
-|[Excel Online 中的 Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |两者都有  <br/> |
+|[Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |两者都有  <br/> |
 |[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |两者都有  <br/> |
 |[Reporting Services](#use-reporting-services-on-premises) <br/> |仅本地  <br/> |
 |[PerformancePoint 服务](#use-performancepoint-services-on-premises) <br/> |仅本地  <br/> |
    
-### <a name="use-excel-with-excel-online-in-the-cloud-or-on-premises"></a>将 Excel 与 Excel Online (在云中或本地) 结合使用
+### <a name="use-excel-in-the-cloud-or-on-premises"></a>使用 Excel (在云中或本地)
 
-使用 Excel Online (也称为 Excel Services in SharePoint Server), 用户可以在浏览器窗口中查看和使用工作簿, 即使其计算机上未安装 Excel 也是如此。 您可以使用 Excel 创建报表、记分卡和仪表板, 然后使用 Excel Online 与其他人共享工作簿, 无论您是使用 SharePoint Online 作为 Office 365 的一部分还是本地 SharePoint Server。 此外, 您还可以使用存储在本地或在云中的数据, 这使您能够使用多种数据源。
+使用 Excel (也称为 "Excel Services") 在 SharePoint Server 中, 用户可以在浏览器窗口中查看和使用工作簿, 即使其计算机上未安装 Excel 也是如此。 您可以使用 Excel 创建报表、记分卡和仪表板, 然后使用 Excel 在浏览器中与其他人共享工作簿, 无论您是使用 SharePoint Online 作为 Office 365 的一部分还是本地 SharePoint Server。 此外, 您还可以使用存储在本地或在云中的数据, 这使您能够使用多种数据源。
   
 下表比较了使用 Excel 与 Office 365 结合使用 Excel 和 SharePoint Server 的主要优势, 并提供了以下附加信息。
   
 |**[使用 Office 365 的 Excel (在云中)](#excel-with-office-365-in-the-cloud)**|**[Excel 与 SharePoint Server (本地)](#excel-with-sharepoint-server-on-premises)**|
 |:-----|:-----|
-|**您将获得最新版本的 Excel**。 使用 Office 365, 你可以获得最新版本的 Excel, 其中包括功能强大的新图表类型、快速轻松地创建图表和表格以及支持更多数据源的功能。 <br/> <br/> **安装更简单**。 Excel Online 包含在 Office 365 for business 中, 因此不会对你的部件进行繁重的提升。 注册并登录, 你将能够更快、更高效地运行, 而不是升级你的本地服务器。 <br/> <br/> **用户可以随时随地访问他们的工作簿**。 用户可以使用其计算机、智能手机和平板电脑, 从任何位置安全地查看工作簿。 <br/> <br/> **还有更多**! 查看[Excel 和 Office 365 中的 BI 功能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/> |**管理全局设置**。 作为 SharePoint 管理员, 您可以指定全局设置, 如安全性、负载平衡、会话管理、工作簿缓存和外部数据连接。 <br/> <br/> **可以将 Excel services 与 PerformancePoint services 结合使用**。 您可以将 Excel Services 和 PerformancePoint Services 配置为 SharePoint Server 安装的一部分, 并在 PerformancePoint 仪表板中包括 Excel Services 报表。 <br/> <br/> **还有更多**! 请参阅[在 excel 和 Excel Services 中的商业智能 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |
+|**您将获得最新版本的 Excel**。 使用 Office 365, 你可以获得最新版本的 Excel, 其中包括功能强大的新图表类型、快速轻松地创建图表和表格以及支持更多数据源的功能。 <br/> <br/> **安装更简单**。 Excel 包含在 Office 365 for business 中, 因此不会对你的部件进行繁重的提升。 注册并登录, 你将能够更快、更高效地运行, 而不是升级你的本地服务器。 <br/> <br/> **用户可以随时随地访问他们的工作簿**。 用户可以使用其计算机、智能手机和平板电脑, 从任何位置安全地查看工作簿。 <br/> <br/> **还有更多**! 查看[Excel 和 Office 365 中的 BI 功能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/> |**管理全局设置**。 作为 SharePoint 管理员, 您可以指定全局设置, 如安全性、负载平衡、会话管理、工作簿缓存和外部数据连接。 <br/> <br/> **可以将 Excel services 与 PerformancePoint services 结合使用**。 您可以将 Excel Services 和 PerformancePoint Services 配置为 SharePoint Server 安装的一部分, 并在 PerformancePoint 仪表板中包括 Excel Services 报表。 <br/> <br/> **还有更多**! 请参阅[在 excel 和 Excel Services 中的商业智能 (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |
    
 #### <a name="excel-with-office-365-in-the-cloud"></a>使用 Office 365 的 Excel (在云中)
 
-如果您转到 Office 365, 您将拥有最新的服务和应用程序, 包括 Excel 2016 和 Excel Online。 PerformancePoint Services 在 Office 365 中不可用, 因此你将使用 Excel 工作簿或其他报表替换 PerformancePoint 仪表板内容。 好消息是, Excel 2016 具有大量新图表类型, 在 Excel 中创建令人耳目一新的仪表板比以往更轻松。 同时, 还会定期添加新功能。 若要了解详细信息, 请参阅[Excel 2016 For Windows 中的新增功能](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)。
+如果您转到 Office 365, 您将拥有最新的服务和应用程序, 包括 Excel 2016。 PerformancePoint Services 在 Office 365 中不可用, 因此你将使用 Excel 工作簿或其他报表替换 PerformancePoint 仪表板内容。 好消息是, Excel 2016 具有大量新图表类型, 在 Excel 中创建令人耳目一新的仪表板比以往更轻松。 同时, 还会定期添加新功能。 若要了解详细信息, 请参阅[Excel 2016 For Windows 中的新增功能](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)。
   
 当您购买50个座位或更多的 Office 365 时, Microsoft FastTrack 团队可以帮助您进行设置。 若要了解详细信息, 请访问[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)。
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>Excel 与 SharePoint Server (本地)
 
-如果升级到较新版本的 SharePoint, 则可以将 Excel 用于 Excel Services 或 Excel Online, 如下所示:
+如果升级到较新版本的 SharePoint, 则可以使用 excel Services 或浏览器中的 Excel, 如下所示:
   
 - SharePoint Server 2010 中的 Excel Services
     
 - SharePoint Server 2013 中的 Excel Services
     
-- Excel Online (Office Online Server 的一部分) 独立于 SharePoint Server 2016 安装
+- Excel (它是 Office Online Server 的一部分) 独立于 SharePoint Server 2016 安装
     
-您还可以在新版本的 SharePoint Server 中配置 PerformancePoint Services, 并将其与 Excel Services 或 Excel Online 一起使用。
+您还可以在新版本的 SharePoint Server 中配置 PerformancePoint Services, 并将其与 Excel 一起使用。
   
 若要了解有关你的 SharePoint 升级选项的详细信息, 请参阅[Sharepoint Server 2007 end of Support 路线图](sharepoint-2007-end-of-support.md)。
   

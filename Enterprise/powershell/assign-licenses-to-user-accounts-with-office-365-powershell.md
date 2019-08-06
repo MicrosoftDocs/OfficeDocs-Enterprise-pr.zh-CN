@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 向用户帐户分配许可证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/18/2019
+ms.date: 08/05/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,20 +17,23 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: 说明如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
-ms.openlocfilehash: 91fe9f3a14663ebb9adb61700de3004edd236e0c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
+ms.openlocfilehash: c244e60016cb04008e27e2df444703ac7e41db12
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069278"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198644"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 向用户帐户分配许可证
 
-**摘要:** 说明如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
+**摘要:** 如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
   
 用户在向其帐户分配许可计划中的许可证之前, 不能使用任何 Office 365 服务。 您可以使用 Office 365 PowerShell 将许可证快速分配给未经许可的帐户。 
 
+>[!Note]
+>必须为用户帐户分配一个位置。 您可以从 Microsoft 365 管理中心或 PowerShell 中的用户帐户的属性中执行此操作。
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -44,6 +47,20 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
 接下来, 获取要向其添加许可证 (也称为用户主体名称 (UPN)) 的帐户的登录名。
+
+接下来, 请确保已为用户帐户分配了使用位置。
+
+```
+Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
+```
+
+如果没有分配的使用位置, 则可以使用以下命令分配一个:
+
+```
+$userUPN="<user sign-in name (UPN)>"
+$userLoc="<ISO 3166-1 alpha-2 country code>"
+Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
+```
 
 最后, 指定用户登录名和许可证计划名称, 并运行这些命令。
 
@@ -68,7 +85,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
-    
+
 只能将许可证分配给其**UsageLocation**属性设置为有效的 ISO 3166-1 alpha-2 国家/地区代码的用户帐户。 例如，US 代表美国，FR 代表法国。 某些 Office 365 服务在某些国家/地区不可用。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。
     
 若要查找不具有**UsageLocation**值的帐户, 请运行此命令。

@@ -3,7 +3,7 @@ title: 数据移动期间和数据移动之后
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作, 对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时, 无需执行任何操作。 数据传输和验证在后台进行, 并对用户影响最小。
-ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067728"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786227"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -38,7 +38,7 @@ ms.locfileid: "34067728"
 |韩国  <br/> |2018年10月31日  <br/> |
 |英国  <br/> |2019年9月15日  <br/> |
 |法国  <br/> |2020年9月15日  <br/> |
-|阿拉伯联合酋长国  <br/> |公告  <br/> |
+|阿拉伯联合酋长国  <br/> |2022年2月1日  <br/> |
 |南非  <br/> |公告  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
@@ -74,7 +74,7 @@ ms.locfileid: "34067728"
     
 - Office 365 视频服务
     
-- Office Online
+- 浏览器中的 Office
     
 - Office 365 ProPlus
     

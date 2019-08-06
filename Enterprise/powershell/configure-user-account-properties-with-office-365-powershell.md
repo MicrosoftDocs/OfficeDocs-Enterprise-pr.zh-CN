@@ -15,18 +15,18 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: '摘要: 使用 Office 365 PowerShell 配置 Office 365 租户中单个或多个用户帐户的属性。'
-ms.openlocfilehash: 3fdf5c4c5dbb4c44a3c91d343bd77810a1411a20
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069234"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782602"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>使用 Office 365 PowerShell 配置用户帐户的属性
 
  **摘要:** 使用 Office 365 PowerShell 配置 Office 365 租户中单个或多个用户帐户的属性。
   
-虽然您可以使用 Office 365 管理中心来配置 Office 365 租户的用户帐户的属性, 但您也可以使用 Office 365 PowerShell 并执行 Office 365 管理中心无法执行的某些操作。
+虽然您可以使用 Microsoft 365 管理中心来配置 Office 365 租户的用户帐户的属性, 但您也可以使用 Office 365 PowerShell 并执行管理中心无法执行的某些操作。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -38,35 +38,35 @@ ms.locfileid: "34069234"
 
 使用 **-ObjectID**参数标识帐户, 并使用其他参数设置或更改特定属性。 下面列出了最常见的参数。
   
-- -部门 "\<部门 name>"
+- -部门 "\<部门名称>"
     
-- -DisplayName "\<Full user name>"
+- -DisplayName "\<full user name>"
     
 - -FacsimilieTelephoneNumber "\<fax number>"
     
-- -GivenName "\<User first name>"
+- -GivenName "\<user first name>"
     
-- -姓 "\<User last name>"
+- -姓 "\<user last name>"
     
-- -移动电话\<"移动电话 number>"
+- -移动 "\<移动电话号码>"
     
-- -JobTitle "\<job title>"
+- -JobTitle "\<职务>"
     
 - -PreferredLanguage "\<language>"
     
-- -StreetAddress "\<街道 address>"
+- -StreetAddress "\<街道地址>"
     
-- -市/\<县 "city name>"
+- -市/\<县 "城市名称>"
     
 - -State "\<state name>"
     
-- -邮政编码 "\<邮政 code>"
+- -邮政编码 "\<>"
     
-- -国家/\<地区国家/地区的 "name>"
+- -国家/\<地区 "国家/地区名称>"
     
-- -TelephoneNumber "\<Office phone number>"
+- -TelephoneNumber "\<office 电话号码>"
     
-- -UsageLocation "\<2 个字符的国家或地区 code>"
+- -UsageLocation "\<2 个字符的国家或地区代码>"
     
     这是 ISO 3166-1 alpha-2 (A2) 两个字母的国家/地区代码。
     
@@ -151,37 +151,37 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
 
 您可以使用 **-UserPrincipalName**参数标识帐户, 并使用其他参数设置或更改特定属性。 下面是最常见的参数的列表。
   
-- -市/\<县 "city name>"
+- -市/\<县 "城市名称>"
     
-- -国家/\<地区国家/地区的 "name>"
+- -国家/\<地区 "国家/地区名称>"
     
-- -部门 "\<部门 name>"
+- -部门 "\<部门名称>"
     
-- -DisplayName "\<Full user name>"
+- -DisplayName "\<full user name>"
     
-- -Fax "\<fax number>"
+- -Fax "\<fax 号码>"
     
-- -FirstName "\<User first name>"
+- -FirstName "\<user first name>"
     
-- -LastName "\<User last name>"
+- -LastName "\<user last name>"
     
-- -MobilePhone "\<移动电话 number>"
+- -MobilePhone "\<移动电话号码>"
     
-- -Office "\<office location>"
+- -Office "\<office 位置>"
     
-- -PhoneNumber "\<Office phone number>"
+- -PhoneNumber "\<office 电话号码>"
     
-- -邮政编码 "\<邮政 code>"
+- -邮政编码 "\<>"
     
 - -PreferredLanguage "\<language>"
     
 - -State "\<state name>"
     
-- -StreetAddress "\<街道 address>"
+- -StreetAddress "\<街道地址>"
     
 - -Title "\<title name>"
     
-- -UsageLocation "\<2 个字符的国家或地区 code>"
+- -UsageLocation "\<2 个字符的国家或地区代码>"
     
     这是 ISO 3166-1 alpha-2 (A2) 两个字母的国家/地区代码。
     

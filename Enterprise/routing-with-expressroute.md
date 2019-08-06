@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 若要使用 Azure ExpressRoute 正确了解到 Office 365 的路由流量, 您需要对核心 ExpressRoute 路由要求和 ExpressRoute 电路和路由域进行牢固的抓住。 这些指南展示了使用适用于 Office 365 客户将依赖的 ExpressRoute 的基础知识。
-ms.openlocfilehash: 60277e9d9f2a5b2fc92465b57b5aa08148b604f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070998"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722711"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>通过适用于 Office 365 的 ExpressRoute 进行路由
 
@@ -230,7 +230,7 @@ Microsoft 的数据中心、网络和应用程序体系结构旨在采用全局�
   
 ## <a name="related-topics"></a>相关主题
 
-[与 Office 365 的网络连接](network-connectivity.md)
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
   
 [Azure ExpressRoute for Office 365](azure-expressroute.md)
   

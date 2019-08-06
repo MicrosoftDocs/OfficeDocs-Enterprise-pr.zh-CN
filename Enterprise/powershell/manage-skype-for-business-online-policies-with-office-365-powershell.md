@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: '摘要: 使用 Office 365 PowerShell, 通过策略管理 Skype for business Online 用户帐户属性。'
-ms.openlocfilehash: f19e262947b40b3e61dc8376b8e2e9c8ec984ff7
-ms.sourcegitcommit: c115a3554647167e3770dda6b69dbf5c5de11ed7
+ms.openlocfilehash: ed09b117d2de805e2ae28f05d734ced303db2405
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253682"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782592"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>管理 Skype 与 Office 365 PowerShell 的在线业务策略
 
@@ -62,7 +62,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-在此示例中, 此策略中的值确定在与联合用户通信时可使用的功能或无法执行的操作。 例如, EnableOutsideAccess 属性必须设置为 True, 用户才能够与组织外部的人员进行通信。 请注意, 此属性不会显示在 Office 365 管理中心中。 相反, 该属性将根据您所做的其他选择自动设置为 True 或 False。 其他两个感兴趣的属性为:
+在此示例中, 此策略中的值确定在与联合用户通信时可使用的功能或无法执行的操作。 例如, EnableOutsideAccess 属性必须设置为 True, 用户才能够与组织外部的人员进行通信。 请注意, 此属性不会显示在 Microsoft 365 管理中心中。 相反, 该属性将根据您所做的其他选择自动设置为 True 或 False。 其他两个感兴趣的属性为:
   
 - **EnableFederationAccess** 指示用户是否可以与联合域的用户通信。
     

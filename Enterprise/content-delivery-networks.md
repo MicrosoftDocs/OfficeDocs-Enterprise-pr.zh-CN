@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息了解 Office 365 如何使用内容传递网络 (Cdn) 来提高性能。
-ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068018"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722661"
 ---
 # <a name="content-delivery-networks-cdns"></a>内容传递网络 (Cdn)
 
@@ -48,6 +48,11 @@ Cdn 帮助以多种方式改进云服务性能:
 ## <a name="the-office-365-cdn"></a>Office 365 CDN
 
 内置 Office 365 内容传送网络 (CDN) 允许 Office 365 管理员为其组织的 SharePoint Online 页面提供更好的性能, 具体方法是缓存静态资产, 使其更接近请求的浏览器, 这有助于加快下载并降低延迟。 Office 365 CDN 使用[HTTP/2 协议](https://en.wikipedia.org/wiki/HTTP/2)改进了压缩和下载速度。
+
+> [!NOTE]
+> 对 Office 365 CDN 的使用限制:
+> + Office 365 CDN 仅适用于**生产**(全球) 云中的租户。 美国政府、中国和德国云中的租户目前不支持 Office 365 CDN。
+> + Office 365 CDN 目前不支持使用自定义或 "虚" 域配置的租户。 如果已使用主题 "[向 Office 365 添加域](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)" 中的说明向租户添加了域, 则当您尝试访问 CDN 中的内容时, OFFICE 365 CDN 将返回错误。
 
 Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即_源_）托管静态资产，并从全局高速网络提供这些资产。 可以添加**公共**源、**私有**源或同时添加这两种源，具体取决于想要托管在 Office 365 CDN 中的内容种类。
 
@@ -182,7 +187,7 @@ Fqdn 列表以及它们如何利用 Cdn 在一段时间内的变化。 请参阅
 
 [Office 365 网络连接原则](https://aka.ms/o365networkingprinciples)
 
-[与 Office 365 的网络连接](network-connectivity.md)
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
 
 [管理 Office 365 终结点](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 

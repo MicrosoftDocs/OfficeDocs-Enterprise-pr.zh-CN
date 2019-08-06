@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: '摘要: 介绍了客户端计算机如何连接到 Office 365 租户, 具体取决于客户端计算机和 Office 365 租户数据中心的位置。'
-ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068198"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722691"
 ---
 # <a name="client-connectivity"></a>客户端连接
 
@@ -130,4 +130,4 @@ Exchange Online 将进一步执行操作。 将客户端计算机连接到最接
 
 [管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[与 Office 365 的网络连接](network-connectivity.md)
+[评估 Office 365 网络连接](assessing-network-connectivity.md)

@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些企业网络限制对通用 internet 位置的访问, 或者包括大量 backhaul 或网络流量的处理。 为了确保这些网络上的计算机可以访问 Office 365, 网络和代理管理员需要管理组成 Office 365 终结点列表的 Fqdn、Url 和 IP 地址的列表。 需要将它们添加到直接路由、代理旁路、和/或防火墙规则和 PAC 文件中, 以确保网络请求能够到达 Office 365。
-ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067168"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782472"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -164,7 +164,7 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 Office 365 和其他 Microsoft 服务使用几种第三方服务 (如 Akamai 和 MarkMonitor) 来改进 Office 365 体验。 为了让你能够获得最佳体验, 我们可能会在将来更改这些服务。 第三方域可以承载内容 (如 CDN), 也可以托管服务, 例如地理流量管理服务。 当前使用的某些服务包括:
   
-当您看到包含* \*。 nsatc.net*的请求时, [MarkMonitor](https://www.markmonitor.com/)正在使用中。 此服务提供了域名称保护和监控, 以防止恶意行为。
+当您看到包含* \*. nsatc.net*的请求时, [MarkMonitor](https://www.markmonitor.com/)正在使用中。 此服务提供了域名称保护和监控, 以防止恶意行为。
   
 当您看到* \*exacttarget.com*的请求时, [ExactTarget](https://www.marketingcloud.com/)正在使用中。 此服务提供电子邮件链接管理, 并针对恶意行为进行监控。
   
@@ -194,7 +194,7 @@ Office 365 套件分为主要的服务领域。 可以有选择地为连接启�
 |**Exchange** <br/> |Exchange Online 和 Exchange Online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online 和 OneDrive for Business <br/> |
 |**Skype for Business Online 和 Microsoft Teams** <br/> |Skype for Business 和 Microsoft 团队 <br/> |
-|**常见** <br/> |Office 365 Pro Plus、Office Online、Azure AD 和其他常见网络终结点 <br/> |
+|**常见** <br/> |Office 365 Pro Plus、Office in 浏览器、Azure AD 和其他常见网络终结点 <br/> |
 
 除了基本 internet 服务之外, 还提供了仅用于集成功能的第三方服务。 虽然这些功能是集成所必需的, 但它们在 Office 365 终结点文章中被标记为可选, 这意味着当终结点不可访问时, 服务的核心功能将继续正常运行。 所需的任何网络终结点都将具有所需的属性设置为 true。 任何可选的网络终结点都将把必需的属性设置为 false, notes 属性将详细介绍在连接被阻止时应会出现的缺少的功能。
   

@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: 新式身份验证是标识管理的一种方法, 可提供更安全的用户身份验证和授权。 它可用于本地的 Skype for Business server 本地和 Exchange server 的混合部署, 以及拆分域 Skype for Business 混合。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档 (如 Outlook 和 Skype 客户端) 信息。
-ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
-ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
+ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34404214"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782452"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件
 
@@ -88,7 +88,7 @@ ms.locfileid: "34404214"
     
   - 您的 SIP 域作为 Office 365 中的联合域添加
     
-  - 所有 SFB 前端必须具有到 internet 的出站连接, 在[office 125 url 和 IP 的 "Microsoft 365 通用和 Office Online" 部分的行56和365中列出了 office 365 身份验证 url (tcp 443) 和知名证书根 crl (tcp 80)地址范围](urls-and-ip-address-ranges.md)。
+  - 所有 SFB 前端必须具有到 internet 的出站连接, 到 office [125 url 和 IP 地址的 "Microsoft 365 通用和 Office" 部分的 "office 365 身份验证 url (tcp 443)" 和 "知名证书根 crl (tcp 80)" 部分56中列出。区域](urls-and-ip-address-ranges.md)。
   
 - **混合 Office 365 环境中的 Skype for business 本地部署**
   - 一个 Skype for business Server 2019 部署, 其中包含运行 Skype for Business Server 2019 的所有服务器。
