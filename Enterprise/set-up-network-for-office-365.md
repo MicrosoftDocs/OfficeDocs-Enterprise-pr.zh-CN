@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：请参阅以下文章，了解如何设置 Office 365 网络。
-ms.openlocfilehash: 6fb1d4d441719f61886b9263b30cdf27cbe7eaf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070818"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722681"
 ---
 # <a name="set-up-your-network-for-office-365"></a>设置 Office 365 网络
 
@@ -38,7 +38,7 @@ Office 365 载入的一个重要部分是首先要确保将网络和 Internet �
 
 - [Office 365 网络连接概述](office-365-networking-overview.md)
 - [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
-- [与 Office 365 的网络连接](network-connectivity.md)
+- [评估 Office 365 网络连接](assessing-network-connectivity.md)
 
 有关增强性能的建议，请参阅 [Office 365 网络计划和性能优化](network-planning-and-performance.md)。
 

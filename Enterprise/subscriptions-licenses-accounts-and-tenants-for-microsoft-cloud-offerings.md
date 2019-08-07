@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 9df81d14cbd18246bf10e66002d9042a3b3d9384
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 29b9954467e2d6dd7ece2e33376f28882152693c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070428"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782512"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -150,7 +150,7 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Office 365、
 |**Intune/EMS** <br/> |向你的组织添加 Office 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |NA  <br/> |向你的组织添加 Dynamics 365 订阅。  <br/> |
 |**Dynamics 365** <br/> |向你的组织添加 Office 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |向你的组织添加 Intune/EMS 订阅。  <br/> |NA  <br/> |
    
-为组织添加基于 Microsoft SaaS 的服务订阅的简便方法是通过 Office 365 Admin 中心来完成：
+为组织添加基于 Microsoft SaaS 的服务订阅的简便方法是通过管理中心来完成：
   
 1. 使用全局管理员帐户登录 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
@@ -158,7 +158,7 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Office 365、
     
 3. 在“购买服务”**** 页上，购买你的新订阅。
     
-Office 365 管理中心将 Office 365 订阅的组织和 Azure AD 租户分配到基于 SaaS 的云产品的新订阅。
+管理中心将 Office 365 订阅的组织和 Azure AD 租户分配到基于 SaaS 的云产品的新订阅。
   
 使用与你的 Office 365 订阅相同的组织和 Azure AD 租户添加 Azure 订阅：
   
@@ -168,8 +168,8 @@ Office 365 管理中心将 Office 365 订阅的组织和 Azure AD 租户分配�
     
 3. 在“添加订阅”**** 页上，选择一项服务并完成付款信息和协议。
     
-如果分别购买 Azure 和 Office 365 订阅并且希望从 Azure 订阅访问 Office 365 Azure AD 租户，请参阅[将 Office 365 租户与 Azure 订阅关联](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription)中的说明。
-  
+如果分别购买 Azure 和 Office 365 订阅并且希望从 Azure 订阅访问 Office 365 Azure AD 租户，请参阅[将 Azure 订阅关联或添加到 Azure Active Directory 租户](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的说明。
+ 
 ## <a name="see-also"></a>另请参阅
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)

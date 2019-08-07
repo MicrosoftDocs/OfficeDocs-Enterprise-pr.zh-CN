@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 为了帮助你更好地标识和区分 Office 365 网络流量，我们推出了一项用于发布 Office 365 终结点的新 Web 服务，以方便你更轻松地评估、配置并掌握最新变更。这项新 Web 服务取代了目前可用的 XML 可下载文件。
-ms.openlocfilehash: fcef7a6a175b043639275fedc77faaa689f0e7d5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 8571a91e1ede5d281269b7209f4ddd69a70d586f
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069728"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786247"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务
 
@@ -511,55 +511,15 @@ else:
 - 将响应 REST 项之一或其他列中的新命名特性添加到响应 CSV。
 - 添加新 Web 方法，其使用旧客户端未调用的新名称。
 
-## <a name="office-365-endpoint-functions-module"></a>Office 365 终结点功能模块
+## <a name="exporting-a-proxy-pac-file"></a>导出代理 PAC 文件
 
-Microsoft 托管 REST 服务以获取最新的 Office 365 服务的 URL。  若要能够将 URL 用作集合，可以结合使用此方法及一些有用的 cmdlet。
-
-### <a name="calling-the-rest-service"></a>调用 REST 服务
-
-若要使用此模块，只需将模块文件 [O365EndpointFunctions.psm1](https://github.com/samurai-ka/PS-Module-O365EndpointService/blob/master/O365EndpointFunctions.psm1) 复制到硬盘上的某个位置并使用此命令直接将其导入：
-
-```powershell
-    Import-Module O365EndpointFunctions.psm1
-```
-
-导入此模块之后，你将能够调用 REST 服务。 这会将 URL 返回为集合，你可以在 PowerShell 中直接进行处理。 必须输入 Office 365 租户的名称，如以下命令中所示：
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant]
-```
-
-#### <a name="parameters"></a>参数
-
-- **tenantName** - Office 365 租户的名称。 此参数为必填参数。
-- **ForceLatest** - 此开关将强制 REST API 始终返回完整的最新 URL 列表。
-- **IPv6** - 此开关也会返回 IPv6 地址。 默认情况下将仅返回 IPv4。
-
-### <a name="examples"></a>示例
-
-返回使用 IPv6 地址的所有 URL 的完整列表
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
-```
-
-仅返回 Exchange Online 服务的 IP 地址
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
-```
-
-### <a name="exporting-a-proxy-pac-file"></a>导出代理 PAC 文件
-
-可以使用此模块创建代理 PAC 文件。 在此示例中，先获取终结点，然后筛选结果以选择 URL。 这些 URL 将进入要导入的管道。  
-
-```powershell
- Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
-```
+[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) 是 PowerShell 脚本，它从 Office 365 IP 地址和 URL Web 服务读取最新网络终结点，并创建示例 PAC 文件。 有关使用 Get-PacFile 的信息，请参阅[使用 PAC 文件进行至关重要的 Office 365 流量的直接路由](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic)。
 
 ## <a name="related-topics"></a>相关主题
   
 [Office 365 URL 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+
+[管理 Office 365 终结点](managing-office-365-endpoints.md)
   
 [Office 365 终结点 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
@@ -567,7 +527,7 @@ Microsoft 托管 REST 服务以获取最新的 Office 365 服务的 URL。  若�
 
 [Office 365 网络和性能优化](network-planning-and-performance.md)
 
-[与 Office 365 的网络连接](network-connectivity.md)
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
   
 [Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
