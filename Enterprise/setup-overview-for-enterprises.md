@@ -3,6 +3,7 @@ title: 为组织部署 Office 365 企业版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 这些概述步骤旨在帮助您设置网络、创建标识、部署 Office 365 专业增强版、迁移数据, 并帮助组织中的人员开始使用 Office 365。
-ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249500"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302714"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>为组织部署 Office 365 企业版
 
@@ -77,3 +78,5 @@ ms.locfileid: "34249500"
 >[!Note]
 >这些步骤也适用于希望从 Office 365 企业版的自定义部署开始的商业和[非营利组织](https://go.microsoft.com/fwlink/?LinkId=627221)。 
 >
+
+如果你有 Microsoft 365 企业版订阅, 请从[这里](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)开始。

@@ -3,7 +3,7 @@ title: Exchange 2010 结束支持路线图
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 即将停止支持。 将此规划路线图用作准备升级到 Exchange Online 或部署到本地 Exchange Server 的更新版本的指南。
-ms.openlocfilehash: f0ff6551f9ef2c0ed57baabacc04293e83d25e13
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a08ef80d2e6081adbc62b4c534ef185dcaff611f
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067568"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302745"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 结束支持路线图
 
@@ -51,6 +51,10 @@ ms.locfileid: "34067568"
 
 > [!NOTE]
 > 稍微复杂的是, 您还可以将邮箱迁移到 Office 365, 同时将您的本地 Exchange 2010 服务器迁移到 Exchange 2016。
+
+若要避免停止对 Exchange Server 2010 的支持, 可以采用三种途径。
+
+![Exchange Server 2010 升级路径](./media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 以下各节更详细地探讨了每个选项。
 

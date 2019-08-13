@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: '摘要: 使用 Office 365 PowerShell, 通过策略管理 Skype for business Online 用户帐户属性。'
-ms.openlocfilehash: ed09b117d2de805e2ae28f05d734ced303db2405
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 4b0d45e89910c7fb1a215f78690cfc2fdb17c472
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782592"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302724"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>管理 Skype 与 Office 365 PowerShell 的在线业务策略
 
@@ -34,7 +34,7 @@ ms.locfileid: "35782592"
 2. 打开 Windows PowerShell 命令提示符, 并运行以下命令: 
     
 ```
-Import-Module LyncOnlineConnector
+Import-Module SkypeOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession

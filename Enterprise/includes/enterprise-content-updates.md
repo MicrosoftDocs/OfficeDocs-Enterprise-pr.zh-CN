@@ -3,14 +3,6 @@
 
 
 
-## <a name="week-of-july-01-2019"></a>2019年7月1日一周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 7/2/2019 | [将 SharePoint 网站移到其他地理位置](/Office365/Enterprise/move-sharepoint-between-geo-locations) | 修改内容 |
-
-
 ## <a name="week-of-july-08-2019"></a>2019年7月1日一周
 
 
@@ -121,3 +113,14 @@
 | 7/29/2019 | [Office 365 美国政府版 (GCC) 高终结点](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 修改内容 |
 | 7/29/2019 | [由世纪互联运营的 Office 365 的 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 修改内容 |
 | 7/29/2019 | [Office 365 URL 和 IP 地址范围](/Office365/Enterprise/urls-and-ip-address-ranges) | 修改内容 |
+
+
+## <a name="week-of-august-05-2019"></a>2019年8月5日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 8/5/2019 | [同时向 Office 365 添加多个用户 - 管理员帮助](/Office365/Enterprise/add-several-users-at-the-same-time) | 修改内容 |
+| 8/5/2019 | [使用 Office 365 PowerShell 向用户帐户分配许可证](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 修改内容 |
+| 8/6/2019 | [Office 365 IP 地址和 URL web 服务](/Office365/Enterprise/office-365-ip-web-service) | 修改内容 |
+| 8/7/2019 | [评估 Office 365 网络连接](/Office365/Enterprise/assessing-network-connectivity) | 修改内容 |
