@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 了解如何将 Azure ExpressRoute 与 Office 365 结合使用, 以及如何规划在部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。
-ms.openlocfilehash: d881dc4e65ca2533f511c7f613c38569811b95a7
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: b12310d9a82a1adafd82ce0c3b6554e7ceea9550
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782352"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385180"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
@@ -58,7 +58,7 @@ ms.locfileid: "35782352"
 |**包含的应用程序**|
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
-|Skype for Business Online<sup>1</sup> <br/> |
+|Skype for Business Online<sup>1</sup> <br/> Microsoft 团队<sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
 |门户和共享<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD 连接<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 

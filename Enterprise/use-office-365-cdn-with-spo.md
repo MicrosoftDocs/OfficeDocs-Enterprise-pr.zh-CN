@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 介绍如何使用 Office 365 内容传送网络 (CDN) 加快将 SharePoint Online 资产传递给所有用户, 无论它们位于何处或如何访问你的内容。
-ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: ffb464b31a5f5a87a09334e2c5f7ae3c3027af65
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017312"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385190"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -29,7 +29,7 @@ ms.locfileid: "35017312"
 > [!NOTE]
 > 对 Office 365 CDN 的使用限制:
 > + Office 365 CDN 仅适用于**生产**(全球) 云中的租户。 美国政府、中国和德国云中的租户目前不支持 Office 365 CDN。
-> + Office 365 CDN 目前不支持使用自定义或 "虚" 域配置的租户。 如果已使用主题 "[向 Office 365 添加域](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)" 中的说明向租户添加了域, 则当您尝试访问 CDN 中的内容时, OFFICE 365 CDN 将返回错误。
+> + Office 365 CDN 目前不支持使用自定义或 "虚" 域配置的租户。 如果已使用主题 "[向 office 365 添加域](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)" 中的说明向 office 365 租户中的任何组件添加了域, 则当您尝试访问 CDN 中的内容时, OFFICE 365 CDN 将返回错误。
 
 Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即_源_）托管静态资产，并从全局高速网络提供这些资产。 可以添加**公共**源、**私有**源或同时添加这两种源，具体取决于想要托管在 Office 365 CDN 中的内容种类。 若要详细了解公共和专用来源之间的差异, 请参阅[选择每个来源是否应为公共的或专用](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)的。
 

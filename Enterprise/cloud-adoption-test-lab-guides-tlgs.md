@@ -1,9 +1,9 @@
 ---
-title: 使用云应用测试实验室指南 (TLG) 测试 Office 365
+title: 使用测试实验室指南 (TLG) 测试 Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,17 +16,17 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 摘要：使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365 的开发/测试环境。
-ms.openlocfilehash: 37a99c313339f0894bf6fba0040bf2f7c2160fa6
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+description: 摘要：使用这些测试实验室指南 (TLG) 设置演示、概念证明或 Office 365 的开发/测试环境。
+ms.openlocfilehash: 32675683846789f1e7be0e398e5b140d25d7ba80
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162375"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302734"
 ---
-# <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>使用云应用测试实验室指南 (TLG) 测试 Office 365
+# <a name="test-office-365-with-test-lab-guides-tlgs"></a>使用测试实验室指南 (TLG) 测试 Office 365
 
- **摘要：** 使用这些云应用测试实验室指南 (TLG) 设置演示、概念证明或 Office 365 的开发/测试环境。
+ **摘要：** 使用这些文章设置演示、概念证明或 Office 365 的开发/测试环境。
   
 TLG 可帮助你快速了解 Microsoft 产品。当你需要先评估某种技术或配置，然后再决定它是否适合你并开始设计、规划和将其推广给用户时，这些指南非常有用。“我自己构建，它可运行”的亲身体验有助于了解新产品或解决方案的部署需求，以便更好地规划将其托管在生产中。
   
@@ -34,8 +34,6 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
   
 ![Microsoft 云中的测试实验室指南](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-单击[此处](http://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
-    
 ## <a name="office-365-devtest-environment"></a>Office 365 开发/测试环境
 
 使用这些文章构建 Office 365 开发/测试环境：
@@ -48,69 +46,35 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
     创建 Office 365 企业版 E5 试用订阅，可从计算机或从 Azure 基础结构服务中运行的简化 Intranet 执行此操作。
     
-- [用于 Office 365 开发/测试环境的 DirSync](dirsync-for-your-office-365-dev-test-environment.md)
+- [目录同步](dirsync-for-your-office-365-dev-test-environment.md)
     
     安装并配置 Azure AD Connect，以便通过密码哈希同步来实现目录同步。如要生成模拟的企业配置，此为可选步骤。
     
 针对你的 Office 365 开发/测试环境，可使用这些文章来演示 Office 365 的企业功能：
   
-- [用于 Office 365 开发/测试环境的多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
     使用发送到智能手机的短信，为 Office 365 订阅中的帐户配置和测试辅助身份验证。
     
-- [用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
+- [联合标识](federated-identity-for-your-office-365-dev-test-environment.md)
     
     使用 Active Directory 域服务 (AD DS) 域帐户配置并演示联合身份验证。
     
-- [Office 365 开发/测试环境中的高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
     配置和演示高级威胁防护是 Exchange Online Protection (EOP) 的一种功能，可帮助电子邮件阻止恶意软件。
-    
-- [用于 Office 365 开发/测试环境的高级电子数据展示](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
-    
-    通过添加示例数据并演示高级电子数据展示，用户可以快速查找并分析 Office 365 中所存储的数据（包括电子邮件和文档）。
-    
-- [Office 365 开发/测试环境中的敏感文件保护](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-    
-    演示如何使用 Office 365 信息权限管理保护敏感文档中的数据，即便不小心张贴在错误的文档文件夹中。
-    
-- [Office 365 开发/测试环境中的数据分类和标记](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
-    
-    演示如何使用 Azure 信息保护客户端对具有不同安全级别的文档进行分类。
-    
-- [独立 SharePoint Online 团队网站开发/测试环境](isolated-sharepoint-online-team-site-dev-test-environment.md)
-    
-    演示如何创建因敏感或高度机密资源而与组织其他部分隔离的 SharePoint Online 团队网站。
-    
 
-## <a name="simulated-cross-premises-devtest-environments"></a>模拟的跨界开发/测试环境
+## <a name="simulated-cross-premises-devtest-environment"></a>模拟的跨界开发/测试环境
 
-可以参阅以下文章来创建跨界开发/测试环境，其中包括 Azure 虚拟网络和模拟的本地网络：
-  
-- [Azure 中的模拟跨界虚拟网络](simulated-cross-premises-virtual-network-in-azure.md)
+在混合云配置中创建连接 Azure 虚拟网络的[模拟 Intranet](simulated-cross-premises-virtual-network-in-azure.md)。
     
-    在混合云配置中创建连接 Azure 虚拟网络的模拟 Intranet。
-    
-- [Azure 开发/测试环境中的 Intranet SharePoint Server 2016](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
-    
-    在 Azure 虚拟网络中创建单个服务器的 SharePoint Server 2016 场，并从模拟的本地网络测试连接性和管理。
-    
-## <a name="sharepoint-server-2016-devtest-environments"></a>SharePoint Server 2016 开发/测试环境
+## <a name="sharepoint-server-2016-devtest-environment"></a>SharePoint Server 2016 开发/测试环境
 
-以下是你可以在 Azure 基础结构服务中创建的 SharePoint Server 2016 开发/测试环境：
-  
-- [Azure 中的 SharePoint Server 2016 开发/测试环境](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)
-    
-    在 Azure 基础结构服务中生成单个服务器的 SharePoint Server 2016 场。
+在 Azure 基础结构服务中生成[单个服务器的 SharePoint Server 2016 场](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)。
 
-- [Azure 开发/测试环境中的 Intranet SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)
-    
-    在 Azure 基础结构服务中生成单个服务器的 SharePoint Server 2016 场，并从模拟的 Intranet 访问它。
+## <a name="microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 企业版开发/测试环境
 
-
-## <a name="the-microsoft-365-enterprise-devtest-environments"></a>Microsoft 365 企业版开发/测试环境
-
-使用[这些文章](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)创建适用于 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365-enterprise/)的开发/测试环境。  
+创建 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)开发/测试环境。  
     
 ## <a name="see-also"></a>另请参阅
 
