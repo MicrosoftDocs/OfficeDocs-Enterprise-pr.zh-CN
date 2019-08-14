@@ -72,16 +72,13 @@
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
 # 测试 Office 365
-## [云采用测试实验室指南](cloud-adoption-test-lab-guides-tlgs.md)
+## [测试 Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 ## [基础配置开发/测试环境](base-configuration-dev-test-environment.md)
 ## [Office 365 开发/测试环境](office-365-dev-test-environment.md)
 ### [目录同步](dirsync-for-your-office-365-dev-test-environment.md)
 ### [多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [联合标识](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [高级电子数据展示](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
-### [敏感文件保护](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [数据分类和标签](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Azure 中的模拟跨界虚拟网络](simulated-cross-premises-virtual-network-in-azure.md)
 
 # [部署 Office 365 企业版](setup-overview-for-enterprises.md)
