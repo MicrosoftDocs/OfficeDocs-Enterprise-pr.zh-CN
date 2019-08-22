@@ -3,7 +3,7 @@ title: 可帮助您从 Office 2010 服务器和客户端进行升级的资源
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/10/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 服务器和客户端应用程序的支持即将结束, 自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 3cd345f60c534ef8c2a464e4f9535f5f691a9110
-ms.sourcegitcommit: c718aae17c8046d5e1ef67f82ffa10e54e1eb23f
+ms.openlocfilehash: b75aea4775f2471827f472e726ccae8657a22278
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613448"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491331"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可帮助您从 Office 2010 服务器和客户端进行升级的资源
 
@@ -42,7 +42,13 @@ ms.locfileid: "35613448"
 
 - Office 365 专业增强版 (包含在 Office 365 E3 和 E5 和 Microsoft 365 Enterprise 中) 是您在本地设备上安装的一组 Office 客户端应用程序。 通过与 Microsoft 云不断更新的新的工作效率和安全功能进行更新。
 
-使用本文作为查看选项的起始点。
+有关 Office 2010 客户端和服务器以及 Windows 7 的升级、迁移和移动到云选项的摘要, 请下载[服务海报的结尾](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)。
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+这一页的海报是一种快速了解您可以采取的各种途径, 以防止 Office 2010 客户端和服务器产品和 Windows 7 到达服务的末尾, 并突出显示了 Microsoft 365 企业版中的首选路径和选项支持。
+
+您可以在信件、法律或 tabloid (11 x 17) 格式中打印此海报。
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 客户端和服务器升级规划
   

@@ -3,38 +3,6 @@
 
 
 
-## <a name="week-of-july-08-2019"></a>2019年7月1日一周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 7/9/2019 | [将组织数据迁移到 Office 365 企业版](/Office365/Enterprise/migrate-data-to-office-365) | 修改内容 |
-| 7/9/2019 | [诊断 SharePoint Online 性能问题](/Office365/Enterprise/diagnosing-performance-issues-with-sharepoint-online) | 修改内容 |
-| 7/10/2019 | [规划从 Office 2007 或2010服务器和客户端升级](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 修改内容 |
-| 7/10/2019 | [可帮助您从 Office 2010 服务器和客户端进行升级的资源](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 修改内容 |
-| 7/10/2019 | [Microsoft 云 IT 体系结构资源](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 修改内容 |
-| 7/10/2019 | [指向有关 Office 365 管理中心中的权限管理的信息的指针](/Office365/Enterprise/activate-rms-in-office-365) | 修改内容 |
-| 7/10/2019 | [在慢速网络上使用 Office 365 的最佳实践](/Office365/Enterprise/best-practices-for-using-office-365-on-a-slow-network) | 修改内容 |
-| 7/10/2019 | [在 SharePoint Online 中延迟加载图像和 JavaScript](/Office365/Enterprise/delay-loading-images-and-javascript-in-sharepoint-online) | 修改内容 |
-| 7/10/2019 | [SharePoint Online 的图像优化](/Office365/Enterprise/image-optimization-for-sharepoint-online) | 修改内容 |
-| 7/10/2019 | [SharePoint Online 性能优化简介](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 修改内容 |
-| 7/10/2019 | [SharePoint Online 中的缩小和捆绑](/Office365/Enterprise/minification-and-bundling-in-sharepoint-online) | 修改内容 |
-| 7/10/2019 | [Office 365 随附的 NAT 支持](/Office365/Enterprise/nat-support-with-office-365) | 修改内容 |
-| 7/10/2019 | 
-  [SharePoint Online 的导航选项](/Office365/Enterprise/navigation-options-for-sharepoint-online) | 修改内容 |
-| 7/10/2019 | [Office 365 的网络和迁移规划](/Office365/Enterprise/network-and-migration-planning) | 修改内容 |
-| 7/10/2019 | [Office 365 网络计划和性能优化](/Office365/Enterprise/network-planning-and-performance) | 修改内容 |
-| 7/10/2019 | [使用 SharePoint Online 的页面诊断工具](/Office365/Enterprise/page-diagnostics-for-spo) | 修改内容 |
-| 7/10/2019 | [优化 Office 365 性能](/Office365/Enterprise/tune-office-365-performance) | 修改内容 |
-| 7/10/2019 | [优化 SharePoint Online 性能](/Office365/Enterprise/tune-sharepoint-online-performance) | 修改内容 |
-| 7/10/2019 | [优化 Skype for Business Online 性能](/Office365/Enterprise/tune-skype-for-business-online-performance) | 修改内容 |
-| 7/10/2019 | [使用精益弹出内容减少阅读邮件时使用的内存](/Office365/Enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages) | 修改内容 |
-| 7/10/2019 | [使用内容搜索 Web 部件而不是内容查询 Web 部件来提高 SharePoint Online 中的性能](/Office365/Enterprise/using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo) | 修改内容 |
-| 7/10/2019 | [在 SharePoint Online 中使用对象缓存](/Office365/Enterprise/using-the-object-cache-with-sharepoint-online) | 修改内容 |
-| 7/11/2019 | [Project Server 2010 终止支持路线图](/Office365/Enterprise/project-server-2010-end-of-support) | 修改内容 |
-| 7/12/2019 | [从 SharePoint 2010 升级](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 修改内容 |
-
-
 ## <a name="week-of-july-15-2019"></a>2019年7月15日一周
 
 
@@ -124,3 +92,20 @@
 | 8/5/2019 | [使用 Office 365 PowerShell 向用户帐户分配许可证](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 修改内容 |
 | 8/6/2019 | [Office 365 IP 地址和 URL web 服务](/Office365/Enterprise/office-365-ip-web-service) | 修改内容 |
 | 8/7/2019 | [评估 Office 365 网络连接](/Office365/Enterprise/assessing-network-connectivity) | 修改内容 |
+
+
+## <a name="week-of-august-12-2019"></a>2019年8月12日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 8/12/2019 | [使用测试实验室指南 (Tlg) 测试 Office 365](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | 修改内容 |
+| 8/12/2019 | [Exchange 2010 结束支持路线图](/Office365/Enterprise/exchange-2010-end-of-support) | 修改内容 |
+| 8/12/2019 | [规划 Office 365 企业版](/Office365/Enterprise/get-your-organization-ready-for-office-365) | 修改内容 |
+| 8/12/2019 | [管理 Skype 与 Office 365 PowerShell 的在线业务策略](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | 修改内容 |
+| 8/12/2019 | [为组织部署 Office 365 企业版](/Office365/Enterprise/setup-overview-for-enterprises) | 修改内容 |
+| 8/13/2019 | [Azure ExpressRoute for Office 365](/Office365/Enterprise/azure-expressroute) | 修改内容 |
+| 8/13/2019 | [Office 365 的外部域名系统记录](/Office365/Enterprise/external-domain-name-system-records) | 修改内容 |
+| 8/13/2019 | 
+  [SharePoint Online 的导航选项](/Office365/Enterprise/navigation-options-for-sharepoint-online) | 修改内容 |
+| 8/13/2019 | [结合使用 Office 365 内容分发网络和 SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | 修改内容 |

@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 新式验证在 Office 2013 和2016客户端应用中的工作方式不同。
-ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203621"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491291"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>适用于 Office 2013 和 Office 2016 客户端应用的新式验证工作原理
 
@@ -44,6 +44,9 @@ ms.locfileid: "35203621"
 - 默认**** 情况下, 启用 SharePoint Online。 
     
 - 默认**** 情况下, 启用 Skype For business Online。 请参阅[为新式身份验证启用 Skype For Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)以将其关闭或打开。
+
+> [!NOTE]
+> 对于在2017年8月1日**之前**创建的租户, 默认情况下, Exchange Online 和 Skype For business Online 的新式身份验证处于**关闭**状态。
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office 客户端应用程序的登录行为
 

@@ -3,7 +3,7 @@ title: 从 SharePoint 2010 升级
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 和 SharePoint Server 2010 的支持结束时间在13年10月 13 2020 日结束。 使用本文作为升级到 SharePoint Online 或本地 SharePoint Server 的更新版本的指南。
-ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
-ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
+ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35643055"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491321"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>从 SharePoint 2010 升级
 
@@ -178,6 +178,16 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
   
 > [!NOTE]
 > 请注意, 您的 SharePoint Server 2010 服务器场首先需要升级到 SharePoint Server 2013 或 SharePoint Server 2016, 才能使用 "混合" 选项。 SharePoint Foundation 2010 和 SharePoint Foundation 2013 无法创建与 SharePoint Online 的混合连接。 
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 客户端和服务器以及 Windows 7 的选项的摘要
+
+有关 Office 2010 客户端和服务器以及 Windows 7 的升级、迁移和移动到云选项的直观摘要, 请下载[服务海报的结尾](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)。
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+这一页的海报是一种快速了解您可以采取的各种途径, 以防止 Office 2010 客户端和服务器产品和 Windows 7 到达服务的末尾, 并突出显示了 Microsoft 365 企业版中的首选路径和选项支持。
+
+您可以在信件、法律或 tabloid (11 x 17) 格式中打印此海报。
   
 ## <a name="related-topics"></a>相关主题
 

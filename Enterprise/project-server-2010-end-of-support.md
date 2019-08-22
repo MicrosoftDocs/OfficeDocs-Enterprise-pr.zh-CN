@@ -3,7 +3,7 @@ title: Project Server 2010 终止支持路线图
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支持结束时间为2020年10月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
-ms.openlocfilehash: 8001a3e3c9cb40d23f60a6d38aceca55e4838831
-ms.sourcegitcommit: 19de9984f47a1490e277848f079088685ad22a63
+ms.openlocfilehash: 5133cfaba65349133246e4e3eee3dd2fc286289d
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630391"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491311"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 结束支持路线图
 
@@ -197,6 +197,16 @@ Project Server 2010 与 Project Server 2019 之间的体系结构差异可防止
 - [Project Online 服务说明](https://go.microsoft.com/fwlink/p/?linkid=841280): 请参阅 project Server 2016 和 Project Online 高级版中包含的项目组合管理功能。
     
 - [Microsoft Office Project 项目组合服务器2010迁移指南](https://go.microsoft.com/fwlink/p/?linkid=841279)
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 客户端和服务器以及 Windows 7 的选项的摘要
+
+有关 Office 2010 客户端和服务器以及 Windows 7 的升级、迁移和移动到云选项的直观摘要, 请下载[服务海报的结尾](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)。
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+这一页的海报是一种快速了解您可以采取的各种途径, 以防止 Office 2010 客户端和服务器产品和 Windows 7 到达服务的末尾, 并突出显示了 Microsoft 365 企业版中的首选路径和选项支持。
+
+您可以在信件、法律或 tabloid (11 x 17) 格式中打印此海报。
     
 ## <a name="related-topics"></a>相关主题
 
