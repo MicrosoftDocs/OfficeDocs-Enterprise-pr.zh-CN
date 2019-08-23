@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 中提供的来宾共享设置。
-ms.openlocfilehash: 8c067374b960ff2cec7cdce87f67da0104697ff3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 59e51a7118a226bb9c17e9529a517bf681b69849
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782272"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493339"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -72,6 +72,8 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 |:-----|:-----|:-----|
 |允许组织外部的组成员访问组内容|打开|设置为“**打开**”时，来宾可以访问组内容；设置为“**关闭**”时，则不能访问。 对于来宾用户与 Office 365 组或 Teams 进行交互的任何情况，此设置应为“**打开**”。|
 |允许组所有者将组织外部的人员添加到组|打开|设置为“**打开**”时，Office 365 组或 Teams 的所有者可邀请新来宾加入组。 设置为“**关闭**”时，所有者只能邀请目录中已有的来宾。|
+
+这些设置均为组织级别的设置。 有关如何使用 PowerShell 在组级别更改这些设置的信息，请参阅[创建针对特定组的设置](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)。
 
 ## <a name="teams"></a>Teams
 
