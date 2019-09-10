@@ -13,16 +13,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Office 365 客户端应用程序支持基于证书的身份验证。
-ms.openlocfilehash: ad9f9e09dba793f4353b8c8fed2fae9175e9affd
-ms.sourcegitcommit: 27614632a0ceccbd5a4083cefa822187417f02a6
+ms.openlocfilehash: 532cfb970c64f002955764fb3ad5b93902677554
+ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36672670"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "36817269"
 ---
 # <a name="office-365-client-app-support--certificate-based-authentication"></a>Office 365 客户端应用程序支持—基于证书的身份验证
 
-通过基于证书的身份验证, 您可以使用 Windows、Android 或 iOS 设备上的客户端证书对 Azure Active Directory 进行身份验证。 配置此功能后, 无需在移动设备上将用户名和密码组合输入到某些邮件和 Microsoft Office 应用程序中。
+通过基于证书的身份验证，您可以使用 Windows、Android 或 iOS 设备上的客户端证书对 Azure Active Directory 进行身份验证。 配置此功能后，无需在移动设备上将用户名和密码组合输入到某些邮件和 Microsoft Office 应用程序中。
 
 了解有关[基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)的详细信息。
 
@@ -35,11 +35,11 @@ ms.locfileid: "36672670"
  - iOS
  - macOS<sup>1</sup> <sup>2</sup>
 
-有关 Office 365 中平台支持的详细信息, 请参阅[office 365 的系统要求](https://products.office.com/office-system-requirements)。
+有关 Office 365 中平台支持的详细信息，请参阅[office 365 的系统要求](https://products.office.com/office-system-requirements)。
 
 ## <a name="supported-clients"></a>支持的客户端
 
-以下客户端的最新版本支持基于证书的身份验证:
+以下客户端的最新版本支持基于证书的身份验证：
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -48,7 +48,7 @@ ms.locfileid: "36672670"
 | ![Office.com 图标](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Office 365 管理员图标](media/o365-o365admin-64x64.png) <br> [Office 365 <br>管理员](https://products.office.com/business/manage-office-365-admin-app) | ![镜头图标](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![OneDrive for Business 图标](media/o365-OneDrive-64x64.png) <br> [OneDrive<sup>1</sup>](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![OneNote 图标](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) 
 | ![Outlook 图标](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Planner 图标](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerApps 图标](media/o365-powerapps-64x64.png) <br> [PowerApps<sup>3</sup>](https://powerapps.microsoft.com) | ![PowerBI 图标](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![PowerPoint 图标](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![项目图标](media/o365-project-64x64.png) <br> [项目](https://products.office.com/project) | ![Publisher 图标](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint 图标](media/o365-sharepoint-64x64.png) <br> [Sharepoint](https://products.office.com/sharepoint) | ![Skype for Business 图标](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> business](https://www.skype.com/business/) | ![粘滞便笺图标](media/o365-stickynotes-64x64.png) <br> [粘滞便笺](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 
-| ![流图标](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway 图标](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![团队图标](media/o365-teams-64x64.png) <br> [团队<sup>2</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![待办情况图标](media/o365-todo-64x64.png) <br> [微软待办](https://todo.microsoft.com) | ![Visio 图标](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) 
+| ![流图标](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway 图标](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![团队图标](media/o365-teams-64x64.png) <br> [团队<sup>2</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![To Do 图标](media/o365-todo-64x64.png) <br> [要执行的操作](https://todo.microsoft.com) | ![Visio 图标](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) 
 | ![白板图标](media/o365-whiteboard-64x64.png) <br> [白板<sup>3</sup>、<sup>4</sup>](https://whiteboard.microsoft.com/) | ![Word 图标](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Yammer 图标](media/o365-yammer-64x64.png) <br> [Yammer<sup>2</sup>](https://products.office.com/yammer/yammer-overview) |
 
 ## <a name="supported-powershell-modules"></a>支持的 PowerShell 模块
