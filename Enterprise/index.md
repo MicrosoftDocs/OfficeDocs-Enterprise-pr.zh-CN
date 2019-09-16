@@ -1,6 +1,6 @@
 ---
-title: Office 365 Enterprise
-description: Microsoft Office 365 提供强大的在线云服务, 从而实现协作、安全性和合规性、移动性和智能化和分析。 此页面为管理员和 IT 专业人员提供指导, 这些人员正在部署、配置和管理企业组织中的 Office 365 服务。
+title: Office 365 企业版
+description: Microsoft Office 365 提供功能强大的在线云服务，支持协作、安全性和合规性、移动性、智能和分析。 本页面提供面向在企业组织中部署、配置和管理 Office 365 服务的管理员和 IT 专业人员的指南。
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -16,13 +16,13 @@ ms.date: 8/21/2018
 ms.author: robmazz
 ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
 ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/28/2019
 ms.locfileid: "34490725"
 ---
-<h1>Office 365 Enterprise</h1>
-<p>Microsoft Office&nbsp;365 提供强大的在线云服务, 从而实现协作、安全性和合规性、移动性和智能化和分析。 此页面提供了有关在企业组织中部署、配置和管理 Office&nbsp;365 服务的管理员和 IT 专业人员的指南的链接。</p>
+<h1>Office 365 企业版</h1>
+<p>Microsoft Office&nbsp;365 提供功能强大的在线云服务，支持协作、安全性和合规性、移动性、智能和分析。 本页面提供面向在企业组织中部署、配置和管理 Office&nbsp;365 服务的管理员和 IT 专业人员的指南链接。</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -35,8 +35,8 @@ ms.locfileid: "34490725"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>带有 FastTrack 的引导部署</h3>
-                <p>使用适用于 Office&nbsp;365 的 FastTrack 中心权益, 在规划、部署和推动组织采用 Office&nbsp;365 服务时为此采用引导式协助。</p>
+                        <h3>使用 FastTrack 进行引导式部署</h3>
+                <p>使用适用于 Office&nbsp;365 的 FastTrack 中心权益，为你的组织规划、部署和推动 Office&nbsp;365 服务的采用提供指导性帮助。</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ ms.locfileid: "34490725"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 专业增强版</h3>
-                <p>在企业环境中规划、部署&nbsp;和管理 Office 365 专业增强版。</p>
+                <p>在企业环境中规划、部署和管理 Office&nbsp;365 专业增强版。</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ ms.locfileid: "34490725"
                     </div>
                     <div class="cardText">
                         <h3>部署 Office 365</h3>
-                <p>部署 Office&nbsp;365, 包括设置你的租户、配置你的网络和预配你的用户。</p>
+                <p>部署 Office&nbsp;365，包括设置租户、配置网络和预配用户。</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ ms.locfileid: "34490725"
                     </div>
                     <div class="cardText">
                         <h3>混合部署</h3>
-                <p>在现有的内部部署基础结构和 Office&nbsp;365 之间配置和管理混合部署。</p>
+                <p>配置和管理现有本地基础结构与 Office&nbsp;365 之间的混合部署。</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@ ms.locfileid: "34490725"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 培训</h3>
-                <p>使用面向 IT&nbsp;专业人员的 office&nbsp;365 培训课程改进 office 365 的管理知识和技能。</p>
+                <p>通过面向 IT 专业人员的 Office&nbsp;365 培训课程，提高你的 Office&nbsp;365 管理知识水平和技能。</p>
                     </div>
                 </div>
             </div>
@@ -257,7 +257,7 @@ ms.locfileid: "34490725"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 技术社区</h3>
-                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">了解与 Office&nbsp;365 相关的最佳实践、新闻以及最新趋势和主题。</a></p>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">了解与 Office&nbsp;365 相关的最佳做法、新闻和最新趋势与主题。</a></p>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ ms.locfileid: "34490725"
                     </div>
                     <div class="cardText">
                         <h3>获取支持</h3>
-                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">请联系支持人员以获取&nbsp;有关 Office 365 的帮助。</a></p>
+                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">联系支持人员以获取有关 Office&nbsp;365 的帮助。</a></p>
                     </div>
                 </div>
             </div>
