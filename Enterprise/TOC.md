@@ -124,7 +124,7 @@
 #### [设置目录同步](set-up-directory-synchronization.md)
 ### [向用户帐户分配许可证](assign-licenses-to-user-accounts.md)
 
-## [3. 实施安全功能](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. 实施安全功能](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
 
 ## 4. 部署客户端软件
 ### [部署 Office 365 专业增强版](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
@@ -204,6 +204,11 @@
 ### [恢复用户邮箱中的已删除邮件](recover-deleted-items-in-a-mailbox.md)
 ### 与来宾协作
 #### [来宾共享参考](microsoft-365-guest-settings.md)
+#### 来宾共享解决方案
+##### [来宾协作概述](collaborating-with-people-outside-your-organization.md)
+##### [协作处理文档](collaborate-on-documents.md)
+##### [在网站中协作](collaborate-in-a-site.md)
+##### [团队协作](collaborate-as-a-team.md)
 
 ## 设备
 ### [在 MDM 和 Intune 之间进行选择](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
