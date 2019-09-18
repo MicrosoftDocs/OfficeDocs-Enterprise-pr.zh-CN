@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 了解如何在 SharePoint 网站中与来宾进行协作。
-ms.openlocfilehash: 23f55e22d4c85dcd168c403f50b35f574be9ac07
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992381"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017310"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -72,28 +72,6 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 2. 在 SharePoint 管理中心的左侧导航栏中，单击 "**共享**"。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了更改，请单击 "**保存**"。
-
-
-## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 组织级别的默认链接设置
-
-默认的文件和文件夹链接设置确定在用户共享文件或文件夹时，默认情况下向用户显示的链接选项。 如果需要，用户可以在共享之前将链接类型更改为其他选项之一。
-
-请注意，此设置会影响组织中的所有团队和 SharePoint 网站。
-
-选择当用户共享文件和文件夹时默认选择的链接类型：
-
-- **任何具有链接的人**-如果您希望与匿名用户共享大量文件和文件夹，请选择此选项。 如果您希望允许*任何人*链接，但担心意外匿名共享，请将其他选项之一作为默认值。 仅当您已启用**任何**共享时，此链接类型才可用。
-- **仅限组织中的人员**-如果您希望大多数文件和文件夹共享与组织内部的人员共享，请选择此选项。
-- **特定人员**-如果您希望对来宾执行大量文件和文件夹共享，请考虑此选项。 此类型的链接可与来宾配合使用，并要求用户进行身份验证。
- 
-![SharePoint 组织级别的文件和文件夹共享设置的屏幕截图](media/sharepoint-organization-files-folders-sharing-settings.png)
-
-
-设置 SharePoint 组织级别的默认链接设置
-
-1. 导航到 SharePoint 管理中心中的 "共享" 页面。
-2. 在 "**文件和文件夹链接**" 下，选择要使用的默认共享链接。
-3. 如果进行了更改，请单击 "**保存**"。
 
 ## <a name="create-a-site"></a>创建网站
 
