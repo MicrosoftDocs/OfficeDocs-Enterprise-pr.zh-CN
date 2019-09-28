@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
-ms.openlocfilehash: 1f12c7b55e6766db5b2afc661ee5337448336ba1
-ms.sourcegitcommit: 71e6a99fb585b4eb1aea3f215c234688f28d2050
+ms.openlocfilehash: e963b9a0f24ae5b573dfe9612d9d09419809defe
+ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37273677"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37282927"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 向用户帐户分配许可证
 
@@ -159,7 +159,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 接下来，使用这些命令列出用户帐户当前拥有的订阅。
 
 ```
-$userUPN=”<user account UPN>”
+$userUPN="<user account UPN>"
 $licensePlanList = Get-AzureADSubscribedSku
 $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
