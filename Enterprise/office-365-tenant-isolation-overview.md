@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Microsoft 对 Office 365 强制实施租户隔离的方式的摘要。
-ms.openlocfilehash: 4859fd5feec50159e71ca2ca8968388c5ab82d64
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a5b8a3e42aa7acc5cebe8ed21a8599fc03b5060f
+ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067233"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375520"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Office 365 中的租户隔离
 
@@ -34,7 +34,7 @@ ms.locfileid: "37067233"
 - 通过 Azure Active Directory 授权和基于角色的访问控制实现每个租户中的客户内容在 Office 365 服务中的逻辑隔离。
 - SharePoint Online 在存储级别提供了数据隔离机制。
 - Microsoft 使用严格的物理安全、背景屏蔽和多层加密策略来保护客户内容的机密性和完整性。 所有 Office 365 数据中心都具有生物特征访问控制，大多数情况下需要 palm 打印才能获得物理访问权限。 此外，所有基于美国的 Microsoft 员工都需要在聘用过程中成功完成标准背景检查。 有关 Office 365 中用于管理访问的控件的详细信息，请参阅[office 365 管理访问控制](office-365-administrative-access-controls-overview.md)。
-- Office 365 使用服务端技术来加密 rest 和传输中的客户内容，包括 BitLocker、文件加密、传输层安全性（TLS）和 Internet 协议安全性（IPsec）。 有关 Office 365 中的加密的具体详细信息，请参阅[office 365 中的数据加密技术](/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)。
+- Office 365 使用服务端技术来加密 rest 和传输中的客户内容，包括 BitLocker、文件加密、传输层安全性（TLS）和 Internet 协议安全性（IPsec）。 有关 Office 365 中的加密的具体详细信息，请参阅[office 365 中的数据加密技术](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)。
 
 上面列出的保护功能提供了可靠的逻辑隔离控制，它们提供了与独立的物理隔离提供的威胁防护和缓解等效项。
 
