@@ -3,7 +3,7 @@ title: 针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/12/2018
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 29b9954467e2d6dd7ece2e33376f28882152693c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 5c0bd0ad10dc1ddfdcb13d09010c69f4e8b5a75a
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782512"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428129"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -31,21 +31,12 @@ ms.locfileid: "35782512"
 为确保跨其云产品/服务使用一致的身份和帐单，Microsoft 提供了组织、订阅、许可证和用户帐户的层次结构。
   
 - Microsoft Office 365
-    
-    有关详细信息，请参阅[商业版计划和定价](https://products.office.com/business/compare-office-365-for-business-plans)。
-    
 - Microsoft Azure
-    
-    有关详细信息，请参阅 [Azure 定价](https://azure.microsoft.com/pricing/)。
-    
 - Microsoft Intune 和企业移动性 + 安全性 (EMS)
-    
-    有关详细信息，请参阅 [Intune 定价](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)。
-    
 - Microsoft Dynamics 365
-    
-    有关详细信息，请参阅 [Dynamics 365 定价](https://dynamics.microsoft.com/)。
-    
+
+[Microsoft 365](https://docs.microsoft.com/microsoft-365/) 将 Office 365、EMS 和 Windows 10 企业版合并为一个订阅和一组集成服务。
+
 ## <a name="elements-of-the-hierarchy"></a>层次结构的元素
 
 以下是层次结构的元素：
@@ -56,22 +47,23 @@ ms.locfileid: "35782512"
   
 ### <a name="subscriptions"></a>订阅
 
-订阅是与 Microsoft 就使用一个或多个 Microsoft 云平台或服务签订的协议，其费用基于每个用户许可证费或云资源的使用量进行累计。Microsoft 基于软件即服务 (SaaS) 的云服务（Office 365、Intune/EMS 和 Dynamics 365）按用户收取许可证费用。Microsoft 的平台即服务 (PaaS) 和基础设施即服务 (IaaS) 云服务 (Azure) 根据云资源使用量收取费用。
-  
+订阅是与 Microsoft 就使用一个或多个 Microsoft 云平台或服务签订的协议，其费用基于每个用户许可证费用或云资源使用累计。 
+
+- Microsoft 基于软件即服务 (SaaS) 的云服务（Office 365、Intune/EMS 和 Dynamics 365）按用户收取许可证费用。 
+- Microsoft 的平台即服务 (PaaS) 和基础设施即服务 (IaaS) 云服务 (Azure) 根据云资源使用量收取费用。
+ 
 你也可以使用试用版订阅，此订阅会在一定时间后或使用费用后过期。你可以将试用版订阅转换为付费订阅。
   
-组织可订阅多个 Micrososft 云服务，图 1 显示了一个示例。
-  
+组织可订阅多个 Micrososft 云服务。 图 1 显示了一个组织，其具有多个 Office 365 订阅、一个 Intune 订阅、一个 Dynamics 365 订阅以及多个 Azure 订阅。
+
 **图 1：组织的多个订阅示例**
 
 ![组织订阅多个 Micrososft 云服务的示例。](media/Subscriptions/Subscriptions-Fig1.png)
 
   
-图 1 显示了一个组织，其具有多个 Office 365 订阅、一个 Intune 订阅、一个 Dynamics 365 订阅以及多个 Azure 订阅。
-  
 ### <a name="licenses"></a>许可证
 
-对于 Microsoft 的 SaaS 云服务，一个许可证允许一个特定用户帐户使用云产品的服务。作为订阅的一部分，会按月收取你固定的费用。管理员将许可证分配给订阅中的各个用户帐户。对于图 2 中的示例，Contoso 公司订阅了具有 100 个许可证的 Office 365 企业版 E5，可使最多 100 个单个用户帐户使用企业版 E5 的功能和服务。
+对于 Microsoft 的 SaaS 云服务，许可证允许特定用户帐户使用云产品的服务。 作为订阅的一部分，你可以每月支付固定的费用。 管理员将许可证分配给订阅中的各个用户帐户。 对于图 2 中的示例，Contoso 公司订阅了具有 100 个许可证的 Office 365 企业版 E5，允许最多 100 个单个用户帐户使用 Office 365 企业版 E5 的功能和服务。
   
 **图 2：组织基于 SaaS 的订阅内的许可证**
 
@@ -85,7 +77,7 @@ ms.locfileid: "35782512"
   
 ### <a name="user-accounts"></a>用户帐户
 
-所有 Microsoft 云服务的用户帐户均存储在 Active Directory (AD) 租户中，其中包含用户帐户和组。通过使用基于 Windows 服务器的服务 Azure AD Connect，Azure AD 租户可与你现有的 Active Directory 域服务 (AD DS) 帐户同步。这叫做目录同步 (DirSync)。
+所有 Microsoft 云服务的用户帐户均存储在 Active Directory (Azure AD) 租户中，其中包含用户帐户和组。 通过使用基于 Windows 服务器的服务 Azure AD Connect，Azure AD 租户可与你现有的 Active Directory 域服务 (AD DS) 帐户同步。 这叫做目录同步 (DirSync)。
   
 图 3 显示了某个组织使用包含组织帐户的常见 Azure AD 租户进行多个订阅的示例。
   
@@ -129,15 +121,13 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Office 365、
     
   - 常见 Azure AD 租户中的组织的用户帐户。
     
-多个 Microsoft 云服务订阅可使用同一 Azure AD 租户作为通用标识提供程序。包含本地 AD DS 的同步帐户的中心 Azure AD 租户可为组织提供基于云的标识即服务 (IDaaS)。如图 4 中所示。
+多个 Microsoft 云服务订阅可使用同一 Azure AD 租户作为通用标识提供程序。 包含本地 AD DS 的同步帐户的中心 Azure AD 租户可为组织提供基于云的标识即服务 (IDaaS)。 
   
 **图 4：适用于组织的同步本地帐户和 IDaaS**
 
 ![适用于组织的标识即服务 (IaaS) IDaaS。](media/Subscriptions/Subscriptions-Fig4.png)
   
 图 4 显示了如何将常见的 Azure AD 租户用于 Microsoft 的 SaaS 云产品、Azure PaaS 应用以及 Azure IaaS 中使用 Azure AD 域服务的虚拟机。Azure AD Connect 将本地 AD DS 林与 Azure AD 租户同步。
-  
-有关 Microsoft 云产品/服务中标识集成的详细信息，请参阅[面向企业架构师的 Microsoft 云标识](https://aka.ms/cloudarchidentity)。
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>合并多个 Microsoft 云服务的订阅
 
@@ -168,15 +158,17 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Office 365、
     
 3. 在“添加订阅”**** 页上，选择一项服务并完成付款信息和协议。
     
-如果分别购买 Azure 和 Office 365 订阅并且希望从 Azure 订阅访问 Office 365 Azure AD 租户，请参阅[将 Azure 订阅关联或添加到 Azure Active Directory 租户](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的说明。
+如果分别购买 Azure 和 Office 365 订阅并且希望从 Azure 订阅访问 Office 365 Azure AD 租户，请参阅[将现有 Azure 订阅添加到 Azure Active Directory 租户](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的说明。
  
 ## <a name="see-also"></a>另请参阅
 
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
   
-[云应用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
-  
 [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [混合解决方案](hybrid-solutions.md)
+
+## <a name="next-step"></a>后续步骤
+
+[评估 Office 365 网络连接](assessing-network-connectivity.md)
   

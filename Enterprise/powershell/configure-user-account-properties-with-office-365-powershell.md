@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 摘要：使用 Office 365 PowerShell 配置 Office 365 租户中单个或多个用户帐户的属性。
-ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
-ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
+ms.openlocfilehash: 40d7e78b3fd6c011f6c53b2af433f258b888d5bb
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "37411511"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435346"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>使用 Office 365 PowerShell 配置用户帐户的属性
 
@@ -72,10 +72,7 @@ ms.locfileid: "37411511"
     
 有关其他参数，请参阅[AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) 。
 
->[!Note]
-> 使用 **-OtherMails**参数设置**Mail**属性。
->
- 
+
 若要显示用户帐户的用户主体名称，请运行以下命令。
   
 ```
@@ -191,10 +188,6 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
     
 有关其他参数，请参阅[get-msoluser](https://msdn.microsoft.com/library/azure/dn194136.aspx) 。
 
->[!Note]
-> 使用 **-AlternateEmailAddresses**参数设置**Mail**属性。
->
- 
 若要查看所有用户的用户主体名称，请运行以下命令。
   
 ```
