@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 265de12a2f1156355873d6798a61a0438f6764a1
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490725"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067107"
 ---
 <h1>Office 365 企业版</h1>
 <p>Microsoft Office&nbsp;365 提供功能强大的在线云服务，支持协作、安全性和合规性、移动性、智能和分析。 本页面提供面向在企业组织中部署、配置和管理 Office&nbsp;365 服务的管理员和 IT 专业人员的指南链接。</p>
@@ -292,6 +292,8 @@ ms.locfileid: "34490725"
                     <div class="cardText">
                         <h3>Microsoft 365</h3>
                         <p><a href="https://docs.microsoft.com/microsoft-365">了解有关 Microsoft 365 的详细信息。</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/compliance/">了解有关 Microsoft 365 合规中心的详细信息。</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/">了解有关 Microsoft 365 安全中心的详细信息。</a></p>
                     </div>
                 </div>
             </div>

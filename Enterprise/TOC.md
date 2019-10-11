@@ -209,6 +209,10 @@
 ##### [协作处理文档](collaborate-on-documents.md)
 ##### [在网站中协作](collaborate-in-a-site.md)
 ##### [团队协作](collaborate-as-a-team.md)
+#### 来宾共享安全性
+##### [匿名共享](best-practices-anonymous-sharing.md)
+##### [限制意外公开](sharing-limit-accidental-exposure.md)
+##### [保护来宾共享环境](create-a-secure-guest-sharing-environment.md)
 
 ## 设备
 ### [在 MDM 和 Intune 之间进行选择](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
