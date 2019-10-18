@@ -45,7 +45,7 @@ ms.locfileid: "34068468"
 
 若要将组作为地理位置管理员删除，请运行 `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-请注意，并非所有安全组都有组别名。 如果要添加没有别名的安全组，请运行 [Get-MsolGroup](https://docs.microsoft.com/zh-CN/powershell/module/msonline/get-msolgroup) 来检索组列表，找到安全组的对象 ID，然后运行：
+请注意，并非所有安全组都有组别名。 如果要添加没有别名的安全组，请运行 [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) 来检索组列表，找到安全组的对象 ID，然后运行：
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -59,4 +59,4 @@ ms.locfileid: "34068468"
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[为安全组设置别名 (MailNickName)](https://docs.microsoft.com/zh-CN/powershell/module/azuread/set-azureadgroup)
+[为安全组设置别名 (MailNickName)](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)

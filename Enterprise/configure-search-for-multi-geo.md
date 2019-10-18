@@ -85,7 +85,7 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 <tr class="odd">
 <td align="left"></td>
 <td align="left">多地理位置搜索不支持数值精简的动态存储桶。</td>
-<td align="left">对于数值精简，请使用<a href="https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”参数</a>。</td>
+<td align="left">对于数值精简，请使用<a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”参数</a>。</td>
 </tr>
 <tr class="even">
 <td align="left">文档 ID</td>
@@ -172,7 +172,7 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 
 **要求**
 
-对于每个地理位置，必须确保组织中的所有用户都已授予根网站（例如 contoso**APAC**.sharepoint.com/ and contoso**EU**.sharepoint.com/）的**读取**权限级别。[了解权限](https://support.office.com/zh-CN/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
+对于每个地理位置，必须确保组织中的所有用户都已授予根网站（例如 contoso**APAC**.sharepoint.com/ and contoso**EU**.sharepoint.com/）的**读取**权限级别。[了解权限](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
 ### <a name="query-parameters"></a>查询参数
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - 这是一个可选列表，其中包含多地理�
 </tbody>
 </table>
 
-如果省略 DataLocation 或终结点，或如果 DataLocation 是重复的，则请求将会失败。[可以使用 Microsoft Graph 获取有关租户地理位置终结点的信息](https://docs.microsoft.com/zh-CN/sharepoint/dev/solution-guidance/multigeo-discovery)。
+如果省略 DataLocation 或终结点，或如果 DataLocation 是重复的，则请求将会失败。[可以使用 Microsoft Graph 获取有关租户地理位置终结点的信息](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery)。
 
 ### <a name="response-data"></a>响应数据
 

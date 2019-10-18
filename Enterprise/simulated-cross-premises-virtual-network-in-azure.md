@@ -79,7 +79,7 @@ ms.locfileid: "34162485"
 首先，在本地计算机上启动 Azure PowerShell 提示符。
   
 > [!NOTE]
-> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/zh-CN/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
   
 使用此命令登录 Azure 帐户。
   
