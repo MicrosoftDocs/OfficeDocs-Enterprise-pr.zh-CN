@@ -3,7 +3,7 @@ title: 用于 Office 365 开发/测试环境的联合身份
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 09/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Office 365 开发/测试环境配置联合身份验证。
-ms.openlocfilehash: 9cee3ae308b5dc7e97b8711a9b021869478a47b4
-ms.sourcegitcommit: ed9d80a7b4acc42065c94155122f0cdb86dccde6
+ms.openlocfilehash: c2cb4bcd9085cd8dd91df5de2ad936076d11432c
+ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37046987"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37207387"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的联合身份
 
@@ -189,13 +189,10 @@ Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPA
 接下来，通过 [Azure 门户](http://portal.azure.com)，使用 CORP\\User1 凭据连接 DC1 虚拟机，然后在管理员级 Windows PowerShell 命令提示符处运行以下命令：
   
 ```
-$testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
-$testZoneFile= $testZone + ".dns"
-Add-DnsServerPrimaryZone -Name $testZone -ZoneFile $testZoneFile
-Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
+Add-DnsServerPrimaryZone -Name corp.contoso.com -ZoneFile corp.contoso.com.dns
+Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
 ```
-
-这些命令可为 Azure 虚拟网络上的虚拟机能够解析为 ADFS1 专用 IP 地址的联合身份验证服务 FQDN 创建 DNS A 记录。
+这些命令会创建内部 DNS A 记录，这样 Azure 虚拟网络上的虚拟机便可将内部联合身份验证 FQDN 解析为 ADFS1 的专用 IP 地址。
   
 下面是生成的配置。
   
@@ -414,7 +411,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 2. 对于登录凭据，请键入 **user1@**\<在阶段 1 创建的域>。 
     
-    例如，如果你的测试域是 **testlab.contoso.com**，请键入 **user1@testlab.contoso.com**。按 TAB 或允许 Office 365 自动重定向。
+    例如，如果你的测试域是 **testlab.contoso.com**，请键入“user1@testlab.contoso.com”。按 TAB 或允许 Office 365 自动重定向。
     
     现在应该可以看到“**你所用连接不是专用连接**”页。之所以会看到此页是因为你在 ADFS1 上安装了台式计算机无法验证的自签名证书。在联合身份验证的生产部署中，将使用受信任的证书颁发机构颁发的证书，你的用户将不会看到此页。
     
