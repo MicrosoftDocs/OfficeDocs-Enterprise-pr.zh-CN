@@ -3,7 +3,7 @@ title: Office 365 的外部域名系统记录
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 8/13/2019
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 摘要：在计划 Office 365 部署时要使用的 DNS 记录的引用列表。
-ms.openlocfilehash: 665e5aebee6546ceaa3275249da1bcaac6eb0ba2
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37387049"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616135"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -45,7 +45,7 @@ ms.locfileid: "37387049"
 ||||
 |:-----|:-----|:-----|
 |**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |
-|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。   |**别名：** msoid  <br/> **目标：** clientconfig.microsoftonline-p.net  <br/> |
+|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。   |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **（域验证）** <br/> |由 Office 365 仅用来确你拥有你的域。它不影响其他任何内容。  <br/> |**主机：**@（或者，对于某些 DNS 托管提供程序，为你的域名）  <br/> **TXT 值：**_由 Office 365 提供的文本字符串_  <br/> Office 365 **域设置向导**提供了用于创建此记录的值。  <br/> |
 
 
