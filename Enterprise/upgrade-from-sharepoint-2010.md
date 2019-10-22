@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 和 SharePoint Server 2010 的支持结束时间在13年10月 13 2020 日结束。 使用本文作为升级到 SharePoint Online 或本地 SharePoint Server 的更新版本的指南。
-ms.openlocfilehash: c83d91b3ae8124312459033cb59524dec048fd03
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: 1d3931970047a3c19a8e5bd3a03378855056a3ad
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782429"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616125"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>从 SharePoint 2010 升级
 
@@ -41,7 +41,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
 这意味着将不会为产品提供任何进一步的更新、修补程序或修补程序（包括安全修补程序/修补程序），并且 Microsoft 支持会将其支持工作完全转移到更新的最新版本。 在支持 SharePoint Server 2010 方法之后，您应该利用机会在升级产品和/或迁移重要数据之前，对不再需要的数据进行修整。
   
 > [!NOTE]
-> 软件生命周期通常从产品初始发布之日起10年后持续。 您可以搜索[Microsoft 解决方案提供商](https://go.microsoft.com/fwlink/?linkid=841249)，他们可以帮助升级到下一版本的软件，或使用 Office 365 迁移（或两者）。 一定要确保您了解关键基础技术的支持日期的结束日期，尤其是您在使用 SharePoint 时使用的 SQL Server 版本。 
+> 软件生命周期通常是从产品初始发布之日起10年的时间内持续。 您可以搜索[Microsoft 解决方案提供商](https://go.microsoft.com/fwlink/?linkid=841249)，他们可以帮助升级到下一个版本的软件，或使用 Office 365 迁移（或两者）。 一定要确保您了解关键基础技术的支持日期的结束日期，尤其是您在使用 SharePoint 时使用的 SQL Server 版本。 请参阅[固定生命周期策略](https://support.microsoft.com/help/14085)以详细了解产品生命周期。
   
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
@@ -49,7 +49,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
   
 此矩阵有助于在迁移产品功能和用户数据时绘制课程：
   
-|**支持产品的结束**|**Good**|**最好**|
+|**支持产品的结束**|**良好**|**最好**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013 （本地）  <br/> |SharePoint Online  <br/> |
 ||SharePoint Server 2013 与 SharePoint Online 的混合  <br/> |SharePoint Server 2016 （本地）  <br/> |
@@ -118,7 +118,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>升级本地 SharePoint Server
 
-从最新版本的 SharePoint 本地产品（SharePoint Server 2016）开始，SharePoint Server 升级必须以*串行*方式进行，这意味着无法直接从 sharepoint server 2010 升级到 sharepoint server 2016。 
+从最新版本的 SharePoint 本地产品（SharePoint Server 2019）开始，SharePoint Server 升级必须以*串行*方式进行，这意味着无法从 sharepoint server 2010 升级到 sharepoint server 2016 或 sharepoint 2019，直. 
   
 |||
 |:-----|:-----|
@@ -168,7 +168,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>在 SharePoint Online 和本地 SharePoint Server 之间创建 SharePoint 混合解决方案
 
-另一个选项（可能是用于某些迁移需求的本地和在线领域的最佳选择）是一种混合部署，您可以将 SharePoint Server 2013 或2016场连接到 SharePoint Online 以创建 SharePoint 混合：[了解 sharepoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx).
+另一个选项（可能是用于某些迁移需求的内部部署和在线领域的最佳选择）是混合部署，您可以将 SharePoint Server 2013 或2016或2019场连接到 SharePoint Online 以创建 SharePoint 混合：[了解 sharepoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)。
   
 如果你决定将 SharePoint Server 场混合为你的迁移目标，请务必规划应将哪些网站和用户移动到联机，以及需要在本地部署。 对 SharePoint Server 服务器场内容的审阅和排名（确定对公司的高、中或低影响的数据）可能有助于做出此决定。 您可能只需要与 SharePoint Online 共享（a）用户帐户进行登录，并且（b） SharePoint Server 搜索索引--这可能不会很清楚，除非您了解如何使用您的网站。 如果您的公司后来决定将所有内容迁移到 SharePoint Online，您可以将所有剩余的帐户和数据联机移动，并使您的本地服务器场退役，并且 SharePoint 服务器场的管理/管理将通过 Office 365 完成。来自该点的控制台。
   
