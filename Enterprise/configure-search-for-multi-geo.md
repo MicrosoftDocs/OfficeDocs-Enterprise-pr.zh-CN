@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何在多地理位置环境中配置搜索。
-ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068068"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643275"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>为 Office 365 多地理位置配置搜索
 
@@ -152,16 +152,16 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 
 2.  导航到搜索结果页（请参阅搜索结果页的[列表](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213)）
 
-3.  选择要设置的类别，单击右上角的“设置”**** 齿轮图标，然后单击“编辑页面”****。搜索结果页将在编辑模式下打开。
+3.  选择要设置的类别，单击右上角的 **“设置”** 齿轮图标，然后单击 **“编辑页面”**。搜索结果页将在编辑模式下打开。
 
      ![](media/configure-search-for-multi-geo-image2.png)
 1.  在搜索结果 Web 部件中，将鼠标指针移动到 Web 部件的右上角，单击箭头，然后单击菜单上的“** 编辑 Web 部件** ”。 搜索结果 Web 部件工具窗格在页面右上角的功能区下方打开。 ![](media/configure-search-for-multi-geo-image3.png)
 
-1.  在 Web 部件工具窗格中的“设置”**** 部分，在“结果控制设置”**** 下，选择“显示多地理位置结果”****，获取搜索结果 Web 部件，以显示来自所有地理位置的结果。
+1.  在 Web 部件工具窗格中的 **“设置”** 部分，在 **“结果控制设置”** 下，选择 **“显示多地理位置结果”**，获取搜索结果 Web 部件，以显示来自所有地理位置的结果。
 
-2.  单击“确定”****，以保存更改并关闭 Web 部件工具窗格。
+2.  单击 **“确定”**，以保存更改并关闭 Web 部件工具窗格。
 
-3.  单击主菜单“页面”选项卡上的“签入”****，查看对搜索结果 Web 部件所做的更改。
+3.  单击主菜单 **“页面”选项卡上的“签入”**，查看对搜索结果 Web 部件所做的更改。
 
 4.  使用页面顶部的注释中提供的链接来发布更改。
 
@@ -172,11 +172,11 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 
 **要求**
 
-对于每个地理位置，必须确保组织中的所有用户都已授予根网站（例如 contoso**APAC**.sharepoint.com/ and contoso**EU**.sharepoint.com/）的**读取**权限级别。[了解权限](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
+对于每个地理位置，必须确保组织中的所有用户都已授予根网站（例如 contoso**APAC**.sharepoint.com/ and contoso**EU**.sharepoint.com/）的**读取**权限级别。[了解权限](https://support.office.com/zh-CN/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
 ### <a name="query-parameters"></a>查询参数
 
-EnableMultiGeoSearch - 此布尔值指定是否应将查询扇出到多地理位置租户的其他地理位置的索引。 将其设置为 **true** 以扇出查询；设置为 **false** 则不扇出查询。 默认值为 **False**。 如果不包括此参数，则不会将查询扇出到其他地理位置。 如果在非多地理位置环境中使用该参数，则会忽略该参数。
+EnableMultiGeoSearch - 此布尔值指定是否应将查询扇出到多地理位置租户的其他地理位置的索引。 将其设置为 **true** 以扇出查询；设置为 **false** 则不扇出查询。 如果不包含此参数，则默认值为 **false**（除非针对使用企业搜索中心模板的网站执行 REST API 调用，在这种情况下，默认值为 **true**）。 如果在非多地理位置环境中使用该参数，则会忽略该参数。
 
 ClientType - 此参数为字符串。 输入每个搜索应用程序的唯一客户端名称。 如果不包括此参数，则不会将查询扇出到其他地理位置。
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - 这是一个可选列表，其中包含多地理�
 </tbody>
 </table>
 
-如果省略 DataLocation 或终结点，或如果 DataLocation 是重复的，则请求将会失败。[可以使用 Microsoft Graph 获取有关租户地理位置终结点的信息](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery)。
+如果省略 DataLocation 或终结点，或如果 DataLocation 是重复的，则请求将会失败。[可以使用 Microsoft Graph 获取有关租户地理位置终结点的信息](https://docs.microsoft.com/zh-CN/sharepoint/dev/solution-guidance/multigeo-discovery)。
 
 ### <a name="response-data"></a>响应数据
 
@@ -221,7 +221,7 @@ MultiGeoSearchStatus - 这是 SharePoint Search API 响应请求返回的属性�
 <tbody>
 <tr class="odd">
 <td align="left">完整</td>
-<td align="left">来自所有<strong></strong>地理位置的完整结果。</td>
+<td align="left">来自<strong>所有</strong>地理位置的完整结果。</td>
 </tr>
 <tr class="even">
 <td align="left">部分</td>
