@@ -1,5 +1,5 @@
 ---
-title: 与团队中的来宾协作
+title: 在团队中与来宾协作
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 了解如何与团队中的来宾进行协作。
-ms.openlocfilehash: 9a169e33a9cbd8f079966443bd3d830aa79f4971
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 6a50331b5badcd2534052f04193300b427bafd57
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992411"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920155"
 ---
-# <a name="collaborate-with-guests-in-a-team"></a>与团队中的来宾协作
+# <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
 如果需要在文档、任务和对话中与来宾进行协作，我们建议使用 Microsoft 团队。 团队提供了 Office 和 SharePoint 中提供的所有协作功能，并在统一的用户体验中提供了持续聊天和可自定义且可扩展的协作工具集。
 
 在本文中，我们将完成必要的 Microsoft 365 配置步骤，以设置一个团队以与来宾协作。
+
+## <a name="video-demonstration"></a>视频演示
+
+该视频显示了本文档中描述的配置步骤。</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure 组织关系设置
 
@@ -46,7 +52,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 检查以确保在团队中启用了来宾访问，并根据你的业务需求对来宾设置进行任何调整。 请记住，这些设置会影响所有团队。
 
-![团队来宾访问切换的屏幕截图](media/teams-guest-access-toggle-on.png)
+![Teams 来宾访问切换的屏幕截图](media/teams-guest-access-toggle-on.png)
 
 设置团队来宾访问设置
 
@@ -77,19 +83,19 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 组织级别的共享设置
 
-为使来宾能够访问团队中的文件，SharePoint 组织级别的共享设置必须允许与来宾共享。
+工作组内容（如文件、文件夹和列表）都存储在 SharePoint 中。 为使来宾能够访问团队中的这些项目，SharePoint 组织级别的共享设置必须允许与来宾共享。
 
 组织级别设置决定了可用于单个网站的设置，包括与团队相关的网站。 网站设置不能比组织级别设置更具有更好的许可。
 
 如果要允许与匿名用户共享文件和文件夹，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 选择组织中的任何网站将需要的 "最高" 设置。
 
-![SharePoint 组织级共享设置的屏幕截图](media/sharepoint-organization-external-sharing-controls.png)
+![SharePoint 组织级别共享设置的屏幕截图](media/sharepoint-organization-external-sharing-controls.png)
 
 
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击 "**共享**"。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了更改，请单击 "**保存**"。
 
@@ -106,7 +112,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 - **仅限组织中的人员**-如果您希望大多数文件和文件夹共享与组织内部的人员共享，请选择此选项。
 - **特定人员**-如果您希望对来宾执行大量文件和文件夹共享，请考虑此选项。 此类型的链接可与来宾配合使用，并要求用户进行身份验证。
  
-![SharePoint 组织级别的文件和文件夹共享设置的屏幕截图](media/sharepoint-organization-files-folders-sharing-settings.png)
+![SharePoint 组织级别文件和文件夹共享设置的屏幕截图](media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 设置 SharePoint 组织级别的默认链接设置
@@ -160,4 +166,11 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 5. 单击“**添加**”，然后单击“**关闭**”。
 
 ## <a name="see-also"></a>另请参阅
+
+[有关与匿名用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+
+[与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
+
+[创建安全来宾共享环境](create-a-secure-guest-sharing-environment.md)）
+
 

@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 了解如何在 SharePoint 网站中与来宾进行协作。
-ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: d0f4528db683795da0f3c949228f902d775f6b7e
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017310"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920165"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
 如果需要在文档、数据和列表之间与来宾进行协作，则可以使用 SharePoint 网站。 新式 SharePoint 网站连接到可管理网站成员身份的 Office 365 组，并提供其他协作工具（如共享邮箱和日历）。
 
 在本文中，我们将逐步完成为与来宾协作设置 SharePoint 网站所必需的 Microsoft 365 配置步骤。
+
+## <a name="video-demonstration"></a>视频演示
+
+该视频显示了本文档中描述的配置步骤。</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44Llg?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure 组织关系设置
 
@@ -63,13 +69,13 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 如果要允许与匿名用户共享文件和文件夹，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 选择组织中的任何网站将需要的 "最高" 设置。
 
-![SharePoint 组织级共享设置的屏幕截图](media/sharepoint-organization-external-sharing-controls.png)
+![SharePoint 组织级别共享设置的屏幕截图](media/sharepoint-organization-external-sharing-controls.png)
 
 
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击 "**共享**"。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了更改，请单击 "**保存**"。
 
@@ -79,7 +85,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 创建网站
 1. 在 SharePoint 管理中心中的 "**网站**" 下，单击 "**活动网站**"。
-2. 单击“**创建**”。 
+2. 单击“**创建**”。
 3. 单击 "**团队网站**"。
 4. 键入网站名称并输入组所有者的名称（网站所有者）。
 5. 在 "**高级设置**" 下，选择是否希望它成为公用或专用网站。
@@ -122,3 +128,10 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 4. 单击“关闭”****。
 
 ## <a name="see-also"></a>另请参阅
+
+[有关与匿名用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+
+[与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
+
+[创建安全来宾共享环境](create-a-secure-guest-sharing-environment.md)）
+

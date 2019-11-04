@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: 部署 Office 365 后，可以使用下面的一些工具和技术保持 Office 36 5 连接。需要了解官方服务运行状况和连续性指南以及在慢速网络中使用 Office 365 的最佳做法。还需要获取 Office 365 管理员应用程序并为“Office 365 商业版 - 管理帮助”添加书签。
-ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
+ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070048"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931690"
 ---
 # <a name="monitor-office-365-connectivity"></a>监视 Office 365 连接性
 
-部署 Office 365 后，可以使用下面的一些工具和技术保持 Office 36 5 连接。需要了解官方[服务运行状况和连续性](https://technet.microsoft.com/library/office-365-service-health.aspx)指南以及[在慢速网络中使用 Office 365 的最佳做法](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)。还需要获取 [Office 365 管理员应用程序](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)并为 [Office 365 商业版 - 管理帮助](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)添加书签。
+部署 Office 365 后，可以使用下面的一些工具和技术保持 Office 36 5 连接。需要了解官方[服务运行状况和连续性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)指南以及[在慢速网络中使用 Office 365 的最佳做法](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)。还需要获取 [Office 365 管理员应用程序](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)并为 [Office 365 商业版 - 管理帮助](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)添加书签。
   
 ## <a name="monitoring-office-365-connectivity"></a>监视 Office 365 连接性
 
