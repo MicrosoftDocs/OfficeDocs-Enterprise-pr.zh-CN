@@ -124,7 +124,7 @@
 #### [设置目录同步](set-up-directory-synchronization.md)
 ### [向用户帐户分配许可证](assign-licenses-to-user-accounts.md)
 
-## [3. 实施安全功能](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. 实施安全功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. 部署客户端软件
 ### [部署 Office 365 专业增强版](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
