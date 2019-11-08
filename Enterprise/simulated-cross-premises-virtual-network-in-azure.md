@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为开发/测试环境。
-ms.openlocfilehash: 595aa20595f43f481aaf090a14d0d7c0df000345
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 4f68bff2713119d3deb37e7dd7dc5b20107e6905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162485"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031507"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure 中的模拟跨界虚拟网络
 
@@ -62,7 +62,7 @@ ms.locfileid: "34162485"
 ![Microsoft 云中的测试实验室指南](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
+> 单击[此处](https://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>第 1 阶段：配置 TestLab 虚拟网络
 
@@ -79,7 +79,7 @@ ms.locfileid: "34162485"
 首先，在本地计算机上启动 Azure PowerShell 提示符。
   
 > [!NOTE]
-> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
   
 使用此命令登录 Azure 帐户。
   

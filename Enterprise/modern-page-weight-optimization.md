@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网页上优化页面权重。
-ms.openlocfilehash: 5e2231468363f58faeac1d7b21e06cd4fa790cf8
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 3079298781116c2664217f87715303c99e4d26b6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028209"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032247"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网页上优化页面权重
 
@@ -30,11 +30,11 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 本文将帮助你了解如何减少新式页面中的页面权重。
 
 >[!NOTE]
->要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/zh-CN/sharepoint/modern-experience-performance)。
+>要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>使用适用于 SharePoint 的页面诊断工具分析页面权重
 
-**适用于 SharePoint 的页面诊断工具**是一款面向 Chrome 和 [Microsoft Edge 版本 77 或更高版本](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8)的浏览器扩展，可用于分析发布 SharePoint 新式发布网页和经典发布网页。 该工具对已分配的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请访问[使用适用于 SharePoint Online 的页面诊断工具](page-diagnostics-for-spo.md)。
+**适用于 SharePoint 的页面诊断工具**是一款面向 Chrome 和 [Microsoft Edge 版本 77 或更高版本](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)的浏览器扩展，可用于分析发布 SharePoint 新式发布网页和经典发布网页。 该工具对已分配的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请访问[使用适用于 SharePoint Online 的页面诊断工具](page-diagnostics-for-spo.md)。
 
 通过适用于 SharePoint 的页面诊断工具分析 SharePoint 网页时，可在“_诊断测试_”窗格的“**页面权重小于 500KB **”结果中查看页面相关信息。 如果页面权重低于基线值，则结果将显示为绿色；如果页面权重大于基线值，则结果显示为红色。
 
@@ -60,7 +60,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 
 可在以下文章中找到有关限制权重的其他指南：
 
-- [优化 SharePoint 中的页面性能](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+- [优化 SharePoint 中的页面性能](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
 
 在修改页面来修正性能问题之前，请在分析结果中记下页面加载时间。 修改后再次运行工具，查看新结果是否在基线标准范围内，同时检查新的页面加载时间，查看是否有提升。
 
@@ -75,7 +75,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/zh-CN/sharepoint/modern-experience-performance.md)
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [内容分发网络](content-delivery-networks.md)
 

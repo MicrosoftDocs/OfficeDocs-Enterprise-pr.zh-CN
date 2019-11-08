@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 摘要：为 Office 365 开发/测试环境配置目录同步。
-ms.openlocfilehash: c1596b12ab3c6c8feda3063134cc53a5f18919af
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 795bd871be7937933ce61801d616c900dab7601a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162425"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030786"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 开发/测试环境的目录同步
 
@@ -44,7 +44,7 @@ ms.locfileid: "34162425"
 2. 在 APP1 上安装和配置 Azure AD Connect。
     
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
+> 单击[此处](https://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>第 1 阶段：创建 Office 365 开发/测试环境
 

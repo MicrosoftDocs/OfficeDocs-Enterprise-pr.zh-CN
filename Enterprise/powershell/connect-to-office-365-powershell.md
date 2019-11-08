@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行管理中心任务。
-ms.openlocfilehash: c5bf5204d8ca1c8db35635f080031838e9fbea03
-ms.sourcegitcommit: 86a740dccf273d679a8938e11e60d2a497c01689
+ms.openlocfilehash: 1bcf2438c4a07f3d025ef9cb664875214f1aa289
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37328150"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031747"
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
@@ -36,7 +36,7 @@ ms.locfileid: "37328150"
 自本文发布之日起，对于用户、组和许可证管理，Azure Active Directory PowerShell Graph 模块不能完全替代用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的 cmdlets 中的功能。 在大多数情况下，需要使用两种版本。 可以在同一计算机上安全地安装两种版本。
 
 > [!TIP]
-> **刚开始接触 PowerShell？** 请观看领英学习提供的 [PowerShell 概述](https://support.office.com/zh-CN/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
+> **刚开始接触 PowerShell？** 请观看领英学习提供的 [PowerShell 概述](https://support.office.com/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
@@ -150,7 +150,7 @@ ms.locfileid: "37328150"
     
   - 对于 Windows 7 或 Windows Server 2008 R2，请参阅[不能打开用于 Windows PowerShell 的 Azure Active Directory 模块](https://go.microsoft.com/fwlink/p/?LinkId=532370)
 
-  - 对于 Windows 10、Windows 8.1 和 Windows 8，请参阅[在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](https://docs.microsoft.com/zh-CN/dotnet/framework/install/dotnet-35-windows-10)
+  - 对于 Windows 10、Windows 8.1 和 Windows 8，请参阅[在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
 
   
 - **您的 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 版本可能已过期。** 若要进行检查，请在 Office 365 PowerShell 或 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 中运行以下命令：

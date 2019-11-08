@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解 Office 365 多地理位置、多地理位置的工作原理，以及什么地理位置可用于数据存储。
-ms.openlocfilehash: f3abcf5e2c5cf0b8250b219e2891181365ffa934
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 216ff8e80970630356c36d50beda25f93ec706da
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069418"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031757"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>计划使用 Office 365 多地理位置
 
@@ -25,7 +25,7 @@ ms.locfileid: "34069418"
 
 下面是一些关键的多地理位置术语，有助于了解此配置的基本概念：
 
--   **租户** - 组织在 Office 365 中的表示形式，通常有一个或多个关联域（例如，http://contoso.sharepoint.com)）。 
+-   **租户** - 组织在 Office 365 中的表示形式，通常有一个或多个关联域（例如，https://contoso.sharepoint.com)）。 
 
 -   **地理位置** - Office 365 租户中可用于托管数据的地理位置。
 
@@ -64,7 +64,7 @@ ms.locfileid: "34069418"
 
 创建一个用户列表，并包含他们的用户主体名称 (UPN) 和相应首选数据位置的位置代码。首先包含你的测试用户和初始试点组。在配置过程中你将需要使用这个列表。
 
-如果用户是从本地 Active Directory 系统同步到 Azure Active Directory，你必须将首选数据位置设置为 Active Directory 属性，并使用 Azure Active Directory Connect 同步它。 无法使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。 [Azure Active Directory Connect 同步：配置 Office 365 资源的首选数据位置](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)中介绍了在 Active Directory 中设置并同步 PDL 的步骤。
+如果用户是从本地 Active Directory 系统同步到 Azure Active Directory，你必须将首选数据位置设置为 Active Directory 属性，并使用 Azure Active Directory Connect 同步它。 无法使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。 [Azure Active Directory Connect 同步：配置 Office 365 资源的首选数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)中介绍了在 Active Directory 中设置并同步 PDL 的步骤。
 
 多地理位置租户的管理可能与非多地理位置租户不同，因为许多 SharePoint 和 OneDrive 设置和服务都具有多地理位置意识。我们建议你在继续配置之前先查看[管理多地理位置环境](administering-a-multi-geo-environment.md)。
 

@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: 了解如何将 OneDrive 站点移到其他地理位置。
-ms.openlocfilehash: 352e8317a3f62e23c4dc0faed4cb412707f525d8
-ms.sourcegitcommit: 921545ad533001a7ab055d3e6b19bfc8869df286
+ms.openlocfilehash: 49fec1359ed839b16c1872ab607d87515a27eaf5
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814714"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033448"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 
@@ -25,7 +27,7 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 
 在 OneDrive 异地移动窗口期间（约 2-6 小时），用户的 OneDrive 将被设置为只读。用户仍可通过 OneDrive 同步客户端访问其文件或访问其在 SharePoint Online 中的 OneDrive 站点。OneDrive 异地移动完成后，当用户导航到 Office 365 应用启动器中的 OneDrive 时，将被自动连接到他们在目标地理位置中的 OneDrive。同步客户端将自动从新位置开始同步。
 
-执行本文中的步骤需要安装 [Microsoft SharePoint Online PowerShell 模块](https://www.microsoft.com/en-us/download/details.aspx?id=35588)。
+执行本文中的步骤需要安装 [Microsoft SharePoint Online PowerShell 模块](https://www.microsoft.com/download/details.aspx?id=35588)。
 
 ## <a name="communicating-to-your-users"></a>向用户传达
 

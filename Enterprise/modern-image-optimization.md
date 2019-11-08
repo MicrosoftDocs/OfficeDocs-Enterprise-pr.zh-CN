@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面中优化图像。
-ms.openlocfilehash: 3884758dfb2f2a81a0a6ac10abcf51932abec666
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: dafa31f95babfe0389fd77bf4a25b5a346cf3474
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028229"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032267"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化图像
 
@@ -30,11 +30,11 @@ ms.locfileid: "37028229"
 有关在经典发布网站中优化图像的信息，请参阅 [SharePoint Online 的图像优化](image-optimization-for-sharepoint-online.md)。
 
 >[!NOTE]
->要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/zh-CN/sharepoint/modern-experience-performance)。
+>要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>使用适用于 SharePoint 的页面诊断工具分析图像优化
 
-**适用于 SharePoint 的页面诊断工具**是一款面向 Chrome 和 [Microsoft Edge 版本 77 或更高版本](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8)的浏览器扩展，可用于分析 SharePoint 新式和经典发布网站页面。 该工具对已分析的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请参阅[使用适用于 SharePoint Online 的页面诊断工具](page-diagnostics-for-spo.md)。
+**适用于 SharePoint 的页面诊断工具**是一款面向 Chrome 和 [Microsoft Edge 版本 77 或更高版本](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)的浏览器扩展，可用于分析 SharePoint 新式和经典发布网站页面。 该工具对已分配的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请参阅[使用适用于 SharePoint Online 的页面诊断工具](page-diagnostics-for-spo.md)。
 
 通过适用于 SharePoint 的页面诊断工具分析 SharePoint 新式网站时，可在“_诊断测试_”窗格中查看有关大图像的信息。
 
@@ -64,7 +64,7 @@ ms.locfileid: "37028229"
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/zh-CN/sharepoint/modern-experience-performance.md)
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [内容分发网络](content-delivery-networks.md)
 

@@ -6,15 +6,17 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: 了解如何将 SharePoint 站点移到其他地理位置。
-ms.openlocfilehash: f1837942a72881578930f94ad8c4b57dbdb0c649
-ms.sourcegitcommit: 59c250b5f62e72fb51fd0b80d2be636ee8078f6b
+ms.openlocfilehash: 3ba95215860646691e511b17d509dbbc49a5a75a
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35422371"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033438"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 

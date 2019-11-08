@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: 了解多地理位置环境中的 SharePoint 存储配额。
-ms.openlocfilehash: a9ccc32940293dcd11e2f3b89607950f7b6ae3f0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4049312a2da64f16d2637ffd37adf98f2282287
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070748"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033378"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>多地理位置环境中的 SharePoint 存储配额
 
@@ -27,7 +29,7 @@ SharePoint Online 管理员可通过连接到中心位置来为任何地理位�
 
 ## <a name="configure-a-storage-quota-for-a-geo-location"></a>为地理位置配置存储配额
 
-使用 [Microsoft SharePoint Online 模块](https://www.microsoft.com/en-us/download/details.aspx?id=35588 )，并连接到中心位置来为地理位置分配存储配额。 
+使用 [Microsoft SharePoint Online 模块](https://www.microsoft.com/download/details.aspx?id=35588 )，并连接到中心位置来为地理位置分配存储配额。 
 
 若要为某个位置分配存储配额，请运行 cmdlet：
 

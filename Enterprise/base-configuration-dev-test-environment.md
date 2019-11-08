@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 摘要：在 Microsoft Azure 中创建一个简化的内部网作为开发/测试环境。
-ms.openlocfilehash: f6a9f2f2742b56ffb5f8a7521a14bfe48d3adc22
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 3f6851ba9ed1220fc7a55fb440b687528c81c938
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162435"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030476"
 ---
 # <a name="base-configuration-devtest-environment"></a>基础配置开发/测试环境
 
@@ -104,7 +104,7 @@ ms.locfileid: "34162435"
 ![Microsoft 云中的测试实验室指南](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
+> 单击[此处](https://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
   
 ### <a name="step-1-create-the-virtual-network"></a>步骤 1：创建虚拟网络
 
@@ -113,7 +113,7 @@ ms.locfileid: "34162435"
 首先，从 Azure PowerShell 提示符开始。
   
 > [!NOTE]
-> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Azure PowerShell cmdlet 使用入门](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)。 
+> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Azure PowerShell cmdlet 使用入门](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)。 
   
 使用以下命令登录 Azure 帐户。
   
@@ -400,7 +400,7 @@ CLIENT1 重启后，请使用 CORP\\User1 帐户名称和密码进行连接，�
 Azure 中的基础配置现在已完成，可用于应用程序开发和测试或用于构建其他测试环境。 
   
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
+> 单击[此处](https://aka.ms/catlgstack)可直观映射到 Office 365 测试实验室指南堆栈中的所有文章。
   
 <a name="mincost"> </a>
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>最大限度降低 Azure 中测试环境虚拟机的成本

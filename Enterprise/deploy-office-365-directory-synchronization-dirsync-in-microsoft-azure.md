@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 摘要：在 Azure 虚拟机上部署 Azure AD Connect，以在本地目录和 Office 365 订阅的 Azure AD 租户之间同步帐户。
-ms.openlocfilehash: 8b521746946c3f1be077fe49bf12be6a72125738
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cb908de04aa38972744077bd1359b94babca7290
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068024"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038281"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Office 365 目录同步
 
@@ -100,7 +100,7 @@ Azure Active Directory (AD) Connect（以前称为 Directory Synchronization 工
     
 - 在本地网络中，存在域控制器和 DNS 服务器。
     
-- Azure AD Connect 执行密码哈希同步而不是单一登录。你无需部署 Active Directory 联合身份验证服务 (AD FS) 基础结构。要了解有关密码哈希同步和单一登录选项的详细信息，请参阅[为 Azure Active Directory 混合标识解决方案选择正确的身份验证方法](http://aka.ms/auth-options)。
+- Azure AD Connect 执行密码哈希同步而不是单一登录。你无需部署 Active Directory 联合身份验证服务 (AD FS) 基础结构。要了解有关密码哈希同步和单一登录选项的详细信息，请参阅[为 Azure Active Directory 混合标识解决方案选择正确的身份验证方法](https://aka.ms/auth-options)。
     
 下面是在环境中部署此解决方案时可能会考虑的一些其他设计选项：
   
@@ -147,7 +147,7 @@ Azure Active Directory (AD) Connect（以前称为 Directory Synchronization 工
     
 通过检查内部 DNS 验证目录同步服务器是否正确使用 DNS，以确保为具有其 IP 地址的虚拟机添加地址 (A) 记录。 
   
-按照[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)中的说明，使用远程桌面连接来连接到目录同步服务器。登录后，将虚拟机加入到本地 AD DS 域。
+按照[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon)中的说明，使用远程桌面连接来连接到目录同步服务器。登录后，将虚拟机加入到本地 AD DS 域。
   
 若要使用 Azure AD Connect 访问 Internet 资源，必须将目录同步服务器配置为使用本地网络的代理服务器。有关要执行的其他配置步骤，应与网络管理员联系。
   
@@ -161,7 +161,7 @@ Azure Active Directory (AD) Connect（以前称为 Directory Synchronization 工
 
 请完成以下过程：
   
-1. 通过远程桌面连接，使用具有本地管理员特权的 AD DS 域帐户连接到目录同步服务器。请参阅[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)。
+1. 通过远程桌面连接，使用具有本地管理员特权的 AD DS 域帐户连接到目录同步服务器。请参阅[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon)。
     
 2. 从目录同步服务器中打开[设置 Office 365 的目录同步](set-up-directory-synchronization.md)一文，并按照使用密码哈希同步进行目录同步的说明操作。
     

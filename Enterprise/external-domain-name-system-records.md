@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 摘要：在计划 Office 365 部署时要使用的 DNS 记录的引用列表。
-ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: ec05958eaf40fe988245eae808cc78bf60c06136
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616135"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028816"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -31,7 +31,7 @@ ms.locfileid: "37616135"
   
 |||
 |:-----|:-----|
-|![域](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**想要查看 Office 365 组织的 DNS 记录的自定义列表？** 可以在 Office 365 中找到为你的域[创建 Office 365 DNS 记录所需的信息](https://support.office.microsoft.com/zh-CN/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)。<br/> **需要在你的域的 DNS 主机（例如 GoDaddy 或 eNom）中添加这些记录的分步帮助？**[查找有关许多热门 DNS 主机的分步说明的链接](https://go.microsoft.com/fwlink/?LinkId=286745)。 <br/>  **是否坚持使用自己自定义部署的引用列表？** 下方的列表应该用作你的自定义 Office 365 部署的引用。需要选择将哪些记录应用于你的组织并填写适当的值。 <br/> **返回到** [Office 365 的网络规划和性能优化](https://aka.ms/tune)。  <br/> |
+|![域](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**想要查看 Office 365 组织的 DNS 记录的自定义列表？** 可以在 Office 365 中找到为你的域[创建 Office 365 DNS 记录所需的信息](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)。<br/> **需要在你的域的 DNS 主机（例如 GoDaddy 或 eNom）中添加这些记录的分步帮助？**[查找有关许多热门 DNS 主机的分步说明的链接](https://go.microsoft.com/fwlink/?LinkId=286745)。 <br/>  **是否坚持使用自己自定义部署的引用列表？** 下方的列表应该用作你的自定义 Office 365 部署的引用。需要选择将哪些记录应用于你的组织并填写适当的值。 <br/> **返回到** [Office 365 的网络规划和性能优化](https://aka.ms/tune)。  <br/> |
 
 通常最难找出 SPF 和 MX 记录。我们已在本文末尾更新了 SPF 记录指南。请注意，_只能为你的域使用单个 SPF 记录_。可以使用多个 MX 记录；不过，这可能会造成邮件传递问题。使用将电子邮件定向到一个邮件系统的单个 MX 记录会减少很多潜在的问题。
   
@@ -103,7 +103,7 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
->  SPF 旨在帮助防止欺骗，但还有 SPF 无法防止的欺骗技术。为了防止这些欺骗，在你设置 SPF 后，也应该为 Office 365 配置 DKIM 和 DMARC。请参阅[Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/zh-CN/library/mt695945%28v=exchg.150%29.aspx)，了解入门知识。之后，请参阅[Use DMARC to validate email in Office 365](https://technet.microsoft.com/zh-CN/library/mt734386%28v=exchg.150%29.aspx)。
+>  SPF 旨在帮助防止欺骗，但还有 SPF 无法防止的欺骗技术。为了防止这些欺骗，在你设置 SPF 后，也应该为 Office 365 配置 DKIM 和 DMARC。请参阅[Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)，了解入门知识。之后，请参阅[Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
   
 SPF 记录是有助于防止其他人使用你的域发送垃圾邮件或其他恶意电子邮件的 TXT 记录。发送方策略框架 (SPF) 通过标识有权从你的域发送电子邮件的服务器来记录工作。
   

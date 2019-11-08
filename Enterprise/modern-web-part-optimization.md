@@ -3,7 +3,7 @@ title: 在 SharePoint Online 新式网站页面中优化 Web 部件性能
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 11/6/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,26 +16,23 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面上优化 Web 部件性能。
-ms.openlocfilehash: 2fabfa44e29ac70d587ec2b6b95943a7c65632aa
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 776f80691b8679fdae04993763304ecf4867d3c5
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028239"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032227"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化 Web 部件性能
-
->[!TIP]
->有关在 SharePoint 网站页面上优化 iFrame 的信息，请参阅“在 SharePoint Online 新式和经典发布网站页面中优化 iFrame”。
 
 SharePoint Online 新式网站页面包含可能影响整个页面加载时间的 Web 部件。 本文将帮助你了解如何确定页面内的 Web 部件在哪些方面影响了用户感知到的延迟，以及如何修正常见问题。
 
 >[!NOTE]
->要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/zh-CN/sharepoint/modern-experience-performance)。
+>要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>使用适用于 SharePoint 的页面诊断工具分析 Web 部件
 
-**适用于 SharePoint 的页面诊断工具**是一款面向 Chrome 和 [Microsoft Edge 版本 77 或更高版本](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8)的浏览器扩展，可用于分析 SharePoint 新式和经典发布网站页面。 该工具对已分析的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请参阅[使用适用于 SharePoint Online 的页面诊断工具](page-diagnostics-for-spo.md)。
+**适用于 SharePoint 的页面诊断工具**是一款面向 Chrome 和 [Microsoft Edge 版本 77 或更高版本](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)的浏览器扩展，可用于分析 SharePoint 新式和经典发布网站页面。 该工具对已分配的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请参阅[使用适用于 SharePoint Online 的页面诊断工具](page-diagnostics-for-spo.md)。
 
 通过适用于 SharePoint 的页面诊断工具分析 SharePoint 网站页面时，可在“_诊断测试_”窗格的“**Web 部件影响页面加载时间**”结果中，查看有关超出基线指标的 Web 部件的信息。
 
@@ -72,7 +69,7 @@ Web 部件性能较差的原因有三类。 使用以下信息确定哪些问题
   - 移动使用不频繁的方案并编辑模式代码（如属性窗格）以使用 _import()_ 语句分隔区块。
   - 审查 _package.json_ 文件的依赖项以完全删除任何死代码。 将任何仅限测试/内部版本的依赖项移动到 devDependencies。
   - 最佳静态资源下载需要使用 Office 365 CDN。 公用 CDN 来源更适合 _js/css_ 文件。 有关使用 Office 365 CDN 的详细信息，请参阅[结合使用 Office 365 内容分发网络 (CDN) 和 SharePoint Online](use-office-365-cdn-with-spo.md)。
-  - 重复使用作为 SharePoint 框架 (SPFx) 一部分的 _React_ 和 _Fabric 导入_等框架。 有关详细信息，请参阅 [SharePoint 框架概述](https://docs.microsoft.com/zh-CN/sharepoint/dev/spfx/sharepoint-framework-overview)。
+  - 重复使用作为 SharePoint 框架 (SPFx) 一部分的 _React_ 和 _Fabric 导入_等框架。 有关详细信息，请参阅 [SharePoint 框架概述](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)。
   - 确保你使用的是最新版本的 SharePoint 框架，并在新版本推出时进行升级。
 - 数据提取/缓存
   - 如果 Web 部件依赖额外的服务器调用来提取数据以进行显示，请确保这些服务器 API 运行快速且/或实施客户端缓存（例如，对于较大的集使用 _localStorage_ 或 _IndexDB_）。
@@ -99,7 +96,7 @@ Web 部件性能较差的原因有三类。 使用以下信息确定哪些问题
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/zh-CN/sharepoint/modern-experience-performance.md)
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [内容分发网络](content-delivery-networks.md)
 

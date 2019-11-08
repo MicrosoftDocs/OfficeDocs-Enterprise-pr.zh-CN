@@ -11,18 +11,19 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 摘要：获取介绍 SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型、部署和平台选项的 IT 海报。
-ms.openlocfilehash: ed4aca3728d12b1a7828b003f0da219d67da6de3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce12d0a807c71e88d2f989f1b24ce033a63b8b70
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068408"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038261"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型
 
@@ -108,7 +109,7 @@ ms.locfileid: "34068408"
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![SharePoint Server 2016 数据库海报的缩略图](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | 此 IT 海报是 SharePoint Server 2016 数据库的快速参考指南。每个数据库都包含以下详细信息：<br/><br/> - 大小 <br/> - 扩展指南 <br/> - I/O 模式 <br/> - 要求： <br/><br/>  第一页包含 SharePoint 系统数据库和具有多个数据库的服务应用程序。第二页显示了具有单个数据库的所有服务应用程序。<br/><br/>  有关 SharePoint Server 2016 数据库的详细信息，请参阅 [SharePoint Server 2016 中的数据库类型和说明](https://technet.microsoft.com/en-us/library/cc678868%28v=office.16%29.aspx) <br/> |
+|[![SharePoint Server 2016 数据库海报的缩略图](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | 此 IT 海报是 SharePoint Server 2016 数据库的快速参考指南。每个数据库都包含以下详细信息：<br/><br/> - 大小 <br/> - 扩展指南 <br/> - I/O 模式 <br/> - 要求： <br/><br/>  第一页包含 SharePoint 系统数据库和具有多个数据库的服务应用程序。第二页显示了具有单个数据库的所有服务应用程序。<br/><br/>  有关 SharePoint Server 2016 数据库的详细信息，请参阅 [SharePoint Server 2016 中的数据库类型和说明](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Microsoft Skype for Business 2015 体系结构模型
@@ -138,7 +139,7 @@ ms.locfileid: "34068408"
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![SharePoint 2013 平台选项的缩略图](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |对于业务决策者 (BDM) 和架构师，此模型介绍了 SharePoint 2013、Office 365 中的 SharePoint、与 Office 365 的本地混合、Azure 以及仅本地部署的平台选项。它包括每个体系结构的概述、建议、许可证要求，以及每个平台的架构师和 IT 专业人员任务列表。重点介绍了有关 Azure 的多个 SharePoint 解决方案。<br/><br/>有关此海报的可访问文本版本，请访问[可访问关系图 - Microsoft SharePoint 2013 平台选项](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![SharePoint 2013 平台选项的缩略图](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |对于业务决策者 (BDM) 和架构师，此模型介绍了 SharePoint 2013、Office 365 中的 SharePoint、与 Office 365 的本地混合、Azure 以及仅本地部署的平台选项。它包括每个体系结构的概述、建议、许可证要求，以及每个平台的架构师和 IT 专业人员任务列表。重点介绍了有关 Azure 的多个 SharePoint 解决方案。<br/><br/>有关此海报的可访问文本版本，请访问[可访问关系图 - Microsoft SharePoint 2013 平台选项](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Exchange 2013 平台选项
