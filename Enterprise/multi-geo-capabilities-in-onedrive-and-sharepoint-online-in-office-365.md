@@ -7,51 +7,53 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 利用 OneDrive Online 中的多地理位置功能将 Office 365 的触及范围扩展到多个地理区域。
-ms.openlocfilehash: 99c265da9c3ace0c2c415289b8db52f97d51b985
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 85418578c8e0140285d1cfdbd2a46d36d5f4f350
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37046073"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033388"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a><span data-ttu-id="eaf68-103">OneDrive 和 SharePoint Online 中的多地理位置功能</span><span class="sxs-lookup"><span data-stu-id="eaf68-103">Multi-Geo Capabilities in OneDrive and SharePoint Online</span></span>
+# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a><span data-ttu-id="a7d9e-103">OneDrive 和 SharePoint Online 中的多地理位置功能</span><span class="sxs-lookup"><span data-stu-id="a7d9e-103">Multi-Geo Capabilities in OneDrive and SharePoint Online</span></span>
 
-<span data-ttu-id="eaf68-104">利用 OneDrive 和 SharePoint Online 中的多地理位置功能，可以控制在其中静态存储共享资源（比如 SharePoint 团队站点和 Office 365 组邮箱）的国家或地区。</span><span class="sxs-lookup"><span data-stu-id="eaf68-104">Multi-Geo capabilities in OneDrive and SharePoint Online enables control of the country or region where shared resources like SharePoint team sites and Office 365 Group mailboxes are stored at rest.</span></span>
+<span data-ttu-id="a7d9e-104">利用 OneDrive 和 SharePoint Online 中的多地理位置功能，可以控制在其中静态存储共享资源（比如 SharePoint 团队站点和 Office 365 组邮箱）的国家或地区。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-104">Multi-Geo capabilities in OneDrive and SharePoint Online enables control of the country or region where shared resources like SharePoint team sites and Office 365 Group mailboxes are stored at rest.</span></span>
 
-<span data-ttu-id="eaf68-105">每个用户、组邮箱和 SharePoint 站点都有一个首选数据位置 (PDL)，表示要在其中存储相关数据的地理位置。</span><span class="sxs-lookup"><span data-stu-id="eaf68-105">Each user, Group mailbox, and SharePoint site has a Preferred Data Location (PDL) which denotes the geo location where related data is to be stored.</span></span> <span data-ttu-id="eaf68-106">可将用户的个人数据（Exchange 邮箱和 OneDrive）以及用户创建的任何 Office 365 组或 SharePoint 站点存储在指定地理位置，以满足数据驻留要求。</span><span class="sxs-lookup"><span data-stu-id="eaf68-106">Users' personal data (Exchange mailbox and OneDrive) along with any Office 365 Groups or SharePoint sites that they create can be stored in the specified geo location to meet data residency requirements.</span></span> <span data-ttu-id="eaf68-107">你可以[为每个地理位置指定不同的管理员](add-a-sharepoint-geo-admin.md)。</span><span class="sxs-lookup"><span data-stu-id="eaf68-107">You can [specify different administrators for each geo location](add-a-sharepoint-geo-admin.md).</span></span>
+<span data-ttu-id="a7d9e-105">每个用户、组邮箱和 SharePoint 站点都有一个首选数据位置 (PDL)，表示要在其中存储相关数据的地理位置。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-105">Each user, Group mailbox, and SharePoint site has a Preferred Data Location (PDL) which denotes the geo location where related data is to be stored.</span></span> <span data-ttu-id="a7d9e-106">可将用户的个人数据（Exchange 邮箱和 OneDrive）以及用户创建的任何 Office 365 组或 SharePoint 站点存储在指定地理位置，以满足数据驻留要求。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-106">Users' personal data (Exchange mailbox and OneDrive) along with any Office 365 Groups or SharePoint sites that they create can be stored in the specified geo location to meet data residency requirements.</span></span> <span data-ttu-id="a7d9e-107">你可以[为每个地理位置指定不同的管理员](add-a-sharepoint-geo-admin.md)。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-107">You can [specify different administrators for each geo location](add-a-sharepoint-geo-admin.md).</span></span>
 
-<span data-ttu-id="eaf68-108">用户在使用 Office 365 服务（包括 Office 应用程序、OneDrive 和搜索）时将能获得无缝体验。</span><span class="sxs-lookup"><span data-stu-id="eaf68-108">Users get a seamless experience when using Office 365 services, including Office applications, OneDrive, and Search.</span></span> <span data-ttu-id="eaf68-109">有关详细信息，请参阅[多地理位置环境中的用户体验](multi-geo-user-experience.md)。</span><span class="sxs-lookup"><span data-stu-id="eaf68-109">See [User experience in a multi-geo environment](multi-geo-user-experience.md) for details.</span></span>
+<span data-ttu-id="a7d9e-108">用户在使用 Office 365 服务（包括 Office 应用程序、OneDrive 和搜索）时将能获得无缝体验。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-108">Users get a seamless experience when using Office 365 services, including Office applications, OneDrive, and Search.</span></span> <span data-ttu-id="a7d9e-109">有关详细信息，请参阅[多地理位置环境中的用户体验](multi-geo-user-experience.md)。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-109">See [User experience in a multi-geo environment](multi-geo-user-experience.md) for details.</span></span>
 
-## <a name="onedrive"></a><span data-ttu-id="eaf68-110">OneDrive</span><span class="sxs-lookup"><span data-stu-id="eaf68-110">OneDrive</span></span>
+## <a name="onedrive"></a><span data-ttu-id="a7d9e-110">OneDrive</span><span class="sxs-lookup"><span data-stu-id="a7d9e-110">OneDrive</span></span>
 
-<span data-ttu-id="eaf68-111">管理员可依据用户的 PDL 配置每个用户的 OneDrive，或[将其移至](move-onedrive-between-geo-locations.md)附属位置。</span><span class="sxs-lookup"><span data-stu-id="eaf68-111">Each user's OneDrive can be provisioned in or [moved by an administrator](move-onedrive-between-geo-locations.md) to a satellite location in accordance with the user's PDL.</span></span> <span data-ttu-id="eaf68-112">个人文件随后保留在该地理位置中，不过可以将这些文件与其他地理位置中的用户共享。</span><span class="sxs-lookup"><span data-stu-id="eaf68-112">Personal files are then kept in that geo location, though they can be shared with users in other geo locations.</span></span>
+<span data-ttu-id="a7d9e-111">管理员可依据用户的 PDL 配置每个用户的 OneDrive，或[将其移至](move-onedrive-between-geo-locations.md)附属位置。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-111">Each user's OneDrive can be provisioned in or [moved by an administrator](move-onedrive-between-geo-locations.md) to a satellite location in accordance with the user's PDL.</span></span> <span data-ttu-id="a7d9e-112">个人文件随后保留在该地理位置中，不过可以将这些文件与其他地理位置中的用户共享。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-112">Personal files are then kept in that geo location, though they can be shared with users in other geo locations.</span></span>
 
-## <a name="sharepoint-sites-and-groups"></a><span data-ttu-id="eaf68-113">SharePoint 网站和组</span><span class="sxs-lookup"><span data-stu-id="eaf68-113">SharePoint Sites and Groups</span></span>
+## <a name="sharepoint-sites-and-groups"></a><span data-ttu-id="a7d9e-113">SharePoint 网站和组</span><span class="sxs-lookup"><span data-stu-id="a7d9e-113">SharePoint Sites and Groups</span></span>
 
-<span data-ttu-id="eaf68-114">可通过 SharePoint 管理中心管理多地理位置功能。</span><span class="sxs-lookup"><span data-stu-id="eaf68-114">Management of the Multi-Geo feature is available through the SharePoint admin center.</span></span> <span data-ttu-id="eaf68-115">可在[相应的博客文章](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)中找到详细信息。</span><span class="sxs-lookup"><span data-stu-id="eaf68-115">Detailed information can be found in the [corresponding blog post](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).</span></span>
+<span data-ttu-id="a7d9e-114">可通过 SharePoint 管理中心管理多地理位置功能。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-114">Management of the Multi-Geo feature is available through the SharePoint admin center.</span></span> <span data-ttu-id="a7d9e-115">可在[相应的博客文章](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)中找到详细信息。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-115">Detailed information can be found in the [corresponding blog post](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).</span></span>
 
-<span data-ttu-id="eaf68-116">当用户在多地理环境中创建与 SharePoint 组连接的网站时，他们的 PDL 将用于确定网站及其关联的组邮箱的创建地理位置。</span><span class="sxs-lookup"><span data-stu-id="eaf68-116">When a user creates a SharePoint group-connected site, their PDL is used to determine the geo location where the site and its associated Group mailbox is created.</span></span> <span data-ttu-id="eaf68-117">（如果尚未设置用户的 PDL 值，或已将其设置为未配置为附属位置的地理位置，则会在中心位置创建站点和邮箱。）</span><span class="sxs-lookup"><span data-stu-id="eaf68-117">(If the user's PDL value hasn't been set, or has been set to geo location that hasn't been configured as a satellite location, then the site and mailbox are created in the central location.)</span></span>
+<span data-ttu-id="a7d9e-116">当用户在多地理环境中创建与 SharePoint 组连接的网站时，他们的 PDL 将用于确定网站及其关联的组邮箱的创建地理位置。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-116">When a user creates a SharePoint group-connected site in a multi-geo environment, their PDL is used to determine the geo location where the site and its associated Group mailbox is created.</span></span> <span data-ttu-id="a7d9e-117">（如果尚未设置用户的 PDL 值，或已将其设置为未配置为附属位置的地理位置，则会在中心位置创建站点和邮箱。）</span><span class="sxs-lookup"><span data-stu-id="a7d9e-117">(If the user's PDL value hasn't been set, or has been set to geo location that hasn't been configured as a satellite location, then the site and mailbox are created in the central location.)</span></span>
 
-<span data-ttu-id="eaf68-118">除 Exchange、OneDrive 和 SharePoint 外的其他 Office 365 服务都不是多地理位置服务。</span><span class="sxs-lookup"><span data-stu-id="eaf68-118">Office 365 services other than Exchange, OneDrive, and SharePoint are not Multi-Geo.</span></span> <span data-ttu-id="eaf68-119">但是，通过这些服务创建的 Office 365 组带有创建者的 PDL 的印记，并将在对应的地理位置中设置其 Exchange 组邮箱和 SharePoint O365 组站点。</span><span class="sxs-lookup"><span data-stu-id="eaf68-119">However, Office 365 Groups that are created by these services will be stamped with the PDL of the creator and their Exchange Group mailbox and SharePoint O365 Group Site provisioned in the corresponding geo.</span></span> 
+<span data-ttu-id="a7d9e-118">除 Exchange、OneDrive 和 SharePoint 外的其他 Office 365 服务都不是多地理位置服务。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-118">Office 365 services other than Exchange, OneDrive, and SharePoint are not Multi-Geo.</span></span> <span data-ttu-id="a7d9e-119">但是，通过这些服务创建的 Office 365 组带有创建者的 PDL 的印记，并将在对应的地理位置中设置其 Exchange 组邮箱和 SharePoint O365 组站点。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-119">However, Office 365 Groups that are created by these services will be stamped with the PDL of the creator and their Exchange Group mailbox and SharePoint O365 Group Site provisioned in the corresponding geo.</span></span> 
 
-## <a name="managing-the-multi-geo-environment"></a><span data-ttu-id="eaf68-120">管理多地理位置环境</span><span class="sxs-lookup"><span data-stu-id="eaf68-120">Managing the multi-geo environment</span></span>
+## <a name="managing-the-multi-geo-environment"></a><span data-ttu-id="a7d9e-120">管理多地理位置环境</span><span class="sxs-lookup"><span data-stu-id="a7d9e-120">Managing the multi-geo environment</span></span>
 
-<span data-ttu-id="eaf68-121">多地理位置环境的设置和管理是通过 SharePoint 管理中心完成的。</span><span class="sxs-lookup"><span data-stu-id="eaf68-121">Setting up and managing your multi-geo environment is done through the SharePoint admin center.</span></span> 
+<span data-ttu-id="a7d9e-121">多地理位置环境的设置和管理是通过 SharePoint 管理中心完成的。</span><span class="sxs-lookup"><span data-stu-id="a7d9e-121">Setting up and managing your multi-geo environment is done through the SharePoint admin center.</span></span> 
 
 ![SharePoint 管理中心中地理位置页面的屏幕截图](media/sharepoint-multi-geo-admin-center.png)
 
-<span data-ttu-id="eaf68-123">（诸如移动 SharePoint 站点或 OneDrive 站点的某些操作需要 Microsoft PowerShell。）</span><span class="sxs-lookup"><span data-stu-id="eaf68-123">(Some actions, such as moving a SharePoint site or a OneDrive site require Microsoft PowerShell.)</span></span>
+<span data-ttu-id="a7d9e-123">（诸如移动 SharePoint 站点或 OneDrive 站点的某些操作需要 Microsoft PowerShell。）</span><span class="sxs-lookup"><span data-stu-id="a7d9e-123">(Some actions, such as moving a SharePoint site or a OneDrive site require Microsoft PowerShell.)</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="eaf68-124">另请参阅</span><span class="sxs-lookup"><span data-stu-id="eaf68-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a7d9e-124">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a7d9e-124">See also</span></span>
 
-[<span data-ttu-id="eaf68-125">SharePoint 和 Office 365 组中的多地理位置功能</span><span class="sxs-lookup"><span data-stu-id="eaf68-125">Multi-Geo in SharePoint and Office 365 Groups</span></span>](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
+[<span data-ttu-id="a7d9e-125">SharePoint 和 Office 365 组中的多地理位置功能</span><span class="sxs-lookup"><span data-stu-id="a7d9e-125">Multi-Geo in SharePoint and Office 365 Groups</span></span>](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
 
-[<span data-ttu-id="eaf68-126">管理多地理位置环境</span><span class="sxs-lookup"><span data-stu-id="eaf68-126">Administering a multi-geo environment</span></span>](administering-a-multi-geo-environment.md)
+[<span data-ttu-id="a7d9e-126">管理多地理位置环境</span><span class="sxs-lookup"><span data-stu-id="a7d9e-126">Administering a multi-geo environment</span></span>](administering-a-multi-geo-environment.md)
 
-[<span data-ttu-id="eaf68-127">多地理位置环境中的 SharePoint 存储配额</span><span class="sxs-lookup"><span data-stu-id="eaf68-127">SharePoint storage quotas in multi-geo environments</span></span>](sharepoint-multi-geo-storage-quota.md)
+[<span data-ttu-id="a7d9e-127">多地理位置环境中的 SharePoint 存储配额</span><span class="sxs-lookup"><span data-stu-id="a7d9e-127">SharePoint storage quotas in multi-geo environments</span></span>](sharepoint-multi-geo-storage-quota.md)
 
-[<span data-ttu-id="eaf68-128">在多地理位置环境中管理 Exchange Online 邮箱</span><span class="sxs-lookup"><span data-stu-id="eaf68-128">Administering Exchange Online mailboxes in a multi-geo environment</span></span>](administering-exchange-online-multi-geo.md)
+[<span data-ttu-id="a7d9e-128">在多地理位置环境中管理 Exchange Online 邮箱</span><span class="sxs-lookup"><span data-stu-id="a7d9e-128">Administering Exchange Online mailboxes in a multi-geo environment</span></span>](administering-exchange-online-multi-geo.md)
