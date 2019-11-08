@@ -13,21 +13,22 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 对 SharePoint Online 中的数据删除的说明。
-ms.openlocfilehash: ff219654387a17598f1ada8c866a005d8d4f5449
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 44b05ce6c028e79e489a94157f264fcedd63ea1a
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067254"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035472"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365 中的 SharePoint Online 数据删除
 
-SharePoint Online 将对象存储为应用程序数据库中的抽象代码。 当用户将文件上传到 SharePoint Online 时，会反汇编该文件并将其转换为应用程序代码，并将其存储在多个数据库的多个表中。 在 SharePoint Online 中，客户上传的所有内容都被分成多个块，并进行了加密（可能包含多个 AES 256 位密钥），并分布在整个数据中心中。 有关分块和加密过程的具体详细信息，请参阅[Microsoft 云中的加密](/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)。 
+SharePoint Online 将对象存储为应用程序数据库中的抽象代码。 当用户将文件上传到 SharePoint Online 时，会反汇编该文件并将其转换为应用程序代码，并将其存储在多个数据库的多个表中。 在 SharePoint Online 中，客户上传的所有内容都被分成多个块，并进行了加密（可能包含多个 AES 256 位密钥），并分布在整个数据中心中。 有关分块和加密过程的具体详细信息，请参阅[Microsoft 云中的加密](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)。 
 
-在 SharePoint Online 中，项目会从从其原始位置删除时起的93天保留一段时间。 它们将在整个时间内保持在网站回收站中，除非有人将其从那里删除或清空回收站。 在这种情况下，这些项将转到网站集的回收站，这些项将在剩余的93天内保留。 有关还原已删除项目的信息，请参阅[在 SharePoint 网站的回收站中还原项目](https://support.office.com/en-us/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
+在 SharePoint Online 中，项目会从从其原始位置删除时起的93天保留一段时间。 它们将在整个时间内保持在网站回收站中，除非有人将其从那里删除或清空回收站。 在这种情况下，这些项将转到网站集的回收站，这些项将在剩余的93天内保留。 有关还原已删除项目的信息，请参阅[在 SharePoint 网站的回收站中还原项目](https://support.office.com/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
 )和[从网站集回收站还原已删除的项目](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b)。 无法在 SharePoint Online 中配置回收站保留时间。
 
 删除网站集时，还会删除集合中的网站层次结构，以及其中的所有内容：
+
 - 文档和文档库
 - 列表和列表数据
 - 网站配置设置

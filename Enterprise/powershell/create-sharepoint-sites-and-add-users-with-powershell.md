@@ -12,27 +12,27 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '摘要: 使用 Office 365 PowerShell 创建新的 SharePoint Online 网站, 然后将用户和组添加到这些网站。'
-ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 摘要：使用 Office 365 PowerShell 创建新的 SharePoint Online 网站，然后将用户和组添加到这些网站。
+ms.openlocfilehash: 2262c69af7dce7472257512d215c1f0425f875f0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069098"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031027"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户
 
- **摘要:** 使用 Office 365 PowerShell 创建新的 SharePoint Online 网站, 然后将用户和组添加到这些网站。
+ **摘要：** 使用 Office 365 PowerShell 创建新的 SharePoint Online 网站，然后将用户和组添加到这些网站。
 
-当您使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户时, 您可以在 Office 356 管理中心中快速和重复执行任务快得多。 你还可以执行在 Office 356 管理中心中无法执行的任务。 
+当您使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户时，您可以在 Office 356 管理中心中快速和重复执行任务快得多。 你还可以执行在 Office 356 管理中心中无法执行的任务。 
 
 ## <a name="before-you-begin"></a>开始之前
 
-本主题中的过程要求您连接到 SharePoint Online。 有关说明, 请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+本主题中的过程要求您连接到 SharePoint Online。 有关说明，请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>步骤 1：使用 Office 365 PowerShell 创建新的网站集
 
-使用 Office 365 PowerShell 和你使用提供的示例代码和记事本创建的 .csv 文件创建多个网站。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许您创建一个文件, 并运行一个使用该文件的 Office 365 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，你要创建一个 .csv 文件，然后使用 Office 365 PowerShell 引用该 .csv 文件，从而利用该文件的内容来创建网站。
+使用 Office 365 PowerShell 和你使用提供的示例代码和记事本创建的 .csv 文件创建多个网站。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许您创建一个文件，并运行一个使用该文件的 Office 365 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，你要创建一个 .csv 文件，然后使用 Office 365 PowerShell 引用该 .csv 文件，从而利用该文件的内容来创建网站。
 
 Office 365 PowerShell cmdlet 导入 .csv 文件并将其通过管道传递到大括号内的循环中，该循环将读取文件的第一行作为列标题。然后，Office 365 PowerShell cmdlet 循环访问剩余的记录，为每个记录创建一个新的网站集，并根据列标题指定网站集的属性。
 
@@ -47,7 +47,7 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>其中*租户*是你的租户的名称,*所有者*是你要向其授予主网站集管理员角色的租户上的用户用户名。<br/>(当使用记事本以更快地批量替换时, 可以按 Ctrl + H。)<br/>
+<br/>其中*租户*是你的租户的名称，*所有者*是你要向其授予主网站集管理员角色的租户上的用户用户名。<br/>（当使用记事本以更快地批量替换时，可以按 Ctrl + H。）<br/>
 
 2. 将文件以**SiteCollections**的形式保存在桌面上。<br/>
 
@@ -60,7 +60,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>其中, *MyAlias*等于您的用户别名。<br/>
+<br/>其中， *MyAlias*等于您的用户别名。<br/>
 
 2. 等待 Windows PowerShell 提示符重新出现。可能需要一两分钟。<br/>
 
@@ -71,7 +71,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. 请注意列表中的新网站集。 您应该会看到以下网站集: **contosotest**、 **TeamSite01**、 **Blog01**和**Project01**
+4. 请注意列表中的新网站集。 您应该会看到以下网站集： **contosotest**、 **TeamSite01**、 **Blog01**和**Project01**
 
 就是这样。你已经使用所创建的 .csv 文件和一个 Windows PowerShell cmdlet 创建了多个网站集。现在，可以创建用户并将其分配给这些网站。
 
@@ -112,9 +112,9 @@ Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint
 Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
 Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
 ```
-<br/>其中*租户*等于租户名称,*用户名*等于现有用户的用户名。<br/>
+<br/>其中*租户*等于租户名称，*用户名*等于现有用户的用户名。<br/>
 
-4. 将文件以**Users。 .csv**的形式保存到桌面。<br/>
+4. 将文件以**Users. .csv**的形式保存到桌面。<br/>
 
 5. 打开记事本的新实例，然后向其中粘贴以下文本块：<br/>
 
@@ -122,7 +122,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
-<br/>其中, MyAlias 等于当前登录的用户的用户名。<br/>
+<br/>其中，MyAlias 等于当前登录的用户的用户名。<br/>
 
 6. 将文件以**UsersAndGroups**的形式保存到您的桌面。 这是一个简单的 Windows PowerShell 脚本。
 
@@ -137,14 +137,14 @@ Set-ExecutionPolicy Bypass
 ```
 <br/>
 
-3. 在确认提示符处, 按 " **Y**"。<br/>
+3. 在确认提示符处，按 " **Y**"。<br/>
 
 4. 在 Windows PowerShell 提示符下键入或复制并粘贴以下内容，然后按 Enter 键：<br/>
 
 ```
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-<br/>其中, *MyAlias*等于您的用户名。<br/>
+<br/>其中， *MyAlias*等于您的用户名。<br/>
 
 5. 在继续之前，请等待提示符返回。首先，您将看到这些组在创建时的样子。然后，您将看到添加用户后的重复组列表。
 

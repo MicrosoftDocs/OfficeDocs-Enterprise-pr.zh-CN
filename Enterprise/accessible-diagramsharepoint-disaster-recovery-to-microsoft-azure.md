@@ -11,16 +11,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: 本文是名为“SharePoint 灾难恢复到 Microsoft Azure”的图的可访问文本版本。
-ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068518"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038231"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>可访问的图表 - SharePoint 灾难恢复到 Microsoft Azure
 
-**摘要:** 本文是名为 "SharePoint 灾难恢复到 Microsoft Azure" 的图表的可访问文本版本。
+**摘要：** 本文是名为 "SharePoint 灾难恢复到 Microsoft Azure" 的图表的可访问文本版本。
   
 此海报提供了用于在 Azure 中构建恢复环境的体系结构的示例。  
   
@@ -194,10 +194,9 @@ Azure 虚拟网络中具有三项云服务：
 
 此解决方案的 AD DS 配置构成混合部署方案，其中 AD DS 一部分部署在本地，一部分部署在 Azure 虚拟机上。  
   
-重要说明: 在 Azure 中部署 AD DS 之前, 请阅读在 Microsoft Azure 虚拟机 (http://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)) 上部署 Windows Server Active Directory 的指南。 
+重要说明：在 Azure 中部署 AD DS 之前，请阅读在 Microsoft Azure 虚拟机（https://docs.microsoft.com/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)）上部署 Windows Server Active Directory 的指南。 
   
-有关设计和部署 Active Directory 环境的完整指南, 请http://TechNet.microsoft.com参阅。 
-  
+ 
 此参考体系结构包括两个配置为域控制器的虚拟机。每个虚拟机配置如下：  
   
 - 大小 — 小。  

@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: 了解 SharePoint Online 中新式网站的性能建议。
-ms.openlocfilehash: 0f54520faaefcdfc66d10430c8d2a646696fc52b
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 2ff7f76a943563644403f3df2b6b0a6ee9b28d53
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441069"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031267"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online 新式门户网站限制
 
@@ -42,7 +42,7 @@ ms.locfileid: "37441069"
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>新式门户网站限制和建议
 
-|**限制**|**建议的最大值**|**备注**|
+|**限制**|**建议的最大值**|**注释**|
 |:-----|:-----|:-----|:-----|
 |页面和新闻项目  <br/> |每个网站 5,000 个  <br/> |建议将新式门户网站中的页面和新闻项目的数量限制为低于5000。  <br/> |
 |页面上的 Web 部件  <br/> |每页20张  <br/> |我们建议每个页面使用20个或更少的总 web 部件，包括现成的 Microsoft web 部件和自定义 web 部件。 <br/> 有关详细信息，请参阅[在 SharePoint Online 新式网站页面中优化 web 部件性能](modern-web-part-optimization.md)。  <br/> |
@@ -52,7 +52,7 @@ ms.locfileid: "37441069"
 |最大图像大小  <br/> |每个图像 300 Kb  <br/> |建议将图像大小限制为300kb 或更小，并使用 CDN 承载图像、样式表和脚本。 <br/>有关详细信息，请参阅[在 Sharepoint online 新式网站页面中优化图像](modern-image-optimization.md)和[使用 Office 365 内容传送网络（CDN）和 SharePoint online](use-office-365-cdn-with-spo.md)。  <br/> |
 |具有编辑权限的用户  <br/> |每个网站200个用户  <br/> |SharePoint 门户网站针对查看和使用内容进行了优化。 对门户的编辑权限应限制为受限制的用户组，因为编辑权限可下载其他控件，因此会对这些用户执行较慢的工作。 因此，拥有编辑权限的用户数过多将影响整体体验。 <br/> |
 |第三方 Iframe  <br/> |每页2个  <br/> |Iframe 由于加载单独的外部页面（包括 javascript、CSS 和框架元素等所有关联的内容）而导致速度不可预知。 如果必须使用 Iframe，请将它们的数目限制为2个或更少的页面。<br/> 有关详细信息，请参阅[在 SharePoint Online 新式和经典发布网站页面中优化 iframe](modern-iframe-optimization.md)。 <br/> |
-|对 UPA 服务的调用  <br/> |每个用户每小时1个  <br/> |我们建议您对 UPA （User Profile Application）服务不进行_每次请求_调用。 [Microsoft GRAPH API](https://docs.microsoft.com/en-us/graph/call-api)和[PageContext](https://docs.microsoft.com/en-us/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest)可用于查询用户信息。  <br/> 如果需要 UPA 服务呼叫，请在需要时进行单个呼叫，然后缓存信息以便在同一会话中重复使用。 |
+|对 UPA 服务的调用  <br/> |每个用户每小时1个  <br/> |我们建议您对 UPA （User Profile Application）服务不进行_每次请求_调用。 [Microsoft GRAPH API](https://docs.microsoft.com/graph/call-api)和[PageContext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest)可用于查询用户信息。  <br/> 如果需要 UPA 服务呼叫，请在需要时进行单个呼叫，然后缓存信息以便在同一会话中重复使用。 |
 |对分类服务的调用  <br/> |每个用户每小时5个  <br/> |我们建议您对分类服务不进行_每次请求_调用。 如果分类服务调用是必需的，请缓存信息以便在同一个会话中重复使用。 <br/> 有关详细信息，请参阅[在 SharePoint Online 新式和经典发布网站页面中优化页面调用](modern-page-call-optimization.md)。 <br/> |
 
 ## <a name="related-topics"></a>相关主题
@@ -63,8 +63,8 @@ ms.locfileid: "37441069"
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[SharePoint Online 限制](https://docs.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/en-us/sharepoint/modern-experience-performance)
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[SharePoint Online 门户性能指南](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+[SharePoint Online 门户性能指南](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)

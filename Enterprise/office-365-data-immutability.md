@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 定义并解释 Office 365 中的数据永久性。
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067247"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035572"
 ---
 # <a name="immutability-in-office-365"></a>Office 365 中的永久性
 
@@ -38,12 +38,12 @@ ms.locfileid: "37067247"
 
 此外，Microsoft 还开发了附加功能，通过与第三方数据捕获和管理解决方案集成，允许从其他来源[存档数据](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc)。 导入第三方数据后，可以将 Office 365 合规性功能应用于数据，包括：
 
-- [诉讼保留](/microsoft365/compliance/create-a-litigation-hold.md)
-- [就地电子数据展示和保留](/microsoft365/compliance/manage-legal-investigations.md)
-- [合规性搜索](/microsoft365/compliance/search-for-content.md)
-- [就地存档](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [邮箱审核](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [保留策略](/microsoft365/compliance/retention-policies.md)
+- [诉讼保留](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [就地电子数据展示和保留](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [合规性搜索](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [就地存档](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [邮箱审核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 例如，当将邮箱置于诉讼保留状态时，将保留第三方数据。 您可以使用就地电子数据展示或合规性搜索来搜索第三方数据。 或者，您可以将存档和保留策略应用于第三方数据，就像 Microsoft 数据一样。 在 Office 365 中存档第三方数据可帮助您的组织遵守政府和法规策略。
 

@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: 如果您的组织使用 Office 365 并限制网络中的计算机连接到 Internet，则在下面将找到应包含在出站允许列表中的终结点（Fqdn、端口、Url、IPv4 和 IPv6 地址范围），以确保您的计算机可以成功使用 Office 365。
 hideEdit: true
-ms.openlocfilehash: 8ff4caf4c2fb3e067f3d0d23aed0be16fd099039
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: f96aca7a7b4655df655228771d6319deb46408f9
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975851"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038271"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 美国政府版（GCC）高终结点
 
@@ -50,7 +50,7 @@ ms.locfileid: "37975851"
 
 - **类别**：显示终结点集是分类为“优化”、“允许”还是“默认”。可以在 [https://aka.ms/pnc](https://aka.ms/pnc) 上了解管理它们的这些类别和指南。此列还列出了哪些终结点集需要具有网络连接。对于不需要具有网络连接的终结点集，我们在此字段中提供备注，以指示在终结点集被阻止时将丢失哪些功能。如果要排除整个服务区域，则根据需要列出的终结点集不需要连接。
 
-- **ER**：如果终结点设置通过 Azure ExpressRoute （使用 Office 365 路由前缀）支持，则为 **"是"** 。 包含路由前缀的 BGP 社区与所列的服务区域对齐。 当 ER 为 "**否**" 时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定在 ER 为**no**时没有为终结点集播发任何路由。 如果您计划使用 Azure AD Connect，请阅读[特殊注意事项部分](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud)，以确保您具有适当的 Azure ad connect 配置。
+- **ER**：如果终结点设置通过 Azure ExpressRoute （使用 Office 365 路由前缀）支持，则为 **"是"** 。 包含路由前缀的 BGP 社区与所列的服务区域对齐。 当 ER 为 "**否**" 时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定在 ER 为**no**时没有为终结点集播发任何路由。 如果您计划使用 Azure AD Connect，请阅读[特殊注意事项部分](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)，以确保您具有适当的 Azure ad connect 配置。
 
 - **地址**：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
  

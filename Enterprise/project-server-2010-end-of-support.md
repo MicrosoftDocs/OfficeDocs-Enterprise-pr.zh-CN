@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支持结束时间为2020年10月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
-ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: b1505a89b10b3e18da99f66a203dde376f8db5c4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782439"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031617"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 结束支持路线图
 
@@ -145,7 +145,7 @@ Project Server 2010 与 Project Server 2019 之间的体系结构差异可防止
     
 主要资源：
   
-- [Project Server 2013 升级过程概述](https://go.microsoft.com/fwlink/p/?linkid=841274)
+- [升级到 Project Server 2013 的流程概述](https://go.microsoft.com/fwlink/p/?linkid=841274)
     
 - [升级数据库和 Project Web App 网站集 (Project Server 2013)](https://go.microsoft.com/fwlink/p/?linkid=841272)
     
@@ -157,7 +157,7 @@ Project Server 2010 与 Project Server 2019 之间的体系结构差异可防止
 
 迁移到 Project Server 2013 并验证数据是否已成功迁移之后，下一步是将数据迁移到 Project Server 2016。
   
-若要全面了解从 Project Server 2013 升级到 Project Server 2016 时需要执行的操作，请参阅[upgrade To Project server 2016](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)。
+若要全面了解从 Project Server 2013 升级到 Project Server 2016 时需要执行的操作，请参阅[upgrade To Project server 2016](https://docs.microsoft.com/Project/upgrade-to-project-server-2016)。
   
 主要资源：
   
@@ -176,7 +176,7 @@ Project Server 2010 与 Project Server 2019 之间的体系结构差异可防止
 
 迁移到 Project Server 2016 并验证数据是否已成功迁移之后，下一步是将数据迁移到 Project Server 2019。
   
-若要全面了解从 Project Server 2016 升级到 Project Server 2019 时需要执行的操作，请参阅[upgrade To Project server 2019](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)。
+若要全面了解从 Project Server 2016 升级到 Project Server 2019 时需要执行的操作，请参阅[upgrade To Project server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016)。
   
 主要资源：
   
@@ -189,7 +189,7 @@ Project Server 2010 与 Project Server 2019 之间的体系结构差异可防止
   
 - 升级过程会将您的数据从 Project Server 2016 数据库迁移到 SharePoint Server 2019 内容数据库。  Project Server 2019 将不再在 SharePoint Server 服务器场中创建自己的 Project Server 数据库。
 
-- 升级后，请注意 Project Web App 中的几项更改。  有关这些内容的说明，请参阅[Project Server 2019 中的新增功能](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
+- 升级后，请注意 Project Web App 中的几项更改。  有关这些内容的说明，请参阅[Project Server 2019 中的新增功能](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
 
   
 其他资源：
@@ -212,6 +212,6 @@ Project Server 2010 与 Project Server 2019 之间的体系结构差异可防止
 
 [从 SharePoint 2010 升级](upgrade-from-sharepoint-2010.md)
   
-[从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)
+[从 Office 2010 服务器和客户端进行升级](upgrade-from-office-2010-servers-and-products.md)
   
 

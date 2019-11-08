@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 摘要：使用 Office 365 PowerShell 管理 Microsoft Exchange Online，包括显示邮箱配置和显示高级报告。
-ms.openlocfilehash: f60c28be58796d16d4b04e42e421ed97475cc8e0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 06524431ee98a0f5119544da9278d8c672155fd9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068958"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031007"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Exchange Online
 
@@ -27,11 +27,11 @@ ms.locfileid: "34068958"
   
 所有 Microsoft Exchange Online 管理员的一项主要任务是管理邮箱，并获取有关它们的报告。 虽然你可以在 Microsoft 365 管理中心中完成其中的一些任务，但通过 Office 365 PowerShell 你可以更快、更轻松地完成其他任务。 有关详细信息，请参阅下列主题：
   
-- [使用 Office 365 PowerShell 显示 Exchange Online 邮箱信息](https://technet.microsoft.com/en-us/library/mt771881%28v=exchg.160%29.aspx)
+- [使用 Office 365 PowerShell 显示 Exchange Online 邮箱信息](https://technet.microsoft.com/library/mt771881%28v=exchg.160%29.aspx)
     
-- [使用 Office 365 PowerShell 显示 Exchange Online 报告](https://technet.microsoft.com/en-us/library/mt771882%28v=exchg.160%29.aspx)
+- [使用 Office 365 PowerShell 显示 Exchange Online 报告](https://technet.microsoft.com/library/mt771882%28v=exchg.160%29.aspx)
     
-- [使用 Office 365 PowerShell 确定可供 Exchange Online 管理员使用的 cmdlet](https://technet.microsoft.com/en-us/library/mt771883%28v=exchg.160%29.aspx)
+- [使用 Office 365 PowerShell 确定可供 Exchange Online 管理员使用的 cmdlet](https://technet.microsoft.com/library/mt771883%28v=exchg.160%29.aspx)
     
 ## <a name="see-also"></a>另请参阅
 

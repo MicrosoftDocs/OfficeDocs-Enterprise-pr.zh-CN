@@ -11,17 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: '摘要: 在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。'
-ms.openlocfilehash: fe98657f1298021d9ed2c32a357051b5faeb4f21
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
+ms.openlocfilehash: c0a469f8945b9e69415b511c253e72a0118a4cfa
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102530"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027666"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
- **摘要:** 为 Microsoft Azure 中的 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
+ **摘要：** 为 Microsoft Azure 中的 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
   
 在为 Azure 基础结构服务中的 Office 365 联合身份验证部署高可用性的这一阶段中，创建一个内部负载均衡器和两个 AD FS 服务器。
   
@@ -32,7 +32,7 @@ ms.locfileid: "34102530"
 必须创建面向 Internet 的负载均衡器，以便 Azure 在两个 Web 应用程序代理服务器之间平均分发来自 Internet 的传入客户端身份验证通信。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
   
 提供位置和资源组值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 中运行生成块。
   
@@ -66,13 +66,13 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
   
 在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。
   
-|**名称**|**Type**|**TTL**|**值**|
+|**Name**|**Type**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |联合身份验证服务 FDQN  <br/> |A  <br/> |3600  <br/> |面向 Internet 的 Azure 负载均衡器的公用 IP 地址（通过上一节中的 **Write-Host** 命令显示) <br/> |
    
 下面是一个示例：
   
-|**名称**|**Type**|**TTL**|**值**|
+|**Name**|**Type**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -96,7 +96,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
     
 - 表 A（针对可用性集）
     
-回想一下您在[高可用性联合身份验证阶段 2](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)中定义了表 M: 配置域控制器和表 R、V、S、I 和 A in [high availability 联合身份验证阶段 1: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。
+回想一下您在[高可用性联合身份验证阶段 2](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)中定义了表 M：配置域控制器和表 R、V、S、I 和 A in [high availability 联合身份验证阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。
   
 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 旨在让世界各地的客户能够使用 internet 连接连接到服务。 随着服务的演变，Office 365 的安全性、性能和可靠性根据使用 internet 的客户建立与服务的连接而得到改进。
-ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428069"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030496"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>评估 Office 365 网络连接
 
@@ -41,7 +41,7 @@ Office 365 旨在让世界各地的客户能够使用 internet 连接连接到�
 
 - 有关 Office 365 网络的概念性信息，请参阅[Office 365 网络连接概述](office-365-networking-overview.md)。
 - 请参阅[Office 365 网络连接原则](https://aka.ms/o365networkingprinciples)，了解用于安全管理 Office 365 流量和获得最佳性能的连接原则。
-- 注册[Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack)以获取有关 Office 365 规划、设计和部署的引导式协助。 
+- 注册[Microsoft FastTrack](https://www.microsoft.com/fasttrack)以获取有关 Office 365 规划、设计和部署的引导式协助。 
 - 请参阅下面的[Office 365 网络载入工具](assessing-network-connectivity.md#the-office-365-network-onboarding-tool)部分，运行基本的连接测试，这些测试提供有关可在给定用户位置和 Office 365 之间进行的网络连接改进的具体指导。
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Office 365 旨在让世界各地的客户能够使用 internet 连接连接到�
 
 - 我们将不断优化 Office 365 的核心方面，如可用性、全局覆盖和基于 internet 的连接的性能。 例如，许多 Office 365 服务利用一组扩展的面向 internet 的边缘节点。 此边缘网络为通过 internet 的连接提供最佳的邻近度和性能。
 
-- 在考虑将 Office 365 用于任何包括的服务（如团队或 Skype for Business Online 语音、视频或会议功能）时，客户应完成端到端网络评估并使用 Microsoft 满足连接要求[FastTrack](https://www.microsoft.com/en-us/fasttrack)。
+- 在考虑将 Office 365 用于任何包含的服务（如团队或 Skype for Business Online 语音、视频或会议功能）时，客户应完成端到端网络评估，并使用[Microsoft FastTrack](https://www.microsoft.com/fasttrack)满足连接要求。
 
 如果您正在评估 Office 365，并且不确定从哪里开始进行网络评估，或者发现您需要帮助解决的网络设计难题，请与你的 Microsoft 帐户团队合作。
 

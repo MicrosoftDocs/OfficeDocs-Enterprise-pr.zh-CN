@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 有关 Office 365 工程团队的内部日志记录如何工作的说明。
-ms.openlocfilehash: 5fff245435d6b21a06bfe8544f991b919dbf15d9
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3f0a65b618e34e5bba92a0f0b471c5c7c43bb329
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067226"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035522"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Office 365 工程团队的内部日志记录
+
 除了可用于客户的事件和日志数据之外，Office 365 工程师还提供了内部日志数据收集系统。 许多不同类型的日志数据将从 Office 365 服务器上传到内部的大型数据计算服务（称为 Cosmos）。 每个服务团队将审核日志从各自的服务器上载到 Cosmos 数据库中，以进行聚合和分析。 此数据传输通过经过专用的自动化工具（称为 Office 数据加载程序（ODL））在专门批准的端口和协议上进行 FIPS 140-2 验证的 TLS 连接。 Office 365 中用于收集和处理审核记录的工具不允许对原始审核记录的内容或时间排序进行永久或不可恢复的更改。
 
 服务团队使用 Cosmos 作为一个集中存储库来对应用程序使用情况进行分析，以衡量系统和操作性能，并查找可能指示问题或安全问题的 abnormalities 和模式。 每个服务团队将日志的基准上载到 Cosmos，具体取决于他们要分析的内容，这通常包括：
+
 - 事件日志
 - AppLocker 日志
 - 性能数据

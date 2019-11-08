@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 摘要：隔离和访问控制如何在 Azure Active Directory 中工作。
-ms.openlocfilehash: d1f3a10d44a949511236d5adce38693ad2ad5c04
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067222"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035779"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Azure Active Directory 中的隔离和访问控制
 
 Azure Active Directory 旨在通过逻辑数据隔离以一种高度安全的方式托管多个租户。 对 Azure Active Directory 的访问通过授权层进行了封闭。 Azure Active Directory 将租户容器的客户与安全边界相隔离，以保护客户的内容，以使其无法通过共同租户访问或泄露内容。 由 Azure Active Directory 的授权层执行三项检查：
+
 - 是否为主体启用了对 Azure Active Directory 租户的访问权限？
 - 是否为主体启用了对此租户中的数据的访问权限？
 - 此租户中的主体角色是否已授权用于请求的数据访问类型？

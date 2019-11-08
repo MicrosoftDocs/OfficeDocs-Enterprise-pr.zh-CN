@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 了解如何在 Microsoft PowerShell 中执行 Office 365 组的常见管理任务。
-ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: 94aa95de79099b45ea05533e7c22959b9bdf7669
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017340"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030997"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>使用 PowerShell 管理 Office 365 组
 
@@ -46,7 +46,7 @@ ms.locfileid: "37017340"
   
 如果要将 Office 365 组启用为 "代理发送"，请使用[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission)和[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) cmdlet 对此进行配置。 启用此设置后，Office 365 组用户可以使用 Outlook 或 web 上的 Outlook 以电子邮件的形式发送和回复电子邮件作为 Office 365 组。 用户可以转到组，创建新的电子邮件，并将 "代理发送" 字段更改为组的电子邮件地址。 
 
-（[也可以在 Exchange 管理中心中执行此操作](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。）
+（[也可以在 Exchange 管理中心中执行此操作](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。）
   
 使用以下脚本，将* \<GroupAlias\> *替换为您要更新的组的别名，并* \<\> *使用要向其授予 permssions 的用户的别名 UserAlias。 [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)以运行此脚本。
 
@@ -186,9 +186,9 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 
 ## <a name="related-topics"></a>相关主题
 
-[将通讯组列表升级到 Office 365 组](https://docs.microsoft.com/en-us/office365/admin/manage/upgrade-distribution-lists)
+[将通讯组列表升级到 Office 365 组](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[管理可以创建 Office 365 组的用户](https://docs.microsoft.com/en-us/office365/admin/create-groups/manage-creation-of-groups)
+[管理可以创建 Office 365 组的用户](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [管理对 Office 365 组的来宾访问](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

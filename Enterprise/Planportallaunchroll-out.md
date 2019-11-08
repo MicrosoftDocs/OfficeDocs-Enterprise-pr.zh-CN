@@ -11,15 +11,15 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: 本文介绍如何在 SharePoint Online 中规划门户启动以及成功启动所需的步骤
-ms.openlocfilehash: 8985ffb4b477ee70f0bf35489ce48fd72f8e4c86
-ms.sourcegitcommit: 739024fe2862ab646b36e218b57c5cc16ebe7892
+ms.openlocfilehash: cbb2c58498f682d68ac464d224522361a085b062
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422150"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027656"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>在 SharePoint Online 中规划门户启动滚动计划
-门户是贵公司的默认 SharePoint 网站;在大型组织中，可能有多种。 如果您希望贵组织内的超过 20% 的用户访问该页面，则应考虑使用门户页面。 不应将其与你的部门使用的团队网站相混淆，以在团队中协作和共享文档。
+门户是贵公司的默认 SharePoint 网站;在大型组织中，可能有多种。 如果你希望组织内 20% 以上的用户都能访问该页面，应考虑将该页面设置为门户页面。 此页面不应与你的部门用于在团队中协作和共享文档的团队网站混淆。
 
 本文介绍如何规划部署和向 SharePoint Online 计划。 它还提供了在 SharePoint Online 上不允许进行传统负载测试时遵循的方法。 SharePoint Online 是云服务，服务中负载的负载功能、运行状况和总体平衡由 Microsoft 进行管理。
 
@@ -28,14 +28,14 @@ ms.locfileid: "37422150"
 下面突出显示了部署方法。
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>SharePoint Online 中的容量规划概述
-为了高效地使用容量并处理意外增长，在任何服务器场中，我们都具有跟踪特定使用方案的自动化。 在任何一个服务器场中的任何一个租户的确切增长不可预测的情况下，累积的请求总数将随时间推移而预测。 通过确定 SharePoint Online 中的增长趋势，我们可以规划未来的扩展。 有关[SharePoint Online 的容量规划和负载测试](https://docs.microsoft.com/en-us/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)的详细信息。
+为了高效地使用容量并处理意外增长，在任何服务器场中，我们都具有跟踪特定使用方案的自动化。 在任何一个服务器场中的任何一个租户的确切增长不可预测的情况下，累积的请求总数将随时间推移而预测。 通过确定 SharePoint Online 中的增长趋势，我们可以规划未来的扩展。 有关[SharePoint Online 的容量规划和负载测试](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)的详细信息。
 
 成功启动的关键部分是以下详细说明的 "波形" 或 "分阶段式输出" 方法。 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>我可以加载测试 SharePoint Online 吗？
 SharePoint Online 是一个共享的多租用环境，它在服务器场之间平衡，并在不断调整规模。 负载测试环境（如 SharePoint Online）的缩放更改不会持续提供意外结果，但不允许这样做。 
 
-了解详细信息：[容量规划和负载测试 SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
+了解详细信息：[容量规划和负载测试 SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>按照建议的准则优化页面
 本地部署中的页面不应简单地移动到 SharePoint Online 中，而无需针对 SharePoint Online 的建议准则进行评审。 最佳方法是始终为 SharePoint 中的任何网站或门户优化任何主页，因为这是组织中的大多数用户将作为网站的起始点进行访问的位置。

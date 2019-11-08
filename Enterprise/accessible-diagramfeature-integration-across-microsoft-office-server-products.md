@@ -11,18 +11,18 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: 本文是在 Microsoft Office Server 产品-SharePoint Server、Exchange Server、Lync Server 和 Office Online Server 中名为 "功能集成" 的图表的可访问文本版本。
-ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782242"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027686"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>可访问的图 - 跨 Microsoft Office Server 产品的功能集成
 
-**摘要:** 本文是在 Microsoft Office Server 产品-SharePoint Server、Exchange Server、Lync Server 和 Office Online Server 中名为 "功能集成" 的图表的可访问文本版本。
+**摘要：** 本文是在 Microsoft Office Server 产品-SharePoint Server、Exchange Server、Lync Server 和 Office Online Server 中名为 "功能集成" 的图表的可访问文本版本。
   
-图包含多个选项卡, 如本文档的部分标题中所示。
+图包含多个选项卡，如本文档的部分标题中所示。
   
 ## <a name="introduction-tab"></a>“简介”选项卡
 
@@ -86,7 +86,7 @@ ms.locfileid: "35782242"
     
 - Lync
     
-- Office Online Server (以前称为 Office Web Apps) 
+- Office Online Server （以前称为 Office Web Apps） 
     
 高分辨率用户照片。此功能适用于：  
   
@@ -132,7 +132,7 @@ Outlook Web App 中的 Lync 状态。此功能适用于： 
 
 Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件提供基于浏览器的文件查看和编辑服务。Office Web Apps Server 适用于支持 Web 应用程序开放平台接口协议 (WOPI) 的产品和服务。这些产品也称为主机，包括 SharePoint 2013、Lync Server 2013 和 Exchange Server 2013。   
   
-若要了解有关 Office Web Apps Server 的详细信息, 请下载 Office Web Apps 部署http://aka.ms/OfficeWebAppsPoster简化的海报。 
+若要了解有关 Office Web Apps Server 的详细信息，请下载 Office Web Apps 部署https://aka.ms/OfficeWebAppsPoster简化的海报。 
   
 ## <a name="server-to-server-authentication-tab"></a>“服务器到服务器身份验证”选项卡。
 
@@ -166,7 +166,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 - 具有 https://<server name>/METADATA/JSON/1 的 JSON 元数据终结点的 Lync 服务器 
     
-- 具有 https://<web app name>/_LAYOUTS/15/METADATA/JSON/1 的 JSON 元数据终结点的 SharePoint 服务器 
+- 具有 JSON 元数据终结点的 SharePoint server https://<web app name>/_layouts/15/metadata/json/1 
     
 ### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>示例：SharePoint 和 Exchange 之间的电子数据展示的服务器到服务器身份验证工作原理
 
@@ -234,11 +234,11 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 - 648 × 648 用于 Lync Web Access 和 Lync 2013。  
     
-有关示例配置脚本, 请参阅 Jens Trier Rasmussen 的博客文章: 
+有关示例配置脚本，请参阅 Jens Trier Rasmussen 的博客文章： 
   
-- 使用来自 SharePoint Server 2013 的 Exchange 2013 高分辨率照片 (http://aka.ms/Bhr4d2) 
+- 使用来自 SharePoint Server 2013 的 Exchange 2013 高分辨率照片（https://aka.ms/Bhr4d2) 
     
-- 集成 Exchange 2013 和 Lync Server 2013 (http://aka.ms/Pn08dw) 
+- 集成 Exchange 2013 和 Lync Server 2013 （https://aka.ms/Pn08dw) 
     
 海报中还包含这两篇博客文章的 QR 代码。  
   
@@ -253,7 +253,7 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
   - “我的网站”通过 HTTP 或 HTTPS 连接到 SharePoint 服务器。SharePoint 在 MySite 数据库 (Https:443) 中对用户进行缓存。SharePoint 服务器使用在 Exchange 中设置的外部 URL 与 Exchange 客户端访问服务器进行交互。  
     
-  - Lync 2013 客户端, 它将维护与 Exchange 服务器的 GetConnection, 以获取照片更新 (HTTPS Get 请求-443)。 
+  - Lync 2013 客户端，它将维护与 Exchange 服务器的 GetConnection，以获取照片更新（HTTPS Get 请求-443）。 
     
 4. Exchange 客户端访问服务器使用内部 Exchange 通信连接到 Exchange 邮箱服务器。   
     
@@ -281,9 +281,9 @@ Office Web Apps Server 是一种 Office 服务器产品，它为 Office 文件�
     
 - 在 Lync 2013 中，启用统一联系人存储策略（默认为启用）。  
     
-有关示例配置脚本, 请参阅 Jens Trier Rasmussen 的博客文章: 
+有关示例配置脚本，请参阅 Jens Trier Rasmussen 的博客文章： 
   
-- 集成 Exchange 2013 和 Lync Server 2013 (http://aka.ms/Oyg7fh) 
+- 集成 Exchange 2013 和 Lync Server 2013 （https://aka.ms/Oyg7fh) 
     
  **工作原理** 
   
@@ -457,7 +457,7 @@ SharePoint Server 2013 运行下列作业和应用程序： 
     
 - Exchange 同步计时器作业，如下所述。  
     
-- SharePoint Server 2013 包含用户的 "我的网站" 和其他网站, 并运行多个用户任务。 
+- SharePoint Server 2013 包含用户的 "我的网站" 和其他网站，并运行多个用户任务。 
     
 - SharePoint Server 2013 包含搜索索引。  
     
@@ -535,7 +535,7 @@ Exchange 同步计时器作业： 
     
 2. 用户登录到 Exchange 2013 邮箱，Exchange CAS 通过 SIP/MTLS:5061 向 Lync Server 查询状态信息。  
     
-有关详细信息, 请参阅[集成 Microsoft Lync Server 2013 和 Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522)。
+有关详细信息，请参阅[集成 Microsoft Lync Server 2013 和 Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522)。
   
 第二个图显示 Outlook 和 SharePoint Server 如何使用 Lync 2013 显示用户的状态信息。  
   
@@ -569,7 +569,7 @@ Exchange 同步计时器作业： 
     
  **工作原理** 
   
-当被呼叫者的任何活动终结点上的被呼叫方不应答呼叫时, Lync Server 会将呼叫路由到 Exchange UM (即 Exchange 邮箱服务器) 上的语音邮件。 
+当被呼叫者的任何活动终结点上的被呼叫方不应答呼叫时，Lync Server 会将呼叫路由到 Exchange UM （即 Exchange 邮箱服务器）上的语音邮件。 
   
 随附的图显示了两种方案下的呼叫路由：  
   
@@ -615,7 +615,7 @@ Exchange 同步计时器作业： 
     
 - SharePoint 2013 
     
-组件 
+先决条件： 
   
 - Lync 2013 — 会议录制是 Lync 2013 中的客户端功能。   
     
@@ -627,7 +627,7 @@ Exchange 同步计时器作业： 
   
 - 所有音频  
     
-- 活动扬声器的视频 (如果使用) 
+- 活动扬声器的视频（如果使用） 
     
 - 全景视频（如果使用）  
     
@@ -667,7 +667,7 @@ IIS 服务器包含 IIS 设置。 
     
  **数字资产库**
   
-数字资产库是包含具有特定容量和性能含义的视频的资产库。 有关详细信息, 请参阅在中规划位于http://aka.ms/O1vq5w的 SharePoint Server 2013 中的数字资源库。 此海报中还包含用于访问此信息的 QR 代码。 
+数字资产库是包含具有特定容量和性能含义的视频的资产库。 有关详细信息，请参阅在中规划位于https://aka.ms/O1vq5w的 SharePoint Server 2013 中的数字资源库。 此海报中还包含用于访问此信息的 QR 代码。 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>使用 Lync 客户端录制和发布会议
 
@@ -679,14 +679,14 @@ IIS 服务器包含 IIS 设置。 
     
 2. 在会议期间，会议内容会录制到一个 MP4 文件中。  
     
-3. 会议结束后, 工作时录制会显示在计算机上的 "录制" 文件夹中 (\\C\\<username>\\:\\用户视频 Lync 录制)。 （可选）您可以使用随 Lync 客户端一起安装的 Lync 录制管理器应用程序对会议录制进行自定义。 
+3. 会议结束后，工作时录制会显示在计算机上的 "录制" 文件夹中（\\C\\<username>\\：\\用户视频 Lync 录制）。 （可选）您可以使用随 Lync 客户端一起安装的 Lync 录制管理器应用程序对会议录制进行自定义。 
     
 4. 将会议录制拖放到 SharePoint 资产库中。 
     
-5. 可选：录制位于资产库中之后，即可将其插入到任何 SharePoint 页面。 有关此步骤的详细信息, 请参阅 Office 365 博客条目, 创建并发布带有 SharePoint 和 Lync Online 的培训视频, 位于http://aka.ms/R61q35。 
+5. 可选：录制位于资产库中之后，即可将其插入到任何 SharePoint 页面。 有关此步骤的详细信息，请参阅 Office 365 博客条目，创建并发布带有 SharePoint 和 Lync Online 的培训视频，位于https://aka.ms/R61q35。 
     
  **视频缩略图**
   
-视频缩略图改进了资产库的外观。 若要了解有关创建会议录制的缩略图的详细信息, 请参阅捕获或更改视频缩略http://aka.ms/Kupj85图 (位于)。 此海报中还包含用于访问此信息的 QR 代码。 
+视频缩略图改进了资产库的外观。 若要了解有关创建会议录制的缩略图的详细信息，请参阅捕获或更改视频缩略https://aka.ms/Kupj85图（位于）。 此海报中还包含用于访问此信息的 QR 代码。 
   
 

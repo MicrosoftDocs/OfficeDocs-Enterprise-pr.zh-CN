@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息了解 Office 365 如何使用内容传递网络（Cdn）来提高性能。
-ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 7b9ef7a3742dbbccbc052eca28469c4fb10cdae1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643285"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029116"
 ---
 # <a name="content-delivery-networks-cdns"></a>内容传递网络（Cdn）
 
@@ -62,7 +62,7 @@ Office 365 CDN 内的**专用**来源提供对用户内容（如 SharePoint Onli
 
 Office 365 CDN 服务被归入 SharePoint Online 订阅。
 
-有关如何使用 Office 365 CDN 的详细信息，请参阅[将 office 365 内容传送网络与 SharePoint Online 结合使用](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)。
+有关如何使用 Office 365 CDN 的详细信息，请参阅[将 office 365 内容传送网络与 SharePoint Online 结合使用](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)。
 
 若要观看一系列简短视频，以提供有关使用 Office 365 CDN 的概念性和 HOWTO 信息，请访问[SharePoint 开发人员模式和实践 YouTube 频道](https://aka.ms/sppnp-videos)。
 
@@ -74,11 +74,11 @@ Office 365 CDN 服务被归入 SharePoint Online 订阅。
 
 您可以使用**AZURE cdn**来部署自己的 cdn 实例，以托管自定义 web 部件、库和其他资源资产，从而使您可以对 cdn 存储应用访问密钥，并对 cdn 配置进行更好的控制。 Azure CDN 的使用不是免费的，需要 Azure 订阅。
 
-有关如何配置 Azure CDN 实例的详细信息，请参阅[快速入门：将 azure 存储帐户与 AZURE Cdn 集成](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn)。
+有关如何配置 Azure CDN 实例的详细信息，请参阅[快速入门：将 azure 存储帐户与 AZURE Cdn 集成](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn)。
 
-有关如何将 Azure CDN 用于承载 SharePoint web 部件的示例，请参阅[将 SharePoint 客户端 web 部件部署到 AZURE CDN](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn)。
+有关如何将 Azure CDN 用于承载 SharePoint web 部件的示例，请参阅[将 SharePoint 客户端 web 部件部署到 AZURE CDN](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn)。
 
-有关 Azure CDN PowerShell 模块的详细信息，请参阅[使用 PowerShell 管理 AZURE CDN](https://docs.microsoft.com/en-us/azure/cdn/cdn-manage-powershell)。
+有关 Azure CDN PowerShell 模块的详细信息，请参阅[使用 PowerShell 管理 AZURE CDN](https://docs.microsoft.com/azure/cdn/cdn-manage-powershell)。
 
 ### <a name="microsoft-ajax-cdn"></a>Microsoft Ajax CDN
 
@@ -87,10 +87,10 @@ Microsoft 的**AJAX cdn**是一个只读的 cdn，可提供多种流行的开发
 若要将这些脚本包含在项目中，只需将对这些公开的可用库的任何引用替换为对 CDN 地址的引用，而不是将其包含在项目本身中。 例如，使用以下代码链接到 jQuery：
 
 ``` html
-<script src=http://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
+<script src=https://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
 ```
 
-有关如何使用 Microsoft Ajax CDN 的详细信息，请参阅[Microsoft AJAX cdn](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)。
+有关如何使用 Microsoft Ajax CDN 的详细信息，请参阅[Microsoft AJAX cdn](https://docs.microsoft.com/aspnet/ajax/cdn/overview)。
 
 ## <a name="how-does-office-365-use-content-from-a-cdn"></a>Office 365 如何使用 CDN 中的内容？
 
@@ -120,15 +120,15 @@ Office 365 中使用的 Cdn 始终可能会发生更改，在许多情况下，�
 
 |CDN  |Company  |用法  |链接  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Akamai         |公用源中的常规资产，私人来源中的 SharePoint 用户内容         |[结合使用 Office 365 内容传送网络和 SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)         |
+|Office 365 CDN     |Akamai         |公用源中的常规资产，私人来源中的 SharePoint 用户内容         |[结合使用 Office 365 内容传送网络和 SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |Azure CDN     |Microsoft         |自定义代码、SharePoint 框架解决方案         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Microsoft Ajax CDN （只读）     |Microsoft         |适用于 Ajax、jQuery、ASP.NET、引导和挖空等的通用库。         |[Microsoft Ajax CDN](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)         |
+|Microsoft Ajax CDN （只读）     |Microsoft         |适用于 Ajax、jQuery、ASP.NET、引导和挖空等的通用库。         |[Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>CDN 提供了哪些性能提升？
 
 在从从 Office 365 直接下载的数据与从特定 CDN 下载的数据（如相对于租户的位置和最近的 CDN 终结点的位置）之间测量性能的具体差异时，会涉及许多因素，由 CDN 提供服务的页面上的资产以及网络延迟和带宽的瞬间更改。 但是，简单的 A/B 测试可以帮助显示特定文件的下载时间的差异。
 
-下面的屏幕截图展示了 Office 365 中的本机文件位置与在[Microsoft Ajax 内容传递网络](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)上托管的相同文件之间的下载速度差异。 这些屏幕截图来自 Internet Explorer 11 开发人员工具中的 "**网络**" 选项卡。 这些屏幕截图显示热门库 jQuery 的延迟。 若要弹出此屏幕，请在 Internet Explorer 中，按**F12**键并选择 "**网络**" 选项卡，该选项卡 symbolized 带有 wi-fi 图标。
+下面的屏幕截图展示了 Office 365 中的本机文件位置与在[Microsoft Ajax 内容传递网络](https://docs.microsoft.com/aspnet/ajax/cdn/overview)上托管的相同文件之间的下载速度差异。 这些屏幕截图来自 Internet Explorer 11 开发人员工具中的 "**网络**" 选项卡。 这些屏幕截图显示热门库 jQuery 的延迟。 若要弹出此屏幕，请在 Internet Explorer 中，按**F12**键并选择 "**网络**" 选项卡，该选项卡 symbolized 带有 wi-fi 图标。
   
 ![F12 网络的屏幕截图](media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
@@ -153,7 +153,7 @@ Office 365 中使用的 Cdn 始终可能会发生更改，在许多情况下，�
 
 - 了解有关 Office 365 隐私和数据保护的详细信息，请参阅[Microsoft 信任中心](https://www.microsoft.com/trustcenter)
 - 了解有关 Akamai 的隐私和数据保护的详细信息[Akamai 隐私信任中心](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp)
-- 了解有关 azure[信任中心](https://azure.microsoft.com/en-us/overview/trusted-cloud/)的 azure 隐私和数据保护的详细信息
+- 了解有关 azure[信任中心](https://azure.microsoft.com/overview/trusted-cloud/)的 azure 隐私和数据保护的详细信息
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>如何使用所有这些第三方服务保护我的网络？
 
@@ -165,13 +165,13 @@ Office 365 中使用的 Cdn 始终可能会发生更改，在许多情况下，�
 
 Fqdn 列表以及它们如何利用 Cdn 在一段时间内的变化。 请参阅我们发布的[Office 365 url 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkID=293744)页面，获取最新使用 Cdn 的 fqdn 的日期。
 
-您还可以使用[Office 365 IP 地址和 URL Web 服务](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service)请求当前的 Office 365 url 和使用 CSV 或 JSON 格式的 IP 地址范围。
+您还可以使用[Office 365 IP 地址和 URL Web 服务](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)请求当前的 Office 365 url 和使用 CSV 或 JSON 格式的 IP 地址范围。
 
 ## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>我可以在本地网络上使用我自己的 CDN 和缓存内容吗？
 
 我们正在不断寻找新的方法来支持我们的客户需求，目前正在探索缓存代理解决方案和其他本地 CDN 解决方案的使用。
 
-尽管它不是 Office 365 CDN 的一部分，但您也可以使用**AZURE cdn**来承载自定义 web 部件、库和其他资源资产，这样您就可以对 cdn 存储应用访问密钥，并对 cdn 配置进行更好的控制。 Azure CDN 的使用不是免费的，需要 Azure 订阅。 有关如何配置 Azure CDN 实例的详细信息，请参阅[快速入门：将 azure 存储帐户与 AZURE Cdn 集成](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn)。
+尽管它不是 Office 365 CDN 的一部分，但您也可以使用**AZURE cdn**来承载自定义 web 部件、库和其他资源资产，这样您就可以对 cdn 存储应用访问密钥，并对 cdn 配置进行更好的控制。 Azure CDN 的使用不是免费的，需要 Azure 订阅。 有关如何配置 Azure CDN 实例的详细信息，请参阅[快速入门：将 azure 存储帐户与 AZURE Cdn 集成](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn)。
 
 ## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>我使用的是适用于 Office 365 的 Azure ExpressRoute，是否会改变内容？
 
@@ -189,11 +189,11 @@ Fqdn 列表以及它们如何利用 Cdn 在一段时间内的变化。 请参阅
 
 [评估 Office 365 网络连接](assessing-network-connectivity.md)
 
-[管理 Office 365 终结点](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
+[管理 Office 365 终结点](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 
 [Office 365 URL 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
-[结合使用 Office 365 内容传送网络和 SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
+[结合使用 Office 365 内容传送网络和 SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Microsoft 信任中心](https://www.microsoft.com/trustcenter)
 

@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法，适用于本地 Skype for business server 本地和 Exchange server 以及拆分域 Skype for Business 混合。
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759680"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029126"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Skype for Business 以使用混合新式验证
 
@@ -67,7 +67,7 @@ ms.locfileid: "36759680"
   
 正如您所看到的，有四个不同的位置可以打开 MA！ 为获得最佳用户体验，建议您在所有四个位置都打开 MA。 如果无法在所有这些位置启用 MA，请调整步骤，以便仅在环境所需的位置启用 MA。
   
-有关支持的拓扑，请参阅[Skype for](https://technet.microsoft.com/en-us/library/mt803262.aspx) business 的可支持性主题（MA 为 MA）。 
+有关支持的拓扑，请参阅[Skype for](https://technet.microsoft.com/library/mt803262.aspx) business 的可支持性主题（MA 为 MA）。 
   
  **重要说明**在开始之前，请仔细检查是否满足所有先决条件。 你将在[此处](hybrid-modern-auth-overview.md)找到此信息。
   
@@ -117,7 +117,7 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
   
  **注释**服务主体名称（Spn）标识 web 服务并将它们与安全主体（如帐户名或组）相关联，以便该服务可以代表授权的用户执行操作。 对服务器进行身份验证的客户端使用 Spn 中包含的信息。 
   
-1. 首先，使用[这些说明](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)连接到 AAD。
+1. 首先，使用[这些说明](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)连接到 AAD。
     
 2. 运行此命令（本地）以获取 SFB web 服务 Url 的列表。
 
@@ -174,7 +174,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 [链接回新式验证概述](hybrid-modern-auth-overview.md)。 
   
-您是否需要了解如何对 Skype for business 客户端使用新式验证（ADAL）？ 我们[在此处](https://technet.microsoft.com/en-us/library/mt710548.aspx)获取了一些步骤。
+您是否需要了解如何对 Skype for business 客户端使用新式验证（ADAL）？ 我们[在此处](https://technet.microsoft.com/library/mt710548.aspx)获取了一些步骤。
   
 您是否希望在不 SFB 的情况下对 Exchange Server、内部部署运行的这些步骤进行阅读。 这些步骤可在此处使用。
   

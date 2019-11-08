@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证创建和配置 Active Directory 联合身份验证服务 (AD FS) 服务器。
-ms.openlocfilehash: 83e6d024676ae608b9f6f856e2ce91c4b0b9a31f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 68410111be6c4d12e27e32e9663592306d733970
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067488"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030736"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
@@ -43,12 +43,12 @@ ms.locfileid: "34067488"
     
 - 表 A（针对可用性集）
     
-回想一下您在[高可用性联合身份验证阶段 2](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)中定义了表 M: 配置域控制器和表 R、V、S、I 和 A in [high availability 联合身份验证阶段 1: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。
+回想一下您在[高可用性联合身份验证阶段 2](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)中定义了表 M：配置域控制器和表 R、V、S、I 和 A in [high availability 联合身份验证阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
   
-首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。 指定变量的值, \<并删除和 > 字符。 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
+首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。 指定变量的值， \<并删除和 > 字符。 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   
 <!--
 > [!TIP]
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 对于每个虚拟机，请使用所选择的远程桌面客户端并创建远程桌面连接。使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。
   
-对于每个虚拟机, 请通过 Windows PowerShell 提示符下的这些命令将它们加入相应的 Active Directory 域服务 (AD DS) 域。
+对于每个虚拟机，请通过 Windows PowerShell 提示符下的这些命令将它们加入相应的 Active Directory 域服务（AD DS）域。
   
 ```
 $domName="<AD DS domain name to join, such as corp.contoso.com>"

@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: 如果你已选择退出 FastTrack 部署并准备将数据迁移到 Office 365，可以从此处开始。
-ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35597548"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031327"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>将组织数据迁移到 Office 365 企业版
 
@@ -40,7 +40,7 @@ ms.locfileid: "35597548"
 
 ## <a name="migrate-skype-for-business-users"></a>迁移 Skype for Business 用户
 - [迁移到 Skype for Business Online](https://technet.microsoft.com/library/jj204969.aspx)。（管理员）
-- 下载 [Skype for Business 会议更新工具](https://www.microsoft.com/en-us/download/details.aspx?id=51659)并[在每个工作站上运行它](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4)。（管理员和/或最终用户）
+- 下载 [Skype for Business 会议更新工具](https://www.microsoft.com/download/details.aspx?id=51659)并[在每个工作站上运行它](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4)。（管理员和/或最终用户）
   
 ## <a name="need-to-talk-to-support"></a>需要与支持人员联系？
 [联系支持人员](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)，获得有关商业版产品的帮助。

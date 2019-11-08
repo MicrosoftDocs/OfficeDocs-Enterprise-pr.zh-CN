@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 介绍如何使用 Office 365 内容传送网络（CDN）加快将 SharePoint Online 资产传递给所有用户，无论它们位于何处或如何访问你的内容。
-ms.openlocfilehash: dc08ae1cc54e17e5d7f1c3c717bfd254b6cf962d
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 60016fff28ca7c71555e141ef479d32fdd6d7856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643295"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031427"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -218,7 +218,7 @@ Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-有关此 cmdlet 的详细信息，请参阅[SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)。
+有关此 cmdlet 的详细信息，请参阅[SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx)。
 
 <a name="Office365CDNforSPOFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>更改要包含在 Office 365 CDN 中的文件类型列表（可选）
@@ -246,7 +246,7 @@ Set-SPOTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -Polic
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-有关这些 cmdlet 的详细信息，请参阅[运行 set-spotenantcdnpolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)和[请运行 get-spotenantcdnpolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)。
+有关这些 cmdlet 的详细信息，请参阅[运行 set-spotenantcdnpolicy](https://technet.microsoft.com/library/mt800839.aspx)和[请运行 get-spotenantcdnpolicies](https://technet.microsoft.com/library/mt800838.aspx)。
 
 <a name="Office365CDNforSPOSiteClassification"> </a>
 ### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>更改要从 Office 365 CDN 中排除的网站分类列表（可选）
@@ -279,7 +279,7 @@ _ExcludeRestrictedSiteClassifications_属性包含要从 CDN 中排除的网站�
 
 _ExcludeIfNoScriptDisabled_属性基于网站级_NoScript_属性设置从 CDN 中排除内容。 默认情况下， _NoScript_属性设置为 "为_新式_网站**启用**"，并对_经典_网站**禁用**。 这取决于租户设置。
 
-有关这些 cmdlet 的详细信息，请参阅[运行 set-spotenantcdnpolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)和[请运行 get-spotenantcdnpolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)。
+有关这些 cmdlet 的详细信息，请参阅[运行 set-spotenantcdnpolicy](https://technet.microsoft.com/library/mt800839.aspx)和[请运行 get-spotenantcdnpolicies](https://technet.microsoft.com/library/mt800838.aspx)。
 
 <a name="Office365CDNforSPOOrigin"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>为你的资产添加来源
@@ -326,7 +326,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-有关此命令及其语法的详细信息，请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。
+有关此命令及其语法的详细信息，请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx)。
 
 > [!NOTE]
 > 在专用来源中，从来源共享的资产必须先发布主要版本，然后才能从 CDN 访问它们。
@@ -350,7 +350,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-有关此命令及其语法的详细信息，请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。
+有关此命令及其语法的详细信息，请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx)。
 
 运行命令后，系统将同步整个数据中心的配置。 这最长可能需要15分钟。
 
@@ -375,7 +375,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-有关此命令及其语法的详细信息，请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。
+有关此命令及其语法的详细信息，请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx)。
 
 运行命令后，系统将同步整个数据中心的配置。 这最长可能需要15分钟。
 
@@ -388,7 +388,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-有关此命令及其语法的详细信息，请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)。
+有关此命令及其语法的详细信息，请参阅[外接程序 SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx)。
   
 运行命令后，系统将同步整个数据中心的配置。 您可能会看到一个预期的_配置挂起_消息，因为 SharePoint Online 租户连接到 CDN 服务。 这最长可能需要15分钟。
 
@@ -402,7 +402,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 
 完成设置步骤后，可以在需要时添加新资产，并更新或删除现有资产。 只需对您标识为来源的文件夹或 SharePoint 库中的资产进行更改即可。 如果添加新资产，可立即通过 CDN 使用它。 但是，如果您更新资产，最长需要15分钟才能在 CDN 中传播并变为可用的新副本。
   
-如果需要检索原点的位置，则可以使用**运行 get-spotenantcdnorigins** cmdlet。 有关如何使用此 cmdlet 的信息，请参阅[运行 get-spotenantcdnorigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)。
+如果需要检索原点的位置，则可以使用**运行 get-spotenantcdnorigins** cmdlet。 有关如何使用此 cmdlet 的信息，请参阅[运行 get-spotenantcdnorigins](https://technet.microsoft.com/library/mt790770.aspx)。
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>从 Office 365 CDN 中删除源
@@ -413,7 +413,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-有关如何使用此 cmdlet 的信息，请参阅[SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)。
+有关如何使用此 cmdlet 的信息，请参阅[SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790761.aspx)。
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>在 Office 365 CDN 中修改原点
@@ -437,7 +437,7 @@ Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-有关此 cmdlet 的详细信息，请参阅[SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)。
+有关此 cmdlet 的详细信息，请参阅[SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx)。
 
 </details>
 
@@ -578,7 +578,7 @@ spo cdn set --type Public --enabled false
 + [在公共来源中使用资产](use-office-365-cdn-with-spo.md#using-assets-in-public-origins)
 + [在专用来源中使用资产](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
 
-有关如何使用 CDN 来承载客户端 web 部件的信息，请参阅[从 Office 365 CDN 托管客户端 web 部件（Hello World 第4部分）](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)。
+有关如何使用 CDN 来承载客户端 web 部件的信息，请参阅[从 Office 365 CDN 托管客户端 web 部件（Hello World 第4部分）](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)。
 
 ### <a name="updating-links-to-cdn-assets"></a>更新与 CDN 资产的链接
 
@@ -588,7 +588,7 @@ spo cdn set --type Public --enabled false
 + 对于指向源中的资产的每个链接，将路径替换为 CDN 源中的文件路径。 您可以使用相对路径。
 + 保存页面或内容。
 
-例如，请考虑已复制到文档库文件夹 _/site/CDN_origins/public/_ 的图像 _/site/SiteAssets/images/image.png_。 若要使用 CDN 资产，请将原始路径替换为指向原始路径的图像文件位置，以使新的 URL _/site/CDN_origins/public/image.png_。
+例如，请考虑已复制到文档库文件夹中的图像 _/site/SiteAssets/images/image.png_ _/site/CDN_origins/public/_。 若要使用 CDN 资产，请将原始路径替换为指向源的路径，并将新 URL _/site/CDN_origins/public/image.png_。
 
 如果要将完整 URL 用于资产而不是相对路径，请按如下所示构造链接：
 
@@ -690,7 +690,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 您不能直接在 web 浏览器中测试 CDN Url，因为您必须具有来自 SharePoint Online 的引用。 但是，如果将 CDN 资产 URL 添加到 SharePoint 页面，然后在浏览器中打开该页面，则会看到页面上呈现的 CDN 资产。
 
-有关在 Microsoft Edge 浏览器中使用开发人员工具的详细信息，请参阅[Microsoft Edge 开发人员工具](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)。
+有关在 Microsoft Edge 浏览器中使用开发人员工具的详细信息，请参阅[Microsoft Edge 开发人员工具](https://docs.microsoft.com/microsoft-edge/devtools-guide)。
 
 若要观看[SharePoint 开发人员模式和实践 YouTube 频道](https://aka.ms/sppnp-videos)中托管的简短视频，演示如何验证 cdn 是否正常工作，请参阅[验证 cdn 使用情况和确保最佳网络连接](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)。
 
@@ -742,6 +742,6 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 
 [内容分发网络](https://aka.ms/o365cdns)
 
-[Office 365 的网络规划和性能优化](https://aka.ms/tune)
+[Office 365 网络计划和性能优化](https://aka.ms/tune)
 
 [SharePoint 性能系列-Office 365 CDN 视频系列](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

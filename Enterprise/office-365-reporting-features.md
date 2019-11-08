@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Office 365 中的报告功能的说明。
-ms.openlocfilehash: 27dc1f8164e21040399ae9882c3fab78ab3d5eb2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067196"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031857"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 报告功能 
 
@@ -78,7 +78,7 @@ MDM 合规性报告提供组织设置的用于保护访问 Office 365 数据的�
 
 DLP 策略可帮助管理组织中信息的安全性和流动。 您可以设置策略以阻止对内容的访问、加密数据，或使用应用程序中的 DLP 策略提示通知用户策略和策略违规。 DLP 报告提供了有关策略和规则匹配数、覆盖和误报的见解。
 
-您可以使用 Microsoft 365 管理中心来查看您的 DLP 策略检测到的邮件数量的相关信息。 DLP 报告提供了对发送和接收的邮件的策略和规则匹配的见解。 您还可以使用 Exchange 管理中心查看过去24小时内每个策略的匹配项、重写次数和误报数。 如果下载 Excel 报告，您可以查看更多详细信息，例如谁发送哪一封邮件，哪天，哪些策略匹配被触发。 有关详细信息，请参阅[查看有关 DLP 策略检测的报告](https://technet.microsoft.com/en-us/library/jj889415(v=exchg.150).aspx)。
+您可以使用 Microsoft 365 管理中心来查看您的 DLP 策略检测到的邮件数量的相关信息。 DLP 报告提供了对发送和接收的邮件的策略和规则匹配的见解。 您还可以使用 Exchange 管理中心查看过去24小时内每个策略的匹配项、重写次数和误报数。 如果下载 Excel 报告，您可以查看更多详细信息，例如谁发送哪一封邮件，哪天，哪些策略匹配被触发。 有关详细信息，请参阅[查看有关 DLP 策略检测的报告](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx)。
 
 ## <a name="auditing-in-yammer-enterprise"></a>Yammer 企业版中的审核
 

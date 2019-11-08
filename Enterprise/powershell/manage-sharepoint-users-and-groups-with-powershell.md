@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 管理 SharePoint Online 用户和组
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/05/2019
+ms.date: 11/05/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 Office 365 PowerShell 管理 SharePoint Online 用户、组和网站。
-ms.openlocfilehash: f84e4cda797cd8f1bc4ddf573cb4f1c6f0165da7
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: 8133af978e2a63bf18b825ca6b6bdb430e676b72
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975887"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038221"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 SharePoint Online 用户和组
 
@@ -29,7 +29,7 @@ ms.locfileid: "37975887"
 
 ## <a name="before-you-begin"></a>准备工作
 
-本主题中的过程要求您连接到 SharePoint Online。 有关说明，请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+本主题中的过程要求您连接到 SharePoint Online。 有关说明，请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>获取网站、组和用户的列表
 

@@ -18,20 +18,20 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: 获取对要为 Office 365 企业版部署规划的资源的访问权限。
-ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 66b1944b9e98ef60b753c5122655f99870a86ffe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302684"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028806"
 ---
 # <a name="plan-for-office-365-enterprise"></a>规划 Office 365 企业版
 
-当您将企业组织迁移到 Office 365 时, 需要预先规划并做出关键设计决策, 以简化 IT 部署和用户采用情况, 这一点非常重要。 
+当您将企业组织迁移到 Office 365 时，需要预先规划并做出关键设计决策，以简化 IT 部署和用户采用情况，这一点非常重要。 
 
 ## <a name="planning-with-office-365-fasttrack"></a>使用 Office 365 FastTrack 进行规划
 
-[FastTrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)是获取 Microsoft 有关规划 Office 365 部署的帮助的最佳方法。 FastTrack 可帮助您完成最常见的设计考虑, 还可以回答问题。 
+[FastTrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)是获取 Microsoft 有关规划 Office 365 部署的帮助的最佳方法。 FastTrack 可帮助您完成最常见的设计考虑，还可以回答问题。 
 
 >[!Note]
 >你也可以从[Microsoft 合作伙伴](https://www.microsoft.com/solution-providers/home)获取帮助。
@@ -39,11 +39,11 @@ ms.locfileid: "36302684"
 
 ## <a name="do-it-yourself-planning-for-office-365"></a>自行规划 Office 365
 
-若要自行规划 Office 365, 请逐步完成对以下领域的规划和设计决策:
+若要自行规划 Office 365，请逐步完成对以下领域的规划和设计决策：
 
 - Office 365 租户
 
-  包括规划与 Internet 的网络连接、Office 365 标识, 以及与应用、内部部署、Azure 和其他元素的集成。 从[这里](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)开始。
+  包括规划与 Internet 的网络连接、Office 365 标识，以及与应用、内部部署、Azure 和其他元素的集成。 从[这里](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)开始。
 
 - 对客户端的支持
 
@@ -61,7 +61,7 @@ ms.locfileid: "36302684"
 >您也可以将此过程用于[Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)订阅。
 >
 
-您还可以登录到 Office 365 订阅, 并使用[office 365 服务的部署顾问](deployment-advisors-for-office-365.md)。
+您还可以登录到 Office 365 订阅，并使用[office 365 服务的部署顾问](deployment-advisors-for-office-365.md)。
 
 
 
@@ -84,7 +84,7 @@ If you want help getting Office 365 set up, [FastTrack](https://fasttrack.micros
 |**Use** the [templates and resources in the Office 365 success center](https://www.microsoft.com/fasttrack/resources) to share your deployment and onboarding plans with the people in your organization.  <br> | - Communication with everyone before, during, and after the transition to Office 365 is critical.  <br> - Use our templates, guides, and handouts to improve your communications. |
 |**Read** the article [Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance.  <br> | - This article will help you understand the most recent guidance for securely optimizing Office 365 network connectivity. |
    
-Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-cloud-it-architecture-resources).
+Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources).
   
 ## Want to talk with support?
 

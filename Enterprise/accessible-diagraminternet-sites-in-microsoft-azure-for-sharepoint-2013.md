@@ -11,16 +11,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: 本文是名为“Microsoft Azure for SharePoint 2013 中的 Internet 网站”的图的可访问文本版本。
-ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf978dfb95b1f201c342889fc3dda428bb618241
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068638"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028056"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>可访问的图 - Microsoft Azure for SharePoint 2013 中的 Internet 站点
 
-**摘要:** 本文是 Microsoft Azure for SharePoint 2013 中名为 Internet 站点的图表的可访问文本版本。
+**摘要：** 本文是 Microsoft Azure for SharePoint 2013 中名为 Internet 站点的图表的可访问文本版本。
   
 此海报介绍并演示了面向公众的 Internet 网站如何从针对客户帐户的云弹性和 Azure AD 中受益。有六个不同的方案描述了 Internet 网站如何从 Azure 中受益：  
   
@@ -44,9 +44,9 @@ ms.locfileid: "34068638"
   
 ### <a name="example-medium-internet-sites-farm-85-page-views-per-second"></a>示例：中等 Internet 网站场（每秒约 85 个页面视图）
 
-此服务器场提供了容错的 SharePoint 2013 搜索服务器场拓扑, 该拓扑是针对包含3400000项的文档集进行优化的。 
+此服务器场提供了容错的 SharePoint 2013 搜索服务器场拓扑，该拓扑是针对包含3400000项的文档集进行优化的。 
   
-示例服务器场每秒处理100-200 个文档, 具体取决于语言, 并且每秒有85个页面视图, 每秒100个查询。 
+示例服务器场每秒处理100-200 个文档，具体取决于语言，并且每秒有85个页面视图，每秒100个查询。 
   
 随附的图显示了具有三类服务器的中型 Internet 网站：  
   
@@ -104,9 +104,9 @@ SharePoint 服务器场可能需要在 Azure 平台中针对可用性集进行�
 
 所有 SharePoint 解决方案都需要 Windows Active Directory 域服务 (AD DS)。目前，Azure 中的 SharePoint 解决方案具有两个选项。   
   
-- 选项 1: 专用域-您可以将专用域和独立域部署到 Azure 以支持 SharePoint 场。 这是面向公众的 Internet 站点的最佳选择。 
+- 选项1：专用域-您可以将专用域和独立域部署到 Azure 以支持 SharePoint 场。 这是面向公众的 Internet 站点的最佳选择。 
     
-- 选项 2: 通过站点到站点 VPN 连接扩展本地域。 当您通过站点到站点 VPN 连接扩展内部部署域时，用户将访问 SharePoint 服务器场，就像它在内部部署中承载一样。 您可以利用您现有的 Active Directory 和 DNS 实现。 
+- 选项2：通过站点到站点 VPN 连接扩展本地域。 当您通过站点到站点 VPN 连接扩展内部部署域时，用户将访问 SharePoint 服务器场，就像它在内部部署中承载一样。 您可以利用您现有的 Active Directory 和 DNS 实现。 
     
 ## <a name="design-for-identity-management-zones-and-authentication"></a>身份管理、区域和身份验证的设计
 
@@ -166,7 +166,7 @@ SharePoint 服务器场可能需要在 Azure 平台中针对可用性集进行�
   
 随附的图显示了以下方案：  
   
-将 SharePoint 2013 与 Azure Active Directory 集成时, Azure 访问控制服务 (ACS) 有两个用途: 
+将 SharePoint 2013 与 Azure Active Directory 集成时，Azure 访问控制服务（ACS）有两个用途： 
   
 -   Azure AD 使用 SAML 2.0，SharePoint 仅适用于 SAML 1.1。ACS 了解这两种格式，并充当在 SharePoint 和 Azure AD 之间转换令牌格式的中介。   
     
@@ -198,23 +198,23 @@ Web 应用程序和根网站 URL 
     
 随附的图显示了应用程序池服务，例如使用 Web 应用程序与网站集交互的 Search。所示网站集包括：  
   
-- 位于http://internal:8000 (根网站) 的基于路径的网站集。 
+- 位于https://internal:8000 （根网站）的基于路径的网站集。 
     
-- 爬网: 位于地址 (如) https://authoring.contoso.com:8000上的以主机命名的网站集。 
+- 爬网：位于地址（如） https://authoring.contoso.com:8000上的以主机命名的网站集。 
     
 - 查询：两个单独的主机命名网站集，位于以下类似地址：  
     
-  - http://www.contoso.com 
+  - https://www.contoso.com 
     
   - https://secure.contoso.com 
     
-  - http://www.contoso.com:8000 
+  - https://www.contoso.com:8000 
     
-  - http://assets.contoso.com 
+  - https://assets.contoso.com 
     
   - https://secureassets.contoso.com 
     
-  - http://assets.contoso.com:8000 
+  - https://assets.contoso.com:8000 
     
 ## <a name="design-the-azure-environment"></a>设计 Azure 环境
 

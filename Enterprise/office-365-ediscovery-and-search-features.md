@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 有关电子数据展示功能的概述，以及 Office 365 中用于审核使用和透明度的其他搜索功能。
-ms.openlocfilehash: e9a120f717c04d5e5570e341aa5d3d93f85f80cb
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e94c8e27c2ddf7bd50dca15eb849337de6f89c1a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067256"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032027"
 ---
 # <a name="ediscovery-and-search-features"></a>电子数据展示和搜索功能 
 
@@ -28,7 +28,7 @@ ms.locfileid: "37067256"
 
 ## <a name="content-search"></a>内容搜索
 
-[内容搜索](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a)是一个电子数据展示搜索工具，它通过以前的电子数据展示搜索工具提供改进的扩展和性能功能。 您可以使用内容搜索来搜索邮箱、公用文件夹、SharePoint Online 网站和 OneDrive for business 位置。 内容搜索支持大型搜索。 对可以搜索的邮箱数和网站数没有限制。 同时也没有对同时运行的搜索数量的限制。 运行搜索后，内容源的数量和估计的搜索结果数将显示在 "搜索" 页上的 "详细信息" 窗格中。 您可以预览结果，也可以将其导出到本地计算机。 如果您的组织具有 Office 365 企业版 E5 订阅，则可以使用[office 365 高级电子数据展示](http://go.microsoft.com/fwlink/p/?LinkID=620116)的强大分析功能来准备要分析的[结果](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare)。
+[内容搜索](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a)是一个电子数据展示搜索工具，它通过以前的电子数据展示搜索工具提供改进的扩展和性能功能。 您可以使用内容搜索来搜索邮箱、公用文件夹、SharePoint Online 网站和 OneDrive for business 位置。 内容搜索支持大型搜索。 对可以搜索的邮箱数和网站数没有限制。 同时也没有对同时运行的搜索数量的限制。 运行搜索后，内容源的数量和估计的搜索结果数将显示在 "搜索" 页上的 "详细信息" 窗格中。 您可以预览结果，也可以将其导出到本地计算机。 如果您的组织具有 Office 365 企业版 E5 订阅，则可以使用[office 365 高级电子数据展示](https://go.microsoft.com/fwlink/p/?LinkID=620116)的强大分析功能来准备要分析的[结果](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare)。
 
 ## <a name="audit-log-search"></a>审核日志搜索
 
@@ -46,7 +46,7 @@ SharePoint Online 和 OneDrive for business 中的事件在发生30分钟的时�
 | CreationTime | 用户执行活动时的日期和时间（采用协调通用时间（UTC））。 |
 | EventSource | 标识发生的事件。 可能的值为 SharePoint 和 ObjectModel。 |
 | ID | 报告条目的 ID。 ID 唯一标识报告条目。 |
-| Operation | 用户或活动的名称，对应于在 "此用户活动的显示结果" 中选择的值。 |
+| 操作 | 用户或活动的名称，对应于在 "此用户活动的显示结果" 中选择的值。 |
 | OrganizationId | 发生事件的组织的 Office 365 服务的 GUID。 |
 | UserAgent | 浏览器提供的有关用户浏览器的信息。 |
 | UserID | 执行操作（在 Operation 属性中指定）导致记录记录的用户。 |

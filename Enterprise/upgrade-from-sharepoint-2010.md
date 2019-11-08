@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 和 SharePoint Server 2010 的支持结束时间在13年10月 13 2020 日结束。 使用本文作为升级到 SharePoint Online 或本地 SharePoint Server 的更新版本的指南。
-ms.openlocfilehash: 1d3931970047a3c19a8e5bd3a03378855056a3ad
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: a8ab4a79053badf4e07918e5e97c7d4821edd5f8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616125"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030897"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>从 SharePoint 2010 升级
 
@@ -45,11 +45,11 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
   
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
-首先，检查[产品生命周期网站](https://support.microsoft.com/en-us/lifecycle/search?alpha=SharePoint%20Server%202010)上的支持结束的日期。 接下来，请务必通过了解此日期来规划升级或迁移时间。 请注意，你的产品不会在列出的日期*停止工作*，并且你可以继续使用它，但是，因为在该日期之后安装不再会修补，所以你将需要一种策略来帮助你更顺利地转换到下一个版本产品的。 
+首先，检查[产品生命周期网站](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)上的支持结束的日期。 接下来，请务必通过了解此日期来规划升级或迁移时间。 请注意，你的产品不会在列出的日期*停止工作*，并且你可以继续使用它，但是，因为在该日期之后安装将不再修补，所以你将需要一种策略来帮助你更顺利地转换到产品的下一版本。 
   
 此矩阵有助于在迁移产品功能和用户数据时绘制课程：
   
-|**支持产品的结束**|**良好**|**最好**|
+|**支持产品的结束**|**Good**|**最好**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013 （本地）  <br/> |SharePoint Online  <br/> |
 ||SharePoint Server 2013 与 SharePoint Online 的混合  <br/> |SharePoint Server 2016 （本地）  <br/> |
@@ -62,7 +62,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
 ![SharePoint Server 2010 升级路径](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->SharePoint Server 2010 和 SharePoint Foundation 2010 的支持结束时间为 Oct 13、2020，但*请注意*，应始终检查[产品生命周期网站](https://support.microsoft.com/en-us/lifecycle)的最新日期。
+>SharePoint Server 2010 和 SharePoint Foundation 2010 的支持结束时间为 Oct 13、2020，但*请注意*，应始终检查[产品生命周期网站](https://support.microsoft.com/lifecycle)的最新日期。
 >
 
   
@@ -98,7 +98,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
   
 目前尚无可直接从 SharePoint Server 2010 （或 SharePoint Foundation 2010）迁移到 SharePoint Online 的方法，因此大部分工作是手动进行的。 这将使您有机会在移动之前存档和修剪不再需要的数据和网站。 您可以将其他数据存档到存储中。 另请注意，SharePoint Server 2010 和 SharePoint Foundation 2010 都不会在支持结束时停止工作，因此，如果客户忘记移动某些数据，则管理员可能会有一段时间，在此期间，SharePoint 仍在运行。
   
-如果升级到 SharePoint Server 2013 或 SharePoint Server 2016，并决定将数据放入 SharePoint Online 中，则移动可能还涉及使用[SharePoint 迁移 API](https://support.office.com/en-us/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) （将信息迁移到 OneDrive for business）。 
+如果升级到 SharePoint Server 2013 或 SharePoint Server 2016，并决定将数据放入 SharePoint Online 中，则移动可能还涉及使用[SharePoint 迁移 API](https://support.office.com/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) （将信息迁移到 OneDrive for business）。 
   
 |**SharePoint Online 优势**|**SharePoint Online 的缺点**|
 |:-----|:-----|
@@ -118,7 +118,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>升级本地 SharePoint Server
 
-从最新版本的 SharePoint 本地产品（SharePoint Server 2019）开始，SharePoint Server 升级必须以*串行*方式进行，这意味着无法从 sharepoint server 2010 升级到 sharepoint server 2016 或 sharepoint 2019，直. 
+从最新版本的 SharePoint 本地产品（SharePoint Server 2019）开始，SharePoint Server 升级必须以*串行*方式进行，这意味着无法直接从 sharepoint server 2010 升级到 sharepoint server 2016 或 sharepoint 2019。 
   
 |||
 |:-----|:-----|
@@ -168,9 +168,9 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>在 SharePoint Online 和本地 SharePoint Server 之间创建 SharePoint 混合解决方案
 
-另一个选项（可能是用于某些迁移需求的内部部署和在线领域的最佳选择）是混合部署，您可以将 SharePoint Server 2013 或2016或2019场连接到 SharePoint Online 以创建 SharePoint 混合：[了解 sharepoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)。
+另一个选项（可能是用于某些迁移需求的内部部署和联机世界中的一个选项）是一种混合方法，可以将 SharePoint Server 2013 或2016或2019场连接到 SharePoint Online 以创建 SharePoint 混合：[了解 sharepoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)。
   
-如果你决定将 SharePoint Server 场混合为你的迁移目标，请务必规划应将哪些网站和用户移动到联机，以及需要在本地部署。 对 SharePoint Server 服务器场内容的审阅和排名（确定对公司的高、中或低影响的数据）可能有助于做出此决定。 您可能只需要与 SharePoint Online 共享（a）用户帐户进行登录，并且（b） SharePoint Server 搜索索引--这可能不会很清楚，除非您了解如何使用您的网站。 如果您的公司后来决定将所有内容迁移到 SharePoint Online，您可以将所有剩余的帐户和数据联机移动，并使您的本地服务器场退役，并且 SharePoint 服务器场的管理/管理将通过 Office 365 完成。来自该点的控制台。
+如果你决定将 SharePoint Server 场混合为你的迁移目标，请务必规划应将哪些网站和用户移动到联机，以及需要在本地部署。 对 SharePoint Server 服务器场内容的审阅和排名（确定对公司的高、中或低影响的数据）可能有助于做出此决定。 您可能只需要与 SharePoint Online 共享（a）用户帐户进行登录，并且（b） SharePoint Server 搜索索引--这可能不会很清楚，除非您了解如何使用您的网站。 如果您的公司后来决定将所有内容迁移到 SharePoint Online，您可以将所有剩余的帐户和数据联机移动，并使您的本地服务器场退役，并且 SharePoint 服务器场的管理/管理将从该点开始通过 Office 365 控制台完成。
   
 请务必熟悉混合的现有类型，以及如何配置您的本地 SharePoint 场和 Office 365 订阅之间的连接。
   
@@ -193,16 +193,16 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年10月 13 2020 �
 
 [可帮助您从 Office 2007 或2010服务器和客户端进行升级的资源](upgrade-from-office-2010-servers-and-products.md)
   
-[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/en-us/library/mt493301%28v=office.16%29.aspx)
+[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/library/mt493301%28v=office.16%29.aspx)
   
-[从 SharePoint 2010 升级到 SharePoint 2013 的最佳做法](https://technet.microsoft.com/en-us/library/mt493305%28v=office.16%29.aspx)
+[从 SharePoint 2010 升级到 SharePoint 2013 的最佳做法](https://technet.microsoft.com/library/mt493305%28v=office.16%29.aspx)
   
 [在 SharePoint 2013 中解决数据库升级问题](https://go.microsoft.com/fwlink/?linkid=843195)
   
 [搜索 Microsoft 解决方案提供商以帮助你进行升级](https://go.microsoft.com/fwlink/?linkid=841249)
   
-[SharePoint 2013 的更新产品服务策略](https://technet.microsoft.com/en-us/library/mt493253%28v=office.16%29.aspx)
+[SharePoint 2013 的更新产品服务策略](https://technet.microsoft.com/library/mt493253%28v=office.16%29.aspx)
   
-[SharePoint Server 2016 的更新产品服务策略](https://technet.microsoft.com/en-us/library/mt782882%28v=office.16%29.aspx)
+[SharePoint Server 2016 的更新产品服务策略](https://technet.microsoft.com/library/mt782882%28v=office.16%29.aspx)
   
 

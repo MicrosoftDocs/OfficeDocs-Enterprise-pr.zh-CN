@@ -11,16 +11,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - SPO160
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: 包含指向其他文章的链接，这些文章介绍如何提高 SharePoint Online 的页面下载时间的性能。
-ms.openlocfilehash: 4352420637974e07a6c9d5ed843c312ea74729f4
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 8cd8b3b7a957fac7f3ddaed325cf64850b111fea
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375490"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033428"
 ---
 # <a name="tune-sharepoint-online-performance"></a>优化 SharePoint Online 性能
 
@@ -36,7 +38,7 @@ ms.locfileid: "37375490"
 
 - [SharePoint Online 的导航选项](navigation-options-for-sharepoint-online.md)
 
-- [SharePoint Online 门户性能指南](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+- [SharePoint Online 门户性能指南](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
 
 - [SharePoint Online 的图像优化](image-optimization-for-sharepoint-online.md)
 
@@ -56,7 +58,7 @@ ms.locfileid: "37375490"
 
 - [在 SharePoint Online 中使用对象缓存](using-the-object-cache-with-sharepoint-online.md)
 
-- [如何：避免在 SharePoint Online 中受限制或被阻止](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [如何：避免在 SharePoint Online 中受限制或被阻止](https://msdn.microsoft.com/library/office/dn889829.aspx)
 
 - [在 SharePoint Online 新式门户页面中优化 Iframe](modern-iframe-optimization.md)
 

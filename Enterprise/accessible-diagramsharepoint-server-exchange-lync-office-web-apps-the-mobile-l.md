@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: 本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。
-ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068433"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030576"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>可访问图表 - SharePoint Server、Exchange、Lync、Office Web Apps - 移动前景
 
-**摘要：** 本文是[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)中的“Microsoft Exchange 2013 平台选项”图表的可访问文本版本。
+**摘要：** 本文是[技术图表](https://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)中的“Microsoft Exchange 2013 平台选项”图表的可访问文本版本。
   
 此海报显示了 SharePoint Server、Lync、Exchange Server 和 Office Web Apps 的基于应用程序和移动浏览器的环境的详细布局。其中包括以下信息： 
   

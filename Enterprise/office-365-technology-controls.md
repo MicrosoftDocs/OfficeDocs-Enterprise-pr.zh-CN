@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 摘要： Microsoft 针对 Office 365 的技术控制措施概述。
-ms.openlocfilehash: 1ddf4efdd8e2c2159f6d6c55cfeead1cfbd54395
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067231"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031137"
 ---
 # <a name="office-365-technology-controls"></a>Office 365 技术控制 
 
@@ -39,7 +39,7 @@ Office 365 工程师对 Office 365 客户数据具有零的访问权限。 在�
 
 在 Microsoft 服务工程师需要访问您的数据时，在极少数的实例中，仅授予对解决问题所需的数据的访问权限以及有限的时间。 如果拒绝访问请求，Microsoft 工程师将无法访问你的内容，并且无法完成服务操作。 如果你批准请求，Microsoft 工程师通过受监控和约束的管理界面来限制你的内容的实时访问。
 
-支持工程师采取的操作是出于审核目的而记录的，可通过[Office 365 管理活动 API](https://msdn.microsoft.com/library/office/dn707383.aspx)和[安全与合规中心](http://protection.office.com/)进行访问。
+支持工程师采取的操作是出于审核目的而记录的，可通过[Office 365 管理活动 API](https://msdn.microsoft.com/library/office/dn707383.aspx)和[安全与合规中心](https://protection.office.com/)进行访问。
 
 >[!NOTE]
 > 客户密码箱在[Office 365 企业版 E5](https://products.office.com/business/office-365-enterprise-e5-business-software)中可作为附加购买。 有关详细信息，请参阅 [Office 365 客户锁箱请求](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)。
@@ -60,7 +60,7 @@ Office 365 服务器将并发会话限制为每个服务的团队管理员，每
 
 Office 365 人员的使用限制和连接和配置要求由 Active Directory 组策略建立。 这些策略包括以下特征：
 
-- TSGs 仅使用[FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2 验证的加密。
+- TSGs 仅使用[FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2 验证的加密。
 - 在30分钟不活动后断开的 TSG 会话。
 - 在24小时后，TSG 会话将自动注销。
 

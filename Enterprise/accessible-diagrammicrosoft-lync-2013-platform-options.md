@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: 本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。
-ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068608"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030596"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>可访问的图 - Microsoft Lync 2013 平台选项
 
-**摘要：** 本文是[技术图表](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)中的“Microsoft Lync 2013 平台选项”图表的可访问文本版本。
+**摘要：** 本文是[技术图表](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)中的“Microsoft Lync 2013 平台选项”图表的可访问文本版本。
   
 本海报介绍哪些业务决策者 (BDM) 和架构师需要了解 Lync Online (Office 365) 和 Lync Server 部署，其中包含以下内容：
   

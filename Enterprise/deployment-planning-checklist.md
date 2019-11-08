@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。
-ms.openlocfilehash: 9cd2977a43f26e724d85c723aa6aad70937b1f1f
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 9248ed4a252990094e91579deb723aa32f04316a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249490"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028866"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 部署计划清单
 
-将企业组织迁移到 Office 365 时, 务必要准确规划要执行的步骤、执行时间以及执行这些步骤的用户。 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。 检查表中的阶段和步骤与 "[加入中心](https://go.microsoft.com/fwlink/?LinkId=517115)" 提供的指导保持一致。 你可以根据组织的需要自由调整此检查表。
+将企业组织迁移到 Office 365 时，务必要准确规划要执行的步骤、执行时间以及执行这些步骤的用户。 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。 检查表中的阶段和步骤与 "[加入中心](https://go.microsoft.com/fwlink/?LinkId=517115)" 提供的指导保持一致。 你可以根据组织的需要自由调整此检查表。
 
 ## <a name="need-help-with-your-deployment"></a>您的部署是否需要帮助？
 您是否希望获得 Office 365 设置的帮助？ 请考虑使用[FastTrack](https://fasttrack.microsoft.com/office)或[Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)。
@@ -38,36 +38,36 @@ ms.locfileid: "34249490"
 |:-----|:-----|:-----|:-----|:-----|
 |**部署任务/Events** <br/> |"开始日期" <br/> |**完成日期** <br/> |**资源** <br/> |**依赖项** <br/> |
 |**确定您的部署目标** <br/> |||||
-| 与您的内部和外部利益干系人:<br>  -在范围和时间线上达成一致 <br>  -同意项目跟踪机制  <br>  -开发成功条件和[开始使用 Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)的[通信](https://fasttrack.microsoft.com/office) / |||||
+| 与您的内部和外部利益干系人：<br>  -在范围和时间线上达成一致 <br>  -同意项目跟踪机制  <br>  -开发成功条件和[开始使用 Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)的[通信](https://fasttrack.microsoft.com/office) / |||||
 |**清点当前环境并做出主要部署决策** |||||
 |清点当前环境 |||||
-| 收集用户帐户数 (登录名、电子邮件地址) |||||
-| 收集邮箱的数量和大小 (包括共享邮箱和会议室) |||||
-| 收集客户端版本和配置 (浏览器、操作系统、office 应用程序、移动版等) |||||
-| 收集网络设置的详细信息 (DNS 主机、代理和/或防火墙配置、internet 连接) |||||
-| 收集有关文件存储位置的信息 (文件共享、intranet 文件存储) |||||
+| 收集用户帐户数（登录名、电子邮件地址） |||||
+| 收集邮箱的数量和大小（包括共享邮箱和会议室） |||||
+| 收集客户端版本和配置（浏览器、操作系统、office 应用程序、移动版等） |||||
+| 收集网络设置的详细信息（DNS 主机、代理和/或防火墙配置、internet 连接） |||||
+| 收集有关文件存储位置的信息（文件共享、intranet 文件存储） |||||
 | 收集有关您计划迁移的任何 intranet 网站的详细信息 |||||
 | 收集您计划迁移的联机会议和即时消息系统 |||||
-| 收集与现有系统集成的任何应用程序的详细信息 (启用邮件的应用程序、工作流、CRM 等) |||||
+| 收集与现有系统集成的任何应用程序的详细信息（启用邮件的应用程序、工作流、CRM 等） |||||
 |制定主要部署决策 |||||
 | 您将如何[创建和/或同步帐户](https://go.microsoft.com/fwlink/?LinkId=534819)？ |||||
 | 如何[对用户帐户进行身份验证](https://go.microsoft.com/fwlink/?LinkId=534820)？ |||||
-| 是否将迁移任何数据以及迁移是如何发生 ([电子邮件](https://go.microsoft.com/fwlink/?LinkId=534823)和[文件](https://go.microsoft.com/fwlink/?LinkId=534824))？ |||||
+| 是否将迁移任何数据以及迁移是如何发生（[电子邮件](https://go.microsoft.com/fwlink/?LinkId=534823)和[文件](https://go.microsoft.com/fwlink/?LinkId=534824)）？ |||||
 | [与本地系统](https://go.microsoft.com/fwlink/?LinkId=534822)之间是否存在任何短期和长期集成？ |||||
-| 用户可以从哪些设备 (远程、从移动设备或仅从你的网络) 进行[连接](https://go.microsoft.com/fwlink/?LinkId=534821)？ |||||
+| 用户可以从哪些设备（远程、从移动设备或仅从你的网络）进行[连接](https://go.microsoft.com/fwlink/?LinkId=534821)？ |||||
 |**修复潜在的部署阻止程序** |||||
-|使用 Microsoft 提供的工具和指导: |||||
-| 清理 active directory 帐户 ([指南](https://go.microsoft.com/fwlink/?LinkId=534825)和[工具](https://go.microsoft.com/fwlink/?LinkId=534826)) |||||
-| 为迁移准备数据 ([电子邮件](https://go.microsoft.com/fwlink/?LinkId=534823)和[文件](https://go.microsoft.com/fwlink/?LinkId=534824)) |||||
-| 准备好你的网络 ([指南和工具](https://aka.ms/tune)) |||||
-| 更新客户端软件版本 ([指南](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
-| 如果您具有 Active Directory 权限管理服务, 请执行以下操作: 准备环境 ([指南](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
+|使用 Microsoft 提供的工具和指导： |||||
+| 清理 active directory 帐户（[指南](https://go.microsoft.com/fwlink/?LinkId=534825)和[工具](https://go.microsoft.com/fwlink/?LinkId=534826)） |||||
+| 为迁移准备数据（[电子邮件](https://go.microsoft.com/fwlink/?LinkId=534823)和[文件](https://go.microsoft.com/fwlink/?LinkId=534824)） |||||
+| 准备好你的网络（[指南和工具](https://aka.ms/tune)） |||||
+| 更新客户端软件版本（[指南](https://go.microsoft.com/fwlink/?LinkId=534827)） |||||
+| 如果您具有 Active Directory 权限管理服务，请执行以下操作：准备环境（[指南](https://go.microsoft.com/fwlink/?linkid=844967)）  <br/> |||||
 |**将 Office 365 服务设置为适用于你的组织** |||||
 |配置 Office 365 订阅 |||||
 |[验证要用于订阅的域](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
-| 配置[应用程序设置](https://go.microsoft.com/fwlink/?LinkId=534829)(电子邮件、即时消息、联机会议、web 协作、文件存储、Yammer) |||||
-| (可选)[准备目录同步](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
-| (可选)[准备单一登录](https://go.microsoft.com/fwlink/?LinkId=534831) |||||
+| 配置[应用程序设置](https://go.microsoft.com/fwlink/?LinkId=534829)（电子邮件、即时消息、联机会议、web 协作、文件存储、Yammer） |||||
+| （可选）[准备目录同步](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
+| （可选）[准备单一登录](https://go.microsoft.com/fwlink/?LinkId=534831) |||||
 |准备组织 |||||
 |为即将进行的迁移[准备维修台](https://fasttrack.microsoft.com/office) |||||
 | 测试部署和可选迁移过程 |||||
@@ -75,8 +75,8 @@ ms.locfileid: "34249490"
 |**向用户推出** |||||
 |设置帐户和邮箱 |||||
 | 添加用户并[将许可证分配给 Office 365 for business 中的用户](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
-| (可选) 迁移数据 ([电子邮件](https://go.microsoft.com/fwlink/?LinkId=534823)和[文件](https://go.microsoft.com/fwlink/?LinkId=534824)等) |||||
-|验证功能, 然后完成最后的步骤 |||||
+| （可选）迁移数据（[电子邮件](https://go.microsoft.com/fwlink/?LinkId=534823)和[文件](https://go.microsoft.com/fwlink/?LinkId=534824)等） |||||
+|验证功能，然后完成最后的步骤 |||||
 | [将 DNS 设置迁移为指向 Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| 告诉用户何时可以[开始使用 Office 365](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
-| 重新配置客户端系统以连接到 Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [Outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[移动设备](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||
+| 告诉用户何时可以[开始使用 Office 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| 重新配置客户端系统以连接到 Office 365 （ [Office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [Outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[移动设备](https://go.microsoft.com/fwlink/?LinkId=534840)）  |||||
