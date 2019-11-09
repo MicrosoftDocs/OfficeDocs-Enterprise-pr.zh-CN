@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - M365-analytics
+- SPO_Content
 description: Office 365、Microsoft 365 和服务保证中的审核和报告功能的概述。
-ms.openlocfilehash: 545c1224a5c7fc181028be555b14deeff6048ca9
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 991eb807ee297ea9dc912be53d99c80247220c1b
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035632"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076226"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft 云服务中的审核和报告
 

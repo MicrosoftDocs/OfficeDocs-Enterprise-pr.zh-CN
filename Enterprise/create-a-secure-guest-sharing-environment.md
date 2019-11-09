@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Priority
 description: 了解如何在 Microsoft 365 中创建安全的来宾共享环境。
-ms.openlocfilehash: 97aa0cf11159af483c307de8bdb2c3b15e704d36
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108265"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077705"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 

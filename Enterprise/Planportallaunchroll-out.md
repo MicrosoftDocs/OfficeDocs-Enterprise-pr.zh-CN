@@ -7,16 +7,18 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: 本文介绍如何在 SharePoint Online 中规划门户启动以及成功启动所需的步骤
-ms.openlocfilehash: cbb2c58498f682d68ac464d224522361a085b062
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027656"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077565"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>在 SharePoint Online 中规划门户启动滚动计划
 门户是贵公司的默认 SharePoint 网站;在大型组织中，可能有多种。 如果你希望组织内 20% 以上的用户都能访问该页面，应考虑将该页面设置为门户页面。 此页面不应与你的部门用于在团队中协作和共享文档的团队网站混淆。

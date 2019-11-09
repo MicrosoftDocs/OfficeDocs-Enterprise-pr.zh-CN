@@ -12,13 +12,14 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 description: 有关电子数据展示功能的概述，以及 Office 365 中用于审核使用和透明度的其他搜索功能。
-ms.openlocfilehash: e94c8e27c2ddf7bd50dca15eb849337de6f89c1a
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 9c0c9b7c054a59ed87ce65432c73df563594b2a2
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032027"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076206"
 ---
 # <a name="ediscovery-and-search-features"></a>电子数据展示和搜索功能 
 
@@ -38,7 +39,7 @@ SharePoint Online 和 OneDrive for business 中的事件在发生30分钟的时�
 
 下表详细介绍了活动报告中显示的一些信息。 有关每个 Office 365 工作负荷所收集属性的详细信息，请参阅[Office 365 审核日志中的详细属性](https://support.office.com/article/detailed-properties-in-the-office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)。
 
-| 属性 | 说明 |
+| 属性 | 描述 |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | 日期 | 事件的日期和时间 |
 | 用户 | 执行操作的用户 |

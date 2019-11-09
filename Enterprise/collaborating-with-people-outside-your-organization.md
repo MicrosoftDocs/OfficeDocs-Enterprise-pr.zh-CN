@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Normal
 description: 了解如何配置 Office 365 以与来宾用户协作。
-ms.openlocfilehash: e9cae26881e1efcf1f958a436d095296fcf3c2be
-ms.sourcegitcommit: 1123ef65778a17b7d2cfc308435e96d4b9509df0
+ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37026212"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076176"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
 
@@ -23,4 +24,10 @@ ms.locfileid: "37026212"
 - [在网站中进行协作](collaborate-in-a-site.md)-了解如何配置 Microsoft 365 以启用与来宾共享 SharePoint 网站。
 - [作为团队协作](collaborate-as-a-team.md)-了解如何配置 Microsoft 365 以在团队中启用来宾协作。
 
+## <a name="see-also"></a>另请参阅
 
+[有关与匿名用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+
+[与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
+
+[创建安全来宾共享环境](create-a-secure-guest-sharing-environment.md)）

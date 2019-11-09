@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 本文介绍如何在不执行传统负载测试的情况下部署到 SharePoint Online，因为这是不允许的。
-ms.openlocfilehash: d62b15be38b3f62c64c2943313b94aa99cbd14ab
-ms.sourcegitcommit: 739024fe2862ab646b36e218b57c5cc16ebe7892
+ms.openlocfilehash: 13e71343aa5ec823003791d99e227fc835117b62
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422139"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077875"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量规划和负载测试 SharePoint Online
 本文介绍了如何在不进行传统负载测试的情况下部署到 SharePoint Online，因为 SharePoint Online 不允许进行负载测试。 SharePoint Online 是云服务，服务中负载的负载功能、运行状况和总体平衡由 Microsoft 进行管理。

@@ -10,18 +10,20 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 摘要：配置和演示 Office 365 信息权限管理如何保护您的敏感文件，即使这些文件发布到错误的 SharePoint Online 网站集也是如此。
-ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b8cb56a69a04133b2863c31da9e359c2272d4fc5
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031567"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078121"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的敏感文件保护
 

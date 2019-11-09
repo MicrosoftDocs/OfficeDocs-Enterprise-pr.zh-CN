@@ -6,27 +6,29 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: 本文是名为“Microsoft SharePoint 2013 平台选项”的图的可访问文本版本。
-ms.openlocfilehash: 4a0b068ffb8abbe11c2286f3daa70c5f62295425
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: aeb17825efa26260422bd1407dfa71920838011d
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068598"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077545"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>可访问的图 - Microsoft SharePoint 2013 平台选项
 
-**摘要:** 本文是名为 Microsoft SharePoint 2013 平台选项的图表的可访问文本版本。
+**摘要：** 本文是名为 Microsoft SharePoint 2013 平台选项的图表的可访问文本版本。
   
-业务决策者 (Bdm) 和架构师需要了解 Office 365、Microsoft Azure 和本地部署。 
+业务决策者（Bdm）和架构师需要了解 Office 365、Microsoft Azure 和本地部署。 
   
 此海报有两个部分： 
   
-- SharePoint 2013 的四种不同部署的比较: Office 365 中的 SharePoint、Office 365 的混合, 以及 sharepoint 的本地部署 sharepoint 2013、Azure 和本地部署的 SharePoint 2013。 
+- SharePoint 2013 的四种不同部署的比较： Office 365 中的 SharePoint、Office 365 的混合，以及 sharepoint 的本地部署 sharepoint 2013、Azure 和本地部署的 SharePoint 2013。 
     
 - 对要移动到 Azure 的三个典型工作负荷的说明。 
     
@@ -50,7 +52,7 @@ ms.locfileid: "34068598"
 
 使用 Office 365 多租户计划提高效率并优化成本。 
   
-随附的图显示了具有 Azure Active Directory 租户的 SharePoint Online, 这将同步本地 Active directory 环境和 Azure Active Directory 租户之间的帐户名称和密码。 
+随附的图显示了具有 Azure Active Directory 租户的 SharePoint Online，这将同步本地 Active directory 环境和 Azure Active Directory 租户之间的帐户名称和密码。 
   
 功能说明： 
   
@@ -58,7 +60,7 @@ ms.locfileid: "34068598"
     
 - 丰富功能集始终保持最新。  
     
-- 包含 Azure Active Directory 租户 (可用于其他应用程序)。 
+- 包含 Azure Active Directory 租户（可用于其他应用程序）。 
     
 - 目录集成包括在本地 Active Directory 环境和 Azure Active Directory 租户之间同步帐户名称和密码。 
     
@@ -74,7 +76,7 @@ ms.locfileid: "34068598"
 
 将 Office 365 的优势与 SharePoint 2013 的本地部署结合使用。 
   
-随附的图显示了使用 Business Connectivity Services (BCS) 连接到本地 SharePoint Server 2013 场的 Office 365 with SharePoint Online。 
+随附的图显示了使用 Business Connectivity Services （BCS）连接到本地 SharePoint Server 2013 场的 Office 365 with SharePoint Online。 
   
 选择要集成下列哪一项功能：  
   
@@ -96,11 +98,11 @@ Duet Enterprise Online
 
 保留对平台和功能的完全控制权的同时利用云的优势。   
   
-随附的图显示了 Azure, 其中包含两个云服务、一个 SharePoint 2013 服务器场和 Windows Server Active Directory, 并通过 Internet 连接到用户或通过 VPN 隧道连接到本地 Active Directory。 
+随附的图显示了 Azure，其中包含两个云服务、一个 SharePoint 2013 服务器场和 Windows Server Active Directory，并通过 Internet 连接到用户或通过 VPN 隧道连接到本地 Active Directory。 
   
 这些功能包括：  
   
--  Azure 是一个平台, 可提供托管 SharePoint 2013 服务器场所需的基础结构和应用程序服务。
+-  Azure 是一个平台，可提供托管 SharePoint 2013 服务器场所需的基础结构和应用程序服务。
     
 - 基础结构服务。 
     
@@ -150,7 +152,7 @@ Duet Enterprise Online
     
 - 面向公众的基本网站。  
     
-Office 365 专用订阅计划的附加功能: 
+Office 365 专用订阅计划的附加功能： 
   
 - 专用于您的组织，且不与任何其他组织共享的 Microsoft 数据中心设备。   
     
@@ -162,7 +164,7 @@ Office 365 专用订阅计划的附加功能:
     
 #### <a name="hybrid-with-office-365"></a>与 Office 365 的混合
 
-- 使用 Office 365 进行外部共享和协作, 而不是设置 extranet 环境。 
+- 使用 Office 365 进行外部共享和协作，而不是设置 extranet 环境。 
     
 - 将“我的网站”(OneDrive for Business) 移动到云，使用户更易于远程访问文件。   
     
@@ -196,9 +198,9 @@ Office 365 专用订阅计划的附加功能:
     
 - 高度自定义的解决方案。 
     
-- 具有第三方组件的旧版解决方案, 这些组件依赖于 Azure 基础结构服务不支持的硬件和软件。 
+- 具有第三方组件的旧版解决方案，这些组件依赖于 Azure 基础结构服务不支持的硬件和软件。 
     
-- 防止 Active Directory 帐户与 Azure Active Directory 同步的隐私限制 (Office 365 的要求)。 
+- 防止 Active Directory 帐户与 Azure Active Directory 同步的隐私限制（Office 365 的要求）。 
     
 - 希望保持对整个平台和解决方案的控制的组织。 
     
@@ -216,7 +218,7 @@ Office 365 专用订阅计划的附加功能:
     
 #### <a name="azure"></a>Azure
 
--  Azure 订阅 (包括服务器操作系统)
+-  Azure 订阅（包括服务器操作系统）
     
 - SQL Server 
     
@@ -238,7 +240,7 @@ Office 365 专用订阅计划的附加功能:
 
 #### <a name="sharepoint-2013-in-office-365"></a>Office 365 中的 SharePoint 2013
 
-- 规划和设计目录集成。 两个选项。 这两个选项都可以在本地部署或在 Azure 中部署: 密码同步 (需要 1 64 位服务器)。 SSO（需要 AD FS 和多个服务器）。 
+- 规划和设计目录集成。 两个选项。 这两个选项都可以在本地部署或在 Azure 中部署：密码同步（需要 1 64 位服务器）。 SSO（需要 AD FS 和多个服务器）。 
     
 - 确保通过防火墙、代理服务器、网关以及跨 WAN 链接的网络容量和连接。 
     
@@ -248,7 +250,7 @@ Office 365 专用订阅计划的附加功能:
     
 - 针对 SharePoint Online 规划自定义项、解决方案和应用程序。  
     
-- 决定是否要使用 Internet 协议 6 (IPv6) 连接到 Office 365。 这并不常见。 
+- 决定是否要使用 Internet 协议6（IPv6）连接到 Office 365。 这并不常见。 
     
 #### <a name="hybrid-with-office-365"></a>与 Office 365 的混合
 
@@ -260,9 +262,9 @@ Office 365 专用订阅计划的附加功能:
     
 #### <a name="azure"></a>Azure
 
-设计 Azure 网络环境: 
+设计 Azure 网络环境： 
   
-- Azure 中的虚拟网络, 包括子网。 
+- Azure 中的虚拟网络，包括子网。 
     
 - 域环境及与本地服务器的集成。  
     
@@ -270,7 +272,7 @@ Office 365 专用订阅计划的附加功能:
     
 - 地缘组和存储帐户。  
     
-在 Azure 中设计 SharePoint 环境: 
+在 Azure 中设计 SharePoint 环境： 
   
 - SharePoint 场拓扑和逻辑体系结构。  
     
@@ -330,7 +332,7 @@ Office 365 专用订阅计划的附加功能:
     
 #### <a name="azure"></a>Azure
 
-部署和管理 Azure 和 SharePoint 环境: 
+部署和管理 Azure 和 SharePoint 环境： 
   
 - 实施和管理 Azure 网络环境。 
     
@@ -366,13 +368,13 @@ Office 365 专用订阅计划的附加功能:
 
 ### <a name="office-365-plus-directory-components-in-azure"></a>Azure 中的 Office 365 和目录组件
 
-在 Azure 中部署 Office 365 目录集成组件的速度更快, 因为它可以按需部署虚拟机。 
+在 Azure 中部署 Office 365 目录集成组件的速度更快，因为它可以按需部署虚拟机。 
   
 #### <a name="directory-synchronization-server-only"></a>仅限目录同步服务器。
 
-而不是在本地环境中部署64位目录同步服务器, 而是在 Azure 中设置虚拟机。 
+而不是在本地环境中部署64位目录同步服务器，而是在 Azure 中设置虚拟机。 
   
-随附的图显示了具有 Azure Active Directory 租户的 SharePoint Online, 这将同步本地 Active directory 环境和 Azure Active Directory 租户之间的帐户名称和密码。 
+随附的图显示了具有 Azure Active Directory 租户的 SharePoint Online，这将同步本地 Active directory 环境和 Azure Active Directory 租户之间的帐户名称和密码。 
   
 #### <a name="directory-synchronization-plus-ad-fs"></a>目录同步 + AD FS
 
@@ -382,11 +384,11 @@ Office 365 专用订阅计划的附加功能:
     
 - AD FS 通过 Azure 中的 AD FS 代理发布到 Internet。 
     
-- 对于从任何位置连接的用户, 客户端身份验证流量由在 Azure 上部署的 AD FS 服务器和代理进行处理。 
+- 对于从任何位置连接的用户，客户端身份验证流量由在 Azure 上部署的 AD FS 服务器和代理进行处理。 
     
 ### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>面向公众的 Internet 站点和用于客户身份验证的 Azure AD
 
-通过在 Azure 中放置 Internet 网站, 可以充分利用轻松扩展到需求的功能。 使用 Azure AD 存储客户帐户。 
+通过在 Azure 中放置 Internet 网站，可以充分利用轻松扩展到需求的功能。 使用 Azure AD 存储客户帐户。 
   
 #### <a name="azure-advantages-for-internet-sites"></a>Internet 站点的 Azure 优势
 
@@ -398,9 +400,9 @@ Office 365 专用订阅计划的附加功能:
     
 #### <a name="azure-ad"></a>Azure AD
 
-Azure AD 为云服务提供了身份管理和访问控制功能。 功能包括目录数据的基于云的存储和一组核心标识服务, 包括用户登录过程、身份验证服务和 AD FS。 Azure AD 附带的标识服务可轻松地与本地 Active Directory 部署集成, 并完全支持第三方标识提供程序。 
+Azure AD 为云服务提供了身份管理和访问控制功能。 功能包括目录数据的基于云的存储和一组核心标识服务，包括用户登录过程、身份验证服务和 AD FS。 Azure AD 附带的标识服务可轻松地与本地 Active Directory 部署集成，并完全支持第三方标识提供程序。 
   
-随附的图显示了对于面向 Internet 的站点非常重要的区域和身份验证配置。 该图显示了 Azure Active Directory 租户, 其中包含包含两个区域的 Azure 上的 SharePoint 场: 
+随附的图显示了对于面向 Internet 的站点非常重要的区域和身份验证配置。 该图显示了 Azure Active Directory 租户，其中包含包含两个区域的 Azure 上的 SharePoint 场： 
   
 - 与网络外的匿名和经过身份验证的访客和客户进行交互的 Internet 区域  
     
@@ -408,11 +410,11 @@ Azure AD 为云服务提供了身份管理和访问控制功能。 功能包括�
     
 ### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a>内部部署服务器场和 Azure 中的灾难恢复
 
-选择与您的业务需求相符的灾难恢复选项。 Azure 为具有高恢复能力要求的企业开始使用灾难恢复和高级选项, 提供了入门级选项。 
+选择与您的业务需求相符的灾难恢复选项。 Azure 为具有高恢复能力要求的企业开始使用灾难恢复和高级选项，提供了入门级选项。 
   
 #### <a name="cold-standby"></a>冷备用
 
-- 服务器场已完全构建，但虚拟机已停止。 (仅在正在运行时付费!) 
+- 服务器场已完全构建，但虚拟机已停止。 （仅在正在运行时付费！） 
     
 - 维护环境包括偶尔启动虚拟机，以及修补、更新和验证环境。 
     

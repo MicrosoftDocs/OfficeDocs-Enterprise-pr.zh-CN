@@ -7,17 +7,18 @@ ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
+ms.collection: SPO_Content
 search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: 67b337ee1ddf34a547ddafc80d886ff6075987ce
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 86bdc1679b787952f7999f04a92c0a9e2ff6e347
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030776"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077595"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 

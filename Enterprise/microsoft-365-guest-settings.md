@@ -6,15 +6,16 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 中提供的来宾共享设置。
-ms.openlocfilehash: 4cba1f087828d33fb53b084e792664ecd11d3e63
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 739a14460d4039281bde11eb1bec60bb3a5b8886
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032317"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076396"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 

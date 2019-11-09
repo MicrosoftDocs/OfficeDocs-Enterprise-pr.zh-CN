@@ -8,19 +8,21 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 search.appverid:
 - MET150
 - SPO160
 - MOE150
 - BSA160
 description: 使用 SharePoint 工具的页面诊断工具，针对预定义的一组性能条件对 SharePoint Online 新式门户和经典发布页面进行分析。
-ms.openlocfilehash: 50a2a98f7af74ef76f080468e940ece6c0f806ab
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0f22c84599f227bd6efcf315a546b39aad77b1c1
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031117"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078141"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>使用 "网页诊断程序" SharePoint 工具
 
@@ -82,7 +84,7 @@ SharePoint 工具的页面诊断工具是用于 Chrome 和[Microsoft Edge 版本
 
 1. "[**诊断测试**](#how-to-use-the-diagnostic-tests-tab)" 选项卡将分析结果显示为三个类别;**无需任何操作**、**改进机会**和**注意事项**。 每个测试结果由其中一个类别中的项表示，如下表中所述：
 
-    |类别  |颜色  |说明  |
+    |类别  |颜色  |描述  |
     |---------|---------|---------|
     |**注意事项** |红色 |测试结果不在比较基准值的范围之内，因而会影响页面性能。 遵循更正指南。|
     |**改进机会** |黄色 |测试结果不在比较基准值的范围之内，可能会引起性能问题。 可能应用特定于测试的条件。|

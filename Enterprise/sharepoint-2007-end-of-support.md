@@ -15,7 +15,9 @@ f1_keywords:
 - AppDefToBDC
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 search.appverid:
 - MET150
 - OFU120
@@ -32,12 +34,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 在2017年10月10日，SharePoint Server 2007 的支持已结束。 阅读本文，了解有关升级选项、故障排除、最佳做法、系统要求、升级步骤以及如何从 Microsoft 合作伙伴获取帮助的信息。
-ms.openlocfilehash: 4054ca5c0b502c2008556021a80d3a939a979bb3
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 55511852997f9781f9c05d0a846aac7cb1c72309
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030907"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078091"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 停止提供支持路线图
 
