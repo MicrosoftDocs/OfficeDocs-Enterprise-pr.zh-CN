@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 查看授权和未授权的用户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 11/13/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。
-ms.openlocfilehash: 8b0456b468f4e0f912491f4a138d5868feb5abbc
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9bef0994d516de9c06da64969f090135aad4fa46
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071128"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308577"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看授权和未授权的用户
 
@@ -33,17 +33,20 @@ ms.locfileid: "34071128"
 
 首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  
-若要查看您的组织中尚未分配任何许可计划 (未经许可的用户) 的所有用户帐户的列表, 请运行以下命令:
+若要查看您的组织中尚未分配任何许可计划（未经许可的用户）的所有用户帐户的列表，请运行以下命令：
   
-```
+```powershell
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-若要查看组织中已向其分配任何许可计划 (许可用户) 的所有用户帐户的列表, 请运行以下命令:
+若要查看组织中已向其分配任何许可计划（许可用户）的所有用户帐户的列表，请运行以下命令：
   
-```
+```powershell
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
+>[!Note]
+>若要列出订阅中的所有用户，请使用`Get-AzureAdUser -All $true`命令。
+>
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
 
@@ -51,19 +54,19 @@ Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLic
 
 若要查看组织中所有用户帐户及其授权状态的列表，请在 Office 365 PowerShell 中运行以下命令：
   
-```
+```powershell
 Get-MsolUser -All
 ```
 
 若要查看组织中所有未授权用户帐户的列表，请运行以下命令：
   
-```
+```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
 若要查看组织中所有授权用户帐户的列表，请运行以下命令：
   
-```
+```powershell
 Get-MsolUser -All | where {$_.isLicensed -eq $true}
 ```
 

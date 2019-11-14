@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 摘要： SharePoint 2013 解决方案可以在 Microsoft Azure 虚拟机中托管。了解哪种类型的解决方案非常适合以及如何设置 Microsoft Azure 托管一个解决方案。
-ms.openlocfilehash: 7bc274098f961ccf9aa6aef05f595dfc6e116bec
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2059ee68a523641bbfe7389d273c931e44d23bd5
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032287"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308587"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 的 Microsoft Azure 体系结构
 
@@ -54,7 +54,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
 
 本文以 SharePoint 拓扑为例，您可以将这些设计理念用于任何 SharePoint 服务器场拓扑。在设计 Azure 环境之前，请使用以下拓扑、体系结构、容量和性能指导设计 SharePoint 服务器场：
   
-- [面向 SharePoint 2013 IT 专业人员的体系结构设计](http://technet.microsoft.com/sharepoint/fp123594.aspx)
+- [面向 SharePoint 2013 IT 专业人员的体系结构设计](https://technet.microsoft.com/sharepoint/fp123594.aspx)
     
 - [Plan for performance and capacity management in SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
