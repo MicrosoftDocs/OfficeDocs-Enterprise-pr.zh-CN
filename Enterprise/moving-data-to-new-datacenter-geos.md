@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一个术语，指在 Microsoft Online Services 术语： Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）、SharePoint Online 网站内容和文件中定义的客户数据子集。存储在该网站中，并将文件上传到 OneDrive for business。
-ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e6bd86e7d3eebd0395d50e7668cf32dcabd0f20f
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032187"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626152"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>将核心数据移动到新的 Office 365 数据中心信息
 
 我们继续为 Office 365 for business 服务打开新的数据中心信息。 这些新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 
 
-Core customer data 是一个术语，指的是在[Microsoft Online Services 术语](https://go.microsoft.com/fwlink/p/?LinkID=249048)中定义的客户数据子集： 
+Core customer data 是一个术语，指的是一部分客户数据，包括： 
 - Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）
 - SharePoint Online 网站内容和该网站中存储的文件
 - 上载到 OneDrive for business 的文件 

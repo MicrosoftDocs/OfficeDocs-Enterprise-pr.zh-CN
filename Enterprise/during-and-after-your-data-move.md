@@ -3,7 +3,7 @@ title: 数据移动期间和数据移动之后
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/18/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: 86bdc1679b787952f7999f04a92c0a9e2ff6e347
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077595"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626132"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -40,7 +40,7 @@ ms.locfileid: "38077595"
 |英国  <br/> |2019年9月15日  <br/> |
 |法国  <br/> |2020年9月15日  <br/> |
 |阿拉伯联合酋长国  <br/> |2022年2月1日  <br/> |
-|南非  <br/> |公告  <br/> |
+|南非  <br/> |2022年2月1日  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -119,7 +119,7 @@ ms.locfileid: "38077595"
    
 |**移动后**|
 |:-----|
-| 会议数据（上载的演示文稿等）将不会移动，需要重新上载。  <br/>  较旧的 Lync 客户端（如 Lync 2010 客户端和 Lync for Mac 2011 客户端）被识别为导致登录问题的服务缓存 DNS 信息。 如果用户不在最新的 Skype for Business Windows 客户端上，则可能需要清除 DNS 缓存。 要求用户运行[疑难解答向导](https://support.microsoft.com/kb/2541980)，并按照说明清除客户端缓存。 适用于 Mac 客户端用户的 Lync 应按照[这些说明](https://support.microsoft.com/kb/2629861)操作。  <br/> |
+| 会议数据（上载的演示文稿等）将不会移动，需要重新上载。  <br/>  较旧的 Lync 客户端（如 Lync 2010 客户端和 Lync for Mac 2011 客户端）被识别为导致登录问题的服务缓存 DNS 信息。 如果用户不在最新的 Skype for Business Windows 客户端上，则可能需要清除 DNS 缓存。 请参阅[Office 365 中的 Skype For Business ONLINE DNS 配置问题故障排除](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue)。 适用于 Mac 客户端用户的 Lync 应按照[这些说明](https://support.microsoft.com/kb/2629861)操作。  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>涉及第三方音频会议提供商的 Skype for Business 移动
 适用于 Skype for business 的第三方音频会议提供商附加服务不适用于驻留在新地理位置的新数据中心中的用户。  使用第三方音频会议提供商服务的现有客户不应请求移动到新的特定地理位置的数据中心。  如果新客户部署到新的特定地理位置数据中心，则需要请求移动到区域数据中心以使用第三方音频会议提供商。
