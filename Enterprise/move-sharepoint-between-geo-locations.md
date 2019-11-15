@@ -11,12 +11,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 了解如何将 SharePoint 站点移到其他地理位置。
-ms.openlocfilehash: 3ba95215860646691e511b17d509dbbc49a5a75a
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: 77f5adee161739d8896004988b8a4d6ba0151ef1
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033438"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626142"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -71,7 +71,7 @@ SharePoint 站点地理位置移动要求你通过站点所在的地理位置中
 
 例如，如果站点 URL 为 https://contosohealthcare.sharepoint.com/sites/Turbines，请连接到位于 https://contosohealthcare-admin.sharepoint.com: 的 SharePoint 管理 URL
 
-`connect-sposervice -url https://contosohealthcare-admin.sharepoint.com`
+`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
 
 ![](media/move-onedrive-between-geo-locations-image1.png)
  
