@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 有关针对数据保留、删除和销毁的 Office 365 的 Microsoft 策略的概述。
-ms.openlocfilehash: 08b04e4fec762249208acb626fa20562ffecb82f
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067246"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37975827"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 中的数据保留、删除和销毁
 
 Microsoft 具有 Office 365 的数据处理标准策略，用于指定客户数据在删除后保留多长时间。 在以下两种情况下，将删除客户数据：
 
-- **主动删除：** 租户具有活动订阅，用户删除数据，或管理员删除用户提供的数据。
-- **被动删除：** 租户订阅结束。
+- **主动删除**：租户具有活动的订阅，用户或管理员删除数据，或管理员删除了用户。
+- **被动删除**：租户订阅结束。
 
 ## <a name="data-retention"></a>数据保留
 
@@ -34,7 +34,7 @@ Microsoft 具有 Office 365 的数据处理标准策略，用于指定客户数�
 | 数据类别 | 数据分类 | 说明 | 示例 | 保留期 |
 |-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
 | 客户数据 | 客户内容| 由管理员和用户直接提供/创建的内容 <br><br> 使用 Office 365 中的服务时，包括所有文本、声音、视频、图像文件以及软件在 Microsoft 数据中心内创建和存储的软件 | 最常用的 Office 365 应用程序的示例，这些应用程序允许用户创作数据包括 Word、Excel、PowerPoint、Outlook 和 OneNote <br><br> 客户内容还包括由客户拥有/提供的机密（密码、证书、加密密钥、存储密钥） | **主动删除方案：** 最多30天 <br><br> **被动删除方案：** 最多180天 |
-| 客户数据 | 最终用户身份信息（EUII） | 标识或可用于标识 Microsoft 服务用户的数据。 EUII 不包含客户内容 | 用户名或显示名称（域 \ 用户名） <br><br> 用户主体名称（name @ domain） <br><br>  特定于用户的 IP 地址 | **主动删除方案：** 最多180天（仅租户管理员操作） <br><br> **被动删除方案：** 最多180天 |
+| 客户数据 | 最终用户身份信息（EUII） | 标识或可用于标识 Microsoft 服务用户的数据。 EUII 不包含客户内容 | 用户名或显示名称（域 \ 用户名） <br><br> 用户主体名称（name@domain） <br><br>  特定于用户的 IP 地址 | **主动删除方案：** 最多180天（仅租户管理员操作） <br><br> **被动删除方案：** 最多180天 |
 | 个人数据 <br> （客户数据中未包含的数据） | 最终用户匿名标识符（EUPI） | Microsoft 创建的与 Microsoft 服务用户关联的标识符。 与其他信息（如 mapping 表）结合使用时，EUPI 标识最终用户 <br><br> EUPI 不包含由客户上传或创建的信息 | 用户 Guid、PUIDs 或 Sid <br><br> 会话 Id | **主动删除方案：** 最多30天 <br><br> **被动删除方案：** 最多180天 |
 
 ## <a name="subscription-retention"></a>订阅保留
@@ -50,6 +50,7 @@ Microsoft 具有 Office 365 的数据处理标准策略，用于指定客户数�
 有关加速取消设置的详细信息，请参阅[取消 Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)。
 
 ## <a name="related-links"></a>相关链接
+
 - [数据销毁](office-365-data-destruction.md)
 - [Office 365 中的永久性](office-365-data-immutability.md)
 - [Exchange Online 数据删除](office-365-exchange-online-data-deletion.md)

@@ -3,7 +3,7 @@ title: 可帮助您从 Office 2010 服务器和客户端进行升级的资源
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/04/2019
+ms.date: 09/16/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,20 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 服务器和客户端应用程序的支持即将结束，自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 31735b0563194603ac391f57bbccbd84805e5f4a
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: 0c2352806d71687287ed885f5c835f61082da64b
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782419"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "36991883"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可帮助您从 Office 2010 服务器和客户端进行升级的资源
 
-请注意：
-
-- Exchange Server 2010 将在**2020 年1月 14**日到达其支持的结束。 
-
-- Office 2010、SharePoint 2010 和 Project Server 2010 将在**10 月13日（2020）** 达到其支持的终止。 
+Office 2010、Exchange Server 2010、SharePoint 2010 和 Project Server 2010 将在**2006 年10月 13 2020 日**到达其支持结束。 
 
 在规划升级时，这是一个很好的时间来考虑转到 Office 365 或 Microsoft 365。 
 
@@ -55,7 +51,7 @@ ms.locfileid: "36782419"
 |**此产品的**|**具有此支持日期的结尾**|**查看此资源**|
 |:-----|:-----|:-----|
 |Office 2010 （包括 Word 2010、Excel 2010、PowerPoint 2010 和 Outlook 2010）  <br/> | 2020年10月13日 |[Office 2010 结束支持路线图](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> | 2020年1月14日  |[Exchange 2010 结束支持路线图](exchange-2010-end-of-support.md) <br/> |
+|Exchange Server 2010  <br/> | 2020年10月13日  |[Exchange 2010 结束支持路线图](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 或 SharePoint Server 2010  <br/> | 2020年10月13日 |[从 SharePoint 2010 升级](upgrade-from-sharepoint-2010.md) <br/> |
 |Project Server 2010 <br/> | 2020年10月13日 | [Project Server 2010 结束支持路线图](project-server-2010-end-of-support.md) <br/> |
 |Lync Server 2010 <br/> | 2021年4月13日 | [计划升级到 Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |

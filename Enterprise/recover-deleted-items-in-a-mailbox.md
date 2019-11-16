@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: '这篇文章面向对象为管理员。 用户是否从其 Outlook 邮箱中永久删除了项目？ 用户希望它们回退，但无法恢复它们。 如果清除的项目尚未从用户的邮箱中永久删除，则可以恢复这些清除的项目。 '
 ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38308597"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>恢复用户邮箱中已删除的项目 - 管理员帮助
