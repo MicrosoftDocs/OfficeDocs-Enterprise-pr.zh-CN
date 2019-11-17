@@ -71,15 +71,7 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# 测试 Office 365
-## [测试 Office 365](cloud-adoption-test-lab-guides-tlgs.md)
-## [基础配置开发/测试环境](base-configuration-dev-test-environment.md)
-## [Office 365 开发/测试环境](office-365-dev-test-environment.md)
-### [目录同步](dirsync-for-your-office-365-dev-test-environment.md)
-### [多重身份验证](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
-### [联合标识](federated-identity-for-your-office-365-dev-test-environment.md)
-### [高级威胁防护](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-## [Azure 中的模拟跨界虚拟网络](simulated-cross-premises-virtual-network-in-azure.md)
+# [测试 Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 
 # [部署 Office 365 企业版](setup-overview-for-enterprises.md)
 
@@ -198,7 +190,7 @@
 ### [关闭目录同步](turn-off-directory-synchronization.md)
 
 ## 用户
-### [Office 365 Admin 帮助中心](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Office 365 Admin 帮助中心](https://docs.microsoft.com/office365/admin/admin-home)
 ### [用于管理用户帐户的工具](manage-office-365-accounts.md)
 ### [同时添加多个用户](add-several-users-at-the-same-time.md)
 ### [恢复用户邮箱中的已删除邮件](recover-deleted-items-in-a-mailbox.md)
