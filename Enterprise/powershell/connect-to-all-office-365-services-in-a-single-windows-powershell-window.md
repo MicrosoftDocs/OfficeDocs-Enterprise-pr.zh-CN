@@ -15,33 +15,33 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: '摘要: 将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。'
-ms.openlocfilehash: ae9487f48439c6f8d98f927c610e5f2af4c1b361
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 摘要：将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。
+ms.openlocfilehash: f64a29bb0594694c5a6b6e2dff8d0f7611fdf11e
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069178"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707059"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
- **摘要:** 无需在单独的 PowerShell 控制台窗口中管理不同的 Office 365 服务, 您可以连接到所有 Office 365 服务并从单个控制台窗口管理这些服务。
+ **摘要：** 无需在单独的 PowerShell 控制台窗口中管理不同的 Office 365 服务，您可以连接到所有 Office 365 服务并从单个控制台窗口管理这些服务。
   
-使用 PowerShell 管理 Office 365 时, 可以在与 Microsoft 365 管理中心、SharePoint Online、Exchange Online、Skype for Business Online 和安全性相关的同时同时打开最长五个不同的 Windows PowerShell 会话&amp;合规性中心。 在单独的 Windows PowerShell 会话中有五种不同的连接方法, 你的桌面可能如下所示:
+使用 PowerShell 管理 Office 365 时，可以在与 Microsoft 365 管理中心、SharePoint Online、Exchange Online、Skype for Business Online 和安全&amp;合规中心相同的时间同时打开最长五个不同的 Windows PowerShell 会话。 在单独的 Windows PowerShell 会话中有五种不同的连接方法，你的桌面可能如下所示：
   
 ![五个同时运行的 Windows PowerShell 控制台](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
-这对管理 Office 365 不是最佳的, 因为您无法在这五个 windows 之间交换跨服务管理的数据。 本主题介绍如何使用 Windows PowerShell 的单个实例, 可以从该实例管理 Office 365、Skype for Business Online、Exchange Online、SharePoint Online 和安全&amp;合规性中心。
+这对管理 Office 365 不是最佳的，因为您无法在这五个 windows 之间交换跨服务管理的数据。 本主题介绍如何使用 Windows PowerShell 的单个实例，可以从该实例管理 Office 365、Skype for Business Online、Exchange Online、SharePoint Online 和安全&amp;合规性中心。
 
 >[!Note]
->本文当前只包含连接到 Office 365 全球 (+ GCC) 云的命令。 其他说明提供了指向包含有关连接到其他 Office 365 云的信息的文章的链接。
+>本文当前只包含连接到 Office 365 全球（+ GCC）云的命令。 其他说明提供了指向包含有关连接到其他 Office 365 云的信息的文章的链接。
 >
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-在可以从 Windows PowerShell 的单个实例管理所有 Office 365 之前, 请考虑以下先决条件:
+在可以从 Windows PowerShell 的单个实例管理所有 Office 365 之前，请考虑以下先决条件：
   
-- 在这些步骤中使用的 Office 365工作或学校帐户 须为 Office 365 管理员角色的成员。 有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。 这是 Office 365 PowerShell 的要求, 并不一定适用于所有其他 Office 365 服务。
+- 在这些步骤中使用的 Office 365工作或学校帐户 须为 Office 365 管理员角色的成员。 有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。 这是 Office 365 PowerShell 的要求，并不一定适用于所有其他 Office 365 服务。
     
 - 您可以使用以下 64 位版本的 Windows：
     
@@ -59,19 +59,19 @@ ms.locfileid: "34069178"
     
   - Windows Server 2008 R2 SP1*
     
-    \*您需要安装 Microsoft .NET Framework 4.5。*x* , 然后是 Windows management framework 3.0 或 Windows management framework 4.0。 有关详细信息, 请参阅[安装 .Net Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868)和[windows management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)或[windows management framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)。
+    \*您需要安装 Microsoft .NET Framework 4.5。*x* ，然后是 Windows management framework 3.0 或 Windows management framework 4.0。 有关详细信息，请参阅[安装 .Net Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868)和[windows management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)或[windows management framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)。
     
-    由于 Skype for business Online 模块和其中一个 Office 365 模块的要求, 您需要使用 Windows 的64位版本的 Windows。
+    由于 Skype for business Online 模块和其中一个 Office 365 模块的要求，您需要使用 Windows 的64位版本的 Windows。
     
-- 您需要安装 Azure AD、SharePoint Online 和 Skype for Business Online 所需的模块:
+- 您需要安装 Azure AD、SharePoint Online 和 Skype for Business Online 所需的模块：
     
    - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online 命令行管理程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype for Business Online、Windows PowerShell 模块](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
--  需要将 Windows PowerShell 配置为为 Skype for Business Online、Exchange Online 和安全&amp;合规中心运行已签名的脚本。 若要执行此操作, 请在提升的 Windows PowerShell 会话 (通过选择 "**以管理员身份运行**" 打开的 windows powershell 窗口) 中运行以下命令。
+-  需要将 Windows PowerShell 配置为为 Skype for Business Online、Exchange Online 和安全&amp;合规中心运行已签名的脚本。 若要执行此操作，请在提升的 Windows PowerShell 会话（通过选择 "**以管理员身份运行**" 打开的 windows powershell 窗口）中运行以下命令。
     
-  ```
+  ```powershell
   Set-ExecutionPolicy RemoteSigned
   ```
 
@@ -79,36 +79,36 @@ ms.locfileid: "34069178"
 
 以下是在单个 PowerShell 窗口中连接到所有服务的步骤。
   
-1. 以管理员身份打开 Windows PowerShell (使用 "**以管理员身份运行**")。
+1. 以管理员身份打开 Windows PowerShell （使用 "**以管理员身份运行**"）。
     
-2. 运行此命令, 并输入 Office 365 的工作或学校帐户凭据。
+2. 运行此命令，并输入 Office 365 的工作或学校帐户凭据。
     
-  ```
+  ```powershell
   $credential = Get-Credential
   ```
 
-3. 运行此命令以使用 Azure Active Directory PowerShell for Graph 模块连接到 Azure Active Directory (AD)。
+3. 运行此命令以使用 Azure Active Directory PowerShell for Graph 模块连接到 Azure Active Directory （AD）。
     
-  ```
+  ```powershell
   Connect-AzureAD -Credential $credential
   ```
   
-  或者, 如果您使用的是 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块, 请运行此命令。
+  或者，如果您使用的是 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块，请运行此命令。
       
-  ```
+  ```powershell
   Connect-MsolService -Credential $credential
  ```
 
-4. 运行这些命令以连接到 SharePoint Online。 将_ \<domainhost>_ 替换为您的域的实际值。 例如, 对于 "litwareinc.onmicrosoft.com", _ \<domainhost>_ 值为 "litwareinc"。
+4. 运行这些命令以连接到 SharePoint Online。 将_ \<domainhost>_ 替换为您的域的实际值。 例如，对于 "litwareinc.onmicrosoft.com"， _ \<domainhost>_ 值为 "litwareinc"。
     
-  ```
+  ```powershell
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
   Connect-SPOService -Url https://<domainhost>-admin.sharepoint.com -credential $credential
   ```
 
-5. 运行这些命令以连接到 Skype for Business Online。 第一次连接时`WSMan NetworkDelayms`需要增加值的警告, 应将其忽略。
+5. 运行这些命令以连接到 Skype for Business Online。 第一次连接时`WSMan NetworkDelayms`需要增加值的警告，应将其忽略。
     
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $sfboSession = New-CsOnlineSession -Credential $credential
   Import-PSSession $sfboSession
@@ -116,29 +116,29 @@ ms.locfileid: "34069178"
 
 6. 运行这些命令以连接到 Exchange Online。
     
-  ```
+  ```powershell
   $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $exchangeSession -DisableNameChecking
   ```
 
 >[!Note]
->若要连接到除全球版之外的 Office 365 云的 Exchange Online, 请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+>若要连接到除全球版之外的 Office 365 云的 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 >
 
 7. 运行这些命令以连接到安全&amp;合规性中心。
     
-  ```
+  ```powershell
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $SccSession -Prefix cc
   ```
 
 >[!Note]
->若要连接到世界&amp;各地的 Office 365 云的安全合规中心, 请参阅[连接到 Office 365 Security _AMP_ 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+>若要连接到世界&amp;各地的 office 365 云的安全合规中心，请参阅[连接到 Office 365 安全性 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 >
 
-以下是在使用 Azure Active Directory PowerShell for Graph 模块时, 单个块中的所有命令。 指定您的域主机的名称, 然后一次运行所有域主机。
+以下是在使用 Azure Active Directory PowerShell for Graph 模块时，单个块中的所有命令。 指定您的域主机的名称，然后一次运行所有域主机。
   
-```
+```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-AzureAD -Credential $credential
@@ -153,9 +153,9 @@ $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
 Import-PSSession $SccSession -Prefix cc
 ```
 
-此外, 在使用适用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块时, 以下是单个块中的所有命令。 指定您的域主机的名称, 然后一次运行所有域主机。
+此外，在使用适用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块时，以下是单个块中的所有命令。 指定您的域主机的名称，然后一次运行所有域主机。
   
-```
+```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-MsolService -Credential $credential
@@ -170,17 +170,17 @@ $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
 Import-PSSession $SccSession -Prefix cc
 ```
 
-当您准备好关闭 Windows PowerShell 窗口时, 运行此命令以删除 Skype for Business Online、Exchange Online、SharePoint Online 和安全&amp;合规性中心的活动会话:
+当您准备好关闭 Windows PowerShell 窗口时，运行此命令以删除 Skype for Business Online、Exchange Online、SharePoint Online 和安全&amp;合规性中心的活动会话：
   
-```
+```powershell
 Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $SccSession ; Disconnect-SPOService
 ```
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>使用多重身份验证时的连接步骤
 
-下面是通过使用 Azure Active Directory PowerShell for Graph 模块在单个窗口中使用多重身份验证在单个块中连接到 Azure AD、SharePoint Online 和 Skype for Buiness 的所有命令。 指定用户帐户的用户主体名称 (UPN) 名称和您的域主机名, 然后一次运行所有这些名称。
+下面是通过使用 Azure Active Directory PowerShell for Graph 模块在单个窗口中使用多重身份验证在单个块中连接到 Azure AD、SharePoint Online 和 Skype for Buiness 的所有命令。 指定用户帐户的用户主体名称（UPN）名称和您的域主机名，然后一次运行所有这些名称。
 
-````
+```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
@@ -190,11 +190,11 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
-````
+```
 
-此外, 以下是使用适用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的所有命令。
+此外，以下是使用适用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的所有命令。
 
-````
+```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
@@ -204,14 +204,14 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
-````
+```
 
-对于 Exchange Online 和安全&amp;合规中心, 请参阅下列主题以使用多重身份验证进行连接:
+对于 Exchange Online 和安全&amp;合规中心，请参阅下列主题以使用多重身份验证进行连接：
 
 - [使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
-- [使用多重身份验证连接到 Office 365 Security & 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
+- [使用多重身份验证连接到 Office 365 安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
-请注意, 在这两种情况下, 都必须使用 Exchange Online 远程 PowerShell 模块的单独会话进行连接。
+请注意，在这两种情况下，都必须使用 Exchange Online 远程 PowerShell 模块的单独会话进行连接。
 
 
 ## <a name="see-also"></a>另请参阅
