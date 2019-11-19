@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Office 专业增强版部署新式安全桌面。
-ms.openlocfilehash: f22c61ee1ed8dc205b5818d46e03300c21c5f22d
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.openlocfilehash: c8817e0a6f0eda0dafec56475a3fb3e6a5a8627f
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38308607"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702253"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
@@ -106,8 +106,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![Microsoft 云网络连接模型的缩略图](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [文章](https://technet.microsoft.com/library/mt733214.aspx) <br/>[更多语言](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | 此模型包含以下页面： <ul><li> **发展云连接网络**：云迁移更改了公司网络内外通信的流量和性质。它还影响了降低安全风险的方法。</li><li> **Microsoft 云连接的常见元素**：将网络与 Microsoft 云进行集成可提供对广泛服务的最佳访问。 </li><li> **Microsoft 云连接的 ExpressRoute**：ExpressRoute 可用于与 Microsoft 云建立私有、专用、高吞吐量的网络连接。 </li><li> **设计 Microsoft SaaS（Office 365、Microsoft Intune 和 Dynamics CRM Online）网络**：优化 Microsoft SaaS 服务网络需要仔细分析 Internet 边缘、客户端设备和典型 IT 运营状况。 </li><li> **设计 Azure PaaS 网络**：优化 Azure PaaS 应用网络需要有足够的 Internet 带宽，并可以要求网络流量跨多个网站或应用分布。 </li><li> **设计 Azure IaaS 网络**：逐步调试设计流程，以创建最佳的 Azure 虚拟网络 (VNet)，以便托管基于服务器的 IT 工作负载，包括子网、地址空间、路由、DNS、负载均衡、本地网络连接性、其他 VNet 和 Internet。 </li></ul><br/>  <br/>|
-   
+|[![Microsoft 云网络连接模型的缩略图](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [更多语言](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | 此模型包含： <ul><li> 发展你的云连接网络 </li><li> Microsoft 云连接的常见元素 </li><li> 面向 Microsoft 云连接的 ExpressRoute </li><li> 为 Microsoft SaaS、Azure PaaS 和 Azure IaaS 设计网络 </li></ul><br/>  <br/>|
    
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>面向企业架构师的 Microsoft 混合云
@@ -116,7 +115,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![Microsoft 混合云模型的缩略图](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [文章](https://technet.microsoft.com/library/mt750500.aspx) <br/>[更多语言](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | 此模型包含以下页面： <ul><li> **混合云概述**：Microsoft 云产品/服务（SaaS、Azure PaaS 和 Azure IaaS）及其常见元素。 </li><li> **Microsoft 混合云方案体系结构**：Microsoft 云产品/服务的混合云体系结构图，显示本地基础结构、网络和标识的公用层。 </li><li> **Microsoft SaaS (Office 365) 混合云方案**：Skype for Business、SharePoint Server 和 Exchange Server 的 SaaS 混合方案体系结构和关键混合配置说明。 </li><li> **Azure PaaS 混合云方案**：Azure PaaS 混合方案体系结构、Azure PaaS 混合应用说明（包含示例）以及 SQL Server 2016 Stretch Database 说明。 </li><li> **Azure IaaS 混合云方案**：Azure IaaS 混合方案体系结构和托管在 Azure IaaS 中的业务线 (LOB) 应用的说明。 </li></ul><br/>|
+|[![Microsoft 混合云模型的缩略图](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [更多语言](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | 此模型包含： <ul><li> Microsoft 的云产品（SaaS、Azure PaaS 和 Azure IaaS）及它们的常用元素 </li><li> Microsoft 云产品的混合云体系结构 </li><li> Microsoft SaaS (Office 365)、Azure PaaS 和 Azure IaaS 的混合云方案 </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>常见攻击和保护组织的 Microsoft 功能
@@ -142,17 +141,8 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 |:-----|:-----|
 |[![Teams 逻辑体系结构海报缩略图](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |此模型包含： <ul><li>商业方案到体系结构方法的映射</li><li>设计注意事项</li><li>单事件迁移流</li><li>分阶段迁移流</li><li>租户移动或拆分流</li></ul>|
 
-<!--<a name="santa"></a>
-### The Santa cloud
-
-How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
-   
 <a name="BKMK_o365solutions"></a>
-## Microsoft 365 企业版解决方案系列
+## <a name="microsoft-365-enterprise-solution-series"></a>Microsoft 365 企业版解决方案系列
 
 Microsoft 365 企业版解决方案系列介绍了如何实现 Microsoft 365 功能，尤其是其中一些跨技术的功能。
 
