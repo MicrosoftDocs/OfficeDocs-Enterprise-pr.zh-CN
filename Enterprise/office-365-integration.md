@@ -19,16 +19,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: 了解如何将 Office 365 与您的现有目录服务集成。
-ms.openlocfilehash: f6e29207dfb1175df8af480942484ece39e249b7
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 36bbda95e96223c465d5bf5a2ec93e5514a38a17
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428113"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747158"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Office 365 与本地环境的集成
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版*
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 您可以将 Office 365 与您现有的目录服务以及 Exchange Server、Skype for Business Server 2015 或 SharePoint Server 的本地安装集成在一起。
   

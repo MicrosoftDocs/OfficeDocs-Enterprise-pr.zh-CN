@@ -13,14 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: 如果您使用的是 Office 2007 或 Office 2010，请随时规划升级。 不会堵塞过期和不受支持的应用程序和服务器。 使用这些资源开始使用您的计划。
-ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 2eee3efccfce79bcab7f2d179e13f46fbfc7a501
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38031057"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747055"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 Office 2010 服务器和客户端升级
+
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 如果您的组织使用的是较旧版本的 Office 产品和服务器，这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其[支持的最终](upgrade-from-office-2007-servers-and-products.md)期限。 Office 2010 产品和服务（包括 Office 2010、Exchange 2010、SharePoint 2010 和 Project Server 2010）将在**10 月13日**的支持终止。 使用此部分中的资源即可开始。
 

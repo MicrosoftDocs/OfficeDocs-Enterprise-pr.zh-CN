@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 摘要：介绍用于连接到 Office 365 的网络容量、WAN 加速器和负载平衡设备的注意事项。
-ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428098"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747065"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版*
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
   
 **摘要**：介绍用于连接到 Office 365 的网络容量、WAN 加速器和负载平衡设备的注意事项。
 
@@ -52,7 +52,7 @@ ms.locfileid: "37428098"
   
 在大多数情况下，Internet 连接带宽设置流量限制。 高峰时段的性能较低可能是由于 Internet 链接使用过多而导致的。 这种情况也适用于分支机构应用场景，其中分支机构代理服务器计算机通过低速广域网（WAN）链接连接到分支总部的代理设备。
   
-若要测试网络容量，请在代理网络接口上监视网络活动。 如果它的网络接口的最大带宽超过 75%，请考虑增加不充分的网络基础结构的带宽。 或者，考虑使用高级功能，例如 HTTP 压缩。
+若要测试网络容量，请在代理网络接口上监视网络活动。 如果它的网络接口的最大带宽超过75%，请考虑增加不充分的网络基础结构的带宽。 或者，考虑使用高级功能，例如 HTTP 压缩。
   
 ## <a name="wan-accelerators"></a>WAN 加速器
 
@@ -68,7 +68,7 @@ ms.locfileid: "37428098"
   
 ## <a name="firewalls-and-proxies"></a>防火墙和代理
 
-有关配置防火墙和代理以连接到 Office 365 的更多详细信息，请阅读[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)、[评估 office 365 网络连接](assessing-network-connectivity.md)和[office 365 终结点常见问题解答](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)以了解有关设备和电路的详细信息选框.
+有关配置防火墙和代理以连接到 Office 365 的更多详细信息，请阅读[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)、[评估 office 365 网络连接](assessing-network-connectivity.md)和[office 365 终结点常见问题解答](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)以了解有关设备和电路选择的详细信息。
   
 ## <a name="see-also"></a>另请参阅
 

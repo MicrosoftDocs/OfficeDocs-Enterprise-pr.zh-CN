@@ -11,14 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: 在2017年4月11日，Exchange Server 2007 已到达支持终止。 如果尚未开始从 Exchange 2007 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。
-ms.openlocfilehash: df870d05c6f5139c4274c1654cd3b4304103a98e
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fbc2c4d0de03f27020cedf5458d7e94f880715dd
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028846"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746225"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 停止提供支持路线图
+
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 在**2017 年4月 11**日，Exchange Server 2007 已到达支持终止。 如果尚未开始从 Exchange 2007 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。 
   
@@ -40,7 +42,7 @@ ms.locfileid: "38028846"
   
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
-现在，Exchange 2007 已达到其支持的结尾，强烈建议您浏览选项并准备迁移计划。 可以执行下列操作：
+现在，Exchange 2007 已达到其支持的结尾，强烈建议您浏览选项并准备迁移计划。 可执行下列操作：
   
 - 使用直接转换、暂存或混合迁移迁移到 Office 365;
     

@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 摘要：使用 Office 365 PowerShell 创建无法在 Microsoft 365 管理中心内生成的报表。
-ms.openlocfilehash: e620ecffc89bd5b93de7b608be55bf68721b80af
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031677"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746255"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>使用 Windows PowerShell 在 Office 365 中创建报告
 
- **摘要：** 使用 Office 365 PowerShell 创建无法在 Microsoft 365 管理中心内生成的报表。
-  
 Microsoft 365 管理中心中提供很多不同的报告。 但是，这些报告提供的信息有限，有时你可能需要更多信息。 这就是你需要 Office 365 PowerShell 的时候
   
 这些文章介绍如何使用 Office 365 PowerShell 以从你的 Office 365 租户获取信息：
@@ -58,8 +56,6 @@ Microsoft 365 管理中心中提供很多不同的报告。 但是，这些报�
   - [Display Exchange Online reports with Office 365 PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
 ## <a name="see-also"></a>另请参阅
-
-#### 
 
 [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
   

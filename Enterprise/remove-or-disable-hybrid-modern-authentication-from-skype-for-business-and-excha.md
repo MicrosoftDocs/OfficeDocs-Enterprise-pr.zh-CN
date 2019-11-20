@@ -14,14 +14,16 @@ ms.assetid: 5a91b9e3-1508-475b-93e0-710fa5d5cd2d
 ms.collection:
 - M365-security-compliance
 description: 如果您已启用混合新式身份验证（HMA），则可以禁用 HMA。 本文介绍如何操作。
-ms.openlocfilehash: 9f1236775f60fdb37ab12cd7cfb7eabd9763466d
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 72b902db04fd7c56d573d9df079f353a3f6cdc4f
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031597"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748390"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>从 Skype for Business 和 Exchange 删除或禁用混合新式验证
+
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 如果您已启用混合新式身份验证（HMA），则可以禁用 HMA。 本文介绍如何操作。
   

@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 旨在让世界各地的客户能够使用 internet 连接连接到服务。 随着服务的演变，Office 365 的安全性、性能和可靠性根据使用 internet 的客户建立与服务的连接而得到改进。
-ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8b784da9dcb8b5e821197e72ccc5ab49b976ba74
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030496"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745715"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>评估 Office 365 网络连接
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版*
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 Office 365 旨在让世界各地的客户能够使用 internet 连接连接到服务。 随着服务的演变，Office 365 的安全性、性能和可靠性根据使用 internet 的客户建立与服务的连接而得到改进。
   

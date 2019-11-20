@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Office 365 中管理用户标识。
-ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428079"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745665"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 标识模型和 Azure Active Directory
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版*
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 Office 365 使用 Azure Active Directory （Azure AD），这是 Office 365 订阅附带的基于云的用户标识和身份验证服务，用于管理 Office 365 的标识和身份验证。 正确配置标识基础结构是管理组织的 Office 365 用户访问和权限的关键。
 

@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
-ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428139"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747782"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版*
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 本文包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
   
@@ -43,7 +43,7 @@ ms.locfileid: "37428139"
 ## <a name="estimate-network-bandwidth-requirements"></a>估计网络带宽要求
 <a name="EstimateBandwidthRequirements"> </a>
 
-使用 Office 365 可能会提高组织的 internet 电路的利用率。 务必要确定当前可用的带宽量是否足以处理在完全部署 Office 365 时的估计增加，同时留下至少 20% 的容量来处理最空闲的天数。
+使用 Office 365 可能会提高组织的 internet 电路的利用率。 务必要确定当前可用的带宽量是否足以处理在完全部署 Office 365 时的估计增加，同时留下至少20% 的容量来处理最空闲的天数。
   
 若要估计带宽，请执行以下步骤：
   

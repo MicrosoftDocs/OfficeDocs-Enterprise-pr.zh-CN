@@ -15,19 +15,16 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: 了解如何使用 Office 365 PowerShell 删除 Office 365 用户帐户。
-ms.openlocfilehash: dd7e5052f8933955267302a5d03870017702a7fb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7c30ec422475a4cf11b28249e8a20d64a3c90a4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069038"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746425"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户
 
-**摘要：** 了解如何使用 Office 365 PowerShell 删除 Office 365 用户帐户。
-  
 可使用 Office 365 PowerShell 删除用户帐户。
-
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -35,13 +32,13 @@ ms.locfileid: "34069038"
 
 连接后，使用下列语法删除单个用户帐户：
   
-```
+```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
 本示例将删除用户帐户 fabricec@litwareinc.com。
   
-```
+```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
@@ -50,21 +47,21 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
   
 若要显示基于用户名的帐户名，请使用下列命令：
   
-```
+```powershell
 $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 本示例显示名为 Caleb Sills 的用户的帐户名。
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 若要删除基于用户显示名称的帐户，请使用下列命令：
   
-```
+```powershell
 $userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
@@ -78,25 +75,25 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 若要删除一个用户帐户，请使用下面的语法：
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 本示例删除用户帐户 BelindaN@litwareinc.com。
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 ```
 
 若要在 30 天的宽限期内还原已删除的用户帐户，请使用下面的语法：
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 本示例还原已删除的帐户 BelindaN@litwareinc.com。
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
@@ -104,7 +101,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
   
 - 若要查看可以还原的已删除用户的列表，请运行以下命令：
     
-  ```
+  ```powershell
   Get-MsolUser -All -ReturnDeletedUsers
   ```
 

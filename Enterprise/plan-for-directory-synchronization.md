@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 介绍与 Office 365、Active Directory 域服务清理和 Azure Active Directory Connect 工具的目录同步。
-ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428109"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747082"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 的混合标识和目录同步
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版*
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 根据业务需求和技术要求，混合身份模型和目录同步对于采用 Office 365 的企业客户来说是最常见的选择。 目录同步允许您在 Active Directory 域服务（AD DS）中管理标识，对用户帐户、组和联系人的所有更新将同步到 Office 365 订阅的 Azure Active Directory （Azure AD）租户。
 
@@ -105,7 +105,7 @@ PTA 也适用于具有安全要求的组织，以立即强制实施本地用户�
 
 - 删除重复的**proxyAddress**和**userPrincipalName**属性。
 - 使用有效的**userprincipalname**属性更新空白和无效的**userprincipalname**属性。
-- 删除**givenName**、姓（ **Sn** ）、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**和**userPrincipalName**中的无效和可疑字符诸如. 有关准备属性的详细信息，请参阅[由 Azure Active Directory 同步工具同步的属性列表](https://go.microsoft.com/fwlink/p/?LinkId=396719)。
+- 删除**givenName**、姓（ **Sn** ）、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**和**userPrincipalName**属性中的无效和可疑字符。 有关准备属性的详细信息，请参阅[由 Azure Active Directory 同步工具同步的属性列表](https://go.microsoft.com/fwlink/p/?LinkId=396719)。
 
     > [!NOTE]
     > 这些属性与 Azure AD Connect 同步的属性相同。 

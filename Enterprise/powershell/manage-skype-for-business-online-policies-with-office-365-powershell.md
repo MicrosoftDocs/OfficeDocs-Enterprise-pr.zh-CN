@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 Office 365 PowerShell，通过策略管理 Skype for business Online 用户帐户属性。
-ms.openlocfilehash: 51e402922b2a357ef29e9b2628eb25fc252e5437
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1d4f6bc52932bb7315fdd769788b5b3108423424
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031727"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748522"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>管理 Skype 与 Office 365 PowerShell 的在线业务策略
 
- **摘要：** 使用 Office 365 PowerShell，通过策略管理 Skype for business Online 用户帐户属性。
-  
 若要管理多个用户帐户的 Skype for Business Online 属性，必须使用 Office 365 PowerShell 将其指定为策略的属性。
   
 ## <a name="before-you-begin"></a>准备工作
@@ -33,7 +31,7 @@ ms.locfileid: "38031727"
     
 2. 打开 Windows PowerShell 命令提示符，并运行以下命令： 
     
-```
+```powershell
 Import-Module SkypeOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -46,13 +44,13 @@ Import-PSSession $sfbSession
 
 许多 Skype for Business Online 用户帐户属性都是通过使用策略配置的。 策略只是可应用于一个或多个用户的设置集合。 若要了解如何配置策略，可以对 FederationAndPICDefault 策略运行此示例命令：
   
-```
+```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
 ```
 
 反过来，您应返回类似于以下的内容：
   
-```
+```powershell
 Identity                          : Tag:FederationAndPICDefault
 Description                       :
 EnableFederationAccess            : True
@@ -78,7 +76,7 @@ EnableOutsideAccess               : True
     
 例如，您可以通过使用以下命令来执行此操作：
   
-```
+```powershell
 Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -Identity $_.ExternalAccessPolicy}
 ```
 
@@ -98,14 +96,14 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
   
 例如，若要查看所有可供使用的语音策略，请运行以下命令：
   
-```
+```powershell
 Get-CsVoicePolicy
 ```
 
 > [!NOTE]
 > 将返回所有可用的语音策略的列表。 但请记住，并非所有策略都可以分配给所有用户。 这是由于涉及许可和地理位置的各种限制导致的。 （所谓的 "[使用位置](https://msdn.microsoft.com/library/azure/dn194136.aspx)"）。如果要了解可分配给特定用户的外部访问策略和会议策略，请使用与以下命令类似的命令： 
 
-```
+```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
 Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 ```
@@ -116,13 +114,11 @@ ApplicableTo 参数可将返回的数据限制为可分配到特定用户的策�
   
 使用 Skype for Business Online，用户必须由某种类型的策略进行管理。 如果与策略相关的有效属性为空，则表示有问题的用户将由全局策略管理，这是一个策略，该策略将自动应用于用户，除非专门为其分配了每用户策略。 由于我们看不到为用户帐户列出的客户端策略，因此它由全局策略管理。 您可以使用此命令确定全局客户端策略：
   
-```
+```powershell
 Get-CsClientPolicy -Identity "Global"
 ```
 
 ## <a name="see-also"></a>另请参阅
-
-#### 
 
 [使用 Office 365 PowerShell 管理 Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
   

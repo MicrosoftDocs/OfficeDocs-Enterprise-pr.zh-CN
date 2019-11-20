@@ -14,14 +14,16 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: 在开始规划网络的 Office 365 网络连接之前，请务必了解安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。
-ms.openlocfilehash: d403cd6245be21f8089e1234e7c769b93c2142cb
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 5e590df37aa1660e4787ac86e556e2cb93feb1e4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38031917"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747092"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 网络连接原则
+
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 在开始规划网络的 Office 365 网络连接之前，请务必了解安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。
   

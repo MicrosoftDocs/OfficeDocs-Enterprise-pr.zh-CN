@@ -11,14 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 即将停止支持。 将此规划路线图用作准备升级到 Exchange Online 或部署到本地 Exchange Server 的更新版本的指南。
-ms.openlocfilehash: 28dcead19c1af1b5a641cae8f9d649b22fb36c95
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 464406cd9603a41d10f98374442167160609c060
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38028826"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745795"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 结束支持路线图
+
+*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 在**2020 年10月 13**日，Exchange Server 2010 将达到支持的结尾。 如果尚未开始从 Exchange 2010 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。
 
@@ -38,7 +40,7 @@ ms.locfileid: "38028826"
 
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
-随着 Exchange 2010 的支持终止，这是浏览选项并准备迁移计划的良好时间。 可以执行下列操作：
+随着 Exchange 2010 的支持终止，这是浏览选项并准备迁移计划的良好时间。 可执行下列操作：
 
 - 完全迁移到 Office 365。 使用直接转换、最小混合或完全混合迁移迁移邮箱，然后删除本地 Exchange 服务器和 Active Directory。
 - 将 Exchange 2010 服务器迁移到本地服务器上的 Exchange 2016。
