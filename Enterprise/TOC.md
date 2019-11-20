@@ -64,7 +64,7 @@
 
 ## 1. 设置网络
 ### [设置企业网络](set-up-network-for-office-365.md)
-### [域](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
+### [添加域](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
 ### [Office 365 网络连接概述](office-365-networking-overview.md)
 ### [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
 ### [Office 365 网络计划和性能优化](network-planning-and-performance.md)
@@ -103,7 +103,7 @@
 #### [设置目录同步](set-up-directory-synchronization.md)
 ### [向用户帐户分配许可证](assign-licenses-to-user-accounts.md)
 
-## [3. 实施安全功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+## [3. 实施安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. 部署客户端软件
 ### [部署 Office 365 专业增强版](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
