@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新终结点 Web 服务不包含特定应用场景的少量终结点。
 hideEdit: true
-ms.openlocfilehash: 2dae3a5f37be071f38991c599ea1b0ba81fa6281
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: dd9e91fbdf5e2cc252d0675e81132ccc506a41a5
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702193"
+ms.locfileid: "38707009"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 
@@ -45,7 +45,7 @@ ms.locfileid: "38702193"
 |:-----|:-----|:-----|:-----|
 | **行** | **用途** | **目标** | **类型** |
 | 1  | [导入服务](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)以进行 PST 和文件引入 | 有关其他要求，请参阅[导入服务](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)。 | 不常用的出站方案 |
-| 2  | [Microsoft Office 365 支持和恢复助手](https://diagnostics.office.com/#/) - 验证单一登录用户凭据。  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 出站服务器流量 |
+| 2  | [Microsoft Support and Recovery Assistant for Office 365](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 出站服务器流量 |
 | 3  | Azure AD Connect（带有 SSO 选项） - WinRM 和远程 PowerShell | 客户 STS 环境（AD FS 服务器和 AD FS 代理）\| TCP 端口 80 和 443 | 入站服务器流量 |
 | 4  | ST FS，例如 AD FS 代理服务器（仅限联盟客户） | 客户 STS（例如 AD FS 代理）\| 端口 TCP 443 或 TCP 49443，带有 ClientTLS | 入站服务器流量 |
 | 5  | [Exchange Online 统一消息/SBC 集成](https://technet.microsoft.com/library/jj673565.aspx) | 本地会话边界控制器和 *.um.outlook.com 之间的双向 | 仅出站服务器流量 |
