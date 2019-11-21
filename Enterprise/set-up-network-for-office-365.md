@@ -3,7 +3,7 @@ title: 设置 Office 365 网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,20 +17,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：请参阅以下文章，了解如何设置 Office 365 网络。
-ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 725c2470644206045a40816fad3643b83d6c8ea6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722681"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747411"
 ---
 # <a name="set-up-your-network-for-office-365"></a>设置 Office 365 网络
 
-**摘要：** 请参阅以下文章，了解如何设置 Office 365 网络。
-  
-Office 365 载入的一个重要部分是首先要确保将网络和 Internet 连接设置为支持优化访问。配置可访问全球软件即服务 (SaaS) 云的本地网络与配置针对本地数据中心流量进行优化的传统网络是不一样的。 
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
-使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以获得最佳的用户性能。
+Office 365 载入的一个重要部分是要确保将网络和 Internet 连接设置为支持优化访问。配置可访问全球软件即服务 (SaaS) 云的本地网络与配置针对本地数据中心和中心 Internet 连接流量进行优化的传统网络是不一样的。 
+
+使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 
 ## <a name="how-office-365-networking-works"></a>Office 365 网络工作原理
 
@@ -50,7 +50,7 @@ Office 365 载入的一个重要部分是首先要确保将网络和 Internet �
 
 端点是 Internet 上 Office 365 流量的目的 IP 地址、DNS 域名和 URL 的集合。 
 
-若要优化基于 Office 365 云的服务的性能，需要使用你的客户端浏览器和边缘网络中的设备对这些端点进行特殊处理。这些设备包括防火墙设备、SSL 中断与检查设备、数据包检查设备以及数据丢失防护系统。
+若要优化基于 Office 365 云的服务的性能，需要使用你的客户端浏览器和边缘网络中的设备对某些端点进行特殊处理。这些设备包括防火墙设备、SSL 中断与检查设备、数据包检查设备以及数据丢失防护系统。
 
 有关详细信息，请参阅[管理 Office 365 端点](managing-office-365-endpoints.md)。
 
