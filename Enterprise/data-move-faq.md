@@ -1,9 +1,9 @@
 ---
 title: 数据移动常见问题解答
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
-ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028886"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756581"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -29,7 +29,7 @@ ms.locfileid: "38028886"
 
 ## <a name="how-do-we-define-core-customer-data"></a>如何定义核心客户数据？
  
-Core customer data 是一个术语，指的是在[Microsoft Online Services 术语](https://go.microsoft.com/fwlink/p/?LinkID=249048)中定义的客户数据子集： 
+Core customer data 是一个术语，指的是在[Microsoft Online Services 术语](https://aka.ms/ost)中定义的客户数据子集： 
 - Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）
 - SharePoint Online 网站内容和该网站中存储的文件
 - 上载到 OneDrive for business 的文件 
@@ -57,7 +57,7 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
 ## <a name="will-new-office-365-customers-be-automatically-provisioned-in-the-new-datacenter-geos"></a>在新的数据中心信息中是否会自动预配新的 Office 365 客户？
   
-是。 在新的数据中心地理位置可用后，在注册过程中选择符合新地理位置的国家/地区的企业客户的新 Office 365 将把其核心客户数据存储在新的数据中心地理位置。
+可以。 在新的数据中心地理位置可用后，在注册过程中选择符合新地理位置的国家/地区的企业客户的新 Office 365 将把其核心客户数据存储在新的数据中心地理位置。
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>我的核心客户数据位于何处？
 
@@ -131,11 +131,11 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
  ## <a name="do-the-new-datacenter-geos-use-the-same-versions-of-office-365-services-as-the-current-datacenter-geos"></a>新的数据中心信息是否使用与当前数据中心信息相同版本的 Office 365 服务？
 
-是。
+可以。
   
 ## <a name="will-office-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>在新数据中心托管的 Office 365 租户是否适用于该国家/地区之外的用户？
   
-A. 是。 Microsoft 在全球范围内的35国家/地区内的国家/地区的多达130个位置维护一个大型的全球网络，其 Internet 服务提供商（Isp）数量超过2700的对等协议。 用户将能够从 Internet 上的任何位置访问数据中心。
+A. 可以。 Microsoft 在全球范围内的35国家/地区内的国家/地区的多达130个位置维护一个大型的全球网络，其 Internet 服务提供商（Isp）数量超过2700的对等协议。 用户将能够从 Internet 上的任何位置访问数据中心。
 
 ## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>我的租户是为[Office 365 多地理](https://aka.ms/multi-geo)位置配置的。  我是否可以在 Office 365 移动程序中注册我的租户以更改我的默认地理位置并将任何用户不在附属区域中移动到新的默认地理位置？
 

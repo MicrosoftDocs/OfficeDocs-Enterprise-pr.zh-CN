@@ -1,9 +1,9 @@
 ---
 title: 如何请求数据移动
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求，以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031587"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756591"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -72,7 +72,7 @@ ms.locfileid: "38031587"
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft 团队尚不支持将 rest 中的客户内容从区域迁移到国家/地区数据中心，在这些数据中心中，可以使用 Microsoft 团队的数据派驻服务。  因此，在 Microsoft 团队支持数据驻留的新区域中，只有新客户的所有数据都存储在国家/地区。  详细了解 Office 365 数据驻留在你的公司位置，你的[数据位于何处？](https://products.office.com/where-is-your-data-located)   
+Microsoft 团队聊天和频道消息数据的迁移支持将添加到 Office 365 本地迁移计划中。  我们计划在2020年1月为所有符合条件的客户（包括以前选择参加 Exchange Online 和 SharePoint Online/OneDrive for Business 迁移的客户）打开程序注册。  我们将在 Microsoft 365 管理中心公开自愿加入控制，并将消息中心中的通知发送给所有符合条件的客户。   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>请求移动前的可选操作
 

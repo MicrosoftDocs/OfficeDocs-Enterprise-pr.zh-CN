@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: 新式身份验证是标识管理的一种方法，可提供更安全的用户身份验证和授权。 它可用于本地的 Skype for Business server 本地和 Exchange server 的混合部署，以及拆分域 Skype for Business 混合。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档（如 Outlook 和 Skype 客户端）信息。
-ms.openlocfilehash: d3dc209a4e1cfe3e313b0a1adf2bb6b5bd3b5b37
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: add02bdb04a347c4372b479a2607f24a32f9d90b
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745685"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756561"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件
 
@@ -127,7 +127,7 @@ ms.locfileid: "38745685"
   
 - **特定于 Exchange Server**
     
-  - 您使用的是 Exchange server 2013 CU19 和 up，或者是 Exchange server 2016 CU8 和 up。
+  - 您使用的是 Exchange server 2013 CU19 和 up，Exchange server 2016 CU8 和 up，或 Exchange Server 2019 CU1 和 up。
     
   - 环境中没有 Exchange server 2010。
     
@@ -149,7 +149,7 @@ ms.locfileid: "38745685"
   
   - 以下客户端支持新式身份验证：
 
-  |**客户端**|**主要协议**|**注释**|
+  |**客户端**|**主要协议**|**备注**|
   |:-----|:-----|:-----|
   |Outlook 2013 和 Outlook 2016  <br/> |MAPI over HTTP  <br/> |必须在 Exchange 中启用 MAPI over HTTP，才能将新式验证用于这些客户端（通常为 Exchange 2013 Service Pack 1 及更高版本启用或设置为启用）;有关详细信息，请参阅[office 2013 和 office 2016 客户端应用的新式身份验证的工作方式](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。  <br/> 确保您运行的是所需的最低版本的 Outlook;[有关使用 Windows Installer （MSI）的 Outlook 版本，](https://docs.microsoft.com/officeupdates/outlook-updates-msi)请参阅最新更新。  <br/> |
   |Outlook 2016 for Mac  <br/> |Exchange Web 服务  <br/> |  <br/> |

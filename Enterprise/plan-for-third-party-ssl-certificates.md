@@ -18,19 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 摘要：介绍了 Exchange 内部部署和混合部署、使用 AD FS 的 SSO、Exchange Online services 和 Exchange Web 服务所需的 SSL 证书。
-ms.openlocfilehash: 92425793d616f642fb78331a965b1a4a2dff071f
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 74540fb612bd515443912114ebec20cd8ed5e1aa
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747684"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756611"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365 第三方 SSL 证书计划
 
 *本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
- **摘要：** 介绍了 Exchange 内部部署和混合部署、使用 AD FS 的 SSO、Exchange Online services 和 Exchange Web 服务所需的 SSL 证书。 
-  
 若要对客户端和 Office 365 环境之间的通信进行加密，必须在基础结构服务器上安装第三方安全套接字层（SSL）证书。
 
 ||

@@ -1,9 +1,9 @@
 ---
 title: 数据移动期间和数据移动之后
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626132"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756571"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -123,10 +123,6 @@ ms.locfileid: "38626132"
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>涉及第三方音频会议提供商的 Skype for Business 移动
 适用于 Skype for business 的第三方音频会议提供商附加服务不适用于驻留在新地理位置的新数据中心中的用户。  使用第三方音频会议提供商服务的现有客户不应请求移动到新的特定地理位置的数据中心。  如果新客户部署到新的特定地理位置数据中心，则需要请求移动到区域数据中心以使用第三方音频会议提供商。
-
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>其他服务（包括团队、Yammer 和 Power BI）的数据
-
-我们仅移动 Exchange Online、SharePoint Online 和 Skype for Business 的客户数据。 我们不会移动其他服务的数据。 您不会像客户或其他这些服务的用户那样对您做任何更改或影响。 移动过程不会影响它们，客户数据的位置保持不变。
   
 ## <a name="related-topics"></a>相关主题 
  
