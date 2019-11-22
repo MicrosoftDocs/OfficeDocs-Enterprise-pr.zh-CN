@@ -3,7 +3,7 @@ title: 将本地网络连接到 Microsoft Azure 虚拟网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,17 +17,15 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-ms.openlocfilehash: 634016a2102ef602e9963dadc7ddff36b7381661
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3506b1b4c6a88567bf216957f5e083c9e99156ba
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068078"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793334"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
- **摘要：** 了解如何为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-  
 Azure 跨界虚拟网络连接到本地网络，从而可扩展网络以包含在 Azure 基础结构服务中托管的子网和虚拟机。上述连接可让本地网络中的计算机直接访问 Azure 中的虚拟机，反之亦然。 
 
 例如，在 Azure 虚拟机上运行的一个目录同步服务器需要查询本地域控制器，以获取对帐户所做的更改并将其与 Office 365 订阅同步。本文介绍如何使用已准备就绪托管 Azure 虚拟机的站点间虚拟专用网络 (VPN) 连接来设置跨界 Azure 虚拟网络。
@@ -211,46 +209,43 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
 
 首先，请打开 Azure PowerShell 提示符。如果没有安装 Azure PowerShell，请参阅 [Azure PowerShell cmdlet 使用入门](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)。
 
-> [!TIP]
-> 若要获取包含本文中所有 PowerShell 命令的文本文件，请单击[此处](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)。 
-  
+ 
 下一步，使用此命令登录 Azure 帐户。
   
-```
+```powershell
 Connect-AzAccount
 ```
 
 使用以下命令获得订阅名称。
   
-```
+```powershell
 Get-AzSubscription | Sort SubscriptionName | Select SubscriptionName
 ```
 
 通过这些命令设置 Azure 订阅。使用正确的订阅名称替换引号内的所有内容（包括 < 和 > 字符）。
   
-```
+```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 接下来，为虚拟网络创建一个新的资源组。要确定一个唯一的资源组名称，请使用此命令列出您现有的资源组。
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 使用这些命令创建新的资源组。
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName="<Table V - Item 2 - Value column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-
 ```
 
 接下来，请创建 Azure 虚拟网络。
   
-```
+```powershell
 # Fill in the variables from previous values and from Tables V, S, and D
 $rgName="<name of your new resource group>"
 $locName="<Azure location of your new resource group>"
@@ -280,7 +275,7 @@ $vnet | Set-AzVirtualNetwork
   
 下一步，请使用这些命令来创建站点间 VPN 连接的网关。
   
-```
+```powershell
 # Fill in the variables from previous values and from Tables V and L
 $vnetName="<Table V - Item 1 - Value column>"
 $localGatewayIP="<Table V - Item 3 - Value column>"

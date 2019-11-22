@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 摘要：在 Microsoft Azure 中为 Office 365 订阅配置高可用性联合身份验证。
-ms.openlocfilehash: afed84c8fd496e8092664601188bb0c43313607a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ba8049271e4820cca8db2ce5d6cabf76dacfb36a
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067958"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793284"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>在 Azure 中部署 Office 365 的高可用性联合身份验证
 
@@ -110,8 +110,3 @@ ms.locfileid: "34067958"
 
 使用 [高可用性联合身份验证阶段 1:配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md) 开始配置此工作负载。 
   
-<!--
-> [!TIP]
-> For a set of files to more quickly deploy your high availability federated authentication for Office 365 in Azure, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
---> 
-

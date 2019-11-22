@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
-ms.openlocfilehash: c0a469f8945b9e69415b511c253e72a0118a4cfa
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 276d28835cbedf7d2eb87b80304fbb0e4e9de2c3
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027666"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793314"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
@@ -36,12 +36,7 @@ ms.locfileid: "38027666"
   
 提供位置和资源组值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 中运行生成块。
   
-<!--
-> [!TIP]
-> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
--->
-  
-```
+```powershell
 # Set up key variables
 $locName="<your Azure location>"
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -56,7 +51,7 @@ New-AzLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers" -Locati
 
 若要显示分配给面向 Internet 的负载均衡器的公用 IP 地址，请在本地计算机上的 Azure PowerShell 命令提示符处运行以下命令：
   
-```
+```powershell
 Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgName).IPAddress
 ```
 
@@ -66,13 +61,13 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
   
 在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。
   
-|**Name**|**Type**|**TTL**|**值**|
+|**名称**|**Type**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |联合身份验证服务 FDQN  <br/> |A  <br/> |3600  <br/> |面向 Internet 的 Azure 负载均衡器的公用 IP 地址（通过上一节中的 **Write-Host** 命令显示) <br/> |
    
 下面是一个示例：
   
-|**Name**|**Type**|**TTL**|**值**|
+|**名称**|**Type**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -100,7 +95,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
   
 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   
-```
+```powershell
 # Set up variables common to both virtual machines
 $locName="<your Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"

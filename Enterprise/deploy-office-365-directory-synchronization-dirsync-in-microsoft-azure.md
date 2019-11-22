@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 摘要：在 Azure 虚拟机上部署 Azure AD Connect，以在本地目录和 Office 365 订阅的 Azure AD 租户之间同步帐户。
-ms.openlocfilehash: cb908de04aa38972744077bd1359b94babca7290
-ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
+ms.openlocfilehash: 1b03e2a18062523c53b5c2c094e9adf10e2e3358
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038281"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793324"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Office 365 目录同步
 
@@ -120,11 +120,7 @@ Azure Active Directory (AD) Connect（以前称为 Directory Synchronization 工
     
 部署之后，还必须为 Office 365 中的新用户帐户分配位置和许可证。
 
-<!--  
-> [!TIP]
-> The [Directory Synchronization Server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) has all of the Azure PowerShell blocks to build out this solution, the diagrams in Microsoft PowerPoint and Visio format, and a Microsoft Excel configuration workbook that generates Azure PowerShell command blocks customized for your settings.
--->
-  
+
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>第 1 阶段：创建和配置 Azure 虚拟网络
 
 要创建和配置 Azure 虚拟网络，请完成[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)部署路线图中的[阶段 1：准备你的本地网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-1-prepare-your-on-premises-network)和[阶段 2：在 Azure 中创建跨界虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-2-create-the-cross-premises-virtual-network-in-azure)。
@@ -202,8 +198,3 @@ Azure AD Connect 将帐户从本地 AD DS 添加到 Office 365 订阅，但为�
   
 [设置 Office 365 的目录同步](set-up-directory-synchronization.md)
   
-<!--
-[Directory Synchronization server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
--->
-
-

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。
-ms.openlocfilehash: d3cb5006f9630b4fc20462252a570f4e575a1da1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b6c872e46f39391e5e80caa399140adb044e773d
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030746"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793295"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -113,37 +113,32 @@ ms.locfileid: "38030746"
   
 首先，启动 Azure PowerShell 提示符并登录到你的帐户。
   
-```
+```powershell
 Connect-AzAccount
 ```
-
-<!--
-> [!TIP]
-> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
--->
   
 使用以下命令获得订阅名称。
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
 对于较旧版本的 Azure PowerShell，请改为使用此命令。
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
 设置 Azure 订阅。 使用正确的名称替换引号内的\<所有内容，包括和 > 字符。
   
-```
+```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 接下来，创建新的资源组。 要确定唯一的一组资源组名称，请使用此命令列出现有的资源组。
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
@@ -160,7 +155,7 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
   
 使用这些命令创建新的资源组。
   
-```
+```powershell
 $locName="<an Azure location, such as West US>"
 $rgName="<Table R - Item 1 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
@@ -174,7 +169,7 @@ New-AzResourceGroup -Name $rgName -Location $locName
 
 接下来，创建 Azure 虚拟网络及其子网。
   
-```
+```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<your Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -203,7 +198,7 @@ New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locNa
 
 接下来，为每个具有虚拟机的子网创建网络安全组。 若要执行子网隔离，可以添加规则，指定允许或拒绝进入子网的网络安全组的特定类型流量。
   
-```
+```powershell
 # Create network security groups
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 
@@ -223,7 +218,7 @@ $vnet | Set-AzVirtualNetwork
 
 下一步，请使用这些命令来创建站点间 VPN 连接的网关。
   
-```
+```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -259,7 +254,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 接下来，从此命令的显示内容中，记录用于虚拟网络的 Azure VPN 网关的公用 IPv4 地址。
   
-```
+```powershell
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
@@ -287,7 +282,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 使用这些 Azure PowerShell 命令创建新的可用性集。
   
-```
+```powershell
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"

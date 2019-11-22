@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证创建和配置 Active Directory 联合身份验证服务 (AD FS) 服务器。
-ms.openlocfilehash: 68410111be6c4d12e27e32e9663592306d733970
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a69738e5be639341963ac1e90aff08328a83257b
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030736"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793298"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
@@ -50,12 +50,7 @@ ms.locfileid: "38030736"
   
 首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。 指定变量的值， \<并删除和 > 字符。 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   
-<!--
-> [!TIP]
-> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
--->
-  
-```
+```powershell
 # Set up key variables
 $locName="<your Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -78,7 +73,7 @@ New-AzLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers" -Location $loc
   
 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   
-```
+```powershell
 # Set up variables common to both virtual machines
 $locName="<your Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -137,7 +132,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 对于每个虚拟机，请通过 Windows PowerShell 提示符下的这些命令将它们加入相应的 Active Directory 域服务（AD DS）域。
   
-```
+```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
 $cred=Get-Credential -Message "Type the name and password of a domain acccount."
 Add-Computer -DomainName $domName -Credential $cred
