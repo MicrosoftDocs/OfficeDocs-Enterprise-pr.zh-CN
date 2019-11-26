@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: 使用 Office 365 PowerShell 禁用对用户的 Office 365 服务的访问。
-ms.openlocfilehash: c012d7451d022ea8cf3e3fa1a8d0a89d804e9c66
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 711f48dd2caad6fc2b438010405b126be203bd54
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746275"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257597"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 禁止访问服务
 
@@ -41,6 +41,10 @@ ms.locfileid: "38746275"
 ```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
+
+>[!Note]
+>PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>
 
 有关详细信息，请参阅[使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。
     

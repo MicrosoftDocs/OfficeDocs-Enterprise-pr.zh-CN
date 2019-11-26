@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。
-ms.openlocfilehash: f64a29bb0594694c5a6b6e2dff8d0f7611fdf11e
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: c8390b3d704fa9df64f147a942891308b1ed825f
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707059"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257421"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
@@ -98,6 +98,10 @@ ms.locfileid: "38707059"
   ```powershell
   Connect-MsolService -Credential $credential
  ```
+
+>[!Note]
+>PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>
 
 4. 运行这些命令以连接到 SharePoint Online。 将_ \<domainhost>_ 替换为您的域的实际值。 例如，对于 "litwareinc.onmicrosoft.com"， _ \<domainhost>_ 值为 "litwareinc"。
     

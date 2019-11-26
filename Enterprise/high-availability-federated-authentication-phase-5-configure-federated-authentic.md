@@ -3,7 +3,7 @@ title: 高可用性联合身份验证阶段 5：为 Office 365 配置联合身�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 Azure AD Connect。
-ms.openlocfilehash: a4c8a76a322824bfdb4df88600881d76cb3e378c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dcd66ee6a650081e4ad27f9023fe98082a7ccd43
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067318"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254551"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证
 
- **摘要：** 在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 Azure AD Connect。
- 
-在 Azure 基础结构服务中为 Office 365 部署高可用性联合身份验证的最后一阶段, 您将获取并安装由公共证书颁发机构颁发的证书, 验证您的配置, 然后安装并运行 Azure AD在目录同步服务器上连接。 Azure AD Connect 配置 Office 365 订阅、Active Directory 联合身份验证服务 (AD FS) 以及用于联合身份验证的 Web 应用程序代理服务器。
+在 Azure 基础结构服务中为 Office 365 部署高可用性联合身份验证的最后一阶段，您将获取并安装由公共证书颁发机构颁发的证书，验证您的配置，然后安装并运行 Azure AD在目录同步服务器上连接。 Azure AD Connect 配置 Office 365 订阅、Active Directory 联合身份验证服务 (AD FS) 以及用于联合身份验证的 Web 应用程序代理服务器。
   
 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
   
@@ -41,7 +39,7 @@ ms.locfileid: "34067318"
   
 有关联合身份验证的证书要求的详细信息，请参阅[联合身份验证安装和配置的先决条件](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)。
   
-收到证书后, 将其复制到目录同步服务器的 C: 驱动器上的文件夹中。 例如, 将文件命名为 SSL, 并将其存储在目录同步服务器\\上的 C: 证书文件夹中。
+收到证书后，将其复制到目录同步服务器的 C：驱动器上的文件夹中。 例如，将文件命名为 SSL，并将其存储在目录同步服务器\\上的 C：证书文件夹中。
   
 ## <a name="verify-your-configuration"></a>验证配置
 
@@ -73,7 +71,7 @@ Azure AD Connect 工具通过以下步骤配置 AD FS 服务器、Web 应用程�
   
 1. 使用具有本地管理员特权的域帐户创建到目录同步服务器的远程桌面连接。
     
-2. 从目录同步服务器的桌面, 打开 "Internet Explorer", 然后转[https://aka.ms/aadconnect](https://aka.ms/aadconnect)到。
+2. 从目录同步服务器的桌面，打开 "Internet Explorer"，然后转[https://aka.ms/aadconnect](https://aka.ms/aadconnect)到。
     
 3. 在"Microsoft Azure Active Directory Connect"页上，单击"下载"，然后单击"运行"。
     
@@ -87,7 +85,7 @@ Azure AD Connect 工具通过以下步骤配置 AD FS 服务器、Web 应用程�
     
 8. 在"连接到 Azure AD"页上，键入 Office 365 订阅全局管理员帐户的名称和密码，然后单击"下一步"。
     
-9. 在 "**连接目录**" 页上, 确保在 "**林**" 中选择了 "本地 Active DIRECTORY 域服务 (AD DS) 林", 键入域管理员帐户的名称和密码, 单击 "**添加目录**", 然后单击 "**下一步**"。
+9. 在 "**连接目录**" 页上，确保在 "**林**" 中选择了 "本地 Active DIRECTORY 域服务（AD DS）林"，键入域管理员帐户的名称和密码，单击 "**添加目录**"，然后单击 "**下一步**"。
     
 10. 在"Azure AD 登录配置"页上，单击"下一步"。
     

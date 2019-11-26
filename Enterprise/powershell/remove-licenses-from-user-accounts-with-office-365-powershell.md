@@ -16,12 +16,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: 介绍如何使用 Office 365 PowerShell 删除之前分配给用户的 Office 365 许可证。
-ms.openlocfilehash: bfd333b649df1d346a45abc3e8b9e35666f8f582
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 1147b59c948d3d09349de42a637f522df04f8687
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747538"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257381"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户的许可证
 
@@ -73,6 +73,10 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 ```powershell
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
+
+>[!Note]
+>PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>
 
 本示例从用户`litwareinc:ENTERPRISEPACK`帐户 BelindaN@litwareinc.com 中删除（Office 365 企业版 E3）许可证。
   

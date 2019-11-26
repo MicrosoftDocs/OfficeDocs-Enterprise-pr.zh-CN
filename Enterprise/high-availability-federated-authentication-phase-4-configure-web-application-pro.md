@@ -3,7 +3,7 @@ title: 高可用性联合身份验证阶段4配置 web 应用程序代理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,30 +12,31 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
-ms.openlocfilehash: 276d28835cbedf7d2eb87b80304fbb0e4e9de2c3
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 0ab2526209bc9c59fdce839e0f50451b23d78b04
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793314"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257491"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
- **摘要：** 为 Microsoft Azure 中的 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
-  
 在为 Azure 基础结构服务中的 Office 365 联合身份验证部署高可用性的这一阶段中，创建一个内部负载均衡器和两个 AD FS 服务器。
   
-必须先完成这一阶段，然后才能移至[High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
+您必须先完成此阶段，然后再转到[第5阶段：为 Office 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>在 Azure 中创建面向 Internet 的负载均衡器
 
 必须创建面向 Internet 的负载均衡器，以便 Azure 在两个 Web 应用程序代理服务器之间平均分发来自 Internet 的传入客户端身份验证通信。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
   
 提供位置和资源组值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 中运行生成块。
   
+> [!TIP]
+> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)。 
+
 ```powershell
 # Set up key variables
 $locName="<your Azure location>"
@@ -91,7 +92,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
     
 - 表 A（针对可用性集）
     
-回想一下您在[高可用性联合身份验证阶段 2](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)中定义了表 M：配置域控制器和表 R、V、S、I 和 A in [high availability 联合身份验证阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。
+回想一下在[阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)和表 R、V、S、I 和 A[阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定义了表 M。
   
 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   
@@ -157,7 +158,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ## <a name="next-step"></a>后续步骤
 
-使用[High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)继续配置此工作负载。
+使用[阶段5：为 Office 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)，以继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 

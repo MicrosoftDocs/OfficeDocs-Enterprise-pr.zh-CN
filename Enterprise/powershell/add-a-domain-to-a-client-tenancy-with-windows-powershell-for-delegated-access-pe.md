@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有的客户租户。
-ms.openlocfilehash: 60088a9eafa1f5380eef2cc0240b0f5b5b02fe0f
-ms.sourcegitcommit: 68181eca8e43ea7f5dfd89cbaf587bc0c260ca7e
+ms.openlocfilehash: 5f22e21e1eafc7c2d3fb9bc7286e860ad468445b
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853225"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257461"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
@@ -48,7 +48,7 @@ ms.locfileid: "35853225"
  您的客户可能会要求您创建与其租赁关联的其他域，因为他们不想让默认的<domain>.onmicrosoft.com域成为向全世界展示其公司标识的主要域。此步骤将引导您创建与您的客户租赁相关联的新域。
   
 > [!NOTE]
-> 若要执行其中一些操作, 您登录时所使用的合作伙伴管理员帐户必须设置为 "**完全管理**", 以便在中的 "管理员" 帐户详细信息中找到您支持设置的公司的 "**分配管理访问权限**" 设置。Microsoft 365 管理中心。 For more information on managing partner administrator roles, see[Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> 若要执行某些操作，必须将您登录时使用的合作伙伴管理员帐户设置为 "**完全管理**"，以便在 Microsoft 365 管理中心的 "管理员" 帐户详细信息中，"为**您支持的公司分配管理访问权限**" 设置为 "完全管理"。 For more information on managing partner administrator roles, see[Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>在 Azure Active Directory 中创建域
 
@@ -57,6 +57,10 @@ ms.locfileid: "35853225"
 ```
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
+
+>[!Note]
+>PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>
 
 ### <a name="get-the-data-for-the-dns-txt-verification-record"></a>获取 DNS TXT 验证记录的数据
 

@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍了 Office 365 中的目录同步问题的常见原因，并提供了几种帮助排除和解决这些问题的方法。
-ms.openlocfilehash: f7a117df41e9a972f4ea166eb7b75e5fb1a85295
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: cc0fe15d0d49542489ac1e586efbe99d0846b3ab
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702223"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254521"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>修复 Office 365 的目录同步问题
 
@@ -89,6 +89,6 @@ ms.locfileid: "38702223"
     
 ## <a name="diagnostic-tools"></a>诊断工具
 
-[IDFix 工具](prepare-directory-attributes-for-synch-with-idfix.md)用于在准备迁移到 Office 365 时，在本地 Active Directory 环境中执行 identity 对象及其属性的发现和修正。 IDFix 适用于负责与 Office 365 service 同步的 Active Directory 管理员。 
+[IDFix 工具](prepare-directory-attributes-for-synch-with-idfix.md)用于在准备迁移到 Office 365 时，在本地 Active Directory 环境中执行 identity 对象及其属性的发现和修正。 IDFix 适用于负责与 Office 365 服务进行目录同步的 Active Directory 管理员。 
 
 从 Microsoft 下载中心[下载 IDFix 工具](https://go.microsoft.com/fwlink/p/?LinkId=396718)。

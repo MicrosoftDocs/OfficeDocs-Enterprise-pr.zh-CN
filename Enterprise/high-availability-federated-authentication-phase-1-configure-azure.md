@@ -3,7 +3,7 @@ title: 高可用性联合身份验证阶段1配置 Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。
-ms.openlocfilehash: b6c872e46f39391e5e80caa399140adb044e773d
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: ca53c4584b21aab03e9383ac4eef1f321c3f4939
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793295"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257577"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
- **摘要：** 配置 Microsoft Azure 基础结构以托管 Office 365 的高可用性联合身份验证。
-  
-在此阶段中，将在 Azure 中创建资源组、虚拟网络（VNet）和可用性集，这些集将承载第2阶段、3步和第4阶段的虚拟机。 必须先完成这一阶段，然后才能继续进行[高可用性联合身份验证阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
+在此阶段中，将在 Azure 中创建资源组、虚拟网络（VNet）和可用性集，这些集将承载第2阶段、3步和第4阶段的虚拟机。 必须先完成此阶段，然后才能进入[第2阶段：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
   
 必须使用以下基本组件预配 Azure：
   
@@ -63,7 +61,7 @@ ms.locfileid: "38793295"
   
 |**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务（AD DS）域控制器和 DirSync server 虚拟机（Vm）使用的子网。  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务（AD DS）域控制器和目录同步服务器虚拟机（Vm）使用的子网。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS Vm 使用的子网。  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理虚拟机使用的子网。  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 网关虚拟机使用的子网。  <br/> |
@@ -76,7 +74,7 @@ ms.locfileid: "38793295"
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |DirSync 服务器的静态 IP 地址  <br/> |在表 S 的项目1中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |目录同步服务器的静态 IP 地址  <br/> |在表 S 的项目1中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |AD FS 服务器的内部负载平衡器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |5.  <br/> |第一个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |6.  <br/> |第二个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -109,14 +107,17 @@ ms.locfileid: "38793295"
 现在，让我们开始构建 Azure 基础结构以托管 Office 365 的联合身份验证。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
   
 首先，启动 Azure PowerShell 提示符并登录到你的帐户。
   
 ```powershell
 Connect-AzAccount
 ```
-  
+
+> [!TIP]
+> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)。 
+
 使用以下命令获得订阅名称。
   
 ```powershell
@@ -303,7 +304,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 ## <a name="next-step"></a>后续步骤
 
-使用[高可用性联合身份验证阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)以继续配置此工作负载。
+使用[阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)以继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 

@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 摘要：使用 Office 365 PowerShell 配置 Office 365 租户中单个或多个用户帐户的属性。
-ms.openlocfilehash: 94596326c9d52b4010f6e9baf67fe3c7a12399be
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 67ce7d3c57f286f0b2365aa2503fdf1c8bc13429
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38706989"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257653"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>使用 Office 365 PowerShell 配置用户帐户的属性
 
@@ -146,6 +146,10 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
 
 首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
+>[!Note]
+>PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>
+
 ### <a name="change-properties-for-a-specific-user-account"></a>更改特定用户帐户的属性
 
 若要配置特定用户帐户的属性，请使用[get-msoluser](https://msdn.microsoft.com/library/azure/dn194136.aspx) cmdlet 并指定要设置或更改的属性。 

@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756571"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250498"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -54,14 +54,6 @@ ms.locfileid: "38756571"
 |:-----|:-----|
 |用户拥有对另一个邮箱的邮箱文件夹权限  <br/> |可能受到限制。  <br/> 如果在租户移动过程中，用户 A 和邮箱 B 不在同一地理位置，如果用户 A 对邮箱 B 中的特定文件夹有权限，则用户 A 无法在 Outlook Web Access 中打开邮箱 B 的文件夹。  <br/> 若要添加共享文件夹，请右键单击左侧导航面板中的用户名，然后选择 "**添加共享文件夹**"。  <br/> |
 |具有对另一个邮箱的 "完全邮箱" 权限的用户  <br/> |完全支持。  <br/> 如果用户 A 对邮箱 B 具有 "完全访问权限" 权限，则用户 A 可以在 Outlook Web Access 的左侧导航窗格中单击共享文件夹以打开显示邮箱 B 的窗口。 在移动过程中，用户可以使用 Outlook Web Access 打开共享邮箱，而不会产生任何负面影响。 限制仅适用于邮箱中的文件夹级共享。           |
-   
-### <a name="public-folders"></a>公用文件夹
-
-如果公用文件夹邮箱临时位于与尝试访问的用户不同的数据中心地理位置，则用户可能无法访问公用文件夹邮箱。 
-  
-### <a name="online-archives"></a>在线存档
-
-在移动过程中，通过 Outlook for Mac 连接的用户可能无法连接到其联机存档邮箱。 支持通过 Outlook 和 Outlook Web Access 连接用户对存档邮箱的访问。
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 

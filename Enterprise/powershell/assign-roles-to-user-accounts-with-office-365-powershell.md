@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 摘要：使用 Office 365 PowerShell 向用户帐户分配角色。
-ms.openlocfilehash: 29c23e88d9b7bc2fc0030d467336e38ed413a4ab
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 5af8c514cbe8d102716d2d6b45e8ebdbdb5b1507
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707029"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257441"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>将角色分配给用户帐户与 Office 365 PowerShell
 
@@ -94,6 +94,10 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
   ```
 
     此命令将列出用户帐户的显示名称，按显示名称排序，一次显示一个屏幕。 您可以使用**Where** cmdlet 将列表筛选为一个较小的集。 如以下示例所示：
+
+   >[!Note]
+   >PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+   >
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More

@@ -3,7 +3,7 @@ title: 高可用性联合身份验证阶段2配置域控制器
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,23 +12,21 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
-ms.openlocfilehash: 3e5ede99c114b59f6aafbf37c3aa11e3ebd62cca
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 853f7c55039fb4dcd09ae9d0d748a4e559d5564a
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793344"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257501"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
- **摘要：** 在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
-  
-在为 Azure 基础结构服务中的 Office 365 联合身份验证部署高可用性的这一阶段中，可以在 Azure 虚拟网络中配置两个域控制器和目录同步服务器。然后用于身份验证的客户端 Web 请求可以在 Azure 虚拟网络中进行身份验证，而不是将通过站点到站点 VPN 连接的该身份验证流量发送到本地网络。
+在 Azure 基础结构服务中为 Office 365 联合身份验证部署高可用性这一阶段，在 Azure 虚拟网络中配置两个域控制器和目录同步服务器。 然后用于身份验证的客户端 Web 请求可以在 Azure 虚拟网络中进行身份验证，而不是将通过站点到站点 VPN 连接的该身份验证流量发送到本地网络。
   
 > [!NOTE]
 > Active Directory 联合身份验证服务（AD FS）无法使用 Azure Active Directory 域服务代替 Active Directory 域服务域控制器。 
   
-必须先完成这一阶段，然后才能移至[High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
+在转到[第3阶段：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)之前，您必须完成此阶段。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>在 Azure 中创建域控制器虚拟机
 
@@ -38,7 +36,7 @@ ms.locfileid: "38793344"
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)（第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)（第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)（DirSync server，示例 DS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)（目录同步服务器，示例 DS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![](./media/Common-Images/TableLine.png)（第一个 AD FS 服务器，示例 ADFS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![](./media/Common-Images/TableLine.png)（第二个 AD FS 服务器，示例 ADFS2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |6.  <br/> |![](./media/Common-Images/TableLine.png)（第一个 web 应用程序代理服务器，示例 WEB1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
@@ -62,13 +60,16 @@ ms.locfileid: "38793344"
     
 - 表 A（针对可用性集）
     
-回想一下您已定义表 R、V、S、I 和 A in [High availability 联合身份验证阶段1： Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。
+回想一下您在[第1阶段： Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定义了表 R、V、S、I 和 A。
   
 > [!NOTE]
-> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
   
 提供所有正确值后，在 Azure PowerShell 提示符处或本地计算机的 PowerShell 集成脚本环境 (ISE) 上运行生成块。
   
+> [!TIP]
+> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)。 
+
 ```powershell
 # Set up variables common to both virtual machines
 $locName="<your Azure location>"
@@ -123,7 +124,7 @@ $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer Win
 $vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
-# Create the DirSync server
+# Create the directory synchronization server
 $vmName="<Table M - Item 3 - Virtual machine name column>"
 $vmSize="<Table M - Item 3 - Minimum size column>"
 $staticIP="<Table I - Item 3 - Value column>"
@@ -132,7 +133,7 @@ $diskStorageType="<Table M - Item 3 - Storage type column>"
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize
 
-$cred=Get-Credential -Message "Type the name and password of the local administrator account for the DirSync server." 
+$cred=Get-Credential -Message "Type the name and password of the local administrator account for the directory synchronization server." 
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
@@ -225,7 +226,7 @@ New-ADReplicationSite -Name $vnet
 New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 ```
 
-## <a name="configure-the-dirsync-server"></a>配置目录同步服务器
+## <a name="configure-the-directory-synchronization-server"></a>配置目录同步服务器
 
 使用您选择的远程桌面客户端并创建到目录同步服务器虚拟机的远程桌面连接。 使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。
   
@@ -240,13 +241,13 @@ Restart-Computer
 
 以下是因成功完成这一阶段后生成的配置，包含占位符计算机名称。
   
-**阶段 2：Azure 中用于高可用性联合身份验证基础结构的域控制器和目录同步服务器**
+**第2阶段：适用于 Azure 中的高可用性联合身份验证基础结构的域控制器和目录同步服务器**
 
 ![具有域控制器的 Azure 中的高可用性 Office 365 联合身份验证基础结构的第2阶段](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>后续步骤
 
-使用[High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)继续配置此工作负载。
+使用[阶段3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)以继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 

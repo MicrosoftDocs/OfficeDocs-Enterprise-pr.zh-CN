@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: 了解如何使用 Office 365 PowerShell 将许可证分配给用户帐户并同时禁用特定服务计划。
-ms.openlocfilehash: 16e24a61aea1298b2c24a251d61c414c355dead7
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 06b6de4ea6d96dd2c9510770042bd2a2f1260876
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747654"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257391"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>在分配用户许可证时禁止访问服务
 
@@ -69,6 +69,10 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 Get-MsolAccountSku
 ```
 
+>[!Note]
+>PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>
+
 在显示`Get-MsolAccountSku`命令时：
   
 - **AccountSkuId**是组织在 OrganizationName>： \<\<订阅> 格式中的一种订阅。 \<OrganizationName> 是您在 Office 365 中注册时提供的值，并且对于您的组织是唯一的。 \<订阅> 值适用于特定订阅。 例如，对于 litwareinc： ENTERPRISEPACK，组织名称为 litwareinc，订阅名称为 ENTERPRISEPACK （Office 365 企业版 E3）。
@@ -101,7 +105,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure 权限管理 (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |办公室   <br/> |
+| `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 计划 2  <br/> |
    

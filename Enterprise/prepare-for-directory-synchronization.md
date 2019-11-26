@@ -3,7 +3,7 @@ title: 准备将目录同步到 Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 11/25/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备使用目录同步将用户预配到 Office 365，以及使用此方法的长期好处。
-ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: adae292f4dc8ef0402c3bd51391d020af0c28649
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702233"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250508"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>准备将目录同步到 Office 365
 
@@ -99,7 +99,7 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
   - 如果该属性存在于用户对象中，它将与 Office 365 同步，但 Office 365 不需要或使用它。
   - 最大字符数：64
     
-- **mail**
+- **信箱**
     
   - 属性值在目录中必须是唯一的。
     
@@ -110,7 +110,11 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
     
   - 属性值不能以句点（.）开头。
   - 属性值在目录中必须是唯一的。
-    
+  
+    > [!NOTE]
+    > 同步名称中的下划线（"_"）表示此属性的原始值包含无效字符。 原始值可以包含字母、数字和字符！、#、$、%、&、'、 \*、+、-、/、=、？、^、_、'、{、|、} 和 ~。 有关此属性的详细信息，请参阅[Exchange alias 属性](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)。
+    >
+      
 - **proxyAddresses**
     
   - 多值属性
