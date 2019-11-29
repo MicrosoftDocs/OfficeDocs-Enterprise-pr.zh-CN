@@ -3,7 +3,7 @@ title: 在 Azure 中部署 Office 365 的高可用性联合身份验证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,17 +17,15 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 摘要：在 Microsoft Azure 中为 Office 365 订阅配置高可用性联合身份验证。
-ms.openlocfilehash: ba8049271e4820cca8db2ce5d6cabf76dacfb36a
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 0b622c895bcd6b11ee7e096ac1e39f1b6bd2dae2
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793284"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254511"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>在 Azure 中部署 Office 365 的高可用性联合身份验证
 
- **摘要：** 在 Microsoft Azure 中为 Office 365 订阅配置高可用性联合身份验证。
-  
 这篇文章包含指向特定内容的链接，即通过这些虚拟机在 Azure 基础结构服务中为 Microsoft Office 365 部署高可用性联合身份验证的分步说明：
   
 - 两个 Web 应用程序代理服务器
@@ -36,7 +34,7 @@ ms.locfileid: "38793284"
     
 - 两个副本域控制器
     
-- 一个运行 Azure AD Connect 的目录同步 (DirSync) 服务器
+- 一个运行 Azure AD Connect 的目录同步服务器
     
 下面是包含每个服务器的占位符名称的配置。
   
@@ -54,7 +52,7 @@ ms.locfileid: "38793284"
 > [!NOTE]
 > 由于此 VNet 连接到本地网络，所以此配置不包括管理子网上的跳转框或监视虚拟机。有关详细信息，请参阅 [Running Windows VMs for an N-tier architecture](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)（运行用于 N 层体系结构的 Windows VM）。 
   
-此配置的结果是，将对所有 Office 365 用户使用联合身份验证，即可以使用自己的 Active Directory 域服务凭据（而不是 Office 365 帐户）进行登录。联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
+此配置的结果是，将对所有 Office 365 用户使用联合身份验证，即可以使用自己的 AD DS 凭据（而不是 Office 365 帐户）进行登录。 联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
   
 ## <a name="bill-of-materials"></a>物料清单
 
@@ -90,7 +88,7 @@ ms.locfileid: "38793284"
   
 - [阶段 1：配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。创建资源组、存储帐户、可用性集和跨界虚拟网络。
     
-- [阶段 2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。创建和配置副本 Active Directory 域服务 (AD DS) 域控制器和 DirSync 服务器。
+- [阶段 2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 创建和配置副本 AD DS 域控制器和目录同步服务器。
     
 - [阶段 3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。创建和配置两个 AD FS 服务器。
     
@@ -108,5 +106,5 @@ ms.locfileid: "38793284"
   
 ## <a name="next-step"></a>后续步骤
 
-使用 [高可用性联合身份验证阶段 1:配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md) 开始配置此工作负载。 
+使用[阶段 1：配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md) 开始配置此工作负载。 
   

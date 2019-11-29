@@ -158,11 +158,11 @@
 #### [将本地网络连接到 Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [在 Azure IaaS 中部署目录同步服务器](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [在 Azure 中为 Office 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-##### [高可用性联合身份验证阶段 1：配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
-##### [高可用性联合身份验证阶段 2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-##### [高可用性联合身份验证阶段 3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-##### [高可用性联合身份验证阶段 4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-##### [高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+##### [阶段 1：配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [阶段 2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
+##### [阶段 3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [阶段 4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [阶段 5：配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # 管理 Office 365
 
