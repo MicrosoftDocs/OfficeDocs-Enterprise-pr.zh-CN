@@ -3,7 +3,7 @@ title: Office 365 美国政府 DoD 终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/28/2019
+ms.date: 11/27/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 摘要： Office 365 要求连接到 Internet。 下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。
 hideEdit: true
-ms.openlocfilehash: a883348d641ecc2ee22500c8fffc0f891986e7e9
-ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
+ms.openlocfilehash: 988c42153b97d55de4546c1bfc5ec4fedcd8e071
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038291"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655796"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 美国政府 DoD 终结点
 
@@ -39,7 +39,7 @@ ms.locfileid: "38038291"
   
 |||
 |:-----|:-----|
-|**上次更新时间：** 2019/10/28 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
+|**上次更新时间：** 11/27/2019 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
    
  从[管理 Office 365 终结点](managing-office-365-endpoints.md)开始，了解我们关于使用此数据管理网络连接的建议。 终结点数据在每月开始时更新，并在30天内发布新的 IP 地址和 Url，并在处于活动状态之前发布。 这样一来，在需要新的连接之前，尚不具有自动更新的客户即可完成其过程。 如果需要，还可以更新终结点，以解决支持升级、安全事件或其他立即运行的要求。 以下页面上显示的数据都是从基于 REST 的 web 服务生成的。 如果使用脚本或网络设备访问此数据，则应直接转到[Web 服务](office-365-ip-web-service.md)。
 

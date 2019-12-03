@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。
-ms.openlocfilehash: 3869be5a0f7527f516248e7e1ef0333707f49305
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f56a3fe7ece50c5f7fb345ccc0b843cacf185d28
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748410"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655854"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看授权和未授权的用户
 
@@ -54,6 +54,10 @@ Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLic
 ```powershell
 Get-MsolUser -All
 ```
+
+>[!Note]
+>PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>
 
 若要查看组织中所有未授权用户帐户的列表，请运行以下命令：
   

@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: 说明如何使用 Office 365 PowerShell 确定已分配给用户的 Office 365 服务。
-ms.openlocfilehash: 53668a69d72cdcbe912d550be2b9e571b7f6c0e0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f73acb5a107aa6ef970046a371b7a722a6abc8d9
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747471"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655864"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 
@@ -70,6 +70,9 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 ```powershell
 Get-MsolAccountSku
 ```
+>[!Note]
+>PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>
 
 接下来，运行此命令，列出每个许可计划中可用的服务，以及这些服务的列出顺序（索引号）。
 
