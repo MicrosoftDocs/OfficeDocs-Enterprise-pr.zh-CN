@@ -3,7 +3,7 @@ title: 通过适用于 Office 365 的 ExpressRoute 进行路由
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/14/2017
+ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 若要使用 Azure ExpressRoute 正确了解到 Office 365 的路由流量，您需要对核心 ExpressRoute 路由要求和 ExpressRoute 电路和路由域进行牢固的抓住。 这些指南展示了使用适用于 Office 365 客户将依赖的 ExpressRoute 的基础知识。
-ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031577"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813892"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>通过适用于 Office 365 的 ExpressRoute 进行路由
+
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 若要使用 Azure ExpressRoute 正确了解到 Office 365 的路由流量，您需要对核心[ExpressRoute 路由要求](https://azure.microsoft.com/documentation/articles/expressroute-routing/)和[ExpressRoute 电路和路由域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)进行牢固的抓住。 这些指南展示了使用适用于 Office 365 客户将依赖的 ExpressRoute 的基础知识。
   
@@ -73,15 +75,14 @@ ms.locfileid: "38031577"
 
 2) 每个 ExpressRoute 电路使用单独的 NAT IP 池，并将其与 internet 电路分开。
 
-3) 请注意，播发到 Microsoft 的任何路由都会从 Microsoft 网络中的任何服务器中获取网络流量，而不仅仅是通过 ExpressRoute 将其路由到网络的路由。 仅向服务器的播发路由，在这些服务器上定义路由方案并充分理解您的团队。 在网络中的每个的多个 ExpressRoute 电路中公布单独的 IP 地址路由前缀。 
+3) 请注意，播发到 Microsoft 的任何路由都会从 Microsoft 网络中的任何服务器中获取网络流量，而不仅仅是通过 ExpressRoute 将其路由到网络的路由。 仅向服务器的播发路由，在这些服务器上定义路由方案并充分理解您的团队。 在网络中的每个的多个 ExpressRoute 电路中公布单独的 IP 地址路由前缀。
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>确定通过 ExpressRoute 路由的应用程序和功能
 
 当您使用 Microsoft 对等路由域配置对等关系并获得相应访问权限时，您将能够看到通过 ExpressRoute 提供的所有 PaaS 和 SaaS 服务。 为 ExpressRoute 设计的 Office 365 服务可使用[BGP 社区](https://aka.ms/bgpexpressroute365)或[路由筛选器](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)进行管理。
   
 其他应用程序（如 Office 365 视频）是 Office 365 应用程序;但是，Office 365 视频由三个不同的组件、门户、流服务和内容传递网络组成。 门户位于 SharePoint Online 中，流服务在 Azure 媒体服务中，内容传递网络在 Azure CDN 中。 下表概述了这些组件。
-  
-| |
+
 |**组件**|**基础应用程序**|**包含在 SharePoint Online BGP 社区中？**|**使用**|
 |:-----|:-----|:-----|:-----|
 |Office 365 视频门户  <br/> |SharePoint Online  <br/> |是  <br/> |配置、上传  <br/> |
@@ -111,7 +112,7 @@ PAC 文件通常用于将向 ExpressRoute 播发的终结点的网络请求直�
 
 |**仅播发到 Internet 线路的通配符域**|**在 ExpressRoute 和 Internet 电路中公布的次 FQDN**|
 |:-----|:-----|
-|\*。 office.com  <br/> |\*。 outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*。 office.com  <br/> |\*。 outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*。 office.net  <br/> |agent.office.net  <br/> |
 |\*。 office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*。 outlook.com  <br/> |\*。 protection.outlook.com  <br/> \*。 mail.protection.outlook.com  <br/> 自动发现\<-\>outlook.com  <br/> |

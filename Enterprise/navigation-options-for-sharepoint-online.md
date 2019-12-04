@@ -14,12 +14,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 本文介绍 SharePoint Online 中启用了 SharePoint 发布的导航选项网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。 本文不适用于经典团队网站。
-ms.openlocfilehash: d86b0462e8ddb93c39eab0d42a24f3a94f785ecd
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ce6bde50d35cdddf28fed4ad6c74a9a2da8193af
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078307"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814190"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 
@@ -35,19 +35,19 @@ ms.locfileid: "38078307"
 
 除了现成的导航提供程序之外，许多客户还成功实现了替代的自定义导航实现。 自定义导航实现的一个常见类涵盖了用于存储导航节点的本地缓存的客户端呈现的设计模式。 （请参阅本文中的**[搜索驱动的客户端脚本](#using-search-driven-client-side-scripting)**。）
 
-这些导航提供程序具有以下几个主要优势： 
-- 它们通常适用于响应页面设计。
-- 它们的可伸缩性和性能极高，因为它们在呈现时无需资源成本（并在超时后在后台进行刷新）。 
-- 这些导航提供程序可以使用各种策略检索导航数据，范围从简单静态配置到各种动态数据提供程序。 
+这些导航提供程序具有以下几个主要优势：
 
-数据提供程序的一个示例是使用**搜索驱动的导航**，这样可以灵活地枚举导航节点和有效处理安全修整。 
+- 它们通常适用于响应页面设计。
+- 它们的可伸缩性和性能极高，因为它们在呈现时无需资源成本（并在超时后在后台进行刷新）。
+- 这些导航提供程序可以使用各种策略检索导航数据，范围从简单静态配置到各种动态数据提供程序。
+
+数据提供程序的一个示例是使用**搜索驱动的导航**，这样可以灵活地枚举导航节点和有效处理安全修整。
 
 有其他常用选项可用于生成**自定义导航提供程序**。 请查看[SharePoint Online 门户导航解决方案](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation)，以获取有关构建自定义导航提供程序的详细指南。
   
 ## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>SharePoint Online 导航选项的优点和缺点
 
-下表总结了每个选项的优点和缺点。 
-
+下表总结了每个选项的优点和缺点。
 
 |托管导航  |结构导航  |搜索驱动的导航  |自定义导航提供程序  |
 |---------|---------|---------|---------|
@@ -58,8 +58,7 @@ ms.locfileid: "38078307"
 
 托管导航选项可通过配置进行维护，不涉及代码自定义文件，并且比结构导航快得多。 如果您需要安全修整并且能够使用自定义母版页，并且组织中有一些功能来维护在 SharePoint Online 的默认母版页中可能发生的更改，则搜索驱动的选项可能会产生更好的效果用户体验。 如果您具有更复杂的要求，则自定义导航提供程序可能是正确的选择。 不建议使用结构导航。
 
-最后，请务必注意，SharePoint 正在为新式 SharePoint 网站体系结构添加更多导航提供程序和功能，以利用更平展的网站层次结构和包含 SharePoint 中心网站的中心辐射型模型。 这允许实现许多不需要使用 SharePoint 发布功能的方案，并且这些导航配置针对 SharePoint Online 中的可伸缩性和延迟进行了优化。 请注意，应用相同的原则-将 SharePoint 发布网站的整体结构简化为更简单的结构，通常也有助于整体性能和规模的扩展。 这意味着，它不是拥有数百个网站（子网站）的单个网站集，更好的方法是拥有很少子网站（子网站）的多个网站集。
-
+最后，请务必注意，SharePoint 正在为新式 SharePoint 网站体系结构添加更多导航提供程序和功能，以利用更平展的网站层次结构和包含 SharePoint 中心网站的中心辐射型模型。 这允许实现许多不需要使用 SharePoint 发布功能的方案，并且这些导航配置针对 SharePoint Online 中的可伸缩性和延迟进行了优化。 请注意，将 SharePoint 发布网站的整体结构简化为更简单的结构的相同原则通常有助于整体性能和规模的同时进行扩展。 这意味着，它不是拥有数百个网站（子网站）的单个网站集，更好的方法是拥有很少子网站（子网站）的多个网站集。
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>在 SharePoint Online 中使用托管导航和元数据
 
@@ -95,7 +94,7 @@ ms.locfileid: "38078307"
   
 ### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>在 SharePoint Online 中分析结构导航性能
 
-若要分析 SharePoint 页面的性能，请使用 Internet Explorer 中的 F12 开发人员工具的 "**网络**" 选项卡。 
+若要分析 SharePoint 页面的性能，请使用 Internet Explorer 中的 F12 开发人员工具的 "**网络**" 选项卡。
   
 ![显示 F12 开发工具“网络”选项卡的屏幕截图](media/SPONavOptionsNetworks.png)
   
@@ -114,13 +113,13 @@ ms.locfileid: "38078307"
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>示例：将现成的导航代码替换为母版页
 
-1.  导航到 "网站设置" 页。
-2.  通过单击 "**母版页**" 打开母版页样式库。
-3.  从这里，您可以在库中导航并下载该`seattle.master`文件。
-4.  使用文本编辑器编辑代码，并删除以下屏幕截图中的代码块。<br/>![删除显示的代码块](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+1. 导航到 "网站设置" 页。
+2. 通过单击 "**母版页**" 打开母版页样式库。
+3. 从这里，您可以在库中导航并下载该`seattle.master`文件。
+4. 使用文本编辑器编辑代码，并删除以下屏幕截图中的代码块。<br/>![删除显示的代码块](media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. 删除`<SharePoint:AjaxDelta id=”DeltaTopNavigation”>`和`<\SharePoint:AjaxDelta>`标记之间的代码，并将其替换为以下代码段：<br/>
 
-```
+```javascript
 <div id="loading">
   <!--Replace with path to loading image.-->
   <div style="background-image: url(''); height: 22px; width: 22px; ">
@@ -143,15 +142,15 @@ ms.locfileid: "38078307"
                         </span>
                     </span>
                 <!-- /ko -->
-                <!-- ko if: children.length == 0-->   
+                <!-- ko if: children.length == 0-->
                     <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
                         <span class="menu-item-text" data-bind="text: item.Title">
                         </span>
                     </span>
-                <!-- /ko -->   
+                <!-- /ko -->
                 </a>
                
-                <!-- ko if: children.length > 0-->                                                       
+                <!-- ko if: children.length > 0-->
                 <ul id="menu"  data-bind="foreach: children;" class="dynamic  level2" >
                     <li class="dynamic level2">
                         <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline  ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
@@ -166,8 +165,8 @@ ms.locfileid: "38078307"
           <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
            <span class="menu-item-text" data-bind="text: item.Title">
            </span>
-          </span>                 
-          <!-- /ko -->   
+          </span>
+          <!-- /ko -->
                         </a>
           <!-- ko if: children.length > 0-->
          <ul id="menu" data-bind="foreach: children;" class="dynamic level3" >
@@ -191,13 +190,13 @@ ms.locfileid: "38078307"
 6. 使用网站集中加载图像的链接替换开头的加载图像定位标记中的 URL。 进行更改后，请重命名该文件，然后将其上传到母版页样式库。 这将生成一个新的 .master 文件。<br/>
 7. 此 HTML 是由 JavaScript 代码返回的搜索结果将填充的基本标记。 您需要编辑代码以更改 var root = "网站集 URL" 的值，如以下代码段所示：<br/>
 
-```
+```javascript
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
 8. 将结果分配给 self. 节点数组，并使用使用 linq 将输出分配给数组 self 层次结构的对象生成层次结构。 此数组是绑定到 HTML 的对象。 这是通过将 self 对象传递给 applyBinding （）函数在 toggleView （）函数中完成的。<br/>然后，这会将层次结构数组绑定到以下 HTML：<br/>
 
-```
+```javascript
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
@@ -209,7 +208,7 @@ var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 
 整个 JavaScript 文件如下所示：
 
-```
+```javascript
 //Models and Namespaces
 var SPOCustom = SPOCustom || {};
 SPOCustom.Models = SPOCustom.Models || {}
@@ -393,7 +392,7 @@ function NavigationViewModel() {
         }
     };
 
-    // ByHierarchy method breaks the sorting in chrome and firefix 
+    // ByHierarchy method breaks the sorting in chrome and firefox
     // we need to resort  as ascending
     self.sortObjectsInArray2 = function (a, b) {
         if (a.item.Title() > b.item.Title())
@@ -440,7 +439,7 @@ function addEventsToElements() {
     });
 } _spBodyOnLoadFunctionNames.push("InitCustomNav");
 
-``` 
+```
 
 若要汇总上面的`jQuery $(document).ready`函数中显示的`viewModel object`代码，则表示已创建， `loadNavigationNodes()`然后调用该对象上的函数。 此函数会加载以前在客户端浏览器的 HTML5 本地存储中存储的导航层次结构，或者调用该`queryRemoteInterface()`函数。
 
@@ -464,7 +463,7 @@ function addEventsToElements() {
 
 当前版本的 LinqJS 不包含在上面的代码中使用的 ByHierarchy 方法，将断开导航代码。 若要解决此问题，请将以下方法添加到行`Flatten: function ()`之前的 Linq 文件中。
 
-```
+```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
      ascending = ascending == undefined ? true : ascending;
      var orderMethod = ascending == true ? 'OrderBy' : 'OrderByDescending';
@@ -530,4 +529,3 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 ## <a name="related-topics"></a>相关主题
 
 [SharePoint Server 中的托管导航概述](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
-

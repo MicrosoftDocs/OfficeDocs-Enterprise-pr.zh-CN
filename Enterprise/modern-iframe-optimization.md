@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何优化 iFrame 在SharePoint Online 新式发布网页和经典发布网页中的性能。
-ms.openlocfilehash: 97848d28277f19e8984f1f08e90f07236fd5c85b
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: f4b28ad9e59e41ddb8a4b96b532a49811e722874
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078431"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814230"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>在 SharePoint Online 新式发布网页和经典发布网页中优化 iFrame
 
@@ -75,4 +75,4 @@ iFrame 天生缓慢，这是因为它们会加载包含 javascript、CSS 和框�
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)

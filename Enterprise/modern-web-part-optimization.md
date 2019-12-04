@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面上优化 Web 部件性能。
-ms.openlocfilehash: 859a9481ca29215edf27cc2cbd48510051932d50
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 00a21adbd7971e86d23e1e45ee850ab52f46004a
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078317"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814200"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化 Web 部件性能
 
@@ -97,7 +97,7 @@ Web 部件性能较差的原因有三类。 使用以下信息确定哪些问题
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [内容分发网络](content-delivery-networks.md)
 

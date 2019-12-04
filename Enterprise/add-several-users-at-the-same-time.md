@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Office 365 for business 中添加多个用户。 观看 YouTube 上的视频，说明如何将帐户添加到 Office 365。 在此过程结束时，拥有帐户的每位用户都将拥有一个 Office 365 邮箱。 '
-ms.openlocfilehash: 864bdf788b0beefce49a53382795d522114aad5d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 16cea3b09da7d6450efd09bad0937bfcef9f70ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702213"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813490"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同时向 Office 365 添加多个用户 - 管理员帮助
 
@@ -130,7 +130,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
 |办公室电话  <br/> |64  <br/> |
 |Mobile Phone － 移动电话  <br/> |64  <br/> |
 |传真  <br/> |64  <br/> |
-|Address  <br/> |1023  <br/> |
+|地址  <br/> |1023  <br/> |
 |城市  <br/> |128  <br/> |
 |省/自治区/直辖市  <br/> |128  <br/> |
 |邮政编码  <br/> |40  <br/> |
@@ -142,3 +142,10 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
     
 - **如果你在 Office 365 中没有立即看到新用户，请稍等几分钟。** 在 Office 365 中的所有服务中进行更改可能需要一些时间。 
     
+## <a name="related-articles"></a>相关文章
+
+[将用户逐个或批量添加到 Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+
+
+
+

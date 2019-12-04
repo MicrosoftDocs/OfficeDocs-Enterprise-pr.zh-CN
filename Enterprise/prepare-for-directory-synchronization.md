@@ -24,14 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备使用目录同步将用户预配到 Office 365，以及使用此方法的长期好处。
-ms.openlocfilehash: adae292f4dc8ef0402c3bd51391d020af0c28649
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250508"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814180"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>准备将目录同步到 Office 365
+
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 您的组织的混合标识和目录同步的好处包括：
   
@@ -99,7 +101,7 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
   - 如果该属性存在于用户对象中，它将与 Office 365 同步，但 Office 365 不需要或使用它。
   - 最大字符数：64
     
-- **信箱**
+- **mail**
     
   - 属性值在目录中必须是唯一的。
     

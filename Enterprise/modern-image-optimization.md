@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面中优化图像。
-ms.openlocfilehash: df6fab6fdd02bf6668a86c8d7a3941ece10cc3d1
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 68e2f79e1f768cfc93feb4f26f8b2fbeca5d6b83
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078011"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814220"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化图像
 
@@ -65,7 +65,7 @@ ms.locfileid: "38078011"
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [内容分发网络](content-delivery-networks.md)
 

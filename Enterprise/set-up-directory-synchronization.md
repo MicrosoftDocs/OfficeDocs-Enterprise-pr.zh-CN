@@ -3,6 +3,7 @@ title: 设置 Office 365 目录同步
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,14 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 了解如何设置 Office 365 和本地 Active Directory 之间的目录同步。
-ms.openlocfilehash: a51abf7dcca0a9edc4ecf233ea67fdeb80070a70
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702243"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814590"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>设置 Office 365 目录同步
+
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 Office 365 使用 Azure Active Directory （Azure AD）租户存储和管理用于访问基于云的资源的身份验证和权限的标识。 
 
@@ -90,8 +93,8 @@ Azure AD Connect 在本地服务器上运行，并将 AD DS 与 Azure AD 租户�
 
 ## <a name="3-finish-setting-up-domains"></a>3. 完成域设置
 
-当您管理 DNS 记录以完成域设置时，请按照[为 Office 365 创建 dns 记录](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)中的步骤操作。
+当您管理 DNS 记录以完成域设置时，请按照[为 Office 365 创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)中的步骤操作。
 
 ## <a name="next-step"></a>后续步骤
 
-[将许可证分配给用户帐户](assign-licenses-to-user-accounts.md)。
+[向用户帐户分配许可证](assign-licenses-to-user-accounts.md)

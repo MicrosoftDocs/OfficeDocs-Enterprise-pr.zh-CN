@@ -16,38 +16,41 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: 列出 IdFix 工具排除并支持的属性。
-ms.openlocfilehash: bf88fea3592860a89d69717177593b6553318ee4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e57507688fe1efd21bb629b4fad297129eff55d6
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067268"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813922"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>IdFix 排除和支持的对象和属性
-有两组由 IdFix 维护的规则;多租户和专用/ITAR。 此时, 这两个规则集将从其搜索中排除相同的对象、属性和属性值。 这可能会在将来的版本中发生变化。
+
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+
+有两组由 IdFix 维护的规则;多租户和专用/ITAR。 此时，这两个规则集将从其搜索中排除相同的对象、属性和属性值。 这可能会在将来的版本中发生变化。
   
 ## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>IdFix 使用的多租户和专用错误排除
-此部分列出了 IdFix 从目录的搜索中排除的对象、属性和值。 星号 (\*) 是一个可替代其他字符的通配符。
+此部分列出了 IdFix 从目录的搜索中排除的对象、属性和值。 星号（\*）是一个可替代其他字符的通配符。
   
 ### <a name="objects-attributes-and-values-excluded-during-an-idfix-search"></a>在 IdFix 搜索过程中排除的对象、属性和值
 
 |**排除**|**示例**|
 |:-----|:-----|
 |Admini\* |管理员 |
-|CAS_{\*  |CAS_{fe35fc98e69e4d08} |
+|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
 |DiscoverySearchMailbox\*  |DiscoverySearchMailbox  |
 |FederatedEmail\* |FederatedEmail. *GUID* |
 |Guest\* ||
 |HTTPConnector\*  |HTTPConnector |
 |krbtgt\* |ms-DS-链接 |
-|iusr\* |iusr_ *machinename* |
+|iusr_\* |iusr_ *machinename* |
 |iwam\*  |IWAM_ *machinename* |
 |msol\* |MSOL_AD_SYNC |
-|支持\* ||
+|support_\* ||
 |SystemMailbox\* |Systemmailbox { *GUID* }|
 |WWIOadmini\*  ||
 |\*$ ||
-|distinguishedName 包含 "\0ACNF:"|"\0ACNF: *GUID* " |
+|distinguishedName 包含 "\0ACNF："|"\0ACNF： *GUID* " |
 |对象包含 IsCriticalSystemObject 属性 |请参阅[属性 isCriticalSystemObject](https://go.microsoft.com/fwlink/p/?LinkId=401169)。 |
    
 ## <a name="multi-tenant-and-dedicated-objects-and-attributes-checked-by-idfix"></a>由 IdFix 检查的多租户和专用对象和属性

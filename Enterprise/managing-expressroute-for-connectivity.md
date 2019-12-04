@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: 适用于 Office 365 的 ExpressRoute 提供了备用的路由路径，以达到多个 Office 365 服务，而无需向 internet 传出传出流量。 虽然仍然需要 internet 连接到 Office 365，但 Microsoft 通过 BGP 向网络公布的特定路由使直接 ExpressRoute 电路成为首选，除非网络中存在其他配置。 您可能需要配置用于管理此路由的三个常见方面，包括前缀筛选、安全性和合规性。
-ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027546"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814240"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>管理 ExpressRoute for Office 365 的连接性
 
@@ -43,7 +43,6 @@ Microsoft 建议客户接受从 Microsoft 播发的所有 BGP 路由，提供的
 
 - Office 365 Url 和 IP 地址范围不包含可能在您的 ExpressRoute 连接范围内的其他 Microsoft 服务。
 
-| |
 |**选项**|**复杂度**|**更改控件**|
 |:-----|:-----|:-----|
 |接受所有 Microsoft 路由  <br/> |**低：** 客户依靠 Microsoft 控件来确保所有路由都正确拥有。  <br/> |无  <br/> |

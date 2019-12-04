@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网页上优化页面权重。
-ms.openlocfilehash: 75bc6227cf77d355dcd6b3a4ce1afa9388b32c58
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 96341402cb6f1ca89e7a1602d77adf70e4a69607
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078001"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814210"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网页上优化页面权重
 
@@ -76,7 +76,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [内容分发网络](content-delivery-networks.md)
 

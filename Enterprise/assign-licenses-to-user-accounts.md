@@ -3,6 +3,7 @@ title: 将 Office 365 许可证分配给用户帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何将 Office 365 许可证单独或基于组成员身份分配给用户帐户。
-ms.openlocfilehash: bc736236f9371ee1372fd36af4a707aca2ee1408
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 169f5a3c0bf75bf807c40338542e0ba15b79a1bc
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745705"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813380"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>将 Office 365 许可证分配给用户帐户
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 对于仅限云的标识模型，可以在创建用户帐户时将 Office 365 许可证分配给这些帐户，具体取决于您创建它们的方式。
 
@@ -55,5 +56,5 @@ ms.locfileid: "38745705"
 
 - [实施安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [部署客户端软件，如 Office 365 专业增强版](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
-- [配置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [在 Office 365 中设置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [配置服务和应用程序](configure-services-and-applications.md)

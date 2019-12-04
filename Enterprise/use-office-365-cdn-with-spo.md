@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 介绍如何使用 Office 365 内容传送网络（CDN）加快将 SharePoint Online 资产传递给所有用户，无论它们位于何处或如何访问你的内容。
-ms.openlocfilehash: eedbbbf143890e336ae16f80a135f611b9e65f26
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077951"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813510"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -446,7 +446,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 <a name="CDNSetupinCLI"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>使用 Office 365 CLI 设置和配置 Office 365 CDN
 
-本节中的过程要求您已安装[Office 365 CLI](https://aka.ms/o365cli)。 接下来，运行 [spo connect](https://pnp.github.io/office365-cli/cmd/spo/connect/) 命令，连接到 SharePoint Online 租户。
+本节中的过程要求您已安装[Office 365 CLI](https://aka.ms/o365cli)。 接下来，使用[login](https://pnp.github.io/office365-cli/cmd/login/)命令连接到 Office 365 租户。
 
 完成这些步骤，在 SharePoint Online 中使用 Office 365 CLI 设置和配置 CDN 以托管你的资产。
 
@@ -670,7 +670,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 请务必注意，SharePoint Online 不支持私人来源资产的项目级权限。 例如，对于位于的文件，在`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`以下情况下，用户可以有效访问文件：
 
-|用户  |权限  |有效访问  |
+|User  |权限  |有效访问  |
 |---------|---------|---------|
 |用户1     |有权访问 folder1         |可以从 CDN 访问 image1         |
 |用户 2     |不具有对 folder1 的访问权限         |无法从 CDN 访问 image1         |
