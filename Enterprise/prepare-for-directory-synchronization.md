@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备使用目录同步将用户预配到 Office 365，以及使用此方法的长期好处。
-ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814180"
+ms.locfileid: "39825184"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>准备将目录同步到 Office 365
 
@@ -57,10 +57,7 @@ ms.locfileid: "39814180"
 在 AD DS 中，为将分配 Office 365 许可证的每个用户帐户完成以下清理任务：
   
 1. 确保**proxyAddresses**属性中有一个有效且唯一的电子邮件地址。 
-
-  >[!Note]
-  >将忽略电子邮件地址中的波形符（~）字符。 这可能会导致有关重复的 proxyAddresses 的误报目录同步错误。
-    
+  
 2. 删除**proxyAddresses**属性中的任何重复值。 
     
 3.  如果可能，请确保用户的**用户**对象中的**userPrincipalName**属性具有有效且唯一的值。 为了获得最佳同步体验，请确保 AD DS UPN 与 Azure AD UPN 相匹配。 如果用户不具有**userPrincipalName**属性的值，则**user**对象必须包含**sAMAccountName**属性的有效且唯一的值。 删除**userPrincipalName**属性中的任何重复值。 

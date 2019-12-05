@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Office 365 for business 中添加多个用户。 观看 YouTube 上的视频，说明如何将帐户添加到 Office 365。 在此过程结束时，拥有帐户的每位用户都将拥有一个 Office 365 邮箱。 '
-ms.openlocfilehash: 16cea3b09da7d6450efd09bad0937bfcef9f70ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 283a45750c6b5d51f96dae2cac12acf3f47b98fe
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813490"
+ms.locfileid: "39825194"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同时向 Office 365 添加多个用户 - 管理员帮助
 
@@ -68,14 +68,7 @@ ms.locfileid: "39813490"
 5. 在 "**设置用户选项**" 对话框中，您可以设置登录状态，并选择将分配给所有用户的产品许可证。 
     
 6. 在 "**查看您的结果**" 对话框中，您可以选择将结果发送给您自己或其他用户（密码将为纯文本），您可以查看创建的用户数，以及是否需要购买更多许可证以分配给某些新用户。 
-    
-## <a name="watch-the-video"></a>观看视频
-<a name="bk_preview"> </a>
 
- 观看说明如何批量添加用户的简短视频。 
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/f4e7f161-8ae6-4264-a429-9297b539a8de?autoplay=false]
-  
 ## <a name="next-steps"></a>后续步骤
 <a name="bk_preview"> </a>
 
