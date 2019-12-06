@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 禁止访问服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 12/04/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,118 +15,123 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: 使用 Office 365 PowerShell 禁用对用户的 Office 365 服务的访问。
-ms.openlocfilehash: 711f48dd2caad6fc2b438010405b126be203bd54
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 9668175010b2581bcdd40988f605f68eea30520d
+ms.sourcegitcommit: 572375d69c438bd1eae012e6e98039be0a126a6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257597"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39872240"
 ---
-# <a name="disable-access-to-services-with-office-365-powershell"></a><span data-ttu-id="e674c-103">使用 Office 365 PowerShell 禁止访问服务</span><span class="sxs-lookup"><span data-stu-id="e674c-103">Disable access to services with Office 365 PowerShell</span></span>
+# <a name="disable-access-to-services-with-office-365-powershell"></a><span data-ttu-id="afda3-103">使用 Office 365 PowerShell 禁止访问服务</span><span class="sxs-lookup"><span data-stu-id="afda3-103">Disable access to services with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="e674c-104">从许可计划中为 Office 365 帐户分配许可证时，用户将从该许可证中获取 Office 365 服务。</span><span class="sxs-lookup"><span data-stu-id="e674c-104">When an Office 365 account is assigned a license from a licensing plan, Office 365 services are made available to the user from that license.</span></span> <span data-ttu-id="e674c-105">但是，您可以控制用户可以访问的 Office 365 服务。</span><span class="sxs-lookup"><span data-stu-id="e674c-105">However, you can control the Office 365 services that the user can access.</span></span> <span data-ttu-id="e674c-106">例如，即使许可证允许访问 SharePoint Online 服务，也可以禁用对它的访问。</span><span class="sxs-lookup"><span data-stu-id="e674c-106">For example, even though the license allows access to the SharePoint Online service, you can disable access to it.</span></span> <span data-ttu-id="e674c-107">您可以使用 PowerShell 针对特定许可计划禁用对任意数量的服务的访问：</span><span class="sxs-lookup"><span data-stu-id="e674c-107">You can use PowerShell to disable access to any number of services for a specific licensing plan for:</span></span>
+<span data-ttu-id="afda3-104">从许可计划中为 Office 365 帐户分配许可证时，用户将从该许可证中获取 Office 365 服务。</span><span class="sxs-lookup"><span data-stu-id="afda3-104">When an Office 365 account is assigned a license from a licensing plan, Office 365 services are made available to the user from that license.</span></span> <span data-ttu-id="afda3-105">但是，您可以控制用户可以访问的 Office 365 服务。</span><span class="sxs-lookup"><span data-stu-id="afda3-105">However, you can control the Office 365 services that the user can access.</span></span> <span data-ttu-id="afda3-106">例如，即使许可证允许访问 SharePoint Online 服务，也可以禁用对它的访问。</span><span class="sxs-lookup"><span data-stu-id="afda3-106">For example, even though the license allows access to the SharePoint Online service, you can disable access to it.</span></span> <span data-ttu-id="afda3-107">您可以使用 PowerShell 针对特定许可计划禁用对任意数量的服务的访问：</span><span class="sxs-lookup"><span data-stu-id="afda3-107">You can use PowerShell to disable access to any number of services for a specific licensing plan for:</span></span>
 
-- <span data-ttu-id="e674c-108">单个帐户。</span><span class="sxs-lookup"><span data-stu-id="e674c-108">An individual account.</span></span>
-    
-- <span data-ttu-id="e674c-109">一组帐户。</span><span class="sxs-lookup"><span data-stu-id="e674c-109">A group of accounts.</span></span>
-    
-- <span data-ttu-id="e674c-110">组织中的所有帐户。</span><span class="sxs-lookup"><span data-stu-id="e674c-110">All accounts in your organization.</span></span>
+- <span data-ttu-id="afda3-108">单个帐户。</span><span class="sxs-lookup"><span data-stu-id="afda3-108">An individual account.</span></span>
+- <span data-ttu-id="afda3-109">一组帐户。</span><span class="sxs-lookup"><span data-stu-id="afda3-109">A group of accounts.</span></span>
+- <span data-ttu-id="afda3-110">组织中的所有帐户。</span><span class="sxs-lookup"><span data-stu-id="afda3-110">All accounts in your organization.</span></span>
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="e674c-111">使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="e674c-111">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+>[!Note]
+><span data-ttu-id="afda3-111">有一些 Office 365 服务依赖项可以阻止您在其他服务依赖于指定的服务时禁用该服务。</span><span class="sxs-lookup"><span data-stu-id="afda3-111">There are Office 365 service dependencies that can prevent you from disabling a specified service when other services depend on it.</span></span>
+>
 
-<span data-ttu-id="e674c-112">首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="e674c-112">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="afda3-112">使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="afda3-112">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="e674c-113">接下来，使用此命令查看可用的许可计划，也称为 "AccountSkuIds"：</span><span class="sxs-lookup"><span data-stu-id="e674c-113">Next, use this command to view your available licensing plans, also known as AccountSkuIds:</span></span>
+<span data-ttu-id="afda3-113">首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="afda3-113">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+
+<span data-ttu-id="afda3-114">接下来，使用此命令查看可用的许可计划，也称为 "AccountSkuIds"：</span><span class="sxs-lookup"><span data-stu-id="afda3-114">Next, use this command to view your available licensing plans, also known as AccountSkuIds:</span></span>
 
 ```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
 
 >[!Note]
-><span data-ttu-id="e674c-114">PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。</span><span class="sxs-lookup"><span data-stu-id="e674c-114">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="e674c-115">若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。</span><span class="sxs-lookup"><span data-stu-id="e674c-115">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="afda3-115">PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="afda3-115">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="afda3-116">若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。</span><span class="sxs-lookup"><span data-stu-id="afda3-116">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="e674c-116">有关详细信息，请参阅[使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="e674c-116">For more information, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="afda3-117">有关详细信息，请参阅[使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="afda3-117">For more information, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
     
-<span data-ttu-id="e674c-117">若要查看本主题中的过程的前后结果，请参阅[使用 Office 365 PowerShell 查看帐户许可证和服务详细信息](view-account-license-and-service-details-with-office-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="e674c-117">To see the before and after results of the procedures in this topic, see [View account license and service details with Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="afda3-118">若要查看本主题中的过程的前后结果，请参阅[使用 Office 365 PowerShell 查看帐户许可证和服务详细信息](view-account-license-and-service-details-with-office-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="afda3-118">To see the before and after results of the procedures in this topic, see [View account license and service details with Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span></span>
     
-<span data-ttu-id="e674c-118">PowerShell 脚本可自动执行本主题中描述的过程。</span><span class="sxs-lookup"><span data-stu-id="e674c-118">A PowerShell script is available that automates the procedures described in this topic.</span></span> <span data-ttu-id="e674c-119">具体来说，该脚本允许您查看和禁用 Office 365 组织中的服务，包括 Sway。</span><span class="sxs-lookup"><span data-stu-id="e674c-119">Specifically, the script lets you view and disable services in your Office 365 organization, including Sway.</span></span> <span data-ttu-id="e674c-120">有关详细信息，请参阅[Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="e674c-120">For more information, see [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="afda3-119">PowerShell 脚本可自动执行本主题中描述的过程。</span><span class="sxs-lookup"><span data-stu-id="afda3-119">A PowerShell script is available that automates the procedures described in this topic.</span></span> <span data-ttu-id="afda3-120">具体来说，该脚本允许您查看和禁用 Office 365 组织中的服务，包括 Sway。</span><span class="sxs-lookup"><span data-stu-id="afda3-120">Specifically, the script lets you view and disable services in your Office 365 organization, including Sway.</span></span> <span data-ttu-id="afda3-121">有关详细信息，请参阅[Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="afda3-121">For more information, see [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span></span>
     
     
-### <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a><span data-ttu-id="e674c-121">针对特定用户禁用特定许可计划的特定 Office 365 服务</span><span class="sxs-lookup"><span data-stu-id="e674c-121">Disable specific Office 365 services for specific users for a specific licensing plan</span></span>
+### <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a><span data-ttu-id="afda3-122">针对特定用户禁用特定许可计划的特定 Office 365 服务</span><span class="sxs-lookup"><span data-stu-id="afda3-122">Disable specific Office 365 services for specific users for a specific licensing plan</span></span>
   
-<span data-ttu-id="e674c-122">若要为用户禁用特定许可计划的一组特定的 Office 365 服务，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="e674c-122">To disable a specific set of Office 365 services for users for a specific licensing plan, perform the following steps:</span></span>
+<span data-ttu-id="afda3-123">若要为用户禁用特定许可计划的一组特定的 Office 365 服务，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="afda3-123">To disable a specific set of Office 365 services for users for a specific licensing plan, perform the following steps:</span></span>
   
-1. <span data-ttu-id="e674c-123">使用以下语法确定许可计划中不希望的服务：</span><span class="sxs-lookup"><span data-stu-id="e674c-123">Identify the undesirable services in the licensing plan by using the following syntax:</span></span>
+#### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a><span data-ttu-id="afda3-124">步骤1：使用以下语法确定许可计划中不需要的服务：</span><span class="sxs-lookup"><span data-stu-id="afda3-124">Step 1: Identify the undesirable services in the licensing plan by using the following syntax:</span></span>
     
-  ```powershell
-  $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
-  ```
+```powershell
+$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
+```
 
-  <span data-ttu-id="e674c-124">下面的示例创建一个**LicenseOptions**对象，该对象禁用名为`litwareinc:ENTERPRISEPACK` （Office 365 企业版 E3）的许可计划中的 Office 和 SharePoint Online services。</span><span class="sxs-lookup"><span data-stu-id="e674c-124">The following example creates a **LicenseOptions** object that disables the Office and SharePoint Online services in the licensing plan named `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).</span></span>
+<span data-ttu-id="afda3-125">下面的示例创建一个**LicenseOptions**对象，该对象禁用名为`litwareinc:ENTERPRISEPACK` （Office 365 企业版 E3）的许可计划中的 Office 和 SharePoint Online services。</span><span class="sxs-lookup"><span data-stu-id="afda3-125">The following example creates a **LicenseOptions** object that disables the Office and SharePoint Online services in the licensing plan named `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).</span></span>
     
-  ```powershell
-  $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
-  ```
+```powershell
+$LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
+```
 
-2. <span data-ttu-id="e674c-125">将步骤 1 中的 **LicenseOptions** 对象用于一个或多个用户。</span><span class="sxs-lookup"><span data-stu-id="e674c-125">Use the **LicenseOptions** object from Step 1 on one or more users.</span></span>
+#### <a name="step-2-use-the-licenseoptions-object-from-step-1-on-one-or-more-users"></a><span data-ttu-id="afda3-126">步骤2：在一个或多个用户上使用步骤1中的**LicenseOptions**对象。</span><span class="sxs-lookup"><span data-stu-id="afda3-126">Step 2: Use the **LicenseOptions** object from Step 1 on one or more users.</span></span>
     
-  - <span data-ttu-id="e674c-126">若要创建一个已禁用服务的新帐户，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="e674c-126">To create a new account that has the services disabled, use the following syntax:</span></span>
+<span data-ttu-id="afda3-127">若要创建一个已禁用服务的新帐户，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="afda3-127">To create a new account that has the services disabled, use the following syntax:</span></span>
     
-  ```powershell
-  New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
-  ```
+```powershell
+New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
+```
 
-  <span data-ttu-id="e674c-127">下面的示例为 Allie Bellew 创建了一个新帐户，该帐户分配许可证并禁用步骤1中所述的服务。</span><span class="sxs-lookup"><span data-stu-id="e674c-127">The following example creates a new account for Allie Bellew that assigns the license and disables the services described in Step 1.</span></span>
+<span data-ttu-id="afda3-128">下面的示例为 Allie Bellew 创建了一个新帐户，该帐户分配许可证并禁用步骤1中所述的服务。</span><span class="sxs-lookup"><span data-stu-id="afda3-128">The following example creates a new account for Allie Bellew that assigns the license and disables the services described in Step 1.</span></span>
     
-  ```powershell
-  New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
-  ```
+```powershell
+New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
+```
 
-  <span data-ttu-id="e674c-128">有关在 Office 365 PowerShell 中创建用户帐户的详细信息，请参阅[Create user accounts With office 365 powershell](create-user-accounts-with-office-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="e674c-128">For more information about creating user accounts in Office 365 PowerShell, see [Create user accounts with Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="afda3-129">有关在 Office 365 PowerShell 中创建用户帐户的详细信息，请参阅[Create user accounts With office 365 powershell](create-user-accounts-with-office-365-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="afda3-129">For more information about creating user accounts in Office 365 PowerShell, see [Create user accounts with Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).</span></span>
     
-  - <span data-ttu-id="e674c-129">若要禁用现有授权用户的服务，请使用下面的语法：</span><span class="sxs-lookup"><span data-stu-id="e674c-129">To disable the services for an existing licensed user, use the following syntax:</span></span>
+<span data-ttu-id="afda3-130">若要禁用现有授权用户的服务，请使用下面的语法：</span><span class="sxs-lookup"><span data-stu-id="afda3-130">To disable the services for an existing licensed user, use the following syntax:</span></span>
     
-  ```powershell
-  Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
-  ```
+```powershell
+Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
+```
 
-  <span data-ttu-id="e674c-130">本示例对用户 BelindaN@litwareinc.com 禁用服务。</span><span class="sxs-lookup"><span data-stu-id="e674c-130">This example disables the services for the user BelindaN@litwareinc.com.</span></span>
+<span data-ttu-id="afda3-131">本示例对用户 BelindaN@litwareinc.com 禁用服务。</span><span class="sxs-lookup"><span data-stu-id="afda3-131">This example disables the services for the user BelindaN@litwareinc.com.</span></span>
     
-  ```powershell
-  Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
-  ```
+```powershell
+Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
+```
 
-  - <span data-ttu-id="e674c-131">若要禁用步骤1中对所有现有许可用户所述的服务，请从**get-msolaccountsku** cmdlet （如**litwareinc： ENTERPRISEPACK**）的显示中指定 Office 365 计划的名称，然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="e674c-131">To disable the services described in Step 1 for all existing licensed users, specify the name of your Office 365 plan from the display of the **Get-MsolAccountSku** cmdlet (such as **litwareinc:ENTERPRISEPACK**), and then run the following commands:</span></span>
+<span data-ttu-id="afda3-132">若要禁用步骤1中对所有现有许可用户所述的服务，请从**get-msolaccountsku** cmdlet （如**litwareinc： ENTERPRISEPACK**）的显示中指定 Office 365 计划的名称，然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="afda3-132">To disable the services described in Step 1 for all existing licensed users, specify the name of your Office 365 plan from the display of the **Get-MsolAccountSku** cmdlet (such as **litwareinc:ENTERPRISEPACK**), and then run the following commands:</span></span>
     
-  ```powershell
-  $acctSKU="<AccountSkuId>"
-  $AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
-  $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
-  ```
+```powershell
+$acctSKU="<AccountSkuId>"
+$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
+$AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
+```
 
-  <span data-ttu-id="e674c-132">如果使用**get-msoluser** cmdlet，而不使用_All_参数，则仅返回前500个用户帐户。</span><span class="sxs-lookup"><span data-stu-id="e674c-132">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 user accounts are returned.</span></span>
+ <span data-ttu-id="afda3-133">如果使用**get-msoluser** cmdlet，而不使用_All_参数，则仅返回前500个用户帐户。</span><span class="sxs-lookup"><span data-stu-id="afda3-133">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 user accounts are returned.</span></span>
 
-
-  - <span data-ttu-id="e674c-133">若要对一组现有用户禁用服务，请使用下列两种方法之一来确定用户：</span><span class="sxs-lookup"><span data-stu-id="e674c-133">To disable the services for a group of existing users, use either of the following methods to identify the users:</span></span>
+<span data-ttu-id="afda3-134">若要对一组现有用户禁用服务，请使用下列两种方法之一来确定用户：</span><span class="sxs-lookup"><span data-stu-id="afda3-134">To disable the services for a group of existing users, use either of the following methods to identify the users:</span></span>
     
-  - <span data-ttu-id="e674c-134">**基于现有帐户属性筛选帐户**为此，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="e674c-134">**Filter the accounts based on an existing account attribute** To do this, use the following syntax:</span></span>
-    
-  ```powershell
-  $x = Get-MsolUser -All <FilterableAttributes>
-  $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
-  ```
+<span data-ttu-id="afda3-135">**方法1。基于现有帐户属性筛选帐户**</span><span class="sxs-lookup"><span data-stu-id="afda3-135">**Method 1. Filter the accounts based on an existing account attribute**</span></span> 
 
-  <span data-ttu-id="e674c-135">下面的示例为美国的销售部门中的用户禁用服务。</span><span class="sxs-lookup"><span data-stu-id="e674c-135">The following example disables the services for users in the Sales department in the United States.</span></span>
+<span data-ttu-id="afda3-136">为此，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="afda3-136">To do this, use the following syntax:</span></span>
     
-  ```powershell
-  $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
-  $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
-  ```
+```powershell
+$x = Get-MsolUser -All <FilterableAttributes>
+$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
+```
 
-  - <span data-ttu-id="e674c-136">**使用特定帐户的列表**为此，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="e674c-136">**Use a list of specific accounts** To do this, perform the following steps:</span></span>
+<span data-ttu-id="afda3-137">下面的示例为美国的销售部门中的用户禁用服务。</span><span class="sxs-lookup"><span data-stu-id="afda3-137">The following example disables the services for users in the Sales department in the United States.</span></span>
     
-1. <span data-ttu-id="e674c-137">创建一个文本文件，在它的每一行上包含一个帐户，如下所示：</span><span class="sxs-lookup"><span data-stu-id="e674c-137">Create a text file that contains one account on each line like this:</span></span>
+```powershell
+$USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
+$USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
+```
+
+<span data-ttu-id="afda3-138">**方法2：使用特定帐户的列表**</span><span class="sxs-lookup"><span data-stu-id="afda3-138">**Method 2: Use a list of specific accounts**</span></span> 
+
+<span data-ttu-id="afda3-139">若要完成此操作，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="afda3-139">To do this, perform the following steps:</span></span>
+    
+1. <span data-ttu-id="afda3-140">创建一个文本文件，在它的每一行上包含一个帐户，如下所示：</span><span class="sxs-lookup"><span data-stu-id="afda3-140">Create a text file that contains one account on each line like this:</span></span>
     
   ```powershell
   akol@contoso.com
@@ -134,39 +139,39 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
   kakers@contoso.com
   ```
 
-  <span data-ttu-id="e674c-138">在此示例中，文本文件为 C：\\我的文档\\帐户 .txt。</span><span class="sxs-lookup"><span data-stu-id="e674c-138">In this example, the text file is C:\\My Documents\\Accounts.txt.</span></span>
+  <span data-ttu-id="afda3-141">在此示例中，文本文件为 C：\\我的文档\\帐户 .txt。</span><span class="sxs-lookup"><span data-stu-id="afda3-141">In this example, the text file is C:\\My Documents\\Accounts.txt.</span></span>
     
-2. <span data-ttu-id="e674c-139">运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="e674c-139">Run the following command:</span></span>
+2. <span data-ttu-id="afda3-142">运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="afda3-142">Run the following command:</span></span>
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
-<span data-ttu-id="e674c-140">如果要对多个许可计划禁用服务访问，请针对每个许可计划重复上述说明，以确保：</span><span class="sxs-lookup"><span data-stu-id="e674c-140">If you want to disable access to services for multiple licensing plans, repeat the above instructions for each licensing plan, ensuring that:</span></span>
+<span data-ttu-id="afda3-143">如果要对多个许可计划禁用服务访问，请针对每个许可计划重复上述说明，以确保：</span><span class="sxs-lookup"><span data-stu-id="afda3-143">If you want to disable access to services for multiple licensing plans, repeat the above instructions for each licensing plan, ensuring that:</span></span>
 
-- <span data-ttu-id="e674c-141">已为用户帐户分配许可计划。</span><span class="sxs-lookup"><span data-stu-id="e674c-141">The user accounts have been assigned the licensing plan.</span></span>
-- <span data-ttu-id="e674c-142">要禁用的服务在许可计划中可用。</span><span class="sxs-lookup"><span data-stu-id="e674c-142">The services to disable are available in the licensing plan.</span></span>
+- <span data-ttu-id="afda3-144">已为用户帐户分配许可计划。</span><span class="sxs-lookup"><span data-stu-id="afda3-144">The user accounts have been assigned the licensing plan.</span></span>
+- <span data-ttu-id="afda3-145">要禁用的服务在许可计划中可用。</span><span class="sxs-lookup"><span data-stu-id="afda3-145">The services to disable are available in the licensing plan.</span></span>
 
-<span data-ttu-id="e674c-143">若要在向用户分配许可计划时为其禁用 Office 365 服务，请参阅在[分配用户许可证时禁用对服务的访问](disable-access-to-services-while-assigning-user-licenses.md)。</span><span class="sxs-lookup"><span data-stu-id="e674c-143">To disable Office 365 services for users while you are assigning them to a licensing plan, see [Disable access to services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md).</span></span>
+<span data-ttu-id="afda3-146">若要在向用户分配许可计划时为其禁用 Office 365 服务，请参阅在[分配用户许可证时禁用对服务的访问](disable-access-to-services-while-assigning-user-licenses.md)。</span><span class="sxs-lookup"><span data-stu-id="afda3-146">To disable Office 365 services for users while you are assigning them to a licensing plan, see [Disable access to services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md).</span></span>
 
 
-## <a name="new-to-office-365"></a><span data-ttu-id="e674c-144">刚开始接触 Office 365？</span><span class="sxs-lookup"><span data-stu-id="e674c-144">New to Office 365?</span></span>
-<span data-ttu-id="e674c-145"><a name="LinkedIn"> </a></span><span class="sxs-lookup"><span data-stu-id="e674c-145"></span></span>
+## <a name="new-to-office-365"></a><span data-ttu-id="afda3-147">刚开始接触 Office 365？</span><span class="sxs-lookup"><span data-stu-id="afda3-147">New to Office 365?</span></span>
+<span data-ttu-id="afda3-148"><a name="LinkedIn"> </a></span><span class="sxs-lookup"><span data-stu-id="afda3-148"></span></span>
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a><span data-ttu-id="e674c-146">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e674c-146">See also</span></span>
-<span data-ttu-id="e674c-147"><a name="SeeAlso"> </a></span><span class="sxs-lookup"><span data-stu-id="e674c-147"></span></span>
+## <a name="see-also"></a><span data-ttu-id="afda3-149">另请参阅</span><span class="sxs-lookup"><span data-stu-id="afda3-149">See also</span></span>
+<span data-ttu-id="afda3-150"><a name="SeeAlso"> </a></span><span class="sxs-lookup"><span data-stu-id="afda3-150"></span></span>
 
-<span data-ttu-id="e674c-148">请参阅下面有关使用 Office 365 PowerShell 管理用户的其他主题：</span><span class="sxs-lookup"><span data-stu-id="e674c-148">See the following additional topics about managing users with Office 365 PowerShell:</span></span>
+<span data-ttu-id="afda3-151">请参阅下面有关使用 Office 365 PowerShell 管理用户的其他主题：</span><span class="sxs-lookup"><span data-stu-id="afda3-151">See the following additional topics about managing users with Office 365 PowerShell:</span></span>
   
-- [<span data-ttu-id="e674c-149">使用 Office 365 PowerShell 删除和还原用户账户</span><span class="sxs-lookup"><span data-stu-id="e674c-149">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="afda3-152">使用 Office 365 PowerShell 删除和还原用户账户</span><span class="sxs-lookup"><span data-stu-id="afda3-152">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="e674c-150">使用 Office 365 PowerShell 删除和还原用户账户</span><span class="sxs-lookup"><span data-stu-id="e674c-150">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="afda3-153">使用 Office 365 PowerShell 删除和还原用户账户</span><span class="sxs-lookup"><span data-stu-id="afda3-153">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="e674c-151">使用 Office 365 PowerShell 冻结用户账户</span><span class="sxs-lookup"><span data-stu-id="e674c-151">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="afda3-154">使用 Office 365 PowerShell 冻结用户账户</span><span class="sxs-lookup"><span data-stu-id="afda3-154">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="e674c-152">使用 Office 365 PowerShell 向用户帐户分配许可证</span><span class="sxs-lookup"><span data-stu-id="e674c-152">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="afda3-155">使用 Office 365 PowerShell 向用户帐户分配许可证</span><span class="sxs-lookup"><span data-stu-id="afda3-155">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="e674c-153">使用 Office 365 PowerShell 创建用户帐户</span><span class="sxs-lookup"><span data-stu-id="e674c-153">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="afda3-156">使用 Office 365 PowerShell 创建用户帐户</span><span class="sxs-lookup"><span data-stu-id="afda3-156">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
     

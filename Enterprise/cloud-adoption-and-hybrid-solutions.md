@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 60f0636228942273a7e5ae45f174155abf64e491
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 64f38ba0f0bbc4eba03e2b59f041bf19de620027
+ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029176"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39857980"
 ---
 <h1>企业云解决方案</h1>
 <p>通过使用 Microsoft 云解决业务问题。了解最新的混合和安全云解决方案、云采用等方面的信息。</p>
@@ -123,9 +123,5 @@ ms.locfileid: "38029176"
 
 ---
 
-<h2>联系我们</h2>
-<ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">需要哪些云采用内容？</a><br>我们正在创建跨越多个 Microsoft 云平台和服务的云采用内容。请告诉我们你对云采用内容的想法，或者发送电子邮件到 cloudadopt@microsoft.com 请求获取特定内容。</li><br>
-    <li><a href="https://aka.ms/caab">加入云采用讨论</a><br>如果你热衷于基于云的解决方案，请考虑加入云采用咨询委员会 (CAAB)，以便与充满活力的更大规模社区保持联络，其中包括 Microsoft 内容开发人员、行业专家和全球各地的客户。若要加入，请自行添加为 Microsoft 技术社区的 CAABA（云采用咨询委员会）空间成员，并向我们发送电子邮件至 <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>。任何人都可以阅读 CAAB <a href="https://blogs.technet.com/b/solutions_advisory_board/">博客</a>上与社区相关的内容。不过，CAAB 成员可获邀参加私人网络研讨会，了解新的云采用资源和解决方案。</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">获取你在此处看到的图片</a><br>若要获取本文中图片的可编辑副本，请告诉我们，我们非常乐意给你发送副本。请通过电子邮件方式将请求（包括图片的 URL 和标题）发送到 cloudadopt@microsoft.com</li>
-</ul>
+
+
