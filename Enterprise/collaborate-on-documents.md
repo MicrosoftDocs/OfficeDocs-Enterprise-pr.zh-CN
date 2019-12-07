@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: 了解如何通过 SharePoint 和 OneDrive 中的文档与来宾进行协作。
-ms.openlocfilehash: 1f5053a332c80fbb957cfcb3e11f35aa94cfe270
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 20b97ed6e232385500e74adcaa11378252167c26
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076166"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886491"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文档中与来宾协作
 
@@ -51,7 +51,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。 网站设置不能比组织级别设置更具有更好的许可。 OneDrive 的组织级别设置决定了用户的 OneDrive 库中可用的共享级别。
 
-对于 SharePoint 和 OneDrive，如果要允许与匿名用户共享文件和文件夹，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 *任何人*链接是最简单的共享方式：来宾无需身份验证即可打开链接，并可将其自由传递给其他人。
+对于 SharePoint 和 OneDrive，如果要允许未经身份验证的文件和文件夹共享，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 *任何人*链接是最简单的共享方式：来宾无需身份验证即可打开链接，并可将其自由传递给其他人。
 
 对于 SharePoint，选择组织中的任何网站将需要的 "最高" 设置。
 
@@ -73,7 +73,7 @@ SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。
 
 选择当用户共享文件和文件夹时默认选择的链接类型：
 
-- **任何具有链接的人**-如果您希望与匿名用户共享大量文件和文件夹，请选择此选项。 如果您希望允许*任何人*链接，但担心意外匿名共享，请将其他选项之一作为默认值。 仅当您已启用**任何**共享时，此链接类型才可用。
+- **任何具有链接的人**-如果您想要执行大量未经身份验证的文件和文件夹共享，请选择此选项。 如果要允许*任何人*链接，但担心意外的共享，请考虑其他选项之一作为默认选项。 仅当您已启用**任何**共享时，此链接类型才可用。
 - **仅限组织中的人员**-如果您希望大多数文件和文件夹共享与组织内部的人员共享，请选择此选项。
 - **特定人员**-如果您希望对来宾执行大量文件和文件夹共享，请考虑此选项。 此类型的链接可与来宾配合使用，并要求用户进行身份验证。
  
@@ -105,6 +105,6 @@ SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。
 
 ## <a name="see-also"></a>另请参阅
 
-[有关与匿名用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+[使用未经身份验证的用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)

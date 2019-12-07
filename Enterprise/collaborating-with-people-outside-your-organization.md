@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: 了解如何配置 Office 365 以与来宾用户协作。
-ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 1af8a1c810047e4f91b0bda31934742884f6645e
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076176"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886441"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
 
@@ -26,7 +26,7 @@ ms.locfileid: "38076176"
 
 ## <a name="see-also"></a>另请参阅
 
-[有关与匿名用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+[使用未经身份验证的用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
 

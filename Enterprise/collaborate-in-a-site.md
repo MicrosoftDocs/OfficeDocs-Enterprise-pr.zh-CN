@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 了解如何在 SharePoint 网站中与来宾进行协作。
-ms.openlocfilehash: 25b0aea05c922385828e62512d3724da7324c719
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029156"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886481"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -67,7 +67,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 组织级别设置确定了哪些设置可用于单个网站。 网站设置不能比组织级别设置更具有更好的许可。
 
-如果要允许与匿名用户共享文件和文件夹，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 选择组织中的任何网站将需要的 "最高" 设置。
+如果要允许未经身份验证的文件和文件夹共享，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 选择组织中的任何网站将需要的 "最高" 设置。
 
 ![SharePoint 组织级别共享设置的屏幕截图](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -98,7 +98,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 检查网站级别的共享设置以确保它们允许您对此网站所需的访问类型。 例如，如果将组织级别设置设置为 "**任何人**"，但希望所有来宾都对此网站进行身份验证，请确保将网站级别的共享设置设置为 "**新建" 和 "现有来宾**"。
 
-请注意，不能与匿名用户（**任何人**设置）共享网站，但可以对各个文件和文件夹进行共享。
+请注意，不能将网站与未经身份验证的人员（**任何人**设置）共享，但可以对各个文件和文件夹进行共享。
 
 ![SharePoint 网站外部共享设置的屏幕截图](media/sharepoint-site-external-sharing-settings.png)
 
@@ -129,7 +129,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 ## <a name="see-also"></a>另请参阅
 
-[有关与匿名用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+[使用未经身份验证的用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
 

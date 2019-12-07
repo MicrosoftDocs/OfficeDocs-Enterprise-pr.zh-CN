@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 了解如何与团队中的来宾进行协作。
-ms.openlocfilehash: a3e34431b97e8f565d61470ddd55797981b837c8
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029166"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886521"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -87,7 +87,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 组织级别设置决定了可用于单个网站的设置，包括与团队相关的网站。 网站设置不能比组织级别设置更具有更好的许可。
 
-如果要允许与匿名用户共享文件和文件夹，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 选择组织中的任何网站将需要的 "最高" 设置。
+如果要允许与未经身份验证的用户共享文件和文件夹，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 选择组织中的任何网站将需要的 "最高" 设置。
 
 ![SharePoint 组织级别共享设置的屏幕截图](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -108,7 +108,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 选择当用户共享文件和文件夹时默认选择的链接类型：
 
-- **任何具有链接的人**-如果您希望与匿名用户共享大量文件和文件夹，请选择此选项。 如果您希望允许*任何人*链接，但担心意外匿名共享，请将其他选项之一作为默认值。 仅当您已启用**任何**共享时，此链接类型才可用。
+- **任何具有链接的人**-如果您希望与未经身份验证的用户共享大量文件和文件夹，请选择此选项。 如果要允许*任何人*链接，但担心意外的共享，请考虑其他选项之一作为默认选项。 仅当您已启用**任何**共享时，此链接类型才可用。
 - **仅限组织中的人员**-如果您希望大多数文件和文件夹共享与组织内部的人员共享，请选择此选项。
 - **特定人员**-如果您希望对来宾执行大量文件和文件夹共享，请考虑此选项。 此类型的链接可与来宾配合使用，并要求用户进行身份验证。
  
@@ -167,7 +167,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 ## <a name="see-also"></a>另请参阅
 
-[有关与匿名用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+[使用未经身份验证的用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
 
