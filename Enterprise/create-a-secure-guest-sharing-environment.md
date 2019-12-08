@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
 description: 了解如何在 Microsoft 365 中创建安全的来宾共享环境。
-ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 51e9d8c8d09d5ee687fc47a1c382da383d1cf231
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077705"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886511"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -308,7 +308,7 @@ ms.locfileid: "38077705"
 12. 对于自定义通知消息，请键入“*此文件是高度机密文件。公司策略禁止与来宾共享该文件*”。
 13. 单击“**创建**”。
 
-请务必注意，该策略将删除使用*特定人员*链接共享的文件的访问权限。 它不会从匿名（*任何人*）链接中删除访问权限。 如果来宾是整个网站或团队的成员，也不会删除其访问权限。 如果计划将网站或团队中的高度机密文档与来宾成员进行共享，请考虑使用 [Teams 中的私人频道](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)并仅允许组织成员在私人频道中共享。
+请务必注意，该策略将删除使用*特定人员*链接共享的文件的访问权限。 它不会从未认证（*任何人*）链接中删除访问权限。 如果来宾是整个网站或团队的成员，也不会删除其访问权限。 如果计划将网站或团队中的高度机密文档与来宾成员进行共享，请考虑使用 [Teams 中的私人频道](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)并仅允许组织成员在私人频道中共享。
 
 ## <a name="test-the-solution"></a>测试解决方案
 
@@ -322,4 +322,4 @@ ms.locfileid: "38077705"
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
 
-[有关与匿名用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+[有关与未经认证用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
