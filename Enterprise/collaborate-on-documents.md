@@ -9,16 +9,16 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: 了解如何通过 SharePoint 和 OneDrive 中的文档与来宾进行协作。
-ms.openlocfilehash: 20b97ed6e232385500e74adcaa11378252167c26
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: f2cecb086116e5ea3322a0fd87e5f07f5c30443c
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886491"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919346"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文档中与来宾协作
 
-如果需要与来宾在 SharePoint 或 OneDrive 中的文档上进行协作，可以向其发送指向文档的共享链接。 在本文中，我们将完成必要的 Microsoft 365 配置步骤，以设置 SharePoint 和 OneDrive 的共享链接，以满足组织的需求。
+如果需要与组织外部的人员协作处理 SharePoint 或 OneDrive 中的文档，则可以向其发送指向文档的共享链接。 在本文中，我们将完成必要的 Microsoft 365 配置步骤，以设置 SharePoint 和 OneDrive 的共享链接，以满足组织的需求。
 
 ## <a name="video-demonstration"></a>视频演示
 
@@ -47,11 +47,11 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 组织级别的共享设置
 
-为使来宾能够访问 SharePoint 或 OneDrive 中的文档，SharePoint 和 OneDrive 组织级共享设置必须允许与来宾共享。
+为使组织外部的人员能够访问 SharePoint 或 OneDrive 中的文档，SharePoint 和 OneDrive 组织级共享设置必须允许与组织外部的人员共享。
 
 SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。 网站设置不能比组织级别设置更具有更好的许可。 OneDrive 的组织级别设置决定了用户的 OneDrive 库中可用的共享级别。
 
-对于 SharePoint 和 OneDrive，如果要允许未经身份验证的文件和文件夹共享，请选择 "**任何人**"。 如果要确保所有来宾都必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 *任何人*链接是最简单的共享方式：来宾无需身份验证即可打开链接，并可将其自由传递给其他人。
+对于 SharePoint 和 OneDrive，如果要允许未经身份验证的文件和文件夹共享，请选择 "**任何人**"。 如果您想要确保组织外部的人员必须进行身份验证，请选择 "**新建" 和 "现有来宾**"。 *任何*链接都是最简单的共享方式：组织外部的人员可以在不进行身份验证的情况下打开链接，并且可以自由地将其传递给其他人。
 
 对于 SharePoint，选择组织中的任何网站将需要的 "最高" 设置。
 
@@ -101,10 +101,10 @@ SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。
 
 ## <a name="invite-users"></a>邀请用户
 
-现在已配置来宾共享设置，因此用户现在可以与来宾共享文件和文件夹。 有关详细信息，请参阅[共享 OneDrive 文件和文件夹](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)以及[共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)。
+现在已配置来宾共享设置，因此用户现在可以与组织外部的人员共享文件和文件夹。 有关详细信息，请参阅[共享 OneDrive 文件和文件夹](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)以及[共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)。
 
 ## <a name="see-also"></a>另请参阅
 
-[使用未经身份验证的用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+[有关与未经认证用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
