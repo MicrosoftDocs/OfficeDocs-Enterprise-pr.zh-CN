@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: 了解有关与身份未经验证用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: decdc068f238329516ae0ce3594e68a753780216
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886501"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919134"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
-未经身份验证共享（*任何人*链接）非常方便，在各种情景中都很有用。 *任何人*链接是最简单的共享方式：来宾无需身份验证即可打开链接，并可将其自由传递给其他人。
+未经身份验证共享（*任何人*链接）非常方便，在各种情景中都很有用。 *任何人*链接是最简单的共享方式：用户无需身份验证即可打开链接，并可将其自由传递给其他人。
 
 通常情况下，并非组织中的所有内容都适合未经身份验证共享。 本文介绍了一些可用选项，这些选项可帮助你创建一个环境，让你的用户能在其中未经身份验证共享文件和文件夹，但其中也有安全措施来帮助你保护组织的内容。
 
@@ -51,7 +51,7 @@ ms.locfileid: "39886501"
 3. 在“**‘任何人’链接的高级设置**”下，选择要使用的文件和文件夹权限。</br>
    ![SharePoint 组织级别的“任何人”链接权限设置的屏幕截图](media/sharepoint-organization-anyone-link-permissions.png)
 
-“*任何人*”链接设置为“**查看**”后，用户仍可与来宾共享文件和文件夹，并可使用*特定人员*链接为其提供编辑权限。 这些链接要求来宾进行身份验证，并且你可以跟踪和审核使用这些链接共享的文件和文件夹上的来宾活动。
+“*任何人*”链接设置为“**查看**”后，用户仍可与来宾共享文件和文件夹，并可使用*特定人员*链接为其提供编辑权限。 这些链接要求组织外人员作为来宾进行身份验证，并且你可以跟踪和审核使用这些链接共享的文件和文件夹上的来宾活动。
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>将默认链接类型设置为仅适用于组织内部人员
 
