@@ -13,14 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: 本文介绍如何在 SharePoint Online 中规划门户启动以及成功启动所需的步骤
-ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919124"
+ms.locfileid: "39959116"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>在 SharePoint Online 中规划门户启动滚动计划
+
 门户是指 intranet 上的 SharePoint 网站，其中包含大量网站查看者，这些网站使用网站上的内容。 在大型组织中，可能有几个;例如，公司门户和 HR 门户。 通常门户相对较少的人创建和创作网站及其内容。 对门户的大多数访问者只能读取和使用内容。
 
 本文介绍如何规划部署和向 SharePoint Online 计划。 它还提供了在 SharePoint Online 上不允许进行传统负载测试时遵循的方法。 SharePoint Online 是云服务，服务中负载的负载功能、运行状况和总体平衡由 Microsoft 进行管理。

@@ -3,7 +3,7 @@ title: 如何请求数据移动
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求，以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756591"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962459"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -28,7 +28,7 @@ ms.locfileid: "38756591"
   
 ## <a name="when-can-i-request-a-move"></a>何时可以请求移动？
 
-|**中付费地址的客户**|**请求时间段开始**|**请求截止日期**|
+|**在中注册国家/地区的客户**|**请求时间段开始**|**请求截止日期**|
 |:-----|:-----|:-----|
 |日本  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
 |澳大利亚、新西兰、斐济  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
@@ -38,11 +38,13 @@ ms.locfileid: "38756591"
 |韩国  <br/> |5月1日，2017  <br/> |2017年10月31日  <br/> |
 |法国  <br/> |2018年3月14日  <br/> |2018年9月15日  <br/> |
 |阿拉伯联合酋长国  <br/> |2019 年 7 月 15 日  <br/> |2020年1月31日  <br/> |
-|南非  <br/> |2019年7月25日  <br/> |2020年1月31日  <br/> |
+|南非  <br/> |2019 年 7 月 25 日  <br/> |2020年1月31日  <br/> |
+|瑞士，列支敦士登  <br/> |2019年12月10日  <br/> |2020年6月30日  <br/> |
+|德国  <br/> |相同  <br/> |相同  <br/> |
    
 ## <a name="how-to-request-a-move"></a>如何请求移动
 
-符合条件的客户将在其[管理中心](https://aka.ms/365admin)中看到一个页面，这将允许他们请求将其核心客户数据移动到其新的数据中心区域。  
+符合条件的客户将在[Microsoft 365 管理中心](https://aka.ms/365admin)中看到一个页面，这将允许他们请求将其核心客户数据移动到其新的数据中心区域。  
   
 若要访问 Microsoft 365 管理中心中的页面，请在左侧的导航窗格中，展开 "**设置**"，然后单击 "**组织配置文件**"。
   

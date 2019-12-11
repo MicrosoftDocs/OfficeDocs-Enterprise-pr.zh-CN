@@ -3,7 +3,7 @@ title: 数据移动期间和数据移动之后
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250498"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39959277"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -30,7 +30,7 @@ ms.locfileid: "39250498"
 在 Exchange Online、SharePoint Online 和 Skype for Business 移动时，请观看 Office 365 消息中心，以确认是否已完成。 如下表所示，在注册期结束后，可能需要长达24个月，以完成针对特定地理位置的所有客户的所有请求的数据移动。 如果你在移动后发现租户出现任何问题，请联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以获取帮助。 
   
 
-|**中付费地址的客户**|**所有移动完成者**|
+|**在中注册国家/地区的客户**|**所有移动完成者**|
 |:-----|:-----|
 |澳大利亚、新西兰、斐济  <br/> |2017年10月31日  <br/> |
 |日本  <br/> |2018年10月31日  <br/> |
@@ -41,6 +41,8 @@ ms.locfileid: "39250498"
 |法国  <br/> |2020年9月15日  <br/> |
 |阿拉伯联合酋长国  <br/> |2022年2月1日  <br/> |
 |南非  <br/> |2022年2月1日  <br/> |
+|瑞士，列支敦士登  <br/> |2022年7月1日  <br/> |
+|德国  <br/> |相同  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 

@@ -3,7 +3,7 @@ title: 结合使用 Office 365 内容分发网络和 SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 介绍如何使用 Office 365 内容传送网络（CDN）加快将 SharePoint Online 资产传递给所有用户，无论它们位于何处或如何访问你的内容。
-ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813510"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962479"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -688,9 +688,9 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 您还可以使用浏览器的开发人员工具来查看页面上的每个资源的 URL，或使用第三方网络跟踪工具。
 
 > [!NOTE]
-> 如果使用网络工具（例如 Fiddler）在从 SharePoint 页面呈现资产的外部测试您的资产，您必须手动将引用的邮件头 "定位： `https://yourdomain.sharepoint.com`" 添加到 URL 为 sharepoint Online 租户的根 URL 的 GET 请求中。
+> 如果使用网络工具（例如 Fiddler）在从 SharePoint 页面呈现资产的外部测试您的资产，您必须手动将 referer 标头 "Referer： `https://yourdomain.sharepoint.com`" 添加到 URL 为 sharepoint Online 租户的根 URL 的 GET 请求中。
 
-您不能直接在 web 浏览器中测试 CDN Url，因为您必须具有来自 SharePoint Online 的引用。 但是，如果将 CDN 资产 URL 添加到 SharePoint 页面，然后在浏览器中打开该页面，则会看到页面上呈现的 CDN 资产。
+您无法直接在 web 浏览器中测试 CDN Url，因为您必须具有来自 SharePoint Online 的 referer。 但是，如果将 CDN 资产 URL 添加到 SharePoint 页面，然后在浏览器中打开该页面，则会看到页面上呈现的 CDN 资产。
 
 有关在 Microsoft Edge 浏览器中使用开发人员工具的详细信息，请参阅[Microsoft Edge 开发人员工具](https://docs.microsoft.com/microsoft-edge/devtools-guide)。
 

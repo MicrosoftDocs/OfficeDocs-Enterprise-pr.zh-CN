@@ -3,7 +3,7 @@ title: 将核心数据移动到新的 Office 365 数据中心信息
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一个术语，指在 Microsoft Online Services 术语： Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）、SharePoint Online 网站内容和文件中定义的客户数据子集。存储在该网站中，并将文件上传到 OneDrive for business。
-ms.openlocfilehash: 3cccd9d5cb3f961a3621bf6f54104c2e1e3b8ece
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756541"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962449"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>将核心数据移动到新的 Office 365 数据中心信息
 
@@ -30,7 +30,7 @@ Core customer data 是一个术语，指的是一部分客户数据，包括：
   
 启动新的数据中心地理位置不会影响已在现有数据中心地理位置存储其核心客户数据的现有客户。 我们不会通过新的数据中心地理位置引入独特的功能、功能或合规性认证。 作为这两个信息中任何一个的客户，你将遇到与以前一样的服务质量、性能和安全控制。 我们提供了下表中列出的现有客户，以请求将其组织的核心客户数据提前迁移到其新的数据中心地理位置。
   
-|在 * * * * 中使用帐单地址的客户|以前的数据中心地理位置 * * * *|新数据中心地理位置 * * * *|Geo （自 * * * *）后可用|
+|在 * * * * 中使用租户注册国家/地区的客户|以前的数据中心地理位置 * * * *|新数据中心地理位置 * * * *|Geo （自 * * * *）后可用|
 |:-----|:-----|:-----|:-----|
 |日本 * * * *| 亚洲/太平洋 | 日本 | 2014 年 12 月 |
 |澳大利亚、新西兰、斐济 * * * * *| 亚洲/太平洋 | 澳大利亚 | 2015 年 3 月 |
@@ -41,8 +41,15 @@ Core customer data 是一个术语，指的是一部分客户数据，包括：
 |法国 * * * *| 欧洲 | 法国 | 2018 年 3 月 |
 |阿拉伯联合酋长国 * * * *| 欧洲 | 阿拉伯联合酋长国 | 2019 年 6 月 |
 |南非 * * * *| 欧洲 | 南非 | 2019 年 7 月 |
+|瑞士，列支敦士登 * * * *| 欧洲 | 瑞士 | 2019 年 12 月 |
+|德国 * * * *| 欧洲 | 德国 | 2019 年 12 月 |
   
 在新的数据中心地理位置推出之后创建的新客户或 Office 365 租户将在新的数据中心地理位置自动将其核心客户数据存储在 rest 上。
+
+
+>[!Note]
+>我们在12月2019日启动了德国数据中心区域。 具有与租户关联的德国注册地址的新 Office 365 客户将其核心客户数据存储在德国的其他位置。 我们计划在将来为德国客户提供从欧洲到德国的迁移。 目前，Microsoft 云德国/德国客户可以请求迁移到新的德国数据中心区域中的 Office 365 服务。 有关详细信息，请参阅[如何选择从 Microsoft 云德国（Microsoft 云德国）迁移到 Office 365 服务](https://aka.ms/office365germanymoveoptin)。
+>
   
 所有数据中心信息、数据中心和 rest 上的客户数据位置的完整列表都可用作[交互式数据中心地图](https://office.com/datamaps)的一部分。 
   
