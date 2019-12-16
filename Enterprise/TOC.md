@@ -152,6 +152,8 @@
 #### [如何请求数据移动](request-your-data-move.md)
 #### [数据移动期间和数据移动之后](during-and-after-your-data-move.md)
 #### [数据移动常见问题解答](data-move-faq.md)
+#### [德国 Microsoft 云：Office 365 迁移计划](ms-cloud-germany-transition.md)
+#### [德国 Microsoft 云：选择加入迁移](ms-cloud-germany-migration-opt-in.md)
 
 ### 混合解决方案
 #### [将 Azure Active Directory 用于 SharePoint Server 2016 身份验证](using-azure-ad-for-sharepoint-server-authentication.md)
@@ -189,7 +191,7 @@
 ##### [在网站中协作](collaborate-in-a-site.md)
 ##### [团队协作](collaborate-as-a-team.md)
 #### 来宾共享安全性
-##### [匿名共享](best-practices-anonymous-sharing.md)
+##### [未经身份验证的共享](best-practices-anonymous-sharing.md)
 ##### [限制意外公开](sharing-limit-accidental-exposure.md)
 ##### [保护来宾共享环境](create-a-secure-guest-sharing-environment.md)
 
