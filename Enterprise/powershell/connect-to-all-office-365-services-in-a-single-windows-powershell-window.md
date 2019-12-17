@@ -3,7 +3,7 @@ title: 在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/28/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,15 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。
-ms.openlocfilehash: c8390b3d704fa9df64f147a942891308b1ed825f
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: ec24914367450e4ff464b3399be9cb2e626dd254
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257421"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072504"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
- **摘要：** 无需在单独的 PowerShell 控制台窗口中管理不同的 Office 365 服务，您可以连接到所有 Office 365 服务并从单个控制台窗口管理这些服务。
-  
 使用 PowerShell 管理 Office 365 时，可以在与 Microsoft 365 管理中心、SharePoint Online、Exchange Online、Skype for Business Online 和安全&amp;合规中心相同的时间同时打开最长五个不同的 Windows PowerShell 会话。 在单独的 Windows PowerShell 会话中有五种不同的连接方法，你的桌面可能如下所示：
   
 ![五个同时运行的 Windows PowerShell 控制台](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
@@ -37,7 +35,7 @@ ms.locfileid: "39257421"
 >本文当前只包含连接到 Office 365 全球（+ GCC）云的命令。 其他说明提供了指向包含有关连接到其他 Office 365 云的信息的文章的链接。
 >
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在可以从 Windows PowerShell 的单个实例管理所有 Office 365 之前，请考虑以下先决条件：
   
@@ -100,7 +98,7 @@ ms.locfileid: "39257421"
  ```
 
 >[!Note]
->PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
 >
 
 4. 运行这些命令以连接到 SharePoint Online。 将_ \<domainhost>_ 替换为您的域的实际值。 例如，对于 "litwareinc.onmicrosoft.com"， _ \<domainhost>_ 值为 "litwareinc"。
@@ -222,5 +220,5 @@ Import-PSSession $sfboSession
 
 - [连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)
 - [使用 Office 365 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
-- [使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [使用 Windows PowerShell 在 Office 365 中创建报告](use-windows-powershell-to-create-reports-in-office-365.md)

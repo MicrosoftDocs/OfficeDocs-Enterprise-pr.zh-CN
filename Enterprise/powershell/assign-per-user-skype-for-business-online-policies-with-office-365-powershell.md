@@ -12,20 +12,18 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 Office 365 PowerShell 将每个用户的通信设置分配到 Skype for Business Online 策略。
-ms.openlocfilehash: 2252a6df4298bb36a669404aefac3b14eaa23b7f
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e425c3f0bc6253550b1be2081df89e535da811f4
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031037"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072254"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>指定每个用户 Skype 的在线商业策略与 Office 365 PowerShell
 
- **摘要：** 使用 Office 365 PowerShell 将每个用户的通信设置分配到 Skype for Business Online 策略。
-  
 使用 Office 365 PowerShell 是一种将每个用户的通信设置分配到 Skype for Business Online 策略的有效方式。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 使用以下说明设置运行命令（跳过已完成的步骤）：
   
@@ -33,12 +31,13 @@ ms.locfileid: "38031037"
     
 2. 打开 Windows PowerShell 命令提示符，并运行以下命令： 
     
-  ```
-  Import-Module LyncOnlineConnector
+```powershell
+Import-Module LyncOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession
-  ```
+```
+
 出现提示时，请输入你的 Skype for Business Online 管理员帐户名称和密码。
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>更新用户帐户的外部通信设置
@@ -54,13 +53,13 @@ Import-PSSession $sfbSession
   
 那么，如何确定要分配 Alex 的外部访问策略？ 以下命令返回在 EnableFederationAccess 设置为 True 且 EnablePublicCloudAccess 设置为 False 时的所有外部访问策略：
   
-```
+```powershell
 Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
 该命令的作用是返回满足两个条件的所有策略： EnableFederationAccess 属性设置为 True，EnablePublicCloudAccess 策略设置为 False。 反过来，该命令将返回一个符合我们的条件（FederationOnly）的策略。 如以下示例所示：
   
-```
+```powershell
 Identity                          : Tag:FederationOnly
 Description                       :
 EnableFederationAccess            : True
@@ -75,7 +74,7 @@ EnableOutsideAccess               : True
   
 现在，您知道要向 Alex 分配的策略，我们可以使用[set-csexternalaccesspolicy](https://go.microsoft.com/fwlink/?LinkId=523974) cmdlet 分配该策略。 如以下示例所示：
   
-```
+```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
@@ -83,7 +82,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly
   
 在考虑策略和策略分配时，您并不局限于一次性使用用户帐户。 例如，假设您需要获得可与联盟伙伴和 Windows Live 用户通信的所有用户的列表。 我们已经知道，这些用户已分配有外部用户访问策略 FederationAndPICDefault。 由于我们知道，您可以通过运行一个简单的命令来显示所有这些用户的列表。 命令如下：
   
-```
+```powershell
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
@@ -91,7 +90,7 @@ Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | 
   
 若要将所有用户帐户配置为使用相同的策略，请使用以下命令：
   
-```
+```powershell
 Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 ```
 
@@ -99,7 +98,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
   
 作为另一个示例，假设您之前已将 Alex 分配给 FederationAndPICDefault 策略，现在您已改变了想法，并希望由全局外部访问策略管理他。 您不能将全局策略明确分配给任何人。 仅在分配了其他每个用户的策略时才使用它。 因此，如果我们想要由全局策略管理 Alex，则需要*取消*分配之前分配给他的任何每用户策略。 下面是一个示例命令：
   
-```
+```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
@@ -108,8 +107,6 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 若要使用 Windows PowerShell 禁用用户帐户，请使用 Azure Active Directory cmdlet 删除 Alex 的 Skype for Business Online 许可证。 有关详细信息，请参阅[禁用对具有 Office 365 PowerShell 的服务的访问](assign-licenses-to-user-accounts-with-office-365-powershell.md)。
   
 ## <a name="see-also"></a>另请参阅
-
-#### 
 
 [使用 Office 365 PowerShell 管理 Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
   

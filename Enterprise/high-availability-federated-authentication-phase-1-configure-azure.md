@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。
-ms.openlocfilehash: ca53c4584b21aab03e9383ac4eef1f321c3f4939
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 262a7dcdb2dc48f7890b7ef188b1d8ce506f40dd
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257577"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072134"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -39,11 +39,11 @@ ms.locfileid: "39257577"
   
 |**项**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 V：跨部署虚拟网络配置**
   
@@ -61,25 +61,25 @@ ms.locfileid: "39257577"
   
 |**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务（AD DS）域控制器和目录同步服务器虚拟机（Vm）使用的子网。  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS Vm 使用的子网。  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理虚拟机使用的子网。  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 网关虚拟机使用的子网。  <br/> |
+|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务（AD DS）域控制器和目录同步服务器虚拟机（Vm）使用的子网。  <br/> |
+|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |AD FS Vm 使用的子网。  <br/> |
+|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理虚拟机使用的子网。  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Azure 网关虚拟机使用的子网。  <br/> |
    
  **表 S：虚拟网络中的子网**
   
 下一步，针对分配给虚拟机和负载平衡器实例的静态 IP 地址填写表 I。
   
-|**项**|**用途**|**子网的 IP 地址**|**值**|
+|**项目**|**用途**|**子网的 IP 地址**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |目录同步服务器的静态 IP 地址  <br/> |在表 S 的项目1中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |AD FS 服务器的内部负载平衡器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |第一个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |第二个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |第一个 web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |第二个 web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |目录同步服务器的静态 IP 地址  <br/> |在表 S 的项目1中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |AD FS 服务器的内部负载平衡器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |第一个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |第二个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |第一个 web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |第二个 web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 I：虚拟网络中的静态 IP 地址**
   
@@ -87,8 +87,8 @@ ms.locfileid: "39257577"
   
 |**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 D：本地 DNS 服务器**
   
@@ -98,9 +98,9 @@ ms.locfileid: "39257577"
   
 |**项**|**本地网络地址空间**|
 |:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 L：本地网络的地址前缀**
   
@@ -147,10 +147,10 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
   
 |**项目**|**资源组名称**|**用途**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |域控制器  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS 服务器  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理服务器  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |基础结构元素  <br/> |
+|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |域控制器  <br/> |
+|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |AD FS 服务器  <br/> |
+|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理服务器  <br/> |
+|4.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |基础结构元素  <br/> |
    
  **表 R：资源组**
   
@@ -273,9 +273,9 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 |**项目**|**用途**|**可用性集的名称**|
 |:-----|:-----|:-----|
-|1.  <br/> |域控制器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |AD FS 服务器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Web 应用程序代理服务器  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |域控制器  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |AD FS 服务器  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Web 应用程序代理服务器  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 A：可用性集**
   

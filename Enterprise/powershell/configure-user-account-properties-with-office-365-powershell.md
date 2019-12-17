@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 配置用户帐户的属性
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/07/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,17 +15,15 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 摘要：使用 Office 365 PowerShell 配置 Office 365 租户中单个或多个用户帐户的属性。
-ms.openlocfilehash: 67ce7d3c57f286f0b2365aa2503fdf1c8bc13429
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: b9cd529cd5881d522285ff43a60e954bc9ebd193
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257653"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072234"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>使用 Office 365 PowerShell 配置用户帐户的属性
 
- **摘要：** 使用 Office 365 PowerShell 配置 Office 365 租户中单个或多个用户帐户的属性。
-  
 虽然您可以使用 Microsoft 365 管理中心来配置 Office 365 租户的用户帐户的属性，但您也可以使用 Office 365 PowerShell 并执行管理中心无法执行的某些操作。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
@@ -76,16 +74,17 @@ ms.locfileid: "39257653"
 若要显示用户帐户的用户主体名称，请运行以下命令。
   
 ```powershell
-Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
+Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
 此命令指示 Office 365 PowerShell：
   
 - 获取用户帐户（ **AzureADUser** ）上的所有信息，并将其发送到下一个命令（ **|** ）。
     
-- 按字母顺序（**排序对象 UserPrincipalName** ）对用户主体名称列表进行排序，并将其发送到下**|** 一个命令（）。
+- 按字母顺序（**排序 UserPrincipalName** ）对用户主体名称列表进行排序，并将其发送到**|** 下一个命令（）。
     
-- 仅显示每个帐户（**选择-对象 UserPrincipalName** ）的用户主体名称属性。
+- 仅显示每个帐户的 "用户主体名称" 属性（**选择 "UserPrincipalName** "）。
+
 - 一次显示一屏（**更多**）。
     
 此命令将列出你的所有帐户。 如果要根据其显示名称（名和姓）显示帐户的用户主体名称，请填写下面的 **$userName**变量（删除\<和 > 字符），然后运行以下命令：
@@ -129,7 +128,7 @@ Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 若要更改特定用户帐户集的属性，您可以使用**AzureADUser**、 **Where**和**AzureADUser** cmdlet 的组合。 下面的示例将会计部门的所有用户的使用地点更改为法国：
   
 ```powershell
-Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
 ```
 
 此命令指示 Office 365 PowerShell：
@@ -142,17 +141,17 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-若要使用适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块配置用户帐户的属性，请使用 Get-msoluser cmdlet 并指定要设置或更改的属性。 
+若要使用适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块配置用户帐户的属性，请使用**get-msoluser** cmdlet 并指定要设置或更改的属性。 
 
 首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
 >[!Note]
->PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
 >
 
 ### <a name="change-properties-for-a-specific-user-account"></a>更改特定用户帐户的属性
 
-若要配置特定用户帐户的属性，请使用[get-msoluser](https://msdn.microsoft.com/library/azure/dn194136.aspx) cmdlet 并指定要设置或更改的属性。 
+若要配置特定用户帐户的属性，请使用[get-msoluser](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)) cmdlet 并指定要设置或更改的属性。 
 
 您可以使用 **-UserPrincipalName**参数标识帐户，并使用其他参数设置或更改特定属性。 下面是最常见的参数的列表。
   
@@ -190,21 +189,21 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
     
     这是 ISO 3166-1 alpha-2 （A2）两个字母的国家/地区代码。
     
-有关其他参数，请参阅[get-msoluser](https://msdn.microsoft.com/library/azure/dn194136.aspx) 。
+有关其他参数，请参阅[get-msoluser](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)) 。
 
 若要查看所有用户的用户主体名称，请运行以下命令。
   
 ```powershell
-Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
+Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
 此命令指示 Office 365 PowerShell：
   
 - 获取用户帐户（ **get-msoluser** ）上的所有信息，并将其发送到下一个命令（ **|** ）。
     
-- 按字母顺序（**排序对象 UserPrincipalName** ）对用户主体名称列表进行排序，并将其发送到下**|** 一个命令（）。
+- 按字母顺序（**排序 UserPrincipalName** ）对用户主体名称列表进行排序，并将其发送到**|** 下一个命令（）。
     
-- 仅显示每个帐户（**选择-对象 UserPrincipalName** ）的用户主体名称属性。
+- 仅显示每个帐户的 "用户主体名称" 属性（**选择 "UserPrincipalName** "）。
     
 - 一次显示一屏（**更多**）。
     
@@ -246,24 +245,24 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>更改特定用户帐户集的属性
 
-若要更改一组特定用户帐户的属性，您可以使用**get-msoluser**、 **Where-Object**和**get-msoluser** cmdlet 的组合。 下面的示例将会计部门的所有用户的使用地点更改为法国：
+若要更改特定用户帐户集的属性，您可以使用**get-msoluser**、 **Where**和**get-msoluser** cmdlet 的组合。 下面的示例将会计部门的所有用户的使用地点更改为法国：
   
 ```powershell
-Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 
 此命令指示 Office 365 PowerShell：
   
 - 获取用户帐户（ **get-msoluser** ）上的所有信息，并将其发送到下一个命令（ **|** ）。
     
-- 查找其 "部门" 属性设置为 "记帐" 的所有用户帐户（**其中-对象 {$ _）。部门-eq "记帐"}** ）并将生成的信息发送到下一个命令**|** （）。
+- 查找其 "部门" 属性设置为 "记帐" 的所有用户帐户（**其中 {$ _）。部门-eq "记帐"}** ）并将生成的信息发送到下一个命令**|** （）。
     
 - 将用户位置设置为 "法国 **" （get-msoluser-UsageLocation "FR"** ）。
     
 
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
   

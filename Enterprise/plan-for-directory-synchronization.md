@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 介绍与 Office 365、Active Directory 域服务清理和 Azure Active Directory Connect 工具的目录同步。
-ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 7dfb5a34e7a5a1bf1368a059859ef32049a15473
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747082"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072534"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 的混合标识和目录同步
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 根据业务需求和技术要求，混合身份模型和目录同步对于采用 Office 365 的企业客户来说是最常见的选择。 目录同步允许您在 Active Directory 域服务（AD DS）中管理标识，对用户帐户、组和联系人的所有更新将同步到 Office 365 订阅的 Azure Active Directory （Azure AD）租户。
 
@@ -63,7 +63,7 @@ ms.locfileid: "38747082"
 
 使用密码哈希同步（PHS），您可以将 AD DS 用户帐户与 Office 365 同步并在本地管理您的用户。 用户密码的哈希将从你的 AD DS 同步到 Azure AD，以便用户在本地和在云中具有相同的密码。 这是在 Azure AD 中为 AD DS 标识启用身份验证的最简单方法。 
 
-![](./media/plan-for-directory-synchronization/phs-authentication.png)
+![密码哈希同步（PHS）](./media/plan-for-directory-synchronization/phs-authentication.png)
 
 更改密码或在本地重置密码时，新的密码哈希将同步到 Azure AD，以便您的用户始终可以对云资源和本地资源使用相同的密码。 用户密码永远不会发送到 Azure AD 或以明文形式存储在 Azure AD 中。 Azure AD 的一些高级功能（如标识保护）需要 PHS，而不管选择了哪种身份验证方法。
   
@@ -73,7 +73,7 @@ ms.locfileid: "38747082"
 
 传递身份验证（PTA）使用在一个或多个本地服务器上运行的软件代理为 Azure AD 身份验证服务提供简单的密码验证，以通过 AD DS 直接验证用户。 通过传递身份验证（PTA），您可以将 AD DS 用户帐户与 Office 365 同步并在本地管理用户。 
 
-![](./media/plan-for-directory-synchronization/pta-authentication.png)
+![直通身份验证 (PTA)](./media/plan-for-directory-synchronization/pta-authentication.png)
 
 PTA 允许您的用户使用其内部部署帐户和密码登录到本地和 Office 365 资源和应用程序。 此配置将直接对本地 AD DS 验证用户密码，而无需在 Azure AD 中存储密码哈希。 
 

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 了解如何设置 Office 365 和本地 Active Directory 之间的目录同步。
-ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 505dde1a371d269f157ec076b75ca1bc5962c9da
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814590"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072144"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>设置 Office 365 目录同步
 
@@ -35,7 +35,7 @@ Office 365 使用 Azure Active Directory （Azure AD）租户存储和管理用�
 
 如果你具有本地 Active Directory 域服务（AD DS），则可以将 AD DS 用户帐户、组和联系人与 Office 365 订阅的 Azure AD 租户同步。 这是 Office 365 的混合标识。 以下是它的组件。
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Office 365 的目录同步组件](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD Connect 在本地服务器上运行，并将 AD DS 与 Azure AD 租户同步。 除了目录同步，您还可以指定以下身份验证选项：
 

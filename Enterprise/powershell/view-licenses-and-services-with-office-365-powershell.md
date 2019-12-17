@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 查看许可证和服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 说明如何使用 Office 365 PowerShell 查看有关 Office 365 组织中可用的许可计划、服务和许可证的信息。
-ms.openlocfilehash: b8a0bb1845f3c0db5aa47cea0c2f6e5e580c804f
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: d212a79be127dabae52993cb8cfd21fb848b3aad
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655844"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072154"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看许可证和服务
 
@@ -46,7 +46,7 @@ ms.locfileid: "39655844"
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
-结果包含以下信息：
+结果中包含：
   
 - **SkuPartNumber：** 显示组织的可用许可计划。 例如， `ENTERPRISEPACK`是 Office 365 企业版 E3 的许可证计划名称。
     
@@ -115,7 +115,7 @@ Get-MsolAccountSku
 
 结果包含以下信息：
   
-- **AccountSkuId：** 使用语法`<CompanyName>:<LicensingPlan>`显示您的组织可用的许可计划。  _<CompanyName>_ 是您在 Office 365 中注册时提供的值，并且对于您的组织是唯一的。 对于_<LicensingPlan>_ 所有人而言，值都是相同的。 例如，在 "值`litwareinc:ENTERPRISEPACK`"、"公司名称`litwareinc`" 和 "许可计划名称`ENTERPRISEPACK`" 中，是 Office 365 企业版 E3 的系统名称。
+- **AccountSkuId：** 使用语法`<CompanyName>:<LicensingPlan>`显示您的组织可用的许可计划。  "公司名称>" 是您在 Office 365 中注册时提供的值，并且对于您的组织是唯一的。 _ \<_ LicensingPlan>值对所有用户都是相同的。 _ \<_ 例如，在 "值`litwareinc:ENTERPRISEPACK`"、"公司名称`litwareinc`" 和 "许可计划名称`ENTERPRISEPACK`" 中，是 Office 365 企业版 E3 的系统名称。
     
 - **ActiveUnits：** 您为特定许可计划购买的许可证数量。
     
@@ -139,7 +139,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure 权限管理 (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `SHAREPOINTWAC` <br/> |办公室  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 计划 2  <br/> |
    
@@ -157,14 +157,9 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-
-## <a name="new-to-office-365"></a>刚开始接触 Office 365？
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
   

@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Office 365 中管理用户标识。
-ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 0cc40323d978fe9ab13e3326dac183143a014406
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745665"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40071874"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 标识模型和 Azure Active Directory
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 Office 365 使用 Azure Active Directory （Azure AD），这是 Office 365 订阅附带的基于云的用户标识和身份验证服务，用于管理 Office 365 的标识和身份验证。 正确配置标识基础结构是管理组织的 Office 365 用户访问和权限的关键。
 
@@ -59,7 +59,7 @@ Office 365 使用 Azure Active Directory （Azure AD），这是 Office 365 订�
 
 下面是仅限云身份的基本组件。
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![仅限云标识的基本组件](./media/about-office-365-identity/cloud-only-identity.png)
 
 内部部署和远程（联机）用户使用其 Azure AD 用户帐户和密码来访问 Office 365 云服务。 Azure AD 根据其存储用户帐户和密码对用户凭据进行身份验证。
 
@@ -76,7 +76,7 @@ Azure AD Connect 提供了持续的帐户同步。 它在本地服务器上运�
 
 下面是混合标识的组件。
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![混合标识的组件](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD 租户具有 AD DS 帐户的副本。 在此配置中，本地用户和远程用户都在访问 Microsoft 365 云服务，并针对 Azure AD 进行身份验证。
 

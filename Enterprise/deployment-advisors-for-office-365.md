@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 通过部署顾问加快您规划和配置 Office 365 或 Microsoft 365。
-ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076146"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072364"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 或 Microsoft 365 服务的部署顾问
 
@@ -37,13 +37,13 @@ Office 365 或 Microsoft 365 的部署顾问为您的组织设置 Office 365 提
 
 每个顾问都是一个向导，可指导您选择要部署的功能和选项。 在某些情况下，您可以使用向导配置某些内容或激活设置。 下面是一个示例。
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
+![部署顾问示例](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 Advisor 将引导您完成针对您的需求进行自定义的决策。 同时，你将获得说明、脚本和其他资源，以更改配置。
 
 最后，你将获得指向视频和参考文章的链接。 下面是一个示例。
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
+![指向视频和参考文章的链接的示例](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
 您可以随时使用这些顾问来了解有关 Office 365 功能和选项的详细信息。 这包括在规划过程中或已设置好服务之后。
   

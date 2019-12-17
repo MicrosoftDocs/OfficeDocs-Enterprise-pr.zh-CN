@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的暂存迁移。
-ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 598824933af54d79030465c825186f89b193666c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747528"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072304"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>使用 PowerShell 执行暂存迁移以迁移到 Office 365
 
@@ -57,7 +57,7 @@ ms.locfileid: "38747528"
   
 - 使用公司网络外部的 Outlook 连接到您的内部部署 Exchange 邮箱。
     
-- 使用 [Microsoft Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) 测试连接设置。使用 Outlook 无处不在 (RPC over HTTP) 或 Outlook 自动发现测试。
+- 使用[Microsoft 远程连接分析器](https://https://testconnectivity.microsoft.com/)测试您的连接设置。 使用 Outlook 无处不在 (RPC over HTTP) 或 Outlook 自动发现测试。
     
 - 在 Exchange Online PowerShell 中运行以下命令：
     
@@ -199,12 +199,6 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 由于您尚未完成迁移，因此目前无法将所有用户定向到 Office 365 接收其电子邮件。那么，可以为这些拥有两个邮箱的用户做些什么呢？您可以做的是更改您已迁移到邮件启用的用户的内部部署邮箱。当您从一个邮箱更改为邮件启用的用户时，可以将该用户定向到其电子邮件的 Office 365，而非内部部署邮箱。 
   
 将内部部署邮箱转换为启用邮件的用户的另一个重要原因是通过将代理地址复制到启用邮件的用户，来保留 Office 365 邮箱中的代理地址。这使您可以使用 Active Directory 管理来自内部部署组织的基于云的用户。此外，如果您决定在所有邮箱都迁移到 Office 365 之后停止使用内部部署 Exchange Server 组织，则复制到启用邮件的用户的代理地址仍会保留在内部部署 Active Directory 中。
-  
-若要获取详细信息并下载为将邮箱转换为已启用邮件的用户而可以运行的脚本，请参阅以下内容：
-  
-- [将 Exchange 2007 邮箱转换为启用邮件的用户](https://go.microsoft.com/fwlink/p/?LinkId=233648)
-    
-- [将 Exchange 2003 邮箱转换为启用邮件的用户](https://go.microsoft.com/fwlink/p/?LinkId=233647)
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>步骤 6：删除暂存迁移批处理
 <a name="BK_Endpoint"> </a>

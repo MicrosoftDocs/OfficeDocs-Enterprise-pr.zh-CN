@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何在 Office 365 订阅使用仅限云的标识时创建用户和组。
-ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 5991ec838321187b58f913e1707efb2ede9912fb
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813410"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072274"
 ---
 # <a name="office-365-cloud-only-identities"></a>Office 365 仅限云身份标识
 
@@ -37,7 +37,7 @@ ms.locfileid: "39813410"
 
 对于仅限云的标识，所有用户、组和联系人都存储在 Office 365 订阅的 Azure Active Directory （Azure AD）租户中。 下面是仅限云身份的基本组件。
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![仅限云标识的基本组件](./media/about-office-365-identity/cloud-only-identity.png)
 
 可以通过多种方式对组织中的用户及其用户帐户进行分类。 例如，一些是员工，且具有永久状态。 有些是具有临时状态的供应商、承包商或合作伙伴。 有些外部用户没有用户帐户，但仍必须被授予对特定服务和资源的访问权限，以支持交互和协作。 例如：
 

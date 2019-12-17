@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些企业网络限制对通用 internet 位置的访问，或者包括大量 backhaul 或网络流量的处理。 为了确保这些网络上的计算机可以访问 Office 365，网络和代理管理员需要管理组成 Office 365 终结点列表的 Fqdn、Url 和 IP 地址的列表。 需要将它们添加到直接路由、代理旁路、和/或防火墙规则和 PAC 文件中，以确保网络请求能够到达 Office 365。
-ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030606"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072484"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -75,7 +75,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 |**ClientRequestId** <br/> |这是必需的，它是传递给 web 服务的 GUID，表示进行呼叫的客户端计算机。 <br/> |
 |**实例** <br/> |默认为 "全球" 的 Office 365 服务实例。 也传递到 web 服务。 <br/> |
 |**TenantName** <br/> |Office 365 租户名称。 传递到 web 服务，并在某些 Office 365 Url 中用作可替换参数。 <br/> |
-|**Type** <br/> |要生成的代理 PAC 文件的类型。 <br/> |
+|**类型** <br/> |要生成的代理 PAC 文件的类型。 <br/> |
 
 以下是使用其他参数调用 PowerShell 脚本的另一个示例：
 
@@ -140,7 +140,7 @@ Office 365 IP 地址和 URL Web 服务提供了可在 Outlook 中订阅的 RSS �
   
 若要了解有关详细信息，请参阅与 Office 365 关联的 IP。
   
-1. 使用[CIDR 计算器](https://jodies.de/ipcalc)检查 IP 地址是否包含在更大的已发布区域中。
+1. 使用[CIDR 计算器](https://www.ipaddressguide.com/cidr)检查 IP 地址是否包含在更大的已发布区域中。
 2. 查看合作伙伴是否拥有[whois 查询](https://dnsquery.org/)的 IP。 如果是 Microsoft 所拥有的，则它可能是内部合作伙伴。
 3. 检查证书在浏览器中使用*HTTPS://\<IP_ADDRESS\> *连接到 IP 地址，检查证书上列出的域以了解与 IP 地址关联的域。 如果它是 Microsoft 拥有的 IP 地址，而不是 Office 365 IP 地址列表，则该 IP 地址可能与 Microsoft CDN （如*MSOCDN.NET*或另一个 microsoft 域）相关联，而不会发布 IP 信息。 如果您在证书中找到的域是我们声明列出 IP 地址的域，请告诉我们。
 

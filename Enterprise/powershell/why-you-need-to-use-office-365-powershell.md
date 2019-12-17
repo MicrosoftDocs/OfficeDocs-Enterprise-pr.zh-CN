@@ -3,7 +3,7 @@ title: 为什么您需要使用 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/11/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,30 +12,30 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 摘要：了解为何必须使用 Office 365 PowerShell 管理 Office 365，这在某些情况下可以变得更高效，在其他情况下则可能是必备要求。
-ms.openlocfilehash: 3e2f0d4ee1c86e26ccf728412d419ae6ba3018e7
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: ecf386e39c9610f0444789cdc11441be545ea814
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655765"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072424"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>为什么您需要使用 Office 365 PowerShell
 
-使用 Microsoft 365 管理中心，不仅可以管理 Office 365 用户帐户和许可证，还可以管理 Office 365 服务器产品： Exchange、Skype for Business Online 和 SharePoint Online。 但是，也可以使用 Office 365 PowerShell 命令来管理这些元素，充分利用针对速度、自动化和其他功能的命令行和脚本语言环境。
+使用 Microsoft 365 管理中心，不仅可以管理 Office 365 用户帐户和许可证，还可以管理 Office 365 服务，例如 Exchange Online、团队和 SharePoint Online。 但是，也可以使用 Office 365 PowerShell 命令来管理这些元素，充分利用针对速度、自动化和其他功能的命令行和脚本语言环境。
   
-在本文中，我们将向您展示使用 Office 365 PowerShell 管理 Office 365 的各种方式。
+在本文中，我们将向你展示可使用 Office 365 PowerShell 管理 Office 365 的方法：
   
-- Office 365 PowerShell 可能会显示你无法通过 Microsoft 365 管理中心看到的其他信息
+- 显示使用 Microsoft 365 管理中心无法看到的其他信息
     
-- Office 365 拥有仅可使用 Office 365 PowerShell 配置的功能
+- 仅在 Office 365 PowerShell 中配置功能和设置
     
-- Office 365 PowerShell 善于执行批量操作
+- 执行批量操作
     
-- Office 365 PowerShell 善于筛选数据
+- 筛选数据
     
-- Office 365 PowerShell 方便打印或保存数据
+- 打印或保存数据
     
-- Office 365 PowerShell 支持跨服务器产品管理
+- 跨服务管理
     
 开始前，需要知道 Office 365 PowerShell 是一组 Windows PowerShell 模块，即可用于 Windows 服务和平台的命令行环境。此环境创建了可使用其他模块扩展的命令行界面语言，并提供了执行简单或复杂命令或脚本的方法。例如，安装 Office 365 PowerShell 模块并连接到 Office 365 订阅后，便可以运行下面的命令来列出 Microsoft Exchange Online 的所有用户邮箱：
   
@@ -159,7 +159,6 @@ $x = Get-MsolUser
 $x | Select DisplayName, UsageLocation
 ```
 
-
 此组 Office 365 PowerShell 命令的解释如下：
 - 获取当前 Office 365 订阅中的所有用户，并将信息存储在 $x 变量中 (**$x = Get-MsolUser**)。
 - 显示变量 $x 的内容，但只包含每个用户的用户名和地理位置 (**$x | Select DisplayName, UsageLocation**)。
@@ -231,7 +230,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> 此命令要求必须安装[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。 
+> 此命令要求您安装[SharePoint Online PowerShell 模块](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。 
   
 > [!TIP]
 >  此 Office 365 PowerShell 命令的解释如下：在当前 Office 365 订阅中获取所有 SharePoint 网站 (**Get-SPOSite**)，并对每个网站从可以访问它的用户列表中删除 Ken Meyer (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**)。
@@ -427,7 +426,7 @@ Molly Dempsey           False        True               False
 
 [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理用户帐户和许可证](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [使用 Windows PowerShell 在 Office 365 中创建报告](use-windows-powershell-to-create-reports-in-office-365.md)
 
