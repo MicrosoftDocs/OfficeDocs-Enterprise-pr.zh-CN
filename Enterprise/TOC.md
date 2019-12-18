@@ -194,6 +194,7 @@
 ##### [未经身份验证的共享](best-practices-anonymous-sharing.md)
 ##### [限制意外公开](sharing-limit-accidental-exposure.md)
 ##### [保护来宾共享环境](create-a-secure-guest-sharing-environment.md)
+#### [创建 B2B Extranet](b2b-extranet.md)
 
 ## 设备
 ### [在 MDM 和 Intune 之间进行选择](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
