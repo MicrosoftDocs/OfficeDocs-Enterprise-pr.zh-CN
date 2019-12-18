@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 了解如何将 OneDrive 站点移到其他地理位置。
-ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 9760d61a8a1db76e3abf061552e0a99d85b9092a
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626162"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072554"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 
@@ -47,7 +47,7 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 
 - 一次最多可以安排 4,000 次移动。
 - 移动开始后，可以安排更多移动操作，在在队列及任何给定时间内最多有 4,000 个待处理移动。
-- 建议每月不要安排超过 4,000 次移动。
+- 可移动的最大 OneDrive 大小为 1 太字节 (1 TB)。
 
 ## <a name="moving-a-onedrive-site"></a>移动 OneDrive 网站
 

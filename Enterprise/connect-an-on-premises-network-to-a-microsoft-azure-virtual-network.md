@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-ms.openlocfilehash: 34d7b7310fd0828732e288f090314b8689953b50
-ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
+ms.openlocfilehash: 2d87c269565c3281c2f047187fd48578153088be
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254591"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072294"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
@@ -142,11 +142,11 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
   
 |**项**|**Configuration 元素**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |虚拟网络名称  <br/> |要分配给 Azure 虚拟网络的名称（例如，DirSyncNet）。  <br/> |![](./media/Common-Images/TableLine.png) |
-|2.  <br/> |虚拟网络位置  <br/> |将包含虚拟网络的 Azure 数据中心（如美国西部）。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公用 IPv4 地址。与 IT 部门协作，以确定该地址。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |虚拟网络地址空间  <br/> |虚拟网络地址空间（在一组专用地址前缀中定义）。与 IT 部门协作，以确定该地址空间。地址空间应为无类别域际路由选择 (CIDR) 格式，也称为网络前缀格式。例如，10.24.64.0/20。  <br/> |![](./media/Common-Images/TableLine.png) <br/> |
-|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值，然后将其存储在安全的位置。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。<br/> |![](./media/Common-Images/TableLine.png) <br/> |
+|1.  <br/> |虚拟网络名称  <br/> |要分配给 Azure 虚拟网络的名称（例如，DirSyncNet）。  <br/> |![线条](./media/Common-Images/TableLine.png) |
+|2.  <br/> |虚拟网络位置  <br/> |将包含虚拟网络的 Azure 数据中心（如美国西部）。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公用 IPv4 地址。与 IT 部门协作，以确定该地址。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |虚拟网络地址空间  <br/> |虚拟网络地址空间（在一组专用地址前缀中定义）。与 IT 部门协作，以确定该地址空间。地址空间应为无类别域际路由选择 (CIDR) 格式，也称为网络前缀格式。例如，10.24.64.0/20。  <br/> |![线条](./media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值，然后将其存储在安全的位置。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。<br/> |![线条](./media/Common-Images/TableLine.png) <br/> |
    
 此解决方案的子网请填写表 S。
   
@@ -160,8 +160,8 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
   
 |**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure 网关使用的子网。  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |Azure 网关使用的子网。  <br/> |
+|2.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
    
 对于您想要让虚拟网络中的虚拟机使用的本地 DNS 服务器，请填写表 D。为 DNS 服务器提供友好名称和单一 IP 地址。此友好名称不需要与 DNS 服务器的主机名或计算机名相匹配。请注意已列出两个空白条目，但您可以添加更多。与 IT 部门协作，以确定该列表。
   
@@ -169,8 +169,8 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
   
 |**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
    
 要通过站点间 VPN 连接将数据包从 Azure 虚拟网络传输到组织网络，则必须使用本地网络配置虚拟网络。此本地网络包含组织的本地网络上的所有位置的地址空间列表（使用 CIDR 格式），虚拟网络中的虚拟机必须能够访问这些本地网络。这可能是本地网络上的所有位置或部分位置。用于定义本地网络的地址空间列表必须是唯一的，并且不得与用于此虚拟网络或其他跨界虚拟网络的地址空间重叠。
   
@@ -180,9 +180,9 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
   
 |**项**|**本地网络地址空间**|
 |:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>部署路线图
 <a name="DeploymentRoadmap"> </a>

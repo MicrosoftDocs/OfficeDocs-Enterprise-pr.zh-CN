@@ -3,7 +3,7 @@ title: 连接到 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行管理中心任务。
-ms.openlocfilehash: 3e31bfb68614ceb7c10f4b45e141928169121006
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 42f092acb3074a449986e366fc6dfc0088ef9eef
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257401"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072264"
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
@@ -28,19 +28,14 @@ ms.locfileid: "39257401"
 
 可以使用两种版本的 PowerShell 模块连接至 Office 365 和管理员用户帐户、组和许可证：
 
-- Azure Active Directory PowerShell Graph（cmdlets 包括其名称中的 **AzureAD**） 
+- Azure Active Directory PowerShell Graph（cmdlets 包括其名称中的 **AzureAD**）
 - 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块（cmdlets 包括其名称中的 **MSol**） 
 
 自本文发布之日起，对于用户、组和许可证管理，Azure Active Directory PowerShell Graph 模块不能完全替代用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的 cmdlets 中的功能。 在大多数情况下，需要使用两种版本。 可以在同一计算机上安全地安装两种版本。
 
-> [!TIP]
-> **刚开始接触 PowerShell？** 请观看领英学习提供的 [PowerShell 概述](https://support.office.com/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)视频。 
-  
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
-- 估计完成时间：5 分钟
-    
-- 可以使用下列 Windows 版本：
+可以使用下列 Windows 版本：
     
   - Windows 10、Windows 8.1、Windows 8 或 Windows 7 Service Pack 1 (SP1) 
     
@@ -52,7 +47,7 @@ ms.locfileid: "39257401"
     > [!NOTE]
     >请使用 64 位版 Windows。2014 年 10 月，用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块已不再支持 32 位版。
     
--  这些步骤适合于属于 Office 365 管理员角色成员的用户。 有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
+这些步骤适合于属于 Office 365 管理员角色成员的用户。 有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>连接到 Azure Active Directory PowerShell Graph 模块
@@ -81,7 +76,7 @@ ms.locfileid: "39257401"
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2：连接到 Office 365 订阅的 Azure AD
 
-若要使用帐户名称和密码或者*多重身份验证 (MFA)* 连接到 Office 365 订阅的 Azure AD，请在 Windows PowerShell 命令提示符中运行这些命令之一（不必进行提升）。
+若要使用帐户名称和密码或者多重身份验证 (MFA) 连接到 Office 365 订阅的 Azure AD，请在 Windows PowerShell 命令提示符中运行这些命令之一（不必进行提升）。
 
 |||
 |:-------|:-----|
@@ -96,8 +91,7 @@ ms.locfileid: "39257401"
 
 如果使用的是 MFA，请按照其他对话框中的说明提供更多身份验证信息，例如验证码。
 
-
-连接后，可以对 [Azure Active Directory PowerShell Graph 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用这些新的 cmdlet。
+连接后，可对 [Azure Active Directory PowerShell Graph 模块](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)使用这些 cmdlet。
   
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>与用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块连接
@@ -123,7 +117,7 @@ ms.locfileid: "39257401"
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>步骤 2：连接到 Office 365 订阅的 Azure AD
 
-若要使用帐户名称和密码或者*多重身份验证 (MFA)* 连接到 Office 365 订阅的 Azure AD，请在 Windows PowerShell 命令提示符中运行这些命令之一（不必进行提升）。
+若要使用帐户名称和密码或者多重身份验证 (MFA) 连接到 Office 365 订阅的 Azure AD，请在 Windows PowerShell 命令提示符中运行这些命令之一（不必进行提升）。
 
 |||
 |:-------|:-----|
@@ -171,6 +165,3 @@ ms.locfileid: "39257401"
 - [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
 - [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
 - [在单个 Windows PowerShell 窗口中连接所有 Office 365 服务](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-- [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-- [Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
-

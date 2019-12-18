@@ -10,20 +10,33 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何在多地理位置环境中使用指定的首选数据位置创建 Office 365 组。
-ms.openlocfilehash: fb512478d69502eafd633b552d1db2acbec43ef4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 96870923c00cebc247609b67378fd39011077d45
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069998"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072374"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>使用特定 PDL 创建 Office 365 组
 
-当多地理位置环境中的用户创建 Office 365 组时，组首选数据位置将自动设置为用户的该位置。 如果需要使用特定 PDL 创建组，你可以使用 Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet 执行该操作。 执行此操作时，将在指定 PDL 中设置组邮箱以及与该组相关联的 SharePoint 站点。
+当多地理位置环境中的用户创建 Office 365 组时，组首选数据位置将自动设置为用户的该位置。 全局管理员、SharePoint 管理员和 Exchange 管理员可在其所选的任何区域中创建组。 
 
-你必须是全局管理员或 SharePoint Online 或 Exchange Online 管理员才能执行此操作。
+如需使用特定 PDL 创建组，可使用 SharePoint 管理中心或 Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet 执行该操作。 执行此操作时，将在指定 PDL 中设置组邮箱以及与该组相关联的 SharePoint 站点。
 
-若要使用指定的 PDL 创建 Office 365 组，请连接到 Exchange Online PowerShell，并传递包含地理位置代码的 *-MailBoxRegion* 参数。
+要使用指定的 PDL 创建 Office 365 组，请转到 SharePoint 管理中心内要创建组站点的地理位置。
+
+例如：
+
+如果想要在澳大利亚位置创建一个组站点，可转到 https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
+
+1. 选择“**+创建**”。
+2. 按照流程创建组站点。
+
+将在与你发起站点创建请求的 SharePoint 管理中心相对应的地理位置中预配组站点。 
+
+使用 Exchange PowerShell 
+
+连接到 Exchange Online PowerShell，并传递包含地理位置代码的 *-MailBoxRegion* 参数。
 
 例如： 
 
