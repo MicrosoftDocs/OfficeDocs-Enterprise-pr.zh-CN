@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 了解如何在 SharePoint 网站中与来宾进行协作。
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919255"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261355"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -42,7 +42,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 3. 在 "**概述**" 窗格中，单击 "**组织关系**"。
 4. 在 "**组织关系**" 窗格中，单击 "**设置**"。
 5. 确保**来宾邀请者角色中的管理员和用户可以邀请**和**成员**都可以邀请都设置为 **"是"**。
-6. 如果进行了更改，请单击 "**保存**"。
+6. 如果进行了任何更改，请单击 **“保存”**。
 
 请注意 "**协作限制**" 部分中的设置。 确保不会阻止您要与之进行协作的来宾域。
 
@@ -75,9 +75,9 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
-4. 如果进行了更改，请单击 "**保存**"。
+4. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="create-a-site"></a>创建网站
 
@@ -103,11 +103,11 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 ![SharePoint 网站外部共享设置的屏幕截图](media/sharepoint-site-external-sharing-settings.png)
 
 设置网站级共享设置
-1. 在 SharePoint 管理中心中，在左侧导航栏中，展开 "**网站**"，然后单击 "**活动网站**"。
+1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“站点”**，然后单击 **“活动站点”**。
 2. 选择您刚刚创建的网站。
-3. 在功能区中，单击 "**共享**"。
+3. 在功能区中，单击 **“共享”**。
 4. 确保将 "共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
-5. 如果进行了更改，请单击 "**保存**"。
+5. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="invite-users"></a>邀请用户
 
@@ -121,7 +121,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 无法从网站添加来宾用户。 您需要在 web 上使用 Outlook 添加它们。
 
-将来宾邀请到网站
+将来宾邀请到组
 1. 在 web 上的 Outlook 中的 "**组**" 下，单击要在其中添加成员的组。
 2. 打开组联系人卡片，然后在 "**更多选项**（...）" 下，单击 "**添加成员**"。
 3. 键入要邀请的来宾的电子邮件地址，然后单击 "**添加**"。
@@ -133,5 +133,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
 
-[创建安全来宾共享环境](create-a-secure-guest-sharing-environment.md)）
+[创建安全的来宾共享环境](create-a-secure-guest-sharing-environment.md)
+
+[使用受管理的来宾创建 B2B extranet](b2b-extranet.md)
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: 了解如何与团队中的来宾进行协作。
-ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886521"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085197"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -42,7 +42,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 3. 在 "**概述**" 窗格中，单击 "**组织关系**"。
 4. 在 "**组织关系**" 窗格中，单击 "**设置**"。
 5. 确保**来宾邀请者角色中的管理员和用户可以邀请**和**成员**都可以邀请都设置为 **"是"**。
-6. 如果进行了更改，请单击 "**保存**"。
+6. 如果进行了任何更改，请单击 **“保存”**。
 
 请注意 "**协作限制**" 部分中的设置。 确保不会阻止您要与之进行协作的来宾域。
 
@@ -95,9 +95,9 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
-4. 如果进行了更改，请单击 "**保存**"。
+4. 如果进行了任何更改，请单击 **“保存”**。
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 组织级别的默认链接设置
@@ -108,7 +108,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 选择当用户共享文件和文件夹时默认选择的链接类型：
 
-- **任何具有链接的人**-如果您希望与未经身份验证的用户共享大量文件和文件夹，请选择此选项。 如果要允许*任何人*链接，但担心意外的共享，请考虑其他选项之一作为默认选项。 仅当您已启用**任何**共享时，此链接类型才可用。
+- **任何具有链接的人**-如果您希望执行大量未经身份验证的文件和文件夹共享，请选择此选项。 如果要允许*任何人*链接，但担心意外的共享，请考虑其他选项之一作为默认选项。 仅当您已启用**任何**共享时，此链接类型才可用。
 - **仅限组织中的人员**-如果您希望大多数文件和文件夹共享与组织内部的人员共享，请选择此选项。
 - **特定人员**-如果您希望对来宾执行大量文件和文件夹共享，请考虑此选项。 此类型的链接可与来宾配合使用，并要求用户进行身份验证。
  
@@ -119,7 +119,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 1. 导航到 SharePoint 管理中心中的 "共享" 页面。
 2. 在 "**文件和文件夹链接**" 下，选择要使用的默认共享链接。
-3. 如果进行了更改，请单击 "**保存**"。
+3. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="create-a-team"></a>创建团队
 
@@ -143,11 +143,11 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 
 设置网站级共享设置
-1. 在 SharePoint 管理中心中，在左侧导航栏中，展开 "**网站**"，然后单击 "**活动网站**"。
-2. 为您刚创建的团队选择网站。
-3. 在功能区中，单击 "**共享**"。
+1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“站点”**，然后单击 **“活动站点”**。
+2. 选择刚才创建的团队站点。
+3. 在功能区中，单击 **“共享”**。
 4. 确保将 "共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
-5. 如果进行了更改，请单击 "**保存**"。
+5. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="invite-users"></a>邀请用户
 
@@ -167,10 +167,10 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 ## <a name="see-also"></a>另请参阅
 
-[使用未经身份验证的用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+[有关与未经认证用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
 
 [创建安全来宾共享环境](create-a-secure-guest-sharing-environment.md)）
 
-
+[使用受管理的来宾创建 B2B extranet](b2b-extranet.md)

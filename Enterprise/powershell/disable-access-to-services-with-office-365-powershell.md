@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 禁止访问服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/04/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: 使用 Office 365 PowerShell 禁用对用户的 Office 365 服务的访问。
-ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 7f50d3bbe08f02ee1149ca10859c9583b10f5e2d
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072194"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261415"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 禁止访问服务
 
@@ -156,17 +156,9 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 
 
 ## <a name="see-also"></a>另请参阅
-<a name="SeeAlso"> </a>
 
-请参阅下面有关使用 Office 365 PowerShell 管理用户的其他主题：
+[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [使用 Office 365 PowerShell 删除和还原用户账户](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [使用 Office 365 PowerShell 冻结用户账户](block-user-accounts-with-office-365-powershell.md)
-    
-- [使用 Office 365 PowerShell 向用户帐户分配许可证](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [使用 Office 365 PowerShell 创建用户帐户](create-user-accounts-with-office-365-powershell.md)
-    
+[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+  
+[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)

@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: 说明如何使用 Office 365 PowerShell 确定已分配给用户的 Office 365 服务。
-ms.openlocfilehash: 08e44476ea746b7e8298355e3adc5d0401261acd
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: d56457f00e63d20b9d87e1f90e0e8d12587fcc1f
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072284"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261425"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
 
@@ -77,7 +77,7 @@ Get-MsolAccountSku
 接下来，运行此命令，列出每个许可计划中可用的服务，以及这些服务的列出顺序（索引号）。
 
 ```powershell
-(Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
   
 使用此命令可列出分配给用户的许可证以及它们的列出顺序（索引号）。
@@ -85,11 +85,6 @@ Get-MsolAccountSku
 ```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
 ```
-
->[!Note]
->如果您使用 **Get-MsolUser** cmdlet 而无需使用 _All_ 参数，仅可返回前 500 个帐户。
->
-   
 
 ### <a name="to-view-services-for-a-user-account"></a>查看用户帐户的服务
 
@@ -114,8 +109,8 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 若要查看已分配*多个许可证*的用户的所有服务，请使用以下语法：
 
 ```powershell
-$userAccountUPN="<user account UPN>"
-$AllLicenses=(Get-MsolUser -UserPrincipalName $userAccountUPN).Licenses
+$userUPN="<user account UPN>"
+$AllLicenses=(Get-MsolUser -UserPrincipalName $userUPN).Licenses
 $licArray = @()
 for($i = 0; $i -lt $AllLicenses.Count; $i++)
 {

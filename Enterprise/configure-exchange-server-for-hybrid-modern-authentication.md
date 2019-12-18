@@ -14,16 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: 混合新式身份验证（HMA）是一种身份管理方法，它提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
-ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746215"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085167"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 混合新式身份验证（HMA）是一种身份管理方法，它提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
   
@@ -154,10 +154,13 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 您还应按住 CTRL 键，同时右键单击 Outlook 客户端的图标（也在 Windows 通知栏中），然后单击 "连接状态"。 针对 "身份验证" 类型的 "载荷\*" 查找客户端的 SMTP 地址，该类型表示在 OAuth 中使用的持有者令牌。
   
  **注释**是否需要使用 HMA 配置 Skype for Business？ 您将需要两个文章：一个列出[受支持的拓扑](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，另一个演示[如何执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。
+ 
+## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>将混合新式验证用于 Outlook for iOS 和 Outlook for Android
+
+如果您是在 TCP 443 上使用 Exchange server 的本地客户，请为以下 IP 范围列入白名单： <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
 ## <a name="related-topics"></a>相关主题
 
 [混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md) 
   
-

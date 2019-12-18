@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 向用户帐户分配许可证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/26/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,17 +18,15 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
-ms.openlocfilehash: d78bd36807a87cced3fdc8ac8bc06e6886970861
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ea2c889834c70095474fbc2957768746d92fe8cc
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072544"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261335"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 向用户帐户分配许可证
 
-**摘要：** 如何使用 Office 365 PowerShell 将 Office 365 许可证分配给未经许可的用户。
-  
 用户在向其帐户分配许可计划中的许可证之前，不能使用任何 Office 365 服务。 您可以使用 Office 365 PowerShell 将许可证快速分配给未经许可的帐户。 
 
 >[!Note]
@@ -78,7 +76,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-运行**get-msolaccountsku**命令可以查看组织中每个计划中可用的许可计划和可用许可证的数量。 每个计划中可用的许可证数量是**ActiveUnits** - **WarningUnits** - **ConsumedUnits**。 有关许可计划、许可证和服务的详细信息，请参阅[使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。
+运行`Get-MsolAccountSku`命令以查看组织中每个计划中可用的许可计划和可用许可证的数量。 每个计划中可用的许可证数量是**ActiveUnits** - **WarningUnits** - **ConsumedUnits**。 有关许可计划、许可证和服务的详细信息，请参阅[使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。
 
 >[!Note]
 >PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
@@ -126,7 +124,7 @@ Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-若要将许可证分配给多个未经许可的用户，请运行此命令。
+若要将许可证分配给所有未经许可的用户，请运行此命令。
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"
