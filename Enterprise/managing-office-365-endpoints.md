@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些企业网络限制对通用 internet 位置的访问，或者包括大量 backhaul 或网络流量的处理。 为了确保这些网络上的计算机可以访问 Office 365，网络和代理管理员需要管理组成 Office 365 终结点列表的 Fqdn、Url 和 IP 地址的列表。 需要将它们添加到直接路由、代理旁路、和/或防火墙规则和 PAC 文件中，以确保网络请求能够到达 Office 365。
-ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072484"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744506"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -133,14 +133,14 @@ Office 365 IP 地址和 URL Web 服务提供了可在 Outlook 中订阅的 RSS �
   
 在全球范围内有超过2500个 ISP 对等关系和70点，从你的网络转到我们的状态应是无缝的。 如果花几分钟时间来确保你的 ISP 的对等关系最具最佳，[下面将](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/)为我们的网络提供良好而不好的对等操作的几个示例。
   
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>我看到 "已发布" 列表中没有对 IP 地址的网络请求，是否需要提供对它们的访问权限？
 <a name="bkmk_MissingIP"> </a>
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>我看到 "已发布" 列表中没有对 IP 地址的网络请求，是否需要提供对它们的访问权限？
 
 我们只提供了应直接路由到的 Office 365 服务器的 IP 地址。 这不是你将看到的网络请求的所有 IP 地址的完整列表。 你将看到对 Microsoft 和第三方拥有的、未发布的 IP 地址的网络请求。 这些 IP 地址以动态方式生成或管理，以在发生更改时阻止及时通知。 如果你的防火墙无法根据这些网络请求的 Fqdn 允许访问，请使用 PAC 或 WPAD 文件管理请求。
   
 若要了解有关详细信息，请参阅与 Office 365 关联的 IP。
   
-1. 使用[CIDR 计算器](https://www.ipaddressguide.com/cidr)检查 IP 地址是否包含在更大的已发布区域中。
+1. 检查 IP 地址是否包含在使用 CIDR 计算器的较大的已发布区域中，例如，对于[IPv4](https://www.ipaddressguide.com/cidr)或 [IPv6]https://www.ipaddressguide.com/ipv6-cidr)。
 2. 查看合作伙伴是否拥有[whois 查询](https://dnsquery.org/)的 IP。 如果是 Microsoft 所拥有的，则它可能是内部合作伙伴。
 3. 检查证书在浏览器中使用*HTTPS://\<IP_ADDRESS\> *连接到 IP 地址，检查证书上列出的域以了解与 IP 地址关联的域。 如果它是 Microsoft 拥有的 IP 地址，而不是 Office 365 IP 地址列表，则该 IP 地址可能与 Microsoft CDN （如*MSOCDN.NET*或另一个 microsoft 域）相关联，而不会发布 IP 信息。 如果您在证书中找到的域是我们声明列出 IP 地址的域，请告诉我们。
 
@@ -159,8 +159,8 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 不建议使用基于间接 Office 365 Fqdn 的硬编码配置或白名单，不受 Microsoft 支持，并且已知会导致客户连接问题。 在启用了 DNS 递归的情况下，可以通过 DNS 条件转发（作用域为直接使用的 Office 365 Fqdn）来解决在 CNAME 重定向上阻止的 DNS 解决方案或以其他方式解析 Office 365 DNS 条目的错误。 许多第三方网络外围产品在其配置中使用[office 365 IP 地址和 URL Web 服务](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)，以本机方式集成建议的 Office 365 终结点白名单。
 
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>为什么在 Microsoft 域名中看到名称，如 nsatc.net 或 akadns.net？
 <a name="bkmk_akamai"> </a>
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>为什么在 Microsoft 域名中看到名称，如 nsatc.net 或 akadns.net？
 
 Office 365 和其他 Microsoft 服务使用几种第三方服务（如 Akamai 和 MarkMonitor）来改进 Office 365 体验。 为了让你能够获得最佳体验，我们可能会在将来更改这些服务。 第三方域可以承载内容（如 CDN），也可以托管服务，例如地理流量管理服务。 当前使用的某些服务包括：
   
@@ -182,8 +182,8 @@ Office 365 和其他 Microsoft 服务使用几种第三方服务（如 Akamai �
 *.edgesuite.net
 ```
 
-### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>我必须具有 Office 365 的最小连接能力
 <a name="bkmk_thirdparty"> </a>
+### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>我必须具有 Office 365 的最小连接能力
 
 由于 Office 365 是一套在 internet 上运行的服务，因此可靠性和可用性承诺基于许多可用的标准 internet 服务。 例如，诸如 DNS、CRL 和 Cdn 等标准 internet 服务必须能够使用 Office 365，就像它们必须可访问的那样，才能使用最新式的 internet 服务。
 
@@ -200,8 +200,8 @@ Office 365 套件分为主要的服务领域。 可以有选择地为连接启�
   
 如果您尝试使用 Office 365，并且查找第三方服务无法访问，则需要[确保通过代理和防火墙允许在本文中标记为 "必需" 或 "可选" 的所有 fqdn](urls-and-ip-address-ranges.md)。
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>如何阻止对 Microsoft 的使用者服务的访问？
 <a name="bkmk_consumer"> </a>
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>如何阻止对 Microsoft 的使用者服务的访问？
 
 限制对我们的使用者服务的访问权限应由您自己承担。 阻止使用者服务的唯一可靠方法是限制对*Login.live.com* FQDN 的访问。 此 FQDN 由广泛的一组服务使用，包括非消费者服务（如 MSDN、TechNet 和其他服务）。 此 FQDN 也由 Microsoft 支持的安全文件交换程序使用，并且必须转移文件以促进 Microsoft 产品的故障排除。  限制对此 FQDN 的访问可能会导致需要为与这些服务关联的网络请求包含规则例外。
   
