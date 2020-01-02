@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959277"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923854"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -32,18 +32,21 @@ ms.locfileid: "39959277"
 
 |**在中注册国家/地区的客户**|**所有移动完成者**|
 |:-----|:-----|
-|澳大利亚、新西兰、斐济  <br/> |2017年10月31日  <br/> |
-|日本  <br/> |2018年10月31日  <br/> |
-|印度  <br/> |2018年10月31日  <br/> |
-|加拿大  <br/> |2019年6月30日  <br/> |
-|韩国  <br/> |2018年10月31日  <br/> |
-|英国  <br/> |2019年9月15日  <br/> |
-|法国  <br/> |2020年9月15日  <br/> |
-|阿拉伯联合酋长国  <br/> |2022年2月1日  <br/> |
-|南非  <br/> |2022年2月1日  <br/> |
+|澳大利亚、新西兰、斐济  <br/> |2022年7月1日  <br/> |
+|日本  <br/> |2022年7月1日  <br/> |
+|印度  <br/> |2022年7月1日  <br/> |
+|加拿大  <br/> |2022年7月1日  <br/> |
+|韩国  <br/> |2022年7月1日  <br/> |
+|英国  <br/> |2022年7月1日  <br/> |
+|法国  <br/> |2022年7月1日  <br/> |
+|阿拉伯联合酋长国  <br/> |2022年7月1日  <br/> |
+|南非  <br/> |2022年7月1日  <br/> |
 |瑞士，列支敦士登  <br/> |2022年7月1日  <br/> |
 |德国  <br/> |相同  <br/> |
-   
+
+> [!NOTE]
+> 符合条件的 Office 365 国家/地区的客户可能会选择参加 Microsoft 团队聊天服务数据迁移，从2020到6月30日，2020，这也将为任何其他符合条件的工作负荷通知迁移。  如果客户选择在2020之前进行迁移，则预计 Exchange Online 和 SharePoint Online/OneDrive for Business 将在最初的期限内完成，而团队将于所有客户在 2022 6 月1日完成。 
+
 ## <a name="exchange-online"></a>Exchange Online
 
 由于需要花费时间将每个用户移动到单个租户的新数据中心地理位置，因此在移动期间，某些用户将仍处于旧的数据中心地理位置，而其他用户则位于新的数据中心地理位置。 这意味着，涉及访问多个邮箱的某些功能在移动过程中可能不会完全工作，这可能是持续几周的一段时间。 以下各节介绍了这些功能。
@@ -102,7 +105,11 @@ ms.locfileid: "39959277"
 - 电子数据展示：在爬网选取更改之前，不会显示在迁移过程中更改的项目。
     
 - 数据丢失保护（DLP）：在爬网选取更改之前，不会对更改的项强制实施策略。
-    
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+符合条件的 Office 365 国家/地区的客户可能会选择参加 Microsoft 团队聊天服务数据迁移，从2020年1月1日起。  
+
 ## <a name="skype-for-business"></a>Skype for Business
 
 在剪切转移过程中，所有用户都将从 Skype for Business 客户端软件注销。 自动登录将在两分钟内重新连接用户。

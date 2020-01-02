@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
-ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756581"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923844"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -50,6 +50,14 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
 数据移动是一种后端服务操作，对最终用户影响最小。 在[数据移动期间和之后](during-and-after-your-data-move.md)会列出受影响的功能。 我们遵循[Microsoft Online Services 服务级别协议（SLA）](https://go.microsoft.com/fwlink/p/?LinkId=523897)的可用性，以便客户无需准备或在移动过程中进行监视。 
   
 所有 Office 365 服务在数据中心中运行相同的版本，因此您可以确保功能的一致性。 您的服务在整个过程中完全受支持。
+
+## <a name="what-is-in-scope-for-teams-migration"></a>团队迁移的范围是什么？
+
+除了 Exchange Online、SharePoint Online 和 OneDrive for Business;Microsoft 会将团队数据迁移到本地数据中心。  
+- 工作组聊天邮件，包括私人邮件和频道消息。 
+- 在聊天中使用的团队图像。 
+
+团队文件存储在 SharePoint Online 中，团队聊天文件存储在 OneDrive for Business 中。  语音邮件、日历、聊天历史记录和联系人存储在 Exchange Online 中。  在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for business 已由本地数据中心地理位置的客户使用，并且也是适用于符合条件的客户国家/地区的 Office 365 迁移计划的一部分。
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>在不同的信息中具有不同的服务会有什么影响？
 

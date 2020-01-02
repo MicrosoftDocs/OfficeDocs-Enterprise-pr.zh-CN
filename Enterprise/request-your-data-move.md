@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求，以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: 6c5b576b0d099f4a46aca63a72390d27ae39984b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962459"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923874"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -30,16 +30,16 @@ ms.locfileid: "39962459"
 
 |**在中注册国家/地区的客户**|**请求时间段开始**|**请求截止日期**|
 |:-----|:-----|:-----|
-|日本  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
-|澳大利亚、新西兰、斐济  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
-|印度  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
-|加拿大  <br/> |2016年8月1日  <br/> |2016年10月31日  <br/> |
-|英国  <br/> |2017年3月15日  <br/> |2017年9月15日  <br/> |
-|韩国  <br/> |5月1日，2017  <br/> |2017年10月31日  <br/> |
-|法国  <br/> |2018年3月14日  <br/> |2018年9月15日  <br/> |
-|阿拉伯联合酋长国  <br/> |2019 年 7 月 15 日  <br/> |2020年1月31日  <br/> |
-|南非  <br/> |2019 年 7 月 25 日  <br/> |2020年1月31日  <br/> |
-|瑞士，列支敦士登  <br/> |2019年12月10日  <br/> |2020年6月30日  <br/> |
+|日本  <br/> |2020年1月1日  <br/> |2020年6月30日  <br/> |
+|澳大利亚、新西兰、斐济  <br/> |2020年1月1日  <br/> |2020年6月30日  <br/> |
+|印度  <br/> |2020年1月1日  <br/> |2020年6月30日  <br/> |
+|加拿大  <br/> |2020年1月1日  <br/> |2020年6月30日  <br/> |
+|英国  <br/> |2020年1月1日  <br/> |2020年6月30日  <br/> |
+|韩国  <br/> |2020年1月1日  <br/> |2020年6月30日  <br/> |
+|法国  <br/> |2020年1月1日  <br/> |2020年6月30日  <br/> |
+|阿拉伯联合酋长国  <br/> |2019 年 7 月 15 日  <br/> |2020年6月30日  <br/> |
+|南非  <br/> |2019 年 7 月 25 日  <br/> |2020年6月30日  <br/> |
+|瑞士，列支敦士登  <br/> |2019 年 12 月 10 日  <br/> |2020年6月30日  <br/> |
 |德国  <br/> |相同  <br/> |相同  <br/> |
    
 ## <a name="how-to-request-a-move"></a>如何请求移动
@@ -74,7 +74,7 @@ ms.locfileid: "39962459"
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft 团队聊天和频道消息数据的迁移支持将添加到 Office 365 本地迁移计划中。  我们计划在2020年1月为所有符合条件的客户（包括以前选择参加 Exchange Online 和 SharePoint Online/OneDrive for Business 迁移的客户）打开程序注册。  我们将在 Microsoft 365 管理中心公开自愿加入控制，并将消息中心中的通知发送给所有符合条件的客户。   
+从2020年1月起，符合条件的 Office 365 国家/地区的客户可以选择加入 Microsoft 团队聊天服务数据的迁移。  对于所有符合条件的国家/地区，自愿加入时间线已重新打开或扩展，让客户有机会在范围内与 Microsoft 团队一起考虑早期迁移计划。   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>请求移动前的可选操作
 
