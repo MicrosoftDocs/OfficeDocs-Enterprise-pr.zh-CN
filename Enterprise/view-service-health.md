@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在调用支持之前查看 Office 365 服务的运行状况状态，以查看是否有活动的服务中断。
-ms.openlocfilehash: 5d9b4c65932f65b878518bd5e0f33a1c5336aaf9
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37931710"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122581"
 ---
 # <a name="how-to-check-office-365-service-health"></a>如何查看 Office 365 服务运行状况
 
@@ -55,7 +55,7 @@ ms.locfileid: "37931710"
 
 "**所有服务**" 选项卡（默认视图）显示所有服务及其当前运行状况状态。 图标和**状态**列指示每个服务的状态。 若要将视图筛选为当前遇到事件的服务，请选择页面顶部的 "**事件**" 选项卡。 选择 "**建议**" 选项卡将仅显示当前已发布建议的服务。 "**历史记录**" 选项卡显示已解决的事件和建议的历史记录。
 
-如果遇到列表中未显示的问题，请选择 "**报告问题**"、"填写短格式" 以告知我们问题，然后选择 "**提交**"。
+如果您遇到 Office 365 服务的问题，但未在 "**服务运行状况**" 页上看到它，请通过选择 "**报告问题**" 和 "填写短格式" 来告诉我们它。 我们将介绍其他组织提供的相关数据和报告，以查看问题的广泛程度，以及是否与我们的服务有关。 如果是，我们会将其作为新事件或 "**服务运行状况**" 页上的公告添加，您可以在其中跟踪其解决方案。 如果您在30分钟内未看到它显示在列表中，请考虑联系支持人员以解决此问题。
 
 > [!TIP]
 > 你也可以在移动设备上使用 [Office 365 Admin 应用](https://go.microsoft.com/fwlink/p/?linkid=627216)查看服务运行状况，这是一种通过推送通知随时获取最新消息的好方法。 

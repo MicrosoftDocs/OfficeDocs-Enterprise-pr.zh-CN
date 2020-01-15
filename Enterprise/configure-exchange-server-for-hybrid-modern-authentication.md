@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: 混合新式身份验证（HMA）是一种身份管理方法，它提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
-ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1a8bed186acd8da9c5f223120c5e58e8bfd445b4
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085167"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122561"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
@@ -164,3 +164,5 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 [混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md) 
   
+将 Outlook 用户强制设为新式验证  
+[从 Office 365 专用/ITAR 到 vNext 的转换的新式身份验证配置要求](modern-authentication-configuration.md)
