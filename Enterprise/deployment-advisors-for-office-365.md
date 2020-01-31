@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 通过部署顾问加快您规划和配置 Office 365 或 Microsoft 365。
-ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072364"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627858"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 或 Microsoft 365 服务的部署顾问
 
@@ -168,7 +168,7 @@ Office 365 专业增强版使您的用户能够在最新版本的 Office 中运�
 | **以** |  [Office 365 专业增强版快速入门指南](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 专业增强版部署顾问将完成帮助用户直接从 Office 365 门户联机安装 office 365 专业增强版或从本地位置向用户部署 Office 365 专业增强版的步骤。 包括有关使用 System Center Configuration Manager、组策略启动脚本、操作系统磁盘映像或远程桌面服务（RDS）共享激活的说明。
+Office 365 专业增强版部署顾问将完成帮助用户直接从 Office 365 门户联机安装 office 365 专业增强版或从本地位置向用户部署 Office 365 专业增强版的步骤。 包含有关使用 Microsoft 终结点配置管理器、组策略启动脚本、操作系统磁盘映像或远程桌面服务（RDS）共享激活的说明。
 
 |||
 |:-------|:-----|

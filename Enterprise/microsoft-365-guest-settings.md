@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 中提供的来宾共享设置。
-ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 6fba4a8107962ef7ac7da5f83dd2d7f1d75dccb2
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919376"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627872"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -55,7 +55,7 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 
 ### <a name="sharing"></a>共享
 
-**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 安全和隐私 > 共享
+**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 设置 >“安全和隐私”选项卡 > 共享
 
 ![Microsoft 365 管理中心中的安全和隐私来宾共享设置的屏幕截图](media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -65,7 +65,7 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 
 ### <a name="office-365-groups"></a>Office 365 组
 
-**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 服务和加载项 > Office 365 组
+**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 设置 > Office 365 组
 
 ![Microsoft 365 管理中心中的 Office 365 组来宾设置的屏幕截图](media/office-365-groups-guest-settings.png)
 
@@ -196,11 +196,13 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 
 **管理员角色：** SharePoint 管理员
 
+由于这些设置取决于 SharePoint 的组织范围设置，如果组织级别设置发生更改，则网站的有效共享设置可能会随之更改。 如果你在此处选择设置，并且组织级别随后设置为更严格的值，则此网站将以这一更严格的值运行。 例如，如果你选择“**任何人**”，并且组织级别设置随后设为“**新来宾和现有来宾**”，则此网站将仅允许新来宾和现有来宾进行共享。 如果组织级别设置随后设置回“**任何人**”，则此网站将再次允许使用“*任何人*”链接。
+
 ### <a name="site-sharing"></a>网站共享
 
 可为 SharePoint 中的每个网站设置来宾共享权限。 此设置适用于网站共享以及文件和文件夹共享。 （“*任何人*”共享不可用于网站共享。 如果你选择“**任何人**”，则用户可以使用“*任何人*”链接来共享文件和文件夹，并且网站本身可以与新来宾和现有来宾共享。）
 
-**导航：** SharePoint 管理中心 > 活动网站 > 选择网站 > 共享
+**导航：** SharePoint 管理中心 > 活动站点 > 选择站点 >“策略”选项卡 > 编辑外部共享
 
 ![SharePoint 网站外部共享设置的屏幕截图](media/sharepoint-site-external-sharing-settings.png)
 
@@ -208,7 +210,22 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 |:-----|:-----|:-----|
 |网站内容可与以下人员共享|因网站类型而异（参见下表）|指示此网站允许的外部共享类型。 此处提供的选项取决于 SharePoint 的组织级别共享设置。|
 
-由于这些设置取决于 SharePoint 的组织范围设置，如果组织级别设置发生更改，则网站的有效共享设置可能会随之更改。 如果你在此处选择设置，并且组织级别随后设置为更严格的值，则此网站将以这一更严格的值运行。 例如，如果你选择“**任何人**”，并且组织级别设置随后设为“**新来宾和现有来宾**”，则此网站将仅允许新来宾和现有来宾进行共享。 如果组织级别设置随后设置回“**任何人**”，则此网站将再次允许使用“*任何人*”链接。
+### <a name="site-file-and-folder-link-settings"></a>网站文件和文件夹链接设置
+
+你可以为每个网站设置链接类型和权限的默认值，以及“*任何人*”链接的到期设置。 在网站级别进行设置时，这些设置会覆盖组织级别的设置。 请注意，如果在组织级别禁用“*任何人*”链接，则“*任何人*”将不会是网站级别的可用链接类型。
+
+**导航：** SharePoint 管理中心 > 活动站点 > 选择站点 >“策略”选项卡 > 编辑外部共享
+
+![SharePoint 网站级别链接共享设置的屏幕截图](media/sharepoint-site-link-sharing-settings.png)
+
+|**设置**|**默认**|**说明**|
+|:-----|:-----|:-----|
+|按域限制共享|关闭|此设置允许你为共享指定允许或阻止的域列表。 如果指定了允许的域，则只能将共享邀请发送到这些域。 如果指定了拒绝的域，则不能将共享邀请发送到这些域。<br><br> 此设置不能用于覆盖在组织或 Azure AD 级别设置的域限制。|
+|默认共享链接类型|与组织级别设置相同|此设置允许你指定在此网站中显示给用户的默认共享链接。 “*与组织级别设置相同*”选项由组织和网站共享设置的组合进行定义。|
+|“任何人”链接的高级设置|与组织级别设置相同|指定在为此网站中某个文件创建“*任何人*”链接后经过多少天到期。 无法续订已过期的链接。 如果需要在过期后继续共享，请创建新链接。|
+|默认链接权限|与组织级别设置相同|此设置允许你为此网站中文件的共享链接指定默认权限（“查看”或“编辑”）。|
+
+### <a name="default-site-sharing-settings"></a>默认网站共享设置
 
 下表显示了每种网站类型的默认共享设置。
 

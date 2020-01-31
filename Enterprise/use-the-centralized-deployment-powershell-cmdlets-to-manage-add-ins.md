@@ -1,9 +1,9 @@
 ---
 title: 使用集中部署 PowerShell cmdlet 管理外接程序
-ms.author: twerner
-author: twernermsft
-manager: scotv
-ms.date: 5/31/2017
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 使用集中部署 PowerShell cmdlet 可帮助您部署和管理 Office 365 组织的 Office 外接程序。
-ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0577a4d69d7b6d32164e66613a9d38a71d9766e4
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030857"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570869"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
@@ -106,7 +106,7 @@ Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 若要获取所有外接程序的完整详细信息以及分配的用户和组，请将**OrganizationAddIn** cmdlet 的输出通过管道传递给格式列表 cmdlet，如下面的示例所示。
   
 ```powershell
-Get-OrganizationAddIn |Format-List
+foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>打开或关闭外接程序
@@ -168,53 +168,54 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>为你的组织自定义 Microsoft Store 外接程序
+<!--
+## Customize Microsoft Store add-ins for your organization
 
-必须先自定义外接程序，然后才能将其部署到组织中。 此功能不支持早于版本1.1 的外接程序。 
+You must customize the add-in before you deploy it to your organization. Add-ins older than version 1.1 are not supported by this feature. 
 
-我们建议您先将自定义加载项部署到自己，以确保它按预期工作，然后再将其部署到整个组织。
+We recommend that you deploy a customized add-in  to yourself first to make sure it works as expected before you deploy it to your entire organization.
 
-另请注意以下限制：
-- 所有 Url 都必须是绝对 Url （包括 http 或 https）且有效。
-- *DisplayName*不得超过125个字符 
-- *DisplayName*、*资源*和*appdomain*不能包含以下字符： 
+Note also the following restrictions:
+- All URLs must be absolute (include http or https) and valid.
+- *DisplayName* must not exceed 125 characters 
+- *DisplayName*, *Resources* and *AppDomains* must not include the following characters: 
  
     - \<
     -  \>
     -  ;
     -  =   
 
-如果要自定义已部署的加载项，则必须将其卸载到管理中心，并查看 "[从本地缓存中删除加载项](#remove-an-add-in-from-local-cache)"，以了解将其从已部署到的每台计算机中删除的步骤。
+If you want to customize an add-in that has been deployed, you have to uninstall it in the admin center, and see [remove an add-in from local cache](#remove-an-add-in-from-local-cache) for steps to remove it from each computer it has been deployed to.
 
-若要自定义外接程序，请运行**OrganizationAddInOverrides** Cmdlet 和*ProductId*作为参数，后跟要覆盖的标记和新值。 若要了解如何获取*产品 id* ，请参阅本文中的获取外接程序的[详细信息](#get-details-of-an-add-in)。 例如：
+To customize an add-in, run the **Set –OrganizationAddInOverrides** cmdlet with the *ProductId* as a parameter, followed by the tag you want to overwrite and the new value. To find out how to get the *ProductId* see [get details of an add-in](#get-details-of-an-add-in) in this article. For example:
 
 ```powershell
  Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
-若要自定义外接程序的多个标记，请将这些标记添加到命令行中：
+To customize multiple tags for an add-in, add those tags to the commandline:
 
 ```powershell
 Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
-> 您必须将多个自定义标记作为一个命令应用于一个加载项。 如果逐个自定义标记，则只会应用最后一个自定义项。 此外，如果错误地自定义标记，则必须删除所有自定义项并重新开始。
+> You must apply multiple customized tags to one add-in as one command. If you customize tags one by one, only the last customization will be applied. Additionally, if you customize a tag by mistake, you must remove all customizations and start over.
 
-### <a name="tags-you-can-customize"></a>您可以自定义的标记
+### Tags you can customize
 
-| Tag                  | 说明          |
+| Tag                  | Description          |
 | :------------------- | :------------------- |
-| \<IconURL>   </br>| 用作加载项图标的图像的 URL （在管理中心中）。 </br> |
-| \<DisplayName>| 加载项的标题（在管理中心中）。|
-| \<主机>| 将支持外接程序的应用程序的列表。|
-| \<SourceLocation> | 外接程序将连接到的源 URL。| 
-| \<Appdomain> | 外接程序可与之连接的域的列表。 | 
-| \<SupportURL>| 用户可用于访问帮助和支持的 URL。 | 
-| \<资源>  | 此标记包含多个元素，包括标题、工具提示和不同大小的图标。| 
+| \<IconURL>   </br>| The URL of the image used as the add-in’s icon (in admin center). </br> |
+| \<DisplayName>| The title of the add-in  (in admin center).|
+| \<Hosts>| List of apps that will support the add-in.|
+| \<SourceLocation> | The source URL that the add-in will connect to.| 
+| \<AppDomains> | A list of domains that the add-in can connect with. | 
+| \<SupportURL>| The URL users can use to access help and support. | 
+| \<Resources>  | This tag contains a number of elements including titles, tooltips, and icons of different sizes.| 
 |
-### <a name="customize-resources-tag"></a>自定义 Resources 标记
+### Customize Resources tag
 
-可以动态自定义<Resources>清单标记中的任何元素。 首先需要检查清单以查找要向其分配新值的元素 id。 <Resources>标记如下所示：
+Any element in the <Resources> tag of the manifest can be customized dynamically. You first need to check the manifest to find the element id to which you want to assign a new value. The <Resources> tag looks like this:
 
 ```
 <Resources>  
@@ -223,45 +224,47 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
     </bt:Images> 
 </Resources> 
 ``` 
-在这种情况下，图像的元素 id 为 "img16icon"，与关联的值为 "http：<i></i>//site。<i> </i>com/img. "
+In this case, the element id for the image is “img16icon” and the value associated with it is “http:<i></i>//site.<i></i>com/img.jpg.”
 
-确定要自定义的元素后，请在 Powershell 中使用以下命令将新值分配给这些元素：
+Once you have identified the elements you want to customize, use the following command in Powershell to assign new values to the elements:
 
 ```powershell
 Set-OrganizationAddInOverrides -Resources @{“ElementID” = “New Value”; “NextElementID” = “Next New Value”} 
 ```
 
-您可以根据需要自定义多个元素和命令。
+You can customize as many elements with the command as you need to.
 
-### <a name="remove-customization-from-an-add-in"></a>从外接程序中删除自定义项
+### Remove customization from an add-in
 
-当前可用于删除自定义项的唯一选项是一次性删除所有自定义项：
+The only option currently available for deleting customizations is to delete all of them at once:
 
 ```powershell
 Remove-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="view-add-in-customizations"></a>查看加载项自定义项
+### View add-in customizations
 
-若要查看已应用的自定义项列表，请运行**OrganizationAddInOverrides** cmdlet。 如果在没有*ProductId*的情况下运行**OrganizationAddInOverrides** ，则将返回所有应用了替代的外接程序的列表。  
+To view a list of applied customizations, run the **Get-OrganizationAddInOverrides** cmdlet. If **Get-OrganizationAddInOverrides** is run without a *ProductId* then a list of all add-ins with applied overrides are returned.  
 
 ```powershell
 Get-OrganizationAddInOverrides 
 ```
-如果指定了 ProductId，则将返回应用于该外接程序的替代项列表。 
+If ProductId is specified, then a list of overrides applied to that add-in is returned. 
 
 ```powershell
 Get-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="remove-an-add-in-from-local-cache"></a>从本地缓存中删除外接程序
+### Remove an add-in from local cache
 
-如果已部署加载项，则必须先将其从每台计算机的缓存中删除，然后才能对其进行自定义。 从缓存中 remive 外接程序：
+If an add-in has been deployed, it has to be removed from the cache in each computer before it can be customized. To remive an add-in from cache:
 
-1. 导航到 C：\ 中的 "Users" 文件夹 
-1. 转到您的用户文件夹
-1. 导航到 "AppData\Local\Microsoft\Office"，然后选择与您的 Office 版本相关联的文件夹
-1. 在 " *Wef* " 文件夹中，删除 "*清单*" 文件夹。
+1. Navigate to the “Users” folder in C:\ 
+1. Go to your user folder
+1. Navigate to AppData\Local\Microsoft\Office and select the folder associated with your version of Office
+1. In the *Wef* folder delete the *Manifests* folder.
+
+-->
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>获取每个 cmdlet 的详细帮助
 

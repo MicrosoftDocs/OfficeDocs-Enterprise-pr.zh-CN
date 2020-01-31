@@ -10,12 +10,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: 本文是名为 Microsoft Exchange 2013 平台选项的图的可访问文本版本，您可在技术图表中找到此图。
-ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1440558a3c462ae71189fb42d492e0292c256c19
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030576"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627848"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>可访问图表 - SharePoint Server、Exchange、Lync、Office Web Apps - 移动前景
 
@@ -154,7 +154,7 @@ OneDrive for Business 是您的组织可针对员工作为 SharePoint 2013 本�
     
 ### <a name="device-management-and-software-distribution"></a>设备管理和软件分发
 
-Microsoft 提供了新的跨多个设备品牌的设备管理产品。Windows Intune 是针对移动设备的基于云的管理平台。您可以单独使用 Windows Intune 来管理设备，或与 System Center 2012 R2 Configuration Manager 组合使用，并在该控制台中进行管理。此联合操作的一些优势包括：
+Microsoft 提供了新的跨多个设备品牌的设备管理产品。 Windows Intune 是针对移动设备的基于云的管理平台。 它本身可用于管理设备，或者与 Microsoft 终结点配置管理器结合使用，并在该控制台中进行管理。 此联合操作的一些优势包括：
   
 - 跨多个设备的策略实施和管理，包括 Windows RT、Windows 8.1、Windows Phone 8、iOS 和 Android
     
@@ -168,15 +168,15 @@ Microsoft 提供了新的跨多个设备品牌的设备管理产品。Windows In
     
 - 从熟悉的配置管理器控制台进行管理
     
-随附的图显示了如何使用 System Center 2012 R2 配置管理器和 Windows Intune 进行设备管理。
+随附的图显示了如何使用 Configuration Manager 和 Windows Intune 进行设备管理。
   
- **使用 System Center 2012 R2 配置管理器和 Windows Intune 的注意事项：**
+ **使用配置管理器和 Windows Intune 的注意事项：**
   
-- 您可以使用 System Center 2012 R2 配置管理器和 Windows Intune 在一个控制台下管理组织中的所有设备。
+- 同时使用 Configuration Manager 和 Windows Intune 时，可以在一个控制台下管理和管理组织中的所有设备。
     
 - 若要将配置管理器连接到 Windows Intune，需要有 Windows Intune 订阅，并且必须在配置管理器环境中的服务器上部署 Windows Intune 连接器网站服务器角色。
     
-- System Center 2012 R2 配置管理器可管理您的本地电脑并提供软件分发。
+- Microsoft 终结点配置管理器为你的本地电脑提供管理和软件分发。
     
 - 托管的现代设备将收到来自 Windows Intune 的策略实施和软件分发。受支持的设备类型包括：Windows RT、Windows 8.1、Windows Phone 8、iOS、Android。
     

@@ -3,7 +3,7 @@ title: 管理 Office 365 终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些企业网络限制对通用 internet 位置的访问，或者包括大量 backhaul 或网络流量的处理。 为了确保这些网络上的计算机可以访问 Office 365，网络和代理管理员需要管理组成 Office 365 终结点列表的 Fqdn、Url 和 IP 地址的列表。 需要将它们添加到直接路由、代理旁路、和/或防火墙规则和 PAC 文件中，以确保网络请求能够到达 Office 365。
-ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
-ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
+ms.openlocfilehash: 189a21c310b7fd2e62817504b8d6910a2b3e66ca
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744506"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570879"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -140,9 +140,10 @@ Office 365 IP 地址和 URL Web 服务提供了可在 Outlook 中订阅的 RSS �
   
 若要了解有关详细信息，请参阅与 Office 365 关联的 IP。
   
-1. 检查 IP 地址是否包含在使用 CIDR 计算器的较大的已发布区域中，例如，对于[IPv4](https://www.ipaddressguide.com/cidr)或 [IPv6]https://www.ipaddressguide.com/ipv6-cidr)。
-2. 查看合作伙伴是否拥有[whois 查询](https://dnsquery.org/)的 IP。 如果是 Microsoft 所拥有的，则它可能是内部合作伙伴。
-3. 检查证书在浏览器中使用*HTTPS://\<IP_ADDRESS\> *连接到 IP 地址，检查证书上列出的域以了解与 IP 地址关联的域。 如果它是 Microsoft 拥有的 IP 地址，而不是 Office 365 IP 地址列表，则该 IP 地址可能与 Microsoft CDN （如*MSOCDN.NET*或另一个 microsoft 域）相关联，而不会发布 IP 信息。 如果您在证书中找到的域是我们声明列出 IP 地址的域，请告诉我们。
+1. 检查 IP 地址是否包含在使用 CIDR 计算器的较大的已发布区域中，例如，对于[IPv4](https://www.ipaddressguide.com/cidr)或[IPv6](https://www.ipaddressguide.com/ipv6-cidr)。 例如，40.96.0.0/13 包括 IP 地址40.103.0.1，尽管40.96 不匹配40.103。
+2. 查看合作伙伴是否拥有[whois 查询](https://dnsquery.org/)的 IP。 如果是 Microsoft 所拥有的，则它可能是内部合作伙伴。 许多合作伙伴网络终结点被列为属于_默认_类别，而不会发布 IP 地址。
+3. 该 IP 地址可能不是 Office 365 或依赖项的一部分。 Office 365 网络终结点发布不包含所有 Microsoft 网络终结点。
+4. 检查证书在浏览器中使用*HTTPS://\<IP_ADDRESS\> *连接到 IP 地址，检查证书上列出的域以了解与 IP 地址关联的域。 如果它是 Microsoft 拥有的 IP 地址，而不是 Office 365 IP 地址列表，则该 IP 地址可能与 Microsoft CDN （如*MSOCDN.NET*或另一个 microsoft 域）相关联，而不会发布 IP 信息。 如果您在证书中找到的域是我们声明列出 IP 地址的域，请告诉我们。
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>某些 Office 365 Url 指向 CNAME 记录，而不是 DNS 中的记录。 如何处理 CNAME 记录？
@@ -206,7 +207,12 @@ Office 365 套件分为主要的服务领域。 可以有选择地为连接启�
 限制对我们的使用者服务的访问权限应由您自己承担。 阻止使用者服务的唯一可靠方法是限制对*Login.live.com* FQDN 的访问。 此 FQDN 由广泛的一组服务使用，包括非消费者服务（如 MSDN、TechNet 和其他服务）。 此 FQDN 也由 Microsoft 支持的安全文件交换程序使用，并且必须转移文件以促进 Microsoft 产品的故障排除。  限制对此 FQDN 的访问可能会导致需要为与这些服务关联的网络请求包含规则例外。
   
 请记住，仅阻止对 Microsoft 消费者服务的访问不会阻止网络中的用户使用 Office 365 租户或其他服务 exfiltrate 信息。
-  
+
+<a name="bkmk_IPOnlyFirewall"> </a>
+### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>我的防火墙需要 IP 地址，并且无法处理 Url。 如何为 Office 365 配置此功能？
+
+Office 365 不提供所有所需网络终结点的 IP 地址。 有些仅作为 Url 提供，并归为默认值。 默认类别中需要的 Url 应允许通过代理服务器。 如果没有代理服务器，请查看如何为用户在 web 浏览器的地址栏中键入的 Url 配置 web 请求;用户也不会提供 IP 地址。 不提供 IP 地址的 Office 365 默认类别 Url 的配置方式相同。
+
 ## <a name="related-topics"></a>相关主题
 
 [Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)

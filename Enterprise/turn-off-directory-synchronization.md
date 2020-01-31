@@ -17,12 +17,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: 了解如何使用 PowerShell 关闭 Office 365 的目录同步
-ms.openlocfilehash: de7cfcbc11ed281e412c68674b808613b3421041
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: efee8b216d63f32ac64a559aca3bcb55b0a933c1
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072394"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570889"
 ---
 # <a name="turn-off-directory-synchronization-for-office-365"></a>禁用 Office 365 的目录同步
 您可以使用 PowerShell 关闭目录同步。 但是，不建议您将目录同步作为故障排除步骤关闭。 如果您需要有关对目录同步进行故障排除的帮助，请参阅[解决 Office 365 文章中的目录同步问题](fix-problems-with-directory-synchronization.md)。 
@@ -32,7 +32,7 @@ ms.locfileid: "40072394"
 ## <a name="turn-off-directory-synchronization"></a>关闭目录同步  
 若要关闭目录同步，请执行以下操作：
   
-1. 首先，安装所需的软件并连接到 Office 365 订阅。 有关这两种情况的说明，请参阅[连接到 Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=821938)。
+1. 首先，安装所需的软件并连接到 Office 365 订阅。 有关说明，请参阅[连接到适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
     
 2. 使用[MsolDirSyncEnabled](https://go.microsoft.com/fwlink/p/?LinkId=821939)禁用目录同步： 
     
