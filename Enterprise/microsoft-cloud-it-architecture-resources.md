@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Office 专业增强版部署新式安全桌面。
-ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 30f3cb17f59c3a2352b4f0be9fec92d53126e63b
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756601"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627898"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
@@ -217,7 +217,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
   
 |**项**|**说明**|
 |:-----|:-----|
-|[![通过 Microsoft 模型部署新式安全桌面的缩略图](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | 此模型包含： <ul><li>  从 Microsoft 云部署 Windows 10 和 Office 专业增强版 </li><li>  使用 System Center Configuration Manager 部署 Windows 10 和 Office 365 专业增强版 </li><li>  从 Microsoft 云管理 Windows 10 和 Office 专业增强版的更新 </li><li>  使用 System Center Configuration Manager 管理 Windows 10 和 Office 365 专业增强版的更新 </li><li>  Windows 10 现成的其他保护功能 </li></ul><br/> |
+|[![通过 Microsoft 模型部署新式安全桌面的缩略图](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | 此模型包含： <ul><li>  从 Microsoft 云部署 Windows 10 和 Office 专业增强版 </li><li>  使用 Microsoft Endpoint Configuration Manager 部署 Windows 10 和 Office 专业增强版 </li><li>  从 Microsoft 云管理 Windows 10 和 Office 专业增强版的更新 </li><li>  使用 Microsoft Endpoint Configuration Manager 管理 Windows 10 和 Office 专业增强版的更新 </li><li>  Windows 10 现成的其他保护功能 </li></ul><br/> |
    
 ## <a name="see-also"></a>另请参阅
 
