@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 对 SharePoint Online 中的数据删除的说明。
-ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078151"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658319"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365 中的 SharePoint Online 数据删除
 
@@ -36,6 +36,8 @@ SharePoint Online 将对象存储为应用程序数据库中的抽象代码。 �
 - 与网站或其子网站相关的角色和安全信息
 - 顶级网站的子网站、其内容和用户信息
 
-如果意外删除了网站集，则可以使用 SharePoint 管理中心通过全局或 SharePoint 管理来还原网站集。 
+如果意外删除了网站集，则可以使用 SharePoint 管理中心通过全局或 SharePoint 管理来还原网站集。
+
+已删除的网站集将保留93天。 在93天后，将永久删除网站及其所有内容和设置，包括列表、库、页面和任何子网站。
 
 当用户清除网站集回收站中的已删除项目、保留和备份期间过期时，或者管理员使用[remove-spodeletedsite cmdlet](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps)永久删除网站集时，将发生硬删除。 当用户硬删除（永久删除或清除） SharePoint Online 中的内容时，已删除的区块的所有加密密钥也将被删除。 以前存储已删除的区块的磁盘上的块被标记为未使用，可供重复使用。

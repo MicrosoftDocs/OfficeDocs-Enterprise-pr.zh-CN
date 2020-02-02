@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 有关针对数据保留、删除和销毁的 Office 365 的 Microsoft 策略的概述。
-ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 93093e3688d0f8ae399a4e021deaaf4b7ed5cecf
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37975827"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658329"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 中的数据保留、删除和销毁
 
@@ -47,7 +47,7 @@ Microsoft 具有 Office 365 的数据处理标准策略，用于指定客户数�
 
 对于任何订阅，订阅者都可以与 Microsoft 支持人员联系，并请求加速订阅的取消设置。 在此过程中，管理员输入 Microsoft 提供的锁定代码后，将在三天内删除所有用户数据。 这包括 SharePoint Online 中的数据和 Exchange Online 中的 "保留" 或 "存储在非活动邮箱中"。
 
-有关加速取消设置的详细信息，请参阅[取消 Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)。
+有关加速取消设置的详细信息，请参阅[取消 Office 365](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/cancel-your-subscription)。
 
 ## <a name="related-links"></a>相关链接
 
