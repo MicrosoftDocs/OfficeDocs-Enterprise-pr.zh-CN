@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: 部署 Office 365 后，可以使用下面的一些工具和技术保持 Office 36 5 连接。需要了解官方服务运行状况和连续性指南以及在慢速网络中使用 Office 365 的最佳做法。还需要获取 Office 365 管理员应用程序并为“Office 365 商业版 - 管理帮助”添加书签。
-ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
-ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
+ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931690"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721963"
 ---
 # <a name="monitor-office-365-connectivity"></a>监视 Office 365 连接性
 
@@ -37,7 +37,7 @@ ms.locfileid: "37931690"
 |**将 Azure AD Connect Health 与 AD FS 一起使用** <br/> |如果你使用 AD FS 进行 Office 365 单一登录，则需要开始[使用 Azure AD Connect Health 监视 AD FS 基础结构](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/)。  <br/> |
 |**以编程方式监视 Office 365** <br/> |请参阅有关 [Office 365 管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) 的指南。  <br/> |
 
-以下是可以用于返回的简短链接：[hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+以下是可以用于返回的简短链接：[https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
 ## <a name="see-also"></a>另请参阅
 
