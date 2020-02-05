@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: 新式身份验证是标识管理的一种方法，可提供更安全的用户身份验证和授权。 它可用于本地的 Skype for Business server 本地和 Exchange server 的混合部署，以及拆分域 Skype for Business 混合。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档（如 Outlook 和 Skype 客户端）信息。
-ms.openlocfilehash: 87a2cc49594b0b71d1288e27ab1323f1850fd7eb
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 5124e42f5dff33d59083cc23f0c57349e6136fb9
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261395"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721913"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件
 
@@ -115,7 +115,7 @@ Get-CSOAuthConfiguration
 - C:\Program Files\Skype for Business Server 2015 \ Web Components\Web ticket\ext\web.config
 
 ```xml
-<system.identityModel.services>
+<configuration>
   <system.net>
     <defaultProxy>
       <proxy
@@ -123,7 +123,7 @@ Get-CSOAuthConfiguration
         bypassonlocal="true" />
     </defaultProxy>
   </system.net>
-</system.identityModel.services>
+</configuration>
 ```
 
 > [!IMPORTANT]
@@ -146,7 +146,7 @@ Get-CSOAuthConfiguration
   
   - 以下客户端支持新式身份验证：
 
-  |**客户端**|**主要协议**|**备注**|
+  |**客户端**|**主要协议**|**Notes**|
   |:-----|:-----|:-----|
   |Outlook 2013 和 Outlook 2016  <br/> |MAPI over HTTP  <br/> |必须在 Exchange 中启用 MAPI over HTTP，才能将新式验证用于这些客户端（通常为 Exchange 2013 Service Pack 1 及更高版本启用或设置为启用）;有关详细信息，请参阅[office 2013 和 office 2016 客户端应用的新式身份验证的工作方式](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。  <br/> 确保您运行的是所需的最低版本的 Outlook;[有关使用 Windows Installer （MSI）的 Outlook 版本，](https://docs.microsoft.com/officeupdates/outlook-updates-msi)请参阅最新更新。  <br/> |
   |Outlook 2016 for Mac  <br/> |Exchange Web 服务  <br/> |  <br/> |

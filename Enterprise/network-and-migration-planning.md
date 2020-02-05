@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
-ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6091f5c222b523781c8af30200f96febb2baf7e4
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747782"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721953"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 本文包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
   
@@ -59,8 +59,6 @@ ms.locfileid: "38747782"
 <a name="calculators"> </a>
 
  **网络工具。** 测试和验证你的 Internet 带宽，以确定下载、上传和延迟限制。 这些工具将帮助您确定用于迁移的网络功能以及在完全部署之后的功能。 
-  
-- [Microsoft 消息分析器](https://technet.microsoft.com/library/jj649776.aspx)：消息分析器是用于对网络问题进行故障排除的有效工具。 消息分析器捕获、显示和分析基于协议的邮件通信和系统消息。 消息分析程序还允许您导入、聚合和分析日志和跟踪文件中的数据。
     
 - [Microsoft 远程连接分析器](https://go.microsoft.com/fwlink/p/?LinkId=517243)：测试 Exchange Online 环境中的连接性。
     

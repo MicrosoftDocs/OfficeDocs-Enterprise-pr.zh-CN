@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: 帮助您规划 Microsoft Office 365 的网络带宽要求。 在部署后，请返回此处对 Office 365 性能进行微调和故障排除。
-ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 0f60c925d01b4a4471d475b923389e3b59e5526c
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38032137"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721943"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Office 365 的网络规划和性能优化
 在首次部署或迁移到 Office 365 之前，您可以使用这些主题中的信息来估计所需的带宽，然后测试并验证是否有足够的带宽来部署或迁移到 Office 365。 有关概述，请参阅：[针对 Office 365 的网络和迁移规划](network-and-migration-planning.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "38032137"
 
 部署 Office 365 后，可以使用本节中的主题优化性能。 如果您遇到性能下降问题，您还可以使用这些主题解决问题。
   
- **[优化 office 365 性能](tune-office-365-performance.md)**：有关在 office 365 中使用网络地址转换的信息，请参阅[使用 Office 365 的 NAT 支持](nat-support-with-office-365.md)。 此外，请参阅 Paul Collinge 对[Office 365 网络连接进行优化和故障排除前10个提示](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx)。 
+ **[优化 office 365 性能](tune-office-365-performance.md)**：有关在 office 365 中使用网络地址转换的信息，请参阅[使用 Office 365 的 NAT 支持](nat-support-with-office-365.md)。 此外，请查看[优化和排除 Office 365 网络连接故障的十大提示](https://docs.microsoft.com/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity)。 
   
  **[调整 Exchange online 性能](tune-exchange-online-performance.md)**：使用这些文章可以微调 exchange online 性能。 
   

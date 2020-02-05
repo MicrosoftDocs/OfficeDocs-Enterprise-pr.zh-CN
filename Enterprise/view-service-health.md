@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在调用支持之前查看 Office 365 服务的运行状况状态，以查看是否有活动的服务中断。
-ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 4dace633b4f68f3f9361096a4bd99296b8b807b2
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122581"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721973"
 ---
 # <a name="how-to-check-office-365-service-health"></a>如何查看 Office 365 服务运行状况
 
@@ -114,6 +114,7 @@ ms.locfileid: "41122581"
 |**延期恢复** | 此状态表示正在执行纠正措施，为大多数用户恢复服务，但恢复所有受影响的系统仍需一些时间。如果我们为了减轻影响，而在实施永久解决措施前实施临时措施，你也可能看到此状态。 |
 |**调查暂停** | 如果对潜在问题的详细调查需要请求客户提供其他信息，以便进行进一步的调查，则你将看到此状态。如果我们需要你的参与，我们会告知你所需的数据或日志。 |
 |**已还原服务** | 我们确认纠正措施已解决基础问题，且服务已还原到正常状态。若要了解出了什么问题，请查看问题详细信息。 |
+|**误报** | 在进行详细调查之后，我们已确认服务运行正常且按设计正常运行。 不会对服务造成任何影响，也不会导致事件发生在服务之外。 |
 |**已发布事件后报告** | 我们已发布了一个针对特定问题的公告事件报告，其中包括根本原因信息和后续步骤，以确保不会发生类似的问题。 |
 
 ### <a name="history"></a>历史记录

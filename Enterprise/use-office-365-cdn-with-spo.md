@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 介绍如何使用 Office 365 内容传送网络（CDN）加快将 SharePoint Online 资产传递给所有用户，无论它们位于何处或如何访问你的内容。
-ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962479"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721933"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -55,6 +55,7 @@ Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即_源_）�
 + 使用 PowerShell 或 SharePoint Online CLI 设置和配置 CDN
 
   + [使用 SharePoint Online 命令行管理程序设置和配置 CDN](use-office-365-cdn-with-spo.md#CDNSetupinPShell)
+  + [使用 PnP PowerShell 设置和配置 CDN](use-office-365-cdn-with-spo.md#CDNSetupinPnPPosh)
   + [使用 Office 365 CLI 设置和配置 CDN](use-office-365-cdn-with-spo.md#CDNSetupinCLI)
 
   完成此步骤后，您将拥有：
@@ -443,6 +444,289 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 
 </details>
 
+<a name="CDNSetupinPnPPosh"> </a>
+## <a name="set-up-and-configure-the-office-365-cdn-by-using-pnp-powershell"></a>使用 PnP PowerShell 设置和配置 Office 365 CDN
+
+本节中的过程要求您使用 PnP PowerShell 连接到 SharePoint Online。 有关说明，请参阅[PnP PowerShell](https://github.com/SharePoint/PnP-PowerShell#getting-started)入门。
+
+完成这些步骤，在 SharePoint Online 中使用 PnP PowerShell 设置和配置 CDN 以托管你的资产。
+
+<details>
+  <summary>单击以展开</summary>
+
+### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>使你的组织能够使用 Office 365 CDN
+
+在对租户 CDN 设置进行更改之前，应在 Office 365 租户中检索专用 CDN 配置的当前状态。 使用 PnP PowerShell 连接到你的租户：
+
+``` powershell
+Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
+```
+
+现在，使用**PnPTenantCdnEnabled** cmdlet 检索租户中的 CDN 状态设置：
+
+``` powershell
+Get-PnPTenantCdnEnabled -CdnType <Public | Private>
+```
+
+指定 CdnType 的 CDN 状态将输出到屏幕上。
+
+使用**PnPTenantCdnEnabled** cmdlet 可使您的组织使用 OFFICE 365 CDN。 您可以让您的组织同时使用公用来源、专用来源或同时使用这两者。 您还可以将 CDN 配置为在启用时跳过默认来源的设置。 您随时可以按照本主题中所述，在以后添加这些来源。
+  
+在 PnP PowerShell 中：
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
+```
+
+例如，若要使组织能够使用公共来源和专用来源，请键入以下命令：
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Both -Enable $true
+```
+
+若要使组织能够使用公共来源和专用来源，但跳过设置默认来源，请键入以下命令：
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
+```
+
+有关在启用 Office 365 CDN 时默认设置的来源的信息以及跳过默认来源设置的潜在影响，请参阅[默认 CDN 来源](use-office-365-cdn-with-spo.md#default-cdn-origins)。
+
+若要使组织能够使用公共来源，请键入以下命令：
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
+```
+
+若要使您的组织使用专用来源，请键入以下命令：
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
+```
+
+有关此 cmdlet 的详细信息，请参阅[PnPTenantCdnEnabled](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled)。
+
+<a name="Office365CDNforPnPPoshFileType"> </a>
+### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>更改要包含在 Office 365 CDN 中的文件类型列表（可选）
+
+> [!TIP]
+> 使用**PnPTenantCdnPolicy** cmdlet 定义文件类型时，将覆盖当前定义的列表。 如果要向列表中添加其他文件类型，请先使用 cmdlet 找出已允许的文件类型，并将它们包含在列表中以及新的文件类型。
+  
+使用**PnPTenantCdnPolicy** cmdlet 可以定义可由 CDN 中的公共和专用来源承载的静态文件类型。 默认情况下，允许使用常见资产类型，例如 .css、.gif、.jpg 和 .js。
+
+在 PnP PowerShell 中：
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
+```
+
+例如，若要启用 CDN 以承载 .css 和 .png 文件，您需要输入以下命令：
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
+```
+
+若要查看 CDN 当前允许的文件类型，请使用**PnPTenantCdnPolicies** cmdlet：
+
+``` powershell
+Get-PnPTenantCdnPolicies -CdnType <Public | Private>
+```
+
+有关这些 cmdlet 的详细信息，请参阅[PnPTenantCdnPolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy)和[PnPTenantCdnPolicies](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies)。
+
+<a name="Office365CDNforPnPPoshSiteClassification"> </a>
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>更改要从 Office 365 CDN 中排除的网站分类列表（可选）
+
+> [!TIP]
+> 当您使用**PnPTenantCdnPolicy** cmdlet 排除网站分类时，将覆盖当前定义的列表。 如果要排除其他网站分类，请先使用 cmdlet 找出已排除的分类，然后将其添加到新的分类中。
+
+使用**PnPTenantCdnPolicy** cmdlet 可以排除您不希望通过 CDN 提供的站点分类。 默认情况下，不排除任何网站分类。
+
+在 PnP PowerShell 中：
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications>"
+```
+
+若要查看当前受限制的网站分类，请使用**PnPTenantCdnPolicies** cmdlet：
+
+``` powershell
+Get-PnPTenantCdnPolicies -CdnType <Public | Private>
+```
+
+将返回的属性为_IncludeFileExtensions_、 _ExcludeRestrictedSiteClassifications_和_ExcludeIfNoScriptDisabled_。
+
+_IncludeFileExtensions_属性包含将从 CDN 提供服务的文件扩展名的列表。
+
+> [!NOTE]
+> 公用和专用的默认文件扩展名是不同的。
+
+_ExcludeRestrictedSiteClassifications_属性包含要从 CDN 中排除的网站分类。 例如，您可以排除标记为**机密**的网站，以便不会从 CDN 为应用了该分类的网站中的内容提供服务。
+
+_ExcludeIfNoScriptDisabled_属性基于网站级_NoScript_属性设置从 CDN 中排除内容。 默认情况下， _NoScript_属性设置为 "为_新式_网站**启用**"，并对_经典_网站**禁用**。 这取决于租户设置。
+
+有关这些 cmdlet 的详细信息，请参阅[PnPTenantCdnPolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy)和[PnPTenantCdnPolicies](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies)。
+
+<a name="Office365CDNforPnPPoshOrigin"> </a>
+### <a name="add-an-origin-for-your-assets"></a>为你的资产添加来源
+
+使用**PnPTenantCdnOrigin** cmdlet 可以定义原点。 可以定义多个源。 源是 SharePoint 库或文件夹的 URL，其中包含要由 CDN 托管的资产。
+  
+> [!IMPORTANT]
+> 永远不应将包含用户信息或被视为对您的组织敏感的资源置于公共来源中。
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
+```
+
+_Path_的值是包含这些资产的库或文件夹的相对路径。 除了相对路径之外，还可以使用通配符。 来源支持附加到 URL 的通配符。 这使您可以创建跨多个网站的来源。 例如，若要将所有网站的 masterpages 文件夹中的所有资源作为 CDN 中的公共来源包括在内，请键入以下命令：
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
+```
+
++ 通配符修饰符 ***/** 仅可在路径的开头使用，并将与指定 URL 下的所有 URL 段匹配。
++ 路径可以指向文档库、文件夹或网站。 例如，路径 _*/site1_将与网站下的所有文档库相匹配。
+
+您可以添加具有特定相对路径的原点。 您不能使用完整路径添加原点。
+
+本示例在特定网站上添加 "网站资产" 库的专用来源：
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
+```
+
+本示例在网站集的 "网站资产" 库中添加 " _folder1_ " 文件夹的专用原点：
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
+```
+
+如果路径中有空格，可以将路径括在双引号中，或将空格替换为 URL 编码 %20。 下面的示例将在网站集的 "网站资产" 库中添加_文件夹 1_文件夹的专用来源：
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
+```
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
+```
+
+有关此命令及其语法的详细信息，请参阅[外接程序 PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)。
+
+> [!NOTE]
+> 在专用来源中，从来源共享的资产必须先发布主要版本，然后才能从 CDN 访问它们。
+  
+运行命令后，系统将同步整个数据中心的配置。 这最长可能需要15分钟。
+
+<a name="ExamplePublicOriginPnPPosh"> </a>
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>示例：为您的母版页和为 SharePoint Online 的样式库配置公共原点
+
+通常情况下，当您启用 Office 365 CDN 时，将为您设置这些来源。 但是，如果要手动启用它们，请按照以下步骤操作。
+  
++ 使用**PnPTenantCdnOrigin** cmdlet 可将样式库定义为公共来源。
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
+  ```
+
++ 使用**PnPTenantCdnOrigin** cmdlet 可将母版页定义为公共源。
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
+  ```
+
+有关此命令及其语法的详细信息，请参阅[外接程序 PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)。
+
+运行命令后，系统将同步整个数据中心的配置。 这最长可能需要15分钟。
+
+<a name="ExamplePrivateOriginPnPPosh"> </a>
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>示例：为 SharePoint Online 的网站资产、网站页面和发布图像配置专用来源
+
++ 使用**PnPTenantCdnOrigin** cmdlet 可以将 "网站资产" 文件夹定义为专用来源。
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
+  ```
+
++ 使用**PnPTenantCdnOrigin** cmdlet 可将 "网站页面" 文件夹定义为专用来源。
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
+  ```
+
++ 使用**PnPTenantCdnOrigin** cmdlet 可以将发布映像文件夹定义为专用源。
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
+  ```
+
+有关此命令及其语法的详细信息，请参阅[外接程序 PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)。
+
+运行命令后，系统将同步整个数据中心的配置。 这最长可能需要15分钟。
+
+<a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
+### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>示例：为 SharePoint Online 的网站集配置专用来源
+
+使用**PnPTenantCdnOrigin** cmdlet 可将网站集定义为私有源。 例如：
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
+```
+
+有关此命令及其语法的详细信息，请参阅[外接程序 PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)。
+  
+运行命令后，系统将同步整个数据中心的配置。 您可能会看到一个预期的_配置挂起_消息，因为 SharePoint Online 租户连接到 CDN 服务。 这最长可能需要15分钟。
+
+<a name="CDNManagePnPPosh"> </a>
+### <a name="manage-the-office-365-cdn"></a>管理 Office 365 CDN
+
+设置 CDN 后，您可以在更新内容或需要更改时对配置进行更改，如本节中所述。
+  
+<a name="Office365CDNforSPOaddremoveassetPnPPosh"> </a>
+#### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>在 Office 365 CDN 中添加、更新或删除资产
+
+完成设置步骤后，可以在需要时添加新资产，并更新或删除现有资产。 只需对您标识为来源的文件夹或 SharePoint 库中的资产进行更改即可。 如果添加新资产，可立即通过 CDN 使用它。 但是，如果您更新资产，最长需要15分钟才能在 CDN 中传播并变为可用的新副本。
+  
+如果需要检索原点的位置，则可以使用**PnPTenantCdnOrigin** cmdlet。 有关如何使用此 cmdlet 的信息，请参阅[PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin)。
+
+<a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
+#### <a name="remove-an-origin-from-the-office-365-cdn"></a>从 Office 365 CDN 中删除源
+
+您可以删除您标识为来源的文件夹或 SharePoint 库的访问权限。 为此，请使用**PnPTenantCdnOrigin** cmdlet。
+
+``` powershell
+Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
+```
+
+有关如何使用此 cmdlet 的信息，请参阅[PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/remove-pnptenantcdnorigin)。
+
+<a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
+#### <a name="modify-an-origin-in-the-office-365-cdn"></a>在 Office 365 CDN 中修改原点
+
+您不能修改已创建的原点。 相反，请删除该原点，然后添加一个新的原点。 有关详细信息，请参阅[从 Office 365 CDN 中删除原点](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh)和[为资产添加来源](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh)。
+
+<a name="Office365CDNforSPODisable"> </a>
+#### <a name="disable-the-office-365-cdn"></a>禁用 Office 365 CDN
+
+使用**PnPTenantCdnEnabled** cmdlet 为您的组织禁用 CDN。 如果您同时启用了 CDN 的公共和专用来源，则需要运行 cmdlet 两次，如以下示例所示。
+  
+若要禁用 CDN 中的公共来源，请输入以下命令：
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Public -Enable $false
+```
+
+若要禁用 CDN 中的专用来源的使用，请输入以下命令：
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
+```
+
+有关此 cmdlet 的详细信息，请参阅[PnPTenantCdnEnabled](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled)。
+
+</details>
+
 <a name="CDNSetupinCLI"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>使用 Office 365 CLI 设置和配置 Office 365 CDN
 
@@ -670,7 +954,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 请务必注意，SharePoint Online 不支持私人来源资产的项目级权限。 例如，对于位于的文件，在`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`以下情况下，用户可以有效访问文件：
 
-|User  |权限  |有效访问  |
+|User  |Permissions  |有效访问  |
 |---------|---------|---------|
 |用户1     |有权访问 folder1         |可以从 CDN 访问 image1         |
 |用户 2     |不具有对 folder1 的访问权限         |无法从 CDN 访问 image1         |
