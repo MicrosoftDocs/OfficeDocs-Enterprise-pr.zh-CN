@@ -10,17 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
+f1.keywords:
+- NOCSH
 description: Exchange 2010 即将停止支持。 将此规划路线图用作准备升级到 Exchange Online 或部署到本地 Exchange Server 的更新版本的指南。
-ms.openlocfilehash: 464406cd9603a41d10f98374442167160609c060
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: b8e9e1b94c08ec58294f88a7b5607b18c9f44a99
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745795"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840379"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 结束支持路线图
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 在**2020 年10月 13**日，Exchange Server 2010 将达到支持的结尾。 如果尚未开始从 Exchange 2010 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。
 

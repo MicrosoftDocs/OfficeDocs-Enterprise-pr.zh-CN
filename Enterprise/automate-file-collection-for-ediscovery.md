@@ -10,17 +10,19 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 摘要：了解如何从用户计算机中自动收集文件以用于电子数据展示。
-ms.openlocfilehash: ccea04f4573a16750f588295fca5621d5abd8498
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: cc6018f65174e142710c71c7f820fc728cd1dc3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077715"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844733"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>电子数据展示文件收集自动化
 
@@ -330,8 +332,8 @@ $AllFiles | ForEach-Object {
     
 |**行号**|**需更改的内容**|**必需/可选**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** 标记在其中导入 PST 的邮箱文件夹。根据需要更改此变量。<br/> |可选  <br/> |
-|×  <br/> |**$ConnectionUri** 需设置为您自己的服务器。 <br/> > [!IMPORTANT]> 确保您的 **$ConnectionUri** 指向 http 位置，而不是 https。它不适用于 https:。          |必需  <br/> |
+|12   <br/> |**$FolderIdentifier** 标记在其中导入 PST 的邮箱文件夹。根据需要更改此变量。<br/> |可选  <br/> |
+|17   <br/> |**$ConnectionUri** 需设置为您自己的服务器。 <br/> > [!IMPORTANT]> 确保您的 **$ConnectionUri** 指向 http 位置，而不是 https。它不适用于 https:。          |必需  <br/> |
    
 4. 确认 Exchange 受信任子系统帐户具有 \\\\Staging\\Cases$ 共享的读取、写入和执行权限。
     

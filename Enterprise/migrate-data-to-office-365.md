@@ -13,13 +13,15 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
+f1.keywords:
+- NOCSH
 description: 如果你已选择退出 FastTrack 部署并准备将数据迁移到 Office 365，可以从此处开始。
-ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 4389d5531b21b892408ba7941900ee7aceb55474
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031327"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844883"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>将组织数据迁移到 Office 365 企业版
 

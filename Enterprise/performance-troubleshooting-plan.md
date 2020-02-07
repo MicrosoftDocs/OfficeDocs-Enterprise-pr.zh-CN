@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: 您需要了解在 SharePoint Online、OneDrive for business、Exchange Online 或 Skype for business Online 和您的客户端计算机之间识别和修复滞后、挂起和降低性能的步骤吗？ 在致电支持之前，本文可帮助您解决 Office 365 性能问题，甚至修复一些最常见的问题。
-ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 7bb8ce4884ad7419cfc7e9c895ea7e1783042b1b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814620"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841809"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 的性能疑难解答计划
 
@@ -139,7 +141,7 @@ HTTPWatch 是一个浏览器插件，因此在浏览器中公开此工具会因 
 
 3. 完成这些步骤后，单击 "**停止录制**"。 如果性能问题是页面呈现，请在停止录制之前等待页面呈现。
 
-4. 单击“保存”****。
+4. 单击“**保存**”。
 
 ![步骤记录器或 PSR 的屏幕截图。](media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
   
@@ -324,7 +326,7 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 2. 单击 "**选择列**"。
 3. 在列表中找到_NTLMSSP Summary_和_Time Delta_ ，然后单击 "**添加**"。
 4. 将新列移到 "_说明_" 列之前或之后，以便您可以并排阅读它们。
-5. 单击“确定”。
+5. 单击“**确定**”。
 
 即使不添加列，Netmon 筛选也能正常运行。 但是，如果你可以看到你的身份验证阶段，你的故障排除将会大大简化。
 
@@ -365,7 +367,7 @@ DNS 流量基于 TCP，并且 UDP 请求和响应使用 ID 进行清楚标记，
 2. 单击 "**选择列**"。
 3. 在列表中找到_时间 Delta_ ，然后单击 "**添加**"。
 4. 将新列移到 "_说明_" 列之前或之后，以便您可以并排阅读它们。
-5. 单击“确定”。
+5. 单击“**确定**”。
 
 如果找到感兴趣的查询，请考虑将其隔离，具体方法是在 "框架详细信息" 面板中右键单击该查询，然后选择 "**查找对话** \> **DNS**"。 请注意，网络对话面板将直接跳转到其 UDP 流量日志中的特定对话。
 

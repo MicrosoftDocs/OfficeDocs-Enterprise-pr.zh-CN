@@ -9,44 +9,46 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Office for Mac 应用程序在 macOS 平台上提供了本机应用程序体验。 每个应用程序设计为在各种情况下运行, 包括在没有网络访问权限的情况下使用的状态。 当计算机连接到网络时, 应用程序将自动连接到一系列基于 web 的服务, 以提供增强功能。 本白皮书介绍了应用程序尝试访问的终结点和 Url, 以及提供的服务。 此信息在对网络配置问题进行故障排除以及为网络代理服务器设置策略时非常有用。 本文中的详细信息旨在补充 Office 365 URL 和地址范围文章。
-ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+description: Office for Mac 应用程序在 macOS 平台上提供了本机应用程序体验。 每个应用程序设计为在各种情况下运行，包括在没有网络访问权限的情况下使用的状态。 当计算机连接到网络时，应用程序将自动连接到一系列基于 web 的服务，以提供增强功能。 本白皮书介绍了应用程序尝试访问的终结点和 Url，以及提供的服务。 此信息在对网络配置问题进行故障排除以及为网络代理服务器设置策略时非常有用。 本文中的详细信息旨在补充 Office 365 URL 和地址范围文章。
+ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781952"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844543"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac 中的网络请求
 
-Office for Mac 应用程序在 macOS 平台上提供了本机应用程序体验。 每个应用程序设计为在各种情况下运行, 包括在没有网络访问权限的情况下使用的状态。 当计算机连接到网络时, 应用程序将自动连接到一系列基于 web 的服务, 以提供增强功能。 以下信息介绍了应用程序尝试访问的终结点和 Url, 以及提供的服务。 此信息在对网络配置问题进行故障排除并为网络代理服务器设置策略时非常有用。 本文中的详细信息旨在补充[Office 365 URL 和地址范围的文章](urls-and-ip-address-ranges.md), 其中包括运行 Microsoft Windows 的计算机的终结点。 除非另行说明, 否则本文中的信息也适用于 Office 2019 for mac 和 Office 2016 for Mac, 可用作来自零售商店的一次性购买或通过批量许可协议。 
+Office for Mac 应用程序在 macOS 平台上提供了本机应用程序体验。 每个应用程序设计为在各种情况下运行，包括在没有网络访问权限的情况下使用的状态。 当计算机连接到网络时，应用程序将自动连接到一系列基于 web 的服务，以提供增强功能。 以下信息介绍了应用程序尝试访问的终结点和 Url，以及提供的服务。 此信息在对网络配置问题进行故障排除并为网络代理服务器设置策略时非常有用。 本文中的详细信息旨在补充[Office 365 URL 和地址范围的文章](urls-and-ip-address-ranges.md)，其中包括运行 Microsoft Windows 的计算机的终结点。 除非另行说明，否则本文中的信息也适用于 Office 2019 for mac 和 Office 2016 for Mac，可用作来自零售商店的一次性购买或通过批量许可协议。 
 
   
-本文大部分是详细介绍网络 Url、类型和该终结点提供的服务或功能说明的表格。 每个 Office 应用程序的服务和终结点的使用可能各不相同。 下面的表中定义了以下应用程序:
+本文大部分是详细介绍网络 Url、类型和该终结点提供的服务或功能说明的表格。 每个 Office 应用程序的服务和终结点的使用可能各不相同。 下面的表中定义了以下应用程序：
   
-- W: Word
-- P: PowerPoint
-- X: Excel
-- O: Outlook
-- N: OneNote
+- W： Word
+- P： PowerPoint
+- X： Excel
+- O： Outlook
+- N： OneNote
    
-URL 类型定义如下:
+URL 类型定义如下：
   
-- ST: Static-URL 已硬编码到客户端应用程序中。
+- ST： Static-URL 已硬编码到客户端应用程序中。
     
-- SS: 半静态-URL 作为网页或重定向器的一部分进行编码。
+- SS：半静态-URL 作为网页或重定向器的一部分进行编码。
     
-- CS: Config Service-URL 作为 Office 配置服务的一部分返回。
+- CS： Config Service-URL 作为 Office 配置服务的一部分返回。
 
     
 ## <a name="office-for-mac-default-configuration"></a>Office for Mac 默认配置
 
  **安装和更新**
   
-以下网络终结点用于从 Microsoft Content 传递网络 (CDN) 下载 Office for Mac 安装程序。
+以下网络终结点用于从 Microsoft Content 传递网络（CDN）下载 Office for Mac 安装程序。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -57,7 +59,7 @@ URL 类型定义如下:
    
  **首次应用启动**
   
-首次启动 Office 应用时, 将会联系到以下网络终结点。 这些终结点为用户提供增强的 Office 功能, 而不管许可证类型 (包括批量许可证安装) 如何联系 Url。
+首次启动 Office 应用时，将会联系到以下网络终结点。 这些终结点为用户提供增强的 Office 功能，而不管许可证类型（包括批量许可证安装）如何联系 Url。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -71,8 +73,8 @@ URL 类型定义如下:
 |```https://templateservice.office.com/```  <br/> |WXP  <br/> |客户  <br/> |Office 模板服务-为用户提供联机文档模板。  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |客户  <br/> |Office 模板下载-PNG 模板图像的存储。  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |客户  <br/> |Office 应用的存储配置。  <br/> |
-|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |Office Document Integration Services 目录 (服务和终结点列表) 和主领域发现。  <br/> |
-|```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |客户  <br/> |适用于家庭领域发现 v2 的资源 (15.40 及更高版本)  <br/> |
+|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |Office Document Integration Services 目录（服务和终结点列表）和主领域发现。  <br/> |
+|```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |客户  <br/> |适用于家庭领域发现 v2 的资源（15.40 及更高版本）  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 自动更新清单-检查以查看是否有可用更新  <br/> |
 |```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |SS  <br/> |Microsoft Ajax JavaScript 库  <br/> |
 |```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |固件  <br/> |SS  <br/> |适用于 Office 的维基百科应用配置和资源。  <br/> |
@@ -88,32 +90,32 @@ URL 类型定义如下:
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |圣保罗  <br/> |Outlook 外接程序的图标。  <br/> |
    
 > [!NOTE]
-> Office 配置服务充当所有 Microsoft Office 客户端 (而不仅仅是 Mac) 的自动发现服务。 在响应中返回的终结点在此更改中非常不频繁, 但仍可能是完全静态的。 
+> Office 配置服务充当所有 Microsoft Office 客户端（而不仅仅是 Mac）的自动发现服务。 在响应中返回的终结点在此更改中非常不频繁，但仍可能是完全静态的。 
   
  **登录**
   
-登录到基于云的存储时, 将联系以下网络终结点。 根据您的帐户类型, 可以联系到不同的服务。 例如：
+登录到基于云的存储时，将联系以下网络终结点。 根据您的帐户类型，可以联系到不同的服务。 例如：
   
-- **MSA: Microsoft 帐户**-通常用于消费者和零售方案 
+- **MSA： Microsoft 帐户**-通常用于消费者和零售方案 
     
-- **OrgID: 组织帐户**-通常用于商业方案 
+- **OrgID：组织帐户**-通常用于商业方案 
     
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Windows 授权服务  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Office 365 登录服务 (OrgID)  <br/> |
-|```https://login.live.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 帐户登录服务 (MSA)  <br/> |
-|```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |客户  <br/> |Microsoft 帐户登录服务帮助程序 (MSA)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Office 365 登录品牌 (OrgID)  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Office 365 登录服务（OrgID）  <br/> |
+|```https://login.live.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 帐户登录服务（MSA）  <br/> |
+|```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |客户  <br/> |Microsoft 帐户登录服务帮助程序（MSA）  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Office 365 登录品牌（OrgID）  <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |文档和位置存储定位程序  <br/> |
-|```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |最近使用的 (MRU) 文档服务  <br/> |
+|```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |最近使用的（MRU）文档服务  <br/> |
    
 > [!NOTE]
-> 对于基于订阅的许可证和零售许可证, 登录既激活了产品, 又支持对云资源 (如 OneDrive) 的访问。 对于批量许可证安装, 仍会提示用户登录 (默认情况下), 但仅当产品已激活时, 才需要访问云资源。 
+> 对于基于订阅的许可证和零售许可证，登录既激活了产品，又支持对云资源（如 OneDrive）的访问。 对于批量许可证安装，仍会提示用户登录（默认情况下），但仅当产品已激活时，才需要访问云资源。 
   
  **产品激活**
   
-以下网络终结点适用于 Office 365 订阅和零售许可证激活。 具体来说, 这不会应用于批量许可证安装。
+以下网络终结点适用于 Office 365 订阅和零售许可证激活。 具体来说，这不会应用于批量许可证安装。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -188,11 +190,11 @@ URL 类型定义如下:
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
-|```https://wordcs.officeapps.live.com/```  <br/> |固件  <br/> |客户  <br/> |Word 文档转换服务 (PDF)  <br/> |
+|```https://wordcs.officeapps.live.com/```  <br/> |固件  <br/> |客户  <br/> |Word 文档转换服务（PDF）  <br/> |
    
- **Office 应用 (亦称为 "外接程序")**
+ **Office 应用（亦称为 "外接程序"）**
   
-当 Office 应用外接程序受信任时, 以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活。
+当 Office 应用外接程序受信任时，以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -230,7 +232,7 @@ URL 类型定义如下:
    
  **故障报告**
   
-以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活的所有 Office 应用程序。 当某个进程意外地发生故障时, 将生成报告并将其发送到 Watson 服务。
+以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活的所有 Office 应用程序。 当某个进程意外地发生故障时，将生成报告并将其发送到 Watson 服务。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -239,11 +241,11 @@ URL 类型定义如下:
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>用于减少网络请求和流量的选项
 
-Office for Mac 的默认配置提供了最佳用户体验, 包括功能和保持计算机为最新状态。 在某些情况下, 您可能希望阻止应用程序与网络终结点联系。 本部分讨论用于执行此操作的选项。
+Office for Mac 的默认配置提供了最佳用户体验，包括功能和保持计算机为最新状态。 在某些情况下，您可能希望阻止应用程序与网络终结点联系。 本部分讨论用于执行此操作的选项。
   
  ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>禁用云登录和 Office 外接程序
   
-批量许可客户可能对将文档保存到基于云的存储具有严格的策略。 可以将以下每个应用程序的首选项设置为禁用 MSA/OrgID 登录, 并访问 Office 外接程序。
+批量许可客户可能对将文档保存到基于云的存储具有严格的策略。 可以将以下每个应用程序的首选项设置为禁用 MSA/OrgID 登录，并访问 Office 外接程序。
   
 - ```defaults write com.microsoft.Word UseOnlineContent -integer 0```
 
@@ -251,7 +253,7 @@ Office for Mac 的默认配置提供了最佳用户体验, 包括功能和保持
 
 - ```defaults write com.microsoft.Powerpoint UseOnlineContent -integer 0```
 
-如果用户尝试访问登录功能, 则会看到一条错误消息, 指出网络连接不存在。 由于此首选项也阻止联机产品激活, 因此只应将其用于批量许可证安装。 具体而言, 使用此首选项将阻止 Office 应用程序访问以下终结点:
+如果用户尝试访问登录功能，则会看到一条错误消息，指出网络连接不存在。 由于此首选项也阻止联机产品激活，因此只应将其用于批量许可证安装。 具体而言，使用此首选项将阻止 Office 应用程序访问以下终结点：
   
 - ```https://odc.officeapps.live.com```
     
@@ -263,22 +265,22 @@ Office for Mac 的默认配置提供了最佳用户体验, 包括功能和保持
     
 - 上面的 "产品激活" 一节中列出的所有终结点。
     
-- 上面的 "Office 应用 (称为外接程序)" 一节中列出的所有终结点。
+- 上面的 "Office 应用（称为外接程序）" 一节中列出的所有终结点。
     
-若要为用户重新建立完整的功能, 请将首选项设置为 "2" 或将其删除。
+若要为用户重新建立完整的功能，请将首选项设置为 "2" 或将其删除。
   
 > [!NOTE]
 > 此首选项需要 Office for Mac build 15.25 [160726] 或更高版本。 
   
 ### <a name="telemetry"></a>遥测
   
-Office for Mac 定期以固定时间间隔向 Microsoft 发送遥测信息。 将数据上载到 "结点" 终结点。 遥测数据可帮助工程团队评估每个 Office 应用程序的运行状况和任何意外行为。 有两种类别的遥测:
+Office for Mac 定期以固定时间间隔向 Microsoft 发送遥测信息。 将数据上载到 "结点" 终结点。 遥测数据可帮助工程团队评估每个 Office 应用程序的运行状况和任何意外行为。 有两种类别的遥测：
   
 - **检测信号**包含版本和许可证信息。 此数据将在应用程序启动时立即发送。 
     
 - **用法**包含有关如何使用应用程序和非致命错误的信息。 此数据每60分钟发送一次。 
     
-Microsoft 会认真对待你的隐私。 你可以在上[https://privacy.microsoft.com](https://privacy.microsoft.com)阅读有关 Microsoft 的数据收集策略的信息。 若要防止应用程序发送 "Usage" 遥测, 可以调整**SendAllTelemetryEnabled**首选项。 首选项为每个应用程序, 可以通过 macOS 配置文件进行设置, 也可以通过终端手动进行设置: 
+Microsoft 会认真对待你的隐私。 你可以在上[https://privacy.microsoft.com](https://privacy.microsoft.com)阅读有关 Microsoft 的数据收集策略的信息。 若要防止应用程序发送 "Usage" 遥测，可以调整**SendAllTelemetryEnabled**首选项。 首选项为每个应用程序，可以通过 macOS 配置文件进行设置，也可以通过终端手动进行设置： 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
@@ -294,30 +296,30 @@ Microsoft 会认真对待你的隐私。 你可以在上[https://privacy.microso
 
 ```defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE```
 
-始终发送检测信号遥测, 且不能禁用。
+始终发送检测信号遥测，且不能禁用。
   
 ### <a name="crash-reporting"></a>故障报告
   
-出现致命的应用程序错误时, 应用程序将意外终止并将故障报告上传到 "Watson" 服务。 故障报告由调用堆栈组成, 该堆栈是应用程序处理的导致崩溃的步骤列表。 这些步骤可帮助工程团队确定失败的确切功能以及原因。
+出现致命的应用程序错误时，应用程序将意外终止并将故障报告上传到 "Watson" 服务。 故障报告由调用堆栈组成，该堆栈是应用程序处理的导致崩溃的步骤列表。 这些步骤可帮助工程团队确定失败的确切功能以及原因。
   
-在某些情况下, 文档的内容将导致应用程序崩溃。 如果应用程序将文档标识为原因, 它将询问用户是否可以同时随呼叫栈一起发送文档。 用户可以为此问题做出明智的选择。 IT 管理员可能严格要求传输文档, 并让用户代表用户从不发送文档。 可以设置以下首选项以阻止发送文档, 并禁止提示用户:
+在某些情况下，文档的内容将导致应用程序崩溃。 如果应用程序将文档标识为原因，它将询问用户是否可以同时随呼叫栈一起发送文档。 用户可以为此问题做出明智的选择。 IT 管理员可能严格要求传输文档，并让用户代表用户从不发送文档。 可以设置以下首选项以阻止发送文档，并禁止提示用户：
   
 ```defaults write com.microsoft.errorreporting IsAttachFilesEnabled -bool FALSE```
 
 > [!NOTE]
-> 如果将**SendAllTelemetryEnabled**设置为**FALSE**, 则会禁用该进程的所有故障报告。 若要启用故障报告而不发送使用遥测, 可以设置以下首选项:```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
+> 如果将**SendAllTelemetryEnabled**设置为**FALSE**，则会禁用该进程的所有故障报告。 若要启用故障报告而不发送使用遥测，可以设置以下首选项：```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
   
 ### <a name="updates"></a>更新
   
-Microsoft 按固定时间间隔 (通常每月一次) 发布 Office for Mac 更新。 我们强烈建议用户和 IT 管理员将计算机保持最新, 以确保安装了最新的安全修补程序。 在 IT 管理员希望密切控制和管理计算机更新的情况下, 可以设置以下首选项, 以防止自动更新过程自动检测和提供产品更新:
+Microsoft 按固定时间间隔（通常每月一次）发布 Office for Mac 更新。 我们强烈建议用户和 IT 管理员将计算机保持最新，以确保安装了最新的安全修补程序。 在 IT 管理员希望密切控制和管理计算机更新的情况下，可以设置以下首选项，以防止自动更新过程自动检测和提供产品更新：
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
 ### <a name="blocking-requests-with-a-firewallproxy"></a>使用防火墙/代理阻止请求
   
-如果你的组织通过防火墙或代理服务器阻止对 Url 的请求, 请确保将此文档中列出的 Url 配置为 "允许" 或 "阻止" (例如, 403 或 404) "阻止"。 40X 响应将允许 Office 应用程序正常接受无法访问资源的情况, 并提供更快的用户体验, 而不只是删除连接, 这将导致客户端重试。
+如果你的组织通过防火墙或代理服务器阻止对 Url 的请求，请确保将此文档中列出的 Url 配置为 "允许" 或 "阻止" （例如，403或404） "阻止"。 40X 响应将允许 Office 应用程序正常接受无法访问资源的情况，并提供更快的用户体验，而不只是删除连接，这将导致客户端重试。
   
-如果代理服务器需要身份验证, 则407响应将返回到客户端。 为获得最佳体验, 请确保您使用的是 Office for Mac 版本15.27 或更高版本, 因为它们包含用于使用 NTLM 和 Kerberos 服务器的特定修补程序。
+如果代理服务器需要身份验证，则407响应将返回到客户端。 为获得最佳体验，请确保您使用的是 Office for Mac 版本15.27 或更高版本，因为它们包含用于使用 NTLM 和 Kerberos 服务器的特定修补程序。
   
   
 ## <a name="see-also"></a>另请参阅

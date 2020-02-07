@@ -1,5 +1,5 @@
 ---
-title: Office 365 企业版
+title: Office 365 Enterprise
 description: Microsoft Office 365 提供功能强大的在线云服务，支持协作、安全性和合规性、移动性、智能和分析。 本页面提供面向在企业组织中部署、配置和管理 Office 365 服务的管理员和 IT 专业人员的指南。
 services: o365-solutions
 author: robmazz
@@ -13,13 +13,15 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
+f1.keywords:
+- NOCSH
 ms.author: robmazz
-ms.openlocfilehash: f655daf2887fd5bf8cc82065dc0cc53282b13146
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
-ms.translationtype: HT
+ms.openlocfilehash: f4dd985efa512de8300acc7a02c9c505acb47c38
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030656"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845053"
 ---
 <h1>Office 365 企业版</h1>
 <p>Microsoft Office&nbsp;365 提供功能强大的在线云服务，支持协作、安全性和合规性、移动性、智能和分析。 本页面提供面向在企业组织中部署、配置和管理 Office&nbsp;365 服务的管理员和 IT 专业人员的指南链接。</p>

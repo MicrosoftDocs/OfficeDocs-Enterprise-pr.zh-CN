@@ -9,21 +9,23 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 Office 365 PowerShell 将每个用户的通信设置分配到 Skype for Business Online 策略。
-ms.openlocfilehash: e425c3f0bc6253550b1be2081df89e535da811f4
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: b9bb38b4b93d9b18e46fc1891f52d89fd1ba9c9e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072254"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844263"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>指定每个用户 Skype 的在线商业策略与 Office 365 PowerShell
 
 使用 Office 365 PowerShell 是一种将每个用户的通信设置分配到 Skype for Business Online 策略的有效方式。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 使用以下说明设置运行命令（跳过已完成的步骤）：
   

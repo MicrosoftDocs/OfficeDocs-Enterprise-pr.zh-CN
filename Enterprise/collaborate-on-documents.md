@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: 了解如何通过 SharePoint 和 OneDrive 中的文档与来宾进行协作。
-ms.openlocfilehash: f2cecb086116e5ea3322a0fd87e5f07f5c30443c
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: d4c7a62fbf4ca94e0f6dd61018f723801a3966a7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919346"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845083"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文档中与来宾协作
 
@@ -41,7 +43,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 3. 在 "**概述**" 窗格中，单击 "**组织关系**"。
 4. 在 "**组织关系**" 窗格中，单击 "**设置**"。
 5. 确保**来宾邀请者角色中的管理员和用户可以邀请**和**成员**都可以邀请都设置为 **"是"**。
-6. 如果进行了更改，请单击 "**保存**"。
+6. 如果进行了任何更改，请单击 **“保存”**。
 
 请注意 "**协作限制**" 部分中的设置。 确保不会阻止您要与之进行协作的来宾域。
 
@@ -61,9 +63,9 @@ SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 3. 确保将 SharePoint 或 OneDrive 的外部共享设置为 "**任何人**" 或**新的和现有的来宾**。 （请注意，OneDrive 设置不能比 SharePoint 设置更具许可。）
-4. 如果进行了更改，请单击 "**保存**"。
+4. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 组织级别的默认链接设置
 
@@ -84,7 +86,7 @@ SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。
 
 1. 导航到 SharePoint 管理中心中的 "共享" 页面。
 2. 在 "**文件和文件夹链接**" 下，选择要使用的默认共享链接。
-3. 如果进行了更改，请单击 "**保存**"。
+3. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 网站级别共享设置
 
@@ -93,11 +95,11 @@ SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。
 ![SharePoint 网站外部共享设置的屏幕截图](media/sharepoint-site-external-sharing-settings.png)
 
 设置网站级共享设置
-1. 在 SharePoint 管理中心中，在左侧导航栏中，展开 "**网站**"，然后单击 "**活动网站**"。
+1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“站点”**，然后单击 **“活动站点”**。
 2. 选择您刚刚创建的网站。
-3. 在功能区中，单击 "**共享**"。
+3. 在功能区中，单击 **“共享”**。
 4. 确保将 "共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
-5. 如果进行了更改，请单击 "**保存**"。
+5. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="invite-users"></a>邀请用户
 

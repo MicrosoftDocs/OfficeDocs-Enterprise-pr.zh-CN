@@ -11,15 +11,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '摘要：使用这些文章以在 Microsoft Azure 中部署 Office Server 工作负荷。 '
-ms.openlocfilehash: 8f418c6fda9fb40ba0a714fd164ab3c1fe11f79e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9ce7236a8b9c776aacd259fd944d85326a41e32e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067238"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840129"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 

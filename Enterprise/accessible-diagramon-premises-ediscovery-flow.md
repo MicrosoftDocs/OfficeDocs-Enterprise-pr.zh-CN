@@ -10,23 +10,25 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
+f1.keywords:
+- NOCSH
 description: 本文是名为“本地电子数据展示流程”的图的可访问文本版本。
-ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ec9ecf7d3663503f2da412364d919a6c70032e23
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068528"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843853"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>可访问的图 - 内部部署电子数据展示流程
 
-**摘要:** 本文是名为本地电子数据展示流的图表的可访问文本版本。
+**摘要：** 本文是名为本地电子数据展示流的图表的可访问文本版本。
   
 此海报提供了关于跨服务器产品的体系结构和数据流的详细信息。 
   
 ## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>跨 SharePoint、Exchange、Lync 和文件共享
 
-该图显示了一个用户, 该用户发送的查询可访问两个服务器场、一个 SharePoint 2013 企业应用程序场和一个 SharePoint 2013 服务场。 SharePoint 2013 服务场与 SharePoint 2013 内容场进行通信, Exchange Server 2013 (与 Lync 2013 通信) 和 Windows 文件共享。 
+该图显示了一个用户，该用户发送的查询可访问两个服务器场、一个 SharePoint 2013 企业应用程序场和一个 SharePoint 2013 服务场。 SharePoint 2013 服务场与 SharePoint 2013 内容场进行通信，Exchange Server 2013 （与 Lync 2013 通信）和 Windows 文件共享。 
   
 电子数据展示流程列表介绍了数据流以及电子数据展示查询操作跨 SharePoint、Exchange、Lync 和文件共享发生的顺序。  
   
@@ -38,11 +40,11 @@ ms.locfileid: "34068528"
   
 1. 在电子数据展示中心 (EDC) 中创建、管理和使用电子数据展示案例。 EDC 是 SharePoint 2013 网站集。 这是定义案例、识别要跟踪的源、发布查询、查看查询结果及放置或删除保留内容的地方。 
     
-2. 电子数据展示查询或操作（如 Hold、ReleaseHold 或 GetStatus）在企业应用程序场中从 EDC 中继到 Search Service 应用程序 (SSA) 代理。 然后，SSA 代理将通信中继到服务应用程序场中的 SSA。 在此示例中, 请求将所有内容放在 SharePoint 内容场中, 保留文件名中的 "CONTOSO"。 
+2. 电子数据展示查询或操作（如 Hold、ReleaseHold 或 GetStatus）在企业应用程序场中从 EDC 中继到 Search Service 应用程序 (SSA) 代理。 然后，SSA 代理将通信中继到服务应用程序场中的 SSA。 在此示例中，请求将所有内容放在 SharePoint 内容场中，保留文件名中的 "CONTOSO"。 
     
 3. 如果请求是查询案例，则 SSA 会参考搜索索引。然后，通过 EDC 将电子数据展示查询结果集返回给用户。  
     
-4. 如果请求是一个操作，如 Hold 或 ReleaseHold，则将该操作写入 SSA 管理数据库中的 Actions_Table。 在此示例中, 将 "CONTOSO" 的 SharePoint 内容场中的任何内容的保留请求写入 Actions_Table 中。 
+4. 如果请求是一个操作，如 Hold 或 ReleaseHold，则将该操作写入 SSA 管理数据库中的 Actions_Table。 在此示例中，将 "CONTOSO" 的 SharePoint 内容场中的任何内容的保留请求写入 Actions_Table 中。 
     
 5. 内容场电子数据展示就地保留计时器作业将定期唤醒并生成挂起操作的请求，且将状态更新通过 SSA 代理发送至 SSA。 
     
@@ -70,11 +72,11 @@ ms.locfileid: "34068528"
     
 ### <a name="description-of-components-in-the-diagram"></a>图中所示组件的说明
 
-该图显示了一个用户发送查询, 该查询可访问两个服务器场、一个 SharePoint 2013 企业应用程序场和一个 SharePoint 2013 服务场。 SharePoint Services 场与 SharePoint 2013 内容场的接口, Exchange Server 2013 (与 Lync 2013 的接口) 和 Windows 文件共享。 
+该图显示了一个用户发送查询，该查询可访问两个服务器场、一个 SharePoint 2013 企业应用程序场和一个 SharePoint 2013 服务场。 SharePoint Services 场与 SharePoint 2013 内容场的接口，Exchange Server 2013 （与 Lync 2013 的接口）和 Windows 文件共享。 
   
 #### <a name="sharepoint-2013-enterprise-app-farm"></a>SharePoint 2013 企业应用程序场
 
-SharePoint 2013 企业版应用程序场包含以下组件: 
+SharePoint 2013 企业版应用程序场包含以下组件： 
   
 - EDC
     
@@ -94,7 +96,7 @@ SharePoint 2013 企业版应用程序场包含以下组件:
     
 #### <a name="sharepoint-2013-services-farm"></a>SharePoint 2013 服务场
 
-SharePoint 2013 服务场包含以下组件: 
+SharePoint 2013 服务场包含以下组件： 
   
 - SSA 服务  
     
@@ -110,7 +112,7 @@ SharePoint 2013 服务场包含以下组件:
     
 - 如果请求是写入操作，SSA 服务将把写入操作发送到 SSA admin_db。  
     
-- 爬网和响应结果请求将从 SSA 发送到 SharePoint 2013 内容场, 并向 SSA 返回响应。 
+- 爬网和响应结果请求将从 SSA 发送到 SharePoint 2013 内容场，并向 SSA 返回响应。 
     
 - 爬网和相应的结果请求将从 SSA 发送到 Windows 文件共享，响应将返回到 SSA。  
     
@@ -124,7 +126,7 @@ SharePoint 2013 服务场包含以下组件:
     
 #### <a name="sharepoint-2013-content-farm"></a>SharePoint 2013 内容场
 
-SharePoint 2013 内容场包含以下组件: 
+SharePoint 2013 内容场包含以下组件： 
   
 - SSA 代理  
     
@@ -162,15 +164,15 @@ Windows 文件共享组件提供对 SharePoint 服务场中 SSA 的爬网结果�
 
 此图的图例以图形的形式显示不同组件之间不同类型的通信，如图中不同颜色的线条所示：  
   
-- 浅蓝色线条: 查询/操作-电子数据展示查询或操作数据 
+- 浅蓝色线条：查询/操作-电子数据展示查询或操作数据 
     
-- 橙色线条: 展示响应-电子数据展示查询响应数据 
+- 橙色线条：展示响应-电子数据展示查询响应数据 
     
-- 绿线: 状态查询/响应-电子数据展示状态查询/响应数据 
+- 绿线：状态查询/响应-电子数据展示状态查询/响应数据 
     
-- 紫色线条: Exchange 操作/状态请求-针对 Exchange 流量的操作状态的电子数据展示请求。 
+- 紫色线条： Exchange 操作/状态请求-针对 Exchange 流量的操作状态的电子数据展示请求。 
     
-- 红线: Exchange 数据/状态响应-来自 Exchange 的电子数据展示查询或状态响应。 
+- 红线： Exchange 数据/状态响应-来自 Exchange 的电子数据展示查询或状态响应。 
     
 - 黑色虚线：服务器到服务器信任/OAuth  
     

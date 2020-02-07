@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: 适用于 Office 365 的 ExpressRoute 提供了备用的路由路径，以达到多个 Office 365 服务，而无需向 internet 传出传出流量。 虽然仍然需要 internet 连接到 Office 365，但 Microsoft 通过 BGP 向网络公布的特定路由使直接 ExpressRoute 电路成为首选，除非网络中存在其他配置。 您可能需要配置用于管理此路由的三个常见方面，包括前缀筛选、安全性和合规性。
-ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814240"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844983"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>管理 ExpressRoute for Office 365 的连接性
 

@@ -6,14 +6,16 @@ manager: laurawi
 ms.date: 11/25/2019
 audience: Admin
 ms.topic: article
-f1_keywords:
+ms.service: o365-administration
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
 - O365p_AddUsersWithDirSync
 - O365M_AddUsersWithDirSync
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -24,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备使用目录同步将用户预配到 Office 365，以及使用此方法的长期好处。
-ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
-ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
+ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39825184"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841169"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>准备将目录同步到 Office 365
 
@@ -98,7 +100,7 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
   - 如果该属性存在于用户对象中，它将与 Office 365 同步，但 Office 365 不需要或使用它。
   - 最大字符数：64
     
-- **mail**
+- **信箱**
     
   - 属性值在目录中必须是唯一的。
     

@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 介绍如何使用 Office 365 内容传送网络（CDN）加快将 SharePoint Online 资产传递给所有用户，无论它们位于何处或如何访问你的内容。
-ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721933"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841069"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -954,7 +956,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 请务必注意，SharePoint Online 不支持私人来源资产的项目级权限。 例如，对于位于的文件，在`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`以下情况下，用户可以有效访问文件：
 
-|User  |Permissions  |有效访问  |
+|User  |权限  |有效访问  |
 |---------|---------|---------|
 |用户1     |有权访问 folder1         |可以从 CDN 访问 image1         |
 |用户 2     |不具有对 folder1 的访问权限         |无法从 CDN 访问 image1         |
@@ -993,10 +995,10 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 如果缺少 */clientsideassets 原点，SharePoint 框架解决方案将失败，并且不会生成警告或错误消息。 由于启用了 _-NoDefaultOrigins_参数设置为 **$true**，或者已手动删除了来源，因此此来源可能丢失。
 
-您可以使用以下 PowerShell 命令查看 */CLIENTSIDEASSETS 源是否存在：
+您可以使用以下 PowerShell 命令查看是否存在哪些来源：
 
 ``` powershell
-Get-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
 或者，您可以使用 Office 365 CLI 进行检查：
@@ -1028,6 +1030,6 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 
 [内容分发网络](https://aka.ms/o365cdns)
 
-[Office 365 网络计划和性能优化](https://aka.ms/tune)
+[Office 365 的网络规划和性能优化](https://aka.ms/tune)
 
 [SharePoint 性能系列-Office 365 CDN 视频系列](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

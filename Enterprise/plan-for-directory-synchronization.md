@@ -8,6 +8,8 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 介绍与 Office 365、Active Directory 域服务清理和 Azure Active Directory Connect 工具的目录同步。
-ms.openlocfilehash: 7dfb5a34e7a5a1bf1368a059859ef32049a15473
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072534"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841759"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 的混合标识和目录同步
 

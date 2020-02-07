@@ -12,13 +12,15 @@ localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 新式身份验证是标识管理的一种方法，可提供更安全的用户身份验证和授权。 它可用于本地的 Skype for Business server 本地和 Exchange server 的混合部署，以及拆分域 Skype for Business 混合。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档（如 Outlook 和 Skype 客户端）信息。
-ms.openlocfilehash: 5124e42f5dff33d59083cc23f0c57349e6136fb9
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 5852a4a59e4826cb57295452f9996e5c4f91ab29
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721913"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840119"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件
 

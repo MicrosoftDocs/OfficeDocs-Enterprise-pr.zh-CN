@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Skype for Business 中的数据删除说明。
-ms.openlocfilehash: 0c04ff898395a723ebadd792ea576fe10d440dae
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 33fbb91d2fbfd0e3133bfa2cca2118643b702d95
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035729"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844303"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365 中的 Skype for Business 数据删除
 

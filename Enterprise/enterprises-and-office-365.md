@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: 为企业组织规划和管理 Office 365 的资源。
-ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 97ffc7aee647918750a04b2b4761b189e2cebeb1
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067688"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840399"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>企业组织和 Office 365
 
-作为拥有员工的 IT 专业人员的大型组织, 您有维护环境的特定要求和标准。 下面是您规划和管理企业的 Office 365 所需的信息。
+作为拥有员工的 IT 专业人员的大型组织，您有维护环境的特定要求和标准。 下面是您规划和管理企业的 Office 365 所需的信息。
   
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d08b637c-66dc-4f0e-afc2-56da92e99589?autoplay=false]
@@ -56,7 +58,7 @@ ms.locfileid: "34067688"
   
 [获取海报](https://aka.ms/cloudarch)
   
-[![鱼钩在屏幕上 snagging 文档 (网络钓鱼攻击)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)
+[![鱼钩在屏幕上 snagging 文档（网络钓鱼攻击）](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)
   
  **了解常见攻击**
   
@@ -74,7 +76,7 @@ ms.locfileid: "34067688"
   
 [高级培训](https://support.office.com/article/68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.aspx)
   
-![Microsoft 学习认证: MTA、MCSE、MCSA](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
+![Microsoft 学习认证： MTA、MCSE、MCSA](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
   
  **Microsoft 学习**
   
@@ -106,7 +108,7 @@ Office 365 IT 专业人员的自控进度的联机学习体验。
   
 [将多个电子邮件帐户迁移到 Office 365 的方法](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
   
-[从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)
+[从 Office 2010 服务器和客户端进行升级](upgrade-from-office-2010-servers-and-products.md)
   
 [Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)
   
@@ -114,7 +116,7 @@ Office 365 IT 专业人员的自控进度的联机学习体验。
   
 [Office 365 工作效率培训](https://support.office.com/article/af07cb6b-980d-4f33-8599-322582767408)
   
-[视频: 什么是 Office 365？](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
+[视频：什么是 Office 365？](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
   
  **开发资源**
   

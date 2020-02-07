@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: 了解如何配置 Office 365 以与组织外部的人员进行协作。
-ms.openlocfilehash: d343594319f40a3fa3ab2bb619c91f9a3a03ca62
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 747f2d40ade4396979450c3e2d27f387c7bd8aca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919316"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840769"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
 
@@ -26,8 +28,8 @@ ms.locfileid: "39919316"
 
 ## <a name="see-also"></a>另请参阅
 
-[有关与身份未经验证用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
+[有关与未经认证用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 
-[在与组织外部的人员共享时，限制对文件的意外曝光](sharing-limit-accidental-exposure.md)
+[在与组织外人员共享文件时限制意外公开信息](sharing-limit-accidental-exposure.md)
 
 [创建安全来宾共享环境](create-a-secure-guest-sharing-environment.md)）

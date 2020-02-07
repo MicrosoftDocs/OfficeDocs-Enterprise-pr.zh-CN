@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 了解如何将 Azure ExpressRoute 与 Office 365 结合使用，以及如何规划在部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。
-ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745735"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844923"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 了解如何将 Azure ExpressRoute 与 Office 365 结合使用，以及如何规划在部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。 在 Azure 中运行的基础结构和平台服务通常可解决网络体系结构和性能注意事项的好处。 在这些情况下，我们建议为 Azure 提供 ExpressRoute。 作为服务产品（如 Office 365 和 Dynamics 365）构建为通过 Internet 安全可靠地访问。 您可以阅读有关 Internet 性能和安全性的信息，以及在[评估 office 365 网络连接](assessing-network-connectivity.md)的文章中，您可能会考虑 office 365 的 Azure ExpressRoute。
 

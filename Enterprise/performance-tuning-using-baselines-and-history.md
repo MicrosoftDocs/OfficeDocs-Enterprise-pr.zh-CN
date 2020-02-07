@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: 有几种简单的方法可以检查 Office 365 与您的业务之间的连接性能，让您能够建立连接的粗略基准。 了解客户端计算机连接的性能历史记录可帮助您及早检测新兴问题，识别和预测问题。
-ms.openlocfilehash: 03aa4f9092154e00201ca0a58f335b70d26f3b11
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eed0b20886552c207399ab4144b63364132f98c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078131"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844333"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>使用基线和性能历史记录优化 Office 365 性能
 

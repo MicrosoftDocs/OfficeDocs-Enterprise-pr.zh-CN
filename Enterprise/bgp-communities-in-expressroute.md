@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 使用 Azure ExpressRoute 连接到 Office 365 基于特定 IP 子网的 BGP 播发，这些子网代表部署 Office 365 终结点的网络。 由于 Office 365 的全球性质以及构成 Office 365 的服务的数量，客户通常需要在其网络上管理他们接受的广告。 减少 IP 子网的数量;在本文的其余部分中称为 IP 前缀，以与 BGP 网络管理术语保持一致，为客户提供以下最终目标：
-ms.openlocfilehash: 57e8e7a2fa3eb5ecd3268219e6f4a6bc00a08cb0
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1e174aafa0dbbf57f95c45b0e218ebe1793194cc
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085177"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844943"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>在 ExpressRoute for Office 365 方案中使用 BGP 社区
 
@@ -38,7 +40,7 @@ ms.locfileid: "40085177"
 > [!NOTE]
 > 应预计与其他应用程序关联的一些网络流量将包含在社区值中。 这是全球软件的预期行为，即使用共享服务和数据中心提供的服务。 在可能的情况下，这两个目标已最小化，可管理前缀计数和/或带宽。
 
-|**服务**|**BGP 社区值**|**备注**|
+|**服务**|**BGP 社区值**|**Notes**|
 |:-----|:-----|:-----|
 |Exchange Online\*  <br/> |12076:5010  <br/> |包括 Exchange 和 EOP 服务\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |

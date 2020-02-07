@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: 了解如何在 SharePoint 网站中与来宾进行协作。
-ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261355"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845063"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -84,7 +86,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 下一步是创建您计划用于与来宾协作的网站。
 
 创建网站
-1. 在 SharePoint 管理中心中的 "**网站**" 下，单击 "**活动网站**"。
+1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
 2. 单击“**创建**”。
 3. 单击 "**团队网站**"。
 4. 键入网站名称并输入组所有者的名称（网站所有者）。
@@ -133,7 +135,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 [与来宾共享时限制文件意外曝光](sharing-limit-accidental-exposure.md)
 
-[创建安全的来宾共享环境](create-a-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-a-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
 
 [使用受管理的来宾创建 B2B extranet](b2b-extranet.md)
 

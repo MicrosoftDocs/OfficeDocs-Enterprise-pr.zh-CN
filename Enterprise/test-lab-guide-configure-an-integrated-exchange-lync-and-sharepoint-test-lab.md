@@ -12,25 +12,27 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
-description: '摘要: 了解如何创建包含运行 Exchange Server 2013 的服务器、运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器的集成测试实验室。'
-ms.openlocfilehash: 58c7d5ad701471e87c5e6600af2f9a36ac374448
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+f1.keywords:
+- NOCSH
+description: 摘要：了解如何创建包含运行 Exchange Server 2013 的服务器、运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器的集成测试实验室。
+ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070398"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841099"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>测试实验室指南：配置集成的 Exchange、Lync 和 SharePoint 测试实验室
 
- **摘要:** 了解如何创建包含运行 Exchange Server 2013 的服务器、运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器的集成测试实验室。
+ **摘要：** 了解如何创建包含运行 Exchange Server 2013 的服务器、运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器的集成测试实验室。
  
 **观看集成的 Exchange、Lync 和 SharePoint 测试实验室指南概述视频**
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
-此配置产生的测试实验室 (包括所有三种类型的服务器之间的服务器到服务器身份验证) 可用于构建并演示使用运行 Exchange Server 2013 的服务器的多产品方案和解决方案。运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器。
+此配置产生的测试实验室（包括所有三种类型的服务器之间的服务器到服务器身份验证）可用于构建并演示使用运行 Exchange Server 2013 的服务器的多产品方案和解决方案。运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器。
   
-本文档包含以下各项的说明:
+本文档包含以下各项的说明：
   
 1. 配置 Windows Server 2012 基本配置测试实验室。
     
@@ -50,11 +52,11 @@ ms.locfileid: "34070398"
     
 9. 配置 EX1、LYNC1 和 SP1 之间的集成。
     
-有关如何在 Hyper-v 中配置此测试实验室的信息, 请参阅[使用 Windows Server 2012 Hyper-v 托管集成 Exchange、Lync 和 SharePoint 测试实验室](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)。
+有关如何在 Hyper-v 中配置此测试实验室的信息，请参阅[使用 Windows Server 2012 Hyper-v 托管集成 Exchange、Lync 和 SharePoint 测试实验室](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)。
   
 ## <a name="download-the-test-lab-guide"></a>下载测试实验室指南
 
-[测试实验室指南: 配置集成的 Exchange、Lync 和 SharePoint 测试实验室](https://go.microsoft.com/fwlink/p/?LinkId=313670)(https://go.microsoft.com/fwlink/p/?LinkId=313670)
+[测试实验室指南：配置集成的 Exchange、Lync 和 SharePoint 测试实验室](https://go.microsoft.com/fwlink/p/?LinkId=313670)（https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
 ## <a name="see-also"></a>另请参阅
 

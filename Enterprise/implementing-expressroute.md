@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: 适用于 Office 365 的 ExpressRoute 提供了到多个面向 internet 的 Office 365 服务的备用路由路径。 适用于 Office 365 的 ExpressRoute 体系结构基于 Office 365 服务的广告公共 IP 前缀，这些前缀已在 Internet 上可通过 Internet 访问，以便随后将这些 IP 前缀再分发到你的网络。 通过 ExpressRoute，可以有效地通过 internet 和 ExpressRoute 为许多 Office 365 服务启用几种不同的路由路径。 你的网络上的路由状态可能会对你的内部网络拓扑的设计进行重大更改。
-ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 63d7c887f9900250a81fe1428d8b5b5cd3df9b81
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813480"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840179"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 

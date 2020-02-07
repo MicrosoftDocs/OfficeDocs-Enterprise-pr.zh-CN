@@ -5,11 +5,13 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
-f1_keywords:
-- O365E_SetupDirSyncLocalDir
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- O365E_SetupDirSyncLocalDir
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -20,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: 如果您在与 Office 365 同步之前拥有与本地用户关联的非 routale 域，请了解要执行的操作。
-ms.openlocfilehash: 013d29acdd3761793a93dab1eb8583324ba08591
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 10ec92ff19bd5e74363bced9a2f29c356c7fa4e8
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072414"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841219"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>为目录同步准备不可路由的域
 当您将本地目录与 Office 365 同步时，您必须在 Azure Active Directory 中有一个经验证的域。 仅同步与本地域关联的用户主体名称（UPN）。 但是，任何包含非可路由域的 UPN （如 local billa@contoso）将同步到一个 onmicrosoft.com 域（如 billa@contoso.onmicrosoft.com）。 

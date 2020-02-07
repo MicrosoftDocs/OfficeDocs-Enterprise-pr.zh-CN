@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 拒绝服务（DoS）攻击概述。
-ms.openlocfilehash: 55fffccfc59f13d32cdd19930320c1df1cf58461
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 16378800fc7bb61b8f78e2c4c51eb7940cb45d17
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067238"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843585"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>防御 Office 365 中的拒绝服务攻击
 

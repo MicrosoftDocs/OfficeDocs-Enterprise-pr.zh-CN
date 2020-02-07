@@ -10,15 +10,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有的客户租户。
-ms.openlocfilehash: 5f22e21e1eafc7c2d3fb9bc7286e860ad468445b
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 3097ac1574f946a8bd0c82eb25892107ce39b9be
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257461"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844273"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
@@ -59,7 +61,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
 >[!Note]
->PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有**Msol**的 cmdlet。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
+>PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
 >
 
 ### <a name="get-the-data-for-the-dns-txt-verification-record"></a>获取 DNS TXT 验证记录的数据

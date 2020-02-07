@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 Office 365 PowerShell，通过策略管理 Skype for business Online 用户帐户属性。
-ms.openlocfilehash: 1d4f6bc52932bb7315fdd769788b5b3108423424
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: aed7e3929a41dec69803a5b73bdf29fb23b4ba05
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748522"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841329"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>管理 Skype 与 Office 365 PowerShell 的在线业务策略
 

@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: 了解 SharePoint Online 中新式网站的性能建议。
-ms.openlocfilehash: e868b765fe46d8f6ee26443d6e75d31a39bb3281
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078397"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844783"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online 新式门户网站限制
 
@@ -44,7 +46,7 @@ ms.locfileid: "38078397"
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>新式门户网站限制和建议
 
-|**限制**|**建议的最大值**|**注释**|
+|**限制**|**建议的最大值**|**Notes**|
 |:-----|:-----|:-----|:-----|
 |页面和新闻项目  <br/> |每个网站 5,000 个  <br/> |建议将新式门户网站中的页面和新闻项目的数量限制为低于5000。  <br/> |
 |页面上的 Web 部件  <br/> |每页20张  <br/> |我们建议每个页面使用20个或更少的总 web 部件，包括现成的 Microsoft web 部件和自定义 web 部件。 <br/> 有关详细信息，请参阅[在 SharePoint Online 新式网站页面中优化 web 部件性能](modern-web-part-optimization.md)。  <br/> |

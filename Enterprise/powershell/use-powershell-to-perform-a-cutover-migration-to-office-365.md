@@ -8,15 +8,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的直接转换迁移。
-ms.openlocfilehash: 669aa3dc728b41bdc2ba8cc467943db5eb2005d9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6f82dc8501d5dfbca7c980b025e6da7a4deb00d5
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071198"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844713"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>使用 PowerShell 执行直接转换迁移以迁移到 Office 365
 
@@ -33,9 +35,9 @@ ms.locfileid: "34071198"
 
 估计完成该任务的时间：2-5 分钟，用于创建迁移批处理。迁移批处理启动后，迁移的持续时间会有所不同，具体取决于批处理中邮箱的数量、每个邮箱的大小和可用网络容量。有关影响将邮箱迁移到 Office 365 所需时间的其他因素的信息，请参阅[迁移性能](https://go.microsoft.com/fwlink/p/?LinkId=275079)。
   
-您必须先获得权限，然后才能执行此过程。要查看您需要哪些权限，请参阅[收件人权限](https://go.microsoft.com/fwlink/p/?LinkId=534105)主题的一个表中的"迁移"条目。
+你必须先获得权限，然后才能执行此过程。要查看你需要哪些权限，请参阅[收件人权限](https://go.microsoft.com/fwlink/p/?LinkId=534105)主题的一个表中的"迁移"条目。
   
-若要使用 Exchange Online PowerShell cmdlet，您需要登录并将 cmdlet 导入您的本地 Windows PowerShell 会话。有关说明，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。
+若要使用 Exchange Online PowerShell cmdlet，你需要登录并将 cmdlet 导入你的本地 Windows PowerShell 会话。有关说明，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。
   
 有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
   
@@ -75,7 +77,7 @@ ms.locfileid: "34071198"
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **为内部部署用户帐户分配访问 Exchange 组织中的邮箱所需的权限。** 用于连接到内部部署 Exchange 组织的本地用户帐户 (也称为迁移管理员) 必须具有访问要迁移到 Office 365 的本地邮箱的必要权限。。 该用户帐户用于创建内部部署组织的迁移终结点。
+- **为内部部署用户帐户分配访问 Exchange 组织中的邮箱所需的权限。** 用于连接到内部部署 Exchange 组织的本地用户帐户（也称为迁移管理员）必须具有访问要迁移到 Office 365 的本地邮箱的必要权限。。 该用户帐户用于创建内部部署组织的迁移终结点。
     
     以下列表显示了使用直接转换迁移迁移邮箱所需的管理权限。有三个可能的选项。
     
@@ -168,12 +170,12 @@ Start-MigrationBatch -Identity CutoverBatch
 Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-office-365"></a>步骤 5：将您的电子邮件路由到 Office 365
+### <a name="step-5-route-your-email-to-office-365"></a>步骤 5：将你的电子邮件路由到 Office 365
 <a name="BK_Step5"> </a>
 
 电子邮件系统使用名为 MX 记录的 DNS 记录找出传递电子邮件的位置。在电子邮件迁移过程中，您的 MX 记录会指向您的源电子邮件系统。现在电子邮件迁移到 Office 365 已完成，可以在 Office 365 中指向您的 MX 记录。这可以帮助您确保该电子邮件已传递到您的 Office 365 邮箱。通过移动 MX 记录，您还可以在准备就绪的时候关闭旧的电子邮件系统。 
   
-对于很多 DNS 提供商而言，[更改您的 MX 记录](https://go.microsoft.com/fwlink/p/?LinkId=279163)需要遵循特定的说明。如果您的 DNS 提供商不包括在内或您要获取统一指导，我们也会提供 [MX 记录的统一说明](https://go.microsoft.com/fwlink/?LinkId=397449)。
+对于很多 DNS 提供商而言，[更改你的 MX 记录](https://go.microsoft.com/fwlink/p/?LinkId=279163)需要遵循特定的说明。如果你的 DNS 提供商不包括在内或你要获取统一指导，我们也会提供 [MX 记录的统一说明](https://go.microsoft.com/fwlink/?LinkId=397449)。
   
 您客户和合作伙伴的电子邮件系统可能需要 72 小时才能识别更改后的 MX 记录。请等待至少 72 个小时，然后才能继续执行下一项任务： [步骤 6：删除直接转换迁移批处理](use-powershell-to-perform-a-cutover-migration-to-office-365.md#Bk_step6). 
   
@@ -195,7 +197,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>第 7 部分：分配用户许可证
 <a name="BK_Step7"> </a>
 
- **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在 Microsoft 365 管理中心中分配许可证, 请参阅为[Office 365 for Business 分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
+ **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在 Microsoft 365 管理中心中分配许可证，请参阅为[Office 365 for Business 分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Step8"> </a>

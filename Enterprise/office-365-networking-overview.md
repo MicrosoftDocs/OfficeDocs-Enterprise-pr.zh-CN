@@ -13,17 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- NOCSH
 description: 讨论为什么网络优化对 SaaS 服务非常重要，Office 365 网络的目标，以及 SaaS 如何从其他工作负载中获得不同的网络。
-ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747704"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844353"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 网络连接概述
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 Office 365 是分布式软件即服务（SaaS）云，它通过一组不同的微服务和应用程序提供工作效率和协作方案。 Office 365 的客户端组件（如 Outlook、Word 和 PowerPoint）在用户计算机上运行，并连接到在 Microsoft 数据中心中运行的 Office 365 的其他组件。 确定 Office 365 最终用户体验质量的最重要因素是网络可靠性和 Office 365 客户端与 Office 365 服务前盖之间的低延迟。
 
@@ -88,7 +90,7 @@ Office 365 设计为使用端点安全性和加密网络连接实现最佳性能
 
 有关了解和应用 Office 365 网络连接原则的详细信息，请参阅[office 365 网络连接原则](office-365-network-connectivity-principles.md)。
 
-## <a name="conclusion"></a>结束语
+## <a name="conclusion"></a>结论
 
 优化 Office 365 网络性能实际上是为了消除不必要的障碍。 通过将 Office 365 连接视为受信任的流量，可以防止数据包检查和针对代理带宽的竞争引入延迟。 如果允许客户端计算机和 Office 365 终结点之间的本地连接，则可以通过 Microsoft 全局网络动态路由通信。
 

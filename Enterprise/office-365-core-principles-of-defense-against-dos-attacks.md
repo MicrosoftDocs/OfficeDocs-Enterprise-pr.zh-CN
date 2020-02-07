@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Microsoft 如何在防御拒绝服务（DoS）攻击的同时，利用其核心原则、检测和缓解措施。
-ms.openlocfilehash: abfb0efda679930c22d9ce87709aded9a2880f06
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 82957dd1b863e14c13e86b63888e2b1374beb73b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067248"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844523"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>防御拒绝服务攻击的核心原则
 

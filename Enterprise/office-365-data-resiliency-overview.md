@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 了解 Microsoft Office 365 中的数据恢复能力。
-ms.openlocfilehash: 4bdd46689ca0dd9caa3da10fc57951bee3513b85
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035789"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843673"
 ---
 # <a name="data-resiliency-in-office-365"></a>Office 365 中的数据复原能力
 

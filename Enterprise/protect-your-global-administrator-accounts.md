@@ -15,14 +15,16 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+f1.keywords:
+- NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 保护对 Office 365 订阅的全局管理员访问权限。
-ms.openlocfilehash: 293044fc508c89b5e08234aa62633c6c4490ba6d
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ee5acefbd5eab287a78b55f5d4ddfc525432b403
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072204"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841189"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>保护 Office 365 全局管理员帐户
 

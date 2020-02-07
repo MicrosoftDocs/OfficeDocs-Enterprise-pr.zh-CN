@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
 description: 会话超时用于在 Office 365 客户端应用程序中平衡安全性和轻松访问。
-ms.openlocfilehash: e39d578f0a5f193691724e3b3a0c42db0ad1011b
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: cfe60a94e61a54b5611a0f5821d9c2d21c944a6a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030917"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844033"
 ---
 # <a name="session-timeouts-for-office-365"></a>Office 365 的会话超时
 

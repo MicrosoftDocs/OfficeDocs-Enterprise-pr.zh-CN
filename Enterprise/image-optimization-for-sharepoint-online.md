@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 了解如何使用格式副本和子画面提高 SharePoint Online 经典发布网站上的图像性能。
-ms.openlocfilehash: a3dbfeaa238f8c12f8ecc3afaa3a45942d665599
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 4fb6d2b6b553bcc938c660d9aed35bc575a31389
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077615"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840189"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>SharePoint Online 经典发布网站的图像优化
 

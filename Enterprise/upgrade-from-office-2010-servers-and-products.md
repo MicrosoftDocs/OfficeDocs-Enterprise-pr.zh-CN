@@ -20,13 +20,15 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Office 2010 服务器和客户端应用程序的支持即将结束，自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 9df09e0f31358c9dd1bfe4a4adde99d41070060f
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: a71ac61b69d72f6386c3b9063ec0c1946a5b57ca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072404"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841029"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可帮助您从 Office 2010 服务器和客户端进行升级的资源
 

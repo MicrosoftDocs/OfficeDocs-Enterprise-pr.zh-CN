@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: 适用于 Office 365 的 ExpressRoute 在网络和 Microsoft 数据中心之间提供第3层连接。 电路使用 Office 365 前端服务器的边界网关协议（BGP）路由播发。 从本地设备的角度来看，当他们需要选择到 Office 365 的正确 TCP/IP 路径时，Azure ExpressRoute 被视为是 Internet 的替代方法。
-ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814630"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844553"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>使用适用于 Office 365 的 ExpressRoute 进行网络规划
 

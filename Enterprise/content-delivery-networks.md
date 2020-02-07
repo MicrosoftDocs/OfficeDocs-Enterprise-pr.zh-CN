@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息了解 Office 365 如何使用内容传递网络（Cdn）来提高性能。
-ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745835"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840629"
 ---
 # <a name="content-delivery-networks-cdns"></a>内容传递网络（Cdn）
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 Cdn 帮助使最终用户的 Office 365 快速而可靠。 云服务（如 Office 365）使用 Cdn 将静态资产缓存在更接近的浏览器上，以加快下载速度并降低感觉到的最终用户延迟。 本主题中的信息将帮助您了解内容传递网络（Cdn）及其在 Office 365 中的使用方式。
 

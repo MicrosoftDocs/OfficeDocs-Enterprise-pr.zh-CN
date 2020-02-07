@@ -9,16 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 摘要： Office 365 的管理访问控制和数据分类概述。
-ms.openlocfilehash: e8cc470c617deea7435841f276b772b0a8ef17a3
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067259"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844533"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 中的管理访问控制 
 
@@ -29,7 +31,7 @@ By default, Microsoft engineers have zero standing administrative privileges and
 Microsoft 使用多种形式的云传递提供了在线服务：
 
 - **公共云：** 包括在北美、南美洲、欧洲、亚洲、澳大利亚等托管的 Office 365、Azure 和其他服务的多租户版本。
-- **国家/地区云：** 包括美国以外的所有 sovereign 和第三方运营云（前面提到的云除外），例如中国（由世纪互联运营）的 Office 365 和德国的 Office 365 （由 Microsoft 使用，但在一个采用德语数据受托者的模型下）。德国电信，控制和监控 Microsoft 对客户数据和包含客户数据的系统的访问。
+- **国家/地区云：** 包括美国以外的所有 sovereign 和第三方运营云（前面提到的云除外），如中国中的 Office 365 （由世纪互联运营）和德国的 Office 365 （由 Microsoft 使用，但在一种模型中，在德语数据受信者、德国电信中，控制和监控 Microsoft 对客户数据和包含客户数据的系统的访问）。
 - **政府群：** 包含适用于美国政府客户的 Office 365 和 Azure 服务。
 
 出于本文的目的，Office 365 服务包括：
@@ -54,7 +56,7 @@ Microsoft 使用多种形式的云传递提供了在线服务：
 - SharePoint Online 内容
 - 即时消息
 - 日历项目
-- Documents
+- 文档
 - 联系人
 - 最终用户身份信息（EUII）（对用户而言是唯一的，或对单个用户而言是 linkable 但不包含客户内容的数据）。
 

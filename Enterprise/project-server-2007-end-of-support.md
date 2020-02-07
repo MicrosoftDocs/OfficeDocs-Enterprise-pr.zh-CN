@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: IT_ProjectAdmin
 search.appverid:
 - MET150
@@ -17,16 +19,16 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 在2017年10月10日，支持 Project Server 2007、项目组合服务器和项目2007。 现在可以使用本文规划升级。
-ms.openlocfilehash: c21d9d1c2539f66587243f04d4d874649d6bf460
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 4eb8d734f74e2c146da419a55d78d0c8fcce5aab
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746235"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844073"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Project Server 2007 停止提供支持路线图
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 在2017中，Office 2007 服务器和应用程序的支持已结束，您需要考虑迁移计划。 如果你当前使用的是 Project Server 2007，请注意它以及这些其他相关产品的以下支持结束日期：
   

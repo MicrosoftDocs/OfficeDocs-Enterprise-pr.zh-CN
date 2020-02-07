@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -21,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 新式验证在 Office 2013 和2016客户端应用中的工作方式不同。
-ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122571"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844853"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>适用于 Office 2013 和 Office 2016 客户端应用的新式验证工作原理
 
@@ -48,7 +50,7 @@ ms.locfileid: "41122571"
 - 默认情况下 **，启用 Skype For Business** Online。 请参阅[为新式身份验证启用 Skype For Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)以将其关闭或打开。
 
 > [!NOTE]
-> 对于在2017年8月1日**之前**创建的租户，默认情况下，Exchange Online 和 Skype For business Online 的新式身份验证处于**关闭**状态。
+> 对于在 2017 年 8 月 1 日**之前**创建的租户，将为 Exchange Online 和 Skype for Business Online 默认**关闭**新式验证。
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office 客户端应用程序的登录行为
 
@@ -76,8 +78,8 @@ ms.locfileid: "41122571"
 |Office 2016  <br/> |不 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |是  <br/> |在 Outlook 2010、2013或2016上强制进行新式身份验证 <br/> [详细信息](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|在 Outlook 客户端中强制进行新式身份验证。<br/> |
 |Office 2016  <br/> |否，或 EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |
 |Office 2016  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |
-|Office 2016  <br/> |是，EnableADAL = 0  <br/> |No  <br/> |基本身份验证  <br/> |基本身份验证  <br/> |
-|Office 2013  <br/> |No  <br/> |No  <br/> |基本身份验证  <br/> |基本身份验证  <br/> |
+|Office 2016  <br/> |是，EnableADAL = 0  <br/> |否  <br/> |基本身份验证  <br/> |基本身份验证  <br/> |
+|Office 2013  <br/> |否  <br/> |否  <br/> |基本身份验证  <br/> |基本身份验证  <br/> |
 |Office 2013  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |
    
 <a name="BK_SharePointOnline"> </a>
@@ -89,8 +91,8 @@ ms.locfileid: "41122571"
 |:-----|:-----|:-----|:-----|:-----|
 |Office 2016  <br/> |否，或 EnableADAL = 1  <br/> |是  <br/> |仅限新式验证。  <br/> |连接失败。  <br/> |
 |Office 2016  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |仅限新式验证。  <br/> |连接失败。  <br/> |
-|Office 2016  <br/> |是，EnableADAL = 0  <br/> |No  <br/> |仅 Microsoft Online 登录助手。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
-|Office 2013  <br/> |No  <br/> |No  <br/> |仅 Microsoft Online 登录助手。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
+|Office 2016  <br/> |是，EnableADAL = 0  <br/> |否  <br/> |仅 Microsoft Online 登录助手。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
+|Office 2013  <br/> |否  <br/> |否  <br/> |仅 Microsoft Online 登录助手。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
 |Office 2013  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |仅限新式验证。  <br/> |连接失败。  <br/> |
    
 ### <a name="skype-for-business-online"></a>Skype for Business Online
@@ -102,8 +104,8 @@ ms.locfileid: "41122571"
 |:-----|:-----|:-----|:-----|:-----|
 |Office 2016  <br/> |否，或 EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用 Microsoft Online 登录助手。 当未启用 Skype for business Online 租户时，服务器将拒绝新式身份验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用 Microsoft Online 登录助手。 当未启用 Skype for business Online 租户时，服务器将拒绝新式身份验证。  <br/> |
 |Office 2016  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用 Microsoft Online 登录助手。 当未启用 Skype for business Online 租户时，服务器将拒绝新式身份验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用 Microsoft Online 登录助手。 当未启用 Skype for business Online 租户时，服务器将拒绝新式身份验证。  <br/> |
-|Office 2016  <br/> |是，EnableADAL = 0  <br/> |No  <br/> |仅 Microsoft Online 登录助手。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
-|Office 2013  <br/> |No  <br/> |No  <br/> |仅 Microsoft Online 登录助手。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
+|Office 2016  <br/> |是，EnableADAL = 0  <br/> |否  <br/> |仅 Microsoft Online 登录助手。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
+|Office 2013  <br/> |否  <br/> |否  <br/> |仅 Microsoft Online 登录助手。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
 |Office 2013  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用 Microsoft Online 登录助手。 当未启用 Skype for business Online 租户时，服务器将拒绝新式身份验证。  <br/> |仅 Microsoft Online 登录助手。  <br/> |
    
 ## <a name="see-also"></a>另请参阅

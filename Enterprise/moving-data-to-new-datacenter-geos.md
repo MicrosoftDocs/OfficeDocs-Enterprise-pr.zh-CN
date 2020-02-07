@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
+f1.keywords:
+- NOCSH
 description: 新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一个术语，指在 Microsoft Online Services 术语： Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）、SharePoint Online 网站内容和文件中定义的客户数据子集。存储在该网站中，并将文件上传到 OneDrive for business。
-ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
+ms.openlocfilehash: f2f6706d69d79681833ebca70cbe32964b7f3b77
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923864"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844763"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>将核心数据移动到新的 Office 365 数据中心信息
 

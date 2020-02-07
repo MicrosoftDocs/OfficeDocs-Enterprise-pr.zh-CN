@@ -9,22 +9,24 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 摘要：提供了有关如何使用网络地址转换（NAT）对组织中的每个 IP 地址使用的客户端的正确数量的详细信息。
-ms.openlocfilehash: 5d252b059661fdd3bad1f86bf552f44b8a747d24
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747896"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844563"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 中的 NAT 支持
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 以前，建议使用每个 IP 地址连接到 Office 365 的 Exchange 客户端的最大数量大约为每个网络端口2000个客户端。
   

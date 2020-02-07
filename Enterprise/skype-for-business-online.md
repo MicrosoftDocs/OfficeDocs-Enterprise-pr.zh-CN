@@ -6,11 +6,13 @@ manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
-f1_keywords:
-- ms.lync.lac.ProviderManagedFeature
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- ms.lync.lac.ProviderManagedFeature
 search.appverid:
 - MET150
 - MOE150
@@ -19,18 +21,18 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: 获取适用于 Skype for business 的管理员帮助-设置 Skype for business、您的网络、会议和即时消息以及用户的外部访问。 配置设置、排除故障和查看使用率报告。
-ms.openlocfilehash: daf425625d6162ec3d480d290056ae2e3a8ff16a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070369"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841109"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 中的 Skype for Business Online - 管理员帮助
 
 ## <a name="were-here-to-help"></a>我们随时提供帮助！
 
-作为 Office 365 商业版的管理员，你可以免费联系我们的资深支持专员。 如果在此网站上未找到所需的信息, **[请联系商业版产品支持人员-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+作为 Office 365 商业版的管理员，你可以免费联系我们的资深支持专员。 如果在此网站上未找到所需的信息， **[请联系商业版产品支持人员-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>让用户与外部 Skype 或 Skype for Business 用户联系
 
@@ -66,7 +68,7 @@ ms.locfileid: "34070369"
     
 - [需要帮助登录到 Skype for Business 吗？](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [视频: 登录和注销 Skype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [视频：登录和注销 Skype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
 - [在 Skype for Business 中设置音频设备选项](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
@@ -86,6 +88,6 @@ ms.locfileid: "34070369"
     
 - [开始 Skype for Business 电话会议](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **有关用户的更多文章, 请参阅[Skype For Business 帮助](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)。**
+ **有关用户的更多文章，请参阅[Skype For Business 帮助](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)。**
   
 

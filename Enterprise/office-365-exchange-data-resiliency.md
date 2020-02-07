@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Exchange Online 和 Office 365 中数据弹性的各个方面的说明。
-ms.openlocfilehash: ad10e70ab6d03e2bbc37f6cc7885406c33df2239
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 73b217f7b85722bca10cdf1abbe10c3a32922e9f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067262"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844473"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 中的 Exchange Online 数据恢复能力
 
@@ -50,7 +52,7 @@ Office 365 中的每个邮箱数据库都托管在[数据库可用性组（DAG�
 
 在这四个副本中，其中有三个配置为高可用性。 第四个副本配置为[滞后数据库副本](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies)。 滞后数据库副本不用于单个邮箱恢复或邮箱项目恢复。 其目的是针对系统范围的灾难性逻辑损坏的罕见事件提供恢复机制。 
 
-Exchange Online 中的滞后数据库副本配置了为期七天的日志文件重播延迟时间。 此外，Exchange 重播延迟管理器已启用，以提供滞后副本的动态日志文件，以允许滞后数据库副本进行自我修复和管理日志文件增长。 尽管滞后数据库副本在 Exchange Online 中使用，但务必要了解它们不是一个可保证的时间点备份。 Exchange Online 中的滞后数据库副本具有可用性阈值（通常约为 90%），因为由于磁盘故障导致包含滞后副本的磁盘丢失，因此滞后副本将变为高可用性副本（由于自动播放），也是如此在滞后数据库副本重新生成日志重播队列的时段。 
+Exchange Online 中的滞后数据库副本配置了为期七天的日志文件重播延迟时间。 此外，Exchange 重播延迟管理器已启用，以提供滞后副本的动态日志文件，以允许滞后数据库副本进行自我修复和管理日志文件增长。 尽管滞后数据库副本在 Exchange Online 中使用，但务必要了解它们不是一个可保证的时间点备份。 Exchange Online 中的滞后数据库副本具有可用性阈值（通常约为90%），因为由于磁盘故障导致包含滞后副本的磁盘丢失，因此滞后副本将变为高可用性副本（由于自动播放），也是如此在滞后数据库副本重新生成日志重播队列的时段。 
 
 ## <a name="transport-resilience"></a>传输弹性 
 Exchange Online 包括两种主要传输复原功能：卷影冗余和安全网络。 "卷影冗余" 在传输过程中保留邮件的冗余副本。 安全网络在邮件成功传递后保留邮件的冗余副本。 

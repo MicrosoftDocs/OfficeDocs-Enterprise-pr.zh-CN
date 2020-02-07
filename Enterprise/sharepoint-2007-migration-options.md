@@ -22,17 +22,19 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
+f1.keywords:
+- NOCSH
 description: SharePoint Server 2007 已到达支持的结束时间，现在是时候升级了。 使用本文可帮助您创建计划。
-ms.openlocfilehash: 6315c06f034464cf12224582c9dcd0257bf43961
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 607dfeaedb1a63634e08e28f8aef2c6fcce6ce9c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748029"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841149"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>要考虑的 SharePoint 2007 迁移选项
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。 是时候升级了！ 本文提供了有关迁移选项的信息。
   
@@ -99,7 +101,7 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。
     
 - 大型数据文档集（如文件存档）
     
-- 供应情况
+- 可用性
     
 - 服务器场中的关键应用程序、web 部件或文档（任务关键型服务器场）
     

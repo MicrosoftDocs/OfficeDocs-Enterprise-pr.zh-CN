@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
+f1.keywords:
+- NOCSH
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
+ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923854"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840369"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 

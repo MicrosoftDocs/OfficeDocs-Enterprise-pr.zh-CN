@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
+f1.keywords:
+- NOCSH
 description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
-ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
+ms.openlocfilehash: 3dcdb17bff899caa8d72799c9b3c4bb7d74c9e96
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923844"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840599"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -65,7 +67,7 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
 ## <a name="will-new-office-365-customers-be-automatically-provisioned-in-the-new-datacenter-geos"></a>在新的数据中心信息中是否会自动预配新的 Office 365 客户？
   
-可以。 在新的数据中心地理位置可用后，在注册过程中选择符合新地理位置的国家/地区的企业客户的新 Office 365 将把其核心客户数据存储在新的数据中心地理位置。
+能。 在新的数据中心地理位置可用后，在注册过程中选择符合新地理位置的国家/地区的企业客户的新 Office 365 将把其核心客户数据存储在新的数据中心地理位置。
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>我的核心客户数据位于何处？
 
@@ -139,11 +141,11 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
  ## <a name="do-the-new-datacenter-geos-use-the-same-versions-of-office-365-services-as-the-current-datacenter-geos"></a>新的数据中心信息是否使用与当前数据中心信息相同版本的 Office 365 服务？
 
-可以。
+能。
   
 ## <a name="will-office-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>在新数据中心托管的 Office 365 租户是否适用于该国家/地区之外的用户？
   
-A. 可以。 Microsoft 在全球范围内的35国家/地区内的国家/地区的多达130个位置维护一个大型的全球网络，其 Internet 服务提供商（Isp）数量超过2700的对等协议。 用户将能够从 Internet 上的任何位置访问数据中心。
+A. 能。 Microsoft 在全球范围内的35国家/地区内的国家/地区的多达130个位置维护一个大型的全球网络，其 Internet 服务提供商（Isp）数量超过2700的对等协议。 用户将能够从 Internet 上的任何位置访问数据中心。
 
 ## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>我的租户是为[Office 365 多地理](https://aka.ms/multi-geo)位置配置的。  我是否可以在 Office 365 移动程序中注册我的租户以更改我的默认地理位置并将任何用户不在附属区域中移动到新的默认地理位置？
 

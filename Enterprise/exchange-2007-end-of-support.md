@@ -10,17 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
+f1.keywords:
+- NOCSH
 description: 在2017年4月11日，Exchange Server 2007 已到达支持终止。 如果尚未开始从 Exchange 2007 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。
-ms.openlocfilehash: fbc2c4d0de03f27020cedf5458d7e94f880715dd
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 67e6a8f271fd8d553895ba086ed4b6ad11d9a877
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746225"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840349"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 停止提供支持路线图
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 在**2017 年4月 11**日，Exchange Server 2007 已到达支持终止。 如果尚未开始从 Exchange 2007 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。 
   

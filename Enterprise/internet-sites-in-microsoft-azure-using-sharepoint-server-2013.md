@@ -9,15 +9,17 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: 摘要：使用 SharePoint Server 2013 的 Internet 站点得益于托管在 Azure 基础结构服务中。本文提供了用于设计和实现此解决方案的资源。
-ms.openlocfilehash: 762b09d9d4812056b445160d9519802ae56396f4
-ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
+ms.openlocfilehash: 7791da6954aea49b9292967fe32311c529bedc69
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39857991"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845093"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Microsoft Azure 中使用 SharePoint Server 2013 的 Internet 站点
 

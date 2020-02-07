@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: 提供了一个示例，并介绍了 Office 365 IdFix 事务日志的命名约定和默认日志级别。
-ms.openlocfilehash: af1ce72760d9a94438eeead50474094ca0e3a2bd
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: fb294095dc5b163965660546f5033a845d6cb0b4
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072164"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840109"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix 事务日志
 

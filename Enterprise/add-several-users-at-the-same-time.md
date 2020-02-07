@@ -5,13 +5,15 @@ author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+ms.service: o365-administration
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
 - O365P_AddUsersCSV
 - O365M_AddUsersCSV
 - O365E_AddUsersCSV
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOP150
@@ -23,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Office 365 for business 中添加多个用户。 观看 YouTube 上的视频，说明如何将帐户添加到 Office 365。 在此过程结束时，拥有帐户的每位用户都将拥有一个 Office 365 邮箱。 '
-ms.openlocfilehash: 283a45750c6b5d51f96dae2cac12acf3f47b98fe
-ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
+ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39825194"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844643"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同时向 Office 365 添加多个用户 - 管理员帮助
 
@@ -99,7 +101,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
 ### <a name="tips-for-formatting-your-spreadsheet"></a>有关设置电子表格格式的提示
 <a name="__toc314595848"> </a>
 
-- **是否需要与示例电子表格中的列标题相同？** 是。 示例电子表格在第一行中包含列标题。 这些标题是必需的。 对于要添加到 Office 365 中的每个用户，在标题下创建一行。 如果添加、更改或删除任何列标题，Office 365 可能无法从文件中的信息创建用户。 
+- **是否需要与示例电子表格中的列标题相同？** 能。 示例电子表格在第一行中包含列标题。 这些标题是必需的。 对于要添加到 Office 365 中的每个用户，在标题下创建一行。 如果添加、更改或删除任何列标题，Office 365 可能无法从文件中的信息创建用户。 
     
 - **如果我没有每个用户所需的全部信息，该怎么办？** 用户名和显示名称是必需的，并且您无法添加不包含此信息的新用户。 如果没有其他信息（如传真），您可以使用空格加上逗号，以指示该字段应保留为空。 
     

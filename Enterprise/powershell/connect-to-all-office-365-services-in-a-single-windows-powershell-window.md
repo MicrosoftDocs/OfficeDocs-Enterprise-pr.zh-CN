@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - LIL_Placement
 - Ent_Office_Other
@@ -16,26 +18,26 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：将 Windows PowerShell 连接到单个 Windows PowerShell 窗口中的所有 Office 365 服务。
-ms.openlocfilehash: ec24914367450e4ff464b3399be9cb2e626dd254
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 91ae87f65e4ef25ab8cba8fcc23c2419cd8bdd73
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072504"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844423"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>在单个 Windows PowerShell 窗口中连接所有 Office 365 服务
 
-使用 PowerShell 管理 Office 365 时，可以在与 Microsoft 365 管理中心、SharePoint Online、Exchange Online、Skype for Business Online 和安全&amp;合规中心相同的时间同时打开最长五个不同的 Windows PowerShell 会话。 在单独的 Windows PowerShell 会话中有五种不同的连接方法，你的桌面可能如下所示：
+使用 PowerShell 管理 Office 365 时，可以在与 Microsoft 365 管理中心、SharePoint Online、Exchange Online、Skype for Business Online、Microsoft 团队和安全&amp;合规中心相同的时间同时打开最长五个不同的 Windows PowerShell 会话。 在单独的 Windows PowerShell 会话中有五种不同的连接方法，你的桌面可能如下所示：
   
 ![五个同时运行的 Windows PowerShell 控制台](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
-这对管理 Office 365 不是最佳的，因为您无法在这五个 windows 之间交换跨服务管理的数据。 本主题介绍如何使用 Windows PowerShell 的单个实例，可以从该实例管理 Office 365、Skype for Business Online、Exchange Online、SharePoint Online 和安全&amp;合规性中心。
+这对管理 Office 365 不是最佳的，因为您无法在这五个 windows 之间交换跨服务管理的数据。 本主题介绍如何使用 Windows PowerShell 的单个实例，您可从中管理 Office 365、Skype for Business Online、Exchange Online、SharePoint Online、Microsoft 团队和安全&amp;合规中心。
 
 >[!Note]
 >本文当前只包含连接到 Office 365 全球（+ GCC）云的命令。 其他说明提供了指向包含有关连接到其他 Office 365 云的信息的文章的链接。
 >
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在可以从 Windows PowerShell 的单个实例管理所有 Office 365 之前，请考虑以下先决条件：
   
@@ -61,13 +63,14 @@ ms.locfileid: "40072504"
     
     由于 Skype for business Online 模块和其中一个 Office 365 模块的要求，您需要使用 Windows 的64位版本的 Windows。
     
-- 您需要安装 Azure AD、SharePoint Online 和 Skype for Business Online 所需的模块：
+- 您需要安装 Azure AD、SharePoint Online、Skype for Business Online 和团队所需的模块：
     
    - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online 命令行管理程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype for Business Online、Windows PowerShell 模块](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+   - [团队 PowerShell 概述](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  需要将 Windows PowerShell 配置为为 Skype for Business Online、Exchange Online 和安全&amp;合规中心运行已签名的脚本。 若要执行此操作，请在提升的 Windows PowerShell 会话（通过选择 "**以管理员身份运行**" 打开的 windows powershell 窗口）中运行以下命令。
+-  需要将 Windows PowerShell 配置为为 Skype for Business Online、Exchange Online、Microsoft 团队和安全&amp;合规中心运行已签名的脚本。 若要执行此操作，请在提升的 Windows PowerShell 会话（通过选择 "**以管理员身份运行**" 打开的 windows powershell 窗口）中运行以下命令。
     
   ```powershell
   Set-ExecutionPolicy RemoteSigned
@@ -127,7 +130,18 @@ ms.locfileid: "40072504"
 >若要连接到除全球版之外的 Office 365 云的 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 >
 
-7. 运行这些命令以连接到安全&amp;合规性中心。
+7. 运行这些命令以连接到团队 PowerShell。
+    
+  ```powershell
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
+  ```
+  
+>[!Note]
+>若要连接到全球以外的 Microsoft 团队云，请参阅[MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams?view=teams-ps)。
+>
+
+8. 运行这些命令以连接到安全&amp;合规性中心。
     
   ```powershell
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
@@ -153,6 +167,8 @@ $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -Connecti
 Import-PSSession $exchangeSession -DisableNameChecking
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
 
 此外，在使用适用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块时，以下是单个块中的所有命令。 指定您的域主机的名称，然后一次运行所有域主机。
@@ -170,12 +186,14 @@ $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -Connecti
 Import-PSSession $exchangeSession -DisableNameChecking
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
 
 当您准备好关闭 Windows PowerShell 窗口时，运行此命令以删除 Skype for Business Online、Exchange Online、SharePoint Online 和安全&amp;合规性中心的活动会话：
   
 ```powershell
-Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $SccSession ; Disconnect-SPOService
+Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $SccSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
 ```
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>使用多重身份验证时的连接步骤
@@ -192,6 +210,8 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
 ```
 
 此外，以下是使用适用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的所有命令。
@@ -206,6 +226,8 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
 ```
 
 对于 Exchange Online 和安全&amp;合规中心，请参阅下列主题以使用多重身份验证进行连接：

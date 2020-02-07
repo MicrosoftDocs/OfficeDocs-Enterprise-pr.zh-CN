@@ -20,17 +20,19 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Office 2007 服务器和客户端应用程序的支持即将结束，自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748019"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840999"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>可帮助您从 Office 2007 服务器和客户端进行升级的资源
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 如果使用的是 Office 2007 产品和服务，则对这些应用程序的支持已结束。 在规划升级时，应考虑转到 Microsoft 云（从 Office 365 开始），这是一个很好的时间。 使用本文作为查看选项和规划升级的起点。
       

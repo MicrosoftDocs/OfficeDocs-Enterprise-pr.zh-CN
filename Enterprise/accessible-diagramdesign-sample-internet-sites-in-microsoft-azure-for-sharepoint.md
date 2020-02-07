@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
+f1.keywords:
+- NOCSH
 description: 本文是名为“设计示例：Microsoft Azure for SharePoint 2013 中的 Internet 站点”的图的可访问文本版本。
-ms.openlocfilehash: 52ae615cbdc6a355155e54e36bc6a3d733d84869
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b3669304fee6b7a89bc5d1bde96c39c496122d48
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027626"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843793"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>可访问的图 - 设计示例：Microsoft Azure for SharePoint 2013 中的 Internet 站点
 

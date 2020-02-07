@@ -6,7 +6,9 @@ manager: laurawi
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - vsemail
 - MS_WSS_DirectoryManagement
 - MS_WSS_ConfigEmail
@@ -34,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 在2017年10月10日，SharePoint Server 2007 的支持已结束。 阅读本文，了解有关升级选项、故障排除、最佳做法、系统要求、升级步骤以及如何从 Microsoft 合作伙伴获取帮助的信息。
-ms.openlocfilehash: 1b7b2ccf1bbda5210e563a4cd702ebd90b9f8f5d
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747311"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844003"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 停止提供支持路线图
 
-*本文适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
 在**2017 年10月 10**日，Microsoft Office SharePoint Server 2007 已到达支持终止。 如果尚未开始从 SharePoint Server 2007 迁移到 Office 365 或 SharePoint Server 本地版本的新版本，现在是开始规划的时间。 本文详细介绍了帮助用户将数据迁移到 SharePoint Online 或在本地升级 SharePoint Server 的资源。 
   
