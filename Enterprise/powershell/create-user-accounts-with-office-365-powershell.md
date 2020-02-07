@@ -9,39 +9,41 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 了解如何在 Office 365 中使用 Office 365 PowerShell 来创建用户帐户。
-ms.openlocfilehash: b69e0afa6177f29ed2abe18be39f5db08c9f5e75
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 3247f9d047ca7e7e99c3c0b0900c356854ce3d75
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072224"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844243"
 ---
-# <a name="create-user-accounts-with-office-365-powershell"></a><span data-ttu-id="ce1d7-103">使用 Office 365 PowerShell 创建用户帐户</span><span class="sxs-lookup"><span data-stu-id="ce1d7-103">Create user accounts with Office 365 PowerShell</span></span>
+# <a name="create-user-accounts-with-office-365-powershell"></a><span data-ttu-id="dbd8a-103">使用 Office 365 PowerShell 创建用户帐户</span><span class="sxs-lookup"><span data-stu-id="dbd8a-103">Create user accounts with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="ce1d7-p101">您可以使用 Office 365 PowerShell 来高效地创建用户帐户，尤其是多个用户帐户。当您在 Office 365 PowerShell 中创建用户帐户时，某些帐户属性始终是必需的。其他属性对于创建帐户则不是必需的，但也很重要。下表介绍了这些属性：</span><span class="sxs-lookup"><span data-stu-id="ce1d7-p101">You can use Office 365 PowerShell to efficiently create user accounts, especially multiple user accounts. When you create user accounts in Office 365 PowerShell, certain account properties are always required. Other properties aren't required to create the account, but are otherwise important. These properties are described in the following table:</span></span>
+<span data-ttu-id="dbd8a-p101">您可以使用 Office 365 PowerShell 来高效地创建用户帐户，尤其是多个用户帐户。当您在 Office 365 PowerShell 中创建用户帐户时，某些帐户属性始终是必需的。其他属性对于创建帐户则不是必需的，但也很重要。下表介绍了这些属性：</span><span class="sxs-lookup"><span data-stu-id="dbd8a-p101">You can use Office 365 PowerShell to efficiently create user accounts, especially multiple user accounts. When you create user accounts in Office 365 PowerShell, certain account properties are always required. Other properties aren't required to create the account, but are otherwise important. These properties are described in the following table:</span></span>
   
-|<span data-ttu-id="ce1d7-108">**属性名称**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-108">**Property name**</span></span>|<span data-ttu-id="ce1d7-109">**是否必需？**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-109">**Required?**</span></span>|<span data-ttu-id="ce1d7-110">**说明**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-110">**Description**</span></span>|
+|<span data-ttu-id="dbd8a-108">**属性名称**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-108">**Property name**</span></span>|<span data-ttu-id="dbd8a-109">**是否必需？**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-109">**Required?**</span></span>|<span data-ttu-id="dbd8a-110">**说明**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-110">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="ce1d7-111">**DisplayName**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-111">**DisplayName**</span></span> <br/> |<span data-ttu-id="ce1d7-112">是</span><span class="sxs-lookup"><span data-stu-id="ce1d7-112">Yes</span></span>  <br/> |<span data-ttu-id="ce1d7-p102">这是在 Office 365 服务中使用的显示名称。例如，Caleb Sills。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-p102">This is the display name that's used in Office 365 services. For example, Caleb Sills.</span></span>  <br/> |
-|<span data-ttu-id="ce1d7-115">**UserPrincipalName**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-115">**UserPrincipalName**</span></span> <br/> |<span data-ttu-id="ce1d7-116">是</span><span class="sxs-lookup"><span data-stu-id="ce1d7-116">Yes</span></span>  <br/> |<span data-ttu-id="ce1d7-p103">这是用于登录到 Office 365 服务的帐户名称。例如，CalebS@contoso.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-p103">This is the account name that's used to sign in to Office 365 services. For example, CalebS@contoso.onmicrosoft.com.</span></span>  <br/> |
-|<span data-ttu-id="ce1d7-119">**FirstName**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-119">**FirstName**</span></span> <br/> |<span data-ttu-id="ce1d7-120">否</span><span class="sxs-lookup"><span data-stu-id="ce1d7-120">No</span></span>  <br/> ||
-|<span data-ttu-id="ce1d7-121">**LastName**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-121">**LastName**</span></span> <br/> |<span data-ttu-id="ce1d7-122">否</span><span class="sxs-lookup"><span data-stu-id="ce1d7-122">No</span></span>  <br/> ||
-|<span data-ttu-id="ce1d7-123">**LicenseAssignment**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-123">**LicenseAssignment**</span></span> <br/> |<span data-ttu-id="ce1d7-124">否</span><span class="sxs-lookup"><span data-stu-id="ce1d7-124">No</span></span>  <br/> |<span data-ttu-id="ce1d7-p104">这是许可计划（也称为许可证计划、Office 365 计划或 SKU），使用它可以将可用的许可证分配给用户帐户。该许可证定义可供帐户使用的 Office 365 服务。当你创建帐户时，没有向用户分配许可证，但该帐户需要许可证才能访问 Office 365 服务。创建用户帐户后，有 30 天的时间可以对该用户帐户授权。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-p104">This is the licensing plan (also known as the license plan, Office 365 plan, or SKU) from which an available license is assigned to the user account. The license defines the Office 365 services that are available to account. You don't have to assign a license to a user when you create the account, but the account requires a license to access Office 365 services. You have 30 days to license the user account after you create it.</span></span> |
-|<span data-ttu-id="ce1d7-129">**密码**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-129">**Password**</span></span> <br/> |<span data-ttu-id="ce1d7-130">否</span><span class="sxs-lookup"><span data-stu-id="ce1d7-130">No</span></span>  <br/> | <span data-ttu-id="ce1d7-p105">如果你没有指定密码，将向用户帐户分配一个随机密码，且该密码将显示在命令结果中。如果你指定了密码，则需要是以下三种类型的 8 到 16 位 ASCII 文本字符：小写字母、大写字母、数字和符号。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-p105">If you don't specify a password, a random password is assigned to the user account, and the password is visible in the results of the command. If you specify a password, it needs to be 8 to 16 ASCII text characters from any three of the following types: lowercase letters, uppercase letters, numbers, and symbols.</span></span> <br/> |
-|<span data-ttu-id="ce1d7-133">**UsageLocation**</span><span class="sxs-lookup"><span data-stu-id="ce1d7-133">**UsageLocation**</span></span> <br/> |<span data-ttu-id="ce1d7-134">否</span><span class="sxs-lookup"><span data-stu-id="ce1d7-134">No</span></span>  <br/> |<span data-ttu-id="ce1d7-p106">这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。例如，US 代表美国，FR 代表法国。请务必提供此值，因为某些 Office 365 服务在某些国家不可用，因此不能为用户帐户分配许可证，除非该帐户已配置此值。有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-p106">This is a valid ISO 3166-1 alpha-2 country code. For example, US for the United States, and FR for France. It's important to provide this value, because some Office 365 services aren't available in certain countries, so you can't assign a license to a user account unless the account has this value configured. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).  </span></span><br/> |
+|<span data-ttu-id="dbd8a-111">**DisplayName**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-111">**DisplayName**</span></span> <br/> |<span data-ttu-id="dbd8a-112">是</span><span class="sxs-lookup"><span data-stu-id="dbd8a-112">Yes</span></span>  <br/> |<span data-ttu-id="dbd8a-p102">这是在 Office 365 服务中使用的显示名称。例如，Caleb Sills。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-p102">This is the display name that's used in Office 365 services. For example, Caleb Sills.</span></span>  <br/> |
+|<span data-ttu-id="dbd8a-115">**UserPrincipalName**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-115">**UserPrincipalName**</span></span> <br/> |<span data-ttu-id="dbd8a-116">是</span><span class="sxs-lookup"><span data-stu-id="dbd8a-116">Yes</span></span>  <br/> |<span data-ttu-id="dbd8a-p103">这是用于登录到 Office 365 服务的帐户名称。例如，CalebS@contoso.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-p103">This is the account name that's used to sign in to Office 365 services. For example, CalebS@contoso.onmicrosoft.com.</span></span>  <br/> |
+|<span data-ttu-id="dbd8a-119">**FirstName**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-119">**FirstName**</span></span> <br/> |<span data-ttu-id="dbd8a-120">否</span><span class="sxs-lookup"><span data-stu-id="dbd8a-120">No</span></span>  <br/> ||
+|<span data-ttu-id="dbd8a-121">**LastName**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-121">**LastName**</span></span> <br/> |<span data-ttu-id="dbd8a-122">否</span><span class="sxs-lookup"><span data-stu-id="dbd8a-122">No</span></span>  <br/> ||
+|<span data-ttu-id="dbd8a-123">**LicenseAssignment**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-123">**LicenseAssignment**</span></span> <br/> |<span data-ttu-id="dbd8a-124">否</span><span class="sxs-lookup"><span data-stu-id="dbd8a-124">No</span></span>  <br/> |<span data-ttu-id="dbd8a-p104">这是许可计划（也称为许可证计划、Office 365 计划或 SKU），使用它可以将可用的许可证分配给用户帐户。该许可证定义可供帐户使用的 Office 365 服务。当你创建帐户时，没有向用户分配许可证，但该帐户需要许可证才能访问 Office 365 服务。创建用户帐户后，有 30 天的时间可以对该用户帐户授权。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-p104">This is the licensing plan (also known as the license plan, Office 365 plan, or SKU) from which an available license is assigned to the user account. The license defines the Office 365 services that are available to account. You don't have to assign a license to a user when you create the account, but the account requires a license to access Office 365 services. You have 30 days to license the user account after you create it.</span></span> |
+|<span data-ttu-id="dbd8a-129">**密码**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-129">**Password**</span></span> <br/> |<span data-ttu-id="dbd8a-130">否</span><span class="sxs-lookup"><span data-stu-id="dbd8a-130">No</span></span>  <br/> | <span data-ttu-id="dbd8a-p105">如果你没有指定密码，将向用户帐户分配一个随机密码，且该密码将显示在命令结果中。如果你指定了密码，则需要是以下三种类型的 8 到 16 位 ASCII 文本字符：小写字母、大写字母、数字和符号。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-p105">If you don't specify a password, a random password is assigned to the user account, and the password is visible in the results of the command. If you specify a password, it needs to be 8 to 16 ASCII text characters from any three of the following types: lowercase letters, uppercase letters, numbers, and symbols.</span></span> <br/> |
+|<span data-ttu-id="dbd8a-133">**UsageLocation**</span><span class="sxs-lookup"><span data-stu-id="dbd8a-133">**UsageLocation**</span></span> <br/> |<span data-ttu-id="dbd8a-134">否</span><span class="sxs-lookup"><span data-stu-id="dbd8a-134">No</span></span>  <br/> |<span data-ttu-id="dbd8a-p106">这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。例如，US 代表美国，FR 代表法国。请务必提供此值，因为某些 Office 365 服务在某些国家不可用，因此不能为用户帐户分配许可证，除非该帐户已配置此值。有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-p106">This is a valid ISO 3166-1 alpha-2 country code. For example, US for the United States, and FR for France. It's important to provide this value, because some Office 365 services aren't available in certain countries, so you can't assign a license to a user account unless the account has this value configured. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).  </span></span><br/> |
    
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="ce1d7-139">使用用于图表模块的 Azure Active Directory PowerShell</span><span class="sxs-lookup"><span data-stu-id="ce1d7-139">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="dbd8a-139">使用用于图表模块的 Azure Active Directory PowerShell</span><span class="sxs-lookup"><span data-stu-id="dbd8a-139">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="ce1d7-140">首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-140">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="dbd8a-140">首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-140">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
 
-<span data-ttu-id="ce1d7-141">连接后，使用下列语法创建个人帐户：</span><span class="sxs-lookup"><span data-stu-id="ce1d7-141">After you have connected, use the following syntax to create an individual account:</span></span>
+<span data-ttu-id="dbd8a-141">连接后，使用下列语法创建个人帐户：</span><span class="sxs-lookup"><span data-stu-id="dbd8a-141">After you have connected, use the following syntax to create an individual account:</span></span>
   
 ```powershell
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
@@ -49,7 +51,7 @@ $PasswordProfile.Password="<user account password>"
 New-AzureADUser -DisplayName "<display name>" -GivenName "<first name>" -SurName "<last name>" -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -MailNickName <mailbox name> -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
-<span data-ttu-id="ce1d7-142">本示例为名为 Caleb Sills 的美国用户创建一个帐户：</span><span class="sxs-lookup"><span data-stu-id="ce1d7-142">This example creates an account for the United States user named Caleb Sills:</span></span>
+<span data-ttu-id="dbd8a-142">本示例为名为 Caleb Sills 的美国用户创建一个帐户：</span><span class="sxs-lookup"><span data-stu-id="dbd8a-142">This example creates an account for the United States user named Caleb Sills:</span></span>
   
 ```powershell
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
@@ -57,37 +59,37 @@ $PasswordProfile.Password="3Rv0y1q39/chsy"
 New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -MailNickName calebs -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="ce1d7-143">使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-143">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="dbd8a-143">使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-143">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="ce1d7-144">首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-144">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="dbd8a-144">首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-144">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-### <a name="create-an-individual-user-account"></a><span data-ttu-id="ce1d7-145">创建单个用户帐户</span><span class="sxs-lookup"><span data-stu-id="ce1d7-145">Create an individual user account</span></span>
+### <a name="create-an-individual-user-account"></a><span data-ttu-id="dbd8a-145">创建单个用户帐户</span><span class="sxs-lookup"><span data-stu-id="dbd8a-145">Create an individual user account</span></span>
 
-<span data-ttu-id="ce1d7-146">若要创建单个帐户，请使用下面的语法：</span><span class="sxs-lookup"><span data-stu-id="ce1d7-146">To create an individual account, use the following syntax:</span></span>
+<span data-ttu-id="dbd8a-146">若要创建单个帐户，请使用下面的语法：</span><span class="sxs-lookup"><span data-stu-id="dbd8a-146">To create an individual account, use the following syntax:</span></span>
   
 ```powershell
 New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last name> -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -LicenseAssignment <licensing plan name> [-Password <Password>]
 ```
 
 >[!Note]
-><span data-ttu-id="ce1d7-147">PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-147">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="ce1d7-148">若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-148">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="dbd8a-147">PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-147">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="dbd8a-148">若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-148">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="ce1d7-149">若要列出可用的许可计划名称，请使用此命令：</span><span class="sxs-lookup"><span data-stu-id="ce1d7-149">To list the available licensing plan names, use this command:</span></span>
+<span data-ttu-id="dbd8a-149">若要列出可用的许可计划名称，请使用此命令：</span><span class="sxs-lookup"><span data-stu-id="dbd8a-149">To list the available licensing plan names, use this command:</span></span>
 
 ````powershell
 Get-MsolAccountSku
 ````
 
-<span data-ttu-id="ce1d7-150">本示例为美国用户 Caleb Sills 创建一个帐户并通过 `contoso:ENTERPRISEPACK` (Office 365 企业版 E3) 许可计划分配了一个许可证。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-150">This example creates an account for the United States user named Caleb Sills, and assigns a license from the `contoso:ENTERPRISEPACK` (Office 365 Enterprise E3) licensing plan.</span></span>
+<span data-ttu-id="dbd8a-150">本示例为美国用户 Caleb Sills 创建一个帐户并通过 `contoso:ENTERPRISEPACK` (Office 365 企业版 E3) 许可计划分配了一个许可证。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-150">This example creates an account for the United States user named Caleb Sills, and assigns a license from the `contoso:ENTERPRISEPACK` (Office 365 Enterprise E3) licensing plan.</span></span>
   
 ```powershell
 New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -LicenseAssignment contoso:ENTERPRISEPACK
 ```
 
-### <a name="create-multiple-user-accounts"></a><span data-ttu-id="ce1d7-151">创建多个用户帐户</span><span class="sxs-lookup"><span data-stu-id="ce1d7-151">Create multiple user accounts</span></span>
+### <a name="create-multiple-user-accounts"></a><span data-ttu-id="dbd8a-151">创建多个用户帐户</span><span class="sxs-lookup"><span data-stu-id="dbd8a-151">Create multiple user accounts</span></span>
 
-1. <span data-ttu-id="ce1d7-p108">创建包含所需用户帐户信息的逗号分隔值 (CSV) 文件。例如：</span><span class="sxs-lookup"><span data-stu-id="ce1d7-p108">Create a comma-separated value (CSV) file that contains the required user account information. For example:</span></span>
+1. <span data-ttu-id="dbd8a-p108">创建包含所需用户帐户信息的逗号分隔值 (CSV) 文件。例如：</span><span class="sxs-lookup"><span data-stu-id="dbd8a-p108">Create a comma-separated value (CSV) file that contains the required user account information. For example:</span></span>
     
   ```powershell
   UserPrincipalName,FirstName,LastName,DisplayName,UsageLocation,AccountSkuId
@@ -97,26 +99,26 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   ```
 
  > [!NOTE]
-><span data-ttu-id="ce1d7-154">虽然列名称及其在 CSV 文件的第一行中的顺序是任意的，但请确保文件其余部分中的数据与列名称的顺序相匹配，并使用列名称作为 Office 365 PowerShell 命令中的参数值。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-154">The column names and their order in the first row of the CSV file are arbitrary, but make sure the data in the rest of the file matches the order of the column names, and use the column names for the parameter values in the Office 365 PowerShell command.</span></span>
+><span data-ttu-id="dbd8a-154">虽然列名称及其在 CSV 文件的第一行中的顺序是任意的，但请确保文件其余部分中的数据与列名称的顺序相匹配，并使用列名称作为 Office 365 PowerShell 命令中的参数值。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-154">The column names and their order in the first row of the CSV file are arbitrary, but make sure the data in the rest of the file matches the order of the column names, and use the column names for the parameter values in the Office 365 PowerShell command.</span></span>
     
-2. <span data-ttu-id="ce1d7-155">使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="ce1d7-155">Use the following syntax:</span></span>
+2. <span data-ttu-id="dbd8a-155">使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="dbd8a-155">Use the following syntax:</span></span>
     
   ```powershell
   Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
   ```
 
-<span data-ttu-id="ce1d7-156">本示例从名为 C:\My Documents\NewAccounts.csv 的文件创建用户帐户，并将结果记录在名为 C:\My Documents\NewAccountResults.csv 的文件中</span><span class="sxs-lookup"><span data-stu-id="ce1d7-156">This example creates the user accounts from the file named C:\My Documents\NewAccounts.csv, and logs the results in the file named C:\My Documents\NewAccountResults.csv</span></span>
+<span data-ttu-id="dbd8a-156">本示例从名为 C:\My Documents\NewAccounts.csv 的文件创建用户帐户，并将结果记录在名为 C:\My Documents\NewAccountResults.csv 的文件中</span><span class="sxs-lookup"><span data-stu-id="dbd8a-156">This example creates the user accounts from the file named C:\My Documents\NewAccounts.csv, and logs the results in the file named C:\My Documents\NewAccountResults.csv</span></span>
     
   ```powershell
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. <span data-ttu-id="ce1d7-p109">查看输出文件以查看结果。我们没有指定密码，这样便于在输出文件中显示 Office 365 生成的随机密码。</span><span class="sxs-lookup"><span data-stu-id="ce1d7-p109">Review the output file to see the results. We didn't specify passwords, so the random passwords that Office 365 generated are visible in the output file.</span></span>
+3. <span data-ttu-id="dbd8a-p109">查看输出文件以查看结果。我们没有指定密码，这样便于在输出文件中显示 Office 365 生成的随机密码。</span><span class="sxs-lookup"><span data-stu-id="dbd8a-p109">Review the output file to see the results. We didn't specify passwords, so the random passwords that Office 365 generated are visible in the output file.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ce1d7-159">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ce1d7-159">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dbd8a-159">另请参阅</span><span class="sxs-lookup"><span data-stu-id="dbd8a-159">See also</span></span>
 
-[<span data-ttu-id="ce1d7-160">使用 Office 365 PowerShell 管理用户帐户、许可证和组</span><span class="sxs-lookup"><span data-stu-id="ce1d7-160">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="dbd8a-160">使用 Office 365 PowerShell 管理用户帐户、许可证和组</span><span class="sxs-lookup"><span data-stu-id="dbd8a-160">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="ce1d7-161">使用 Office 365 PowerShell 管理 Office 365</span><span class="sxs-lookup"><span data-stu-id="ce1d7-161">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="dbd8a-161">使用 Office 365 PowerShell 管理 Office 365</span><span class="sxs-lookup"><span data-stu-id="dbd8a-161">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="ce1d7-162">Office 365 PowerShell 入门</span><span class="sxs-lookup"><span data-stu-id="ce1d7-162">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="dbd8a-162">Office 365 PowerShell 入门</span><span class="sxs-lookup"><span data-stu-id="dbd8a-162">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
