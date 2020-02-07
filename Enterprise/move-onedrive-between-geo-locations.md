@@ -6,18 +6,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Priority
 description: 了解如何将 OneDrive 站点移到其他地理位置。
-ms.openlocfilehash: 9760d61a8a1db76e3abf061552e0a99d85b9092a
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 4b07e0610abdd38a760422eeca50b3cb76e51bf7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072554"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844813"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 

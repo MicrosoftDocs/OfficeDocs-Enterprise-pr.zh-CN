@@ -6,15 +6,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解如何使用 Microsoft PowerShell 管理 Exchange Online 多地理位置设置。
-ms.openlocfilehash: adb8871a08c627d2ed2dd084283c31b8241e9152
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 135d3af76e03dfb7e6fcc9f55ba3be8ab21a6906
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068458"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844653"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 

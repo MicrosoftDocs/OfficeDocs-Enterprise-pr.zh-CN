@@ -13,16 +13,18 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-ms.openlocfilehash: 2d87c269565c3281c2f047187fd48578153088be
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072294"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840649"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 

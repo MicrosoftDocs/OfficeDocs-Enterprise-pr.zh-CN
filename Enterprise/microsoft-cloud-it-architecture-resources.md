@@ -10,18 +10,20 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom:
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Office 专业增强版部署新式安全桌面。
-ms.openlocfilehash: 30f3cb17f59c3a2352b4f0be9fec92d53126e63b
-ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
+ms.openlocfilehash: f2f466ff0f5f13e2b7e3bfb85f77a7e7961fcde2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627898"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844933"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 

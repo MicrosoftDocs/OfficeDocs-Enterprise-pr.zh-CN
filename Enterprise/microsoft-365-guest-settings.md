@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 中提供的来宾共享设置。
-ms.openlocfilehash: 6fba4a8107962ef7ac7da5f83dd2d7f1d75dccb2
-ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
+ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627872"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844963"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 

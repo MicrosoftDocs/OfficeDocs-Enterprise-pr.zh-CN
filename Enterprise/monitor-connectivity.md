@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: 部署 Office 365 后，可以使用下面的一些工具和技术保持 Office 36 5 连接。需要了解官方服务运行状况和连续性指南以及在慢速网络中使用 Office 365 的最佳做法。还需要获取 Office 365 管理员应用程序并为“Office 365 商业版 - 管理帮助”添加书签。
-ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 5a0a6e217d0f74f6266bffa1bd6037427f14e7bd
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721963"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843703"
 ---
 # <a name="monitor-office-365-connectivity"></a>监视 Office 365 连接性
 

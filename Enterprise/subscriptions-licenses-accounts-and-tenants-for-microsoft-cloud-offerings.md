@@ -13,16 +13,18 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 3e10ed7752fc4763aef77c7cb683532cf0d5c2ce
-ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
+ms.openlocfilehash: 65922f3ab8a88056ebc63d12cc0dcad37d6c49c8
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254581"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843973"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
