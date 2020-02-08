@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 如何在 Exchange Online 中处理软数据和硬数据删除。
-ms.openlocfilehash: f25f2416778f19f8b2e464e31e6116a81eb872cc
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067263"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843633"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Office 365 中的 Exchange Online 数据删除
 在 Exchange Online 中，有两种删除：软删除和硬删除。 这适用于邮箱和邮箱中的项目。
@@ -31,7 +33,7 @@ ms.locfileid: "37067263"
 
 硬删除的用户邮箱是已通过以下方式之一删除的邮箱：
 - 用户邮箱已软删除30天以上，并且关联的 Azure Active Directory 用户已硬删除。 所有邮箱内容（如电子邮件、联系人和文件）都将被永久删除。
-- 已从 Azure Active Directory 中硬删除与用户邮箱关联的用户帐户。 用户邮箱现已在 Exchange Online 中软删除，并在30天内保持软删除状态。 如果在30天的时间内，新的 Azure Active Directory 用户将与原始收件人帐户同步，具有相同的**ExchangeGuid**或**ArchiveGuid**，并且该新帐户已获得 Exchange Online 许可，这将导致硬删除原始用户邮箱。 所有邮箱内容（如电子邮件、联系人和文件）都将被永久删除。
+- 已从 Azure Active Directory 中硬删除与用户邮箱关联的用户帐户。 用户邮箱现已在 Exchange Online 中软删除，并在30天内保持软删除状态。 如果在30天的时间内，新的 Azure Active Directory 用户将从具有相同**ExchangeGuid**或**ArchiveGuid**的原始收件人帐户中同步，并且该新帐户已获得 Exchange Online 许可，这将导致删除原始用户邮箱。 所有邮箱内容（如电子邮件、联系人和文件）都将被永久删除。
 - 使用**删除邮箱-PermanentlyDelete**删除软删除邮箱。
 
 上述删除方案假定用户邮箱不处于任何保留状态，如诉讼保留或电子数据展示保留。 如果邮箱上有任何类型的保留，则不能删除邮箱。 对于所有邮件用户收件人类型，任何[保留](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US)设置都将被忽略，并且不会影响硬删除或软删除。
