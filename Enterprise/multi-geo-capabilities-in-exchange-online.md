@@ -1,5 +1,6 @@
 ---
 title: Exchange 多地理位置
+ms.reviewer: adwood
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Exchange Online 中的多地理位置功能。
-ms.openlocfilehash: 07a231a78d52ced4102e26c070eee40b9846c12f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 034631d10cc46fc24a7714dee13ddfc667272a49
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844773"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974834"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
