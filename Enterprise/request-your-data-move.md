@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求，以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844103"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106223"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -48,13 +48,8 @@ ms.locfileid: "41844103"
 
 符合条件的客户将在[Microsoft 365 管理中心](https://aka.ms/365admin)中看到一个页面，这将允许他们请求将其核心客户数据移动到其新的数据中心区域。  
   
-若要访问 Microsoft 365 管理中心中的页面，请在左侧的导航窗格中，展开 "**设置**"，然后单击 "**组织配置文件**"。
-  
-![突出显示了组织配置文件的 "设置" 菜单](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
-  
-在 "**组织配置文件**" 页上，向下滚动到 "**数据常驻选项**" 部分。 
-  
-![数据派驻卡](media/dataresidencyae.jpg)
+若要访问 Microsoft 365 管理中心中的页面，请在左侧的导航窗格中，展开 "**设置**"，然后单击 "**设置**"。
+选择 "选项卡" "**组织配置文件**"，然后选择 "**数据驻留**" 选项。
   
 **如果应用了以下情况之一，则可能不会看到此部分**：
 - 你的租户不符合 Office 365 移动程序的条件。  资格由租户注册国家/地区决定。

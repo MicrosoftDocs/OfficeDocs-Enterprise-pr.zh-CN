@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 摘要：使用 Office 365 PowerShell 管理 Skype for Business Online 策略、每用户策略和会议设置。
-ms.openlocfilehash: 699f799e823df6192a65147210130ae6493f52eb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4444483776141a3aa1f6e53b2f9bdcd7a5d28e1d
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844223"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106203"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Skype for Business Online
 
@@ -44,7 +44,7 @@ Skype for Business Online 管理员的一项主要任务就是管理策略。 �
 2. 在 " **Windows PowerShell 凭据请求**" 对话框中，键入您的 Skype For business Online 管理员帐户名称和密码，然后单击 **"确定"**。
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>使用具有多重身份验证的 Skype for Business Online 管理员帐户进行连接
+## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication"></a>使用具有多因素身份验证的 Skype for Business Online 管理员帐户进行连接
 
 1. 打开 Windows PowerShell 命令提示符，并运行以下命令：
 
