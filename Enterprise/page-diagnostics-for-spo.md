@@ -3,7 +3,7 @@ title: 使用 SharePoint Online 的页面诊断工具
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/19/2019
+ms.date: 2/18/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,21 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 使用 SharePoint 工具的页面诊断工具，针对预定义的一组性能条件对 SharePoint Online 新式门户和经典发布页面进行分析。
-ms.openlocfilehash: 57f8aa86b049701c152e8110f64b418d64250981
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841779"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155584"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>使用 "网页诊断程序" SharePoint 工具
 
 本文介绍如何使用**sharepoint 工具的页面诊断工具**根据预定义的一组性能条件分析 sharepoint Online 新式和经典网站页面。  
 
 >[!TIP]
->**该工具的2.0.1 版已发布**。 版本**2.0.0**和更高版本包括对新式页面以及经典网站页面的支持。 如果您不确定使用的是哪个版本的工具，则可以选择 "**关于**" 链接或省略号（...）来验证您的版本。
+>已**发布工具的版本 2.0.2**。 版本**2.0.0**和更高版本包括对新式页面以及经典网站页面的支持。 如果您不确定使用的是哪个版本的工具，则可以选择 "**关于**" 链接或省略号（...）来验证您的版本。 使用工具时，请始终更新到最新版本。
 
-SharePoint 工具的页面诊断工具是用于 Chrome 和[Microsoft Edge 版本77及更高版本](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)的浏览器扩展，用于分析 SharePoint Online 新式门户和经典发布网站页面。 此工具仅适用于 SharePoint Online，如果在 SharePoint Server 网站页面上使用，将失败并出现错误。
+SharePoint 工具的页面诊断工具是新 Microsoft Edge （https://www.microsoft.com/edge)和同时分析 SharePoint Online 新式门户和经典发布网站页面的 Chrome 浏览器）的浏览器扩展。 此工具仅适用于 SharePoint Online，不能用于 SharePoint 系统页面。
 
 该工具为每个分析页面生成一个报告，该页面显示页面如何针对预定义的规则集执行，并在测试的结果超出比较基准值时显示详细信息。 SharePoint Online 管理员和设计人员可以使用该工具解决性能问题，并确保新页面在发布之前进行了优化。
 
@@ -52,9 +52,9 @@ SharePoint 工具的页面诊断工具是用于 Chrome 和[Microsoft Edge 版本
 本节中的安装过程将适用于 Chrome 和 Microsoft Edge 浏览器。
 
 > [!IMPORTANT]
-> Microsoft 不会读取由 SharePoint 工具的页面诊断功能分析的数据或页面内容，我们不会捕获任何个人信息、网站或下载信息。 该工具记录的唯一信息是租户名称、规则计数以及在运行该工具时是否启用了支持日志记录选项。 Microsoft 使用此信息来了解新式门户和发布网站使用率趋势和常见的性能问题，以通知产品改进。
+> Microsoft 不会读取由 SharePoint 工具的页面诊断功能分析的数据或页面内容，我们不会捕获任何个人信息、网站或下载信息。 该工具仅记录到 Microsoft 的可识别信息是租户名称、失败的规则数以及运行该工具的日期和时间。 Microsoft 使用此信息来更好地了解新式门户和发布网站使用率趋势和常见性能问题。
 
-1. 使用_chrome_或_Microsoft Edge 版本77或更高版本_的浏览器，直接打开该[工具的链接](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)或在[Chrome 浏览器](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint)中打开搜索 WebStore 并安装浏览器扩展。 请查看 store 中的 "说明" 页上提供的用户隐私策略。 向浏览器添加工具时，您将看到以下权限通知。
+1. 为**Microsoft Edge** [（边缘扩展）](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)或**chrome** [（Chrome Extension）](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)的 SharePoint 工具安装页面诊断工具。 请查看 store 中的 "说明" 页上提供的用户隐私策略。 向浏览器添加工具时，您将看到以下权限通知。
 
     ![扩展权限](media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
@@ -73,7 +73,10 @@ SharePoint 工具的页面诊断工具是用于 Chrome 和[Microsoft Edge 版本
 
 ## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>您将在 SharePoint 的页面诊断工具中看到的内容
 
-1. "**关于**" 链接（类似于右上角的省略号（...）将提供有关该工具的一般指导和详细信息，其中包括返回到本文的链接。 此外，它还包括指向 SharePoint 性能建议的直接链接、第三方通知以及提供有关该工具的反馈的选项。  
+1. 单击工具右上角的省略号（...）以查找以下链接：
+   1. "**其他资源**" 链接提供了有关该工具的一般指导和详细信息，其中包括返回到本文的链接。
+   1. "**提供反馈**" 链接提供了指向_SharePoint 网站和协作用户语音_网站的链接。
+   1. "**关于**" 链接包括当前安装的工具版本以及指向该工具的第三方通知的直接链接。  
 1. **相关 ID、SPRequestDuration、SPIISLatency**、**页面加载时间**和**URL**详细信息都是信息，可用于以下几个用途。
 
     ![页面诊断详细信息](media/page-diagnostics-for-spo/pagediag-details.PNG)
@@ -116,12 +119,12 @@ SharePoint 工具的页面诊断工具是用于 Chrome 和[Microsoft Edge 版本
 
 "**网络跟踪**" 选项卡提供了用于生成页面的两个请求的详细信息以及从 SharePoint 收到的响应。
 
-1. **查找标记为红色的项目加载时间**。 每个请求和响应的性能都根据其对总体页面性能的影响进行了颜色编码，如下所示：
+1. **查找标记为红色的项目加载时间**。 每个请求和响应都采用颜色编码，以指示其对总体页面性能的影响使用以下延迟指标：
     - 绿色： \< 500ms
     - 黄色： 500-1000ms
     - 红色： \> 1000ms
 
-    ![网络跟踪](media/page-diagnostics-for-spo/pagediag-networktrace.png)
+    ![网络跟踪](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
     在上面显示的图像中，红色项目与默认页面相关。 除非在1000ms （小于1秒）内\<加载页面，否则它将始终显示红色。
 
