@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Office 365 for business 中添加多个用户。 观看 YouTube 上的视频，说明如何将帐户添加到 Office 365。 在此过程结束时，拥有帐户的每位用户都将拥有一个 Office 365 邮箱。 '
-ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0d0416662bf4934d3373f1ab7ac23c8055ad3098
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844643"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316011"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同时向 Office 365 添加多个用户 - 管理员帮助
 
@@ -101,7 +101,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
 ### <a name="tips-for-formatting-your-spreadsheet"></a>有关设置电子表格格式的提示
 <a name="__toc314595848"> </a>
 
-- **是否需要与示例电子表格中的列标题相同？** 能。 示例电子表格在第一行中包含列标题。 这些标题是必需的。 对于要添加到 Office 365 中的每个用户，在标题下创建一行。 如果添加、更改或删除任何列标题，Office 365 可能无法从文件中的信息创建用户。 
+- **是否需要与示例电子表格中的列标题相同？** 是的。 示例电子表格在第一行中包含列标题。 这些标题是必需的。 对于要添加到 Office 365 中的每个用户，在标题下创建一行。 如果添加、更改或删除任何列标题，Office 365 可能无法从文件中的信息创建用户。 
     
 - **如果我没有每个用户所需的全部信息，该怎么办？** 用户名和显示名称是必需的，并且您无法添加不包含此信息的新用户。 如果没有其他信息（如传真），您可以使用空格加上逗号，以指示该字段应保留为空。 
     
@@ -115,7 +115,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
     
 |**用户数据列标签**|**最大字符长度**|
 |:-----|:-----|
-|User Name （必需）  <br/> |79，其中包含 name@domain 格式的 at 符号（@）。\<扩展\>。 用户的别名不能超过30个字符，并且域名不能超过48个字符。  <br/> |
+|User Name （必需）  <br/> |79，其中包含 name@domain 格式的 at 符号（@）。\<扩展\>。 用户的别名不能超过50个字符，并且域名不能超过48个字符。  <br/> |
 |名字  <br/> |64  <br/> |
 |姓氏  <br/> |64  <br/> |
 |显示名称（必需）  <br/> |256  <br/> |
@@ -126,7 +126,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
 |Mobile Phone － 移动电话  <br/> |64  <br/> |
 |传真  <br/> |64  <br/> |
 |地址  <br/> |1023  <br/> |
-|城市  <br/> |128  <br/> |
+|市/县  <br/> |128  <br/> |
 |省/自治区/直辖市  <br/> |128  <br/> |
 |邮政编码  <br/> |40  <br/> |
 |国家或地区  <br/> |128  <br/> |
