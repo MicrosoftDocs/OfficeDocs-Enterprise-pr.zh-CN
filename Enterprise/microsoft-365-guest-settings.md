@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 中提供的来宾共享设置。
-ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ed9165d4589dbdaa18c3b3a3c21aab7bce01ad8c
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844963"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316041"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -238,6 +237,9 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 |与组连接的网站（包括 Teams）|**新来宾和现有来宾** — 如果 Office 365 组设置“**允许组所有者将组织外部的人员添加到组**”设置为“**打开**”；否则为“**仅现有来宾**”|
 |通信|**仅组织内部人员**|
 |不含组的新式网站 (#STS3 TeamSite)|**仅组织内部人员**|
+
+> [!NOTE]
+> 根通信站点 (tenant-name.sharepoint.com) 具有“**任何人**”这一默认共享设置。
 
 ## <a name="see-also"></a>另请参阅
 
