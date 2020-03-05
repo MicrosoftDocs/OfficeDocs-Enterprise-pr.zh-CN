@@ -14,12 +14,12 @@ localization_priority: Priority
 f1.keywords:
 - NOCSH
 description: 了解如何将 SharePoint 站点移到其他地理位置。
-ms.openlocfilehash: 903daff5af44789774b09000ebe52a6046ffc5d3
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 8bcd76959cdddd5bb6fadf390e5b71df8decf0a0
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974851"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417037"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -85,6 +85,7 @@ SharePoint 站点地理位置移动要求你通过站点所在的地理位置中
 我们不支持移动包含以下各项的站点：
 -   Business Connectivity Services
 -   InfoPath 表单 
+- 已应用信息权限管理 (IRM) 模板
 
 若要确保所有地理位置都兼容，请运行 `Get-SPOGeoMoveCrossCompatibilityStatus`： 这将显示所有地理位置，并显示环境是否与目标地理位置兼容。
 
