@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: 了解如何在 Azure AD 中注册和管理 O365 集成应用程序
-ms.openlocfilehash: fdeb3e3f35a795851b253f9b68d755404851ba07
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6846b57256bd81ae8d2054d69bd8f980d91d6ce9
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845073"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417057"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>适用于 Office 365 管理员的集成应用和 Azure AD
 
@@ -44,7 +44,7 @@ ms.locfileid: "41845073"
 |[满足 Office 365 应用启动器](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |如果你不熟悉应用启动器，你可能会想知道它是什么以及如何使用它。 应用启动器旨在帮助你从 Office 365 中的任何位置访问你的应用程序。  <br/> |
 |[Office 365 管理 API 概述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) <br/> |Office 365 Api 允许你提供对客户的 Office 365 数据的访问权限，包括他们最关心的事情，包括他们的邮件、日历、联系人、用户和组、文件和文件夹。 本文中有一个很棒的关系图，说明了 Office 365 应用程序、Azure AD 和应用访问的数据之间的关系。  <br/> |
 |[在 Azure Active Directory 中集成应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | 了解与 Azure Active Directory 集成的应用程序，以及如何注册您的应用程序，了解已注册应用程序背后的概念，并了解多租户应用程序的品牌打造指南。  <br/> |
-|[将自定义磁贴添加到应用启动器](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher)。  <br/> |Office 365 中的应用启动器使用户能够更轻松地查找和访问其应用程序。 本文介绍了您作为开发人员可以在用户的应用程序启动器中显示您的应用程序的方法，同时还为他们提供使用 Office 365 凭据的单一登录（SSO）体验。  <br/> |
+|[将自定义磁贴添加到应用启动器](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher)  <br/> |Office 365 中的应用启动器使用户能够更轻松地查找和访问其应用程序。 本文介绍了您作为开发人员可以在用户的应用程序启动器中显示您的应用程序的方法，同时还为他们提供使用 Office 365 凭据的单一登录（SSO）体验。  <br/> |
 |[Azure Active Directory 集成教程](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) <br/> |这些教程的目标是向您介绍如何为第三方 SaaS 应用程序配置 Azure AD SSO。  <br/> |
 |[Azure AD 的身份验证场景](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |Azure AD 通过提供标识作为一项服务来简化对开发人员的身份验证，并支持对行业标准协议（如 OAuth 2.0 和 OpenID Connect）以及针对不同平台的开放源库，以帮助您快速开始编码。 本文档可帮助您了解 Azure AD 支持的各种方案，并说明如何开始。  <br/> |
 |[应用程序访问](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management) <br/> |Azure AD 能够轻松地与当今流行的许多软件作为服务（SaaS）应用程序集成;它提供了标识和访问管理，并为用户提供了一个访问面板，用户可在其中发现他们拥有的应用程序访问权限以及它们可以使用 SSO 访问其应用程序的位置。 本文为您提供了相关资源的链接，这些资源使您能够详细了解 Azure AD 的应用程序访问增强功能，以及如何参与这些增强。  <br/> |
