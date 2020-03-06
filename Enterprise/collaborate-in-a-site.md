@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: 了解如何在 SharePoint 网站中与来宾进行协作。
-ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c1c34fded910701275a80aa0740a746a2458156
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845063"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549111"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -77,7 +76,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -137,5 +136,5 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 [Create a secure guest sharing environment](create-a-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
 
-[使用受管理的来宾创建 B2B extranet](b2b-extranet.md)
+[创建托管有来宾的 B2B 外联网](b2b-extranet.md)
 

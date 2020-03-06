@@ -1,5 +1,5 @@
 ---
-title: 使用受管理的来宾创建 B2B extranet
+title: 创建托管有来宾的 B2B 外联网
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: 了解如何使用合作伙伴组织中的受管理的来宾用户创建 B2B extranet 网站或团队。
-ms.openlocfilehash: 930c11489921fa5c32d1ba1ab16161f201006c91
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cdf4470920a307d569fcfd650f40c77f4a5423a4
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844993"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549061"
 ---
-# <a name="create-a-b2b-extranet-with-managed-guests"></a>使用受管理的来宾创建 B2B extranet
+# <a name="create-a-b2b-extranet-with-managed-guests"></a>创建托管有来宾的 B2B 外联网
 
 您可以使用[Azure Active Directory 权限管理](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)创建 B2B extranet，以与使用 Azure Active Directory 的合作伙伴组织进行协作。 这样，用户可以在 extranet 网站或团队中自行注册，并通过审批工作流接收访问权限。
 
