@@ -185,19 +185,20 @@
 ### [用于管理用户帐户的工具](manage-office-365-accounts.md)
 ### [同时添加多个用户](add-several-users-at-the-same-time.md)
 ### [恢复用户邮箱中的已删除邮件](recover-deleted-items-in-a-mailbox.md)
+
 ### 与来宾协作
-#### [来宾共享参考](microsoft-365-guest-settings.md)
+#### [来宾共享参考](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### 来宾共享方案
-##### [来宾协作概述](collaborating-with-people-outside-your-organization.md)
-##### [协作处理文档](collaborate-on-documents.md)
-##### [在网站中协作](collaborate-in-a-site.md)
-##### [团队协作](collaborate-as-a-team.md)
+##### [来宾协作概述](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [协作处理文档](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [在网站中协作](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [团队协作](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### 来宾共享安全性
-##### [未经身份验证的共享](best-practices-anonymous-sharing.md)
-##### [限制意外公开](sharing-limit-accidental-exposure.md)
-##### [保护来宾共享环境](create-a-secure-guest-sharing-environment.md)
-#### [创建 B2B Extranet](b2b-extranet.md)
-### [限制共享](microsoft-365-limit-sharing.md)
+##### [未经身份验证的共享](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [限制意外公开](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [保护来宾共享环境](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+#### [创建 B2B Extranet](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+### [限制共享](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## 设备
 ### [在 MDM 和 Intune 之间进行选择](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
