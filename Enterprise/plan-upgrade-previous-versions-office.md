@@ -15,12 +15,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: 如果您使用的是 Office 2007 或 Office 2010，请随时规划升级。 不会堵塞过期和不受支持的应用程序和服务器。 使用这些资源开始使用您的计划。
-ms.openlocfilehash: b654dcd7b8f923f952a6e2fbefe37a5e523e1cd4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841709"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605609"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 Office 2010 服务器和客户端升级
 
@@ -110,9 +110,3 @@ Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作�
 ## <a name="related-topics"></a>相关主题
   
 [Microsoft 生命周期策略](https://go.microsoft.com/fwlink/?linkid=865200)
-
-[Office 退休组（Microsoft 技术社区）](https://go.microsoft.com/fwlink/?linkid=842065)
-
-
-
-

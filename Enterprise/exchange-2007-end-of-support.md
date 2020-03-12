@@ -13,12 +13,12 @@ ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 description: 在2017年4月11日，Exchange Server 2007 已到达支持终止。 如果尚未开始从 Exchange 2007 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。
-ms.openlocfilehash: 67e6a8f271fd8d553895ba086ed4b6ad11d9a877
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 75bafe48b3b384430312ad0c0942c98732985073
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840349"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605647"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 停止提供支持路线图
 
@@ -251,7 +251,3 @@ Office 365 还获取了新的功能和体验，并且你的用户通常可以立
 ## <a name="related-topics"></a>相关主题
 
 [帮助您升级 Office 2007 服务器和客户端的资源](upgrade-from-office-2007-servers-and-products.md)
-  
-[Office 退休组（Microsoft 技术社区）](https://go.microsoft.com/fwlink/?linkid=842065)
-  
-

@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 定义并解释 Office 365 中的数据永久性。
-ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: fe6b2cf3d3ba2e0bb69f4275c77de0a452b3140f
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315991"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605627"
 ---
 # <a name="immutability-in-office-365"></a>Office 365 中的永久性
 
@@ -58,4 +58,4 @@ Office 365 中的存档提供有价证券和 Exchange 委员会（SEC）规则17
 - Office 365 中的存档允许用户将不同的保留策略和保留操作组合在一起，以创建精确的保留策略。 这些策略定义保留项目的类型或位置以及保留时间。
 - 保留锁定功能允许用户选择是否将策略设为限制性策略。 限制性策略禁止任何人能够删除、禁用或对保留策略进行任何更改。 这意味着，一旦启用了保留锁定，就不能禁用它，并且不会存在任何机制，在此过程中，可能会覆盖、修改、清除或删除保留策略所收集的现有保管人中的任何数据。保留期。 此外，保留锁设置的保留期可能不会缩短或减少。 但是，如果法律要求继续保留所存储的数据，则可能会延长此时间，如上文所述。 保留锁定可确保任何人（甚至不是管理员或具有特定控制访问权限的管理员）都可能会更改设置或覆盖或擦除已存储的数据，从而使 Office 365 中的存档与 SEC 2003 版本中提出的指导相结合规则17a-4。
 
-若要了解 Office 365 如何帮助您满足法规义务（尤其是与规则17a-4 要求相关），请参阅本[白皮书](https://go.microsoft.com/fwlink/?linkid=830440)，其中包括 Exchange Online 存档、SharePoint Online、OneDrive for Business 和 Skype for business。 该白皮书还提供了对 Office 365 存档功能和功能的深入分析，以根据 SEC Rule 17a-4 中的每个要求，向管控客户演示 Office 365 存档如何使他们能够满足这些要求满足.
+若要了解 Office 365 如何帮助您满足法规义务（尤其是与规则17a-4 要求相关），请参阅介绍 Exchange Online 存档、SharePoint Online、OneDrive for business 和 Skype for business 的[白皮书](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/2015/11/Microsoft-EOA-White-Paper.pdf)。 该白皮书还提供了对 Office 365 存档功能和功能的深入分析，以根据 SEC Rule 17a-4 中的每个要求，向管控客户演示 Office 365 存档如何使他们能够满足这些要求满足.

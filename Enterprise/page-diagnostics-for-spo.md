@@ -3,7 +3,7 @@ title: 使用 SharePoint Online 的页面诊断工具
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/18/2020
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 使用 SharePoint 工具的页面诊断工具，针对预定义的一组性能条件对 SharePoint Online 新式门户和经典发布页面进行分析。
-ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155584"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603731"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>使用 "网页诊断程序" SharePoint 工具
 
 本文介绍如何使用**sharepoint 工具的页面诊断工具**根据预定义的一组性能条件分析 sharepoint Online 新式和经典网站页面。  
 
 >[!TIP]
->已**发布工具的版本 2.0.2**。 版本**2.0.0**和更高版本包括对新式页面以及经典网站页面的支持。 如果您不确定使用的是哪个版本的工具，则可以选择 "**关于**" 链接或省略号（...）来验证您的版本。 使用工具时，请始终更新到最新版本。
+>版本**2.0.0**和更高版本包括对新式页面以及经典网站页面的支持。 如果您不确定使用的是哪个版本的工具，则可以选择 "**关于**" 链接或省略号（...）来验证您的版本。 使用工具时 **，请始终更新到最新版本**。
 
 SharePoint 工具的页面诊断工具是新 Microsoft Edge （https://www.microsoft.com/edge)和同时分析 SharePoint Online 新式门户和经典发布网站页面的 Chrome 浏览器）的浏览器扩展。 此工具仅适用于 SharePoint Online，不能用于 SharePoint 系统页面。
 
@@ -161,4 +161,8 @@ SharePoint 工具的页面诊断工具是新 Microsoft Edge （https://www.micro
 
 [优化 Office 365 性能](tune-office-365-performance.md)
 
+[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+
 [内容分发网络](content-delivery-networks.md)
+
+[结合使用 Office 365 内容分发网络和 SharePoint Online](use-office-365-cdn-with-spo.md)
