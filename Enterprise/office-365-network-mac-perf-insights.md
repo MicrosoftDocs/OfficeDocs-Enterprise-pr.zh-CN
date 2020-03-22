@@ -1,9 +1,9 @@
 ---
-title: Office 365 网络性能见解（预览）
+title: Office 365 网络见解（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/20/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,72 +13,133 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 网络性能见解（预览）
-ms.openlocfilehash: 2e57ffabec5b2172cb36f10135406ddda95bc1c5
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: Office 365 网络见解（预览）
+ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106265"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890596"
 ---
-# <a name="office-365-network-performance-insights-preview"></a>Office 365 网络性能见解（预览）
+# <a name="office-365-network-insights-preview"></a>Office 365 网络见解（预览）
 
-Microsoft 365 管理中心网络性能页面显示了 Office 365 网络见解，可帮助为你的办公室位置设计网络外围。 每个办公地点可能会显示五个特定的网络见解。
+**网络洞察力**是从 Office 365 租户收集的实时性能指标，仅可供租户中的管理用户查看。 Insights 显示在 Microsoft 365 管理中心的中<https://portal.microsoft.com/adminportal/home#/networkperformance>。
+
+Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知灼见都提供有关用户访问你的租户的每个地理位置的特定常见问题的性能特征的实时详细信息。
+
+可以为每个办公室位置显示五个特定的网络见解：
+
+- [Backhauled 网络出口](#backhauled-network-egress)
+- [为附近的客户检测到更好的性能](#better-performance-detected-for-customers-near-you)
+- [使用非最佳 Exchange Online 服务前门](#use-of-a-non-optimal-exchange-online-service-front-door)
+- [使用非最佳 SharePoint Online 服务前盖](#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [SharePoint 前门的低下载速度](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->网络性能建议、Microsoft 365 管理中心中的真知灼见和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
+>网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
 
 ## <a name="backhauled-network-egress"></a>Backhauled 网络出口
 
-从用户到网络传出的距离大于500英里（800公里），预计会影响性能。 建议对用户更接近的本地出口。
-
-这表明办公室位置和网络出局之间的距离超过500英里。 办公室位置由模糊的客户端计算机位置标识，并且网络出口位置通过使用反向 IP 地址到 location 数据库来标识。 如果在计算机上禁用了 Windows 定位服务，则办公室位置可能不准确。 如果反向 IP 地址数据库信息不准确，则网络传出位置可能不准确。
-
-此洞察力的详细信息包括办公地点、网络出口位置以及它们之间的距离。
-
-为此，我们建议将网络出口离办公室位置更近，以便连接可以最适合在 Internet 上的 Microsoft 网络中和到 Office 365 服务的前端。 由于 Microsoft 会在将来对用户的网络出口进行关闭，因此 Microsoft 会在将来更好地扩展状态和 Office 365 服务前端的网络数据点。
+如果网络 insights 服务检测到网络传出的给定用户位置的距离大于500英里（800公里），则会显示此洞察力，这表明即将将 Office 365 流量 backhauled 为公共 Internet 边缘设备或代理。
 
 在某些摘要视图中，这种洞察力缩写为 "出局"。
 
+![Backhauled 网络出口](Media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+
+### <a name="what-does-this-mean"></a>应用场景
+
+这表示办公室地点和网络出口之间的距离超过500英里（800公里）。 办公室位置由模糊的客户端计算机位置标识，并且网络出口位置通过使用反向 IP 地址到 location 数据库来标识。 如果在计算机上禁用了 Windows 定位服务，则办公室位置可能不准确。 如果反向 IP 地址数据库信息不准确，则网络传出位置可能不准确。
+
+此洞察力的详细信息包括办公地点、位置总数的租户用户总数、当前网络传出位置、传出位置的相关性、位置和当前出口点的距离、该日期第一次检测到条件，以及解决条件的日期。
+
+### <a name="what-should-i-do"></a>该怎么办？
+
+为此，我们建议网络出口离办公室位置更近，以便连接可以最佳路由到 Microsoft 的全局网络和最接近的 Office 365 服务前盖。 由于 Microsoft 会在将来对用户的网络出口进行关闭，因此 Microsoft 会在将来更好地扩展状态和 Office 365 服务前端的网络数据点。
+
+有关如何解决此问题的详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)中的[本地传出网络连接](office-365-network-connectivity-principles.md#egress-network-connections-locally)。
+
 ## <a name="better-performance-detected-for-customers-near-you"></a>为附近的客户检测到更好的性能
 
-由于大都市区域中的大量客户的性能高于组织在此办公室位置的性能。
-
-这就是与此办公室所在地在同一个城市中的 Office 365 客户的聚合性能。
-
-![相对网络性能](Media/m365-mac-perf/m365-mac-perf-relative-perf.png)
-
-我们在更好的性能存储桶中计算同一城市中的 Office 365 客户的百分比。 如果大于10%，则显示网络洞察力。
+如果网络 insights 服务检测到您的地铁区域中的大量客户具有比在此办公室位置的组织中的用户更好的性能，则会显示此洞察力。
 
 在某些摘要视图中，这种洞察力缩写为 "对等方"。
 
+![相对网络性能](Media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+
+### <a name="what-does-this-mean"></a>应用场景
+
+此洞察力检查与此办公室所在地在同一个城市中的 Office 365 客户的聚合性能。 如果用户的平均延迟大于邻近租户平均延迟的10%，则会显示此洞察力。
+
+### <a name="what-should-i-do"></a>该怎么办？
+
+此条件的原因可能有多种，包括公司网络或 ISP 中的延迟、瓶颈或体系结构设计问题。 检查您的办公室网络和当前 Office 365 前端之间路由中的每个跃点之间的延迟。 有关详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)。
+
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>使用非最佳 Exchange Online 服务前门
 
-用户未连接到最佳的 Office 365 服务前盖，这会影响性能。
-
-我们列出了适用于办公室所在地城市的 Exchange Online 服务前盖，且具有出色的性能。 如果当前测试显示使用 Exchange Online 服务的前向不在此列表中，则我们称之为 "建议"。
-
-使用非最佳 Exchange Online 服务前盖可能是由于网络 backhaul 在公司网络出口前，在这种情况下，我们建议本地和直接网络出口。 也可能是由于使用远程 DNS 递归冲突解决服务器而导致的，在这种情况下，我们建议您将 DNS 递归解析器服务器与网络出口对齐。
+如果网络 insights 服务检测到特定位置中的用户未连接到最佳 Exchange Online 服务前盖，将显示此洞察力。
 
 在某些摘要视图中，这种洞察力缩写为 "传送"。
 
-## <a name="use-of-non-optimal-sharepoint-online-service-front-door"></a>使用非最佳的 SharePoint Online 服务前盖
+![非最佳前盖](Media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
-用户未连接到最接近的 SharePoint Online 服务前向门。 这预计会影响性能。
+### <a name="what-does-this-mean"></a>应用场景
 
-我们确定测试客户端连接到的 SharePoint Online 服务前向门。 然后，对于办公室所在地的城市，我们会将其与该城市的预期 SharePoint Online 服务前门进行比较。 如果不匹配，则建议这样做。
+我们列出了适用于办公室所在地城市的 Exchange Online 服务前盖，且具有出色的性能。 如果当前测试显示使用 Exchange Online 服务的前向不在此列表中，则我们称之为 "建议"。
+
+### <a name="what-should-i-do"></a>该怎么办？
+
+使用非最佳 Exchange Online 服务前盖可能是由于网络 backhaul 在公司网络出口前，在这种情况下，我们建议本地和直接网络出口。 也可能是由于使用远程 DNS 递归冲突解决服务器而导致的，在这种情况下，我们建议您将 DNS 递归解析器服务器与网络出口对齐。
+
+## <a name="use-of-a-non-optimal-sharepoint-online-service-front-door"></a>使用非最佳 SharePoint Online 服务前盖
+
+如果网络 insights 服务检测到特定位置中的用户未连接到最近的 SharePoint Online 服务前向，将显示此洞察力。
 
 在某些摘要视图中，这种洞察力缩写为 "Afd"。
 
+![非最佳前盖](Media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+
+### <a name="what-does-this-mean"></a>应用场景
+
+我们确定测试客户端连接到的 SharePoint Online 服务前向门。 然后，对于办公室所在地的城市，我们会将其与该城市的预期 SharePoint Online 服务前门进行比较。 如果不匹配，则建议这样做。
+
+### <a name="what-should-i-do"></a>该怎么办？
+
+使用非最佳的 SharePoint Online 服务前盖可能是由于网络 backhaul 在公司网络出口之前导致的，因此我们建议本地和直接网络出口。 也可能是由于使用远程 DNS 递归冲突解决服务器而导致的，在这种情况下，我们建议您将 DNS 递归解析器服务器与网络出口对齐。
+
 ## <a name="low-download-speed-from-sharepoint-front-door"></a>SharePoint 前门的低下载速度
 
-检测到的子最佳网络下载速度会影响从 OneDrive for Business 加载文档所需的时间。
+如果网络 insights 服务检测到特定的办公室位置和 SharePoint Online 之间的带宽小于 1 MBps，则会显示此洞察力。
+
+在某些摘要视图中，这种洞察力缩写为 "吞吐量"。
+
+### <a name="what-does-this-mean"></a>应用场景
 
 用户可以从 SharePoint Online 和 OneDrive for business 服务前向前端获取的下载速度以每秒兆字节（MBps）为单位。 如果此值小于 1 MBps，则提供此洞察力。
 
-若要提高用户可以获得带宽的下载速度，可能需要增加。 或者，在办公室地点的用户计算机与 SharePoint Online service 前门之间可能存在网络拥塞。 这有时称为 congestive 丢失，它限制了用户可以使用的下载速度，即使有足够的带宽可用。
+### <a name="what-should-i-do"></a>该怎么办？
 
-在某些摘要视图中，这种洞察力缩写为 "吞吐量"。
+为了提高下载速度，可能需要增加带宽。 或者，在办公室地点的用户计算机与 SharePoint Online service 前门之间可能存在网络拥塞。 这有时称为 congestive 丢失，它限制了用户可以使用的下载速度，即使有足够的带宽可用。
+
+## <a name="china-user-optimal-network-egress"></a>中国用户最佳网络出口
+
+如果组织的用户在连接到其他地理位置的 Office 365 租户时，将显示此洞察力。 
+
+### <a name="what-does-this-mean"></a>应用场景
+
+如果您的组织具有专用 WAN 连接，我们建议您在中国的办公室位置配置网络 WAN 电路，在以下任一位置将网络出口到 Internet：
+
+- 香港特别行政区
+- 日本
+- 中国台湾
+- 韩国
+- 新加坡
+- 马来西亚
+
+远离用户的 Internet 出口与这些位置相比会降低性能，而在中国的出口可能导致由于交叉边界拥塞导致的高延迟和连接问题。
+
+### <a name="what-should-i-do"></a>该怎么办？
+
+有关如何缓解与此洞察力相关的性能问题的详细信息，请参阅[适用于中国用户的 Office 365 全局租户性能优化](https://docs.microsoft.com/office365/enterprise/office-365-networking-china)。
 
 ## <a name="related-topics"></a>相关主题
 

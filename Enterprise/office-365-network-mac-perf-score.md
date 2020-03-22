@@ -3,7 +3,7 @@ title: Office 365 网络评估（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,41 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 网络评估（预览）
-ms.openlocfilehash: f919eeb2771095502865b4a5079b91eb8d7efe36
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 24ecea73d9ecb6ae73b26e42a25749c846e3a281
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106258"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890353"
 ---
 # <a name="office-365-network-assessment-preview"></a>Office 365 网络评估（预览）
 
-Office 365 网络评估表明了客户网络连接的相对用户体验的影响。 任何 Microsoft 拥有的网络连接的影响将排除在此之外，以使客户能够优化他们负责的网络设计。
+在 Microsoft 365 管理中心与 Microsoft 365 页面的连接中，**网络评估**将许多网络性能指标的聚合提取到企业网络运行状况的快照中，用点值从 1-100 中表示。 网络评估的作用范围为整个租户以及用户连接到你的租户的每个地理位置，从而为 Office 365 管理员提供了一种简单的方法来即时了解企业网络运行状况的 gestalt 并快速钻取向下查看任何全球办公地点的详细报告。
 
-它是从影响关键 Office 365 工作负荷中的用户体验的度量计算出来的，并显示为范围为0到100的百分比。
+网络评估点值是在查看时进行实时编译的延迟、带宽、下载速度和连接质量指标的平均度量。 Microsoft 拥有的网络的性能指标将从这些度量中排除，以确保评估结果明确且特定于企业网络。
 
-较低的网络分数表示 Office 365 客户端在连接或剩余用户响应时遇到严重问题。 分数为80% 表示网络连接，您不应预计收到有关 Office 365 用户体验的用户抱怨，因为网络性能。 随着网络连接的改进，此分数将随用户体验的增加而增加。
+![网络评估价值](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+
+非常低的网络评估价值表明 Office 365 客户端将在连接到租户或维护响应前的用户体验时遇到严重问题，而较高的值表示正常配置的网络具有较少的持续性能问题. 80% 的值表示一个正常的基准，即您不应预期收到有关 Office 365 连接或由于网络性能导致的响应的定期用户意见。 由于进行了重复的网络连接改进，因此此值将随用户体验的增加而增加。
 
 >[!IMPORTANT]
->网络性能建议、Microsoft 365 管理中心中的真知灼见和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
+>网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
+
+## <a name="network-assessment-panel"></a>网络评估面板
+
+每个网络评估（无论是属于租户还是特定办公室位置）都将显示一个面板，其中包含有关评估的详细信息。 此面板显示评估的条形图，以百分比表示，并作为每个组件工作负荷的总积分，包括仅收到度量数据的工作负荷。 对于 office 位置网络评估，我们还显示基准，即报告与您的办公室位置的数据位于同一个城市中的所有 Office 365 客户端的中值。
+
+![示例网络评估值](Media/m365-mac-perf/m365-mac-perf-overview-score.png)
+
+面板中的**评估细目**显示了每个组件工作负荷的评估。
+
+**评估历史记录**显示了最近30天的评估和基准。
+
+## <a name="tenant-network-assessments-and-office-location-network-assessments"></a>租户网络评估和 office 位置网络评估
+
+网络评估可衡量办公室的网络外围位置到 Microsoft 网络的设计。 对网络周边的改进最好是在每个办公室位置完成，或者在网络连接聚合的位置进行改进，这可能会影响多个位置。
+
+我们在 "网络性能概述" 页上显示整个 Office 365 租户的网络评估值，并在该位置的 "摘要" 页面上显示每个检测到的 office 位置的特定值。
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -44,19 +62,6 @@ Office 365 网络评估表明了客户网络连接的相对用户体验的影响
 
 对于 Microsoft 团队，网络质量是指 UDP 延迟、UDP 抖动和 UDP 数据包丢失。 UDP 可用于 Microsoft 团队的呼叫和会议音频和视频媒体连接。 这可能受到与延迟和下载速度相同的因素的影响，除了网络的 UDP 支持中的连接间隙之外，因为 UDP 是分别配置为更常见的 TCP 协议。
 
-## <a name="tenant-network-score-and-office-location-network-score"></a>租户网络分数和办公室位置网络分数
-
-网络分数用于衡量在 Microsoft 网络中办公室位置的网络外围的设计。 对网络周边的改进最好是在每个办公室位置完成，或者在网络连接聚合的位置进行改进，这可能会影响多个位置。
-我们为 "网络性能概述" 页面上的整个 Office 365 租户显示网络分数，在该位置的 "摘要" 页面上显示每个检测到的 office 位置的特定网络分数。
-
-## <a name="network-score-panel"></a>网络排名面板
-
-每个网络分数无论是针对租户还是针对特定的办公室位置，都会显示一个面板，其中包含有关分数的详细信息。 此面板显示分数的条形图，以百分比表示，并作为每个组件工作负荷的总分数，包括仅收到度量数据的工作负荷。 对于 "办公室位置网络分数"，我们还会显示基准，即报告与您的办公室位置的数据位于同一城市的所有 Office 365 客户端的中值。
-
-面板中的分数细分显示了每个组件工作负荷的分数。
-
-分数历史记录显示了得分和基准的过去30天。
-
 ## <a name="related-topics"></a>相关主题
 
 [Microsoft 365 管理中心中的网络性能建议（预览）](office-365-network-mac-perf-overview.md)
@@ -64,3 +69,5 @@ Office 365 网络评估表明了客户网络连接的相对用户体验的影响
 [Office 365 网络性能见解（预览）](office-365-network-mac-perf-insights.md)
 
 [M365 管理中心中的 Office 365 网络载入工具（预览）](office-365-network-mac-perf-onboarding-tool.md)
+
+[Office 365 网络洞察力隐私和使用条款（预览）](office-365-network-mac-perf-privacy.md)

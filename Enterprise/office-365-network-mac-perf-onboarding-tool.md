@@ -3,7 +3,7 @@ title: M365 管理中心中的 Office 365 网络载入工具（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 管理中心中的 Office 365 网络载入工具（预览）
-ms.openlocfilehash: 7ead201d78c1a6ce971c6ff09d4be9c0d2c76be6
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106260"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890395"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理中心中的 Office 365 网络载入工具（预览）
 
@@ -30,7 +30,7 @@ Microsoft 365 管理中心的网络洞察力基于 Office 365 租户的产品度
 我们建议将这些信息结合使用，以便可以在 Microsoft 365 管理中心中对每个办公室位置评估网络质量状态，并在部署基于 Office 365 网络载入工具的测试之后找到更多的详细信息。
 
 >[!IMPORTANT]
->网络性能建议、Microsoft 365 管理中心中的真知灼见和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
+>网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
 
 ## <a name="the-advanced-tests-client-application"></a>高级测试客户端应用程序
 

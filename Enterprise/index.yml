@@ -1,0 +1,68 @@
+### YamlMime:Landing
+title: Office 365 企业版文档
+summary: 本页面提供面向在企业组织中部署、配置和管理 Office 365 服务的管理员和 IT 专业人员的指南。
+metadata:
+  title: Office 365 企业版文档
+  description: 本页面提供面向在企业组织中部署、配置和管理 Office 365 服务的管理员和 IT 专业人员的指南。
+  ms.service: o365-solutions
+  ms.topic: landing-page
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/12/2020
+  ms.openlocfilehash: 432c124f39db7168a93b4c061c00b10a07cc20d9
+  ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "42891483"
+landingContent:
+- title: 关于 Office 365 企业版
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 采用 Office 365 with FastTrack
+      url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
+    - text: 将组织数据迁移到 Office 365 企业版
+      url: migrate-data-to-office-365.md
+    - text: Office 365 专业增强版部署指南
+      url: https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus
+    - text: 为组织部署 Office 365 企业版
+      url: setup-overview-for-enterprises.md
+    - text: 混合部署
+      url: microsoft-cloud-it-architecture-resources.md
+  - linkListType: learn
+    links:
+    - text: Microsoft 365 入门
+      url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
+- title: 部署 Office 365 工作负载
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Exchange Online
+      url: https://docs.microsoft.com/Exchange/exchange-online
+    - text: SharePoint Online
+      url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+    - text: Skype for Business Online
+      url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+    - text: Microsoft Teams
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: Power BI
+      url: https://docs.microsoft.com/power-bi
+    - text: Yammer
+      url: https://support.office.com/yammer
+- title: 更多资源
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Office 365 技术社区
+      url: https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365
+    - text: 获取支持
+      url: https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
+  - linkListType: learn
+    links:
+    - text: 了解有关 Microsoft 365 的详细信息
+      url: https://docs.microsoft.com/microsoft-365
+    - text: 了解有关 Microsoft 365 合规性的详细信息
+      url: https://docs.microsoft.com/microsoft-365/compliance/
+    - text: 了解有关 Microsoft 365 安全性的详细信息
+      url: https://docs.microsoft.com/microsoft-365/security/
