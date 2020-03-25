@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 摘要：在计划 Office 365 部署时要使用的 DNS 记录的引用列表。
-ms.openlocfilehash: 00f4181b08a7af4435b06aa143d3741c220023d0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840359"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890341"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -79,6 +79,9 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 <a name="BKMK_ReqdCore"> </a>
 
 使用[Office 365 URL 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO)时，需要执行特定步骤，以确保正确配置你的网络。
+
+> [!NOTE]
+> 这些 DNS 记录也适用于 Teams，尤其是在 Teams 和 Skype for Business Online 混合方案中，其中可能出现某些联合问题。
   
 ||||
 |:-----|:-----|:-----|
