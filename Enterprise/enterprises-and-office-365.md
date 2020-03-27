@@ -1,7 +1,7 @@
 ---
 title: 企业组织和 Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/8/2017
 audience: ITPro
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: 为企业组织规划和管理 Office 365 的资源。
-ms.openlocfilehash: 97ffc7aee647918750a04b2b4761b189e2cebeb1
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840399"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979544"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>企业组织和 Office 365
 

@@ -19,14 +19,17 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 保护对 Office 365 订阅的全局管理员访问权限。
-ms.openlocfilehash: ee5acefbd5eab287a78b55f5d4ddfc525432b403
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841189"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979364"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>保护 Office 365 全局管理员帐户
+
+> [!NOTE]
+> 全局管理员帐户可在不添加任何许可证的情况下创建。
 
 *此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 

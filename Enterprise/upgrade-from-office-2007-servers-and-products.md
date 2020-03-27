@@ -1,7 +1,7 @@
 ---
 title: 可帮助您从 Office 2007 服务器和客户端进行升级的资源
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/01/2018
 audience: ITPro
@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2007 服务器和客户端应用程序的支持即将结束，自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 101db7891dd2d336c9b15b2e7070587fb61eb53a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 2686d081952a2b18a1d08378e3aa7f66f4142542
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605637"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979354"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>可帮助您从 Office 2007 服务器和客户端进行升级的资源
 
