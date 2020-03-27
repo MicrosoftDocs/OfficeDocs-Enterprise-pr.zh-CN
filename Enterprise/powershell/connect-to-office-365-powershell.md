@@ -3,7 +3,7 @@ title: 连接到 Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: 03/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 摘要：使用 Office 365 PowerShell 连接到 Office 365 组织，以通过命令行执行管理中心任务。
-ms.openlocfilehash: 96ad47e6f60d6e098deffb48c56b4004d732b033
-ms.sourcegitcommit: 48d8d40f546d452a0068260571d8d147e1c9de22
+ms.openlocfilehash: a1031250919dfa7724bf44ac752684060422d85e
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42616947"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979434"
 ---
 # <a name="connect-to-office-365-powershell"></a>连接到 Office 365 PowerShell
 
@@ -44,17 +44,17 @@ ms.locfileid: "42616947"
   - Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2 SP1
 
     > [!NOTE]
-    > 必须使用 PowerShell 5.1 版或更高版本。 对于 Windows 8.1、Windows 8、Windows 7 Service Pack 1 (SP1)、Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 SP1，请下载并安装 [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616)。 
+    > 对于 Azure Active Directory PowerShell for Graph 模块，必须使用 PowerShell 版本 5.1 或以上版本。 对于用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块，必须使用 PowerShell 版本 5.1 或以上版本（最高版本 6）。 你无法使用 PowerShell 版本 7。 对于 Windows 8.1、Windows 8、Windows 7 Service Pack 1 (SP1)、Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 SP1，请下载并安装 [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616)。 
     
     > [!NOTE]
-    >请使用 64 位版 Windows。2014 年 10 月，用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块已不再支持 32 位版。
+    > 请使用 64 位版 Windows。2014 年 10 月，用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块已不再支持 32 位版。
     
 这些步骤适合于属于 Office 365 管理员角色成员的用户。 有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>连接到 Azure Active Directory PowerShell Graph 模块
 
-[Azure Active Directory PowerShell Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 模块中的命令在其 cmdlet 名称中包含 **AzureAD**。
+Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称中包含 **AzureAD**。 可安装[Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) 模块或 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-3.6.1)。
 
 有关在 Azure Active Directory PowerShell Graph 模块中需要新 cmdlet 的过程，请使用以下步骤安装该模块并连接到 Office 365 订阅。
 
@@ -100,9 +100,9 @@ ms.locfileid: "42616947"
 
 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中的命令在其 cmdlet 名称中具有 **Msol**。
 
->[!Note]
->PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
->
+PowerShell 版本 7 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 对于 PowerShell 版本 7 和更高版本，必须使用 Azure Active Directory PowerShell for Graph 模块或 Azure PowerShell。
+
+PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。 
     
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
 
