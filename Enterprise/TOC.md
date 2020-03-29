@@ -81,7 +81,10 @@
 #### [Office for Mac 中的网络请求](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)
 #### [Web 服务中未包含的其他终结点](additional-office365-ip-addresses-and-urls.md)
-### [面向中国用户的 Office 365 性能优化](office-365-networking-china.md)
+### 为远程用户优化 Office 365 连接性
+#### [概述： VPN 拆分隧道](office-365-vpn-split-tunnel.md)
+#### [实现 VPN 拆分隧道](office-365-vpn-implement-split-tunnel.md)
+#### [Office 365 中国用户优化](office-365-networking-china.md)
 ### [内容分发网络](content-delivery-networks.md)
 ### [Office 365 服务中的 IPv6 支持](ipv6-support.md)
 ### [Office 365 随附的 NAT 支持](nat-support-with-office-365.md)
