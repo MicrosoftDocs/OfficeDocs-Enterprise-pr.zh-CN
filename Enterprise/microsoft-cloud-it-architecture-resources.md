@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Office 专业增强版部署新式安全桌面。
-ms.openlocfilehash: 5cfed9ba3fd3dcc2c92d0226398cdf7658ee6cab
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
+ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979474"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43037799"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
@@ -46,6 +46,7 @@ ms.locfileid: "42979474"
 - **[Microsoft 365 企业版解决方案系列](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**：
     - [面向 IT 架构师的 Microsoft 365 中的 Microsoft Teams 和相关生产力服务](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
     - [面向 IT 架构师的 Microsoft 365 中的组](#groups-in-microsoft-365-for-it-architects)
+    - [多区域组织安全和信息保护](#security-and-information-protection-for-multi-region-organizations)
     - [Office 365 的标识和设备保护](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Office 365 中的文件保护解决方案](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     - [符合 GDPR 的 Office 365 信息保护](#office-365-information-protection-for-gdpr)
@@ -162,6 +163,14 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 |**项**|**说明**|
 |:-----|:-----|
 |[![组信息图的缩略图](downloads/msft-m365-groups-architecture-thumb.png)](downloads/msft-m365-groups.pdf) <br/> [PDF](downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) |这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。|
+
+### <a name="security-and-information-protection-for-multi-region-organizations"></a>多区域组织安全和信息保护
+拥有单一 microsoft 365 租户的多区域组织安全和信息保护
+
+|**项目**|**说明**|
+|:-----|:-----|
+|[![多区域信息图缩略图](media/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx) |出于多种原因，使用单一 Microsoft 365 租户，为全球组织提供最佳选择和体验。 但是，许多架构师都在为如何满足不同地区的安全性和信息保护目标而苦恼。 这组主题提供了建议。 |
+
 
    
 <a name="BKMK_O365IDP"></a>
