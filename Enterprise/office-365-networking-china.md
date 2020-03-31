@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- remotework
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: 本文提供了针对全球 Office 365 租户的中国用户优化网络性能的指南。
-ms.openlocfilehash: 33e475dfbf4accf306a099542cf8cf2f22ff23a5
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 50cf6189c922ada5d4ebb9683bec0dd8c6e38f6d
+ms.sourcegitcommit: cb942f32da99eda6455756ce0fd409cf8ee9de3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106266"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058965"
 ---
 # <a name="office-365-global-tenant-performance-optimization-for-china-users"></a>适用于中国用户的 Office 365 全局租户性能优化
 
@@ -57,7 +58,7 @@ ms.locfileid: "42106266"
 
 ## <a name="user-best-practices"></a>用户最佳实践
 
-在与企业网络无连接的情况下，在中华人民共和国中连接到全球办公室365租户（如住宅、咖啡店、旅馆和分支机构）的用户可能会遇到较差的网络性能，因为其设备和 Office 之间的流量365必须传输中国拥塞的交叉边界网络电路。
+在与企业网络无连接的情况下，在中华人民共和国中连接到全球办公室365租户（如住宅、咖啡店、旅馆和分支机构）的用户可能会遇到较差的网络性能，因为其设备和 Office 365 之间的通信必须传输中国拥塞的交叉边界网络电路。
 
 如果不能选择对公司网络中的交叉边框专用网络和/或 VPN 进行访问，则可以通过培训基于中国的用户来遵循这些最佳做法，从而缓解每用户性能问题。
 
@@ -69,7 +70,7 @@ Microsoft 不断努力改进 Office 365 用户体验，并通过网络体系结�
 
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 的网络规划和性能优化](https://aka.ms/tune)
+[Office 365 网络计划和性能优化](https://aka.ms/tune)
 
 [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
 
