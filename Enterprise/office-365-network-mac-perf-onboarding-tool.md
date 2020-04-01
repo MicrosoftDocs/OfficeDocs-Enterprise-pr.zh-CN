@@ -3,7 +3,7 @@ title: M365 管理中心中的 Office 365 网络载入工具（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 管理中心中的 Office 365 网络载入工具（预览）
-ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890395"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081694"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理中心中的 Office 365 网络载入工具（预览）
 
@@ -127,3 +127,5 @@ Office 365 网络载入工具有两个组成部分。 网站<https://connectivit
 [Office 365 网络性能见解（预览）](office-365-network-mac-perf-insights.md)
 
 [Office 365 网络评估（预览）](office-365-network-mac-perf-score.md)
+
+[Office 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)

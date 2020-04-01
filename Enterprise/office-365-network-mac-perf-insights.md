@@ -3,7 +3,7 @@ title: Office 365 网络见解（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 网络见解（预览）
-ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890596"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081704"
 ---
 # <a name="office-365-network-insights-preview"></a>Office 365 网络见解（预览）
 
@@ -50,7 +50,7 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 这表示办公室地点和网络出口之间的距离超过500英里（800公里）。 办公室位置由模糊的客户端计算机位置标识，并且网络出口位置通过使用反向 IP 地址到 location 数据库来标识。 如果在计算机上禁用了 Windows 定位服务，则办公室位置可能不准确。 如果反向 IP 地址数据库信息不准确，则网络传出位置可能不准确。
 
-此洞察力的详细信息包括办公地点、位置总数的租户用户总数、当前网络传出位置、传出位置的相关性、位置和当前出口点的距离、该日期第一次检测到条件，以及解决条件的日期。
+此洞察力的详细信息包括办公地点、位置总数的租户用户总数、当前网络传出位置、传出位置的相关性、位置和当前出口点之间的距离、第一次检测条件的日期以及解决条件的日期。
 
 ### <a name="what-should-i-do"></a>该怎么办？
 
@@ -148,3 +148,5 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 [Office 365 网络评估（预览）](office-365-network-mac-perf-score.md)
 
 [M365 管理中心中的 Office 365 网络载入工具（预览）](office-365-network-mac-perf-onboarding-tool.md)
+
+[Office 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)

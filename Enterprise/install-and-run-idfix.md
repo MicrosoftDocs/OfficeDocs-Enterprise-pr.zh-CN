@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: 如何在将 Active Directory 域服务（AD DS）同步到 Office 365 之前，下载并运行 Office 365 IdFix 工具以帮助清理 Active Directory 域服务（AD DS）。
-ms.openlocfilehash: 7bb1577e7fc1c96cc7edcf96e4aac17b310e3710
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d816abe8e93830832077c614e496576d42890d50
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844613"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068774"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>下载并运行 Office 365 IdFix 工具
 
@@ -74,15 +74,15 @@ IdFix 在同步到 Office 365 之前识别您的 Active Directory 域服务（AD
   
 1. 登录到您要在其中运行 IdFix 工具的计算机。
     
-2. 请转到 Microsoft 下载中心网站，获取[IdFix DirSync 错误修正工具](https://go.microsoft.com/fwlink/?linkid=867219)。
+2. 转到[IdFix DirSync 错误修正工具](https://github.com/microsoft/idfix)网站。
     
-3. 下载并打开 zip 文件。
+3. 单击 " **ClickOnce 启动**" 部分中的 "**启动**" 以下载 zip 文件。 打开 zip 文件。
     
-3. 在 " **IdFix** " 窗口中，选择 "**提取**"，然后 "**全部提取**"。 默认情况下，IdFix 被提取`C:\Users\<your user name>\Documents\IdFix`到。 
+4. 在 " **IdFix** " 窗口中，选择 "**提取**"，然后 "**全部提取**"。 默认情况下，IdFix 被提取`C:\Users\<your user name>\Documents\IdFix`到。 
     
-6. 选择“**提取**”。
+5. 选择“**提取**”。
 
-这些说明是通过运行 Windows Server 2016 的服务器上的 Internet Explorer 完成的。 如果您使用的是其他版本的 Windows 或不同的浏览器，则您的步骤可能会有所不同。
+你的步骤可能因你的 Windows 和 Internet 浏览器的版本而异。
     
 ## <a name="run-the-idfix-tool"></a>运行 IdFix 工具
 
