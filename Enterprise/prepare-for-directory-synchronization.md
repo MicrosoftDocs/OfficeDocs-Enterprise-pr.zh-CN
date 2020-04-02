@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备使用目录同步将用户预配到 Office 365，以及使用此方法的长期好处。
-ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d2eab22e360ae26543db1774c3b174647f30bcd6
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841169"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093436"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>准备将目录同步到 Office 365
 
@@ -76,7 +76,7 @@ ms.locfileid: "41841169"
   - 移动电话
   - 传真号码
   - 街道地址
-  - 城市
+  - 市/县
   - 省/自治区/直辖市
   - 邮政编码
   - 国家或地区
@@ -113,7 +113,7 @@ AD DS 和 Office 365 之间的成功目录同步要求已正确准备 AD DS 属�
   - 属性值在目录中必须是唯一的。
   
     > [!NOTE]
-    > 同步名称中的下划线（"_"）表示此属性的原始值包含无效字符。 原始值可以包含字母、数字和字符！、#、$、%、&、'、 \*、+、-、/、=、？、^、_、'、{、|、} 和 ~。 有关此属性的详细信息，请参阅[Exchange alias 属性](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)。
+    > 同步名称中的下划线（"_"）表示此属性的原始值包含无效字符。 有关此属性的详细信息，请参阅[Exchange alias 属性](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)。
     >
       
 - **proxyAddresses**
