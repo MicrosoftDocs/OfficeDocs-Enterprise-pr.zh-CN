@@ -3,7 +3,7 @@ title: 实现 Office 365 的 VPN 拆分隧道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/27/2020
+ms.date: 4/2/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 060b62e51ed20274867bf4ac6b07f113c39a2805
-ms.sourcegitcommit: c081928170e2a56bc0627e5ec8174c1152fcc151
+ms.openlocfilehash: a0abc94d32887867ae11a0e3c768538bc223b583
+ms.sourcegitcommit: 7eb8b3b55a348eac8f03c97533b5d89388ed0ada
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034840"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117918"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -226,7 +226,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 在某些情况下（通常与 Teams 客户端配置无关），即使有正确的路由，媒体流量仍会遍历 VPN 隧道。 如果遇到这种情况，只需使用防火墙规则来阻止 Teams IP 子网或端口使用 VPN。
 
-要使其在 100% 的场景中工作，当前还有一个要求是添加 IP 范围 **13.107.60.1/32**。 由于最新的 Teams 客户端于 **2020 年 3 月 30 日**发布，因此短期内此要求不是必须的。
+要使其在 100% 的场景中工作，当前还有一个要求是添加 IP 范围 **13.107.60.1/32**。 由于最新的 Teams 客户端于 **2020 年 4 月**初发布，因此短期内此要求不是必须的。 如有其他可用信息，我们将立即更新这篇文章及内部版本详细信息。
 
 信令流量是通过 HTTPS 执行的，它不像媒体流量那样对延迟敏感，并在 URL/IP 数据中标记为**允许**，因此如果需要，可以安全地通过 VPN 客户端进行路由。
 
@@ -269,6 +269,8 @@ Skype for Business Online 生成用户名/密码，可用于通过_围绕 NAT �
 本节提供了一些链接，这些链接提供了实现 Office 365 流量（来自该领域中最常见的合作伙伴）的拆分隧道的详细指南。 我们将在其他指南推出时添加这些指南。
 
 - **Cisco Anyconnect**：[优化 Office365 的 Anyconnect 拆分隧道](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
+- **Palo Alto GlobalProtect**：[通过 VPN 拆分隧道排除访问路由优化 Office 365 流量](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM**：[使用 BIG-IP APM 通过 VPN 优化远程访问 Office 365 流量](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 
 ## <a name="faq"></a>常见问题
 
