@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 Office 365 PowerShell 将每个用户的通信设置分配到 Skype for Business Online 策略。
-ms.openlocfilehash: b9bb38b4b93d9b18e46fc1891f52d89fd1ba9c9e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
+ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844263"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "43146807"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>指定每个用户 Skype 的在线商业策略与 Office 365 PowerShell
 
@@ -107,6 +107,39 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 此命令将向 Alex 分配的外部访问策略的名称设置为一个 null 值（$Null）。 空值表示 "nothing"。 换言之，没有向 Alex 分配任何外部访问策略。 如果没有向用户分配任何外部访问策略，则该用户将由全局策略进行管理。
   
 若要使用 Windows PowerShell 禁用用户帐户，请使用 Azure Active Directory cmdlet 删除 Alex 的 Skype for Business Online 许可证。 有关详细信息，请参阅[禁用对具有 Office 365 PowerShell 的服务的访问](assign-licenses-to-user-accounts-with-office-365-powershell.md)。
+
+## <a name="managing-large-numbers-of-users"></a>管理大量用户
+
+若要管理大量用户（1000或更多），您需要通过使用[调用命令](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)cmdlet 的脚本块对命令进行批处理。  在前面的示例中，每次执行 cmdlet 时，都必须先设置调用，然后等待结果，然后再将其发送回来。  使用脚本块时，可以远程执行 cmdlet，并在完成后将数据发送回来。 
+
+```powershell
+Import-Module LyncOnlineConnector
+$sfbSession = New-CsOnlineSession
+$users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
+
+$batch = 50
+$filter = ''
+$total = $users.Count
+$count = 0
+    $users | ForEach-Object {
+    $upn = $_.UserPrincipalName
+    $filter += "(UserPrincipalName -eq '$upn')"
+    $batch--
+    $count++
+    if (($batch -eq 0) -or ($count -eq $total)) {
+        $filterSB=[ScriptBlock]::Create($filter)
+        Invoke-Command -Session $s -ScriptBlock {param($f) Get-CsOnlineUser -filter $f | Grant-CsClientPolicy -PolicyName "ClientPolicyNoIMURL" -Passthru | Grant-CsExternalAccessPolicy -PolicyName "FederationAndPICDefault"} -ArgumentList $filterSB
+
+        # Reset
+        $batch = 50
+        $filter = ''
+    } else {
+        $filter += " -or "
+    }
+}
+```
+
+这将在没有客户端策略的时候发现500个用户。 它将向他们授予客户端策略 "ClientPolicyNoIMURL" 和外部访问策略 "FederationAndPicDefault"。 结果成批分组为50，每批50将被发送到远程计算机。
   
 ## <a name="see-also"></a>另请参阅
 
@@ -115,4 +148,3 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
-
