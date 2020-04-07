@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：Office 365 数据位置
-ms.openlocfilehash: ae11127cfaa592ae4a3db0a342e6d68c85fe7774
-ms.sourcegitcommit: 9483bc02cf410e80b56fe898298bd26eef486e17
+ms.openlocfilehash: 5e463b4c9fa20f5f5201c29063cbd1a22018ee37
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43076125"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131461"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -103,7 +103,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | 全球地理位置 | 可以存储客户数据的位置 |
 | --- | --- |
 | 全球地理位置 1 – EMEA（欧洲、中东和非洲） | 奥地利、芬兰、法国、德国、爱尔兰、荷兰、英国 |
-| 全球地理位置 2 – 亚太地区 | 澳大利亚、香港特别行政区、印度、日本、马来西亚、新加坡、韩国 |
+| 全球地理位置 2 – 亚太地区 | 中国香港、日本、马来西亚、新加坡、韩国 |
 | 全球地理位置 3 - 美洲 | 巴西、智利、美国 |
 
 ## <a name="countryregion-specific-data-center-city-locations"></a>特定于国家/地区的数据中心市/县位置
