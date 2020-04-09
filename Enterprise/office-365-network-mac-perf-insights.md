@@ -1,5 +1,5 @@
 ---
-title: Office 365 网络见解（预览）
+title: Microsoft 365 网络见解（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 网络见解（预览）
-ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 网络见解（预览）
+ms.openlocfilehash: baab4716ace0b15df5878d21987c037372a2754e
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081704"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185753"
 ---
-# <a name="office-365-network-insights-preview"></a>Office 365 网络见解（预览）
+# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 网络见解（预览）
 
-**网络洞察力**是从 Office 365 租户收集的实时性能指标，仅可供租户中的管理用户查看。 Insights 显示在 Microsoft 365 管理中心的中<https://portal.microsoft.com/adminportal/home#/networkperformance>。
+**网络洞察力**是从 Microsoft 365 租户收集的实时性能指标，仅供租户中的管理用户查看。 Insights 显示在 Microsoft 365 管理中心的中<https://portal.microsoft.com/adminportal/home#/networkperformance>。
 
 Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知灼见都提供有关用户访问你的租户的每个地理位置的特定常见问题的性能特征的实时详细信息。
 
@@ -36,11 +36,11 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 - [SharePoint 前门的低下载速度](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
+>网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="backhauled-network-egress"></a>Backhauled 网络出口
 
-如果网络 insights 服务检测到网络传出的给定用户位置的距离大于500英里（800公里），则会显示此洞察力，这表明即将将 Office 365 流量 backhauled 为公共 Internet 边缘设备或代理。
+如果网络 insights 服务检测到网络传出的给定用户位置的距离大于500英里（800公里），则会显示此洞察力，这表明 Microsoft 365 流量正 backhauled 为公共 Internet 边缘设备或代理。
 
 在某些摘要视图中，这种洞察力缩写为 "出局"。
 
@@ -54,7 +54,7 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 ### <a name="what-should-i-do"></a>该怎么办？
 
-为此，我们建议网络出口离办公室位置更近，以便连接可以最佳路由到 Microsoft 的全局网络和最接近的 Office 365 服务前盖。 由于 Microsoft 会在将来对用户的网络出口进行关闭，因此 Microsoft 会在将来更好地扩展状态和 Office 365 服务前端的网络数据点。
+为此，我们建议网络出口离办公室位置更近，以便连接可以最佳路由到 Microsoft 的全局网络和最接近的 Microsoft 365 服务前盖。 由于 Microsoft 会在将来对用户的网络出口进行关闭，因此 Microsoft 会在将来对状态和 Microsoft 365 服务前端展开网络点和 Microsoft 服务之前提供改进的性能。
 
 有关如何解决此问题的详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)中的[本地传出网络连接](office-365-network-connectivity-principles.md#egress-network-connections-locally)。
 
@@ -68,11 +68,11 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 ### <a name="what-does-this-mean"></a>应用场景
 
-此洞察力检查与此办公室所在地在同一个城市中的 Office 365 客户的聚合性能。 如果用户的平均延迟大于邻近租户平均延迟的10%，则会显示此洞察力。
+此真知灼见将检查与此办公室所在地在同一个城市中的 Microsoft 365 客户的聚合性能。 如果用户的平均延迟大于邻近租户平均延迟的10%，则会显示此洞察力。
 
 ### <a name="what-should-i-do"></a>该怎么办？
 
-此条件的原因可能有多种，包括公司网络或 ISP 中的延迟、瓶颈或体系结构设计问题。 检查您的办公室网络和当前 Office 365 前端之间路由中的每个跃点之间的延迟。 有关详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)。
+此条件的原因可能有多种，包括公司网络或 ISP 中的延迟、瓶颈或体系结构设计问题。 检查您的办公室网络和当前 Microsoft 365 前端之间路由中的每个跃点之间的延迟。 有关详细信息，请参阅[Office 365 网络连接原则](office-365-network-connectivity-principles.md)。
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>使用非最佳 Exchange Online 服务前门
 
@@ -122,7 +122,7 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 ## <a name="china-user-optimal-network-egress"></a>中国用户最佳网络出口
 
-如果组织的用户在连接到其他地理位置的 Office 365 租户时，将显示此洞察力。 
+如果组织的用户在连接到你的 Microsoft 365 租户的其他地理位置，则会显示此洞察力。 
 
 ### <a name="what-does-this-mean"></a>应用场景
 
@@ -145,8 +145,8 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 [Microsoft 365 管理中心中的网络性能建议（预览）](office-365-network-mac-perf-overview.md)
 
-[Office 365 网络评估（预览）](office-365-network-mac-perf-score.md)
+[Microsoft 365 网络评估（预览）](office-365-network-mac-perf-score.md)
 
-[M365 管理中心中的 Office 365 网络载入工具（预览）](office-365-network-mac-perf-onboarding-tool.md)
+[M365 管理中心中的 Microsoft 365 网络载入工具（预览）](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)
+[Microsoft 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)
