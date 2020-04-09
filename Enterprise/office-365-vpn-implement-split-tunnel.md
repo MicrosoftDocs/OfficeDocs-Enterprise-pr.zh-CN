@@ -3,7 +3,7 @@ title: 实现 Office 365 的 VPN 拆分隧道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 4/8/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 5cc8a4ecc124090c50e600a5edcec6d7362e6cf5
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: 72cdef3da872f7886963be80cf2b092a19e017eb
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131441"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185763"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -268,6 +268,7 @@ Skype for Business Online 生成用户名/密码，可用于通过_围绕 NAT �
 
 本节提供了一些链接，这些链接提供了实现 Office 365 流量（来自该领域中最常见的合作伙伴）的拆分隧道的详细指南。 我们将在其他指南推出时添加这些指南。
 
+- **Windows 10 VPN 客户端**：[使用本机 Windows 10 VPN 客户端优化面向远程工作者的 Office 365 流量](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco Anyconnect**：[优化 Office365 的 Anyconnect 拆分隧道](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**：[通过 VPN 拆分隧道排除访问路由优化 Office 365 流量](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**：[使用 BIG-IP APM 通过 VPN 优化远程访问 Office 365 流量](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
