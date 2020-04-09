@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 管理中心中的网络性能建议概述（预览）
-ms.openlocfilehash: f2ff012d20c799925c571d8065e28859c4c81f71
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081714"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185773"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络性能建议（预览）
 
-Microsoft 365 管理中心现在包括从 Office 365 租户收集的实时性能指标，并且仅可供租户中的管理用户查看。 **网络洞察力和性能建议**和**网络评估**显示在 Microsoft 365 管理中心<https://portal.microsoft.com/adminportal/home#/networkperformance>。 您可以在 "运行状况" 下的导航窗格中找到该页面。 **网络性能**。
+Microsoft 365 管理中心现在包含从 Microsoft 365 租户收集的实时性能指标，仅可供租户中的管理用户查看。 **网络洞察力和性能建议**和**网络评估**显示在 Microsoft 365 管理中心<https://portal.microsoft.com/adminportal/home#/networkperformance>。 您可以在 "运行状况" 下的导航窗格中找到该页面。 **网络性能**。
 
 ![网络性能页面](Media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -41,32 +41,32 @@ Windows 位置服务必须在计算机上同意。 您可以通过运行 "**地�
 
 ## <a name="how-do-i-use-this-information"></a>如何使用此信息？
 
-**网络洞察力**、其相关的性能建议和网络评估旨在帮助为你的办公室位置设计网络外围。 每个真知灼见都提供有关用户访问你的租户的每个地理位置的特定常见问题的性能特征的实时详细信息。 每个网络洞察力的**性能建议**提供了您可以进行的特定网络体系结构设计更改，以改进与 Office 365 网络连接相关的用户体验。 网络评估显示网络连接对用户体验的影响，从而允许比较不同的用户位置网络连接。
+**网络洞察力**、其相关的性能建议和网络评估旨在帮助为你的办公室位置设计网络外围。 每个真知灼见都提供有关用户访问你的租户的每个地理位置的特定常见问题的性能特征的实时详细信息。 每个网络洞察力的**性能建议**提供了您可以进行的特定网络体系结构设计更改，以改进与 Microsoft 365 网络连接相关的用户体验。 网络评估显示网络连接对用户体验的影响，从而允许比较不同的用户位置网络连接。
 
-**网络评估**将许多网络性能指标的聚合提取到企业网络运行状况的快照中，由 1-100 中的点值表示。 网络评估的作用范围为整个租户和每个地理位置，用户将从该位置连接到你的租户，从而为 Office 365 管理员提供一种简单的方式来即时掌握企业网络运行状况的 gestalt，并快速深入到任何全球办公地点的详细报告。
+**网络评估**将许多网络性能指标的聚合提取到企业网络运行状况的快照中，由 1-100 中的点值表示。 网络评估的作用范围为整个租户和每个地理位置，用户将从该位置连接到你的租户，从而为 Microsoft 365 管理员提供一种简单的方法来即时了解企业网络运行状况的 gestalt，并快速深入到任何全球办公地点的详细报告。
 
-具有多个办公室位置和非普通网络外围体系结构的复杂企业可以在最初加入 Office 365 的过程中受益，或者修复使用情况增长发现的网络性能问题。 对于使用 Office 365 的小型企业或已具有简单且直接的网络连接的企业，这通常是不必要的。 具有500个以上的用户和多个办公地点的企业有望获益最多。
+具有多个办公室位置和非普通网络外围体系结构的复杂企业可以在初始加入 Microsoft 365 或解决使用情况增长发现的网络性能问题时从这些信息中受益。 对于使用 Microsoft 365 的小型企业或已具有简单且直接的网络连接的企业，这通常是不必要的。 具有500个以上的用户和多个办公地点的企业有望获益最多。
 
 >[!IMPORTANT]
->网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
+>网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="enterprise-network-connectivity-challenges"></a>企业网络连接难题
 
 ![客户网络到云](Media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-许多企业都具有网络外围配置，这些配置随着时间的推移而逐渐发展，主要旨在适应员工 Internet 网站访问，其中大多数网站都不是预先知道的，不受信任。 这些未知网站的受攻击和必要的重点是避免恶意软件和钓鱼攻击。 此网络配置策略虽然有助于安全目的，但会导致 Office 365 用户性能和用户体验下降。
+许多企业都具有网络外围配置，这些配置随着时间的推移而逐渐发展，主要旨在适应员工 Internet 网站访问，其中大多数网站都不是预先知道的，不受信任。 这些未知网站的受攻击和必要的重点是避免恶意软件和钓鱼攻击。 此网络配置策略虽然有助于安全目的，但会导致 Microsoft 365 用户性能和用户体验下降。
 
 ## <a name="how-we-can-solve-these-challenges"></a>我们可以如何解决这些难题
 
-企业可以通过遵循[Office 365 连接原则](https://aka.ms/pnc)和使用 Microsoft 365 管理中心网络性能功能来改进常规用户体验并保护其环境。 在大多数情况下，遵循这些常规原则将对最终用户延迟、服务可靠性和 Office 365 的整体性能产生重大影响。
+企业可以通过遵循[Office 365 连接原则](https://aka.ms/pnc)和使用 Microsoft 365 管理中心网络性能功能来改进常规用户体验并保护其环境。 在大多数情况下，遵循这些常规原则将对最终用户延迟、服务可靠性和 Microsoft 365 的总体性能产生重大影响。
 
-有时，Microsoft 需要调查大型企业客户的 Office 365 的网络性能问题，并且这些问题通常有与客户网络出口基础结构相关的根本原因。 当发现客户网络外围问题的常见根源时，我们会设法确定确定它的简单测试指标。 具有确定特定问题的度量阈值的测试非常有用，因为我们可以在任何位置测试相同的指标，告知是否存在此根本原因，并将其共享为与管理员的网络洞察力。
+有时，microsoft 需要调查大型企业客户的 Microsoft 365 的网络性能问题，并且这些问题通常有与客户网络出口基础结构相关的根本原因。 当发现客户网络外围问题的常见根源时，我们会设法确定确定它的简单测试指标。 具有确定特定问题的度量阈值的测试非常有用，因为我们可以在任何位置测试相同的指标，告知是否存在此根本原因，并将其共享为与管理员的网络洞察力。
 
 一些网络见解只表示需要进一步调查的问题。 一种网络洞察力，其中我们有足够的测试来显示解决根本原因的特定修正操作，作为**建议的操作**列出。 这些建议基于实时指标，其中显示超出预先确定的阈值之外的值，比一般的最佳实践建议更有价值，因为它们是特定于您的环境的，并且会在进行建议的更改后显示实际的改进。
 
 ## <a name="network-performance-overview-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的网络性能概述
 
-Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Office 365 操作的现有网络度量。 这些度量现在用于提供网络体系结构设计见解和网络性能评估，这些评估显示在 Microsoft 365 管理中心的**网络性能**页面中。
+Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Microsoft 365 操作的现有网络度量。 这些度量现在用于提供网络体系结构设计见解和网络性能评估，这些评估显示在 Microsoft 365 管理中心的**网络性能**页面中。
 
 默认情况下，与网络度量相关联的近似位置信息标识客户端设备所在的城市。 每个位置的网络评估均以颜色显示，并且每个位置的用户相对数量由圆的大小表示。
 
@@ -120,18 +120,18 @@ Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Office 365 
 
    ![CSV 导入就绪消息](Media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
-### <a name="what-is-an-office-365-service-front-door"></a>什么是 Office 365 服务前盖？
+### <a name="what-is-a-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务的前盖？
 
-Office 365 service 前门是 Microsoft 全球网络中的一个入口点，Office 客户端和服务终止其网络连接。 为实现到 Office 365 的最佳网络连接，建议您的网络连接在您所在城市或地铁的最接近的 Office 365 前向外端终止。
+Microsoft 365 服务的前端是 Microsoft 全球网络的一个入口点，Office 客户端和服务终止其网络连接。 为实现到 Microsoft 365 的最佳网络连接，建议您的网络连接在城市或地铁的最近 Microsoft 365 前向外端终止。
 
 >[!NOTE]
->Office 365 服务前向与 azure marketplace 提供的 Azure 前门服务产品没有直接关系。
+>Microsoft 365 服务前向与 azure marketplace 提供的 Azure 前门服务产品没有直接关系。
 
-### <a name="what-is-an-optimal-office-365-service-front-door"></a>什么是最佳的 Office 365 服务的前盖？
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>什么是最佳 Microsoft 365 服务前门？
 
-最佳的 Office 365 服务前盖是最接近你的网络出口（通常在你所在的城市或大都市区域中）的一门。 使用[office 365 网络载入工具](office-365-network-mac-perf-onboarding-tool.md)确定正在使用的 office 365 服务的前盖和最佳服务前盖的位置。 如果该工具确定你的使用中的前向门是最佳的，则表示你正在以最佳方式连接到 Microsoft 的全球网络。
+最佳 Microsoft 365 服务前盖是最接近你的网络出口（通常在你所在的城市或大都市区域中）的一门。 使用[microsoft 365 网络载入工具](office-365-network-mac-perf-onboarding-tool.md)确定正在使用的 microsoft 365 服务的前盖和最佳服务前盖的位置。 如果该工具确定你的使用中的前向门是最佳的，则表示你正在以最佳方式连接到 Microsoft 的全球网络。
 
 ### <a name="what-is-an-internet-egress-location"></a>Internet 出口的位置是什么？
 
@@ -139,10 +139,10 @@ Internet 出局位置是网络流量退出企业网络并连接到 Internet 的�
 
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 网络见解（预览）](office-365-network-mac-perf-insights.md)
+[Microsoft 365 网络见解（预览）](office-365-network-mac-perf-insights.md)
 
-[Office 365 网络评估（预览）](office-365-network-mac-perf-score.md)
+[Microsoft 365 网络评估（预览）](office-365-network-mac-perf-score.md)
 
-[M365 管理中心中的 Office 365 网络载入工具（预览）](office-365-network-mac-perf-onboarding-tool.md)
+[M365 管理中心中的 Microsoft 365 网络载入工具（预览）](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)
+[Microsoft 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)
