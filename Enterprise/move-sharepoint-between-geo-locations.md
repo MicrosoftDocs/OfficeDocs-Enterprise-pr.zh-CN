@@ -11,15 +11,14 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: 了解如何将 SharePoint 站点移到其他地理位置。
-ms.openlocfilehash: 8bcd76959cdddd5bb6fadf390e5b71df8decf0a0
-ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
+ms.openlocfilehash: cf7d0bb73013c776b8cd67579aca334114820743
+ms.sourcegitcommit: 8578eb35b83a38fbf8ae7344e2128ddb6458fe16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417037"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175040"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -191,6 +190,17 @@ SharePoint 站点地理位置移动完成后，被移动文件的现有共享链
 ### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams（适用于 Office 365 组连接的站点）
 
 SharePoint 站点地理位置移动完成后，用户将能在 Teams 应用访问其 Office 365 组站点文件。 此外，在地理位置移动之前通过 Teams 聊天从其站点中共享的文件在移动完成后将继续工作。
+
+已知问题：
+
+|问题|解决方法|
+|:----|:---------|
+|无法从 Teams 内部打开地理位置移动之前“文件”选项卡中存在的文件。|从 SharePoint 打开文件。|
+|地理位置移动之前在对话中共享的文件将不会在 Teams 桌面中打开。|从文件选项卡中打开文件。|
+|地理位置移动后首次访问时，频道文件选项卡可能无法打开。|再次访问文件选项卡。|
+|网站移动后，频道对话中的文件上传可能无法正常工作。|通过文件选项卡上传文件。|
+|地理位置移动后，在 Teams 中搜索文件将不显示结果。|通过文件选项卡浏览文件。|
+|刷新地理位置移动的网站的“文件”选项卡之前，“文件“应用中的 Microsoft Teams 视图（左侧导航）可能不会显示文件。|访问网站已被移动的文件选项卡。|
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>SharePoint 移动应用 (iOS/Android)
 
