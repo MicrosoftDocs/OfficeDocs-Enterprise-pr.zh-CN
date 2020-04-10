@@ -1,5 +1,5 @@
 ---
-title: Office 365 网络连接位置服务（预览）
+title: Microsoft 365 网络连接位置服务（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 网络连接位置服务（预览）
-ms.openlocfilehash: 6deb964955689416219c5b9350ea150ecd4f3b7a
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 网络连接位置服务（预览）
+ms.openlocfilehash: 13ca35afe4bd375482a9fc924801e240c361bb6b
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081805"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185723"
 ---
-# <a name="office-365-network-connectivity-location-services-preview"></a>Office 365 网络连接位置服务（预览）
+# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 网络连接位置服务（预览）
 
-Microsoft 365 管理中心现在显示**网络见解和性能建议**，它们是从 Office 365 租户收集的实时性能指标，仅供租户中的管理用户查看。 组织网络连接是基于每个办公地点在 Internet 上通过网络出口位置设计的。 Office 365 客户端连接使用该路由，然后通过 Internet 连接到 Microsoft 服务前端服务器。 确定办公室位置是能够显示这些网络见解的关键所在。
+Microsoft 365 管理中心现在显示**网络见解和性能建议**，它们是从 Microsoft 365 租户收集的实时性能指标，仅供租户中的管理用户查看。 组织网络连接是基于每个办公地点在 Internet 上通过网络出口位置设计的。 Microsoft 365 客户端连接使用该路由，然后通过 Internet 连接到 Microsoft 服务前端服务器。 确定办公室位置是能够显示这些网络见解的关键所在。
 
 ## <a name="location-in-network-measurements"></a>网络中的位置度量
 

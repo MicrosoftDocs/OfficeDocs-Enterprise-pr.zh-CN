@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 摘要：介绍了 Microsoft Office 365 组件和 Office 365 政府产品中的 IPv6 支持。
-ms.openlocfilehash: 32e90f0dda9b06d06b6e289b26f640c4ddc79cf3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 13fd1cfef26f5e69c87f650c46f71071b72f2d15
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845113"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206539"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 服务中的 IPv6 支持
 
@@ -57,11 +57,11 @@ Office 365 支持 IPv6 和 IPv4;但是，并不是所有的 Office 365 功能都
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>适用于 Office 365 政府产品的 IPv6 支持
 
-适用于政府产品的 office 365 IPv6 支持符合管理部门和机构的首席信息官的管理和预算（OMB）备忘录，以及联邦政府采用 Internet 协议版本6（IPv6备忘录. [Microsoft Office 365 For 政府](https://go.microsoft.com/fwlink/p/?LinkId=325414)是一项多租户服务，可将美国政府数据存储在隔离的社区云中。 与其他 Office 365 产品一样，它提供了生产力和协作服务，包括 Exchange Online、Skype for Business、SharePoint Online 和 Office Professional Plus。 
+适用于政府产品的 office 365 IPv6 支持符合管理部门和机构的首席信息官的管理和预算（OMB）备忘录，以及联邦政府采用 Internet 协议版本6（IPv6）备忘录的情况。 [Microsoft Office 365 For 政府](https://go.microsoft.com/fwlink/p/?LinkId=325414)是一项多租户服务，可将美国政府数据存储在隔离的社区云中。 与其他 Office 365 产品一样，它提供了生产力和协作服务，包括 Exchange Online、Skype for Business、SharePoint Online 和 Office 365 专业增强版。 
 
 Microsoft Office 365 政府版产品仅适用于2013及更高版本。 有关 Office 365 政府版产品的详细信息，请参阅[宣布 office 365 For 政府： A 美国政府社区云](https://go.microsoft.com/fwlink/p/?LinkId=325414)。 Arm 规章中的国际流量（ITAR）是一组美国政府管理法规，可控制美国英语的文章和服务的导出和导入[Munitions 列表（USML）](https://go.microsoft.com/fwlink/p/?LinkId=325415)。 
 
-适用于企业的 microsoft Office 365 为 Microsoft 工作效率解决方案提供专用托管服务，这些服务支持需要联邦信息安全的美国联邦机构的安全、隐私和法规遵从性要求管理（FISMA）认证和商业实体受 ITAR 的制约。
+适用于企业的 microsoft Office 365 为 Microsoft 工作效率解决方案提供专用托管服务，这些服务支持要求美国联邦信息安全管理（FISMA）认证和商业实体受 ITAR 的安全、隐私和法规遵从性要求。
   
 ## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>使用 IPv6 和 Office 365 时需要考虑的事项
 

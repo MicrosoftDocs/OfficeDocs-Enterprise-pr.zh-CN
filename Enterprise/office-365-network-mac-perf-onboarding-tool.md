@@ -1,9 +1,9 @@
 ---
-title: M365 管理中心中的 Office 365 网络载入工具（预览）
+title: M365 管理中心中的 Microsoft 365 网络载入工具（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/08/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,28 +13,28 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: M365 管理中心中的 Office 365 网络载入工具（预览）
-ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: M365 管理中心中的 Microsoft 365 网络载入工具（预览）
+ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081694"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185733"
 ---
-# <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理中心中的 Office 365 网络载入工具（预览）
+# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理中心中的 Microsoft 365 网络载入工具（预览）
 
-Office 365 网络载入工具位于<https://connectivity.office.com>。 它是一个辅助工具，可用于**运行状况 | 的 Microsoft 365 管理中心内的网络洞察力和网络积分信息。网络性能**菜单。
+Microsoft 365 网络载入工具位于<https://connectivity.office.com>。 它是一个辅助工具，可用于**运行状况 | 的 Microsoft 365 管理中心内的网络洞察力和网络积分信息。网络性能**菜单。
 
-Microsoft 365 管理中心的网络洞察力基于 Office 365 租户的产品度量。 相比之下，Office 365 网络载入工具中的网络洞察力在该工具中本地运行。 可以在产品中完成的测试是有限的，并且可以通过在用户的本地运行测试来收集更多数据，从而获得更深入的见解。 请考虑，Microsoft 365 管理中心中的网络见解将显示在特定办公地点使用 Office 365 的网络问题。 Office 365 网络载入工具可帮助确定问题的根本原因，从而导致建议的网络性能改进操作。
+Microsoft 365 管理中心的网络洞察力基于 Microsoft 365 租户的产品度量。 相比之下，Microsoft 365 网络载入工具中的网络洞察力在此工具中本地运行。 可以在产品中完成的测试是有限的，并且可以通过在用户的本地运行测试来收集更多数据，从而获得更深入的见解。 请考虑，Microsoft 365 管理中心中的网络见解将显示在特定办公地点使用 Microsoft 365 的网络问题。 Microsoft 365 网络载入工具可帮助确定该问题的根本原因，从而导致建议的网络性能改进操作。
 
-我们建议将这些信息结合使用，以便可以在 Microsoft 365 管理中心中对每个办公室位置评估网络质量状态，并在部署基于 Office 365 网络载入工具的测试之后找到更多的详细信息。
+我们建议将这些信息结合使用，以便可以在 Microsoft 365 管理中心中对每个办公室位置评估网络质量状态，并在部署基于 Microsoft 365 网络载入工具的测试之后找到更多的详细信息。
 
 >[!IMPORTANT]
->网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Office 365 租户。
+>网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="the-advanced-tests-client-application"></a>高级测试客户端应用程序
 
-Office 365 网络载入工具有两个组成部分。 网站<https://connectivity.office.com>有一个可下载的 Windows 客户端应用程序。 可下载的客户端运行高级网络连接测试，大多数测试都需要运行此测试。
+Microsoft 365 网络载入工具有两个部分。 网站<https://connectivity.office.com>有一个可下载的 Windows 客户端应用程序。 可下载的客户端运行高级网络连接测试，大多数测试都需要运行此测试。
 
 您可以从网站运行高级客户端测试，它会在运行时将结果重新填充到网页中。
 
@@ -54,7 +54,7 @@ Office 365 网络载入工具有两个组成部分。 网站<https://connectivit
 
 从网络传出 IP 地址查找的位置可能不准确，这将导致此测试产生错误结果。 若要验证是否为特定 IP 地址出现此错误，可以使用可公开访问的网络 IP 地址位置网站。
 
-建议将本地和直接的网络出口从用户办公室位置实施到 Internet，Office 365 网络连接。 对本地和直接出口的改进是解决此网络洞察力的最佳方法。
+建议在 Microsoft 365 网络连接中，将本地和直接的网络出口从用户办公室位置实施到 Internet。 对本地和直接出口的改进是解决此网络洞察力的最佳方法。
 
 ## <a name="exchange-online-service-front-door"></a>Exchange Online 服务前盖
 
@@ -66,7 +66,7 @@ Office 365 网络载入工具有两个组成部分。 网站<https://connectivit
 
 ## <a name="comparison-of-performance-of-customers-in-the-area"></a>区域中客户的性能比较
 
-与同一地铁区域中的其他 Office 365 客户相比，Exchange Online 服务前向的用户办公室位置的网络 TCP 延迟。 如果在同一地铁区域中10% 或更多的客户具有更好的性能，则显示网络洞察力。
+与同一地铁区域中的其他 Microsoft 365 客户相比，Exchange Online 服务前向的用户办公室位置的网络 TCP 延迟。 如果在同一地铁区域中10% 或更多的客户具有更好的性能，则显示网络洞察力。
 
 根据城市中的所有用户都可以访问相同的电信基础结构和与 Internet 电路和 Microsoft 网络的邻近性，生成网络洞察力。
 
@@ -92,11 +92,11 @@ Office 365 网络载入工具有两个组成部分。 网站<https://connectivit
 
 ## <a name="dns-lookup-of-exchange-online-front-end-server-and-sharepoint-online-front-end-server"></a>Exchange Online 前端服务器和 SharePoint Online 前端服务器的 DNS 查找
 
-这些将显示这两个 Office 365 工作负载的服务前向门的 DNS 记录。 仅提供了这些信息，并且没有相关的网络洞察力。
+这些将显示这两个 Microsoft 365 工作负载的服务前向门的 DNS 记录。 仅提供了这些信息，并且没有相关的网络洞察力。
 
 ## <a name="proxy-server-identification"></a>代理服务器标识
 
-我们标识在本地计算机上配置的代理服务器。 我们确定是否在网络路径中配置了这些配置以优化类别 Office 365 网络流量。 我们确定从用户办公室位置到代理服务器的距离。 先通过 ICMP ping 测试距离，如果此操作失败，我们使用 TCP ping 进行测试，如果失败，则在 IP 地址位置数据库中查找代理服务器 IP 地址。 如果代理服务器的距离远离用户办公室位置的500英里（800公里），我们将显示网络洞察力。
+我们标识在本地计算机上配置的代理服务器。 我们确定是否在网络路径中配置了这些配置以优化类别 Microsoft 365 网络流量。 我们确定从用户办公室位置到代理服务器的距离。 先通过 ICMP ping 测试距离，如果此操作失败，我们使用 TCP ping 进行测试，如果失败，则在 IP 地址位置数据库中查找代理服务器 IP 地址。 如果代理服务器的距离远离用户办公室位置的500英里（800公里），我们将显示网络洞察力。
 
 ## <a name="media-quality-checks"></a>媒体质量检查
 
@@ -106,13 +106,13 @@ Office 365 网络载入工具有两个组成部分。 网站<https://connectivit
 
 ## <a name="tcp-connectivity-tests"></a>TCP 连接测试
 
-我们测试从用户办公室位置到所有必需的 Office 365 网络终结点的 HTTP 连接。 这些内容是在[https://aka.ms/o365ip](https://aka.ms/o365ip)中发布的。 对于任何不能连接到的必需网络终结点，都会显示网络洞察力。
+我们测试从用户办公室位置到所有必需的 Microsoft 365 网络终结点的 HTTP 连接。 这些内容是在[https://aka.ms/o365ip](https://aka.ms/o365ip)中发布的。 对于任何不能连接到的必需网络终结点，都会显示网络洞察力。
 
 连接 ay 由企业网络外围上的代理服务器、防火墙或其他网络安全设备阻止，或作为云代理使用。
 
 ## <a name="ssl-interception-tests"></a>SSL 侦听测试
 
-我们在 "优化" 或 "允许" 类别的 "优化" 或 "允许" 类别中的每个[https://aka.ms/o365ip](https://aka.ms/o365ip)所需 Office 365 网络终结点上测试 SSL 证书。 如果有任何测试未找到 Microsoft SSL 证书，则已连接的加密网络必须已被中间网络设备截取。 网络洞察力显示在任何截获的加密网络终结点上。
+我们会在所需的每个 Microsoft 365 网络终结点（在上[https://aka.ms/o365ip](https://aka.ms/o365ip)定义了）中测试 SSL 证书。 如果有任何测试未找到 Microsoft SSL 证书，则已连接的加密网络必须已被中间网络设备截取。 网络洞察力显示在任何截获的加密网络终结点上。
 
 在找不到 Microsoft 提供的 SSL 证书的情况下，我们会显示该测试的 FQDN 以及正在使用的 SSL 证书所有者。 此 SSL 证书所有者可能是代理服务器供应商，也可能是企业自签名证书。
 
@@ -120,12 +120,34 @@ Office 365 网络载入工具有两个组成部分。 网站<https://connectivit
 
 本节显示了 ICMP traceroute 对 Exchange Online 服务前向门、SharePoint Online service 前门和 Microsoft 团队服务前盖的结果。 仅提供此信息，没有相关的网络洞察力。
 
+## <a name="faq"></a>常见问题
+
+以下是一些常见问题的解答。
+
+### <a name="is-this-tool-released-and-supported-by-microsoft"></a>此工具是否已发布并受 Microsoft 支持？
+
+目前它是概念证明，我们计划定期提供更新，直到我们能够从 Microsoft 获得支持的常规可用性发布状态。 请提供反馈以帮助我们改进。 我们打算将更详细的 Office 365 网络加入指南作为此工具的一部分进行发布，此工具可通过其测试结果自定义为组织。
+
+### <a name="what-is-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务的前门？
+
+Microsoft 365 服务的前端是 Microsoft 全球网络的一个入口点，Office 客户端和服务终止其网络连接。 为实现到 Microsoft 365 的最佳网络连接，建议您的网络连接在城市或地铁的最近 Microsoft 365 前向外端终止。
+
+注意： Microsoft 365 服务前向在 Azure marketplace 中提供了与 "Azure 前门服务" 产品的直接关系。
+
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>什么是最佳 Microsoft 365 服务前门？
+
+最佳 Microsoft 365 服务前盖是最接近你的网络出口（通常在你所在的城市或大都市区域中）的一门。 使用 Microsoft 365 网络性能工具来确定正在使用的 Microsoft 365 服务的前盖和最佳服务前盖的位置。 如果该工具确定你的使用中的前向门是最佳的，则表示你正在以最佳方式连接到 Microsoft 的全球网络。
+
+### <a name="what-is-an-internet-egress-location"></a>Internet 出口的位置是什么？
+
+Internet 出局位置是网络流量退出企业网络并连接到 Internet 的位置。 这也被标识为您拥有网络地址转换（NAT）设备且通常与 Internet 服务提供商（ISP）进行连接的位置。 如果你发现您的位置和 internet 出局位置之间的距离很长，则这可能会发现重要的 WAN backhaul。
+
 ## <a name="related-topics"></a>相关主题
 
 [Microsoft 365 管理中心中的网络性能建议（预览）](office-365-network-mac-perf-overview.md)
 
-[Office 365 网络性能见解（预览）](office-365-network-mac-perf-insights.md)
+[Microsoft 365 网络性能见解（预览）](office-365-network-mac-perf-insights.md)
 
-[Office 365 网络评估（预览）](office-365-network-mac-perf-score.md)
+[Microsoft 365 网络评估（预览）](office-365-network-mac-perf-score.md)
 
-[Office 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)
+[Microsoft 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)
