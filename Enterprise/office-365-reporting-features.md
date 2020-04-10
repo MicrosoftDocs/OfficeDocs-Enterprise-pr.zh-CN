@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 中的报告功能的说明。
-ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842029"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206549"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 报告功能 
 
@@ -30,7 +30,7 @@ Office 365 中的 "报告" 功能提供了 Azure Active Directory （AD）、Exc
 
 ## <a name="office-365-reports-dashboard"></a>Office 365 报告仪表板
 
-Microsoft 365 管理中心预览中的 "报告" 仪表板显示跨 Office 365 的使用情况活动。 Office 365 全局管理员或 Exchange Online、SharePoint Online 或 Skype for Business 管理员可以详细了解该服务的使用情况。 例如，特定的 Office 365 服务中的用户数、已激活 Office Professional 的用户数以及通过组织流动的邮件量。 报告可用于最近7、30、90和180天。
+Microsoft 365 管理中心预览中的 "报告" 仪表板显示跨 Office 365 的使用情况活动。 Office 365 全局管理员或 Exchange Online、SharePoint Online 或 Skype for Business 管理员可以详细了解该服务的使用情况。 例如，特定 Office 365 服务中用户的数量、已激活 Office 365 专业增强版的用户数以及邮件在组织中的流动量。 报告可用于最近7、30、90和180天。
 
 可以使用以下报告：
 
@@ -59,7 +59,7 @@ Exchange Online 审核报告包含有关邮箱访问和管理员对 Exchange Onl
 > [!NOTE]
 > 您必须为每个邮箱启用邮箱审核日志记录，以便将审核的事件保存在该邮箱的审核日志中。 如果没有为邮箱启用邮箱审核日志记录，则该邮箱的事件将不会保存在审核日志中，并且不会显示在邮箱审核报告中。 有关详细信息，请参阅[启用邮箱审核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)。
 
-| 任务 | 说明 |
+| 任务 | Description |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [运行非所有者邮箱访问报告](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | 显示除邮箱所有者之外的其他人访问的邮箱的列表。 此报告包含有关访问邮箱的人员、他们在邮箱中执行的操作以及操作是否成功的信息。 |
 | [导出邮箱审核日志](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | 邮箱审核日志包含有关邮箱所有者之外的用户所执行的邮箱中的访问和操作的信息。 管理员可以指定邮箱以及日期范围来生成报告。 日志以 XML 形式导出，并附加到邮件，并发送给由管理员确定的特定用户。 |
@@ -88,7 +88,7 @@ Yammer Enterprise 为管理员提供了通过[Yammer 数据导出 API](https://s
 
 可导出以下数据：
 
-| Filename | 说明 |
+| Filename | Description |
 |----------------------------|-------------------------------------------------------------------------|
 | Users.csv | 网络中的所有新的、挂起的和挂起的用户 |
 | Messages.csv | 网络中的所有邮件 |

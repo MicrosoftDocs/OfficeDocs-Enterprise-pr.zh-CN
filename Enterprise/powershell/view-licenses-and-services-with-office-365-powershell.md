@@ -18,12 +18,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 说明如何使用 Office 365 PowerShell 查看有关 Office 365 组织中可用的许可计划、服务和许可证的信息。
-ms.openlocfilehash: 9ecaad00d46cf920822419ca1ccdd547ff060fa0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 83c42fdaafcee94f86bd86253f13c64725b047c2
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844133"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206590"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看许可证和服务
 
@@ -31,7 +31,7 @@ ms.locfileid: "41844133"
 
 - **许可计划**这些计划也称为许可证计划或 Office 365 计划。 许可计划定义可供用户使用的 Office 365 服务。 您的 Office 365 订阅可能包含多个许可计划。 Office 365 企业版 E3 是许可计划的一个示例。
     
-- **服务**这些也称为服务计划。 服务是在每个许可计划中可用的 Office 365 产品、功能和功能，例如 Exchange Online 和 Office Professional Plus。 可以从授予不同服务访问权限的不同许可计划向用户分配多个许可证。
+- **服务**这些也称为服务计划。 服务是在每个许可计划中可用的 Office 365 产品、功能和功能，例如 Exchange Online 和 Office 365 专业增强版。 可以从授予不同服务访问权限的不同许可计划向用户分配多个许可证。
     
 - **许可证**每个许可计划包含您购买的许可证的数量。 您将许可证分配给用户，以便他们可以使用由许可计划定义的 Office 365 服务。 每个用户帐户都需要一个许可计划中的至少一个许可证，以便他们可以登录 Office 365 并使用服务。
     
@@ -139,7 +139,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure 权限管理 (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Office 365 专业增强版  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
