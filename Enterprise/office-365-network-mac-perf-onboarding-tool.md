@@ -3,7 +3,7 @@ title: M365 管理中心中的 Microsoft 365 网络载入工具（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/08/2020
+ms.date: 04/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 管理中心中的 Microsoft 365 网络载入工具（预览）
-ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
+ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185733"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225695"
 ---
 # <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理中心中的 Microsoft 365 网络载入工具（预览）
 
 Microsoft 365 网络载入工具位于<https://connectivity.office.com>。 它是一个辅助工具，可用于**运行状况 | 的 Microsoft 365 管理中心内的网络洞察力和网络积分信息。网络性能**菜单。
+
+>[!NOTE]
+>加入工具支持 WW 商业和 GCC 中的租户，但不支持 GCC 高、DoD、德国或中国的租户。
 
 Microsoft 365 管理中心的网络洞察力基于 Microsoft 365 租户的产品度量。 相比之下，Microsoft 365 网络载入工具中的网络洞察力在此工具中本地运行。 可以在产品中完成的测试是有限的，并且可以通过在用户的本地运行测试来收集更多数据，从而获得更深入的见解。 请考虑，Microsoft 365 管理中心中的网络见解将显示在特定办公地点使用 Microsoft 365 的网络问题。 Microsoft 365 网络载入工具可帮助确定该问题的根本原因，从而导致建议的网络性能改进操作。
 
