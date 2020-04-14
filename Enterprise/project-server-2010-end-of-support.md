@@ -3,7 +3,7 @@ title: Project Server 2010 终止支持路线图
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 08/21/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,19 +17,19 @@ search.appverid:
 - ZPJ120
 - PJU120
 - PJW120
-description: Project Server 2010 的支持结束时间为2020年10月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
-ms.openlocfilehash: 158cf7476a8d80d0024cf4093d0d20fc884811e0
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Project Server 2010 的支持结束时间在2021年4月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
+ms.openlocfilehash: b9cb6c08a2eacc794ace5f9d983120c29820df14
+ms.sourcegitcommit: ae9220b36041395a786a48d04c09eafd8ebe76d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979514"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240522"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 结束支持路线图
 
 *此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
-Project Server 2010 将于**10 月13日（2020）** 到达支持结束。 如果你当前使用的是 Project Server 2010，请注意，这些其他相关产品的支持日期为以下结尾：
+Project Server 2010 将于**2021 年4月13日**到达支持结束。 此日期已从上一年10月13日的支持结束日期扩展到2020。 如果你当前使用的是 Project Server 2010，请注意，这些其他相关产品的支持日期为以下结尾：
   
 |**Product**|**支持结束日期**|
 |:-----|:-----|
@@ -66,12 +66,37 @@ Project Server 2010 将于**10 月13日（2020）** 到达支持结束。 如果
 ![Project Server 2010 升级路径](./media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
 
     
-|**为什么我更愿意迁移到 Project Online？**|**为什么我更喜欢迁移到 Project Server 2019？**|
+
+
+|**为什么我更喜欢迁移到 Project Server 2019？**|**为什么我更愿意迁移到 Project Online？**|
 |:-----|:-----|
-| 我有移动或远程用户。  <br/>  迁移本地服务器所需的成本是一个很大的顾虑（硬件、软件、时间和实施工作，等等）。  <br/>  迁移后，维护我的环境所需的成本是一个非常重要的问题（例如，自动更新、保证的正常运行时间等）。  <br/> | 业务规则限制我在云中运行我的业务。  <br/>  我需要控制环境的更新。  <br/> |
+|业务规则限制我在云中运行我的业务。  <br/>  我需要控制环境的更新。  <br/> | 我有移动或远程用户。  <br/>  迁移本地服务器所需的成本是一个很大的顾虑（硬件、软件、时间和实施工作，等等）。  <br/>  迁移后，维护我的环境所需的成本是一个非常重要的问题（例如，自动更新、保证的正常运行时间等）。  <br/>  |
+
    
 > [!NOTE]
 > 有关从 Office 2010 服务器移动的选项的详细信息，请参阅可[帮助您从 office 2010 服务器和客户端进行升级的资源](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)。 请注意，Project Server 不支持混合配置，因为 Project Server 和 Project Online 无法共享同一个资源池。 
+
+### <a name="what-are-my-options-for-project-client"></a>我的 Project 客户端选项是什么？
+如果您使用的是 Project Professional 2010 或 Project Standard 2010，并且想要浏览您的迁移选项，您可以选择：
+- 移动到较新版本的 Project Professional 或 Project Standard。
+- 移动到联机解决方案，例如 Project Online 或 web 项目。
+ 
+#### <a name="moving-to-a-newer-version-of-project-client"></a>移动到项目客户端的较新版本
+
+如果要从 Project Standard 2010 迁移，可以迁移到项目标准的较新版本（Project Standard 2016 或 Project Standard 2019）。  建议移动到最新版本以利用最新的特性和功能。 此外，迁移到最新版本（Project Standard 2016）意味着在支持日期结束时，你将需要更早地从该版本迁移。
+
+同样，如果从 Project Professional 2010 迁移，您可以选择迁移到较新版本（Project Professional 2019 或 Project Professional 2016）。 如果可能，建议移动到最新版本。  如果您使用的是 Project Professional 连接到 Project Server，请确保您迁移到的 Project Professional 版本支持与您正在使用的 Project Server 版本进行连接。
+
+Project Professional 2010 用户也可以选择迁移到 Project Online 桌面客户端。 它是一种基于订阅的 Project Professional 2019 版本，包括在项目计划3和项目计划5订阅中。 
+
+#### <a name="moving-to-an-online-solution"></a>移动到联机解决方案
+
+您还可以选择从 Project Professional 2010 或 Project Standard 2010 迁移到基于项目的订阅的联机解决方案。 Project Plan 3 和 Plan 5 都包括 Project Online 和最新的云服务，即[web 的项目](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1)。 两者都提供了大量需要研究的新功能和好处。
+
+若要详细了解两者中包含的功能以及它们包含在中的项目计划许可证，请参阅[Microsoft Project 服务说明](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description)。
+
+
+
   
 ## <a name="important-considerations-you-need-to-make-when-planning-to-migrate-from-project-server-2010"></a>在计划从 Project Server 2010 迁移时需要注意的重要事项
 
@@ -81,7 +106,7 @@ Project Server 2010 将于**10 月13日（2020）** 到达支持结束。 如果
     
 - **规划自定义**-请注意，当迁移到 project server 2019 或 project Online 时，在 project server 2010 环境中使用的许多自定义设置可能不起作用。 在不同版本之间的 Project Server 体系结构以及所需的操作系统、数据库服务器和客户端 web 浏览器之间存在很大差异，支持使用较新版本。 制定了如何根据需要在新环境中测试或重建自定义项的计划。 规划升级也是一种很好的机会来验证是否在您向前移动时确实需要特定的自定义。 [在升级到 SharePoint 2013 过程中创建当前自定义项计划在升级过程中]( https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013)，有关评估和规划当前自定义项的一些极好的常规信息。 
     
-- **时间和耐心**升级规划、执行和测试将需要很长时间和精力，尤其是在升级到 Project Server 2019 时。 例如，如果要从 Project Server 2010 迁移到 Project Server 2019，则首先需要从 Project Server 2010 迁移到 Project Server 2013，然后检查数据，然后在迁移到每个后续版本时执行相同的操作（项目服务器2016，然后再到 Project Server 2019）。 您可能需要与 Microsoft 解决方案提供商核实，以将您的估计成本与估计成本的估计值进行比较，估计成本是多少。 
+- **时间和耐心**升级规划、执行和测试将需要很长时间和精力，尤其是在升级到 Project Server 2019 时。 例如，如果要从 Project Server 2010 迁移到 Project Server 2019，首先需要从 Project Server 2010 迁移到 Project Server 2013，然后检查数据，然后在迁移到每个后续版本时执行相同的操作（先迁移到 project Server 2016，再迁移到 Project Server 2019）。 您可能需要与 Microsoft 解决方案提供商核实，以将您的估计成本与估计成本的估计值进行比较，估计成本是多少。 
     
 ## <a name="migrate-to-project-online"></a>迁移到 Project Online
 
