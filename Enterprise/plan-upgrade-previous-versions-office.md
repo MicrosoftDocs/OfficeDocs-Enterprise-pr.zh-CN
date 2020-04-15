@@ -3,7 +3,7 @@ title: 规划从 Office 2007 或2010服务器和客户端升级
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: 如果您使用的是 Office 2007 或 Office 2010，请随时规划升级。 不会堵塞过期和不受支持的应用程序和服务器。 使用这些资源开始使用您的计划。
-ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605609"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503800"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 Office 2010 服务器和客户端升级
 
 *此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
-如果您的组织使用的是较旧版本的 Office 产品和服务器，这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其[支持的最终](upgrade-from-office-2007-servers-and-products.md)期限。 Office 2010 产品和服务（包括 Office 2010、Exchange 2010、SharePoint 2010 和 Project Server 2010）将在**10 月13日**的支持终止。 使用此部分中的资源即可开始。
+如果您的组织使用的是较旧版本的 Office 产品和服务器，这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其[支持的最终](upgrade-from-office-2007-servers-and-products.md)期限。 Office 2010 和 Exchange 2010 将在**年10月 13 2020 日**到达其支持结束。 SharePoint 2010 和 Project Server 2010 将在**年4月 13 2021 日**到达其支持终止。 使用此部分中的资源即可开始。
 
 有关更多详细信息，请参阅[从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "42605609"
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365)是 Office 365、Windows 10 和企业移动性 + 安全性（EMS）的组合，它提供了一个完整的智能解决方案，可让每个人都具有创造性且安全地协同工作。 
   
-虽然您可以将 Office 2007 或 Office 2010 服务器和客户端迁移到 Office 365，但 Microsoft 365 包含的许可证和功能可帮助确保您的组织使用最新的 Windows 操作系统和设备（包括Windows、iOS 和 Android —使用需要身份验证和数据保护的策略进行注册并保持安全。 此外，还将定期更新 Windows 10 和 Office 365 专业增强版客户端软件，以包括最新的功能和安全更新。
+虽然您可以将 Office 2007 或 Office 2010 服务器和客户端迁移到 Office 365，但 Microsoft 365 包含的许可证和功能可帮助确保您的组织能够在最新的 Windows 操作系统上运行，并且您的设备（包括 Windows、iOS 和 Android）是否已通过需要身份验证和数据保护的策略进行了注册并保持安全。 此外，还将定期更新 Windows 10 和 Office 365 专业增强版客户端软件，以包括最新的功能和安全更新。
   
 Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作效率体验，以数字方式为你的企业进行数字转换。
   
@@ -99,7 +99,7 @@ Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作�
 |[Microsoft 365 教育文档](https://docs.microsoft.com/microsoft-365/education/) <br/> |获取有关适用于教育组织的 Microsoft 365 版本的详细信息。  <br/> |
 |[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |获取有关适用于企业组织的 Microsoft 365 版本的详细信息。  <br/> |
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [从 Office 2007 服务器和客户端进行升级](upgrade-from-office-2007-servers-and-products.md)
 
