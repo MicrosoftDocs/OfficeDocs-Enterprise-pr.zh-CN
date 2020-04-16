@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a53d2253889cbbdb344c457c135086a1115de436
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840369"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516443"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -29,7 +29,7 @@ ms.locfileid: "41840369"
 > [!NOTE]
 > 每个服务的移动发生在不同的时间。 因此，你将在不同时间看到每个服务的已描述缩减功能。 
   
-在 Exchange Online、SharePoint Online 和 Skype for Business 移动时，请观看 Office 365 消息中心，以确认是否已完成。 如下表所示，在注册期结束后，可能需要长达24个月，以完成针对特定地理位置的所有客户的所有请求的数据移动。 如果你在移动后发现租户出现任何问题，请联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以获取帮助。 
+观看 Microsoft 365 消息中心，以在每个 Exchange Online、SharePoint Online、团队和 Skype for Business 移动完毕时进行确认。 如下表所示，在注册期结束后，可能需要长达24个月，以完成针对特定地理位置的所有客户的所有请求的数据移动。 如果你在移动后发现租户出现任何问题，请联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以获取帮助。 
   
 
 |**在中注册国家/地区的客户**|**所有移动完成者**|
@@ -45,9 +45,7 @@ ms.locfileid: "41840369"
 |南非  <br/> |2022年7月1日  <br/> |
 |瑞士，列支敦士登  <br/> |2022年7月1日  <br/> |
 |德国  <br/> |相同  <br/> |
-
-> [!NOTE]
-> 符合条件的 Office 365 国家/地区的客户可能会选择参加 Microsoft 团队聊天服务数据迁移，从2020到6月30日，2020，这也将为任何其他符合条件的工作负荷通知迁移。  如果客户选择在2020之前进行迁移，则预计 Exchange Online 和 SharePoint Online/OneDrive for Business 将在最初的期限内完成，而团队将于所有客户在 2022 6 月1日完成。 
+|挪威  <br/> |2022年11月1日  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -110,9 +108,16 @@ ms.locfileid: "41840369"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-符合条件的 Office 365 国家/地区的客户可能会选择参加 Microsoft 团队聊天服务数据迁移，从2020年1月1日起。  
+除了 Exchange Online、SharePoint Online 和 OneDrive for Business，Microsoft 还会将团队数据迁移到本地数据中心。
+
+- 工作组聊天邮件，包括私人邮件和频道消息。
+- 在聊天中使用的团队图像。
+
+团队文件存储在 SharePoint Online 中，团队聊天文件存储在 OneDrive for Business 中。 语音邮件、日历、聊天历史记录和联系人存储在 Exchange Online 中。 在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for business 已由本地数据中心地理位置的客户使用，并且也是适用于符合条件的客户国家/地区的 Microsoft 365 迁移计划的一部分。
 
 ## <a name="skype-for-business"></a>Skype for Business
+
+Skype for Business 移动可用于澳大利亚、日本、印度、加拿大、英国和韩国。
 
 在剪切转移过程中，所有用户都将从 Skype for Business 客户端软件注销。 自动登录将在两分钟内重新连接用户。
   
@@ -136,4 +141,3 @@ ms.locfileid: "41840369"
 [适用于 Microsoft Dynamics CRM Online 的新数据中心信息](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [按区域的 Azure 服务](https://azure.microsoft.com/regions/)
-

@@ -13,20 +13,20 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求，以便将参与 Office 365 服务的客户数据移到其新地理位置。
-ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求，以便将其参与的 Microsoft 365 服务的客户数据移动到其新地理位置。
+ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106223"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516563"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
 > [!NOTE]
-> 此页面上的信息仅适用于在其 geo 中的新数据中心启动前拥有现有 Office 365 租户的客户。 
+> 此页面上的信息仅适用于在其 geo 中的新数据中心启动之前已有 Microsoft 365 租户的客户。 
   
-现有 Office 365 客户有资格在 rest 上为整个组织的核心客户数据请求提前迁移。  
+现有 Microsoft 365 客户有资格在静止的整个组织的核心客户数据中请求迁移。  
   
 ## <a name="when-can-i-request-a-move"></a>何时可以请求移动？
 
@@ -43,6 +43,7 @@ ms.locfileid: "42106223"
 |南非  <br/> |2019 年 7 月 25 日  <br/> |2020年6月30日  <br/> |
 |瑞士，列支敦士登  <br/> |2019 年 12 月 10 日  <br/> |2020年6月30日  <br/> |
 |德国  <br/> |相同  <br/> |相同  <br/> |
+|挪威  <br/> |2020年4月15日  <br/> |2020年10月31日  <br/> |
    
 ## <a name="how-to-request-a-move"></a>如何请求移动
 
@@ -55,7 +56,7 @@ ms.locfileid: "42106223"
 - 你的租户不符合 Office 365 移动程序的条件。  资格由租户注册国家/地区决定。
 - Rest 上的所有核心客户数据都已位于新地理位置（请参阅页面的 "数据位置" 部分）。 
   
-如果您的组织具有数据驻留要求，并且您需要请求提前迁移，请单击部分右上方的 "**选择**"。 屏幕右侧将显示一个新分区，说明 Office 365 移动程序的详细信息。 选择 "**我想要迁移的我的组织的核心客户数据**" 的文本旁边的切换按钮。 然后，单击“保存”****。
+如果您的组织具有数据驻留要求，并且您需要请求迁移，请单击该部分右上方的 "**选择**"。 屏幕右侧将显示一个新分区，说明 Microsoft 365 移动程序的详细信息。 选择 "**我想要迁移的我的组织的核心客户数据**" 的文本旁边的切换按钮。 然后，单击“保存”****。
   
 ![数据中心选择操作屏幕](media/dataresidencyflyoutae.jpg)
   
@@ -71,35 +72,7 @@ ms.locfileid: "42106223"
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-从2020年1月起，符合条件的 Office 365 国家/地区的客户可以选择加入 Microsoft 团队聊天服务数据的迁移。  对于所有符合条件的国家/地区，自愿加入时间线已重新打开或扩展，让客户有机会在范围内与 Microsoft 团队一起考虑早期迁移计划。   
-
-## <a name="optional-actions-before-you-request-a-move"></a>请求移动前的可选操作
-
-根据需要执行以下步骤。
-  
-### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>如果使用基于 IP 的防火墙，请为新 IP 地址添加允许规则
-
-我们建议使用防火墙而不是 IP 地址的 DNS 筛选。 不需要任何新的 DNS 条目。
-  
-如果使用基于 IP 的防火墙进行 Internet 连接，则必须为目标数据中心地理位置的新 IP 地址添加允许规则。 新的数据中心信息的 IP 地址除了新服务器外，还会连续添加到[Office 365 url 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkId=229631)。
-  
-有关如何添加允许规则（也称为 "白名单"）的信息，请参阅防火墙文档。
-  
-添加 IP 地址后，您可能需要测试与新数据中心地理位置的连接。 为此，我们建议您在新的数据中心 geo 推出后立即创建一个[新的免费试用版](https://go.microsoft.com/fwlink/?LinkId=522463)租户。 
-  
-### <a name="test-using-a-new-tenant"></a>使用新租户进行测试
-
-如果您想要在移动之前测试连接，可以在新的数据中心 geo 可用后设置一个[新的免费30天试用租户](https://go.microsoft.com/fwlink/?LinkId=522463)，并使用它来体验新的数据中心地理位置承载的 Office 365。 
-  
-试用租户无法与现有租户结合使用：
-  
-- 用户必须使用单独的试用帐户进行测试。
-    
-- 没有办法在租户之间移动数据。
-    
-### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>通知用户在移动设备上更新过期的 Exchange 设置
-
-如果用户具有将 Exchange Server 设置为 " **m.outlook.com** " 或 " **podxxxxx.outlook.com**" 的移动设备，则建议他们切换到**outlook.office365.com**，按照[设置移动设备以与您的帐户同步](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)的说明进行操作。
+从2020年1月起，符合条件的 Office 365 国家/地区的客户可以选择加入 Microsoft 团队聊天服务数据的迁移。  对于所有符合条件的国家/地区，自愿加入时间线已重新打开或扩展，让客户有机会在范围内为 Microsoft 团队考虑迁移计划。 以前选择进行数据派驻移动的客户也将有团队迁移到其本地数据中心地理位置。
 
 ## <a name="related-topics"></a>相关主题
 

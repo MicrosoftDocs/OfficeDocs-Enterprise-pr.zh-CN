@@ -1,5 +1,5 @@
 ---
-title: 将核心数据移动到新的 Office 365 数据中心信息
+title: 将核心数据移动到新的 Microsoft 365 数据中心信息
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: 新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一个术语，指在 Microsoft Online Services 术语： Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）、SharePoint Online 网站内容和文件中定义的客户数据子集。存储在该网站中，并将文件上传到 OneDrive for business。
-ms.openlocfilehash: 0efe43b61351d89452abb9a114b37f8df9d79ec2
-ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
+description: 新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一项术语，指在 Microsoft Online Services 术语： Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）、SharePoint Online 网站内容和存储在该网站中的文件以及上传到 OneDrive for business 的文件中定义的客户数据子集。
+ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417047"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516543"
 ---
-# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>将核心数据移动到新的 Office 365 数据中心信息
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>将核心数据移动到新的 Microsoft 365 数据中心信息
 
-我们继续为 Office 365 for business 服务打开新的数据中心信息。 这些新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 
+我们将继续为 Microsoft 365 服务打开新的数据中心信息。 这些新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 
 
 Core customer data 是一个术语，指的是一部分客户数据，包括： 
 - Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）
@@ -46,22 +46,21 @@ Core customer data 是一个术语，指的是一部分客户数据，包括：
 |**南非**| 欧洲 | 南非 | 2019 年 7 月 |
 |**瑞士，列支敦士登**| 欧洲 | 瑞士 | 2019 年 12 月 |
 |**Germany（德国）**| 欧洲 | 德国 | 2019 年 12 月 |
+|**挪威**| 欧洲 | 挪威 | 2020 年 4 月 |
   
 在新的数据中心地理位置推出之后创建的新客户或 Office 365 租户将在新的数据中心地理位置自动将其核心客户数据存储在 rest 上。
 
 
 >[!Note]
->我们在12月2019日启动了德国数据中心区域。 具有与租户关联的德国注册地址的新 Office 365 客户将其核心客户数据存储在德国的其他位置。 我们计划在将来为德国客户提供从欧洲到德国的迁移。 目前，Microsoft 云德国/德国客户可以请求迁移到新的德国数据中心区域中的 Office 365 服务。 有关详细信息，请参阅[如何选择从 Microsoft 云德国（Microsoft 云德国）迁移到 Office 365 服务](https://aka.ms/office365germanymoveoptin)。
+>我们在12月2019日启动了德国数据中心区域。 新的 Microsoft 365 客户，其中与租户关联的德国注册地址将把其核心客户数据存储在德国的其他位置。 我们计划在将来为德国客户提供从欧洲到德国的迁移。 目前，Microsoft 云德国/德国客户可以请求迁移到新的德国数据中心区域中的 Office 365 服务。 有关详细信息，请参阅[如何选择从 Microsoft 云德国（Microsoft 云德国）迁移到 Office 365 服务](https://aka.ms/office365germanymoveoptin)。
 >
   
 所有数据中心信息、数据中心和 rest 上的客户数据位置的完整列表都可用作[交互式数据中心地图](https://office.com/datamaps)的一部分。 
   
 ## <a name="data-residency-option"></a>数据常驻选项
 
-我们为在上表中列出的数据中心信息所涵盖的现有 Office 365 客户提供数据派驻选项。 使用此选项，具有数据驻留要求的客户可以将其组织的核心客户数据提前迁移到其新的数据中心地理位置。  Microsoft 将在注册期间请求提前迁移的所有符合条件的客户提供已提交的截止时间。  查看[如何请求数据移动](request-your-data-move.md)页面，以获取有关你的地理位置的注册窗口的更多详细信息以及注册到程序中的步骤。  在请求期结束后，数据移动可能需要长达24个月。
+我们为在上表中列出的数据中心信息所涵盖的现有 Microsoft 365 客户提供数据派驻选项。 使用此选项，具有数据驻留要求的客户可以将其组织的核心客户数据提前迁移到其新的数据中心地理位置。  Microsoft 将在注册期间请求提前迁移的所有符合条件的客户提供已提交的截止时间。  查看[如何请求数据移动](request-your-data-move.md)页面，以获取有关你的地理位置的注册窗口的更多详细信息以及注册到程序中的步骤。  在请求期结束后，数据移动可能需要长达24个月。
 
-如果不执行任何操作，Microsoft 能够在服务管理和优化过程中随着时间推移将您的核心客户数据移动到新的数据中心地理位置。您的核心客户数据只能移动到新的数据中心地理位置，而不能移动到任何其他地理位置。当此类服务管理移动完成并更新管理中心中的数据位置时，我们将通过消息中心通知租户管理员。
-   
 我们不会通过新的数据中心地理位置引入独特的功能、功能或合规性认证。
     
 我们需要在全局运营和自动环境中执行数据移动的复杂性、精度和规模将禁止我们在对你的租户或任何其他单一租户完成数据移动时进行共享。 客户在其数据移动完成后，每个参与的服务都会在邮件中心收到一条确认消息。 
