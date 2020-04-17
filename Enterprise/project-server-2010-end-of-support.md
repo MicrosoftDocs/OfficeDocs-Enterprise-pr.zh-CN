@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支持结束时间在2021年4月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
-ms.openlocfilehash: 3c60763576d75e62c39fe202523d22550acd2f3c
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 069675eef7190cf815147bc74dcced2943d2c956
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503830"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532267"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 结束支持路线图
 
@@ -41,7 +41,7 @@ Project Server 2010 将于**2021 年4月13日**到达支持结束。 此日期�
   
 ## <a name="what-does-end-of-support-mean"></a>支持终止的含义是什么？
 
-与几乎所有 Microsoft 产品一样，Project Server 都具有支持生命周期，在此期间我们提供了新的功能、缺陷修补程序和安全更新。 此生命周期通常是从产品初始发布之日起10年的时间，而此生命周期的结束时间也称为产品的支持终止的期限。 当 Project Server 2010 在2020年10月13日到达其支持结束后，Microsoft 将不再提供：
+与几乎所有 Microsoft 产品一样，Project Server 都具有支持生命周期，在此期间我们提供了新的功能、缺陷修补程序和安全更新。 此生命周期通常是从产品初始发布之日起10年的时间，而此生命周期的结束时间也称为产品的支持终止的期限。 当 Project Server 2010 在2021年4月13日到达其支持结束后，Microsoft 将不再提供：
   
 - 可能出现的问题的技术支持。
     
