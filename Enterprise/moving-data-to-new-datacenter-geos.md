@@ -1,7 +1,7 @@
 ---
 title: 将核心数据移动到新的 Microsoft 365 数据中心信息
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一项术语，指在 Microsoft Online Services 术语： Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）、SharePoint Online 网站内容和存储在该网站中的文件以及上传到 OneDrive for business 的文件中定义的客户数据子集。
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516543"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547720"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>将核心数据移动到新的 Microsoft 365 数据中心信息
 

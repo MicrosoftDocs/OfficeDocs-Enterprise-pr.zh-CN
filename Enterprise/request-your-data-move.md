@@ -1,7 +1,7 @@
 ---
 title: 如何请求数据移动
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求，以便将其参与的 Microsoft 365 服务的客户数据移动到其新地理位置。
-ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 9c78492584f49cf263916726b2272d3b9405446e
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516563"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547740"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -43,7 +43,7 @@ ms.locfileid: "43516563"
 |南非  <br/> |2019 年 7 月 25 日  <br/> |2020年6月30日  <br/> |
 |瑞士，列支敦士登  <br/> |2019 年 12 月 10 日  <br/> |2020年6月30日  <br/> |
 |德国  <br/> |相同  <br/> |相同  <br/> |
-|挪威  <br/> |2020年4月15日  <br/> |2020年10月31日  <br/> |
+|挪威  <br/> |2020 年 4 月 15 日  <br/> |2020年10月31日  <br/> |
    
 ## <a name="how-to-request-a-move"></a>如何请求移动
 
