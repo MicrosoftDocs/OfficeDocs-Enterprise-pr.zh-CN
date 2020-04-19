@@ -24,19 +24,19 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
 hideEdit: true
-ms.openlocfilehash: ac69ea79c86cf9ae7ca110ef644ed30bcf639235
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: acccd4dbb1d9d7107542b711c5a7dd34d2f33c71
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516463"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547760"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 地址范围
 
  **摘要：** Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
   
 > [!NOTE]
-> 作为 Microsoft 对新型冠状病毒肺炎（COVID-19）响应的一部分，Microsoft 宣布暂停更改部分计划的 URL 和 IP 地址。 此暂停旨在为客户 IT 团队提供信心和简化，以针对在家工作的 Office 365 方案实施建议的网络优化。 针对关键 Office 365 服务（Exchange Online、SharePoint Online 和 Microsoft Teams），从 2020 年 3 月 24 日至 2020 年 6 月 30 日，此暂停将停止对优化类别中的 IP 地址范围和 URL 进行更改。 其他端点类别内的更改将照常发生。 在此期间，客户可以以静态方式使用 Office 365 优化类别服务终结点定义来执行目标网络优化（例如带宽预留或拆分隧道 VPN 配置），并将因云端网络更改而导致的 Office 365 连接性风险降到最低。 为确保在暂停期结束时服务不中断，Microsoft 强烈建议客户使用[管理Office 365 终结点](managing-office-365-endpoints.md)中提供的指南为 Office 365 服务终结点实施更改管理和/或自动化过程。
+> 作为 Microsoft 对新型冠状病毒肺炎（COVID-19）危机响应的一部分，Microsoft 宣布暂停更改部分计划的 URL 和 IP 地址。 此暂停旨在为客户 IT 团队提供信心和简化，以针对在家工作的 Office 365 方案实施建议的网络优化。 针对关键 Office 365 服务（Exchange Online、SharePoint Online 和 Microsoft Teams），从 2020 年 3 月 24 日至 2020 年 6 月 30 日，此暂停将停止对优化类别中的 IP 地址范围和 URL 进行更改。 其他端点类别内的更改将照常发生。 在此期间，客户可以以静态方式使用 Office 365 优化类别服务终结点定义来执行目标网络优化（例如带宽预留或拆分隧道 VPN 配置），并将因云端网络更改而导致的 Office 365 连接性风险降到最低。 为确保在暂停期结束时服务不中断，Microsoft 强烈建议客户使用[管理Office 365 终结点](managing-office-365-endpoints.md)中提供的指南为 Office 365 服务终结点实施更改管理和/或自动化过程。
 
 > [!NOTE]
 > Microsoft 针对此页上的 IP 地址和 FQDN 条目发布了基于 REST 的 Web 服务。这项新服务有助于配置和更新网络外围设备，如防火墙和代理服务器。可以下载终结点列表，无论是列表的当前版本，还是应用了特定更改的列表。这项服务会替换从此页面链接到的 XML 文档（已于 2018 年 10 月 2 日遭弃用）。若要试用这项新服务，请转到 [Web 服务](office-365-ip-web-service.md)。
@@ -70,7 +70,6 @@ ms.locfileid: "43516463"
 >[!Note]
 >有关 Yammer IP 地址和 URL 的建议，请参阅[此博客文章](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)。
 >
-
 
 ## <a name="related-topics"></a>相关主题
 

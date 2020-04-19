@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 指导如何使用 Office 365 VPN 拆分隧道为远程用户优化 Office 365 连接。
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131431"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547650"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>使用 VPN 拆分隧道为远程用户优化 Office 365 连接
 <!---
@@ -32,7 +32,7 @@ ms.locfileid: "43131431"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-对于通过 VPN 将远程工作设备与公司网络或云基础结构连接的客户，Microsoft 建议关键 Office 365 场景 **Microsoft Teams**、**SharePoint Online** 和 **Exchange Online** 通过 _VPN 拆分隧道_配置进行路由。 作为在 COVID-19 流行病等大规模在家办公事件中促使员工持续保证工作效率的一线战略，这一点尤其重要。
+对于通过 VPN 将远程工作设备与公司网络或云基础结构连接的客户，Microsoft 建议关键 Office 365 场景 **Microsoft Teams**、**SharePoint Online** 和 **Exchange Online** 通过 _VPN 拆分隧道_配置进行路由。 作为在新型冠状病毒肺炎（COVID-19）危机等大规模在家办公事件中促使员工持续保证工作效率的一线战略，这一点尤其重要。
 
 ![拆分隧道 VPN 配置](media/vpn-split-tunnelling/vpn-model-2.png)
 

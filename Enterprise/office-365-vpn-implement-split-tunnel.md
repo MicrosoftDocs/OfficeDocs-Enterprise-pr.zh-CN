@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516483"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547660"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -41,7 +41,7 @@ ms.locfileid: "43516483"
 
 这个问题多年来一直在加剧，许多客户报告了网络流量模式的重大转变。 过去停留在本地的流量现在连接到外部云终结点。 许多 Microsoft 客户报告，以前大约 80% 的网络流量都来自内部（上图中用虚线表示）。 到 2020 年，随着他们将主要的工作负载转移到云上，这一数字现在约为 20% 或更低，这些趋势在其他企业中并不罕见。 随着时间的推移和云历程的发展，上述模型变得愈加累赘且不可持续，这使得组织在迁移到以云为中心的世界时的敏捷度受到影响。
 
-全球 COVID-19 大流行病升级了此问题，需要立即修正。 确保员工安全的需要对企业 IT 部门提出了前所未有的要求，要求他们支持大规模在家办公的工作效率。 Microsoft Office 365 非常适合帮助客户满足这一要求，但在家办公的用户的高并发性会产生大量的 Office 365 流量，如果通过强制隧道 VPN 和本地网络外围进行路由，就会导致流量迅速饱和，且运行的 VPN 基础结构会出现容量不足的情况。 在此新情况中，使用 VPN 来访问 Office 365 不再只是性能障碍，而是一堵不仅会影响 Office 365 还会影响关键业务操作的硬墙，这些业务操作仍需依赖于 VPN 才能进行。
+全球 COVID-19 危机升级了此问题，需要立即修正。 确保员工安全的需要对企业 IT 部门提出了前所未有的要求，要求他们支持大规模在家办公的工作效率。 Microsoft Office 365 非常适合帮助客户满足这一要求，但在家办公的用户的高并发性会产生大量的 Office 365 流量，如果通过强制隧道 VPN 和本地网络外围进行路由，就会导致流量迅速饱和，且运行的 VPN 基础结构会出现容量不足的情况。 在此新情况中，使用 VPN 来访问 Office 365 不再只是性能障碍，而是一堵不仅会影响 Office 365 还会影响关键业务操作的硬墙，这些业务操作仍需依赖于 VPN 才能进行。
 
 多年来，Microsoft 一直与客户和更广泛的行业紧密协作，从我们自己的服务中为这些问题提供有效的新式解决方案，并与行业最佳做法保持一致。 Office 365 服务的[连接原则](https://aka.ms/pnc)旨在高效地为远程用户工作，同时仍允许组织保持安全性并控制其连接。 还可以通过有限的工作非常快速地实现这些解决方案，但对上述问题有着重大的积极影响。
 
