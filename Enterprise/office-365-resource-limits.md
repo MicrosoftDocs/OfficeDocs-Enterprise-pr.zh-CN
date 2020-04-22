@@ -15,18 +15,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 摘要：有关 Office 365 中各种应用程序的资源限制的信息。
-ms.openlocfilehash: 112d910ae724ad01629aaef5a8e2e1756ceb8ecf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 55fa8d90c6f83c84a1e43f32cf7cd0eeafbf1274
+ms.sourcegitcommit: ed4482ad35274b79d44d0f9a17be3e52d5ad0492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844313"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43666323"
 ---
 # <a name="resource-limits"></a>资源限制
 
 使用配额（限制）和限制来强制实施资源限制。 Azure Active Directory 和单独的 Office 365 服务使用两者。 在添加新功能时，限制因服务而异并随时间而变化。 有关各种服务的当前限制的详细信息，请参阅下列主题：
 
-- [Azure Active Directory 服务限制和限制](https://msdn.microsoft.com/library/azure/dn764971.aspx)
+- [Azure Active Directory 服务限制和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx)
 - [Exchange Online Protection 限制](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)
 - [SharePoint Online 软件边界和限制](https://support.office.com/article/SharePoint-Online-software-boundaries-and-limits-8F34FF47-B749-408B-ABC0-B605E1F6D498)
