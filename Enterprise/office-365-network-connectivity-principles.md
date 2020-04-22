@@ -16,12 +16,12 @@ ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
 description: 在开始规划网络的 Office 365 网络连接之前，请务必了解安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。
-ms.openlocfilehash: 63ae147174cd40ae86a060832468097e5533b837
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7abfc401531799cb9ff890261c89c6104a0c356a
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842639"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612912"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 网络连接原则
 
@@ -41,23 +41,23 @@ ms.locfileid: "41842639"
 - [新的 Office 365 终结点类别](office-365-network-connectivity-principles.md#BKMK_Categories)和优化指南
 - [将网络外围安全性与终结点安全性进行比较](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Office 365 流量的[增量优化](office-365-network-connectivity-principles.md#BKMK_IncOpt)选项
-- [Office 365 网络载入工具](https://aka.ms/netonboard)，用于测试与 Office 365 的基本连接的新工具
+- [Microsoft 365 连接测试](https://aka.ms/netonboard)，用于测试与 Office 365 的基本连接的新工具
 
 ## <a name="office-365-architecture"></a>Office 365 体系结构
 <a name="BKMK_Architecture"> </a>
 
-Office 365 是分布式软件即服务（SaaS）云，它通过多种微服务和应用程序（如 Exchange Online、SharePoint Online、Skype for business Online、Microsoft）提供工作效率和协作方案。团队、Exchange Online Protection、Office 在浏览器中以及其他许多。 虽然特定的 Office 365 应用程序可能会将其独特的功能应用于客户网络和与云的连接，但它们都共享一些关键主体、目标和体系结构模式。 这些适用于连接的这些主体和体系结构模式对于许多其他 SaaS 云来说是典型的，同时与平台即服务和基础结构即服务云（如 Microsoft）的典型部署模型非常不同。Azure.
+Office 365 是分布式软件即服务（SaaS）云，它通过各种微服务和应用程序（如 Exchange Online、SharePoint Online、Skype for Business Online、Microsoft 团队、Exchange Online Protection、Office 在浏览器中以及其他许多）提供工作效率和协作方案。 虽然特定的 Office 365 应用程序可能会将其独特的功能应用于客户网络和与云的连接，但它们都共享一些关键主体、目标和体系结构模式。 这些适用于连接的这些主体和体系结构模式对于许多其他 SaaS 云来说是典型的，同时与平台即服务和基础结构即服务云（如 Microsoft Azure）的典型部署模型非常不同。
   
 Office 365 的最重要的体系结构功能之一（通常是网络规划者未错过或误解的）是，它是真正的全局分布式服务，在用户连接到它的上下文中。 目标 Office 365 租户的位置对于了解在云中存储客户数据的位置非常重要，但 Office 365 的用户体验并不涉及直接连接到包含数据的磁盘。 Office 365 中的用户体验（包括性能、可靠性和其他重要质量特征）涉及到跨全球数百个 Microsoft 地区扩展的高分布式服务前盖的连接性。 在大多数情况下，通过允许客户网络将用户请求路由到最近的 Office 365 服务入口点来实现最佳用户体验，而不是通过中心位置或区域中的传出点连接到 Office 365。
   
-对于大多数客户，Office 365 用户分布在多个位置。 为获得最佳结果，本文档中概述的原则应从向外扩展（不向上扩展）的角度来看，重点是在将连接优化到 Microsoft 全局网络中的最近状态点，而不是地理位置Office 365 租户的位置。 实际上，这意味着尽管 Office 365 租户数据可能存储在特定的地理位置，但该租户的 Office 365 体验仍在分发中，并且可以在非常接近（网络）的情况下在租户拥有的每个最终用户位置进行接近.
+对于大多数客户，Office 365 用户分布在多个位置。 为了获得最佳结果，本文档中概述的原则应从向外扩展（不向上扩展）的角度来看，重点是将连接优化到 Microsoft 全局网络中的最近状态点，而不是 Office 365 租户的地理位置。 实际上，这意味着尽管 Office 365 租户数据可能存储在特定的地理位置，但该租户的 Office 365 体验仍在分发中，并且可以在非常接近（网络）的情况下与租户拥有的每个最终用户位置相接近。
   
 ## <a name="office-365-connectivity-principles"></a>Office 365 连接原则
 <a name="BKMK_Principles"> </a>
 
 Microsoft 建议采用以下原则来实现最佳的 Office 365 连接和性能。 使用这些 Office 365 连接原则来管理流量，并在连接到 Office 365 时获得最佳性能。
   
-网络设计中的主要目标是通过将网络中的往返时间（RTT）减少到 Microsoft 全局网络中来最大限度地减少延迟，Microsoft 的公共网络骨干将所有 Microsoft 的数据中心与低延迟互连在一起和云应用程序入口点分布在世界各地。 你可以在[Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)中了解有关 Microsoft 全球网络的详细信息。
+网络设计中的主要目标是将网络中的往返时间（RTT）从网络中减少到 Microsoft 全局网络中，从而将所有 Microsoft 的数据中心与全球的低延迟和云应用程序入口点进行互连，从而最大限度地减少延迟。 你可以在[Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)中了解有关 Microsoft 全球网络的详细信息。
   
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-office-365-traffic"></a>识别和区分 Office 365 流量
@@ -91,15 +91,15 @@ Microsoft 现在将所有 Office 365 终结点作为 web 服务发布，并提�
   
 ![区域出口点的 WAN 网络模型](media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
-以这种方式缩短到 Office 365 入口点的网络路径可提高连接性能和 Office 365 中的最终用户体验，还有助于降低对 Office 365 性能的未来更改对网络体系结构的影响和原因.
+以这种方式缩短到 Office 365 入口点的网络路径可提高连接性能和 Office 365 中的最终用户体验，还有助于降低对 Office 365 性能和可靠性对网络体系结构的未来更改的影响。
   
 此外，如果响应的 DNS 服务器繁忙或繁忙，则 DNS 请求可能会导致延迟。 您可以通过在分支位置设置本地 DNS 服务器并确保将其配置为适当地缓存 DNS 记录，从而最大限度地减少名称解析延迟。
   
-虽然区域出口可适用于 Office 365，但最佳连接模型是始终提供用户位置的网络出口，无论是在公司网络上还是在远程位置（例如，家庭、旅馆、咖啡店和等. 此本地直接出口模型在下图中表示。
+虽然区域出口适用于 Office 365，但最佳连接模型是始终提供用户位置的网络出口，无论是在公司网络上还是在家庭、旅馆、咖啡店和机场等远程位置。 此本地直接出口模型在下图中表示。
   
 ![本地出口网络体系结构](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
-采用 Office 365 的企业可以利用 Microsoft 全球网络的分布式服务前端体系结构，具体方法是确保与 Office 365 的用户连接采用最短的可能路由到最近的 Microsoft 全局网络条目鼠标. 本地出局网络体系结构通过允许将 Office 365 流量路由到最近的传出而不考虑用户位置来实现这一点。
+采用 Office 365 的企业可以利用 Microsoft 全球网络的分布式服务前端体系结构，具体方法是确保与 Office 365 的用户连接采用最短的可能路由到最近的 Microsoft 全局网络入口点。 本地出局网络体系结构通过允许将 Office 365 流量路由到最近的传出而不考虑用户位置来实现这一点。
   
 与传统模型相比，本地出口体系结构具有以下优点：
   
@@ -112,20 +112,20 @@ Microsoft 现在将所有 Office 365 终结点作为 web 服务发布，并提�
 
 ![避免回流](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-作为一般经验法则，用户与最接近的 Office 365 终结点之间最短、最直接的路由将提供最佳性能。 当为特定目标绑定的 WAN 或 VPN 流量首先定向到另一个中间位置（例如，基于云的 web 网关的安全堆栈、云访问代理）时，将发生网络发夹，引入延迟并可能重定向到地理位置较远的端点。 网络回流也可能是由路由/对等低效率或不理想（远程） DNS 查找引起的。
+作为一般经验法则，用户与最接近的 Office 365 终结点之间最短、最直接的路由将提供最佳性能。 当为特定目标绑定的 WAN 或 VPN 流量首先定向到另一个中间位置（例如，基于云的 web 网关的安全堆栈、云访问代理）时，将发生网络发夹，从而引入延迟并可能重定向到地理位置较远的终结点。 网络回流也可能是由路由/对等低效率或不理想（远程） DNS 查找引起的。
   
-若要确保即使在本地出口的情况下，Office 365 连接不受网络回流，请检查用于为用户位置提供 Internet 出口的 ISP 是否与关闭的 Microsoft 全局网络具有直接的对等关系与该位置的距离。 您可能还希望将传出路由配置为直接发送受信任的 Office 365 通信，而不是通过处理 Internet 绑定流量的第三方云或基于云的网络安全供应商进行代理或隧道操作。 Office 365 终结点的本地 DNS 名称解析有助于确保除了直接路由，最接近的 Office 365 入口点也用于用户连接。
+若要确保即使在本地出口的情况下，Office 365 连接不受网络回流，请检查用于为用户位置提供 Internet 传出的 ISP 是否与 Microsoft 全局网络的直接对等关系与该位置密切邻近。 您可能还希望将传出路由配置为直接发送受信任的 Office 365 通信，而不是通过处理 Internet 绑定流量的第三方云或基于云的网络安全供应商进行代理或隧道操作。 Office 365 终结点的本地 DNS 名称解析有助于确保除了直接路由，最接近的 Office 365 入口点也用于用户连接。
   
-如果您将基于云的网络或安全服务用于 Office 365 流量，请确保评估 hairpinning 效果并了解其对 Office 365 性能的影响。 为此，可以检查通过以下方式将流量转发到的服务提供程序位置的数量和位置：与分支机构的数量和 Microsoft 全局网络对等点的网络对等关系的质量您的 ISP 和 Microsoft 的服务提供商以及回程在服务提供程序基础结构中的性能影响。
+如果您将基于云的网络或安全服务用于 Office 365 流量，请确保评估 hairpinning 效果并了解其对 Office 365 性能的影响。 为此，可以检查通过以下方式转发流量的服务提供程序位置的数量和位置：将流量与您的分支机构和 Microsoft 全局网络对等点的数量关联，服务提供程序与您的 ISP 和 Microsoft 的网络对等关系的质量，以及服务提供程序基础结构中回程的性能影响。
   
-由于 Office 365 入口点和与最终用户邻近的大量分布式位置，因此将 Office 365 流量路由到任何第三方网络或安全提供商可能会对 Office 365 连接产生不利影响（如果提供程序网络不是配置为最佳的 Office 365 对等。
+由于 Office 365 入口点和与最终用户邻近的大量分布式位置，如果未将提供程序网络配置为实现最佳 Office 365 对等，则将 Office 365 流量路由到任何第三方网络或安全提供商可能会对 Office 365 连接产生不利影响。
   
 <a name="BKMK_P4"> </a>
 ### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>评估绕过代理、流量检查设备和重复的安全技术
 
 ![绕过代理、流量检查设备和重复的安全技术](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
-企业客户应查看其网络安全和风险降低方法，专门针对 Office 365 绑定的流量，并使用 Office 365 安全功能来降低对入侵、性能影响和成本较高的网络安全的依赖适用于 Office 365 网络流量的技术。
+企业客户应查看其网络安全和风险降低方法专门针对 Office 365 绑定的流量，并使用 Office 365 安全功能来降低对 Office 365 网络流量的入侵、性能影响和昂贵网络安全技术的依赖。
   
 大多数企业网络使用代理、SSL 检查、数据包检查和数据丢失防护系统等技术强制 Internet 流量的网络安全。 这些技术为常规 Internet 请求提供了重要风险缓解，但在应用于 Office 365 终结点时，可以显著降低性能、可伸缩性和最终用户体验的质量。
   
@@ -268,7 +268,7 @@ Microsoft 提供了各种 Office 365 安全功能，并提供了用于确保 Off
 
 [内容分发网络](content-delivery-networks.md)
 
-[Office 365 网络载入工具](https://aka.ms/netonboard)
+[Microsoft 365 连接测试](https://aka.ms/netonboard)
 
 [Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

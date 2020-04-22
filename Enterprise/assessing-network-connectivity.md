@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 旨在让世界各地的客户能够使用 internet 连接连接到服务。 随着服务的演变，Office 365 的安全性、性能和可靠性根据使用 internet 的客户建立与服务的连接而得到改进。
-ms.openlocfilehash: c96cb8aa7341c0749d198e1fa5459433c40e1062
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c818cc959910e57f25f20ef6d1c4d3992a2330a
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844693"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612862"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>评估 Office 365 网络连接
 
@@ -44,7 +44,7 @@ Office 365 旨在让世界各地的客户能够使用 internet 连接连接到�
 - 有关 Office 365 网络的概念性信息，请参阅[Office 365 网络连接概述](office-365-networking-overview.md)。
 - 请参阅[Office 365 网络连接原则](https://aka.ms/o365networkingprinciples)，了解用于安全管理 Office 365 流量和获得最佳性能的连接原则。
 - 注册[Microsoft FastTrack](https://www.microsoft.com/fasttrack)以获取有关 Office 365 规划、设计和部署的引导式协助。 
-- 请参阅下面的[Office 365 网络载入工具](assessing-network-connectivity.md#the-office-365-network-onboarding-tool)部分，运行基本的连接测试，这些测试提供有关可在给定用户位置和 Office 365 之间进行的网络连接改进的具体指导。
+- 请参阅下面的[Microsoft 365 连接测试](assessing-network-connectivity.md#the-microsoft-365-connectivity-test)部分，运行基本的连接测试，这些测试提供有关可在给定用户位置和 Office 365 之间进行的网络连接改进的具体指导。
 
 > [!NOTE]
 > 需要 Microsoft 授权才能使用适用于 Office 365 的 ExpressRoute。 Microsoft 会检查每个客户请求，并且仅在客户的规章要求要求直接连接时，才会授权使用适用于 Office 365 的 ExpressRoute。 如果您有这样的要求，请提供指向您所解释的法规的文本摘录和 web 链接，这意味着在从[Office 365 请求的 ExpressRoute For Office 请求](https://aka.ms/O365ERReview)中需要直接连接才能开始 Microsoft 评审。 尝试为 Office 365 创建路由筛选器的未授权订阅将收到一[条错误消息](https://support.microsoft.com/kb/3181709)。
@@ -59,9 +59,9 @@ Office 365 旨在让世界各地的客户能够使用 internet 连接连接到�
 
 如果您正在评估 Office 365，并且不确定从哪里开始进行网络评估，或者发现您需要帮助解决的网络设计难题，请与你的 Microsoft 帐户团队合作。
 
-## <a name="the-office-365-network-onboarding-tool"></a>Office 365 网络载入工具
+## <a name="the-microsoft-365-connectivity-test"></a>Microsoft 365 连接测试
 
-[Office 365 网络载入工具](https://aka.ms/netonboard)是一种概念证明（POC）网络评估工具，可对 office 365 租户运行基本的连接测试，并为最佳的 office 365 性能提供具体的网络设计建议。 该工具突出显示了常见的大型企业网络外围设计选项，这些选项对于 Internet web 浏览很有用，但会影响大型 SaaS 应用程序（如 Office 365）的性能。
+[Microsoft 365 连接测试](https://aka.ms/netonboard)是一种概念证明（POC）网络评估工具，它对 office 365 租户运行基本的连接测试，并为最佳的 office 365 性能提供具体的网络设计建议。 该工具突出显示了常见的大型企业网络外围设计选项，这些选项对于 Internet web 浏览很有用，但会影响大型 SaaS 应用程序（如 Office 365）的性能。
 
 网络载入工具执行以下操作：
 
@@ -103,7 +103,7 @@ Office 365 旨在让世界各地的客户能够使用 internet 连接连接到�
 - 对多个特定于功能的终结点的连接性测试
 - 包含适用于 Exchange Online、SharePoint Online 和团队服务的 tracert 和延迟数据的网络路径诊断
 
-您可以阅读有关 Office 365 网络载入工具的信息，并在[更新的 Office 365 网络载入工具 POC 中提供反馈，其中包含新的网络设计建议](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130)博客文章。 有关此工具的未来更新和其他 Office 365 网络更新的信息将发布到[Office 365 网络](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)博客。
+您可以阅读 Microsoft 365 连接测试，并在[更新的 microsoft 365 连接测试 POC 中提供有关新的网络设计建议](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130)博客文章的反馈。 有关此工具的未来更新和其他 Office 365 网络更新的信息将发布到[Office 365 网络](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)博客。
   
 以下是可用于返回的简短链接： [ https://aka.ms/o365networkconnectivity。](https://aka.ms/o365networkconnectivity)
   

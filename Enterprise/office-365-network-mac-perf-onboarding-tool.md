@@ -1,9 +1,9 @@
 ---
-title: M365 管理中心中的 Microsoft 365 网络载入工具（预览）
+title: M365 管理中心中的 Microsoft 365 连接测试（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,31 +13,31 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: M365 管理中心中的 Microsoft 365 网络载入工具（预览）
-ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
-ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
+description: M365 管理中心中的 Microsoft 365 连接测试（预览）
+ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225695"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612872"
 ---
-# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理中心中的 Microsoft 365 网络载入工具（预览）
+# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>M365 管理中心中的 Microsoft 365 连接测试（预览）
 
-Microsoft 365 网络载入工具位于<https://connectivity.office.com>。 它是一个辅助工具，可用于**运行状况 | 的 Microsoft 365 管理中心内的网络洞察力和网络积分信息。网络性能**菜单。
+Microsoft 365 连接测试位于<https://connectivity.office.com>。 它是一个辅助工具，可用于**运行状况 | 的 Microsoft 365 管理中心内的网络洞察力和网络积分信息。网络性能**菜单。
 
 >[!NOTE]
 >加入工具支持 WW 商业和 GCC 中的租户，但不支持 GCC 高、DoD、德国或中国的租户。
 
-Microsoft 365 管理中心的网络洞察力基于 Microsoft 365 租户的产品度量。 相比之下，Microsoft 365 网络载入工具中的网络洞察力在此工具中本地运行。 可以在产品中完成的测试是有限的，并且可以通过在用户的本地运行测试来收集更多数据，从而获得更深入的见解。 请考虑，Microsoft 365 管理中心中的网络见解将显示在特定办公地点使用 Microsoft 365 的网络问题。 Microsoft 365 网络载入工具可帮助确定该问题的根本原因，从而导致建议的网络性能改进操作。
+Microsoft 365 管理中心的网络洞察力基于 Microsoft 365 租户的产品度量。 相比之下，Microsoft 365 连接测试中的网络洞察力在该工具中本地运行。 可以在产品中完成的测试是有限的，并且可以通过在用户的本地运行测试来收集更多数据，从而获得更深入的见解。 请考虑，Microsoft 365 管理中心中的网络见解将显示在特定办公地点使用 Microsoft 365 的网络问题。 Microsoft 365 连接测试可帮助确定问题的根本原因，从而导致建议的网络性能改进操作。
 
-我们建议将这些信息结合使用，以便可以在 Microsoft 365 管理中心中对每个办公室位置评估网络质量状态，并在部署基于 Microsoft 365 网络载入工具的测试之后找到更多的详细信息。
+我们建议将这些信息结合使用，以便在 Microsoft 365 管理中心中的每个办公室位置评估网络质量状态，并在部署基于 Microsoft 365 连接测试的测试之后找到更多的详细信息。
 
 >[!IMPORTANT]
 >网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="the-advanced-tests-client-application"></a>高级测试客户端应用程序
 
-Microsoft 365 网络载入工具有两个部分。 网站<https://connectivity.office.com>有一个可下载的 Windows 客户端应用程序。 可下载的客户端运行高级网络连接测试，大多数测试都需要运行此测试。
+Microsoft 365 连接测试分为两个部分。 网站<https://connectivity.office.com>有一个可下载的 Windows 客户端应用程序。 可下载的客户端运行高级网络连接测试，大多数测试都需要运行此测试。
 
 您可以从网站运行高级客户端测试，它会在运行时将结果重新填充到网页中。
 

@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 介绍与 Office 365、Active Directory 域服务清理和 Azure Active Directory Connect 工具的目录同步。
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841759"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580929"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 的混合标识和目录同步
 
@@ -69,7 +69,7 @@ ms.locfileid: "41841759"
 
 更改密码或在本地重置密码时，新的密码哈希将同步到 Azure AD，以便您的用户始终可以对云资源和本地资源使用相同的密码。 用户密码永远不会发送到 Azure AD 或以明文形式存储在 Azure AD 中。 Azure AD 的一些高级功能（如标识保护）需要 PHS，而不管选择了哪种身份验证方法。
   
-请参阅[选择 PHS](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)以了解详细信息。
+请参阅[选择 PHS](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)以了解详细信息。
   
 #### <a name="pass-through-authentication"></a>传递身份验证
 
@@ -81,15 +81,15 @@ PTA 允许您的用户使用其内部部署帐户和密码登录到本地和 Off
 
 PTA 也适用于具有安全要求的组织，以立即强制实施本地用户帐户状态、密码策略和登录时间。 
   
-请参阅[选择 PTA](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)以了解详细信息。
+请参阅[选择 PTA](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)以了解详细信息。
   
 ### <a name="federated-authentication"></a>联合身份验证
 
 联合身份验证主要针对具有更复杂的身份验证要求的大型企业组织。 AD DS 标识与 Office 365 同步，并且用户帐户在本地进行管理。 使用联合身份验证，用户在本地和在云中具有相同的密码，且无需再次登录才能使用 Office 365。 
 
-联合身份验证可支持其他身份验证要求（如基于智能卡的身份验证或第三方多重身份验证），通常在组织具有身份验证要求时不提供由 Azure AD 本机支持。
+联合身份验证可支持其他身份验证要求（如基于智能卡的身份验证或第三方多重身份验证），通常需要在组织具有 Azure AD 本身不支持的身份验证要求时。
  
-若要了解详细信息，请参阅[选择联合身份验证](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)。
+若要了解详细信息，请参阅[选择联合身份验证](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)。
   
 #### <a name="third-party-authentication-and-identity-providers"></a>第三方身份验证和标识提供程序
 

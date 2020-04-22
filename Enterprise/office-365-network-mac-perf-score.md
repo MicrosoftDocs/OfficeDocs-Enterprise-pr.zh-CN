@@ -3,7 +3,7 @@ title: Microsoft 365 网络评估（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 网络评估（预览）
-ms.openlocfilehash: 2ee18f50e841982e8f677964d2e7e57d95a209d8
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 3554c86b94e6b24cf82231da640b7e010fe07c11
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185743"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612892"
 ---
 # <a name="microsoft-365-network-assessment-preview"></a>Microsoft 365 网络评估（预览）
 
@@ -68,6 +68,6 @@ ms.locfileid: "43185743"
 
 [Microsoft 365 网络性能见解（预览）](office-365-network-mac-perf-insights.md)
 
-[M365 管理中心中的 Microsoft 365 网络载入工具（预览）](office-365-network-mac-perf-onboarding-tool.md)
+[M365 管理中心中的 Microsoft 365 连接测试（预览）](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)

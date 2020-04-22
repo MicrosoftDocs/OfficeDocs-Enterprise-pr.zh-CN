@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 讨论为什么网络优化对 SaaS 服务非常重要，Office 365 网络的目标，以及 SaaS 如何从其他工作负载中获得不同的网络。
-ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88072e8c85f9ca1e53201b58f0333d84ef543184
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844353"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612882"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 网络连接概述
 
@@ -33,9 +33,9 @@ Office 365 是分布式软件即服务（SaaS）云，它通过一组不同的�
 
 ## <a name="office-365-networking-goals"></a>Office 365 网络目标
 
-Office 365 网络的最终目标是通过在客户端和最接近的 Office 365 终结点之间启用限制性最少的访问来优化最终用户体验。 最终用户体验的质量与用户正在使用的应用程序的性能和响应直接相关。 例如，Microsoft 团队依赖较低的延迟，以便用户电话呼叫、会议和共享屏幕协作免费，并且 Outlook 依靠强大的网络连接实现即时搜索功能，从而利用服务器端索引和 AI能力.
+Office 365 网络的最终目标是通过在客户端和最接近的 Office 365 终结点之间启用限制性最少的访问来优化最终用户体验。 最终用户体验的质量与用户正在使用的应用程序的性能和响应直接相关。 例如，Microsoft 团队依赖低延迟，以便用户电话呼叫、会议和共享屏幕协作不会带来任何故障，而 Outlook 依靠强大的网络连接来实现即时搜索功能，从而利用服务器端索引和 AI 功能。
 
-网络设计中的主要目标是将客户端计算机的往返时间（RTT）从客户端计算机减少到 Microsoft 全局网络，从而将所有 Microsoft 的数据中心互连到低延迟的 microsoft 公共网络骨干，从而最大限度地减少延迟，高可用性云应用程序入口点分布在世界各地。 你可以在[Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)中了解有关 Microsoft 全球网络的详细信息。
+网络设计中的主要目标是将客户端计算机中的往返时间（RTT）从客户端计算机减少到 Microsoft 全局网络，从而将所有 Microsoft 的数据中心互连在一起的 microsoft 公共网络主干中，以低延迟的方式分布所有 Microsoft 的数据中心，高可用性云应用程序入口点分布在世界各地。 你可以在[Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)中了解有关 Microsoft 全球网络的详细信息。
 
 优化 Office 365 网络性能不需要太复杂。 您可以通过遵循以下几个关键原则获取最佳性能：
 
@@ -49,7 +49,7 @@ Office 365 网络的最终目标是通过在客户端和最接近的 Office 365 
 
 传统的网络体系结构针对客户端/服务器工作负载的原则旨在假定客户端和终结点之间的通信不会延伸到公司网络外围之外。 此外，在许多企业网络中，所有出站 Internet 连接都在企业网络中，并从中心位置外出。
 
-在传统网络体系结构中，常规 Internet 流量的较高延迟是维护网络外围安全所必需的，并且 Internet 流量的性能优化通常涉及升级或扩展网络出局点的设备。 但是，此方法并不能满足针对 SaaS 服务（如 Office 365）的最佳网络性能要求。
+在传统网络体系结构中，一般 Internet 流量的较高延迟是维护网络外围安全所必需的，而 Internet 流量的性能优化通常涉及在网络传出点升级或扩展设备。 但是，此方法并不能满足针对 SaaS 服务（如 Office 365）的最佳网络性能要求。
 
 ## <a name="identifying-office-365-network-traffic"></a>识别 Office 365 网络流量
 
@@ -90,7 +90,7 @@ Office 365 设计为使用端点安全性和加密网络连接实现最佳性能
 
 有关了解和应用 Office 365 网络连接原则的详细信息，请参阅[office 365 网络连接原则](office-365-network-connectivity-principles.md)。
 
-## <a name="conclusion"></a>结论
+## <a name="conclusion"></a>总结
 
 优化 Office 365 网络性能实际上是为了消除不必要的障碍。 通过将 Office 365 连接视为受信任的流量，可以防止数据包检查和针对代理带宽的竞争引入延迟。 如果允许客户端计算机和 Office 365 终结点之间的本地连接，则可以通过 Microsoft 全局网络动态路由通信。
 
@@ -116,7 +116,7 @@ Office 365 设计为使用端点安全性和加密网络连接实现最佳性能
 
 [内容分发网络](content-delivery-networks.md)
 
-[Office 365 网络载入工具](https://aka.ms/netonboard)
+[Microsoft 365 连接测试](https://aka.ms/netonboard)
 
 [Microsoft 如何构建其快速可靠的全局网络](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

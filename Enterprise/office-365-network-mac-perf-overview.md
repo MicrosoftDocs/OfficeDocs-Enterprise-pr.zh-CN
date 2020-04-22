@@ -3,7 +3,7 @@ title: Microsoft 365 管理中心中的网络性能建议（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 管理中心中的网络性能建议概述（预览）
-ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 077202f5ba1ffa95324131e6c283f2c3845aa07f
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185773"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612932"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络性能建议（预览）
 
@@ -131,7 +131,7 @@ Microsoft 365 服务的前端是 Microsoft 全球网络的一个入口点，Offi
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>什么是最佳 Microsoft 365 服务前门？
 
-最佳 Microsoft 365 服务前盖是最接近你的网络出口（通常在你所在的城市或大都市区域中）的一门。 使用[microsoft 365 网络载入工具](office-365-network-mac-perf-onboarding-tool.md)确定正在使用的 microsoft 365 服务的前盖和最佳服务前盖的位置。 如果该工具确定你的使用中的前向门是最佳的，则表示你正在以最佳方式连接到 Microsoft 的全球网络。
+最佳 Microsoft 365 服务前盖是最接近你的网络出口（通常在你所在的城市或大都市区域中）的一门。 使用[microsoft 365 连接测试](office-365-network-mac-perf-onboarding-tool.md)确定正在使用的 microsoft 365 服务前盖和最佳服务前盖的位置。 如果该工具确定你的使用中的前向门是最佳的，则表示你正在以最佳方式连接到 Microsoft 的全球网络。
 
 ### <a name="what-is-an-internet-egress-location"></a>Internet 出口的位置是什么？
 
@@ -143,6 +143,6 @@ Internet 出局位置是网络流量退出企业网络并连接到 Internet 的�
 
 [Microsoft 365 网络评估（预览）](office-365-network-mac-perf-score.md)
 
-[M365 管理中心中的 Microsoft 365 网络载入工具（预览）](office-365-network-mac-perf-onboarding-tool.md)
+[M365 管理中心中的 Microsoft 365 连接测试（预览）](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 网络连接位置服务（预览）](office-365-network-mac-location-services.md)
