@@ -1,7 +1,7 @@
 ---
 title: 从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/09/2019
 audience: ITPro
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: d8b02d149083095793ef2038c8df3d9b62e7cba8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7e9ba9135d024be5c12d6ca19b55ec68588d9ab4
+ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844873"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772143"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
 
