@@ -1,7 +1,7 @@
 ---
 title: Office 365 数据位置
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 03/09/2020
 audience: ITPro
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：Office 365 数据位置
-ms.openlocfilehash: 71c286b3dc7fbbaa842183dcaa23c863e46f809a
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: 7f7804c74eaf6122b59385abd79934157ae47062
+ms.sourcegitcommit: b2d1dbc42ceafad1b583df59c1b4be55e35beb44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547730"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772473"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -483,7 +483,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |

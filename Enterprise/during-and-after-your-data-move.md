@@ -1,7 +1,7 @@
 ---
 title: 数据移动期间和数据移动之后
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: a53d2253889cbbdb344c457c135086a1115de436
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: ee2a63ed11e83a16ec6c894a3eaf34cf36ebbc4f
+ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516443"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772103"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
