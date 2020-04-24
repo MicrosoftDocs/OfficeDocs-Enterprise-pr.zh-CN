@@ -1,4 +1,5 @@
 # [云体系结构模型](microsoft-cloud-it-architecture-resources.md)
+# [企业云解决方案](cloud-adoption-and-hybrid-solutions.yml)
 ## [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
 # [Office 365 计划](get-your-organization-ready-for-office-365.md)
