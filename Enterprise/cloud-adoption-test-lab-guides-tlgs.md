@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：使用这些测试实验室指南 (TLG) 设置演示、概念证明或 Office 365 的开发/测试环境。
-ms.openlocfilehash: 133f31dd46555ac7d80c2fcc5f3756da967cb331
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845023"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793685"
 ---
 # <a name="test-office-365-with-test-lab-guides-tlgs"></a>使用测试实验室指南 (TLG) 测试 Office 365
 
@@ -52,6 +52,6 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
     
 ## <a name="see-also"></a>另请参阅
 
-[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
+[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.yml)
   
 [混合解决方案](hybrid-solutions.md)
