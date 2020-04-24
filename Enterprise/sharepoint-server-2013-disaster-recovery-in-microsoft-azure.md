@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 摘要：使用 Azure，你可以为内部部署 SharePoint 服务器场创建灾难恢复环境。本文介绍如何设计和实施此解决方案。
-ms.openlocfilehash: d9d17ca3357e3297a0cfba2a764cb0468fd1a0ed
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d448ae31c31238f1cf5ef97ff79e6ec97fda60a1
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841179"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793705"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
@@ -112,7 +112,7 @@ SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库�
   
 **表：解决方案恢复目标**
 
-|**Item**|**说明**|
+|**项**|**说明**|
 |:-----|:-----|
 |网站和内容  <br/> |网站和内容在恢复环境中可用。  <br/> |
 |新的搜索实例  <br/> |在此温备用解决方案中，不会从搜索数据库还原搜索。恢复场中的搜索组件尽可能配置得与生产服务器场类似。网站和内容还原后，会启动完全爬网以重建搜索索引。你不需要等待爬网完成，即可使网站和内容可用。  <br/> |
@@ -122,7 +122,7 @@ SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库�
   
 **表：可以由 MCS 或合作伙伴解决的其他项目**
 
-|**Item**|**说明**|
+|**项**|**说明**|
 |:-----|:-----|
 |正在同步的自定义场解决方案  <br/> |理想情况下，恢复场的配置与生产服务器场相同。你可以与顾问或合作伙伴合作，评估是否复制了自定义服务器场解决方案，以及是否制定了将两个环境保持同步的流程。  <br/> |
 |到内部部署数据源的连接  <br/> |将连接复制到后端数据系统可能并不实用，例如备份域控制器 (BDC) 连接和搜索内容源。  <br/> |
@@ -646,7 +646,7 @@ Ipconfig /flushdns
   
 ## <a name="see-also"></a>另请参阅
 
-[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
+[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.yml)
 
 
 

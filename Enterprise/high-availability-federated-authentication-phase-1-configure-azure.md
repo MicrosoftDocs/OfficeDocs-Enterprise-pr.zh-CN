@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。
-ms.openlocfilehash: c669df7e719d8ff8516ad556817921e1440558d3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840339"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793825"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "41840339"
 
 开始配置 Azure 组件之前，请填写下表。 为了帮助你完成配置 Azure 的过程，请打印此部分并记下所需的信息，或将此部分复制到文档中进行填写。 对于 VNet 的设置，请填写表 V。
   
-|**Item**|**配置设置**|**说明**|**值**|
+|**项**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
@@ -94,7 +94,7 @@ ms.locfileid: "41840339"
    
  **表 D：本地 DNS 服务器**
   
-若要通过站点到站点 VPN 连接将数据包从跨界网络路由到组织网络，您必须为虚拟网络配置具有所有可访问的地址空间列表（在 CIDR 表示法中）的本地网络。组织的本地网络上的位置。 定义本地网络的地址空间列表必须是唯一的，并且不得与用于其他虚拟网络或其他本地网络的地址空间重叠。
+若要在整个站点到站点 VPN 连接中将数据包从跨界网络路由到组织网络，您必须为组织的本地网络上的所有可访问位置的本地网络配置具有地址空间列表（在 CIDR 表示法中）的虚拟网络。 定义本地网络的地址空间列表必须是唯一的，并且不得与用于其他虚拟网络或其他本地网络的地址空间重叠。
   
 对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
@@ -314,7 +314,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 [用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
+[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.yml)
 
 [了解 Office 365 标识和 Azure Active Directory](about-office-365-identity.md)
 

@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 摘要：在 Office 365 开发/测试环境中配置和演示 Office 365 云应用安全性。
-ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f76aaa5b13e409f08a4b96714e1f4bdfcc84ecac
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840799"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793715"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>用于 Office 365 开发/测试环境的云应用安全
 
  **摘要：** 在 Office 365 开发/测试环境中配置和演示 Office 365 云应用安全性。
   
-Office 365 云应用安全性（以前称为 "Office 365 高级安全管理"）允许您创建策略来监视 Office 365 订阅中的可疑活动并告知这些活动，以便您可以调查并采取补救措施退货. 有关详细信息，请参阅[Office 365 中的云应用安全概述](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)。
+Office 365 云应用安全性（以前称为 "Office 365 高级安全管理"）允许您创建策略来监视 Office 365 订阅中的可疑活动并通知您，以便您可以调查并采取可能的修正措施。 有关详细信息，请参阅[Office 365 中的云应用安全概述](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)。
   
 使用本文中的说明，可以在 Office 365 试用订阅中启用和测试云应用安全性。
   
@@ -165,7 +165,7 @@ Office 365 云应用安全性（以前称为 "Office 365 高级安全管理"）�
   
 [Office 365 开发/测试环境](office-365-dev-test-environment.md)
   
-[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.md)
+[云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.yml)
 
 [Office 365 中的云应用安全概述](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 

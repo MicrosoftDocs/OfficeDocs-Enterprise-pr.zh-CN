@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: 适用于 Office 365 的 ExpressRoute 提供了备用的路由路径，以达到多个 Office 365 服务，而无需向 internet 传出传出流量。 虽然仍然需要 internet 连接到 Office 365，但 Microsoft 通过 BGP 向网络公布的特定路由使直接 ExpressRoute 电路成为首选，除非网络中存在其他配置。 您可能需要配置用于管理此路由的三个常见方面，包括前缀筛选、安全性和合规性。
-ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844983"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798793"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>管理 ExpressRoute for Office 365 的连接性
 
@@ -35,7 +35,7 @@ ms.locfileid: "41844983"
 
 Microsoft 建议客户接受从 Microsoft 播发的所有 BGP 路由，提供的路由经过严格的审核和验证过程将消除对添加的审查的任何好处。 ExpressRoute 本身提供了建议的控件，如 IP 前缀所有权、完整性和扩展-客户端上没有入站路由筛选。
   
-如果需要在 ExpressRoute 公共对等之间进行额外的路由所有权验证，则可以针对所有表示[Microsoft 公共 IP 范围](https://www.microsoft.com/download/details.aspx?id=53602)的 IPv4 和 IPv6 IP 前缀列表检查播发的路由。 这些范围涵盖完整的 Microsoft 地址空间并不经常更改，提供了要筛选的一组可靠的范围，同时还为关注非 Microsoft 所属路由的客户提供其他保护。环境. 如果发生更改，则会在每个月的第一月中进行更改，并且页面的 "**详细信息**" 部分中的版本号在每次更新文件时都会发生变化。
+如果需要在 ExpressRoute 公共对等之间进行额外的路由所有权验证，则可以针对所有表示[Microsoft 公共 IP 范围](https://www.microsoft.com/download/details.aspx?id=53602)的 IPv4 和 IPv6 IP 前缀列表检查播发的路由。 这些范围涵盖完整的 Microsoft 地址空间并不经常更改，提供了要筛选的一组可靠的范围，同时还为关注非 Microsoft 拥有的路由泄漏到其环境中的客户提供了额外的保护。 如果发生更改，则会在每个月的第一月中进行更改，并且页面的 "**详细信息**" 部分中的版本号在每次更新文件时都会发生变化。
   
 为避免使用[Office 365 url 和 IP 地址范围](https://aka.ms/o365endpoints)以生成前缀筛选器列表的原因有很多。 其中包括以下内容：
   
@@ -49,8 +49,7 @@ Microsoft 建议客户接受从 Microsoft 播发的所有 BGP 路由，提供的
 |:-----|:-----|:-----|
 |接受所有 Microsoft 路由  <br/> |**低：** 客户依靠 Microsoft 控件来确保所有路由都正确拥有。  <br/> |无  <br/> |
 |筛选 Microsoft 拥有的 supernets  <br/> |**中：** 客户实施汇总的前缀筛选器列表，仅允许 Microsoft 拥有的路由。  <br/> |客户必须确保在路由筛选器中反映不常用的更新。  <br/> |
-|筛选器 Office 365 IP 范围  <br/> [!CAUTION] 不推荐
-|**高：** 客户根据定义的 Office 365 IP 前缀筛选路由。  <br/> |客户必须实施针对每月更新的可靠的更改管理过程。  <br/> [!CAUTION] 此解决方案需要进行大量的日常更改。 未按时实现的更改可能会导致服务中断。   |
+|筛选器 Office 365 IP 范围  <br/> [!CAUTION] 不推荐 |**高：** 客户根据定义的 Office 365 IP 前缀筛选路由。  <br/> |客户必须实施针对每月更新的可靠的更改管理过程。  <br/> [!CAUTION] 此解决方案需要进行大量的日常更改。 未按时实现的更改可能会导致服务中断。   |
 
 使用 Azure ExpressRoute 连接到 Office 365 基于特定 IP 子网的 BGP 播发，这些子网代表部署 Office 365 终结点的网络。 由于 Office 365 的全局特性和组成 Office 365 的服务的数量，客户通常需要在其网络上管理他们接受的广告。 如果你担心向你的环境中播发的前缀数，则[BGP 社区](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099)功能允许你将播发筛选为一组特定的 Office 365 服务。 此功能现在处于预览阶段。
   
