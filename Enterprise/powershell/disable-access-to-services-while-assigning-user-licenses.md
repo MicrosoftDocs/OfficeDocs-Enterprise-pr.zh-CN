@@ -3,7 +3,7 @@ title: 在分配用户许可证时禁止访问服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/27/2019
+ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: 了解如何使用 Office 365 PowerShell 将许可证分配给用户帐户并同时禁用特定服务计划。
-ms.openlocfilehash: 668c801983f76ec9da93d023ebe1f74e7a6c5a6c
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 15a3e7d848d4e952e75a96108b87f59ee5bc9974
+ms.sourcegitcommit: 038ea34214149773bc53668f75d06d4d00a6a7c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206559"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43813235"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>在分配用户许可证时禁止访问服务
 
@@ -124,12 +124,9 @@ $userUPN="<the user's account name in email format>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"
 $planList=@( <comma-separated, double-quote enclosed list of the service plans to disable> )
 $licenseOptions=New-MsolLicenseOptions -AccountSkuId $accountSkuId -DisabledPlans $planList
-$user=Get-MsolUser -UserPrincipalName $userUPN
-$usageLocation=$user.Usagelocation
 Set-MsolUserLicense -UserPrincipalName $userUpn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $usageLocation
 ```
 
 以下是名为 belindan@contoso.com 的帐户的示例命令块，用于 contoso： ENTERPRISEPACK 许可证，要禁用的服务计划包括 RMS_S_ENTERPRISE、SWAY、INTUNE_O365 和 YAMMER_ENTERPRISE：
@@ -139,12 +136,9 @@ $userUPN="belindan@contoso.com"
 $accountSkuId="contoso:ENTERPRISEPACK"
 $planList=@( "RMS_S_ENTERPRISE","SWAY","INTUNE_O365","YAMMER_ENTERPRISE" )
 $licenseOptions=New-MsolLicenseOptions -AccountSkuId $accountSkuId -DisabledPlans $planList
-$user=Get-MsolUser -UserPrincipalName $userUPN
-$usageLocation=$user.Usagelocation
 Set-MsolUserLicense -UserPrincipalName $userUpn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $UsageLocation
 ```
 
 ### <a name="for-multiple-users"></a>为多个用户
@@ -171,11 +165,9 @@ ForEach ($user in $users)
 {
 $user.Userprincipalname
 $upn=$user.UserPrincipalName
-$usageLocation=$user.UsageLocation
 Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $upn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $upn -UsageLocation $usageLocation
 $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Export-Csv $outFileName
 }
 ```
@@ -197,4 +189,3 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
 [使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
-
