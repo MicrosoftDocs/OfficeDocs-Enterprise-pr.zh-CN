@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：Office 365 数据位置
-ms.openlocfilehash: 7f7804c74eaf6122b59385abd79934157ae47062
-ms.sourcegitcommit: b2d1dbc42ceafad1b583df59c1b4be55e35beb44
+ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772473"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798813"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -32,7 +32,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 下表显示了 Office 365 服务的客户数据在所有 Microsoft 全球云位置的静态存储位置。 展开你的帐单邮寄地址所在国家/地区的位置，以了解每项服务的客户数据将存储在何处。
 
-客户可以在 Office 365 管理中心的“**设置 | 组织配置文件 | 数据位置卡**”中查看特定于租户的数据位置信息。
+客户可在 Office 365 管理中心的“**设置 | 组织配置文件 | 数据位置卡**”中查看特定于租户的数据位置信息。
 
 新 Office 365 租户默认位于与该租户的首次订阅关联的交易所在国家/地区内的地理位置。
 
@@ -230,7 +230,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 2 – 亚太地区 |
 | SharePoint Online | 全球地理位置 2 – 亚太地区 |
 | Skype for Business | 全球地理位置 2 – 亚太地区 |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
@@ -391,7 +391,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
@@ -874,7 +874,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 2 – 亚太地区 |
 | SharePoint Online | 全球地理位置 2 – 亚太地区 |
 | Skype for Business | 全球地理位置 2 – 亚太地区 |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
@@ -1771,7 +1771,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 3 - 美洲 |
 | SharePoint Online | 全球地理位置 3 - 美洲 |
 | Skype for Business | 美国 |
-| Microsoft Teams | 美国 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
@@ -1828,29 +1828,6 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Stream | 全球地理位置 2 – 亚太地区 |
 | Whiteboard | 美国 |
 | Forms | 美国 |
-| 工作区分析 | 美国 |
-</p></details>
-
-## <a name="federated-states-of-micronesia"></a>密克罗尼西亚联邦
-<details><summary>单击展开</summary><p>
-
-| 服务 | 位置 |
-| --- | --- |
-| Exchange Online | 全球地理位置 1 – EMEA |
-| OneDrive for Business | 全球地理位置 1 – EMEA |
-| SharePoint Online | 全球地理位置 1 – EMEA |
-| Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
-| EOP | 全球地理位置 1 – EMEA |
-| MyAnalytics | 全球地理位置 1 – EMEA |
-| Planner | 全球地理位置 1 – EMEA |
-| Sway | 美国 |
-| Yammer | 全球地理位置 1 – EMEA |
-| OneNote 服务 | 全球地理位置 1 – EMEA |
-| Stream | 全球地理位置 1 – EMEA |
-| Whiteboard | 美国 |
-| Forms | 全球地理位置 1 – EMEA |
 | 工作区分析 | 美国 |
 </p></details>
 
@@ -2047,7 +2024,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
@@ -2162,7 +2139,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 美国 |
 | SharePoint Online | 美国 |
 | Skype for Business | 美国 |
-| Microsoft Teams | 美国 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
 | MyAnalytics | 美国 |
@@ -2806,7 +2783,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
@@ -2944,7 +2921,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
@@ -3979,7 +3956,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
@@ -4025,7 +4002,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 2 – 亚太地区 |
 | SharePoint Online | 全球地理位置 2 – 亚太地区 |
 | Skype for Business | 全球地理位置 2 – 亚太地区 |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
@@ -4278,7 +4255,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
@@ -4462,7 +4439,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 美国 |
 | SharePoint Online | 美国 |
 | Skype for Business | 美国 |
-| Microsoft Teams | 美国 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
 | MyAnalytics | 美国 |
@@ -4485,7 +4462,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 美国 |
 | SharePoint Online | 美国 |
 | Skype for Business | 美国 |
-| Microsoft Teams | 美国 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
 | MyAnalytics | 美国 |
@@ -4761,7 +4738,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 美国 |
 | SharePoint Online | 美国 |
 | Skype for Business | 美国 |
-| Microsoft Teams | 美国 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
 | MyAnalytics | 美国 |
@@ -4899,7 +4876,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 美国 |
 | SharePoint Online | 美国 |
 | Skype for Business | 美国 |
-| Microsoft Teams | 美国 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
 | MyAnalytics | 美国 |
@@ -5106,7 +5083,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
@@ -5336,7 +5313,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
@@ -5589,7 +5566,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 1 – EMEA |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
