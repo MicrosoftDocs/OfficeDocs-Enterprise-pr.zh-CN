@@ -3,7 +3,7 @@ title: 由世纪互联运营的 Office 365 的 URL 和 IP 地址范围
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 04/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: 本文适用于由中国世纪互联运营的 Office 365。本文列出了由世纪互联运营的 Office 365 所使用的 URL 和 IP 地址范围。
 hideEdit: true
-ms.openlocfilehash: 5c1ae01ef2bb0151721ab20cdd13826fc029f0c1
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 4b5a8deb880b2bcccc7317c4f2089b52c14aec1a
+ms.sourcegitcommit: 5fb126747182108e31594b22e4677f05b1fb9313
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979405"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43928146"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365 的 URL 和 IP 地址范围
 
@@ -40,7 +40,7 @@ ms.locfileid: "42979405"
   
 |||
 |:-----|:-----|
-|**上次更新时间：** 2020/02/28 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。  <br/> |
+|**上次更新时间：** 04/28/2020 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。  <br/> |
 
 从[管理 Office 365 终结点](managing-office-365-endpoints.md)开始了解我们使用此数据管理网络连接的建议。终结点数据在每月月初更新，并在生效前 30 天发布新的 IP 地址和 URL。这使尚未进行自动更新的客户可以在需要新连接之前完成其过程。如果需要解决支持提升、安全事件或其他即时操作要求，终结点也可以在月内更新。以下页面上显示的数据全部由基于 REST 的 Web 服务生成。如果使用脚本或网络设备访问此数据，应直接转到 [Web 服务](office-365-ip-web-service.md)。
 
