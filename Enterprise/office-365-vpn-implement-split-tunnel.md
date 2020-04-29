@@ -3,7 +3,7 @@ title: 实现 Office 365 的 VPN 拆分隧道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/14/2020
+ms.date: 4/24/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,27 +17,27 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: 0594be194bda222fafa0d00a93e0ee43814cd334
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547660"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804027"
 ---
-# <a name="implementing-vpn-split-tunnelling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
+# <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
 >[!NOTE]
 >本主题是一组针对远程用户的 Office 365 优化的主题的一部分。
->- 有关使用 VPN 拆分隧道为远程用户优化 Office 365 连接的概述，请参阅[概述：Office 365 的 VPN 拆分隧道](office-365-vpn-split-tunnel.md)。
+>- 有关使用 VPN 拆分隧道为远程用户优化 Office 365 连接的概述，请参阅[概述： Office 365 的 VPN 拆分隧道](office-365-vpn-split-tunnel.md)。
 >- 有关为中国用户优化 Office 365 全球租户性能的详细信息，请参阅[面向中国用户的 Office 365 性能优化](office-365-networking-china.md)。
 
 多年来，企业一直在使用 VPN 来支持用户的远程体验。 虽然核心工作负载保持在本地，但通过公司网络上的数据中心路由的远程客户端的 VPN 是供远程用户访问公司资源的主要方法。 为保证这些连接的安全性，企业将沿 VPN 路径构建网络安全解决方案层。 这样做是为了保护内部基础结构和保护外部网站的移动浏览，方法是将流量重新路由到 VPN，然后通过本地 Internet 外围设备路由出去。 VPN、网络外围和相关的安全基础结构通常是针对特定的流量构建和扩展的，通常大多数连接都是从公司网络内部发起的，并且大多数连接都位于内部网络边界内。
 
-在相当长的一段时间内，只要远程用户的并发规模适中且遍历 VPN 的流量较低，那么所有来自远程用户设备的连接都被路由回本地网络的 VPN 模型（这称为**强制隧道**）基本上是可持续的。  一些客户甚至在他们的应用从企业外围转移到公共 SaaS 云之后，仍继续将 VPN 强制隧道用作现状，Office 365 就是一个很好的例子。
+在相当长的一段时间内，只要远程用户的并发规模适中且遍历 VPN 的流量较低，那么所有来自远程用户设备的连接都被路由回本地网络的 VPN 模型（这称为**强制隧道**）基本上是可持续的。  一些客户甚至在他们的应用从企业外围转移到公共 SaaS 云之后，仍继续将 VPN 强制隧道用作现状， Office 365 就是一个很好的例子。
 
 将强制隧道 VPN 用于连接分布式和性能敏感云应用程序是非常不理想的，但是这种负面影响可能已经被一些企业所接受，从而从安全的角度维持现状。 下面是此场景的一个示例图：
 
-![拆分隧道 VPN 配置](media/vpn-split-tunnelling/vpn-ent-challenge.png)
+![拆分隧道 VPN 配置](media/vpn-split-tunneling/vpn-ent-challenge.png)
 
 这个问题多年来一直在加剧，许多客户报告了网络流量模式的重大转变。 过去停留在本地的流量现在连接到外部云终结点。 许多 Microsoft 客户报告，以前大约 80% 的网络流量都来自内部（上图中用虚线表示）。 到 2020 年，随着他们将主要的工作负载转移到云上，这一数字现在约为 20% 或更低，这些趋势在其他企业中并不罕见。 随着时间的推移和云历程的发展，上述模型变得愈加累赘且不可持续，这使得组织在迁移到以云为中心的世界时的敏捷度受到影响。
 
@@ -63,39 +63,39 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 
 这是大多数企业客户最常用的入门方案。 使用强制 VPN 意味着无论终结点是否位于公司网络内，100% 的流量都将定向到公司网络。 然后，任何外部 (Internet) 限制流量（如 Office 365 或 Internet 浏览）都会从本地安全设备（如代理）中回流。 在目前近 100% 的用户都在远程工作的情况下，这种模式会因此给 VPN 基础结构带来极高的负载，很可能会显著降低所有公司流量的性能，从而在危机时刻影响企业的高效运营。
 
-![VPN 强制隧道模型 1](media/vpn-split-tunnelling/vpn-model-1.png)
+![VPN 强制隧道模型 1](media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. VPN 强制隧道（有几个受信任的异常）
 
 对于企业运营来说，该模型的运行效率要高得多，因为它允许少量高负载和高延迟敏感的受控和定义终结点绕过 VPN 隧道，直接进入本例中的 Office 365 服务。 这极大地提高了卸载服务的性能，还减少了 VPN 基础结构的负载，从而允许仍然需要它的元素以更低的资源争用进行操作。 本文将针对这个模型重点介绍如何帮助实现过渡，因为它允许快速采取简单的已定义操作，同时生成大量积极的成果。
 
-![拆分隧道 VPN 模型 2](media/vpn-split-tunnelling/vpn-model-2.png)
+![拆分隧道 VPN 模型 2](media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. VPN 强制隧道（有多个例外）
 
 第三种模型拓宽了模型 2 的范围，它不是直接发送一小组已定义的终结点，而是将所有流量发送到受信任的服务（如 Office 365、SalesForce 等）。 这可进一步减少公司 VPN 基础结构的负载，并提高已定义服务的性能。 由于此模型很可能需要更多时间来评估实现的可行性，因此，一旦模型 2 成功就位，就可以在不久后迭代执行这一步骤。
 
-![拆分隧道 VPN 模型 3](media/vpn-split-tunnelling/vpn-model-3.png)
+![拆分隧道 VPN 模型 3](media/vpn-split-tunneling/vpn-model-3.png)
 
 ### <a name="4-vpn-selective-tunnel"></a>4. VPN 选择性隧道
 
 此模型与第三个模型相反，因为只有标识为具有公司 IP 地址的流量才通过 VPN 隧道发送，因此 Internet 路径是其他所有流量的默认路由。 此模型要求组织能够很好地适应[零信任](https://www.microsoft.com/security/zero-trust?rtc=1)路径，以便能够安全地实现此模型。 应注意的是，此模型或某些变体可能随着时间的推移而成为必要的默认模型，因为越来越多的服务将从公司网络移动到云中。 Microsoft 在内部使用此模型；有关 Microsoft 实现 VPN 拆分隧道的更多信息，请参阅[运行 VPN：Microsoft 如何让远程工作人员互联](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)。
 
-![拆分隧道 VPN 模型 4](media/vpn-split-tunnelling/vpn-model-4.png)
+![拆分隧道 VPN 模型 4](media/vpn-split-tunneling/vpn-model-4.png)
 
 ### <a name="5-no-vpn"></a>5. 无 VPN
 
 第 2 种模型的更高级版本，其中任何内部服务都是通过新式安全方法或 SDWAN 解决方案发布的，如 Azure AD 代理、MCAS、Zscaler ZPA 等。
 
-![拆分隧道 VPN 模型 5](media/vpn-split-tunnelling/vpn-model-5.png)
+![拆分隧道 VPN 模型 5](media/vpn-split-tunneling/vpn-model-5.png)
 
-## <a name="implement-vpn-split-tunnelling"></a>实现 VPN 拆分隧道
+## <a name="implement-vpn-split-tunneling"></a>实现 VPN 拆分隧道
 
 在本节中，你将在[常见 VPN 方案](#common-vpn-scenarios)部分找到将 VPN 客户端体系结构从 _VPN 强制隧道_迁移到 _VPN 强制隧道（有几个受信任的异常）_、[VPN 拆分隧道模型 #2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) 所需的简单步骤。
 
 下图显示了建议的 VPN 拆分隧道解决方案的工作原理：
 
-![拆分隧道 VPN 解决方案详细信息](media/vpn-split-tunnelling/vpn-split-detail.png)
+![拆分隧道 VPN 解决方案详细信息](media/vpn-split-tunneling/vpn-split-detail.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 标识要优化的终结点
 
@@ -176,7 +176,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 添加路由后，可通过在命令提示符或 PowerShell 中运行 **route print** 来确认路由表是否正确。 输出应包含添加的路由，显示接口索引（本例为 _22_）和该接口的网关（本例为 _192.168.1.1_）：
 
-![路由打印输出](media/vpn-split-tunnelling/vpn-route-print.png)
+![路由打印输出](media/vpn-split-tunneling/vpn-route-print.png)
 
 若要在“优化”类别中添加**所有**当前 IP 地址范围的路由，可使用以下脚本变体查询 [Office 365 IP 和 URL Web 服务](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)，以获取当前优化 IP 子网集合并将其添加到路由表。
 
@@ -226,7 +226,8 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 在某些情况下（通常与 Teams 客户端配置无关），即使有正确的路由，媒体流量仍会遍历 VPN 隧道。 如果遇到这种情况，只需使用防火墙规则来阻止 Teams IP 子网或端口使用 VPN。
 
-要使其在 100% 的场景中工作，当前还有一个要求是添加 IP 范围 **13.107.60.1/32**。 由于最新的 Teams 客户端于 **2020 年 4 月**初发布，因此短期内此要求不是必须的。 如有其他可用信息，我们将立即更新这篇文章及内部版本详细信息。
+>[!IMPORTANT]
+>为确保 Teams 媒体流量在所有 VPN 方案中以所需的方式进行路由，请确保至少运行以下客户端版本号或更高版本，因为这些版本改进了客户端检测可用网络路径的方式。<br>Windows 版本号码：**1.3.00.9267**<br>Mac 版本号码：**1.3.00.9221**
 
 信令流量是通过 HTTPS 执行的，它不像媒体流量那样对延迟敏感，并在 URL/IP 数据中标记为**允许**，因此如果需要，可以安全地通过 VPN 客户端进行路由。
 
@@ -248,7 +249,7 @@ Skype for Business Online 生成用户名/密码，可用于通过_围绕 NAT �
 
 策略准备就绪后，应确认其是否按预期工作。 可通过多种方法来测试路径是否已正确设置为使用本地 Internet 连接：
 
-- 运行 [Office 365 网络载入工具](https://aka.ms/netonboard)，这将为你运行连接测试，包括上面所述的跟踪路由。 此外，我们还将 VPN 测试添加到此工具中，这也将提供一些额外的见解。
+- 运行 [Microsoft 365 连接测试](https://aka.ms/netonboard)，这将为你运行连接测试，包括上面所述的跟踪路由。 此外，我们还将 VPN 测试添加到此工具中，这也将提供一些额外的见解。
 
 - 对于拆分隧道范围内的终结点的简单 tracert，应显示所采用的路径，例如：
 
