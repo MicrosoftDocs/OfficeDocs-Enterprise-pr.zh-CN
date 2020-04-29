@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 摘要：在计划 Office 365 部署时要使用的 DNS 记录的引用列表。
-ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: f7a4363f0b93a0b8735d3eae21e6e70e6b0ac3ba
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890341"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901225"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -137,10 +137,9 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ||如果你使用的是...  <br/> |用途  <br/> |添加以下包含内容  <br/> |
 |1  <br/> |所有电子邮件系统（必需）  <br/> |以此值开头的所有 SPF 记录  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online（常见）  <br/> |仅使用 Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
-|3  <br/> |SharePoint Online 和 Exchange Online（常见）  <br/> |结合使用 Exchange Online 和 SharePoint Online  <br/> |include:sharepointonline.com  <br/> |
-|4  <br/> |第三方电子邮件系统（不太常见）  <br/> ||包括：\<电子邮件系统，例如，mail.contoso.com\>  <br/> |
-|5  <br/> |本地邮件系统（不太常见）  <br/> |在使用 Exchange Online Protection 或 Exchange Online 以及其他邮件系统的情况下使用  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> 括号 (\<\>) 中的值应是为你的域发送电子邮件的其他邮件系统。  <br/> |
-|6  <br/> |所有电子邮件系统（必需）  <br/> ||-all  <br/> |
+|3  <br/> |第三方电子邮件系统（不太常见）  <br/> ||包括：\<电子邮件系统，例如，mail.contoso.com\>  <br/> |
+|4  <br/> |本地邮件系统（不太常见）  <br/> |在使用 Exchange Online Protection 或 Exchange Online 以及其他邮件系统的情况下使用  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> 括号 (\<\>) 中的值应是为你的域发送电子邮件的其他邮件系统。  <br/> |
+|5  <br/> |所有电子邮件系统（必需）  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>示例：添加到现有 SPF 记录
 <a name="bkmk_addtospf"> </a>
