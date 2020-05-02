@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 本文介绍 SharePoint Online 中启用了 SharePoint 发布的导航选项网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。 本文不适用于经典团队网站。
-ms.openlocfilehash: 410be307fca62c987baed39601e122717a6bebcc
-ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
+ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170650"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004757"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 

@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: 本文介绍如何将缩小和捆绑技术与 Web Essentials 结合使用，以减少 HTTP 请求数，并减少在 SharePoint Online 中加载页面所需的时间。
-ms.openlocfilehash: ca0ad53f2c854226b729a94e345a553850517eaf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844893"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004767"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online 中的缩小和捆绑
 
