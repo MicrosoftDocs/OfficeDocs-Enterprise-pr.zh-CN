@@ -13,16 +13,17 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+- MET150
 f1.keywords:
 - NOCSH
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 使用集中部署 PowerShell cmdlet 可帮助您部署和管理 Office 365 组织的 Office 外接程序。
-ms.openlocfilehash: 586b66ac3632a5d86a63014a50f3c605b1c005e7
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3e3ca622f4c7a84d1fb267880ebf13cc56ad9373
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844153"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004495"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 

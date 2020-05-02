@@ -8,18 +8,20 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 摘要：了解如何使用 Windows PowerShell 将电子邮件迁移到 Office 365。
-ms.openlocfilehash: 6bba635d0f8022a1bae0b6b95d9d66a9a0d3d2ad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: df8c6715f47de4a7edce091c69c1b8218cbdcd54
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844173"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004535"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>使用 PowerShell 以将电子邮件迁移到 Office 365 中
 

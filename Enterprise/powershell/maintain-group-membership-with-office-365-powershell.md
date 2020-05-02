@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 了解如何使用 Office 365 PowerShell 维护 Office 365 组中的成员身份。
-ms.openlocfilehash: 397f8d93df5e9abef0779e4eb56df7bab9ef2344
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0e6c5f2e27f9d146bb2a053bd3bdb6694fb07276
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841479"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004625"
 ---
 # <a name="maintain-group-membership-with-office-365-powershell"></a>使用 Office 365 PowerShell 维护组成员身份
 

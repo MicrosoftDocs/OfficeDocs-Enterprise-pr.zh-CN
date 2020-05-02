@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 说明如何使用 Office 365 PowerShell 查看有关 Office 365 组织中可用的许可计划、服务和许可证的信息。
-ms.openlocfilehash: 83c42fdaafcee94f86bd86253f13c64725b047c2
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: a130faef640e875bde864ff26e46863e82f6df7a
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206590"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004135"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看许可证和服务
 

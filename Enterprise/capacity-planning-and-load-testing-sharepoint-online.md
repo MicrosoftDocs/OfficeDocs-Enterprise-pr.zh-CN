@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 本文介绍如何在不执行传统负载测试的情况下部署到 SharePoint Online，因为这是不允许的。
-ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d082dbd93f9724080118f5e387713dc374e50643
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844703"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004605"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量规划和负载测试 SharePoint Online
 本文介绍了如何在不进行传统负载测试的情况下部署到 SharePoint Online，因为 SharePoint Online 不允许进行负载测试。 SharePoint Online 是云服务，服务中负载的负载功能、运行状况和总体平衡由 Microsoft 进行管理。
@@ -41,6 +43,6 @@ ms.locfileid: "41844703"
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>为什么您无法加载测试 SharePoint Online
 在本地环境中，负载测试用于验证扩展假设并最终发现服务器场的中断点;通过将其与负载进行饱和。 
 
-通过 SharePoint Online，我们需要执行不同的操作，因为扩展相对于特定试探法进行了相对流动和调整、限制和控件负载。 作为大型规模的多租户环境，我们必须保护同一服务器场中的所有租户，因此我们将自动限制任何负载测试。 如果您现在尝试加载测试，除了受到限制之外，您将收到 disappointing 和潜在的误导性结果，因为您在测试期间测试的服务器场可能在测试窗口中或在测试之后的几小时内发生扩展更改，如扩展和服务器场平衡操作在不断执行。
+通过 SharePoint Online，我们需要执行不同的操作，因为扩展相对于特定试探法进行了相对流动和调整、限制和控件负载。 作为大型规模的多租户环境，我们必须保护同一服务器场中的所有租户，因此我们将自动限制任何负载测试。 如果您在尝试加载测试时除了受到限制之外，您还会收到 disappointing 和潜在的误导结果，因为您在测试期间测试的服务器场可能在测试时段内或在测试之后的几小时内发生扩展更改，因为在进行扩展和服务器场平衡操作的过程中将会不断进行。
 
 而不是尝试将测试 SharePoint 作为服务进行加载，而是侧重于遵循建议的做法，并遵循[创建、启动和维护正常的门户](https://go.microsoft.com/fwlink/?linkid=2105838)指南。

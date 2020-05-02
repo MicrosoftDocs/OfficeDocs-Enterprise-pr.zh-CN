@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -15,12 +17,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 摘要：使用适用于 Office 365 的 Windows PowerShell 管理客户租赁。
-ms.openlocfilehash: f4b3dcee297a4b4e09c76c2790ed74d18407d80e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bf39ce68989420c00ac3ac91bac220833971736f
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844213"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004155"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴管理 Office 365 租户
 

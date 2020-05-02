@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 Office 365 PowerShell 管理 SharePoint Online 用户、组和网站。
-ms.openlocfilehash: 54a493cc7635562733241fb371ecdb59477ac717
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c820fd009635a8a9b27f28d858d345794bea6334
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841319"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004115"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 SharePoint Online 用户和组
 

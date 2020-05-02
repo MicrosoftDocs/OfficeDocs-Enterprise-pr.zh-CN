@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -15,12 +17,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 摘要：联合和云解决方案提供商 (CSP) 合作伙伴 可以使用 Windows PowerShell 管理 Office 365 客户租户。
-ms.openlocfilehash: 5e3fb67cad453593119347e2de07222f35d03f56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 35aca54af9dcfb6c9aa31c893f7213b053e111d2
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844203"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004165"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴管理 Office 365
 

@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 摘要：了解如何使用 Office 365 PowerShell 管理 Office 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和 Office 365 安全与合规中心。
-ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fbc10833d3ee1e7377e6ed68adb7d2299fce72fa
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841429"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004565"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 Office 365
 
@@ -52,7 +54,7 @@ Office 365 PowerShell 是一种功能强大的管理工具，可补充 Microsoft
 
     如果您已安装 Office 365 PowerShell 模块并且想要从现有的系统中迁移您的电子邮件，请从这里开始。
 
-- [安全性 & 合规性中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [安全与合规中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
     若要使用自动化命令来管理安全与合规中心，请从本主题入手。
 

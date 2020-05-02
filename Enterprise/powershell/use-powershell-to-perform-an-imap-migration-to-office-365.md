@@ -8,18 +8,20 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的 IMAP 迁移。
-ms.openlocfilehash: 271e8b235279d1661ba95ae75f070d8ce6d2496d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 051b290a93fbdf7636595d31e6087fccaaf73761
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841279"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004505"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>使用 PowerShell 执行将 IMAP 迁移到 Office 365
 
