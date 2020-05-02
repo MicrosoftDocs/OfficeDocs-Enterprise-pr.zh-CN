@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,44 +19,44 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 Office 365 PowerShell 管理 SharePoint Online 用户、组和网站。
-ms.openlocfilehash: 54a493cc7635562733241fb371ecdb59477ac717
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c820fd009635a8a9b27f28d858d345794bea6334
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841319"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004115"
 ---
-# <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a><span data-ttu-id="4915e-103">使用 Office 365 PowerShell 管理 SharePoint Online 用户和组</span><span class="sxs-lookup"><span data-stu-id="4915e-103">Manage SharePoint Online users and groups with Office 365 PowerShell</span></span>
+# <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a><span data-ttu-id="4552b-103">使用 Office 365 PowerShell 管理 SharePoint Online 用户和组</span><span class="sxs-lookup"><span data-stu-id="4552b-103">Manage SharePoint Online users and groups with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="4915e-104">如果您是使用大型用户帐户或组列表的 SharePoint Online 管理员，并且想要更轻松地管理它们，则可以使用 Office 365 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="4915e-104">If you are a SharePoint Online administrator who works with large lists of user accounts or groups and wants an easier way to manage them, you can use Office 365 PowerShell.</span></span> 
+<span data-ttu-id="4552b-104">如果您是使用大型用户帐户或组列表的 SharePoint Online 管理员，并且想要更轻松地管理它们，则可以使用 Office 365 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="4552b-104">If you are a SharePoint Online administrator who works with large lists of user accounts or groups and wants an easier way to manage them, you can use Office 365 PowerShell.</span></span> 
 
-<span data-ttu-id="4915e-105">在开始之前，本主题中的过程要求您连接到 SharePoint Online。</span><span class="sxs-lookup"><span data-stu-id="4915e-105">Before you begin, the procedures in this topic require you to connect to SharePoint Online.</span></span> <span data-ttu-id="4915e-106">有关说明，请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)</span><span class="sxs-lookup"><span data-stu-id="4915e-106">For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)</span></span>
+<span data-ttu-id="4552b-105">在开始之前，本主题中的过程要求您连接到 SharePoint Online。</span><span class="sxs-lookup"><span data-stu-id="4552b-105">Before you begin, the procedures in this topic require you to connect to SharePoint Online.</span></span> <span data-ttu-id="4552b-106">有关说明，请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)</span><span class="sxs-lookup"><span data-stu-id="4552b-106">For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)</span></span>
 
-## <a name="get-a-list-of-sites-groups-and-users"></a><span data-ttu-id="4915e-107">获取网站、组和用户的列表</span><span class="sxs-lookup"><span data-stu-id="4915e-107">Get a list of sites, groups, and users</span></span>
+## <a name="get-a-list-of-sites-groups-and-users"></a><span data-ttu-id="4552b-107">获取网站、组和用户的列表</span><span class="sxs-lookup"><span data-stu-id="4552b-107">Get a list of sites, groups, and users</span></span>
 
-<span data-ttu-id="4915e-p102">开始管理用户和组之前，你需要获取网站、组和用户的列表。然后可以使用此信息完成本文中的示例。</span><span class="sxs-lookup"><span data-stu-id="4915e-p102">Before we start to manage users and groups, you need to get lists of your sites, groups, and users. You can then use this information to work through the example in this article.</span></span>
+<span data-ttu-id="4552b-p102">开始管理用户和组之前，你需要获取网站、组和用户的列表。然后可以使用此信息完成本文中的示例。</span><span class="sxs-lookup"><span data-stu-id="4552b-p102">Before we start to manage users and groups, you need to get lists of your sites, groups, and users. You can then use this information to work through the example in this article.</span></span>
 
-<span data-ttu-id="4915e-110">使用此命令获取租户中的网站列表：</span><span class="sxs-lookup"><span data-stu-id="4915e-110">Get a list of the sites in your tenant with this command:</span></span>
+<span data-ttu-id="4552b-110">使用此命令获取租户中的网站列表：</span><span class="sxs-lookup"><span data-stu-id="4552b-110">Get a list of the sites in your tenant with this command:</span></span>
 
 ```powershell
 Get-SPOSite
 ```
 
-<span data-ttu-id="4915e-111">使用此命令获取租户中的组列表：</span><span class="sxs-lookup"><span data-stu-id="4915e-111">Get a list of the groups in your tenant with this command:</span></span>
+<span data-ttu-id="4552b-111">使用此命令获取租户中的组列表：</span><span class="sxs-lookup"><span data-stu-id="4552b-111">Get a list of the groups in your tenant with this command:</span></span>
 
 ```powershell
 Get-SPOSite | ForEach {Get-SPOSiteGroup -Site $_.Url} | Format-Table
 ```
 
-<span data-ttu-id="4915e-112">使用此命令获取租户中的用户列表：</span><span class="sxs-lookup"><span data-stu-id="4915e-112">Get a list of the users in your tenant with this command:</span></span>
+<span data-ttu-id="4552b-112">使用此命令获取租户中的用户列表：</span><span class="sxs-lookup"><span data-stu-id="4552b-112">Get a list of the users in your tenant with this command:</span></span>
 
 ```powershell
 Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 ```
 
-## <a name="add-a-user-to-the-site-collection-administrators-group"></a><span data-ttu-id="4915e-113">将用户添加到网站集管理员组</span><span class="sxs-lookup"><span data-stu-id="4915e-113">Add a user to the Site Collection Administrators group</span></span>
+## <a name="add-a-user-to-the-site-collection-administrators-group"></a><span data-ttu-id="4552b-113">将用户添加到网站集管理员组</span><span class="sxs-lookup"><span data-stu-id="4552b-113">Add a user to the Site Collection Administrators group</span></span>
 
-<span data-ttu-id="4915e-114">您可以使用`Set-SPOUser` cmdlet 将用户添加到网站集上的网站集管理员列表中。</span><span class="sxs-lookup"><span data-stu-id="4915e-114">You use the `Set-SPOUser` cmdlet to add a user to the list of Site Collection Administrators on a site collection.</span></span>
+<span data-ttu-id="4552b-114">您可以使用`Set-SPOUser` cmdlet 将用户添加到网站集上的网站集管理员列表中。</span><span class="sxs-lookup"><span data-stu-id="4552b-114">You use the `Set-SPOUser` cmdlet to add a user to the list of Site Collection Administrators on a site collection.</span></span>
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -63,9 +65,9 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-<span data-ttu-id="4915e-115">若要使用这些命令，请使用正确的名称替换引号内的所有内容，包括 < 和 > 字符。</span><span class="sxs-lookup"><span data-stu-id="4915e-115">To use these commands, replace replace everything within the quotes, including the < and > characters, with the correct names.</span></span>
+<span data-ttu-id="4552b-115">若要使用这些命令，请使用正确的名称替换引号内的所有内容，包括 < 和 > 字符。</span><span class="sxs-lookup"><span data-stu-id="4552b-115">To use these commands, replace replace everything within the quotes, including the < and > characters, with the correct names.</span></span>
 
-<span data-ttu-id="4915e-116">例如，以下命令集将 Opal Castillo （用户名 opalc）添加到 contoso 租赁中的 ContosoTest 网站集上的网站集管理员列表：</span><span class="sxs-lookup"><span data-stu-id="4915e-116">For example, this set of commands adds Opal Castillo (user name opalc) the list of Site Collection Administrators on the ContosoTest site collection in the contoso tenancy:</span></span>
+<span data-ttu-id="4552b-116">例如，以下命令集将 Opal Castillo （用户名 opalc）添加到 contoso 租赁中的 ContosoTest 网站集上的网站集管理员列表：</span><span class="sxs-lookup"><span data-stu-id="4552b-116">For example, this set of commands adds Opal Castillo (user name opalc) the list of Site Collection Administrators on the ContosoTest site collection in the contoso tenancy:</span></span>
 
 ```powershell
 $tenant = "contoso"
@@ -74,11 +76,11 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-<span data-ttu-id="4915e-117">您可以将这些命令复制并粘贴到记事本中，将 $tenant、$site 和 $user 的变量值更改为您的环境中的实际值，然后将其粘贴到您的 SharePoint Online 命令行管理程序窗口中，以运行它们。</span><span class="sxs-lookup"><span data-stu-id="4915e-117">You can copy and paste these commands into Notepad, change the variable values for $tenant, $site, and $user to actual values from your environment, and then paste this into your SharePoint Online Management Shell window to run them.</span></span>
+<span data-ttu-id="4552b-117">您可以将这些命令复制并粘贴到记事本中，将 $tenant、$site 和 $user 的变量值更改为您的环境中的实际值，然后将其粘贴到您的 SharePoint Online 命令行管理程序窗口中，以运行它们。</span><span class="sxs-lookup"><span data-stu-id="4552b-117">You can copy and paste these commands into Notepad, change the variable values for $tenant, $site, and $user to actual values from your environment, and then paste this into your SharePoint Online Management Shell window to run them.</span></span>
 
-## <a name="add-a-user-to-other-site-collection-groups"></a><span data-ttu-id="4915e-118">将用户添加到其他网站集组</span><span class="sxs-lookup"><span data-stu-id="4915e-118">Add a user to other site collection groups</span></span>
+## <a name="add-a-user-to-other-site-collection-groups"></a><span data-ttu-id="4552b-118">将用户添加到其他网站集组</span><span class="sxs-lookup"><span data-stu-id="4552b-118">Add a user to other site collection groups</span></span>
 
-<span data-ttu-id="4915e-119">在此任务中，我们将使用`Add-SPOUser` cmdlet 将用户添加到网站集上的 SharePoint 组。</span><span class="sxs-lookup"><span data-stu-id="4915e-119">In this task, we'll use the `Add-SPOUser` cmdlet to add a user to a SharePoint group on a site collection.</span></span>
+<span data-ttu-id="4552b-119">在此任务中，我们将使用`Add-SPOUser` cmdlet 将用户添加到网站集上的 SharePoint 组。</span><span class="sxs-lookup"><span data-stu-id="4552b-119">In this task, we'll use the `Add-SPOUser` cmdlet to add a user to a SharePoint group on a site collection.</span></span>
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -89,7 +91,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ```
 
-<span data-ttu-id="4915e-120">例如，让我们将 Glen Rife （用户名 glenr）添加到 contoso 租赁的 ContosoTest 网站集上的审计员组中：</span><span class="sxs-lookup"><span data-stu-id="4915e-120">For example, let’s add Glen Rife (user name glenr) to the Auditors group on the ContosoTest site collection in the contoso tenancy:</span></span>
+<span data-ttu-id="4552b-120">例如，让我们将 Glen Rife （用户名 glenr）添加到 contoso 租赁的 ContosoTest 网站集上的审计员组中：</span><span class="sxs-lookup"><span data-stu-id="4552b-120">For example, let’s add Glen Rife (user name glenr) to the Auditors group on the ContosoTest site collection in the contoso tenancy:</span></span>
 
 ```powershell
 $tenant = "contoso"
@@ -99,9 +101,9 @@ $group = "Auditors"
 Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
-## <a name="create-a-site-collection-group"></a><span data-ttu-id="4915e-121">创建网站集组</span><span class="sxs-lookup"><span data-stu-id="4915e-121">Create a site collection group</span></span>
+## <a name="create-a-site-collection-group"></a><span data-ttu-id="4552b-121">创建网站集组</span><span class="sxs-lookup"><span data-stu-id="4552b-121">Create a site collection group</span></span>
 
-<span data-ttu-id="4915e-122">您可以使用`New-SPOSiteGroup` cmdlet 创建新的 SharePoint 组，并将其添加到网站集。</span><span class="sxs-lookup"><span data-stu-id="4915e-122">You use the `New-SPOSiteGroup` cmdlet to create a new SharePoint group and add it to a site collection.</span></span>
+<span data-ttu-id="4552b-122">您可以使用`New-SPOSiteGroup` cmdlet 创建新的 SharePoint 组，并将其添加到网站集。</span><span class="sxs-lookup"><span data-stu-id="4552b-122">You use the `New-SPOSiteGroup` cmdlet to create a new SharePoint group and add it to a site collection.</span></span>
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -110,9 +112,9 @@ $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
-<span data-ttu-id="4915e-123">组属性（如权限级别）稍后可使用`Set-SPOSiteGroup` cmdlet 进行更新。</span><span class="sxs-lookup"><span data-stu-id="4915e-123">Group properties, such as permission levels, can be updated later by using the `Set-SPOSiteGroup` cmdlet.</span></span>
+<span data-ttu-id="4552b-123">组属性（如权限级别）稍后可使用`Set-SPOSiteGroup` cmdlet 进行更新。</span><span class="sxs-lookup"><span data-stu-id="4552b-123">Group properties, such as permission levels, can be updated later by using the `Set-SPOSiteGroup` cmdlet.</span></span>
 
-<span data-ttu-id="4915e-124">例如，让我们在 contoso 租赁中向审计员组添加对 contosotest 网站集的 "仅查看" 权限：</span><span class="sxs-lookup"><span data-stu-id="4915e-124">For example, let’s add the Auditors group with View Only permissions to the contosotest site collection in the contoso tenancy:</span></span>
+<span data-ttu-id="4552b-124">例如，让我们在 contoso 租赁中向审计员组添加对 contosotest 网站集的 "仅查看" 权限：</span><span class="sxs-lookup"><span data-stu-id="4552b-124">For example, let’s add the Auditors group with View Only permissions to the contosotest site collection in the contoso tenancy:</span></span>
 
 ```powershell
 $tenant = "contoso"
@@ -122,13 +124,13 @@ $level = "View Only"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
-## <a name="remove-users-from-a-group"></a><span data-ttu-id="4915e-125">从组中删除用户</span><span class="sxs-lookup"><span data-stu-id="4915e-125">Remove users from a group</span></span>
+## <a name="remove-users-from-a-group"></a><span data-ttu-id="4552b-125">从组中删除用户</span><span class="sxs-lookup"><span data-stu-id="4552b-125">Remove users from a group</span></span>
 
-<span data-ttu-id="4915e-p103">有时必须从某个网站甚至是所有网站删除用户。员工可能从一个部门转移到另一个部门，或离开公司。在 UI 中可以很容易地对一个员工进行这样的操作，但如果是将整个部门从一个网站移动到另一个网站，这并非易事。</span><span class="sxs-lookup"><span data-stu-id="4915e-p103">Sometimes you have to remove a user from a site or even all sites. Perhaps the employee moves from one division to another or leaves the company. You can do this for one employee easily in the UI, but this is not easily done when you have to move a complete division from one site to another.</span></span>
+<span data-ttu-id="4552b-p103">有时必须从某个网站甚至是所有网站删除用户。员工可能从一个部门转移到另一个部门，或离开公司。在 UI 中可以很容易地对一个员工进行这样的操作，但如果是将整个部门从一个网站移动到另一个网站，这并非易事。</span><span class="sxs-lookup"><span data-stu-id="4552b-p103">Sometimes you have to remove a user from a site or even all sites. Perhaps the employee moves from one division to another or leaves the company. You can do this for one employee easily in the UI, but this is not easily done when you have to move a complete division from one site to another.</span></span>
 
-<span data-ttu-id="4915e-129">不过，通过使用 SharePoint Online 命令行管理程序和 CSV 文件，这是快速而简单的。</span><span class="sxs-lookup"><span data-stu-id="4915e-129">However by using the SharePoint Online Management Shell and CSV files, this is fast and easy.</span></span> <span data-ttu-id="4915e-130">在本任务中，将使用 Windows PowerShell 将用户从一个网站集安全组删除。</span><span class="sxs-lookup"><span data-stu-id="4915e-130">In this task, you'll use Windows PowerShell to remove a user from a site collection security group.</span></span> <span data-ttu-id="4915e-131">然后使用 CSV 文件从不同的网站删除大量用户。</span><span class="sxs-lookup"><span data-stu-id="4915e-131">Then you'll use a CSV file and remove lots of users from different sites.</span></span> 
+<span data-ttu-id="4552b-129">不过，通过使用 SharePoint Online 命令行管理程序和 CSV 文件，这是快速而简单的。</span><span class="sxs-lookup"><span data-stu-id="4552b-129">However by using the SharePoint Online Management Shell and CSV files, this is fast and easy.</span></span> <span data-ttu-id="4552b-130">在本任务中，将使用 Windows PowerShell 将用户从一个网站集安全组删除。</span><span class="sxs-lookup"><span data-stu-id="4552b-130">In this task, you'll use Windows PowerShell to remove a user from a site collection security group.</span></span> <span data-ttu-id="4552b-131">然后使用 CSV 文件从不同的网站删除大量用户。</span><span class="sxs-lookup"><span data-stu-id="4552b-131">Then you'll use a CSV file and remove lots of users from different sites.</span></span> 
 
-<span data-ttu-id="4915e-132">我们将使用 "Get-spouser" cmdlet 从网站集组中删除单个 Office 365 用户，这样就可以看到命令语法。</span><span class="sxs-lookup"><span data-stu-id="4915e-132">We'll be using the 'Remove-SPOUser' cmdlet to remove a single Office 365 user from a site collection group just so we can see the command syntax.</span></span> <span data-ttu-id="4915e-133">语法如下所示：</span><span class="sxs-lookup"><span data-stu-id="4915e-133">Here is how the syntax looks:</span></span>
+<span data-ttu-id="4552b-132">我们将使用 "Get-spouser" cmdlet 从网站集组中删除单个 Office 365 用户，这样就可以看到命令语法。</span><span class="sxs-lookup"><span data-stu-id="4552b-132">We'll be using the 'Remove-SPOUser' cmdlet to remove a single Office 365 user from a site collection group just so we can see the command syntax.</span></span> <span data-ttu-id="4552b-133">语法如下所示：</span><span class="sxs-lookup"><span data-stu-id="4552b-133">Here is how the syntax looks:</span></span>
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -137,7 +139,7 @@ $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
-<span data-ttu-id="4915e-134">例如，让我们从 contoso 租赁的 contosotest 网站集的网站集审核员组中删除胡继 Overby：</span><span class="sxs-lookup"><span data-stu-id="4915e-134">For example, let’s remove Bobby Overby from the site collection Auditors group in the contosotest site collection in the contoso tenancy:</span></span>
+<span data-ttu-id="4552b-134">例如，让我们从 contoso 租赁的 contosotest 网站集的网站集审核员组中删除胡继 Overby：</span><span class="sxs-lookup"><span data-stu-id="4552b-134">For example, let’s remove Bobby Overby from the site collection Auditors group in the contosotest site collection in the contoso tenancy:</span></span>
 
 ```powershell
 $tenant = "contoso"
@@ -147,7 +149,7 @@ $group = "Auditors"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
-<span data-ttu-id="4915e-135">假定我们要将 Bobby 从他当前所在的所有组中删除。</span><span class="sxs-lookup"><span data-stu-id="4915e-135">Suppose we wanted to remove Bobby from all the groups he is currently in.</span></span> <span data-ttu-id="4915e-136">方法如下：</span><span class="sxs-lookup"><span data-stu-id="4915e-136">Here is how we would do that:</span></span>
+<span data-ttu-id="4552b-135">假定我们要将 Bobby 从他当前所在的所有组中删除。</span><span class="sxs-lookup"><span data-stu-id="4552b-135">Suppose we wanted to remove Bobby from all the groups he is currently in.</span></span> <span data-ttu-id="4552b-136">方法如下：</span><span class="sxs-lookup"><span data-stu-id="4552b-136">Here is how we would do that:</span></span>
 
 ```powershell
 $tenant = "contoso"
@@ -156,31 +158,31 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 ```
 
 > [!WARNING]
-> <span data-ttu-id="4915e-137">这只是一个示例。</span><span class="sxs-lookup"><span data-stu-id="4915e-137">This is just an example.</span></span> <span data-ttu-id="4915e-138">除非确实需要将用户从每个组中删除（例如，用户离开公司），否则不应运行此命令。</span><span class="sxs-lookup"><span data-stu-id="4915e-138">You should not run this command unless you really have to remove a user from every group, for example if the user leaves the company.</span></span>
+> <span data-ttu-id="4552b-137">这只是一个示例。</span><span class="sxs-lookup"><span data-stu-id="4552b-137">This is just an example.</span></span> <span data-ttu-id="4552b-138">除非确实需要将用户从每个组中删除（例如，用户离开公司），否则不应运行此命令。</span><span class="sxs-lookup"><span data-stu-id="4552b-138">You should not run this command unless you really have to remove a user from every group, for example if the user leaves the company.</span></span>
 
-## <a name="automate-management-of-large-lists-of-users-and-groups"></a><span data-ttu-id="4915e-139">自动化管理大型用户和组列表</span><span class="sxs-lookup"><span data-stu-id="4915e-139">Automate management of large lists of users and groups</span></span>
+## <a name="automate-management-of-large-lists-of-users-and-groups"></a><span data-ttu-id="4552b-139">自动化管理大型用户和组列表</span><span class="sxs-lookup"><span data-stu-id="4552b-139">Automate management of large lists of users and groups</span></span>
 
-<span data-ttu-id="4915e-140">若要向 SharePoint 网站添加大量帐户并向其授予权限，可以使用 Microsoft 365 管理中心、各个 PowerShell 命令或 PowerShell a CSV 文件。</span><span class="sxs-lookup"><span data-stu-id="4915e-140">To add a large number of accounts to SharePoint sites and give them permissions, you can use the Microsoft 365 admin center, individual PowerShell commands, or PowerShell an a CSV file.</span></span> <span data-ttu-id="4915e-141">在这些选择中，CSV 文件是自动执行此任务的最快方法。</span><span class="sxs-lookup"><span data-stu-id="4915e-141">Of these choices, the CSV file is the fastest way to automate this task.</span></span>
+<span data-ttu-id="4552b-140">若要向 SharePoint 网站添加大量帐户并向其授予权限，可以使用 Microsoft 365 管理中心、各个 PowerShell 命令或 PowerShell a CSV 文件。</span><span class="sxs-lookup"><span data-stu-id="4552b-140">To add a large number of accounts to SharePoint sites and give them permissions, you can use the Microsoft 365 admin center, individual PowerShell commands, or PowerShell an a CSV file.</span></span> <span data-ttu-id="4552b-141">在这些选择中，CSV 文件是自动执行此任务的最快方法。</span><span class="sxs-lookup"><span data-stu-id="4552b-141">Of these choices, the CSV file is the fastest way to automate this task.</span></span>
 
-<span data-ttu-id="4915e-142">基本过程是，创建具有与 Windows PowerShell 脚本所需的参数对应的标头（列）的 CSV 文件。</span><span class="sxs-lookup"><span data-stu-id="4915e-142">The basic process is to create a CSV file that has headers (columns) that correspond to the parameters that the Windows PowerShell script needs.</span></span> <span data-ttu-id="4915e-143">您可以在 Excel 中轻松创建这样的列表，然后将其导出为 CSV 文件。</span><span class="sxs-lookup"><span data-stu-id="4915e-143">You can easily create such a list in Excel and then export it as a CSV file.</span></span> <span data-ttu-id="4915e-144">然后使用 Windows PowerShell 脚本循环访问 CSV 文件中的记录（行），将用户添加到组，将组添加到网站。</span><span class="sxs-lookup"><span data-stu-id="4915e-144">Then, you use a Windows PowerShell script to iterate through records (rows) in the CSV file, adding the users to groups and the groups to sites.</span></span> 
+<span data-ttu-id="4552b-142">基本过程是，创建具有与 Windows PowerShell 脚本所需的参数对应的标头（列）的 CSV 文件。</span><span class="sxs-lookup"><span data-stu-id="4552b-142">The basic process is to create a CSV file that has headers (columns) that correspond to the parameters that the Windows PowerShell script needs.</span></span> <span data-ttu-id="4552b-143">您可以在 Excel 中轻松创建这样的列表，然后将其导出为 CSV 文件。</span><span class="sxs-lookup"><span data-stu-id="4552b-143">You can easily create such a list in Excel and then export it as a CSV file.</span></span> <span data-ttu-id="4552b-144">然后使用 Windows PowerShell 脚本循环访问 CSV 文件中的记录（行），将用户添加到组，将组添加到网站。</span><span class="sxs-lookup"><span data-stu-id="4552b-144">Then, you use a Windows PowerShell script to iterate through records (rows) in the CSV file, adding the users to groups and the groups to sites.</span></span> 
 
-<span data-ttu-id="4915e-p110">例如，我们创建一个 CSV 文件，以定义一组网站集、组和权限。接下来将创建一个 CSV 文件，将用户填充到组中。最后，要创建并运行一个简单的 Windows PowerShell 脚本，此脚本将创建并填充组。</span><span class="sxs-lookup"><span data-stu-id="4915e-p110">For example, let’s create a CSV file to define a group of site collections, groups, and permissions. Next, we will create a CSV file to populate the groups with users. Finally, we will create and run a simple Windows PowerShell script that creates and populates the groups.</span></span>
+<span data-ttu-id="4552b-p110">例如，我们创建一个 CSV 文件，以定义一组网站集、组和权限。接下来将创建一个 CSV 文件，将用户填充到组中。最后，要创建并运行一个简单的 Windows PowerShell 脚本，此脚本将创建并填充组。</span><span class="sxs-lookup"><span data-stu-id="4552b-p110">For example, let’s create a CSV file to define a group of site collections, groups, and permissions. Next, we will create a CSV file to populate the groups with users. Finally, we will create and run a simple Windows PowerShell script that creates and populates the groups.</span></span>
 
-<span data-ttu-id="4915e-148">第一个 CSV 文件将一个或多个组添加到一个或多个网站集，并具有以下结构：</span><span class="sxs-lookup"><span data-stu-id="4915e-148">The first CSV file will add one or more groups to one or more site collections and will have this structure:</span></span>
+<span data-ttu-id="4552b-148">第一个 CSV 文件将一个或多个组添加到一个或多个网站集，并具有以下结构：</span><span class="sxs-lookup"><span data-stu-id="4552b-148">The first CSV file will add one or more groups to one or more site collections and will have this structure:</span></span>
 
-<span data-ttu-id="4915e-149">邮件</span><span class="sxs-lookup"><span data-stu-id="4915e-149">Header:</span></span>
+<span data-ttu-id="4552b-149">邮件</span><span class="sxs-lookup"><span data-stu-id="4552b-149">Header:</span></span>
 
 ```powershell
 Site,Group,PermissionLevels
 ```
 
-<span data-ttu-id="4915e-150">Item</span><span class="sxs-lookup"><span data-stu-id="4915e-150">Item:</span></span>
+<span data-ttu-id="4552b-150">Item</span><span class="sxs-lookup"><span data-stu-id="4552b-150">Item:</span></span>
 
 ```powershell
 https://tenant.sharepoint.com/sites/site,group,level
 ```
 
-<span data-ttu-id="4915e-151">示例文件如下所示：</span><span class="sxs-lookup"><span data-stu-id="4915e-151">Here is an example file:</span></span>
+<span data-ttu-id="4552b-151">示例文件如下所示：</span><span class="sxs-lookup"><span data-stu-id="4552b-151">Here is an example file:</span></span>
 
 ```powershell
 Site,Group,PermissionLevels
@@ -194,21 +196,21 @@ https://contoso.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://contoso.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
 
-<span data-ttu-id="4915e-152">第二个 CSV 文件将一个或多个用户添加到一个或多个组，并具有以下结构：</span><span class="sxs-lookup"><span data-stu-id="4915e-152">The second CSV file will add one or more users to one or more groups and will have this structure:</span></span>
+<span data-ttu-id="4552b-152">第二个 CSV 文件将一个或多个用户添加到一个或多个组，并具有以下结构：</span><span class="sxs-lookup"><span data-stu-id="4552b-152">The second CSV file will add one or more users to one or more groups and will have this structure:</span></span>
 
-<span data-ttu-id="4915e-153">邮件</span><span class="sxs-lookup"><span data-stu-id="4915e-153">Header:</span></span>
+<span data-ttu-id="4552b-153">邮件</span><span class="sxs-lookup"><span data-stu-id="4552b-153">Header:</span></span>
 
 ```powershell
 Group,LoginName,Site
 ```
 
-<span data-ttu-id="4915e-154">Item</span><span class="sxs-lookup"><span data-stu-id="4915e-154">Item:</span></span>
+<span data-ttu-id="4552b-154">Item</span><span class="sxs-lookup"><span data-stu-id="4552b-154">Item:</span></span>
 
 ```powershell
 group,login,https://tenant.sharepoint.com/sites/site
 ```
 
-<span data-ttu-id="4915e-155">示例文件如下所示：</span><span class="sxs-lookup"><span data-stu-id="4915e-155">Here is an example file:</span></span>
+<span data-ttu-id="4552b-155">示例文件如下所示：</span><span class="sxs-lookup"><span data-stu-id="4552b-155">Here is an example file:</span></span>
 
 ```powershell
 Group,LoginName,Site
@@ -222,24 +224,24 @@ Contoso Blog Editors,opalc@contoso.com,https://contoso.sharepoint.com/sites/Blog
 Project Alpha Approvers,robinc@contoso.com,https://contoso.sharepoint.com/sites/Project01
 ```
 
-<span data-ttu-id="4915e-156">然后必须将这两个 CSV 文件保存到驱动器。</span><span class="sxs-lookup"><span data-stu-id="4915e-156">For the next step, you must have the two CSV files saved to your drive.</span></span> <span data-ttu-id="4915e-157">下面是使用这两个 CSV 文件并添加权限和组成员身份的示例命令：</span><span class="sxs-lookup"><span data-stu-id="4915e-157">Here are example commands that use both CSV files and to add permissions and group membership:</span></span>
+<span data-ttu-id="4552b-156">然后必须将这两个 CSV 文件保存到驱动器。</span><span class="sxs-lookup"><span data-stu-id="4552b-156">For the next step, you must have the two CSV files saved to your drive.</span></span> <span data-ttu-id="4552b-157">下面是使用这两个 CSV 文件并添加权限和组成员身份的示例命令：</span><span class="sxs-lookup"><span data-stu-id="4552b-157">Here are example commands that use both CSV files and to add permissions and group membership:</span></span>
 
 ```powershell
 Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-<span data-ttu-id="4915e-158">该脚本将导入 CSV 文件内容，并使用列中的值填充**remove-spositegroup**和**get-spouser**命令的参数。</span><span class="sxs-lookup"><span data-stu-id="4915e-158">The script imports the CSV file contents and uses the values in the columns to populate the parameters of the **New-SPOSiteGroup** and **Add-SPOUser** commands.</span></span> <span data-ttu-id="4915e-159">在我们的示例中，我们将它保存到驱动器 C 上的 theO365Admin 文件夹中，但你可以将其保存到您想要的任何位置。</span><span class="sxs-lookup"><span data-stu-id="4915e-159">In our example, we are saving this to theO365Admin folder on drive C, but you can save it wherever you want.</span></span>
+<span data-ttu-id="4552b-158">该脚本将导入 CSV 文件内容，并使用列中的值填充**remove-spositegroup**和**get-spouser**命令的参数。</span><span class="sxs-lookup"><span data-stu-id="4552b-158">The script imports the CSV file contents and uses the values in the columns to populate the parameters of the **New-SPOSiteGroup** and **Add-SPOUser** commands.</span></span> <span data-ttu-id="4552b-159">在我们的示例中，我们将它保存到驱动器 C 上的 theO365Admin 文件夹中，但你可以将其保存到您想要的任何位置。</span><span class="sxs-lookup"><span data-stu-id="4552b-159">In our example, we are saving this to theO365Admin folder on drive C, but you can save it wherever you want.</span></span>
 
-<span data-ttu-id="4915e-160">下面我们来使用相同的 CSV 文件删除不同网站中多个组的一批人员。</span><span class="sxs-lookup"><span data-stu-id="4915e-160">Now, let’s remove a bunch of people for several groups in different sites using the same CSV file.</span></span> <span data-ttu-id="4915e-161">下面是一个示例命令：</span><span class="sxs-lookup"><span data-stu-id="4915e-161">Here is an example command:</span></span>
+<span data-ttu-id="4552b-160">下面我们来使用相同的 CSV 文件删除不同网站中多个组的一批人员。</span><span class="sxs-lookup"><span data-stu-id="4552b-160">Now, let’s remove a bunch of people for several groups in different sites using the same CSV file.</span></span> <span data-ttu-id="4552b-161">下面是一个示例命令：</span><span class="sxs-lookup"><span data-stu-id="4552b-161">Here is an example command:</span></span>
 
 ```powershell
 Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
 ```
 
-## <a name="generate-user-reports"></a><span data-ttu-id="4915e-162">生成用户报告</span><span class="sxs-lookup"><span data-stu-id="4915e-162">Generate user reports</span></span>
+## <a name="generate-user-reports"></a><span data-ttu-id="4552b-162">生成用户报告</span><span class="sxs-lookup"><span data-stu-id="4552b-162">Generate user reports</span></span>
 
-<span data-ttu-id="4915e-p114">您可能想要获取一些网站的简单报告，并显示这些网站的用户、权限级别及其他属性。语法如下所示：</span><span class="sxs-lookup"><span data-stu-id="4915e-p114">You might want to get a simple report for a few sites and display the users for those sites, their permission level, and other properties. This is how the syntax looks:</span></span>
+<span data-ttu-id="4552b-p114">您可能想要获取一些网站的简单报告，并显示这些网站的用户、权限级别及其他属性。语法如下所示：</span><span class="sxs-lookup"><span data-stu-id="4552b-p114">You might want to get a simple report for a few sites and display the users for those sites, their permission level, and other properties. This is how the syntax looks:</span></span>
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -247,9 +249,9 @@ $site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
 ```
 
-<span data-ttu-id="4915e-165">将可以获取这三个网站的数据，并将这些数据写入本地驱动器上的文本文件。</span><span class="sxs-lookup"><span data-stu-id="4915e-165">This will grab the data for these three sites and write them to a text file on your local drive.</span></span> <span data-ttu-id="4915e-166">请注意，–Append 参数会将新内容添加到现有文件。</span><span class="sxs-lookup"><span data-stu-id="4915e-166">Note that the parameter –Append will add new content to an existing file.</span></span>
+<span data-ttu-id="4552b-165">将可以获取这三个网站的数据，并将这些数据写入本地驱动器上的文本文件。</span><span class="sxs-lookup"><span data-stu-id="4552b-165">This will grab the data for these three sites and write them to a text file on your local drive.</span></span> <span data-ttu-id="4552b-166">请注意，–Append 参数会将新内容添加到现有文件。</span><span class="sxs-lookup"><span data-stu-id="4552b-166">Note that the parameter –Append will add new content to an existing file.</span></span>
 
-<span data-ttu-id="4915e-167">例如，我们在 Contoso1 租户的 ContosoTest、TeamSite01 和 Project01 网站上运行报告：</span><span class="sxs-lookup"><span data-stu-id="4915e-167">For example, let's run a report on the ContosoTest, TeamSite01, and Project01 sites for the Contoso1 tenant:</span></span>
+<span data-ttu-id="4552b-167">例如，我们在 Contoso1 租户的 ContosoTest、TeamSite01 和 Project01 网站上运行报告：</span><span class="sxs-lookup"><span data-stu-id="4552b-167">For example, let's run a report on the ContosoTest, TeamSite01, and Project01 sites for the Contoso1 tenant:</span></span>
 
 ```powershell
 $tenant = "contoso"
@@ -261,23 +263,23 @@ $site = "Project01"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-<span data-ttu-id="4915e-168">请注意，我们只需要更改 **$site**变量。</span><span class="sxs-lookup"><span data-stu-id="4915e-168">Note that we had to change only the **$site** variable.</span></span> <span data-ttu-id="4915e-169">**$Tenant**变量通过命令的所有三个运行保留其值。</span><span class="sxs-lookup"><span data-stu-id="4915e-169">The **$tenant** variable keeps its value through all three runs of the command.</span></span>
+<span data-ttu-id="4552b-168">请注意，我们只需要更改 **$site**变量。</span><span class="sxs-lookup"><span data-stu-id="4552b-168">Note that we had to change only the **$site** variable.</span></span> <span data-ttu-id="4552b-169">**$Tenant**变量通过命令的所有三个运行保留其值。</span><span class="sxs-lookup"><span data-stu-id="4552b-169">The **$tenant** variable keeps its value through all three runs of the command.</span></span>
 
-<span data-ttu-id="4915e-p117">但是，如果要对每个网站进行此操作，应该怎么做？通过使用以下命令，您无需键入所有这些网站就可以进行操作：</span><span class="sxs-lookup"><span data-stu-id="4915e-p117">However, what if you wanted to do this for every site? You can do this without having to type all those websites by using this command:</span></span>
+<span data-ttu-id="4552b-p117">但是，如果要对每个网站进行此操作，应该怎么做？通过使用以下命令，您无需键入所有这些网站就可以进行操作：</span><span class="sxs-lookup"><span data-stu-id="4552b-p117">However, what if you wanted to do this for every site? You can do this without having to type all those websites by using this command:</span></span>
 
 ```powershell
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-<span data-ttu-id="4915e-172">此报告相当简单，你可以添加更多代码以创建更多特定报告或包括更多详细信息的报告。</span><span class="sxs-lookup"><span data-stu-id="4915e-172">This report is fairly simple, and you can add more code to create more specific reports or reports that include more detailed information.</span></span> <span data-ttu-id="4915e-173">但这将使您了解如何使用 SharePoint Online 命令行管理程序来管理 SharePoint Online 环境中的用户。</span><span class="sxs-lookup"><span data-stu-id="4915e-173">But this should give you an idea of how to use the SharePoint Online Management Shell to manage users in the SharePoint Online environment.</span></span>
+<span data-ttu-id="4552b-172">此报告相当简单，你可以添加更多代码以创建更多特定报告或包括更多详细信息的报告。</span><span class="sxs-lookup"><span data-stu-id="4552b-172">This report is fairly simple, and you can add more code to create more specific reports or reports that include more detailed information.</span></span> <span data-ttu-id="4552b-173">但这将使您了解如何使用 SharePoint Online 命令行管理程序来管理 SharePoint Online 环境中的用户。</span><span class="sxs-lookup"><span data-stu-id="4552b-173">But this should give you an idea of how to use the SharePoint Online Management Shell to manage users in the SharePoint Online environment.</span></span>
    
-## <a name="see-also"></a><span data-ttu-id="4915e-174">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4915e-174">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4552b-174">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4552b-174">See also</span></span>
 
-[<span data-ttu-id="4915e-175">连接到 SharePoint Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="4915e-175">Connect to SharePoint Online PowerShell</span></span>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[<span data-ttu-id="4552b-175">连接到 SharePoint Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="4552b-175">Connect to SharePoint Online PowerShell</span></span>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[<span data-ttu-id="4915e-176">使用 Office 365 PowerShell 管理 SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="4915e-176">Manage SharePoint Online with Office 365 PowerShell</span></span>](create-sharepoint-sites-and-add-users-with-powershell.md)
+[<span data-ttu-id="4552b-176">使用 Office 365 PowerShell 管理 SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="4552b-176">Manage SharePoint Online with Office 365 PowerShell</span></span>](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[<span data-ttu-id="4915e-177">使用 Office 365 PowerShell 管理 Office 365</span><span class="sxs-lookup"><span data-stu-id="4915e-177">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="4552b-177">使用 Office 365 PowerShell 管理 Office 365</span><span class="sxs-lookup"><span data-stu-id="4552b-177">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="4915e-178">Office 365 PowerShell 入门</span><span class="sxs-lookup"><span data-stu-id="4915e-178">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="4552b-178">Office 365 PowerShell 入门</span><span class="sxs-lookup"><span data-stu-id="4552b-178">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
 

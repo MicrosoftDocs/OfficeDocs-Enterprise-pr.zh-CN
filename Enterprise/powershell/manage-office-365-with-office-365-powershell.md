@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,49 +19,49 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 摘要：了解如何使用 Office 365 PowerShell 管理 Office 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和 Office 365 安全与合规中心。
-ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fbc10833d3ee1e7377e6ed68adb7d2299fce72fa
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841429"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004565"
 ---
-# <a name="manage-office-365-with-office-365-powershell"></a><span data-ttu-id="33485-103">使用 Office 365 PowerShell 管理 Office 365</span><span class="sxs-lookup"><span data-stu-id="33485-103">Manage Office 365 with Office 365 PowerShell</span></span>
+# <a name="manage-office-365-with-office-365-powershell"></a><span data-ttu-id="8ecc3-103">使用 Office 365 PowerShell 管理 Office 365</span><span class="sxs-lookup"><span data-stu-id="8ecc3-103">Manage Office 365 with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="33485-104">*本文适用于 Office 365 和 Microsoft 365。*</span><span class="sxs-lookup"><span data-stu-id="33485-104">*This article applies to both Office 365 and Microsoft 365.*</span></span>
+<span data-ttu-id="8ecc3-104">*本文适用于 Office 365 和 Microsoft 365。*</span><span class="sxs-lookup"><span data-stu-id="8ecc3-104">*This article applies to both Office 365 and Microsoft 365.*</span></span>
 
-<span data-ttu-id="33485-105">Office 365 PowerShell 是一种功能强大的管理工具，可补充 Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="33485-105">Office 365 PowerShell is a powerful management tool that complements the Microsoft 365 admin center.</span></span> <span data-ttu-id="33485-106">例如，您可以使用 Office 365 PowerShell 自动操作以更快地管理多个用户帐户和许可证并创建报告。</span><span class="sxs-lookup"><span data-stu-id="33485-106">For example, you can use Office 365 PowerShell automation to more quickly manage multiple user accounts and licenses and create reports.</span></span> <span data-ttu-id="33485-107">了解如何将 Office 365 PowerShell 与 Office 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和 Office 365 安全 & 合规性中心结合使用。</span><span class="sxs-lookup"><span data-stu-id="33485-107">Learn how to use Office 365 PowerShell with Office 365 users and licenses, Skype for Business Online, SharePoint Online, Exchange Online, and the Office 365 Security & Compliance Center.</span></span>
+<span data-ttu-id="8ecc3-105">Office 365 PowerShell 是一种功能强大的管理工具，可补充 Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-105">Office 365 PowerShell is a powerful management tool that complements the Microsoft 365 admin center.</span></span> <span data-ttu-id="8ecc3-106">例如，您可以使用 Office 365 PowerShell 自动操作以更快地管理多个用户帐户和许可证并创建报告。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-106">For example, you can use Office 365 PowerShell automation to more quickly manage multiple user accounts and licenses and create reports.</span></span> <span data-ttu-id="8ecc3-107">了解如何将 Office 365 PowerShell 与 Office 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和 Office 365 安全 & 合规性中心结合使用。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-107">Learn how to use Office 365 PowerShell with Office 365 users and licenses, Skype for Business Online, SharePoint Online, Exchange Online, and the Office 365 Security & Compliance Center.</span></span>
   
-<span data-ttu-id="33485-108">根据您的需求选择主题：</span><span class="sxs-lookup"><span data-stu-id="33485-108">Select the topic based on your needs:</span></span>
+<span data-ttu-id="8ecc3-108">根据您的需求选择主题：</span><span class="sxs-lookup"><span data-stu-id="8ecc3-108">Select the topic based on your needs:</span></span>
   
-- [<span data-ttu-id="33485-109">入门</span><span class="sxs-lookup"><span data-stu-id="33485-109">Get started</span></span>](getting-started-with-office-365-powershell.md)
+- [<span data-ttu-id="8ecc3-109">入门</span><span class="sxs-lookup"><span data-stu-id="8ecc3-109">Get started</span></span>](getting-started-with-office-365-powershell.md)
 
-    <span data-ttu-id="33485-110">如果您不熟悉 Office 365 PowerShell，并且想要安装 Office 365 PowerShell 模块并连接到 Office 365 订阅，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="33485-110">Start here if you are not familiar with Office 365 PowerShell and want to install the Office 365 PowerShell modules and connect to your Office 365 subscription.</span></span>
+    <span data-ttu-id="8ecc3-110">如果您不熟悉 Office 365 PowerShell，并且想要安装 Office 365 PowerShell 模块并连接到 Office 365 订阅，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-110">Start here if you are not familiar with Office 365 PowerShell and want to install the Office 365 PowerShell modules and connect to your Office 365 subscription.</span></span>
 
-- [<span data-ttu-id="33485-111">用户帐户、许可证和组</span><span class="sxs-lookup"><span data-stu-id="33485-111">User accounts, licenses, and groups</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [<span data-ttu-id="8ecc3-111">用户帐户、许可证和组</span><span class="sxs-lookup"><span data-stu-id="8ecc3-111">User accounts, licenses, and groups</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 
-    <span data-ttu-id="33485-112">如果您已安装 Office 365 PowerShell 模块并希望了解有关使用自动化命令来管理用户帐户、许可证和组的详细信息，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="33485-112">Start here if you have installed the Office 365 PowerShell modules and want to learn more about using automation commands to manage user accounts, licenses, and groups.</span></span>
+    <span data-ttu-id="8ecc3-112">如果您已安装 Office 365 PowerShell 模块并希望了解有关使用自动化命令来管理用户帐户、许可证和组的详细信息，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-112">Start here if you have installed the Office 365 PowerShell modules and want to learn more about using automation commands to manage user accounts, licenses, and groups.</span></span>
 
-- [<span data-ttu-id="33485-113">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="33485-113">SharePoint Online</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/manage-sharepoint-online-with-office-365-powershell)
+- [<span data-ttu-id="8ecc3-113">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="8ecc3-113">SharePoint Online</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/manage-sharepoint-online-with-office-365-powershell)
 
-    <span data-ttu-id="33485-114">如果您已安装 Office 365 PowerShell 模块并且想要使用自动化命令来管理 SharePoint Online，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="33485-114">Start here if you have installed the Office 365 PowerShell modules and want to use automation commands to perform management of SharePoint Online.</span></span>
+    <span data-ttu-id="8ecc3-114">如果您已安装 Office 365 PowerShell 模块并且想要使用自动化命令来管理 SharePoint Online，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-114">Start here if you have installed the Office 365 PowerShell modules and want to use automation commands to perform management of SharePoint Online.</span></span>
 
-- [<span data-ttu-id="33485-115">Exchange Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="33485-115">Exchange Online PowerShell</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- [<span data-ttu-id="8ecc3-115">Exchange Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="8ecc3-115">Exchange Online PowerShell</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
 
-    <span data-ttu-id="33485-116">若要使用自动化命令来管理 Exchange Online，请从本主题入手。</span><span class="sxs-lookup"><span data-stu-id="33485-116">Start here if you want to use automation commands to manage Exchange Online.</span></span>
+    <span data-ttu-id="8ecc3-116">若要使用自动化命令来管理 Exchange Online，请从本主题入手。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-116">Start here if you want to use automation commands to manage Exchange Online.</span></span>
 
-- [<span data-ttu-id="33485-117">将电子邮件迁移到 Office 365</span><span class="sxs-lookup"><span data-stu-id="33485-117">Email migration to Office 365</span></span>](use-powershell-for-email-migration-to-office-365.md)
+- [<span data-ttu-id="8ecc3-117">将电子邮件迁移到 Office 365</span><span class="sxs-lookup"><span data-stu-id="8ecc3-117">Email migration to Office 365</span></span>](use-powershell-for-email-migration-to-office-365.md)
 
-    <span data-ttu-id="33485-118">如果您已安装 Office 365 PowerShell 模块并且想要从现有的系统中迁移您的电子邮件，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="33485-118">Start here if you have installed the Office 365 PowerShell modules and want to migrate your email from existing systems.</span></span>
+    <span data-ttu-id="8ecc3-118">如果您已安装 Office 365 PowerShell 模块并且想要从现有的系统中迁移您的电子邮件，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-118">Start here if you have installed the Office 365 PowerShell modules and want to migrate your email from existing systems.</span></span>
 
-- [<span data-ttu-id="33485-119">安全性 & 合规性中心</span><span class="sxs-lookup"><span data-stu-id="33485-119">Security & Compliance Center</span></span>](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [<span data-ttu-id="8ecc3-119">安全与合规中心</span><span class="sxs-lookup"><span data-stu-id="8ecc3-119">Security & Compliance Center</span></span>](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
-    <span data-ttu-id="33485-120">若要使用自动化命令来管理安全与合规中心，请从本主题入手。</span><span class="sxs-lookup"><span data-stu-id="33485-120">Start here if you want to use automation commands to manage the Security & Compliance Center.</span></span>
+    <span data-ttu-id="8ecc3-120">若要使用自动化命令来管理安全与合规中心，请从本主题入手。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-120">Start here if you want to use automation commands to manage the Security & Compliance Center.</span></span>
 
-- [<span data-ttu-id="33485-121">委派访问权限（分配）合作伙伴</span><span class="sxs-lookup"><span data-stu-id="33485-121">Delegated Access Permissions (DAP) partners</span></span>](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
+- [<span data-ttu-id="8ecc3-121">委派访问权限（分配）合作伙伴</span><span class="sxs-lookup"><span data-stu-id="8ecc3-121">Delegated Access Permissions (DAP) partners</span></span>](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    <span data-ttu-id="33485-122">如果您想要使用联合和云解决方案提供商 (CSP) 合作伙伴来管理您的 Office 365 客户租户，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="33485-122">Start here if you want to use Syndication and Cloud Solution Provider (CSP) partners to manage your Office 365 customer tenants.</span></span>
+    <span data-ttu-id="8ecc3-122">如果您想要使用联合和云解决方案提供商 (CSP) 合作伙伴来管理您的 Office 365 客户租户，请从这里开始。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-122">Start here if you want to use Syndication and Cloud Solution Provider (CSP) partners to manage your Office 365 customer tenants.</span></span>
 
-- [<span data-ttu-id="33485-123">Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="33485-123">Skype for Business Online</span></span>](manage-skype-for-business-online-with-office-365-powershell.md)
+- [<span data-ttu-id="8ecc3-123">Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="8ecc3-123">Skype for Business Online</span></span>](manage-skype-for-business-online-with-office-365-powershell.md)
 
-    <span data-ttu-id="33485-124">如果已安装 Office 365 PowerShell 模块，且要管理 Skype for Business Online，请从本主题入手。</span><span class="sxs-lookup"><span data-stu-id="33485-124">Start here if you have installed the Office 365 PowerShell modules and want to perform management of Skype for Business Online.</span></span>
+    <span data-ttu-id="8ecc3-124">如果已安装 Office 365 PowerShell 模块，且要管理 Skype for Business Online，请从本主题入手。</span><span class="sxs-lookup"><span data-stu-id="8ecc3-124">Start here if you have installed the Office 365 PowerShell modules and want to perform management of Skype for Business Online.</span></span>
