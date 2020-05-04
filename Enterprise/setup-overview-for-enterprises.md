@@ -18,13 +18,13 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 这些概述步骤旨在帮助您设置网络、创建标识、部署 Office 365 专业增强版、迁移数据，并帮助组织中的人员开始使用 Office 365。
-ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 这些概述步骤旨在帮助您设置网络、创建标识、部署适用于企业的 Microsoft 365 应用程序、迁移数据，以及帮助组织中的人员开始使用 Office 365。
+ms.openlocfilehash: 456b080d166578a50b345a047e5a37c839b69e20
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844013"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009277"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>为组织部署 Office 365 企业版
 
@@ -34,7 +34,7 @@ ms.locfileid: "41844013"
 
 ## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>通过 FastTrack 的引导式 Office 365 企业版安装过程
 
-**[FastTrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** 是部署 Office 365 的最佳方法。 FastTrack 指导您完成最常见的部署配置，并可以回答问题。 
+**[FastTrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** 是部署 Office 365 的最佳方法。 FastTrack 引导你完成最常见的部署配置，并且在此过程中可以回答问题。 
 
 若要访问一系列安装指南，请登录到 Office 365 订阅，然后转到 "[设置 office 365](https://aka.ms/o365fasttrack)"。
 
@@ -60,9 +60,9 @@ ms.locfileid: "41844013"
 
    包括在前30天、90天和之后配置和推出针对租户和身份的基本和增强的安全性、威胁和信息保护。
  
-4. [部署客户端软件](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+4. [部署客户端软件](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   包括在你的设备上部署 Office 365 专业增强版（Word、Excel、PowerPoint 和其他） Office 套件（Word、Excel、PowerPoint 等）的云更新和始终为当前版本。 每个 Office 365 客户端许可证都包含 Office 365 专业增强版的许可证。
+   包括部署 Microsoft 365 Apps for enterprise （以前称为 Office 365 专业增强版）、设备上 Office 套件（Word、Excel、PowerPoint 和其他）的云更新和始终为当前版本。 每个 Office 365 客户端许可证都包含适用于企业的 Microsoft 365 应用程序的许可证。
  
 5. [设置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 

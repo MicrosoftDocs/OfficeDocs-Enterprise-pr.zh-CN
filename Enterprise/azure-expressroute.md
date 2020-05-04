@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 了解如何将 Azure ExpressRoute 与 Office 365 结合使用，以及如何规划在部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。
-ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844923"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009357"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
@@ -68,7 +68,7 @@ ms.locfileid: "41844923"
 
 <sup>1</sup>这些应用程序中的每个应用程序都具有不受 ExpressRoute 支持的 internet 连接要求，请参阅[Office 365 终结点一文](https://aka.ms/o365endpoints)以了解详细信息。
 
-适用于 Office 365 的 ExpressRoute 不包含在 Office 365 专业增强版客户端下载、内部部署标识提供程序登录和 Office 365 （由 21 Vianet （在21）服务中）的服务在中国。
+不包含在适用于 Office 365 的 ExpressRoute 中的服务是 Microsoft 365 应用程序，用于企业客户端下载、本地标识提供程序登录和 Office 365 （由 21 Vianet （由21）服务在中国运营。
 
 ## <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 

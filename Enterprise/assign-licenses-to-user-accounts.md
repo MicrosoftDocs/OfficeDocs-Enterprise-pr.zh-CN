@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何将 Office 365 许可证单独或基于组成员身份分配给用户帐户。
-ms.openlocfilehash: 3ffd51b6b3ab4add900746f14f013a307ca352ad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 77e6f6c20e9eeff11487a31cb2d616abbed42601
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843783"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009377"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>将 Office 365 许可证分配给用户帐户
 
@@ -57,6 +57,6 @@ ms.locfileid: "41843783"
 使用已分配了许可证的完整用户帐户集，您现在可以：
 
 - [实施安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-- [部署客户端软件，如 Office 365 专业增强版](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+- [部署客户端软件，例如 Microsoft 365 应用程序](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 - [在 Office 365 中设置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [配置服务和应用程序](configure-services-and-applications.md)

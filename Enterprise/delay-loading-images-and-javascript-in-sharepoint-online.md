@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: 本文介绍如何通过使用 JavaScript 来延迟加载图像以及在页面加载后等待加载非基本 JavaScript，从而减少 SharePoint Online 页面的加载时间。
-ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004595"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009347"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>在 SharePoint Online 中延迟加载图像和 JavaScript
 
 本文介绍如何通过使用 JavaScript 来延迟加载图像以及在页面加载后等待加载非基本 JavaScript，从而减少 SharePoint Online 页面的加载时间。
   
-图像会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下，大多数新式 Internet 浏览器在加载 HTML 页面时预提取映像。 如果在用户向下滚动之前图像在屏幕上不可见，则这可能会导致页面的加载速度不必要。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题，可以使用 JavaScript 先跳过加载图像。 此外，加载非基本 JavaScript 也可能会减慢 SharePoint 页面上的加载时间。 本主题介绍可用于在 SharePoint Online 中使用 JavaScript 改进页面加载时间的一些方法。
+图像会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下，大多数新式 Internet 浏览器在加载 HTML 页面时预提取映像。 如果在用户向下滚动之前图像在屏幕上不可见，则这可能会导致页面的加载速度不必要。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题，可以使用 JavaScript 先跳过加载图像。 此外，加载非基本 JavaScript 也可能会减慢 SharePoint 页面上的下载时间。 本主题介绍可用于在 SharePoint Online 中使用 JavaScript 改进页面加载时间的一些方法。
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>通过使用 JavaScript 延迟 SharePoint Online 页面中的图像加载，提高页面加载时间
 
@@ -109,7 +109,7 @@ $('#s4-workspace').on("scroll", function () {
   
 ![显示在页面上加载一个图像的屏幕截图](media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-下面的屏幕截图显示了图像在滚动查看后下载的其余部分。
+下面的屏幕截图显示在用户滚动查看后下载的图像的其余部分。
   
 ![显示在页面上加载多个图像的屏幕截图](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
@@ -121,7 +121,7 @@ $('#s4-workspace').on("scroll", function () {
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 2013 和 Office 365 专业增强版中支持的浏览器](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Office 2013 中支持的浏览器和适用于企业的 Microsoft 365 应用](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [如何：向 SharePoint 2013 中的网站应用母版页](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

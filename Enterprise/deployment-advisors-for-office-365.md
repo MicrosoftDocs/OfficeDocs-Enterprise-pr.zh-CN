@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 通过部署顾问加快您规划和配置 Office 365 或 Microsoft 365。
-ms.openlocfilehash: cb721b2bc115a9419feb4becaef4bcbb9c5c436e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 535bf1a0bcc47f3e311eeb714f957c36dde67fdd
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840529"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009388"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 或 Microsoft 365 服务的部署顾问
 
@@ -159,23 +159,23 @@ Watch the [Prepare your environment](https://go.microsoft.com/fwlink/?linkid=204
 
 ## <a name="file-creation-storage-and-sharing"></a>文件创建、存储和共享
 
-### <a name="office-365-proplus"></a>Office 365 专业增强版
+### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 企业应用版
 
-Office 365 专业增强版使您的用户能够在最新版本的 Office 中运行并保持更新。
+适用于企业的 Microsoft 365 应用程序（以前称为 Office 365 专业增强版）使用户能够在最新版本的 Office 上正常运行，并保持更新。
 
 请参阅本指南，了解在贵公司的电脑或 Mac 上安装 Office 的步骤，包括获取从 Office 开始的每个人的提示。
 
 |||
 |:-------|:-----|
-| **以** |  [Office 365 专业增强版快速入门指南](https://aka.ms/OPPquickstartguide) <BR> |
+| **以** |  [适用于企业版的 Microsoft 365 应用程序快速入门指南](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 专业增强版部署顾问将完成帮助用户直接从 Office 365 门户联机安装 office 365 专业增强版或从本地位置向用户部署 Office 365 专业增强版的步骤。 包含有关使用 Microsoft 终结点配置管理器、组策略启动脚本、操作系统磁盘映像或远程桌面服务（RDS）共享激活的说明。
+Office 部署顾问将逐步完成帮助用户直接从 Office 365 门户安装 Microsoft 365 应用程序或从本地位置向用户部署 Microsoft 365 应用程序的步骤。 包含有关使用 Microsoft 终结点配置管理器、组策略启动脚本、操作系统磁盘映像或远程桌面服务（RDS）共享激活的说明。
 
 |||
 |:-------|:-----|
-| **以** | [Office 365 专业增强版部署顾问](https://aka.ms/o365proplusdeploy) | 
-| **Teh** | [作为订阅服务的 Office 体验](https://aka.ms/qo45jf) <BR> [Office 365 ProPlus 概述](https://aka.ms/r359zr) | 
+| **以** | [Office 部署顾问](https://aka.ms/o365proplusdeploy) | 
+| **Teh** | [作为订阅服务的 Office 体验](https://aka.ms/qo45jf) <BR> [适用于企业的 Microsoft 365 应用程序概述](https://aka.ms/r359zr) | 
 |||
 
 
@@ -187,7 +187,7 @@ Office 365 专业增强版部署顾问将完成帮助用户直接从 Office 365 
 
 |||
 |:-------|:-----|
-| **以** | [Office 365 专业增强版部署顾问](https://aka.ms/o365proplusdeploy) | 
+| **以** | [Office 部署顾问](https://aka.ms/o365proplusdeploy) | 
 | **Teh** | [OneDrive for Business 集成优势](https://aka.ms/f66hqa) <BR> [欢迎使用 OneDrive：来自其他云存储提供程序](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
 |||
 
@@ -236,7 +236,7 @@ Azure AD Connect advisor 显示了如何向 Office 365 添加用户帐户信息�
 | **以** |  [Azure AD 基本设置指南](https://aka.ms/azureadbasic) |
 |||
 
-若要启用 Azure AD Premium 的许多功能，其中提供了标识管理功能（如多重身份验证、单一登录（SSO）、设备注册、自助服务密码和组管理以及安全监视），请使用本指南.
+若要启用 Azure AD Premium 的许多功能，其中提供了标识管理功能（如多重身份验证、单一登录（SSO）、设备注册、自助服务密码和组管理以及安全监视），请使用本指南。
   
 |||
 |:-------|:-----|
