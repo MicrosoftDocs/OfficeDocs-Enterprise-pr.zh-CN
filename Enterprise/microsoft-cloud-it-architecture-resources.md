@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 摘要：了解 Microsoft 标识、安全性、网络和混合部署的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Microsoft 365 企业应用版部署新式安全桌面。
-ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。
+ms.openlocfilehash: e5d1ba6b69dc092df72ead30da620f6007843f5c
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009367"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013425"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
- **摘要：** 了解 Microsoft 标识、安全性、网络和混合部署的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。了解如何使用 Windows 10 和 Microsoft 365 企业应用版部署新式安全桌面。
+ **摘要：** 了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。 查看使用 Microsoft 云时保护文件、标识和设备的指导建议。
   
 这些体系结构工具和海报提供有关 Microsoft 云服务的信息，其中包括 Office 365、Windows 10、Microsoft Intune、Microsoft Dynamics 365 以及本地混合和云解决方案。IT 决策者和架构师可以使用这些资源来确定其工作负载的理想解决方案，并做出有关核心基础结构组件的决策，如标识和安全性。 
   
@@ -52,7 +52,6 @@ ms.locfileid: "44009367"
     - [符合 GDPR 的 Office 365 信息保护](#office-365-information-protection-for-gdpr)
     - [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Microsoft 电话解决方案](#microsoft-telephony-solutions) 
-    - [通过 Microsoft 部署新式安全桌面](microsoft-cloud-it-architecture-resources.md#msd)
     
 请将你的想法告诉我们！向我们 ([cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)) 发送电子邮件。 
 
@@ -221,15 +220,6 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 有关详细信息，请参阅此海报文章：[Microsoft 电话解决方案](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)。
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>通过 Microsoft 部署新式安全桌面
-
-关于在 Windows 10 上部署和管理 Microsoft 365 应用企业版（旧称为“Office 365 专业增强版”）更新，IT 架构师需要了解的信息。
-  
-|**项目**|**说明**|
-|:-----|:-----|
-|[![通过 Microsoft 模型部署新式安全桌面的缩略图](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | 此模型包含： <ul><li>  从 Microsoft 云部署适 Windows 10 和 Microsoft 365 企业应用版 </li><li>  使用 Microsoft Endpoint Configuration Manager 部署 Windows 10 和 Microsoft 365 企业应用版 </li><li>  从 Microsoft 云管理 Windows 10 和 Microsoft 365 企业应用版的更新 </li><li>  使用 Microsoft Endpoint Configuration Manager 管理 Windows 10 和 Microsoft 365 企业应用版的更新 </li><li>  Windows 10 现成的其他保护功能 </li></ul><br/> |
-   
 ## <a name="see-also"></a>另请参阅
 
 [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)

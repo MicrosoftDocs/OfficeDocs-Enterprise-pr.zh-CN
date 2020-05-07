@@ -132,7 +132,7 @@
 
 ## 高级部署
 
-### [Office 365 多地理位置](office-365-multi-geo.md)
+### [Microsoft 365 多地理位置](office-365-multi-geo.md)
 #### [OneDrive 和 SharePoint 多地理位置](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
 #### [Exchange 多地理位置](multi-geo-capabilities-in-exchange-online.md)
 #### [多地理位置规划](plan-for-multi-geo.md)
@@ -147,7 +147,7 @@
 ##### [移动 SharePoint 网站](move-sharepoint-between-geo-locations.md)
 ##### [添加或删除地理位置管理员](add-a-sharepoint-geo-admin.md)
 ##### [将内容限制到某个地理位置](restrict-content-to-geo-location.md)
-##### [配置 Office 365 多地理位置电子数据展示](multi-geo-ediscovery-configuration.md)
+##### [配置 Microsoft 365 多地理位置电子数据展示](multi-geo-ediscovery-configuration.md)
 ##### [使用特定 PDL 创建组](multi-geo-add-group-with-pdl.md)
 ##### [删除地理位置](delete-a-geo-location.md)
 ##### [在卫星定位中启用 SharePoint 多地理位置功能](enabling-SP-multigeo-satellite-geolocation.md)
@@ -188,21 +188,7 @@
 ### [Office 365 Admin 帮助中心](https://docs.microsoft.com/office365/admin/admin-home)
 ### [用于管理用户帐户的工具](manage-office-365-accounts.md)
 ### [同时添加多个用户](add-several-users-at-the-same-time.md)
-### [恢复用户邮箱中的已删除邮件](recover-deleted-items-in-a-mailbox.md)
-
-### 与来宾协作
-#### [来宾共享参考](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### 来宾共享方案
-##### [来宾协作概述](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [协作处理文档](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [在网站中协作](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [团队协作](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### 来宾共享安全性
-##### [未经身份验证的共享](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [限制意外公开](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [保护来宾共享环境](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### [创建 B2B Extranet](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-### [限制共享](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+### [恢复用户邮箱中的已删除项目](recover-deleted-items-in-a-mailbox.md)
 
 ## 设备
 ### [在 MDM 和 Intune 之间进行选择](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)

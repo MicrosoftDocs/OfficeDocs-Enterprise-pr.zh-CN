@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：Office 365 数据位置
-ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+ms.openlocfilehash: 8fd863034439f22c1c030ff8af6dba97f678f537
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798813"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058012"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -84,7 +84,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 
 请查看“[按区域提供的产品](https://go.microsoft.com/fwlink/p/?linkid=2093451)”页面，以查找 Microsoft Azure 的数据驻留信息。
 
-### <a name="what-are-multi-geo-capabilities-in-office-365"></a>Office 365 中的多地理位置功能是什么？
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365 中的多地理位置功能是什么？
 
 [多地理位置](https://go.microsoft.com/fwlink/p/?linkid=872033)功能可让单一 Office 365 租户横跨多个 Office 365 数据中心区域，并为客户提供在所选区域以单一用户为基础存储 Office 365 核心客户数据的能力。
 
@@ -727,7 +727,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | 工作区分析 | 美国 |
 </p></details>
 
-## <a name="boliva"></a>玻利维亚
+## <a name="bolivia"></a>玻利维亚
 <details><summary>单击展开</summary><p>
 
 | 服务 | 位置 |
@@ -4039,7 +4039,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | 工作区分析 | 美国 |
 </p></details>
 
-## <a name="papaua-new-guinea"></a>巴布亚新几内亚
+## <a name="papua-new-guinea"></a>巴布亚新几内亚
 <details><summary>单击展开</summary><p>
 
 | 服务 | 位置 |

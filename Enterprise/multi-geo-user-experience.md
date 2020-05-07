@@ -13,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: 了解多地理位置环境中的 SharePoint、OneDrive 和 Exchange 用户体验。
-ms.openlocfilehash: 75d24ac7a89ff2dfe66af713fdae7ece21ebda3c
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 21858989f853b2a8c87808e38763068631173f7f
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974214"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057748"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>多地理位置环境中的用户体验
 
@@ -32,7 +32,7 @@ ms.locfileid: "41974214"
 
 SharePoint 中心网站增强了员工的内容发现和参与能力，同时还能完整、一致地表示项目、部门或地区。 在多地理位置环境中，附属位置中的网站可以与中心网站轻松关联，无论中心网站的地理位置如何。 用户可以通过一种搜索体验，跨中心网站搜索并获取结果，无论网站的地理位置如何。
 
-## <a name="office-365-app-launcher"></a>Office 365 应用启动器
+## <a name="microsoft-365-app-launcher"></a>Microsoft 365 应用启动器
 
 应用启动器可感知多地理位置，并将每个磁贴定向到工作负荷的相应地理位置。 SharePoint 和 OneDrive 磁贴将用户指向与用户的已预配地理位置对应的位置。 也就是说，用户在中心位置有 OneDrive，用户的 SharePoint 磁贴会将他们指向中心位置中的 SP 主页，但组网站会在与用户 PDL 对应的位置中进行预配。 
 
