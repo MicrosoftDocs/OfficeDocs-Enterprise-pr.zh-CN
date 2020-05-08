@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 学习如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
-ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974024"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057658"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
-下文描述了 Office 365 服务在多地理位置环境中的工作方式。
+下文描述了 Microsoft 365 服务在多地理位置环境中的工作方式。
 
 ## <a name="audit-log-search"></a>审核日志搜索
 
-可以从 Office 365 审核日志搜索页中找到所有附属位置的统一[审核日志](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)。 你可以查看跨地理位置的所有审核日志条目，例如，NAM 和 EUR 用户的活动将显示在一个组织视图中，然后你可以应用现有筛选器，查看特定用户的活动。
+可以从 Microsoft 365 审核日志搜索页中找到所有附属位置的统一[审核日志](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)。 你可以查看跨地理位置的所有审核日志条目，例如，NAM 和 EUR 用户的活动将显示在一个组织视图中，然后你可以应用现有筛选器，查看特定用户的活动。
 
 ## <a name="bcs-secure-store-apps"></a>BCS、安全存储、应用
 
@@ -36,7 +36,7 @@ BCS、安全存储和应用在每个附属位置都具有单独的实例，因�
 
 ## <a name="ediscovery"></a>电子数据展示 
 
-默认情况下，电子数据展示管理员或多地理位置租户的管理员将只能在该租户的中心位置执行电子数据展示。 Office 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。 若要针对区域配置合规性安全筛选器，请参阅[配置 Office 365 多地理位置电子数据展示](multi-geo-ediscovery-configuration.md)。
+默认情况下，电子数据展示管理员或多地理位置租户的管理员将只能在该租户的中心位置执行电子数据展示。 Microsoft 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。 若要针对区域配置合规性安全筛选器，请参阅[配置 Microsoft 365 多地理位置电子数据展示](multi-geo-ediscovery-configuration.md)。
 
 ## <a name="exchange-mailboxes"></a>Exchange 邮箱
 
@@ -64,7 +64,7 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 
 ## <a name="security-and-compliance-admin-center"></a>安全与合规管理中心
 
-还有一个多地理位置租户的中央合规中心：[Office 365 安全与合规中心](https://protection.office.com/?rfr=AdminCenter\#/homepage)。
+还有一个多地理位置租户的中央合规中心：[Microsoft 365 安全与合规中心](https://protection.office.com/?rfr=AdminCenter\#/homepage)。
 
 ## <a name="sharepoint-storage-quota"></a>SharePoint 存储配额
 
@@ -98,7 +98,7 @@ Stream 当前可在以下地区使用：
 - 欧洲
 - 亚太地区
 
-但是，Stream 尚不支持在以下目前支持 Office 365 视频的地区中使用，因此对于这些本地实例，我们将使用最近的受支持地区中的 RMS。
+但是，Stream 尚不支持在以下目前支持 Microsoft 365 视频的地区中使用，因此对于这些本地实例，我们将使用最近的受支持地区中的 RMS。
 
 - 澳大利亚
 - 加拿大

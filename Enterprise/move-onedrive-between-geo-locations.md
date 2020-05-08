@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 了解如何将 OneDrive 站点移到其他地理位置。
-ms.openlocfilehash: e093eab04a5ef19fcd6759d66cb65e9ee264c388
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974014"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058002"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 
-使用 OneDrive 异地移动，可将用户的 OneDrive 移动到其他地理位置。OneDrive 异地移动由 SharePoint Online 管理员或 Office 365 全局管理员执行。在启动 OneDrive 异地移动前，请确保通知其 OneDrive 要被移动的用户，并建议他们在移动期间关闭所有文件。（如果用户在移动期间有使用 Office 客户端打开的文档，则在移动完成后，需要将该文档保存到新位置。）如有需要，可将移动设置为在未来的某个时间执行。
+使用 OneDrive 异地移动，可将用户的 OneDrive 移动到其他地理位置。OneDrive 异地移动由 SharePoint Online 管理员或 Microsoft 365 全局管理员执行。在启动 OneDrive 异地移动前，请确保通知其 OneDrive 要被移动的用户，并建议他们在移动期间关闭所有文件。（如果用户在移动期间有使用 Office 客户端打开的文档，则在移动完成后，需要将该文档保存到新位置。）如有需要，可将移动设置为在未来的某个时间执行。
 
 OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive 关联的存储 Blob 将在目标 OneDrive 对用户可用后的 40 天内从源地理位置移动到目标地理位置。目标 OneDrive 可用后，将立即恢复对用户的 OneDrive 的访问。
 
-在 OneDrive 异地移动窗口期间（约 2-6 小时），用户的 OneDrive 将被设置为只读。用户仍可通过 OneDrive 同步客户端访问其文件或访问其在 SharePoint Online 中的 OneDrive 站点。OneDrive 异地移动完成后，当用户导航到 Office 365 应用启动器中的 OneDrive 时，将被自动连接到他们在目标地理位置中的 OneDrive。同步客户端将自动从新位置开始同步。
+在 OneDrive 异地移动窗口期间（约 2-6 小时），用户的 OneDrive 将被设置为只读。用户仍可通过 OneDrive 同步客户端访问其文件或访问其在 SharePoint Online 中的 OneDrive 站点。OneDrive 异地移动完成后，当用户导航到 Microsoft 365 应用启动器中的 OneDrive 时，将被自动连接到他们在目标地理位置中的 OneDrive。同步客户端将自动从新位置开始同步。
 
 执行本文中的步骤需要安装 [Microsoft SharePoint Online PowerShell 模块](https://www.microsoft.com/download/details.aspx?id=35588)。
 
@@ -163,7 +163,7 @@ OneDrive 服务使用 Azure Blob 存储来存储内容。与用户的 OneDrive �
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-当移动进行时，用户的 OneDrive 被设置为只读状态。一旦移动完成，当用户导航到 Office 365 应用启动器或 Web 浏览器中的 OneDrive 时，用户即被定向到他们在新地理位置的 OneDrive。
+当移动进行时，用户的 OneDrive 被设置为只读状态。一旦移动完成，当用户导航到 Microsoft 365 应用启动器或 Web 浏览器中的 OneDrive 时，用户即被定向到他们在新地理位置的 OneDrive。
 
 ### <a name="permissions-on-onedrive-content"></a>OneDrive 内容权限
 

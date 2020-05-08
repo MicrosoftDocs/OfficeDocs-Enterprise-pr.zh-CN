@@ -1,5 +1,5 @@
 ---
-title: Office 365 多地理位置租户配置
+title: Microsoft 365 多地理位置租户配置
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,31 +12,31 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 localization_priority: Priority
-description: 了解如何配置 Office 365 多地理位置。
-ms.openlocfilehash: bba1260283b4e610b88c00c7d531e44c79acd58d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: 了解如何配置 Microsoft 365 多地理位置。
+ms.openlocfilehash: ffacd18a95288cfcce0794afceaf7ff22bfa2c76
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41973974"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057718"
 ---
-# <a name="office-365-multi-geo-tenant-configuration"></a>Office 365 多地理位置租户配置
+# <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 多地理位置租户配置
 
-配置 Office 365 多地理位置租户前，请务必先阅读[计划使用 Office 365 多地理位置](plan-for-multi-geo.md)。 若要执行本文中的步骤，需要列出要作为附属位置启用的地理位置，以及要为这些位置预配的测试用户。
+配置 Microsoft 365 多地理位置租户前，请务必先阅读[计划使用 Microsoft 365 多地理位置](plan-for-multi-geo.md)。 若要执行本文中的步骤，需要列出要作为附属位置启用的地理位置，以及要为这些位置预配的测试用户。
 
-## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>将“Office 365 中的多地理位置功能”计划添加到租户
+## <a name="add-the-multi-geo-capabilities-in-microsoft-365-plan-to-your-tenant"></a>将“Microsoft 365 中的多地理位置功能”计划添加到租户
 
-若要使用 Office 365 多地理位置，需要有“Office 365 中的多地理位置功能”__ 计划。 与帐户团队合作，以向租户添加此计划。 帐户团队会让你与相应的许可专家联系，并配置你的租户。
+若要使用 Microsoft 365 多地理位置，需要有“_Microsoft 365 中的多地理位置功能_”计划。 与帐户团队合作，以向租户添加此计划。 帐户团队会让你与相应的许可专家联系，并配置你的租户。
 
-请注意，_Office 365 的多地理位置功能_计划是一个用户级别的服务计划。你需要为每个想要托管在附属位置的用户提供许可证。随着你将用户添加到附属位置，你可以随时添加更多许可证。
+请注意，“_Microsoft 365 的多地理位置功能_”计划是一个用户级别的服务计划。你需要为每个想要托管在附属位置的用户提供许可证。随着你将用户添加到附属位置，你可以随时添加更多许可证。
 
-在为租户预配了“Office 365 中的多地理位置功能”__ 计划后，便能在 OneDrive 和 SharePoint 管理中心内使用“地理位置”**** 选项卡。
+在为租户预配了“_Microsoft 365 中的多地理位置功能_”计划后，便能在 OneDrive 和 SharePoint 管理中心内使用“**地理位置**”选项卡。
 
 ## <a name="add-satellite-locations-to-your-tenant"></a>向租户添加附属位置
 
 必须为要存储数据的每个地理位置添加附属位置。 下表列出了可用的地理位置：
 
-[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
 ![SharePoint 管理中心内“地理位置”页屏幕截图](media/sharepoint-multi-geo-admin-center.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "41973974"
 
 ### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>使用 Azure Active Directory Connect 同步用户的首选数据位置 
 
-如果将公司的用户从本地 Active Directory 系统同步到 Azure Active Directory，则其 PreferredDataLocation 必须在 AD 中填充并同步到 AAD。请遵循 [Azure Active Directory Connect 同步：为 Office 365 资源配置首选数据位置](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)中的过程，将首选数据位置同步从本地 Active Directory 配置为 Azure Active Directory。
+如果将公司的用户从本地 Active Directory 系统同步到 Azure Active Directory，则其 PreferredDataLocation 必须在 AD 中填充并同步到 AAD。请遵循 [Azure Active Directory Connect 同步：为 Microsoft 365 资源配置首选数据位置](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)中的过程，将首选数据位置同步从本地 Active Directory 配置为 Azure Active Directory。
 
 建议在标准用户创建工作流中设置用户的首选数据位置。
 
@@ -83,7 +83,7 @@ ms.locfileid: "41973974"
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>设置仅限云用户的首选数据位置 
 
-如果公司的用户没有从本地 Active Directory 系统同步到 Azure Active Directory，这意味着他们是在 Office 365 或 Azure Active Directory 中创建的，必须使用 Azure Active Directory PowerShell 设置 PDL。
+如果公司的用户没有从本地 Active Directory 系统同步到 Azure Active Directory，这意味着他们是在 Microsoft 365 或 Azure Active Directory 中创建的，必须使用 Azure Active Directory PowerShell 设置 PDL。
 
 此部分中的步骤需要使用[用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)。如果已安装 Azure Active Directory PowerShell，请确保更新到最新版本。
 
@@ -130,13 +130,13 @@ ms.locfileid: "41973974"
 
 有关说明（包括任何限制和差异），请查看[为 OneDrive for Business 多地理位置配置搜索](configure-search-for-multi-geo.md)。
 
-## <a name="validating-the-office-365-multi-geo-configuration"></a>验证 Office 365 多地理位置配置
+## <a name="validating-the-microsoft-365-multi-geo-configuration"></a>验证 Microsoft 365 多地理位置配置
 
-下面是建议在公司中更广泛地推出 Office 365 多地理位置前，在验证计划中添加的一些基本用例。 完成这些测试以及与公司相关的其他任何用例后，可以选择继续在初始试点组中添加用户。
+下面是建议在公司中更广泛地推出 Microsoft 365 多地理位置前，在验证计划中添加的一些基本用例。 完成这些测试以及与公司相关的其他任何用例后，可以选择继续在初始试点组中添加用户。
 
 **OneDrive for Business**
 
-从 Office 365 应用启动器中选择“OneDrive”，并确认是否自动定向到用户的相应地理位置（以用户 PDL 为依据。 OneDrive for Business 现在应该开始在相应位置进行预配。 预配后，立即尝试上传并下载一些文档。
+从 Microsoft 365 应用启动器中选择“OneDrive”，并确认是否自动定向到用户的相应地理位置（以用户 PDL 为依据）。 OneDrive for Business 现在应该开始在相应位置进行预配。 预配后，立即尝试上传并下载一些文档。
 
 **OneDrive 移动应用**
 
