@@ -1,5 +1,5 @@
 ---
-title: 为 Office 365 多地理位置配置搜索
+title: 为 Microsoft 365 多地理位置配置搜索
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 了解如何在多地理位置环境中配置搜索。
-ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974004"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057668"
 ---
-# <a name="configure-search-for-office-365-multi-geo"></a>为 Office 365 多地理位置配置搜索
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>为 Microsoft 365 多地理位置配置搜索
 
 在多地理位置环境中，每个地理位置都有自己的搜索索引和搜索中心。 在用户搜索时，查询会扇出以覆盖所有索引，并合并返回的结果。
 
@@ -102,7 +102,7 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 </tr>
 <tr class="even">
 <td align="left">混合搜索</td>
-<td align="left">在具有<a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">云混合搜索</a>的混合 SharePoint 环境中，本地内容将添加到中心位置的 Office 365 索引。</td>
+<td align="left">在具有<a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">云混合搜索</a>的混合 SharePoint 环境中，本地内容将添加到中心位置的 Microsoft 365 索引。</td>
 <td align="left"></td>
 </tr>
 </tbody>

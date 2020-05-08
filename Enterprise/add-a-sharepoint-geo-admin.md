@@ -11,15 +11,15 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords:
 - NOCSH
-description: 了解如何在 Office 365 多地理位置中添加或删除地理位置管理员。
-ms.openlocfilehash: 4225cd73aa243fadde21e5bd2d248fe54f738e33
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: 了解如何在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
+ms.openlocfilehash: f2cb71f26216d859c00cefb10661608178e19315
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974194"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057698"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>在 Office 365 多地理位置中添加或删除地理位置管理员
+# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
 
 可以为租户中的每个地理位置配置单独的管理员。 这些管理员将有权访问特定于其地理位置的 SharePoint Online 和 OneDrive 设置。
 
@@ -43,7 +43,7 @@ ms.locfileid: "41974194"
 
 ### <a name="adding-a-group-as-a-geo-admin"></a>添加组作为地理位置管理员
 
-可以添加安全组或启用邮件的安全组作为地理位置管理员。（不支持通讯组和 Office 365 组。）
+可以添加安全组或启用邮件的安全组作为地理位置管理员。（不支持通讯组和 Microsoft 365 组。）
 
 若要添加组作为地理位置管理员，请运行 `Add-SPOGeoAdministrator -GroupAlias <alias>`
 

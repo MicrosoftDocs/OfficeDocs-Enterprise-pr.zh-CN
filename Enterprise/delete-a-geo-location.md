@@ -12,20 +12,20 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: 了解如何删除 Office 365 多地理位置中的附属位置。
-ms.openlocfilehash: 702f42eb9211d6c3c4f59812c6894855b169f587
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: 了解如何删除 Microsoft 365 多地理位置中的附属位置。
+ms.openlocfilehash: 840c1bf494ddcd7e6558b134655b5cb708bf6e7b
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974861"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057638"
 ---
-# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>删除 Office 365 多地理位置中的附属位置
+# <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>删除 Microsoft 365 多地理位置中的附属位置。
 
 如果不再需要附属位置，可以在 SharePoint 管理中心内将它从租户中删除。
 
 > [!WARNING]
-> 附属位置中的所有用户数据都将被永久删除。 这包括所有 OneDrive for Business 内容、SharePoint 网站和 Exchange 邮箱（包括 Office 365 组邮箱）。 删除附属位置前，必须先将所有数据都迁移到其他附属位置或中心位置。 此操作无法撤消。
+> 附属位置中的所有用户数据都将被永久删除。 这包括所有 OneDrive for Business 内容、SharePoint 网站和 Exchange 邮箱（包括 Microsoft 365 组邮箱）。 删除附属位置前，必须先将所有数据都迁移到其他附属位置或中心位置。 此操作无法撤消。
 
 只有全局管理员可以删除附属位置。
 

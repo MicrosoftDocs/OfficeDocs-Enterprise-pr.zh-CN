@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Exchange Online 中的多地理位置功能。
-ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: e6273c49e185c59cad6b56cf7d8399cdd6f25d22
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890544"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057972"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -45,11 +45,11 @@ Exchange Online 将 **PreferredDataLocation** 属性从 Azure AD 同步到 Excha
 
 - 如果 **PreferredDataLocation** 代码不正确（例如，类型为 NAN 而不是 NAM），则邮箱将被配置在中心地理位置。
 
-**注意**：多地理位置功能和 Skype for Business Online 区域性托管会议都使用用户对象上的 **PreferredDataLocation** 属性来定位服务。 如果在区域托管会议的用户对象上配置 **PreferredDataLocation** 值，则在 Office 365 租户上启用多地理位置后，这些用户的邮箱将自动移动到指定的地理位置。
+**注意**：多地理位置功能和 Skype for Business Online 区域性托管会议都使用用户对象上的 **PreferredDataLocation** 属性来定位服务。 如果在区域托管会议的用户对象上配置 **PreferredDataLocation** 值，则在 Microsoft 365 租户上启用多地理位置后，这些用户的邮箱将自动移动到指定的地理位置。
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange Online 中多地理位置的功能限制
 
-- Exchange 管理中心 (EAC) 中提供的安全性和合规性功能（例如，审核和电子数据展示）在多地理位置组织中不可用。 你需要改用 [Office 365 安全与合规中心](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)来配置安全性和合规性功能。
+- Exchange 管理中心 (EAC) 中提供的安全性和合规性功能（例如，审核和电子数据展示）在多地理位置组织中不可用。 你需要改用 [Microsoft 365 安全与合规中心](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)来配置安全性和合规性功能。
 
 - 当你将 Outlook for Mac 用户的邮箱移动到新的地理位置时，他们可能会暂时无法访问其在线存档文件夹。 当用户的主邮箱和存档邮箱位于不同的地理位置时，会出现这种情况，因为跨地理位置邮箱移动可能会在不同时间完成。
 
