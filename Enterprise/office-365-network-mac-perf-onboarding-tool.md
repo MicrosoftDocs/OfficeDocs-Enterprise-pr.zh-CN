@@ -1,5 +1,5 @@
 ---
-title: M365 管理中心中的 Microsoft 365 连接测试（预览）
+title: Microsoft 365 管理中心中的 microsoft 365 连接测试（预览）
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 管理中心中的 Microsoft 365 连接测试（预览）
-ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0c6f16c39c5a2db99ed636cb3a1b52818383ea5a
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612872"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208793"
 ---
-# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>M365 管理中心中的 Microsoft 365 连接测试（预览）
+# <a name="microsoft-365-connectivity-test-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的 microsoft 365 连接测试（预览）
 
-Microsoft 365 连接测试位于<https://connectivity.office.com>。 它是一个辅助工具，可用于**运行状况 | 的 Microsoft 365 管理中心内的网络洞察力和网络积分信息。网络性能**菜单。
+Microsoft 365 连接测试位于 <https://connectivity.office.com> 。 它是一个辅助工具，可用于**运行状况 | 的 Microsoft 365 管理中心内的网络洞察力和网络积分信息。网络性能**菜单。
 
 >[!NOTE]
 >加入工具支持 WW 商业和 GCC 中的租户，但不支持 GCC 高、DoD、德国或中国的租户。
@@ -37,7 +37,7 @@ Microsoft 365 管理中心的网络洞察力基于 Microsoft 365 租户的产品
 
 ## <a name="the-advanced-tests-client-application"></a>高级测试客户端应用程序
 
-Microsoft 365 连接测试分为两个部分。 网站<https://connectivity.office.com>有一个可下载的 Windows 客户端应用程序。 可下载的客户端运行高级网络连接测试，大多数测试都需要运行此测试。
+Microsoft 365 连接测试分为两个部分。 网站有 <https://connectivity.office.com> 一个可下载的 Windows 客户端应用程序。 可下载的客户端运行高级网络连接测试，大多数测试都需要运行此测试。
 
 您可以从网站运行高级客户端测试，它会在运行时将结果重新填充到网页中。
 
@@ -103,19 +103,19 @@ Microsoft 365 连接测试分为两个部分。 网站<https://connectivity.offi
 
 ## <a name="media-quality-checks"></a>媒体质量检查
 
-此测试将安装并运行 Skype for Business 网络评估工具并解释结果。 可以在[https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885)中找到该工具。
+此测试将安装并运行 Skype for Business 网络评估工具并解释结果。 可以在中找到该工具 [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885) 。
 
 这些是由 Microsoft 团队音频和视频通话和会议功能使用的 UDP 协议测试。 我们测试 UDP 数据包丢失、UDP 网络延迟、UDP 抖动和 UDP 数据包重新排序。 如果其中有任何超出允许的范围，则显示网络洞察力。
 
 ## <a name="tcp-connectivity-tests"></a>TCP 连接测试
 
-我们测试从用户办公室位置到所有必需的 Microsoft 365 网络终结点的 HTTP 连接。 这些内容是在[https://aka.ms/o365ip](https://aka.ms/o365ip)中发布的。 对于任何不能连接到的必需网络终结点，都会显示网络洞察力。
+我们测试从用户办公室位置到所有必需的 Microsoft 365 网络终结点的 HTTP 连接。 这些内容是在中发布的 [https://aka.ms/o365ip](https://aka.ms/o365ip) 。 对于任何不能连接到的必需网络终结点，都会显示网络洞察力。
 
 连接 ay 由企业网络外围上的代理服务器、防火墙或其他网络安全设备阻止，或作为云代理使用。
 
 ## <a name="ssl-interception-tests"></a>SSL 侦听测试
 
-我们会在所需的每个 Microsoft 365 网络终结点（在上[https://aka.ms/o365ip](https://aka.ms/o365ip)定义了）中测试 SSL 证书。 如果有任何测试未找到 Microsoft SSL 证书，则已连接的加密网络必须已被中间网络设备截取。 网络洞察力显示在任何截获的加密网络终结点上。
+我们会在所需的每个 Microsoft 365 网络终结点（在上定义了）中测试 SSL 证书 [https://aka.ms/o365ip](https://aka.ms/o365ip) 。 如果有任何测试未找到 Microsoft SSL 证书，则已连接的加密网络必须已被中间网络设备截取。 网络洞察力显示在任何截获的加密网络终结点上。
 
 在找不到 Microsoft 提供的 SSL 证书的情况下，我们会显示该测试的 FQDN 以及正在使用的 SSL 证书所有者。 此 SSL 证书所有者可能是代理服务器供应商，也可能是企业自签名证书。
 
@@ -123,7 +123,7 @@ Microsoft 365 连接测试分为两个部分。 网站<https://connectivity.offi
 
 本节显示了 ICMP traceroute 对 Exchange Online 服务前向门、SharePoint Online service 前门和 Microsoft 团队服务前盖的结果。 仅提供此信息，没有相关的网络洞察力。
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 以下是一些常见问题的解答。
 

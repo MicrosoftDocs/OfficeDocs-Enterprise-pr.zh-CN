@@ -3,7 +3,7 @@ title: 使用 Office 365 PowerShell 删除用户帐户的许可证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/20/2020
+ms.date: 05/12/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: 介绍如何使用 Office 365 PowerShell 删除之前分配给用户的 Office 365 许可证。
-ms.openlocfilehash: fe25f07d222f05b938a980781a86ab16bf8dd03b
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 4a99fb115b7c3241beb2cb3b0dd83666622747d5
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004655"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208753"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户的许可证
 
@@ -60,7 +60,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 
 首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
    
-若要查看组织中的许可计划（**AccountSkuID** ）信息，请参阅下列主题：
+要查看组织中的许可计划 (**AccountSkuID**) 信息，请参阅下列主题：
     
   - [使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)
     
@@ -87,26 +87,32 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 ```
 
 >[!Note]
->无法使用`Set-MsolUserLicense` cmdlet 从*已取消*的许可证中取消分配用户。 您必须为 Microsoft 365 管理中心中的每个用户帐户单独执行此操作。
+>无法使用 `Set-MsolUserLicense` cmdlet 从*已取消*的许可证中取消分配用户。 您必须为 Microsoft 365 管理中心中的每个用户帐户单独执行此操作。
 >
 
-要从一组现有的授权用户中删除许可证，请使用下列方法之一：
+若要从一组现有许可用户中删除所有许可证，请使用下列方法之一：
   
 - **基于现有帐户属性筛选帐户**为此，请使用以下语法：
     
 ```powershell
-$x = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
-$x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
+$userArray = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
+for ($i=0; $i -lt $userArray.Count; $i++)
+{
+Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
+}
 ```
 
-本示例将从美国的销售部门用户的所有帐户中删除**litwareinc： ENTERPRISEPACK** （Office 365 企业版 E3）许可证。
+本示例将从美国的销售部的所有用户帐户中删除所有许可证。
     
 ```powershell
-$USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
-$USSales | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
+$userArray = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
+for ($i=0; $i -lt $userArray.Count; $i++)
+{
+Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
+}
 ```
 
-- **使用特定帐户的列表**为此，请执行以下步骤：
+- **对特定的许可证使用特定帐户的列表**为此，请执行以下步骤：
     
 1. 创建并保存一个文本文件，其中每一行都有一个帐户，如下所示：
     
@@ -119,7 +125,7 @@ kakers@contoso.com
 2. 使用以下语法：
     
   ```powershell
-  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
+  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId>" }
   ```
 
 本示例从文本文件 C:\My 中定义的用户帐户中删除**litwareinc： ENTERPRISEPACK** （Office 365 企业版 E3）许可证 Documents\Accounts.txt。
@@ -131,12 +137,10 @@ kakers@contoso.com
 若要从所有现有用户帐户中删除所有许可证，请使用以下语法：
   
 ```powershell
-$users = Get-MsolUser -All | where {$_.isLicensed -eq $true}
-ForEach($user in $users)
+$userArray = Get-MsolUser -All | where {$_.isLicensed -eq $true}
+for ($i=0; $i -lt $userArray.Count; $i++)
 {
-$licenses = $user.Licenses.AccountSkuId
-ForEach ($lic in $licenses)
-{ Set-MsolUserLicense -UserPrincipalName $user.UserPrincipalName -RemoveLicenses $lic }
+Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
 }
 ```
 
