@@ -3,7 +3,7 @@ title: 实现 Office 365 的 VPN 拆分隧道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/24/2020
+ms.date: 5/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 0594be194bda222fafa0d00a93e0ee43814cd334
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: 87d7e86f59a97bf11c053a57aa9acc6d33c03e63
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804027"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208773"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -226,8 +226,13 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 在某些情况下（通常与 Teams 客户端配置无关），即使有正确的路由，媒体流量仍会遍历 VPN 隧道。 如果遇到这种情况，只需使用防火墙规则来阻止 Teams IP 子网或端口使用 VPN。
 
+>[!NOTE]
+>要使其在 100% 的场景中工作，当前还有一个要求是添加 IP 范围 **13.107.60.1/32**。 由于 Teams 客户端更新于 **2020 年 6 月**发布，因此短期内此要求不是必须的。 如有其他可用信息，我们将立即更新这篇文章及内部版本详细信息。
+
+<!--
 >[!IMPORTANT]
->为确保 Teams 媒体流量在所有 VPN 方案中以所需的方式进行路由，请确保至少运行以下客户端版本号或更高版本，因为这些版本改进了客户端检测可用网络路径的方式。<br>Windows 版本号码：**1.3.00.9267**<br>Mac 版本号码：**1.3.00.9221**
+>To ensure Teams media traffic is routed via the desired method in all VPN scenarios please ensure you are running at least the following client version number or greater, as these versions have improvements in how the client detects available network paths.<br>Windows version number:  **1.3.00.9267**<br>Mac version number: **1.3.00.9221**
+-->
 
 信令流量是通过 HTTPS 执行的，它不像媒体流量那样对延迟敏感，并在 URL/IP 数据中标记为**允许**，因此如果需要，可以安全地通过 VPN 客户端进行路由。
 
