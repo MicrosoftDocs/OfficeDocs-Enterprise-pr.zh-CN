@@ -1,5 +1,5 @@
 ---
-title: 如何查看 Office 365 服务运行状况
+title: 如何检查 Microsoft 365 服务运行状况
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -24,43 +24,53 @@ search.appverid:
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: 在调用支持之前查看 Office 365 服务的运行状况状态，以查看是否有活动的服务中断。
-ms.openlocfilehash: 2d5b12e4443395d5a9a16fd6934ca68a99601416
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 在呼叫支持之前查看 Microsoft 365 服务的运行状况状态，以查看是否有活动的服务中断。
+ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
+ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843963"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44266674"
 ---
-# <a name="how-to-check-office-365-service-health"></a>如何查看 Office 365 服务运行状况
+# <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
 [![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
 
-您可以在[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 "Office 365**服务运行状况**" 页上查看 microsoft 服务的运行状况，包括 web 上的 Office、YAMMER、Microsoft Dynamics CRM 和 microsoft Intune 云服务。 If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
+您可以在[microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 "**服务运行状况**" 页上查看 microsoft 服务的运行状况，包括 web 上的 Office、YAMMER、Microsoft Dynamics CRM 和移动设备管理云服务。 If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
 如果无法登录到服务门户，则可以使用 "[服务状态" 页](https://status.office365.com)来检查阻止你登录租户的已知问题。
   
 ### <a name="how-to-check-service-health"></a>如何查看服务运行状况
 
-1. 转到管理中心[https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339)，并使用管理员帐户登录。
+1. 转到 Microsoft 365 管理中心 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) ，并使用管理员帐户登录。
 
     > [!NOTE]
-    > 分配为全局管理员或服务管理员角色的人员可以查看服务运行状况。 若要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，必须向他们分配服务管理员角色。 有关可查看服务运行状况的角色的详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)。
+    > 分配为全局管理员或服务管理员角色的人员可以查看服务运行状况。 若要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，必须向他们分配服务管理员角色。 有关可查看服务运行状况的角色的详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)。
   
-2. 如果您没有使用新管理中心，请在主页上，选择右上角的 "**尝试新管理中心**" 切换。
+2. 如果您没有使用新管理中心，请在**主页**上，选择右上角的 "**尝试新管理中心**" 切换。
 
-3. 若要查看服务运行状况，请在 "管理中心" 中，转到 "**运行状况** > **服务运行状况**"，或选择 "**主页" 仪表板**上的**服务运行状况**卡片。 仪表板卡片指示是否存在活动的服务问题，以及指向详细**服务运行状况**页面的链接。
+3. 若要查看服务运行状况，请在 "管理中心" 中，转到 "**运行状况**  >  **服务运行状况**"，或选择 "**主页" 仪表板**上的**服务运行状况**卡片。 仪表板卡片指示是否存在活动的服务问题，以及指向详细**服务运行状况**页面的链接。
   
 4. 在 "**服务运行状况**" 页上，将以表格格式显示每个云服务的运行状况状态。
 
    ![View of current issues in service health](media/service-health-all-services.png)
 
-"**所有服务**" 选项卡（默认视图）显示所有服务及其当前运行状况状态。 图标和**状态**列指示每个服务的状态。 若要将视图筛选为当前遇到事件的服务，请选择页面顶部的 "**事件**" 选项卡。 选择 "**建议**" 选项卡将仅显示当前已发布建议的服务。 "**历史记录**" 选项卡显示已解决的事件和建议的历史记录。
+"**所有服务**" 选项卡（默认视图）显示所有服务及其当前运行状况状态。 图标和**状态**列指示每个服务的状态。 
 
-如果您遇到 Office 365 服务的问题，但未在 "**服务运行状况**" 页上看到它，请通过选择 "**报告问题**" 和 "填写短格式" 来告诉我们它。 我们将介绍其他组织提供的相关数据和报告，以查看问题的广泛程度，以及是否与我们的服务有关。 如果是，我们会将其作为新事件或 "**服务运行状况**" 页上的公告添加，您可以在其中跟踪其解决方案。 如果您在30分钟内未看到它显示在列表中，请考虑联系支持人员以解决此问题。
+若要将视图筛选为当前遇到事件的服务，请选择页面顶部的 "**事件**" 选项卡。 选择 "**建议**" 选项卡将仅显示当前已发布建议的服务。 
+
+"**历史记录**" 选项卡显示已解决的事件和建议的历史记录。
+
+如果 Microsoft 365 服务遇到问题，并且未在 "**服务运行状况**" 页上看到它，请选择 "**报告问题**" 并填写 "短格式" 来告诉我们它。 我们将介绍其他组织提供的相关数据和报告，以查看问题的广泛程度，以及是否与我们的服务有关。 如果是，我们会将其作为新事件或 "**服务运行状况**" 页上的公告添加，您可以在其中跟踪其解决方案。 如果您在30分钟内未看到它显示在列表中，请考虑联系支持人员以解决此问题。
+
+若要注册影响你的租户的新事件的电子邮件通知以及活动事件的状态更改，请选择 "**首选项**"，单击 "**在电子邮件中向我发送服务 heath 通知**"，然后指定：
+
+- 最大为两个电子邮件地址。
+- 您是否需要针对事件或建议的通知
+- 要通知的服务
 
 > [!TIP]
-> 你也可以在移动设备上使用 [Office 365 Admin 应用](https://go.microsoft.com/fwlink/p/?linkid=627216)查看服务运行状况，这是一种通过推送通知随时获取最新消息的好方法。 
+> 您还可以在移动设备上使用[Microsoft 365 管理应用](https://go.microsoft.com/fwlink/p/?linkid=627216)来查看服务运行状况，这是保持最新的推送通知的绝佳方式。 
   
 ### <a name="view-details-of-posted-service-health"></a>查看已发布服务的运行状况详细信息
 
@@ -96,7 +106,7 @@ ms.locfileid: "41843963"
 大多数情况下，服务将显示为正常，没有进一步的信息。 服务出现问题时，该问题会标识为公告或事件，并显示当前状态。
   
 > [!TIP]
-> 服务运行状况中不会显示计划内维护事件。可以通过" **消息中心**"随时了解最新消息，从而跟踪计划内维护事件。筛选出分类为"更改计划"的消息，了解发生更改的时间、其影响以及如何做好相应准备。请参阅 [Office 365 中的消息中心](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)获取更多详细信息。
+> 服务运行状况中不会显示计划内维护事件。 可以通过" **消息中心**"随时了解最新消息，从而跟踪计划内维护事件。 筛选出分类为"更改计划"的消息，了解发生更改的时间、其影响以及如何做好相应准备。 有关详细信息，请参阅[Microsoft 365 中的消息中心](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)。
   
 ### <a name="incidents-and-advisories"></a>事件和公告
 
@@ -131,12 +141,8 @@ ms.locfileid: "41843963"
   
 展开任意行以查看有关问题的更多详细信息。
   
-有关我们对运行时间的承诺的详细信息，请参阅[Office 365 中的透明操作](https://go.microsoft.com/fwlink/?linkid=848695)。
-  
-## <a name="leave-feedback"></a>提供反馈
+有关我们对运行时间的承诺的详细信息，请参阅[来自 Microsoft 365 的透明操作](https://go.microsoft.com/fwlink/?linkid=848695)。
 
-我们的目标是确保向你及时、准确地提供仍在持续的问题的有用信息。若要告知我们采取的操作是否切实有效，请选择一个星级评分。给我们评出 1 - 5 星的分数后，你可以提供有关任何特定详细信息的反馈。我们将使用你的反馈微调服务运行状况系统。
-  
 ## <a name="see-also"></a>另请参阅
 
 [Microsoft 365 管理中心中的活动报告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

@@ -3,7 +3,7 @@ title: 保护 Office 365 全局管理员帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 保护对 Office 365 订阅的全局管理员访问权限。
-ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
-ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
+ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
+ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44013405"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44253289"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>保护 Office 365 全局管理员帐户
 
@@ -44,7 +44,7 @@ Microsoft 提供的功能可帮助保护你的组织，但只有在你使用它�
     
 > [!注释] 尽管本文重点介绍了全局管理员帐户，但您应考虑是否需要以相同方式保护订阅中的数据（如电子数据展示管理员或安全或合规性管理员帐户）的其他帐户。 <br > 全局管理员帐户可在不添加任何许可证的情况下创建。
   
-## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>第 1 步： 创建专用的 Office 365 全局管理员帐户，并仅在必要时使用
+## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步骤 1. 创建专用的 Office 365 全局管理员帐户，并仅在必要时使用
 
 与需要全局管理员权限的用户帐户分配角色相比，管理任务相对较少。 因此，请执行以下步骤，而不是使用已分配有全局管理员角色的日常用户帐户。
   
@@ -101,6 +101,10 @@ Microsoft 提供的功能可帮助保护你的组织，但只有在你使用它�
     
 - 生物识别设备
     
+>[!Note]
+>对于必须遵守美国国家标准和技术协会（NIST）标准的组织，限制使用电话呼叫或基于短邮件的其他验证方法。 有关详细信息，请单击[此处](https://pages.nist.gov/800-63-FAQ/#q-b01)。
+>
+
 如果你是一位仅使用在云中存储的用户帐户的小型企业（仅限云身份验证模型），请使用以下步骤配置使用电话呼叫或发送到智能手机的短信验证代码的 MFA：
   
 1. [设置 MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
@@ -132,7 +136,7 @@ Microsoft 提供的功能可帮助保护你的组织，但只有在你使用它�
 
 若要确保高特权任务的执行尽可能安全，请使用特权访问工作站（PAW）。 PAW 是一台专用计算机，仅用于敏感配置任务，如需要全局管理员帐户的 Office 365 配置。 由于此计算机不会每天用于 Internet 浏览或电子邮件，因此它会更好地受到 Internet 攻击和威胁的保护。
   
-有关如何设置 PAW 的说明，请参阅[https://aka.ms/cyberpaw](https://aka.ms/cyberpaw)。
+有关如何设置 PAW 的说明，请参阅 [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) 。
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
