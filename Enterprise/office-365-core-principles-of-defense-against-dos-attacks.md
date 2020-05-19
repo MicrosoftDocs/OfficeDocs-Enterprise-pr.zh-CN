@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 如何在防御拒绝服务（DoS）攻击的同时，利用其核心原则、检测和缓解措施。
-ms.openlocfilehash: 82957dd1b863e14c13e86b63888e2b1374beb73b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844523"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278075"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>防御拒绝服务攻击的核心原则
 
@@ -36,7 +36,7 @@ ms.locfileid: "41844523"
 
 下面的公式有助于估计 DoS 攻击的影响时间：
 
-   **最大容量（以字节/秒为单位）/增长率（以字节/秒为单位） = 影响的时间（以字节/秒为单位）**
+   **最大容量（以字节/秒为单位）/增长速率（以字节/秒为单位） = 影响时间（秒）**
 
 如果检测时间发生在时间影响之后，则 DoS 攻击可能会成功。 如果检测时间在影响时间之前发生，则在使用缓解策略时，攻击服务应保持在线并可访问。 因此，防御 DoS 攻击只需要执行以下两项操作：
 

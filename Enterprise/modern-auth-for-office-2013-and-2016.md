@@ -23,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 新式验证在 Office 2013 和2016客户端应用中的工作方式不同。
-ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
+ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844853"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280211"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>适用于 Office 2013 和 Office 2016 客户端应用的新式验证工作原理
 
@@ -54,7 +54,14 @@ ms.locfileid: "41844853"
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office 客户端应用程序的登录行为
 
-默认情况下，Office 2013 客户端应用支持旧版身份验证。 旧版是指它们支持 Microsoft Online 登录助手或基本身份验证。 为了让这些客户端使用新式身份验证功能，Windows 客户端已设置注册表项。 有关说明，请参阅[在 Windows 设备上为 Office 2013 启用新式验证](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)。
+默认情况下，Office 2013 客户端应用支持旧版身份验证。 旧版是指它们支持 Microsoft Online 登录助手或基本身份验证。 为了让这些客户端使用新式身份验证功能，Windows 客户端必须设置注册表项。 有关说明，请参阅[在 Windows 设备上为 Office 2013 启用新式验证](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)。
+
+若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。必须在每台要启用新式验证的设备上设置注册表项：
+  
+|**注册表项**|**Type**|**值** |
+|:-------|:------:|--------:|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
   
 阅读[如何将新式验证（ADAL）与 skype For business 结合使用](https://go.microsoft.com/fwlink/p/?LinkId=785431)，了解如何使用 skype for business。 
   
@@ -75,7 +82,7 @@ ms.locfileid: "41844853"
   
 |Office 客户端应用程序版本 * * * *|存在注册表项？ * * * *|上的新式身份验证？ * * * *|为租户启用新式身份验证的身份验证行为（默认） * * * *|为租户 * * * * 禁用新式身份验证的身份验证行为|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2016  <br/> |不 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |是  <br/> |在 Outlook 2010、2013或2016上强制进行新式身份验证 <br/> [详细信息](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|在 Outlook 客户端中强制进行新式身份验证。<br/> |
+|Office 2016  <br/> |不 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |是  <br/> |在 Outlook 2010、2013或2016上强制进行新式身份验证 <br/> [更多信息](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|在 Outlook 客户端中强制进行新式身份验证。<br/> |
 |Office 2016  <br/> |否，或 EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |
 |Office 2016  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式身份验证连接，则使用基本身份验证。 当租户未启用时，服务器将拒绝新式身份验证。  <br/> |
 |Office 2016  <br/> |是，EnableADAL = 0  <br/> |否  <br/> |基本身份验证  <br/> |基本身份验证  <br/> |
