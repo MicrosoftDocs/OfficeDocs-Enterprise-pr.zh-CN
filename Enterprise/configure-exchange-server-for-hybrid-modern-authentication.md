@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 混合新式身份验证（HMA）是一种身份管理方法，它提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
-ms.openlocfilehash: 6c4b57454b415b3af799d82e1c3655daa1fd5ef8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c52eecbe57567276de94aac913b7b82db8c5e404
+ms.sourcegitcommit: 72a4938f1372e7f3693b53bcabac0c5d18305a1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840739"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326439"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
@@ -33,9 +33,9 @@ ms.locfileid: "41840739"
 
 在开始之前，我称之为：
   
-- 混合新式身份\>验证 HMA
+- 混合新式身份验证 \> HMA
     
-- Exchange 本地\> EXCH
+- Exchange 本地 \> EXCH
     
 - Exchange Online \> EXO
     
@@ -90,7 +90,7 @@ Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | 
 
 记下（和屏幕截图以便稍后比较）此命令的输出应包括 https:// *autodiscover.yourdomain.com*和 Https:// *mail.yourdomain.com* URL，但主要是由以 00000002-0000-0Ff1-ce00-000000000000/开头的 spn 组成。 如果缺少内部部署中的 https://Url，我们需要将这些特定记录添加到此列表中。 
   
-3. 如果您在此列表中看不到内部和外部 MAPI/HTTP、EWS、ActiveSync、OAB 和自动发现记录，则必须使用下面的命令添加它们（示例 Url 是`mail.corp.contoso.com`' ' and`owa.contoso.com`' '，但您需要将**示例 url 替换为您自己的 url** ）： <br/>
+3. 如果您在此列表中看不到内部和外部 MAPI/HTTP、EWS、ActiveSync、OAB 和自动发现记录，则必须使用下面的命令添加它们（示例 Url 是 ' `mail.corp.contoso.com` ' and ' `owa.contoso.com` '，但您需要将**示例 url 替换为您自己的 url** ）： <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
@@ -98,7 +98,7 @@ $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
-4. 再次运行步骤2中的 New-msolserviceprincipal 命令，并查看输出，以验证新记录是否已添加。 将列表/屏幕截图从早到新的 Spn 列表进行比较（您还可能会为您的记录提供新列表的屏幕截图）。 如果成功，您将在列表中看到两个新的 Url。 根据我们的示例，Spn 列表现在将包含特定的 Url `https://mail.corp.contoso.com`和。 `https://owa.contoso.com` 
+4. 再次运行步骤2中的 New-msolserviceprincipal 命令，并查看输出，以验证新记录是否已添加。 将列表/屏幕截图从早到新的 Spn 列表进行比较（您还可能会为您的记录提供新列表的屏幕截图）。 如果成功，您将在列表中看到两个新的 Url。 根据我们的示例，Spn 列表现在将包含特定的 Url `https://mail.corp.contoso.com` 和 `https://owa.contoso.com` 。 
   
 ## <a name="verify-virtual-directories-are-properly-configured"></a>验证是否正确配置了虚拟目录
 
@@ -126,7 +126,7 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
   
-如果任何服务器和四个虚拟目录中的任何一个都缺少 OAuth，则需要先使用相关命令添加它，然后再继续。
+如果任何服务器和四个虚拟目录中的任何一个都缺少 OAuth，则需要在继续之前使用相关命令添加它（[MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-mapivirtualdirectory?view=exchange-ps)、 [set-webservicesvirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-webservicesvirtualdirectory?view=exchange-ps)、 [set-oabvirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-oabvirtualdirectory?view=exchange-ps)和[set-new-autodiscovervirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-autodiscovervirtualdirectory?view=exchange-ps)）。
   
 ## <a name="confirm-the-evosts-auth-server-object-is-present"></a>确认 EvoSTS Auth Server 对象是否存在
 
@@ -153,7 +153,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 启用 HMA 后，客户端的下一次登录将使用新的身份验证流。 请注意，仅打开 HMA 不会触发任何客户端的重新身份验证。 客户端将根据身份验证令牌和/或证书的有效期重新进行身份验证。
   
-您还应按住 CTRL 键，同时右键单击 Outlook 客户端的图标（也在 Windows 通知栏中），然后单击 "连接状态"。 针对 "身份验证" 类型的 "载荷\*" 查找客户端的 SMTP 地址，该类型表示在 OAuth 中使用的持有者令牌。
+您还应按住 CTRL 键，同时右键单击 Outlook 客户端的图标（也在 Windows 通知栏中），然后单击 "连接状态"。 针对 "身份验证" 类型的 "载荷" 查找客户端的 SMTP 地址 \* ，该类型表示在 OAuth 中使用的持有者令牌。
   
  **注释**是否需要使用 HMA 配置 Skype for Business？ 您将需要两个文章：一个列出[受支持的拓扑](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，另一个演示[如何执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。
  
