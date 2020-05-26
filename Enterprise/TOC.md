@@ -86,6 +86,13 @@
 #### [概述： VPN 拆分隧道](office-365-vpn-split-tunnel.md)
 #### [实现 VPN 拆分隧道](office-365-vpn-implement-split-tunnel.md)
 #### [Office 365 中国用户优化](office-365-networking-china.md)
+### GCC High 和 DoD 租户联网
+#### [ GCC High 和 DoD 附加网络安全要求](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
+#### [Office 365 DoD DNS 记录](dns-records-for-office-365-dod.md)
+#### [Office 365 GCC High DNS 记录](dns-records-for-office-365-gcc-high.md)
+#### [美国政府 DoD 终结点](office-365-u-s-government-dod-endpoints.md)
+#### [美国政府 GCC 高终结点](office-365-u-s-government-gcc-high-endpoints.md)
+#### [Office 365 加密链 - DOD 和 GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
 ### [内容分发网络](content-delivery-networks.md)
 ### [Office 365 服务中的 IPv6 支持](ipv6-support.md)
 ### [Office 365 随附的 NAT 支持](nat-support-with-office-365.md)
