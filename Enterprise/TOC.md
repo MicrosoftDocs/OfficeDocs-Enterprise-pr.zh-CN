@@ -30,7 +30,6 @@
 ## Office 365 客户端支持
 ### [基于证书的身份验证](office-365-client-support-certificate-based-authentication.md)
 ### [条件访问](office-365-client-support-conditional-access.md)
-### [在 MDM 和 Intune 之间进行选择](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [移动应用管理](office-365-client-support-mobile-application-management.md)
 ### [新式验证](office-365-client-support-modern-authentication.md)
 ### [单一登录](office-365-client-support-single-sign-on.md)
@@ -198,7 +197,6 @@
 ### [恢复用户邮箱中的已删除项目](recover-deleted-items-in-a-mailbox.md)
 
 ## 设备
-### [在 MDM 和 Intune 之间进行选择](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [管理设备访问设置](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
 ## 工作负载
