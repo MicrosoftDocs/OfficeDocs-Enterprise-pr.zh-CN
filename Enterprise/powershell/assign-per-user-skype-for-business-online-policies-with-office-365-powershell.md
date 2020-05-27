@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 Office 365 PowerShell 将每个用户的通信设置分配到 Skype for Business Online 策略。
-ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
-ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
+ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
+ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43146807"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374441"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>指定每个用户 Skype 的在线商业策略与 Office 365 PowerShell
 
@@ -110,7 +110,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 ## <a name="managing-large-numbers-of-users"></a>管理大量用户
 
-若要管理大量用户（1000或更多），您需要通过使用[调用命令](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)cmdlet 的脚本块对命令进行批处理。  在前面的示例中，每次执行 cmdlet 时，都必须先设置调用，然后等待结果，然后再将其发送回来。  使用脚本块时，可以远程执行 cmdlet，并在完成后将数据发送回来。 
+若要管理大量用户（1000或更多），您需要通过使用[调用命令](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)cmdlet 的脚本块对命令进行批处理。  在前面的示例中，每次执行 cmdlet 时，都必须先设置调用，然后等待结果，然后再将其发送回来。  使用脚本块时，可以远程执行 cmdlet，并在完成后将数据发送回来。 
 
 ```powershell
 Import-Module LyncOnlineConnector
