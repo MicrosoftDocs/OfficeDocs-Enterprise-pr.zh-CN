@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 摘要：介绍用于连接到 Office 365 的网络容量、WAN 加速器和负载平衡设备的注意事项。
-ms.openlocfilehash: edc089abc58f19c0655f9a75da96366a0a09dcb7
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9776611aa64f8783a22252a2c4182e63bda1093a
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841720"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419369"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 
@@ -74,6 +74,6 @@ ms.locfileid: "41841720"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)
+[Office 365 服务的安装指南](setup-guides-for-office-365.md)
 
 [Microsoft 365 企业版概述](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

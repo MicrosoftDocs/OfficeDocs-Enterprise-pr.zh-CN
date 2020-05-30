@@ -18,12 +18,12 @@ ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
 description: 配置 Office 365 企业版服务和应用程序
-ms.openlocfilehash: 45fb283894e68e40d38bc42667f5ac9e5d45b579
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: e0b0be9b4b99f5a652145e9f2991181769a9df19
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009317"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419320"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>配置 Office 365 企业版服务和应用程序
 
@@ -31,7 +31,7 @@ ms.locfileid: "44009317"
 
 [基本设置说明](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)可帮助你使所有人在尽可能短的时间均可使用 Office 365 服务和应用程序。有时，通常倾向于在素有人开始使用之前进行配置。例如，可能需要配置邮件路由、文件存储或共享策略。 
   
-如果你需要有关设置 Office 365 的帮助，请使用 **[FastTrack](https://fasttrack.microsoft.com/office)** 或 [Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)。
+如果您想要获取 Office 365 设置的帮助，请使用**[FastTrack](https://fasttrack.microsoft.com/office)** 或[Office 365 服务的设置指南](setup-guides-for-office-365.md)。
   
 |**服务和应用程序**|**资源**|
 |:-----|:-----|

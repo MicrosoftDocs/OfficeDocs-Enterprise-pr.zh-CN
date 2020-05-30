@@ -16,12 +16,12 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 description: 如果你已选择退出 FastTrack 部署并准备将数据迁移到 Office 365，可以从此处开始。
-ms.openlocfilehash: 4389d5531b21b892408ba7941900ee7aceb55474
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844883"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419340"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>将组织数据迁移到 Office 365 企业版
 
@@ -29,7 +29,7 @@ ms.locfileid: "41844883"
 
 [基本设置说明](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)可帮助你在尽可能短的时间内使所有人均可使用 Office 365 服务和应用程序。这会跳过迁移到 Office 365 的混合方案和更高级方法。 
   
-如果设置 Office 365 时需要帮助，[FastTrack](https://fasttrack.microsoft.com/office) 是部署 Office 365 的最简单方法，还可以登录并使用 [Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)。
+如果您想要获取 Office 365 设置的帮助， [FastTrack](https://fasttrack.microsoft.com/office)是部署 office 365 的最简单方法，您还可以登录并使用[Office 365 服务的安装指南](setup-guides-for-office-365.md)。
 
 ## <a name="migrate-email-to-office-365"></a>将 电子邮件迁移到 Office 365
 - 使用 [Exchange 部署助理](https://technet.microsoft.com/exdeploy2013)通过 Exchange 混合迁移。（管理员）

@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。
-ms.openlocfilehash: dbd996a21cb98fcf7831ef22b855cc8fcb1af39f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840509"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419360"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 部署计划清单
 
 将企业组织迁移到 Office 365 时，务必要准确规划要执行的步骤、执行时间以及执行这些步骤的用户。 此检查表将在您计划和准备迁移到 Office 365 时帮助您的组织。 检查表中的阶段和步骤与 "[加入中心](https://go.microsoft.com/fwlink/?LinkId=517115)" 提供的指导保持一致。 你可以根据组织的需要自由调整此检查表。
 
 ## <a name="need-help-with-your-deployment"></a>您的部署是否需要帮助？
-您是否希望获得 Office 365 设置的帮助？ 请考虑使用[FastTrack](https://fasttrack.microsoft.com/office)或[Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)。
+您是否希望获得 Office 365 设置的帮助？ 请考虑使用[FastTrack](https://fasttrack.microsoft.com/office)或[Office 365 服务的设置指南](setup-guides-for-office-365.md)。
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Office 365 企业版部署的示例清单
 
@@ -40,7 +40,7 @@ ms.locfileid: "41840509"
 |:-----|:-----|:-----|:-----|:-----|
 |**部署任务/Events** <br/> |"开始日期" <br/> |**完成日期** <br/> |**资源** <br/> |**依赖项** <br/> |
 |**确定您的部署目标** <br/> |||||
-| 与您的内部和外部利益干系人：<br>  -在范围和时间线上达成一致 <br>  -同意项目跟踪机制  <br>  -开发成功条件和[开始使用 Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)的[通信](https://fasttrack.microsoft.com/office) / |||||
+| 与您的内部和外部利益干系人：<br>  -在范围和时间线上达成一致 <br>  -同意项目跟踪机制  <br>  -开发成功条件和[communication](https://fasttrack.microsoft.com/office)  /  [开始使用 Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)的通信|||||
 |**清点当前环境并做出主要部署决策** |||||
 |清点当前环境 |||||
 | 收集用户帐户数（登录名、电子邮件地址） |||||
@@ -70,7 +70,7 @@ ms.locfileid: "41840509"
 | 配置[应用程序设置](https://go.microsoft.com/fwlink/?LinkId=534829)（电子邮件、即时消息、联机会议、web 协作、文件存储、Yammer） |||||
 | （可选）[准备目录同步](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
 | （可选）[准备单一登录](https://go.microsoft.com/fwlink/?LinkId=534831) |||||
-|准备组织 |||||
+|让组织做好准备 |||||
 |为即将进行的迁移[准备维修台](https://fasttrack.microsoft.com/office) |||||
 | 测试部署和可选迁移过程 |||||
 | 告诉你的用户[即将进行的更改及其对它们有何影响](https://fasttrack.microsoft.com/office) |||||

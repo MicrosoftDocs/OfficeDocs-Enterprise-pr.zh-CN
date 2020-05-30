@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
-ms.openlocfilehash: 0601775beb3f7e42d3e18de7b85406c02df2f4e8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844573"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419380"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
@@ -77,7 +77,7 @@ ms.locfileid: "41844573"
     
 3. 通过仔细管理 Windows 更新的日程安排，提高邮件迁移性能。 您可以成批更新客户端计算机，并确保在迁移到 Office 365 之前更新所有客户端计算机，以控制网络带宽的使用。 有关详细信息，请参阅为[Office 365 手动更新和配置桌面，以获取最新更新](https://support.microsoft.com/gp/office-2013-365-update)。
     
-4. Office 365 网络流量在被视为受信任的 Internet 服务时执行得最佳，并允许绕过大部分传统筛选和扫描，以避免某些组织将网络流量置于不受信任的 Internet 服务中。 这通常包括删除出站处理（如代理用户身份验证和数据包检查），并确保使用正确的网络地址转换（NAT）和足够的带宽容量来处理已增加的 Internet 的本地出口。网络请求。 有关配置网络以将 Office 365 作为受信任的 Internet 服务在网络上进行处理的其他指导，请参阅[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。
+4. Office 365 网络流量在被视为受信任的 Internet 服务时执行得最佳，并允许绕过大部分传统筛选和扫描，以避免某些组织将网络流量置于不受信任的 Internet 服务中。 这通常包括删除出站处理（如代理用户身份验证和数据包检查），以及使用正确的网络地址转换（NAT）和足够的带宽容量来处理增加的网络请求，从而确保本地进入 Internet。 有关配置网络以将 Office 365 作为受信任的 Internet 服务在网络上进行处理的其他指导，请参阅[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。
     
 1. 确保[管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。 转到 Office 365 的其他流量会导致出站代理连接的增加以及通过 TLS/SSL 的安全通信的增长。
     
@@ -98,8 +98,6 @@ ms.locfileid: "41844573"
   
 - [管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
-- [客户端连接](client-connectivity.md)
-    
 - [内容分发网络](content-delivery-networks.md)
     
 - [Office 365 的外部域名系统记录](external-domain-name-system-records.md)
@@ -112,7 +110,7 @@ ms.locfileid: "41844573"
     
 - [有关连接到 Office 365 服务的网络设备的计划](plan-for-network-devices.md)
     
-- [Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)
+- [Office 365 服务的安装指南](setup-guides-for-office-365.md)
  
 ## <a name="see-also"></a>另请参阅
 
