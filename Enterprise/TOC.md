@@ -17,7 +17,7 @@
 #### [混合标识](plan-for-directory-synchronization.md)
 
 ### [Office 365 第三方 SSL 证书计划](plan-for-third-party-ssl-certificates.md)
-### [Office 365 服务的部署顾问](deployment-advisors-for-office-365.md)
+### [Office 365 和 Microsoft 365 服务的设置指南](setup-guides-for-office-365.md)
 ### [集成应用和 Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Office 365 集成
@@ -181,7 +181,6 @@
 # 管理 Office 365
 
 ## 网络
-### [客户端连接](client-connectivity.md)
 ### [监视连接性](monitor-connectivity.md)
 
 ## 目录同步
