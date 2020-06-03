@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：Office 365 数据位置
-ms.openlocfilehash: e90b394a2e507c0af55df27e376301ccc836d5c5
-ms.sourcegitcommit: 933e12d273d84ada082f2faed8a383cfd5471007
+ms.openlocfilehash: 7d66669ddab78a6f84703fb350d0a5cd2707b8af
+ms.sourcegitcommit: 4643a0eb2c65f5e9aba0477e948120ea91bf74d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44484588"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44507240"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -5046,7 +5046,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Yammer | 全球地理位置 1 – EMEA |
 | OneNote 服务 | 瑞士 |
 | Stream | 全球地理位置 1 – EMEA |
-| Whiteboard | 美国 |
+| Whiteboard | 全球地理位置 1 – EMEA |
 | Forms | 全球地理位置 1 – EMEA |
 | 工作区分析 | 美国 |
 </p></details>
