@@ -3,7 +3,7 @@ title: 使用 SharePoint Online 的页面诊断工具
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/11/2020
+ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,26 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 使用 SharePoint 工具的页面诊断工具，针对预定义的一组性能条件对 SharePoint Online 新式门户和经典发布页面进行分析。
-ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: 08bfa6abf0aab4abafaf5fad3a0e43afb9000370
+ms.sourcegitcommit: ea2f92f147dbf8183124476302ca33c4cf4265a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603731"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44561799"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>使用 "网页诊断程序" SharePoint 工具
 
-本文介绍如何使用**sharepoint 工具的页面诊断工具**根据预定义的一组性能条件分析 sharepoint Online 新式和经典网站页面。  
+本文介绍如何使用**sharepoint 工具的页面诊断工具**根据预定义的一组性能条件分析 sharepoint Online 新式和经典网站页面。
+
+可以为安装 SharePoint 工具的页面诊断工具：
+
+- **Microsoft edge** [（边缘扩展）](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **部件版式** [（部件版式扩展）](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >版本**2.0.0**和更高版本包括对新式页面以及经典网站页面的支持。 如果您不确定使用的是哪个版本的工具，则可以选择 "**关于**" 链接或省略号（...）来验证您的版本。 使用工具时 **，请始终更新到最新版本**。
 
-SharePoint 工具的页面诊断工具是新 Microsoft Edge （https://www.microsoft.com/edge)和同时分析 SharePoint Online 新式门户和经典发布网站页面的 Chrome 浏览器）的浏览器扩展。 此工具仅适用于 SharePoint Online，不能用于 SharePoint 系统页面。
+适用于 SharePoint 的页面诊断工具是一款面向新 Microsoft Edge (https://www.microsoft.com/edge)) 和 Chrome 浏览器的浏览器扩展，可用于分析 SharePoint Online 新式门户和经典发布网站页面。 此工具仅适用于 SharePoint Online，不能用于 SharePoint 系统页面。
 
 该工具为每个分析页面生成一个报告，该页面显示页面如何针对预定义的规则集执行，并在测试的结果超出比较基准值时显示详细信息。 SharePoint Online 管理员和设计人员可以使用该工具解决性能问题，并确保新页面在发布之前进行了优化。
 
@@ -126,7 +131,7 @@ SharePoint 工具的页面诊断工具是新 Microsoft Edge （https://www.micro
 
     ![网络跟踪](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    在上面显示的图像中，红色项目与默认页面相关。 除非在1000ms （小于1秒）内\<加载页面，否则它将始终显示红色。
+    在上面显示的图像中，红色项目与默认页面相关。 除非在 \< 1000ms （小于1秒）内加载页面，否则它将始终显示红色。
 
 2. **测试项加载时间**。 在某些情况下，由于浏览器已缓存这些项，因此不会有任何时间或颜色指示器。 若要正确测试此设置，请打开页面，清除浏览器缓存，然后单击 "**启动**"，这将强制 "冷" 页面加载，并成为初始页面加载的真正反映。 此操作应与 "感兴趣" 页面加载进行比较，这将有助于确定要在页面上缓存的项目。
 
