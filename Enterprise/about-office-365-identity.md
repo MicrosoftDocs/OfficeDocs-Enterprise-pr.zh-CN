@@ -1,10 +1,10 @@
 ---
-title: Office 365 标识模型和 Azure Active Directory
+title: Microsoft 365 标识模型和 Azure Active Directory
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 05/20/2019
+ms.date: 06/09/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,27 +20,27 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: 了解如何在 Office 365 中管理用户标识。
-ms.openlocfilehash: a44f3073895ef1c8172a6ab5637f50cd9c6ac186
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 了解如何在 Microsoft 365 中管理用户标识。
+ms.openlocfilehash: 44777f206b61b01dc8a66817f549120af827bbc3
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843803"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698949"
 ---
-# <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 标识模型和 Azure Active Directory
+# <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 标识模型和 Azure Active Directory
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Office 365 使用 Azure Active Directory （Azure AD），这是 Office 365 订阅附带的基于云的用户标识和身份验证服务，用于管理 Office 365 的标识和身份验证。 正确配置标识基础结构是管理组织的 Office 365 用户访问和权限的关键。
+Microsoft 365 使用 Azure Active Directory （Azure AD），这是 Microsoft 365 订阅附带的基于云的用户标识和身份验证服务，用于管理 Microsoft 365 的身份和身份验证。 正确配置您的身份基础结构对于管理您的组织的 Microsoft 365 用户访问和权限至关重要。
 
-开始之前，请观看此视频，了解有关 Office 365 和 Microsoft 365 的标识模型和身份验证的概述。
+开始之前，请观看此视频，以获取 Microsoft 365 身份模型和身份验证的概述。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-您的第一次规划选择是 Office 365 身份模型。
+您的第一次规划选择是 Microsoft 365 身份模型。
 
-## <a name="office-365-identity-models"></a>Office 365 标识模型
+## <a name="microsoft-365-identity-models"></a>Microsoft 365 标识模型
 
 若要规划用户帐户，首先需要了解 Microsoft 365 中的两个标识模型。 您可以仅在云中维护组织的标识，也可以维护内部部署 Active Directory 域服务（AD DS）标识，并在用户访问 Microsoft 365 云服务时使用它们进行身份验证。  
 
@@ -49,7 +49,7 @@ Office 365 使用 Azure Active Directory （Azure AD），这是 Office 365 订�
 |||
 |:-------|:-----|:-----|
 |  | **仅限云的标识** | **混合标识** |
-| **定义** | 用户帐户仅存在于适用于 Microsoft 365 订阅的 Azure Active Directory （Azure AD）租户中。 | 用户帐户存在于 AD DS 中，并且副本也位于 Microsoft 365 订阅的 Azure AD 租户中。 Azure AD 中的用户帐户也可能包含用户帐户密码的哈希版本。 |
+| **定义** | 用户帐户仅存在于适用于 Microsoft 365 订阅的 Azure Active Directory （Azure AD）租户中。 | 用户帐户存在于 AD DS 中，并且副本也位于 Microsoft 365 订阅的 Azure AD 租户中。 Azure AD 中的用户帐户可能还包含已散列的 AD DS 用户帐户密码的哈希版本。 |
 | **Microsoft 365 如何对用户凭据进行身份验证** | Microsoft 365 订阅的 Azure AD 租户将使用云标识帐户执行身份验证。 | Microsoft 365 订阅的 Azure AD 租户可以处理身份验证过程，也可以将用户重定向到另一个标识提供程序。 |
 | **最适用于** | 不具有或不需要本地 AD DS 的组织。 | 使用 AD DS 或其他标识提供程序的组织。 |
 | **最大好处** | 易于使用。 无需额外的目录工具或服务器。 | 在访问本地或基于云的资源时，用户可以使用相同的凭据。 |
@@ -63,10 +63,10 @@ Office 365 使用 Azure Active Directory （Azure AD），这是 Office 365 订�
  
 ![仅限云标识的基本组件](./media/about-office-365-identity/cloud-only-identity.png)
 
-内部部署和远程（联机）用户使用其 Azure AD 用户帐户和密码来访问 Office 365 云服务。 Azure AD 根据其存储用户帐户和密码对用户凭据进行身份验证。
+内部部署和远程（联机）用户使用其 Azure AD 用户帐户和密码来访问 Microsoft 365 云服务。 Azure AD 根据其存储用户帐户和密码对用户凭据进行身份验证。
 
 ### <a name="administration"></a>管理
-由于用户帐户仅存储在 Azure AD 中，因此，可以使用[Microsoft 365 管理中心](https://admin.microsoft.com)和 Windows PowerShell 等工具管理云标识，其中包含适用于 Graph 模块的 Azure Active Directory PowerShell。 
+由于用户帐户仅存储在 Azure AD 中，因此可使用[Microsoft 365 管理中心](https://admin.microsoft.com)和[Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell)等工具管理云标识。 
 
 ## <a name="hybrid-identity"></a>混合标识
 
@@ -90,18 +90,14 @@ Azure AD 租户具有 AD DS 帐户的副本。 在此配置中，本地用户和
 
 由于原始和权威用户帐户存储在内部部署 AD DS 中，因此，可以使用与 AD DS 相同的工具（如 Active Directory 用户和计算机工具）管理您的标识。 
 
-您不使用 Microsoft 365 管理中心或 Windows PowerShell 管理 Azure AD 中的同步用户帐户。
+您不使用 Microsoft 365 管理中心或 Office 365 PowerShell 管理 Azure AD 中的同步用户帐户。
 
 ## <a name="next-step"></a>后续步骤
 
-如果您需要仅限云的标识模型，请参阅[仅限云](cloud-only-identities.md)的标识。
+如果您需要仅限云的标识模型，请参阅[仅限云标识](cloud-only-identities.md)。
 
-如果需要混合标识模型，请参阅[目录同步](plan-for-directory-synchronization.md)。
-  
+如果需要混合标识模型，请参阅[混合标识](plan-for-directory-synchronization.md)。
 
-## <a name="video-training"></a>视频培训
-
-请参阅视频课程[Office 365：使用 AZURE AD Connect 管理标识](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx)（通过 LinkedIn 学习）。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -1,5 +1,5 @@
 ---
-title: 同时向 Office 365 添加多个用户 - 管理员帮助
+title: 同时将多个用户添加到 Microsoft 365-管理员帮助
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,24 +24,24 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Office 365 for business 中添加多个用户。 观看 YouTube 上的视频，说明如何将帐户添加到 Office 365。 在此过程结束时，拥有帐户的每位用户都将拥有一个 Office 365 邮箱。 '
-ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
-ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
+description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Microsoft 365 for business 中添加多个用户。 观看 YouTube 上的视频，说明如何将帐户添加到 Microsoft 365。 在此过程结束时，拥有帐户的每位用户都将拥有一个 Microsoft 365 邮箱。 '
+ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901205"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699239"
 ---
-# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同时向 Office 365 添加多个用户 - 管理员帮助
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同时将多个用户添加到 Microsoft 365-管理员帮助
 
-团队中的每个人都需要用户帐户，才能登录并访问 Office 365 服务（如电子邮件和 Office）。 如果有很多人，则可以从 Excel 电子表格或以 CSV 格式保存的其他文件中一次添加所有帐户。 [不确定哪种 CSV 格式？](add-several-users-at-the-same-time.md#__toc316652088)
+团队中的每个人都需要用户帐户，才能登录并访问 Microsoft 365 服务，例如电子邮件和 Office。 如果有很多人，则可以从 Excel 电子表格或以 CSV 格式保存的其他文件中一次添加所有帐户。 [不确定哪种 CSV 格式？](add-several-users-at-the-same-time.md#__toc316652088)
   
 > [!NOTE] 
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>将多个用户添加到 Microsoft 365 管理中心中的 Office 365
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中添加多个用户
 
-1. 使用工作或学校帐户登录 Office 365。 
+1. 使用工作或学校帐户登录 Microsoft 365。 
     
 2. 在 "管理中心" 中，选择 "**用户** \> **活动用户**"。
 
@@ -74,13 +74,13 @@ ms.locfileid: "43901205"
 ## <a name="next-steps"></a>后续步骤
 <a name="bk_preview"> </a>
 
-- 现在，这些人具有帐户，需要在[电脑或 Mac 上下载并安装或重新安装 office 365 或 office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)。 您的团队中的每个人都可以在最高5台电脑或 Mac 上安装 Office 365。 
+- 现在，这些人拥有帐户，需要在[电脑或 Mac 上下载并安装或重新安装 Microsoft 365 或 Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)。 你的团队中的每个人都可以在最高5台电脑或 Mac 上安装 Microsoft 365。 
     
 - 每个人还可以在最大5个平板电脑和5个电话（例如 Iphone、Ipad 和 Android 电话和平板电脑）上的[移动设备上设置 Office 应用和电子邮件](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f)。 这样一来，他们就可以从任何位置编辑 Office 文件。 
     
-    有关安装步骤的端到端列表，请参阅[设置 Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 。 
+    有关安装步骤的端到端列表，请参阅[设置 Microsoft 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 。 
     
-## <a name="more-information-about-how-to-add-users-to-office-365"></a>有关如何将用户添加到 Office 365 的详细信息
+## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>有关如何将用户添加到 Microsoft 365 的详细信息
 <a name="bk_preview"> </a>
 
 ### <a name="not-sure-what-csv-format-is"></a>不确定哪种 CSV 格式？
@@ -88,7 +88,7 @@ ms.locfileid: "43901205"
 
 CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何文本编辑器或电子表格程序（如 Excel）创建或编辑此类文件。
   
-您可以将[此示例电子表格](https://www.microsoft.com/download/details.aspx?id=45485)作为起始点下载。 请记住，Office 365 需要列标题在第一行中，因此不要将其替换为其他内容。 
+您可以将[此示例电子表格](https://www.microsoft.com/download/details.aspx?id=45485)作为起始点下载。 请记住，Microsoft 365 要求在第一行中有列标题，因此不要将其替换为其他内容。 
   
 使用新名称保存该文件，并指定 CSV 格式。
   
@@ -101,7 +101,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
 ### <a name="tips-for-formatting-your-spreadsheet"></a>有关设置电子表格格式的提示
 <a name="__toc314595848"> </a>
 
-- **是否需要与示例电子表格中的列标题相同？** 是。 示例电子表格在第一行中包含列标题。 这些标题是必需的。 对于要添加到 Office 365 中的每个用户，在标题下创建一行。 如果添加、更改或删除任何列标题，Office 365 可能无法从文件中的信息创建用户。 
+- **是否需要与示例电子表格中的列标题相同？** 是的。 示例电子表格在第一行中包含列标题。 这些标题是必需的。 对于要添加到 Microsoft 365 中的每个用户，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365 可能无法从文件中的信息创建用户。 
     
 - **如果我没有每个用户所需的全部信息，该怎么办？** 用户名和显示名称是必需的，并且您无法添加不包含此信息的新用户。 如果没有其他信息（如传真），您可以使用空格加上逗号，以指示该字段应保留为空。 
     
@@ -115,31 +115,31 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
     
 |**用户数据列标签**|**最大字符长度**|
 |:-----|:-----|
-|User Name （必需）  <br/> |79，其中包含 name@domain 格式的 at 符号（@）。\<扩展\>。 用户的别名不能超过50个字符，并且域名不能超过48个字符。  <br/> |
+|User Name （必需）  <br/> |79，其中包含 name@domain 格式的 at 符号（@ \<extension\> ）。 用户的别名不能超过50个字符，并且域名不能超过48个字符。  <br/> |
 |名字  <br/> |64  <br/> |
 |姓氏  <br/> |64  <br/> |
 |显示名称（必需）  <br/> |256  <br/> |
 |职务  <br/> |64  <br/> |
-|部门  <br/> |64  <br/> |
+|Department  <br/> |64  <br/> |
 |办公室号码  <br/> |128  <br/> |
 |办公室电话  <br/> |64  <br/> |
 |Mobile Phone － 移动电话  <br/> |64  <br/> |
 |传真  <br/> |64  <br/> |
 |地址  <br/> |1023  <br/> |
-|市/县  <br/> |128  <br/> |
+|City  <br/> |128  <br/> |
 |省/自治区/直辖市  <br/> |128  <br/> |
 |邮政编码  <br/> |40  <br/> |
 |国家或地区  <br/> |128  <br/> |
    
-### <a name="still-having-problems-when-adding-users-to-office-365"></a>将用户添加到 Office 365 时仍遇到问题？
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>将用户添加到 Microsoft 365 时仍遇到问题？
 
 - **请仔细检查电子表格的格式是否正确。** 检查列标题以确保它们与示例文件中的标题相匹配。 请确保遵循字符长度的规则，并使用逗号分隔每个字段。 
     
-- **如果你在 Office 365 中没有立即看到新用户，请稍等几分钟。** 在 Office 365 中的所有服务中进行更改可能需要一些时间。 
+- **如果你在 Microsoft 365 中未立即看到新用户，请等待几分钟。** 在 Microsoft 365 中的所有服务之间进行更改可能需要一些时间。 
     
 ## <a name="related-articles"></a>相关文章
 
-[将用户逐个或批量添加到 Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[将用户逐个或批量添加到 Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 
 
 
