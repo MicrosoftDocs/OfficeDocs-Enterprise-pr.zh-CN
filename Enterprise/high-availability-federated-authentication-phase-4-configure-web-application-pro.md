@@ -13,31 +13,31 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
-ms.openlocfilehash: ac7b43daea832d4283404605fbb8ccb46e6cc76c
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 摘要：为 microsoft Azure 中的 Microsoft 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
+ms.openlocfilehash: 4d6e2991c3293952c38e994728e6eca7ea5f5b35
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793805"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711885"
 ---
-# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a><span data-ttu-id="43b3f-103">高可用性联合身份验证阶段 4：配置 Web 应用程序代理</span><span class="sxs-lookup"><span data-stu-id="43b3f-103">High availability federated authentication Phase 4: Configure web application proxies</span></span>
+# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a><span data-ttu-id="db350-103">高可用性联合身份验证阶段 4：配置 Web 应用程序代理</span><span class="sxs-lookup"><span data-stu-id="db350-103">High availability federated authentication Phase 4: Configure web application proxies</span></span>
 
-<span data-ttu-id="43b3f-104">在为 Azure 基础结构服务中的 Office 365 联合身份验证部署高可用性的这一阶段中，创建一个内部负载均衡器和两个 AD FS 服务器。</span><span class="sxs-lookup"><span data-stu-id="43b3f-104">In this phase of deploying high availability for Office 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
+<span data-ttu-id="db350-104">在此阶段，在 Azure 基础结构服务中为 Microsoft 365 联合身份验证部署高可用性时，将创建内部负载平衡器和两个 AD FS 服务器。</span><span class="sxs-lookup"><span data-stu-id="db350-104">In this phase of deploying high availability for Microsoft 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
   
-<span data-ttu-id="43b3f-105">您必须先完成此阶段，然后再转到[第5阶段：为 Office 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。</span><span class="sxs-lookup"><span data-stu-id="43b3f-105">You must complete this phase before moving on to [Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md).</span></span> <span data-ttu-id="43b3f-106">请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。</span><span class="sxs-lookup"><span data-stu-id="43b3f-106">See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
+<span data-ttu-id="db350-105">您必须先完成此阶段，然后再转到[第5阶段： Configure 联合身份验证 For Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。</span><span class="sxs-lookup"><span data-stu-id="db350-105">You must complete this phase before moving on to [Phase 5: Configure federated authentication for Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md).</span></span> <span data-ttu-id="db350-106">有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。</span><span class="sxs-lookup"><span data-stu-id="db350-106">See [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
   
-## <a name="create-the-internet-facing-load-balancer-in-azure"></a><span data-ttu-id="43b3f-107">在 Azure 中创建面向 Internet 的负载均衡器</span><span class="sxs-lookup"><span data-stu-id="43b3f-107">Create the Internet-facing load balancer in Azure</span></span>
+## <a name="create-the-internet-facing-load-balancer-in-azure"></a><span data-ttu-id="db350-107">在 Azure 中创建面向 Internet 的负载均衡器</span><span class="sxs-lookup"><span data-stu-id="db350-107">Create the Internet-facing load balancer in Azure</span></span>
 
-<span data-ttu-id="43b3f-108">必须创建面向 Internet 的负载均衡器，以便 Azure 在两个 Web 应用程序代理服务器之间平均分发来自 Internet 的传入客户端身份验证通信。</span><span class="sxs-lookup"><span data-stu-id="43b3f-108">You must create an Internet-facing load balancer so that Azure distributes the incoming client authentication traffic from the Internet evenly among the two web application proxy servers.</span></span>
+<span data-ttu-id="db350-108">必须创建面向 Internet 的负载均衡器，以便 Azure 在两个 Web 应用程序代理服务器之间平均分发来自 Internet 的传入客户端身份验证通信。</span><span class="sxs-lookup"><span data-stu-id="db350-108">You must create an Internet-facing load balancer so that Azure distributes the incoming client authentication traffic from the Internet evenly among the two web application proxy servers.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="43b3f-109">[!注意] 下面的命令集使用最新版 Azure PowerShell。</span><span class="sxs-lookup"><span data-stu-id="43b3f-109">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="43b3f-110">请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。</span><span class="sxs-lookup"><span data-stu-id="43b3f-110">See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).</span></span> 
+> <span data-ttu-id="db350-109">[!注意] 下面的命令集使用最新版 Azure PowerShell。</span><span class="sxs-lookup"><span data-stu-id="db350-109">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="db350-110">请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。</span><span class="sxs-lookup"><span data-stu-id="db350-110">See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).</span></span> 
   
-<span data-ttu-id="43b3f-111">提供位置和资源组值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 中运行生成块。</span><span class="sxs-lookup"><span data-stu-id="43b3f-111">When you have supplied location and resource group values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
+<span data-ttu-id="db350-111">提供位置和资源组值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 中运行生成块。</span><span class="sxs-lookup"><span data-stu-id="db350-111">When you have supplied location and resource group values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="43b3f-112">若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)。</span><span class="sxs-lookup"><span data-stu-id="43b3f-112">To generate ready-to-run PowerShell command blocks based on your custom settings, use this [Microsoft Excel configuration workbook](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx).</span></span> 
+> <span data-ttu-id="db350-112">若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)。</span><span class="sxs-lookup"><span data-stu-id="db350-112">To generate ready-to-run PowerShell command blocks based on your custom settings, use this [Microsoft Excel configuration workbook](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx).</span></span> 
 
 ```powershell
 # Set up key variables
@@ -52,51 +52,51 @@ $lbrule=New-AzLoadBalancerRuleConfig -Name "WebTraffic" -FrontendIpConfiguration
 New-AzLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
 ```
 
-<span data-ttu-id="43b3f-113">若要显示分配给面向 Internet 的负载均衡器的公用 IP 地址，请在本地计算机上的 Azure PowerShell 命令提示符处运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="43b3f-113">To display the public IP address assigned to your Internet-facing load balancer, run these commands at the Azure PowerShell command prompt on your local computer:</span></span>
+<span data-ttu-id="db350-113">若要显示分配给面向 Internet 的负载均衡器的公用 IP 地址，请在本地计算机上的 Azure PowerShell 命令提示符处运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="db350-113">To display the public IP address assigned to your Internet-facing load balancer, run these commands at the Azure PowerShell command prompt on your local computer:</span></span>
   
 ```powershell
 Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgName).IPAddress
 ```
 
-## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a><span data-ttu-id="43b3f-114">确定联合身份验证服务 FQDN 并创建 DNS 记录</span><span class="sxs-lookup"><span data-stu-id="43b3f-114">Determine your federation service FQDN and create DNS records</span></span>
+## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a><span data-ttu-id="db350-114">确定联合身份验证服务 FQDN 并创建 DNS 记录</span><span class="sxs-lookup"><span data-stu-id="db350-114">Determine your federation service FQDN and create DNS records</span></span>
 
-<span data-ttu-id="43b3f-p103">需要确定 DNS 名称以在 Internet 上标识联合身份验证服务名称。Azure AD Connect 将在阶段 5 中使用此名称来配置 Office 365，该名称将成为 Office 365 发送到连接客户端以获取安全令牌的 URL 的一部分。例如，fs.contoso.com（fs 代表联合身份验证服务）。</span><span class="sxs-lookup"><span data-stu-id="43b3f-p103">You need to determine the DNS name to identify your federation service name on the Internet. Azure AD Connect will configure Office 365 with this name in Phase 5, which will become part of the URL that Office 365 sends to connecting clients to get a security token. An example is fs.contoso.com (fs stands for federation service).</span></span>
+<span data-ttu-id="db350-115">需要确定 DNS 名称以在 Internet 上标识联合身份验证服务名称。</span><span class="sxs-lookup"><span data-stu-id="db350-115">You need to determine the DNS name to identify your federation service name on the Internet.</span></span> <span data-ttu-id="db350-116">Azure AD Connect 将在第5阶段将 Microsoft 365 配置为使用此名称，这将成为 Microsoft 365 发送到连接客户端以获取安全令牌的 URL 的一部分。</span><span class="sxs-lookup"><span data-stu-id="db350-116">Azure AD Connect will configure Microsoft 365 with this name in Phase 5, which will become part of the URL that Microsoft 365 sends to connecting clients to get a security token.</span></span> <span data-ttu-id="db350-117">例如，fs.contoso.com（fs 代表联合身份验证服务）。</span><span class="sxs-lookup"><span data-stu-id="db350-117">An example is fs.contoso.com (fs stands for federation service).</span></span>
   
-<span data-ttu-id="43b3f-118">在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="43b3f-118">Once you have your federation service FDQN, create a public DNS domain A record for the federation service FDQN that resolves to the public IP address of the Azure Internet-facing load balancer.</span></span>
+<span data-ttu-id="db350-118">在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="db350-118">Once you have your federation service FDQN, create a public DNS domain A record for the federation service FDQN that resolves to the public IP address of the Azure Internet-facing load balancer.</span></span>
   
-|<span data-ttu-id="43b3f-119">**名称**</span><span class="sxs-lookup"><span data-stu-id="43b3f-119">**Name**</span></span>|<span data-ttu-id="43b3f-120">**Type**</span><span class="sxs-lookup"><span data-stu-id="43b3f-120">**Type**</span></span>|<span data-ttu-id="43b3f-121">**TTL**</span><span class="sxs-lookup"><span data-stu-id="43b3f-121">**TTL**</span></span>|<span data-ttu-id="43b3f-122">**值**</span><span class="sxs-lookup"><span data-stu-id="43b3f-122">**Value**</span></span>|
+|<span data-ttu-id="db350-119">**名称**</span><span class="sxs-lookup"><span data-stu-id="db350-119">**Name**</span></span>|<span data-ttu-id="db350-120">**Type**</span><span class="sxs-lookup"><span data-stu-id="db350-120">**Type**</span></span>|<span data-ttu-id="db350-121">**TTL**</span><span class="sxs-lookup"><span data-stu-id="db350-121">**TTL**</span></span>|<span data-ttu-id="db350-122">**值**</span><span class="sxs-lookup"><span data-stu-id="db350-122">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="43b3f-123">联合身份验证服务 FDQN</span><span class="sxs-lookup"><span data-stu-id="43b3f-123">federation service FDQN</span></span>  <br/> |<span data-ttu-id="43b3f-124">A</span><span class="sxs-lookup"><span data-stu-id="43b3f-124">A</span></span>  <br/> |<span data-ttu-id="43b3f-125">3600</span><span class="sxs-lookup"><span data-stu-id="43b3f-125">3600</span></span>  <br/> |<span data-ttu-id="43b3f-126">面向 Internet 的 Azure 负载均衡器的公用 IP 地址（通过上一节中的 **Write-Host** 命令显示)</span><span class="sxs-lookup"><span data-stu-id="43b3f-126">public IP address of the Azure Internet-facing load balancer (displayed by the **Write-Host** command in the previous section)</span></span> <br/> |
+|<span data-ttu-id="db350-123">联合身份验证服务 FDQN</span><span class="sxs-lookup"><span data-stu-id="db350-123">federation service FDQN</span></span>  <br/> |<span data-ttu-id="db350-124">A</span><span class="sxs-lookup"><span data-stu-id="db350-124">A</span></span>  <br/> |<span data-ttu-id="db350-125">3600</span><span class="sxs-lookup"><span data-stu-id="db350-125">3600</span></span>  <br/> |<span data-ttu-id="db350-126">面向 Internet 的 Azure 负载均衡器的公用 IP 地址（通过上一节中的 **Write-Host** 命令显示)</span><span class="sxs-lookup"><span data-stu-id="db350-126">public IP address of the Azure Internet-facing load balancer (displayed by the **Write-Host** command in the previous section)</span></span> <br/> |
    
-<span data-ttu-id="43b3f-127">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="43b3f-127">Here is an example:</span></span>
+<span data-ttu-id="db350-127">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="db350-127">Here is an example:</span></span>
   
-|<span data-ttu-id="43b3f-128">**名称**</span><span class="sxs-lookup"><span data-stu-id="43b3f-128">**Name**</span></span>|<span data-ttu-id="43b3f-129">**Type**</span><span class="sxs-lookup"><span data-stu-id="43b3f-129">**Type**</span></span>|<span data-ttu-id="43b3f-130">**TTL**</span><span class="sxs-lookup"><span data-stu-id="43b3f-130">**TTL**</span></span>|<span data-ttu-id="43b3f-131">**值**</span><span class="sxs-lookup"><span data-stu-id="43b3f-131">**Value**</span></span>|
+|<span data-ttu-id="db350-128">**名称**</span><span class="sxs-lookup"><span data-stu-id="db350-128">**Name**</span></span>|<span data-ttu-id="db350-129">**Type**</span><span class="sxs-lookup"><span data-stu-id="db350-129">**Type**</span></span>|<span data-ttu-id="db350-130">**TTL**</span><span class="sxs-lookup"><span data-stu-id="db350-130">**TTL**</span></span>|<span data-ttu-id="db350-131">**值**</span><span class="sxs-lookup"><span data-stu-id="db350-131">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="43b3f-132">fs.contoso.com</span><span class="sxs-lookup"><span data-stu-id="43b3f-132">fs.contoso.com</span></span>  <br/> |<span data-ttu-id="43b3f-133">A</span><span class="sxs-lookup"><span data-stu-id="43b3f-133">A</span></span>  <br/> |<span data-ttu-id="43b3f-134">3600</span><span class="sxs-lookup"><span data-stu-id="43b3f-134">3600</span></span>  <br/> |<span data-ttu-id="43b3f-135">131.107.249.117</span><span class="sxs-lookup"><span data-stu-id="43b3f-135">131.107.249.117</span></span>  <br/> |
+|<span data-ttu-id="db350-132">fs.contoso.com</span><span class="sxs-lookup"><span data-stu-id="db350-132">fs.contoso.com</span></span>  <br/> |<span data-ttu-id="db350-133">A</span><span class="sxs-lookup"><span data-stu-id="db350-133">A</span></span>  <br/> |<span data-ttu-id="db350-134">3600</span><span class="sxs-lookup"><span data-stu-id="db350-134">3600</span></span>  <br/> |<span data-ttu-id="db350-135">131.107.249.117</span><span class="sxs-lookup"><span data-stu-id="db350-135">131.107.249.117</span></span>  <br/> |
    
-<span data-ttu-id="43b3f-136">接下来，将一个 DNS 地址记录添加到组织的专用 DNS 命名空间，以将联合身份验证服务 FQDN 解析为分配给 AD FS 服务器（表 I，第 4 项，值列）的内部负载均衡器的专用 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="43b3f-136">Next, add a DNS address record to your organization's private DNS namespace that resolves your federation service FQDN to the private IP address assigned to the internal load balancer for the AD FS servers (Table I, item 4, Value column).</span></span>
+<span data-ttu-id="db350-136">接下来，将一个 DNS 地址记录添加到组织的专用 DNS 命名空间，以将联合身份验证服务 FQDN 解析为分配给 AD FS 服务器（表 I，第 4 项，值列）的内部负载均衡器的专用 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="db350-136">Next, add a DNS address record to your organization's private DNS namespace that resolves your federation service FQDN to the private IP address assigned to the internal load balancer for the AD FS servers (Table I, item 4, Value column).</span></span>
   
-## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a><span data-ttu-id="43b3f-137">在 Azure 中创建 Web 应用程序代理服务器虚拟机</span><span class="sxs-lookup"><span data-stu-id="43b3f-137">Create the web application proxy server virtual machines in Azure</span></span>
+## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a><span data-ttu-id="db350-137">在 Azure 中创建 Web 应用程序代理服务器虚拟机</span><span class="sxs-lookup"><span data-stu-id="db350-137">Create the web application proxy server virtual machines in Azure</span></span>
 
-<span data-ttu-id="43b3f-138">使用下面的 Azure PowerShell 命令块为两个 Web 应用程序代理服务器创建虚拟机。 </span><span class="sxs-lookup"><span data-stu-id="43b3f-138">Use the following block of Azure PowerShell commands to create the virtual machines for the two web application proxy servers.</span></span> 
+<span data-ttu-id="db350-138">使用下面的 Azure PowerShell 命令块为两个 Web 应用程序代理服务器创建虚拟机。 </span><span class="sxs-lookup"><span data-stu-id="db350-138">Use the following block of Azure PowerShell commands to create the virtual machines for the two web application proxy servers.</span></span> 
   
-<span data-ttu-id="43b3f-139">请注意，以下 Azure PowerShell 命令集使用下表中的值：</span><span class="sxs-lookup"><span data-stu-id="43b3f-139">Note that the following Azure PowerShell command sets use values from the following tables:</span></span>
+<span data-ttu-id="db350-139">请注意，以下 Azure PowerShell 命令集使用下表中的值：</span><span class="sxs-lookup"><span data-stu-id="db350-139">Note that the following Azure PowerShell command sets use values from the following tables:</span></span>
   
-- <span data-ttu-id="43b3f-140">表 M，用于虚拟机</span><span class="sxs-lookup"><span data-stu-id="43b3f-140">Table M, for your virtual machines</span></span>
+- <span data-ttu-id="db350-140">表 M，用于虚拟机</span><span class="sxs-lookup"><span data-stu-id="db350-140">Table M, for your virtual machines</span></span>
     
-- <span data-ttu-id="43b3f-141">表 R，用于资源组</span><span class="sxs-lookup"><span data-stu-id="43b3f-141">Table R, for your resource groups</span></span>
+- <span data-ttu-id="db350-141">表 R，用于资源组</span><span class="sxs-lookup"><span data-stu-id="db350-141">Table R, for your resource groups</span></span>
     
-- <span data-ttu-id="43b3f-142">表 V，用于虚拟网络设置</span><span class="sxs-lookup"><span data-stu-id="43b3f-142">Table V, for your virtual network settings</span></span>
+- <span data-ttu-id="db350-142">表 V，用于虚拟网络设置</span><span class="sxs-lookup"><span data-stu-id="db350-142">Table V, for your virtual network settings</span></span>
     
-- <span data-ttu-id="43b3f-143">表 S，用于子网</span><span class="sxs-lookup"><span data-stu-id="43b3f-143">Table S, for your subnets</span></span>
+- <span data-ttu-id="db350-143">表 S，用于子网</span><span class="sxs-lookup"><span data-stu-id="db350-143">Table S, for your subnets</span></span>
     
-- <span data-ttu-id="43b3f-144">表 I，用于静态 IP 地址</span><span class="sxs-lookup"><span data-stu-id="43b3f-144">Table I, for your static IP addresses</span></span>
+- <span data-ttu-id="db350-144">表 I，用于静态 IP 地址</span><span class="sxs-lookup"><span data-stu-id="db350-144">Table I, for your static IP addresses</span></span>
     
-- <span data-ttu-id="43b3f-145">表 A（针对可用性集）</span><span class="sxs-lookup"><span data-stu-id="43b3f-145">Table A, for your availability sets</span></span>
+- <span data-ttu-id="db350-145">表 A（针对可用性集）</span><span class="sxs-lookup"><span data-stu-id="db350-145">Table A, for your availability sets</span></span>
     
-<span data-ttu-id="43b3f-146">回想一下在[阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)和表 R、V、S、I 和 A[阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定义了表 M。</span><span class="sxs-lookup"><span data-stu-id="43b3f-146">Recall that you defined Table M in [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
+<span data-ttu-id="db350-146">回想一下在[阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)和表 R、V、S、I 和 A[阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定义了表 M。</span><span class="sxs-lookup"><span data-stu-id="db350-146">Recall that you defined Table M in [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
   
-<span data-ttu-id="43b3f-147">提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。</span><span class="sxs-lookup"><span data-stu-id="43b3f-147">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
+<span data-ttu-id="db350-147">提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。</span><span class="sxs-lookup"><span data-stu-id="db350-147">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
 ```powershell
 # Set up variables common to both virtual machines
@@ -150,23 +150,23 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> <span data-ttu-id="43b3f-p104">由于这些虚拟机用于 Intranet 应用程序，所以不会为它们分配公用 IP 地址或 DNS 域名称标签，也不会将它们公开到 Internet。但是，这也意味着你无法从 Azure 门户与它们进行连接。查看虚拟机的属性时“连接”\*\*\*\* 选项不可用。使用远程桌面连接附件或其他远程桌面工具连接使用其专用 IP 地址或 Intranet DNS 名称及本地 Administrator 帐户凭据的虚拟机。</span><span class="sxs-lookup"><span data-stu-id="43b3f-p104">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name and the credentials of the local administrator account.</span></span>
+> <span data-ttu-id="db350-p104">由于这些虚拟机用于 Intranet 应用程序，所以不会为它们分配公用 IP 地址或 DNS 域名称标签，也不会将它们公开到 Internet。但是，这也意味着你无法从 Azure 门户与它们进行连接。查看虚拟机的属性时“连接”\*\*\*\* 选项不可用。使用远程桌面连接附件或其他远程桌面工具连接使用其专用 IP 地址或 Intranet DNS 名称及本地 Administrator 帐户凭据的虚拟机。</span><span class="sxs-lookup"><span data-stu-id="db350-p104">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name and the credentials of the local administrator account.</span></span>
   
-<span data-ttu-id="43b3f-152">以下是因成功完成这一阶段后生成的配置，包含占位符计算机名称。</span><span class="sxs-lookup"><span data-stu-id="43b3f-152">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
+<span data-ttu-id="db350-152">以下是因成功完成这一阶段后生成的配置，包含占位符计算机名称。</span><span class="sxs-lookup"><span data-stu-id="db350-152">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
   
-<span data-ttu-id="43b3f-153">**阶段 4：Azure 中用于高可用性联合身份验证基础结构的面向 Internet 的负载均衡器和 Web 应用程序代理服务器**</span><span class="sxs-lookup"><span data-stu-id="43b3f-153">**Phase 4: The Internet-facing load balancer and web application proxy servers for your high availability federated authentication infrastructure in Azure**</span></span>
+<span data-ttu-id="db350-153">**阶段 4：Azure 中用于高可用性联合身份验证基础结构的面向 Internet 的负载均衡器和 Web 应用程序代理服务器**</span><span class="sxs-lookup"><span data-stu-id="db350-153">**Phase 4: The Internet-facing load balancer and web application proxy servers for your high availability federated authentication infrastructure in Azure**</span></span>
 
-![使用 web 应用程序代理服务器的 Azure 中的高可用性 Office 365 联合身份验证基础结构的第4阶段](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![在 Azure 中使用 web 应用程序代理服务器的高可用性 Microsoft 365 联合身份验证基础结构的第4阶段](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a><span data-ttu-id="43b3f-155">后续步骤</span><span class="sxs-lookup"><span data-stu-id="43b3f-155">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="db350-155">后续步骤</span><span class="sxs-lookup"><span data-stu-id="db350-155">Next step</span></span>
 
-<span data-ttu-id="43b3f-156">使用[阶段5：为 Office 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)，以继续配置此工作负载。</span><span class="sxs-lookup"><span data-stu-id="43b3f-156">Use [Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) to continue configuring this workload.</span></span>
+<span data-ttu-id="db350-156">使用[阶段5：为 Microsoft 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)以继续配置此工作负载。</span><span class="sxs-lookup"><span data-stu-id="db350-156">Use [Phase 5: Configure federated authentication for Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) to continue configuring this workload.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="43b3f-157">另请参阅</span><span class="sxs-lookup"><span data-stu-id="43b3f-157">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db350-157">另请参阅</span><span class="sxs-lookup"><span data-stu-id="db350-157">See Also</span></span>
 
-[<span data-ttu-id="43b3f-158">在 Azure 中部署 Office 365 的高可用性联合身份验证</span><span class="sxs-lookup"><span data-stu-id="43b3f-158">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[<span data-ttu-id="db350-158">在 Azure 中部署适用于 Microsoft 365 的高可用性联合身份验证</span><span class="sxs-lookup"><span data-stu-id="db350-158">Deploy high availability federated authentication for Microsoft 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[<span data-ttu-id="43b3f-159">用于 Office 365 开发/测试环境的联合身份</span><span class="sxs-lookup"><span data-stu-id="43b3f-159">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="db350-159">Microsoft 365 开发/测试环境的联合身份</span><span class="sxs-lookup"><span data-stu-id="db350-159">Federated identity for your Microsoft 365 dev/test environment</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
-[<span data-ttu-id="43b3f-160">云应用和混合解决方案</span><span class="sxs-lookup"><span data-stu-id="43b3f-160">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.yml)
+[<span data-ttu-id="db350-160">云应用和混合解决方案</span><span class="sxs-lookup"><span data-stu-id="db350-160">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.yml)
 

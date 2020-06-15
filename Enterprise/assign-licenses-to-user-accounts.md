@@ -26,37 +26,37 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何将 Microsoft 365 许可证单独或基于组成员身份分配给用户帐户。
-ms.openlocfilehash: bd9587f81d2267e1d6fd28f60e8ac2e85171457b
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: 105bc2772867e244b5012789593498a672abf807
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44699219"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711795"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts"></a><span data-ttu-id="16022-103">将 Microsoft 365 许可证分配给用户帐户</span><span class="sxs-lookup"><span data-stu-id="16022-103">Assign Microsoft 365 licenses to user accounts</span></span>
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a><span data-ttu-id="23b2b-103">将 Microsoft 365 许可证分配给用户帐户</span><span class="sxs-lookup"><span data-stu-id="23b2b-103">Assign Microsoft 365 licenses to user accounts</span></span>
 
-<span data-ttu-id="16022-104">*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*</span><span class="sxs-lookup"><span data-stu-id="16022-104">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
+<span data-ttu-id="23b2b-104">*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*</span><span class="sxs-lookup"><span data-stu-id="23b2b-104">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
 
-<span data-ttu-id="16022-105">对于仅限云的标识模型，可以根据创建的方式将 Microsoft 365 许可证分配给用户帐户，具体取决于您的创建方式。</span><span class="sxs-lookup"><span data-stu-id="16022-105">For the cloud-only identity model, you can assign Microsoft 365 licenses to user accounts as they are created, depending on how you create them.</span></span>
+<span data-ttu-id="23b2b-105">对于仅限云的标识模型，可以根据创建的方式将 Microsoft 365 许可证分配给用户帐户，具体取决于您的创建方式。</span><span class="sxs-lookup"><span data-stu-id="23b2b-105">For the cloud-only identity model, you can assign Microsoft 365 licenses to user accounts as they are created, depending on how you create them.</span></span>
 
-<span data-ttu-id="16022-106">对于混合标识模型，当首次同步 Active Directory 域服务（AD DS）用户帐户时，不会自动为其分配 Microsoft 365 许可证。</span><span class="sxs-lookup"><span data-stu-id="16022-106">For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned an Microsoft 365 license.</span></span> <span data-ttu-id="16022-107">必须先使用用户位置配置每个用户帐户。</span><span class="sxs-lookup"><span data-stu-id="16022-107">You must first configure each user account with a user location.</span></span>
+<span data-ttu-id="23b2b-106">对于混合标识模型，当首次同步 Active Directory 域服务（AD DS）用户帐户时，不会自动为其分配 Microsoft 365 许可证。</span><span class="sxs-lookup"><span data-stu-id="23b2b-106">For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned a Microsoft 365 license.</span></span> <span data-ttu-id="23b2b-107">必须先使用用户位置配置每个用户帐户。</span><span class="sxs-lookup"><span data-stu-id="23b2b-107">You must first configure each user account with a user location.</span></span>
 
-<span data-ttu-id="16022-108">在这两种情况下，都必须将许可证分配给用户帐户，以便您的用户可以访问 Microsoft 365 服务，例如电子邮件和 Microsoft 团队。</span><span class="sxs-lookup"><span data-stu-id="16022-108">In either case, you must assign a license to user accounts so your users can access Microsoft 365 services, such as email and Microsoft Teams.</span></span>
+<span data-ttu-id="23b2b-108">在这两种情况下，都必须将许可证分配给用户帐户，以便您的用户可以访问 Microsoft 365 服务，例如电子邮件和 Microsoft 团队。</span><span class="sxs-lookup"><span data-stu-id="23b2b-108">In either case, you must assign a license to user accounts so your users can access Microsoft 365 services, such as email and Microsoft Teams.</span></span>
 
-<span data-ttu-id="16022-109">您可以通过组成员身份单独或自动将许可证分配给用户帐户。</span><span class="sxs-lookup"><span data-stu-id="16022-109">You can assign licenses to user accounts either individually or automatically through group membership.</span></span>
+<span data-ttu-id="23b2b-109">您可以通过组成员身份单独或自动将许可证分配给用户帐户。</span><span class="sxs-lookup"><span data-stu-id="23b2b-109">You can assign licenses to user accounts either individually or automatically through group membership.</span></span>
 
-<span data-ttu-id="16022-110">若要将 Microsoft 365 许可证分配给单个用户帐户，您可以使用：</span><span class="sxs-lookup"><span data-stu-id="16022-110">To assign Microsoft 365 licenses to individual user accounts, you can use:</span></span>
+<span data-ttu-id="23b2b-110">若要将 Microsoft 365 许可证分配给单个用户帐户，您可以使用：</span><span class="sxs-lookup"><span data-stu-id="23b2b-110">To assign Microsoft 365 licenses to individual user accounts, you can use:</span></span>
 
-- [<span data-ttu-id="16022-111">Microsoft 365 管理员中心</span><span class="sxs-lookup"><span data-stu-id="16022-111">The Microsoft 365 admin center</span></span>](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)
-- [<span data-ttu-id="16022-112">Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="16022-112">Office 365 PowerShell</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
+- [<span data-ttu-id="23b2b-111">Microsoft 365 管理员中心</span><span class="sxs-lookup"><span data-stu-id="23b2b-111">The Microsoft 365 admin center</span></span>](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)
+- [<span data-ttu-id="23b2b-112">Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="23b2b-112">Office 365 PowerShell</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
 
-<span data-ttu-id="16022-113">有关自动许可证分配，请参阅[AZURE AD 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。</span><span class="sxs-lookup"><span data-stu-id="16022-113">For automatic license assignment, see [group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span>
+<span data-ttu-id="23b2b-113">有关自动许可证分配，请参阅[AZURE AD 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。</span><span class="sxs-lookup"><span data-stu-id="23b2b-113">For automatic license assignment, see [group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="16022-114">后续步骤</span><span class="sxs-lookup"><span data-stu-id="16022-114">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="23b2b-114">后续步骤</span><span class="sxs-lookup"><span data-stu-id="23b2b-114">Next steps</span></span>
 
-<span data-ttu-id="16022-115">使用已分配了许可证的完整用户帐户集，您现在可以：</span><span class="sxs-lookup"><span data-stu-id="16022-115">With the full set of user accounts that have been assigned licenses, you are now ready to:</span></span>
+<span data-ttu-id="23b2b-115">使用已分配了许可证的完整用户帐户集，您现在可以：</span><span class="sxs-lookup"><span data-stu-id="23b2b-115">With the full set of user accounts that have been assigned licenses, you are now ready to:</span></span>
 
-- [<span data-ttu-id="16022-116">实施安全性</span><span class="sxs-lookup"><span data-stu-id="16022-116">Implement security</span></span>](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-- [<span data-ttu-id="16022-117">部署客户端软件，例如 Microsoft 365 应用程序</span><span class="sxs-lookup"><span data-stu-id="16022-117">Deploy client software, such as Microsoft 365 Apps</span></span>](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [<span data-ttu-id="16022-118">在 Microsoft 365 中设置移动设备管理</span><span class="sxs-lookup"><span data-stu-id="16022-118">Set up Mobile Device Management in Microsoft 365</span></span>](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
-- [<span data-ttu-id="16022-119">配置服务和应用程序</span><span class="sxs-lookup"><span data-stu-id="16022-119">Configure services and applications</span></span>](configure-services-and-applications.md)
+- [<span data-ttu-id="23b2b-116">实施安全性</span><span class="sxs-lookup"><span data-stu-id="23b2b-116">Implement security</span></span>](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+- [<span data-ttu-id="23b2b-117">部署客户端软件，例如 Microsoft 365 应用程序</span><span class="sxs-lookup"><span data-stu-id="23b2b-117">Deploy client software, such as Microsoft 365 Apps</span></span>](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+- [<span data-ttu-id="23b2b-118">在 Microsoft 365 中设置移动设备管理</span><span class="sxs-lookup"><span data-stu-id="23b2b-118">Set up Mobile Device Management in Microsoft 365</span></span>](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [<span data-ttu-id="23b2b-119">配置服务和应用程序</span><span class="sxs-lookup"><span data-stu-id="23b2b-119">Configure services and applications</span></span>](configure-services-and-applications.md)
