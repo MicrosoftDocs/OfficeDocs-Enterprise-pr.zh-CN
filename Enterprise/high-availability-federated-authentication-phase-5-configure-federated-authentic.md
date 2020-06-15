@@ -1,5 +1,5 @@
 ---
-title: 高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证
+title: 高可用性联合身份验证阶段5为 Microsoft 365 配置联合身份验证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置 Azure AD Connect。
-ms.openlocfilehash: ac5536ac66412825b245851a7f225acad5e9895a
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 摘要：为 microsoft Azure 中的 Microsoft 365 的高可用性联合身份验证配置 Azure AD Connect。
+ms.openlocfilehash: 6cf88c3a933eba7cdbec2964cbf0ef24ee9a9b57
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793795"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711582"
 ---
-# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性联合身份验证阶段 5：为 Office 365 配置联合身份验证
+# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性联合身份验证阶段5：为 Microsoft 365 配置联合身份验证
 
-在 Azure 基础结构服务中为 Office 365 部署高可用性联合身份验证的最后一阶段，您将获取并安装由公共证书颁发机构颁发的证书，验证您的配置，然后在目录同步服务器上安装并运行 Azure AD Connect。 Azure AD Connect 配置 Office 365 订阅、Active Directory 联合身份验证服务 (AD FS) 以及用于联合身份验证的 Web 应用程序代理服务器。
+在 Azure 基础结构服务中为 Microsoft 365 部署高可用性联合身份验证的最后一阶段，您将获取并安装由公共证书颁发机构颁发的证书，验证您的配置，然后在目录同步服务器上安装并运行 Azure AD Connect。 Azure AD Connect 为联合身份验证配置 Microsoft 365 订阅和 Active Directory 联合身份验证服务（AD FS）和 web 应用程序代理服务器。
   
-请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
+有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>获取公共证书并将其复制到目录同步服务器
 
@@ -41,15 +41,15 @@ ms.locfileid: "43793795"
   
 有关联合身份验证的证书要求的详细信息，请参阅[联合身份验证安装和配置的先决条件](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)。
   
-收到证书后，将其复制到目录同步服务器的 C：驱动器上的文件夹中。 例如，将文件命名为 SSL，并将其存储在目录同步服务器\\上的 C：证书文件夹中。
+收到证书后，将其复制到目录同步服务器的 C：驱动器上的文件夹中。 例如，将文件命名为 SSL，并将其存储在 \\ 目录同步服务器上的 C：证书文件夹中。
   
 ## <a name="verify-your-configuration"></a>验证配置
 
-现在，应该准备就绪，可以配置 Azure AD Connect 和 Office 365 的联合身份验证。为确保已就绪，请检查以下清单：
+现在，你应该已准备好为 Microsoft 365 配置 Azure AD Connect 和联合身份验证。 为确保已就绪，请检查以下清单：
   
-- 组织的公共域已添加到 Office 365 订阅。
+- 您的组织的公共域已添加到 Microsoft 365 订阅中。
     
-- 组织的 Office 365 用户帐户已配置为组织的公共域名并可以成功登录。
+- 您的组织的 Microsoft 365 用户帐户配置为您的组织的公共域名，并且可以成功登录。
     
 - 已基于公共域名确定联合身份验证服务 FQDN。
     
@@ -65,15 +65,15 @@ ms.locfileid: "43793795"
   
 **Azure 中高可用性联合身份验证基础结构的示例配置**
 
-![Azure 中高可用性 Office 365 联合身份验证基础结构的示例配置](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Azure 中高可用性 Microsoft 365 联合身份验证基础结构的示例配置](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>运行 Azure AD Connect 以配置联合身份验证
 
-Azure AD Connect 工具通过以下步骤配置 AD FS 服务器、Web 应用程序代理服务器和用于联合身份验证的 Office 365：
+Azure AD Connect 工具使用以下步骤配置 AD FS 服务器、web 应用程序代理服务器和 Microsoft 365 以进行联合身份验证：
   
 1. 使用具有本地管理员特权的域帐户创建到目录同步服务器的远程桌面连接。
     
-2. 从目录同步服务器的桌面，打开 "Internet Explorer"，然后转[https://aka.ms/aadconnect](https://aka.ms/aadconnect)到。
+2. 从目录同步服务器的桌面，打开 "Internet Explorer"，然后转到 [https://aka.ms/aadconnect](https://aka.ms/aadconnect) 。
     
 3. 在"Microsoft Azure Active Directory Connect"页上，单击"下载"，然后单击"运行"。
     
@@ -85,7 +85,7 @@ Azure AD Connect 工具通过以下步骤配置 AD FS 服务器、Web 应用程�
     
 7. 在"用户登录"页上，依次单击"使用 AD FS 进行联合身份验证"和"下一步"。
     
-8. 在"连接到 Azure AD"页上，键入 Office 365 订阅全局管理员帐户的名称和密码，然后单击"下一步"。
+8. 在 "**连接到 AZURE AD** " 页上，键入 Microsoft 365 订阅的全局管理员帐户的名称和密码，然后单击 "**下一步**"。
     
 9. 在 "**连接目录**" 页上，确保在 "**林**" 中选择了 "本地 Active DIRECTORY 域服务（AD DS）林"，键入域管理员帐户的名称和密码，单击 "**添加目录**"，然后单击 "**下一步**"。
     
@@ -135,18 +135,18 @@ Azure AD Connect 工具通过以下步骤配置 AD FS 服务器、Web 应用程�
   
 **阶段 5：Azure 中高可用性联合身份验证基础结构的最终配置**
 
-![Azure 中高可用性 Office 365 联合身份验证基础结构的最终配置](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure 中高可用性 Microsoft 365 联合身份验证基础结构的最终配置](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Azure 中 Office 365 的高可用性联合身份验证基础结构已完成。
+Microsoft 365 在 Azure 中的高可用性联合身份验证基础结构已完成。
   
 ## <a name="see-also"></a>另请参阅
 
-[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[在 Azure 中部署适用于 Microsoft 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
+[Microsoft 365 开发/测试环境的联合身份](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.yml)
 
-[Office 365 的联合标识](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[适用于 Microsoft 365 的联合身份](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 
 

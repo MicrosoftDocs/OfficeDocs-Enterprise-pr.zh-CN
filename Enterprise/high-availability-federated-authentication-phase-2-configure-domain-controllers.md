@@ -13,22 +13,22 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
-ms.openlocfilehash: 80b413f8a6d415378e384b1625fc756f96dd00db
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 摘要：为 microsoft Azure 中的 Microsoft 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
+ms.openlocfilehash: 6e75b8787fb5d077cf082d5beb47827c5132706e
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793815"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711935"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
-在 Azure 基础结构服务中为 Office 365 联合身份验证部署高可用性这一阶段，在 Azure 虚拟网络中配置两个域控制器和目录同步服务器。 然后用于身份验证的客户端 Web 请求可以在 Azure 虚拟网络中进行身份验证，而不是将通过站点到站点 VPN 连接的该身份验证流量发送到本地网络。
+在此阶段，在 Azure 基础结构服务中为 Microsoft 365 联合身份验证部署高可用性时，需要在 Azure 虚拟网络中配置两个域控制器和目录同步服务器。 然后用于身份验证的客户端 Web 请求可以在 Azure 虚拟网络中进行身份验证，而不是将通过站点到站点 VPN 连接的该身份验证流量发送到本地网络。
   
 > [!NOTE]
 > Active Directory 联合身份验证服务（AD FS）无法使用 Azure Active Directory 域服务代替 Active Directory 域服务域控制器。 
   
-在转到[第3阶段：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)之前，您必须完成此阶段。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
+在转到[第3阶段：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)之前，您必须完成此阶段。 有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>在 Azure 中创建域控制器虚拟机
 
@@ -44,11 +44,11 @@ ms.locfileid: "43793815"
 |6.  <br/> |![线条](./media/Common-Images/TableLine.png) （第一个 web 应用程序代理服务器，示例 WEB1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |7.  <br/> |![线条](./media/Common-Images/TableLine.png) （第二个 web 应用程序代理服务器，示例 WEB2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **表 M-Azure 中适用于 Office 365 的高可用性联合身份验证的虚拟机**
+ **表 M-Azure 中适用于 Microsoft 365 的高可用性联合身份验证的虚拟机**
   
 有关虚拟机大小的完整列表，请参阅[虚拟机的大小](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes)。
   
-以下 Azure PowerShell 命令块可创建两个域控制器的虚拟机。 指定变量的值， \<并删除和 > 字符。 请注意，此 Azure PowerShell 命令块使用下表中的值：
+以下 Azure PowerShell 命令块可创建两个域控制器的虚拟机。 指定变量的值，并删除 \< and > 字符。 请注意，此 Azure PowerShell 命令块使用下表中的值：
   
 - 表 M，用于虚拟机
     
@@ -245,7 +245,7 @@ Restart-Computer
   
 **第2阶段：适用于 Azure 中的高可用性联合身份验证基础结构的域控制器和目录同步服务器**
 
-![具有域控制器的 Azure 中的高可用性 Office 365 联合身份验证基础结构的第2阶段](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![具有域控制器的 Azure 中的高可用性 Microsoft 365 联合身份验证基础结构的第2阶段](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -253,9 +253,9 @@ Restart-Computer
   
 ## <a name="see-also"></a>另请参阅
 
-[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[在 Azure 中部署适用于 Microsoft 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
+[Microsoft 365 开发/测试环境的联合身份](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.yml)
 

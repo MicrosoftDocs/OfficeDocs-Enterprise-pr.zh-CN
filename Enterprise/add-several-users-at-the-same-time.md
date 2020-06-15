@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Microsoft 365 for business 中添加多个用户。 观看 YouTube 上的视频，说明如何将帐户添加到 Microsoft 365。 在此过程结束时，拥有帐户的每位用户都将拥有一个 Microsoft 365 邮箱。 '
-ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: 5f328185b56d1c5436f763d811d85dd55f912919
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44699239"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711805"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同时将多个用户添加到 Microsoft 365-管理员帮助
 
@@ -101,7 +101,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
 ### <a name="tips-for-formatting-your-spreadsheet"></a>有关设置电子表格格式的提示
 <a name="__toc314595848"> </a>
 
-- **是否需要与示例电子表格中的列标题相同？** 是的。 示例电子表格在第一行中包含列标题。 这些标题是必需的。 对于要添加到 Microsoft 365 中的每个用户，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365 可能无法从文件中的信息创建用户。 
+- **是否需要与示例电子表格中的列标题相同？** 是。 示例电子表格在第一行中包含列标题。 这些标题是必需的。 对于要添加到 Microsoft 365 中的每个用户，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365 可能无法从文件中的信息创建用户。 
     
 - **如果我没有每个用户所需的全部信息，该怎么办？** 用户名和显示名称是必需的，并且您无法添加不包含此信息的新用户。 如果没有其他信息（如传真），您可以使用空格加上逗号，以指示该字段应保留为空。 
     

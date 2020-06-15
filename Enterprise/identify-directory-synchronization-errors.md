@@ -1,5 +1,5 @@
 ---
-title: 查看 Office 365 中的目录同步错误
+title: 在 Microsoft 365 中查看目录同步错误
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,24 +21,24 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: 了解如何在 Microsoft 365 管理中心中查看目录同步错误。
-ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840169"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711642"
 ---
-# <a name="view-directory-synchronization-errors-in-office-365"></a>查看 Office 365 中的目录同步错误
+# <a name="view-directory-synchronization-errors-in-microsoft-365"></a>在 Microsoft 365 中查看目录同步错误
 
 您可以在[Microsoft 365 管理中心](https://admin.microsoft.com)中查看目录同步错误。 仅显示用户对象错误。 若要使用 PowerShell 查看错误，请参阅[使用 DirSyncProvisioningErrors 标识对象](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)。
 
-查看后，请参阅[解决 Office 365 的目录同步问题](fix-problems-with-directory-synchronization.md)以更正任何已确定的问题。
+查看后，请参阅[解决 Microsoft 365 的目录同步问题](fix-problems-with-directory-synchronization.md)以更正任何已确定的问题。
   
 ## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>查看管理中心的目录同步错误
 
 若要查看管理中心中的任何错误，请执行以下操作：
   
-1. 使用工作或学校帐户登录 Office 365。 
+1. 使用工作或学校帐户登录 Microsoft 365。 
     
 2. 转到[有关管理中心](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23)的 "关于"。
     

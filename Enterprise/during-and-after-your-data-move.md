@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009297"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711915"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -29,7 +29,7 @@ ms.locfileid: "44009297"
 > [!NOTE]
 > 每个服务的移动发生在不同的时间。 因此，你将在不同时间看到每个服务的已描述缩减功能。 
   
-观看 Microsoft 365 消息中心，以在每个 Exchange Online、SharePoint Online、团队和 Skype for Business 移动完毕时进行确认。 如下表所示，在注册期结束后，可能需要长达24个月，以完成针对特定地理位置的所有客户的所有请求的数据移动。 如果你在移动后发现租户出现任何问题，请联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以获取帮助。 
+观看 Microsoft 365 消息中心，以在每个 Exchange Online、SharePoint Online、团队和 Skype for Business 移动完毕时进行确认。 如下表所示，在注册期结束后，可能需要长达24个月，以完成针对特定地理位置的所有客户的所有请求的数据移动。 如果你在移动后发现你的租户存在任何问题，请联系[支持人员](https://go.microsoft.com/fwlink/p/?LinkID=522459)以获取帮助。 
   
 
 |**在中注册国家/地区的客户**|**所有移动完成者**|

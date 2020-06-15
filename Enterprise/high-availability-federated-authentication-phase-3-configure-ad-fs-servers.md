@@ -13,19 +13,19 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: 摘要：在 Microsoft Azure 中为 Office 365 的高可用性联合身份验证创建和配置 Active Directory 联合身份验证服务 (AD FS) 服务器。
-ms.openlocfilehash: 5ac87b0d19c43e8711e188d1a0f6a7f33a37871f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 摘要：在 Microsoft Azure 中为 Microsoft Microsoft Microsoft 365 的高可用性联合身份验证创建和配置 Active Directory 联合身份验证服务（AD FS）服务器。
+ms.openlocfilehash: 7b32c39ada30059df78ccb5429dba11c1576dff7
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840149"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711925"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
-在为 Azure 基础结构服务中的 Office 365 联合身份验证部署高可用性的这一阶段中，创建一个内部负载均衡器和两个 AD FS 服务器。
+在此阶段，在 Azure 基础结构服务中为 Microsoft 365 联合身份验证部署高可用性时，将创建内部负载平衡器和两个 AD FS 服务器。
   
-必须先完成此阶段，然后才能进入[第4阶段：配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
+必须先完成此阶段，然后才能进入[第4阶段：配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>在 Azure 中创建 AD FS 服务器虚拟机
 
@@ -48,7 +48,7 @@ ms.locfileid: "41840149"
 > [!NOTE]
 > [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
   
-首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。 指定变量的值， \<并删除和 > 字符。 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
+首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。 指定变量的值，并删除 \< and > 字符。 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   
 > [!TIP]
 > 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)。 
@@ -146,7 +146,7 @@ Restart-Computer
   
 **阶段 3：Azure 中用于高可用性联合身份验证基础结构的 AD FS 服务器和内部负载均衡器**
 
-![AD FS 服务器的 Azure 中的高可用性 Office 365 联合身份验证基础结构的第3阶段](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![在 Azure 中使用 AD FS 服务器的高可用性 Microsoft 365 联合身份验证基础结构的第3阶段](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -154,8 +154,8 @@ Restart-Computer
   
 ## <a name="see-also"></a>另请参阅
 
-[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[在 Azure 中部署适用于 Microsoft 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
+[Microsoft 365 开发/测试环境的联合身份](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
 
 

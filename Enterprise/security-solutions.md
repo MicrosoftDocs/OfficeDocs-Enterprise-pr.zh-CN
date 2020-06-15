@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: 摘要：按照这些文章用 Microsoft 云服务部署安全解决方案。
-ms.openlocfilehash: d006fe0ebb1b4bb4c963ffec8dbdece590c81032
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: aecb9f8d23b04cbc5c4d8065708ba8171f1ea555
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793675"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711825"
 ---
 # <a name="security-solutions"></a>安全解决方案
 
@@ -44,7 +44,7 @@ ms.locfileid: "43793675"
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
   
-[云应用测试实验室指南 (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Microsoft 365 企业版测试实验室指南](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

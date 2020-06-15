@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 摘要：配置 Microsoft Azure 基础结构以托管适用于 Office 365 的高可用性联合身份验证。
-ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 摘要：配置 Microsoft Azure 基础结构以托管 Microsoft 365 的高可用性联合身份验证。
+ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793825"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711945"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
-在此阶段中，将在 Azure 中创建资源组、虚拟网络（VNet）和可用性集，这些集将承载第2阶段、3步和第4阶段的虚拟机。 必须先完成此阶段，然后才能进入[第2阶段：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)，了解所有阶段。
+在此阶段中，将在 Azure 中创建资源组、虚拟网络（VNet）和可用性集，这些集将承载第2阶段、3步和第4阶段的虚拟机。 必须先完成此阶段，然后才能进入[第2阶段：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
   
 必须使用以下基本组件预配 Azure：
   
@@ -106,7 +106,7 @@ ms.locfileid: "43793825"
    
  **表 L：本地网络的地址前缀**
   
-现在，让我们开始构建 Azure 基础结构以托管 Office 365 的联合身份验证。
+现在，让我们开始构建 Azure 基础结构以托管适用于 Microsoft 365 的联合身份验证。
   
 > [!NOTE]
 > [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
@@ -132,7 +132,7 @@ Get-AzSubscription | Sort Name | Select Name
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-设置 Azure 订阅。 使用正确的名称替换引号内的\<所有内容，包括和 > 字符。
+设置 Azure 订阅。 使用正确的名称替换引号内的所有内容（包括 \< and > 字符）。
   
 ```powershell
 $subscrName="<subscription name>"
@@ -300,9 +300,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 这是该阶段成功完成后生成的配置。
   
-**第1阶段：适用于 Office 365 的高可用性联合身份验证的 Azure 基础结构**
+**第1阶段：适用于 Microsoft 365 的高可用性联合身份验证的 Azure 基础结构**
 
-![Azure 基础结构在 Azure 中实现高可用性 Office 365 联合身份验证的第1阶段](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![使用 Azure 基础结构的 Azure 中的高可用性 Microsoft 365 联合身份验证的第1阶段](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -310,12 +310,12 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 ## <a name="see-also"></a>另请参阅
 
-[在 Azure 中部署 Office 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[在 Azure 中部署适用于 Microsoft 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[用于 Office 365 开发/测试环境的联合身份](federated-identity-for-your-office-365-dev-test-environment.md)
+[Microsoft 365 开发/测试环境的联合身份](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.yml)
 
-[了解 Office 365 标识和 Azure Active Directory](about-office-365-identity.md)
+[了解 Microsoft 365 标识和 Azure Active Directory](about-office-365-identity.md)
 
 
