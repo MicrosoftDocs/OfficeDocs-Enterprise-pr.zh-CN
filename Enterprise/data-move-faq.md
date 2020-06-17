@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
-ms.openlocfilehash: 09c2e9acd482f10c6883ce0134793a9656675631
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516553"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735840"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -72,7 +72,7 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
 ## <a name="how-can-i-request-to-be-moved"></a>如何请求移动？
   
-符合条件的客户将在其[Office 365 管理门户](https://portal.office.com/)中看到一个页面。 请参阅[如何请求数据移动](request-your-data-move.md)以获取有关如何请求移动的说明。 
+符合条件的客户将在其[Microsoft 365 管理中心](https://admin.microsoft.com/)中看到一个页面。 请参阅[如何请求数据移动](request-your-data-move.md)以获取有关如何请求移动的说明。 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>在请求移动后，是否可以更改我的选定内容？
   
@@ -80,7 +80,7 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>如果我在最后期限之前未请求移动，会发生什么情况？
   
-我们可能会在异常基础上接受请求，以向你的租户授予完成移动的承诺期限。 请 联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以发出请求。
+我们可能会在异常基础上接受请求，以向你的租户授予完成移动的承诺期限。 请   联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以发出请求。
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>如果我想要移动数据以便获得更好的网络性能，该怎么办？
   

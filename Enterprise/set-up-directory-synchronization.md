@@ -1,9 +1,9 @@
 ---
-title: 设置 Office 365 目录同步
+title: 为 Microsoft 365 设置目录同步
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 06/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -21,23 +21,23 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
-description: 了解如何设置 Office 365 和本地 Active Directory 之间的目录同步。
-ms.openlocfilehash: d549d2b56ef1d642e5dfc16b747e6eb909dd7337
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 了解如何设置 Microsoft 365 与本地 Active Directory 之间的目录同步。
+ms.openlocfilehash: 775ff04976c92d7e937ddc018e0e1dd617c8fca3
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844043"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735982"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>设置 Office 365 目录同步
+# <a name="set-up-directory-synchronization-for-microsoft-365"></a>为 Microsoft 365 设置目录同步
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Office 365 使用 Azure Active Directory （Azure AD）租户存储和管理用于访问基于云的资源的身份验证和权限的标识。 
+Microsoft 365 使用 Azure Active Directory （Azure AD）租户存储和管理用于访问基于云的资源的身份验证和权限的标识。 
 
-如果你具有本地 Active Directory 域服务（AD DS），则可以将 AD DS 用户帐户、组和联系人与 Office 365 订阅的 Azure AD 租户同步。 这是 Office 365 的混合标识。 以下是它的组件。
+如果你具有本地 Active Directory 域服务（AD DS），则可以将 AD DS 用户帐户、组和联系人与 Microsoft 365 订阅的 Azure AD 租户同步。 这是 Microsoft 365 的混合标识。 以下是它的组件。
 
-![Office 365 的目录同步组件](./media/about-office-365-identity/hybrid-identity.png)
+![Microsoft 365 的目录同步组件](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD Connect 在本地服务器上运行，并将 AD DS 与 Azure AD 租户同步。 除了目录同步，您还可以指定以下身份验证选项：
 
@@ -57,12 +57,12 @@ Azure AD Connect 在本地服务器上运行，并将 AD DS 与 Azure AD 租户�
   
 ## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. 查看 Azure AD Connect 的先决条件
 
-您可以使用 Office 365 订阅获取免费的 Azure AD 订阅。 设置目录同步时，将在其中一台本地服务器上安装 Azure AD Connect。
+你可以使用 Microsoft 365 订阅获取免费的 Azure AD 订阅。 设置目录同步时，将在其中一台本地服务器上安装 Azure AD Connect。
   
-对于 Office 365，你需要执行以下操作：
+对于 Microsoft 365，你需要执行以下操作：
   
 - 验证您的内部部署域。 Azure AD Connect 向导将指导你完成此步骤。
-- 获取 Office 365 租户和 AD DS 的管理员帐户的用户名和密码。
+- 获取 Microsoft 365 租户和 AD DS 的管理员帐户的用户名和密码。
 
 对于您在其上安装 Azure AD Connect 的本地服务器，你将需要：
   
@@ -80,14 +80,14 @@ Azure AD Connect 在本地服务器上运行，并将 AD DS 与 Azure AD 租户�
 
 在开始之前，请确保您具有：
 
-- Office 365 全局管理员的用户名和密码
+- Microsoft 365 全局管理员的用户名和密码
 - AD DS 域管理员的用户名和密码
 - 哪种身份验证方法（PHS、PTA、联合）
 - 是否要使用[AZURE AD 无缝单一登录（SSO）](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
 
 请按以下步骤操作：
 
-1. 登录到[Microsoft 365 管理中心](https://admin.microsoft.com)（https://admin.microsoft.com)并选择左侧导航栏中的 "**用户** \> **活动用户**"。
+1. 登录到[Microsoft 365 管理中心](https://admin.microsoft.com)（ https://admin.microsoft.com) 并选择左侧导航栏中的 "**用户** \> **活动用户**"。
 2. 在 "**活动用户**" 页上，选择 "**更多**（三个点） \> **目录同步**"。
   
 3. 在 " **Azure Active Directory 准备**" 页上，选择 "**转到下载中心" 以获取 Azure AD Connect 工具**链接开始。 
@@ -95,7 +95,7 @@ Azure AD Connect 在本地服务器上运行，并将 AD DS 与 Azure AD 租户�
 
 ## <a name="3-finish-setting-up-domains"></a>3. 完成域设置
 
-当您管理 DNS 记录以完成域设置时，请按照[为 Office 365 创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)中的步骤操作。
+当您管理 DNS 记录以完成域设置时，请按照[为 Microsoft 365 创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)中的步骤操作。
 
 ## <a name="next-step"></a>后续步骤
 

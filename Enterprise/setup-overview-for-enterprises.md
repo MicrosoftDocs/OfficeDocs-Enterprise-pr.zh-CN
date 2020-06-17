@@ -1,5 +1,5 @@
 ---
-title: 为组织部署 Office 365 企业版
+title: 为你的组织部署 Microsoft 365 企业版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,35 +18,35 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 这些概述步骤旨在帮助您设置网络、创建标识、部署适用于企业的 Microsoft 365 应用程序、迁移数据，以及帮助组织中的人员开始使用 Office 365。
-ms.openlocfilehash: 456b080d166578a50b345a047e5a37c839b69e20
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: 这些概述步骤旨在帮助您设置网络、创建标识、部署适用于企业的 Microsoft 365 应用程序、迁移数据，以及帮助组织中的人员使用 Microsoft 365 开始。
+ms.openlocfilehash: 274cd4ae285ae97825b4d46a125cd9eeecf83312
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009277"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735940"
 ---
-# <a name="deploy-office-365-enterprise-for-your-organization"></a>为组织部署 Office 365 企业版
+# <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>为你的组织部署 Microsoft 365 企业版
 
-您是否准备好部署 Office 365 企业版，将其与您的内部部署基础结构集成，并使员工能够利用基于云的工作效率和协作？
+您是否准备好部署 Microsoft 365 企业版，将其与您的内部部署基础结构集成，并使员工能够利用基于云的工作效率和协作？
 
 本文介绍了两个部署选项，无论您是需要帮助还是自己执行此操作。 在每种情况下，Microsoft 都会为您提供指导，以便您遵循部署成功的途径。
 
-## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>通过 FastTrack 的引导式 Office 365 企业版安装过程
+## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>通过 FastTrack 的引导式 Microsoft 365 企业版安装过程
 
-**[FastTrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** 是部署 Office 365 的最佳方法。 FastTrack 引导你完成最常见的部署配置，并且在此过程中可以回答问题。 
+**[FastTrack For microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** 是部署 microsoft 365 的最佳方法。 FastTrack 引导你完成最常见的部署配置，并且在此过程中可以回答问题。 
 
-若要访问一系列安装指南，请登录到 Office 365 订阅，然后转到 "[设置 office 365](https://aka.ms/o365fasttrack)"。
+若要访问一系列安装指南，请登录到 Microsoft 365 订阅，然后转到 "[安装指南](https://aka.ms/o365fasttrack)"。
 
 >[!Note]
 >你也可以从[Microsoft 合作伙伴](https://www.microsoft.com/solution-providers/home)获取帮助。
 >
 
-## <a name="do-it-yourself-guided-deployment-of-office-365-enterprise"></a>Office 365 企业的 it 自己的引导部署
+## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Microsoft 365 企业的 it 自己的引导部署
 
-部署 Office 365 企业版需要您执行详细的研究，以制定优化 Office 365 服务配置和用户采用的设计决策。 请[在此处](get-your-organization-ready-for-office-365.md)开始规划。
+您自己部署 Microsoft 365 企业版要求您执行详细的研究，以做出简化 Microsoft 365 服务配置和用户采用的设计决策。 请[在此处](get-your-organization-ready-for-office-365.md)开始规划。
 
-若要在完成规划后自行部署 Office 365 企业版，建议执行以下步骤。
+若要在完成规划后自行部署 Microsoft 365 企业版，建议执行以下步骤。
 
 1. [设置网络](set-up-network-for-office-365.md)
 
@@ -54,7 +54,7 @@ ms.locfileid: "44009277"
  
 2. [设置你的标识](protect-your-global-administrator-accounts.md)
 
-   包括确定标识模型（仅限云或混合模式）和混合标识，在本地 Active Directory 域服务（AD DS）和 Office 365 订阅之间设置目录同步。
+   包括确定标识模型（仅限云或混合模式）和混合标识，在本地 Active Directory 域服务（AD DS）和 Microsoft 365 订阅之间设置目录同步。
 
 3. [实施安全性](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
 
@@ -62,23 +62,21 @@ ms.locfileid: "44009277"
  
 4. [部署客户端软件](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   包括部署 Microsoft 365 Apps for enterprise （以前称为 Office 365 专业增强版）、设备上 Office 套件（Word、Excel、PowerPoint 和其他）的云更新和始终为当前版本。 每个 Office 365 客户端许可证都包含适用于企业的 Microsoft 365 应用程序的许可证。
+   包括部署 Microsoft 365 Apps for enterprise （以前称为 Office 365 专业增强版）、设备上 Office 套件（Word、Excel、PowerPoint 和其他）的云更新和始终为当前版本。 每个 Microsoft 365 客户端许可证都包含适用于企业的 Microsoft 365 应用的许可证。
  
 5. [设置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-   Office 365 企业版包括移动设备管理功能，可帮助您保护和管理用户的移动设备。
+   Microsoft 365 企业版包括移动设备管理功能，可帮助您保护和管理用户的移动设备。
  
 6. [配置服务和应用程序](configure-services-and-applications.md)
 
-   包括有关迁移数据的信息，以及指向可帮助您启动关键 Office 365 服务（如 Exchange Online、SharePoint Online 和团队）的文章的链接。
+   包括有关迁移数据的信息，以及指向一些文章的链接，这些文章可帮助你启动关键 Microsoft 365 生产力应用程序（如 Exchange Online、SharePoint Online 和团队）。
  
 7. [培训用户](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-   包含可帮助您的用户快速充分利用 Office 365 的短视频。
+   包含可帮助你的用户快速充分利用 Microsoft 365 的短视频。
  
 
 >[!Note]
->这些步骤也适用于希望从 Office 365 企业版的自定义部署开始的商业和[非营利组织](https://go.microsoft.com/fwlink/?LinkId=627221)。 
+>这些步骤也适用于希望从 Microsoft 365 企业版的自定义部署开始的商业和[非营利组织](https://go.microsoft.com/fwlink/?LinkId=627221)。 
 >
-
-如果你有 Microsoft 365 企业版订阅，请从[这里](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)开始。

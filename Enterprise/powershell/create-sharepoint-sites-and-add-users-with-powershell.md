@@ -18,18 +18,18 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 Office 365 PowerShell 创建新的 SharePoint Online 网站，然后将用户和组添加到这些网站。
-ms.openlocfilehash: 1fc9192ed27bfd097ac770b53837fb8ba2eb062d
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004695"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735700"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户
 
-当您使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户时，您可以在 Microsoft 356 管理中心内快速和重复执行任务快得多。 你还可以执行在 Office 356 管理中心中无法执行的任务。 
+当您使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户时，您可以在 Microsoft 365 管理中心内快速和重复执行任务快得多。 您还可以执行不能在 Office 365 管理中心中执行的任务。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 本主题中的过程要求您连接到 SharePoint Online。 有关说明，请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -37,7 +37,7 @@ ms.locfileid: "44004695"
 
 使用 Office 365 PowerShell 和你使用提供的示例代码和记事本创建的 .csv 文件创建多个网站。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许您创建一个文件，并运行一个使用该文件的 Office 365 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，你要创建一个 .csv 文件，然后使用 Office 365 PowerShell 引用该 .csv 文件，从而利用该文件的内容来创建网站。
 
-Office 365 PowerShell cmdlet 导入 .csv 文件并将其通过管道传递到大括号内的循环中，该循环将读取文件的第一行作为列标题。然后，Office 365 PowerShell cmdlet 循环访问剩余的记录，为每个记录创建一个新的网站集，并根据列标题指定网站集的属性。
+The Office 365 PowerShell cmdlet imports the .csv file and pipes it to a loop inside the curly brackets that reads the first line of the file as column headers. The Office 365 PowerShell cmdlet then iterates through the remaining records, creates a new site collection for each record, and assigns properties of the site collection according to the column headers.
 
 ### <a name="create-a-csv-file"></a>创建 .csv 文件
 
@@ -52,7 +52,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 <br/>其中*租户*是你的租户的名称，*所有者*是你要向其授予主网站集管理员角色的租户上的用户用户名。<br/>（当使用记事本以更快地批量替换时，可以按 Ctrl + H。）<br/>
 
-2. 将文件以**SiteCollections**的形式保存在桌面上。<br/>
+2. 将文件以**SiteCollections.csv**的形式保存在桌面上。<br/>
 
 > [!TIP]
 > 在使用此程序或任何其他 .csv 或 Windows PowerShell 脚本文件之前，最好确保没有多余的或非打印的字符。 在 Word 中打开该文件，在功能区单击“段落”图标以显示非打印字符。 应该没有多余的非打印字符。 例如，除了文件末尾的最后一个段落标记之外，应该没有其他任何段落标记。
@@ -65,7 +65,7 @@ Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SP
 ```
 <br/>其中， *MyAlias*等于您的用户别名。<br/>
 
-2. 等待 Windows PowerShell 提示符重新出现。可能需要一两分钟。<br/>
+2. Wait for the Windows PowerShell prompt to reappear. It might take a minute or two.<br/>
 
 3. 在 Windows PowerShell 提示符处键入或复制并粘贴以下 cmdlet，然后按 Enter 键：<br/>
 
@@ -80,7 +80,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 ## <a name="step-2-add-users-and-groups"></a>步骤 2：添加用户和组
 
-现在，您将创建用户并将其添加到网站集组中。然后，您将使用 .csv 文件批量上载新的组和用户。
+Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
 
 以下过程将继续使用示例网站 TeamSite01、Blog01、Project01 和 Community01。
 
@@ -101,7 +101,7 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 ```
 <br/>其中*租户*等于你的租户名称。<br/>
 
-2. 将文件以**GroupsAndPermissions**的形式保存到您的桌面。<br/>
+2. 将文件以**GroupsAndPermissions.csv**的形式保存到桌面。<br/>
 
 3. 打开记事本的新实例，然后向其中粘贴以下文本块：<br/>
 
@@ -118,7 +118,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 ```
 <br/>其中*租户*等于租户名称，*用户名*等于现有用户的用户名。<br/>
 
-4. 将文件以**Users. .csv**的形式保存到桌面。<br/>
+4. 将文件以**Users.csv**的形式保存到桌面。<br/>
 
 5. 打开记事本的新实例，然后向其中粘贴以下文本块：<br/>
 
@@ -128,7 +128,7 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 ```
 <br/>其中，MyAlias 等于当前登录的用户的用户名。<br/>
 
-6. 将文件以**UsersAndGroups**的形式保存到您的桌面。 这是一个简单的 Windows PowerShell 脚本。
+6. 将文件以**UsersAndGroups.ps1**的形式保存到桌面。 这是一个简单的 Windows PowerShell 脚本。
 
 现在，您可以运行 UsersAndGroup.ps1 脚本以向多个网站集中添加用户和组。
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>其中， *MyAlias*等于您的用户名。<br/>
 
-5. 在继续之前，请等待提示符返回。首先，您将看到这些组在创建时的样子。然后，您将看到添加用户后的重复组列表。
+5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
 
 ## <a name="see-also"></a>另请参阅
 
