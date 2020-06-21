@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711915"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774487"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -68,19 +68,19 @@ ms.locfileid: "44711915"
     
 - Project Online
     
-- Project for Office 365
+- Microsoft 365 的项目
     
-- Office 365 视频服务
+- Microsoft 365 视频服务
     
 - 浏览器中的 Office
     
 - Microsoft 365 企业应用版
     
-- 用于 Office 365 的 Visio Pro
+- Visio Pro for Microsoft 365
     
 完成移动 SharePoint Online 数据后，您可能会看到以下某些效果。
   
-### <a name="office-365-video-services"></a>Office 365 视频服务
+### <a name="microsoft-365-video-services"></a>Microsoft 365 视频服务
 
 - 视频的数据移动比在 SharePoint Online 中移动其他内容的时间长。
     

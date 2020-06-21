@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Office for Mac 应用程序在 macOS 平台上提供了本机应用程序体验。 每个应用程序设计为在各种情况下运行，包括在没有网络访问权限的情况下使用的状态。 当计算机连接到网络时，应用程序将自动连接到一系列基于 web 的服务，以提供增强功能。 本白皮书介绍了应用程序尝试访问的终结点和 Url，以及提供的服务。 此信息在对网络配置问题进行故障排除以及为网络代理服务器设置策略时非常有用。 本文中的详细信息旨在补充 Office 365 URL 和地址范围文章。
-ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844543"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774947"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac 中的网络请求
 
@@ -52,7 +52,7 @@ URL 类型定义如下：
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |圣保罗  <br/> |Office 365 安装门户将链接服务到最新的安装程序包。  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |圣保罗  <br/> |Microsoft 365 安装门户将链接服务到最新的安装程序包。  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |内容传递网络上安装包的位置。  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |SS  <br/> |内容传递网络上安装包的位置。  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |圣保罗  <br/> |Microsoft 自动更新的管理控制终结点  <br/> |
@@ -86,7 +86,7 @@ URL 类型定义如下：
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |圣保罗  <br/> |应用程序内支持服务。  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |圣保罗  <br/> |电子邮件帐户检测服务。  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |圣保罗  <br/> |Outlook 自动发现  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |圣保罗  <br/> |适用于 Office 365 服务的 Outlook 终结点。  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |圣保罗  <br/> |Microsoft 365 服务的 Outlook 终结点。  <br/> |
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |圣保罗  <br/> |Outlook 外接程序的图标。  <br/> |
    
 > [!NOTE]
@@ -103,10 +103,10 @@ URL 类型定义如下：
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Windows 授权服务  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Office 365 登录服务（OrgID）  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 365 登录服务（OrgID）  <br/> |
 |```https://login.live.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 帐户登录服务（MSA）  <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |客户  <br/> |Microsoft 帐户登录服务帮助程序（MSA）  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Office 365 登录品牌（OrgID）  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Microsoft 365 登录品牌打造（OrgID）  <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |文档和位置存储定位程序  <br/> |
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |最近使用的（MRU）文档服务  <br/> |
    
@@ -115,7 +115,7 @@ URL 类型定义如下：
   
  **产品激活**
   
-以下网络终结点适用于 Office 365 订阅和零售许可证激活。 具体来说，这不会应用于批量许可证安装。
+以下网络终结点适用于 Microsoft 365 订阅和零售许可证激活。 具体来说，这不会应用于批量许可证安装。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -123,7 +123,7 @@ URL 类型定义如下：
    
  **新增内容**
   
-以下网络终结点仅适用于 Office 365 订阅。
+以下网络终结点仅适用于 Microsoft 365 订阅。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -131,7 +131,7 @@ URL 类型定义如下：
    
  **研究工具**
   
-以下网络终结点仅适用于 Office 365 订阅。
+以下网络终结点仅适用于 Microsoft 365 订阅。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -141,7 +141,7 @@ URL 类型定义如下：
    
  **智能查找**
   
-以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活。
+以下网络终结点适用于 Microsoft 365 订阅和零售/批量许可证激活。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -153,7 +153,7 @@ URL 类型定义如下：
    
  **PowerPoint 设计器**
   
-以下网络终结点仅适用于 Office 365 订阅。
+以下网络终结点仅适用于 Microsoft 365 订阅。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -161,7 +161,7 @@ URL 类型定义如下：
    
  **PowerPoint 快速启动**
   
-以下网络终结点仅适用于 Office 365 订阅。
+以下网络终结点仅适用于 Microsoft 365 订阅。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -169,7 +169,7 @@ URL 类型定义如下：
    
  **发送微笑/哭脸**
   
-以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活。
+以下网络终结点适用于 Microsoft 365 订阅和零售/批量许可证激活。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -177,7 +177,7 @@ URL 类型定义如下：
    
  **联系支持人员**
   
-以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活。
+以下网络终结点适用于 Microsoft 365 订阅和零售/批量许可证激活。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +186,7 @@ URL 类型定义如下：
    
  **另存为 PDF**
   
-以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活。
+以下网络终结点适用于 Microsoft 365 订阅和零售/批量许可证激活。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -194,7 +194,7 @@ URL 类型定义如下：
    
  **Office 应用（亦称为 "外接程序"）**
   
-当 Office 应用外接程序受信任时，以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活。
+当 Office 应用外接程序受信任时，以下网络终结点适用于 Microsoft 365 订阅和零售/批量许可证激活。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -224,7 +224,7 @@ URL 类型定义如下：
    
  **安全链接**
   
-以下网络终结点仅适用于 Office 365 订阅的所有 Office 应用程序。
+以下网络终结点仅适用于 Microsoft 365 订阅的所有 Office 应用程序。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -232,7 +232,7 @@ URL 类型定义如下：
    
  **故障报告**
   
-以下网络终结点适用于 Office 365 订阅和零售/批量许可证激活的所有 Office 应用程序。 当某个进程意外地发生故障时，将生成报告并将其发送到 Watson 服务。
+以下网络终结点适用于 Microsoft 365 订阅和零售/批量许可证激活的所有 Office 应用程序。 当某个进程意外地发生故障时，将生成报告并将其发送到 Watson 服务。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -280,7 +280,7 @@ Office for Mac 定期以固定时间间隔向 Microsoft 发送遥测信息。 �
     
 - **用法**包含有关如何使用应用程序和非致命错误的信息。 此数据每60分钟发送一次。 
     
-Microsoft 会认真对待你的隐私。 你可以在上[https://privacy.microsoft.com](https://privacy.microsoft.com)阅读有关 Microsoft 的数据收集策略的信息。 若要防止应用程序发送 "Usage" 遥测，可以调整**SendAllTelemetryEnabled**首选项。 首选项为每个应用程序，可以通过 macOS 配置文件进行设置，也可以通过终端手动进行设置： 
+Microsoft 会认真对待你的隐私。 你可以在上阅读有关 Microsoft 的数据收集策略的信息 [https://privacy.microsoft.com](https://privacy.microsoft.com) 。 若要防止应用程序发送 "Usage" 遥测，可以调整**SendAllTelemetryEnabled**首选项。 首选项为每个应用程序，可以通过 macOS 配置文件进行设置，也可以通过终端手动进行设置： 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 

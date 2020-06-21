@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: 此检查表将在你规划和准备将迁移到 Microsoft 365 时帮助你的组织。
-ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 3eaca9cdc248dd4c72691fec37eb6e54add52218
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711895"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774817"
 ---
 # <a name="deployment-planning-checklist-for-microsoft-365"></a>Microsoft 365 的部署规划清单
 
@@ -80,5 +80,5 @@ ms.locfileid: "44711895"
 | （可选）迁移数据（[电子邮件](https://go.microsoft.com/fwlink/?LinkId=534823)和[文件](https://go.microsoft.com/fwlink/?LinkId=534824)等） |||||
 |验证功能，然后完成最后的步骤 |||||
 | [将 DNS 设置迁移为指向 Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| 告诉你的用户何时可以[开始使用 Microsoft 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| 告诉你的用户何时可以[开始使用 Microsoft 365](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb) |||||
 | 重新配置客户端系统以连接到 Microsoft 365 （ [Office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [Outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[移动设备](https://go.microsoft.com/fwlink/?LinkId=534840)）  |||||

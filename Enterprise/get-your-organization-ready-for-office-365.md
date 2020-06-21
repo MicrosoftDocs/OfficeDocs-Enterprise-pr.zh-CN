@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: 获取对要为 Microsoft 365 企业版部署规划的资源的访问权限。
-ms.openlocfilehash: 106ee743f6f1ddd49d2d81d653f97bfa40566649
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735790"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774467"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>规划 Microsoft 365 企业版
 
@@ -33,7 +33,7 @@ ms.locfileid: "44735790"
 
 ## <a name="planning-with-microsoft-365-fasttrack"></a>使用 Microsoft 365 FastTrack 进行规划
 
-[FastTrack For microsoft 365](https://www.microsoft.com/en-us/fasttrack/microsoft-365)是获取 microsoft 在规划 microsoft 365 部署的帮助的最佳方法。 FastTrack 可帮助您完成最常见的设计考虑，还可以回答问题。 
+[FastTrack For microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)是获取 microsoft 在规划 microsoft 365 部署的帮助的最佳方法。 FastTrack 可帮助您完成最常见的设计考虑，还可以回答问题。 
 
 >[!Note]
 >你也可以从[Microsoft 合作伙伴](https://www.microsoft.com/solution-providers/home)获取帮助。

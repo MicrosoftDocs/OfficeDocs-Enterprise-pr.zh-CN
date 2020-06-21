@@ -3,7 +3,7 @@ title: 数据移动常见问题解答
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
-ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 2954d85b0094a8d0f74980fa4e0ee9cac504abbe
+ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735840"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44781037"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -52,7 +52,7 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
 - 工作组聊天邮件，包括私人邮件和频道消息。 
 - 在聊天中使用的团队图像。 
 
-团队文件存储在 SharePoint Online 中，团队聊天文件存储在 OneDrive for Business 中。  语音邮件、日历、聊天历史记录和联系人存储在 Exchange Online 中。  在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for business 已由本地数据中心地理位置的客户使用，并且也是适用于符合条件的客户国家/地区的 Office 365 迁移计划的一部分。
+团队文件存储在 SharePoint Online 中，团队聊天文件存储在 OneDrive for Business 中。  语音邮件、日历、聊天历史记录和联系人存储在 Exchange Online 中。  在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for business 已由本地数据中心地理位置的客户使用，并且也是适用于符合条件的客户国家/地区的 Microsoft 365 迁移计划的一部分。
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>在不同的信息中具有不同的服务会有什么影响？
 
@@ -80,11 +80,11 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>如果我在最后期限之前未请求移动，会发生什么情况？
   
-我们可能会在异常基础上接受请求，以向你的租户授予完成移动的承诺期限。 请   联系[Office 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)以发出请求。
+我们可能会在异常基础上接受请求，以向你的租户授予完成移动的承诺期限。  若要发出请求，请联系[Microsoft 365 支持部门](https://go.microsoft.com/fwlink/p/?LinkID=522459)。
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>如果我想要移动数据以便获得更好的网络性能，该怎么办？
   
-与 Microsoft 365 数据中心的物理邻近性并不能保证更好的网络性能。 有许多因素和组件会影响最终用户与 Microsoft 365 服务之间的网络性能。 有关此和性能调整的详细信息，请参阅[Office 365 的网络规划和性能调整](network-planning-and-performance.md)。
+与 Microsoft 365 数据中心的物理邻近性并不能保证更好的网络性能。 有许多因素和组件会影响最终用户与 Microsoft 365 服务之间的网络性能。 有关此和性能调整的详细信息，请参阅[Microsoft 365 的网络规划和性能调整](network-planning-and-performance.md)。
   
  ## <a name="do-all-the-services-move-their-data-on-the-same-day"></a>所有服务是否都在同一天移动其数据？
  
@@ -104,11 +104,11 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>如何知道移动已完成？
   
-观看 Office 365 消息中心，以确认每个服务的数据移动是否已完成。 移动每个服务的数据后，我们将发布一个完成通知，以便您将获得三个完成通知：每个完成通知分别对应于 Exchange Online、SharePoint Online 和 Skype for Business Online。  您还可以通过 Microsoft 365 管理中心中组织配置文件下的 "数据位置" 部分，验证 rest 上的客户数据的位置。  
+观看 Microsoft 365 消息中心，确认是否已完成每个服务的数据移动。 移动每个服务的数据后，我们将发布一个完成通知，以便您将获得三个完成通知：每个完成通知分别对应于 Exchange Online、SharePoint Online 和 Skype for Business Online。  您还可以通过 Microsoft 365 管理中心中组织配置文件下的 "数据位置" 部分，验证 rest 上的客户数据的位置。  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>我是一个新的数据中心信息中的 Microsoft 365 客户，但当我注册时，我选择了其他国家/地区。 如何将移动到新的数据中心地理位置？
 
-无法更改与你的租户关联的注册国家/地区。 而是需要使用新订阅创建新的 Office 365 租户，并将用户和数据手动移动到新的租户。
+无法更改与你的租户关联的注册国家/地区。 而是需要使用新订阅创建一个新的 Microsoft 365 租户，并将用户和数据手动移动到新的租户。
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>如果我们在 Exchange Online 移动过程中将电子邮件数据迁移到 Microsoft 365，会发生什么情况？
 
@@ -126,7 +126,7 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>我的客户数据已移动到新的数据中心地理位置。 我可以向后移动吗？
  
-否，这是不可能的。 已移动到新 geo 数据中心的客户不能移动回来。 作为任何地区的客户，你将体验到以前所做的相同质量的服务、性能和安全控制。  [Office 365 多地理](https://aka.ms/multi-geo)位置可供某些客户作为加载项，让单个租户可以创建多个附属信息，并可将用户数据移动到具有数据派驻服务承诺的这些信息中。
+否，这是不可能的。 已移动到新 geo 数据中心的客户不能移动回来。 作为任何地区的客户，你将体验到以前所做的相同质量的服务、性能和安全控制。  [Microsoft 365 多地理](https://aka.ms/multi-geo)位置可供某些客户作为加载项，并允许单个租户创建多个附属信息，并将用户数据移动到具有数据派驻服务承诺的这些信息中。
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>在新数据中心托管的 Microsoft 365 租户是否适用于该国家/地区之外的用户？
   
@@ -137,14 +137,14 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
 是的，你的租户符合注册条件。 我们会将所有 EXO 邮箱从当前的默认地理位置移动到新的本地数据中心地理位置。  我们不会移动在 "多地理" 卫星区域中配置的任何 EXO 邮箱，而是按预期继续遵循卫星区域数据派驻服务。  
 
 SharePoint Online 和 OneDrive for business 无法迁移到新的数据中心地理位置作为移动程序的一部分，但您可以通过多地理程序将 OneDrive for Business 共享配置为移动到您想要的任何区域。
-  
+
 ## <a name="related-topics"></a>相关主题
 
 [将核心数据移动到新的 Microsoft 365 数据中心信息](moving-data-to-new-datacenter-geos.md)
 
 [如何请求数据移动](request-your-data-move.md)
 
-[Office 365 多地理位置](https://aka.ms/multi-geo)
+[Microsoft 365 多地理位置](https://aka.ms/multi-geo)
 
 [Microsoft 365 交互式数据中心映射](https://office.com/datamaps)
 

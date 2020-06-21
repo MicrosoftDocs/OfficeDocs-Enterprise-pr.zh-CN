@@ -1,7 +1,7 @@
 ---
-title: Office 365 邮箱迁移
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 邮箱迁移
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 用于 Office 365 邮箱迁移的 cmdlet 的简短摘要。
-ms.openlocfilehash: b3af6d4b392e45a5200917bf5cebf22c601620a2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 用于 Microsoft 365 邮箱迁移的 cmdlet 的简短摘要。
+ms.openlocfilehash: 4c53737f4047df0751c4216b57d772bd6fe8acad
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843584"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774897"
 ---
-# <a name="office-365-mailbox-migrations"></a>Office 365 邮箱迁移
+# <a name="microsoft-365-mailbox-migrations"></a>Microsoft 365 邮箱迁移
 
 通过基于 Exchange 的混合部署，客户可以选择将本地 Exchange 邮箱移动到[Exchange online](https://docs.microsoft.com/Exchange/exchange-online)组织，或将 exchange Online 邮箱移动到[exchange 内部部署](https://docs.microsoft.com/Exchange/exchange-server)组织。 在内部部署组织和 Exchange Online 组织之间移动邮箱时使用迁移批处理。
 

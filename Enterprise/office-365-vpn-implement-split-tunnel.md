@@ -3,7 +3,7 @@ title: 实现 Office 365 的 VPN 拆分隧道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/11/2020
+ms.date: 6/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 87d7e86f59a97bf11c053a57aa9acc6d33c03e63
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
-ms.translationtype: HT
+ms.openlocfilehash: c2b0b94a80cadc47f5236cc38e29c12d2a152062
+ms.sourcegitcommit: 5345785dd0c85b28b68752faa7e37a71c270b9b0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208773"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44742240"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -123,8 +123,8 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | 这是 Outlook 用于连接到其 Exchange Online Server 并具有较高带宽使用率和连接计数的主要 URL 之一。 以下联机功能需要低网络延迟：即时搜索、其他邮箱日历、忙/闲查找、管理规则和通知、Exchange Online 存档和电子邮件传出发件箱。 |
 | <https://outlook.office.com> | TCP 443 | 此 URL 供 Outlook Online Web 访问用于连接到 Exchange Online Server，并且对网络延迟非常敏感。 使用 SharePoint Online 上传和下载大型文件尤其需要连接。 |
-| https://\<tenant\>.sharepoint.com | TCP 443 | 这是 SharePoint Online 的主要 URL，并且具有较高的带宽使用率。 |
-| https://\<tenant\>-my.sharepoint.com | TCP 443 | 这是 OneDrive for business 的主要 URL，具有较高的带宽使用率，并且可能会产生来自 OneDrive for Business 同步工具的高连接计数。 |
+| https:// \<tenant\> 。 sharepoint.com | TCP 443 | 这是 SharePoint Online 的主要 URL，并且具有较高的带宽使用率。 |
+| https:// \<tenant\> -my.sharepoint.com | TCP 443 | 这是 OneDrive for business 的主要 URL，具有较高的带宽使用率，并且可能会产生来自 OneDrive for Business 同步工具的高连接计数。 |
 | Teams 媒体 IP（无 URL） | UDP 3478、3479、3480 和 3481 | 中继发现分配和实时流量 (3478)、音频 (3479)、视频 (3480) 和视频屏幕共享 (3481)。 这些终结点适用于 Skype for Business 和 Microsoft Teams 媒体流量（呼叫、会议等）。 当 Microsoft Teams 客户端建立呼叫时，将提供大多数终结点（并包含在为该服务列出的所需 IP 内）。 若要获得最佳媒体质量，需要使用 UDP 协议。   |
 
 在上面的示例中，应将**租户**替换为 Office 365 租户名称。 例如，**contoso.onmicrosoft.com** 将使用 _contoso.sharepoint.com_ 和 _constoso-my.sharepoint.com_。
@@ -226,13 +226,8 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 在某些情况下（通常与 Teams 客户端配置无关），即使有正确的路由，媒体流量仍会遍历 VPN 隧道。 如果遇到这种情况，只需使用防火墙规则来阻止 Teams IP 子网或端口使用 VPN。
 
->[!NOTE]
->要使其在 100% 的场景中工作，当前还有一个要求是添加 IP 范围 **13.107.60.1/32**。 由于 Teams 客户端更新于 **2020 年 6 月**发布，因此短期内此要求不是必须的。 如有其他可用信息，我们将立即更新这篇文章及内部版本详细信息。
-
-<!--
 >[!IMPORTANT]
->To ensure Teams media traffic is routed via the desired method in all VPN scenarios please ensure you are running at least the following client version number or greater, as these versions have improvements in how the client detects available network paths.<br>Windows version number:  **1.3.00.9267**<br>Mac version number: **1.3.00.9221**
--->
+>为了确保在所有 VPN 方案中通过所需的方法路由团队媒体流量，请确保用户运行的是 Microsoft 团队客户端版本**1.3.00.13565**或更高版本。 此版本包括客户端检测可用网络路径的方式方面的改进。
 
 信令流量是通过 HTTPS 执行的，它不像媒体流量那样对延迟敏感，并在 URL/IP 数据中标记为**允许**，因此如果需要，可以安全地通过 VPN 客户端进行路由。
 
@@ -278,8 +273,9 @@ Skype for Business Online 生成用户名/密码，可用于通过_围绕 NAT �
 - **Cisco Anyconnect**：[优化 Office365 的 Anyconnect 拆分隧道](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**：[通过 VPN 拆分隧道排除访问路由优化 Office 365 流量](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**：[使用 BIG-IP APM 通过 VPN 优化远程访问 Office 365 流量](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Citrix 网关**：[优化 Office365 Citrix 网关 VPN 拆分隧道](https://docs.citrix.com/zh-CN/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Citrix 网关**：[优化 Office365 Citrix 网关 VPN 拆分隧道](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 - **Pulse Secure**：[VPN 隧道：如何配置拆分隧道以排除 Office365 应用程序](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **检查点 VPN**：[如何为 Office 365 和其他 SaaS 应用程序配置拆分隧道](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="faq"></a>常见问题
 

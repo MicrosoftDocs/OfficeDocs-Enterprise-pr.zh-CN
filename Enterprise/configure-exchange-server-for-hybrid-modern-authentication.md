@@ -3,7 +3,7 @@ title: 如何配置本地 Exchange Server 以使用混合新式验证
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/16/2018
+ms.date: 06/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,52 +16,52 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 混合新式身份验证（HMA）是一种身份管理方法，它提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
-ms.openlocfilehash: c52eecbe57567276de94aac913b7b82db8c5e404
-ms.sourcegitcommit: 72a4938f1372e7f3693b53bcabac0c5d18305a1d
+ms.openlocfilehash: d73b7c28ea5b64be46a3e3a40d8160ccdfcea18c
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326439"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774517"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
 *此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
 
-混合新式身份验证（HMA）是一种身份管理方法，它提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
+混合新式身份验证（HMA）是一种标识管理方法，可提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
   
 ## <a name="fyi"></a>仅供参考
 
 在开始之前，我称之为：
   
 - 混合新式身份验证 \> HMA
-    
+
 - Exchange 本地 \> EXCH
-    
+
 - Exchange Online \> EXO
-    
-此外，*如果本文中的图形有一个 "灰显" 或 "变暗" 的对象，则表示以灰色显示的元素不包含在 HMA 的特定配置中*。 
+
+此外，*如果本文中的图形有一个 "灰显" 或 "变暗" 的对象，则表示以灰色显示的元素不包含在 HMA 的特定配置中*。
   
 ## <a name="enabling-hybrid-modern-authentication"></a>启用混合新式身份验证
 
 启用 HMA 的打开方式：
   
 1. 在开始之前，请务必满足先决条件。
-    
+
 1. 由于很多**先决条件**对于 Skype for Business 和 exchange 都是常见的，因此[混合新式身份验证概述和用于在本地 Skype For business 和 exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md)。 在开始本文中的任何步骤之前，请执行此操作。
-    
-2. 在 Azure AD 中将本地 web 服务 Url 添加为服务主体名称（Spn）。
-    
-3. 确保为 HMA 启用所有虚拟目录
-    
-4. 检查 EvoSTS Auth Server 对象
-    
-5. 在 EXCH 中启用 HMA。
-    
+
+1. 在 Azure AD 中将本地 web 服务 Url 添加为**服务主体名称（spn）** 。
+
+1. 确保为 HMA 启用所有虚拟目录
+
+1. 检查 EvoSTS Auth Server 对象
+
+1. 在 EXCH 中启用 HMA。
+
  **注释**您的 Office 版本是否支持 MA？ 请参阅[如何在 office 2013 和 office 2016 客户端应用程序中运行新式验证](modern-auth-for-office-2013-and-2016.md)。
   
-## <a name="make-sure-you-meet-all-the-pre-reqs"></a>请确保满足所有预 reqs
+## <a name="make-sure-you-meet-all-the-prerequisites"></a>请确保满足所有先决条件
 
-由于很多先决条件对于 Skype for business 和 Exchange 都是常见的，因此请参阅[混合新式身份验证概述和在本地 skype for business 和 exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md)。 在开始本文中的任何步骤*之前*，请执行此操作。 
+由于很多先决条件对于 Skype for business 和 Exchange 都是常见的，因此请参阅[混合新式身份验证概述和在本地 skype for business 和 exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md)。 在开始本文中的任何步骤*之前*，请执行此操作。
   
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>在 Azure AD 中将本地 web 服务 Url 添加为 Spn
 
@@ -78,26 +78,26 @@ Get-OABVirtualDirectory | FL server,*url*
     
 确保客户端可以连接的 Url 在 AAD 中列为 HTTPS 服务主体名称。
   
-1. 首先，使用[这些说明](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)连接到 AAD。 
+1. 首先，使用[这些说明](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)连接到 AAD。
 
- **注释**您需要使用此页面中的 Connect-msolservice 选项，才能使用下面的命令。 
-    
+ **注释**您需要使用此页面中的_connect-msolservice_选项，才能使用下面的命令。
+
 2. 对于与 Exchange 相关的 Url，请键入以下命令：
-    
+
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
 ```
 
-记下（和屏幕截图以便稍后比较）此命令的输出应包括 https:// *autodiscover.yourdomain.com*和 Https:// *mail.yourdomain.com* URL，但主要是由以 00000002-0000-0Ff1-ce00-000000000000/开头的 spn 组成。 如果缺少内部部署中的 https://Url，我们需要将这些特定记录添加到此列表中。 
+记下（和屏幕截图以便稍后比较）此命令的输出应包括 https:// *autodiscover.yourdomain.com*和 Https:// *mail.yourdomain.com* URL，但主要是由以 00000002-0000-0Ff1-ce00-000000000000/开头的 spn 组成。 如果缺少内部部署中的 https://Url，我们需要将这些特定记录添加到此列表中。
   
 3. 如果您在此列表中看不到内部和外部 MAPI/HTTP、EWS、ActiveSync、OAB 和自动发现记录，则必须使用下面的命令添加它们（示例 Url 是 ' `mail.corp.contoso.com` ' and ' `owa.contoso.com` '，但您需要将**示例 url 替换为您自己的 url** ）： <br/>
 ```powershell
-$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
 $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
- 
+
 4. 再次运行步骤2中的 New-msolserviceprincipal 命令，并查看输出，以验证新记录是否已添加。 将列表/屏幕截图从早到新的 Spn 列表进行比较（您还可能会为您的记录提供新列表的屏幕截图）。 如果成功，您将在列表中看到两个新的 Url。 根据我们的示例，Spn 列表现在将包含特定的 Url `https://mail.corp.contoso.com` 和 `https://owa.contoso.com` 。 
   
 ## <a name="verify-virtual-directories-are-properly-configured"></a>验证是否正确配置了虚拟目录
@@ -111,13 +111,11 @@ Get-OABVirtualDirectory | FL server,*url*,*oauth*
 Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
-检查输出以确保每个 VDirs 上启用了**OAuth** ，它将如下所示（要查看的关键内容是 ' OAuth '）; 
+检查输出以确保每个 VDirs 上启用了**OAuth** ，它将如下所示（要查看的关键内容是 "OAuth"）：
 
 ```powershell
 Get-MapiVirtualDirectory | fl server,*url*,*auth*
-```
 
-```
 Server                        : EX1
 InternalUrl                   : https://mail.contoso.com/mapi
 ExternalUrl                   : https://mail.contoso.com/mapi
@@ -148,7 +146,7 @@ Get-AuthServer | where {$_.Name -eq "EvoSts"}
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
-    
+
 ## <a name="verify"></a>Verify
 
 启用 HMA 后，客户端的下一次登录将使用新的身份验证流。 请注意，仅打开 HMA 不会触发任何客户端的重新身份验证。 客户端将根据身份验证令牌和/或证书的有效期重新进行身份验证。
@@ -159,12 +157,8 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
  
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>将混合新式验证用于 Outlook for iOS 和 Outlook for Android
 
-如果您是在 TCP 443 上使用 Exchange server 的本地客户，请为以下 IP 范围列入白名单： <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
-  
+如果您是在 TCP 443 上使用 Exchange server 的本地客户，请为以下 IP 范围列入白名单： <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR>
 
 ## <a name="related-topics"></a>相关主题
 
-[混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md) 
-  
-将 Outlook 用户强制设为新式验证  
-[从 Office 365 专用/ITAR 到 vNext 的转换的新式身份验证配置要求](modern-authentication-configuration.md)
+[从 Office 365 专用/ITAR 到 vNext 的转换的新式身份验证配置要求](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

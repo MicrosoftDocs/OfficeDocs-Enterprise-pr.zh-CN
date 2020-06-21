@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: 如何在将 Active Directory 域服务（AD DS）同步到 Microsoft 365 之前，下载并运行 Microsoft 365 IdFix 工具以帮助清理 Active Directory 域服务（AD DS）。
-ms.openlocfilehash: dde12d7e16aad8488fe067888eacdf1c80e1a037
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: c4df63e6162b1d53cb7a45f046542443177b25ff
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711592"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774857"
 ---
 # <a name="download-and-run-the-microsoft-365-idfix-tool"></a>下载并运行 Microsoft 365 IdFix 工具
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 IdFix 在同步到 Microsoft 365 之前识别您的 Active Directory 域服务（AD DS）域中的错误（如复制和格式化问题）。 
   
@@ -125,8 +125,3 @@ IdFix 在同步到 Microsoft 365 之前识别您的 Active Directory 域服务�
 - [IdFix 排除和支持的对象和属性](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [Microsoft 365 IdFix 事务日志](idfix-transaction-log.md)
     
-## <a name="video-training"></a>视频培训
-
-有关详细信息，请参阅 LinkedIn[安装和使用 IdFix 工具，此](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US)课程由 LinkedIn 学习版提供。
-  
-

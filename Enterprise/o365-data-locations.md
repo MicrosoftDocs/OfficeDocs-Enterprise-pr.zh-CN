@@ -1,9 +1,9 @@
 ---
-title: Office 365 数据位置
+title: Microsoft 365 数据位置
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 03/09/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,32 +16,32 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 摘要：Office 365 数据位置
-ms.openlocfilehash: 7d66669ddab78a6f84703fb350d0a5cd2707b8af
-ms.sourcegitcommit: 4643a0eb2c65f5e9aba0477e948120ea91bf74d6
+description: 摘要： Microsoft 365 数据位置
+ms.openlocfilehash: a0f62fa7955224c07c8e5af35fb53229e3aeb6c4
+ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44507240"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44781057"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-office-365-customer-data-is-stored"></a>Office 365 客户数据的存储位置
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
-下表显示了 Office 365 服务的客户数据在所有 Microsoft 全球云位置的静态存储位置。 展开你的帐单邮寄地址所在国家/地区的位置，以了解每项服务的客户数据将存储在何处。
+以下表格显示了在所有 Microsoft 的全球云位置上为 Microsoft 365 服务存储了客户数据的 rest。 展开你的帐单邮寄地址所在国家/地区的位置，以了解每项服务的客户数据将存储在何处。
 
 客户可在 Office 365 管理中心的“**设置 | 组织配置文件 | 数据位置卡**”中查看特定于租户的数据位置信息。
 
-新 Office 365 租户默认位于与该租户的首次订阅关联的交易所在国家/地区内的地理位置。
+根据与该租户的第一个订阅关联的事务的国家/地区，新的 Microsoft 365 租户将默认为 Geo。
 
 在 [Microsoft 联机服务条款 (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215) 中查找有关客户数据的静态存储位置的合同承诺信息。
 
 对于 Azure Active Directory 数据位置，请访问 [AAD 数据地图](https://go.microsoft.com/fwlink/p/?linkid=2092972)。
 
 
-鉴于前所未有的新型冠状肺炎（COVID-19）危机和管理欧洲在线服务需求的要需要，如果贵组织是教育机构、我们可在欧盟、欧洲自由贸易区、英国、美国货加拿大预配 Office 365 租户，或传输你的数据至欧盟、欧洲自由贸易区、英国、美国或加拿大的任何数据中心。这表示你的数据可静态存储在欧盟、欧洲自由贸易区、英国、美国或加拿大。在采取必要和谨慎的措施来维持服务可用性的同时，我们对合规性、隐私性和安全性的承诺保持不变。  我们将遵守有关数据传输的所有适用法律。
+由于前所未有的 COVID 危机，以及在欧洲管理在线服务需求方面的需求，如果您的组织是教育机构，我们可能会在欧盟（EU）、欧洲自由贸易协会（EFTA）、英国（英国）、美国（美国）或加拿大（CA）中预配 Microsoft 365 租户，或将您的数据转移到欧盟的任何数据中心、EFTA、英国、US 或 CA。这表示你的数据可静态存储在欧盟、欧洲自由贸易区、英国、美国或加拿大。在采取必要和谨慎的措施来维持服务可用性的同时，我们对合规性、隐私性和安全性的承诺保持不变。  我们将遵守有关数据传输的所有适用法律。
 
 
 
@@ -58,11 +58,11 @@ Microsoft 不会披露其数据中心的确切地址。 我们制定这项政策
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>客户数据的位置是否对最终用户的体验有直接影响？
 
-Office 365 的性能与用户离数据中心位置的距离并无简单的比例关系。 Microsoft 在其全球云网络、全球云基础结构和 Office 365 服务体系结构方面持续投资，旨在为用户提供卓越且一致的体验，而不受客户数据的静态存储位置的影响。 如果你的用户遇到性能问题，则应进一步对这些问题进行故障排除。 Microsoft 已在 [Office 支持网站](https://go.microsoft.com/fwlink/p/?linkid=862645)上发布面向 Office 365 客户的指南，旨在规划和优化为最终用户提供的性能。
+Microsoft 365 的性能并不只是与用户与数据中心位置的距离成比例。 Microsoft 在其全球云网络、全球云基础结构和 Microsoft 365 服务体系结构中的持续投资可帮助为用户提供单一、一致的体验，而不依赖于在 rest 上存储客户数据的位置。 如果你的用户遇到性能问题，则应进一步对这些问题进行故障排除。 Microsoft 已发布了 Microsoft 365 客户的指南，以在[Office 支持网站](https://go.microsoft.com/fwlink/p/?linkid=862645)上规划和优化最终用户性能。
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Microsoft 如何帮助我遵守国家、地区和行业特定的法规？
 
-为帮助你遵守关于管理个人数据的收集和使用的国家、地区和行业特定的要求，Office 365 提供了全球云生产力提供商中最全面的一套合规性产品/服务。 请在 Microsoft 信任中心的“[Office 365 合规性](https://go.microsoft.com/fwlink/p/?linkid=862317)”部分中查看[我们的合规性产品/服务](https://go.microsoft.com/fwlink/p/?linkid=864391)和更多详细信息。 此外，某些 Office 365 计划还提供了其他合规性解决方案，以帮助你管理数据、遵守法律和法规要求并监视对数据执行的操作。
+为了帮助您遵守管理个人数据的收集和使用的国家、地区和特定于行业的要求，Microsoft 365 提供了任何全球云生产率提供商最全面的一组合规性服务。 请参阅 Microsoft 信任中心上的[microsoft 365 合规性](https://go.microsoft.com/fwlink/p/?linkid=862317)部分中的[合规性产品](https://go.microsoft.com/fwlink/p/?linkid=864391)和更多详细信息。 此外，某些 Microsoft 365 计划还提供了更多合规性解决方案，可帮助您管理数据、遵守法律和法规要求，并监控对数据所采取的操作。
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>谁可以按照什么规定访问你的数据？
 
@@ -70,15 +70,15 @@ Office 365 的性能与用户离数据中心位置的距离并无简单的比例
 
 ### <a name="does-microsoft-access-your-data"></a>Microsoft 是否会访问你的数据？
 
-Microsoft 会自动执行大多数 Office 365 操作，同时有意限制其自身对客户数据的访问。 这有助于我们大规模管理 Office 365，并解决对客户数据造成内部威胁的风险。 默认情况下，Microsoft 工程师对 Office 365 中的客户数据没有长期管理特权和长期访问权限。 Microsoft 工程师可能会在有限的时间内对客户数据进行有限的访问和记录，但仅在正常服务操作所需且仅在 Microsoft 的高级管理层成员批准（并且对于获得客户密码箱功能许可证的客户，还需该客户的批准）的情况下才会这样做。
+Microsoft 自动化大多数 Microsoft 365 操作，同时有意限制其对客户数据的访问。 这有助于我们在规模扩展时管理 Microsoft 365，并解决对客户数据的内部威胁的风险。 默认情况下，Microsoft 工程师不具有任何管理权限，也没有对 Microsoft 365 中的客户数据的访问权限。 Microsoft 工程师可能会在有限的时间内对客户数据进行有限的访问和记录，但仅在正常服务操作所需且仅在 Microsoft 的高级管理层成员批准（并且对于获得客户密码箱功能许可证的客户，还需该客户的批准）的情况下才会这样做。
 
 ### <a name="how-does-microsoft-secure-your-data"></a>Microsoft 如何保护你的数据？
 
-Microsoft 在 Office 365 中内置了可靠的策略、控件和系统，用于保护信息安全。 有关详细信息，请参阅 Microsoft 信任中心上的“[Office 365 安全](https://go.microsoft.com/fwlink/p/?linkid=864393)”部分。
+Microsoft 在 Microsoft 365 中内置了强健的策略、控件和系统，以确保信息安全。 查看 Microsoft 信任中心上的[microsoft 365 security 部分](https://go.microsoft.com/fwlink/p/?linkid=864393)，了解详细信息。
 
-### <a name="does-office-365-encrypt-your-data"></a>Office 365 是否对数据进行加密？
+### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365 是否对数据进行加密？
 
-Office 365 使用服务端技术对静态和传输中的客户数据进行加密。 对于静态客户数据，Office 365 使用卷级和文件级加密。 对于传输中的客户数据，Office 365 使用多种加密技术在数据中心之间以及客户端和服务器之间进行通信，例如传输层安全性 (TLS) 和 Internet 协议安全性 (IPsec)。 Office 365 还包含客户管理的加密功能。
+Microsoft 365 使用在 rest 和途对客户数据进行加密的服务端技术。 对于静态客户数据，Microsoft 365 使用卷级别和文件级加密。 对于传输中的客户数据，Microsoft 365 使用多种加密技术在数据中心之间以及客户端和服务器之间进行通信，例如传输层安全性（TLS）和 Internet 协议安全性（IPsec）。 Microsoft 365 还包括客户托管的加密功能。
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>在哪里可以找到 Microsoft Azure 的数据驻留信息？
 
@@ -86,11 +86,26 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 
 ### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365 中的多地理位置功能是什么？
 
-[多地理位置](https://go.microsoft.com/fwlink/p/?linkid=872033)功能可让单一 Office 365 租户横跨多个 Office 365 数据中心区域，并为客户提供在所选区域以单一用户为基础存储 Office 365 核心客户数据的能力。
+[多地理](https://go.microsoft.com/fwlink/p/?linkid=872033)位置使客户能够将 rest 上的核心客户数据分配给 Microsoft 365 云中的可用位置。   
 
 ### <a name="what-services-support-multi-geo"></a>哪些服务支持多地理位置功能？
 
-[多地理位置](https://go.microsoft.com/fwlink/p/?linkid=872033)功能适用于 Exchange Online、OneDrive 和 SharePoint Online。 Microsoft 正在研究为其他 Office 365 服务提供多地理位置功能。
+[多地理位置](https://go.microsoft.com/fwlink/p/?linkid=872033)功能适用于 Exchange Online、OneDrive 和 SharePoint Online。 Microsoft 正在调查其他 Microsoft 365 服务的多地理位置。
+
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Intune 数据位置的例外情况是什么？
+
+Microsoft 不会将 Intune 客户数据存储在不在指定地理位置的地方。 除非：
+
+- Microsoft 需要提供客户支持、排除服务故障或符合法律要求。
+- 客户将配置帐户以启用客户数据的此类存储，包括通过使用以下内容：
+
+  - 设计为全局运行的功能，例如内容交付网络（CDN），它提供全局缓存服务，并在世界各地的边缘位置存储客户数据。
+
+  - Azure Active Directory （Azure AD），它可能会在全局范围内存储目录数据。 这不适用于美国的 Azure AD 部署（其中 Azure AD 数据仅存储在美国）或欧洲（Azure AD 数据存储在欧洲或美国）。
+   
+  - 预览、beta 或其他预发布服务，这些服务通常会将客户数据存储在美国，但可能会将其全局存储。
+
+无论如何，Microsoft 不会控制或限制客户或其最终用户可以从中访问客户数据的地理位置。 
 
 ## <a name="data-center-locations"></a>数据中心位置
 
@@ -112,9 +127,9 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 
 | 国家/地区 | 市/县 |
 | --- | --- |
-| 澳大利亚 | 新南威尔士州、维多利亚州 |
+| 澳大利亚 | 悉尼，墨尔本 |
 | 加拿大 | 魁北克市、多伦多 |
-| 欧盟 | 奥地利、芬兰、法国、爱尔兰、荷兰 |
+| 欧盟 | 奥地利（维也纳）、芬兰（赫尔辛基）、法国（巴黎、Marseille）、爱尔兰（都柏林）、荷兰（阿姆斯特丹） |
 | 法国 | 巴黎、马赛 |
 | 德国 | 法兰克福、柏林 |
 | 印度 | 金奈、孟买、普纳 |
@@ -127,7 +142,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | 英国 | 达勒姆、伦敦、加的夫 |
 | 美国 |  博伊顿、夏安、芝加哥、得梅因、昆西、圣安东尼奥、圣克拉拉、圣何塞 |
 
-新 Office 365 租户默认位于与该租户的首次订阅关联的帐单邮寄地址所在国家/地区内的地理位置。 若要确认现有 Office 365 服务的客户数据存储在何处，请在 Office 365 管理中心的“设置 | 组织配置文件 | 数据位置卡”中查看特定于租户的数据位置信息。 或者，从以下列表中展开你的业务所在的国家/地区，以了解如果立即开始使用 Office 365 服务，客户数据将存储在何处。
+根据与该租户的第一个订阅关联的帐单地址所在的国家/地区，新的 Microsoft 365 租户将默认为 Geo。 若要确认现有 Office 365 服务的客户数据存储在何处，请在 Office 365 管理中心的“设置 | 组织配置文件 | 数据位置卡”中查看特定于租户的数据位置信息。 或者，展开您的企业所基于的国家/地区，从下面的列表中了解在现在开始使用 Microsoft 365 服务时，客户数据的存储位置。
 
 ## <a name="afghanistan"></a>阿富汗
 <details><summary>单击展开</summary><p>
@@ -141,6 +156,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -164,6 +180,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -187,6 +204,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -210,6 +228,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -233,6 +252,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -256,6 +276,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -279,6 +300,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -302,6 +324,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -325,6 +348,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -348,6 +372,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -371,6 +396,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -394,6 +420,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -417,6 +444,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -440,6 +468,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 澳大利亚 |
 | Office Online &amp; Mobile | 澳大利亚 |
 | EOP | 澳大利亚 |
+| Intune | 澳大利亚 |
 | MyAnalytics | 澳大利亚 |
 | Planner | 澳大利亚 |
 | Sway | 美国 |
@@ -463,6 +492,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -486,6 +516,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner |  全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -509,6 +540,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -532,6 +564,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -555,6 +588,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -578,6 +612,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -601,6 +636,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -624,6 +660,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -647,6 +684,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -670,6 +708,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -693,6 +732,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -716,6 +756,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -739,6 +780,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -762,6 +804,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -785,6 +828,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner |  全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -808,6 +852,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -831,6 +876,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -854,6 +900,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -877,6 +924,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -900,6 +948,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -923,6 +972,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -946,6 +996,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -969,6 +1020,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -992,6 +1044,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1015,6 +1068,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -1038,6 +1092,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1061,6 +1116,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 加拿大 |
 | Office Online &amp; Mobile | 加拿大 |
 | EOP | 加拿大 |
+| Intune | 美国 |
 | MyAnalytics | 加拿大 |
 | Planner | 加拿大 |
 | Sway | 美国 |
@@ -1084,6 +1140,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1107,6 +1164,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1130,6 +1188,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1153,6 +1212,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1176,6 +1236,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1199,6 +1260,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -1222,6 +1284,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -1245,6 +1308,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -1268,6 +1332,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1291,6 +1356,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1314,6 +1380,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1337,6 +1404,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1360,6 +1428,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -1383,6 +1452,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1406,6 +1476,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1429,6 +1500,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -1452,6 +1524,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1475,6 +1548,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -1498,6 +1572,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -1521,6 +1596,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -1544,6 +1620,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1567,6 +1644,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1590,6 +1668,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1613,6 +1692,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1636,6 +1716,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1659,6 +1740,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1682,6 +1764,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1705,6 +1788,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1728,6 +1812,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -1751,6 +1836,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner |  美国 |
 | Sway | 美国 |
@@ -1774,6 +1860,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1797,6 +1884,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -1820,6 +1908,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -1843,6 +1932,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 澳大利亚 |
 | Office Online &amp; Mobile | 澳大利亚 |
 | EOP | 澳大利亚 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 澳大利亚 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -1866,6 +1956,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -1889,6 +1980,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 法国 |
 | Office Online &amp; Mobile | 法国 |
 | EOP | 法国 |
+| Intune | 欧盟 |
 | MyAnalytics | 法国 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -1912,6 +2004,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1935,6 +2028,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -1958,6 +2052,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -1981,6 +2076,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2004,6 +2100,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2027,6 +2124,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2050,6 +2148,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 德国 |
 | Office Online &amp; Mobile | 德国 |
 | EOP | 德国 |
+| Intune | 欧盟 |
 | MyAnalytics | 德国 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -2073,6 +2172,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2096,6 +2196,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2119,6 +2220,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -2142,6 +2244,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2165,6 +2268,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2188,6 +2292,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2211,6 +2316,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -2234,6 +2340,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2257,6 +2364,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2280,6 +2388,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2303,6 +2412,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2326,6 +2436,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2349,6 +2460,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2372,6 +2484,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2395,6 +2508,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2418,6 +2532,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2441,6 +2556,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2464,6 +2580,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -2487,6 +2604,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -2510,6 +2628,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2533,6 +2652,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 印度 |
 | Office Online &amp; Mobile | 印度 |
 | EOP | 印度 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 印度 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -2556,6 +2676,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -2579,6 +2700,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2602,6 +2724,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -2625,6 +2748,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2648,6 +2772,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2671,6 +2796,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -2694,6 +2820,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2717,6 +2844,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 日本 |
 | Office Online &amp; Mobile | 日本 |
 | EOP | 日本 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 日本 |
 | Planner | 日本 |
 | Sway | 美国 |
@@ -2740,6 +2868,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2763,6 +2892,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2786,6 +2916,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2809,6 +2940,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -2832,6 +2964,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -2843,7 +2976,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | 工作区分析 | 美国 |
 </p></details>
 
-## <a name="korea"></a>韩国
+## <a name="south-korea"></a>韩国
 <details><summary>单击展开</summary><p>
 
 | 服务 | 位置 |
@@ -2855,6 +2988,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 韩国 |
 | Office Online &amp; Mobile | 韩国 |
 | EOP | 韩国 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 韩国 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -2878,6 +3012,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2901,6 +3036,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2924,6 +3060,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -2947,6 +3084,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -2970,6 +3108,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -2993,6 +3132,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -3016,6 +3156,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3039,6 +3180,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3062,6 +3204,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3085,6 +3228,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 瑞士 |
 | Office Online &amp; Mobile | 瑞士 |
 | EOP | 瑞士 |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 瑞士 |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -3108,6 +3252,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -3131,6 +3276,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -3154,6 +3300,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3177,6 +3324,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3200,6 +3348,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3223,6 +3372,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3246,6 +3396,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3269,6 +3420,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -3292,6 +3444,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3315,6 +3468,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3338,6 +3492,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3361,6 +3516,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3384,6 +3540,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3407,6 +3564,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3430,6 +3588,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -3453,6 +3612,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -3476,6 +3636,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3499,6 +3660,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -3522,6 +3684,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3545,6 +3708,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3568,6 +3732,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3591,6 +3756,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3614,6 +3780,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3637,6 +3804,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3660,6 +3828,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3683,6 +3852,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -3706,6 +3876,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3729,6 +3900,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3752,6 +3924,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 澳大利亚 |
 | Office Online &amp; Mobile | 澳大利亚 |
 | EOP | 澳大利亚 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 澳大利亚 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3775,6 +3948,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3798,6 +3972,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3821,6 +3996,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -3844,6 +4020,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3867,6 +4044,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3890,6 +4068,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -3913,6 +4092,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 挪威 |
 | Office Online &amp; Mobile | 挪威 |
 | EOP | 挪威 |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 挪威 |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -3936,6 +4116,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -3959,6 +4140,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -3982,6 +4164,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4005,6 +4188,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4028,6 +4212,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4051,6 +4236,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4074,6 +4260,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4097,6 +4284,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4120,6 +4308,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4143,6 +4332,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4166,6 +4356,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -4189,6 +4380,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -4212,6 +4404,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4235,6 +4428,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -4258,6 +4452,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -4281,6 +4476,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4304,6 +4500,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -4327,6 +4524,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -4350,6 +4548,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4373,6 +4572,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4396,6 +4596,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4419,6 +4620,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4442,6 +4644,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4465,6 +4668,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4488,6 +4692,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4511,6 +4716,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4534,6 +4740,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4557,6 +4764,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -4580,6 +4788,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4603,6 +4812,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -4626,6 +4836,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4649,6 +4860,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -4672,6 +4884,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4695,6 +4908,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4718,6 +4932,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4741,6 +4956,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4764,6 +4980,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -4787,6 +5004,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -4810,6 +5028,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4833,6 +5052,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4856,6 +5076,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 南非 |
 | Office Online &amp; Mobile | 南非 |
 | EOP | 南非 |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 南非 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4879,6 +5100,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4902,6 +5124,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -4925,6 +5148,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -4948,6 +5172,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -4971,6 +5196,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -4994,6 +5220,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5017,6 +5244,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 欧盟 |
 | Office Online &amp; Mobile | 欧盟 |
 | EOP | 欧盟 |
+| Intune | 欧盟 |
 | MyAnalytics | 欧盟 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -5040,6 +5268,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 瑞士 |
 | Office Online &amp; Mobile | 瑞士 |
 | EOP | 瑞士 |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 瑞士 |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -5063,6 +5292,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5086,6 +5316,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -5109,6 +5340,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5132,6 +5364,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5155,6 +5388,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5178,6 +5412,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5201,6 +5436,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5224,6 +5460,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5247,6 +5484,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5270,6 +5508,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5293,6 +5532,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -5316,6 +5556,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -5339,6 +5580,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5362,6 +5604,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5385,6 +5628,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5408,6 +5652,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5431,6 +5676,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -5454,6 +5700,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 阿拉伯联合酋长国 |
 | Office Online &amp; Mobile | 阿拉伯联合酋长国 |
 | EOP | 阿拉伯联合酋长国 |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 阿拉伯联合酋长国 |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -5477,6 +5724,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 英国 |
 | Office Online &amp; Mobile | 英国 |
 | EOP | 英国 |
+| Intune | 欧盟 |
 | MyAnalytics | 英国 |
 | Planner | 欧盟 |
 | Sway | 美国 |
@@ -5500,6 +5748,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5523,6 +5772,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
 | EOP | 全球地理位置 3 - 美洲 |
+| Intune | 美国 |
 | MyAnalytics | 全球地理位置 3 - 美洲 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5546,6 +5796,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5569,6 +5820,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -5592,6 +5844,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5615,6 +5868,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 美国 |
 | Office Online &amp; Mobile | 美国 |
 | EOP | 美国 |
+| Intune | 美国 |
 | MyAnalytics | 美国 |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5638,6 +5892,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5661,6 +5916,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
+| Intune | 全球地理位置 2 – 亚太地区 |
 | MyAnalytics | 全球地理位置 2 – 亚太地区 |
 | Planner | 全球地理位置 2 – 亚太地区 |
 | Sway | 美国 |
@@ -5684,6 +5940,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5707,6 +5964,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 全球地理位置 1 – EMEA |
 | Sway | 美国 |
@@ -5730,6 +5988,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |
@@ -5753,6 +6012,7 @@ Office 365 使用服务端技术对静态和传输中的客户数据进行加密
 | Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
+| Intune | 全球地理位置 1 – EMEA |
 | MyAnalytics | 全球地理位置 1 – EMEA |
 | Planner | 美国 |
 | Sway | 美国 |

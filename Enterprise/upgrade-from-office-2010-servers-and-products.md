@@ -23,16 +23,16 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2010 服务器和客户端应用程序的支持即将结束，自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 76f61942a4b3f832b75f4a098452748898d2e8c5
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009517"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44775101"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可帮助您从 Office 2010 服务器和客户端进行升级的资源
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 Office 2010 和 Exchange 2010 将在**年10月 13 2020 日**到达其支持结束。 
 
@@ -46,7 +46,7 @@ SharePoint 2010 和 Project Server 2010 将在**年4月 13 2021 日**到达其�
 
 有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)。
 
-[![Office 2010 客户端和服务器及 Windows 7 终止支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 本页面海报是一种快速了解您可以采取的各种途径，以防止 Office 2010 客户端和服务器产品和 Windows 7 达到支持的最终状态，并突出显示了 Microsoft 365 企业版中的首选路径和选项支持。
 

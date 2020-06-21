@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何在 Microsoft 365 订阅使用仅云标识时创建用户和组。
-ms.openlocfilehash: 257634db4ba8cd001ea52004be05f8a8a7d35e87
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: f510d82186e9a44c20bd20f1c7b5a7a44c8b765b
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698919"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774827"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 仅限云身份标识
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 对于仅限云的标识，所有用户、组和联系人都存储在 Microsoft 365 订阅的 Azure Active Directory （Azure AD）租户中。 下面是仅限云身份的基本组件。
  
@@ -49,7 +49,7 @@ ms.locfileid: "44698919"
 
 对组织中的用户类型进行分组。 分组是什么？ 例如，您可以将用户按高级功能或目标分组到您的组织。
 
-此外，可以将某些云服务与组织外部没有任何用户帐户的用户共享，而且你还需要标识这些用户组。
+Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
 
 您可以使用 Azure AD 中的组来实现多种目的，从而简化云环境的管理。 例如，使用 Azure AD 组，您可以执行以下操作：
 

@@ -1,5 +1,5 @@
 ---
-title: 用于管理 Office 365 帐户的工具
+title: 用于管理 Microsoft 365 帐户的工具
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,69 +19,69 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: '了解用于管理 Office 365 用户的工具，以及您可以使用的工具取决于管理用户身份的方式。 '
-ms.openlocfilehash: 90e79eaf9cd90a539cf1c454509bff7d659b8b35
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: '了解用于管理 Microsoft 365 用户的工具，以及您可以使用的工具取决于管理用户身份的方式。 '
+ms.openlocfilehash: 6decaa941f5997cd2ee1617f428f93985428dde4
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735780"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774497"
 ---
-# <a name="tools-to-manage-office-365-accounts"></a>用于管理 Office 365 帐户的工具
+# <a name="tools-to-manage-microsoft-365-accounts"></a>用于管理 Microsoft 365 帐户的工具
 
-您可以通过几种不同的方式管理 Office 365 用户，具体取决于您的配置。 你可以在[Microsoft 365 管理中心](https://admin.microsoft.com)、Windows PowerShell、本地目录或 Azure Active directory 管理门户中管理用户。 在购买 Office 365 后，可以立即使用管理中心和 Windows PowerShell 来管理帐户。 管理云标识组织中的每个人都有单独的用户 ID 和密码（适用于 Office 365）。 如果要与您的本地基础结构集成并将用户帐户与 Office 365 同步，可以使用 Azure Active Directory Connect 来提供标识同步，以及提供密码同步（可选）或完整的单一登录功能。
+您可以通过几种不同的方式管理 Microsoft 365 用户，具体取决于您的配置。 你可以在[Microsoft 365 管理中心](https://admin.microsoft.com)、Windows PowerShell、本地目录或 Azure Active directory 管理门户中管理用户。 一旦购买 Microsoft 365，管理员中心和 Windows PowerShell 便可用于管理帐户。 管理云标识组织中的每个人都具有单独的用户 ID 和密码（适用于 Microsoft 365）。 如果要与您的本地基础结构集成，并让用户帐户与 Microsoft 365 同步，可以使用 Azure Active Directory Connect 来提供标识同步，以及提供密码同步（可选）或完整单一登录功能。
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>规划将管理用户帐户的位置和方式
 
-如何管理用户帐户的位置和方式取决于您要用于 Office 365 的标识模型。 这两个整体模型是云身份验证和联合身份验证。
+如何管理用户帐户的位置和方式取决于要用于 Microsoft 365 的标识模型。 这两个整体模型是云身份验证和联合身份验证。
   
 ### <a name="cloud-authentication"></a>云身份验证
 
 - 云身份验证-创建和管理用户在管理中心中，您还可以使用 Windows PowerShell 或 Azure Active Directory 管理用户。 
     
-- 带有无缝单一登录的密码哈希同步-为 Azure AD 中的本地目录对象启用身份验证的最简单方法。 使用密码哈希同步（PHS），您可以将内部部署 Active Directory 用户帐户对象与 Office 365 同步并在本地管理您的用户。 
+- 带有无缝单一登录的密码哈希同步-为 Azure AD 中的本地目录对象启用身份验证的最简单方法。 使用密码哈希同步（PHS），您可以将内部部署 Active Directory 用户帐户对象与 Microsoft 365 同步并在本地管理您的用户。 
     
 - 带有无缝单一登录的传递身份验证-使用在一个或多个本地服务器上运行的软件代理，为 Azure AD 身份验证服务提供简单的密码验证，以直接使用本地 Active Directory 验证用户。 
     
 ### <a name="federated-authentication"></a>联合身份验证
 
-- 联合身份验证选项-主要针对具有更复杂的身份验证要求的大型企业组织，本地目录对象与 Office 365 同步，并且用户帐户在本地进行管理。 
+- 联合身份验证选项-主要针对具有更复杂的身份验证要求的大型企业组织，本地目录对象与 Microsoft 365 同步，并且用户帐户在本地进行管理。 
     
-- [第三方身份验证和标识提供程序](about-office-365-identity.md)-内部部署目录对象可能会同步到 Office 365，并且云资源访问主要由第三方标识提供程序（IdP）进行管理。 
+- [第三方身份验证和标识提供程序](about-office-365-identity.md)-本地目录对象可能会同步到 Microsoft 365，并且云资源访问主要由第三方标识提供程序（IdP）进行管理。 
     
 ## <a name="managing-accounts"></a>管理帐户
 
 在决定您的组织创建和管理帐户的方式时，请考虑以下事项：
   
-- 目录同步软件需要安装在本地环境中的服务器上，以连接 Office 365 和本地目录之间的标识。
+- 目录同步软件需要安装在本地环境中的服务器上，以连接 Microsoft 365 和本地目录之间的标识。
     
-- 任何目录同步选项（包括 SSO 选项）都需要您的本地目录属性满足标准。 在目录中使用哪些属性以及需要清除的内容（如果有）的具体说明，[准备通过目录同步将用户预配到 Office 365](prepare-for-directory-synchronization.md)。 有关如何使用 IdFix 自动执行目录清理的说明，请参阅[下载并运行 Office 365 IdFix 工具](install-and-run-idfix.md)。 
+- 任何目录同步选项（包括 SSO 选项）都需要您的本地目录属性满足标准。 在目录中使用哪些属性以及需要清除的内容（如果有）的具体说明，[准备通过目录同步将用户预配到 Microsoft 365](prepare-for-directory-synchronization.md)。 有关如何使用 IdFix 自动执行目录清理的说明，请参阅[下载并运行 Microsoft 365 IdFix 工具](install-and-run-idfix.md)。 
     
-- 规划如何创建 Office 365 帐户。
+- 规划如何创建 Microsoft 365 帐户。
     
     下表列出了不同的帐户管理工具。
     
 |**选项**|**备注**|
 |:-----|:-----|
-|管理中心  <br/> |[将用户逐个或批量添加到 Office 365-管理员帮助](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) <br/>  提供一个简单的 web 界面来添加和更改用户帐户。  <br/>  如果启用目录同步（可以设置位置和许可证分配），则不能使用更改用户。  <br/>  不能与 SSO 选项一起使用。  <br/> |
-|Windows PowerShell  <br/> |[使用 Windows PowerShell 管理 Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  允许您使用 Windows PowerShell 脚本在批量用户中添加用户。  <br/>  可用于将位置和许可证分配给帐户，而不考虑帐户的创建方式。  <br/> |
-|批量导入  <br/> |[同时向 Office 365 添加多个用户 - 管理员帮助](add-several-users-at-the-same-time.md) <br/>  允许您导入 CSV 文件以将一组用户添加到 Office 365。  <br/>  不能与 SSO 选项一起使用。  <br/> |
-|Azure Active Directory  <br/> |你可以使用 Office 365 订阅获取 Azure Active Directory 的免费版本。 您可以为云用户执行自助密码重置等功能，并使用免费版本自定义登录和访问面板页。 若要获取增强的功能，您可以升级到基本版本或高级版。 有关支持的功能的列表，请参阅[Azure Active Directory 版本](https://go.microsoft.com/fwlink/p/?LinkId=698465)。  <br/> |
+|管理中心  <br/> |[单独或批量添加用户](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) <br/>  提供一个简单的 web 界面来添加和更改用户帐户。  <br/>  如果启用目录同步（可以设置位置和许可证分配），则不能使用更改用户。  <br/>  不能与 SSO 选项一起使用。  <br/> |
+|Windows PowerShell  <br/> |[使用 Windows PowerShell 管理 Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  允许您使用 Windows PowerShell 脚本在批量用户中添加用户。  <br/>  可用于将位置和许可证分配给帐户，而不考虑帐户的创建方式。  <br/> |
+|批量导入  <br/> |[同时添加多个用户](add-several-users-at-the-same-time.md) <br/>  允许您导入 CSV 文件以将一组用户添加到 Microsoft 365。  <br/>  不能与 SSO 选项一起使用。  <br/> |
+|Azure Active Directory  <br/> |你可以使用 Microsoft 365 订阅获取 Azure Active Directory 的免费版本。 您可以为云用户执行自助密码重置等功能，并使用免费版本自定义登录和访问面板页。 若要获取增强的功能，您可以升级到基本版本或高级版。 有关支持的功能的列表，请参阅[Azure Active Directory 版本](https://go.microsoft.com/fwlink/p/?LinkId=698465)。  <br/> |
 |目录同步  <br/> |[将本地标识与 Azure Active Directory 集成](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  对于使用或不使用密码同步进行目录同步，请将[AZURE AD Connect 与 express 设置结合](https://go.microsoft.com/fwlink/p/?LinkID=698537)使用。  <br/>  对于多个林和 SSO 选项，请使用[自定义安装的 AZURE AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430)。  <br/>  提供启用 SSO 所需的基础结构。  <br/>  对于很多混合方案是必需的：  <br/>  暂存迁移  <br/>  混合 Exchange  <br/>  将本地目录中的安全和已启用邮件的组同步。  <br/> |
    
-- 无论您打算如何将用户帐户添加到 Office 365，您都需要管理多个帐户功能，例如分配许可证、指定位置等。 可以从管理中心管理这些功能，也可以[使用 Office 365 PowerShell 来创建用户帐户](https://go.microsoft.com/fwlink/p/?LinkId=717083)。
+- 无论您打算如何将用户帐户添加到 Microsoft 365，您都需要管理多个帐户功能，例如分配许可证、指定位置等。 可以从管理中心管理这些功能，也可以[使用 Office 365 PowerShell 来创建用户帐户](https://go.microsoft.com/fwlink/p/?LinkId=717083)。
     
-    如果选择通过管理中心添加和管理所有用户，您将指定位置，并在创建 Office 365 帐户的同时分配许可证。 因此，不需要进行大量规划。
+    如果选择通过管理中心添加和管理所有用户，您将指定位置，并在创建 Microsoft 365 帐户的同时分配许可证。 因此，不需要进行大量规划。
     
     > [!IMPORTANT]
-    > 在 Office 365 中创建帐户，而不分配许可证（例如为 SharePoint Online）意味着帐户所有者可以查看 Microsoft 365 管理中心，但不能访问公司订阅中的任何服务。 分配位置和许可证后，帐户将复制到您分配的服务或服务。 用户可以登录到其帐户并使用您分配给他们的服务。 
+    > 在 Microsoft 365 中创建帐户而不分配许可证（例如为 SharePoint Online）意味着帐户所有者可以查看 Microsoft 365 管理中心，但不能访问公司订阅中的任何服务。 分配位置和许可证后，帐户将复制到您分配的服务或服务。 用户可以登录到其帐户并使用您分配给他们的服务。 
   
 ## <a name="next-steps"></a>后续步骤
 
-[Office 365 与本地环境的集成](office-365-integration.md)
+[Microsoft 365 与本地环境的集成](office-365-integration.md)
   
 ## <a name="see-also"></a>另请参阅
 
-[在 Office 365 中管理用户帐户](https://support.office.com/article/3204162b-0b6c-4838-8a11-394b9bfd31de.aspx)
+[在 Microsoft 365 中管理用户和组](https://docs.microsoft.com/microsoft-365/admin/add-users)
   
 

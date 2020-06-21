@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: 在2010年4月13日2021，SharePoint 和 SharePoint Server 2010 的支持终止。 使用本文作为升级到 SharePoint Online 或本地 SharePoint Server 的更新版本的指南。
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532287"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774447"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>从 SharePoint 2010 升级
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年4月 13 2021 日**到达支持的末尾。 本文详细介绍了可帮助您将现有的 SharePoint Server 2010 数据迁移到 Office 365 中的 SharePoint Online 或升级本地 SharePoint Server 2010 环境的资源。
   
@@ -128,7 +128,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年4月 13 2021 日
   
 |||
 |:-----|:-----|
-||串行升级路径 * * * *： SharePoint Server 2010 **\>** sharepoint server 2013 **\>** sharepoint server 2016 |
+||串行升级路径 * * * *： SharePoint Server 2010 **\>** Sharepoint server 2013 **\>** sharepoint server 2016 |
    
 如果选择跟踪从 SharePoint 2010 到 SharePoint Server 2016 的整个路径，将需要花费时间和进行规划。 升级涉及升级的硬件方面的成本（请注意，还必须升级 SQL server）、软件和管理。 此外，可能还需要升级自定义项，甚至放弃自定义项。 在升级 SharePoint Server 服务器场之前，请务必先收集所有关键自定义项的注释。
   
@@ -162,15 +162,15 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年4月 13 2021 日
   
 - **的硬件/软件要求**： 
     
-    [Sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - **的软件边界和限制**： 
     
-    [Sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - 以下项**的升级过程概述**： 
     
-    [Sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>在 SharePoint Online 和本地 SharePoint Server 之间创建 SharePoint 混合解决方案
 

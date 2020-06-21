@@ -25,16 +25,16 @@ ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
 description: SharePoint Server 2007 已到达支持的结束时间，现在是时候升级了。 使用本文可帮助您创建计划。
-ms.openlocfilehash: 607dfeaedb1a63634e08e28f8aef2c6fcce6ce9c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841149"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774987"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>要考虑的 SharePoint 2007 迁移选项
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。 是时候升级了！ 本文提供了有关迁移选项的信息。
   
@@ -54,9 +54,9 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。
     
 - 在网站集或库之间手动移动数据
     
-- FastTrack 向导升级到 Office 365 （[SharePoint Online 部署顾问](https://aka.ms/spoguidance)）
+- FastTrack 向导升级到 Microsoft 365 （[SharePoint Online 部署顾问](https://aka.ms/spoguidance)）
     
-- Office 365 中的迁移 API 到 SharePoint Online （SPO）
+- Microsoft 365 中的迁移 API 到 SharePoint Online （SPO）
     
 哪种方法最适合你？
   
@@ -67,7 +67,7 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。
   
 请务必查看要升级到的任何 SharePoint 版本的[产品生命周期](https://support.microsoft.com/lifecycle/search)和系统要求。 这样，你就可以知道何时需要进行下一次升级（例如，如果你在 SharePoint Server 2010 等旧产品上暂停以规划更多升级），请确保你知道其支持日期的结束时间，并确保你有支持你的计划的硬件。 
   
-如果您计划将 SharePoint 网站的部分或全部转换为云中的 Office 365，这是将指向[office 365 的服务说明](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)的链接做成书签的时间。 你将需要服务说明来了解 SharePoint Online 功能以及它们可能与本地 SharePoint Server 的不同之处。 升级功能 Microsoft Office SharePoint Server 2007 场。 如果您的安装中存在损坏的网站，请在升级之前将其修复。
+如果您计划将 SharePoint 网站的部分或全部转换为云中的 Microsoft 365，这是将指向[microsoft 365 和 Office 365 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)的链接加入书签的时间。 你将需要服务说明来了解 SharePoint Online 功能以及它们可能与本地 SharePoint Server 的不同之处。 升级功能 Microsoft Office SharePoint Server 2007 场。 如果您的安装中存在损坏的网站，请在升级之前将其修复。
   
 ## <a name="a-note-about-managing-risk"></a>有关管理风险的说明
 
@@ -75,18 +75,18 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。
   
 1. 您可以使用数据库附加来备份 Microsoft Office SharePoint Server 2007 数据库，从而单独升级这些数据库。
     
-2. 如果你确定只有少量关键文档库和其他信息在 Microsoft Office SharePoint Server 2007 场中使用，则可以选择将 Microsoft Office SharePoint Server 2007 中的数据手动移动到 SharePoint Server 2010，或者仅将特定网站和 web 仅用于下一版本（这可以使您的工作更轻松）。
+2. 如果你确定只有少量关键文档库和其他信息在 Microsoft Office SharePoint Server 2007 场中使用，则可以选择将数据从 Microsoft Office SharePoint Server 2007 手动移动到 SharePoint Server 2010，或者仅将特定网站和网站转到下一个版本（这可以使工作更轻松）。
     
 3. 对 Microsoft Office SharePoint Server 2007 服务器场所做的操作越少，服务器场包含的数据越安全。
     
 就地升级等方法将直接在 Microsoft Office SharePoint Server 2007 场中直接操作，为您提供更少的选择，以放弃路径并再次开始使用 pristine 环境。 尽可能地构建一些安全措施（如采用和测试原始环境的备份）。 例如，如果您的 Microsoft Office SharePoint Server 2007 服务器场是虚拟的，并且出于备份和还原目的而复制，则在升级服务时段之前备份和还原最新的数据库。 如果知道您可以还原数据库备份，则不会仅为您提供故障保护，从而使您高枕无忧。
   
 > [!TIP]
-> [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx)、 [sharepoint server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx)、 [Sharepoint server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)和[SharePoint server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)的升级的最佳实践文档存在。 您还可以搜索对升级或 Office 365 迁移有经验的[Microsoft 合作伙伴](https://partnercenter.microsoft.com/pcv/search)。 
+> [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx)、 [sharepoint server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx)、 [Sharepoint server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)和[SharePoint server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)的升级的最佳实践文档存在。 您还可以搜索对升级或 Microsoft 365 迁移有经验的[Microsoft 合作伙伴](https://partnercenter.microsoft.com/pcv/search)。 
   
 ## <a name="make-your-plan"></a>制定计划
 
-如果需要升级，则需要一个计划，并且一种大小不能在这些情况下适用。 您的计划可能非常简单，如 "使用 SharePoint Online 创建 Office 365 订阅，注册一个域，重定向用户将文件保存到"。 也可能不是。 这是你的决定，并将其用于你和你的用户真正需要的内容。
+如果需要升级，则需要一个计划，并且一种大小不能在这些情况下适用。 您的计划可能非常简单，如 "使用 SharePoint Online 创建 Microsoft 365 订阅，注册一个域，重定向用户将文件保存到"。 也可能不是。 这是你的决定，并将其用于你和你的用户真正需要的内容。
   
 > [!NOTE]
 > 在其生命周期结束的软件上运行会有风险。 如果发现问题，则无法再对不支持的产品进行修补。 这也意味着，如果出现新的安全威胁，由于不再支持生命周期产品，因此不会有安全修补程序或修补程序。 请避免出现这种情况！ 
@@ -101,7 +101,7 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。
     
 - 大型数据文档集（如文件存档）
     
-- 可用性
+- 供应情况
     
 - 服务器场中的关键应用程序、web 部件或文档（任务关键型服务器场）
     
@@ -109,15 +109,15 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。
     
 - 自定义项
     
-如果您在 SharePoint 服务器场中运行重要的业务，则假设它的作用类似于有关客户端服务要求的关键数据的大型目录，则可以在 "关键应用程序" 旁添加一个勾选标记，也可以在 "可用性" 旁进行 "可用性"，也就是说，您的业务将如果你无法使用 SharePoint 一段时间，则会受到影响。 同样，您可以检查 "自定义"，因为您的服务器场提供的关键服务基于自定义代码、网站定义或可协同工作的大量自定义项。
+如果您在 SharePoint 服务器场中运行重要的业务，则假设它的作用类似于有关客户端服务要求的关键数据的大型目录，则可以在 "关键应用程序" 旁添加一个滴答，也可以在 "可用性" 旁进行，如果您无法使用 SharePoint 一段时间，则您的企业将受到影响。 同样，您可以检查 "自定义"，因为您的服务器场提供的关键服务基于自定义代码、网站定义或可协同工作的大量自定义项。
   
-如果 SharePoint 满足这些需求，而无需在使用软件的内置功能的情况下执行任何操作，并且通常会将其更新并执行常规管理和维护，则可能选择了 "内置 SharePoint"，这也可能是置于较旧版本的 SharePoint 上的原因。 换句话说，它已完成您所需的操作，并且在 Microsoft Office SharePoint Server 2007 的支持终止之前，您不需要进行升级。
+如果 SharePoint 满足这些需求，而无需在使用软件的内置功能的情况下执行任何操作，并且通常会将其更新并执行常规管理和维护，则您可能选择了 "内置 SharePoint"，这也可能是您在 SharePoint 的较早版本上进行的原因。 换句话说，它已完成您所需的操作，并且在 Microsoft Office SharePoint Server 2007 的支持终止之前，您不需要进行升级。
   
 当您在项目中列出这些内容时，请为升级创建条件。 换句话说，任何升级都必须满足要考虑的这条。 这为您提供了一种方法，用于排除当前无法满足您需求的方法。
   
 ### <a name="a-simple-sample-plan"></a>一个简单的示例计划
 
-在你的 SharePoint 升级将采用的路径上，可能需要更大的与领导和其他管理员达成一致意见。 SharePoint Server 管理员通常与 Microsoft SQL Server 管理员合作，与网络和安全团队协同工作，等等。 在有大量利益干系人的情况下，您可能需要为升级和迁移计划构建协议或调整。 例如，如果您迁移数据以便贵公司的一部分使用 Office 365 中的 SharePoint Online，则可能需要在网络中进行性能调整或测试。 应提前通知受影响的团队。
+在你的 SharePoint 升级将采用的路径上，可能需要更大的与领导和其他管理员达成一致意见。 SharePoint Server 管理员通常与 Microsoft SQL Server 管理员合作，与网络和安全团队协同工作，等等。 在有大量利益干系人的情况下，您可能需要为升级和迁移计划构建协议或调整。 例如，如果您迁移数据以便贵公司的一部分在 Microsoft 365 中使用 SharePoint Online，则可能需要在网络中进行性能调整或测试。 应提前通知受影响的团队。
   
 在我的简单示例中，我显示了 SharePoint 管理员的建议，然后列出了所有利益干系人同意的计划。 为清楚起见，请记录你的协议和决策。
   
@@ -146,8 +146,8 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。
 |**是** <br/> |**否** <br/> |
 |使用数据库附加升级数据库  <br/> |就地升级  <br/> |
 |并行升级服务器场  <br/> |混合升级  <br/> |
-|迁移 API 到 Office 365 中的 SPO （针对个人网站数据）  <br/> |SharePoint 混合（尚不需要）  <br/> |
-|对关键数据的一些手动数据迁移到 SharePoint Online  <br/> |FastTrack 向导升级到 Office 365  <br/> |
+|迁移 API 到 Microsoft 365 中的 SPO （针对个人网站数据）  <br/> |SharePoint 混合（尚不需要）  <br/> |
+|对关键数据的一些手动数据迁移到 SharePoint Online  <br/> |FastTrack 向导升级到 Microsoft 365  <br/> |
    
  **我建议的计划：**
   
@@ -157,7 +157,7 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已达到支持的结尾。
     
 - 如果要从此处升级到 SharePoint Online，请考虑[FastTrack 帮助](https://fasttrack.microsoft.com)。 
     
-- 确定是否可以将任何网站集卸载到 Office 365 订阅。 （Office 365 符合许多[合规性标准](https://technet.microsoft.com/library/office-365-compliance.aspx)。 Office 365 具有[电子数据展示](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)，可以通过合规性中心进行[保留](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E)。 
+- 确定是否可以将任何网站集卸载到 Microsoft 365 订阅。 （Microsoft 365 符合多种[合规性标准](https://technet.microsoft.com/library/office-365-compliance.aspx)。 Microsoft 365 具有[电子数据展示](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)，可以通过合规性中心进行[保留](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E)。 
     
 否则，继续并行升级到 SharePoint Server 2016。
   
