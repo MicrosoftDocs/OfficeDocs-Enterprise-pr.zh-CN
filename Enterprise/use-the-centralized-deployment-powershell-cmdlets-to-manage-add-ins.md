@@ -18,16 +18,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 f1.keywords:
 - NOCSH
 description: 使用集中部署 PowerShell cmdlet 可帮助您部署和管理 Office 365 组织的 Office 外接程序。
-ms.openlocfilehash: ef438c52421fc7473c6bbab344dcc0f8e08f4e78
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 52445b2f2ff6d9fdf3f5997e1c76adbd1808e56f
+ms.sourcegitcommit: 12a22fa9224ab2a29330ee0aabecff28d577d7e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840989"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861119"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
-作为 Microsoft 365 全局或 Exchange 管理员，您可以通过集中部署功能向用户部署 Office 外接程序（请参阅[在管理中心部署 Office 加载项](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)）。 除了通过 Microsoft 365 管理中心部署 Office 外接程序之外，你还可以使用 Microsoft PowerShell。 安装[适用于 Windows PowerShell 的 O365 集中外接程序部署模块](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
+作为 Microsoft 365 全局管理员，你可以通过集中部署功能向用户部署 Office 外接程序（请参阅[在管理中心部署 Office 加载项](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)）。 除了通过 Microsoft 365 管理中心部署 Office 外接程序之外，你还可以使用 Microsoft PowerShell。 安装[适用于 Windows PowerShell 的 O365 集中外接程序部署模块](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
 
 下载模块后，打开一个常规的 Windows PowerShell 窗口并运行以下 cmdlet：
 
@@ -84,7 +84,7 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-若要确定_AssetId_参数的值，可以从外接程序的 Office 应用商店网页的 URL 复制它。 AssetIds 始终以 "WA" 开头，后跟一个数字。 例如，在上一示例中，WA104099688 的 AssetId 值的源是外接程序的 Office 应用商店网页 URL： [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688)。
+若要确定_AssetId_参数的值，可以从外接程序的 Office 应用商店网页的 URL 复制它。 AssetIds 始终以 "WA" 开头，后跟一个数字。 例如，在上一示例中，WA104099688 的 AssetId 值的源是外接程序的 Office 应用商店网页 URL： [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) 。
   
 _Locale_参数和_ContentMarket_参数的值是相同的，并指示您要从中安装外接程序的国家/地区。 格式为 en-us，fr-fr。 等。 
   
@@ -113,13 +113,13 @@ foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.Produ
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>打开或关闭外接程序
 
-若要关闭外接程序，以便向其分配了的用户和组将不再具有访问权限，请运行带有_ProductId_参数的**OrganizationAddIn** Cmdlet，并将_Enabled_参数设置为`$false`，如下面的示例所示。
+若要关闭外接程序，以便向其分配了的用户和组将不再具有访问权限，请运行带有_ProductId_参数的**OrganizationAddIn** Cmdlet，并将_Enabled_参数设置为 `$false` ，如下面的示例所示。
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-若要重新打开外接程序，请运行相同的 cmdlet，并将_Enabled_参数设置`$true`为。
+若要重新打开外接程序，请运行相同的 cmdlet，并将_Enabled_参数设置为 `$true` 。
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
@@ -139,13 +139,13 @@ Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-若要将外接程序分配给租户上的所有用户，请使用_AssignToEveryone_参数（其值设置为`$true`）运行相同的 cmdlet。
+若要将外接程序分配给租户上的所有用户，请使用_AssignToEveryone_参数（其值设置为）运行相同的 cmdlet `$true` 。
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-若要不向每个人分配外接程序并将其还原到以前分配的用户和组，您可以运行同一 cmdlet，并通过将_AssignToEveryone_参数的值设置`$false`为来关闭该参数。
+若要不向每个人分配外接程序并将其还原到以前分配的用户和组，您可以运行同一 cmdlet，并通过将_AssignToEveryone_参数的值设置为来关闭该参数 `$false` 。
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false

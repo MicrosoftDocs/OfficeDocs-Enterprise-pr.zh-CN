@@ -21,42 +21,34 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: 了解如何在 Microsoft 365 管理中心中查看目录同步错误。
-ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 57ca9ce125679931adcca93621474cec9ee9b82f
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711642"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842065"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>在 Microsoft 365 中查看目录同步错误
 
-您可以在[Microsoft 365 管理中心](https://admin.microsoft.com)中查看目录同步错误。 仅显示用户对象错误。 若要使用 PowerShell 查看错误，请参阅[使用 DirSyncProvisioningErrors 标识对象](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)。
+您可以在 Microsoft 365 管理中心中查看目录同步错误。 仅显示用户对象错误。 若要查看 PowerShell 中的错误，请参阅[使用 DirSyncProvisioningErrors 标识对象](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)。
 
+## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中查看目录同步错误
+
+若要查看 Microsoft 365 管理中心中的任何错误，请执行以下操作：
+  
+1. 使用全局管理员帐户登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。 
+    
+2. 在**主页**上，您将看到 "**用户管理**卡"。 
+    
+    ![Microsoft 365 管理中心中的用户管理卡](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+  
+3. 在卡片上，选择 " **AZURE AD Connect** " 下的 "**同步错误**" 以查看 "**目录同步错误**" 页上的错误。   
+    
+    !["目录同步错误" 页的示例](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+
+4. 选择任何错误以显示详细信息窗格，其中包含有关错误的信息以及如何修复该错误的提示。
+
+   ![目录同步错误的详细信息示例](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
+  
 查看后，请参阅[解决 Microsoft 365 的目录同步问题](fix-problems-with-directory-synchronization.md)以更正任何已确定的问题。
-  
-## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>查看管理中心的目录同步错误
 
-若要查看管理中心中的任何错误，请执行以下操作：
-  
-1. 使用工作或学校帐户登录 Microsoft 365。 
-    
-2. 转到[有关管理中心](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23)的 "关于"。
-    
-3. 在**主页**上，您将看到**DirSync 状态**磁贴。 
-    
-    ![管理员中心预览中的 DirSync 状态磁贴](media/060006e9-de61-49d5-8979-e77cda198e71.png)
-  
-4. 在磁贴上，选择 " **DirSync 状态**" 以转到 "**目录同步状态**" 页。 
-    
-    在页面底部，您可以查看是否存在 DirSync 错误。
-    
-    ![在 "目录同步状态" 页上，您可以查看是否存在目录同步对象错误](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
-  
-    选择**我们发现**了目录同步对象错误，以转到目录同步错误的详细视图。 
-    
-    > [!NOTE]
-    > 如果选择在**dirsync 状态**磁贴上**发现了 dirsync 对象错误**，也可以转到 " **dirsync errors** " 页面。 
-  
-!["DirSync 错误" 页](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
-  
-5. 在 " **DirSync errors** " 页面上，选择列出的任何错误，以显示详细信息窗格，其中包含有关错误的信息以及如何修复该错误的提示。 

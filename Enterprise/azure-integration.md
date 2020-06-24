@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: 你的 Microsoft 365 订阅包括 Azure AD 订阅。 如果要使用本地环境进行密码同步或单一登录，请将 Microsoft 365 与 Azure AD 集成。
-ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774837"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842054"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Azure 与 Microsoft 365 的集成
 
@@ -40,7 +40,7 @@ Azure 还提供其他功能（如管理集成的应用程序），您可以使�
 
  - [Azure AD Connect advisor](https://aka.ms/aadconnectpwsync)
  - [AD FS 部署顾问](https://aka.ms/adfsguidance)
- - [Azure AD 高级设置指南](https://aka.ms/aadpguidance)
+ - [Azure AD 安装指南](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Azure AD 版本和 Microsoft 365 身份管理
 
