@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2010 服务器和客户端应用程序的支持即将结束，自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775101"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906235"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可帮助您从 Office 2010 服务器和客户端进行升级的资源
 
@@ -38,11 +38,11 @@ Office 2010 和 Exchange 2010 将在**年10月 13 2020 日**到达其支持结�
 
 SharePoint 2010 和 Project Server 2010 将在**年4月 13 2021 日**到达其支持终止。
 
-在规划升级时，这是一个很好的时间来考虑转到 Office 365 或 Microsoft 365。 
+在规划升级时，这是一个很好的时间来考虑迁移到 Microsoft 365。 
 
-- Office 365 针对 Office 2010 服务器产品（例如，Exchange Server 和 SharePoint Server）和服务（如团队和 OneDrive for Business）提供基于云的服务。 
+- Microsoft 365 针对 Office 2010 服务器产品（例如，Exchange Server 和 SharePoint Server）和服务（如团队和 OneDrive for Business）提供基于云的服务。 
 
-- Microsoft 365 企业版（以前称为 Office 365 专业增强版）（包含在 Office 365 E3 和 E5 和 Microsoft 365 企业版中）是您在本地设备上安装的 Office 客户端应用程序集。 通过与 Microsoft 云不断更新的新的工作效率和安全功能进行更新。
+- Microsoft 365 E3 和 E5 中附带的 microsoft 365 企业版应用（以前称为 Office 365 专业增强版）是在本地设备上安装的一组 Office 客户端应用程序。 通过与 Microsoft 云不断更新的新的工作效率和安全功能进行更新。
 
 有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)。
 
@@ -68,7 +68,7 @@ SharePoint 2010 和 Project Server 2010 将在**年4月 13 2021 日**到达其�
 
 ## <a name="related-topics"></a>相关主题
 
-[视频：什么是 Office 365？](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[视频：什么是 Microsoft 365？](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft 生命周期策略](https://go.microsoft.com/fwlink/?linkid=865200)
 

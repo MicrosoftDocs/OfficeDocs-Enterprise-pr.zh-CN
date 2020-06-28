@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 中的电子数据展示功能和其他搜索功能的概述，用于审核使用和透明度。
-ms.openlocfilehash: d628bc9aa3964ffed671035a1f78f61d9632b87e
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: f4c401bf81767eb9111e6e8ca508cc3ee87152db
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774937"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906185"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 电子数据展示和搜索功能概述 
 
@@ -35,7 +35,7 @@ ms.locfileid: "44774937"
 
 ## <a name="audit-log-search"></a>审核日志搜索
 
-除了在 Microsoft 365 组织中跟踪更改之外，您还可以查看审核报告和导出审核日志。 为 Microsoft 365 租户启用审核后，会在事件日志中记录用户和管理活动，并使其可供搜索。 例如，您可以使用邮箱审核日志记录来跟踪邮箱所有者之外的用户对邮箱执行的操作。 合规性监察官可以对特定用户活动使用搜索和筛选功能。 例如，确定查看或下载特定文档的用户，如果管理员已执行用户管理活动，或查看在过去的90天内租户配置中的更改。 搜索结果包含有关用户或管理员执行的特定活动的有价值的取证信息。 有关在 Microsoft 365 中记录的用户和管理活动的说明，请参阅[搜索审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)。
+除了在 Microsoft 365 组织中跟踪更改之外，您还可以查看审核报告和导出审核日志。 一旦将审核启用为 Microsoft 365 租户，用户和管理活动将记录在事件日志中并使其可供搜索。 例如，您可以使用邮箱审核日志记录来跟踪邮箱所有者之外的用户对邮箱执行的操作。 合规性监察官可以对特定用户活动使用搜索和筛选功能。 例如，确定查看或下载特定文档的用户，如果管理员已执行用户管理活动，或查看在过去的90天内租户配置中的更改。 搜索结果包含有关用户或管理员执行的特定活动的有价值的取证信息。 有关在 Microsoft 365 中记录的用户和管理活动的说明，请参阅[搜索审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)。
 
 SharePoint Online 和 OneDrive for business 中的事件在发生30分钟的时间内显示在日志中。 来自 Exchange Online 的事件出现在发生的24小时内的审核日志中。 来自 Azure AD 的登录事件在发生几分钟内可用，并且来自 Azure AD 的其他目录事件在发生24小时内可用。 您可以在审核日志搜索结果中导出通风口以供进一步分析。 从单个审核日志搜索中，最多可以导出50000个条目。 若要导出此限制的更多条目，请减少日期范围或运行多个审核日志搜索。
 
@@ -44,7 +44,7 @@ SharePoint Online 和 OneDrive for business 中的事件在发生30分钟的时�
 | 属性 | 说明 |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | 日期 | 事件的日期和时间 |
-| User | 执行操作的用户 |
+| 用户 | 执行操作的用户 |
 | ClientIP | 记录活动时使用的设备的 IPv4 或 IPv6 地址。 |
 | CreationTime | 用户执行活动时的日期和时间（采用协调通用时间（UTC））。 |
 | EventSource | 标识发生的事件。 可能的值为 SharePoint 和 ObjectModel。 |

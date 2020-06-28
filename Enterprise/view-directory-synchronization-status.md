@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中查看目录同步状态
+title: 在 Microsoft 365 中查看目录同步状态
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,16 +19,16 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: 了解如何停用目录同步。 您还可以查看其状态。
-ms.openlocfilehash: 74e2eee0086e4f8098221f4aaa30d408091a6a0f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d6f3a9f1f4e069716501f58e188daedacbf7e597
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840979"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906195"
 ---
-# <a name="view-directory-synchronization-status-in-office-365"></a>在 Office 365 中查看目录同步状态
+# <a name="view-directory-synchronization-status-in-microsoft-365"></a>在 Microsoft 365 中查看目录同步状态
 
-如果已通过将本地环境与 Office 365 同步，将本地 Active Directory 与 Azure AD 集成，则还可以检查同步的状态。
+如果已通过将本地环境与 Microsoft 365 同步，将本地 Active Directory 与 Azure AD 集成，则还可以检查同步的状态。
   
 ## <a name="view-directory-synchronization-status"></a>查看目录同步状态
 
@@ -39,16 +39,16 @@ ms.locfileid: "41840979"
 
 下表列出了可以在页面上获取相关信息的功能。
   
-如果目录同步存在问题，则还会在此页面上列出这些错误。 有关可能遇到的不同错误的详细信息，请参阅[识别 Office 365 中的目录同步错误](identify-directory-synchronization-errors.md)。
+如果目录同步存在问题，则还会在此页面上列出这些错误。 有关可能遇到的不同错误的详细信息，请参阅[确定 Microsoft 365 中的目录同步错误](identify-directory-synchronization-errors.md)。
   
-|**Item**|**它有何用途？**|
+|**项**|**它有何用途？**|
 |:-----|:-----|
-|**已验证域** | 您已对其进行验证的 Office 365 租户中的域的数量。 |
+|**已验证域** | 你已验证的 Microsoft 365 租户中的域的数量。 |
 |**未验证域** | 已添加但未验证的域。 |
 |**目录同步已启用** |True 或 False。 指定是否已启用目录同步。 |
 |**最新目录同步** | 上次运行目录同步的时间。 如果上一次同步的时间已超过三天，将显示一条警告和指向故障排除工具的链接。 |
-|**启用密码同步** | True 或 False。 指定在内部部署和 Office 365 租户之间是否有密码哈希同步。 |
+|**启用密码同步** | True 或 False。 指定在内部部署和 Microsoft 365 租户之间是否有密码哈希同步。 |
 |**上次密码同步** | 上次运行密码哈希同步的时间。 如果上一次同步的时间已超过三天，将显示一条警告和指向故障排除工具的链接。 |
 |**目录同步客户端版本** | 如果已发布新版本的 Azure AD Connect，则包含下载链接。 |
 |**IDFix 工具** | 下载指向[IDFix](install-and-run-idfix.md)的链接，可用于检查本地 Active Directory 的工具。 |
-|**目录同步服务帐户** | 显示 Office 365 目录同步服务帐户的名称。 |
+|**目录同步服务帐户** | 显示 Microsoft 365 目录同步服务帐户的名称。 |
