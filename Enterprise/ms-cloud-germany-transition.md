@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: 7e9ba9135d024be5c12d6ca19b55ec68588d9ab4
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772143"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998557"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
 
@@ -128,7 +128,7 @@ Microsoft 准许客户免费将Office 365 租户从德国 Microsoft 云迁移到
 - 为 [Azure](https://azure.microsoft.com/pricing/calculator/)、[Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)、[Dynamics 365 Customer Engagement](https://dynamics.microsoft.com/pricing/) 和 [Power BI](https://powerbi.microsoft.com/pricing/) 提供具有市场竞争力的定价。 
 - 与 Microsoft 全球网络相连，提供数百个网络边缘网站、对等互连位置和出口点，以在全球任何位置提供可靠的用户体验。 
 - 帮助你满足德国境内的当地客户数据驻留要求。 
-- 提供我们具备完整功能的全球云服务/产品，包括服务的最新版本以及 Microsoft Teams 和 Office 365 多地理位置等新功能。 按 [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central)、、[Office 365](https://products.office.com/zh-CN/where-is-your-data-located) 和 [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability) 的区域比较产品。
+- 提供我们具备完整功能的全球云服务/产品，包括服务的最新版本以及 Microsoft Teams 和 Office 365 多地理位置等新功能。 按 [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central)、、[Office 365](https://docs.microsoft.com/office365/enterprise/o365-data-locations) 和 [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability) 的区域比较产品。
 - 提供完备功能、企业级安全性和全面的功能，帮助客户满足合规性和法规要求。 
 - 可通过现有在线服务合同访问。
 
