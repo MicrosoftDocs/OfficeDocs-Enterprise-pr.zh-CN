@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 若要使用 Azure ExpressRoute 正确了解到 Office 365 的路由流量，您需要对核心 ExpressRoute 路由要求和 ExpressRoute 电路和路由域进行牢固的抓住。 这些指南展示了使用适用于 Office 365 客户将依赖的 ExpressRoute 的基础知识。
-ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844053"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998191"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>通过适用于 Office 365 的 ExpressRoute 进行路由
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 若要使用 Azure ExpressRoute 正确了解到 Office 365 的路由流量，您需要对核心[ExpressRoute 路由要求](https://azure.microsoft.com/documentation/articles/expressroute-routing/)和[ExpressRoute 电路和路由域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)进行牢固的抓住。 这些指南展示了使用适用于 Office 365 客户将依赖的 ExpressRoute 的基础知识。
   
@@ -117,7 +117,7 @@ PAC 文件通常用于将向 ExpressRoute 播发的终结点的网络请求直�
 |\*。 office.com  <br/> |\*。 outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*。 office.net  <br/> |agent.office.net  <br/> |
 |\*。 office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
-|\*。 outlook.com  <br/> |\*。 protection.outlook.com  <br/> \*。 mail.protection.outlook.com  <br/> 自动发现\<-\>outlook.com  <br/> |
+|\*。 outlook.com  <br/> |\*。 protection.outlook.com  <br/> \*。 mail.protection.outlook.com  <br/> 自动 \<tenant\> outlook.com  <br/> |
 |\*。 windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>通过 Internet 和 ExpressRoute 路由 Office 365 流量
@@ -156,11 +156,11 @@ Exchange Online、SharePoint Online 和 Skype for business Online 的最大卷 F
   
 - outlook.office365.com、outlook.office.com
 
-- \<\>租户-sharepoint.com \<，租户-name\>-my.sharepoint.com， \<租户-名称\>-\<应用\>。 sharepoint.com
+- \<tenant-name\>. sharepoint.com、 \<tenant-name\> -my.sharepoint.com、 \<tenant-name\> - \<app\> sharepoint.com
 
 - \*.Lync.com 以及非 TCP 流量的 IP 范围
 
-- \*broadcast.officeapps.live.com、 \*excel.officeapps.live.com、 \*onenote.officeapps.live.com、 \*powerpoint.officeapps.live.com、 \*view.officeapps.live.com、 \*visio.officeapps.live.com、 \*word-edit.officeapps.live.com、 \*word-view.officeapps.live.com、office.live.com
+- \*broadcast.officeapps.live.com、 \* excel.officeapps.live.com、 \* onenote.officeapps.live.com、 \* powerpoint.officeapps.live.com、 \* view.officeapps.live.com、 \* visio.officeapps.live.com、 \* word-edit.officeapps.live.com、 \* word-view.officeapps.live.com、office.live.com
 
 详细了解如何[在 Windows 8 中部署和管理代理设置](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx)，以及如何[确保你的代理不会限制 Office 365](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx)。
   
@@ -197,25 +197,25 @@ Exchange Online、SharePoint Online 和 Skype for business Online 的最大卷 F
   
 Humongous insurance 保险业在地理位置分散在世界各地的办公室。 他们希望实现适用于 Office 365 的 Azure ExpressRoute，以在直接网络连接上保持 Office 365 的大部分流量。 Humongous insurance 保险业还在两个其他洲拥有办事处。 如果 ExpressRoute 不可行的远程办公室中的员工需要路由回一个或两个主要设施，以使用 ExpressRoute 连接。
   
-指导原则是尽可能快地获取指向 Microsoft 数据中心的 Office 365 目标流量。 在此示例中，Humongous insurance 保险业必须决定其远程办公室是否应通过 Internet 路由以尽快访问 Microsoft 数据中心，或者如果其远程办公室应通过内部网络路由以获取 Microsoft数据中心通过 ExpressRoute 连接的速度尽可能快。
+指导原则是尽可能快地获取指向 Microsoft 数据中心的 Office 365 目标流量。 在此示例中，Humongous insurance 保险业必须决定其远程办公室是否应通过 Internet 路由以尽快访问 Microsoft 数据中心，或者如果远程办公室应通过某个内部网络路由到 Microsoft 数据中心，应尽快访问该连接。
   
 Microsoft 的数据中心、网络和应用程序体系结构旨在采用全局不同的通信，并以尽可能最有效的方式提供服务。 这是世界上最大的网络之一。 对于那些在超过必需的客户网络中保留的 Office 365 的请求将无法利用此体系结构。
   
-在 Humongous insurance 保险业的情况下，它们应根据要在 ExpressRoute 中使用的应用程序继续进行。 例如，如果他们是 Skype for business Online 客户，或者计划在连接到外部 Skype for Business Online 会议时利用 ExpressRoute 连接，则 Skype for Business Online 媒体质量和网络中建议的设计连接指南是为第三个位置设置额外的 ExpressRoute 电路。 从网络的角度来看，这可能更昂贵;但是，在将来自一个洲的请求传送给 Microsoft 数据中心之前，可能会在 Skype for Business Online 会议和通信中导致较差或不可用的体验。
+在 Humongous insurance 保险业的情况下，它们应根据要在 ExpressRoute 中使用的应用程序继续进行。 例如，如果他们是 Skype for business Online 客户，或者计划在连接到外部 Skype for Business Online 会议时利用 ExpressRoute 连接，则 Skype for Business Online media 质量和网络连接指南中建议的设计是为第三个位置设置其他 ExpressRoute 电路。 从网络的角度来看，这可能更昂贵;但是，在将来自一个洲的请求传送给 Microsoft 数据中心之前，可能会在 Skype for Business Online 会议和通信中导致较差或不可用的体验。
   
-如果 Humongous insurance 保险业未使用或未计划以任何方式使用 Skype for Business Online，则使用 ExpressRoute 连接将 Office 365 的目标网络流量路由回带有 ExpressRoute 连接的洲可能会导致不必要的延迟或 TCP拥塞. 在这两种情况下，建议在本地站点将 Internet 目标流量路由到 Internet，以便充分利用 Office 365 所依赖的内容传递网络。
+如果 Humongous insurance 保险业未使用或未计划以任何方式使用 Skype for Business Online，则使用 ExpressRoute 连接将 Office 365 的目标网络流量路由回带有 ExpressRoute 连接的洲可能会导致不必要的延迟或 TCP 拥塞。 在这两种情况下，建议在本地站点将 Internet 目标流量路由到 Internet，以便充分利用 Office 365 所依赖的内容传递网络。
   
 ![ExpressRoute 多地理位置](media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 当 Humongous insurance 保险业规划多地理位置策略时，在电路大小、电路数量、故障转移等方面有很多需要考虑的事项。
   
-在具有多个区域（尝试使用电路）的单个位置中，Humongous insurance 保险希望确保从远程办公室连接到 Office 365 的连接到最接近总部的 Office 365 数据中心并由其接收总部位置。 为此，Humongous insurance 保险单将实现 DNS 转发，以减少与与总部 internet 出口点最接近的 Office 365 环境建立适当连接所需的往返行程次数和 DNS 查找。 这将阻止客户端解析本地前端服务器，并确保要连接到的前端服务器位于总部附近，而 Humongous insurance 保险业与 Microsoft 之间具有相同的联系。 您还可以学习为[域名分配条件转发器](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx)。
+在具有多个区域（尝试使用电路）的单个位置中，Humongous insurance 保险希望确保从远程办公室连接到 Office 365 的 Office 365 数据中心发送到总部位置最近的总部和接收的 office。 为此，Humongous insurance 保险单将实现 DNS 转发，以减少与与总部 internet 出口点最接近的 Office 365 环境建立适当连接所需的往返行程次数和 DNS 查找。 这将阻止客户端解析本地前端服务器，并确保要连接到的前端服务器位于总部附近，而 Humongous insurance 保险业与 Microsoft 之间具有相同的联系。 您还可以学习为[域名分配条件转发器](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx)。
   
 在这种情况下，来自远程办公室的流量将解析北美的 Office 365 前端基础结构，并利用 Office 365 根据 Office 365 应用程序的体系结构连接后端服务器。 例如，Exchange Online 将终止北美的连接，而这些前端服务器将连接到租户驻留的后端邮箱服务器。 所有服务都有一个广泛分布的前门服务，由单播和任意广播目标组成。
   
 如果 Humongous insurance 具有多个洲的主要办公室，建议每个地区至少有两个活动/活动电路，以减少对 Skype for Business Online 等敏感应用程序的延迟。 如果所有办公室都在单个洲或不使用实时协作，则有一个合并或分散的出局点是客户特定的决策。 如果有多个电路可用，BGP 路由将确保故障转移是否会有任何单个线路不可用。
   
-了解有关示例[路由配置](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/)和[https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)的详细信息。
+了解有关示例[路由配置](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/)和的详细信息 [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/) 。
   
 ## <a name="selective-routing-with-expressroute"></a>使用 ExpressRoute 进行选择性路由
 
@@ -225,7 +225,7 @@ Microsoft 的数据中心、网络和应用程序体系结构旨在采用全局�
 
 2. **PAC 文件/url** -将 Office 365 的目标网络流量定向到特定的 fqdn 以在特定路径上路由。 此方法按[PAC 文件部署](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies)所标识的客户端计算机进行选择性路由。
 
-3. **路由筛选** - [路由筛选器](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)是一种通过 Microsoft 对等功能使用受支持的服务子集的方法。
+3. **路由筛选**  - [路由筛选器](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)是通过 Microsoft 对等互连使用受支持的服务的子集的一种方法。
 
 4. **Bgp 社区**-基于[bgp 社区标记](https://aka.ms/bgpexpressroute365)的筛选使客户能够确定哪些 Office 365 应用程序将通过 ExpressRoute 以及将通过 internet 进行遍历。
 
