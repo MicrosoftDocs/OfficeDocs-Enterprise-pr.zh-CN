@@ -1,7 +1,7 @@
 ---
 title: Office 365 Skype for Business 数据删除
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Skype for Business 中的数据删除说明。
-ms.openlocfilehash: 33fbb91d2fbfd0e3133bfa2cca2118643b702d95
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7c94c5d1ddfb5a8056e139d664627dd1e7bed0de
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844303"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997792"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365 中的 Skype for Business 数据删除
 

@@ -22,26 +22,26 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: 了解 Office 365 新式验证在 Office 2013 和2016客户端应用中的工作方式不同。
-ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
-ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
+description: 了解 Office 2013 和2016客户端应用的 Microsoft 365 新式验证的工作方式。
+ms.openlocfilehash: a7c3a9a8aaa4705ff81607718813060be3455ccd
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280211"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997839"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>适用于 Office 2013 和 Office 2016 客户端应用的新式验证工作原理
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-阅读本文，了解 Office 2013 和 Office 2016 客户端应用程序如何根据 Office 365 租户（适用于 Exchange Online、SharePoint Online 和 Skype for Business Online）上的身份验证配置使用新式身份验证功能。
+阅读本文，了解 Office 2013 和 Office 2016 客户端应用程序如何根据 Microsoft 365 租户上的身份验证配置、SharePoint Online 和 Skype for business Online 使用新式身份验证功能。
 
 > [!NOTE]
 > 旧版客户端应用（例如 Office 2010 和 Office for Mac 2011）不支持新式身份验证，只能与基本身份验证一起使用。
 
-## <a name="availability-of-modern-authentication-for-office-365-services"></a>Office 365 服务的新式验证的可用性
+## <a name="availability-of-modern-authentication-for-microsoft-365-services"></a>适用于 Microsoft 365 服务的新式验证的可用性
 
-对于 Office 365 服务，新式验证的默认状态为：
+对于 Microsoft 365 服务，新式验证的默认状态为：
   
 - 默认情况下 **，启用 Exchange** Online。 请参阅[在 Exchange Online 中启用或禁用新式验证](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662)以将其关闭或打开。 
     
@@ -56,9 +56,9 @@ ms.locfileid: "44280211"
 
 默认情况下，Office 2013 客户端应用支持旧版身份验证。 旧版是指它们支持 Microsoft Online 登录助手或基本身份验证。 为了让这些客户端使用新式身份验证功能，Windows 客户端必须设置注册表项。 有关说明，请参阅[在 Windows 设备上为 Office 2013 启用新式验证](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)。
 
-若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。必须在每台要启用新式验证的设备上设置注册表项：
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
-|**注册表项**|**Type**|**值** |
+|**注册表项**|**类型**|**值** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
@@ -67,7 +67,7 @@ ms.locfileid: "44280211"
   
 默认情况下，Office 2016 客户端支持新式身份验证，客户端无需执行任何操作即可使用这些新流。 但是，需要显式操作才能使用旧版身份验证。
   
-单击以下链接，查看 office 2013 和 Office 2016 客户端身份验证如何与 Office 365 服务配合使用，具体取决于是否启用新式身份验证。
+单击下面的链接，查看 Office 2013 和 Office 2016 客户端身份验证如何与 Microsoft 365 服务配合使用，具体取决于是否启用新式身份验证。
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -117,10 +117,10 @@ ms.locfileid: "44280211"
    
 ## <a name="see-also"></a>另请参阅
 
-[在 Windows 设备上启用适用于 Office 2013 的新式验证](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[在 Windows 设备上启用适用于 Office 2013 的新式验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
 
-[规划 Office 365 部署的多重身份验证（针对 Office 365 管理员）](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[适用于 Microsoft 365 的 Multi-Factor Authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 
-[使用2步验证登录 Office 365 （针对最终用户）](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+[使用多重身份验证登录到 Microsoft 365](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 
 [Microsoft 365 企业版概述](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

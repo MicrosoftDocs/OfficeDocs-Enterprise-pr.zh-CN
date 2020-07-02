@@ -1,7 +1,7 @@
 ---
-title: Office 365 客户端应用程序支持—单一登录
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 客户端应用支持—单一登录
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Office 365 客户端应用程序支持单一登录。
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: 适用于单一登录的 Microsoft 365 客户端应用程序支持。
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619328"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998510"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Office 365 客户端应用程序支持—单一登录
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 客户端应用支持—单一登录
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 当用户登录到 Azure Active Directory （Azure AD）中的应用程序时，单一登录（SSO）将增加安全性和方便性。 通过单一登录，用户可使用一个帐户登录一次，以访问加入域的设备、公司资源、软件即服务（SaaS）应用程序和 web 应用程序。
 
@@ -39,7 +39,7 @@ ms.locfileid: "44619328"
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-有关 Office 365 中平台支持的详细信息，请参阅[office 365 的系统要求](https://products.office.com/office-system-requirements)。
+有关 Microsoft 365 中平台支持的详细信息，请参阅[microsoft 365 的系统要求](https://products.office.com/office-system-requirements)。
 
 ## <a name="supported-clients"></a>支持的客户端
 

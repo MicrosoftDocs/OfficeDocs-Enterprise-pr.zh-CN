@@ -15,22 +15,22 @@ ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 f1.keywords:
 - NOCSH
 description: 摘要：了解如何创建包含运行 Exchange Server 2013 的服务器、运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器的集成测试实验室。
-ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bfb2e1be3b9bb401514e736d38a6f1a2944940f0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841099"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996516"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>测试实验室指南：配置集成的 Exchange、Lync 和 SharePoint 测试实验室
 
- **摘要：** 了解如何创建包含运行 Exchange Server 2013 的服务器、运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器的集成测试实验室。
+ 了解如何创建包含运行 Exchange Server 2013 的服务器、运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器的集成测试实验室。
  
 **观看集成的 Exchange、Lync 和 SharePoint 测试实验室指南概述视频**
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
-此配置产生的测试实验室（包括所有三种类型的服务器之间的服务器到服务器身份验证）可用于构建并演示使用运行 Exchange Server 2013 的服务器的多产品方案和解决方案。运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器。
+此配置产生的测试实验室（包括所有三种类型的服务器之间的服务器到服务器身份验证）可用于构建和演示多产品方案和解决方案，这些方案和解决方案使用的是运行 Exchange Server 2013 的服务器、运行 Lync Server 2013 的服务器以及运行 SharePoint Server 2013 的服务器。
   
 本文档包含以下各项的说明：
   

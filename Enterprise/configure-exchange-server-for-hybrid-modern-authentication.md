@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 混合新式身份验证（HMA）是一种身份管理方法，它提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
-ms.openlocfilehash: d73b7c28ea5b64be46a3e3a40d8160ccdfcea18c
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 74c7ba7f050c4ac6f6c9b0e6eee7a399a15b196a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774517"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997378"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 混合新式身份验证（HMA）是一种标识管理方法，可提供更安全的用户身份验证和授权，并可用于 Exchange server 本地混合部署。
   
@@ -65,7 +65,7 @@ ms.locfileid: "44774517"
   
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>在 Azure AD 中将本地 web 服务 Url 添加为 Spn
 
-运行将本地 web 服务 Url 分配为 Azure AD Spn 的命令。 在身份验证和授权过程中，客户端计算机和设备使用 Spn。 所有可用于从本地连接到 Azure Active Directory （AAD）的 Url 都必须在 AAD 中注册（这包括内部和外部命名空间）。
+运行将本地 web 服务 Url 分配为 Azure AD Spn 的命令。 在身份验证和授权过程中，客户端计算机和设备使用 Spn。 所有可用于从本地连接到 Azure Active Directory （Azure AD）的 Url 都必须在 Azure AD 中注册（这包括内部和外部命名空间）。
   
 首先，收集您需要在 AAD 中添加的所有 Url。 在本地运行以下命令：
   

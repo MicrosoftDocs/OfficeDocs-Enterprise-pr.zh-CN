@@ -1,7 +1,7 @@
 ---
-title: Office 365 DoS 防护策略
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 DoS 防护策略
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 针对拒绝服务（DoS）攻击的 Microsoft 防护策略的概述。
-ms.openlocfilehash: c30e8e5c91ead81ceda9cfaeb4ef6b17c9addc9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f3359bb39e01c6b090c30e9f7ce88d69dc3be17e
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844383"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998749"
 ---
-# <a name="office-365-denial-of-service-defense-strategy"></a>Office 365 拒绝服务防护策略
+# <a name="microsoft-365-denial-of-service-defense-strategy"></a>Microsoft 365 拒绝服务防护策略
 
 Microsoft 针对基于网络的拒绝服务（DoS）攻击的策略是唯一的，因为规模和全球空间不足。 此扩展使 Microsoft 能够利用策略和技术（组织、提供商或客户组织）可以与之相匹配。 DoS 策略的基础是我们的全球状态。 Microsoft 与 Internet 提供商、对等提供商（公用和私人）以及全球各地的专用公司建立了接洽。 这为 Microsoft 提供了很大的 Internet 状态，使 Microsoft 能够吸收跨大型 surface 区域的攻击。
 

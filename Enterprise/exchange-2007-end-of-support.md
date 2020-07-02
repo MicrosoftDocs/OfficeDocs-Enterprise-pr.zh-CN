@@ -13,16 +13,16 @@ ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 description: 在2017年4月11日，Exchange Server 2007 已到达支持终止。 如果尚未开始从 Exchange 2007 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。
-ms.openlocfilehash: 75bafe48b3b384430312ad0c0942c98732985073
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: a0dd549c4a9be5721dae66111e8cdd5a569b2b9c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605647"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996546"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 停止提供支持路线图
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 在**2017 年4月 11**日，Exchange Server 2007 已到达支持终止。 如果尚未开始从 Exchange 2007 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。 
   
@@ -80,7 +80,7 @@ Office 365 还获取了新的功能和体验，并且你的用户通常可以立
     
 #### <a name="how-should-i-migrate-to-office-365"></a>我应如何迁移到 Office 365？
 
-根据你的组织，你有几个可帮助你获取 Office 365 的选项。 选择迁移选项时，需要考虑几个因素，如需要移动的座位或邮箱数、您希望迁移的持续时间，以及您是否需要在内部部署安装和 Office 365 之间实现无缝集成迁移。 此表显示了您的迁移选项和最重要的因素，这些因素将决定您将使用哪种方法。
+根据你的组织，你有几个可帮助你获取 Office 365 的选项。 选择迁移选项时，需要考虑几个因素，如需要移动的座位或邮箱数、您希望迁移的持续时间，以及在迁移过程中您是否需要在您的本地安装和 Office 365 之间实现无缝集成。 此表显示了您的迁移选项和最重要的因素，这些因素将决定您将使用哪种方法。
   
 | |
 |**迁移选项**|**组织大小**|**Duration**|
@@ -179,9 +179,9 @@ Office 365 还获取了新的功能和体验，并且你的用户通常可以立
     
 - Office 365 将需要通过 TCP 端口443使用 Outlook Anywhere 连接到 "混合服务器";
     
-- 你需要在本地 Active Directory 服务器和 Office 365 之间使用 Azure Active Directory Connect （AADConnect）设置目录同步;
+- 你需要使用 Azure Active Directory （Azure AD）连接在本地 Active Directory 服务器和 Office 365 之间设置目录同步;
     
-- 用户将能够使用登录到本地网络时使用的用户名和密码登录到他们的 Office 365 邮箱（需要使用密码同步和/或 Active Directory 联合身份验证服务的 Azure Active Directory 连接）;
+- 用户将能够使用登录到本地网络时使用的用户名和密码登录到他们的 Office 365 邮箱（需要使用密码同步和/或 Active Directory 联合身份验证服务的 Azure AD 连接）;
     
 - 你将需要 Office 365 许可证，其中包含你迁移的每个用户邮箱的 Exchange Online;
     
@@ -219,7 +219,7 @@ Office 365 还获取了新的功能和体验，并且你的用户通常可以立
 |:-----|:-----|
 |支持日期结束  <br/> | 与 Exchange 2007 一样，每个 Exchange 版本都有自己的支持日期结尾：  <br/> **Exchange 2010** -1 月2020  <br/> **Exchange 2013** -4 月2023  <br/> **Exchange 2016** -10 月2025  <br/>  在较早的支持日期结束时，您将需要执行另一个迁移。 2020年1月比你想像的事情大得多！  <br/> |
 |Exchange 2010 和2013的迁移路径  <br/> |以下是迁移到 Exchange 2010 或 Exchange 2013 的一般阶段：  <br/> 将 Exchange 2010 或2013安装到现有的 Exchange 2007 组织中。若要 Exchange 2010 或2013，请将邮箱和公用文件夹移动到 Exchange 2010 或2013停止其余的 Exchange 2007 服务器 |
-|迁移到 Exchange 2016 的路径  <br/> |以下是迁移到 Exchange 2016 的一般阶段：  <br/> 将 Exchange 2013 安装到现有的 Exchange 2007 组织中。将邮箱和公用文件夹移动到 exchange 2013 将邮箱和公用文件夹移动到 Exchange 2013 停止其余 Exchange 2007 服务器将 Exchange 2016 安装到现有Exchange 2013 组织。 将邮箱、公用文件夹、服务和其他基础结构移动到 Exchange 2016 （不考虑顺序）。 取消剩余 Exchange 2013 服务器 > [!NOTE]> 从 Exchange 2013 迁移到 exchange 2016 非常简单。 这两个版本几乎具有相同的硬件要求。 这意味着，这些版本是如此兼容的，这意味着您可以重新生成为 Exchange 2013 购买的服务器并在其上安装 Exchange 2016。 而且，在联机邮箱移动时，大多数用户将永远不会注意到其邮箱将移出服务器，然后在您使用 Exchange 2016 重新生成后再返回。           |
+|迁移到 Exchange 2016 的路径  <br/> |以下是迁移到 Exchange 2016 的一般阶段：  <br/> 将 Exchange 2013 安装到现有的 Exchange 2007 组织中：将邮箱和公用文件夹移到 exchange 2013 将邮箱和公用文件夹移动到 Exchange 2013 停止其余的 Exchange 2007 服务器将 Exchange 2016 安装到现有的 Exchange 2013 组织中。 将邮箱、公用文件夹、服务和其他基础结构移动到 Exchange 2016 （不考虑顺序）。 取消剩余 Exchange 2013 服务器 > [!NOTE]> 从 Exchange 2013 迁移到 exchange 2016 非常简单。 这两个版本几乎具有相同的硬件要求。 这意味着，这些版本是如此兼容的，这意味着您可以重新生成为 Exchange 2013 购买的服务器并在其上安装 Exchange 2016。 而且，在联机邮箱移动时，大多数用户将永远不会注意到其邮箱将移出服务器，然后在您使用 Exchange 2016 重新生成后再返回。           |
 |版本共存  <br/> | 迁移到以下项时：  <br/> **Exchange 2016**无法在包含 Exchange 2007 服务器的组织中安装 Exchange 2016。 首先需要迁移到 Exchange 2010 或2013（强烈建议采用 Exchange 2013），删除所有 Exchange 2007 服务器，然后迁移到 Exchange 2016。  <br/> **Exchange 2010 或 exchange 2013**您可以将 Exchange 2010 或 Exchange 2013 安装到现有的 Exchange 2007 组织中。 这使您可以安装一个或多个 Exchange 2010 或2013服务器，并执行迁移。  <br/> |
 |服务器硬件  <br/> | 服务器硬件要求已从 Exchange 2007 更改。 您需要确保要使用的硬件是兼容的。 您可以在此处查找有关每个版本的硬件要求的详细信息：  <br/> [Exchange 2016 系统要求](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 系统要求](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 系统要求](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  你会发现 Exchange 性能的显著改进以及较新的服务器中计算的计算能力和存储容量的增加，可能需要较少的服务器来支持相同数量的邮箱。  <br/> |
 |操作系统版本  <br/> | 每个版本支持的最低操作系统版本为：  <br/> **Exchange 2016**Windows Server 2012  <br/> **Exchange 2013**Windows Server 2008 R2 SP1  <br/> **Exchange 2010**Windows Server 2008 SP2  <br/>  您可以在 Exchange 可支持性[矩阵](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)中找到有关操作系统支持的详细信息。  <br/> |

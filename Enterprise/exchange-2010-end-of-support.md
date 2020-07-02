@@ -13,16 +13,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 即将停止支持。 将此规划路线图用作准备升级到 Exchange Online 或部署到本地 Exchange Server 的更新版本的指南。
-ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979336"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998040"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 结束支持路线图
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 在**2020 年10月 13**日，Exchange Server 2010 将达到支持的结尾。 如果尚未开始从 Exchange 2010 迁移到 Office 365 或 Exchange 2016，现在是开始规划的时间。
 
@@ -82,7 +82,7 @@ Office 365 还获取了新的功能和体验，并且你的用户通常可以立
 
 ### <a name="how-should-i-migrate-to-office-365"></a>我应如何迁移到 Office 365？
 
-根据你的组织，你有几个可帮助你获取 Office 365 的选项。 选择迁移选项时，需要考虑几个因素，如需要移动的座位或邮箱数、您希望迁移的持续时间，以及您是否需要在内部部署安装和 Office 365 之间实现无缝集成迁移。 此表显示了您的迁移选项和最重要的因素，这些因素将决定您将使用哪种方法。
+根据你的组织，你有几个可帮助你获取 Office 365 的选项。 选择迁移选项时，需要考虑几个因素，如需要移动的座位或邮箱数、您希望迁移的持续时间，以及在迁移过程中您是否需要在您的本地安装和 Office 365 之间实现无缝集成。 此表显示了您的迁移选项和最重要的因素，这些因素将决定您将使用哪种方法。
 
 | **迁移选项**     | **组织大小** | **Duration**        |
 |--------------------------|-----------------------|---------------------|
@@ -146,8 +146,8 @@ Office 365 还获取了新的功能和体验，并且你的用户通常可以立
 如果你想要执行完全混合迁移，请考虑以下几点：
 
 - 完全混合迁移不适合于所有类型的组织。 由于完全混合迁移的复杂性，少于几百个邮箱的组织通常不会看到好处，从而证明了设置一个好的工作量和成本所需的好处。 如果这听起来像是你的组织，强烈建议你改为考虑转换或最少的混合迁移。
-- 你需要在本地 Active Directory 服务器和 Office 365 之间使用 Azure Active Directory Connect （AADConnect）设置目录同步;
-- 用户将能够使用登录到本地网络时使用的用户名和密码登录到他们的 Office 365 邮箱（需要使用密码同步和/或 Active Directory 联合身份验证服务的 Azure Active Directory 连接）;
+- 你需要使用 Azure Active Directory （Azure AD）连接在本地 Active Directory 服务器和 Office 365 之间设置目录同步;
+- 用户将能够使用登录到本地网络时使用的用户名和密码登录到他们的 Office 365 邮箱（需要使用密码同步和/或 Active Directory 联合身份验证服务的 Azure AD 连接）;
 - 你将需要 Office 365 许可证，其中包含你迁移的每个用户邮箱的 Exchange Online;
 - 用户无需在其大多数设备上设置新的 Outlook 配置文件（一些较早的 Android 手机可能需要新的配置文件），无需重新下载其电子邮件。
 
@@ -164,7 +164,7 @@ Office 365 还获取了新的功能和体验，并且你的用户通常可以立
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>升级到本地 Exchange Server 的较新版本
 
-虽然我们强烈认为您可以通过完全迁移到 Office 365 实现最佳价值和用户体验，但我们还了解一些组织需要在本地保留一些 Exchange 服务器。 这可能是因为法规要求，以保证数据不会存储在位于其他国家/地区的数据中心中，也可能是因为您在云中无法满足唯一的设置或要求，也可能只是需要 Exchange 才能管理云邮箱，因为您仍在本地使用 Active Directory。 在选择或需要保留 Exchange 本地的任何情况下，应确保将 Exchange 2010 环境升级到至少 Exchange 2013 或 Exchange 2016，并在支持日期结束之前删除 exchange 2010。
+虽然我们强烈认为您可以通过完全迁移到 Office 365 实现最佳价值和用户体验，但我们还了解一些组织需要在本地保留一些 Exchange 服务器。 这可能是因为法规要求，以保证数据不存储在位于其他国家/地区的数据中心中，也可能是因为您在云中无法满足唯一的设置或要求，也可能只是需要 Exchange 来管理云邮箱，因为您仍在本地使用 Active Directory。 在选择或需要保留 Exchange 本地的任何情况下，应确保将 Exchange 2010 环境升级到至少 Exchange 2013 或 Exchange 2016，并在支持日期结束之前删除 exchange 2010。
 
 为了获得最佳体验，我们建议您将其余的本地环境升级到 Exchange 2016。 如果要直接从 Exchange Server 2010 转到 Exchange Server 2016，则无需安装 Exchange Server 2013。
 

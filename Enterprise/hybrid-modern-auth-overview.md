@@ -15,16 +15,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 新式身份验证是标识管理的一种方法，可提供更安全的用户身份验证和授权。 它可用于本地的 Skype for Business server 本地和 Exchange server 的混合部署，以及拆分域 Skype for Business 混合。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档（如 Outlook 和 Skype 客户端）信息。
-ms.openlocfilehash: 325c34ec636ce9661b25f7b8be83ce8cbf61a291
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516453"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998020"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 _新式身份验证_是标识管理的一种方法，可提供更安全的用户身份验证和授权。 它适用于 Skype for business server 本地和 Exchange server 本地部署的 Office 365 混合部署，以及拆分域 Skype for Business 混合部署。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档（如 Outlook 和 Skype 客户端）信息。
   
@@ -41,7 +41,7 @@ _新式身份验证_是标识管理的一种方法，可提供更安全的用户
   
 - **身份验证方法**：多因素身份验证（MFA）;智能卡身份验证;基于客户端证书的身份验证
 - **授权方法**： Microsoft 的开放授权实施（OAuth）
-- **条件访问策略**：移动应用程序管理（MAM）和 Azure Active Directory 条件访问
+- **条件访问策略**：移动应用程序管理（MAM）和 Azure Active Directory （azure AD）条件访问
 
 使用新式身份验证管理用户标识，可以让管理员在保护资源时使用多种不同的工具，并为内部部署（Exchange 和 Skype for business）、Exchange 混合和 Skype for business 混合/拆分域方案提供更安全的身份管理方法。
   
@@ -59,9 +59,9 @@ _新式身份验证_是标识管理的一种方法，可提供更安全的用户
   
 对 evoSTS 的更改允许您的内部部署服务器利用 OAuth （令牌颁发）来授权客户端，还允许您的本地使用云中常见的安全方法（如多重身份验证）。 此外，evoSTS 还会发出令牌，使用户可以请求访问资源，而无需在请求中提供其密码。 无论您的用户驻留在何处（联机或本地），无论哪个位置承载所需的资源，EvoSTS 将成为在配置新式身份验证后授权用户和客户端的核心。
   
-例如，如果 Skype for Business 客户端需要访问 Exchange server 以代表用户获取日历信息，则它使用 Active Directory 身份验证库（ADAL）执行此操作。 ADAL 是一个代码库，旨在使用 OAuth 安全令牌使目录中的安全资源对客户端应用程序可用。 ADAL 与 OAuth 配合使用，以验证声明和交换令牌（而不是密码），以授予用户对资源的访问权限。 过去，事务中的颁发机构（如此类）—知道如何验证用户声明并发出所需令牌的服务器可能是本地的安全令牌服务，甚至是 Active Directory 联合身份验证服务。 但是，新式验证使用 Azure Active Directory （AAD）对该颁发机构进行了集中。
+例如，如果 Skype for Business 客户端需要访问 Exchange server 以代表用户获取日历信息，则它使用 Active Directory 身份验证库（ADAL）执行此操作。 ADAL 是一个代码库，旨在使用 OAuth 安全令牌使目录中的安全资源对客户端应用程序可用。 ADAL 与 OAuth 配合使用，以验证声明和交换令牌（而不是密码），以授予用户对资源的访问权限。 过去，事务中的颁发机构（如此类）—知道如何验证用户声明并发出所需令牌的服务器可能是本地的安全令牌服务，甚至是 Active Directory 联合身份验证服务。 但是，新式验证使用 Azure AD 对该颁发机构进行了集中。
   
-这也意味着，尽管 Exchange server 和 Skype for business 环境可能完全在本地，但授权服务器将处于联机状态，并且您的本地环境必须能够创建和维护与云中的 Office 365 订阅的连接（以及订阅用作其目录的 Azure Active Directory 实例）。
+这也意味着，尽管您的 Exchange server 和 Skype for business 环境可能完全位于本地，但授权服务器将处于联机状态，并且您的本地环境必须能够创建和维护与云中的 Office 365 订阅的连接（以及您的订阅用作其目录的 Azure AD 实例）。
   
 不会发生什么变化？ 无论你是处于拆分域混合还是使用 Skype for Business 和本地 Exchange server，所有用户都必须先*在本地*进行身份验证。 在新式验证的混合实施中， _Lyncdiscovery_和_自动发现_都指向您的本地服务器。
   
@@ -111,7 +111,7 @@ Get-CSOAuthConfiguration
   - 混合环境中没有 Lync Server 2010 或2013。
 
 >[!NOTE]
->如果 Skype for Business 前端服务器使用代理服务器进行 Internet 访问，则必须在每个前端的 web.config 文件的配置部分中输入所使用的代理服务器 IP 和端口号。
+>如果 Skype for Business 前端服务器使用代理服务器进行 Internet 访问，则必须在每个前端的 web.config 文件的 "配置" 部分中输入所使用的代理服务器 IP 和端口号。
   
 - C:\Program Files\Skype for Business Server 2015 \ Web Components\Web ticket\int\web.config
 - C:\Program Files\Skype for Business Server 2015 \ Web Components\Web ticket\ext\web.config
@@ -168,7 +168,7 @@ Get-CSOAuthConfiguration
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>在开始之前，我还需要了解哪些信息？
 <a name="BKMK_Whatelse"> </a>
 
-- 内部部署服务器的所有方案都涉及在本地设置新式身份验证（事实上，对于 Skype for business，存在受支持的拓扑列表，以便负责身份验证和授权的服务器位于 Microsoft 云中（AAD 的安全令牌服务，称为 "evoSTS"）中，并更新 Azure Active Directory （AAD）有关您的 Skype for Business 或 Exchange 的本地安装所使用的 Url 或命名空间。 因此，内部部署服务器采用 Microsoft 云依赖关系。 采取此操作可能会被视为配置 "混合身份验证"。
+- 内部部署服务器的所有方案都涉及在本地设置新式身份验证（事实上，对于 Skype for business，存在受支持的拓扑列表，以便负责身份验证和授权的服务器位于 Microsoft 云中（AAD 的安全令牌服务，称为 "evoSTS"）中，并更新 Azure AD，以了解本地安装的 Skype for Business 或 Exchange 所使用的 Url 或命名空间。 因此，内部部署服务器采用 Microsoft 云依赖关系。 采取此操作可能会被视为配置 "混合身份验证"。
 - 本文链接到的其他用户将帮助您选择受支持的新式身份验证拓扑（仅适用于 Skype for business），以及概述了安装步骤的操作方法文章，或者为 Exchange 本地和 Skype for Business 本地部署了禁用新式身份验证的步骤。 如果您需要在您的服务器环境中使用新式验证的总部，请将此页面收藏在浏览器中。
 
 ## <a name="related-topics"></a>相关主题

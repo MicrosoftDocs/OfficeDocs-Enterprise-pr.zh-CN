@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法，适用于本地 Skype for business server 本地和 Exchange server 以及拆分域 Skype for Business 混合。
-ms.openlocfilehash: de5063da9eed03e2cd455b79b3a2d1c2f671ad1e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840719"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997428"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Skype for Business 以使用混合新式验证
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法，适用于本地 Skype for business server 本地和 Exchange server 以及拆分域 Skype for Business 混合。
   
@@ -33,15 +33,15 @@ ms.locfileid: "41840719"
   
  **在开始之前**，我称之为：
   
-- 新式验证\> MA
+- 新式验证 \> MA
 
-- 混合新式身份\>验证 HMA
+- 混合新式身份验证 \> HMA
 
-- Exchange 本地\> EXCH
+- Exchange 本地 \> EXCH
 
 - Exchange Online \> EXO
 
-- Skype for Business 本地\> SFB
+- Skype for Business 本地 \> SFB
 
 - 和 Skype for Business Online \> SFBO
 
@@ -125,15 +125,15 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
 
 2. 运行此命令（本地）以获取 SFB web 服务 Url 的列表。
 
-   请注意，AppPrincipalId 以开头`00000004`。 这对应于 Skype for Business Online。
+   请注意，AppPrincipalId 以开头 `00000004` 。 这对应于 Skype for Business Online。
 
-   记下（以及稍后比较的屏幕截图）此命令的输出将包含 SE 和 WS URL，但主要由以开头的 Spn 组成`00000004-0000-0ff1-ce00-000000000000/`。
+   记下（以及稍后比较的屏幕截图）此命令的输出将包含 SE 和 WS URL，但主要由以开头的 Spn 组成 `00000004-0000-0ff1-ce00-000000000000/` 。
 
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
 ```
 
-3. 如果内部**或**外部 SFB url 缺少内部部署（例如， https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com)我们需要将这些特定记录添加到此列表。
+3. 如果内部**或**外部 SFB url 缺少内部部署（例如， https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com) 我们需要将这些特定记录添加到此列表。
 
     请务必将下面的*示例 url*替换为添加命令中的实际 url！
   
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. 再次运行步骤2中的**new-msolserviceprincipal**命令，并查看输出，以验证新记录是否已添加。 将列表/屏幕截图从早到新的 Spn 列表进行比较（您还可能会为您的记录提供新列表的屏幕截图）。 如果成功，您将在列表中看到两个新的 Url。 根据我们的示例，Spn 列表现在将包含特定的 Url https://lyncwebint01.contoso.com和。 https://lyncwebext01.contoso.com/
+4. 再次运行步骤2中的**new-msolserviceprincipal**命令，并查看输出，以验证新记录是否已添加。 将列表/屏幕截图从早到新的 Spn 列表进行比较（您还可能会为您的记录提供新列表的屏幕截图）。 如果成功，您将在列表中看到两个新的 Url。 根据我们的示例，Spn 列表现在将包含特定的 Url https://lyncwebint01.contoso.com 和 https://lyncwebext01.contoso.com/ 。
 
 ### <a name="create-the-evosts-auth-server-object"></a>创建 EvoSTS Auth Server 对象
 
@@ -170,9 +170,9 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
   
 您还应检查 "OAuth 颁发机构" 的 Skype for business 客户端的 "配置信息"。 若要在客户端计算机上执行此操作，请按住 CTRL 键，同时右键单击 Windows 通知托盘中的 "Skype for Business" 图标。 在出现的菜单中单击 "**配置信息**"。 在将出现在桌面上的 "Skype for Business 配置信息" 窗口中，查找以下内容：
   
-![使用新式验证的 Skype for business 客户端的配置信息显示了的 Lync 和 EWS OAUTH 授权 URL https://login.windows.net/common/oauth2/authorize。](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![使用新式验证的 Skype for business 客户端的配置信息显示了的 Lync 和 EWS OAUTH 授权 URL https://login.windows.net/common/oauth2/authorize 。](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-您还应按住 CTRL 键，同时右键单击 Outlook 客户端的图标（也在 Windows 通知栏中），然后单击 "连接状态"。 针对身份验证类型的 "载荷\*" 查找客户端的 SMTP 地址，该类型表示在 OAuth 中使用的持有者令牌。
+您还应按住 CTRL 键，同时右键单击 Outlook 客户端的图标（也在 Windows 通知栏中），然后单击 "连接状态"。 针对身份验证类型的 "载荷" 查找客户端的 SMTP 地址 \* ，该类型表示在 OAuth 中使用的持有者令牌。
   
 ## <a name="related-articles"></a>相关文章
 

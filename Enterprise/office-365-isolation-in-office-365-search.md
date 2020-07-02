@@ -1,7 +1,7 @@
 ---
-title: Office 365 搜索中的 office 365 租户隔离
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 搜索中的租户隔离
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 摘要： Office 365 搜索中的租户隔离说明。
-ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 摘要： Microsoft 365 搜索中的租户隔离说明。
+ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844413"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998252"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Office 365 搜索中的租户隔离
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 搜索中的租户隔离
 
 SharePoint Online 搜索使用租户分离模型来平衡共享数据结构的效率，并防止租户之间的信息泄露。 在此模型中，我们阻止搜索功能来自：
 
@@ -46,7 +46,7 @@ SharePoint Online 搜索使用租户分离模型来平衡共享数据结构的�
 
 ## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>租户 ID 筛选和租户 ID 条款前缀
 
-搜索将为使用租户 ID 在全文索引中编制索引的每个术语加上前缀。 例如，当 ID 为 "*123*" 的租户为术语编制索引时，全文本索引中的条目是 "*123foo"。***
+搜索将为使用租户 ID 在全文索引中编制索引的每个术语加上前缀。 例如，当 ID 为 "*123*" 的租户为术语编制索引时，全文本索引中的条目是 "*123foo"。**foo*
 
 每个查询都将转换为包含使用名为租户 ID 筛选的过程的租户 ID。 例如，查询 "*foo*" 将转换为 "<*guid*>。*foo*和*tenantID*： <*guid*> "，其中 <*guid*> 表示执行查询的租户。 此查询转换发生在每个索引节点中，并且不能对查询和内容处理进行影响。 由于租户 ID 已添加到每个查询中，因此无法通过在一个租户中查看最佳匹配排名来推断出其他租户中术语的频率。
 
@@ -56,7 +56,7 @@ SharePoint Online 搜索使用租户分离模型来平衡共享数据结构的�
 
 搜索控制通过在搜索索引中保存的 Acl 对文档的访问。 每个项目都使用特殊 ACL 字段中的一组术语编制索引。 ACL 字段包含可查看文档的每个组或用户一个术语。 每个查询都使用一系列访问控制项（ACE）术语进行扩充，每个查询已通过身份验证的用户所属的组一个。
 
-例如，类似于 "<*guid*> 的查询。*FOO 和 tenantID*： <*guid*> "将变为：" <*guid*>。*foo 和 tenantID*： <*guid*> *和*（*docACL：*<*ace1*> *或 docACL*： <*ace2*> *or docACL*： <*ace3*> *...*） "
+例如，类似于 "<*guid*> 的查询。*FOO 和 tenantID*： <*guid*> "将变为：" <*guid*>。*foo 和 tenantID*： <*guid* >  *和*（*docACL：* < *ace1* >  *或 docACL*： <*ace2* >  *or docACL*： <*ace3* >  *...*） "
 
 由于用户和组标识符，因此 Ace 是唯一的，因此这将为仅对某些用户可见的文档提供其他级别的安全性。 对于在租户中向常规用户授予访问权限的特殊 "除外部用户之外的任何人" ACE 也是如此。 但由于 "Everyone" 的 Ace 对于所有租户都是相同的，因此公共文档的租户分隔取决于租户 ID 筛选。 此外，还支持 Deny Ace。 当与 deny ACE 匹配时，查询扩充将添加从结果中删除文档的子句。
 

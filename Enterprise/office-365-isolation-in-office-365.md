@@ -1,7 +1,7 @@
 ---
-title: Office 365 中的 office 365 隔离和访问控制
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 中的隔离和访问控制
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: 摘要： Office 365 的各种应用程序中的隔离和访问控制说明。
-ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
-ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
+description: 摘要： Microsoft 365 的各种应用程序中的隔离和访问控制说明。
+ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892121"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998786"
 ---
-# <a name="isolation-and-access-control-in-office-365"></a>Office 365 中的隔离和访问控制
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365 中的隔离和访问控制
 
-Azure Active Directory 和 Office 365 使用高度复杂的数据模型，其中包括数十个服务、数百个实体、数千个关系和数十个属性。 在较高级别，Azure Active Directory 和服务目录是使用基于状态的复制协议保持同步的租户和收件人的容器。 除了 Azure Active Directory 中保留的目录信息外，每个服务工作负载都有自己的目录服务基础结构。
+Azure Active Directo ry （Azure AD）和 Microsoft 365 使用高度复杂的数据模型，其中包括数十个服务、数百个实体、数千个关系和数十个属性。 在较高级别，Azure AD 和服务目录是使用基于状态的复制协议保持同步的租户和收件人的容器。 除了 Azure AD 中保留的目录信息外，每个服务工作负载都有自己的目录服务基础结构。
  
-![Office 365 租户数据同步](media/office-365-isolation-tenant-data-sync.png)
+![Microsoft 365 租户数据同步](media/office-365-isolation-tenant-data-sync.png)
 
-在此模型中，没有一个目录数据源。 特定系统拥有单独的数据片段，但没有单个系统保存所有数据。 在此数据模型中，Office 365 服务与 Azure Active Directory 合作。 Azure Active Directory 是共享数据的 "真实系统"，它通常是每个服务使用的小型和静态数据。 Office 365 和 Azure Active Directory 中使用的联合模型提供了数据的共享视图。
+在此模型中，没有一个目录数据源。 特定系统拥有单独的数据片段，但没有单个系统保存所有数据。 Microsoft 365 在此数据模型中与 Azure AD 合作的服务。 Azure AD 是共享数据的 "真实系统"，它通常是每个服务使用的小型和静态数据。 在 Microsoft 365 和 Azure AD 中使用的联合模型提供了数据的共享视图。
 
-Office 365 同时使用物理存储和 Azure 云存储。 Exchange Online （包括 Exchange Online Protection）和 Skype for Business 将自己的存储用于客户数据。 SharePoint Online 同时使用 SQL Server 存储和 Azure 存储，因此需要在存储级别对客户数据进行额外的隔离。
+Microsoft 365 同时使用物理存储和 Azure 云存储。 Exchange Online （包括 Exchange Online Protection）和 Skype for Business 将自己的存储用于客户数据。 SharePoint Online 同时使用 SQL Server 存储和 Azure 存储，因此需要在存储级别对客户数据进行额外的隔离。
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -47,7 +47,7 @@ Exchange Online 将客户数据存储在邮箱中。 邮箱托管在称为 "邮�
 - 组
 - 推理数据
 
-Exchange Online 中的每个邮箱数据库包含来自多个租户的邮箱。 授权代码可保护每个邮箱，包括租赁内。 默认情况下，只有分配的用户才有权访问邮箱。 保护邮箱的访问控制列表（ACL）包含在租户级别通过 Azure Active Directory 进行身份验证的标识。 每个租户的邮箱仅限于对租户的身份验证提供程序的身份进行身份验证，其中仅包含来自该租户的用户。 租户 A 中的用户无法以任何方式获取租户 B 中的内容，除非租户 A 明确批准。
+Exchange Online 中的每个邮箱数据库包含来自多个租户的邮箱。 授权代码可保护每个邮箱，包括租赁内。 默认情况下，只有分配的用户才有权访问邮箱。 保护邮箱的访问控制列表（ACL）包含由 Azure AD 在租户级别进行身份验证的标识。 每个租户的邮箱仅限于对租户的身份验证提供程序的身份进行身份验证，其中仅包含来自该租户的用户。 租户 A 中的用户无法以任何方式获取租户 B 中的内容，除非租户 A 明确批准。
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -63,7 +63,7 @@ SharePoint Online 具有几种独立的机制，可提供数据隔离。 它将�
 
 如果用户可以直接访问包含数据的存储，则不会将内容 interpretable 到 SharePoint Online 之外的人或任何系统。 这些机制包括安全访问控制和属性。 所有 SharePoint Online 资源均由授权代码和 RBAC 策略（包括租赁中的）进行保护。 保护资源的访问控制列表（ACL）包含在租户级别进行身份验证的标识。 租户的 SharePoint Online 数据仅限于由租户的身份验证提供程序身份验证的标识。
 
-除了 Acl 之外，指定身份验证提供程序（即租户特定的 Azure Active Directory）的租户级别属性只写入一次，并且在设置后不能更改。 为租户设置身份验证提供程序租户属性后，将无法使用公开给租户的任何 Api 对其进行更改。
+除了 Acl 之外，指定身份验证提供程序（即租户特定的 Azure AD）的租户级别属性只写入一次，并且在设置后不能更改。 为租户设置身份验证提供程序租户属性后，将无法使用公开给租户的任何 Api 对其进行更改。
 
 每个租户都使用唯一的*SubscriptionId* 。 所有客户网站均由租户拥有，并向其分配了对租户唯一的*订阅*。 网站上的*SubscriptionId*属性只写入一次，并且是永久的。 一旦分配给租户，便无法将网站移至其他租户。 *SubscriptionId*是用于为身份验证提供程序创建安全作用域并与租户关联的密钥。
 

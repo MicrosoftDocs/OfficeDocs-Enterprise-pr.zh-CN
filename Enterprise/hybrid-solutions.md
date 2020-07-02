@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '摘要：使用这些文章以在 Microsoft Azure 中部署 Office Server 工作负荷。 '
-ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711562"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998010"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 
- **摘要:** 使用这些文章以在 Microsoft Azure 中部署 Office Server 工作负荷。 
-  
 使用 Microsoft Azure，现在你可以部署一些 Office Server 工作负荷，它们通常部署到本地的 Azure 基础结构服务中。
   
 对于 Azure 中的 Microsoft 365 标识基础结构：
@@ -37,7 +35,7 @@ ms.locfileid: "44711562"
   
 - [将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [在 Azure 中部署适用于 Microsoft 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 对于 Azure 中 SharePoint Server 2013 工作负载：
   

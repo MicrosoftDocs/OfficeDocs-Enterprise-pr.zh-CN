@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: 适用于 Office 365 的 ExpressRoute 在网络和 Microsoft 数据中心之间提供第3层连接。 电路使用 Office 365 前端服务器的边界网关协议（BGP）路由播发。 从本地设备的角度来看，当他们需要选择到 Office 365 的正确 TCP/IP 路径时，Azure ExpressRoute 被视为是 Internet 的替代方法。
-ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844553"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998527"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>使用适用于 Office 365 的 ExpressRoute 进行网络规划
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 适用于 Office 365 的 ExpressRoute 在网络和 Microsoft 数据中心之间提供第3层连接。 电路使用 Office 365 前端服务器的边界网关协议（BGP）路由播发。 从本地设备的角度来看，当他们需要选择到 Office 365 的正确 TCP/IP 路径时，Azure ExpressRoute 被视为是 Internet 的替代方法。
   
@@ -72,13 +72,13 @@ Azure ExpressRoute 订阅是以客户为中心的，这意味着订阅与客户�
   
 若要查找正确的带宽级别，最好的机制是测试现有网络消耗。 这是在每个网络配置和应用程序以独特的方式实现的真正的使用和需要的唯一方法。 在测量时，需要密切注意总带宽消耗、延迟和 TCP 拥塞，以了解你的网络需求。
   
-拥有包含所有网络应用程序的估计基准后，使用包含组织中人员的不同配置文件的小组的试点 Office 365，以确定实际使用情况，并使用这两个度量估计的量每个办公地点所需的带宽。 如果在测试中发现任何延迟或 TCP 拥塞问题，则可能需要将传出的距离移至使用 Office 365 的人员，或删除大量网络扫描（如 SSL 解密/检查）。
+拥有包含所有网络应用程序的估计基准后，使用包含组织中人员的不同配置文件的小组的试点 Office 365，以确定实际使用情况，并使用这两个度量估计每个办公室位置所需的带宽量。 如果在测试中发现任何延迟或 TCP 拥塞问题，则可能需要将传出的距离移至使用 Office 365 的人员，或删除大量网络扫描（如 SSL 解密/检查）。
   
 我们建议的所有建议的网络处理类型适用于 ExpressRoute 和 Internet 电路。 对于我们的[性能调整网站](https://aka.ms/tune)的其余指南，情况也是如此。
   
 ## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>将安全控制应用于 Office 365 方案的 Azure ExpressRoute
 
-确保 Azure ExpressRoute 连接的安全与保护 Internet 连接的原理相同。 许多客户选择将网络和外围控制以及将其本地网络连接到 Office 365 和其他 Microsoft 云的 ExpressRoute 路径进行部署。 这些控件可能包括防火墙、应用程序代理、数据泄露预防、入侵检测、入侵防护系统等。 在许多情况下，客户会将不同级别的控制应用于从内部部署转到 Microsoft 的流量，而不是从 Microsoft 发起的流量发送到客户本地网络，而是从内部部署转到一般的流量。Internet 目标。
+确保 Azure ExpressRoute 连接的安全与保护 Internet 连接的原理相同。 许多客户选择将网络和外围控制以及将其本地网络连接到 Office 365 和其他 Microsoft 云的 ExpressRoute 路径进行部署。 这些控件可能包括防火墙、应用程序代理、数据泄露预防、入侵检测、入侵防护系统等。 在许多情况下，客户将不同级别的控制应用于从内部部署转到 Microsoft 的通信，而不是从 Microsoft 发送到客户本地网络的流量，而是从内部部署转到常规 Internet 目标的流量。
   
 下面的示例展示了将安全性与您选择部署的[ExpressRoute 连接模型](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models)相集成的几个示例。
 
@@ -94,7 +94,7 @@ Azure ExpressRoute 订阅是以客户为中心的，这意味着订阅与客户�
   
 - 网络/安全控制的深度和类型可能影响 Office 365 用户体验的性能和可伸缩性。
 
-- 出站（本地-\>microsoft）和入站（microsoft\>本地） [如果已启用] 流可能具有不同的要求。 它们可能与常规 Internet 目标的出站不同。
+- 出站（本地- \> microsoft）和入站（microsoft \> 本地） [如果已启用] 流可能具有不同的要求。 它们可能与常规 Internet 目标的出站不同。
 
 - 对于端口/协议和必需的 IP 子网，Office 365 的要求与通过 ExpressRoute 为 Office 365 或通过 Internet 路由通信的情况相同。
 
@@ -148,7 +148,7 @@ Woodgrove 的现有基础结构是可靠的，并且可以处理额外的工作�
 连接方案应包含为 Office 365 的多个独立和主动网络路径优化的网络拓扑。 这将比仅针对单个设备或设备级别的冗余而优化的拓扑相比，提供了更好的端到端可用性。
   
 > [!TIP]
-> 如果您的用户分布在多个洲或地理区域，并且这些位置中的每个位置都将通过冗余 WAN 环路连接到单个 ExpressRoute 电路所在的单个本地位置，则您的用户将经历较少端到端服务可用性：一种网络拓扑设计，其中包括将不同区域连接到最近的对等位置的独立 ExpressRoute 电路。
+> 如果您的用户分布在多个洲或地理位置，并且这些位置中的每个位置都将通过冗余 WAN 电路连接到单个 ExpressRoute 电路所在的单个内部部署位置，则您的用户将体验到端到端的服务可用性低于网络拓扑设计，其中包括将不同区域连接到最近的对等位置的独立 ExpressRoute 电路。
   
 我们建议为每个电路至少预配两个与不同地理位置对等位置相连的 ExpressRoute 电路。 应为每个用户使用适用于 Office 365 服务的 ExpressRoute 连接的区域设置这一对主动-主动的电路。 这样一来，每个区域都可以在发生灾难时保持连接，以影响一个主要位置，如数据中心或对等位置。 将它们配置为主动/主动，可以跨多个网络路径分布最终用户通信。 这样可以减少设备或网络设备中断期间受影响的人员的范围。
   
@@ -176,7 +176,7 @@ Woodgrove Bank 上的网络配置基于几个关键原则构建：
 
 在此配置中，在物理和虚拟级具有冗余，Woodgrove Bank 能够以可靠的方式提供本地恢复能力、区域恢复能力和全局恢复能力。 Woodgrove 在评估每个地区的单个 Azure ExpressRoute 电路以及故障转移到 internet 的可能性之后选择此配置。
   
-如果 Woodgrove 无法为每个地区提供多个 Azure ExpressRoute 电路，请将来自北美的流量路由到亚太地区的 Azure ExpressRoute 电路，以添加不可接受的延迟级别和所需的 DNS 转发器配置增加了复杂性。
+如果 Woodgrove 无法为每个地区提供多个 Azure ExpressRoute 电路，则将来自北美的流量路由到亚太地区的 Azure ExpressRoute 电路将添加不可接受的延迟级别和所需的 DNS 转发器配置增加了复杂性。
   
 建议不要将 internet 用作备份配置。 这将中断 Woodgrove 的可靠性原则，从而导致使用连接时体验不一致。 此外，还需要手动配置，以确保已配置的 BGP 播发、NAT 配置、DNS 配置和代理配置的故障转移。 这种增加的故障转移复杂性增加了恢复时间并降低了其诊断和解决步骤所涉及步骤的能力。
   

@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: 摘要：按照这些文章用 Microsoft 云服务部署安全解决方案。
-ms.openlocfilehash: aecb9f8d23b04cbc5c4d8065708ba8171f1ea555
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: cc32383a2a8e9d0849e68bf7305b19edb067cb11
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711825"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998174"
 ---
 # <a name="security-solutions"></a>安全解决方案
 
- **摘要：** 按照这些文章用 Microsoft 云服务部署安全解决方案。
-  
 下面是针对安全访问防护、 协作和使用 Microsoft Office 365、 Microsoft Azure、 Microsoft Dynamics 365 和 Microsoft 企业移动性 + 安全性 (EMS) 套件数据的解决方案：
 
 - [符合 GDPR 的 Office 365 信息保护](office-365-information-protection-for-gdpr.md)

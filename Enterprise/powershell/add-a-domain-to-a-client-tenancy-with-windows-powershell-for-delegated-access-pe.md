@@ -1,7 +1,7 @@
 ---
 title: 使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
-ms.author: chrfox
-author: chrfox
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,24 +16,22 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 摘要：使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有的客户租户。
-ms.openlocfilehash: 693dbc22fea27c24fb6b578e22d0d2b150a8dfd5
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 摘要：使用适用于 Microsoft 365 的 Windows PowerShell 将备用域名添加到现有客户租户。
+ms.openlocfilehash: 6ba706c1fc0b2e2b43687ac582a40f36a2a3387c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004745"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997358"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
- **摘要：** 使用适用于 Office 365 的 Windows PowerShell 将备用域名添加到现有客户租户。
+您可以使用 Windows PowerShell for Microsoft 365，创建和关联新域与客户的租赁相比，它比使用 Microsoft 365 管理中心更快。
   
-你可以使用适用于 Office 365 的 Windows PowerShell 创建新域并将其与您的客户租户相关联，其速度比使用 Microsoft 365 管理中心要快。
-  
-委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Office 365 订阅捆绑到为其客户提供的服务产品中。 当他们销售 Office 365 订阅时，会自动获得对客户租赁的“代表以下方管理”(AOBO) 权限，这样他们便可以管理客户租赁并生成相应报告。
+委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Microsoft 365 订阅捆绑到其客户的服务产品中。 在销售 Microsoft 365 订阅时，会自动将代表（AOBO）权限的 "管理" 授予 "客户" 租赁，以便他们可以管理和报告客户租赁。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-本主题中的步骤需要您连接到适用于Office 365的Windows PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
+The procedures in this topic require you to connect to Windows PowerShell for Office 365. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).
   
 您也需要您的合作伙伴租户管理员凭据。
   
@@ -43,20 +41,20 @@ ms.locfileid: "44004745"
     
 - 您需要客户的 **TenantId** 。
     
-- FQDN 必须在 Internet 域名服务 (DNS) 注册机构（如 GoDaddy）中注册。有关如何公开注册域名的详细信息，请参阅[如何购买域名](https://go.microsoft.com/fwlink/p/?LinkId=532541)。
+- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publically register a domain name, see [How to buy a domain name](https://go.microsoft.com/fwlink/p/?LinkId=532541).
     
-- 您需要了解如何为您的 DNS 注册机构的注册 DNS 区域添加 TXT 记录。有关如何添加 TXT 记录的详细信息，请参阅[在任何 DNS 托管提供商处为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=532542)。如果这些步骤对您不适用，您需要查找适用于您的 DNS 注册机构的过程。
+- 您需要了解如何为您的 DNS 注册机构的注册 DNS 区域添加 TXT 记录。 有关如何添加 TXT 记录的详细信息，请参阅[添加 DNS 记录以连接到您的域](https://go.microsoft.com/fwlink/p/?LinkId=532542)。 如果这些步骤对您不适用，您需要查找适用于您的 DNS 注册机构的过程。
     
 ## <a name="create-domains"></a>创建域
 
- 您的客户可能会要求您创建与其租赁关联的其他域，因为他们不想让默认的<domain>.onmicrosoft.com域成为向全世界展示其公司标识的主要域。此步骤将引导您创建与您的客户租赁相关联的新域。
+ Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default <domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world. This procedure walks you through creating a new domain associated with your customer's tenancy.
   
 > [!NOTE]
-> 若要执行某些操作，必须将您登录时使用的合作伙伴管理员帐户设置为 "**完全管理**"，以便在 Microsoft 365 管理中心的 "管理员" 帐户详细信息中，"为**您支持的公司分配管理访问权限**" 设置为 "完全管理"。 For more information on managing partner administrator roles, see[Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> 若要执行某些操作，必须将您登录时使用的合作伙伴管理员帐户设置为 "**完全管理**"，以便在 Microsoft 365 管理中心的 "管理员" 帐户详细信息中，"为**您支持的公司分配管理访问权限**" 设置为 "完全管理"。 有关管理合作伙伴管理员角色的详细信息，请参阅[合作伙伴：提供委派管理](https://go.microsoft.com/fwlink/p/?LinkId=532435)。 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>在 Azure Active Directory 中创建域
 
-此命令在 Azure Active Directory 中创建域，但不会将其与公开注册的域相关联。 当你向 Microsoft Office 365 企业版证明你拥有公开注册的域时，这一问题将随之而来。
+此命令在 Azure Active Directory 中创建域，但不会将其与公开注册的域相关联。 这是因为您证明您拥有公开注册的域到 Microsoft Microsoft Microsoft Microsoft Microsoft Microsoft 365 for 企业。
   
 ```
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
@@ -68,7 +66,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 
 ### <a name="get-the-data-for-the-dns-txt-verification-record"></a>获取 DNS TXT 验证记录的数据
 
- Office 365 将生成您需要放入 DNS TXT 验证记录中的特定数据。要获取数据，请运行以下命令。
+ Microsoft 365 将生成您需要放入 DNS TXT 验证记录中的特定数据。 要获取数据，请运行以下命令。
   
 ```
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
@@ -87,9 +85,9 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
   
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>在公开注册的 DNS 区域中添加 TXT 记录
 
-在 Office 365 开始接受定向到公开注册的域名的流量之前，你必须证明你拥有域并且具有域的管理员权限。 您可通过在域中创建 TXT 记录来证明您拥有该域。 TXT 记录不会在您的域中执行任何操作，并且可以在建立您对域的所有权后删除。 若要创建 TXT 记录，请按照[在任何 DNS 托管提供商处为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=532542)中的过程执行操作。 如果这些步骤对您不适用，您需要查找适用于您的 DNS 注册机构的过程。
+在 Microsoft 365 开始接受定向到公开注册域名的流量之前，必须证明你拥有此域的管理员权限并拥有该域的管理员权限。 您可通过在域中创建 TXT 记录来证明您拥有该域。 TXT 记录不会在您的域中执行任何操作，并且可以在建立您对域的所有权后删除。 若要创建 TXT 记录，请按照[添加 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=532542)中的过程连接您的域。 如果这些步骤对您不适用，您需要查找适用于您的 DNS 注册机构的过程。
   
-通过 nslookup 确认已成功创建 TXT 记录。遵循下面的语法。
+Confirm the successful creation of the TXT record via nslookup. Follow this syntax.
   
 ```
 nslookup -type=TXT <FQDN of registered domain>
@@ -103,9 +101,9 @@ nslookup -type=TXT <FQDN of registered domain>
   
  `text=MS=ms########`
   
-### <a name="validate-domain-ownership-in-office-365"></a>验证 Office 365 中的域所有权
+### <a name="validate-domain-ownership-in-microsoft-365"></a>验证 Microsoft 365 中的域所有权
 
-在此最后一步，您向 Office 365 验证您拥有公开注册的域。在此步骤之后，Office 365 将开始接受路由到新域名的流量。若要完成域创建和注册过程，请运行此命令。 
+在此最后一步中，您将向 Microsoft 365 验证你拥有公开注册的域。 完成此步骤后，Microsoft 365 将开始接受路由到新域名的流量。 若要完成域创建和注册过程，请运行此命令。 
   
 ```
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>

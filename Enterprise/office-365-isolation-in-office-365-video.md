@@ -1,7 +1,7 @@
 ---
-title: Office 365 中的 office 365 租户隔离视频
-ms.author: robmazz
-author: robmazz
+title: Office 365 视频中的租户隔离
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,17 +15,17 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 摘要： Office 365 视频中的租户隔离说明。
-ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843652"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998695"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Office 365 视频中的租户隔离
 
 > [!NOTE]
-> Office 365 视频将替换为 Microsoft Stream。 若要详细了解向视频协作添加智能的新企业视频服务并了解当前 Office 365 视频客户的过渡计划，请参阅[从 Office 365 视频迁移到流](https://docs.microsoft.com/stream/)。
+> Office 365 视频将替换为 Microsoft Stream。 若要详细了解将智能添加到视频协作的新企业视频服务并了解当前 Microsoft 365 视频客户的过渡计划，请参阅[Office 365 视频转换为 Microsoft Stream 概述](https://docs.microsoft.com/stream/migrate-from-office-365)。
 
 ## <a name="introduction"></a>简介
 

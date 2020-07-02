@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
-description: 适用于 Office 365 的 ExpressRoute 提供了到多个面向 internet 的 Office 365 服务的备用路由路径。 适用于 Office 365 的 ExpressRoute 体系结构基于 Office 365 服务的广告公共 IP 前缀，这些前缀已在 Internet 上可通过 Internet 访问，以便随后将这些 IP 前缀再分发到你的网络。 通过 ExpressRoute，可以有效地通过 internet 和 ExpressRoute 为许多 Office 365 服务启用几种不同的路由路径。 你的网络上的路由状态可能会对你的内部网络拓扑的设计进行重大更改。
-ms.openlocfilehash: 63d7c887f9900250a81fe1428d8b5b5cd3df9b81
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 适用于 Office 365 的 ExpressRoute 提供了到多个面向 internet 的 Office 365 服务的备用路由路径。 适用于 Office 365 的 ExpressRoute 体系结构基于 Office 365 服务的广告公共 IP 前缀，这些前缀已在 Internet 上可访问，以便随后将这些 IP 前缀重新分发到网络中。 通过 ExpressRoute，可以有效地通过 internet 和 ExpressRoute 为许多 Office 365 服务启用几种不同的路由路径。 你的网络上的路由状态可能会对你的内部网络拓扑的设计进行重大更改。
+ms.openlocfilehash: ab40a346ca1b19fcd100f17b934b766b21741010
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840179"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998124"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-适用于 Office 365 的 ExpressRoute 提供了到多个面向 internet 的 Office 365 服务的备用路由路径。 适用于 Office 365 的 ExpressRoute 体系结构基于 Office 365 服务的广告公共 IP 前缀，这些前缀已在 Internet 上可通过 Internet 访问，以便随后将这些 IP 前缀再分发到你的网络。 通过 ExpressRoute，可以有效地通过 internet 和 ExpressRoute 为许多 Office 365 服务启用几种不同的路由路径。 你的网络上的路由状态可能会对你的内部网络拓扑的设计进行重大更改。
+适用于 Office 365 的 ExpressRoute 提供了到多个面向 internet 的 Office 365 服务的备用路由路径。 适用于 Office 365 的 ExpressRoute 体系结构基于 Office 365 服务的广告公共 IP 前缀，这些前缀已在 Internet 上可访问，以便随后将这些 IP 前缀重新分发到网络中。 通过 ExpressRoute，可以有效地通过 internet 和 ExpressRoute 为许多 Office 365 服务启用几种不同的路由路径。 你的网络上的路由状态可能会对你的内部网络拓扑的设计进行重大更改。
   
  **状态：** 完整指南 v2
   
@@ -37,7 +37,7 @@ ms.locfileid: "41840179"
   
 若要成功实施，您需要分析基础结构要求，了解详细的网络评估和设计，仔细规划部署并以暂存和控制的方式，并构建详细的验证和测试计划。 对于大型的分布式环境，在几个月内查看实现情况并不常见。 本指南旨在帮助您提前进行规划。
   
-大型成功部署可能需要六个月进行规划，并且通常包含来自组织中的许多方面的团队成员，包括网络、防火墙和代理服务器管理员、Office 365 管理员、安全性、最终用户支持、项目管理和执行赞助。 您在规划过程中的投资将降低您在宕机或复杂且成本高昂的故障排除方面遇到部署故障的可能性。
+大型成功部署可能需要六个月的时间来进行规划，并且通常包含来自组织中的许多领域的团队成员，包括网络、防火墙和代理服务器管理员、Office 365 管理员、安全性、最终用户支持、项目管理和执行赞助。 您在规划过程中的投资将降低您在宕机或复杂且成本高昂的故障排除方面遇到部署故障的可能性。
   
 在启动本实施指南之前，我们期望完成以下先决条件。
   
@@ -47,7 +47,7 @@ ms.locfileid: "41840179"
 
 3. 您已阅读并理解[expressroute 文档](https://azure.microsoft.com/documentation/services/expressroute/)，并且您的内部网络能够满足 expressroute 先决条件端到端。
 
-4. 您的团队已阅读频道9上的所有公共指南[https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)和[https://aka.ms/ert](https://aka.ms/ert)文档，并对[Azure ExpressRoute for Office 365 培训](https://channel9.msdn.com/series/aer)系列进行了跟踪，以了解关键技术详细信息，包括：
+4. 您的团队已阅读频道9上的所有公共指南和文档， [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365) [https://aka.ms/ert](https://aka.ms/ert) 并对[Azure ExpressRoute For Office 365 培训](https://channel9.msdn.com/series/aer)系列进行了跟踪，以了解关键技术详细信息，包括：
 
       - SaaS 服务的 internet 依赖项。
 
@@ -85,7 +85,7 @@ ms.locfileid: "41840179"
 ### <a name="catalog-your-outbound-and-inbound-network-traffic"></a>对出站和入站网络流量进行编目
 <a name="trafficCatalog"> </a>
 
-为了最大限度地减少路由和其他网络复杂性，我们建议您仅将 ExpressRoute 用于 Office 365，以实现由于法规要求或网络评估结果而需要通过专用连接的网络流量流。 此外，我们建议你暂存 ExpressRoute 路由的范围，并将出站和入站网络流量流作为实施项目的不同和不同阶段。 部署适用于 Office 365 的 ExpressRoute 仅供用户启动的出站网络流量流并在 Internet 中留下入站网络流量流，可帮助控制拓扑复杂性和引入额外的非对称的风险增加路由可能性。
+为了最大限度地减少路由和其他网络复杂性，我们建议您仅将 ExpressRoute 用于 Office 365，以实现由于法规要求或网络评估结果而需要通过专用连接的网络流量流。 此外，我们建议你暂存 ExpressRoute 路由的范围，并将出站和入站网络流量流作为实施项目的不同和不同阶段。 部署适用于 Office 365 的 ExpressRoute 仅供用户启动的出站网络流量流，并在 Internet 中留下入站网络流量流可帮助控制拓扑复杂性和引入额外的非对称路由可能性的风险的增长。
   
 您的网络流量目录应包含您在本地网络和 Microsoft 之间拥有的所有入站和出站网络连接的列表。
   
@@ -189,7 +189,7 @@ ms.locfileid: "41840179"
 
 |**加利福尼亚和纽约的计划的 ExpressRoute 符合我的新位置**||
 |:-----|:-----|
-|位置  <br/> |人数  <br/> |Internet 出口的预期延迟到 Microsoft 网络  <br/> |通过 ExpressRoute 对 Microsoft 网络的预期延迟  <br/> |
+|Location  <br/> |人数  <br/> |Internet 出口的预期延迟到 Microsoft 网络  <br/> |通过 ExpressRoute 对 Microsoft 网络的预期延迟  <br/> |
 |Los Angeles  <br/> |10,000  <br/> |~ 15ms  <br/> |~ 10ms （经由硅谷）  <br/> |
 |华盛顿 DC  <br/> |15,000  <br/> |~ 20 毫秒  <br/> |~ 10ms （通过纽约）  <br/> |
 |州  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms （通过纽约）  <br/> |
@@ -206,7 +206,7 @@ ms.locfileid: "41840179"
   
 第二个图显示了一个包含类似信息和决策制定的多国客户的示例，这一点更深入地进一步扩展了此概念。 此客户在孟加拉国中有一个小型办公室，只有十个人的一小团队致力于在区域中增长其占用量。 在金奈中有一个 "满足我的位置" 和一个在金奈中托管 Office 365 的 Microsoft 数据中心，因此 "满足我的位置" 将有意义;但是，对于10人来说，额外电路的费用是繁重的。 在查看网络时，您需要确定在网络中发送网络流量所涉及的延迟是否比花费资金来获得另一个 ExpressRoute 电路更有效。
   
-或者，当我们的网络流量通过 internet 发送到 Microsoft 网络时，孟加拉的10名人员可能会遇到更好的性能，因为在介绍的规划图和复制过程中，他们会在其内部网络上进行路由如下.
+或者，如果网络流量通过 internet 发送到 Microsoft 网络，则来自孟加拉国的10人可能会遇到更好的性能，因为在下面的介绍性关系图中显示并在下面进行了复制时，他们会在其内部网络上进行路由。
   
 ![区域图的出站连接](media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
   
@@ -241,7 +241,7 @@ ms.locfileid: "41840179"
 
 制定针对每个主要 Office 365 工作负载所需的带宽的计划。 分别估计 Exchange Online、SharePoint Online 和 Skype for Business Online 带宽要求。 您可以使用我们为 Exchange Online 和 Skype for Business 提供的估计计算器作为开始位置;但是，必须具有用户配置文件和位置的代表性示例的试点测试，才能充分了解组织的带宽需求。
   
-添加在每个 internet 和 ExpressRoute 出口位置处理安全性的方式在您的计划中，记住到 Office 365 的所有 ExpressRoute 连接使用公共对等连接，但仍必须按照与外部连接的公司安全策略进行安全保护networks.
+添加在每个 internet 和 ExpressRoute 出口位置处理安全性的方式在您的计划中，记住到 Office 365 的所有 ExpressRoute 连接使用公共对等连接，并且仍然必须按照您连接到外部网络的公司安全策略进行保护。
   
 向计划中添加有关哪些人将受到哪种类型的中断影响的详细信息，以及这些人员如何能够以最简单的方式在完全容量内执行其工作的详细信息。
   
@@ -285,9 +285,9 @@ Skype for Business Online 还具有特定的其他网络要求，这些要求在
 ### <a name="design-inbound-service-connectivity"></a>设计入站服务连接
 <a name="inbound"> </a>
 
-大多数企业 Office 365 部署假定从 Office 365 到本地服务的某种形式的入站连接，如 Exchange、SharePoint 和 Skype for Business 混合方案、邮箱迁移和使用 ADFS 的身份验证基本. 当 ExpressRoute 在本地网络和 Microsoft 之间启用了其他路由路径以实现出站连接时，这些入站连接可能会因非对称路由而意外受到影响，即使您打算让这些流继续使用 Internet。 建议使用下面介绍的一些预防措施，以确保从 Office 365 到本地系统的基于 Internet 的入站流无任何影响。
+大多数企业 Office 365 部署假定从 Office 365 到本地服务的某种形式的入站连接，如 Exchange、SharePoint 和 Skype for Business 混合方案、邮箱迁移和使用 ADFS 基础结构的身份验证。 当 ExpressRoute 在本地网络和 Microsoft 之间启用了其他路由路径以实现出站连接时，这些入站连接可能会因非对称路由而意外受到影响，即使您打算让这些流继续使用 Internet，也是如此。 建议使用下面介绍的一些预防措施，以确保从 Office 365 到本地系统的基于 Internet 的入站流无任何影响。
   
-若要最大限度地降低对入站网络流量流的非对称路由风险，所有入站连接都应先使用源 NAT，然后再将源 NAT 路由到网络段，从而将可见性路由到 ExpressRoute。 如果允许传入连接到在没有源 NAT 的 ExpressRoute 中具有路由可见性的网段，则从 Office 365 发出的请求将从 internet 进入，但返回到 Office 365 的响应将优先于 ExpressRoute返回到 Microsoft 网络的网络路径，从而导致不对称路由。
+若要最大限度地降低对入站网络流量流的非对称路由风险，所有入站连接都应先使用源 NAT，然后再将源 NAT 路由到网络段，从而将可见性路由到 ExpressRoute。 如果允许传入连接到在没有源 NAT 的 ExpressRoute 中具有路由可见性的网段，则从 Office 365 发出的请求将从 internet 进入，但返回到 Office 365 的响应将首选 ExpressRoute 网络路径返回到 Microsoft 网络，从而导致不对称路由。
   
 您可以考虑采用以下实现模式之一来满足此要求：
   
@@ -401,7 +401,7 @@ Skype for Business Online 还具有特定的其他网络要求，这些要求在
 
 ![将 PAC 文件与 ExpressRoute 结合使用](media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
   
-如果要将代理服务器用于 internet 绑定的流量，则需要调整任何 PAC 或客户端配置文件，以确保网络中的客户端计算机正确配置为将所需的 ExpressRoute 流量发送到 Office 365，而不会使用 transiting代理服务器以及其余的流量（包括一些 Office 365 流量）将发送到相关代理。 阅读有关[管理 Office 365 端点](https://aka.ms/manageo365endpoints)的指南，以获取有关 PAC 文件的示例。
+如果要将代理服务器用于 internet 绑定的流量，则需要调整任何 PAC 或客户端配置文件，以确保网络中的客户端计算机正确配置为将所需的 ExpressRoute 流量发送到 Office 365，而不 transiting 代理服务器，并且剩余的流量（包括一些 Office 365 流量）将发送到相关的代理。 阅读有关[管理 Office 365 端点](https://aka.ms/manageo365endpoints)的指南，以获取有关 PAC 文件的示例。
   
 > [!NOTE]
 > 终结点经常发生变化，每周经常发生变化。 您只应根据您的组织采用的服务和功能进行更改，以减少所需的更改次数，以确保保持最新。 请密切注意 RSS 源中的**生效日期**，在该 rss 源中宣布了所做的更改，并保留了所有过去的更改，已发布的 IP 地址可能不会公布，也不会从播发中删除，直到达到生效日期为止。

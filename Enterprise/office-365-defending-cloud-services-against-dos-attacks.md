@@ -1,7 +1,7 @@
 ---
-title: Office 365 针对拒绝服务攻击防御云服务
-ms.author: robmazz
-author: robmazz
+title: 防御针对拒绝服务攻击的 Microsoft 365 云服务
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,21 +15,21 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 如何抵御拒绝服务（DoS）攻击的云服务。
-ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843613"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998326"
 ---
-# <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>防御拒绝服务攻击的 Microsoft 云服务
+# <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>防御针对拒绝服务攻击的 Microsoft 365 云服务
 
 ## <a name="introduction"></a>简介
 Microsoft 数据中心受纵深防御安全保护，其中包括外围防护、视频相机、安全人员和使用生物特征、智能卡和多因素身份验证的安全入口。 纵深防御安全在设备的每个区域和每个物理服务器单元继续进行。 [Microsoft 云基础结构和操作组](https://www.microsoft.com/cloud-platform/global-datacenters)为云服务提供了核心基础结构和基础技术。 我们的数据中心符合物理安全性和可靠性的行业标准，由 Microsoft 操作人员管理、监视和管理。
 
 为了进一步保护我们的云服务，Microsoft 提供了一种 DDoS 防御系统，这是 Microsoft Azure 持续监控和渗透测试过程的一部分。 Azure DDoS 防御系统不仅用于抵御来自外部的攻击，还能抵御来自其他 Azure 租户的攻击。 Azure 使用标准检测和缓解技术，如 SYN cookie、速率限制和连接限制，以防止出现 DDoS 攻击。
 
-Microsoft 的云服务受来自多个来源的攻击的威胁。 为了缓解和防范各种 DoS 威胁，我们已经开发并实施了一个高度可扩展且动态基于 Azure 的威胁检测和缓解系统，其主要目标是从 DoS 保护底层基础结构攻击和帮助防止云服务客户的服务中断。 Azure DoS 缓解系统可保护入站、出站和区域到区域的流量。
+Microsoft 的云服务受来自多个来源的攻击的威胁。 为了缓解和防范各种 DoS 威胁，我们开发并实施了一个高度可扩展且动态基于 Azure 的威胁检测和缓解系统，主要目标是保护底层基础结构免受 DoS 攻击并帮助防止云服务客户的服务中断。 Azure DoS 缓解系统可保护入站、出站和区域到区域的流量。
 
 对[开放式系统互连](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model)（OSI）模型的网络（L3）和传输（L4）层上的目标启动的大多数 DoS 攻击。 在 L3 和 L4 层上定向的攻击旨在使网络接口或服务面临大量资源的攻击流量，并拒绝对合法流量做出响应的能力。 具体来说，L3 和 L4 攻击尝试将网络链接、设备或服务的容量饱和，或者使支持应用程序的服务器或虚拟机的 Cpu 发生不足。
 

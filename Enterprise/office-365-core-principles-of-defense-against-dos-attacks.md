@@ -1,7 +1,7 @@
 ---
-title: Office 365 防御拒绝服务攻击的核心原则
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 防御拒绝服务攻击的核心原则
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 如何在防御拒绝服务（DoS）攻击的同时，利用其核心原则、检测和缓解措施。
-ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
-ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
+ms.openlocfilehash: 70e1f47e373f85bf2f4eb4d631672e293bae2bb6
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278075"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998406"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>防御拒绝服务攻击的核心原则
 

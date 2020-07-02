@@ -18,19 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 摘要：介绍用于连接到 Office 365 的网络容量、WAN 加速器和负载平衡设备的注意事项。
-ms.openlocfilehash: 9776611aa64f8783a22252a2c4182e63bda1093a
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+ms.openlocfilehash: 5015a146f92a32bd0200088517b6673ae00f8f64
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419369"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998631"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
   
-**摘要**：介绍用于连接到 Office 365 的网络容量、WAN 加速器和负载平衡设备的注意事项。
-
 一些网络硬件可能对受支持的并发会话数量有限制。 对于拥有多于2000个用户的组织，我们建议他们监视其网络设备，以确保他们能够处理额外的 Office 365 服务流量。 简单网络管理协议（SNMP）监控软件可帮助您执行此操作。
 
 ||

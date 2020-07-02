@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息了解 Office 365 如何使用内容传递网络（Cdn）来提高性能。
-ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840629"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997468"
 ---
-# <a name="content-delivery-networks-cdns"></a>内容传递网络（Cdn）
+# <a name="content-delivery-networks-cdns"></a>内容分发网络 (CDN)
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 Cdn 帮助使最终用户的 Office 365 快速而可靠。 云服务（如 Office 365）使用 Cdn 将静态资产缓存在更接近的浏览器上，以加快下载速度并降低感觉到的最终用户延迟。 本主题中的信息将帮助您了解内容传递网络（Cdn）及其在 Office 365 中的使用方式。
 
@@ -37,7 +37,7 @@ Cdn 帮助使最终用户的 Office 365 快速而可靠。 云服务（如 Offic
 
 CDN 是地理位置分散的网络，由高速骨干网连接的数据中心中的代理服务器和文件服务器组成。 Cdn 用于减少网站或服务中一组指定的文件和对象的延迟和加载时间。 CDN 可能有数千个终结点，可用于从任何位置对传入请求进行最佳处理。
 
-Cdn 通常用于为网站或服务（如 javascript 文件、图标和图像）提供更快的常规内容下载，还可以提供对用户内容（如 SharePoint Online 文档库中的文件、流式媒体文件）的专用访问和自定义代码。
+Cdn 通常用于为网站或服务（如 javascript 文件、图标和图像）提供更快的常规内容下载，还可以提供对用户内容（如 SharePoint Online 文档库中的文件、流式处理媒体文件和自定义代码）的专用访问。
 
 Cdn 由大多数企业云服务使用。 云服务（如 Office 365）有数百万个客户同时下载专有内容（如电子邮件）和通用内容（如图标）。 将图像作为每个人使用的图像（如图标）更有效，尽可能接近用户的计算机。 在每个大都市区域中（甚至在世界各地的每个主要 Internet 集线器中）构建 CDN 数据中心时，每个云服务都不切合实际，因此其中一些 Cdn 是共享的。
 
@@ -53,7 +53,7 @@ Cdn 帮助以多种方式改进云服务性能：
 
 ## <a name="the-office-365-cdn"></a>Office 365 CDN
 
-内置 Office 365 内容传送网络（CDN）允许 Office 365 管理员为其组织的 SharePoint Online 页面提供更好的性能，具体方法是缓存静态资产，使其更接近请求的浏览器，这有助于加快下载并降低延迟。 Office 365 CDN 使用[HTTP/2 协议](https://en.wikipedia.org/wiki/HTTP/2)改进了压缩和下载速度。
+内置的 Office 365 内容传递网络（CDN）使 Office 365 管理员能够为其组织的 SharePoint Online 页面提供更好的性能，具体方法是缓存静态资产，使其更接近请求的浏览器，这有助于加快下载速度并减少延迟。 Office 365 CDN 使用[HTTP/2 协议](https://en.wikipedia.org/wiki/HTTP/2)改进了压缩和下载速度。
 
 > [!NOTE]
 > Office 365 CDN 仅适用于**生产**（全球）云中的租户。 美国政府、中国和德国云中的租户目前不支持 Office 365 CDN。
@@ -88,7 +88,7 @@ Office 365 CDN 服务被归入 SharePoint Online 订阅。
 
 ### <a name="microsoft-ajax-cdn"></a>Microsoft Ajax CDN
 
-Microsoft 的**AJAX cdn**是一个只读的 cdn，可提供多种流行的开发库，其中包括 jQuery （及其所有其他库）、ASP.NET Ajax、引导、挖空以及其他。
+Microsoft 的**AJAX cdn**是一个只读的 cdn，可提供多种流行的开发库，包括 jQuery （及其所有其他库）、ASP.NET Ajax、启动、Knockout.js 和其他。
   
 若要将这些脚本包含在项目中，只需将对这些公开的可用库的任何引用替换为对 CDN 地址的引用，而不是将其包含在项目本身中。 例如，使用以下代码链接到 jQuery：
 
@@ -128,11 +128,11 @@ Office 365 中使用的 Cdn 始终可能会发生更改，在许多情况下，�
 |---------|---------|---------|---------|
 |Office 365 CDN     |Akamai         |公用源中的常规资产，私人来源中的 SharePoint 用户内容         |[结合使用 Office 365 内容传送网络和 SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |Azure CDN     |Microsoft         |自定义代码、SharePoint 框架解决方案         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Microsoft Ajax CDN （只读）     |Microsoft         |适用于 Ajax、jQuery、ASP.NET、引导和挖空等的通用库。         |[Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
+|Microsoft Ajax CDN （只读）     |Microsoft         |适用于 Ajax、jQuery、ASP.NET、引导 Knockout.js 等的通用库。         |[Microsoft Ajax CDN](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>CDN 提供了哪些性能提升？
 
-在从从 Office 365 直接下载的数据与从特定 CDN 下载的数据（如相对于租户的位置和最近的 CDN 终结点的位置）之间测量性能的具体差异时，会涉及许多因素，由 CDN 提供服务的页面上的资产以及网络延迟和带宽的瞬间更改。 但是，简单的 A/B 测试可以帮助显示特定文件的下载时间的差异。
+在从 Office 365 直接下载的数据与从特定 CDN 下载的数据（如相对于租户的位置和最近的 CDN 终结点）之间测量性能的具体差异时，有许多因素涉及到由 CDN 提供服务的页面上的资产数，以及网络延迟和带宽的瞬间更改。 但是，简单的 A/B 测试可以帮助显示特定文件的下载时间的差异。
 
 下面的屏幕截图展示了 Office 365 中的本机文件位置与在[Microsoft Ajax 内容传递网络](https://docs.microsoft.com/aspnet/ajax/cdn/overview)上托管的相同文件之间的下载速度差异。 这些屏幕截图来自 Internet Explorer 11 开发人员工具中的 "**网络**" 选项卡。 这些屏幕截图显示热门库 jQuery 的延迟。 若要弹出此屏幕，请在 Internet Explorer 中，按**F12**键并选择 "**网络**" 选项卡，该选项卡 symbolized 带有 wi-fi 图标。
   

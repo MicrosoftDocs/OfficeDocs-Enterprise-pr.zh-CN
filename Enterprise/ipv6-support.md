@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 摘要：介绍了 Microsoft Office 365 组件和 Office 365 政府产品中的 IPv6 支持。
-ms.openlocfilehash: 939b5653981cb78dfa316e0baf1c498a3db97904
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 594f656f8342fa7eddeeea09779cbcf638ae1882
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009307"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998104"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 服务中的 IPv6 支持
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 Office 365 支持 IPv6 和 IPv4;但是，并不是所有的 Office 365 功能都完全启用了 IPv6。 这意味着，您必须同时使用 IPv4 和 IPv6 连接到 Office 365。 如果要筛选出出到 Office 365 的出站流量，则可以在[office 365 url 和 IP 地址范围](urls-and-ip-address-ranges.md)一文中找到 office 365 支持的 IPv6 地址的完整列表。 配置网络并允许适当的 IPv6 地址后，可以从 Microsoft 下载中心下载[Office 365 IPv6 测试计划](https://go.microsoft.com/fwlink/?LinkId=293447)。
   

@@ -1,7 +1,7 @@
 ---
-title: Office 365 SharePoint Online 数据删除
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 SharePoint Online 数据删除
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 对 SharePoint Online 中的数据删除的说明。
-ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842039"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997812"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365 中的 SharePoint Online 数据删除
+# <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Microsoft 365 中的 SharePoint Online 数据删除
 
 SharePoint Online 将对象存储为应用程序数据库中的抽象代码。 当用户将文件上传到 SharePoint Online 时，会反汇编该文件并将其转换为应用程序代码，并将其存储在多个数据库的多个表中。 在 SharePoint Online 中，客户上传的所有内容都被分成多个块，并进行了加密（可能包含多个 AES 256 位密钥），并分布在整个数据中心中。 有关分块和加密过程的具体详细信息，请参阅[Microsoft 云中的加密](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)。 
 
@@ -40,6 +40,6 @@ SharePoint Online 将对象存储为应用程序数据库中的抽象代码。 �
 
 如果意外删除了网站集，则可以使用 SharePoint 管理中心通过全局或 SharePoint 管理来还原网站集。
 
-已删除的网站集将保留93天。 在93天后，将永久删除网站及其所有内容和设置，包括列表、库、页面和任何子网站。
+已删除的网站集将保留93天。 93天后，将永久删除网站及其所有内容和设置，包括列表、库、页面和所有子网站。
 
 当用户清除网站集回收站中的已删除项目、保留和备份期间过期时，或者管理员使用[remove-spodeletedsite cmdlet](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps)永久删除网站集时，将发生硬删除。 当用户硬删除（永久删除或清除） SharePoint Online 中的内容时，已删除的区块的所有加密密钥也将被删除。 以前存储已删除的区块的磁盘上的块被标记为未使用，可供重复使用。

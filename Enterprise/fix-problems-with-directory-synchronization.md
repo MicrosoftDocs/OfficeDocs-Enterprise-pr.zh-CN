@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍了 Office 365 中的目录同步问题的常见原因，并提供了几种帮助排除和解决这些问题的方法。
-ms.openlocfilehash: cb2ec57331d227f0965095ee0782f13af935d569
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d9e390a7230499f724ebbdae592264a850dd9418
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711902"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998030"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>解决 Microsoft 365 的目录同步问题
 
@@ -42,9 +42,9 @@ ms.locfileid: "44711902"
   
 按照[向导中的说明](set-up-directory-synchronization.md)下载 Azure AD Connect。 
   
-如果仍在使用 Azure Active Directory 同步（DirSync），请参阅[如何解决 Microsoft 365 中的 Azure Active Directory 同步工具安装和配置向导错误消息](https://go.microsoft.com/fwlink/p/?LinkId=396717)，以了解有关安装 DirSync 的系统要求、所需权限以及如何对常见错误进行故障排除的信息。 
+如果仍在使用 Azure Active Directory （Azure AD）同步（DirSync），请参阅[如何解决 Microsoft 365 中的 Azure Active Directory 同步工具安装和配置向导错误消息](https://go.microsoft.com/fwlink/p/?LinkId=396717)，以了解有关安装 DirSync 的系统要求的信息、所需的权限以及如何对常见错误进行故障排除的信息。 
   
-若要从 Azure Active Directory 同步更新到 Azure AD Connect，请参阅[升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。
+若要从 Azure AD 同步更新到 Azure AD Connect，请参阅[升级说明](https://go.microsoft.com/fwlink/p/?LinkId=733240)。
   
 ## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>解决 Microsoft 365 中的目录同步问题的常见原因
 

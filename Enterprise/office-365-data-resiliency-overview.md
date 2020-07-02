@@ -1,7 +1,7 @@
 ---
-title: Office 365 中的数据复原能力
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 中的数据恢复能力
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 了解 Microsoft Office 365 中的数据恢复能力。
-ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 了解 Microsoft Microsoft 365 中的数据恢复能力。
+ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843673"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998466"
 ---
-# <a name="data-resiliency-in-office-365"></a>Office 365 中的数据复原能力
+# <a name="data-resiliency-in-microsoft-365"></a>Microsoft 365 中的数据恢复能力
 
 ## <a name="introduction"></a>简介
 
@@ -39,9 +39,9 @@ ms.locfileid: "41843673"
 
 目前，客户预期来自 Microsoft 的连续创新不会降低质量，这也是 Microsoft 服务和软件以恢复和恢复为依据而构建的原因之一。 
 
-## <a name="office-365-data-resiliency-principles"></a>Office 365 数据恢复原则
+## <a name="microsoft-365-data-resiliency-principles"></a>Microsoft 365 数据恢复原则
 
-弹性是指基于云的服务经受某些类型的故障的能力，但从客户的角度来看功能完全正常。 数据恢复意味着无论 Office 365 中发生什么故障，关键客户数据保持不变且不受影响。 为此，Office 365 服务在设计方面围绕了五种特定的恢复原则：
+弹性是指基于云的服务经受某些类型的故障的能力，但从客户的角度来看功能完全正常。 数据恢复意味着无论在 Microsoft 365 中发生什么故障，关键客户数据保持不变且不受影响。 为此，Microsoft 365 服务在设计方面围绕了五种特定的恢复原则：
 
 - 存在关键和非关键数据。 非关键数据（例如，是否已读取邮件）可以在罕见故障方案中删除。 关键数据（例如，客户数据（如电子邮件）应以极高的成本进行保护。 作为设计目标，已传递的邮件始终是关键的，例如邮件是否已被阅读是不重要的。 
 - 客户数据的副本必须分成不同的故障区域或尽可能多的故障域（例如，数据中心可通过单个凭据（process、server 或 operator）来提供故障隔离）。 
@@ -49,7 +49,7 @@ ms.locfileid: "41843673"
 - 必须保护客户数据不受损坏。 必须主动扫描或监视、修复和恢复。 
 - 大多数数据丢失结果来自客户操作，因此允许客户使用 GUI 自行恢复，使他们能够还原意外删除的项目。 
  
-通过将我们的云服务与这些原则相结合，Office 365 能够满足和超过客户的需求，同时确保平台能够进行持续的创新和改进。 
+通过将我们的云服务与这些原则相结合，Microsoft 365 能够满足和超过客户的需求，同时确保平台能够进行持续的创新和改进。 
 
 ## <a name="related-links"></a>相关链接
 

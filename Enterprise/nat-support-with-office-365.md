@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 摘要：提供了有关如何使用网络地址转换（NAT）对组织中的每个 IP 地址使用的客户端的正确数量的详细信息。
-ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844563"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998537"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 中的 NAT 支持
 
-*此文章适用于 Office 365 企业版和 Microsoft 365 企业版。*
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 以前，建议使用每个 IP 地址连接到 Office 365 的 Exchange 客户端的最大数量大约为每个网络端口2000个客户端。
   
@@ -40,7 +40,7 @@ ms.locfileid: "41844563"
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>为什么您需要将这么多的连接同时打开到 Office 365？
 
-Outlook 可能会打开八个或更多的连接（在有加载项、共享日历、邮箱等的情况下）。 由于基于 Windows 的 NAT 设备上最多可提供64000个端口，因此在端口耗尽之前，IP 地址最多可以有8000个用户。 请注意，如果客户使用的是基于非 Windows 操作系统的 NAT 设备，则可用端口总数取决于所使用的 NAT 设备或软件。 在这种情况下，最大端口数可能小于64000。 端口的可用性也受其他因素（如 Windows 限制4000端口以供其自己使用）的影响，这会将可用端口的总数减少到 60 000。可以同时连接的其他应用程序（如 Internet Explorer），需要额外的端口。
+Outlook 可能会打开八个或更多的连接（在有加载项、共享日历、邮箱等的情况下）。 由于基于 Windows 的 NAT 设备上最多可提供64000个端口，因此在端口耗尽之前，IP 地址最多可以有8000个用户。 请注意，如果客户使用的是基于非 Windows 操作系统的 NAT 设备，则可用端口总数取决于所使用的 NAT 设备或软件。 在这种情况下，最大端口数可能小于64000。 端口的可用性也受其他因素（如 Windows 限制4000端口以供其自己使用）的影响，这会将可用端口的总数减少到 60 000。可能还有其他应用程序（如 Internet Explorer）可以同时连接，需要额外的端口。
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>使用 Office 365 计算单个公共 IP 地址后的最大受支持设备数
 
@@ -60,7 +60,7 @@ Outlook 可能会打开八个或更多的连接（在有加载项、共享日历
 
 然后，单个公共 IP 地址后的最大支持设备数 = （64000-4000）/（6 + 4） = 6000
   
-发布 Office 365 托管包，包括在 Microsoft Office Outlook 2007 的9月2011更新中，或 Microsoft Outlook 2010 的 11 2011 月，或后续更新中，来自 Outlook 的连接数（两个 Office Outlook 2007 with ServicePack 2 和 Outlook 2010）到 Exchange 可以只是2个。 您需要考虑不同的操作系统、用户行为等，以确定您的网络在高峰期所需的最小和最大端口数。
+在 Microsoft Office Outlook 2007 的 9 2011 月9日更新中包含 Office 365 承载包，或 Microsoft Outlook 2010 的11月2011或更高版本的更新中，从 Outlook （Office Outlook 2007 with Service Pack 2 和 Outlook 2010）到 Exchange 的连接数可以只是2。 您需要考虑不同的操作系统、用户行为等，以确定您的网络在高峰期所需的最小和最大端口数。
   
 如果要支持单个公用 IP 地址后面的更多设备，请按照概述的步骤来评估可支持的最大设备数：
   

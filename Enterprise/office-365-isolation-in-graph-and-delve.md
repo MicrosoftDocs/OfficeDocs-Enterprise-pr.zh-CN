@@ -1,7 +1,7 @@
 ---
-title: Office 365 租户在 Office Graph 和 Delve 中的隔离
-ms.author: robmazz
-author: robmazz
+title: Microsoft Graph 和 Delve 中的 microsoft 365 租户隔离
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,23 +14,23 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 摘要：对 Office Graph 中和 Delve 中的租户隔离的说明。
-ms.openlocfilehash: c9e054494e6d71d84a19350bc38e0d3981fede45
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 摘要： microsoft Graph 和 Delve 中的 Microsoft 365 租户隔离的说明。
+ms.openlocfilehash: 70888d084792cfb819c0ee54f34d2a8869fb198b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844433"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998262"
 ---
-# <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Office Graph 和 Delve 中的租户隔离
+# <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Microsoft Graph 和 Delve 中的 microsoft 365 租户隔离
 
-## <a name="tenant-isolation-in-the-office-graph"></a>Office Graph 中的租户隔离
+## <a name="tenant-isolation-in-the-microsoft-graph"></a>Microsoft Graph 中的租户隔离
 
-Office 365 服务中的[Office Graph](https://developer.microsoft.com)模型活动，包括 Exchange Online、SharePoint Online、Yammer、Skype for Business、Azure Active Directory 等，以及外部服务（如其他 Microsoft 服务或第三方服务）中的活动。 Office 365 中使用 office Graph 组件。 Office Graph 表示内容和活动的集合，以及在整个 Office 套件中发生的关系。 它使用先进的机器学习技术将用户连接到相关内容、对话和用户周围的人员。 例如，SharePoint Online 中的租户索引具有一个用于为 Delve 查询提供服务的 Office Graph 索引，SharePoint Online 中的分析处理引擎用于存储信号并计算见解，Exchange Online 计算每个用户的将收件人缓存用作租户分析的输入。
+Microsoft 365 服务中的[Microsoft Graph](https://developer.microsoft.com/graph)模型活动，包括 Exchange Online、SharePoint Online、Yammer、Skype for Business、Azure Active Directory 等，以及外部服务（如其他 Microsoft 服务或第三方服务）中的活动。 Microsoft Graph 组件在整个 Microsoft 365 中使用。 Microsoft Graph 表示内容和活动的集合，以及在整个 Office 套件中发生的关系。 它使用先进的机器学习技术将用户连接到相关内容、对话和用户周围的人员。 例如，SharePoint Online 中的租户索引具有用于为 Delve 查询提供服务的 Microsoft Graph 索引，SharePoint Online 中的分析处理引擎用于存储信号和计算见解，Exchange Online 将每个用户的收件人缓存计算为租户分析中的输入。
 
-Office Graph 包含有关企业对象的信息，例如人员和文档，以及这些对象之间的关系和交互。 关系和交互表示为*边缘*。 Office Graph 由租户分段，因此，边缘只能存在于同一租赁中的*节点*之间。 *节点*是具有统一资源标识符（URI）、节点类型、访问控制列表以及包含*元数据*和边缘的一组 facet 的实体。 每个节点都有关联的元数据和边缘，它们按常见知识模型中的*facet*排列。 *元数据*是存储在节点上的命名属性，可用于在 office graph 中进行搜索、筛选或分析。 *Facet*是节点上的元数据和边缘的逻辑集合。 每个 facet 描述节点的一个方面。 
+Microsoft Graph 包含有关企业对象的信息，例如人员和文档，以及这些对象之间的关系和交互。 关系和交互表示为*边缘*。 Microsoft Graph 是由租户分段的，因此，边缘只能存在于同一租赁中的*节点*之间。 *节点*是具有统一资源标识符（URI）、节点类型、访问控制列表以及包含*元数据*和边缘的一组 facet 的实体。 每个节点都有关联的元数据和边缘，它们按常见知识模型中的*facet*排列。 *元数据*是存储在节点上的命名属性，可用于在 Microsoft Graph 中进行搜索、筛选或分析。 *Facet*是节点上的元数据和边缘的逻辑集合。 每个 facet 描述节点的一个方面。 
 
-Office Graph 不会将所有数据都引入单个存储库;相反，它存储有关位于其他位置的数据的元数据和关系。 Office Graph 由多个数据存储和处理组件组成：
+Microsoft Graph 不会将所有数据都引入单个存储库;相反，它存储有关位于其他位置的数据的元数据和关系。 Microsoft Graph 由多个数据存储和处理组件组成：
 
 - 租户图形存储为高效分析提供了批量存储优化。
 - 活动内容缓存可提供对主动节点和边缘的随机访问，以推动用户体验。
@@ -40,5 +40,5 @@ Office Graph 不会将所有数据都引入单个存储库;相反，它存储有
 
 ## <a name="tenant-isolation-in-delve"></a>Delve 中的租户隔离
 
-如前所述，Office Graph 能够帮助用户发现企业中的当前活动并进行协作，并提供以实体为中心的平台，用于跨工作负载的内容和活动的分析和超过 Office 365。 Delve 是由 Office Graph 提供支持的第一种体验。
-Delve 是 Office 365 web 体验，它通过 Office Graph 将内容从 Office 365 和 Yammer Enterprise 显示为 Office 365 用户。 Web 体验将数据显示为不同的板，每个板都有一定的主题，如*周围的趋势分析*或*由我修改的*。 每个板都包含多个文档卡片，这些卡片显示摘要文本和文档中的图片。 智能卡使用户可以执行以下操作：打开文档或文档的 Yammer 页面。 Office 365 租户中的每个人都有一个页面，其中显示了此人最相关的文档，以及可以调用 Exchange Online 或 Skype for Business 以与此人交互的图标。 由于 Delve 基于 Office Graph API，因此它受该 API 基于租户的隔离的约束。
+如前所述，Microsoft Graph 可帮助用户发现和协作处理其企业中的当前活动，并为跨工作负载和超过 Microsoft 365 的内容和活动提供分析的原因提供了以实体为中心的平台。 Delve 是 Microsoft Graph 所支持的第一种体验。
+Delve 是 Microsoft 365 web 体验，它通过 Microsoft Graph 将内容从 Microsoft 365 和 Yammer Enterprise 显示为 Microsoft 365 用户。 Web 体验将数据显示为不同的板，每个板都有一定的主题，如*周围的趋势分析*或*由我修改的*。 每个板都包含多个文档卡片，这些卡片显示摘要文本和文档中的图片。 智能卡使用户可以执行以下操作：打开文档或文档的 Yammer 页面。 Microsoft 365 租户中的每个人都有一个页面，其中显示了此人最相关的文档，以及可以调用 Exchange Online 或 Skype for Business 以与此人交互的图标。 由于 Delve 基于 Microsoft Graph API，因此它受该 API 基于租户的隔离的约束。

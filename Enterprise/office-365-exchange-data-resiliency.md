@@ -1,7 +1,7 @@
 ---
-title: Office 365 Exchange 数据弹性
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 中的 Exchange Online 数据恢复能力
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Exchange Online 和 Office 365 中数据弹性的各个方面的说明。
-ms.openlocfilehash: 73b217f7b85722bca10cdf1abbe10c3a32922e9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Exchange Online 和 Microsoft 365 中数据弹性的各个方面的说明。
+ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844473"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998733"
 ---
-# <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 中的 Exchange Online 数据恢复能力
+# <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Microsoft 365 中的 Exchange Online 数据恢复能力
 
 ## <a name="introduction"></a>简介
 有两种类型的损坏可能会影响 Exchange 数据库：物理损坏通常是由硬件（尤其是存储硬件）问题引起的，以及因其他因素而发生的逻辑损坏。 通常情况下，Exchange 数据库中可能发生两种类型的逻辑损坏： 
@@ -31,7 +31,7 @@ ms.locfileid: "41844473"
 
 Exchange Online 在日志检查和日志重播期间对复制的日志文件执行几项一致性检查。 这些一致性检查防止系统复制物理损坏。 例如，在日志检查过程中，有一个物理完整性检查，它会验证日志文件，并验证日志文件中记录的校验和是否与内存中生成的校验和相匹配。 此外，还会检查日志文件头，以确保日志文件头中记录的日志文件签名与日志文件的签名相匹配。 在日志重播过程中，日志文件会经历进一步的审查。 例如，数据库标头还包含与日志文件的签名进行比较的日志签名，以确保它们相匹配。 
 
-对 Exchange Online 中邮箱数据的损坏进行保护是通过使用 Exchange 本机数据保护实现的，这是一种可跨多个服务器和多个数据中心以及其他数据中心使用应用程序级别复制的复原策略帮助防止数据因损坏或其他原因而丢失的功能。 这些功能包括由 Microsoft 或 Exchange Online 应用程序本身管理的本机功能，如：
+对 Exchange Online 中邮箱数据的损坏进行保护是通过使用 Exchange 本机数据保护实现的，这是一种可跨多个服务器和多个数据中心的应用程序级别的复制利用的复原策略，以及帮助防止数据因损坏或其他原因而丢失的其他功能。 这些功能包括由 Microsoft 或 Exchange Online 应用程序本身管理的本机功能，如：
 
 - [数据可用性组](https://docs.microsoft.com/exchange/back-up-email)
 - 单一位更正 
@@ -48,11 +48,11 @@ Exchange Online 在日志检查和日志重播期间对复制的日志文件执�
 - [已删除邮件保留和软删除邮箱（默认情况下启用）](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
 
 ## <a name="database-availability-groups"></a>数据库可用性组 
-Office 365 中的每个邮箱数据库都托管在[数据库可用性组（DAG）](https://docs.microsoft.com/exchange/back-up-email)中，并复制到同一区域中的地理位置不同的数据中心。 最常见的配置是四个数据中心中的四个数据库副本;但是，有些区域的数据中心较少（数据库将被复制到印度的三个数据中心和澳大利亚和日本的两个数据中心）。 但在所有情况下，每个邮箱数据库都有四个跨多个数据中心分布的副本，因此可确保邮箱数据免受软件、硬件甚至数据中心故障的保护。 
+Microsoft 365 中的每个邮箱数据库都托管在[数据库可用性组（DAG）](https://docs.microsoft.com/exchange/back-up-email)中，并复制到同一区域中的地理位置不同的数据中心。 最常见的配置是四个数据中心中的四个数据库副本;但是，有些区域的数据中心较少（数据库将被复制到印度的三个数据中心和澳大利亚和日本的两个数据中心）。 但在所有情况下，每个邮箱数据库都有四个跨多个数据中心分布的副本，因此可确保邮箱数据免受软件、硬件甚至数据中心故障的保护。 
 
 在这四个副本中，其中有三个配置为高可用性。 第四个副本配置为[滞后数据库副本](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies)。 滞后数据库副本不用于单个邮箱恢复或邮箱项目恢复。 其目的是针对系统范围的灾难性逻辑损坏的罕见事件提供恢复机制。 
 
-Exchange Online 中的滞后数据库副本配置了为期七天的日志文件重播延迟时间。 此外，Exchange 重播延迟管理器已启用，以提供滞后副本的动态日志文件，以允许滞后数据库副本进行自我修复和管理日志文件增长。 尽管滞后数据库副本在 Exchange Online 中使用，但务必要了解它们不是一个可保证的时间点备份。 Exchange Online 中的滞后数据库副本具有可用性阈值（通常约为90%），因为由于磁盘故障导致包含滞后副本的磁盘丢失，因此滞后副本将变为高可用性副本（由于自动播放），也是如此在滞后数据库副本重新生成日志重播队列的时段。 
+Exchange Online 中的滞后数据库副本配置了为期七天的日志文件重播延迟时间。 此外，Exchange 重播延迟管理器已启用，以提供滞后副本的动态日志文件，以允许滞后数据库副本进行自我修复和管理日志文件增长。 尽管滞后数据库副本在 Exchange Online 中使用，但务必要了解它们不是一个可保证的时间点备份。 Exchange Online 中的滞后数据库副本具有可用性阈值（通常为90%），因为由于磁盘故障导致包含滞后副本的磁盘丢失，因此滞后副本将成为高可用性副本（由于自动向下移动）以及滞后数据库副本重新生成日志重播队列的时间段。 
 
 ## <a name="transport-resilience"></a>传输弹性 
 Exchange Online 包括两种主要传输复原功能：卷影冗余和安全网络。 "卷影冗余" 在传输过程中保留邮件的冗余副本。 安全网络在邮件成功传递后保留邮件的冗余副本。 
@@ -78,7 +78,7 @@ ESE 包括一种机制，用于检测和解决因硬件错误而导致的单一�
 如果被动数据库副本中出现损坏（包括滞后数据库副本），因为这些副本始终位于其活动副本后面，所以将任何页面从活动副本复制到被动副本始终是安全的。 被动数据库副本的本质上是高可用性的，因此在修补页面过程中，日志重播已挂起，但日志复制继续进行。 被动数据库副本从活动副本中检索损坏的页面的副本，一直等到复制和检查满足所需的最大日志生成要求的日志文件，然后再修补损坏的页面。 页面修补后，日志重播恢复。 滞后数据库副本的过程相同，不同之处在于滞后数据库首先重播实现修补状态所需的所有日志文件。 
 
 ## <a name="mailbox-replication-service"></a>邮箱复制服务 
-移动邮箱是管理大规模电子邮件服务的关键部分。 始终需要更新的技术和硬件和版本升级，因此具有强大的受限制系统，使我们的工程师能够完成此工作，同时使邮箱对用户保持透明（通过确保它们保持在线在整个过程中）是关键的，并确保在邮箱变大且更大时，进程能够适当地扩展。 
+移动邮箱是管理大规模电子邮件服务的关键部分。 始终需要更新的技术和版本升级，使我们的工程师能够完成此工作，同时保持邮箱对用户的透明性（通过确保它们在整个过程中保持在线）是关键的，并确保在邮箱变得更大和更大的情况下，该过程能够进行适当扩展。 
 
 Exchange 邮箱复制服务（MRS）负责在数据库之间移动邮箱。 在移动过程中，MRS 对邮箱中的所有项目执行一致性检查。 如果发现一致性问题，MRS 将纠正此问题，或跳过已损坏的项目，从而删除邮箱中的损坏。 
 
@@ -97,5 +97,5 @@ Exchange Online 充分利用了多个 ReFS 优势：
 - 对 Exchange Online 使用的其他功能（如 BitLocker 加密）的支持。 
 
 Exchange Online 还可受益于其他 ReFS 功能： 
-- **完整性（完整性流）** -ReFS 以保护数据的方式存储数据，这可能会导致通常会导致数据丢失的许多常见错误。 Office 365 搜索使用完整性流来帮助早期磁盘损坏检测和文件内容的校验和。 该功能还减少了因 "断写" 而导致的损坏事件（当写操作由于断电等原因而无法完成时）。 
+- **完整性（完整性流）** -ReFS 以保护数据的方式存储数据，这可能会导致通常会导致数据丢失的许多常见错误。 Microsoft 365 搜索使用完整性流来帮助早期磁盘损坏检测和文件内容的校验和。 该功能还减少了因 "断写" 而导致的损坏事件（当写操作由于断电等原因而无法完成时）。 
 - **可用性（抢救）** -ReFS 对数据可用性进行优先级划分。 以前，文件系统通常容易受到数据损坏的攻击，这可能需要系统脱机才能进行修复。 尽管极少数情况下，如果发生损坏，ReFS 也会实现抢救，这是一项功能，可从实时卷上的命名空间中删除损坏的数据，并确保不能修复的损坏数据不会对正常的数据产生负面影响。 应用抢救功能并将数据损坏隔离到 Exchange Online 数据库卷意味着我们可以将损坏卷上的不受影响的数据库置于损坏和修复操作之间的良好状态。 这将提高通常受此类磁盘损坏问题影响的数据库的可用性。 

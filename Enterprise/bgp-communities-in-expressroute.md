@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 使用 Azure ExpressRoute 连接到 Office 365 基于特定 IP 子网的 BGP 播发，这些子网代表部署 Office 365 终结点的网络。 由于 Office 365 的全球性质以及构成 Office 365 的服务的数量，客户通常需要在其网络上管理他们接受的广告。 减少 IP 子网的数量;在本文的其余部分中称为 IP 前缀，以与 BGP 网络管理术语保持一致，为客户提供以下最终目标：
-ms.openlocfilehash: 1e174aafa0dbbf57f95c45b0e218ebe1793194cc
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 13d2404182eb18b7c72a9aaefdb96464fd665a03
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844943"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997869"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>在 ExpressRoute for Office 365 方案中使用 BGP 社区
 
@@ -40,11 +40,11 @@ ms.locfileid: "41844943"
 > [!NOTE]
 > 应预计与其他应用程序关联的一些网络流量将包含在社区值中。 这是全球软件的预期行为，即使用共享服务和数据中心提供的服务。 在可能的情况下，这两个目标已最小化，可管理前缀计数和/或带宽。
 
-|**服务**|**BGP 社区值**|**Notes**|
+|**服务**|**BGP 社区值**|**备注**|
 |:-----|:-----|:-----|
 |Exchange Online\*  <br/> |12076:5010  <br/> |包括 Exchange 和 EOP 服务\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business Online & Micorosoft 团队服务  <br/> |
+|Skype for Business\*  <br/> |12076:5030  <br/> |Microsoft 团队服务 & 的 Skype for Business Online  <br/> |
 |其他 Office 365 服务\*  <br/> |12076:5100  <br/> |包括 Azure Active Directory （身份验证和目录同步方案）以及 Office 365 门户服务  <br/> |
 |\*在 ExpressRoute 中包含的服务方案的范围记录在[Office 365 终结点](https://aka.ms/o365endpoints)文章中。  <br/> \*\*将来可能会添加其他服务和 BGP 社区值。 [查看 BGP 社区的当前列表](https://azure.microsoft.com/documentation/articles/expressroute-routing/)。  <br/> |
 
@@ -58,7 +58,7 @@ Contoso Corporation 是一家50000个人公司，目前使用 Office 365 for Exc
 
 |**使用的 BGP 社区标记**|**通过 Azure ExpressRoute 路由的功能**|**需要 Internet 路由**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> （12076:5020）  <br/> |SharePoint Online &amp; OneDrive for business  <br/> | DNS、CRL 和&amp; CDN 请求  <br/>  所有其他 Office 365 服务不是通过 Azure ExpressRoute 专门支持的  <br/>  所有其他 Microsoft 云服务  <br/>  Office 365 门户、Office 365 身份验证&amp; 、office 在浏览器中  <br/>  Exchange Online、Exchange Online Protection 和 Skype for Business Online  <br/> |
+|SharePoint  <br/> （12076:5020）  <br/> |SharePoint Online &amp; OneDrive For business  <br/> | DNS、CRL 和 &amp; CDN 请求  <br/>  所有其他 Office 365 服务不是通过 Azure ExpressRoute 专门支持的  <br/>  所有其他 Microsoft 云服务  <br/>  Office 365 门户、Office 365 身份验证、 &amp; office 在浏览器中  <br/>  Exchange Online、Exchange Online Protection 和 Skype for Business Online  <br/> |
 
 > [!NOTE]
 > 若要为每个服务实现较低的前缀计数，服务之间的重叠量最少将持续存在。 这是预期的行为。
@@ -71,17 +71,17 @@ Fabrikam Inc. （一个大型多国企业，具有分布式异类网络）是许
 
 |**使用的 BGP 社区标记**|**通过 Azure ExpressRoute 路由的功能**|**需要 Internet 路由**|
 |:-----|:-----|:-----|
-|Skype for Business  <br/> （12076:5030）  <br/> |Skype SIP 信号、下载、语音、视频和桌面共享  <br/> | DNS、CRL 和&amp; CDN 请求  <br/>  所有其他 Office 365 服务不是通过 Azure ExpressRoute 专门支持的  <br/>  所有其他 Microsoft 云服务  <br/>  Office 365 门户、Office 365 身份验证&amp; 、office 在浏览器中  <br/>  Skype for Business 遥测、Skype 客户端快速提示、公用 IM 连接  <br/>  Exchange Online、Exchange Online Protection 和 SharePoint Online  <br/> |
+|Skype for Business  <br/> （12076:5030）  <br/> |Skype SIP 信号、下载、语音、视频和桌面共享  <br/> | DNS、CRL 和 &amp; CDN 请求  <br/>  所有其他 Office 365 服务不是通过 Azure ExpressRoute 专门支持的  <br/>  所有其他 Microsoft 云服务  <br/>  Office 365 门户、Office 365 身份验证、 &amp; office 在浏览器中  <br/>  Skype for Business 遥测、Skype 客户端快速提示、公用 IM 连接  <br/>  Exchange Online、Exchange Online Protection 和 SharePoint Online  <br/> |
 
 ### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>方案3：仅为 Office 365 服务限定 Azure ExpressRoute
 
 Woodgrove Bank 是几个 Microsoft 云服务（包括 Office 365）的客户。 在评估其网络容量和消费版时，Woodgrove Bank 决定将 Azure ExpressRoute 部署为受支持的 Office 365 服务的首选路径。 路由表可支持整套 Office 365 IP 前缀，以及它们预配的 Azure ExpressRoute 电路支持所有预计的带宽和延迟需求。
   
-为了确保与 Microsoft 云服务（而非 Office 365）相关联的网络流量，Woodgrove Bank 将使用 ExpressRoute for Office 365 到所有使用 Office 365 的 IP 前缀（针对特定 BGP 社区值、12076:5010、12076:5020、12076:5030）。12076:5100。
+为了确保与 Microsoft 云服务（而非 Office 365）相关联的网络流量，Woodgrove Bank 将使用 ExpressRoute for Office 365 添加到所有使用 Office 365 的 IP 前缀（针对特定 BGP 社区值、12076:5010、12076:5020、12076:5030、12076:5100）。
 
 |**使用的 BGP 社区标记**|**通过 Azure ExpressRoute 路由的功能**|**需要 Internet 路由**|
 |:-----|:-----|:-----|
-|Exchange、Skype for Business & Microsoft 团队、SharePoint 和&amp;其他服务  <br/> （12076:5010、12076:5020、12076:5030、12076:5100）  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp; OneDrive for business  <br/> Skype SIP 信号、下载、语音、视频和桌面共享  <br/> Office 365 门户、Office 365 身份验证&amp; 、office 在浏览器中  <br/> | DNS、CRL 和&amp; CDN 请求  <br/>  所有其他 Office 365 服务不是通过 Azure ExpressRoute 专门支持的  <br/>  所有其他 Microsoft 云服务  <br/> |
+|Exchange、Skype for Business & Microsoft 团队、SharePoint 和 &amp; 其他服务  <br/> （12076:5010、12076:5020、12076:5030、12076:5100）  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint Online &amp; OneDrive For business  <br/> Skype SIP 信号、下载、语音、视频和桌面共享  <br/> Office 365 门户、Office 365 身份验证、 &amp; office 在浏览器中  <br/> | DNS、CRL 和 &amp; CDN 请求  <br/>  所有其他 Office 365 服务不是通过 Azure ExpressRoute 专门支持的  <br/>  所有其他 Microsoft 云服务  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>使用 BGP 社区的主要规划注意事项
 
@@ -93,7 +93,7 @@ Woodgrove Bank 是几个 Microsoft 云服务（包括 Office 365）的客户。 
 
 - Azure ExpressRoute 不支持基于客户分配的 BGP 社区在 Microsoft 网络上执行的任何操作。
 
-- Office 365 使用的 IP 前缀仅标记有服务特定的 BGP 社区值，不支持位置特定的 BGP 社区。 Office 365 服务在本质上是全局性的，不支持基于租户的位置或 Office 365 云中的数据筛选前缀。 建议的方法是将网络配置为将用户的网络位置中的最短或最首选网络路径与 Microsoft 全局网络进行协调，而不考虑 Office 365 服务的 IP 地址的物理位置。他们正在请求。
+- Office 365 使用的 IP 前缀仅标记有服务特定的 BGP 社区值，不支持位置特定的 BGP 社区。 Office 365 服务在本质上是全局性的，不支持基于租户的位置或 Office 365 云中的数据筛选前缀。 建议的方法是将网络配置为将用户的网络位置中的最短或最首选网络路径与 Microsoft 全局网络进行协调，而不考虑他们正在请求的 Office 365 服务的 IP 地址的物理位置。
 
 - 每个 BGP 团体值中包含的 IP 前缀代表一个子网，其中包含与值关联的 Office 365 应用程序的 IP 地址。 在某些情况下，多个 Office 365 应用程序具有子网中的 IP 地址，从而导致 IP 前缀存在于多个团体值中。 这是预期的行为，但很少是由于分配碎片而导致的行为，不会影响前缀计数或带宽管理目标。 鼓励客户使用适用于 Office 365 的 BGP 社区以最大限度地减少影响时 "允许所需的操作" 方法，而不是 "拒绝所需的"。
 
@@ -101,9 +101,9 @@ Woodgrove Bank 是几个 Microsoft 云服务（包括 Office 365）的客户。 
 
 - 使用 BGP 社区确定 Azure ExpressRoute 的作用域仅影响您的内部网络可以通过 Microsoft 对等关系进行的路由。 您可能需要将其他应用程序级别的配置（如使用 PAC 或 WPAD 配置）与作用域路由结合使用。
 
-- 除了使用 Microsoft 分配的 BGP 社区之外，客户还可以选择将自己的 BGP 社区分配给通过 Azure ExpressRoute 获知的 Office 365 IP 前缀，以影响内部路由。 一个常见的用例是为通过每个给定的 ExpressRoute 对等位置获知的所有路由分配一个基于位置的 BGP 社区，然后使用客户网络中下游的信息将最短或最优先的网络路径协调为Microsoft 的网络。 将客户分配的 BGP 社区用于 Office 365 方案的使用超出了 Microsoft control 或 visibility 的范围。
+- 除了使用 Microsoft 分配的 BGP 社区之外，客户还可以选择将自己的 BGP 社区分配给通过 Azure ExpressRoute 获知的 Office 365 IP 前缀，以影响内部路由。 一个常见的用例是为通过每个给定的 ExpressRoute 对等位置获知的所有路由分配一个位置，然后使用客户网络中下游的信息将最短或最优先的网络路径与 Microsoft 网络相一致。 将客户分配的 BGP 社区用于 Office 365 方案的使用超出了 Microsoft control 或 visibility 的范围。
 
-以下是可用于返回的简短链接： [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365)。
+以下是可用于返回的简短链接： [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365) 。
   
 ## <a name="related-topics"></a>相关主题
 

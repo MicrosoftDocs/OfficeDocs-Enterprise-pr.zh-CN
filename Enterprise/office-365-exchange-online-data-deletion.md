@@ -1,7 +1,7 @@
 ---
-title: Office 365 Exchange Online 数据删除
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 Exchange Online 数据删除
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何在 Exchange Online 中处理软数据和硬数据删除。
-ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843633"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998316"
 ---
-# <a name="exchange-online-data-deletion-in-office-365"></a>Office 365 中的 Exchange Online 数据删除
+# <a name="exchange-online-data-deletion-in-microsoft-365"></a>Microsoft 365 中的 Exchange Online 数据删除
+
 在 Exchange Online 中，有两种删除：软删除和硬删除。 这适用于邮箱和邮箱中的项目。
 
 ## <a name="soft-deleted-and-hard-deleted-mailboxes"></a>软删除和硬删除邮箱
