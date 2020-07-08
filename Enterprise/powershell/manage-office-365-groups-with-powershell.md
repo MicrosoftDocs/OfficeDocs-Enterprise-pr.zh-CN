@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 了解如何在 Microsoft PowerShell 中执行 Office 365 组的常见管理任务。
-ms.openlocfilehash: 71d48b133ce716995ec6059a60a0fed487fde208
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736020"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052475"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>使用 PowerShell 管理 Office 365 组
  
@@ -34,7 +34,7 @@ ms.locfileid: "44736020"
 
 当用户[在 Outlook 中创建或编辑组](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)时，您可以向他们显示您的组织使用指南的链接。 例如，如果需要将特定的前缀或后缀添加到组名称中。
   
-使用 Azure Active Directory PowerShell 将用户指向组织的 Office 365 组的使用指南。 请查看[Azure Active Directory cmdlet 以配置组设置](https://go.microsoft.com/fwlink/?LinkID=827484)，并按照在**目录级别创建设置**中的步骤定义使用情况准则超链接。 一旦运行 AAD cmdlet，当用户在 Outlook 中创建或编辑组时，用户将看到指向您的指导方针的链接。 
+使用 Azure Active Directory （Azure AD） PowerShell 将用户指向组织的 Office 365 组的使用指南。 请查看[Azure Active Directory cmdlet 以配置组设置](https://go.microsoft.com/fwlink/?LinkID=827484)，并按照在**目录级别创建设置**中的步骤定义使用情况准则超链接。 一旦运行 Azure AD cmdlet，在 Outlook 中创建或编辑组时，用户将会看到指向您的指导方针的链接。 
   
 ![创建具有使用指南链接的新组](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   

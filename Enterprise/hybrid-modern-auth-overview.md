@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 新式身份验证是标识管理的一种方法，可提供更安全的用户身份验证和授权。 它可用于本地的 Skype for Business server 本地和 Exchange server 的混合部署，以及拆分域 Skype for Business 混合。 本文链接到有关先决条件、设置/禁用新式身份验证和一些相关客户端的相关文档（如 Outlook 和 Skype 客户端）信息。
-ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 056262ade67b8ffd452f68cc0c5e3882326b2e44
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998020"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052415"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式身份验证概述和在本地 Skype for Business 和 Exchange 服务器上使用它的先决条件
 
@@ -157,8 +157,8 @@ Get-CSOAuthConfiguration
 
 - **一般先决条件**
   - 如果使用 ADFS，则应具有 Windows 2012 R2 ADFS 3.0 和更高版本的联合身份验证
-  - 您的身份配置是 AAD 连接支持的任何类型（例如，密码哈希同步、传递身份验证、Office 365 支持的本地 STS 等）。
-  - 您配置了 AAD 连接并在用户进行复制和同步时运行正常。
+  - 您的身份配置是 Azure AD Connect 支持的任何类型（例如，密码哈希同步、传递身份验证、Office 365 支持的本地 STS 等）。
+  - Azure AD Connect 已配置并在进行用户复制和同步时运行。
   - 您已验证是否使用 Exchange 经典混合拓扑模式在本地和 Office 365 环境中配置混合。 Exchange 混合的官方支持声明说，您必须具有当前 CU 或当前 CU-1。
     > [!NOTE]
     > [混合代理](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent)不支持混合新式身份验证。
@@ -168,7 +168,7 @@ Get-CSOAuthConfiguration
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>在开始之前，我还需要了解哪些信息？
 <a name="BKMK_Whatelse"> </a>
 
-- 内部部署服务器的所有方案都涉及在本地设置新式身份验证（事实上，对于 Skype for business，存在受支持的拓扑列表，以便负责身份验证和授权的服务器位于 Microsoft 云中（AAD 的安全令牌服务，称为 "evoSTS"）中，并更新 Azure AD，以了解本地安装的 Skype for Business 或 Exchange 所使用的 Url 或命名空间。 因此，内部部署服务器采用 Microsoft 云依赖关系。 采取此操作可能会被视为配置 "混合身份验证"。
+- 内部部署服务器的所有方案都涉及在本地设置新式身份验证（事实上，对于 Skype for business，存在受支持拓扑的列表），以便负责身份验证和授权的服务器位于 Microsoft 云中（Azure AD 的安全令牌服务，称为 "evoSTS"）中，并更新 Azure AD，以了解本地安装的 Skype for Business 或 Exchange 所使用的 Url 或命名空间。 因此，内部部署服务器采用 Microsoft 云依赖关系。 采取此操作可能会被视为配置 "混合身份验证"。
 - 本文链接到的其他用户将帮助您选择受支持的新式身份验证拓扑（仅适用于 Skype for business），以及概述了安装步骤的操作方法文章，或者为 Exchange 本地和 Skype for Business 本地部署了禁用新式身份验证的步骤。 如果您需要在您的服务器环境中使用新式验证的总部，请将此页面收藏在浏览器中。
 
 ## <a name="related-topics"></a>相关主题

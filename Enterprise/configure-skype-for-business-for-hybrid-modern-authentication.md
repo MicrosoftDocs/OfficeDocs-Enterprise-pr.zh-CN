@@ -15,37 +15,37 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法，适用于本地 Skype for business server 本地和 Exchange server 以及拆分域 Skype for Business 混合。
-ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法，适用于本地 Skype for business server 和 Exchange server 本地以及拆分域 Skype for Business 混合。
+ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997428"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052505"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Skype for Business 以使用混合新式验证
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法，适用于本地 Skype for business server 本地和 Exchange server 以及拆分域 Skype for Business 混合。
+新式身份验证是一种提供更安全的用户身份验证和授权的身份管理方法，适用于本地 Skype for business server 和 Exchange server 本地以及拆分域 Skype for Business 混合。
   
  **重要说明**您想了解有关新式验证（MA）的详细信息，以及您希望在贵公司或组织中使用它的原因吗？ 查看[此文档](hybrid-modern-auth-overview.md)以了解概述。 如果需要了解 MA 支持的 Skype for Business 拓扑，此处对此进行了介绍！
   
- **在开始之前**，我称之为：
+ **在开始之前**，我使用以下术语：
   
-- 新式验证 \> MA
+- 新式验证（MA）
 
-- 混合新式身份验证 \> HMA
+- 混合新式身份验证（HMA）
 
-- Exchange 本地 \> EXCH
+- Exchange 本地（EXCH）
 
-- Exchange Online \> EXO
+- Exchange Online （EXO）
 
-- Skype for Business 本地 \> SFB
+- Skype for Business 本地（SFB）
 
-- 和 Skype for Business Online \> SFBO
+- Skype for Business Online （SFBO）
 
-此外，如果本文中的图形有一个灰显或变暗的对象，表示以灰色显示的元素**不**包含在 MA 特定的配置中。
+此外，如果本文中的图形有一个灰显或变暗的对象，表示在 MA 特定的配置中**不**包含以灰色显示的元素。
   
 ## <a name="read-the-summary"></a>阅读摘要
 
@@ -69,7 +69,7 @@ ms.locfileid: "44997428"
   
 ![混合的6个 Skype for business HMA 拓扑在所有四个可能的位置都有 MA。](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
-正如您所看到的，有四个不同的位置可以打开 MA！ 为获得最佳用户体验，建议您在所有四个位置都打开 MA。 如果无法在所有这些位置启用 MA，请调整步骤，以便仅在环境所需的位置启用 MA。
+正如您所看到的，有四个不同的位置可以打开 MA！ 为获得最佳用户体验，我们建议你在所有四个位置都打开 MA。 如果无法在所有这些位置启用 MA，请调整步骤，以便仅在环境所需的位置启用 MA。
   
 有关支持的拓扑，请参阅[Skype for](https://technet.microsoft.com/library/mt803262.aspx) business 的可支持性主题（MA 为 MA）。
   
@@ -89,7 +89,7 @@ ms.locfileid: "44997428"
 
 - **SFB 2015 CU5 Web 服务 Url**
 
-您将需要部署的所有 SfB 2015 池的内部和外部 web 服务 URL。 若要获取这些内容，请从 Skype for Business 命令行管理程序运行以下命令：
+你将需要部署的所有 SfB 2015 池的内部和外部 web 服务 Url。 若要获取这些内容，请从 Skype for Business 命令行管理程序运行以下命令：
   
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -115,13 +115,13 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
   
 ## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>启用本地 Skype for business 的混合新式身份验证
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>在 Azure AD 中将本地 web 服务 Url 添加为 Spn
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>在 Azure Active Directory 中将本地 web 服务 Url 添加为 Spn
 
 现在，您需要运行命令以在 SFBO 中添加 Url （之前收集的）作为服务主体。
   
  **注释**服务主体名称（Spn）标识 web 服务并将它们与安全主体（如帐户名或组）相关联，以便该服务可以代表授权的用户执行操作。 对服务器进行身份验证的客户端使用 Spn 中包含的信息。
   
-1. 首先，使用[这些说明](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)连接到 AAD。
+1. 首先，使用[以下说明](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)连接到 Azure Active Directory （Azure AD）。
 
 2. 运行此命令（本地）以获取 SFB web 服务 Url 的列表。
 
@@ -135,7 +135,7 @@ Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | 
 
 3. 如果内部**或**外部 SFB url 缺少内部部署（例如， https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com) 我们需要将这些特定记录添加到此列表。
 
-    请务必将下面的*示例 url*替换为添加命令中的实际 url！
+    请务必将下面*的示例 url*替换为在 Add 命令中使用的实际 url！
   
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. 再次运行步骤2中的**new-msolserviceprincipal**命令，并查看输出，以验证新记录是否已添加。 将列表/屏幕截图从早到新的 Spn 列表进行比较（您还可能会为您的记录提供新列表的屏幕截图）。 如果成功，您将在列表中看到两个新的 Url。 根据我们的示例，Spn 列表现在将包含特定的 Url https://lyncwebint01.contoso.com 和 https://lyncwebext01.contoso.com/ 。
+4. 再次运行步骤2中的**new-msolserviceprincipal**命令，并查看输出，以验证新记录是否已添加。 将列表或屏幕截图从早到新的 Spn 列表进行比较。 您还可能会为记录提供新的列表屏幕截图。 如果成功，您将在列表中看到两个新的 Url。 根据我们的示例，Spn 列表现在将包含特定的 Url https://lyncwebint01.contoso.com 和 https://lyncwebext01.contoso.com/ 。
 
 ### <a name="create-the-evosts-auth-server-object"></a>创建 EvoSTS Auth Server 对象
 
@@ -164,7 +164,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 ## <a name="verify"></a>Verify
 
-启用 HMA 后，客户端的下一次登录将使用新的身份验证流。 请注意，仅打开 HMA 不会触发任何客户端的重新身份验证。 客户端将根据身份验证令牌和/或证书的有效期重新进行身份验证。
+启用 HMA 后，客户端的下一次登录将使用新的身份验证流。 请注意，仅打开 HMA 不会对任何客户端触发重新身份验证。 客户端根据身份验证令牌和/或证书具有的有效期进行身份验证。
   
 若要测试 HMA 在启用后是否正常工作，请注销测试 SFB Windows 客户端，并确保单击 "删除我的凭据"。 重新登录。 客户端现在应使用新式的身份验证流，并且您的登录现在将包含**Office 365**提示 "工作或学校" 帐户，在客户端与服务器联系并登录之前，请立即看到该帐户。
   
