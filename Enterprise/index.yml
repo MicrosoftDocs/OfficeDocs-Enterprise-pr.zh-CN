@@ -1,47 +1,47 @@
 ### YamlMime:Landing
-title: Office 365 企业版文档
-summary: 本页面提供面向在企业组织中部署、配置和管理 Office 365 服务的管理员和 IT 专业人员的指南。
+title: Microsoft 365 和 Office 365 企业版文档
+summary: 此页面提供了有关在企业组织中部署、配置和管理 Microsoft 365 和 Office 365 服务的管理员和 IT 专业人员的指南的链接。
 metadata:
-  title: Office 365 企业版文档
-  description: 本页面提供面向在企业组织中部署、配置和管理 Office 365 服务的管理员和 IT 专业人员的指南。
+  title: Microsoft 365 和 Office 365 企业版文档
+  description: 此页面提供了有关在企业组织中部署、配置和管理 Microsoft 365 和 Office 365 服务的管理员和 IT 专业人员的指南的链接。
   ms.service: o365-solutions
   ms.topic: landing-page
   author: wingtofree
   ms.author: v-qingao
   ms.date: 03/12/2020
-  ms.openlocfilehash: 8397c93d6632710a036b2de7ef604451c5c42e70
-  ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+  ms.openlocfilehash: c01461934a08d3baf314c35bbb0c0e3eed34f9f8
+  ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/03/2020
-  ms.locfileid: "44009287"
+  ms.lasthandoff: 07/07/2020
+  ms.locfileid: "45052445"
 landingContent:
-- title: 关于 Office 365 企业版
+- title: 关于 Microsoft 365 和 Office 365 企业版
   linkLists:
   - linkListType: deploy
     links:
+    - text: 采用 Microsoft 365 with FastTrack
+      url: https://www.microsoft.com/fasttrack/microsoft-365
     - text: 采用 Office 365 with FastTrack
       url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
-    - text: 将组织数据迁移到 Office 365 企业版
+    - text: 为你的组织部署 Microsoft 365
+      url: setup-overview-for-enterprises.md
+    - text: 将组织数据迁移到 Microsoft 365
       url: migrate-data-to-office-365.md
     - text: Microsoft 365 企业应用版部署指南
       url: https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps
-    - text: 为组织部署 Office 365 企业版
-      url: setup-overview-for-enterprises.md
-    - text: 混合部署
-      url: microsoft-cloud-it-architecture-resources.md
   - linkListType: learn
     links:
     - text: Microsoft 365 入门
       url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
-- title: 部署 Office 365 工作负载
+- title: 部署 Microsoft 365 和 Office 365 工作负载
   linkLists:
   - linkListType: overview
     links:
     - text: Exchange Online
       url: https://docs.microsoft.com/Exchange/exchange-online
-    - text: SharePoint Online
-      url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+    - text: SharePoint
+      url: https://docs.microsoft.com/sharepoint/introduction
     - text: Skype for Business Online
       url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
     - text: Microsoft Teams
@@ -49,20 +49,22 @@ landingContent:
     - text: Power BI
       url: https://docs.microsoft.com/power-bi
     - text: Yammer
-      url: https://support.office.com/yammer
+      url: https://microsoft.office.com/yammer
 - title: 更多资源
   linkLists:
   - linkListType: overview
     links:
+    - text: Microsoft 365 技术社区
+      url: https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365
     - text: Office 365 技术社区
       url: https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365
     - text: 获取支持
       url: https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
   - linkListType: learn
     links:
-    - text: 了解有关 Microsoft 365 的详细信息
+    - text: Microsoft 365 帮助中心
       url: https://docs.microsoft.com/microsoft-365
-    - text: 了解有关 Microsoft 365 合规性的详细信息
+    - text: Microsoft 365 合规中心
       url: https://docs.microsoft.com/microsoft-365/compliance/
-    - text: 了解有关 Microsoft 365 安全性的详细信息
+    - text: Microsoft 365 安全中心
       url: https://docs.microsoft.com/microsoft-365/security/
