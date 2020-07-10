@@ -69,7 +69,7 @@
 ### [Microsoft 365 网络连接原则](office-365-network-connectivity-principles.md)
 ### [Microsoft 365 网络计划和性能优化](network-planning-and-performance.md)
 ### [评估 Microsoft 365 网络连接](assessing-network-connectivity.md)
-### [Office 365 网络合作伙伴计划](office-365-networking-partner-program.md)
+### [Microsoft 365 网络合作伙伴计划](office-365-networking-partner-program.md)
 ### Office 365 IP 地址和 URL
 #### [Office 365 终结点](office-365-endpoints.md)
 #### [管理 Office 365 终结点](managing-office-365-endpoints.md)
@@ -97,13 +97,13 @@
 #### [美国政府 DoD 终结点](office-365-u-s-government-dod-endpoints.md)
 #### [美国政府 GCC 高终结点](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 加密链 - DOD 和 GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Microsoft 365 服务中的 IPv6 支持](ipv6-support.md)
-### [Microsoft 365 随附的 NAT 支持](nat-support-with-office-365.md)
+### [Office 365 服务中的 IPv6 支持](ipv6-support.md)
+### [Office 365 随附的 NAT 支持](nat-support-with-office-365.md)
 ### 使用适用于 Microsoft 365 的 ExpressRoute
-#### [适用于 Microsoft 365 的 ExpressRoute](azure-expressroute.md)
-#### [实现适用于 Microsoft 365 的 ExpressRoute](implementing-expressroute.md)
-#### [适用于 Microsoft 365 的 ExpressRoute 网络计划](network-planning-with-expressroute.md)
-#### [通过适用于 Microsoft 365 的 ExpressRoute 进行路由](routing-with-expressroute.md)
+#### [ExpressRoute for Office 365](azure-expressroute.md)
+#### [实现 ExpressRoute for Office 365](implementing-expressroute.md)
+#### [ExpressRoute for Office 365 网络计划](network-planning-with-expressroute.md)
+#### [使用 ExpressRoute for Office 365 路由](routing-with-expressroute.md)
 
 ## 2. 设置标识
 ### [保护全局管理员帐户](protect-your-global-administrator-accounts.md)
@@ -274,4 +274,4 @@
 # [Microsoft 365 合规中心](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 安全中心](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)
-# [Microsoft 365](https://docs.microsoft.com/microsoft-365)
+# [Microsoft 365 帮助中心](https://docs.microsoft.com/microsoft-365)
