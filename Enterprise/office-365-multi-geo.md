@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 利用 Microsoft 365 多地理位置将 Microsoft 365 触及范围扩展到多个地理区域。
-ms.openlocfilehash: d69d8adb83eb639589efec0863b2e15966339b58
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: af1036ce2e8512a13cbf1867bb75a18aff3ac0a2
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057728"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052575"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -30,7 +30,7 @@ ms.locfileid: "44057728"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
-在多地理位置环境中，Microsoft 365 租户由（最初在其中设置了 Microsoft 365 订阅）的中心位置以及一个或多个附属位置组成。 在多地理位置租户中，有关地理位置、 组和用户信息的信息在 Azure Active Directory (AAD) 中进行管理。 由于系统会集中管理你的租户信息并同步到每个地理位置中，因此共享操作以及涉及到公司中任何人的体验均包含全局意识。
+在多地理位置环境中，Microsoft 365 租户由（最初在其中设置了 Microsoft 365 订阅）的中心位置以及一个或多个附属位置组成。 在多地理位置租户中，有关地理位置、组和用户信息的信息是在 Azure Active Directory (Azure AD) 中进行管控。 由于系统会集中管理你的租户信息并同步到每个地理位置中，因此共享操作以及涉及到公司中任何人的体验均包含全局意识。
 
 ![SharePoint 管理中心中多地理位置地图的屏幕截图](media/multi-geo-world-map.png)
 

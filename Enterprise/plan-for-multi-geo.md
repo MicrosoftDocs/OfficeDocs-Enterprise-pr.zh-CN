@@ -15,18 +15,18 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 了解 Microsoft 365 多地理位置、多地理位置的工作原理，以及什么地理位置可用于数据存储。
-ms.openlocfilehash: 41a17cf4506b62ae588afa750d6f9e3a8c99191d
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 8f06c43b9a622e06959ab12fa0e055c8653ca61c
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057708"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052455"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 多地理位置计划
 
 本指南面向跨国公司 (MNC) 的管理员，他们根据公司的经营情况，做好将 Microsoft 365 租户扩大到其他地理位置的准备，以满足数据驻留需求。
 
-在多地理位置配置中，Microsoft 365 租户由一个中心位置以及一个或多个附属位置组成。 这是一个跨多个地理位置的租户。 租户信息（包括地理位置）是在 Azure Active Directory (AAD) 中进行管控。
+在多地理位置配置中，Microsoft 365 租户由一个中心位置以及一个或多个附属位置组成。 这是一个跨多个地理位置的租户。 租户信息（包括地理位置）是在 Azure Active Directory (Azure AD) 中进行管控。
 
 下面是一些关键的多地理位置术语，有助于了解此配置的基本概念：
 
@@ -57,7 +57,7 @@ ms.locfileid: "44057708"
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
-配置多地理位置时，请考虑借此机会在迁移到 Microsoft 365 时合并本地基础结构。例如，如果你在新加坡和马来西亚有本地服务器场，则可以将它们合并到 APC 附属位置，前提是数据驻留要求允许你执行此操作。
+When you configure multi-geo, consider taking the opportunity to consolidate your on-premises infrastructure while migrating to Microsoft 365. For example, if you have on-premises farms in Singapore and Malaysia, then you can consolidate them to the APC satellite location, provided data residency requirements allow you to do so.
 
 ## <a name="best-practices"></a>最佳做法
 
@@ -65,13 +65,13 @@ ms.locfileid: "44057708"
 
 使用测试用户完成测试后，选择一个试点组（可能来自 IT 部门），作为首个在新地理位置使用 OneDrive 和 Exchange 的组。 对于此第一个组，选择尚未拥有 OneDrive 的用户。 建议此初始组的用户数不超过五人，然后遵循批量推出方法逐渐扩大。
 
-每个用户都应设置“*首选数据位置*”(PDL)，以便 Microsoft 365 可以确定在哪个地理位置预配 OneDrive。用户的首选数据位置必须与所选附属位置或中心位置相匹配。虽然 PDL 字段不是强制性的，但我们建议为所有用户设置一个 PDL。没有 PDL 的用户的工作负载将在中央位置进行预配。
+Each user should have a *preferred data location* (PDL) set so that Microsoft 365 can determine in which geo location to provision their OneDrive. The user's preferred data location must match one of your chosen satellite locations or your central location. While the PDL field is not mandatory, we recommend that a PDL be set for all users. Workloads of a user without a PDL will be provisioned in the central location.
 
-创建一个用户列表，并包含他们的用户主体名称 (UPN) 和相应首选数据位置的位置代码。首先包含你的测试用户和初始试点组。在配置过程中你将需要使用这个列表。
+Create a list of your users, and include their user principal name (UPN) and the location code for the appropriate preferred data location. Include your test user and your initial pilot group to start with. You'll need this list for the configuration procedures.
 
 如果用户是从本地 Active Directory 系统同步到 Azure Active Directory，你必须将首选数据位置设置为 Active Directory 属性，并使用 Azure Active Directory Connect 同步它。 无法使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。 [Azure Active Directory Connect 同步：配置 Microsoft 365 资源的首选数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)中介绍了在 Active Directory 中设置并同步 PDL 的步骤。
 
-多地理位置租户的管理可能与非多地理位置租户不同，因为许多 SharePoint 和 OneDrive 设置和服务都具有多地理位置意识。我们建议你在继续配置之前先查看[管理多地理位置环境](administering-a-multi-geo-environment.md)。
+The administration of a multi-geo tenant can differ from a non-multi-geo tenant, as many of the SharePoint and OneDrive settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 
 请阅读[多地理位置环境中的用户体验](multi-geo-user-experience.md)，详细了解最终用户在多地理位置环境中的体验。
 
