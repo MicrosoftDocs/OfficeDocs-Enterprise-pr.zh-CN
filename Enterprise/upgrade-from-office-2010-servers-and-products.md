@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2010 服务器和客户端应用程序的支持即将结束，自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 5ee19f418512a5ab188a3618d61b067eb8cb790f
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906235"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102570"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可帮助您从 Office 2010 服务器和客户端进行升级的资源
 
@@ -42,21 +42,21 @@ SharePoint 2010 和 Project Server 2010 将在**年4月 13 2021 日**到达其�
 
 - Microsoft 365 针对 Office 2010 服务器产品（例如，Exchange Server 和 SharePoint Server）和服务（如团队和 OneDrive for Business）提供基于云的服务。 
 
-- Microsoft 365 E3 和 E5 中附带的 microsoft 365 企业版应用（以前称为 Office 365 专业增强版）是在本地设备上安装的一组 Office 客户端应用程序。 通过与 Microsoft 云不断更新的新的工作效率和安全功能进行更新。
+- 适用于企业的 microsoft 365 应用程序 (以前称为 Office 365 专业增强版) （包含在 Microsoft 365 E3 和 E5 中）是在本地设备上安装的 Office 客户端应用程序的集合。 通过与 Microsoft 云不断更新的新的工作效率和安全功能进行更新。
 
-有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)。
+有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
 本页面海报是一种快速了解您可以采取的各种途径，以防止 Office 2010 客户端和服务器产品和 Windows 7 达到支持的最终状态，并突出显示了 Microsoft 365 企业版中的首选路径和选项支持。
 
-您还可以[下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)此海报并以字母、法律或 tabloid （11 x 17）格式打印。
+您还可以[下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)此海报并在信件、法律或 tabloid 中打印它， (11 x 17) 格式。
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 客户端和服务器升级规划
   
 |**此产品的**|**具有此支持日期的结尾**|**查看此资源**|
 |:-----|:-----|:-----|
-|Office 2010 （包括 Word 2010、Excel 2010、PowerPoint 2010 和 Outlook 2010）  <br/> | 2020年10月13日 |[Office 2010 结束支持路线图](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
+|Office 2010 (包括 Word 2010、Excel 2010、PowerPoint 2010 和 Outlook 2010)   <br/> | 2020年10月13日 |[Office 2010 结束支持路线图](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> | 2020年10月13日  |[Exchange 2010 结束支持路线图](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 或 SharePoint Server 2010  <br/> | 2021年4月13日 |[从 SharePoint 2010 升级](upgrade-from-sharepoint-2010.md) <br/> |
 |Project Server 2010 <br/> | 2021年4月13日 | [Project Server 2010 结束支持路线图](project-server-2010-end-of-support.md) <br/> |

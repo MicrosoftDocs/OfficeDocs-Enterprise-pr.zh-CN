@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: 指向培训课程、博客、文章和其他资源的链接，这些课程将介绍如何提高 Office 365 的性能。
-ms.openlocfilehash: c3214eb9b40bb5f3670e5ecdf39ae8d0f89d5a38
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 35e60138f20a35237f2f4902694454446419d9a9
+ms.sourcegitcommit: aca2f24aa569183490867b276123c4b43d56c6ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843933"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101459"
 ---
 # <a name="tune-office-365-performance"></a>优化 Office 365 性能
 
@@ -32,7 +32,7 @@ ms.locfileid: "41843933"
    
 ## <a name="articles-about-fine-tuning-office-365-performance"></a>有关精细调整 Office 365 性能的文章
 
-请参阅 Paul Collinge 对[Office 365 网络连接进行优化和故障排除前10个提示](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx)。 
+请参阅 Paul Collinge 对[Office 365 网络连接进行优化和故障排除前10个提示](https://blogs.technet.microsoft.com/onthewire/2014/06/18/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity/)。 
   
 有关在 Office 365 中使用网络地址转换的信息，请参阅[使用 office 365 的 NAT 支持](nat-support-with-office-365.md)。
   

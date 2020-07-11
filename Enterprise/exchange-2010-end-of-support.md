@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 即将停止支持。 将此规划路线图用作准备升级到 Exchange Online 或部署到本地 Exchange Server 的更新版本的指南。
-ms.openlocfilehash: 2d7ab96d065ffd2d85427f320ce01e3b9023891f
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: 61f10ef84274f1b4022937bb0edc19695822aef9
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052465"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102530"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 结束支持路线图
 
@@ -50,7 +50,7 @@ ms.locfileid: "45052465"
 > [!IMPORTANT]
 > 如果你的组织选择将邮箱迁移到 Microsoft 365，但打算就地保留 DirSync 或 Azure AD Connect，以继续从本地 Active Directory 中管理用户帐户，则需要在本地至少保留一台 Exchange server。 如果删除了最后一台 Exchange 服务器，将无法更改 Exchange Online 中的 Exchange 收件人。 这是因为颁发机构的来源仍保留在本地 Active Directory 中，需要进行更改。 在这种情况下，您有以下几种选择：
 
-- （**推荐**）如果可以将邮箱迁移到 Microsoft 365，并在10月13日之前将服务器升级到2020，请使用 Exchange 2010 连接到 Microsoft 365 并迁移邮箱。 接下来，将 Exchange 2010 迁移到 Exchange 2016 并取消所有剩余的 Exchange 2010 服务器。
+-  (**建议**的) 如果您可以将邮箱迁移到 Microsoft 365 并在10月 13 2020 日升级服务器，请使用 Exchange 2010 连接到 Microsoft 365 并迁移邮箱。 接下来，将 Exchange 2010 迁移到 Exchange 2016 并取消所有剩余的 Exchange 2010 服务器。
 - 如果在10月 13 2020 日之前无法完成邮箱迁移和内部部署服务器升级，请先将本地 Exchange 2010 服务器升级到 Exchange 2016，然后使用 Exchange 2016 连接到 Microsoft 365 并迁移邮箱。
 
 > [!NOTE]
@@ -125,7 +125,7 @@ Microsoft 365 还会先获取新功能并体验，你的用户通常可以立即
 - 你将需要在内部部署 Active Directory 服务器和 Microsoft 365 之间执行一次性目录同步。
 - 用户将能够使用其邮箱迁移时使用的相同用户名和密码登录到 Microsoft 365 邮箱;
 - 你将需要一个 Microsoft 365 许可证，其中包含你迁移的每个用户邮箱的 Exchange Online;
-- 用户无需在其大多数设备上设置新的 Outlook 配置文件（一些较早的 Android 手机可能需要新的配置文件），无需重新下载其电子邮件。
+- 用户无需在大多数设备上设置新的 Outlook 配置文件 (某些旧的 Android 手机可能需要新的配置文件) ，并且不需要重新下载其电子邮件。
 
 若要了解有关最简单的混合迁移的详细信息，请参阅[使用最少混合以将 Exchange 邮箱快速迁移到 Office 365](https://support.office.com/article/Use-Minimal-Hybrid-to-quickly-migrate-Exchange-mailboxes-to-Office-365-fdecceed-0702-4af3-85be-f2a0013937ef)
 
@@ -146,10 +146,10 @@ Microsoft 365 还会先获取新功能并体验，你的用户通常可以立即
 如果你想要执行完全混合迁移，请考虑以下几点：
 
 - 完全混合迁移不适合于所有类型的组织。 由于完全混合迁移的复杂性，少于几百个邮箱的组织通常不会看到好处，从而证明了设置一个好的工作量和成本所需的好处。 如果这听起来像是你的组织，强烈建议你改为考虑转换或最少的混合迁移。
-- 你需要使用 Azure Active Directory （Azure AD）连接在本地 Active Directory 服务器和 Microsoft 365 之间设置目录同步;
-- 用户将能够使用登录到本地网络时使用的用户名和密码登录到 Microsoft 365 邮箱（需要使用密码同步和/或 Active Directory 联合身份验证服务的 Azure AD 连接）;
+- 你需要使用 Azure Active Directory (Azure AD) 在本地 Active Directory 服务器和 Microsoft 365 之间建立目录同步。
+- 用户将能够使用登录本地网络时使用的用户名和密码登录到其 Microsoft 365 邮箱， (需要使用密码同步和/或 Active Directory 联合身份验证服务的 Azure AD 连接) ;
 - 你将需要一个 Microsoft 365 许可证，其中包含你迁移的每个用户邮箱的 Exchange Online;
-- 用户无需在其大多数设备上设置新的 Outlook 配置文件（一些较早的 Android 手机可能需要新的配置文件），无需重新下载其电子邮件。
+- 用户无需在大多数设备上设置新的 Outlook 配置文件 (某些旧的 Android 手机可能需要新的配置文件) ，并且不需要重新下载其电子邮件。
 
 > [!IMPORTANT]
 > 如果你的组织选择将邮箱迁移到 Microsoft 365，但打算就地保留 DirSync 或 Azure AD Connect，以继续从本地 Active Directory 中管理用户帐户，则需要在本地至少保留一台 Exchange server。 如果删除了最后一台 Exchange 服务器，将无法更改 Exchange Online 中的 Exchange 收件人。 这是因为颁发机构的来源仍保留在本地 Active Directory 中，需要进行更改。
@@ -168,12 +168,12 @@ Microsoft 365 还会先获取新功能并体验，你的用户通常可以立即
 
 为了获得最佳体验，我们建议您将其余的本地环境升级到 Exchange 2016。 如果要直接从 Exchange Server 2010 转到 Exchange Server 2016，则无需安装 Exchange Server 2013。
 
-Exchange 2016 包括早期版本的 Exchange 中附带的所有功能和改进，并且与 Microsoft 365 提供的体验最为匹配（尽管某些功能仅在 Microsoft 365 中可用）。 请查看你缺少的几个内容：
+Exchange 2016 包括早期版本的 Exchange 中附带的所有功能和改进，并且与 Microsoft 365 (的体验最为匹配，尽管某些功能仅在 Microsoft 365) 中可用。 请查看你缺少的几个内容：
 
 | **Exchange 发布**                     | **功能**                                                                                                                                                                                                                                         |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Exchange 2013                            | 简化的体系结构将服务器角色数减少到三个（邮箱、客户端访问、边缘传输）                                                                                                                                        |
-|                                          | 数据丢失防护策略（DLP），可帮助防止敏感信息泄露                                                                                                                                                                |
+| Exchange 2013                            | 简化的体系结构将服务器角色的数量减少到三个 (邮箱、客户端访问和边缘传输)                                                                                                                                         |
+|                                          | 数据丢失防护策略 (DLP) ，可帮助防止敏感信息泄露                                                                                                                                                                |
 |                                          | 显著改进的 Outlook Web App 体验                                                                                                                                                                                                    |
 | Exchange 2016                            | *Exchange 2013 中的功能和 .。。*                                                                                                                                                                                                                   |
 |                                          | 将服务器角色进一步简化为仅限邮箱和边缘传输                                                                                                                                                                                   |
@@ -203,7 +203,7 @@ Exchange 2016 包括早期版本的 Exchange 中附带的所有功能和改进�
 |                                          | **Exchange 2013**Windows Server 2003                                                                                                                                                                                                                |
 |                                          | 可以在[Exchange 可支持性矩阵](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)中找到有关林功能级别支持的详细信息。                                                                 |
 | Office 客户端版本                   | 每个版本的受支持的 Office 客户端版本最低为：                                                                                                                                                                                   |
-|                                          | **Exchange 2016**Office 2010 （包含最新的更新）                                                                                                                                                                                              |
+|                                          | **Exchange 2016**Office 2010 (，并提供最新的更新)                                                                                                                                                                                               |
 |                                          | **Exchange 2013**Office 2007 SP3                                                                                                                                                                                                                    |
 |                                          | 您可以在 Exchange 可支持性[矩阵](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)中找到有关 Office 客户端支持的详细信息。                                                                           |
 
@@ -216,13 +216,13 @@ Exchange 2016 包括早期版本的 Exchange 中附带的所有功能和改进�
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 客户端和服务器以及 Windows 7 的选项的摘要
 
-有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)。
+有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
 本页面海报是一种快速了解您可以采取的各种途径，以防止 Office 2010 客户端和服务器产品和 Windows 7 达到支持的最终状态，并突出显示了 Microsoft 365 企业版中的首选路径和选项支持。
 
-您还可以[下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)此海报并以字母、法律或 tabloid （11 x 17）格式打印。
+您还可以[下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)此海报并在信件、法律或 tabloid 中打印它， (11 x 17) 格式。
       
 ## <a name="what-if-i-need-help"></a>如果我需要帮助，该怎么办？
 

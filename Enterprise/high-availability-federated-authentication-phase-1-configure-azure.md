@@ -14,22 +14,22 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构以托管 Microsoft 365 的高可用性联合身份验证。
-ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5b0eed42076a79af52566868c8e6134c48fd847f
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711945"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102540"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
-在此阶段中，将在 Azure 中创建资源组、虚拟网络（VNet）和可用性集，这些集将承载第2阶段、3步和第4阶段的虚拟机。 必须先完成此阶段，然后才能进入[第2阶段：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
+在此阶段中，将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这些集将承载第2阶段、3步和第4阶段的虚拟机。 必须先完成此阶段，然后才能进入[第2阶段：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
   
 必须使用以下基本组件预配 Azure：
   
 - 资源组
     
-- 包含用于托管 Azure 虚拟机的子网的跨界 Azure 虚拟网络（VNet）
+- 包含用于托管 Azure 虚拟机的子网的跨界 Azure 虚拟网络 (VNet) 
     
 - 执行子网隔离的网络安全组
     
@@ -41,17 +41,17 @@ ms.locfileid: "44711945"
   
 |**项**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 的名称（示例 FedAuthNet）。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 名称  <br/> |要分配给 VNet (示例 FedAuthNet) 的名称。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet 地址空间  <br/> |The address space for the virtual network. Work with your IT department to determine this address space.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共享的密钥  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 V：跨部署虚拟网络配置**
   
-接下来，填写针对此解决方案的子网的表 S。所有地址空间应为无类别域际路由选择 (CIDR) 格式，也称为网络前缀格式。例如，10.24.64.0/20。
+Next, fill in Table S for the subnets of this solution. All address spaces should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.
   
-对于前三个子网，请根据虚拟网络地址空间指定一个名称和一个 IP 地址空间。 对于网关子网，请使用以下命令确定 Azure 网关子网的27位地址空间（带 a/27 前缀长度）：
+对于前三个子网，请根据虚拟网络地址空间指定一个名称和一个 IP 地址空间。 对于网关子网，请使用以下内容确定具有/27 前缀长度) 的27位地址空间 (。具有以下各项的 Azure 网关子网。
   
 1. 将 VNet 地址空间的可变位设置为 1，直到用于网关子网的位，然后将剩余位设置为 0。
     
@@ -63,7 +63,7 @@ ms.locfileid: "44711945"
   
 |**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务（AD DS）域控制器和目录同步服务器虚拟机（Vm）使用的子网。  <br/> |
+|1.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务 (AD DS) 域控制器和目录同步服务器虚拟机 (Vm) 使用的子网。  <br/> |
 |2.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |AD FS Vm 使用的子网。  <br/> |
 |3.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理虚拟机使用的子网。  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |Azure 网关虚拟机使用的子网。  <br/> |
@@ -85,7 +85,7 @@ ms.locfileid: "44711945"
    
  **表 I：虚拟网络中的静态 IP 地址**
   
-对于您希望在最初设置虚拟网络中的域控制器时使用的本地网络中的两个域名系统（DNS）服务器，请填写表 D。与 IT 部门合作以确定此列表。
+对于您希望在最初设置虚拟网络中的域控制器时使用的本地网络中的两个服务器 (DNS) 服务器的两个域名系统，请填写表 D。与 IT 部门合作以确定此列表。
   
 |**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
@@ -94,9 +94,9 @@ ms.locfileid: "44711945"
    
  **表 D：本地 DNS 服务器**
   
-若要在整个站点到站点 VPN 连接中将数据包从跨界网络路由到组织网络，您必须为组织的本地网络上的所有可访问位置的本地网络配置具有地址空间列表（在 CIDR 表示法中）的虚拟网络。 定义本地网络的地址空间列表必须是唯一的，并且不得与用于其他虚拟网络或其他本地网络的地址空间重叠。
+若要在整个站点到站点 VPN 连接中将数据包从跨界网络路由到组织网络，您必须使用本地网络配置虚拟网络，该本地网络的地址空间列表 (在您组织的内部部署网络中的所有可访问位置的 CIDR 表示法) 中。 定义本地网络的地址空间列表必须是唯一的，并且不得与用于其他虚拟网络或其他本地网络的地址空间重叠。
   
-对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
+For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list of address spaces.
   
 |**项**|**本地网络地址空间**|
 |:-----|:-----|
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)。 
+> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 使用以下命令获得订阅名称。
   
@@ -261,7 +261,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-接下来，请将本地 VPN 设备配置为连接到 Azure VPN 网关。有关详细信息，请参阅[配置 VPN 设备](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
+Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 若要配置本地 VPN 设备，需要以下各项：
   
@@ -269,7 +269,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
     
 - 站点到站点 VPN 连接的 IPsec 预共享密钥（表 V - 第 5 项 - 值列）。
     
-接下来，请确保虚拟网络的地址空间是可以从本地网络访问。这通常是通过以下操作完成：将对应于虚拟网络地址空间的路由添加到 VPN 设备中，然后将该路由公布到组织网络中其余的路由基础结构。与 IT 部门协作，以确定如何完成上述操作。
+Next, ensure that the address space of the virtual network is reachable from your on-premises network. This is usually done by adding a route corresponding to the virtual network address space to your VPN device and then advertising that route to the rest of the routing infrastructure of your organization network. Work with your IT department to determine how to do this.
   
 接下来，定义三个可用性集的名称。 填写表 A。 
   
@@ -310,7 +310,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 ## <a name="see-also"></a>另请参阅
 
-[在 Azure 中部署适用于 Microsoft 365 的高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
 [Microsoft 365 开发/测试环境的联合身份](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   

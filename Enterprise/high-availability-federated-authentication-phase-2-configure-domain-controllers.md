@@ -14,19 +14,19 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 摘要：为 microsoft Azure 中的 Microsoft 365 的高可用性联合身份验证配置域控制器和目录同步服务器。
-ms.openlocfilehash: c10fb2d32ea572280b43d32da56b9e4d6affa22a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 14939691e8dc114a6234bfee1ade7212762eae04
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998050"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102520"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
 在此阶段，在 Azure 基础结构服务中为 Microsoft 365 联合身份验证部署高可用性时，需要在 Azure 虚拟网络中配置两个域控制器和目录同步服务器。 然后用于身份验证的客户端 Web 请求可以在 Azure 虚拟网络中进行身份验证，而不是将通过站点到站点 VPN 连接的该身份验证流量发送到本地网络。
   
 > [!NOTE]
-> Active Directory 联合身份验证服务（AD FS）无法使用 Azure Active Directory （Azure AD）替代 Active Directory 域服务（AD DS）域控制器。 
+> Active Directory 联合身份验证服务 (AD FS) 无法使用 Azure Active Directory (Azure AD) 以替代 Active Directory 域服务 (AD DS) 域控制器。 
   
 在转到[第3阶段：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)之前，您必须完成此阶段。 有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。
   
@@ -38,11 +38,11 @@ ms.locfileid: "44998050"
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![线条](./media/Common-Images/TableLine.png) （第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![线条](./media/Common-Images/TableLine.png) （第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![线条](./media/Common-Images/TableLine.png) （目录同步服务器，示例 DS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![线条](./media/Common-Images/TableLine.png) （第一个 AD FS 服务器，示例 ADFS1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![线条](./media/Common-Images/TableLine.png) （第二个 AD FS 服务器，示例 ADFS2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![线条](./media/Common-Images/TableLine.png) （第一个 web 应用程序代理服务器，示例 WEB1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![线条](./media/Common-Images/TableLine.png) （第二个 web 应用程序代理服务器，示例 WEB2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![线条](./media/Common-Images/TableLine.png)  (目录同步服务器，示例 DS1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![线条](./media/Common-Images/TableLine.png)  (第一个 AD FS 服务器，示例 ADFS1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![线条](./media/Common-Images/TableLine.png)  (第二个 AD FS 服务器，示例 ADFS2)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![线条](./media/Common-Images/TableLine.png)  (第一个 web 应用程序代理服务器，示例 WEB1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![线条](./media/Common-Images/TableLine.png)  (第二个 web 应用程序代理服务器，示例 WEB2)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **表 M-Azure 中适用于 Microsoft 365 的高可用性联合身份验证的虚拟机**
   
@@ -70,7 +70,7 @@ ms.locfileid: "44998050"
 提供所有正确值后，在 Azure PowerShell 提示符处或本地计算机的 PowerShell 集成脚本环境 (ISE) 上运行生成块。
   
 > [!TIP]
-> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx)。 
+> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 ```powershell
 # Set up variables common to both virtual machines

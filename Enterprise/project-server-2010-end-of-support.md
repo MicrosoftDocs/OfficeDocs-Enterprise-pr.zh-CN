@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支持结束时间在2021年4月13日结束。 将本文作为升级到 Project Online 或本地 Project Server 的更新版本的指南。
-ms.openlocfilehash: e9bbe47c93b9e73e37abd352f02872149d28ce90
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: cd209b51c94abe1a32b5d48bde79a3d1a443a092
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775061"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102590"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 结束支持路线图
 
@@ -59,7 +59,7 @@ Project Server 2010 将于**2021 年4月13日**到达支持结束。 此日期�
   
 - 迁移到 Project Online
     
-- 迁移到 Project Server 的较新的本地版本（最好是 Project Server 2019）。
+- 迁移到 Project Server 的更新的本地版本 (最好的 Project Server 2019) 。
 
 若要避免停止对 Project Server 2010 的支持，可以采用以下两种途径。
 
@@ -70,7 +70,7 @@ Project Server 2010 将于**2021 年4月13日**到达支持结束。 此日期�
 
 |**为什么我更喜欢迁移到 Project Server 2019？**|**为什么我更愿意迁移到 Project Online？**|
 |:-----|:-----|
-|业务规则限制我在云中运行我的业务。  <br/>  我需要控制环境的更新。  <br/> | 我有移动或远程用户。  <br/>  迁移本地服务器所需的成本是一个很大的顾虑（硬件、软件、时间和实施工作，等等）。  <br/>  迁移后，维护我的环境所需的成本是一个非常重要的问题（例如，自动更新、保证的正常运行时间等）。  <br/>  |
+|业务规则限制我在云中运行我的业务。  <br/>  我需要控制环境的更新。  <br/> | 我有移动或远程用户。  <br/>  迁移本地服务器所需的成本是一个很大的问题 (硬件、软件、时间和精力来实现，等等 ) 。  <br/>  迁移后，维护我的环境所需的成本是一个很大的顾虑 (例如，自动更新、保证的正常运行时间等 ) 。  <br/>  |
 
    
 > [!NOTE]
@@ -83,9 +83,9 @@ Project Server 2010 将于**2021 年4月13日**到达支持结束。 此日期�
  
 #### <a name="moving-to-a-newer-version-of-project-client"></a>移动到项目客户端的较新版本
 
-如果要从 Project Standard 2010 迁移，可以迁移到项目标准的较新版本（Project Standard 2016 或 Project Standard 2019）。  建议移动到最新版本以利用最新的特性和功能。 此外，迁移到最新版本（Project Standard 2016）意味着在支持日期结束时，你将需要更早地从该版本迁移。
+如果从 Project Standard 2010 迁移，则可以将项目 standard (Project Standard 2016 or Project Standard 2019) 迁移到较新版本的 Project standard。  建议移动到最新版本以利用最新的特性和功能。 此外，迁移到最新版本 (Project Standard 2016) 意味着在支持的结束日期结束后，你将需要更快地从该版本迁移。
 
-同样，如果从 Project Professional 2010 迁移，您可以选择迁移到较新版本（Project Professional 2019 或 Project Professional 2016）。 如果可能，建议移动到最新版本。  如果您使用的是 Project Professional 连接到 Project Server，请确保您迁移到的 Project Professional 版本支持与您正在使用的 Project Server 版本进行连接。
+同样，如果从 Project Professional 2010 迁移，您可以选择迁移到较新版本 (Project Professional 2019 或 Project Professional 2016) 。 如果可能，建议移动到最新版本。  如果您使用的是 Project Professional 连接到 Project Server，请确保您迁移到的 Project Professional 版本支持与您正在使用的 Project Server 版本进行连接。
 
 Project Professional 2010 用户也可以选择迁移到 Project Online 桌面客户端。 它是一种基于订阅的 Project Professional 2019 版本，包括在项目计划3和项目计划5订阅中。 
 
@@ -106,7 +106,7 @@ Project Professional 2010 用户也可以选择迁移到 Project Online 桌面�
     
 - **规划自定义**-请注意，当迁移到 project server 2019 或 project Online 时，在 project server 2010 环境中使用的许多自定义设置可能不起作用。 在不同版本之间的 Project Server 体系结构以及所需的操作系统、数据库服务器和客户端 web 浏览器之间存在很大差异，支持使用较新版本。 制定了如何根据需要在新环境中测试或重建自定义项的计划。 规划升级也是一种很好的机会来验证是否在您向前移动时确实需要特定的自定义。 [在升级到 SharePoint 2013 过程中创建当前自定义项计划在升级过程中]( https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013)，有关评估和规划当前自定义项的一些极好的常规信息。 
     
-- **时间和耐心**升级规划、执行和测试将需要很长时间和精力，尤其是在升级到 Project Server 2019 时。 例如，如果要从 Project Server 2010 迁移到 Project Server 2019，首先需要从 Project Server 2010 迁移到 Project Server 2013，然后检查数据，然后在迁移到每个后续版本时执行相同的操作（先迁移到 project Server 2016，再迁移到 Project Server 2019）。 您可能需要与 Microsoft 解决方案提供商核实，以将您的估计成本与估计成本的估计值进行比较，估计成本是多少。 
+- **时间和耐心**升级规划、执行和测试将需要很长时间和精力，尤其是在升级到 Project Server 2019 时。 例如，如果要从 Project Server 2010 迁移到 Project Server 2019，则首先需要从 Project Server 2010 迁移到 Project Server 2013，然后检查数据，然后在将每个后续版本 (迁移到 Project Server 2016 并随后将其) 到 Project Server 2019 时执行相同的操作。 您可能需要与 Microsoft 解决方案提供商核实，以将您的估计成本与估计成本的估计值进行比较，估计成本是多少。 
     
 ## <a name="migrate-to-project-online"></a>迁移到 Project Online
 
@@ -116,7 +116,7 @@ Project Professional 2010 用户也可以选择迁移到 Project Online 桌面�
     
 2. 使用 Project Professional 2016、Project Professional 2019 或 Project Online 桌面客户端，打开每个 mpp 文件，然后将其保存并发布到 Project Online。
     
-您可以在 Project Online 中手动创建 PWA 配置（例如，重新创建任何所需的自定义字段或企业日历）。 Microsoft 解决方案提供商还可以帮助你做到这一点。
+您可以在 Project Online 中手动创建 PWA 配置 (例如，重新创建任何所需的自定义字段或企业日历) 。 Microsoft 解决方案提供商还可以帮助你做到这一点。
   
 主要资源：
   
@@ -129,7 +129,7 @@ Project Professional 2010 用户也可以选择迁移到 Project Online 桌面�
 
 虽然我们强烈相信您可以通过迁移到 Project Online 来实现最佳价值和用户体验，但我们还了解一些组织需要将项目数据保留在本地环境中。 如果选择将您的项目数据保留在本地，则可以将 Project Server 2010 环境迁移到 Project Server 2013、Project Server 2016 或 Project Server 2019。
   
-如果不能迁移到 Project Online，建议您迁移到 Project Server 2019。 Project Server 2019 包括早期版本的 Project Server 中包含的功能和改进功能，与 Project Online 可用的体验最为匹配（尽管某些功能仅在 Project Online 中可用）。
+如果不能迁移到 Project Online，建议您迁移到 Project Server 2019。 Project Server 2019 包括早期版本的 Project Server 中包含的功能和改进功能，与 project Online 中可用的体验最为匹配 (尽管某些功能仅在 Project Online 中可用) 。
   
 完成每个迁移后，应检查数据以确保其已成功迁移。
   
@@ -229,13 +229,13 @@ Project Server 2010 与 Project Server 2019 之间的体系结构差异可防止
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 客户端和服务器以及 Windows 7 的选项的摘要
 
-有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)。
+有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
 本页面海报是一种快速了解您可以采取的各种途径，以防止 Office 2010 客户端和服务器产品和 Windows 7 达到支持的最终状态，并突出显示了 Microsoft 365 企业版中的首选路径和选项支持。
 
-您还可以[下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)此海报并以字母、法律或 tabloid （11 x 17）格式打印。
+您还可以[下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)此海报并在信件、法律或 tabloid 中打印它， (11 x 17) 格式。
    
 ## <a name="related-topics"></a>相关主题
 
