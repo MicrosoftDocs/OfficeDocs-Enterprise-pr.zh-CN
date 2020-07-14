@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
-ms.openlocfilehash: fbf8046fb5f386dfceb3a59dbc384e578fe3a519
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 530e07aeb2f3420f0c752f2b254913a42c73f8ee
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998547"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117264"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
@@ -53,7 +53,7 @@ ms.locfileid: "44998547"
     
 2. 确定哪些 Office 365 服务和功能将可供客户端使用。 您可能拥有不同的服务或使用情况配置文件的用户组。
     
-3. 测量客户端的引导组的网络使用情况。 确保试点客户端代表组织中的人员的不同配置文件以及不同的地理位置。 您可以针对[Exchange](https://go.microsoft.com/fwlink/p/?LinkId=321550)和[Skype for business](https://go.microsoft.com/fwlink/p/?LinkId=321551)的旧计算器或我们在自己的网络上执行的[案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)，对结果进行交叉检查。 
+3. 测量客户端的引导组的网络使用情况。 确保试点客户端代表组织中的人员的不同配置文件以及不同的地理位置。 您可以针对[Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744)和[Skype for business](https://go.microsoft.com/fwlink/p/?LinkId=321551)的旧计算器或我们在自己的网络上执行的[案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)，对结果进行交叉检查。 
     
 4. 使用试点组中的度量来推断整个组织的需求，并在对网络进行任何更改之前，重新测试以验证评估。
     
@@ -77,7 +77,7 @@ ms.locfileid: "44998547"
     
 3. 通过仔细管理 Windows 更新的日程安排，提高邮件迁移性能。 您可以成批更新客户端计算机，并确保在迁移到 Office 365 之前更新所有客户端计算机，以控制网络带宽的使用。 有关详细信息，请参阅为[Office 365 手动更新和配置桌面，以获取最新更新](https://support.microsoft.com/gp/office-2013-365-update)。
     
-4. Office 365 网络流量在被视为受信任的 Internet 服务时执行得最佳，并允许绕过大部分传统筛选和扫描，以避免某些组织将网络流量置于不受信任的 Internet 服务中。 这通常包括删除出站处理（如代理用户身份验证和数据包检查），以及使用正确的网络地址转换（NAT）和足够的带宽容量来处理增加的网络请求，从而确保本地进入 Internet。 有关配置网络以将 Office 365 作为受信任的 Internet 服务在网络上进行处理的其他指导，请参阅[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。
+4. Office 365 网络流量在被视为受信任的 Internet 服务时执行得最佳，并允许绕过大部分传统筛选和扫描，以避免某些组织将网络流量置于不受信任的 Internet 服务中。 这通常包括删除出站处理（如代理用户身份验证和数据包检查），并确保使用正确的网络地址转换在 Internet 上进行本地传出 (NAT) 和足够的带宽容量来处理增加的网络请求。 有关配置网络以将 Office 365 作为受信任的 Internet 服务在网络上进行处理的其他指导，请参阅[管理 office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。
     
 1. 确保[管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)。 转到 Office 365 的其他流量会导致出站代理连接的增加以及通过 TLS/SSL 的安全通信的增长。
     
@@ -89,7 +89,7 @@ ms.locfileid: "44998547"
     
 5. 如果要检查来自网络上的计算机的出站连接，则绕过对 Office 365 域的此筛选可提高连接性和性能。 此外，绕过出站检查通常无需进行单个 Internet 出口，并为 Office 365 发来的网络请求启用本地 Internet 出口。
     
-6. 某些客户发现内部网络设置可能会影响性能。 指向 Internet 的最大传输单位（MTU）大小、网络自动协商或自动检测以及子最佳路由等设置是常见的外观。
+6. 某些客户发现内部网络设置可能会影响性能。 如最大传输单位 (MTU) 大小、网络自动协商或自动检测以及到 Internet 的子最佳路由等设置是常见的外观。
     
 ## <a name="network-planning-reference-for-office-365"></a>Office 365 的网络规划参考
 <a name="NetReference"> </a>
@@ -106,7 +106,7 @@ ms.locfileid: "44998547"
     
 - [Office 365 网络连接原则](https://aka.ms/o365networkingprinciples)
     
-- [Office 365 视频网络常见问题（FAQ）](office-365-video-networking-faq.md)
+- [Office 365 视频网络常见问题 (FAQ) ](office-365-video-networking-faq.md)
     
 - [有关连接到 Office 365 服务的网络设备的计划](plan-for-network-devices.md)
     

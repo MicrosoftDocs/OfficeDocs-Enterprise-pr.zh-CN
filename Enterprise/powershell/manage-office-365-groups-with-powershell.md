@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 管理 Office 365 组
+title: 使用 PowerShell 管理 Microsoft 365 组
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -17,35 +17,35 @@ search.appverid:
 - BSA160
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
-description: 了解如何在 Microsoft PowerShell 中执行 Office 365 组的常见管理任务。
-ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: 了解如何在 Microsoft PowerShell 中为 Microsoft 365 组执行常见的管理任务。
+ms.openlocfilehash: e0758ca928a30c06da33f0b213ada51f69bf65e1
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052475"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117254"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>使用 PowerShell 管理 Office 365 组
+# <a name="manage-microsoft-365-groups-with-powershell"></a>使用 PowerShell 管理 Microsoft 365 组
  
 本文提供在 Microsoft PowerShell 中对组执行常见管理任务的步骤。 此外，它还列出了组的 PowerShell cmdlet。 有关管理 SharePoint 网站的信息，请参阅[使用 PowerShell 管理 Sharepoint Online 网站](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)。
 
-## <a name="link-to-your-office-365-groups-usage-guidelines"></a>链接到 Office 365 组使用指南
+## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>链接到 Microsoft 365 组使用指南
 <a name="BK_LinkToGuideLines"> </a>
 
 当用户[在 Outlook 中创建或编辑组](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)时，您可以向他们显示您的组织使用指南的链接。 例如，如果需要将特定的前缀或后缀添加到组名称中。
   
-使用 Azure Active Directory （Azure AD） PowerShell 将用户指向组织的 Office 365 组的使用指南。 请查看[Azure Active Directory cmdlet 以配置组设置](https://go.microsoft.com/fwlink/?LinkID=827484)，并按照在**目录级别创建设置**中的步骤定义使用情况准则超链接。 一旦运行 Azure AD cmdlet，在 Outlook 中创建或编辑组时，用户将会看到指向您的指导方针的链接。 
+使用 Azure Active Directory (Azure AD) PowerShell 将用户指向你的 Microsoft 365 组的组织使用指南。 请查看[Azure Active Directory cmdlet 以配置组设置](https://go.microsoft.com/fwlink/?LinkID=827484)，并按照在**目录级别创建设置**中的步骤定义使用情况准则超链接。 一旦运行 AAD cmdlet，当用户在 Outlook 中创建或编辑组时，用户将看到指向您的指导方针的链接。 
   
 ![创建具有使用指南链接的新组](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   
 ![单击 "组使用指南" 查看组织的 Office 365 组指南](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
   
-## <a name="allow-users-to-send-as-the-office-365-group"></a>允许用户以 Office 365 组的形式发送
+## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>允许用户以 Microsoft 365 组的形式发送
 <a name="BK_LinkToGuideLines"> </a>
   
-如果要将 Office 365 组启用为 "代理发送"，请使用[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission)和[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) cmdlet 对此进行配置。 启用此设置后，Office 365 组用户可以使用 Outlook 或 web 上的 Outlook 以电子邮件的形式发送和回复电子邮件作为 Office 365 组。 用户可以转到组，创建新的电子邮件，并将 "代理发送" 字段更改为组的电子邮件地址。 
+如果要将 Microsoft 365 组启用为 "代理发送"，请使用[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission)和[add-recipientpermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) cmdlet 对此进行配置。 一旦启用此设置，Microsoft 365 组用户可以使用 Outlook 或 web 上的 Outlook 以 Microsoft 365 组的形式发送和回复电子邮件。 用户可以转到组，创建新的电子邮件，并将 "代理发送" 字段更改为组的电子邮件地址。 
 
-（[也可以在 Exchange 管理中心中执行此操作](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。）
+ ([您也可以在 Exchange 管理中心中执行此操作](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。 ) 
   
 使用下面的脚本替换为 *\<GroupAlias\>* 您要更新的组的别名，以及 *\<UserAlias\>* 要向其授予权限的用户的别名。 [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)以运行此脚本。
 
@@ -112,7 +112,7 @@ New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -Ac
 ## <a name="hide-office-365-groups-from-gal"></a>隐藏 GAL 中的 Office 365 组
 <a name="BKMK_CreateClassification"> </a>
 
-您可以指定是否在全局地址列表（GAL）和组织中的其他列表中显示 Office 365 组。 例如，如果您有一个您不想在地址列表中显示的法律部门组，您可以阻止该组出现在 GAL 中。 运行 "设置统一组" cmdlet 以将组从地址列表中隐藏，如下所示：
+您可以指定 Office 365 组是否出现在全局地址列表中 (GAL) 和组织中的其他列表。 例如，如果您有一个您不想在地址列表中显示的法律部门组，您可以阻止该组出现在 GAL 中。 运行 "设置统一组" cmdlet 以将组从地址列表中隐藏，如下所示：
   
 ```
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -157,7 +157,7 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 ## <a name="change-the-default-setting-of-office-365-groups-for-outlook-to-public-or-private"></a>将适用于 Outlook 的 Office 365 组的默认设置更改为公共或专用
 <a name="BKMK_CreateClassification"> </a>
 
-默认情况下，Outlook 中的 Office 365 组创建为私有。 如果您的组织希望在默认情况下（或返回到私有）将 Office 365 组创建为 Public，请使用以下 PowerShell cmdlet 语法：
+默认情况下，Outlook 中的 Office 365 组创建为私有。 如果您的组织希望默认情况下将 Office 365 组创建为 Public (或返回到私有) ，请使用以下 PowerShell cmdlet 语法：
   
  `Set-OrganizationConfig -DefaultGroupAccessType Public`
   
