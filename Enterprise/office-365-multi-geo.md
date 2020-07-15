@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 利用 Microsoft 365 多地理位置将 Microsoft 365 触及范围扩展到多个地理区域。
-ms.openlocfilehash: af1036ce2e8512a13cbf1867bb75a18aff3ac0a2
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: a49ba9b9b5109972a6b0a631d34d14acb189f484
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052575"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117274"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -47,6 +47,15 @@ ms.locfileid: "45052575"
 - **首选数据位置 (PDL)** - 管理员设置的一个用户属性，指明应在其中设置 Exchange 邮箱和 OneDrive 的地理位置。 PDL 还确定在何处设置用户创建的 SharePoint 站点。
 - **附属位置** – 多地理位置租户中在其中启用地理位置感知 Microsoft 365 工作负载（SharePoint、OneDrive 和 Exchange）的地理位置。
 - **租户** - 组织在 Microsoft 365 中的表示形式，通常有一个或多个关联域（例如，contoso.com）。
+
+## <a name="licensing"></a>许可
+
+将 Microsoft 365 多地理位置作为以下 Microsoft 365 订阅计划的附加功能，向其租户中最少有 250 个 Microsoft 365 席位并且这些席位中至少有 5% 使用多地理位置的 EA 客户提供。 有关详细信息，请与 Microsoft 帐户团队联系。
+
+- Microsoft 365 F1、E1、E3 或 E5
+- Exchange Online 计划 1 或计划 2
+- OneDrive for Business 计划 1 或计划 2
+- SharePoint Online 计划 1 或计划 2
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Microsoft 365 多地理位置可用性
 
