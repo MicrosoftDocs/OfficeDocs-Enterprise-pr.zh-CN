@@ -3,7 +3,7 @@ title: 内容分发网络
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息了解 Office 365 如何使用内容传递网络（Cdn）来提高性能。
-ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d63d784804640b1dda3394d129f905b01fa4b972
+ms.sourcegitcommit: f12be5137553cc41d8bd43e9e6cfbce84215a763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997468"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146510"
 ---
 # <a name="content-delivery-networks-cdns"></a>内容分发网络 (CDN)
 
@@ -77,6 +77,9 @@ Office 365 CDN 服务被归入 SharePoint Online 订阅。
 尽管不是 Office 365 CDN 的一部分，但您可以在 Office 365 租户中使用这些 Cdn 来访问 SharePoint 开发库、自定义代码和其他在 Office 365 CDN 范围之外的用途。
 
 ### <a name="azure-cdn"></a>Azure CDN
+
+>[!NOTE]
+>从2020年3季度开始，SharePoint Online 将开始在 Azure CDN 上缓存视频，以支持改进的视频播放和可靠性。 热门视频将从最接近用户的 CDN 终结点流动。 此数据将保留在 Microsoft 365 合规性边界内。 这是所有租户的免费服务，不需要任何客户操作即可进行配置。
 
 您可以使用**AZURE cdn**来部署自己的 cdn 实例，以托管自定义 web 部件、库和其他资源资产，从而使您可以对 cdn 存储应用访问密钥，并对 cdn 配置进行更好的控制。 Azure CDN 的使用不是免费的，需要 Azure 订阅。
 
