@@ -21,37 +21,37 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/11/2020
 ms.locfileid: "45102510"
 ---
-# <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a><span data-ttu-id="aea12-103">高可用性联合身份验证阶段 3：配置 AD FS 服务器</span><span class="sxs-lookup"><span data-stu-id="aea12-103">High availability federated authentication Phase 3: Configure AD FS servers</span></span>
+# <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a><span data-ttu-id="af964-103">高可用性联合身份验证阶段 3：配置 AD FS 服务器</span><span class="sxs-lookup"><span data-stu-id="af964-103">High availability federated authentication Phase 3: Configure AD FS servers</span></span>
 
-<span data-ttu-id="aea12-104">在此阶段，在 Azure 基础结构服务中为 Microsoft 365 联合身份验证部署高可用性时，将创建内部负载平衡器和两个 AD FS 服务器。</span><span class="sxs-lookup"><span data-stu-id="aea12-104">In this phase of deploying high availability for Microsoft 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
+<span data-ttu-id="af964-104">在此阶段，在 Azure 基础结构服务中为 Microsoft 365 联合身份验证部署高可用性时，将创建内部负载平衡器和两个 AD FS 服务器。</span><span class="sxs-lookup"><span data-stu-id="af964-104">In this phase of deploying high availability for Microsoft 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
   
-<span data-ttu-id="aea12-105">必须先完成此阶段，然后才能进入[第4阶段：配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。</span><span class="sxs-lookup"><span data-stu-id="aea12-105">You must complete this phase before moving on to [Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md).</span></span> <span data-ttu-id="aea12-106">有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。</span><span class="sxs-lookup"><span data-stu-id="aea12-106">See [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
+<span data-ttu-id="af964-105">必须先完成此阶段，然后才能进入[第4阶段：配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。</span><span class="sxs-lookup"><span data-stu-id="af964-105">You must complete this phase before moving on to [Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md).</span></span> <span data-ttu-id="af964-106">有关所有阶段，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)。</span><span class="sxs-lookup"><span data-stu-id="af964-106">See [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
   
-## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a><span data-ttu-id="aea12-107">在 Azure 中创建 AD FS 服务器虚拟机</span><span class="sxs-lookup"><span data-stu-id="aea12-107">Create the AD FS server virtual machines in Azure</span></span>
+## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a><span data-ttu-id="af964-107">在 Azure 中创建 AD FS 服务器虚拟机</span><span class="sxs-lookup"><span data-stu-id="af964-107">Create the AD FS server virtual machines in Azure</span></span>
 
-<span data-ttu-id="aea12-108">Use the following block of PowerShell commands to create the virtual machines for the two AD FS servers.</span><span class="sxs-lookup"><span data-stu-id="aea12-108">Use the following block of PowerShell commands to create the virtual machines for the two AD FS servers.</span></span> <span data-ttu-id="aea12-109">This PowerShell command set uses values from the following tables:</span><span class="sxs-lookup"><span data-stu-id="aea12-109">This PowerShell command set uses values from the following tables:</span></span>
+<span data-ttu-id="af964-p102">使用以下 PowerShell 命令块创建两个 AD FS 服务器的虚拟机。此 PowerShell 命令集使用下表中的值：</span><span class="sxs-lookup"><span data-stu-id="af964-p102">Use the following block of PowerShell commands to create the virtual machines for the two AD FS servers. This PowerShell command set uses values from the following tables:</span></span>
   
-- <span data-ttu-id="aea12-110">表 M，用于虚拟机</span><span class="sxs-lookup"><span data-stu-id="aea12-110">Table M, for your virtual machines</span></span>
+- <span data-ttu-id="af964-110">表 M，用于虚拟机</span><span class="sxs-lookup"><span data-stu-id="af964-110">Table M, for your virtual machines</span></span>
     
-- <span data-ttu-id="aea12-111">表 R，用于资源组</span><span class="sxs-lookup"><span data-stu-id="aea12-111">Table R, for your resource groups</span></span>
+- <span data-ttu-id="af964-111">表 R，用于资源组</span><span class="sxs-lookup"><span data-stu-id="af964-111">Table R, for your resource groups</span></span>
     
-- <span data-ttu-id="aea12-112">表 V，用于虚拟网络设置</span><span class="sxs-lookup"><span data-stu-id="aea12-112">Table V, for your virtual network settings</span></span>
+- <span data-ttu-id="af964-112">表 V，用于虚拟网络设置</span><span class="sxs-lookup"><span data-stu-id="af964-112">Table V, for your virtual network settings</span></span>
     
-- <span data-ttu-id="aea12-113">表 S，用于子网</span><span class="sxs-lookup"><span data-stu-id="aea12-113">Table S, for your subnets</span></span>
+- <span data-ttu-id="af964-113">表 S，用于子网</span><span class="sxs-lookup"><span data-stu-id="af964-113">Table S, for your subnets</span></span>
     
-- <span data-ttu-id="aea12-114">表 I，用于静态 IP 地址</span><span class="sxs-lookup"><span data-stu-id="aea12-114">Table I, for your static IP addresses</span></span>
+- <span data-ttu-id="af964-114">表 I，用于静态 IP 地址</span><span class="sxs-lookup"><span data-stu-id="af964-114">Table I, for your static IP addresses</span></span>
     
-- <span data-ttu-id="aea12-115">表 A（针对可用性集）</span><span class="sxs-lookup"><span data-stu-id="aea12-115">Table A, for your availability sets</span></span>
+- <span data-ttu-id="af964-115">表 A（针对可用性集）</span><span class="sxs-lookup"><span data-stu-id="af964-115">Table A, for your availability sets</span></span>
     
-<span data-ttu-id="aea12-116">回想一下在[阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)和表 R、V、S、I 和 A[阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定义了表 M。</span><span class="sxs-lookup"><span data-stu-id="aea12-116">Recall that you defined Table M in [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
+<span data-ttu-id="af964-116">回想一下在[阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)和表 R、V、S、I 和 A[阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定义了表 M。</span><span class="sxs-lookup"><span data-stu-id="af964-116">Recall that you defined Table M in [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="aea12-117">[!注意] 下面的命令集使用最新版 Azure PowerShell。</span><span class="sxs-lookup"><span data-stu-id="aea12-117">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="aea12-118">请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。</span><span class="sxs-lookup"><span data-stu-id="aea12-118">See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).</span></span> 
+> <span data-ttu-id="af964-117">[!注意] 下面的命令集使用最新版 Azure PowerShell。</span><span class="sxs-lookup"><span data-stu-id="af964-117">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="af964-118">请参阅[Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。</span><span class="sxs-lookup"><span data-stu-id="af964-118">See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).</span></span> 
   
-<span data-ttu-id="aea12-119">首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。</span><span class="sxs-lookup"><span data-stu-id="aea12-119">First, you create an Azure internal load balancer for the two AD FS servers.</span></span> <span data-ttu-id="aea12-120">指定变量的值，并删除 \< and > 字符。</span><span class="sxs-lookup"><span data-stu-id="aea12-120">Specify the values for the variables, removing the \< and > characters.</span></span> <span data-ttu-id="aea12-121">提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。</span><span class="sxs-lookup"><span data-stu-id="aea12-121">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
+<span data-ttu-id="af964-119">首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。</span><span class="sxs-lookup"><span data-stu-id="af964-119">First, you create an Azure internal load balancer for the two AD FS servers.</span></span> <span data-ttu-id="af964-120">指定变量的值，并删除 \< and > 字符。</span><span class="sxs-lookup"><span data-stu-id="af964-120">Specify the values for the variables, removing the \< and > characters.</span></span> <span data-ttu-id="af964-121">提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。</span><span class="sxs-lookup"><span data-stu-id="af964-121">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="aea12-122">若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。</span><span class="sxs-lookup"><span data-stu-id="aea12-122">To generate ready-to-run PowerShell command blocks based on your custom settings, use this [Microsoft Excel configuration workbook](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx).</span></span> 
+> <span data-ttu-id="af964-122">若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此[Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。</span><span class="sxs-lookup"><span data-stu-id="af964-122">To generate ready-to-run PowerShell command blocks based on your custom settings, use this [Microsoft Excel configuration workbook](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx).</span></span> 
 
 ```powershell
 # Set up key variables
@@ -72,9 +72,9 @@ $lbrule=New-AzLoadBalancerRuleConfig -Name "HTTPSTraffic" -FrontendIpConfigurati
 New-AzLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
 ```
 
-<span data-ttu-id="aea12-123">接下来，创建 AD FS 服务器虚拟机。</span><span class="sxs-lookup"><span data-stu-id="aea12-123">Next, create the AD FS server virtual machines.</span></span>
+<span data-ttu-id="af964-123">接下来，创建 AD FS 服务器虚拟机。</span><span class="sxs-lookup"><span data-stu-id="af964-123">Next, create the AD FS server virtual machines.</span></span>
   
-<span data-ttu-id="aea12-124">提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。</span><span class="sxs-lookup"><span data-stu-id="aea12-124">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
+<span data-ttu-id="af964-124">提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。</span><span class="sxs-lookup"><span data-stu-id="af964-124">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
 ```powershell
 # Set up variables common to both virtual machines
@@ -129,11 +129,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> <span data-ttu-id="aea12-125">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet.</span><span class="sxs-lookup"><span data-stu-id="aea12-125">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet.</span></span> <span data-ttu-id="aea12-126">However, this also means that you cannot connect to them from the Azure portal.</span><span class="sxs-lookup"><span data-stu-id="aea12-126">However, this also means that you cannot connect to them from the Azure portal.</span></span> <span data-ttu-id="aea12-127">The **Connect** option is unavailable when you view the properties of the virtual machine.</span><span class="sxs-lookup"><span data-stu-id="aea12-127">The **Connect** option is unavailable when you view the properties of the virtual machine.</span></span> <span data-ttu-id="aea12-128">Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.</span><span class="sxs-lookup"><span data-stu-id="aea12-128">Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.</span></span>
+> <span data-ttu-id="af964-p105">由于这些虚拟机用于 Intranet 应用程序，所以不会为它们分配公用 IP 地址或 DNS 域名称标签，也不会将它们公开到 Internet。但是，这也意味着你无法从 Azure 门户与它们进行连接。查看虚拟机的属性时“连接”\*\*\*\* 选项不可用。使用远程桌面连接附件或另一个远程桌面工具连接使用其专用 IP 地址或 Intranet DNS 名称的虚拟机。</span><span class="sxs-lookup"><span data-stu-id="af964-p105">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.</span></span>
   
-<span data-ttu-id="aea12-129">For each virtual machine, use the remote desktop client of your choice and create a remote desktop connection.</span><span class="sxs-lookup"><span data-stu-id="aea12-129">For each virtual machine, use the remote desktop client of your choice and create a remote desktop connection.</span></span> <span data-ttu-id="aea12-130">Use its intranet DNS or computer name and the credentials of the local administrator account.</span><span class="sxs-lookup"><span data-stu-id="aea12-130">Use its intranet DNS or computer name and the credentials of the local administrator account.</span></span>
+<span data-ttu-id="af964-p106">对于每个虚拟机，请使用所选择的远程桌面客户端并创建远程桌面连接。使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。</span><span class="sxs-lookup"><span data-stu-id="af964-p106">For each virtual machine, use the remote desktop client of your choice and create a remote desktop connection. Use its intranet DNS or computer name and the credentials of the local administrator account.</span></span>
   
-<span data-ttu-id="aea12-131">对于每个虚拟机，请通过 Windows PowerShell 提示符下的这些命令将它们加入相应的 Active Directory 域服务 (AD DS) 域。</span><span class="sxs-lookup"><span data-stu-id="aea12-131">For each virtual machine, join them to the appropriate Active Directory Domain Services (AD DS) domain with these commands at the Windows PowerShell prompt.</span></span>
+<span data-ttu-id="af964-131">对于每个虚拟机，请通过 Windows PowerShell 提示符下的这些命令将它们加入相应的 Active Directory 域服务 (AD DS) 域。</span><span class="sxs-lookup"><span data-stu-id="af964-131">For each virtual machine, join them to the appropriate Active Directory Domain Services (AD DS) domain with these commands at the Windows PowerShell prompt.</span></span>
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -142,20 +142,20 @@ Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
 ```
 
-<span data-ttu-id="aea12-132">以下是因成功完成这一阶段后生成的配置，包含占位符计算机名称。</span><span class="sxs-lookup"><span data-stu-id="aea12-132">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
+<span data-ttu-id="af964-132">以下是因成功完成这一阶段后生成的配置，包含占位符计算机名称。</span><span class="sxs-lookup"><span data-stu-id="af964-132">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
   
-<span data-ttu-id="aea12-133">**阶段 3：Azure 中用于高可用性联合身份验证基础结构的 AD FS 服务器和内部负载均衡器**</span><span class="sxs-lookup"><span data-stu-id="aea12-133">**Phase 3: The AD FS servers and internal load balancer for your high availability federated authentication infrastructure in Azure**</span></span>
+<span data-ttu-id="af964-133">**阶段 3：Azure 中用于高可用性联合身份验证基础结构的 AD FS 服务器和内部负载均衡器**</span><span class="sxs-lookup"><span data-stu-id="af964-133">**Phase 3: The AD FS servers and internal load balancer for your high availability federated authentication infrastructure in Azure**</span></span>
 
 ![在 Azure 中使用 AD FS 服务器的高可用性 Microsoft 365 联合身份验证基础结构的第3阶段](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
-## <a name="next-step"></a><span data-ttu-id="aea12-135">后续步骤</span><span class="sxs-lookup"><span data-stu-id="aea12-135">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="af964-135">后续步骤</span><span class="sxs-lookup"><span data-stu-id="af964-135">Next step</span></span>
 
-<span data-ttu-id="aea12-136">使用[阶段4：配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)以继续配置此工作负载。</span><span class="sxs-lookup"><span data-stu-id="aea12-136">Use [Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) to continue configuring this workload.</span></span>
+<span data-ttu-id="af964-136">使用[阶段4：配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)以继续配置此工作负载。</span><span class="sxs-lookup"><span data-stu-id="af964-136">Use [Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) to continue configuring this workload.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="aea12-137">另请参阅</span><span class="sxs-lookup"><span data-stu-id="aea12-137">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="af964-137">另请参阅</span><span class="sxs-lookup"><span data-stu-id="af964-137">See Also</span></span>
 
-[<span data-ttu-id="aea12-138">在 Azure 中为 Microsoft 365 部署高可用性联合身份验证</span><span class="sxs-lookup"><span data-stu-id="aea12-138">Deploy high availability federated authentication for Microsoft 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[<span data-ttu-id="af964-138">在 Azure 中为 Microsoft 365 部署高可用性联合身份验证</span><span class="sxs-lookup"><span data-stu-id="af964-138">Deploy high availability federated authentication for Microsoft 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[<span data-ttu-id="aea12-139">Microsoft 365 开发/测试环境的联合身份</span><span class="sxs-lookup"><span data-stu-id="aea12-139">Federated identity for your Microsoft 365 dev/test environment</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
+[<span data-ttu-id="af964-139">Microsoft 365 开发/测试环境的联合身份</span><span class="sxs-lookup"><span data-stu-id="af964-139">Federated identity for your Microsoft 365 dev/test environment</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
 
 
