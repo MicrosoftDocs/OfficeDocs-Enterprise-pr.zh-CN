@@ -56,7 +56,7 @@ ms.locfileid: "45102600"
 
 默认情况下，Office 2013 客户端应用支持旧版身份验证。 旧版是指它们支持 Microsoft Online 登录助手或基本身份验证。 为了让这些客户端使用新式身份验证功能，Windows 客户端必须设置注册表项。 有关说明，请参阅[在 Windows 设备上为 Office 2013 启用新式验证](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)。
 
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。必须在每台要启用新式验证的设备上设置注册表项：
   
 |**注册表项**|**类型**|**值** |
 |:-------|:------:|--------:|

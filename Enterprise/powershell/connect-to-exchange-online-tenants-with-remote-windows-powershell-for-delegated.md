@@ -26,14 +26,14 @@ ms.locfileid: "44997368"
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>通过远程 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴连接到 Exchange Online 租户
 
 > [!IMPORTANT]
-> The procedures in this topic are only for Delegated Access Permission (DAP) partners. If you aren't a DAP partner, don't use the procedures in this topic. 
+> 本主题中的过程仅适用于委派访问权限 (DAP) 合作伙伴。如果你不是 DAP 合作伙伴，请不要使用此主题中的过程。 
   
 DAP 合作伙伴是整合和云解决方案提供商 (CSP) 合作伙伴。 它们通常是面向其他公司的网络或电信提供程序。 它们将订阅捆绑到为其客户提供的服务产品中。 他们拥有将代表（AOBO）权限自动授予给其 Microsoft 365 客户租赁的 "管理" 的合作伙伴租赁，以便他们可以管理和报告其所有客户租赁。
 
 建立合作伙伴可以使用 Exchange Online PowerShell 管理客户 Exchange Online 设置，并从命令行获取 Microsoft 365 报告。 可以使用本地计算机上的 Windows PowerShell 创建到 Exchange Online 的远程 PowerShell 会话。 这是一个简单的三步骤过程，可在其中输入凭据、提供所需的连接设置，然后将 Exchange Online cmdlet 导入到您的本地 Windows PowerShell 会话中，以便您可以使用它们。
 
 > [!NOTE]
-> DAP partners can't use the procedures in [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell) to connect to their customer tenant organizations in Exchange Online PowerShell. MFA and the Exchange Online Remote PowerShell Module don't work with delegated authentication.
+> DAP 合作伙伴无法使用[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell) 中的过程连接到其在 Exchange Online PowerShell 中的客户租户组织。MFA 和 Exchange Online 远程 PowerShell 模块无法使用委派身份验证。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -53,9 +53,9 @@ DAP 合作伙伴是整合和云解决方案提供商 (CSP) 合作伙伴。 它�
 
   - Windows Server 2008 R2 SP1<sup>*</sup>
 
-    <sup>*</sup> For older versions of Windows, you need to install the Microsoft.NET Framework 4.5 or later and then an updated version of the Windows Management Framework: 3.0, 4.0, or 5.1 (only one). For more information, see [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868), [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757), [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344), and [Windows Management Framework 5.1](https://aka.ms/wmf5download).
+    <sup>*</sup>对于 Windows 的早期版本，需要安装 Microsoft.NET Framework 4.5 或更高版本，然后安装 Windows Management Framework 的更新版本：3.0、4.0 或 5.1（其中一个）。有关详细信息，请参阅[安装 .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868)、[Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)、[Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344) 和 [Windows Management Framework 5.1](https://aka.ms/wmf5download)。
 
-- Windows PowerShell needs to be configured to run scripts, and by default, it isn't. You'll get the following error when you try to connect:
+- Windows PowerShell 需要进行相关配置，才能运行脚本。默认情况下，它并没有进行配置。你会在尝试连接时看到以下错误消息：
 
   `Files cannot be loaded because running scripts is disabled on this system. Provide a valid certificate with which to sign the files.`
 
@@ -94,7 +94,7 @@ DAP 合作伙伴是整合和云解决方案提供商 (CSP) 合作伙伴。 它�
     ```
 
 > [!NOTE]
-> There's a limit of three simultaneous sessions that can run under one account. Be sure to disconnect the remote PowerShell session when you're finished. If you close the Windows PowerShell window without disconnecting the session, you can use up all the remote PowerShell sessions available to you, and you'll need to wait for the sessions to expire. To disconnect the remote PowerShell session, run the following command:
+> 一个帐户下具有可运行三个并发会话的限制。完成后务必断开与远程 PowerShell 会话的连接。如果在不断开会话连接的情况下关闭 PowerShell 窗口，你可能会用完可用的所有远程 PowerShell 会话，然后你需要等待这些会话过期。若要断开远程 PowerShell 会话连接，请运行以下命令：
 
 ```
 Remove-PSSession $Session
@@ -102,19 +102,19 @@ Remove-PSSession $Session
   
 ## <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
-After Step 3, the Exchange Online cmdlets are imported into your local Windows PowerShell session as tracked by a progress bar. If you don't receive any errors, you connected successfully. A quick test is to run an Exchange Online cmdlet (for example, **Get-Mailbox**) and see the results.
+执行步骤 3 后，Exchange Online cmdlet 将导入到你的本地 Windows PowerShell 会话，此时会显示一个进度条以便于跟踪。如果未收到任何错误，则说明连接成功。一个快速测试是运行 Exchange Online cmdlet（例如 **Get-Mailbox**），然后查看结果。
   
 如果收到错误，则查看以下要求：
   
-- A common problem is an incorrect password. Run the three steps again and pay close attention to the user name and password you enter in Step 1.
+- 常见问题是密码错误。重新运行上述三个步骤，并仔细查看在步骤 1 中输入的用户名和密码。
     
-- The account you use to connect to Exchange Online must be enabled for remote PowerShell. For more information, see [Enable or disable access to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534018).
+- 必须为远程 PowerShell 启用用于连接到 Exchange Online 的帐户。有关详细信息，请参阅[启用或禁用对 Exchange Online PowerShell 的访问](https://go.microsoft.com/fwlink/p/?LinkId=534018)。
     
-- TCP port 80 traffic needs to be open between your local computer and Exchange Online. It's probably open, but it's something to consider if your organization has a restrictive Internet access policy.
+- 需要打开本地计算机和 Exchange Online 之间的 TCP 端口 80 通信。它可能已经打开了，但是要考虑您的组织是否存在严格的 Internet 访问政策。
     
 ## <a name="call-the-cmdlet-directly-with-invoke-command"></a>直接使用 Invoke-Command 调用 cmdlet
 
-Importing a remote PowerShell session (Step 3) can be a lengthy process because it brings in _all_ Exchange Online cmdlets. This can be an issue in batch processing (for example, when you're running reports or making bulk changes for different tenants). As an alternative to using **Import-PSSession**, you can call cmdlets you want to use directly with **Invoke-Command**. For example, to call the **Get-Milbox** cmdlet, substitute this syntax for the `Import-PSSession $Session` command in Step 3:
+导入远程 PowerShell 会话（步骤 3）可能需要很长时间，因为它会引入_所有_ Exchange Online cmdlet。这可能会导致在进行批处理时出现问题（例如，当你运行报告或对不同租户进行批量更改时）。除了使用 **Import-PSSession** 之外，你可以直接使用 **Invoke-Command** 调用你想使用的 cmdlet。例如，要调用 **Get-Milbox** cmdlet，请替换步骤 3 中的 `Import-PSSession $Session` 命令的此语法：
   
 ```
 Invoke-Command -Session $Session -ScriptBlock {Get-Mailbox}
@@ -122,7 +122,7 @@ Invoke-Command -Session $Session -ScriptBlock {Get-Mailbox}
 
 ## <a name="more-reporting-cmdlets"></a>更多报告 cmdlet
 
-The cmdlets that you used in this topic are Windows PowerShell cmdlets. For more information about these cmdlets, see the following topics:
+您在本主题中使用的 cmdlet 是 Windows PowerShell cmdlet。有关这些 cmdlet 的详细信息，请参阅下列主题：
   
 - [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
     

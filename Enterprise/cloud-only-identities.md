@@ -49,7 +49,7 @@ ms.locfileid: "44774827"
 
 对组织中的用户类型进行分组。 分组是什么？ 例如，您可以将用户按高级功能或目标分组到您的组织。
 
-Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
+此外，可以将某些云服务与组织外部没有任何用户帐户的用户共享，而且你还需要标识这些用户组。
 
 您可以使用 Azure AD 中的组来实现多种目的，从而简化云环境的管理。 例如，使用 Azure AD 组，您可以执行以下操作：
 

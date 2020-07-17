@@ -30,7 +30,7 @@ ms.locfileid: "44735651"
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-An important part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access. Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection. 
+你的 Microsoft 365 加入的一个重要部分是确保设置了你的网络和 Internet 连接以实现优化的访问。配置您的本地网络以访问全局分布式软件即服务（SaaS）云与针对本地数据中心和中心 Internet 连接的流量优化的传统网络不同。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 
@@ -46,17 +46,17 @@ An important part of your Microsoft 365 onboarding is to ensure that your networ
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>支持将 Microsoft 365 网络作为网络设备供应商
 
-If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
+如果你是网络设备供应商，请加入 [Office 365 网络合作伙伴计划](office-365-networking-partner-program.md)。加入该计划即可在你的产品和解决方案中构建 Office 365 网络连接原则。 
 
 ## <a name="office-365-endpoints"></a>Office 365 端点
 
 端点是 Internet 上 Office 365 流量的目的 IP 地址、DNS 域名和 URL 的集合。 
 
-To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
+若要优化基于 Office 365 云的服务的性能，需要使用你的客户端浏览器和边缘网络中的设备对某些端点进行特殊处理。这些设备包括防火墙设备、SSL 中断与检查设备、数据包检查设备以及数据丢失防护系统。
 
 有关详细信息，请参阅[管理 Office 365 端点](managing-office-365-endpoints.md)。
 
-There are currently five different Office 365 clouds. This table takes you to the list of endpoints for each one.
+目前有五个不同的 Office 365 云。此表将转到每个端点的列表。
 
 |||
 |:-------|:-----|

@@ -40,7 +40,7 @@ ms.locfileid: "44906253"
   
 ### <a name="organization"></a>组织
 
-An organization represents a business entity that is using Microsoft cloud offerings, typically identified by one or more public Domain Name System (DNS) domain names, such as contoso.com. The organization is a container for subscriptions.
+组织表示使用 Microsoft 云产品/服务的业务实体，通常由一个或多个公共域名系统 (DNS) 域名（如 contoso.com）标识。组织是订阅的容器。
   
 ### <a name="subscriptions"></a>订阅
 
@@ -49,7 +49,7 @@ An organization represents a business entity that is using Microsoft cloud offer
 - Microsoft 的软件即基于服务（SaaS）的云产品（Microsoft 365 和 Dynamics 365）收费每用户许可证费用。 
 - Microsoft 的平台即服务 (PaaS) 和基础设施即服务 (IaaS) 云服务 (Azure) 根据云资源使用量收取费用。
  
-You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
+你也可以使用试用版订阅，此订阅会在一定时间后或使用费用后过期。你可以将试用版订阅转换为付费订阅。
   
 组织可订阅多个 Micrososft 云服务。 图1显示了包含多个 Microsoft 365 订阅、Dynamics 365 订阅和多个 Azure 订阅的单个组织。
 
@@ -67,9 +67,9 @@ You can also use a trial subscription, but the subscription expires after a spec
   
 对于基于 Azure PaaS 的云服务，软件许可证是服务定价的一部分。
   
-For Azure IaaS-based virtual machines, additional licenses to use the software or application installed on a virtual machine image might be required. Some virtual machine images have licensed versions of software installed and the cost is included in the per-minute rate for the server. Examples are the virtual machine images for SQL Server 2014 and SQL Server 2016. 
+对于基于 Azure IaaS 的虚拟机，使用在虚拟机映像上安装的软件或应用程序可能需要其他许可证。某些虚拟机映像安装了授权版软件，并且成本包括在服务器的每分钟费率中。例如，SQL Server 2014 和 SQL Server 2016 的虚拟机映像。 
   
-Some virtual machine images have trial versions of applications installed and need additional software application licenses for use beyond the trial period. For example, the SharePoint Server 2016 Trial virtual machine image includes a trial version of SharePoint Server 2016 pre-installed. To continue using SharePoint Server 2016 after the trial expiration date, you must purchase a SharePoint Server 2016 license and client licenses from Microsoft. These charges are separate from the Azure subscription and the per-minute rate to run the virtual machine still applies.
+某些虚拟机映像安装了试用版应用程序，在试用期过后需要其他软件应用程序许可证。例如，SharePoint Server 2016 试用版虚拟机映像包括预安装的试用版 SharePoint Server 2016。若要在试用版过期后继续使用 SharePoint Server 2016，你必须从 Microsoft 购买 SharePoint Server 2016 许可证和客户端许可证。这些费用与 Azure 订阅是分开的，而运行虚拟机的每分钟费率仍然适用。
   
 ### <a name="user-accounts"></a>用户帐户
 
@@ -85,7 +85,7 @@ Some virtual machine images have trial versions of applications installed and ne
 
 对于 SaaS 云服务，租户是承载提供云服务的服务器的区域位置。 例如，Contoso Corporation 选择欧洲地区为其巴黎总部的15000工作者托管其 Microsoft 365、EMS 和 Dynamics 365 租户。
   
-Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
+Azure PaaS 服务和在 Azure IaaS 中托管的基于虚拟机的工作负荷可以在世界范围内的任何 Azure 数据中心拥有租户。在创建 Azure PaaS 应用或服务或 IaaS 工作负荷的元素时，应指定 Azure 数据中心（称为位置）。
   
 Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 365 或 Dynamics 365 的付费订阅或试用订阅包括免费的 Azure AD 租户。 此 Azure AD 租户不包括其他 Azure 服务，且与 Azure 试用版或付费订阅不同。
   
@@ -121,7 +121,7 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 36
 
 ![适用于组织的标识即服务 (IaaS) IDaaS。](media/Subscriptions/Subscriptions-Fig4.png)
   
-Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Azure AD Domain Services. Azure AD Connect synchronizes the on-premises AD DS forest with the Azure AD tenant.
+图 4 显示了如何将常见的 Azure AD 租户用于 Microsoft 的 SaaS 云产品、Azure PaaS 应用以及 Azure IaaS 中使用 Azure AD 域服务的虚拟机。Azure AD Connect 将本地 AD DS 林与 Azure AD 租户同步。
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>合并多个 Microsoft 云服务的订阅
 

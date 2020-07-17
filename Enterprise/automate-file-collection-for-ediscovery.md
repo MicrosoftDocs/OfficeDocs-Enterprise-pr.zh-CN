@@ -26,18 +26,18 @@ ms.locfileid: "44997973"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>电子数据展示文件收集自动化
 
-All companies face the potential of lawsuits or other types of legal action. While legal departments work to reduce that exposure, litigation is a fact of business life. When a company faces legal action, they are required, through the process of legal discovery, to provide all relevant documentary materials to the court and to opposing counsel. 
+所有公司都有可能采取诉讼或其他类型的法律行动。尽管法律部门致力于减少曝光，但是诉讼是商业活动中的平常事。公司在法律发现过程中需采取法律行动，向法院和对方律师提供所有相关书面材料。 
   
-eDiscovery is the process by which companies inventory, search, identify, preserve, filter, and make available the relevant documentary materials that exist in electronic form. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online, and Exchange Online can hold large amounts of documentary content. Depending on the version, these products may support eDiscovery and in place holds (Lync via Exchange Server), making it easier for the legal teams to index, identify, hold, and filter the most relevant content for a given case.
+电子数据展示是一个过程，通过此过程公司可以进行存储、搜索、识别、保留、筛选，以及提供以电子形式存在的相关书面材料。 SharePoint 2013、Exchange Server 2013、Lync Server 2013、SharePoint Online 和 Exchange Online 可以容纳大量的书面内容。 根据版本，这些产品可以支持eDiscovery和就地保留（Lync，通过 Exchange Server），这使得法律团队更易于对给定案例的最相关的内容进行索引编制、标识、保留和筛选。
   
-Many documents are stored on users' (Custodians) local computers, not in a centralized location. This makes it essentially impossible for SharePoint 2013 to search, and if it can't be searched, it can't be included in eDiscovery. This solution shows you how to use logon scripts, System Center Orchestrator 2012 R2 and Windows PowerShell for Exchange Server to automate the identification and collection of documentary materials from users' computers.
+许多文档存储在用户（保管人）的本地计算机上，而不是存储在某个集中位置。这使得 SharePoint 2013 基本上不可能进行搜索；如果无法搜索，则不能包含在eDiscovery中。此解决方案显示如何使用登录脚本、System Center Orchestrator 2012 R2 和 Windows PowerShell，使 Exchange Server 从用户的计算机中自动标识和收集书面材料。
   
 ## <a name="what-this-solution-does"></a>此解决方案的作用
 
-This solution uses a global security group, Group Policy, and a Windows PowerShell script to locate, inventory, and collect content and Outlook personal store (PST) files from users local computers to a hidden file share. From there, the PST files can be imported into either Exchange Server 2013 or Exchange Online. All files are then moved using a System Center Orchestrator 2012 R2 runbook to another file share in Microsoft Azure for long-term storage and indexing by SharePoint 2013. You then use eDiscovery centers in your on-premises SharePoint 2013 deployment or in SharePoint Online as you regularly would to perform eDiscovery. 
+此解决方案使用全局安全组、组策略和 Windows PowerShell 脚本来查找、存储和收集用户本地计算机中的内容和 Outlook 个人存储 (PST) 文件并存储到隐藏的文件共享中。在此处，PST 可能会导入到 Exchange Server 2013 或 Exchange Online。然后，所有文件使用 System Center Orchestrator 2012 R2 Runbook 移动到 Microsoft Azure 中的另一个文件共享，以便由 SharePoint 2013 长期存储和索引。然后您可以像平时一样使用本地 SharePoint 2013 部署或 SharePoint Online 中的eDiscovery中心执行eDiscovery。 
   
 > [!IMPORTANT]
-> This solution uses robocopy to copy files from custodian's computers to a centralized file share. Because robocopy does not copy files that are open or locked, any files, including PST files, that the custodian has open will not be collected. You will have to collect them manually. This solution does provide you with a list that explicitly identifies the files it cannot copy and the full path to each file. 
+> 此解决方案使用 robocopy 将文件从保管人的计算机中复制到一个集中的文件共享。因为 robocopy 不复制打开或锁定的文件，所以不会收集保管人打开的任意文件，其中包括 PST 文件。您需要手动收集这些文件。此解决方案确实为您提供一个列表，明确标识了它无法复制的文件和每个文件的完整路径。 
   
 下图向您展示了解决方案的所有步骤和元素。
   
@@ -59,7 +59,7 @@ This solution uses a global security group, Group Policy, and a Windows PowerShe
    
 ## <a name="prerequisites"></a>先决条件
 
-The configuration of this solution requires many elements, most of which you likely have in place and configured if you're thinking about eDiscovery. For the elements that you may not have or ones that require a specific configuration, we'll provide you with the links you need build out your base configuration. You must have the base configuration in place before you configure the solution itself.
+如果您正在考虑 eDiscovery，此解决方案的配置需要很多 元素，其中大部分您可能已经具备并已配置。对于您可能不具备或者需要特定配置的元素，我们将为您提供生成基本配置所需的链接。您必须在配置解决方案之前就已具备基本配置。
   
 ### <a name="base-configuration"></a>基本配置
 
@@ -86,7 +86,7 @@ The configuration of this solution requires many elements, most of which you lik
 
 1. 在本地域中创建一个名为 Custodians 的全局安全组。
     
-2. Create a hidden file share for the files that are collected from Custodians computers. This should be on an on-premises server. For example, on a server called Staging, create a file share called Cases$. The **$** is required to make this a hidden share.
+2. 为从保管人计算机中收集的文件创建一个隐藏文件共享。这应在本地服务器上。例如，在名为 Staging 的服务器上，创建一个名为 Cases$ 的文件共享。必须包含 **$** 才能使该共享成为隐藏共享。
     
 3. 设置下列共享权限：
     
@@ -96,7 +96,7 @@ The configuration of this solution requires many elements, most of which you lik
     
   - Exchange 受信任子系统：更改、读取
     
-4. Open the **Security** tab, add the Custodians group, and click **Advanced**. Set the following permissions for the Custodians group:
+4. 打开"安全"选项卡，添加 Custodians 组，然后单击"高级"。为 Custodians 组设置以下权限：
     
   - **类型：拒绝**
     
@@ -116,11 +116,11 @@ The configuration of this solution requires many elements, most of which you lik
     
 2. 将文件放在 Cases$ 文件夹中。
     
-3. As the user, browse to the staging server, for example browse to the \\\\Staging share to see what shares are available. You shouldn't see the **Cases$** share listed.
+3. 作为用户，浏览到暂存服务器，例如浏览到 \\\\Staging 共享以查看提供了哪些共享。不应看到 **Cases$** 共享列出。
     
-4. Manually type the full path to the Cases$ share into Explorer. This should open the Cases$ share.
+4. 将 Cases$ 共享的完整路径手动键入到资源管理器中。这应该会打开 Cases$ 共享。
     
-5. Try to open the file you previously placed in the share. This should fail.
+5. 尝试打开您之前放在共享中的文件，这应该会失败。
     
 ### <a name="logon-script"></a>登录脚本
 
@@ -268,12 +268,12 @@ Write-Host -ForegroundColor Cyan "Finished."
 
 2. 在易于您查找的位置将上述脚本另存为 CollectionScript.ps1，例如，C:\\AFCScripts。
     
-3. Use the Go To feature in Notepad. Make the following changes, as needed:
+3. 使用记事本中的“转到”功能。根据需要进行以下更改：
     
 |**行号**|**需更改的内容**|**必需/可选**|
 |:-----|:-----|:-----|
-|71  <br/> |**$FileTypes** variable. Include all the file type extensions that you want the script to inventory and collect in the array variable. <br/> |可选  <br/> |
-|76 和 77  <br/> |Change the way the **$CaseNo** variable is built to suit your needs. The script captures the current date and time and appends the user name to it. <br/> |可选  <br/> |
+|71  <br/> |**$FileTypes** 变量。包括您希望脚本在数组变量中存储和收集的所有文件类型扩展名。<br/> |可选  <br/> |
+|76 和 77  <br/> |更改 **$CaseNo** 变量构建的方式以满足您的需求。脚本捕获当前日期和时间并向其附加用户名。<br/> |可选  <br/> |
 |80  <br/> |**$CaseRootLocation** 变量需设置为您的暂存服务器集合文件共享，例如， **\\\\Staging\\Cases$** 。 <br/> |必需  <br/> |
    
 4. 将 CollectionScript.ps1 文件放在域控制器上的 Netlogon 文件共享中。 
@@ -324,14 +324,14 @@ $AllFiles | ForEach-Object {
 }
   ```
 
-2. Save the script as PSTImportScript.ps1 in a location that's easy for you to find. For example and ease of use, create a folder on your staging server called \\\\Staging\\AFCScripts, and save it there.
+2. 在易于您查找的位置将脚本另存为 PSTImportScript.ps1。例如，为易于使用，在暂存服务器上创建一个名为 \\\\Staging\\AFCScripts 的文件夹并将脚本保存在其中。
     
 3. 使用记事本中的“转到”功能，根据需要进行以下更改：
     
 |**行号**|**需更改的内容**|**必需/可选**|
 |:-----|:-----|:-----|
-|12   <br/> |**$FolderIdentifier** tags the mailbox folders that PSTs are imported into. Change this if necessary. <br/> |可选  <br/> |
-|17   <br/> |**$ConnectionUri** 需设置为您自己的服务器。 <br/> > [!IMPORTANT]> Make sure your **$ConnectionUri** points to a http location, not https. It won't work with https:.          |必需  <br/> |
+|12   <br/> |**$FolderIdentifier** 标记在其中导入 PST 的邮箱文件夹。根据需要更改此变量。<br/> |可选  <br/> |
+|17   <br/> |**$ConnectionUri** 需设置为您自己的服务器。 <br/> > [!IMPORTANT]> 确保您的 **$ConnectionUri** 指向 http 位置，而不是 https。它不适用于 https:。          |必需  <br/> |
    
 4. 确认 Exchange 受信任子系统帐户具有 \\\\Staging\\Cases$ 共享的读取、写入和执行权限。
     
@@ -345,13 +345,13 @@ $AllFiles | ForEach-Object {
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>PST 导入选项 B，用于 Exchange Online
 
--  Create the mailbox structure to place the imported PST files into. For more information on how to create a user mailbox in Exchange Online, see[Create User Mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
+-  创建将放置导入的 PST 文件的邮箱结构。有关在 Exchange Online 中如何创建用户邮箱的详细信息，请参阅[在 Exchange Online 中创建用户邮箱](https://go.microsoft.com/fwlink/p/?LinkId=615118)。
     
 ### <a name="cold-storage"></a>冷存储
 
 1. 在放置所有收集的文件的 Azure 虚拟机 上创建一个文件共享，例如，\\\\AZFile1\\ContentColdStorage。
     
-2. Grant the default content access account at least Read permissions to the share and all subfolders and files. For more information about configuring SharePoint 2013 Search, see [Create and configure a Search service application in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
+2. 向默认内容访问帐户至少授予对共享以及所有子文件夹和文件的读取权限。有关配置 SharePoint 2013 Search 的详细信息，请参阅[在 SharePoint Server 2013 中创建和配置 Search Service 应用程序](https://go.microsoft.com/fwlink/p/?LinkId=614940)。
     
 3. 如果您预计从 \\\\AZFile1\\ContentColdStorage 导入 PST 文件，请向 Exchange 受信任子系统授予对共享的读取、写入和执行权限。
     
@@ -359,17 +359,17 @@ $AllFiles | ForEach-Object {
 
 1. 从 Microsoft 下载中心下载 [MoveToColdStorage Runbook](https://go.microsoft.com/fwlink/?LinkId=616095)。
     
-2. Open the **Runbook Designer**, in the **Connections** pane, click the folder that you want to import the runbook into. Click the **Actions** menu, and the click **Import**. The **Import** dialog box appears.
+2. 打开"Runbook Designer"，在"连接"窗格中，单击您想要在其中导入 Runbook 的文件夹。单击"操作"菜单，然后单击"导入"。此时将出现"导入"对话框。
     
 3. 在“文件位置”**** 框中，键入要导入的 Runbook 的路径和文件名，或单击省略号 (**...**) 转到要导入的文件。 
     
-4. Select **Import runbooks** and **Import Orchestrator encrypted data**. Clear **Counters**, **Schedules**, **Variables**, **Computer Groups**, **Import global configurations**, and **Overwrite existing global configurations**.
+4. 依次选择"导入 Runbook"和"导入 Orchestrator 加密数据"。清除"计数器"、"计划"、"变量"、"计算机组"、"导入全局配置"和"覆盖现有全局配置"。
     
 5. 单击“完成”****。
     
 6. 编辑 **MoveFilesToColdStorage** 运行手册，如下所述：
     
-1. **Move File** activity - set the **Source File** path to the collection file share, for example \\\\Staging\\cases$. Set the **Destination Folder** to the cold storage file share in Azure, for example \\\\AZFile1\\ContentColdStorage. Select **Create a file with a unique name**.
+1. **移动文件**活动 - 将“源文件”**** 路径设置为集合文件共享（例如，\\\\Staging\\cases$）。将“目标文件夹”**** 设置为 Azure 中的冷存储文件共享（例如，\\\\AZFile1\\ContentColdStorage）。选择“创建具有唯一名称的文件”****。
     
 2. **删除文件夹**活动 - 将“路径:”**** 设置为集合文件共享（例如，\\\\Staging\\cases$\\*），再选择“删除所有文件和子文件夹”****。 
     
@@ -377,17 +377,17 @@ $AllFiles | ForEach-Object {
     
 ### <a name="sharepoint-on-premises-search-for-cold-storage"></a>冷存储的 SharePoint 本地搜索
 
-1. Create an new content source in your SharePoint 2013 farm for the cold storage share in Azure, for example \\\\AZFile1\\ContentColdStorage. For more information about managing content sources, see [Add, edit, or delete a content source in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
+1. 在 SharePoint 2013 服务器场中为 Azure 中的冷存储共享创建一个新的内容源，例如 \\\\AZFile1\\ContentColdStorage。有关管理内容源的详细信息，请参阅[在 SharePoint Server 2013 中添加、编辑或删除内容源](https://go.microsoft.com/fwlink/p/?LinkId=615004)
     
-2. Start a full crawl. For more information see, [Start, pause, resume, or stop a crawl in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+2. 启动完整爬网。有关详细信息，请参阅[在 SharePoint Server 2013 中启动、暂停、继续或停止爬网](https://go.microsoft.com/fwlink/p/?LinkId=615005)。
     
 ## <a name="using-the-solution"></a>使用解决方案
 
-There are five major steps in using this solution, assuming you don't want to import the PST files into both Exchange Server 2013 and Exchange Online. This section provides you with the procedures for all of them. Your primary interaction with the solution will be in doing the following:
+使用此解决方案有五个主要步骤，假定您不希望将 PST 文件导入到 Exchange Server 2013 和 Exchange Online。本部分为您提供了所有这些步骤的过程。您主要在执行以下操作时与解决方案交互：
   
 1. 管理 Custodians 组中的用户成员资格。
     
-2. Review the log files generated by the logon script. The FileCopyErrors.log lists all the files that were not successfully copied. You need to decide what you want to do with them
+2. 错误
     
 3. 管理 PST 导入过程。
     
@@ -409,32 +409,32 @@ There are five major steps in using this solution, assuming you don't want to im
     
 ### <a name="custodian-management"></a>保管人管理
 
-- To start the automated file collection process for an individual user, add them to the Custodians group. The next time that the user logs on, the logon script assigned to the Custodians group through Group Policy will run. 
+- 要启动单个用户的自动化文件收集过程，请将其添加到 Custodians 组。 下次用户登录时，将运行通过组策略分配到 Custodians 组的登录脚本。 
     
 ### <a name="monitor-collected-files-and-review-log-files"></a>监控收集的文件和检查日志文件
 
-1. Watch the collection file share, for example \\\\Staging\\cases$\\*, for the collection folder from the user. The name of the folder will be formatted like this:  *yyyyMMddHHmm_UserName*  .
+1. 观察集合文件共享，例如 \\\\Staging\\cases$\\*，查找用户的集合文件夹。文件夹的名称将为以下格式： *yyyyMMddHHmm_UserName*  。
     
-2. When the collection is completed, open the collection folder, and browse to the _Log folder. In the _Log folder, you will see the following:
+2. 收集完成后，打开集合文件夹并浏览到 _Log 文件夹。在 _Log 文件夹中，您将看到以下内容：
     
-  - One XML file for every local drive on the user's computer, for example **A.xml**, **C.xml**. These files contain the inventory drives that they are named after, and they are used for the robocopy operation.
+  - 用户的计算机上每个本地驱动器的一个 XML 文件，例如 **A.xml** 、 **C.xml** 。这些文件包含按其命名的库存驱动器，且它们用于 robocopy 操作。
     
     > [!NOTE]
-    > The collection script will only create an entry in the inventory file for the file types that you defined in the script itself. It will not create an inventory entry for every file on the user's computer. 
+    > 收集脚本将仅在您在脚本本身定义的文件类型的清单文件中创建一个条目。它不会为用户的计算机上的每个文件都创建一个清单条目。 
   
-  - One log file named FileCopyErrors.log for each collection run. This file contains a listing of the files that robocopy could not copy to the file collection share, for example, \\\\Staging\\cases$\\*. You will need to review this and decide what actions to take for these missed files. Usually, you either need to collect them manually if you want them, or you may decide that they are not required and can therefore be omitted from the collection.
+  - 将运行每个集合的一个名为 FileCopyErrors.log 的日志文件。此文件包含 robocopy 不会复制到文件集合共享的文件列表，例如 \\\\Staging\\cases$\\*。您将需要审核此文件，并确定为这些缺少的文件采取的操作。通常，如果您需要这些文件，您应手动收集它们；您也可以决定不需要它们，因此可将其从收集中忽略。
     
 ### <a name="pst-import-option-a-for-exchange-server-2013"></a>PST 导入选项 A，用于 Exchange Server 2013
 
-1. Log on to the server that hosts the collection file share, for example **Staging**, and open Windows PowerShell. For more information about starting Windows PowerShell, see[Starting Windows PowerShell on Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
+1. 登录到承载集合文件共享的服务器上，例如 **Staging** ，然后打开 Windows PowerShell。有关启动 Windows PowerShell 的详细信息，请参阅[在 Windows Server 上启动 Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=615115)。
     
-2. Set the Execution policy to Unrestricted . Type  `Set-ExecutionPolicy Unrestricted -Scope Process` into Windows PowerShell, and press Enter.
+2. 将执行策略设置为无限制。将  `Set-ExecutionPolicy Unrestricted -Scope Process` 键入到 Windows PowerShell 中并按 Enter。
     
-3. Run the PSTImportScript.ps1 file, and provide the **$SourcePath** and **$MailboxAlias** parameters. For more information about running Windows PowerShell scripts, see[Running Scripts](https://go.microsoft.com/fwlink/p/?LinkID=615117).
+3. 运行 PSTImportScript.ps1 文件，并提供 **$SourcePath** 和 **$MailboxAlias** 参数。有关运行 Windows PowerShell 脚本的详细信息，请参阅[运行脚本](https://go.microsoft.com/fwlink/p/?LinkID=615117)。
     
 4. 查看针对错误的输出。
     
-5. Before you attempt to import an identically named PST file into the same mailbox, you have to remove the mailbox import request. Run the following command to do that:  `Get-MailboxImportRequest | Remove-MailboxImportRequest`. You will be prompted to remove each individual request from the queue. Respond as needed.
+5. 在尝试将一个同名的 PST 文件导入到同一个邮箱之前，必须删除邮箱导入请求。为此，请运行下列命令： `Get-MailboxImportRequest | Remove-MailboxImportRequest`。系统将提示您从队列中删除每个单独的请求。根据需要响应。
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>PST 导入选项 B，用于 Exchange Online
 
@@ -444,11 +444,11 @@ There are five major steps in using this solution, assuming you don't want to im
 
 1. 使用[运行 runbook](https://go.microsoft.com/fwlink/p/?LinkId=615123)中的过程运行**MoveToColdStorage** runbook。
     
-2. Watch the Azure file share you are using for long term storage, for example \\\\AZFile1\\ContentColdStorage and the on-premises collection file share, for example \\\\Staging\\cases$. You should see the files and folders appear in the cold storage file share and disappear from the collection file share.
+2. 观察用于长期存储的 Azure 文件共享（例如 \\\\AZFile1\\ContentColdStorage）和本地集合文件共享（例如 \\\\Staging\\cases$）。您应该会看到文件和文件夹出现在冷存储文件共享中，并从集合文件共享中消失。
     
 ### <a name="ediscovery"></a>电子数据展示
 
-1. Either allow the full crawl of the cold storage file share to run as schedules, or initiate a crawl. For more information on starting full or incremental crawls, see [Start, pause, resume, or stop a crawl in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+1. 允许冷存储文件共享的完全爬网按计划运行，或者启动爬网。有关启动完全或增量爬网的详细信息，请参阅[在 SharePoint Server 2013 中启动、暂停、继续或停止爬网](https://go.microsoft.com/fwlink/p/?LinkId=615005)。
     
 2. 如果您使用选项 A 进行 PST 文件导入，请在 SharePoint 2013 中创建eDiscovery案例；或者如果您使用选项 B，请在 SharePoint Online 中创建eDiscovery案例。
     

@@ -27,18 +27,18 @@ ms.locfileid: "45052555"
 
 随着时间的推移，您可以使用暂存迁移将源电子邮件系统中用户邮箱的内容迁移到 Office 365。
   
-This article walks you through the tasks involved with for a staged email migration using Exchange Online PowerShell. The topic, [What you need to know about a staged email migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536487), gives you an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
+本文将向您介绍涉及到使用 Exchange Online PowerShell 进行暂存电子邮件迁移的任务。[有关使用暂存迁移将电子邮件迁移到 Office 365 的注意事项](https://go.microsoft.com/fwlink/p/?LinkId=536487)主题向您提供了迁移过程的概述。当您了解本文的内容之后，则可以借此机会开始将一个电子邮件系统中的邮箱迁移到另一个电子邮件系统。
   
 > [!NOTE]
-> You can also use the Exchange admin center to perform staged migration. See [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536687). 
+> 您还可以使用 Exchange 管理中心来执行暂存迁移。请参阅[使用暂存迁移将电子邮件迁移到 Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536687)。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-Estimated time to complete this task: 2-5 minutes to create a migration batch. After the migration batch is started, the duration of the migration will vary based on the number of mailboxes in the batch, the size of each mailbox, and your available network capacity. For information about other factors that affect how long it takes to migrate mailboxes to Office 365, see [Migration Performance](https://go.microsoft.com/fwlink/p/?LinkId=275079).
+估计完成该任务的时间：2-5 分钟，用于创建迁移批处理。迁移批处理启动后，迁移的持续时间会有所不同，具体取决于批处理中邮箱的数量、每个邮箱的大小和可用网络容量。有关影响将邮箱迁移到 Office 365 所需时间的其他因素的信息，请参阅[迁移性能](https://go.microsoft.com/fwlink/p/?LinkId=275079)。
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in the [Recipients Permissions](https://go.microsoft.com/fwlink/p/?LinkId=534105) topic.
+您必须先获得权限，然后才能执行此过程。要查看您需要哪些权限，请参阅[收件人权限](https://go.microsoft.com/fwlink/p/?LinkId=534105)主题中的"迁移"条目。
   
-To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534121) for instructions.
+若要使用 Exchange Online PowerShell cmdlet，您需要登录并将 cmdlet 导入您的本地 Windows PowerShell 会话。有关说明，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。
   
 有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
   
@@ -48,14 +48,14 @@ To use the Exchange Online PowerShell cmdlets, you need to sign in and import th
 
 在开始通过暂存迁移将邮箱迁移到 Office 365 之前，您必须对您的 Exchange 环境进行几处更改。
   
- **Configure Outlook Anywhere on your on-premises Exchange Server** The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. For information about how to set up Outlook Anywhere for Exchange Server 2007, and Exchange 2003, see the following:
+ **在您的内部部署 Exchange Server 上配置 Outlook 无处不在** 电子邮件迁移服务使用 Outlook 无处不在（也称为 RPC over HTTP）连接到您的内部部署 Exchange Server。有关如何为 Exchange Server 2007 和 Exchange 2003 设置 Outlook 无处不在 设置的信息，请参阅以下内容：
   
 - [Exchange 2007:如何启用 Outlook 无处不在](https://go.microsoft.com/fwlink/?LinkID=167210)
     
 - [如何使用 Exchange 2003 配置 Outlook 无处不在](https://go.microsoft.com/fwlink/?LinkID=167209)
     
 > [!IMPORTANT]
-> You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=80875). 
+> 您必须在 Outlook 无处不在 配置中使用受信任的证书颁发机构 (CA) 颁发的证书。Outlook 无处不在 不能通过自签名的证书进行配置。有关详细信息，请参阅[如何为 Outlook 无处不在配置 SSL](https://go.microsoft.com/fwlink/?LinkID=80875)。 
   
  **可选：确认您是否可以使用 Outlook 无处不在 连接到 Exchange 组织** 使用下列方法之一来测试您的连接设置。
   
@@ -73,7 +73,7 @@ To use the Exchange Online PowerShell cmdlets, you need to sign in and import th
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **Set permissions** The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Office 365. This user account is used when you connect to your email system by creating a migration endpoint later in this procedure ([Step 3: Create a migration endpoint](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint) ).
+ **设置权限** 您用于连接到内部部署 Exchange 组织的内部部署用户帐户（也称为迁移管理员）必须拥有必要的权限才能访问您要迁移到 Office 365 的内部部署邮箱。当您稍后在本过程（[步骤 3：创建迁移终结点](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint)）中通过创建迁移终结点来连接到您的电子邮件系统时，需要使用此用户帐户。
   
 要迁移邮箱，管理员必须拥有以下权限集之一：
   
@@ -89,36 +89,36 @@ To use the Exchange Online PowerShell cmdlets, you need to sign in and import th
     
 有关如何设置这些权限的说明，请参阅[分配权限以将邮箱迁移到 Office 365](https://go.microsoft.com/fwlink/?LinkId=521656)。
   
- **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see[disable unified messaging](https://go.microsoft.com/fwlink/?LinkId=521891).
+ **禁用统一消息 (UM)** 如果您要迁移的内部部署邮箱上开启了 UM，请先将其关闭，然后再执行迁移。迁移完成以后，打开邮箱的 UM。有关具体的操作方法步骤，请参阅[禁用统一消息](https://go.microsoft.com/fwlink/?LinkId=521891)。
   
- **Use directory synchronization to create new users in Office 365.** You use directory synchronization to create all the on-premises users in your Office 365 organization.
+ **使用目录同步在 Office 365 中新建用户。** 您可以使用目录同步在您的 Office 365 组织中创建所有内部部署用户。
   
-You need to license the users after they're created. You have 30 days to add licenses after the users are created. For steps to add licenses, see [Step 8: Complete post-migration tasks](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration).
+创建用户以后，您需要对他们授予许可。您可以在创建用户之后的 30 天内添加许可证。有关添加许可证的步骤，请参阅[步骤 8：完成迁移后任务](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration)。
   
  您可以使用 Microsoft Azure Active Directory （Azure AD）同步工具或 Microsoft Azure AD 同步服务在 Office 365 中同步和创建本地用户。 当邮箱被迁移到 Office 365 之后，您可以在内部部署组织中管理用户帐户，而且它们会与 Office 365 组织同步。 有关更多信息，请参阅[目录集成](https://go.microsoft.com/fwlink/?LinkId=521788)。
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>步骤 2：为暂存迁移批处理创建 CSV 文件
 
-After you identify the users whose on-premises mailboxes you want to migrate to Office 365, you use a comma separated value (CSV ) file to create a migration batch. Each row in the CSV file—used by Office 365 to run the migration—contains information about an on-premises mailbox. 
+确定您要将其内部部署邮箱迁移到 Office 365 的用户之后，您可以使用逗号分隔值 (CSV) 文件来创建迁移批处理。Office 365 用于运行迁移的 CSV 文件中的每一行都包含有关内部部署邮箱的信息。 
   
 > [!NOTE]
-> There isn't a limit for the number of mailboxes that you can migrate to Office 365 using a staged migration. The CSV file for a migration batch can contain a maximum of 2,000 rows. To migrate more than 2,000 mailboxes, create additional CSV files and use each file to create a new migration batch. 
+> 对于使用暂存迁移来迁移到 Office 365 的邮箱数没有限制。迁移批处理的 CSV 文件最多可包含 2,000 行。若要迁移 2000 个以上邮箱，请创建额外的 CSV 文件并使用每个文件来创建新的迁移批处理。 
   
  **支持的属性**
   
-The CSV file for a staged migration supports the following three attributes. Each row in the CSV file corresponds to a mailbox and must contain a value for each of these attributes.
+暂存迁移的 CSV 文件支持下列三个属性。CSV 文件中的每一行对应于一个邮箱并且必须包含属性的相应值。
   
 |**属性**|**说明**|**是否必需？**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |为内部部署邮箱指定一个主要的 SMTP 电子邮件地址，例如，pilarp@contoso.com。  <br/> Use the primary SMTP address for on-premises mailboxes and not user IDs from the Office 365. For example, if the on-premises domain is named contoso.com but the Office 365 email domain is named service.contoso.com, you would use the contoso.com domain name for email addresses in the CSV file.  <br/> |必需  <br/> |
-|密码  <br/> |The password to be set for the new Office 365 mailbox. Any password restrictions that are applied to your Office 365 organization also apply to the passwords included in the CSV file.  <br/> |可选  <br/> |
-|ForceChangePassword  <br/> |Specifies whether a user must change the password the first time they sign in to their new Office 365 mailbox. Use **True** or **False** for the value of this parameter. <br/> > [!NOTE]> 如果已通过在本地组织中部署 Active Directory 联合身份验证服务 (AD FS) 或更高版本来实现单一登录 (SSO) 解决方案，必须将 **ForceChangePassword** 属性值设为 **False**。          |可选  <br/> |
+|EmailAddress  <br/> |为内部部署邮箱指定一个主要的 SMTP 电子邮件地址，例如，pilarp@contoso.com。  <br/> 为内部部署邮箱使用该主要的 SMTP 地址，而非 Office 365 中的用户 ID。例如，如果将内部部署域命名为 contoso.com，但是将 Office 365 电子邮件域命名为 service.contoso.com，则您应该为 CSV 文件中的电子邮件地址使用 contoso.com 域名。  <br/> |必需  <br/> |
+|密码  <br/> |需要为新的 Office 365 邮箱设置的密码。适用于 Office 365 组织的任何密码限制也适用于该 CSV 文件中包括的密码。  <br/> |可选  <br/> |
+|ForceChangePassword  <br/> |指定用户在首次登录自己的新 Office 365 邮箱时是否必须更改密码。对此参数的值使用 **True** 或 **False** 。<br/> > [!NOTE]> 如果已通过在本地组织中部署 Active Directory 联合身份验证服务 (AD FS) 或更高版本来实现单一登录 (SSO) 解决方案，必须将 **ForceChangePassword** 属性值设为 **False**。          |可选  <br/> |
    
  **CSV 文件格式**
   
-Here's an example of the format for the CSV file. In this example, three on-premises mailboxes are migrated to Office 365.
+以下是 CSV 文件格式的一个示例。在此示例中，会将三个内部部署邮箱迁移到 Office 365。
   
-The first row, or header row, of the CSV file lists the names of the attributes, or fields, specified in the rows that follow. Each attribute name is separated by a comma.
+CSV 文件的第一行（即标题行）列出了在后续行中指定的属性（或字段）的名称。每个属性名称都用逗号分隔开。
   
 ```powershell
 EmailAddress,Password,ForceChangePassword 
@@ -127,17 +127,17 @@ tobyn@contoso.com,Pa$$w0rd,False
 briant@contoso.com,Pa$$w0rd,False 
 ```
 
-Each row under the header row represents one user and supplies the information that will be used to migrate the user's mailbox. The attribute values in each row must be in the same order as the attribute names in the header row. 
+标题行下面的每行都表示一个用户，并提供将用于迁移该用户邮箱的信息。每行中属性值的顺序必须与标题行中属性名的顺序相同。 
   
-Use any text editor, or an application like Excel , to create the CSV file. Save the file as a .csv or .txt file.
+使用任何文本编辑器或 Excel 等应用程序创建 CSV 文件。将该文件另存为 .csv 或 .txt 文件。
   
 > [!NOTE]
-> If the CSV file contains non-ASCII or special characters, save the CSV file with UTF-8 or other Unicode encoding. Depending on the application, saving the CSV file with UTF-8 or other Unicode encoding can be easier when the system locale of the computer matches the language used in the CSV file. 
+> 如果 CSV 文件包含非 ASCII 字符或特殊字符，请使用 UTF-8 或其他 Unicode 编码保存 CSV 文件。根据应用程序的不同，如果计算机的系统区域设置与 CSV 文件中使用的语言相匹配，则使用 UTF-8 或其他 Unicode 编码保存 CSV 文件可能会更容易。 
   
 ### <a name="step-3-create-a-migration-endpoint"></a>步骤 3：创建迁移终结点
 <a name="BK_Endpoint"> </a>
 
-To migrate email successfully, Office 365 needs to connect and communicate with the source email system. To do this, Office 365 uses a migration endpoint. To create an Outlook Anywhere migration endpoint by using PowerShell, for staged migration, first [connect to Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
+要成功迁移电子邮件，Office 365 需要与源电子邮件系统连接和通信。为此，Office 365 可使用迁移终结点。要使用 PowerShell 创建适用于暂存迁移的 Outlook 无处不在迁移终结点，首先[连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。 
   
 有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
   
@@ -154,7 +154,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscove
 有关 **New-MigrationEndpoint** cmdlet 的详细信息，请参阅[New-MigrationEndpoint](https://go.microsoft.com/fwlink/p/?LinkId=536437)。
   
 > [!NOTE]
-> The **New-MigrationEndpoint** cmdlet can be used to specify a database for the service to use by using the **-TargetDatabase** option. Otherwise a database is randomly assigned from the Active Directory Federation Services (AD FS) 2.0 site where the management mailbox is located.
+> 可以使用 **New-MigrationEndpoint** cmdlet 指定服务要通过 **-TargetDatabase** 选项使用的数据库。在其他情况下，系统会从管理邮箱所在的 Active Directory 联合身份验证服务 (AD FS) 2.0 站点中随机分配数据库。
   
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
@@ -167,13 +167,13 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 ### <a name="step-4-create-and-start-a-stage-migration-batch"></a>步骤 4：创建并启动暂存迁移批处理
 <a name="BK_Endpoint"> </a>
 
-You can use the **New-MigrationBatch** cmdlet in Exchange Online PowerShell to create a migration batch for a cutover migration. You can create a migration batch and start it automatically by including the _AutoStart_ parameter. Alternatively, you can create the migration batch and then manually start it afterwards by using the **Start-MigrationBatch** cmdlet. This example creates a migration batch called "StagedBatch1" and uses the migration endpoint that was created in the previous step.
+您可以在 Exchange Online PowerShell 中使用 **New-MigrationBatch** cmdlet 为直接转换迁移创建迁移批处理。您可以通过包括 _AutoStart_ 参数来创建迁移批处理并自动启动。或者，您可以通过使用 **Start-MigrationBatch** cmdlet 创建迁移批处理，然后手动启动。此示例创建名为"StagedBatch1"的迁移批处理并使用之前步骤中创建的迁移终结点。
   
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
-This example also creates a migration batch called "StagedBatch1" and uses the migration endpoint that was created in the previous step. Because the  _AutoStart_ parameter isn't included, the migration batch has to be manually started on the migration dashboard or by using **Start-MigrationBatch** cmdlet. As previously stated, only one cutover migration batch can exist at a time.
+此示例还会创建名为"StagedBatch1"的迁移批处理并使用之前步骤中创建的迁移终结点。由于未包括  _AutoStart_ 参数，因此必须在迁移主控板中手动启动迁移批处理或者通过使用 **Start-MigrationBatch** cmdlet 手动启动迁移批处理。如前所述，一次只能存在一个直接转换迁移批处理。
   
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
@@ -198,16 +198,16 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>步骤 5：将内部部署邮箱转换为启用邮件的用户
 <a name="BK_Endpoint"> </a>
 
-After you have successfully migrated a batch of mailboxes, you need some way to let users get to their mail. A user whose mailbox has been migrated now has both a mailbox on-premises and one in Office 365. Users who have a mailbox in Office 365 will stop receiving new mail in their on-premises mailbox. 
+成功迁移一批邮箱以后，您需要某种方法使用户可以访问他们的邮件。已迁移邮箱的用户现在既有一个内部部署邮箱，又有一个 Office 365 邮箱。在 Office 365 中有邮箱的用户将停止在内部部署邮箱中接收新邮件。 
   
-Because you are not done with your migrations, you are not yet ready to direct all users to Office 365 for their email. So what do you do for those people who have both? What you can do is change the on-premises mailboxes that you've already migrated to mail-enabled users. When you change from a mailbox to a mail-enabled user, you can direct the user to Office 365 for their email instead of going to their on-premises mailbox. 
+由于您尚未完成迁移，因此目前无法将所有用户定向到 Office 365 接收其电子邮件。那么，可以为这些拥有两个邮箱的用户做些什么呢？您可以做的是更改您已迁移到邮件启用的用户的内部部署邮箱。当您从一个邮箱更改为邮件启用的用户时，可以将该用户定向到其电子邮件的 Office 365，而非内部部署邮箱。 
   
-Another important reason to convert on-premises mailboxes to mail-enabled users is to retain proxy addresses from the Office 365 mailboxes by copying proxy addresses to the mail-enabled users. This lets you manage cloud-based users from your on-premises organization by using Active Directory. Also, if you decide to decommission your on-premises Exchange Server organization after all mailboxes are migrated to Office 365, the proxy addresses you've copied to the mail-enabled users will remain in your on-premises Active Directory.
+将内部部署邮箱转换为启用邮件的用户的另一个重要原因是通过将代理地址复制到启用邮件的用户，来保留 Office 365 邮箱中的代理地址。这使您可以使用 Active Directory 管理来自内部部署组织的基于云的用户。此外，如果您决定在所有邮箱都迁移到 Office 365 之后停止使用内部部署 Exchange Server 组织，则复制到启用邮件的用户的代理地址仍会保留在内部部署 Active Directory 中。
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>步骤 6：删除暂存迁移批处理
 <a name="BK_Endpoint"> </a>
 
- After all mailboxes in a migration batch have been successfully migrated, and you've converted the on-premises mailboxes in the batch to mail-enabled users, you're ready to delete a staged migration batch. Be sure to verify that mail is being forwarded to the Office 365 mailboxes in the migration batch. When you delete a staged migration batch, the migration service cleans up any records related to the migration batch and deletes the migration batch.
+ 在迁移批处理中的所有邮箱都已成功迁移并且将批处理中的内部部署邮箱转换为启用邮件的用户之后，可以准备删除暂存迁移批处理。确保验证邮件正在转发到迁移批处理中的 Office 365 邮箱。当您删除暂存迁移批处理时，迁移服务将清除任何与迁移批处理相关的记录，同时删除迁移批处理。
   
 要在 Exchange Online PowerShell 中删除“StagedBatch1”迁移批处理，请运行以下命令。
   
@@ -237,9 +237,9 @@ Get-MigrationBatch StagedBatch1
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Postmigration"> </a>
 
-- **Create an Autodiscover DNS record so users can easily get to their mailboxes.** After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
+- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。** 所有内部部署邮箱都迁移到 Office 365 以后，您可以为您的 Office 365 组织配置自动发现 DNS 记录，使用户可以轻松地使用 Outlook 和移动客户端连接到他们的新 Office 365 邮箱。此新自动发现 DNS 记录必须使用对 Office 365 组织使用的相同命名空间。例如，如果您基于云的命名空间是 cloud.contoso.com，则您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
     
-    Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
+    Office 365 使用 CNAME 记录为 Outlook 和移动客户端实现自动发现服务。自动发现 CNAME 记录必须包含以下信息：
     
   - **别名：** autodiscover
     
@@ -247,7 +247,7 @@ Get-MigrationBatch StagedBatch1
     
     有关更多信息，请参阅[管理 DNS 记录时为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=535028)。
     
-- **Decommission on-premises Exchange servers.** After you've verified that all email is being routed directly to the Office 365 mailboxes, and you no longer need to maintain your on-premises email organization or don't plan on implementing an SSO solution, you can uninstall Exchange from your servers and remove your on-premises Exchange organization.
+- **停止使用内部部署 Exchange 服务器。** 当您验证所有电子邮件都可以直接被路由到 Office 365 邮箱，并且您不再需要维护内部部署电子邮件组织或不用计划实施 SSO 解决方案以后，您可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
     
     有关详细信息，请参阅以下资源：
     

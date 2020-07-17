@@ -44,9 +44,9 @@ ms.locfileid: "45102560"
 - Azure 中的 Office 服务器工作负载所支持的配置是什么？
     
 > [!TIP]
-> Most of the posters on this page are available in multiple languages, including Chinese, English, French, German, Italian, Japanese, Korean, Portuguese, Russian, and Spanish. To download a poster in one of these languages, click the **More languages** link for that poster.
+> 此页上的大多数海报都有多种语言，包括中文、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语和西班牙语。若要下载其中一种语言的海报，请单击相应海报的**更多语言**链接。
   
-Let us know what you think! Send us email at [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
+请将你的想法告诉我们！向我们 ([cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)) 发送电子邮件。 
   
 此页面链接到下列海报：
   
@@ -76,7 +76,7 @@ Let us know what you think! Send us email at [cloudadopt@microsoft.com](mailto:c
     
 ## <a name="architectural-models-posters"></a>体系结构模型海报
 
-These new IT posters for SharePoint 2016 and Skype for Business 2015 provide a way to compare the various deployment methods in an easy-to-print format. Each poster provides a list of all the configurations or platform options available and gives you the following information for each option:
+这些 SharePoint 2016 和 Skype for Business 2015 的新 IT 海报，提供了一种以轻松打印形式比较各种部署方法的方式。每张海报都提供了所有配置或平台的可用选项列表，并针对每个选项提供了以下信息：
   
 - **概述** 平台的简短摘要，包括概念图。
     
@@ -93,25 +93,25 @@ These new IT posters for SharePoint 2016 and Skype for Business 2015 provide a w
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![SharePoint 2016 体系结构模型海报缩略图](media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | 此 IT 海报介绍了业务决策者和解决方案架构师需要了解的 SharePoint Online、Microsoft Azure 和 SharePoint 本地配置。 <br/><br/> - **SharePoint Online (SaaS)** – 通过服务型软件 (SaaS) 订阅模型使用 SharePoint。 <br/> - **SharePoint 混合** – 按你自己的步调将 SharePoint 网站和应用移到云。 <br/> - **SharePoint in Azure (IaaS)** - You extend your on-premises environment into Microsoft Azure and deploy SharePoint 2016 Servers there. (This is recommended for High Availability/Disaster Recovery and dev/test environments.) <br/> - **SharePoint 本地部署** – 规划、部署、维护和自定义你维护的数据中心中的 SharePoint 环境。 <br/> |
+|[![SharePoint 2016 体系结构模型海报缩略图](media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | 此 IT 海报介绍了业务决策者和解决方案架构师需要了解的 SharePoint Online、Microsoft Azure 和 SharePoint 本地配置。 <br/><br/> - **SharePoint Online (SaaS)** – 通过服务型软件 (SaaS) 订阅模型使用 SharePoint。 <br/> - **SharePoint 混合** – 按你自己的步调将 SharePoint 网站和应用移到云。 <br/> - **Azure 中的 SharePoint (IaaS)** – 将你的本地环境扩展到 Microsoft Azure 中并在其中部署 SharePoint 2016 服务器。（建议用于高可用性/灾难恢复和开发/测试环境。）<br/> - **SharePoint 本地部署** – 规划、部署、维护和自定义你维护的数据中心中的 SharePoint 环境。 <br/> |
    
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>SharePoint Server 2016 数据库
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![SharePoint Server 2016 数据库海报的缩略图](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | This IT poster is a quick reference guide for SharePoint Server 2016 databases. Each database has the following details: <br/><br/> - 大小 <br/> - 扩展指南 <br/> - I/O 模式 <br/> - 要求： <br/><br/>  The first page has the SharePoint system databases and the service applications that have multiple databases. The second page shows all of the service applications that have single databases. <br/><br/>  有关 SharePoint Server 2016 数据库的详细信息，请参阅 [SharePoint Server 2016 中的数据库类型和说明](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
+|[![SharePoint Server 2016 数据库海报的缩略图](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | 此 IT 海报是 SharePoint Server 2016 数据库的快速参考指南。每个数据库都包含以下详细信息：<br/><br/> - 大小 <br/> - 扩展指南 <br/> - I/O 模式 <br/> - 要求： <br/><br/>  第一页包含 SharePoint 系统数据库和具有多个数据库的服务应用程序。第二页显示了具有单个数据库的所有服务应用程序。<br/><br/>  有关 SharePoint Server 2016 数据库的详细信息，请参阅 [SharePoint Server 2016 中的数据库类型和说明](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Microsoft Skype for Business 2015 体系结构模型
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![Skype for Business 体系结构模型海报缩略图](media/132288c0-6ae4-4394-88ab-b57dae367714.png)          ](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55022) <br/> |本海报介绍了业务决策制定者和解决方案架构师需要了解的 Skype for Business Online、本地、混合、云 PBX 及与 Exchange 和 SharePoint 配置的集成。 <br/><br/> 它旨在使 IT 专业受众了解使用 Skype for Business Online 和 Skype for Business 本地可以利用的不同的基本体系结构模型。 <br/><br/>Start with whichever configuration best suits your organization's needs and future plans. Consider and use others as needed. For example, you might want to consider integration with Exchange and SharePoint or a solution that takes advantage of Microsoft's Cloud PBX offering.  <br/> |
+|[![Skype for Business 体系结构模型海报缩略图](media/132288c0-6ae4-4394-88ab-b57dae367714.png)          ](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55022) <br/> |本海报介绍了业务决策制定者和解决方案架构师需要了解的 Skype for Business Online、本地、混合、云 PBX 及与 Exchange 和 SharePoint 配置的集成。 <br/><br/> 它旨在使 IT 专业受众了解使用 Skype for Business Online 和 Skype for Business 本地可以利用的不同的基本体系结构模型。 <br/><br/>从最适合组织需求和未来计划的配置开始。根据需要考虑并使用其他配置。例如，你可能要考虑与 Exchange 和 SharePoint 集成，或者考虑与利用 Microsoft 云 PBX 产品/服务的解决方案集成。  <br/> |
    
 ## <a name="platform-options-posters"></a>平台选项海报
 
-These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way to compare the various deployment methods at a single glance in a large poster format. Each poster provides a list of all the configurations or platform options available and gives you the following information for each option:
+这些 SharePoint 2013、Exchange 2013 和 Lync 2013 的 IT 海报以大型海报形式提供了一种总体比较各种部署方法的方式。每张海报都提供了所有配置或平台的可用选项列表，并针对每个选项提供了以下信息：
   
 - **概述** 平台的简短摘要，包括概念图。
     

@@ -36,7 +36,7 @@ Azure Active Directory （Azure AD） Connect （以前称为目录同步工具�
 - Azure 可以更轻松地提供更好的网站可用性。
 - 可以减少组织中本地服务器的数量。
 
-This solution requires connectivity between your on-premises network and your Azure virtual network. For more information, see [Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
+此解决方案要求在本地网络和 Azure 虚拟网络之间建立连接。有关详细信息，请参阅[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)。 
   
 > [!NOTE]
 > 本文介绍了单个林中单个域的同步。 Azure AD Connect 将 Active Directory 林中的所有 AD DS 域与 Microsoft 365 同步。 如果您有多个 Active Directory 林与 Microsoft 365 同步，请参阅[具有单一登录方案的多林目录同步](https://go.microsoft.com/fwlink/p/?LinkId=393091)。 
@@ -47,7 +47,7 @@ This solution requires connectivity between your on-premises network and your Az
   
 ![Azure 中的虚拟机上的 azure AD Connect 工具将本地帐户同步到 Microsoft 365 订阅的 Azure AD 租户以及流量流](media/CP-DirSyncOverview.png)
   
-In the diagram, there are two networks connected by a site-to-site VPN or ExpressRoute connection. There is an on-premises network where AD DS domain controllers are located, and there is an Azure virtual network with a directory sync server, which is a virtual machine running [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). There are two main traffic flows originating from the directory sync server:
+图中有两个通过站点间 VPN 或 ExpressRoute 连接进行连接的网络：一个是 AD DS 域控制器所在的本地网络，另外一个是带有目录同步服务器的 Azure 虚拟网络，目录同步服务器是一个运行 [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) 的虚拟机。有两个主要通信流源自目录同步服务器：
   
 -  Azure AD Connect 查询本地网络上的域控制器以获取对帐户和密码的更改。
 -  Azure AD Connect 将对帐户和密码所做的更改发送到 Microsoft 365 订阅的 Azure AD 实例。 由于目录同步服务器位于本地网络的扩展部分，因此将通过内部部署网络的代理服务器发送这些更改。
@@ -57,7 +57,7 @@ In the diagram, there are two networks connected by a site-to-site VPN or Expres
   
 部署此解决方案时有两个主要步骤：
   
-1. Create an Azure virtual network and establish a site-to-site VPN connection to your on-premises network. For more information, see [Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
+1. 创建 Azure 虚拟网络和建立到本地网络的站点间 VPN 连接。有关详细信息，请参阅[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)。
     
 2. 在 Azure 中加入域的虚拟机上安装[AZURE AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) ，然后将本地 AD DS 同步到 Microsoft 365。 这包括：
     
@@ -96,17 +96,17 @@ In the diagram, there are two networks connected by a site-to-site VPN or Expres
 
 下面列出了此解决方案需做出的设计选择。
   
-- This solution uses a single Azure virtual network with a site-to-site VPN connection. The Azure virtual network hosts a single subnet that has one server, the directory sync server that is running Azure AD Connect. 
+- 此解决方案使用具有站点间 VPN 连接的单个 Azure 虚拟网络。Azure 虚拟网络托管包含一个服务器（即运行 Azure AD Connect 的目录同步服务器）的单个子网。 
     
 - 在本地网络中，存在域控制器和 DNS 服务器。
     
-- Azure AD Connect performs password hash synchronization instead of single sign-on. You do not have to deploy an Active Directory Federation Services (AD FS) infrastructure. To learn more about password hash synchronization and single sign-on options, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://aka.ms/auth-options).
+- Azure AD Connect 执行密码哈希同步而不是单一登录。你无需部署 Active Directory 联合身份验证服务 (AD FS) 基础结构。要了解有关密码哈希同步和单一登录选项的详细信息，请参阅[为 Azure Active Directory 混合标识解决方案选择正确的身份验证方法](https://aka.ms/auth-options)。
     
-There are additional design choices that you might consider when you deploy this solution in your environment. These include the following:
+下面是在环境中部署此解决方案时可能会考虑的一些其他设计选项：
   
 - 如果现有的 Azure 虚拟网络中已有 DNS 服务器，请确定是否希望目录同步服务器取代本地网络的 DNS 服务器将其用于名称解析。
     
-- If there are domain controllers in an existing Azure virtual network, determine whether configuring Active Directory Sites and Services may be a better option for you. The directory sync server can query the domain controllers in the Azure virtual network for changes in accounts and passwords instead of domain controllers on the on-premises network.
+- 如果现有的 Azure 虚拟网络中存在域控制器，请确定配置 Active Directory 站点和服务是否为更好的选择。目录同步服务器可以用 Azure 虚拟网络中的域控制器查询帐户和密码的更改，而不是使用本地网络上的域控制器。
     
 ## <a name="deployment-roadmap"></a>部署路线图
 
@@ -133,19 +133,19 @@ There are additional design choices that you might consider when you deploy this
   
 ### <a name="phase-2-create-and-configure-the-azure-virtual-machine"></a>阶段 2：创建和配置 Azure 虚拟机
 
-Create the virtual machine in Azure using the instructions [Create your first Windows virtual machine in the Azure portal](https://go.microsoft.com/fwlink/p/?LinkId=393098). Use the following settings:
+按照[在 Azure 门户中创建第一个 Windows 虚拟机](https://go.microsoft.com/fwlink/p/?LinkId=393098)中的说明在 Azure 中创建虚拟机。使用以下设置：
   
-- On the **Basics** pane, select the same subscription, location, and resource group as your virtual network. Record the user name and password in a secure location. You will need these later to connect to the virtual machine.
+- 在“**基本信息**”窗格中，选择与虚拟网络相同的订阅、位置和资源组。在安全的位置记录用户名和密码。你稍后将需要使用这些以连接到虚拟机。
     
 - 在“选择大小”**** 窗格中，请选择“A2 标准”**** 大小。
     
-- On the **Settings** pane, in the **Storage** section, select the **Standard** storage type. In the **Network** section, select the name of your virtual network and the subnet for hosting the directory sync server (not the GatewaySubnet). Leave all other settings at their default values.
+- 在“设置”**** 窗格的“存储”**** 部分中，选择“标准”**** 存储类型。在“网络”**** 部分中，选择虚拟网络的名称和托管目录同步服务器（不是 GatewaySubnet）的子网。其他所有设置都保留默认值。
     
 通过检查内部 DNS 验证目录同步服务器是否正确使用 DNS，以确保为具有其 IP 地址的虚拟机添加地址 (A) 记录。 
   
-Use the instructions in [Connect to the virtual machine and sign on](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon) to connect to the directory sync server with a Remote Desktop Connection. After signing in, join the virtual machine to the on-premises AD DS domain.
+按照[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon)中的说明，使用远程桌面连接来连接到目录同步服务器。登录后，将虚拟机加入到本地 AD DS 域。
   
-For Azure AD Connect to gain access to Internet resources, you must configure the directory sync server to use the on-premises network's proxy server. You should contact your network administrator for any additional configuration steps to perform.
+若要使用 Azure AD Connect 访问 Internet 资源，必须将目录同步服务器配置为使用本地网络的代理服务器。有关要执行的其他配置步骤，应与网络管理员联系。
   
 这是生成的配置。
   
@@ -157,12 +157,12 @@ For Azure AD Connect to gain access to Internet resources, you must configure th
 
 请完成以下过程：
   
-1. Connect to the directory sync server using a Remote Desktop Connection with an AD DS domain account that has local administrator privileges. See [Connect to the virtual machine and sign on](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon).
+1. 通过远程桌面连接，使用具有本地管理员特权的 AD DS 域帐户连接到目录同步服务器。请参阅[连接到虚拟机并登录](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon)。
     
 2. 在目录同步服务器中，打开 "[为 Microsoft 365 文章设置目录同步](set-up-directory-synchronization.md)"，并按照有关使用密码哈希同步进行目录同步的说明进行操作。
     
 > [!CAUTION]
-> Setup creates the **AAD_xxxxxxxxxxxx** account in the Local Users organizational unit (OU). Do not move or remove this account or synchronization will fail.
+> 安装程序将在本地用户组织单位 (OU) 中创建 **AAD_xxxxxxxxxxxx** 帐户。请勿移动或删除该帐户，否则同步将失败。
   
 这是生成的配置。
   

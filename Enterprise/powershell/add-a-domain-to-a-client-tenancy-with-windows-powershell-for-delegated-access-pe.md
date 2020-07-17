@@ -31,7 +31,7 @@ ms.locfileid: "44997358"
 委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Microsoft 365 订阅捆绑到其客户的服务产品中。 在销售 Microsoft 365 订阅时，会自动将代表（AOBO）权限的 "管理" 授予 "客户" 租赁，以便他们可以管理和报告客户租赁。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-The procedures in this topic require you to connect to Windows PowerShell for Office 365. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).
+本主题中的步骤需要您连接到适用于Office 365的Windows PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
   
 您也需要您的合作伙伴租户管理员凭据。
   
@@ -41,13 +41,13 @@ The procedures in this topic require you to connect to Windows PowerShell for Of
     
 - 您需要客户的 **TenantId** 。
     
-- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publically register a domain name, see [How to buy a domain name](https://go.microsoft.com/fwlink/p/?LinkId=532541).
+- FQDN 必须在 Internet 域名服务 (DNS) 注册机构（如 GoDaddy）中注册。有关如何公开注册域名的详细信息，请参阅[如何购买域名](https://go.microsoft.com/fwlink/p/?LinkId=532541)。
     
 - 您需要了解如何为您的 DNS 注册机构的注册 DNS 区域添加 TXT 记录。 有关如何添加 TXT 记录的详细信息，请参阅[添加 DNS 记录以连接到您的域](https://go.microsoft.com/fwlink/p/?LinkId=532542)。 如果这些步骤对您不适用，您需要查找适用于您的 DNS 注册机构的过程。
     
 ## <a name="create-domains"></a>创建域
 
- Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default <domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world. This procedure walks you through creating a new domain associated with your customer's tenancy.
+ 您的客户可能会要求您创建与其租赁关联的其他域，因为他们不想让默认的<domain>.onmicrosoft.com域成为向全世界展示其公司标识的主要域。此步骤将引导您创建与您的客户租赁相关联的新域。
   
 > [!NOTE]
 > 若要执行某些操作，必须将您登录时使用的合作伙伴管理员帐户设置为 "**完全管理**"，以便在 Microsoft 365 管理中心的 "管理员" 帐户详细信息中，"为**您支持的公司分配管理访问权限**" 设置为 "完全管理"。 有关管理合作伙伴管理员角色的详细信息，请参阅[合作伙伴：提供委派管理](https://go.microsoft.com/fwlink/p/?LinkId=532435)。 
@@ -87,7 +87,7 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
 
 在 Microsoft 365 开始接受定向到公开注册域名的流量之前，必须证明你拥有此域的管理员权限并拥有该域的管理员权限。 您可通过在域中创建 TXT 记录来证明您拥有该域。 TXT 记录不会在您的域中执行任何操作，并且可以在建立您对域的所有权后删除。 若要创建 TXT 记录，请按照[添加 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=532542)中的过程连接您的域。 如果这些步骤对您不适用，您需要查找适用于您的 DNS 注册机构的过程。
   
-Confirm the successful creation of the TXT record via nslookup. Follow this syntax.
+通过 nslookup 确认已成功创建 TXT 记录。遵循下面的语法。
   
 ```
 nslookup -type=TXT <FQDN of registered domain>

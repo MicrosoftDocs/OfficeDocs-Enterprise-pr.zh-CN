@@ -47,7 +47,7 @@ ms.locfileid: "44997418"
     > 对于 Azure Active Directory PowerShell for Graph 模块，必须使用 PowerShell 版本 5.1 或以上版本。 对于用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块，必须使用 PowerShell 版本 5.1 或以上版本（最高版本 6）。 你无法使用 PowerShell 版本 7。 对于 Windows 8.1、Windows 8、Windows 7 Service Pack 1 (SP1)、Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 SP1，请下载并安装 [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616)。 
     
     > [!NOTE]
-    > Use a 64-bit version of Windows. Support for the 32-bit version the Microsoft Azure Active Directory Module for Windows PowerShell was discontinued in October of 2014.
+    > 请使用 64 位版 Windows。2014 年 10 月，用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块已不再支持 32 位版。
     
 这些步骤适合于属于 Office 365 管理员角色成员的用户。 有关详细信息，请参阅[关于 Office 365 管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
 
@@ -64,7 +64,7 @@ Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称�
 
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+这些步骤只需在您的计算机上执行一次即可，而不是在每次连接时都要求执行。但是，您可能需要定期安装较新版本的软件。
   
 1. 打开提升的 Windows PowerShell 命令提示符（以管理员身份运行 Windows PowerShell）。
     
@@ -106,7 +106,7 @@ PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称
     
 ### <a name="step-1-install-required-software"></a>步骤 1：安装所需软件
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+这些步骤只需在您的计算机上执行一次即可，而不是在每次连接时都要求执行。但是，您可能需要定期安装较新版本的软件。
   
 1.  如果未运行 Windows 10，请安装64位版本的 Microsoft Online Services 登录助手： [Microsoft Online Services 登录助手为 IT 专业人员 RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)。
     
@@ -136,7 +136,7 @@ These steps are required once on your computer, not every time you connect. Howe
 
 ### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
-If you don't receive any errors, you connected successfully. A quick test is to run an Office 365 cmdlet—for example, **Get-MsolUser** —and see the results.
+如果未收到任何错误，则说明连接成功。一个快速测试是运行 Office 365 cmdlet（例如 **Get-MsolUser** ），然后查看结果。
   
 如果收到错误，则查看以下要求：
   
@@ -151,7 +151,7 @@ If you don't receive any errors, you connected successfully. A quick test is to 
   - 对于 Windows 10、Windows 8.1 和 Windows 8，请参阅[在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
 
   
-- **Your version of the Microsoft Azure Active Directory Module for Windows PowerShell might be out of date.** To check, run the following command in Office 365 PowerShell or the Microsoft Azure Active Directory Module for Windows PowerShell:
+- **您的 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 版本可能已过期。** 若要进行检查，请在 Office 365 PowerShell 或 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块 中运行以下命令：
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion

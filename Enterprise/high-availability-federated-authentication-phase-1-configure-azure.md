@@ -44,12 +44,12 @@ ms.locfileid: "45102540"
 |1.  <br/> |VNet 名称  <br/> |要分配给 VNet (示例 FedAuthNet) 的名称。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet 地址空间  <br/> |The address space for the virtual network. Work with your IT department to determine this address space.  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共享的密钥  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。  <br/> |![线条](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 V：跨部署虚拟网络配置**
   
-Next, fill in Table S for the subnets of this solution. All address spaces should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.
+接下来，填写针对此解决方案的子网的表 S。所有地址空间应为无类别域际路由选择 (CIDR) 格式，也称为网络前缀格式。例如，10.24.64.0/20。
   
 对于前三个子网，请根据虚拟网络地址空间指定一个名称和一个 IP 地址空间。 对于网关子网，请使用以下内容确定具有/27 前缀长度) 的27位地址空间 (。具有以下各项的 Azure 网关子网。
   
@@ -96,7 +96,7 @@ Next, fill in Table S for the subnets of this solution. All address spaces shoul
   
 若要在整个站点到站点 VPN 连接中将数据包从跨界网络路由到组织网络，您必须使用本地网络配置虚拟网络，该本地网络的地址空间列表 (在您组织的内部部署网络中的所有可访问位置的 CIDR 表示法) 中。 定义本地网络的地址空间列表必须是唯一的，并且不得与用于其他虚拟网络或其他本地网络的地址空间重叠。
   
-For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list of address spaces.
+对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
 |**项**|**本地网络地址空间**|
 |:-----|:-----|
@@ -261,7 +261,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+接下来，请将本地 VPN 设备配置为连接到 Azure VPN 网关。有关详细信息，请参阅[配置 VPN 设备](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
   
 若要配置本地 VPN 设备，需要以下各项：
   
@@ -269,7 +269,7 @@ Next, configure your on-premises VPN device to connect to the Azure VPN gateway.
     
 - 站点到站点 VPN 连接的 IPsec 预共享密钥（表 V - 第 5 项 - 值列）。
     
-Next, ensure that the address space of the virtual network is reachable from your on-premises network. This is usually done by adding a route corresponding to the virtual network address space to your VPN device and then advertising that route to the rest of the routing infrastructure of your organization network. Work with your IT department to determine how to do this.
+接下来，请确保虚拟网络的地址空间是可以从本地网络访问。这通常是通过以下操作完成：将对应于虚拟网络地址空间的路由添加到 VPN 设备中，然后将该路由公布到组织网络中其余的路由基础结构。与 IT 部门协作，以确定如何完成上述操作。
   
 接下来，定义三个可用性集的名称。 填写表 A。 
   

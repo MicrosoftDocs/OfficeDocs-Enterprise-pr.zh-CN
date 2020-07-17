@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: 'Summary: Internet sites that use SharePoint Server 2013 benefit by being hosted in Azure Infrastructure Services. This article provides resources for designing and implementing this solution.'
+description: 摘要：使用 SharePoint Server 2013 的 Internet 站点得益于托管在 Azure 基础结构服务中。本文提供了用于设计和实现此解决方案的资源。
 ms.openlocfilehash: fa01df6903a9cbc2ec6163514f27a6bd2fd603aa
 ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "44998114"
   
 ## <a name="using-azure-infrastructure-services-for-internet-sites"></a>将 Azure 基础结构服务用于 Internet 站点
 
-Microsoft Azure provides a compelling option for hosting Internet sites based on SharePoint Server 2013. Advantages include the following:
+Microsoft Azure 提供了托管基于 SharePoint Server 2013 的 Internet 站点的极具吸引力的选项。优点包括：
   
 - 重点关注开发出色的网站，而不是构建基础结构。
     
