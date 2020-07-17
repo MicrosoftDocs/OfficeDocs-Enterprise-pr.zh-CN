@@ -61,7 +61,7 @@ ms.locfileid: "45092881"
 
 有关迁移这些服务的先决条件及其影响，可参阅 [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) 文章。
 
-Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 租户迁移到新德国数据中心区域，则 SharePoint Online 在迁移完成后，将不支持Office 365 视频。 [了解更多详细信息](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
+Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 租户迁移到新德国数据中心区域，则 SharePoint Online 迁移完成后，将不支持 Office 365 视频。 [了解更多详细信息](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何做好准备以迁移到新的德国数据中心区域内的 Office 365 服务
 
@@ -106,9 +106,9 @@ Exchange Online 混合客户必须在过渡之前重新运行混合配置向导�
 现有 Skype for Business Online 客户将过渡到 Microsoft Teams。 有关详细信息，请参阅 [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home)。
 
 ### <a name="office-365-video"></a>Office 365 视频
-Office 365 视频中的内容将作为 SharePoint Online 迁移的一部分进行迁移。 但是 Office 365 视频正在停用，在 SharePoint Online 迁移到新德国数据中心区域后，Office 365 视频将不受支持。 SharePoint 迁移后，Office 365 视频中的视频将不会在 Office 365 视频 UI 中播放。
+Office 365 视频中的内容将作为 SharePoint Online 迁移的一部分进行迁移。 但是 Office 365 视频即将停用，并且在 SharePoint Online 迁移到新德国数据中心区域后，Office 365 视频将不受支持。 SharePoint 迁移后，Office 365 视频中的视频将不会在 Office 365 视频 UI 中播放。
 
-Microsoft Stream 不会部署到 Microsoft Deutschland，且目前也没有在新德国数据中心地区部署 Microsoft Stream 的日程表。 因此在此区域不会为 Office 365 视频到 Microsoft Stream 提供任何迁移工具。 若要保留内容，你需在2021年 3 月 1 日之前手动下载或移动内容。 [了解更多详细信息](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
+Microsoft Stream 不会部署到 Microsoft 德国公司，并且目前还没有在新德国数据中心地区部署 Microsoft Stream 的日程表。 因此在此区域不会为 Office 365 视频迁移到 Microsoft Stream 提供任何迁移工具。 若要保留内容，你需在 2021 年 3 月 1 日之前手动下载或移动内容。 [了解更多详细信息](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 
 ## <a name="key-differences-between-microsoft-cloud-germany-microsoft-cloud-deutschland-and-office-365-services-in-the-new-german-datacenter-regions"></a>德国 Microsoft 云与新的德国数据中心区域内的 Office 365 服务之间的主要区别
