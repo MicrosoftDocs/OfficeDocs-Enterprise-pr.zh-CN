@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 通过安装指南加快规划和配置 Microsoft 365 或 Office 365。
-ms.openlocfilehash: 92c792b3d82a6a0f1405059ae50db581823704dc
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a3523b78c33b51d00da24bd9b43d39e5e5fb67e7
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735970"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201626"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服务的设置指南
 
@@ -103,6 +103,15 @@ Microsoft 365 和 Office 365 安装指南为管理员提供了用于部署应用
 | **以** | [远程工作安装指南](https://aka.ms/remoteworksetup) |
 |||
 
+### <a name="windows-virtual-desktop-setup-guide"></a>Windows 虚拟桌面安装指南
+
+Windows 虚拟桌面是在云中运行的全面桌面和应用虚拟化服务。 这是唯一一个虚拟桌面基础结构（VDI），提供简化的管理、多会话 Windows 10、Microsoft 365 应用的优化以及对远程桌面服务（RDS）环境的支持。 在几分钟内部署 Windows 桌面和应用程序并将其扩展到 Azure，并获取内置安全性和合规性功能。 **Windows 虚拟桌面安装指南**为管理员提供了规划资源以及部署、安装指南和其他资源的先决条件。 
+
+|||
+|:-------|:-----|
+| **以** | [Windows 虚拟桌面安装指南](https://aka.ms/wvdsetupguide) |
+|||
+
 ## <a name="guides-for-security"></a>安全指南
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD 安装指南
@@ -112,6 +121,15 @@ Microsoft 365 和 Office 365 安装指南为管理员提供了用于部署应用
 |||
 |:-------|:-----|
 | **以** | [Azure AD 安装指南](https://aka.ms/aadpguidance) |
+|||
+
+### <a name="plan-your-passwordless-deployment"></a>规划 passwordless 部署
+
+升级到替代登录方法，以允许用户使用以下 passwordless 身份验证方法之一安全地访问其设备： Windows Hello 企业版、Microsoft 身份验证器应用程序或安全密钥。 使用此向导发现最佳 passwordless 身份验证方法，以使用和接收有关如何部署它们的指导。
+
+|||
+|:-------|:-----|
+| **以** | [规划 passwordless 部署](https://aka.ms/passwordlesssetup) |
 |||
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender 高级威胁防护（ATP）顾问

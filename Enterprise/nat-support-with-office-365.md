@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 摘要：提供了有关如何使用网络地址转换（NAT）对组织中的每个 IP 地址使用的客户端的正确数量的详细信息。
-ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998537"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201606"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 中的 NAT 支持
 
@@ -40,7 +40,7 @@ ms.locfileid: "44998537"
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>为什么您需要将这么多的连接同时打开到 Office 365？
 
-Outlook 可能会打开八个或更多的连接（在有加载项、共享日历、邮箱等的情况下）。 由于基于 Windows 的 NAT 设备上最多可提供64000个端口，因此在端口耗尽之前，IP 地址最多可以有8000个用户。 请注意，如果客户使用的是基于非 Windows 操作系统的 NAT 设备，则可用端口总数取决于所使用的 NAT 设备或软件。 在这种情况下，最大端口数可能小于64000。 端口的可用性也受其他因素（如 Windows 限制4000端口以供其自己使用）的影响，这会将可用端口的总数减少到 60 000。可能还有其他应用程序（如 Internet Explorer）可以同时连接，需要额外的端口。
+Outlook 可能会打开八个或更多的连接（在有加载项、共享日历、邮箱等的情况下）。 由于基于 Windows 的 NAT 设备上最多可提供64000个端口，因此在端口耗尽之前，IP 地址最多可以有8000个用户。 请注意，如果客户使用的是基于非 Windows 操作系统的 NAT 设备，则可用端口总数取决于所使用的 NAT 设备或软件。 在这种情况下，最大端口数可能小于64000。 端口的可用性也受其他因素（如 Windows 限制4000端口以供其自己使用）的影响，这会将可用端口的总数减少到60000。 可能存在其他可能同时连接的应用程序（如 Internet Explorer），需要额外的端口。
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>使用 Office 365 计算单个公共 IP 地址后的最大受支持设备数
 
