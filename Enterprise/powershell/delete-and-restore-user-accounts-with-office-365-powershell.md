@@ -1,9 +1,9 @@
 ---
-title: 使用 Office 365 PowerShell 删除用户帐户
+title: 使用 PowerShell 删除 Microsoft 365 用户帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,21 +18,21 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: 了解如何使用 Office 365 PowerShell 删除 Office 365 用户帐户。
-ms.openlocfilehash: ca9224c58bda9a0d3e226db17efeb9af8de076f0
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 了解如何使用适用于 Microsoft 365 的 PowerShell 删除用户帐户。
+ms.openlocfilehash: 62d9dee2e6b0d2054116e5e5f005b5928112186d
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004675"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230708"
 ---
-# <a name="delete-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 删除用户帐户
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 删除 Microsoft 365 用户帐户
 
-可使用 Office 365 PowerShell 删除用户帐户。
+您可以使用适用于 Microsoft 365 的 PowerShell 删除用户帐户。
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 连接后，使用下列语法删除单个用户帐户：
   
@@ -74,7 +74,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块删除用户帐户时，该帐户不会被永久删除。可以在 30 天内还原已删除的用户帐户。
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 若要删除一个用户帐户，请使用下面的语法：
   
@@ -117,8 +117,8 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)

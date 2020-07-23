@@ -1,9 +1,9 @@
 ---
-title: 使用 Office 365 PowerShell 创建用户帐户
+title: 使用 PowerShell 创建 Microsoft 365 用户帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,32 +18,34 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: 了解如何在 Office 365 中使用 Office 365 PowerShell 来创建用户帐户。
-ms.openlocfilehash: 95cbefc2caeb61376ed77fe5023cb1c050a8fa07
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 了解如何使用适用于 Microsoft 365 的 PowerShell 来创建用户帐户。
+ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004685"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230788"
 ---
-# <a name="create-user-accounts-with-office-365-powershell"></a>使用 Office 365 PowerShell 创建用户帐户
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 创建 Microsoft 365 用户帐户
 
-您可以使用 Office 365 PowerShell 来高效地创建用户帐户，尤其是多个用户帐户。当您在 Office 365 PowerShell 中创建用户帐户时，某些帐户属性始终是必需的。其他属性对于创建帐户则不是必需的，但也很重要。下表介绍了这些属性：
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+您可以使用适用于 Microsoft 365 的 PowerShell 高效地创建用户帐户，尤其是多个用户帐户。 当您在 PowerShell 中创建用户帐户时，某些帐户属性始终是必需的。 其他属性对于创建帐户则不是必需的，但也很重要。 下表介绍了这些属性：
   
 |**属性名称**|**是否必需？**|**说明**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |是  <br/> |这是在 Office 365 服务中使用的显示名称。例如，Caleb Sills。  <br/> |
-|**UserPrincipalName** <br/> |是  <br/> |这是用于登录到 Office 365 服务的帐户名称。例如，CalebS@contoso.onmicrosoft.com。  <br/> |
+|**DisplayName** <br/> |是  <br/> |这是在 Microsoft 365 服务中使用的显示名称。 例如，Caleb Sills。  <br/> |
+|**UserPrincipalName** <br/> |是  <br/> |这是用于登录 Microsoft 365 服务的帐户名称。 例如，CalebS@contoso.onmicrosoft.com。  <br/> |
 |**FirstName** <br/> |否  <br/> ||
 |**LastName** <br/> |否  <br/> ||
-|**LicenseAssignment** <br/> |否  <br/> |这是许可计划（也称为许可证计划、Office 365 计划或 SKU），使用它可以将可用的许可证分配给用户帐户。该许可证定义可供帐户使用的 Office 365 服务。当你创建帐户时，没有向用户分配许可证，但该帐户需要许可证才能访问 Office 365 服务。创建用户帐户后，有 30 天的时间可以对该用户帐户授权。 |
+|**LicenseAssignment** <br/> |否  <br/> |这是向用户帐户分配可用许可证的许可计划（也称为许可证计划或 SKU）。 许可证定义了可供帐户使用的 Microsoft 365 服务。 您不必在创建帐户时向用户分配许可证，但该帐户需要许可证才能访问 Microsoft 365 服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
 |**密码** <br/> |否  <br/> | 如果你没有指定密码，将向用户帐户分配一个随机密码，且该密码将显示在命令结果中。如果你指定了密码，则需要是以下三种类型的 8 到 16 位 ASCII 文本字符：小写字母、大写字母、数字和符号。 <br/> |
-|**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。例如，US 代表美国，FR 代表法国。请务必提供此值，因为某些 Office 365 服务在某些国家不可用，因此不能为用户帐户分配许可证，除非该帐户已配置此值。有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。<br/> |
+|**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如，US 代表美国，FR 代表法国。 提供此值非常重要，因为某些 Microsoft 365 服务在某些国家/地区不可用，因此，除非帐户配置了此值，否则不能向用户帐户分配许可证。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。  <br/> |
    
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 连接后，使用下列语法创建个人帐户：
   
@@ -63,7 +65,7 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="create-an-individual-user-account"></a>创建单个用户帐户
 
@@ -101,7 +103,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   ```
 
  > [!NOTE]
->虽然列名称及其在 CSV 文件的第一行中的顺序是任意的，但请确保文件其余部分中的数据与列名称的顺序相匹配，并使用列名称作为 Office 365 PowerShell 命令中的参数值。
+>CSV 文件的第一行中的列名和它们的顺序是任意的，但请确保文件中的其余部分的数据与列名的顺序相匹配，并对 PowerShell for Microsoft 365 命令中的参数值使用列名称。
     
 2. 使用以下语法：
     
@@ -115,12 +117,12 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. 查看输出文件以查看结果。我们没有指定密码，这样便于在输出文件中显示 Office 365 生成的随机密码。
+3. 查看输出文件以查看结果。 未指定密码，因此 Microsoft 365 生成的随机密码在输出文件中可见。
     
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)

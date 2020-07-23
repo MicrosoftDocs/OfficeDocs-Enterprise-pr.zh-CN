@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Microsoft 365 中管理用户标识。
-ms.openlocfilehash: ba4638fa4d02900e3e85ef1c4cb7719baf12d1f6
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998070"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230058"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 标识模型和 Azure Active Directory
 
@@ -90,7 +90,7 @@ Azure AD 租户具有 AD DS 帐户的副本。 在此配置中，本地用户和
 
 由于原始和权威用户帐户存储在内部部署 AD DS 中，因此，可以使用与 AD DS 相同的工具（如 Active Directory 用户和计算机工具）管理您的标识。 
 
-您不使用 Microsoft 365 管理中心或 Office 365 PowerShell 管理 Azure AD 中的同步用户帐户。
+您不使用 microsoft 365 管理中心或 PowerShell for Microsoft 365 管理 Azure AD 中的同步用户帐户。
 
 ## <a name="next-step"></a>后续步骤
 

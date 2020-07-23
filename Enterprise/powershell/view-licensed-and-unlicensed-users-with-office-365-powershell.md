@@ -1,9 +1,9 @@
 ---
-title: 使用 Office 365 PowerShell 查看授权和未授权的用户
+title: 使用 PowerShell 查看已授权和未授权的 Microsoft 365 用户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/18/2019
+ms.date: 07/21/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,21 +18,23 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: 介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。
-ms.openlocfilehash: f8a00ad11ba7bbd93c809dc130cf588420c2d81c
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 说明如何使用 PowerShell 查看已授权和未授权的 Microsoft 365 用户帐户。
+ms.openlocfilehash: 02b1f76bab0e64e4e7e72f5e5556f5047d956d11
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004175"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230248"
 ---
-# <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看授权和未授权的用户
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>使用 PowerShell 查看已授权和未授权的 Microsoft 365 用户
 
-您的 Office 365 组织中的用户帐户可能已从组织提供的许可计划中分配到部分或全部可用的许可证，或者未分配到任何许可证。您可以使用 Office 365 PowerShell 快速查找您组织中的授权和未授权的用户。
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+Microsoft 365 组织中的用户帐户可能会从组织中提供的许可计划中为其分配一些、全部或无可用许可证。 可以使用适用于 Microsoft 365 的 PowerShell 快速查找组织中已授权和未授权的用户。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  
 若要查看您的组织中尚未分配任何许可计划（未经许可的用户）的所有用户帐户的列表，请运行以下命令：
   
@@ -47,14 +49,14 @@ Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLic
 ```
 
 >[!Note]
->若要列出订阅中的所有用户，请使用`Get-AzureAdUser -All $true`命令。
+>若要列出订阅中的所有用户，请使用 `Get-AzureAdUser -All $true` 命令。
 >
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-若要查看组织中所有用户帐户及其授权状态的列表，请在 Office 365 PowerShell 中运行以下命令：
+若要查看组织中所有用户帐户及其授权状态的列表，请在 PowerShell 中运行以下命令：
   
 ```powershell
 Get-MsolUser -All
@@ -78,8 +80,8 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)

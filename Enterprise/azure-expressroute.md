@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 了解如何将 Azure ExpressRoute 与 Office 365 结合使用，以及如何规划在部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。
-ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997946"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230028"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
@@ -64,9 +64,9 @@ ms.locfileid: "44997946"
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft 团队<sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|门户和共享<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD 连接<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|门户和共享<sup>1</sup> <br/> Azure Active Directory （Azure AD） <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup>这些应用程序中的每个应用程序都具有不受 ExpressRoute 支持的 internet 连接要求，请参阅[Office 365 终结点一文](https://aka.ms/o365endpoints)以了解详细信息。
+<sup>1</sup>这些应用程序中的每一个都具有不受 ExpressRoute 支持的 internet 连接要求，请参阅[Office 365 终结点一文](https://aka.ms/o365endpoints)以了解详细信息。
 
 不包含在适用于 Office 365 的 ExpressRoute 中的服务是 Microsoft 365 应用程序，用于企业客户端下载、本地标识提供程序登录和 Office 365 （由 21 Vianet （由21）服务在中国运营。
 
@@ -112,7 +112,7 @@ ms.locfileid: "44997946"
 
 [实现 ExpressRoute for Office 365](implementing-expressroute.md)
 
-[在 ExpressRoute for Office 365 场景中使用 BGP 社区（预览）](bgp-communities-in-expressroute.md)
+[在 ExpressRoute for Office 365 方案中使用 BGP 社区](bgp-communities-in-expressroute.md)
 
 [Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 

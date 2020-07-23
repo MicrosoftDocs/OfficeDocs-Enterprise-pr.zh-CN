@@ -1,9 +1,9 @@
 ---
-title: 使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
+title: 使用 PowerShell 查看 Microsoft 365 帐户许可证和服务详细信息
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,23 +18,25 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: 说明如何使用 Office 365 PowerShell 确定已分配给用户的 Office 365 服务。
-ms.openlocfilehash: 603470be87aea2d58f343511026fb2860e58b688
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 说明如何使用 PowerShell 确定已分配给用户的 Microsoft 365 服务。
+ms.openlocfilehash: 73af2fd40df8b36507250edcef48359e9d555a7f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004485"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230238"
 ---
-# <a name="view-account-license-and-service-details-with-office-365-powershell"></a>使用 Office 365 PowerShell 查看帐户许可证和服务详细信息
+# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>使用 PowerShell 查看 Microsoft 365 帐户许可证和服务详细信息
 
-在 Office 365 中，许可计划（也称为 Sku 或 Office 365 计划）的许可证为用户提供了对为这些计划定义的 Office 365 服务的访问权限。 但是，用户可能无法访问当前分配给他们的许可证中可用的所有服务。 您可以使用 Office 365 PowerShell 来查看用户帐户上的服务的状态。 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-有关许可计划、许可证和服务的详细信息，请参阅[使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。
+在 Microsoft 365 中，许可计划（也称为 Sku 或 Microsoft 365 计划）的许可证为用户提供了对为这些计划定义的 Microsoft 365 服务的访问权限。 但是，用户可能无法访问当前分配给他们的许可证中可用的所有服务。 可以使用适用于 Microsoft 365 的 PowerShell 查看用户帐户上的服务的状态。 
+
+有关许可计划、许可证和服务的详细信息，请参阅[使用 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下来，使用此命令列出租户的许可证计划。
 
@@ -65,9 +67,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 接下来，运行此命令，列出您的组织中可用的许可计划。 
 
@@ -92,7 +94,7 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 
 ### <a name="to-view-services-for-a-user-account"></a>查看用户帐户的服务
 
-若要查看用户有权访问的所有 Office 365 服务，请使用以下语法：
+若要查看用户有权访问的所有 Microsoft 365 服务，请使用以下语法：
   
 ```powershell
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
@@ -127,8 +129,8 @@ $licArray
  
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)

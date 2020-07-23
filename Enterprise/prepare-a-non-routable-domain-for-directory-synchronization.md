@@ -1,5 +1,5 @@
 ---
-title: 为目录同步准备不可路由的域
+title: 准备不可路由域进行目录同步
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: 如果您在与 Microsoft 365 同步之前拥有与本地用户关联的非 routale 域，请了解要执行的操作。
-ms.openlocfilehash: 148d7e1abdeeeea11c838697bbc957e2937ea7f8
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a9fe6f21dd1e2d9ade6288a083f700fccac4e6e4
+ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736010"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45263594"
 ---
-# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>为目录同步准备不可路由的域
+# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>准备不可路由域进行目录同步
 当您将本地目录与 Microsoft 365 同步时，您必须在 Azure Active Directory （Azure AD）中有一个经验证的域。 仅同步与本地域关联的用户主体名称（UPN）。 但是，任何包含非可路由域的 UPN （如 local billa@contoso）将同步到一个 onmicrosoft.com 域（如 billa@contoso.onmicrosoft.com）。 
 
 如果您当前在 Active Directory 域服务（AD DS）中为您的用户帐户使用了. 本地域，建议您将其更改为使用经验证的域（如 billa@contoso.com），以便与 Microsoft 365 域正确同步。

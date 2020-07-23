@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍如何在 SharePoint Online 中规划门户启动以及成功启动所需的步骤
-ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 4edd1bc9c2001912a8ebb77e467f9663474ecb66
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004105"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230168"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>在 SharePoint Online 中规划门户启动滚动计划
 
@@ -35,14 +35,14 @@ ms.locfileid: "44004105"
 下面突出显示了部署方法。
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>SharePoint Online 中的容量规划概述
-为了高效地使用容量并处理意外增长，在任何服务器场中，我们都具有跟踪特定使用方案的自动化。 在任何一个服务器场中的任何一个租户的确切增长不可预测的情况下，累积的请求总数将随时间推移而预测。 通过确定 SharePoint Online 中的增长趋势，我们可以规划未来的扩展。 有关[SharePoint Online 的容量规划和负载测试](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)的详细信息。
+为了高效地使用容量并处理意外增长，在任何服务器场中，我们都具有跟踪特定使用方案的自动化。 在任何一个服务器场中的任何一个租户的确切增长不可预测的情况下，累积的请求总数将随时间推移而预测。 通过确定 SharePoint Online 中的增长趋势，我们可以规划未来的扩展。 有关[SharePoint Online 的容量规划和负载测试](capacity-planning-and-load-testing-sharepoint-online.md)的详细信息。
 
 成功启动的关键部分是以下详细说明的 "波形" 或 "分阶段式输出" 方法。 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>我可以加载测试 SharePoint Online 吗？
 SharePoint Online 是一个共享的多租用环境，它在服务器场之间平衡，并在不断调整规模。 负载测试环境（如 SharePoint Online）的缩放更改不会持续提供意外结果，但不允许这样做。 
 
-了解详细信息：[容量规划和负载测试 SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
+了解详细信息：[容量规划和负载测试 SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>按照建议的准则优化页面
 本地部署中的页面不应简单地移动到 SharePoint Online 中，而无需针对 SharePoint Online 的建议准则进行评审。 最佳方法是始终为 SharePoint 中的任何网站或门户优化任何主页，因为这是组织中的大多数用户将作为网站的起始点进行访问的位置。

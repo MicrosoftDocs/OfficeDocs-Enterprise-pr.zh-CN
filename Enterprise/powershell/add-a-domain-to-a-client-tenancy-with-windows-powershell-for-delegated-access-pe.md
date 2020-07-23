@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 摘要：使用适用于 Microsoft 365 的 Windows PowerShell 将备用域名添加到现有客户租户。
-ms.openlocfilehash: 6ba706c1fc0b2e2b43687ac582a40f36a2a3387c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 摘要：使用适用于 Microsoft 365 的 PowerShell 将备用域名添加到现有客户租户。
+ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997358"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229778"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
-您可以使用 Windows PowerShell for Microsoft 365，创建和关联新域与客户的租赁相比，它比使用 Microsoft 365 管理中心更快。
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+您可以使用 Microsoft 365 管理中心，创建新域并将其与使用 microsoft 365 的 PowerShell 与客户的租户相关联。
   
 委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Microsoft 365 订阅捆绑到其客户的服务产品中。 在销售 Microsoft 365 订阅时，会自动将代表（AOBO）权限的 "管理" 授予 "客户" 租赁，以便他们可以管理和报告客户租赁。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-本主题中的步骤需要您连接到适用于Office 365的Windows PowerShell。有关说明，请参阅[连接到 Office 365 PowerShell](connect-to-office-365-powershell.md)。
+本主题中的过程要求连接到[使用 PowerShell 的 Microsoft 365 连接](connect-to-office-365-powershell.md)。
   
 您也需要您的合作伙伴租户管理员凭据。
   

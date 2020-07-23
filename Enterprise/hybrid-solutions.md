@@ -3,7 +3,7 @@ title: 混合解决方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '摘要：使用这些文章以在 Microsoft Azure 中部署 Office Server 工作负荷。 '
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998010"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229948"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 
-使用 Microsoft Azure，现在你可以部署一些 Office Server 工作负荷，它们通常部署到本地的 Azure 基础结构服务中。
+使用 Microsoft Azure，可以部署一些 Office Server 工作负荷，这些工作负载通常部署在 Azure 基础结构服务的本地部署中。
   
 对于 Azure 中的 Microsoft 365 标识基础结构：
 

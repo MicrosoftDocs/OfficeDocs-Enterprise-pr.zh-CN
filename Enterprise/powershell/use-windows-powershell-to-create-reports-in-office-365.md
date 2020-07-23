@@ -1,9 +1,9 @@
 ---
-title: 使用 Windows PowerShell 在 Office 365 中创建报告
+title: 使用 PowerShell 为 Microsoft 365 创建报告
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/22/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -11,59 +11,61 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Office_Other
+ms.custom: ''
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: 摘要：使用 Office 365 PowerShell 创建无法在 Microsoft 365 管理中心内生成的报表。
-ms.openlocfilehash: 3a20c47e462bb522e1fb98ba28fb8c7cee89408c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 摘要：使用适用于 Microsoft 365 的 PowerShell 创建无法在 Microsoft 365 管理中心生成的报告。
+ms.openlocfilehash: 855f6529445b95dd949fb672f978a82f1afd6149
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841239"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229798"
 ---
-# <a name="use-windows-powershell-to-create-reports-in-office-365"></a>使用 Windows PowerShell 在 Office 365 中创建报告
+# <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 为 Microsoft 365 创建报告
 
-Microsoft 365 管理中心中提供很多不同的报告。 但是，这些报告提供的信息有限，有时你可能需要更多信息。 这就是你需要 Office 365 PowerShell 的时候
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+Microsoft 365 管理中心中提供很多不同的报告。 但是，这些报告提供的信息有限，有时你可能需要更多信息。 如果你需要适用于 Microsoft 365 的 PowerShell
   
-这些文章介绍如何使用 Office 365 PowerShell 以从你的 Office 365 租户获取信息：
+这些文章介绍了如何使用适用于 Microsoft 365 的 PowerShell 从你的 Microsoft 365 租户获取信息：
   
-- 开始使用 Office 365 PowerShell 进行报告：
+- 使用 PowerShell for Microsoft 365 进行报告入门：
     
-  - [Office 365 PowerShell 可能会显示你通过管理中心无法看到的其他信息](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+  - [PowerShell for Microsoft 365 可以显示你无法通过管理中心看到的其他信息](https://technet.microsoft.com/library/dn568034.aspx#reveal)
     
-  - [Office 365 PowerShell 善于筛选数据](https://technet.microsoft.com/library/dn568034.aspx#filter)
+  - [适用于 Microsoft 365 的 PowerShell 非常适合筛选数据](https://technet.microsoft.com/library/dn568034.aspx#filter)
     
-  - [Office 365 PowerShell 方便打印或保存数据](https://technet.microsoft.com/library/dn568034.aspx#printsave)
+  - [适用于 Microsoft 365 的 PowerShell 可轻松打印或保存数据](https://technet.microsoft.com/library/dn568034.aspx#printsave)
     
 - 用户帐户和许可证报告：
     
-  - [使用 Office 365 PowerShell 查看许可证和服务](view-licenses-and-services-with-office-365-powershell.md)
+  - [使用 PowerShell 查看 Microsoft 365 许可证和服务](view-licenses-and-services-with-office-365-powershell.md)
     
-  - [使用 Office 365 PowerShell 查看授权和未授权的用户](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+  - [使用 PowerShell 查看 Microsoft 365 许可和未经许可的用户](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
     
-  - [使用 Office 365 PowerShell 查看帐户许可证和服务详细信息](view-account-license-and-service-details-with-office-365-powershell.md)
+  - [使用 PowerShell 查看 Microsoft 365 帐户许可证和服务详细信息](view-account-license-and-service-details-with-office-365-powershell.md)
     
-  - [查看用户帐户与 Office 365 PowerShell](view-user-accounts-with-office-365-powershell.md)
+  - [使用 PowerShell 查看 Microsoft 365 用户帐户](view-user-accounts-with-office-365-powershell.md)
     
 - SharePoint Online 报告：
     
-  - [使用 Office 365 PowerShell 管理 SharePoint Online 用户和组](https://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+  - [SharePoint Online 命令行管理程序入门](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-  - [Manage SharePoint Online site groups with Office 365 PowerShell](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [使用 PowerShell 管理 SharePoint Online 网站用户组](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
     
 - Exchange Online 报告：
     
-  - [Display Exchange Online mailbox information with Office 365 PowerShell](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [使用 PowerShell 显示 Exchange Online 邮箱信息](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
     
-  - [Display Exchange Online reports with Office 365 PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
+  - [使用 PowerShell 显示 Exchange Online 报告](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
+[使用 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

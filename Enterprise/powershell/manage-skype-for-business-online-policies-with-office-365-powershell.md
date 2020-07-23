@@ -1,9 +1,9 @@
 ---
-title: 管理 Skype 与 Office 365 PowerShell 的在线业务策略
+title: 使用 PowerShell 管理 Skype for Business Online 策略
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 摘要：使用 Office 365 PowerShell，通过策略管理 Skype for business Online 用户帐户属性。
-ms.openlocfilehash: aed7e3929a41dec69803a5b73bdf29fb23b4ba05
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 摘要：使用 PowerShell 通过策略管理 Skype for Business Online 用户帐户属性。
+ms.openlocfilehash: 4310de23d47025468ea78a597f6379b51deaaa96
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841329"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230428"
 ---
-# <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>管理 Skype 与 Office 365 PowerShell 的在线业务策略
+# <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online 策略
 
-若要管理多个用户帐户的 Skype for Business Online 属性，必须使用 Office 365 PowerShell 将其指定为策略的属性。
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+若要管理用于 Skype for Business Online 的用户帐户的许多属性，必须使用适用于 Microsoft 365 的 PowerShell 将它们指定为策略的属性。
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -112,7 +114,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 ApplicableTo 参数可将返回的数据限制为可分配到特定用户的策略（例如，Alex Darrow）。根据不同的授权和使用位置限制，可能会代表所有可用策略的子集。 
   
-在某些情况下，不会将策略的属性用于 Office 365，而有些则只能由 Microsoft 支持人员管理。 
+在某些情况下，不会将策略的属性与 Microsoft 365 一起使用，而有些则只能由 Microsoft 支持人员管理。 
   
 使用 Skype for Business Online，用户必须由某种类型的策略进行管理。 如果与策略相关的有效属性为空，则表示有问题的用户将由全局策略管理，这是一个策略，该策略将自动应用于用户，除非专门为其分配了每用户策略。 由于我们看不到为用户帐户列出的客户端策略，因此它由全局策略管理。 您可以使用此命令确定全局客户端策略：
   
@@ -122,9 +124,9 @@ Get-CsClientPolicy -Identity "Global"
 
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理 Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
+[使用 PowerShell 管理 Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
 

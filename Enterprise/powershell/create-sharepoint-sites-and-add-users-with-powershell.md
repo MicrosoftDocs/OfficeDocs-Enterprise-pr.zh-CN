@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户
+title: 使用 PowerShell 创建 SharePoint Online 网站并添加用户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,27 +17,29 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 摘要：使用 Office 365 PowerShell 创建新的 SharePoint Online 网站，然后将用户和组添加到这些网站。
-ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: 摘要：使用 PowerShell 创建新的 SharePoint Online 网站，然后将用户和组添加到这些网站。
+ms.openlocfilehash: 2791b4de9388e3ff828a665aeeef5ada19627107
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735700"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230798"
 ---
-# <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户
+# <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>使用 PowerShell 创建 SharePoint Online 网站并添加用户
 
-当您使用 Office 365 PowerShell 创建 SharePoint Online 网站并添加用户时，您可以在 Microsoft 365 管理中心内快速和重复执行任务快得多。 您还可以执行不能在 Office 365 管理中心中执行的任务。 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+当您使用 PowerShell for Microsoft 365 创建 SharePoint Online 网站并添加用户时，您可以在 Microsoft 365 管理中心内快速和重复执行任务快得多。 您还可以执行不能在 Microsoft 365 管理中心中执行的任务。 
 
 ## <a name="before-you-begin"></a>准备工作
 
 本主题中的过程要求您连接到 SharePoint Online。 有关说明，请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>步骤 1：使用 Office 365 PowerShell 创建新的网站集
+## <a name="step-1-create-new-site-collections-using-powershell"></a>步骤1：使用 PowerShell 创建新的网站集
 
-使用 Office 365 PowerShell 和你使用提供的示例代码和记事本创建的 .csv 文件创建多个网站。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许您创建一个文件，并运行一个使用该文件的 Office 365 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，你要创建一个 .csv 文件，然后使用 Office 365 PowerShell 引用该 .csv 文件，从而利用该文件的内容来创建网站。
+使用提供的示例代码和记事本创建多个使用 PowerShell 的网站和一个 .csv 文件。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许您创建一个文件，并运行使用该文件的单个 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，创建一个 .csv 文件，然后使用 PowerShell 引用该 .csv 文件，该文件将使用其内容来创建网站。
 
-Office 365 PowerShell cmdlet 导入 .csv 文件并将其通过管道传递到大括号内的循环中，该循环将读取文件的第一行作为列标题。然后，Office 365 PowerShell cmdlet 循环访问剩余的记录，为每个记录创建一个新的网站集，并根据列标题指定网站集的属性。
+PowerShell cmdlet 导入 .csv 文件，并将其管道传递到在大括号中将文件的第一行读取为列标题的循环。 然后，PowerShell cmdlet 将循环访问其余记录，为每个记录创建一个新的网站集，并根据列标题分配网站集的属性。
 
 ### <a name="create-a-csv-file"></a>创建 .csv 文件
 
@@ -156,9 +158,9 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[管理 SharePoint Online 网站组 Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[使用 PowerShell 管理 SharePoint Online 网站用户组](manage-sharepoint-site-groups-with-powershell.md)
 
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
 

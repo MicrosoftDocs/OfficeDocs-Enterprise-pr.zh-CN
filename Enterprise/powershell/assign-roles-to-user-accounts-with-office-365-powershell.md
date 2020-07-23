@@ -1,9 +1,9 @@
 ---
-title: 将角色分配给用户帐户与 Office 365 PowerShell
+title: 使用 PowerShell 为 Microsoft 365 用户帐户分配角色
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,17 +18,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 摘要：使用 Office 365 PowerShell 向用户帐户分配角色。
-ms.openlocfilehash: 9a28ff27138b689ed0325580af956a90d7eb7982
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+description: 摘要：使用适用于 Microsoft 365 的 PowerShell 向用户帐户分配角色。
+ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698909"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230868"
 ---
-# <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>将角色分配给用户帐户与 Office 365 PowerShell
+# <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 为 Microsoft 365 用户帐户分配角色
 
-您可以使用 Office 365 PowerShell 快速而轻松地向用户帐户分配角色。
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+您可以使用 PowerShell for Microsoft 365 快速而轻松地向用户帐户分配角色。
 
 >[!Note]
 >若要使用 Microsoft 365 管理中心向用户帐户分配角色，请参阅[这些说明](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。
@@ -36,7 +38,7 @@ ms.locfileid: "44698909"
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先，使用全局管理员帐户[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，使用全局管理员帐户[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下来，确定要添加到角色的用户帐户的登录名（例如： fredsm@contoso.com）。 这也称为用户主体名称（UPN）。
 
@@ -83,7 +85,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-首先，使用全局管理员帐户[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，使用全局管理员帐户[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
 ### <a name="for-a-single-role-change"></a>对于单个角色更改
 
@@ -235,6 +237,6 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ## <a name="see-also"></a>另请参阅
 
-- [使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
-- [Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+- [使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
+- [Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)

@@ -1,9 +1,9 @@
 ---
-title: 指定每个用户 Skype 的在线商业策略与 Office 365 PowerShell
+title: 为 Microsoft 365 的 PowerShell 分配每用户 Skype for Business Online 策略
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 摘要：使用 Office 365 PowerShell 将每个用户的通信设置分配到 Skype for Business Online 策略。
-ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
-ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
+description: 摘要：使用适用于 Microsoft 365 的 PowerShell 为 Skype for Business Online 策略分配每用户通信设置。
+ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44719963"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229838"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>指定每个用户 Skype 的在线商业策略与 Office 365 PowerShell
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>为 Microsoft 365 的 PowerShell 分配每用户 Skype for Business Online 策略
 
-使用 Office 365 PowerShell 是一种将每个用户的通信设置分配到 Skype for Business Online 策略的有效方式。
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+使用 PowerShell for Microsoft 365 是将每个用户的通信设置分配到 Skype for Business Online 策略的有效方式。
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -136,8 +138,8 @@ $count = 0
   
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 管理 Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
+[使用 PowerShell 管理 Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)

@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 执行直接转换迁移以迁移到 Office 365
+title: 使用 PowerShell 执行到 Microsoft 365 的直接转换迁移
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -14,26 +14,28 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 摘要：了解如何使用 Windows PowerShell 执行到 Office 365 的直接转换迁移。
-ms.openlocfilehash: b40c6ac53a173f700c6b931781d98d7965a2be7c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 摘要：了解如何使用 Windows PowerShell 执行到 Microsoft 365 的直接转换迁移。
+ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998567"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229846"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>使用 PowerShell 执行直接转换迁移以迁移到 Office 365
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>使用 PowerShell 执行到 Microsoft 365 的直接转换迁移
 
-通过直接转换迁移，您可以一次性将源电子邮件系统中用户邮箱的内容迁移到 Office 365。本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件直接转换迁移的任务。 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+您可以通过使用直接转换迁移将用户邮箱的内容从源电子邮件系统迁移到 Microsoft 365。 本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件直接转换迁移的任务。 
   
-通过查看[有关直接转换电子邮件迁移到 Office 365 您需要了解的信息](https://go.microsoft.com/fwlink/p/?LinkId=536688)主题，您可以获得迁移过程的概述。当您了解本文的内容之后，则可以借此机会开始将一个电子邮件系统中的邮箱迁移到另一个电子邮件系统。
+通过查看主题，[您需要了解有关直接转换将电子邮件迁移到 Microsoft 365 的内容](https://go.microsoft.com/fwlink/p/?LinkId=536688)，您可以获取迁移过程的概述。 当您了解本文的内容之后，则可以借此机会开始将一个电子邮件系统中的邮箱迁移到另一个电子邮件系统。
   
 > [!NOTE]
-> 您还可以使用 Exchange 管理中心来执行直接转换迁移。请参阅[使用直接转换迁移将电子邮件迁移到 Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536689)。 
+> 您还可以使用 Exchange 管理中心来执行直接转换迁移。 请参阅[执行将电子邮件迁移到 Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536689)的转换。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-估计完成该任务的时间：2-5 分钟，用于创建迁移批处理。迁移批处理启动后，迁移的持续时间会有所不同，具体取决于批处理中邮箱的数量、每个邮箱的大小和可用网络容量。有关影响将邮箱迁移到 Office 365 所需时间的其他因素的信息，请参阅[迁移性能](https://go.microsoft.com/fwlink/p/?LinkId=275079)。
+估计完成该任务的时间：2-5 分钟，用于创建迁移批处理。 迁移批处理启动后，迁移的持续时间会有所不同，具体取决于批处理中邮箱的数量、每个邮箱的大小和可用网络容量。 有关影响将邮箱迁移到 Microsoft 365 所需时间的其他因素的信息，请参阅[迁移性能](https://go.microsoft.com/fwlink/p/?LinkId=275079)。
   
 你必须先获得权限，然后才能执行此过程。要查看你需要哪些权限，请参阅[收件人权限](https://go.microsoft.com/fwlink/p/?LinkId=534105)主题的一个表中的"迁移"条目。
   
@@ -46,7 +48,7 @@ ms.locfileid: "44998567"
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>步骤 1：准备直接转换迁移
 <a name="BK_Step1"> </a>
 
-- **将内部部署 Exchange 组织添加为 Office 365 组织的接受域** 迁移服务使用内部部署邮箱的 SMTP 地址为新的 Office 365 邮箱创建 Microsoft Online Services 用户 ID 和电子邮件地址。如果 Exchange 域不是 Office 365 组织的接受域或主域，则迁移将失败。有关更多信息，请参阅[在 Office 365 中验证您的域](https://go.microsoft.com/fwlink/p/?LinkId=534110)。
+- **将您的本地 Exchange 组织添加为 Microsoft 365 组织的接受域。** 迁移服务使用本地邮箱的 SMTP 地址为新的 Microsoft 365 邮箱创建 Microsoft Online Services 用户 ID 和电子邮件地址。 如果您的 Exchange 域不是您的 Microsoft 365 组织的接受域或主域，迁移将失败。 有关详细信息，请参阅[验证您的域](https://go.microsoft.com/fwlink/p/?LinkId=534110)。
     
 - **在内部部署 Exchange 服务器上配置 Outlook 无处不在。** 电子邮件迁移服务使用 RPC over HTTP 或 Outlook 无处不在连接到内部部署 Exchange 服务器。有关如何设置 Outlook 无处不在 for Exchange 2010、Exchange 2007 和 Exchange 2003 的信息，请参阅以下内容：
     
@@ -77,7 +79,7 @@ ms.locfileid: "44998567"
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **为内部部署用户帐户分配访问 Exchange 组织中的邮箱所需的权限。** 用于连接到内部部署 Exchange 组织的本地用户帐户（也称为迁移管理员）必须具有访问要迁移到 Office 365 的本地邮箱的必要权限。。 该用户帐户用于创建内部部署组织的迁移终结点。
+- **为内部部署用户帐户分配访问 Exchange 组织中的邮箱所需的权限。** 用于连接到内部部署 Exchange 组织的本地用户帐户（也称为迁移管理员）必须具有访问要迁移到 Microsoft 365 的本地邮箱的必要权限。。 该用户帐户用于创建内部部署组织的迁移终结点。
     
     以下列表显示了使用直接转换迁移迁移邮箱所需的管理权限。有三个可能的选项。
     
@@ -93,12 +95,12 @@ ms.locfileid: "44998567"
     
 - **禁用统一消息。** 如果为要迁移的内部部署邮箱启用了统一消息 (UM)，则您必须先禁用这些邮箱上的 UM，然后再进行迁移。之后，您可以在完成迁移后为邮箱启用 UM。
     
-- **安全组和代理** 电子邮件迁移服务无法检测本地 Active Directory 组是否为安全组，因此它无法在 Office 365 中将任何已迁移组设置为安全组。如果您希望在 Office 365 租户中拥有安全组，必须首先在 Office 365 租户中设置一个空的启用了邮件的安全组，然后再开始直接转换迁移。此外，此迁移方法仅移动邮箱、邮箱用户、邮箱联系人和启用了邮件的组。如果已将任何其他 Active Directory 对象（如未迁移到 Office 365 的用户）作为管理员或代理分配给要迁移的对象，则必须在迁移之前将其从对象中删除。
+- **安全组和代理**电子邮件迁移服务无法检测本地 Active Directory 组是否为安全组，因此无法将任何迁移的组配置为 Microsoft 365 中的安全组。 如果您希望在 Microsoft 365 租户中拥有安全组，则必须先在 Microsoft 365 租户中设置一个空的已启用邮件的安全组，然后才能开始直接转换迁移。 此外，此迁移方法仅移动邮箱、邮件用户、邮件联系人和启用邮件的组。 如果有任何其他 Active Directory 对象（例如未迁移到 Microsoft 365 的用户）被分配为要迁移的对象的管理员或委派，则必须在迁移之前将其从对象中删除。
     
 ### <a name="step-2-create-a-migration-endpoint"></a>步骤 2：创建迁移终结点
 <a name="BK_Step2"> </a>
 
-要成功迁移电子邮件，Office 365 需要与源电子邮件系统连接和通信。为此，Office 365 可使用迁移终结点。要创建适用于直接转换迁移的 Outlook 无处不在迁移终结点，首先[连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。 
+若要成功迁移电子邮件，Microsoft 365 需要连接源电子邮件系统并与之通信。 为此，Microsoft 365 使用迁移终结点。 要创建适用于直接转换迁移的 Outlook 无处不在迁移终结点，首先[连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。 
   
 有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
   
@@ -170,10 +172,10 @@ Start-MigrationBatch -Identity CutoverBatch
 Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-office-365"></a>步骤 5：将你的电子邮件路由到 Office 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>第5步：将电子邮件路由到 Microsoft 365
 <a name="BK_Step5"> </a>
 
-电子邮件系统使用名为 MX 记录的 DNS 记录找出传递电子邮件的位置。在电子邮件迁移过程中，您的 MX 记录会指向您的源电子邮件系统。现在电子邮件迁移到 Office 365 已完成，可以在 Office 365 中指向您的 MX 记录。这可以帮助您确保该电子邮件已传递到您的 Office 365 邮箱。通过移动 MX 记录，您还可以在准备就绪的时候关闭旧的电子邮件系统。 
+电子邮件系统使用称为 MX 记录的 DNS 记录来查明电子邮件的传递位置。 在电子邮件迁移过程中，MX 记录指向您的源电子邮件系统。 现在已完成将电子邮件迁移到 Microsoft 365，现在是时候将 MX 记录指向 Microsoft 365 了。 这有助于确保将电子邮件传递到 Microsoft 365 邮箱。 通过移动 MX 记录，您还可以在准备就绪的时候关闭旧的电子邮件系统。 
   
 对于很多 DNS 提供商而言，[更改你的 MX 记录](https://go.microsoft.com/fwlink/p/?LinkId=279163)需要遵循特定的说明。如果你的 DNS 提供商不包括在内或你要获取统一指导，我们也会提供 [MX 记录的统一说明](https://go.microsoft.com/fwlink/?LinkId=397449)。
   
@@ -182,11 +184,11 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>步骤 6：删除直接转换迁移批处理
 <a name="Bk_step6"> </a>
 
-更改 MX 记录并验证所有电子邮件已路由到 Office 365 邮箱以后，通知用户他们的邮件已进入到 Office 365。此后，您可以删除直接转换迁移批处理。在删除迁移批处理之前验证以下内容。
+在更改 MX 记录并确认所有电子邮件都路由到 Microsoft 365 邮箱后，请通知用户其邮件将转到 Microsoft 365。 此后，您可以删除直接转换迁移批处理。 在删除迁移批处理之前验证以下内容。
   
-- 所有用户正在使用 Office 365 邮箱。删除该批处理后，发送到内部部署 Exchange Server 中邮箱的邮件将不会复制到相应的 Office 365 邮箱。
+- 所有用户都在使用 Microsoft 365 邮箱。 删除批处理后，发送到内部部署 Exchange 服务器上的邮箱的邮件不会复制到相应的 Microsoft 365 邮箱中。
     
-- 当邮件开始直接发送到 Office 365 邮箱以后，这些邮箱至少会同步一次。为此，确保迁移批处理的"上次同步时间"框中的值是最近时间，而不是邮件开始直接路由到 Office 365 邮箱的时间。
+- 将邮件直接发送给这些邮箱后，至少已同步一次 Microsoft 365 邮箱。 为此，请确保迁移批处理的 "上次同步时间" 框中的值比直接将邮件路由到 Microsoft 365 邮箱的时间更新。
     
 要在 Exchange Online PowerShell 中删除“CutoverBatch”迁移批处理，请运行以下命令：
   
@@ -197,27 +199,27 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>第 7 部分：分配用户许可证
 <a name="BK_Step7"> </a>
 
- **通过分配许可证，激活迁移后帐户的 Office 365 用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在 Microsoft 365 管理中心中分配许可证，请参阅为[Office 365 for Business 分配或取消分配许可证](https://go.microsoft.com/fwlink/?LinkId=536681)。
+ **通过分配许可证为迁移的帐户激活 Microsoft 365 用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在 Microsoft 365 管理中心中分配许可证，请参阅[分配或取消分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Step8"> </a>
 
-- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。** 所有内部部署邮箱都迁移到 Office 365 以后，您可以为您的 Office 365 组织配置自动发现 DNS 记录，使用户可以轻松地使用 Outlook 和移动客户端连接到他们的新 Office 365 邮箱。此新自动发现 DNS 记录必须使用对 Office 365 组织使用的相同命名空间。例如，如果您基于云的命名空间是 cloud.contoso.com，则您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
+- **创建自动发现 DNS 记录，以便用户可以轻松地访问他们的邮箱。** 在将所有内部部署邮箱迁移到 Microsoft 365 之后，可以为 Microsoft 365 组织配置自动发现 DNS 记录，使用户可以使用 Outlook 和移动客户端轻松连接到其新的 Microsoft 365 邮箱。 这一新的自动发现 DNS 记录必须使用您的 Microsoft 365 组织所使用的相同命名空间。 例如，如果您的基于云的命名空间是 cloud.contoso.com，那么您需要创建的自动发现 DNS 记录是 autodiscover.cloud.contoso.com。
     
-    如果您保留 Exchange Server，则还应确保在迁移后自动发现 DNS CNAME 记录必须在内部和外部 DNS 中指向 Office 365，以便 Outlook 客户端能够连接到正确的邮箱。
+    如果保留 Exchange Server，还应确保在迁移后，自动发现 DNS CNAME 记录必须指向内部和外部 DNS 中的 Microsoft 365，这样 Outlook 客户端才能连接到正确的邮箱。
     
     > [!NOTE]
     >  在 Exchange 2007、Exchange 2010 和 Exchange 2013 中，您还应将  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` 设置为 `Null`。 
   
-    Office 365 使用 CNAME 记录为 Outlook 和移动客户端实现自动发现服务。自动发现 CNAME 记录必须包含以下信息：
+    Microsoft 365 使用 CNAME 记录来实现 Outlook 和移动客户端的自动发现服务。 自动发现 CNAME 记录必须包含以下信息：
     
   - **别名：** autodiscover
     
   - **目标：** autodiscover.outlook.com
     
-    有关更多信息，请参阅[管理 DNS 记录时为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=535028)。
+    有关详细信息，请参阅[添加 DNS 记录以连接到您的域](https://go.microsoft.com/fwlink/p/?LinkId=535028)。
     
-- **停止使用内部部署 Exchange 服务器。** 当您验证所有电子邮件都可以直接被路由到 Office 365 邮箱，并且您不再需要维护内部部署电子邮件组织或不用计划实施单点登录 (SSO) 解决方案以后，您可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
+- **停止使用内部部署 Exchange 服务器。** 确认所有电子邮件都直接路由到 Microsoft 365 邮箱，并且不再需要维护内部部署电子邮件组织或未计划实施单一登录（SSO）解决方案时，可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
     
     有关详细信息，请参阅以下资源：
     

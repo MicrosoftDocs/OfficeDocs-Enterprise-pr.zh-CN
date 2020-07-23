@@ -1,9 +1,9 @@
 ---
-title: 使用 Office 365 PowerShell 管理 SharePoint Online 用户和组
+title: 使用 PowerShell 管理 SharePoint Online 用户和组
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -18,17 +18,19 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 摘要：使用 Office 365 PowerShell 管理 SharePoint Online 用户、组和网站。
-ms.openlocfilehash: c820fd009635a8a9b27f28d858d345794bea6334
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 摘要：使用适用于 Microsoft 365 的 PowerShell 管理 SharePoint Online 用户、组和网站。
+ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004115"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230468"
 ---
-# <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>使用 Office 365 PowerShell 管理 SharePoint Online 用户和组
+# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 用户和组
 
-如果您是使用大型用户帐户或组列表的 SharePoint Online 管理员，并且想要更轻松地管理它们，则可以使用 Office 365 PowerShell。 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+如果您是使用大型用户帐户或组列表的 SharePoint Online 管理员，并且希望更简单的管理方法，则可以使用 PowerShell for Microsoft 365。 
 
 在开始之前，本主题中的过程要求您连接到 SharePoint Online。 有关说明，请参阅[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -56,7 +58,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>将用户添加到网站集管理员组
 
-您可以使用`Set-SPOUser` cmdlet 将用户添加到网站集上的网站集管理员列表中。
+您可以使用 `Set-SPOUser` cmdlet 将用户添加到网站集上的网站集管理员列表中。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -80,7 +82,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>将用户添加到其他网站集组
 
-在此任务中，我们将使用`Add-SPOUser` cmdlet 将用户添加到网站集上的 SharePoint 组。
+在此任务中，我们将使用 `Add-SPOUser` cmdlet 将用户添加到网站集上的 SharePoint 组。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -103,7 +105,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>创建网站集组
 
-您可以使用`New-SPOSiteGroup` cmdlet 创建新的 SharePoint 组，并将其添加到网站集。
+您可以使用 `New-SPOSiteGroup` cmdlet 创建新的 SharePoint 组，并将其添加到网站集。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -112,7 +114,7 @@ $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
-组属性（如权限级别）稍后可使用`Set-SPOSiteGroup` cmdlet 进行更新。
+组属性（如权限级别）稍后可使用 cmdlet 进行更新 `Set-SPOSiteGroup` 。
 
 例如，让我们在 contoso 租赁中向审计员组添加对 contosotest 网站集的 "仅查看" 权限：
 
@@ -130,7 +132,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 不过，通过使用 SharePoint Online 命令行管理程序和 CSV 文件，这是快速而简单的。 在本任务中，将使用 Windows PowerShell 将用户从一个网站集安全组删除。 然后使用 CSV 文件从不同的网站删除大量用户。 
 
-我们将使用 "Get-spouser" cmdlet 从网站集组中删除单个 Office 365 用户，这样就可以看到命令语法。 语法如下所示：
+我们将使用 "Get-spouser" cmdlet 从网站集组中删除单个 Microsoft 365 用户，这样就可以看到命令语法。 语法如下所示：
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -277,9 +279,9 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 [连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[使用 Office 365 PowerShell 管理 SharePoint Online](create-sharepoint-sites-and-add-users-with-powershell.md)
+[使用 PowerShell 管理 SharePoint Online](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
 

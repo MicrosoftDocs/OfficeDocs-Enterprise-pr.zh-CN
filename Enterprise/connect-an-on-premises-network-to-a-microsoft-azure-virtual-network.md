@@ -7,7 +7,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840649"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230068"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
 Azure 跨界虚拟网络连接到本地网络，从而可扩展网络以包含在 Azure 基础结构服务中托管的子网和虚拟机。上述连接可让本地网络中的计算机直接访问 Azure 中的虚拟机，反之亦然。 
 
-例如，在 Azure 虚拟机上运行的一个目录同步服务器需要查询本地域控制器，以获取对帐户所做的更改并将其与 Office 365 订阅同步。本文介绍如何使用已准备就绪托管 Azure 虚拟机的站点间虚拟专用网络 (VPN) 连接来设置跨界 Azure 虚拟网络。
+例如，在 Azure 虚拟机上运行的目录同步服务器需要查询内部部署域控制器以进行帐户更改，并将这些更改与 Microsoft 365 订阅同步。本文介绍如何使用已准备好托管 Azure 虚拟机的站点到站点虚拟专用网络（VPN）连接来设置跨界 Azure 虚拟网络。
 
 ## <a name="overview"></a>概述
 
@@ -335,4 +335,4 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 ## <a name="next-step"></a>后续步骤
   
-[在 Microsoft Azure 中部署 Office 365 目录同步](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[在 Microsoft Azure 中部署 Microsoft 365 目录同步](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

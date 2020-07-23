@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: 适用于 Office 365 的 ExpressRoute 提供了到多个面向 internet 的 Office 365 服务的备用路由路径。 适用于 Office 365 的 ExpressRoute 体系结构基于 Office 365 服务的广告公共 IP 前缀，这些前缀已在 Internet 上可访问，以便随后将这些 IP 前缀重新分发到网络中。 通过 ExpressRoute，可以有效地通过 internet 和 ExpressRoute 为许多 Office 365 服务启用几种不同的路由路径。 你的网络上的路由状态可能会对你的内部网络拓扑的设计进行重大更改。
-ms.openlocfilehash: ab40a346ca1b19fcd100f17b934b766b21741010
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998124"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230298"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 
@@ -189,7 +189,7 @@ ms.locfileid: "44998124"
 
 |**加利福尼亚和纽约的计划的 ExpressRoute 符合我的新位置**||
 |:-----|:-----|
-|Location  <br/> |人数  <br/> |Internet 出口的预期延迟到 Microsoft 网络  <br/> |通过 ExpressRoute 对 Microsoft 网络的预期延迟  <br/> |
+|位置  <br/> |人数  <br/> |Internet 出口的预期延迟到 Microsoft 网络  <br/> |通过 ExpressRoute 对 Microsoft 网络的预期延迟  <br/> |
 |Los Angeles  <br/> |10,000  <br/> |~ 15ms  <br/> |~ 10ms （经由硅谷）  <br/> |
 |华盛顿 DC  <br/> |15,000  <br/> |~ 20 毫秒  <br/> |~ 10ms （通过纽约）  <br/> |
 |州  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms （通过纽约）  <br/> |
@@ -582,7 +582,7 @@ Skype for Business Online 还具有特定的其他网络要求，这些要求在
   
 [ExpressRoute for Office 365 网络计划](network-planning-with-expressroute.md)
   
-[在 ExpressRoute for Office 365 场景中使用 BGP 社区（预览）](bgp-communities-in-expressroute.md)
+[在 ExpressRoute for Office 365 方案中使用 BGP 社区](bgp-communities-in-expressroute.md)
   
 [Skype for Business Online 中的媒体质量和网络连接性能](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

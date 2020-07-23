@@ -1,5 +1,5 @@
 ---
-title: 在分配用户许可证时禁止访问服务
+title: 在分配用户许可证时禁用对 Microsoft 365 服务的访问
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,21 +17,23 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: 了解如何使用 Office 365 PowerShell 将许可证分配给用户帐户并同时禁用特定服务计划。
-ms.openlocfilehash: b1fcd8afd9f9fee5b249752821385cd888519a37
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: 了解如何使用 PowerShell for Microsoft 365 将许可证分配给用户帐户并同时禁用特定服务计划。
+ms.openlocfilehash: 31199fa2fa61ec5da671da5def2bf648a07e7dd4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009467"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230688"
 ---
-# <a name="disable-access-to-services-while-assigning-user-licenses"></a>在分配用户许可证时禁止访问服务
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>在分配用户许可证时禁用对 Microsoft 365 服务的访问
 
-Office 365 订阅随附有针对单个服务的服务计划。 在向用户分配许可证时，Office 365 管理员通常需要禁用某些计划。 使用本文中的说明，可以分配 Office 365 许可证，同时使用 PowerShell 为单个用户帐户或多个用户帐户禁用特定服务计划。
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+
+Microsoft 365 订阅随附有针对单个服务的服务计划。 Microsoft 365 管理员通常需要在向用户分配许可证时禁用某些计划。 使用本文中的说明，可以分配 Microsoft 365 许可证，同时使用 PowerShell 为单个用户帐户或多个用户帐户禁用特定服务计划。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
 接下来，使用此命令列出租户的许可证计划。
@@ -44,7 +46,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 接下来，编译要启用的服务的列表。 有关许可证计划（也称为产品名称）、其包含的服务计划及其相应的友好名称的完整列表，请参阅[产品名称和服务计划标识符以获取许可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
-对于下面的命令块，请填写用户帐户的用户主体名称、SKU 部件号以及用于启用和删除说明文本和\<和 > 字符的服务计划列表。 然后，在 PowerShell 命令提示符处运行生成的命令。
+对于下面的命令块，请填写用户帐户的用户主体名称、SKU 部件号以及用于启用和删除说明文本和字符的服务计划列表 \< and > 。 然后，在 PowerShell 命令提示符处运行生成的命令。
   
 ```powershell
 $userUPN="<user account UPN>"
@@ -63,9 +65,9 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAssign
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 接下来，运行以下命令查看你的当前订阅：
   
@@ -77,9 +79,9 @@ Get-MsolAccountSku
 >PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
 >
 
-在显示`Get-MsolAccountSku`命令时：
+在显示 `Get-MsolAccountSku` 命令时：
   
-- **AccountSkuId**是组织在 OrganizationName>： \<\<订阅> 格式中的一种订阅。 \<OrganizationName> 是您在 Office 365 中注册时提供的值，并且对于您的组织是唯一的。 \<订阅> 值适用于特定订阅。 例如，对于 litwareinc： ENTERPRISEPACK，组织名称为 litwareinc，订阅名称为 ENTERPRISEPACK （Office 365 企业版 E3）。
+- **AccountSkuId**是您的组织的订阅 \<OrganizationName> ： \<Subscription> 格式。 是您在 \<OrganizationName> Microsoft 365 中注册时提供的值，并且对于您的组织是唯一的。 \<Subscription>该值是针对特定订阅的。 例如，对于 litwareinc： ENTERPRISEPACK，组织名称为 litwareinc，订阅名称为 ENTERPRISEPACK （Office 365 企业版 E3）。
     
 - **ActiveUnits**是您为订阅购买的许可证的数量。
     
@@ -87,9 +89,9 @@ Get-MsolAccountSku
     
 - **ConsumedUnits**是您为订阅分配给用户的许可证数。
     
-请注意包含要许可的用户的 Office 365 订阅的 AccountSkuId。 此外，请确保有足够的许可证可供分配（从**ActiveUnits**中减去**ConsumedUnits** ）。
+记下 Microsoft 365 订阅的 AccountSkuId，其中包含要许可的用户。 此外，请确保有足够的许可证可供分配（从**ActiveUnits**中减去**ConsumedUnits** ）。
   
-接下来，运行此命令以查看有关所有订阅中可用的 Office 365 服务计划的详细信息：
+接下来，运行此命令以查看有关所有订阅中可用的 Microsoft 365 服务计划的详细信息：
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -97,11 +99,11 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 在此命令的显示中，确定在向用户分配许可证时要禁用的服务计划。
   
-下面是服务计划及其对应的 Office 365 服务的部分列表。
+下面是服务计划及其对应的 Microsoft 365 服务的部分列表。
 
-下表显示了最常用服务的 Office 365 服务计划及其友好名称。 服务计划列表可能会有所不同。 
+下表显示了最常用服务的 Microsoft 365 服务计划及其友好名称。 服务计划列表可能会有所不同。 
   
-|**服务计划**|**说明**|
+|**服务计划**|**描述**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -119,7 +121,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
   
 ### <a name="for-a-single-user"></a>对于单个用户
 
-对于单个用户，请填写用户帐户的用户主体名称、AccountSkuId 以及要禁用的服务计划列表，并删除说明文本和\<和 > 字符。 然后，在 PowerShell 命令提示符处运行生成的命令。
+对于单个用户，请填写用户帐户的用户主体名称、AccountSkuId 以及要禁用的服务计划的列表，并删除说明文本和 \< and > 字符。 然后，在 PowerShell 命令提示符处运行生成的命令。
   
 ```powershell
 $userUPN="<the user's account name in email format>"
@@ -184,10 +186,10 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
     
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 PowerShell 禁止访问服务](disable-access-to-services-with-office-365-powershell.md)
+[使用 PowerShell 禁用对 Microsoft 365 服务的访问](disable-access-to-services-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 禁止访问 Sway](disable-access-to-sway-with-office-365-powershell.md)
+[使用 PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[使用 Office 365 PowerShell 管理 Office 365](manage-office-365-with-office-365-powershell.md)
+[使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
