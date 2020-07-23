@@ -15,6 +15,7 @@
 ### 规划标识
 #### [标识模型](about-office-365-identity.md)
 #### [混合标识](plan-for-directory-synchronization.md)
+#### [管理 Microsoft 365 帐户的工具](tools-to-manage-office-365-accounts.md)
 
 ### [规划 Microsoft 365 的第三方 SSL 证书](plan-for-third-party-ssl-certificates.md)
 ### [Microsoft 365 和 Office 365 服务的设置指南](setup-guides-for-office-365.md)
@@ -110,6 +111,7 @@
 ### [仅限云标识](cloud-only-identities.md)
 ### 混合标识
 #### [准备进行目录同步](prepare-for-directory-synchronization.md)
+#### [准备不可路由域进行目录同步](prepare-a-non-routable-domain-for-directory-synchronization.md)
 #### 使用 IdFix 工具
 ##### [使用 IdFix 工具准备好目录属性](prepare-directory-attributes-for-synch-with-idfix.md)
 ##### [下载并运行 IdFix 工具](install-and-run-idfix.md)
@@ -172,6 +174,7 @@
 #### [Office 365 数据中心中的客户数据](o365-data-locations.md)
 
 ### 混合解决方案
+#### [概述](hybrid-solutions.md)
 #### [将 Azure Active Directory 用于 SharePoint Server 2016 身份验证](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [将本地网络连接到 Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [在 Azure IaaS 中部署目录同步服务器](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
@@ -270,7 +273,7 @@
 ### [Microsoft 365 视频中的租户隔离](office-365-isolation-in-office-365-video.md)
 ### [Microsoft Graph 和 Delve 中的租户隔离](office-365-isolation-in-graph-and-delve.md)
 
-# [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+# [PowerShell for Microsoft 365](powershell/manage-office-365-with-office-365-powershell.md)
 # [Microsoft 365 合规中心](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 安全中心](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)
