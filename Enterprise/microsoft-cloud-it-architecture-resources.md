@@ -27,7 +27,7 @@ ms.locfileid: "45102610"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 
-这些体系结构工具和发布者可为您提供有关 Microsoft 云服务的信息，包括 Microsoft 365、Windows 10、Azure Active Directory、Microsoft Intune、Microsoft Dynamics 365 以及混合本地和云解决方案。 IT 决策者和架构师可以使用这些资源来确定工作负载的理想解决方案，并做出有关标识和安全等核心基础结构组件的决策。 
+这些体系结构工具和海报为你提供有关 Microsoft 云服务的信息，包括 Microsoft 365、Windows 10、Azure Active Directory、Microsoft Intune、Microsoft Dynamics 365 以及混合本地和云解决方案。 IT 决策者和架构师可以使用这些资源来确定工作负载的理想解决方案，并做出有关标识和安全等核心基础结构组件的决策。 
   
 <!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
