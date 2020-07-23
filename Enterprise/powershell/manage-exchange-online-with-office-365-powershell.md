@@ -1,9 +1,9 @@
 ---
-title: 使用 Office 365 PowerShell 管理 Exchange Online
+title: 使用 PowerShell 管理 Exchange Online
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -17,25 +17,27 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
-description: 摘要：使用 Office 365 PowerShell 管理 Microsoft Exchange Online，包括显示邮箱配置和显示高级报告。
-ms.openlocfilehash: 25cd466ae1c7fca7bb8bd4e44036588df28403ef
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 摘要：使用 PowerShell 管理 Microsoft Exchange Online，包括显示邮箱配置和高级报告。
+ms.openlocfilehash: c5da0a06a7afc55445dad075d6ab93fdc7f89dc7
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004615"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230628"
 ---
-# <a name="manage-exchange-online-with-office-365-powershell"></a><span data-ttu-id="69242-103">使用 Office 365 PowerShell 管理 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="69242-103">Manage Exchange Online with Office 365 PowerShell</span></span>
+# <a name="manage-exchange-online-with-powershell"></a><span data-ttu-id="c8c30-103">使用 PowerShell 管理 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="c8c30-103">Manage Exchange Online with PowerShell</span></span>
 
-<span data-ttu-id="69242-104">所有 Microsoft Exchange Online 管理员的一项主要任务是管理邮箱，并获取有关它们的报告。</span><span class="sxs-lookup"><span data-stu-id="69242-104">One of the primary tasks of any Microsoft Exchange Online administrator is managing mailboxes and getting reports on them.</span></span> <span data-ttu-id="69242-105">虽然您可以在 Exchange 管理中心中完成其中一些任务，但在 Office 365 PowerShell 中，其他任务的工作速度更快、更轻松。</span><span class="sxs-lookup"><span data-stu-id="69242-105">Although you can accomplish some of these tasks in the Exchange admin center, other tasks are much quicker and easier in Office 365 PowerShell.</span></span> <span data-ttu-id="69242-106">有关详细信息，请参阅下列主题：</span><span class="sxs-lookup"><span data-stu-id="69242-106">For more information, see the following topics:</span></span>
-  
-- [<span data-ttu-id="69242-107">使用 Exchange Online PowerShell 显示 Office 365 邮箱信息</span><span class="sxs-lookup"><span data-stu-id="69242-107">Use Exchange Online PowerShell to display Office 365 mailbox information</span></span>](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
-    
-- [<span data-ttu-id="69242-108">查找运行任意 Exchange cmdlet 所需的权限</span><span class="sxs-lookup"><span data-stu-id="69242-108">Find the permissions required to run any Exchange cmdlet</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions)
-    
-## <a name="see-also"></a><span data-ttu-id="69242-109">另请参阅</span><span class="sxs-lookup"><span data-stu-id="69242-109">See also</span></span>
+<span data-ttu-id="c8c30-104">*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*</span><span class="sxs-lookup"><span data-stu-id="c8c30-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-[<span data-ttu-id="69242-110">使用 Office 365 PowerShell 管理 Office 365</span><span class="sxs-lookup"><span data-stu-id="69242-110">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+<span data-ttu-id="c8c30-105">所有 Microsoft Exchange Online 管理员的一项主要任务是管理邮箱，并获取有关它们的报告。</span><span class="sxs-lookup"><span data-stu-id="c8c30-105">One of the primary tasks of any Microsoft Exchange Online administrator is managing mailboxes and getting reports on them.</span></span> <span data-ttu-id="c8c30-106">虽然您可以在 Exchange 管理中心中完成其中一些任务，但在 PowerShell 中，其他任务在 365 PowerShell 中更快、更轻松。</span><span class="sxs-lookup"><span data-stu-id="c8c30-106">Although you can accomplish some of these tasks in the Exchange admin center, other tasks are much quicker and easier in PowerShell for Microsoft 365.</span></span> <span data-ttu-id="c8c30-107">有关详细信息，请参阅下列主题：</span><span class="sxs-lookup"><span data-stu-id="c8c30-107">For more information, see the following topics:</span></span>
   
-[<span data-ttu-id="69242-111">Office 365 PowerShell 入门</span><span class="sxs-lookup"><span data-stu-id="69242-111">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+- [<span data-ttu-id="c8c30-108">使用 Exchange Online PowerShell 显示邮箱信息</span><span class="sxs-lookup"><span data-stu-id="c8c30-108">Use Exchange Online PowerShell to display mailbox information</span></span>](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
+    
+- [<span data-ttu-id="c8c30-109">查找运行任意 Exchange cmdlet 所需的权限</span><span class="sxs-lookup"><span data-stu-id="c8c30-109">Find the permissions required to run any Exchange cmdlet</span></span>](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions)
+    
+## <a name="see-also"></a><span data-ttu-id="c8c30-110">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c8c30-110">See also</span></span>
+
+[<span data-ttu-id="c8c30-111">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="c8c30-111">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+  
+[<span data-ttu-id="c8c30-112">Microsoft 365 的 PowerShell 入门</span><span class="sxs-lookup"><span data-stu-id="c8c30-112">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)
 

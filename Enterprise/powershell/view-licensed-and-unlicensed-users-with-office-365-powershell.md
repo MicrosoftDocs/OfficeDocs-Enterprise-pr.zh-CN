@@ -1,9 +1,9 @@
 ---
-title: 使用 Office 365 PowerShell 查看授权和未授权的用户
+title: 使用 PowerShell 查看已授权和未授权的 Microsoft 365 用户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/18/2019
+ms.date: 07/21/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,68 +18,70 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: 介绍如何使用 Office 365 PowerShell 查看授权和未授权的用户帐户。
-ms.openlocfilehash: f8a00ad11ba7bbd93c809dc130cf588420c2d81c
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 说明如何使用 PowerShell 查看已授权和未授权的 Microsoft 365 用户帐户。
+ms.openlocfilehash: 02b1f76bab0e64e4e7e72f5e5556f5047d956d11
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004175"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230248"
 ---
-# <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a><span data-ttu-id="afe9b-103">使用 Office 365 PowerShell 查看授权和未授权的用户</span><span class="sxs-lookup"><span data-stu-id="afe9b-103">View licensed and unlicensed users with Office 365 PowerShell</span></span>
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a><span data-ttu-id="ca668-103">使用 PowerShell 查看已授权和未授权的 Microsoft 365 用户</span><span class="sxs-lookup"><span data-stu-id="ca668-103">View licensed and unlicensed Microsoft 365 users with PowerShell</span></span>
 
-<span data-ttu-id="afe9b-p101">您的 Office 365 组织中的用户帐户可能已从组织提供的许可计划中分配到部分或全部可用的许可证，或者未分配到任何许可证。您可以使用 Office 365 PowerShell 快速查找您组织中的授权和未授权的用户。</span><span class="sxs-lookup"><span data-stu-id="afe9b-p101">User accounts in your Office 365 organization may have some, all, or none of the available licenses assigned to them from the licensing plans that are available in your organization. You can use Office 365 PowerShell to quickly find the licensed and unlicensed users in your organization.</span></span>
+<span data-ttu-id="ca668-104">*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*</span><span class="sxs-lookup"><span data-stu-id="ca668-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="afe9b-106">使用用于图表模块的 Azure Active Directory PowerShell</span><span class="sxs-lookup"><span data-stu-id="afe9b-106">Use the Azure Active Directory PowerShell for Graph module</span></span>
+<span data-ttu-id="ca668-105">Microsoft 365 组织中的用户帐户可能会从组织中提供的许可计划中为其分配一些、全部或无可用许可证。</span><span class="sxs-lookup"><span data-stu-id="ca668-105">User accounts in your Microsoft 365 organization may have some, all, or none of the available licenses assigned to them from the licensing plans that are available in your organization.</span></span> <span data-ttu-id="ca668-106">可以使用适用于 Microsoft 365 的 PowerShell 快速查找组织中已授权和未授权的用户。</span><span class="sxs-lookup"><span data-stu-id="ca668-106">You can use PowerShell for Microsoft 365 to quickly find the licensed and unlicensed users in your organization.</span></span>
 
-<span data-ttu-id="afe9b-107">首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="afe9b-107">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="ca668-107">使用用于图表模块的 Azure Active Directory PowerShell</span><span class="sxs-lookup"><span data-stu-id="ca668-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
+
+<span data-ttu-id="ca668-108">首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="ca668-108">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
  
-<span data-ttu-id="afe9b-108">若要查看您的组织中尚未分配任何许可计划（未经许可的用户）的所有用户帐户的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="afe9b-108">To view the list of all user accounts in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:</span></span>
+<span data-ttu-id="ca668-109">若要查看您的组织中尚未分配任何许可计划（未经许可的用户）的所有用户帐户的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="ca668-109">To view the list of all user accounts in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:</span></span>
   
 ```powershell
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-<span data-ttu-id="afe9b-109">若要查看组织中已向其分配任何许可计划（许可用户）的所有用户帐户的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="afe9b-109">To view the list of all user accounts in your organization that have been assigned any of your licensing plans (licensed users), run the following command:</span></span>
+<span data-ttu-id="ca668-110">若要查看组织中已向其分配任何许可计划（许可用户）的所有用户帐户的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="ca668-110">To view the list of all user accounts in your organization that have been assigned any of your licensing plans (licensed users), run the following command:</span></span>
   
 ```powershell
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]
-><span data-ttu-id="afe9b-110">若要列出订阅中的所有用户，请使用`Get-AzureAdUser -All $true`命令。</span><span class="sxs-lookup"><span data-stu-id="afe9b-110">To list all of the users in your subscription, use the `Get-AzureAdUser -All $true` command.</span></span>
+><span data-ttu-id="ca668-111">若要列出订阅中的所有用户，请使用 `Get-AzureAdUser -All $true` 命令。</span><span class="sxs-lookup"><span data-stu-id="ca668-111">To list all of the users in your subscription, use the `Get-AzureAdUser -All $true` command.</span></span>
 >
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="afe9b-111">使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="afe9b-111">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="ca668-112">使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块</span><span class="sxs-lookup"><span data-stu-id="ca668-112">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="afe9b-112">首先，[连接到 Office 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="afe9b-112">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="ca668-113">首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="ca668-113">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="afe9b-113">若要查看组织中所有用户帐户及其授权状态的列表，请在 Office 365 PowerShell 中运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="afe9b-113">To view the list of all user accounts and their licensing status in your organization, run the following command in Office 365 PowerShell:</span></span>
+<span data-ttu-id="ca668-114">若要查看组织中所有用户帐户及其授权状态的列表，请在 PowerShell 中运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="ca668-114">To view the list of all user accounts and their licensing status in your organization, run the following command in PowerShell:</span></span>
   
 ```powershell
 Get-MsolUser -All
 ```
 
 >[!Note]
-><span data-ttu-id="afe9b-114">PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="afe9b-114">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="afe9b-115">若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。</span><span class="sxs-lookup"><span data-stu-id="afe9b-115">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="ca668-115">PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。</span><span class="sxs-lookup"><span data-stu-id="ca668-115">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="ca668-116">若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。</span><span class="sxs-lookup"><span data-stu-id="ca668-116">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="afe9b-116">若要查看组织中所有未授权用户帐户的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="afe9b-116">To view the list of all unlicensed user accounts in your organization, run the following command:</span></span>
+<span data-ttu-id="ca668-117">若要查看组织中所有未授权用户帐户的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="ca668-117">To view the list of all unlicensed user accounts in your organization, run the following command:</span></span>
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-<span data-ttu-id="afe9b-117">若要查看组织中所有授权用户帐户的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="afe9b-117">To view the list of all licensed user accounts in your organization, run the following command:</span></span>
+<span data-ttu-id="ca668-118">若要查看组织中所有授权用户帐户的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="ca668-118">To view the list of all licensed user accounts in your organization, run the following command:</span></span>
   
 ```powershell
 Get-MsolUser -All | where {$_.isLicensed -eq $true}
 ```
 
-## <a name="see-also"></a><span data-ttu-id="afe9b-118">另请参阅</span><span class="sxs-lookup"><span data-stu-id="afe9b-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ca668-119">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ca668-119">See also</span></span>
 
-[<span data-ttu-id="afe9b-119">使用 Office 365 PowerShell 管理用户帐户、许可证和组</span><span class="sxs-lookup"><span data-stu-id="afe9b-119">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="ca668-120">使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组</span><span class="sxs-lookup"><span data-stu-id="ca668-120">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="afe9b-120">使用 Office 365 PowerShell 管理 Office 365</span><span class="sxs-lookup"><span data-stu-id="afe9b-120">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="ca668-121">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="ca668-121">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="afe9b-121">Office 365 PowerShell 入门</span><span class="sxs-lookup"><span data-stu-id="afe9b-121">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="ca668-122">Microsoft 365 的 PowerShell 入门</span><span class="sxs-lookup"><span data-stu-id="ca668-122">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)
