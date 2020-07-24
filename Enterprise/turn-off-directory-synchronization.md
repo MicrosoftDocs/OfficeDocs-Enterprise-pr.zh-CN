@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: 了解如何使用 PowerShell 关闭 Microsoft 365 的目录同步
-ms.openlocfilehash: 935d7e26c7b99aba876500e6b9d428557aed5b9c
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906205"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387705"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>关闭 Microsoft 365 的目录同步
 您可以使用 PowerShell 关闭目录同步。 但是，不建议您将目录同步作为故障排除步骤关闭。 如果您需要有关对目录同步进行故障排除的帮助，请参阅[解决 Microsoft 365 文章的目录同步问题](fix-problems-with-directory-synchronization.md)。 
@@ -41,3 +41,8 @@ ms.locfileid: "44906205"
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
+
+>[!Note]
+>如果使用此命令，则必须等待72小时，然后才能重新打开目录同步。
+>
+ 

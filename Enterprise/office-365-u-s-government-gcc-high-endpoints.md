@@ -16,14 +16,14 @@ f1.keywords:
 ms.custom: Adm_O365
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
-description: 如果您的组织使用 Office 365 并限制网络中的计算机连接到 Internet，则在下面将找到您应在出站允许列表中包含的终结点 (Fqdn、端口、Url、IPv4 和 IPv6 地址范围) ，以确保您的计算机可以成功使用 Office 365。
+description: 如果您的组织使用 Office 365 并限制网络中的计算机连接到 Internet，则在下面将找到应包含在出站允许列表中的终结点（Fqdn、端口、Url、IPv4 和 IPv6 地址范围），以确保您的计算机可以成功使用 Office 365。
 hideEdit: true
-ms.openlocfilehash: eee2b9fc3c0e1b25843806573811d333adcdec7a
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: a22a73e970228cc873410df916a071d89a74ba02
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091179"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387735"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 美国政府版（GCC）高终结点
 
@@ -31,14 +31,11 @@ ms.locfileid: "45091179"
 
 Office 365 要求连接到 Internet。 下面的终结点对于使用 Office 365 美国政府版高计划的客户应是可访问的。
   
-> [!NOTE]
-> Microsoft 针对此页上的 IP 地址和 FQDN 条目发布了基于 REST 的 Web 服务。这项新服务有助于配置和更新网络外围设备，如防火墙和代理服务器。可以下载终结点列表，无论是列表的当前版本，还是应用了特定更改的列表。这项服务会替换从此页面链接到的 XML 文档（已于 2018 年 10 月 2 日遭弃用）。若要试用这项新服务，请转到 [Web 服务](office-365-ip-web-service.md)。
-  
  **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md) | [由世纪互联运营的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germany](office-365-germany-endpoints.md)  | [Office 365 美国政府版 DoD](office-365-u-s-government-dod-endpoints.md) | *Office 365 美国政府版 GCC High* |
   
 |||
 |:-----|:-----|
-|**上次更新时间：** 07/09/2020- ![ RSS ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
+|**上次更新时间：** 2020/07/09 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
 
  从[管理 Office 365 终结点](managing-office-365-endpoints.md)开始，了解我们关于使用此数据管理网络连接的建议。 终结点数据在每月开始时更新，并在30天内发布新的 IP 地址和 Url，并在处于活动状态之前发布。 这样一来，在需要新的连接之前，尚不具有自动更新的客户即可完成其过程。 如果需要，还可以更新终结点，以解决支持升级、安全事件或其他立即运行的要求。 以下页面上显示的数据都是从基于 REST 的 web 服务生成的。 如果使用脚本或网络设备访问此数据，则应直接转到[Web 服务](office-365-ip-web-service.md)。
 
@@ -62,7 +59,7 @@ Office 365 要求连接到 Internet。 下面的终结点对于使用 Office 365
 
 关于此表的注释：
 
--  (SCC) 的安全与合规中心提供了对适用于 Office 365 的 Azure ExpressRoute 的支持。 这同样适用于通过 SCC 公开的许多功能，如报告、审核、高级电子数据展示、统一 DLP 和数据管理。 两种特定功能（PST 导入和电子数据展示导出）目前不支持仅具有 Office 365 路由筛选器的 Azure ExpressRoute，因为它们依赖于 Azure Blob 存储。 若要使用这些功能，您需要使用任何支持的 Azure 连接选项（包括 Internet 连接或具有 Azure 公用路由筛选器的 Azure ExpressRoute）以独立方式连接到 Azure Blob 存储。 您必须评估这两个功能的建立此类连接。 Office 365 信息保护团队了解此限制，并积极努力为 Office 365 提供对 Azure ExpressRoute 的支持，这些功能仅限于 Office 365 的路由筛选器。
+- 安全与合规中心（SCC）提供对适用于 Office 365 的 Azure ExpressRoute 的支持。 这同样适用于通过 SCC 公开的许多功能，如报告、审核、高级电子数据展示、统一 DLP 和数据管理。 两种特定功能（PST 导入和电子数据展示导出）目前不支持仅具有 Office 365 路由筛选器的 Azure ExpressRoute，因为它们依赖于 Azure Blob 存储。 若要使用这些功能，您需要使用任何支持的 Azure 连接选项（包括 Internet 连接或具有 Azure 公用路由筛选器的 Azure ExpressRoute）以独立方式连接到 Azure Blob 存储。 您必须评估这两个功能的建立此类连接。 Office 365 信息保护团队了解此限制，并积极努力为 Office 365 提供对 Azure ExpressRoute 的支持，这些功能仅限于 Office 365 的路由筛选器。
 
 - Microsoft 365 应用程序的其他可选终结点未列出，并且用户无需为企业应用程序启动 Microsoft 365 应用程序和编辑文档。 可选的终结点托管在 Microsoft 数据中心中，不会处理、传输或存储客户数据。 建议将指向这些终结点的用户连接定向到默认 Internet 出局外围。
 
