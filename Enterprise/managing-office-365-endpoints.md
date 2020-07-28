@@ -17,16 +17,16 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 一些企业网络限制对通用 internet 位置的访问，或者包括大量 backhaul 或网络流量的处理。 为了确保这些网络上的计算机可以访问 Office 365，网络和代理管理员需要管理组成 Office 365 终结点列表的 Fqdn、Url 和 IP 地址的列表。 需要将它们添加到直接路由、代理旁路、和/或防火墙规则和 PAC 文件中，以确保网络请求能够到达 Office 365。
-ms.openlocfilehash: f1e614412c1ef789ba5f0b81e124fdfebf361f94
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: MT
+ms.openlocfilehash: 335cfd3f27762c249cc9af88b169a9f0bb59bda7
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845033"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433553"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
-如果大多数企业组织具有多个办事处位置和一个连接 WAN，则需要为 Office 365 网络连接配置配置。 您可以通过防火墙直接发送所有受信任的 Office 365 网络请求，从而绕过所有其他数据包级别检查或处理，从而优化您的网络。 这可降低延迟和外围容量要求。 确定 Office 365 网络流量是为用户提供最佳性能的第一步。 有关 Office 365 网络连接的详细信息，请参阅[office 365 网络连接原则](office-365-network-connectivity-principles.md)。
+如果大多数企业组织具有多个办事处位置和一个连接 WAN，则需要配置 Office 365 网络连接。 您可以通过防火墙直接发送所有受信任的 Office 365 网络请求，从而绕过所有其他数据包级别检查或处理，从而优化您的网络。 这可降低延迟和外围容量要求。 确定 Office 365 网络流量是为用户提供最佳性能的第一步。 有关 Office 365 网络连接的详细信息，请参阅[office 365 网络连接原则](office-365-network-connectivity-principles.md)。
 
 Microsoft 建议使用[office 365 IP 地址和 URL Web 服务](office-365-ip-web-service.md)访问 office 365 网络终结点，并对其进行更改。
 
@@ -72,12 +72,12 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 您可以传递给脚本的参数有很多：
 
-|**Parameter**|**说明**|
+|**参数**|**说明**|
 |:-----|:-----|
 |**ClientRequestId** <br/> |这是必需的，它是传递给 web 服务的 GUID，表示进行呼叫的客户端计算机。 <br/> |
 |**实例** <br/> |默认为 "全球" 的 Office 365 服务实例。 也传递到 web 服务。 <br/> |
 |**TenantName** <br/> |Office 365 租户名称。 传递到 web 服务，并在某些 Office 365 Url 中用作可替换参数。 <br/> |
-|**Type** <br/> |要生成的代理 PAC 文件的类型。 <br/> |
+|**类型** <br/> |要生成的代理 PAC 文件的类型。 <br/> |
 
 以下是使用其他参数调用 PowerShell 脚本的另一个示例：
 
@@ -145,7 +145,7 @@ Office 365 IP 地址和 URL Web 服务提供了可在 Outlook 中订阅的 RSS �
 1. 检查 IP 地址是否包含在使用 CIDR 计算器的较大的已发布区域中，例如，对于[IPv4](https://www.ipaddressguide.com/cidr)或[IPv6](https://www.ipaddressguide.com/ipv6-cidr)。 例如，40.96.0.0/13 包括 IP 地址40.103.0.1，尽管40.96 不匹配40.103。
 2. 查看合作伙伴是否拥有[whois 查询](https://dnsquery.org/)的 IP。 如果是 Microsoft 所拥有的，则它可能是内部合作伙伴。 许多合作伙伴网络终结点被列为属于_默认_类别，而不会发布 IP 地址。
 3. 该 IP 地址可能不是 Office 365 或依赖项的一部分。 Office 365 网络终结点发布不包含所有 Microsoft 网络终结点。
-4. 检查证书在浏览器中使用*HTTPS://\<IP_ADDRESS\> *连接到 IP 地址，检查证书上列出的域以了解与 IP 地址关联的域。 如果它是 Microsoft 拥有的 IP 地址，而不是 Office 365 IP 地址列表，则该 IP 地址可能与 Microsoft CDN （如*MSOCDN.NET*或另一个 microsoft 域）相关联，而不会发布 IP 信息。 如果您在证书中找到的域是我们声明列出 IP 地址的域，请告诉我们。
+4. 检查证书在浏览器中使用*HTTPS:// \<IP_ADDRESS\> *连接到 IP 地址，检查证书上列出的域以了解与 IP 地址关联的域。 如果它是 Microsoft 拥有的 IP 地址，而不是 Office 365 IP 地址列表，则该 IP 地址可能与 Microsoft CDN （如*MSOCDN.NET*或另一个 microsoft 域）相关联，而不会发布 IP 信息。 如果您在证书中找到的域是我们声明列出 IP 地址的域，请告诉我们。
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>某些 Office 365 Url 指向 CNAME 记录，而不是 DNS 中的记录。 如何处理 CNAME 记录？
@@ -167,9 +167,9 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 Office 365 和其他 Microsoft 服务使用几种第三方服务（如 Akamai 和 MarkMonitor）来改进 Office 365 体验。 为了让你能够获得最佳体验，我们可能会在将来更改这些服务。 第三方域可以承载内容（如 CDN），也可以托管服务，例如地理流量管理服务。 当前使用的某些服务包括：
   
-当您看到包含* \*. nsatc.net*的请求时， [MarkMonitor](https://www.markmonitor.com/)正在使用中。 此服务提供了域名称保护和监控，以防止恶意行为。
+当您看到包含* \* . nsatc.net*的请求时， [MarkMonitor](https://www.markmonitor.com/)正在使用中。 此服务提供了域名称保护和监控，以防止恶意行为。
   
-当您看到* \*exacttarget.com*的请求时， [ExactTarget](https://www.marketingcloud.com/)正在使用中。 此服务提供电子邮件链接管理，并针对恶意行为进行监控。
+当您看到* \* exacttarget.com*的请求时， [ExactTarget](https://www.marketingcloud.com/)正在使用中。 此服务提供电子邮件链接管理，并针对恶意行为进行监控。
   
 当您看到包含下列 Fqdn 之一的请求时，将使用[Akamai](https://www.akamai.com/) 。 此服务提供地理位置 DNS 和内容传递网络服务。
   

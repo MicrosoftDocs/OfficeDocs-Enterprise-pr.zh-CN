@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: 了解如何使用 Microsoft PowerShell 管理 Exchange Online 多地理位置设置。
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352942"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433503"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **注意：** 如果数据库名称中的地理位置代码与 **MailboxRegion** 值不匹配，则会将该邮箱自动放入重定位队列，并移动到 **MailboxRegion** 值指定的地理位置 （Exchange Online 会查找这些属性值的不匹配之处）。
+> [!NOTE]
+> 如果数据库名称中的地理位置代码与**MailboxRegion**值不匹配，则会将邮箱自动置于重新定位队列中，并将其移动到**MailboxRegion**值所指定的地理位置（Exchange Online 会在这些属性值之间查找不匹配）。
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>将现有的仅限云邮箱移动到特定地理位置
 
@@ -133,17 +134,16 @@ Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoL
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**注意**：
-
-- 如前所述，你不能为从本地 Active Directory 同步的用户对象使用此过程。 你需要在 Active Directory 中更改 **PreferredDataLocation** 值，并使用 AAD Connect 进行同步。 有关详细信息，请参阅 [Azure Active Directory Connect 同步：为 Microsoft 365 资源配置首选数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
-
-- 将邮箱重定位到新的地理位置所花费的时间取决于若干因素：
-
-  - 邮箱的大小和类型。
-
-  - 正在移动的邮箱数量。
-
-  - 移动资源的可用性。
+> [!NOTE]
+> - 如前所述，不能对本地 Active Directory 中的同步用户对象使用此过程。 你需要在 Active Directory 中更改 **PreferredDataLocation** 值，并使用 AAD Connect 进行同步。 有关详细信息，请参阅 [Azure Active Directory Connect 同步：为 Microsoft 365 资源配置首选数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
+> 
+> - 将邮箱重定位到新的地理位置所花费的时间取决于若干因素：
+> 
+>   - 邮箱的大小和类型。
+> 
+>   - 正在移动的邮箱数量。
+> 
+>   - 移动资源的可用性。
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>移动处于诉讼保留状态的已禁用邮箱
 

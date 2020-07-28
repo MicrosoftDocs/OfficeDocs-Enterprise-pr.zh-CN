@@ -8,16 +8,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 了解如何在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
-ms.openlocfilehash: f2cb71f26216d859c00cefb10661608178e19315
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 13b730de6b318ddb3a4cf3a084d4b59e56a82dbf
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057698"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433603"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
 

@@ -25,12 +25,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在呼叫支持之前查看 Microsoft 365 服务的运行状况状态，以查看是否有活动的服务中断。
-ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
-ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
+ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44266674"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433883"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
@@ -68,6 +68,9 @@ ms.locfileid: "44266674"
 - 最大为两个电子邮件地址。
 - 您是否需要针对事件或建议的通知
 - 要通知的服务
+
+> [!NOTE]
+> 每个管理员都可以设置其首选项，并且对于每个管理员帐户，上述限制为两个电子邮件地址。
 
 > [!TIP]
 > 您还可以在移动设备上使用[Microsoft 365 管理应用](https://go.microsoft.com/fwlink/p/?linkid=627216)来查看服务运行状况，这是保持最新的推送通知的绝佳方式。 
@@ -145,4 +148,5 @@ ms.locfileid: "44266674"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 管理中心中的活动报告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Microsoft 365 管理中心](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+ 中的活动报告[消息中心首选项](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

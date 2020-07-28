@@ -1,5 +1,5 @@
 ---
-title: 使用特定 PDL 创建 Microsoft 365 组
+title: 创建具有特定 PDL 的 Microsoft 365 组
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
-description: 了解如何在多地理位置环境中使用指定的首选数据位置创建 Microsoft 365 组。
-ms.openlocfilehash: 5b2294ff8821e84cb0158fa989b97134353969b2
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+localization_priority: Normal
+description: 了解如何在多地理位置环境中创建具有指定首选数据位置的 Microsoft 365 组。
+ms.openlocfilehash: bcababe39035550be445f2eee4d8121a2983132f
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057982"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433853"
 ---
-# <a name="create-an-microsoft-365-group-with-a-specific-pdl"></a>使用特定 PDL 创建 Microsoft 365 组
+# <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>创建具有特定 PDL 的 Microsoft 365 组
 
-当多地理位置环境中的用户创建 Microsoft 365 组时，组首选数据位置将自动设置为用户的该位置。 全局管理员、SharePoint 管理员和 Exchange 管理员可在其所选的任何区域中创建组。 
+在多地理位置环境中的用户创建 Microsoft 365 组时，组首选数据位置将自动设置为用户的。 全局管理员、SharePoint 管理员和 Exchange 管理员可在其所选的任何区域中创建组。 
 
 如需使用特定 PDL 创建组，可使用 SharePoint 管理中心或 Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet 执行该操作。 执行此操作时，将在指定 PDL 中设置组邮箱以及与该组相关联的 SharePoint 站点。
 
-要使用指定的 PDL 创建 Microsoft 365 组，请转到 SharePoint 管理中心内要创建组站点的地理位置。
+若要使用您指定的 PDL 创建 Microsoft 365 组，请转到要在其中创建组网站的地理位置中的 SharePoint 管理中心。
 
 例如：
 

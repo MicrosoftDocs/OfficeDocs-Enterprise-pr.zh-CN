@@ -17,16 +17,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用适用于 Microsoft 365 的 PowerShell 将备用域名添加到现有客户租户。
-ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: eabfa9dfcbb36cb54a2d51321dfe60f197290b10
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229778"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433763"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 您可以使用 Microsoft 365 管理中心，创建新域并将其与使用 microsoft 365 的 PowerShell 与客户的租户相关联。
   
@@ -58,7 +58,7 @@ ms.locfileid: "45229778"
 
 此命令在 Azure Active Directory 中创建域，但不会将其与公开注册的域相关联。 这是因为您证明您拥有公开注册的域到 Microsoft Microsoft Microsoft Microsoft Microsoft Microsoft 365 for 企业。
   
-```
+```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
@@ -70,7 +70,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 
  Microsoft 365 将生成您需要放入 DNS TXT 验证记录中的特定数据。 要获取数据，请运行以下命令。
   
-```
+```powershell
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
@@ -91,7 +91,7 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
   
 通过 nslookup 确认已成功创建 TXT 记录。遵循下面的语法。
   
-```
+```console
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
@@ -107,22 +107,24 @@ nslookup -type=TXT <FQDN of registered domain>
 
 在此最后一步中，您将向 Microsoft 365 验证你拥有公开注册的域。 完成此步骤后，Microsoft 365 将开始接受路由到新域名的流量。 若要完成域创建和注册过程，请运行此命令。 
   
-```
+```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
 此命令不会返回任何输出，因此要确认其有效，请运行此命令。
   
-```
+```powershell
 Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
 这将返回如下所示的内容
-  
-||||
-|:-----|:-----|:-----|
-| `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
-| `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
+
+```console
+Name                   Status      Authentication
+--------------------   ---------   --------------
+FQDN of new domain     Verified    Managed
+```
+
    
 ## <a name="see-also"></a>另请参阅
 

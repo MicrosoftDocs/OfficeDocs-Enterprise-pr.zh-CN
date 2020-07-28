@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何在 Microsoft 365 中管理用户标识。
-ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230058"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433613"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 标识模型和 Azure Active Directory
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 Microsoft 365 使用 Azure Active Directory （Azure AD），这是 Microsoft 365 订阅附带的基于云的用户标识和身份验证服务，用于管理 Microsoft 365 的身份和身份验证。 正确配置您的身份基础结构对于管理您的组织的 Microsoft 365 用户访问和权限至关重要。
 
@@ -46,9 +46,8 @@ Microsoft 365 使用 Azure Active Directory （Azure AD），这是 Microsoft 36
 
 下面是两种类型的标识及其最佳优势。
 
-|||
+| | 仅限云标识 | 混合标识 |
 |:-------|:-----|:-----|
-|  | **仅限云标识** | **混合标识** |
 | **定义** | 用户帐户仅存在于适用于 Microsoft 365 订阅的 Azure AD 租户中。 | 用户帐户存在于 AD DS 中，并且副本也位于 Microsoft 365 订阅的 Azure AD 租户中。 Azure AD 中的用户帐户可能还包含已散列的 AD DS 用户帐户密码的哈希版本。 |
 | **Microsoft 365 如何对用户凭据进行身份验证** | Microsoft 365 订阅的 Azure AD 租户将使用云标识帐户执行身份验证。 | Microsoft 365 订阅的 Azure AD 租户可以处理身份验证过程，也可以将用户重定向到另一个标识提供程序。 |
 | **最适用于** | 不具有或不需要本地 AD DS 的组织。 | 使用 AD DS 或其他标识提供程序的组织。 |

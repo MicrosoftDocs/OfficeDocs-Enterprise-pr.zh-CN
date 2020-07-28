@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: 了解如何在多地理位置环境中配置搜索。
-ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057668"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433563"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>为 Microsoft 365 多地理位置配置搜索
 
@@ -258,11 +258,11 @@ MultiGeoSearchStatus - 这是 SharePoint Search API 响应请求返回的属性�
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>扇出到**所有**地理位置的示例 GET 请求
 
-https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+https:// \<tenant\> / \_ api/search/query？ querytext = ' sharepoint ' &Properties = ' EnableMultiGeoSearch： true ' &ClientType = ' my \_ client \_ id '
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>扇出部分**** 地理位置的示例 GET 请求
 
-https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = ' my_client_id ' &Properties = ' EnableMultiGeoSearch： true，MultiGeoSearchConfiguration： [{DataLocation \\ ： "位置" \\ ，终结点 \\ ： "https： \\ //contosoNAM.sharepoint.com" \\ ，SourceId \\ ： "B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ，{DataLocation \\ ： "CAN" \\ ，Endpoint \\ ： "https： \\ //contosoCAN.sharepoint-df.com"}] "
 
 > [!NOTE]
 > MultiGeoSearchConfiguration 属性的地理位置列表中的逗号和冒号前面带有**反斜杠**字符。 这是因为 GET 请求使用冒号分隔属性，并使用逗号分隔属性的参数。 如果不使用反斜杠作为转义字符，则 MultiGeoSearchConfiguration 属性会被错误解读。

@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: 了解如何将 OneDrive 站点移到其他地理位置。
-ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 699c9502c7257e5908e79d591170b51a563c4999
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058002"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433873"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 
@@ -199,4 +199,8 @@ OneDrive 异地移动完成后，OneNote win32 客户端和 UWP（通用）应�
 
 ### <a name="existing-followed-groups-and-sites"></a>现有已关注组和网站
 
-已关注网站和组将显示在用户的 OneDrive for Business 中，而无关其地理位置。在其他地理位置托管的网站和组将在单独的标签页中打开。
+已关注的网站和组将显示在用户的 OneDrive 中，而不考虑其地理位置。驻留在另一个地理位置的网站和组将在一个单独的选项卡中打开。
+
+### <a name="delve-geo-url-updates"></a>Delve Geo URL 更新
+
+只有在将用户的 OneDrive 移动到新地理位置之后，才会将用户发送到与自己的 PDL 相对应的 Delve 地理位置。
