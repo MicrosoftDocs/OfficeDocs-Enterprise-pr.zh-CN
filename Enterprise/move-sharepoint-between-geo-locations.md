@@ -10,207 +10,207 @@ ms.service: o365-solutions
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何将 SharePoint 站点移到其他地理位置。
-ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
-ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
-ms.translationtype: HT
+ms.openlocfilehash: 88c739e69f27df72cba3757f224ccd1a916d3148
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201616"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433863"
 ---
-# <a name="move-a-sharepoint-site-to-a-different-geo-location"></a><span data-ttu-id="53079-103">将 SharePoint 站点移到其他地理位置</span><span class="sxs-lookup"><span data-stu-id="53079-103">Move a SharePoint site to a different geo location</span></span>
+# <a name="move-a-sharepoint-site-to-a-different-geo-location"></a><span data-ttu-id="32bcf-103">将 SharePoint 站点移到其他地理位置</span><span class="sxs-lookup"><span data-stu-id="32bcf-103">Move a SharePoint site to a different geo location</span></span>
 
-<span data-ttu-id="53079-104">利用 SharePoint 站点地理位置移动，你可以将 SharePoint 站点移到多地理位置环境内的其他地理位置。</span><span class="sxs-lookup"><span data-stu-id="53079-104">With SharePoint site geo move, you can move SharePoint sites to other geo locations within your multi-geo environment.</span></span>
+<span data-ttu-id="32bcf-104">利用 SharePoint 站点地理位置移动，你可以将 SharePoint 站点移到多地理位置环境内的其他地理位置。</span><span class="sxs-lookup"><span data-stu-id="32bcf-104">With SharePoint site geo move, you can move SharePoint sites to other geo locations within your multi-geo environment.</span></span>
 
-<span data-ttu-id="53079-105">可在地理位置之间移动以下类型的站点：</span><span class="sxs-lookup"><span data-stu-id="53079-105">The following types of site can be moved between geo locations:</span></span>
+<span data-ttu-id="32bcf-105">可在地理位置之间移动以下类型的站点：</span><span class="sxs-lookup"><span data-stu-id="32bcf-105">The following types of site can be moved between geo locations:</span></span>
 
-- <span data-ttu-id="53079-106">Microsoft 365 组连接的站点</span><span class="sxs-lookup"><span data-stu-id="53079-106">Microsoft 365 Group-connected sites</span></span>
-- <span data-ttu-id="53079-107">没有 Microsoft 365 组关联的新式站点</span><span class="sxs-lookup"><span data-stu-id="53079-107">Modern sites without a Microsoft 365 Group association</span></span>
-- <span data-ttu-id="53079-108">经典 SharePoint 站点</span><span class="sxs-lookup"><span data-stu-id="53079-108">Classic SharePoint sites</span></span>
-- <span data-ttu-id="53079-109">通信站点</span><span class="sxs-lookup"><span data-stu-id="53079-109">Communication sites</span></span>
+- <span data-ttu-id="32bcf-106">Microsoft 365 组连接的站点</span><span class="sxs-lookup"><span data-stu-id="32bcf-106">Microsoft 365 Group-connected sites</span></span>
+- <span data-ttu-id="32bcf-107">没有 Microsoft 365 组关联的新式站点</span><span class="sxs-lookup"><span data-stu-id="32bcf-107">Modern sites without a Microsoft 365 Group association</span></span>
+- <span data-ttu-id="32bcf-108">经典 SharePoint 站点</span><span class="sxs-lookup"><span data-stu-id="32bcf-108">Classic SharePoint sites</span></span>
+- <span data-ttu-id="32bcf-109">通信站点</span><span class="sxs-lookup"><span data-stu-id="32bcf-109">Communication sites</span></span>
 
-<span data-ttu-id="53079-110">你必须是全局管理员或 SharePoint 管理员才能在地理位置之间移动站点。</span><span class="sxs-lookup"><span data-stu-id="53079-110">You must be a Global Administrator or SharePoint Administrator to move a site between geo locations.</span></span>
+<span data-ttu-id="32bcf-110">你必须是全局管理员或 SharePoint 管理员才能在地理位置之间移动站点。</span><span class="sxs-lookup"><span data-stu-id="32bcf-110">You must be a Global Administrator or SharePoint Administrator to move a site between geo locations.</span></span>
 
-<span data-ttu-id="53079-111">在 SharePoint 的移动过程中会有大约 4-6 小时的只读阶段，具体取决于站点内容。</span><span class="sxs-lookup"><span data-stu-id="53079-111">There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site contents.</span></span>
+<span data-ttu-id="32bcf-111">在 SharePoint 的移动过程中会有大约 4-6 小时的只读阶段，具体取决于站点内容。</span><span class="sxs-lookup"><span data-stu-id="32bcf-111">There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site contents.</span></span>
  
-## <a name="best-practices"></a><span data-ttu-id="53079-112">最佳做法</span><span class="sxs-lookup"><span data-stu-id="53079-112">Best practices</span></span>
+## <a name="best-practices"></a><span data-ttu-id="32bcf-112">最佳做法</span><span class="sxs-lookup"><span data-stu-id="32bcf-112">Best practices</span></span>
 
-- <span data-ttu-id="53079-113">尝试在测试站点上进行 SharePoint 站点移动，以熟悉程序。</span><span class="sxs-lookup"><span data-stu-id="53079-113">Try a SharePoint site move on a test site to get familiar with the procedure.</span></span> 
-- <span data-ttu-id="53079-114">在安排或执行移动之前，验证站点是否可移动。</span><span class="sxs-lookup"><span data-stu-id="53079-114">Validate whether the site can be moved prior to scheduling or performing the move.</span></span> 
-- <span data-ttu-id="53079-115">尽可能将跨地理位置站点移动安排在非工作时间进行，以便减少用户影响。</span><span class="sxs-lookup"><span data-stu-id="53079-115">When possible schedule cross-geo sites moves for outside business hours to reduce user impact.</span></span>
-- <span data-ttu-id="53079-116">在进行站点移动之前，与受影响的用户沟通。</span><span class="sxs-lookup"><span data-stu-id="53079-116">Communicate with impacted users prior to the sites move.</span></span> 
+- <span data-ttu-id="32bcf-113">尝试在测试站点上进行 SharePoint 站点移动，以熟悉程序。</span><span class="sxs-lookup"><span data-stu-id="32bcf-113">Try a SharePoint site move on a test site to get familiar with the procedure.</span></span> 
+- <span data-ttu-id="32bcf-114">在安排或执行移动之前，验证站点是否可移动。</span><span class="sxs-lookup"><span data-stu-id="32bcf-114">Validate whether the site can be moved prior to scheduling or performing the move.</span></span> 
+- <span data-ttu-id="32bcf-115">尽可能将跨地理位置站点移动安排在非工作时间进行，以便减少用户影响。</span><span class="sxs-lookup"><span data-stu-id="32bcf-115">When possible schedule cross-geo sites moves for outside business hours to reduce user impact.</span></span>
+- <span data-ttu-id="32bcf-116">在进行站点移动之前，与受影响的用户沟通。</span><span class="sxs-lookup"><span data-stu-id="32bcf-116">Communicate with impacted users prior to the sites move.</span></span> 
 
-## <a name="communicating-to-your-users"></a><span data-ttu-id="53079-117">向用户传达</span><span class="sxs-lookup"><span data-stu-id="53079-117">Communicating to your users</span></span>
+## <a name="communicating-to-your-users"></a><span data-ttu-id="32bcf-117">向用户传达</span><span class="sxs-lookup"><span data-stu-id="32bcf-117">Communicating to your users</span></span>
 
-<span data-ttu-id="53079-118">在地理位置之间移动 SharePoint 站点时，请务必向站点的用户（通常是能够编辑站点的任何人）传达预期结果。</span><span class="sxs-lookup"><span data-stu-id="53079-118">When moving SharePoint sites between geo locations, it's important to communicate to the sites' users (generally anyone with the ability to edit the site) what to expect.</span></span> <span data-ttu-id="53079-119">这可帮助减少用户困惑和致电技术支持的次数。</span><span class="sxs-lookup"><span data-stu-id="53079-119">This can help reduce user confusion and calls to your help desk.</span></span> <span data-ttu-id="53079-120">在移动之前向站点的用户发送电子邮件，告知他们以下信息：</span><span class="sxs-lookup"><span data-stu-id="53079-120">Email your sites' users before the move and let them know the following information:</span></span>
+<span data-ttu-id="32bcf-118">在地理位置之间移动 SharePoint 站点时，请务必向站点的用户（通常是能够编辑站点的任何人）传达预期结果。</span><span class="sxs-lookup"><span data-stu-id="32bcf-118">When moving SharePoint sites between geo locations, it's important to communicate to the sites' users (generally anyone with the ability to edit the site) what to expect.</span></span> <span data-ttu-id="32bcf-119">这可帮助减少用户困惑和致电技术支持的次数。</span><span class="sxs-lookup"><span data-stu-id="32bcf-119">This can help reduce user confusion and calls to your help desk.</span></span> <span data-ttu-id="32bcf-120">在移动之前向站点的用户发送电子邮件，告知他们以下信息：</span><span class="sxs-lookup"><span data-stu-id="32bcf-120">Email your sites' users before the move and let them know the following information:</span></span>
 
-- <span data-ttu-id="53079-121">移动应该开始的时间和需要花费的时长</span><span class="sxs-lookup"><span data-stu-id="53079-121">When the move is expected to start and how long it is expected to take</span></span>
-- <span data-ttu-id="53079-122">其站点要移动到的地理位置和用于访问新位置的 URL</span><span class="sxs-lookup"><span data-stu-id="53079-122">What geo location their site is moving to, and the URL to access the new location</span></span>
-- <span data-ttu-id="53079-123">移动期间，他们应关闭文件，不进行任何编辑。</span><span class="sxs-lookup"><span data-stu-id="53079-123">They should close their files and not make edits during the move.</span></span>
-- <span data-ttu-id="53079-124">文件权限和共享不会因移动而更改。</span><span class="sxs-lookup"><span data-stu-id="53079-124">File permissions and sharing will not change because of the move.</span></span>
-- <span data-ttu-id="53079-125">多地理位置环境中的预期用户体验</span><span class="sxs-lookup"><span data-stu-id="53079-125">What to expect from the user experience in a multi-geo environment</span></span>
+- <span data-ttu-id="32bcf-121">移动应该开始的时间和需要花费的时长</span><span class="sxs-lookup"><span data-stu-id="32bcf-121">When the move is expected to start and how long it is expected to take</span></span>
+- <span data-ttu-id="32bcf-122">其站点要移动到的地理位置和用于访问新位置的 URL</span><span class="sxs-lookup"><span data-stu-id="32bcf-122">What geo location their site is moving to, and the URL to access the new location</span></span>
+- <span data-ttu-id="32bcf-123">移动期间，他们应关闭文件，不进行任何编辑。</span><span class="sxs-lookup"><span data-stu-id="32bcf-123">They should close their files and not make edits during the move.</span></span>
+- <span data-ttu-id="32bcf-124">文件权限和共享不会因移动而更改。</span><span class="sxs-lookup"><span data-stu-id="32bcf-124">File permissions and sharing will not change because of the move.</span></span>
+- <span data-ttu-id="32bcf-125">多地理位置环境中的预期用户体验</span><span class="sxs-lookup"><span data-stu-id="32bcf-125">What to expect from the user experience in a multi-geo environment</span></span>
 
-<span data-ttu-id="53079-126">移动成功完成后，务必向站点的用户发送电子邮件，告知他们可在站点上恢复工作。</span><span class="sxs-lookup"><span data-stu-id="53079-126">Be sure to send your sites' users an email when the move has successfully completed informing them that they can resume working on their sites.</span></span>
+<span data-ttu-id="32bcf-126">移动成功完成后，务必向站点的用户发送电子邮件，告知他们可在站点上恢复工作。</span><span class="sxs-lookup"><span data-stu-id="32bcf-126">Be sure to send your sites' users an email when the move has successfully completed informing them that they can resume working on their sites.</span></span>
 
-## <a name="scheduling-sharepoint-site-moves"></a><span data-ttu-id="53079-127">安排 SharePoint 站点移动</span><span class="sxs-lookup"><span data-stu-id="53079-127">Scheduling SharePoint site moves</span></span>
+## <a name="scheduling-sharepoint-site-moves"></a><span data-ttu-id="32bcf-127">安排 SharePoint 站点移动</span><span class="sxs-lookup"><span data-stu-id="32bcf-127">Scheduling SharePoint site moves</span></span>
 
-<span data-ttu-id="53079-128">你可以提前安排 SharePoint 站点移动 （在本文后面介绍）。</span><span class="sxs-lookup"><span data-stu-id="53079-128">You can schedule SharePoint site moves in advance (described later in this article).</span></span> <span data-ttu-id="53079-129">可以按如下方式安排移动：</span><span class="sxs-lookup"><span data-stu-id="53079-129">You can schedule moves as follows:</span></span>
+<span data-ttu-id="32bcf-128">你可以提前安排 SharePoint 站点移动 （在本文后面介绍）。</span><span class="sxs-lookup"><span data-stu-id="32bcf-128">You can schedule SharePoint site moves in advance (described later in this article).</span></span> <span data-ttu-id="32bcf-129">可以按如下方式安排移动：</span><span class="sxs-lookup"><span data-stu-id="32bcf-129">You can schedule moves as follows:</span></span>
 
-- <span data-ttu-id="53079-130">一次最多可以安排 4,000 次移动。</span><span class="sxs-lookup"><span data-stu-id="53079-130">You can schedule up to 4,000 moves at a time.</span></span>
-- <span data-ttu-id="53079-131">移动开始后，可以安排更多移动操作，在在队列及任何给定时间内最多有 4,000 个待处理移动。</span><span class="sxs-lookup"><span data-stu-id="53079-131">As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.</span></span>
+- <span data-ttu-id="32bcf-130">一次最多可以安排 4,000 次移动。</span><span class="sxs-lookup"><span data-stu-id="32bcf-130">You can schedule up to 4,000 moves at a time.</span></span>
+- <span data-ttu-id="32bcf-131">移动开始后，可以安排更多移动操作，在在队列及任何给定时间内最多有 4,000 个待处理移动。</span><span class="sxs-lookup"><span data-stu-id="32bcf-131">As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.</span></span>
  
-<span data-ttu-id="53079-132">若要将 SharePoint 站点移动安排在稍后进行，请在开始移动时包括以下参数之一：</span><span class="sxs-lookup"><span data-stu-id="53079-132">To schedule a SharePoint site geo move for a later time, include one of the following parameters when you start the move:</span></span>
-- <span data-ttu-id="53079-133">`PreferredMoveBeginDate` -移动将可能在此指定时间开始。</span><span class="sxs-lookup"><span data-stu-id="53079-133">`PreferredMoveBeginDate` – The move will likely begin at this specified time.</span></span>
-- <span data-ttu-id="53079-134">`PreferredMoveEndDate` -移动将尽可能在此指定时间之前完成。</span><span class="sxs-lookup"><span data-stu-id="53079-134">`PreferredMoveEndDate` – The move will likely be completed by this specified time, on a best effort basis.</span></span> 
+<span data-ttu-id="32bcf-132">若要将 SharePoint 站点移动安排在稍后进行，请在开始移动时包括以下参数之一：</span><span class="sxs-lookup"><span data-stu-id="32bcf-132">To schedule a SharePoint site geo move for a later time, include one of the following parameters when you start the move:</span></span>
+- <span data-ttu-id="32bcf-133">`PreferredMoveBeginDate` -移动将可能在此指定时间开始。</span><span class="sxs-lookup"><span data-stu-id="32bcf-133">`PreferredMoveBeginDate` – The move will likely begin at this specified time.</span></span>
+- <span data-ttu-id="32bcf-134">`PreferredMoveEndDate` -移动将尽可能在此指定时间之前完成。</span><span class="sxs-lookup"><span data-stu-id="32bcf-134">`PreferredMoveEndDate` – The move will likely be completed by this specified time, on a best effort basis.</span></span> 
 
-<span data-ttu-id="53079-135">对于这两个参数，均必须以协调世界时 (UTC) 指定时间。</span><span class="sxs-lookup"><span data-stu-id="53079-135">Time must be specified in Coordinated Universal Time (UTC) for both parameters.</span></span>
+<span data-ttu-id="32bcf-135">对于这两个参数，均必须以协调世界时 (UTC) 指定时间。</span><span class="sxs-lookup"><span data-stu-id="32bcf-135">Time must be specified in Coordinated Universal Time (UTC) for both parameters.</span></span>
 
-## <a name="moving-the-site"></a><span data-ttu-id="53079-136">移动站点</span><span class="sxs-lookup"><span data-stu-id="53079-136">Moving the site</span></span>
+## <a name="moving-the-site"></a><span data-ttu-id="32bcf-136">移动站点</span><span class="sxs-lookup"><span data-stu-id="32bcf-136">Moving the site</span></span>
 
-<span data-ttu-id="53079-137">SharePoint 站点地理位置移动要求你通过站点所在的地理位置中的 SharePoint 管理 URL 连接并执行移动。</span><span class="sxs-lookup"><span data-stu-id="53079-137">SharePoint site geo move requires that you connect and perform the move from the SharePoint Admin URL in the geo location where the site is.</span></span>
+<span data-ttu-id="32bcf-137">SharePoint 站点地理位置移动要求你通过站点所在的地理位置中的 SharePoint 管理 URL 连接并执行移动。</span><span class="sxs-lookup"><span data-stu-id="32bcf-137">SharePoint site geo move requires that you connect and perform the move from the SharePoint Admin URL in the geo location where the site is.</span></span>
 
-<span data-ttu-id="53079-138">例如，如果站点 URL 为 https://contosohealthcare.sharepoint.com/sites/Turbines，请连接到位于 https://contosohealthcare-admin.sharepoint.com: 的 SharePoint 管理 URL</span><span class="sxs-lookup"><span data-stu-id="53079-138">For example, if the site URL is https://contosohealthcare.sharepoint.com/sites/Turbines, connect to the SharePoint Admin URL at https://contosohealthcare-admin.sharepoint.com:</span></span>
+<span data-ttu-id="32bcf-138">例如，如果站点 URL 为 https://contosohealthcare.sharepoint.com/sites/Turbines，请连接到位于 https://contosohealthcare-admin.sharepoint.com: 的 SharePoint 管理 URL</span><span class="sxs-lookup"><span data-stu-id="32bcf-138">For example, if the site URL is https://contosohealthcare.sharepoint.com/sites/Turbines, connect to the SharePoint Admin URL at https://contosohealthcare-admin.sharepoint.com:</span></span>
 
 `Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
 
 ![](media/move-onedrive-between-geo-locations-image1.png)
  
-### <a name="validating-the-environment"></a><span data-ttu-id="53079-139">验证环境</span><span class="sxs-lookup"><span data-stu-id="53079-139">Validating the environment</span></span>
+### <a name="validating-the-environment"></a><span data-ttu-id="32bcf-139">验证环境</span><span class="sxs-lookup"><span data-stu-id="32bcf-139">Validating the environment</span></span>
 
-<span data-ttu-id="53079-140">在安排任何站点移动之前，我们建议你执行验证来确保站点可移动。</span><span class="sxs-lookup"><span data-stu-id="53079-140">We recommend that before scheduling any site move, you perform a validation to ensure that the site can be moved.</span></span>
+<span data-ttu-id="32bcf-140">在安排任何站点移动之前，我们建议你执行验证来确保站点可移动。</span><span class="sxs-lookup"><span data-stu-id="32bcf-140">We recommend that before scheduling any site move, you perform a validation to ensure that the site can be moved.</span></span>
 
-<span data-ttu-id="53079-141">我们不支持移动包含以下各项的站点：</span><span class="sxs-lookup"><span data-stu-id="53079-141">We do not support moving sites with:</span></span>
--   <span data-ttu-id="53079-142">Business Connectivity Services</span><span class="sxs-lookup"><span data-stu-id="53079-142">Business Connectivity Services</span></span>
--   <span data-ttu-id="53079-143">InfoPath 表单</span><span class="sxs-lookup"><span data-stu-id="53079-143">InfoPath forms</span></span> 
-- <span data-ttu-id="53079-144">已应用信息权限管理 (IRM) 模板</span><span class="sxs-lookup"><span data-stu-id="53079-144">Information Rights Management (IRM) templates applied</span></span>
+<span data-ttu-id="32bcf-141">我们不支持移动包含以下各项的站点：</span><span class="sxs-lookup"><span data-stu-id="32bcf-141">We do not support moving sites with:</span></span>
+-   <span data-ttu-id="32bcf-142">Business Connectivity Services</span><span class="sxs-lookup"><span data-stu-id="32bcf-142">Business Connectivity Services</span></span>
+-   <span data-ttu-id="32bcf-143">InfoPath 表单</span><span class="sxs-lookup"><span data-stu-id="32bcf-143">InfoPath forms</span></span> 
+- <span data-ttu-id="32bcf-144">已应用信息权限管理 (IRM) 模板</span><span class="sxs-lookup"><span data-stu-id="32bcf-144">Information Rights Management (IRM) templates applied</span></span>
 
-<span data-ttu-id="53079-145">若要确保所有地理位置都兼容，请运行 `Get-SPOGeoMoveCrossCompatibilityStatus`：</span><span class="sxs-lookup"><span data-stu-id="53079-145">To ensure all geo locations are compatible, run `Get-SPOGeoMoveCrossCompatibilityStatus`.</span></span> <span data-ttu-id="53079-146">这将显示所有地理位置，并显示环境是否与目标地理位置兼容。</span><span class="sxs-lookup"><span data-stu-id="53079-146">This will display all your geo locations and whether the environment is compatible with the destination geo location.</span></span>
+<span data-ttu-id="32bcf-145">若要确保所有地理位置都兼容，请运行 `Get-SPOGeoMoveCrossCompatibilityStatus`：</span><span class="sxs-lookup"><span data-stu-id="32bcf-145">To ensure all geo locations are compatible, run `Get-SPOGeoMoveCrossCompatibilityStatus`.</span></span> <span data-ttu-id="32bcf-146">这将显示所有地理位置，并显示环境是否与目标地理位置兼容。</span><span class="sxs-lookup"><span data-stu-id="32bcf-146">This will display all your geo locations and whether the environment is compatible with the destination geo location.</span></span>
 
-<span data-ttu-id="53079-147">若要在站点上执行仅验证检查，请将 `Start-SPOSiteContentMove`与 `-ValidationOnly` 参数结合使用，验证是否能够移动站点。</span><span class="sxs-lookup"><span data-stu-id="53079-147">To perform a validation-only check on your site, use `Start-SPOSiteContentMove` with the `-ValidationOnly` parameter to validate if the site is able to be moved.</span></span> <span data-ttu-id="53079-148">例如：</span><span class="sxs-lookup"><span data-stu-id="53079-148">For example:</span></span>
+<span data-ttu-id="32bcf-147">若要在站点上执行仅验证检查，请将 `Start-SPOSiteContentMove`与 `-ValidationOnly` 参数结合使用，验证是否能够移动站点。</span><span class="sxs-lookup"><span data-stu-id="32bcf-147">To perform a validation-only check on your site, use `Start-SPOSiteContentMove` with the `-ValidationOnly` parameter to validate if the site is able to be moved.</span></span> <span data-ttu-id="32bcf-148">例如：</span><span class="sxs-lookup"><span data-stu-id="32bcf-148">For example:</span></span>
 
 ```PowerShell
 Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -DestinationDataLocation <DestinationLocation>
 ```
 
-<span data-ttu-id="53079-149">如果站点可移动，这将返回 *Success*，如果存在任何造成阻碍的情况，则返回 *Fail*。</span><span class="sxs-lookup"><span data-stu-id="53079-149">This will return *Success* if the site is ready to be moved or *Fail* if any of blocked conditions are present.</span></span>
+<span data-ttu-id="32bcf-149">如果站点可移动，这将返回 *Success*，如果存在任何造成阻碍的情况，则返回 *Fail*。</span><span class="sxs-lookup"><span data-stu-id="32bcf-149">This will return *Success* if the site is ready to be moved or *Fail* if any of blocked conditions are present.</span></span>
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a><span data-ttu-id="53079-150">为没有关联 Microsoft 365 组的站点开始 SharePoint 站点地理位置移动</span><span class="sxs-lookup"><span data-stu-id="53079-150">Start a SharePoint site geo move for a site with no associated Microsoft 365 Group</span></span>
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a><span data-ttu-id="32bcf-150">为没有关联 Microsoft 365 组的站点开始 SharePoint 站点地理位置移动</span><span class="sxs-lookup"><span data-stu-id="32bcf-150">Start a SharePoint site geo move for a site with no associated Microsoft 365 Group</span></span>
 
-<span data-ttu-id="53079-151">默认情况下，站点的初始 URL 将更改为目标地理位置的 URL。</span><span class="sxs-lookup"><span data-stu-id="53079-151">By default, initial URL for the site will change to the URL of the destination geo location.</span></span> <span data-ttu-id="53079-152">例如：</span><span class="sxs-lookup"><span data-stu-id="53079-152">For example:</span></span>
+<span data-ttu-id="32bcf-151">默认情况下，站点的初始 URL 将更改为目标地理位置的 URL。</span><span class="sxs-lookup"><span data-stu-id="32bcf-151">By default, initial URL for the site will change to the URL of the destination geo location.</span></span> <span data-ttu-id="32bcf-152">例如：</span><span class="sxs-lookup"><span data-stu-id="32bcf-152">For example:</span></span>
 
-<span data-ttu-id="53079-153">https://Contoso.sharepoint.com/sites/projectx 更改为 https://ContosoEUR.sharepoint.com/sites/projectx</span><span class="sxs-lookup"><span data-stu-id="53079-153">https://Contoso.sharepoint.com/sites/projectx to https://ContosoEUR.sharepoint.com/sites/projectx</span></span>
+<span data-ttu-id="32bcf-153">https://Contoso.sharepoint.com/sites/projectx 更改为 https://ContosoEUR.sharepoint.com/sites/projectx</span><span class="sxs-lookup"><span data-stu-id="32bcf-153">https://Contoso.sharepoint.com/sites/projectx to https://ContosoEUR.sharepoint.com/sites/projectx</span></span>
 
-<span data-ttu-id="53079-154">对于没有 Microsoft 365 组关联的站点，你也可以通过使用 `-DestinationUrl` 参数来重命名站点。</span><span class="sxs-lookup"><span data-stu-id="53079-154">For sites with no Microsoft 365 Group association, you can also rename the site by using the `-DestinationUrl` parameter.</span></span> <span data-ttu-id="53079-155">例如：</span><span class="sxs-lookup"><span data-stu-id="53079-155">For example:</span></span>
+<span data-ttu-id="32bcf-154">对于没有 Microsoft 365 组关联的站点，你也可以通过使用 `-DestinationUrl` 参数来重命名站点。</span><span class="sxs-lookup"><span data-stu-id="32bcf-154">For sites with no Microsoft 365 Group association, you can also rename the site by using the `-DestinationUrl` parameter.</span></span> <span data-ttu-id="32bcf-155">例如：</span><span class="sxs-lookup"><span data-stu-id="32bcf-155">For example:</span></span>
 
-<span data-ttu-id="53079-156">https://Contoso.sharepoint.com/sites/projectx 重命名为 https://ContosoEUR.sharepoint.com/sites/projecty</span><span class="sxs-lookup"><span data-stu-id="53079-156">https://Contoso.sharepoint.com/sites/projectx to https://ContosoEUR.sharepoint.com/sites/projecty</span></span>
+<span data-ttu-id="32bcf-156">https://Contoso.sharepoint.com/sites/projectx 重命名为 https://ContosoEUR.sharepoint.com/sites/projecty</span><span class="sxs-lookup"><span data-stu-id="32bcf-156">https://Contoso.sharepoint.com/sites/projectx to https://ContosoEUR.sharepoint.com/sites/projecty</span></span>
 
-<span data-ttu-id="53079-157">若要开始站点移动，请运行：</span><span class="sxs-lookup"><span data-stu-id="53079-157">To start the site move, run:</span></span>
+<span data-ttu-id="32bcf-157">若要开始站点移动，请运行：</span><span class="sxs-lookup"><span data-stu-id="32bcf-157">To start the site move, run:</span></span>
 
 `Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
 
 ![显示 Start-SPOSiteContentMove cmdlet 的 PowerShell 窗口的屏幕截图](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a><span data-ttu-id="53079-159">为 Microsoft 365 组连接的站点开始 SharePoint 站点地理位置移动</span><span class="sxs-lookup"><span data-stu-id="53079-159">Start a SharePoint site geo move for a Microsoft 365 Group-connected site</span></span>
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a><span data-ttu-id="32bcf-159">为 Microsoft 365 组连接的站点开始 SharePoint 站点地理位置移动</span><span class="sxs-lookup"><span data-stu-id="32bcf-159">Start a SharePoint site geo move for a Microsoft 365 Group-connected site</span></span>
 
-<span data-ttu-id="53079-160">若要移动 Office 365 组连接的站点，全局管理员或 SharePoint 管理员首先必须更改 Office 365 组的首选数据位置 (PDL) 属性。</span><span class="sxs-lookup"><span data-stu-id="53079-160">To move an Office 365 Group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Office 365 Group.</span></span>
+<span data-ttu-id="32bcf-160">若要移动 Office 365 组连接的站点，全局管理员或 SharePoint 管理员首先必须更改 Office 365 组的首选数据位置 (PDL) 属性。</span><span class="sxs-lookup"><span data-stu-id="32bcf-160">To move an Office 365 Group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Office 365 Group.</span></span>
 
-<span data-ttu-id="53079-161">若要为 Microsoft 365 组设置 PDL，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="53079-161">To set the PDL for a Microsoft 365 Group:</span></span>
+<span data-ttu-id="32bcf-161">若要为 Microsoft 365 组设置 PDL，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="32bcf-161">To set the PDL for a Microsoft 365 Group:</span></span>
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
-<span data-ttu-id="53079-162">更新 PDL 之后，你就可以开始站点移动：</span><span class="sxs-lookup"><span data-stu-id="53079-162">Once you have updated the PDL, you can start the site move:</span></span> 
+<span data-ttu-id="32bcf-162">更新 PDL 之后，你就可以开始站点移动：</span><span class="sxs-lookup"><span data-stu-id="32bcf-162">Once you have updated the PDL, you can start the site move:</span></span> 
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
 ```
 
-## <a name="cancel-a-sharepoint-site-geo-move"></a><span data-ttu-id="53079-163">取消 SharePoint 站点地理位置移动</span><span class="sxs-lookup"><span data-stu-id="53079-163">Cancel a SharePoint site geo move</span></span>
+## <a name="cancel-a-sharepoint-site-geo-move"></a><span data-ttu-id="32bcf-163">取消 SharePoint 站点地理位置移动</span><span class="sxs-lookup"><span data-stu-id="32bcf-163">Cancel a SharePoint site geo move</span></span>
 
-<span data-ttu-id="53079-164">如果移动尚未进行或尚未完成，则可以使用 `Stop-SPOSiteContentMove` cmdlet 来停止 SharePoint 站点地理位置移动。</span><span class="sxs-lookup"><span data-stu-id="53079-164">You can stop a SharePoint site geo move, provided the move is not in progress or completed by using the `Stop-SPOSiteContentMove` cmdlet.</span></span>
+<span data-ttu-id="32bcf-164">如果移动尚未进行或尚未完成，则可以使用 `Stop-SPOSiteContentMove` cmdlet 来停止 SharePoint 站点地理位置移动。</span><span class="sxs-lookup"><span data-stu-id="32bcf-164">You can stop a SharePoint site geo move, provided the move is not in progress or completed by using the `Stop-SPOSiteContentMove` cmdlet.</span></span>
 
-## <a name="determining-the-status-of-a-sharepoint-site-geo-move"></a><span data-ttu-id="53079-165">确定 SharePoint 站点地理位置移动的状态</span><span class="sxs-lookup"><span data-stu-id="53079-165">Determining the status of a SharePoint site geo move</span></span>
+## <a name="determining-the-status-of-a-sharepoint-site-geo-move"></a><span data-ttu-id="32bcf-165">确定 SharePoint 站点地理位置移动的状态</span><span class="sxs-lookup"><span data-stu-id="32bcf-165">Determining the status of a SharePoint site geo move</span></span>
 
-<span data-ttu-id="53079-166">通过使用以下 cmdlet，你可以确定站点移入或移出所连接到的地理位置的状态：</span><span class="sxs-lookup"><span data-stu-id="53079-166">You can determine the status of a site move in our out of the geo that you are connected to by using the following cmdlets:</span></span>
+<span data-ttu-id="32bcf-166">通过使用以下 cmdlet，你可以确定站点移入或移出所连接到的地理位置的状态：</span><span class="sxs-lookup"><span data-stu-id="32bcf-166">You can determine the status of a site move in our out of the geo that you are connected to by using the following cmdlets:</span></span>
 
-- <span data-ttu-id="53079-167">[Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate)（非组连接的站点）</span><span class="sxs-lookup"><span data-stu-id="53079-167">[Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)</span></span>
-- <span data-ttu-id="53079-168">Get-SPOUnifiedGroupMoveState（组连接的站点）</span><span class="sxs-lookup"><span data-stu-id="53079-168">Get-SPOUnifiedGroupMoveState (Group-connected sites)</span></span>
+- <span data-ttu-id="32bcf-167">[Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate)（非组连接的站点）</span><span class="sxs-lookup"><span data-stu-id="32bcf-167">[Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)</span></span>
+- <span data-ttu-id="32bcf-168">Get-SPOUnifiedGroupMoveState（组连接的站点）</span><span class="sxs-lookup"><span data-stu-id="32bcf-168">Get-SPOUnifiedGroupMoveState (Group-connected sites)</span></span>
 
-<span data-ttu-id="53079-169">使用 `-SourceSiteUrl` 参数来指定要查看其移动状态的站点。</span><span class="sxs-lookup"><span data-stu-id="53079-169">Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.</span></span>
+<span data-ttu-id="32bcf-169">使用 `-SourceSiteUrl` 参数来指定要查看其移动状态的站点。</span><span class="sxs-lookup"><span data-stu-id="32bcf-169">Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.</span></span>
 
-<span data-ttu-id="53079-170">下表描述了这些移动状态。</span><span class="sxs-lookup"><span data-stu-id="53079-170">The move statuses are described in the following table.</span></span>
+<span data-ttu-id="32bcf-170">下表描述了这些移动状态。</span><span class="sxs-lookup"><span data-stu-id="32bcf-170">The move statuses are described in the following table.</span></span>
 
-|<span data-ttu-id="53079-171">状态</span><span class="sxs-lookup"><span data-stu-id="53079-171">Status</span></span>|<span data-ttu-id="53079-172">说明</span><span class="sxs-lookup"><span data-stu-id="53079-172">Description</span></span>|
+|<span data-ttu-id="32bcf-171">状态</span><span class="sxs-lookup"><span data-stu-id="32bcf-171">Status</span></span>|<span data-ttu-id="32bcf-172">说明</span><span class="sxs-lookup"><span data-stu-id="32bcf-172">Description</span></span>|
 |:-----|:----------|
-|<span data-ttu-id="53079-173">Ready to Trigger</span><span class="sxs-lookup"><span data-stu-id="53079-173">Ready to Trigger</span></span>|<span data-ttu-id="53079-174">移动尚未开始。</span><span class="sxs-lookup"><span data-stu-id="53079-174">The move has not started.</span></span>|
-|<span data-ttu-id="53079-175">Scheduled</span><span class="sxs-lookup"><span data-stu-id="53079-175">Scheduled</span></span>|<span data-ttu-id="53079-176">移动在队列中，但尚未开始。</span><span class="sxs-lookup"><span data-stu-id="53079-176">The move is in queue but has not yet started.</span></span>|
-|<span data-ttu-id="53079-177">InProgress (n/4)</span><span class="sxs-lookup"><span data-stu-id="53079-177">InProgress (n/4)</span></span>|<span data-ttu-id="53079-178">移动正在进行中，状态为以下之一：验证 (1/4)、备份 (2/4)、还原 (3/4)、清除 (4/4)。</span><span class="sxs-lookup"><span data-stu-id="53079-178">The move is in progress in one of the following states: Validation (1/4), Backup (2/4), Restore (3/4), Cleanup (4/4).</span></span>|
-|<span data-ttu-id="53079-179">Success</span><span class="sxs-lookup"><span data-stu-id="53079-179">Success</span></span>|<span data-ttu-id="53079-180">移动已成功完成。</span><span class="sxs-lookup"><span data-stu-id="53079-180">The move has completed successfully.</span></span>|
-|<span data-ttu-id="53079-181">Failed</span><span class="sxs-lookup"><span data-stu-id="53079-181">Failed</span></span>|<span data-ttu-id="53079-182">移动失败。</span><span class="sxs-lookup"><span data-stu-id="53079-182">The move failed.</span></span>|
+|<span data-ttu-id="32bcf-173">Ready to Trigger</span><span class="sxs-lookup"><span data-stu-id="32bcf-173">Ready to Trigger</span></span>|<span data-ttu-id="32bcf-174">移动尚未开始。</span><span class="sxs-lookup"><span data-stu-id="32bcf-174">The move has not started.</span></span>|
+|<span data-ttu-id="32bcf-175">Scheduled</span><span class="sxs-lookup"><span data-stu-id="32bcf-175">Scheduled</span></span>|<span data-ttu-id="32bcf-176">移动在队列中，但尚未开始。</span><span class="sxs-lookup"><span data-stu-id="32bcf-176">The move is in queue but has not yet started.</span></span>|
+|<span data-ttu-id="32bcf-177">InProgress (n/4)</span><span class="sxs-lookup"><span data-stu-id="32bcf-177">InProgress (n/4)</span></span>|<span data-ttu-id="32bcf-178">移动正在进行中，状态为以下之一：验证 (1/4)、备份 (2/4)、还原 (3/4)、清除 (4/4)。</span><span class="sxs-lookup"><span data-stu-id="32bcf-178">The move is in progress in one of the following states: Validation (1/4), Backup (2/4), Restore (3/4), Cleanup (4/4).</span></span>|
+|<span data-ttu-id="32bcf-179">Success</span><span class="sxs-lookup"><span data-stu-id="32bcf-179">Success</span></span>|<span data-ttu-id="32bcf-180">移动已成功完成。</span><span class="sxs-lookup"><span data-stu-id="32bcf-180">The move has completed successfully.</span></span>|
+|<span data-ttu-id="32bcf-181">Failed</span><span class="sxs-lookup"><span data-stu-id="32bcf-181">Failed</span></span>|<span data-ttu-id="32bcf-182">移动失败。</span><span class="sxs-lookup"><span data-stu-id="32bcf-182">The move failed.</span></span>|
 
-<span data-ttu-id="53079-183">你也可以应用 `-Verbose` 选项来查看有关移动的其他信息。</span><span class="sxs-lookup"><span data-stu-id="53079-183">You can also apply the `-Verbose` option to see additional information about the move.</span></span>
+<span data-ttu-id="32bcf-183">你也可以应用 `-Verbose` 选项来查看有关移动的其他信息。</span><span class="sxs-lookup"><span data-stu-id="32bcf-183">You can also apply the `-Verbose` option to see additional information about the move.</span></span>
 
-## <a name="user-experience"></a><span data-ttu-id="53079-184">用户体验</span><span class="sxs-lookup"><span data-stu-id="53079-184">User experience</span></span>
+## <a name="user-experience"></a><span data-ttu-id="32bcf-184">用户体验</span><span class="sxs-lookup"><span data-stu-id="32bcf-184">User experience</span></span>
 
-<span data-ttu-id="53079-185">将站点用户的站点移动到其他地理位置时，应最大限度地减少用户会注意到的中断情况。</span><span class="sxs-lookup"><span data-stu-id="53079-185">Site users should notice minimal disruption when their site is moved to a different geo location.</span></span> <span data-ttu-id="53079-186">除了在移动过程中会有很短的一段时间处于只读状态外，现有链接和权限在移动完成后将继续按预期方式工作。</span><span class="sxs-lookup"><span data-stu-id="53079-186">Aside from a brief read-only state during the move, existing links and permissions will continue to work as expected once the move is completed.</span></span>
+<span data-ttu-id="32bcf-185">将站点用户的站点移动到其他地理位置时，应最大限度地减少用户会注意到的中断情况。</span><span class="sxs-lookup"><span data-stu-id="32bcf-185">Site users should notice minimal disruption when their site is moved to a different geo location.</span></span> <span data-ttu-id="32bcf-186">除了在移动过程中会有很短的一段时间处于只读状态外，现有链接和权限在移动完成后将继续按预期方式工作。</span><span class="sxs-lookup"><span data-stu-id="32bcf-186">Aside from a brief read-only state during the move, existing links and permissions will continue to work as expected once the move is completed.</span></span>
 
-### <a name="site"></a><span data-ttu-id="53079-187">站点</span><span class="sxs-lookup"><span data-stu-id="53079-187">Site</span></span>
+### <a name="site"></a><span data-ttu-id="32bcf-187">站点</span><span class="sxs-lookup"><span data-stu-id="32bcf-187">Site</span></span>
 
-<span data-ttu-id="53079-188">移动进行时站点会设为只读状态。</span><span class="sxs-lookup"><span data-stu-id="53079-188">While the move is in progress the site is set to read-only.</span></span> <span data-ttu-id="53079-189">移动完成后，当用户单击书签或其他站点链接时，系统会将用户定向到新地理位置中的新站点。</span><span class="sxs-lookup"><span data-stu-id="53079-189">Once the move is completed, the user is directed to the new site in the new geo location when they click on bookmarks or other links to the site.</span></span>
+<span data-ttu-id="32bcf-188">移动进行时站点会设为只读状态。</span><span class="sxs-lookup"><span data-stu-id="32bcf-188">While the move is in progress the site is set to read-only.</span></span> <span data-ttu-id="32bcf-189">移动完成后，当用户单击书签或其他站点链接时，系统会将用户定向到新地理位置中的新站点。</span><span class="sxs-lookup"><span data-stu-id="32bcf-189">Once the move is completed, the user is directed to the new site in the new geo location when they click on bookmarks or other links to the site.</span></span>
 
-### <a name="permissions"></a><span data-ttu-id="53079-190">权限</span><span class="sxs-lookup"><span data-stu-id="53079-190">Permissions</span></span>
+### <a name="permissions"></a><span data-ttu-id="32bcf-190">权限</span><span class="sxs-lookup"><span data-stu-id="32bcf-190">Permissions</span></span>
 
-<span data-ttu-id="53079-191">在移动进行时和完成后，有权访问站点的用户将仍然能够继续访问站点。</span><span class="sxs-lookup"><span data-stu-id="53079-191">Users with permissions to site will continue to have access to the site during the move and after it's complete.</span></span>
+<span data-ttu-id="32bcf-191">在移动进行时和完成后，有权访问站点的用户将仍然能够继续访问站点。</span><span class="sxs-lookup"><span data-stu-id="32bcf-191">Users with permissions to site will continue to have access to the site during the move and after it's complete.</span></span>
 
-### <a name="sync-client"></a><span data-ttu-id="53079-192">同步客户端</span><span class="sxs-lookup"><span data-stu-id="53079-192">Sync Client</span></span>
+### <a name="sync-client"></a><span data-ttu-id="32bcf-192">同步客户端</span><span class="sxs-lookup"><span data-stu-id="32bcf-192">Sync Client</span></span>
 
-<span data-ttu-id="53079-193">站点移动完成后，同步客户端将自动检测并将同步无缝转移到新站点位置。</span><span class="sxs-lookup"><span data-stu-id="53079-193">The sync client will automatically detect and seamlessly transfer syncing to the new site location once the site move is complete.</span></span> <span data-ttu-id="53079-194">用户无需再次登录或进行其他操作。</span><span class="sxs-lookup"><span data-stu-id="53079-194">The user does not need to sign in again or take any other action.</span></span> <span data-ttu-id="53079-195">（需要同步客户端版本 17.3.6943.0625 或更高版本。）</span><span class="sxs-lookup"><span data-stu-id="53079-195">(Version 17.3.6943.0625 or later of the sync client required.)</span></span>
+<span data-ttu-id="32bcf-193">站点移动完成后，同步客户端将自动检测并将同步无缝转移到新站点位置。</span><span class="sxs-lookup"><span data-stu-id="32bcf-193">The sync client will automatically detect and seamlessly transfer syncing to the new site location once the site move is complete.</span></span> <span data-ttu-id="32bcf-194">用户无需再次登录或进行其他操作。</span><span class="sxs-lookup"><span data-stu-id="32bcf-194">The user does not need to sign in again or take any other action.</span></span> <span data-ttu-id="32bcf-195">（需要同步客户端版本 17.3.6943.0625 或更高版本。）</span><span class="sxs-lookup"><span data-stu-id="32bcf-195">(Version 17.3.6943.0625 or later of the sync client required.)</span></span>
 
-<span data-ttu-id="53079-196">如果用户在移动进行时更新文件，则同步客户端将告知用户“在移动过程中，文件上传处于待定状态”。</span><span class="sxs-lookup"><span data-stu-id="53079-196">If a user updates a file while the move is in progress, the sync client will notify them that file uploads are pending while the move is underway.</span></span>
+<span data-ttu-id="32bcf-196">如果用户在移动进行时更新文件，则同步客户端将告知用户“在移动过程中，文件上传处于待定状态”。</span><span class="sxs-lookup"><span data-stu-id="32bcf-196">If a user updates a file while the move is in progress, the sync client will notify them that file uploads are pending while the move is underway.</span></span>
 
-### <a name="sharing-links"></a><span data-ttu-id="53079-197">共享链接</span><span class="sxs-lookup"><span data-stu-id="53079-197">Sharing links</span></span>
+### <a name="sharing-links"></a><span data-ttu-id="32bcf-197">共享链接</span><span class="sxs-lookup"><span data-stu-id="32bcf-197">Sharing links</span></span>
 
-<span data-ttu-id="53079-198">SharePoint 站点地理位置移动完成后，被移动文件的现有共享链接将自动重定向到新地理位置。</span><span class="sxs-lookup"><span data-stu-id="53079-198">When the SharePoint site geo move completes, the existing shared links for the files that were moved will automatically redirect to the new geo location.</span></span>
+<span data-ttu-id="32bcf-198">SharePoint 站点地理位置移动完成后，被移动文件的现有共享链接将自动重定向到新地理位置。</span><span class="sxs-lookup"><span data-stu-id="32bcf-198">When the SharePoint site geo move completes, the existing shared links for the files that were moved will automatically redirect to the new geo location.</span></span>
 
-### <a name="most-recently-used-files-in-office-mru"></a><span data-ttu-id="53079-199">Office 中最近使用的文件 (MRU)</span><span class="sxs-lookup"><span data-stu-id="53079-199">Most Recently Used files in Office (MRU)</span></span>
+### <a name="most-recently-used-files-in-office-mru"></a><span data-ttu-id="32bcf-199">Office 中最近使用的文件 (MRU)</span><span class="sxs-lookup"><span data-stu-id="32bcf-199">Most Recently Used files in Office (MRU)</span></span>
 
-<span data-ttu-id="53079-200">移动完成后，MRU 服务将随站点 URL 及其内容 URL 一起更新。</span><span class="sxs-lookup"><span data-stu-id="53079-200">The MRU service is updated with the site url and its content URLs once the move completes.</span></span> <span data-ttu-id="53079-201">这适用于 Word、Excel 和 PowerPoint。</span><span class="sxs-lookup"><span data-stu-id="53079-201">This applies to Word, Excel, and PowerPoint.</span></span>
+<span data-ttu-id="32bcf-200">移动完成后，MRU 服务将随站点 URL 及其内容 URL 一起更新。</span><span class="sxs-lookup"><span data-stu-id="32bcf-200">The MRU service is updated with the site url and its content URLs once the move completes.</span></span> <span data-ttu-id="32bcf-201">这适用于 Word、Excel 和 PowerPoint。</span><span class="sxs-lookup"><span data-stu-id="32bcf-201">This applies to Word, Excel, and PowerPoint.</span></span>
 
-### <a name="onenote-experience"></a><span data-ttu-id="53079-202">OneNote 体验</span><span class="sxs-lookup"><span data-stu-id="53079-202">OneNote experience</span></span>
+### <a name="onenote-experience"></a><span data-ttu-id="32bcf-202">OneNote 体验</span><span class="sxs-lookup"><span data-stu-id="32bcf-202">OneNote experience</span></span>
 
-<span data-ttu-id="53079-203">站点移动完成后，OneNote win32 客户端和 UWP （通用）应用会自动检测并将笔记本无缝同步到新站点位置。</span><span class="sxs-lookup"><span data-stu-id="53079-203">OneNote win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new site location once site move is complete.</span></span> <span data-ttu-id="53079-204">用户无需再次登录或进行其他操作。</span><span class="sxs-lookup"><span data-stu-id="53079-204">The user does not need to sign in again or take any other action.</span></span> <span data-ttu-id="53079-205">站点移动正在进行时，用户只会看到笔记本同步将失败的指示符。</span><span class="sxs-lookup"><span data-stu-id="53079-205">The only visible indicator to the user is notebook sync would fail when site move is in progress.</span></span> <span data-ttu-id="53079-206">以下 OneNote 客户端版本上提供了此体验：</span><span class="sxs-lookup"><span data-stu-id="53079-206">This experience is available on the following OneNote client versions:</span></span>
+<span data-ttu-id="32bcf-203">站点移动完成后，OneNote win32 客户端和 UWP （通用）应用会自动检测并将笔记本无缝同步到新站点位置。</span><span class="sxs-lookup"><span data-stu-id="32bcf-203">OneNote win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new site location once site move is complete.</span></span> <span data-ttu-id="32bcf-204">用户无需再次登录或进行其他操作。</span><span class="sxs-lookup"><span data-stu-id="32bcf-204">The user does not need to sign in again or take any other action.</span></span> <span data-ttu-id="32bcf-205">站点移动正在进行时，用户只会看到笔记本同步将失败的指示符。</span><span class="sxs-lookup"><span data-stu-id="32bcf-205">The only visible indicator to the user is notebook sync would fail when site move is in progress.</span></span> <span data-ttu-id="32bcf-206">以下 OneNote 客户端版本上提供了此体验：</span><span class="sxs-lookup"><span data-stu-id="32bcf-206">This experience is available on the following OneNote client versions:</span></span>
 
-- <span data-ttu-id="53079-207">OneNote win32 – 版本 16.0.8326.2096（及更高版本）</span><span class="sxs-lookup"><span data-stu-id="53079-207">OneNote win32 – Version 16.0.8326.2096 (and later)</span></span>
-- <span data-ttu-id="53079-208">OneNote UWP – 版本16.0.8431.1006（及更高版本）</span><span class="sxs-lookup"><span data-stu-id="53079-208">OneNote UWP – Version 16.0.8431.1006 (and later)</span></span>
-- <span data-ttu-id="53079-209">OneNote 移动应用 – 版本 16.0.8431.1011（及更高版本）</span><span class="sxs-lookup"><span data-stu-id="53079-209">OneNote Mobile App – Version 16.0.8431.1011 (and later)</span></span>
+- <span data-ttu-id="32bcf-207">OneNote win32 – 版本 16.0.8326.2096（及更高版本）</span><span class="sxs-lookup"><span data-stu-id="32bcf-207">OneNote win32 – Version 16.0.8326.2096 (and later)</span></span>
+- <span data-ttu-id="32bcf-208">OneNote UWP – 版本16.0.8431.1006（及更高版本）</span><span class="sxs-lookup"><span data-stu-id="32bcf-208">OneNote UWP – Version 16.0.8431.1006 (and later)</span></span>
+- <span data-ttu-id="32bcf-209">OneNote 移动应用 – 版本 16.0.8431.1011（及更高版本）</span><span class="sxs-lookup"><span data-stu-id="32bcf-209">OneNote Mobile App – Version 16.0.8431.1011 (and later)</span></span>
 
-### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a><span data-ttu-id="53079-210">Teams（适用于 Microsoft 365 组连接的站点）</span><span class="sxs-lookup"><span data-stu-id="53079-210">Teams (applicable to Microsoft 365 Group connected sites)</span></span>
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a><span data-ttu-id="32bcf-210">Teams（适用于 Microsoft 365 组连接的站点）</span><span class="sxs-lookup"><span data-stu-id="32bcf-210">Teams (applicable to Microsoft 365 Group connected sites)</span></span>
 
-<span data-ttu-id="53079-211">SharePoint 站点地理位置移动完成后，用户将能在 Teams 应用访问其 Microsoft 365 组站点文件。</span><span class="sxs-lookup"><span data-stu-id="53079-211">When the SharePoint site geo move completes, users will have access to their Microsoft 365 Group site files on the Teams app.</span></span> <span data-ttu-id="53079-212">此外，在地理位置移动之前通过 Teams 聊天从其站点中共享的文件在移动完成后将继续工作。</span><span class="sxs-lookup"><span data-stu-id="53079-212">Additionally, files shared via Teams chat from their site prior to geo move will continue to work after move is complete.</span></span>
+<span data-ttu-id="32bcf-211">SharePoint 站点地理位置移动完成后，用户将能在 Teams 应用访问其 Microsoft 365 组站点文件。</span><span class="sxs-lookup"><span data-stu-id="32bcf-211">When the SharePoint site geo move completes, users will have access to their Microsoft 365 Group site files on the Teams app.</span></span> <span data-ttu-id="32bcf-212">此外，在地理位置移动之前通过 Teams 聊天从其站点中共享的文件在移动完成后将继续工作。</span><span class="sxs-lookup"><span data-stu-id="32bcf-212">Additionally, files shared via Teams chat from their site prior to geo move will continue to work after move is complete.</span></span>
 
-### <a name="sharepoint-mobile-app-iosandroid"></a><span data-ttu-id="53079-213">SharePoint 移动应用 (iOS/Android)</span><span class="sxs-lookup"><span data-stu-id="53079-213">SharePoint Mobile App (iOS/Android)</span></span>
+### <a name="sharepoint-mobile-app-iosandroid"></a><span data-ttu-id="32bcf-213">SharePoint 移动应用 (iOS/Android)</span><span class="sxs-lookup"><span data-stu-id="32bcf-213">SharePoint Mobile App (iOS/Android)</span></span>
 
-<span data-ttu-id="53079-214">SharePoint 移动应用跨地理位置兼容，并能够检测站点的新地理位置。</span><span class="sxs-lookup"><span data-stu-id="53079-214">The SharePoint Mobile App is cross geo compatible and able to detect the site's new geo location.</span></span>
+<span data-ttu-id="32bcf-214">SharePoint 移动应用跨地理位置兼容，并能够检测站点的新地理位置。</span><span class="sxs-lookup"><span data-stu-id="32bcf-214">The SharePoint Mobile App is cross geo compatible and able to detect the site's new geo location.</span></span>
 
-### <a name="sharepoint-workflows"></a><span data-ttu-id="53079-215">SharePoint 工作流</span><span class="sxs-lookup"><span data-stu-id="53079-215">SharePoint workflows</span></span>
+### <a name="sharepoint-workflows"></a><span data-ttu-id="32bcf-215">SharePoint 工作流</span><span class="sxs-lookup"><span data-stu-id="32bcf-215">SharePoint workflows</span></span>
 
-<span data-ttu-id="53079-216">需要在站点移动之后重新发布 SharePoint 2013 工作流。</span><span class="sxs-lookup"><span data-stu-id="53079-216">SharePoint 2013 workflows need to be republished after the site move.</span></span> <span data-ttu-id="53079-217">SharePoint 2010 工作流应会继续正常工作。</span><span class="sxs-lookup"><span data-stu-id="53079-217">SharePoint 2010 workflows should continue to function normally.</span></span>
+<span data-ttu-id="32bcf-216">需要在站点移动之后重新发布 SharePoint 2013 工作流。</span><span class="sxs-lookup"><span data-stu-id="32bcf-216">SharePoint 2013 workflows need to be republished after the site move.</span></span> <span data-ttu-id="32bcf-217">SharePoint 2010 工作流应会继续正常工作。</span><span class="sxs-lookup"><span data-stu-id="32bcf-217">SharePoint 2010 workflows should continue to function normally.</span></span>
 
-### <a name="apps"></a><span data-ttu-id="53079-218">应用</span><span class="sxs-lookup"><span data-stu-id="53079-218">Apps</span></span>
+### <a name="apps"></a><span data-ttu-id="32bcf-218">应用</span><span class="sxs-lookup"><span data-stu-id="32bcf-218">Apps</span></span>
 
-<span data-ttu-id="53079-219">如果移动具有应用的站点，你必须在站点的新地理位置重新实例化应用，因为应用及其连接在目标地理位置中可能不可用。</span><span class="sxs-lookup"><span data-stu-id="53079-219">If you are moving a site with apps, you must re-instantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.</span></span>
+<span data-ttu-id="32bcf-219">如果移动具有应用的站点，你必须在站点的新地理位置重新实例化应用，因为应用及其连接在目标地理位置中可能不可用。</span><span class="sxs-lookup"><span data-stu-id="32bcf-219">If you are moving a site with apps, you must re-instantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.</span></span>
 
-### <a name="flow"></a><span data-ttu-id="53079-220">流程</span><span class="sxs-lookup"><span data-stu-id="53079-220">Flow</span></span>
+### <a name="flow"></a><span data-ttu-id="32bcf-220">流程</span><span class="sxs-lookup"><span data-stu-id="32bcf-220">Flow</span></span>
 
-<span data-ttu-id="53079-221">在大多数情况，流程在 SharePoint 站点地理位置移动后将继续工作。</span><span class="sxs-lookup"><span data-stu-id="53079-221">In most cases Flows will continue to work after a SharePoint site geo move.</span></span> <span data-ttu-id="53079-222">我们建议你在移动完成后测试流程。</span><span class="sxs-lookup"><span data-stu-id="53079-222">We recommend that you test them once the move has completed.</span></span>
+<span data-ttu-id="32bcf-221">在大多数情况，流程在 SharePoint 站点地理位置移动后将继续工作。</span><span class="sxs-lookup"><span data-stu-id="32bcf-221">In most cases Flows will continue to work after a SharePoint site geo move.</span></span> <span data-ttu-id="32bcf-222">我们建议你在移动完成后测试流程。</span><span class="sxs-lookup"><span data-stu-id="32bcf-222">We recommend that you test them once the move has completed.</span></span>
 
-### <a name="powerapps"></a><span data-ttu-id="53079-223">PowerApps</span><span class="sxs-lookup"><span data-stu-id="53079-223">PowerApps</span></span>
+### <a name="powerapps"></a><span data-ttu-id="32bcf-223">PowerApps</span><span class="sxs-lookup"><span data-stu-id="32bcf-223">PowerApps</span></span>
 
-<span data-ttu-id="53079-224">需要在目标位置中重新创建 PowerApps。</span><span class="sxs-lookup"><span data-stu-id="53079-224">PowerApps need to be recreated in the destination location.</span></span>
+<span data-ttu-id="32bcf-224">需要在目标位置中重新创建 PowerApps。</span><span class="sxs-lookup"><span data-stu-id="32bcf-224">PowerApps need to be recreated in the destination location.</span></span>
 
-### <a name="data-movement-between-geo-locations"></a><span data-ttu-id="53079-225">地理位置之间的数据移动</span><span class="sxs-lookup"><span data-stu-id="53079-225">Data movement between geo locations</span></span>
+### <a name="data-movement-between-geo-locations"></a><span data-ttu-id="32bcf-225">地理位置之间的数据移动</span><span class="sxs-lookup"><span data-stu-id="32bcf-225">Data movement between geo locations</span></span>
 
-<span data-ttu-id="53079-226">SharePoint 为其内容使用 Azure Blob 存储，而与站点关联的元数据及其文件存储在 SharePoint 内。</span><span class="sxs-lookup"><span data-stu-id="53079-226">SharePoint uses Azure Blob storage for its content, while the metadata associated with sites and its files is stored within SharePoint.</span></span> <span data-ttu-id="53079-227">将站点从其源地理位置移到目标位置后，服务也会移动其关联的 Blob 存储。</span><span class="sxs-lookup"><span data-stu-id="53079-227">After the site is moved from its source geo location to its destination geo location, the service will also move its associated Blob Storage.</span></span> <span data-ttu-id="53079-228">Blob 存储移动将在大约 40 天内完成。</span><span class="sxs-lookup"><span data-stu-id="53079-228">Blob Storage moves complete in approximately 40 days.</span></span> 
+<span data-ttu-id="32bcf-226">SharePoint 为其内容使用 Azure Blob 存储，而与站点关联的元数据及其文件存储在 SharePoint 内。</span><span class="sxs-lookup"><span data-stu-id="32bcf-226">SharePoint uses Azure Blob storage for its content, while the metadata associated with sites and its files is stored within SharePoint.</span></span> <span data-ttu-id="32bcf-227">将站点从其源地理位置移到目标位置后，服务也会移动其关联的 Blob 存储。</span><span class="sxs-lookup"><span data-stu-id="32bcf-227">After the site is moved from its source geo location to its destination geo location, the service will also move its associated Blob Storage.</span></span> <span data-ttu-id="32bcf-228">Blob 存储移动将在大约 40 天内完成。</span><span class="sxs-lookup"><span data-stu-id="32bcf-228">Blob Storage moves complete in approximately 40 days.</span></span> 
