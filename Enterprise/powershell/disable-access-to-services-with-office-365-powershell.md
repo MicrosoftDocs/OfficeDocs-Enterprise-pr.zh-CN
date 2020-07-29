@@ -3,7 +3,7 @@ title: 使用 PowerShell 禁用对 Microsoft 365 服务的访问
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,16 +19,16 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: 使用 PowerShell 禁用对用户的 Microsoft 365 服务的访问。
-ms.openlocfilehash: 4e7c59447dae027dffa7fd5ea24d1818d5d64a9a
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230678"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502637"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>使用 PowerShell 禁用对 Microsoft 365 服务的访问
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 向 Microsoft 365 帐户分配许可计划中的许可证后，该许可证中的用户将可以使用 Microsoft 365 服务。 但是，您可以控制用户可以访问的 Microsoft 365 服务。 例如，即使许可证允许访问 SharePoint Online 服务，也可以禁用对它的访问。 您可以使用 PowerShell 针对特定许可计划禁用对任意数量的服务的访问：
 
@@ -139,19 +139,19 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
     
 1. 创建一个文本文件，在它的每一行上包含一个帐户，如下所示：
     
-  ```powershell
-  akol@contoso.com
-  tjohnston@contoso.com
-  kakers@contoso.com
-  ```
+   ```powershell
+   akol@contoso.com
+   tjohnston@contoso.com
+   kakers@contoso.com
+   ```
 
-  在此示例中，文本文件为 C： \\ 我的文档 \\Accounts.txt。
+   在此示例中，文本文件为 C： \\ 我的文档 \\Accounts.txt。
     
 2. 运行以下命令：
     
-  ```powershell
-  Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
-  ```
+   ```powershell
+   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
+   ```
 
 如果要对多个许可计划禁用服务访问，请针对每个许可计划重复上述说明，以确保：
 
@@ -160,6 +160,16 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 
 若要在向用户分配许可计划时为其禁用 Microsoft 365 服务，请参阅在[分配用户许可证时禁用对服务的访问](disable-access-to-services-while-assigning-user-licenses.md)。
 
+### <a name="assign-all-services-in-a-licensing-plan-to-a-user-account"></a>将许可计划中的所有服务分配给用户帐户
+
+对于已禁用服务的用户帐户，您可以使用以下命令为特定许可计划启用所有服务：
+
+```powershell
+$userUPN="<user account UPN>"
+$acctSKU="<AccountSkuId>"
+$LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
+Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
+```
 
 ## <a name="see-also"></a>另请参阅
 
@@ -167,4 +177,4 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
   
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)
