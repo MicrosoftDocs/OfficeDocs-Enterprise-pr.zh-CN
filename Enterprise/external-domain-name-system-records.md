@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 摘要：在计划 Office 365 部署时要使用的 DNS 记录的引用列表。
-ms.openlocfilehash: d0804cec4ce2c15345a9c4ddc83525d1961f8db4
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: ef324adf098d72dca589d60587fd3d5e5c461555
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996536"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502667"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -45,7 +45,7 @@ ms.locfileid: "44996536"
 ||||
 |:-----|:-----|:-----|
 |**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |
-|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。   |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。 [详细信息](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **（域验证）** <br/> |由 Office 365 仅用来确你拥有你的域。它不影响其他任何内容。  <br/> |**主机：**@（或者，对于某些 DNS 托管提供程序，为你的域名）  <br/> **TXT 值：**_由 Office 365 提供的文本字符串_  <br/> Office 365 **域设置向导**提供了用于创建此记录的值。  <br/> |
 
 
@@ -67,7 +67,7 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 |:-----|:-----|:-----|
 |**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |
 |**CNAME** <br/> **(Exchange Online)** <br/> |帮助 Outlook 客户端轻松使用“自动发现”服务连接到 Exchange Online 服务。“自动发现”自动查找正确的 Exchange Server 主机并为用户配置 Outlook。  <br/> |**别名：** Autodiscover  <br/> **目标：** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |将域的传入邮件发送到 Office 365 中的 Exchange Online 服务。  <br/> [!NOTE] 电子邮件流向 Exchange Online 后，应该删除指向你的旧版系统的 MX 记录。   |**域：** 例如，contoso.com  <br/> **目标电子邮件服务器：** \<MX token\> 。mail.protection.outlook.com  <br/> **首选项/优先级：** 低于其他任何 MX 记录（这会确保将邮件传递到 Exchange Online）- 例如，1 或“低”  <br/>  \<MX token\>按照以下步骤查找：  <br/>  登录到 Office 365，转到“Office 365 管理员”\>“域”。  <br/>  在你的域的“操作”列中，选择修复问题。  <br/>  在 MX 记录部分中，选择“我要修复什么？”  <br/>  按照此页面上的说明来更新你的 MX 记录。  <br/> [什么是 MX 优先级？](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |将域的传入邮件发送到 Office 365 中的 Exchange Online 服务。  <br/> [!NOTE] 电子邮件流向 Exchange Online 后，应该删除指向你的旧版系统的 MX 记录。   |**域：** 例如，contoso.com  <br/> **目标电子邮件服务器：**\<MX token\>.mail.protection.outlook.com  <br/> **首选项/优先级：** 低于其他任何 MX 记录（这会确保将邮件传递到 Exchange Online）- 例如，1 或“低”  <br/>  通过以下步骤找到 \<MX token\>：  <br/>  登录到 Office 365，转到“Office 365 管理员”\>“域”。  <br/>  在你的域的“操作”列中，选择修复问题。  <br/>   在“MX 记录”部分中，选择“修复什么?”  <br/>  按照此页面上的说明来更新你的 MX 记录。  <br/> [什么是 MX 优先级？](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |有助于防止其他人使用您的域发送垃圾邮件或其他恶意电子邮件。发送方策略框架 (SPF) 通过标识有权从您的域发送电子邮件的服务器来记录工作。  <br/> |[SPF 所需的外部 DNS 记录](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **（Exchange 联合身份验证）** <br/> |用于混合部署的 Exchange 联合身份验证。  <br/> |**TXT 记录 1：** 例如，contoso.com 和相关自定义生成的域证明哈希文本（例如，Y96nu89138789315669824）  <br/> **TXT 记录 2：** 例如，exchangedelegation.contoso.com 和相关的自定义生成的域证明哈希文本（例如，Y3259071352452626169）  <br/> |
 |**CNAME** <br/> **（Exchange 联合身份验证）** <br/> |当你的公司使用 Exchange 联合身份验证时，帮助 Outlook 客户端轻松使用“自动发现”服务连接到 Exchange Online 服务。“自动发现”自动查找正确的 Exchange Server 主机并为你的用户配置 Outlook。  <br/> |**别名：** 例如，Autodiscover.service.contoso.com  <br/> **目标：** autodiscover.outlook.com  <br/> |
@@ -79,7 +79,7 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 使用[Office 365 URL 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO)时，需要执行特定步骤，以确保正确配置你的网络。
 
 > [!NOTE]
-> 这些 DNS 记录也适用于 Teams，尤其是在 Teams 和 Skype for Business Online 混合方案中，其中可能出现某些联合问题。
+> 这些 DNS 记录也适用于 Teams，尤其是在 Teams 和 Skype for Business 混合方案中，其中可能出现某些联合问题。
   
 ||||
 |:-----|:-----|:-----|
@@ -127,12 +127,12 @@ Values: v=spf1 include:spf.protection.outlook.com -all
   
 |||||
 |:-----|:-----|:-----|:-----|
-||如果你使用的是...  <br/> |用途  <br/> |添加以下包含内容  <br/> |
-|1   <br/> |所有电子邮件系统（必需）  <br/> |以此值开头的所有 SPF 记录  <br/> |v=spf1  <br/> |
-|2   <br/> |Exchange Online（常见）  <br/> |仅使用 Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
-|3   <br/> |第三方电子邮件系统（不太常见）  <br/> ||包括：\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |本地邮件系统（不太常见）  <br/> |在使用 Exchange Online Protection 或 Exchange Online 以及其他邮件系统的情况下使用  <br/> |ip4：\<0.0.0.0\>  <br/> ip6：\< : : \>  <br/> 包括：\<mail.contoso.com\>  <br/> 括号 (\<\>) 中的值应是为你的域发送电子邮件的其他邮件系统。  <br/> |
-|5   <br/> |所有电子邮件系统（必需）  <br/> ||-all  <br/> |
+||如果你使用的是...  <br/> |用途  <br/> |添加以下包含项  <br/> |
+|1  <br/> |所有电子邮件系统（必需）  <br/> |以此值开头的所有 SPF 记录  <br/> |v=spf1  <br/> |
+|2  <br/> |Exchange Online（常见）  <br/> |仅使用 Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
+|3  <br/> |第三方电子邮件系统（不太常见）  <br/> ||包括：\<email system like mail.contoso.com\>  <br/> |
+|4  <br/> |本地邮件系统（不太常见）  <br/> |在使用 Exchange Online Protection 或 Exchange Online 以及其他邮件系统的情况下使用  <br/> |ip4：\<0.0.0.0\>  <br/> ip6：\< : : \>  <br/> 包括：\<mail.contoso.com\>  <br/> 括号 (\<\>) 中的值应是为你的域发送电子邮件的其他邮件系统。  <br/> |
+|5  <br/> |所有电子邮件系统（必需）  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>示例：添加到现有 SPF 记录
 <a name="bkmk_addtospf"> </a>
@@ -144,7 +144,7 @@ TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:smtp.adatum.com -all
 ```
 
-现在，你正在更新适用于 Office 365 的 SPF 记录。 您将编辑当前记录，以便有一个包含所需值的 SPF 记录。 对于 Office 365，"spf.protection.outlook.com"。
+现在正在为 Office 365 更新 SPF TXT 记录。 你将需要编辑当前记录，以便拥有包含所需值的单条 SPF 记录。 对于 Office 365，为“spf.protection.outlook.com”。
   
 正确：
   
@@ -166,7 +166,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ### <a name="more-examples-of-common-spf-values"></a>常见 SPF 值的更多示例
 <a name="bkmk_addtospf"> </a>
 
-如果使用的是完整的 Office 365 套件并使用 MailChimp 代表你发送营销电子邮件，则 contoso.com 上的 SPF 记录可能如下所示，它使用上表中的行1、3和5。 请记住，第1行和第5行是必需的。
+如果使用完整的 Office 365 套件，并且使用 MailChimp 代表你发送市场营销电子邮件，则 contoso.com 中的 SPF 记录可能如下所示，它使用上表中的第 1、3 和 5 行。 请记住，第 1 行和第 5 行是必需项。
   
 ``` dns
 TXT Name @
