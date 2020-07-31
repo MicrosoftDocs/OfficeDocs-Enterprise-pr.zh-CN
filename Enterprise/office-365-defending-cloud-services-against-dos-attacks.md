@@ -15,16 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 如何抵御拒绝服务（DoS）攻击的云服务。
-ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
+ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998326"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529085"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>防御针对拒绝服务攻击的 Microsoft 365 云服务
 
-## <a name="introduction"></a>简介
 Microsoft 数据中心受纵深防御安全保护，其中包括外围防护、视频相机、安全人员和使用生物特征、智能卡和多因素身份验证的安全入口。 纵深防御安全在设备的每个区域和每个物理服务器单元继续进行。 [Microsoft 云基础结构和操作组](https://www.microsoft.com/cloud-platform/global-datacenters)为云服务提供了核心基础结构和基础技术。 我们的数据中心符合物理安全性和可靠性的行业标准，由 Microsoft 操作人员管理、监视和管理。
 
 为了进一步保护我们的云服务，Microsoft 提供了一种 DDoS 防御系统，这是 Microsoft Azure 持续监控和渗透测试过程的一部分。 Azure DDoS 防御系统不仅用于抵御来自外部的攻击，还能抵御来自其他 Azure 租户的攻击。 Azure 使用标准检测和缓解技术，如 SYN cookie、速率限制和连接限制，以防止出现 DDoS 攻击。
