@@ -184,6 +184,7 @@
 ##### [阶段 3：配置 AD FS 服务器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
 ##### [阶段 4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
 ##### [阶段 5：配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+#### [Microsoft Azure 中的 SharePoint Server 2013 灾难恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 
 # 管理 Microsoft 365
 
@@ -253,7 +254,7 @@
 ### [Exchange Online 数据删除](office-365-exchange-online-data-deletion.md)
 ### [SharePoint Online 数据删除](office-365-sharepoint-online-data-deletion.md)
 ### [Skype for Business 数据删除](office-365-skype-data-deletion.md)
-## [在 Microsoft 365 中防御拒绝服务攻击](office-365-defending-against-denial-of-service-attacks-overview.md)
+## [在 Microsoft 365 中防御拒绝服务攻击](office-365-defending-cloud-services-against-dos-attacks.md)
 ### [Microsoft 的拒绝服务防御策略](office-365-microsoft-dos-defense-strategy.md)
 ### [防御拒绝服务攻击的核心原则](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Microsoft 云中的加密](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)
