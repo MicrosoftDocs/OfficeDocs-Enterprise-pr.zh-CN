@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 讨论为什么网络优化对 SaaS 服务非常重要、Microsoft 365 网络的目标以及 SaaS 如何需要不同于其他工作负载的网络。
-ms.openlocfilehash: bc754337eea5e04d6851509114763004b53a19a7
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 6dc1ea91607dc43d4e24546f938f4f7ee3af8b3a
+ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997822"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533497"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 网络连接概述
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 Microsoft 365 是分布式软件即服务（SaaS）云，它通过一组不同的微服务和应用程序提供工作效率和协作方案。 Microsoft 365 中的客户端组件（如 Outlook、Word 和 PowerPoint）在用户计算机上运行，并连接到 microsoft 数据中心中运行的 Microsoft 365 的其他组件。 确定 Microsoft 365 最终用户体验质量的最重要因素是网络可靠性和 Microsoft 365 客户端与 Microsoft 365 服务前盖之间的低延迟。
 
@@ -81,7 +81,7 @@ Microsoft 365 设计为使用端点安全性和加密网络连接实现最佳性
 
 本地出口体系结构对传统机型上的 Microsoft 365 网络通信有以下好处：
   
-- 通过优化路由长度提供最佳的 Microsoft 365 性能。 最终用户连接通过 Microsoft 全球网络的_分布式服务前端_基础结构动态路由到最近的 microsoft 365 入口点，然后将流量内部路由到 microsoft 的超低延迟高可用性深光纤的数据和服务终结点。
+- 通过优化路由长度提供最佳的 Microsoft 365 性能。 最终用户连接通过 Microsoft 全球网络的_分布式服务前端_基础结构动态路由到最近的 microsoft 365 入口点，然后将流量内部路由到 microsoft 的超高延迟高可用性纤程上的数据和服务终结点。
 - 通过允许 Microsoft 365 流量的本地出口，绕过代理和流量检查设备，减少公司网络基础结构的负载。
 - 通过利用客户端终结点安全性和云安全功能来保护两端的连接，从而避免应用冗余网络安全技术。
 
