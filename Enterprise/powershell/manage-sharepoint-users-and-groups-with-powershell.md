@@ -19,12 +19,12 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用适用于 Microsoft 365 的 PowerShell 管理 SharePoint Online 用户、组和网站。
-ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
+ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230468"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "46542813"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 用户和组
 
@@ -69,7 +69,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 若要使用这些命令，请使用正确的名称替换引号内的所有内容，包括 < 和 > 字符。
 
-例如，以下命令集将 Opal Castillo （用户名 opalc）添加到 contoso 租赁中的 ContosoTest 网站集上的网站集管理员列表：
+例如，以下命令集将 Opal Castillo （用户名 opalc）添加到 Contoso 租赁中 ContosoTest 网站集的网站集管理员列表中：
 
 ```powershell
 $tenant = "contoso"
@@ -283,5 +283,4 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
-
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)
