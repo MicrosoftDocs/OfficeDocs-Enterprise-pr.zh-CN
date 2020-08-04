@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 学习如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
-ms.openlocfilehash: a4e467edebbcfbb0288b698f3e7d5bcf589cdd69
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433523"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548894"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -104,3 +104,7 @@ Stream 当前可在以下地区使用：
 - 加拿大
 - 印度
 - 英国
+
+## <a name="yammer"></a>Yammer
+
+Yammer 不是多地理位置工作负载。 将 Yammer 中存储的 yammer 线程放置在租户的中心位置。 Yammer 正在滚动文件存储更改，这将在 SharePoint 中存储 Yammer 文件。 将在 SharePoint 中存储的 yammer 文件将与 Yammer 组相关联的 SharePoint 网站放置。 SharePoint 组网站以[Sharepoint 网站和组](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365#sharepoint-sites-and-groups)中所述的 PDL 逻辑为依据。
