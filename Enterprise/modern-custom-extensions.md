@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面上优化自定义扩展的性能。
-ms.openlocfilehash: bdc05c4e786d07a18c49766bf37aca7f4fde56da
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: dbf0c3cba009a102bf37dd65f14e8cb882303cfe
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603813"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548854"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化自定义扩展的性能
 
@@ -35,16 +35,17 @@ ms.locfileid: "42603813"
 适用于 SharePoint 的页面诊断工具是一款面向新 Microsoft Edge（https://www.microsoft.com/edge) 和 Chrome 浏览器）的浏览器扩展，可用于分析 SharePoint Online 新式门户和经典发布网站页面。 该工具对已分配的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请参阅[使用适用于 SharePoint Online 的页面诊断工具](page-diagnostics-for-spo.md)。
 
 >[!NOTE]
->页面诊断工具仅适用于 SharePoint Online，无法在 SharePoint 系统页面上使用。
+>页面诊断工具仅适用于 SharePoint Online，无法用于 SharePoint 系统页面。
 
-通过适用于 SharePoint 的页面诊断工具分析 SharePoint 网站页面时，可在“_诊断测试_”窗格的“**扩展影响加载时间**”结果中，查看有关超出基线指标的自定义扩展的信息。
+采用适用于 SharePoint 的页面诊断工具分析 SharePoint 网站页面时，可在“_诊断测试_”窗格的“**扩展影响加载时间**”和/或“**所用的扩展过多**”结果中，查看有关超出基线指标的自定义扩展的信息。 
 
 可能的结果包括：
 
-- **需要注意**（红色）：加载时间超过**一**秒钟的任何_自定义_扩展。 测试结果中显示的总加载时间按模块加载和初始化进行细分。
+- **需要注意**（红色）：加载时间超过**一**秒钟的任何_自定义_扩展。 测试结果中显示的总加载时间按模块加载和初始化进行细分。 此外，如果页面上的扩展过多，它们可能会影响页面加载时间，如果页面上使用了 **7** 或更多扩展，则会突出显示这种情况。
+- **改进机会**（黄色）如果使用了**五个** 或多个扩展名，它们将在本节中被突出显示为警告，直到七个或更多扩展名被使用，然后将其突出显示为“需要注意”。
 - **无需执行任何操作**（绿色）：加载扩展所需的时间不超过一秒钟。
 
-如果扩展会影响页面加载时间，则结果将显示在结果的**需要注意**部分中。 单击结果，以查看有关哪个扩展正在缓慢加载的详细信息。 适用于 SharePoint 的页面诊断工具的未来更新可能包括更新分析规则，因此请确保始终拥有该工具的最新版本。
+如果扩展会影响页面加载时间或页面上有太多扩展，则结果将显示在结果的**需要注意**部分中。 单击结果，以查看有关哪个扩展正在缓慢加载的详细信息或已突出显示太多扩展。 适用于 SharePoint 的页面诊断工具的未来更新可能包括更新分析规则，因此请确保始终拥有该工具的最新版本。
 
 ![页面加载时间结果](media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
