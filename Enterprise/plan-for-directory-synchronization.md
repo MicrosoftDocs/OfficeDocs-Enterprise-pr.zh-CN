@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 介绍与 Microsoft 365、Active Directory 域服务清理和 Azure Active Directory Connect 工具的目录同步。
-ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 8bfb9a7d65bf76fdadafe1bb49da91115ee9d07c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711865"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571155"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365 的混合标识和目录同步
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-根据您的业务需求和技术要求，混合身份模型和目录同步对于采用 Microsoft 365 的企业客户来说是最常见的选择。 目录同步允许您在 Active Directory 域服务（AD DS）中管理标识，对用户帐户、组和联系人的所有更新将同步到 Microsoft 365 订阅的 Azure Active Directory （Azure AD）租户。
+根据您的业务需求和技术要求，混合身份模型和目录同步对于采用 Microsoft 365 的企业客户来说是最常见的选择。 目录同步允许您在 Active Directory 域服务 (AD DS 中管理标识) 并且对用户帐户、组和联系人的所有更新都将同步到 Microsoft 365 订阅的 Azure Active Directory (Azure AD) 租户。
 
 >[!Note]
 >首次同步 AD DS 用户帐户时，不会自动为其分配 Microsoft 365 许可证，也不能访问 Microsoft 365 服务（如电子邮件）。 您必须先为其分配使用位置。 然后，通过组成员身份单独或动态地为这些用户帐户分配许可证。
@@ -52,7 +52,7 @@ ms.locfileid: "44711865"
 
 有两种类型的托管身份验证：
 
-- 密码哈希同步（PHS）
+-  (PHS) 的密码哈希同步
 
   Azure AD 执行身份验证本身。
 
@@ -61,11 +61,11 @@ ms.locfileid: "44711865"
   Azure AD 具有 AD DS 执行身份验证。
 
 
-#### <a name="password-hash-synchronization-phs"></a>密码哈希同步（PHS）
+#### <a name="password-hash-synchronization-phs"></a> (PHS) 的密码哈希同步
 
 使用 PHS，您可以将 AD DS 用户帐户与 Microsoft 365 同步并在本地管理您的用户。 用户密码的哈希将从你的 AD DS 同步到 Azure AD，以便用户在本地和在云中具有相同的密码。 这是在 Azure AD 中为 AD DS 标识启用身份验证的最简单方法。 
 
-![密码哈希同步（PHS）](./media/plan-for-directory-synchronization/phs-authentication.png)
+![ (PHS) 的密码哈希同步](./media/plan-for-directory-synchronization/phs-authentication.png)
 
 更改密码或在本地重置密码时，新的密码哈希将同步到 Azure AD，以便您的用户始终可以对云资源和本地资源使用相同的密码。 用户密码永远不会发送到 Azure AD 或以明文形式存储在 Azure AD 中。 Azure AD 的一些高级功能（如标识保护）需要 PHS，而不管选择了哪种身份验证方法。
   
@@ -93,21 +93,19 @@ PTA 也适用于具有安全要求的组织，以立即强制实施本地用户�
   
 #### <a name="third-party-authentication-and-identity-providers"></a>第三方身份验证和标识提供程序
 
-本地目录对象可能会同步到 Microsoft 365，并且云资源访问主要由第三方标识提供程序（IdP）进行管理。 如果您的组织使用第三方联合解决方案，则可以使用适用于 Microsoft 365 的解决方案配置登录，前提是第三方联合解决方案与 Azure AD 兼容。
+本地目录对象可能会同步到 Microsoft 365，并且云资源访问主要由第三方标识提供程序 (IdP) 进行管理。 如果您的组织使用第三方联合解决方案，则可以使用适用于 Microsoft 365 的解决方案配置登录，前提是第三方联合解决方案与 Azure AD 兼容。
   
 若要了解详细信息，请参阅[AZURE AD 联合身份验证兼容性列表](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)。
   
-## <a name="ad-ds-cleanup"></a>AD DS 清理
+## <a name="ad-ds-preparation"></a>AD DS 准备
 
 为了帮助确保通过使用同步无缝转换到 Microsoft 365，您必须在开始 Microsoft 365 目录同步部署之前准备 AD DS 林。
   
-[设置目录同步](set-up-directory-synchronization.md)时，其中一个步骤是[下载并运行 IdFix 工具](install-and-run-idfix.md)。 您可以使用 IdFix 工具来帮助[清理目录](prepare-directory-attributes-for-synch-with-idfix.md)。
-  
-目录清理应侧重于以下任务：
+您的目录准备将重点放在以下任务上：
 
 - 删除重复的**proxyAddress**和**userPrincipalName**属性。
 - 使用有效的**userprincipalname**属性更新空白和无效的**userprincipalname**属性。
-- 删除**givenName**、姓（ **Sn** ）、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**和**userPrincipalName**属性中的无效和可疑字符。 有关准备属性的详细信息，请参阅[由 Azure Active Directory 同步工具同步的属性列表](https://go.microsoft.com/fwlink/p/?LinkId=396719)。
+- 删除**givenName**、姓 ( **Sn** ) 、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**和**userPrincipalName**属性中的无效和可疑字符。 有关准备属性的详细信息，请参阅[由 Azure Active Directory 同步工具同步的属性列表](https://go.microsoft.com/fwlink/p/?LinkId=396719)。
 
     > [!NOTE]
     > 这些属性与 Azure AD Connect 同步的属性相同。 
@@ -116,7 +114,7 @@ PTA 也适用于具有安全要求的组织，以立即强制实施本地用户�
 
 对于多个林和 SSO 选项，请使用[AZURE AD Connect 的自定义安装](https://go.microsoft.com/fwlink/p/?LinkId=698430)。
   
-如果您的组织具有多个林进行身份验证（登录林），我们强烈建议您执行以下操作：
+如果您的组织有多个林进行身份验证 (登录林) ，我们强烈建议您执行以下操作：
   
 - **请考虑合并你的林。** 通常情况下，维护多个林需要更多的开销。 除非您的组织具有规定单独林需求的安全约束，否则请考虑简化您的本地环境。
 - **仅在主登录林中使用。** 请考虑仅将 Microsoft 365 部署在你的主登录林中，以供 Microsoft 365 的初始部署。 
@@ -129,10 +127,10 @@ PTA 也适用于具有安全要求的组织，以立即强制实施本地用户�
   
 以下特性和功能需要目录同步：
   
-- Azure AD 无缝单一登录（SSO）
+-  (SSO) 的 Azure AD 无缝单一登录
 - Skype 共存
 - Exchange 混合部署，包括：
-  - 内部部署 Exchange 环境与 Microsoft 365 之间的完全共享全局地址列表（GAL）。
+  - 内部部署 Exchange 环境与 Microsoft 365 之间的完全共享全局地址列表 (GAL) 。
   - 同步不同邮件系统中的 GAL 信息。
   - 在 Microsoft 365 服务产品中添加和删除用户的功能。 这要求：
   - 双向同步必须在目录同步安装过程中进行配置。 默认情况下，目录同步工具仅将目录信息写入云。 配置双向同步时，您可以启用写回功能，以便从云中复制有限数量的对象属性，然后将它们写回到本地 AD DS。 写回也称为 Exchange 混合模式。 

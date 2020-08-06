@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: 了解如何将 Microsoft 365 与您的现有目录服务集成。
-ms.openlocfilehash: 456e3e73451a07750d707e2fca52df9214c2dfaa
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736030"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571055"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 与本地环境的集成
 
@@ -34,10 +34,10 @@ ms.locfileid: "44736030"
 
 您可以将 Microsoft 365 与您现有的目录服务以及 Exchange Server、Skype for Business Server 2015 或 SharePoint Server 的本地安装集成。
   
- - 当您与目录服务集成时，您可以同步和管理这两个环境的用户帐户。 您还可以添加密码哈希同步或单一登录（SSO），以便用户可以使用其本地凭据登录到这两个环境。
+ - 当您与目录服务集成时，您可以同步和管理这两个环境的用户帐户。 您还可以在 (SSO) 中添加密码哈希同步或单一登录，以便用户可以使用其本地凭据登录到这两个环境。
  - 当您与本地服务器产品集成时，将创建混合环境。 当您将用户或信息迁移到 Microsoft 365 时，混合环境可帮助您，也可以继续在本地使用某些用户或某些信息以及在云中使用一些信息。 有关混合环境的详细信息，请参阅[混合云概述](https://docs.microsoft.com/Office365/Enterprise/hybrid-cloud-overview)。
 
-您还可以使用 Azure Active Directory （Azure AD）顾问获取自定义安装指南（您必须登录到 Microsoft 365）：
+您还可以使用 Azure Active Directory (Azure AD) 顾问获取自定义安装指南 (必须登录到 Microsoft 365) ：
 
 - [从你的组织的目录同步用户](https://aka.ms/aadconnectpwsync)
 - [AD FS 部署顾问](https://aka.ms/adfsguidance)
@@ -50,7 +50,7 @@ ms.locfileid: "44736030"
 若要了解可用于管理 Microsoft 365 用户和帐户的工具列表，请参阅[管理 microsoft 365 帐户的位置](manage-office-365-accounts.md)。 
   
 ## <a name="integrate-microsoft-365-with-directory-services"></a>将 Microsoft 365 与目录服务集成
-如果您在本地目录中有现有的用户帐户，则不需要在 Microsoft 365 中重新创建所有这些帐户，并且在环境之间引入差异或错误的风险。 目录同步可帮助您在您的联机和本地环境中镜像这些帐户。 通过目录同步，用户不必记住每个环境的新信息，也不必创建或更新帐户两次。 您需要为[本地目录准备](prepare-for-directory-synchronization.md)目录同步，您可以手动执行此操作，也可以使用[IdFix 工具](install-and-run-idfix.md)（IdFix 工具仅适用于 Active DIRECTORY 域服务 [AD DS]）。 
+如果您在本地目录中有现有的用户帐户，则不需要在 Microsoft 365 中重新创建所有这些帐户，并且在环境之间引入差异或错误的风险。 目录同步可帮助您在您的联机和本地环境中镜像这些帐户。 通过目录同步，用户不必记住每个环境的新信息，也不必创建或更新帐户两次。 你将需要为[本地目录准备](prepare-for-directory-synchronization.md)目录同步。
   
 ![使用目录同步将本地和联机用户帐户信息保持同步](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   
@@ -62,7 +62,7 @@ ms.locfileid: "44736030"
  
 ### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication"></a>具有或不具有密码哈希同步或传递身份验证的目录同步
 
-用户使用其用户帐户（域 \ 用户名）登录到本地环境。 当他们转到 Microsoft 365 时，他们必须使用其工作或学校帐户（user@domain.com）重新登录。 这两个环境中的用户名相同。 当您添加密码哈希同步或传递身份验证时，用户在这两种环境中都具有相同的密码，但在登录到 Microsoft 365 时将不得不再次提供这些凭据。 使用密码哈希同步的目录同步是最常用的目录同步方案。
+用户使用其用户帐户登录到本地环境， (域 \ 用户名) 。 当他们转到 Microsoft 365 时，他们必须使用其工作或学校帐户 (user@domain.com) 重新登录。 这两个环境中的用户名相同。 当您添加密码哈希同步或传递身份验证时，用户在这两种环境中都具有相同的密码，但在登录到 Microsoft 365 时将不得不再次提供这些凭据。 使用密码哈希同步的目录同步是最常用的目录同步方案。
 
 若要设置目录同步，请使用 Azure Active Directory Connect。 有关说明，请参阅[设置 Microsoft 365 的目录同步](set-up-directory-synchronization.md)和[使用快速设置的 Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698537)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "44736030"
 
 ### <a name="directory-synchronization-with-sso"></a>使用 SSO 同步目录
 
-用户使用其用户帐户登录到本地环境。 当他们转到 Microsoft 365 时，它们要么是自动登录，要么使用它们用于本地环境的相同凭据（域 \ 用户名）登录。
+用户使用其用户帐户登录到本地环境。 当他们转到 Microsoft 365 时，它们要么是自动登录，要么是使用它们在本地环境中使用的相同凭据登录 (域 \ 用户名) 。
 
 若要设置 SSO，您还可以使用 Azure AD Connect。 有关说明，请参阅[AZURE AD Connect 的自定义安装](https://go.microsoft.com/fwlink/p/?LinkID=698430)。
 

@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何优化 iFrame 在SharePoint Online 新式发布网页和经典发布网页中的性能。
-ms.openlocfilehash: 0ca49355b079e212fa394ddb3a4c2b9bd62d0207
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
-ms.translationtype: HT
+ms.openlocfilehash: 292599a25ea5adb05cc38e4a7d5cb1f756c6143a
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603771"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571145"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>在 SharePoint Online 新式发布网页和经典发布网页中优化 iFrame
 

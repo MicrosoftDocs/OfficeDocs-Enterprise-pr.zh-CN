@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面上优化 Web 部件性能。
-ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
-ms.translationtype: HT
+ms.openlocfilehash: ffa4937f734a803b34af277fb697bc991f0d0d3c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603741"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571015"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化 Web 部件性能
 
