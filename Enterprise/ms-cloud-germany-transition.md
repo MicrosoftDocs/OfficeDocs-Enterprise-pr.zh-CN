@@ -7,7 +7,7 @@ ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
-ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
-ms.translationtype: HT
+ms.openlocfilehash: f63a9228b8669ce0b7a1d49c7b0045a2065f9ec4
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092881"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592136"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
 
@@ -59,7 +59,7 @@ ms.locfileid: "45092881"
 - Office 365 组
 - Dynamics 365/Power Platform
 
-有关迁移这些服务的先决条件及其影响，可参阅 [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) 文章。
+有关迁移这些服务的先决条件及其影响，可参阅 [Dynamics 365 Customer Engagement](https://aka.ms/d365ceoptin) 文章。
 
 Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 租户迁移到新德国数据中心区域，则 SharePoint Online 迁移完成后，将不支持 Office 365 视频。 [了解更多详细信息](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
@@ -203,7 +203,7 @@ Microsoft 准许客户免费将Office 365 租户从德国 Microsoft 云迁移到
 
 #### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 和 Power BI
 
-对于 [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) 和 [Power BI](https://aka.ms/pbioptin)，请立即选择执行 Microsoft 引导的迁移。 在我们准备好开始你的迁移时，我们将通过 Microsoft 365 管理中心内的[消息中心](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)通知你。
+对于 [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) 和 [Power BI](https://aka.ms/PBIOptIn)，请立即选择执行 Microsoft 引导的迁移。 在我们准备好开始你的迁移时，我们将通过 Microsoft 365 管理中心内的[消息中心](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)通知你。
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>我使用的 Office 服务的价格将出现变化吗？
 
@@ -221,7 +221,7 @@ Microsoft 准许客户免费将Office 365 租户从德国 Microsoft 云迁移到
 
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
 - [如何选择加入迁移](https://aka.ms/office365germanymoveoptin)
-- [Dynamics 365 迁移计划信息](https://aka.ms/D365ceOptIn)
+- [Dynamics 365 迁移计划信息](https://aka.ms/d365ceoptin)
 - [Power BI 迁移计划信息](https://aka.ms/pbioptin)
 - [Office 365 URL 和 IP 地址范围](https://aka.ms/o365endpoints)
 - [Office 365 混合配置向导](https://aka.ms/HybridWizard)

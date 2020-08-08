@@ -7,7 +7,7 @@ ms.date: 6/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 86b38761568888f0d1a2b5423c6e03e388a207ba
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: 8d34935ad3c7eb7a7dd500c71de2651fd1b20a19
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052485"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592226"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -56,8 +56,8 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 | [1. VPN 强制隧道](#1-vpn-forced-tunnel) | 100% 的流量进入 VPN 隧道，包括内部部署、Internet 和所有 O365/M365 |
 | [2. VPN 强制隧道（有几个例外）](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) | 默认情况下使用 VPN 隧道（默认路由指向 VPN），有几个最重要的豁免场景允许直接访问 |
 | [3. VPN 强制隧道（有多个例外）](#3-vpn-forced-tunnel-with-broad-exceptions) | 默认情况下使用 VPN 隧道（默认路由指向 VPN），有多个允许直接访问的例外情况（如所有 Office 365、所有 Salesforce、所有 Zoom） |
-| [4. VPN 选择性隧道](#4-vpn-selective-tunnel) | VPN 隧道仅用于基于企业的服务。 默认路由（Internet 和所有基于 Internet 的服务）直接转网。 |
-| [5. 无 VPN](#5-no-vpn) | #2 的变体，而不是旧版 VPN，所有公司网络服务都通过新式安全方法（如 Zscaler ZPA、Azure Active Directory （Azure AD） Proxy/MCAS 等）进行发布。 |
+| [4. VPN 选择性隧道](#4-vpn-selective-tunnel) | VPN 隧道仅用于基于企业的服务。 默认路由 (Internet 和所有基于 Internet 的服务) 直接进入。 |
+| [5. 无 VPN](#5-no-vpn) | #2 的一种变化方式，而不是旧版 VPN，所有公司网络服务都通过新式安全方法发布， (如 Zscaler ZPA、Azure Active Directory (Azure AD) Proxy/MCAS 等。 )  |
 
 ### <a name="1-vpn-forced-tunnel"></a>1. VPN 强制隧道
 
@@ -125,7 +125,7 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 | <https://outlook.office.com> | TCP 443 | 此 URL 供 Outlook Online Web 访问用于连接到 Exchange Online Server，并且对网络延迟非常敏感。 使用 SharePoint Online 上传和下载大型文件尤其需要连接。 |
 | https:// \<tenant\> 。 sharepoint.com | TCP 443 | 这是 SharePoint Online 的主要 URL，并且具有较高的带宽使用率。 |
 | https:// \<tenant\> -my.sharepoint.com | TCP 443 | 这是 OneDrive for business 的主要 URL，具有较高的带宽使用率，并且可能会产生来自 OneDrive for Business 同步工具的高连接计数。 |
-| Teams 媒体 IP（无 URL） | UDP 3478、3479、3480 和 3481 | 中继发现分配和实时流量（3478）、音频（3479）、视频（3480）和视频屏幕共享（3481）。 这些是用于 Skype for Business 和 Microsoft 团队媒体流量（呼叫、会议等）的终结点。 当 Microsoft Teams 客户端建立呼叫时，将提供大多数终结点（并包含在为该服务列出的所需 IP 内）。 若要获得最佳媒体质量，需要使用 UDP 协议。   |
+| Teams 媒体 IP（无 URL） | UDP 3478、3479、3480 和 3481 | 中继发现分配和实时流量 (3478) 、音频 (3479) 、视频 (3480) 和视频屏幕共享 (3481) 。 这些是用于 Skype for Business 和 Microsoft 团队媒体流量 (呼叫、会议等 ) 的终结点。 当 Microsoft Teams 客户端建立呼叫时，将提供大多数终结点（并包含在为该服务列出的所需 IP 内）。 若要获得最佳媒体质量，需要使用 UDP 协议。   |
 
 在上面的示例中，应将**租户**替换为 Office 365 租户名称。 例如，**contoso.onmicrosoft.com** 将使用 _contoso.sharepoint.com_ 和 _constoso-my.sharepoint.com_。
 
@@ -293,7 +293,7 @@ Microsoft 安全团队已发布概括了安全专家的主要方式的[文章](h
 
 ### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>如果流量不再流经本地解决方案，我该如何应用 DLP 并保护我的敏感数据？
 
-为帮助防止意外泄露敏感信息，Office 365 提供了一组丰富的[内置工具](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)。 可使用 Teams 和 SharePoint 的内置 [DLP 功能](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)来检测未恰当存储或共享的敏感信息。 如果远程工作策略的一部分涉及到自己的设备（BYOD）策略，则可以使用[基于应用的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)来防止将敏感数据下载到用户的个人设备
+为帮助防止意外泄露敏感信息，Office 365 提供了一组丰富的[内置工具](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)。 可使用 Teams 和 SharePoint 的内置 [DLP 功能](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)来检测未恰当存储或共享的敏感信息。 如果远程工作策略的一部分涉及到自己的设备 (BYOD) 策略，则可以使用[基于应用的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)来防止将敏感数据下载到用户的个人设备
 
 ### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>如何在用户直接连接时评估和保留用户身份验证的控制权？
 

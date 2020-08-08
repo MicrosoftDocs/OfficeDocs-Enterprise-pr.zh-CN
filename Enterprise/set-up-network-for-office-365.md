@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：请参阅以下文章以了解适用于 Microsoft 365 的网络。
-ms.openlocfilehash: 4c414d8cbf597af9165e991a71e5d6a6a330e33a
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735651"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592146"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>为 Microsoft 365 设置你的网络
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-你的 Microsoft 365 加入的一个重要部分是确保设置了你的网络和 Internet 连接以实现优化的访问。配置您的本地网络以访问全局分布式软件即服务（SaaS）云与针对本地数据中心和中心 Internet 连接的流量优化的传统网络不同。 
+你的 Microsoft 365 加入的一个重要部分是确保设置了你的网络和 Internet 连接以实现优化的访问。配置您的本地网络以访问全局分布式软件即服务 (SaaS) 云不同于针对本地数据中心和中心 Internet 连接进行了优化的传统网络。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 

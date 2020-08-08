@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 摘要：了解 Microsoft 标识、安全性、网络和混合的核心云体系结构概念。查看使用 Microsoft 云时保护文件、标识和设备的指导建议。
-ms.openlocfilehash: 1798e56139262e2328487b6a998d860bc095b6fc
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
-ms.translationtype: HT
+ms.openlocfilehash: f19a84297de0ff809979bc5735eb8c19cfbb7f57
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102610"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592176"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft 云 IT 体系结构资源
 

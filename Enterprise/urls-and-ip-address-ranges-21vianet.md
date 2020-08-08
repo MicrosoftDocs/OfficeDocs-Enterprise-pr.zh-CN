@@ -7,7 +7,7 @@ ms.date: 07/09/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: 本文适用于由中国世纪互联运营的 Office 365。本文列出了由世纪互联运营的 Office 365 所使用的 URL 和 IP 地址范围。
 hideEdit: true
-ms.openlocfilehash: fe0015bcda70cace8247fdbcfb6a2d4424b28349
-ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
-ms.translationtype: HT
+ms.openlocfilehash: c5a3825a5271542ca657e955b768b4ecde66eebb
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387715"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592166"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365 的 URL 和 IP 地址范围
 
