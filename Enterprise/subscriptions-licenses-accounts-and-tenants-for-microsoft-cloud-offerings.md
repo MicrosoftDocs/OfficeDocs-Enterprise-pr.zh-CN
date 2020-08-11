@@ -15,20 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom:
-- Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: 摘要：了解 Microsoft 云产品/服务中组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
-ms.translationtype: MT
+ms.custom:
+- seo-marvel-apr2020
+- Ent_Architecture
+description: 了解 Microsoft 云服务的组织、订阅、许可证、用户帐户和租户的关系。
+ms.openlocfilehash: 7546d4b24c66946e287aa51deb2d1f1896045322
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906253"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603664"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
-为确保跨其云产品/服务使用一致的身份和帐单，Microsoft 提供了组织、订阅、许可证和用户帐户的层次结构。
+为确保跨其云产品/服务使用一致的身份和帐单，Microsoft 提供了组织、订阅、许可证和用户帐户的层次结构：
   
 - Microsoft 365 和 Microsoft Office 365
 - Microsoft Azure
@@ -46,12 +47,12 @@ ms.locfileid: "44906253"
 
 订阅是与 Microsoft 就使用一个或多个 Microsoft 云平台或服务签订的协议，其费用基于每个用户许可证费用或云资源使用累计。 
 
-- Microsoft 的软件即基于服务（SaaS）的云产品（Microsoft 365 和 Dynamics 365）收费每用户许可证费用。 
+- Microsoft 基于软件即服务 (SaaS) 的云服务（Microsoft 365 和 Dynamics 365）按用户收取许可证费用。 
 - Microsoft 的平台即服务 (PaaS) 和基础设施即服务 (IaaS) 云服务 (Azure) 根据云资源使用量收取费用。
  
 你也可以使用试用版订阅，此订阅会在一定时间后或使用费用后过期。你可以将试用版订阅转换为付费订阅。
   
-组织可订阅多个 Micrososft 云服务。 图1显示了包含多个 Microsoft 365 订阅、Dynamics 365 订阅和多个 Azure 订阅的单个组织。
+组织可订阅多个 Micrososft 云服务。 图 1 显示了一个组织，它具有多个 Microsoft 365 订阅、一个 Dynamics 365 订阅以及多个 Azure 订阅。
 
 **图 1：组织的多个订阅示例**
 
@@ -59,7 +60,7 @@ ms.locfileid: "44906253"
   
 ### <a name="licenses"></a>许可证
 
-对于 Microsoft 的 SaaS 云服务，许可证允许特定用户帐户使用云产品的服务。 作为订阅的一部分，你可以每月支付固定的费用。 管理员将许可证分配给订阅中的各个用户帐户。 在图2中的示例中，Contoso Corporation 拥有一个包含100许可证的 Microsoft 365 E5 订阅，这将允许最长可达100单个用户帐户以使用 Microsoft 365 E5 功能和服务。
+对于 Microsoft 的 SaaS 云服务，许可证允许特定用户帐户使用云产品的服务。 作为订阅的一部分，你可以每月支付固定的费用。 管理员将许可证分配给订阅中的各个用户帐户。 对于图 2 中的示例，Contoso 公司订阅了具有 100 个许可证的 Office 365 E5，允许最多 100 个单个用户帐户使用 Microsoft 365 E5 的功能和服务。
   
 **图 2：组织基于 SaaS 的订阅内的许可证**
 
@@ -83,11 +84,11 @@ ms.locfileid: "44906253"
   
 ### <a name="tenants"></a>租户
 
-对于 SaaS 云服务，租户是承载提供云服务的服务器的区域位置。 例如，Contoso Corporation 选择欧洲地区为其巴黎总部的15000工作者托管其 Microsoft 365、EMS 和 Dynamics 365 租户。
+对于 SaaS 云服务，租户是承载提供云服务的服务器的区域位置。 例如，Contoso 公司选择欧洲地区为其巴黎总部的 15,000 名工作人员托管其 Microsoft 365、EMS 和 Dynamics 365 租户。
   
 Azure PaaS 服务和在 Azure IaaS 中托管的基于虚拟机的工作负荷可以在世界范围内的任何 Azure 数据中心拥有租户。在创建 Azure PaaS 应用或服务或 IaaS 工作负荷的元素时，应指定 Azure 数据中心（称为位置）。
   
-Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 365 或 Dynamics 365 的付费订阅或试用订阅包括免费的 Azure AD 租户。 此 Azure AD 租户不包括其他 Azure 服务，且与 Azure 试用版或付费订阅不同。
+Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 365 或 Dynamics 365 的付费或试用版订阅包括免费的 Azure AD 租户。 此 Azure AD 租户不包括其他 Azure 服务，且与 Azure 试用版或付费订阅不同。
   
 ### <a name="summary-of-the-hierarchy"></a>层次结构的摘要
 
@@ -105,9 +106,9 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 36
   
 - 该组织由其公共域名识别。
     
-  - 具有用户许可证的 Microsoft 365 E3 订阅。
+  - 带用户许可证的 Microsoft 365 E3 订阅。
     
-    带有用户许可证的 Microsoft 365 E5 订阅。
+    带用户许可证的 Microsoft 365 E5 订阅。
     
     具有用户许可证的 Dynamics 365 订阅。
     
@@ -129,9 +130,9 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 36
   
 ||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Microsoft 365** <br/> |NA  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |从 Microsoft 365 管理中心向你的组织添加 Dynamics 365 订阅。  <br/> |
-|**Azure** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |NA  <br/> |向你的组织添加 Dynamics 365 订阅。  <br/> |
-|**Dynamics 365** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |NA  <br/> |
+|**Microsoft 365** <br/> |不适用  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |从 Microsoft 365 管理中心向你的组织添加 Dynamics 365 订阅。  <br/> |
+|**Azure** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |不适用  <br/> |向你的组织添加 Dynamics 365 订阅。  <br/> |
+|**Dynamics 365** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |不适用  <br/> |
    
 为组织添加基于 Microsoft SaaS 的服务订阅的简便方法是通过管理中心来完成：
   
@@ -141,17 +142,17 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 36
     
 3. 在“购买服务”**** 页上，购买你的新订阅。
     
-管理员中心将 Microsoft 365 订阅的组织和 Azure AD 租户分配给基于 SaaS 的云产品的新订阅。
+管理中心将 Microsoft 365 订阅的组织和 Azure AD 租户分配到基于 SaaS 的云产品的新订阅。
   
-若要添加与 Microsoft 365 订阅具有相同组织和 Azure AD 租户的 Azure 订阅，请执行以下操作：
+使用与你的 Microsoft 365 订阅相同的组织和 Azure AD 租户添加 Azure 订阅：
   
-1. [https://portal.azure.com](https://portal.azure.com)使用 Microsoft 365 全局管理员帐户登录到 Azure 门户（）。
+1. 使用 Microsoft 365 全局管理员帐户登录到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。
     
 2. 在左侧导航栏中，单击“订阅”****，然后单击“添加”****。
     
 3. 在“添加订阅”**** 页上，选择一项服务并完成付款信息和协议。
     
-如果你单独购买了 Azure 和 Microsoft 365 订阅，并且想要从 Azure 订阅访问 Microsoft 365 Azure AD 租户，请参阅[向 Azure Active Directory 租户添加现有 Azure 订阅](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的说明。
+如果分别购买 Azure 和Microsoft 365 订阅并且希望从 Azure 订阅访问 Microsoft 365 Azure AD 租户，请参阅[将现有 Azure 订阅添加到 Azure Active Directory 租户](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的说明。
  
 ## <a name="see-also"></a>另请参阅
 
