@@ -11,25 +11,27 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: 适用于 Office 365 的 ExpressRoute 提供了备用的路由路径，以达到多个 Office 365 服务，而无需向 internet 传出传出流量。 虽然仍然需要 internet 连接到 Office 365，但 Microsoft 通过 BGP 向网络公布的特定路由使直接 ExpressRoute 电路成为首选，除非网络中存在其他配置。 您可能需要配置用于管理此路由的三个常见方面，包括前缀筛选、安全性和合规性。
-ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+description: 了解如何管理适用于 Office 365 的 ExpressRoute，包括要配置的常见区域，如前缀筛选、安全性和合规性。
+ms.openlocfilehash: f62731b9f2fcfcb47504d2f73e9b8874980c4c7e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798793"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606328"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>管理 ExpressRoute for Office 365 的连接性
 
 适用于 Office 365 的 ExpressRoute 提供了备用的路由路径，以达到多个 Office 365 服务，而无需向 internet 传出传出流量。 虽然仍然需要 internet 连接到 Office 365，但 Microsoft 通过 BGP 向网络公布的特定路由使直接 ExpressRoute 电路成为首选，除非网络中存在其他配置。 您可能需要配置用于管理此路由的三个常见方面，包括前缀筛选、安全性和合规性。
   
 > [!NOTE]
-> Microsoft 更改了 Microsoft 对等路由域对 Azure ExpressRoute 的审查方式。 从2017年7月31日起，所有 Azure ExpressRoute 客户都可以直接从 Azure 管理控制台或通过 PowerShell 启用 Microsoft 对等。 启用 Microsoft 对等关系后，任何客户都可以创建路由筛选器，以接收 Dynamics 365 客户参与应用程序（以前称为 CRM Online）的 BGP 路由播发。 需要 Azure ExpressRoute for Office 365 的客户必须先从 Microsoft 获取评审，然后才能为 Office 365 创建路由筛选器。 请联系你的 Microsoft 帐户团队以了解如何请求评审以启用 Office 365 ExpressRoute。 尝试为 Office 365 创建路由筛选器的未授权订阅将收到[错误消息](https://support.microsoft.com/kb/3181709)
+> Microsoft 更改了 Microsoft 对等路由域对 Azure ExpressRoute 的审查方式。 从2017年7月31日起，所有 Azure ExpressRoute 客户都可以直接从 Azure 管理控制台或通过 PowerShell 启用 Microsoft 对等。 启用 Microsoft 对等关系后，任何客户都可以创建路由筛选器以接收 Dynamics 365 客户参与应用程序的 BGP 路由播发 (以前称为 CRM Online) 。 需要 Azure ExpressRoute for Office 365 的客户必须先从 Microsoft 获取评审，然后才能为 Office 365 创建路由筛选器。 请联系你的 Microsoft 帐户团队以了解如何请求评审以启用 Office 365 ExpressRoute。 尝试为 Office 365 创建路由筛选器的未授权订阅将收到[错误消息](https://support.microsoft.com/kb/3181709)
   
 ## <a name="prefix-filtering"></a>前缀筛选
 

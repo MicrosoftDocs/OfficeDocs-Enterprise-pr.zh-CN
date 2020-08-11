@@ -15,6 +15,7 @@ ms.custom:
 - O365M_ServiceHealthModern
 - O365E_ViewStatusServices
 - O365E_ServiceHealthModern
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -25,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在呼叫支持之前查看 Microsoft 365 服务的运行状况状态，以查看是否有活动的服务中断。
-ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: c6995d96df46b4f83014a7ccf6d549dea421a97a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433883"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605838"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
@@ -55,7 +56,7 @@ ms.locfileid: "45433883"
 
    ![View of current issues in service health](media/service-health-all-services.png)
 
-"**所有服务**" 选项卡（默认视图）显示所有服务及其当前运行状况状态。 图标和**状态**列指示每个服务的状态。 
+默认视图 ("**所有服务**" 选项卡，) 显示所有服务及其当前运行状况状态。 图标和**状态**列指示每个服务的状态。 
 
 若要将视图筛选为当前遇到事件的服务，请选择页面顶部的 "**事件**" 选项卡。 选择 "**建议**" 选项卡将仅显示当前已发布建议的服务。 
 
@@ -146,7 +147,7 @@ ms.locfileid: "45433883"
   
 有关我们对运行时间的承诺的详细信息，请参阅[来自 Microsoft 365 的透明操作](https://go.microsoft.com/fwlink/?linkid=848695)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [Microsoft 365 管理中心](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
  中的活动报告[消息中心首选项](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

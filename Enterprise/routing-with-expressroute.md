@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
-description: 若要使用 Azure ExpressRoute 正确了解到 Office 365 的路由流量，您需要对核心 ExpressRoute 路由要求和 ExpressRoute 电路和路由域进行牢固的抓住。 这些指南展示了使用适用于 Office 365 客户将依赖的 ExpressRoute 的基础知识。
-ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，了解与 Office 365 配合使用的 Azure ExpressRoute 路由要求、电路和路由域。
+ms.openlocfilehash: c8063d570744b3a5fd42328ed3940fe7477c25c9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998191"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605224"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>通过适用于 Office 365 的 ExpressRoute 进行路由
 
@@ -39,7 +41,7 @@ ms.locfileid: "44998191"
 
 - ExpressRoute 电路与客户的键之间存在1:1 映射关系。
 
-- 每个电路都可以支持2个独立的对等关系（Azure 专用对等关系和 Microsoft 对等关系）;Office 365 要求 Microsoft 对等。
+- 每个电路都可以支持两个独立的对等关系 (Azure 专用对等关系，以及 Microsoft 对等) ;Office 365 要求 Microsoft 对等。
 
 - 每个电路都具有在所有对等关系之间共享的固定带宽。
 
@@ -126,7 +128,7 @@ PAC 文件通常用于将向 ExpressRoute 播发的终结点的网络请求直�
   
 1. 应用程序所需的带宽量。 抽样现有使用是在组织中确定这一点的唯一可靠方法。
 
-2. 你希望网络流量从哪些传出位置留下你的网络。 您应计划最大限度地减少与 Office 365 的连接的网络延迟，因为这会影响性能。 由于 Skype for Business 使用实时语音和视频，因此尤其容易受到较差的网络延迟。
+2. 您希望网络流量从其脱离网络的 (s 的传出位置) 。 您应计划最大限度地减少与 Office 365 的连接的网络延迟，因为这会影响性能。 由于 Skype for Business 使用实时语音和视频，因此尤其容易受到较差的网络延迟。
 
 3. 如果您希望所有或一部分网络位置都利用 ExpressRoute。
 

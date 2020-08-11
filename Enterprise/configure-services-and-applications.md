@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
-description: 配置 Microsoft 365 企业版服务和应用程序
-ms.openlocfilehash: 915d4baa18705e813f6d11a35dff6208c26ab0d3
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: 配置 Microsoft 365 企业服务和应用程序，例如 SharePoint、Exchange 和 Skype for Business。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 4ce56110cb11a6b13d5cd384d813f449156f45fc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735950"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606058"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>配置 Microsoft 365 企业版服务和应用程序
 

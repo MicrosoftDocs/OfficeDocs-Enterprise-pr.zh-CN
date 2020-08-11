@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
-description: 适用于 Office 365 的 ExpressRoute 提供了到多个面向 internet 的 Office 365 服务的备用路由路径。 适用于 Office 365 的 ExpressRoute 体系结构基于 Office 365 服务的广告公共 IP 前缀，这些前缀已在 Internet 上可访问，以便随后将这些 IP 前缀重新分发到网络中。 通过 ExpressRoute，可以有效地通过 internet 和 ExpressRoute 为许多 Office 365 服务启用几种不同的路由路径。 你的网络上的路由状态可能会对你的内部网络拓扑的设计进行重大更改。
-ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 了解如何实现针对 Office 365 的 ExpressRoute，它提供了到多个面向 internet 的 Office 365 服务的备用路由路径。
+ms.openlocfilehash: 3495b66556a8bd8d9aa16aaa4a3283e6017e883c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230298"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605694"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 
@@ -107,16 +109,16 @@ ms.locfileid: "45230298"
 |:-----|:-----|
 |**网络流量方向** <br/> |进货  <br/> |
 |**服务** <br/> |Exchange 混合  <br/> |
-|**公共 Office 365 终结点（源）** <br/> |Exchange Online （IP 地址）  <br/> |
-|**公共本地终结点（目标）** <br/> |5.5.5.5  <br/> |
-|**公用（Internet） DNS 条目** <br/> |Autodiscover.contoso.com  <br/> |
-|**此本地终结点是否适用于其他（非 Office 365） Microsoft 服务** <br/> |否  <br/> |
+|**公共 Office 365 终结点 (源) ** <br/> |Exchange Online (IP 地址)   <br/> |
+|** (目标) 的公共本地终结点** <br/> |5.5.5.5  <br/> |
+|**Public (Internet) DNS 条目** <br/> |Autodiscover.contoso.com  <br/> |
+|**此内部部署终结点是否将用于其他 (非 Office 365) Microsoft 服务** <br/> |否  <br/> |
 |**Internet 上的用户/系统是否使用此本地终结点** <br/> |是  <br/> |
-|**通过公用终结点发布的内部系统** <br/> |Exchange Server 客户端访问角色（本地）192.168.101、192.168.102、192.168.103  <br/> |
+|**通过公用终结点发布的内部系统** <br/> |Exchange Server 客户端访问角色 (本地) 192.168.101、192.168.102、192.168.103  <br/> |
 |**公共终结点的 IP 广告** <br/> |**到 Internet**： 5.5.0.0/16  <br/> **到 ExpressRoute**： 5.5.5.0/24  <br/> |
 |**安全性/外围控件** <br/> |**Internet 路径**： DeviceID_002  <br/> **ExpressRoute 路径**： DeviceID_003  <br/> |
 |**高可用性** <br/> |跨2地域冗余的主动/主动  <br/> ExpressRoute 电路-芝加哥和达拉斯  <br/> |
-|**路径对称控制** <br/> |**方法**：源 NAT  <br/> **Internet 路径**：源 NAT 到192.168.5.5 的入站连接  <br/> |**ExpressRoute 路径**：源 NAT 与192.168.1.0 （芝加哥）和192.168.2.0 （达拉斯）的连接  <br/> |
+|**路径对称控制** <br/> |**方法**：源 NAT  <br/> **Internet 路径**：源 NAT 到192.168.5.5 的入站连接  <br/> |**ExpressRoute 路径**：从源 NAT 到 192.168.1.0 (芝加哥的连接) 和 192.168.2.0 (达拉斯)   <br/> |
 
 以下是仅出站的服务示例：
 
@@ -124,12 +126,12 @@ ms.locfileid: "45230298"
 |:-----|:-----|
 |**网络流量方向** <br/> |出站  <br/> |
 |**服务** <br/> |SharePoint Online  <br/> |
-|**内部部署终结点（源）** <br/> |用户工作站  <br/> |
-|**公共 Office 365 终结点（目标）** <br/> |SharePoint Online （IP 地址）  <br/> |
-|**公用（Internet） DNS 条目** <br/> |\*. sharepoint.com （以及其他 Fqdn）  <br/> |
-|**CDN 检索** <br/> |cdn.sharepointonline.com （和其他 Fqdn）-由 CDN 提供程序维护的 IP 地址  <br/> |
-|**正在使用的 IP 播发和 NAT** <br/> |**Internet 路径/源 NAT**： 1.1.1.0/24  <br/> **ExpressRoute 路径/源 NAT**： 1.1.2.0/24 （芝加哥）和 1.1.3.0/24 （达拉斯）  <br/> |
-|**Connectivity 方法** <br/> |**Internet**： via 第7层代理（pac 文件）  <br/> **ExpressRoute**：直接路由（无代理）  <br/> |
+|** (源) 的本地终结点** <br/> |用户工作站  <br/> |
+|**公共 Office 365 终结点 (目标) ** <br/> |SharePoint Online (IP 地址)   <br/> |
+|**Public (Internet) DNS 条目** <br/> |\*sharepoint.com (和其他 Fqdn)   <br/> |
+|**CDN 检索** <br/> |cdn.sharepointonline.com (和其他 Fqdn) 由 CDN 提供程序维护的 IP 地址)   <br/> |
+|**正在使用的 IP 播发和 NAT** <br/> |**Internet 路径/源 NAT**： 1.1.1.0/24  <br/> **ExpressRoute 路径/源 NAT**： 1.1.2.0/24 (芝加哥) 和 1.1.3.0/24 (达拉斯)   <br/> |
+|**Connectivity 方法** <br/> |**Internet**： via 第7层代理 ( pac 文件)   <br/> **ExpressRoute**：直接路由 (无代理)   <br/> |
 |**安全性/外围控件** <br/> |**Internet 路径**： DeviceID_002  <br/> **ExpressRoute 路径**： DeviceID_003  <br/> |
 |**高可用性** <br/> |**Internet 路径**：冗余 internet 出口  <br/> **ExpressRoute 路径**：跨2个地理位置冗余的 expressroute 电路的主动/主动热刷路线-芝加哥和达拉斯  <br/> |
 |**路径对称控制** <br/> |**方法**：源 NAT 用于所有连接  <br/> |
@@ -190,9 +192,9 @@ ms.locfileid: "45230298"
 |**加利福尼亚和纽约的计划的 ExpressRoute 符合我的新位置**||
 |:-----|:-----|
 |位置  <br/> |人数  <br/> |Internet 出口的预期延迟到 Microsoft 网络  <br/> |通过 ExpressRoute 对 Microsoft 网络的预期延迟  <br/> |
-|Los Angeles  <br/> |10,000  <br/> |~ 15ms  <br/> |~ 10ms （经由硅谷）  <br/> |
-|华盛顿 DC  <br/> |15,000  <br/> |~ 20 毫秒  <br/> |~ 10ms （通过纽约）  <br/> |
-|州  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms （通过纽约）  <br/> |
+|Los Angeles  <br/> |10,000  <br/> |~ 15ms  <br/> |~ 10ms (via 硅谷)   <br/> |
+|华盛顿 DC  <br/> |15,000  <br/> |~ 20 毫秒  <br/> |~ 10ms (通过纽约)   <br/> |
+|州  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (通过纽约)   <br/> |
 
 在显示 Office 365 区域、ExpressRoute 网络服务提供商 "满足我的位置" 和 "按位置的人员数量" 的全局网络体系结构已开发好之后，可以使用它来确定是否可以进行优化。 它还可以显示全局发夹网络连接，在此连接中，流量路由到远处的位置以获取 "满足我的位置" 位置。 如果发现了全局网络上的发夹，则应在继续操作之前对其进行修正。 请找到另一个 "网上邻居" 位置，或使用 "选择性 Internet" 的出站点以避免发夹。
   

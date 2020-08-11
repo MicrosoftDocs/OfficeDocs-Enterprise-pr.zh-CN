@@ -17,18 +17,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 - LIL_Placement
+- seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: 使用 PowerShell 禁用对用户的 Microsoft 365 服务的访问。
-ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: 在本文中，我们将了解如何使用 PowerShell 来禁用用户对 Microsoft 365 服务的访问权限。
+ms.openlocfilehash: f546014b83e0910e38817e0b7ef84d67f1b88614
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502637"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605968"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>使用 PowerShell 禁用对 Microsoft 365 服务的访问
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 向 Microsoft 365 帐户分配许可计划中的许可证后，该许可证中的用户将可以使用 Microsoft 365 服务。 但是，您可以控制用户可以访问的 Microsoft 365 服务。 例如，即使许可证允许访问 SharePoint Online 服务，也可以禁用对它的访问。 您可以使用 PowerShell 针对特定许可计划禁用对任意数量的服务的访问：
 
@@ -71,7 +72,7 @@ PowerShell 脚本可自动执行本主题中描述的过程。 具体来说，�
 $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
 ```
 
-下面的示例创建一个**LicenseOptions**对象，该对象禁用名为 `litwareinc:ENTERPRISEPACK` （Office 365 企业版 E3）的许可计划中的 Office 和 SharePoint Online services。
+下面的示例创建一个**LicenseOptions**对象，该对象禁用名为 `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) 的许可计划中的 Office 和 SharePoint Online services。
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -105,7 +106,7 @@ Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
 ```
 
-若要禁用步骤1中对所有现有许可用户所述的服务，请从**get-msolaccountsku** cmdlet （如**litwareinc： ENTERPRISEPACK**）的显示中指定 Microsoft 365 计划的名称，然后运行以下命令：
+若要禁用步骤1中对所有现有许可用户所述的服务，请从**get-msolaccountsku** cmdlet (（如**litwareinc： ENTERPRISEPACK**) ）中指定 Microsoft 365 计划的名称，然后运行以下命令：
     
 ```powershell
 $acctSKU="<AccountSkuId>"
@@ -171,7 +172,7 @@ $LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
 Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topic"></a>相关主题
 
 [使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

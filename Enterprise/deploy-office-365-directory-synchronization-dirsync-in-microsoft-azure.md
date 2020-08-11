@@ -17,18 +17,19 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: 摘要：在 Azure 中的虚拟机上部署 Azure AD Connect，以在本地目录和 Microsoft 365 订阅的 Azure AD 租户之间同步帐户。
-ms.openlocfilehash: bd1b973c60576002f110a909c0022b27f4595b81
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 了解如何在 Azure 中的虚拟机上部署 Azure AD Connect，以在本地目录和 Azure AD 租户之间同步帐户。
+ms.openlocfilehash: 2872e3d5d233d04885fadd3e422ec1d15284ac26
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229968"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605738"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Microsoft 365 目录同步
 
-Azure Active Directory （Azure AD） Connect （以前称为目录同步工具、目录同步工具或 DirSync.exe 工具）是在加入域的服务器上安装的应用程序，用于将内部部署 Active Directory 域服务（AD DS）用户与 Microsoft 365 订阅的 Azure AD 租户同步。 Microsoft 365 使用 Azure AD 获取其目录服务。 你的 Microsoft 365 订阅包括 Azure AD 租户。 此租户还可用于将组织的身份与其他云工作负载（包括 Azure 中的其他 SaaS 应用程序和应用程序）的管理进行管理。
+Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目录同步工具或 DirSync.exe 工具) 是在加入域的服务器上安装的应用程序，用于将本地 Active Directory 域服务 (AD DS) 用户同步到 Microsoft 365 订阅的 Azure AD 租户。 Microsoft 365 使用 Azure AD 获取其目录服务。 你的 Microsoft 365 订阅包括 Azure AD 租户。 此租户还可用于将组织的身份与其他云工作负载（包括 Azure 中的其他 SaaS 应用程序和应用程序）的管理进行管理。
 
 可以在本地服务器上安装 Azure AD Connect，但也可以将其安装在 Azure 中的虚拟机上，具体原因如下：
   
@@ -43,7 +44,7 @@ Azure Active Directory （Azure AD） Connect （以前称为目录同步工具�
   
 ## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>在 Azure 中部署 Microsoft 365 目录同步的概述
 
-下图显示了在 Azure 中运行的 Azure AD Connect （目录同步服务器），该虚拟机将本地 AD DS 林同步到 Microsoft 365 订阅。
+下图显示了在 Azure 中的虚拟机上运行的 Azure AD Connect， (将本地 AD DS 林同步到 Microsoft 365 订阅的目录同步服务器) 。
   
 ![Azure 中的虚拟机上的 azure AD Connect 工具将本地帐户同步到 Microsoft 365 订阅的 Azure AD 租户以及流量流](media/CP-DirSyncOverview.png)
   
@@ -65,7 +66,7 @@ Azure Active Directory （Azure AD） Connect （以前称为目录同步工具�
     
     安装和配置 [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)。
     
-    配置 Azure AD Connect 需要 Azure AD 管理员帐户和 AD DS 企业管理员帐户的凭据（用户名和密码）。 Azure AD Connect 立即运行，并在持续的基础上将本地 AD DS 林同步到 Microsoft 365。
+    配置 Azure AD Connect 需要凭据 (Azure AD 管理员帐户和 AD DS 企业管理员帐户的用户名和密码) 。 Azure AD Connect 立即运行，并在持续的基础上将本地 AD DS 林同步到 Microsoft 365。
     
 在生产中部署此解决方案之前，可以使用[模拟企业基准配置](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)中的说明将此配置设置为概念证明、演示或试验。
   

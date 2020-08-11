@@ -13,15 +13,15 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: 摘要：了解如何使用 Windows PowerShell 将电子邮件迁移到 Microsoft 365。
-ms.openlocfilehash: e3b16f43161d87d46306e3f9420c84037be24ba8
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 在本文中，我们将了解如何使用 PowerShell 将电子邮件从现有系统迁移到 Microsoft 365。
+ms.openlocfilehash: 6234da89e0c07b6a1342fdabf8e629e847a10aae
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230218"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606228"
 ---
 # <a name="use-powershell-for-email-migration-to-microsoft-365"></a>使用 PowerShell 将电子邮件迁移到 Microsoft 365
 
@@ -31,17 +31,17 @@ ms.locfileid: "45230218"
   
 使用 Windows PowerShell 将电子邮件迁移到 Microsoft 365。 
   
-- [使用 PowerShell 执行到 Microsoft 365 的直接转换迁移](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
+- [使用 PowerShell 直接转换迁移到 Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
     
-- [使用 PowerShell 执行到 Microsoft 365 的 IMAP 迁移](use-powershell-to-perform-an-imap-migration-to-office-365.md)
+- [使用 PowerShell 执行将 IMAP 迁移到 Microsoft 365](use-powershell-to-perform-an-imap-migration-to-office-365.md)
     
-- [使用 PowerShell 执行到 Microsoft 365 的暂存迁移](use-powershell-to-perform-a-staged-migration-to-office-365.md)
+- [使用 PowerShell 执行分步迁移以迁移到 Microsoft 365](use-powershell-to-perform-a-staged-migration-to-office-365.md)
     
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)
   
 [使用 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
   

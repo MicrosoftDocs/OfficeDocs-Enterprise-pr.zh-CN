@@ -18,20 +18,21 @@ search.appverid:
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
-description: 如果你的 Internet 连接始终快速且永不停机，不是很棒？ 可能会出现这一天。 但在这种情况下，您可以执行一些可行的操作来解决 balky 网络，但仍能实现日常工作。
-ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom: seo-marvel-apr2020
+description: 本文将指导您完成在慢速网络上使用 Office 365 时可采用的最佳实践。
+ms.openlocfilehash: b4b81826dfca4c5962cc6aef026c3878e3b52304
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844953"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605778"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>在慢速网络上使用 Office 365 的最佳实践
 
 如果你的 Internet 连接始终快速且永不停机，不是很棒？ 可能会出现这一天。 但在这种情况下，您可以执行一些可行的操作来解决 balky 网络，但仍能实现日常工作。 虽然 Office 365 是基于云的服务，但它还提供了多种方法来脱机处理内容，并使更改保持同步。 此外，仅由于应用程序运行速度更快且用户界面的响应速度更快，有时可以更有效地脱机处理内容。 这一点是： Office 365 为你提供了这两个领域的最佳优势。 下面介绍了如何利用这一点。 
   
 > [!TIP]
-> 想要查看你的网络连接是如何慢（或快）的？ 尝试[OOKLA 速度测试](https://www.speedtest.net/)或[网络速度测试应用](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70)。 
+> 想要了解 (或快速) 网络连接的速度如何？ 尝试[OOKLA 速度测试](https://www.speedtest.net/)或[网络速度测试应用](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70)。 
 
 ## <a name="why-is-my-network-so-slow"></a>为什么我的网络速度太慢？
 
@@ -49,7 +50,7 @@ ms.locfileid: "41844953"
 
  **常见问题**除了带宽和延迟之外，其他问题也会影响网络性能，并且通常是不可预知的。 网络性能可能会基于一天中的时间或你的物理位置波动。 当某些事件发生，导致使用 Internet （如自然灾害或主要公共事件）时，网络可能会被堵塞。 正在加载的页面的大小和复杂程度以及要转移的文件的数量和大小与性能是直接的。 WiFi 连接可能会暂时下降：例如，您可以通过请求所有人同时 twitter 来轮询数以千计的会议会议。 
   
- **卫星网络的注意事项**当陆地网络不可行时，卫星网络很有用，例如，后端国家/地区、巡航船或远程科学领域。 这些网络依赖于位于 equator 上方的 geosynchronous 轨道22000英里内的卫星。 但是，传输实际上传播了大约90000英里，因此卫星网络的延迟（500毫秒或更多）比地面网络（20到50毫秒）的延迟更慢。 在最佳条件下，您可能不会注意到此延迟，但在下载大型文件、流式视频和玩游戏时，您可能会这样做。 另一个问题是 "rain 淡出"，在这种情况下，可能会暂时中断卫星传输的天气（如 thunderstorms 和 blizzards）。
+ **卫星网络的注意事项**当陆地网络不可行时，卫星网络很有用，例如，后端国家/地区、巡航船或远程科学领域。 这些网络依赖于位于 equator 上方的 geosynchronous 轨道22000英里内的卫星。 但是，传输实际上传播了大约90000英里，因此卫星网络的延迟速度较慢 (500 毫秒或更多) 低于地面网络 (20 到50毫秒) 。 在最佳条件下，您可能不会注意到此延迟，但在下载大型文件、流式视频和玩游戏时，您可能会这样做。 另一个问题是 "rain 淡出"，在这种情况下，可能会暂时中断卫星传输的天气（如 thunderstorms 和 blizzards）。
   
 ## <a name="are-you-sure-its-the-network"></a>是否确定网络？
 
@@ -77,7 +78,7 @@ ms.locfileid: "41844953"
 
 - 下载并打开每个页面后，请使用选项卡将其打开。 很容易在选项卡之间导航，并在一天中的以后使用页面。 仅当您需要该页面上的最新数据时才刷新页面。
 
-- 如果打开页面所花的时间过长，请停止页面下载（按 ESC），然后刷新页面（按 F5）。 
+- 如果打开页面的时间过长，请停止页面下载 (按 ESC) 然后刷新页面 (按 F5) 。 
 
 -  如果可能，请减少到 Office 365 的往返行程。 例如，可以使用 "搜索" 来查找大型库中的文件，并在列表中筛选以直接转到所需的结果，而不是通过列表或库进行分页。 或者，创建最小化页面加载时间的视图。 有关详细信息，请参阅[在 Office 365 中管理大型列表和库](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784#BKMK_PAGES)。
 
@@ -97,7 +98,7 @@ ms.locfileid: "41844953"
   
 ## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>使用 Outlook 和 Outlook Web App 的最佳实践
 
-阅读、写入和组织电子邮件是每个人的一大部分。 Outlook 和 Outlook Web App （OWA）提供离线支持。 在智能手机上使用电子邮件应用程序是另一种有用的替代方法。 使用最适合您的需求的以下选项：
+阅读、写入和组织电子邮件是每个人的一大部分。 Outlook 和 Outlook Web App (OWA) 提供脱机支持。 在智能手机上使用电子邮件应用程序是另一种有用的替代方法。 使用最适合您的需求的以下选项：
   
 - 升级到最新版本的 Outlook，以实现对早期版本的显著性能改进。 
 
@@ -138,7 +139,7 @@ OneNote 的优点是，可以从几乎所有设备（无论是台式机、笔记
 
 - 在你可以时使用即时消息，因为它在低速网络中运行良好。
 
-- 避免通过虚拟专用网络（VPN）或远程访问服务（RAS）连接进行电话呼叫。
+- 避免通过虚拟专用网络进行电话呼叫 (VPN) 或远程访问服务 (RAS) 连接。
 
 - 请确保你的音频设备已获得批准。 有关详细信息，请参阅适用[于 Microsoft Lync 的电话和设备](https://docs.microsoft.com/skypeforbusiness/lync-cert/ip-phones)。
 
@@ -168,7 +169,7 @@ OneNote 的优点是，可以从几乎所有设备（无论是台式机、笔记
 
 - 如果您的组织使用项目网站，请根据需要创建它们，而不是自动创建。 这将加快首次发布体验的速度，并避免创建不必要的网站和内容。
 
-- 项目详细信息页面（PDP）可以触发整个项目的重新计算，并启动工作流操作，这两个操作可能会导致性能密集型操作。 若要避免在同一 PDP 上同时触发两个更新过程，请避免更新日历字段（开始日期、完成日期、状态日期和当前日期）和非计划字段（项目名称、说明和所有者）。
+- 项目详细信息页面 (PDP) 可以触发整个项目的重新计算并启动工作流操作，这两种操作可能会导致性能密集型操作。 若要避免同时在同一 PDP 上触发两个更新过程，请避免更新日历字段 (开始日期、完成日期、状态日期和当前日期) 和非计划字段 (项目名称、说明和所有者) 。
 
 - 减少每个 PDP 上显示的 Web 部件和自定义域的数量。 创建专用的 PDP，其中仅有需要更新的字段，以改进加载和节省时间。
 
@@ -182,7 +183,7 @@ Microsoft 通过监控网络、衡量带宽和延迟、改进页面加载时间�
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 的网络规划和性能优化](network-planning-and-performance.md)
+[Office 365 网络计划和性能优化](network-planning-and-performance.md)
   
 [Office 365 网络连接原则](office-365-network-connectivity-principles.md)
   

@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 摘要： microsoft Graph 和 Delve 中的 Microsoft 365 租户隔离的说明。
-ms.openlocfilehash: 70888d084792cfb819c0ee54f34d2a8869fb198b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，我们将介绍 Microsoft 365 租户隔离在 Office Graph 和 Delve 中的工作原理的说明。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 285f910362628f52c379fcf535da7d0b1365383a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998262"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605594"
 ---
 # <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Microsoft Graph 和 Delve 中的 microsoft 365 租户隔离
 
@@ -28,7 +29,7 @@ ms.locfileid: "44998262"
 
 Microsoft 365 服务中的[Microsoft Graph](https://developer.microsoft.com/graph)模型活动，包括 Exchange Online、SharePoint Online、Yammer、Skype for Business、Azure Active Directory 等，以及外部服务（如其他 Microsoft 服务或第三方服务）中的活动。 Microsoft Graph 组件在整个 Microsoft 365 中使用。 Microsoft Graph 表示内容和活动的集合，以及在整个 Office 套件中发生的关系。 它使用先进的机器学习技术将用户连接到相关内容、对话和用户周围的人员。 例如，SharePoint Online 中的租户索引具有用于为 Delve 查询提供服务的 Microsoft Graph 索引，SharePoint Online 中的分析处理引擎用于存储信号和计算见解，Exchange Online 将每个用户的收件人缓存计算为租户分析中的输入。
 
-Microsoft Graph 包含有关企业对象的信息，例如人员和文档，以及这些对象之间的关系和交互。 关系和交互表示为*边缘*。 Microsoft Graph 是由租户分段的，因此，边缘只能存在于同一租赁中的*节点*之间。 *节点*是具有统一资源标识符（URI）、节点类型、访问控制列表以及包含*元数据*和边缘的一组 facet 的实体。 每个节点都有关联的元数据和边缘，它们按常见知识模型中的*facet*排列。 *元数据*是存储在节点上的命名属性，可用于在 Microsoft Graph 中进行搜索、筛选或分析。 *Facet*是节点上的元数据和边缘的逻辑集合。 每个 facet 描述节点的一个方面。 
+Microsoft Graph 包含有关企业对象的信息，例如人员和文档，以及这些对象之间的关系和交互。 关系和交互表示为*边缘*。 Microsoft Graph 是由租户分段的，因此，边缘只能存在于同一租赁中的*节点*之间。 *节点*是具有统一资源标识符 (URI) 、节点类型、访问控制列表以及包含*元数据*和边缘的一组 facet 的实体。 每个节点都有关联的元数据和边缘，它们按常见知识模型中的*facet*排列。 *元数据*是存储在节点上的命名属性，可用于在 Microsoft Graph 中进行搜索、筛选或分析。 *Facet*是节点上的元数据和边缘的逻辑集合。 每个 facet 描述节点的一个方面。 
 
 Microsoft Graph 不会将所有数据都引入单个存储库;相反，它存储有关位于其他位置的数据的元数据和关系。 Microsoft Graph 由多个数据存储和处理组件组成：
 

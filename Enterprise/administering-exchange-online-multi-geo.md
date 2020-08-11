@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: 了解如何使用 Microsoft PowerShell 管理 Exchange Online 多地理位置设置。
-ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.custom: seo-marvel-mar2020
+localization_priority: normal
+description: 了解如何使用 PowerShell 在 Microsoft 365 环境中管理 Exchange Online 多地理位置设置。
+ms.openlocfilehash: 52183a24d6ae4993bc9b4205c1f1d7dc6cd12a3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433503"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605808"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 
@@ -104,7 +104,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
 > [!NOTE]
-> 如果数据库名称中的地理位置代码与**MailboxRegion**值不匹配，则会将邮箱自动置于重新定位队列中，并将其移动到**MailboxRegion**值所指定的地理位置（Exchange Online 会在这些属性值之间查找不匹配）。
+> 如果数据库名称中的地理位置代码与**MailboxRegion**值不匹配，则会自动将该邮箱放入位置队列并移动到由**MailboxRegion**值指定的地理位置， (Exchange Online 会在这些属性值) 之间查找不匹配项。
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>将现有的仅限云邮箱移动到特定地理位置
 

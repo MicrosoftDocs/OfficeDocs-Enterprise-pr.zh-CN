@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: 本文介绍如何通过使用 JavaScript 来延迟加载图像以及在页面加载后等待加载非基本 JavaScript，从而减少 SharePoint Online 页面的加载时间。
-ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: 了解如何通过使用 JavaScript 延迟加载图像和不重要的 JavaScript 来缩短 SharePoint Online 页面的加载时间。
+ms.openlocfilehash: 72eabed2dd940bb07ece44bbc0dbc9d72e426a67
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009347"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605748"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>在 SharePoint Online 中延迟加载图像和 JavaScript
 
@@ -34,7 +36,7 @@ ms.locfileid: "44009347"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>通过使用 JavaScript 延迟 SharePoint Online 页面中的图像加载，提高页面加载时间
 
-您可以使用 JavaScript 阻止 web 浏览器预先获取图像。 这将加快整体文档呈现速度。 若要执行此操作，请从\<img\>标记中删除 src 属性的值，并将其替换为 data 属性中的文件的路径，如 data-src。 例如：
+您可以使用 JavaScript 阻止 web 浏览器预先获取图像。 这将加快整体文档呈现速度。 若要执行此操作，请从标记中删除 src 属性的值 \<img\> ，并将其替换为 data 属性中的文件的路径，如 data-src。 例如：
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -44,7 +46,7 @@ ms.locfileid: "44009347"
   
 若要执行所有操作，需要使用 JavaScript。
   
-在文本文件中，定义**isElementInViewport （）** 函数，以检查元素是否位于浏览器中对用户可见的部分。
+在文本文件中，定义**isElementInViewport ( # B1**函数以检查元素是否在浏览器中对用户可见的部分。
   
 ```javascript
 function isElementInViewport(el) {
@@ -60,7 +62,7 @@ function isElementInViewport(el) {
 }
 ```
 
-接下来，在**loadItemsInView （）** 函数中使用**isElementInViewport （）** 。 如果包含数据 src 属性值的所有图像位于用户可见的浏览器部分中，则**loadItemsInView （）** 函数将加载这些图像。 将以下函数添加到文本文件中：
+接下来，使用**loadItemsInView ( # B3**函数中的**IsElementInViewport ( # B1** 。 **LoadItemsInView ( # B1**函数将加载包含数据 src 属性值的所有图像（如果它们位于浏览器中对用户可见的部分）。 将以下函数添加到文本文件中：
   
 ```javascript
 function loadItemsInView() {
@@ -76,7 +78,7 @@ function loadItemsInView() {
 }
 ```
 
-最后，在**onscroll （）** 中调用**loadItemsInView （）** ，如下面的示例所示。 这样可确保视区中的任何图像在用户需要时加载，但不会在之前加载。 将以下内容添加到文本文件中：
+最后，从窗口中调用**loadItemsInView ( # B1** **。 Onscroll ( # B3** ，如下面的示例所示。 这样可确保视区中的任何图像在用户需要时加载，但不会在之前加载。 将以下内容添加到文本文件中：
   
 ```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
@@ -86,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-对于 SharePoint Online，需要将以下函数附加到 #s4-workspace \<div\>标记上的 scroll 事件。 这是因为窗口事件将被重写，以确保功能区仍附加在页面顶部。
+对于 SharePoint Online，需要将以下函数附加到 #s4 workspace 标记上的 scroll 事件中 \<div\> 。 这是因为窗口事件将被重写，以确保功能区仍附加在页面顶部。
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -95,15 +97,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-将文本文件另存为带有扩展名 .js 的 JavaScript 文件，例如 Delayloadimages.js。
+将文本文件另存为带有扩展名 .js 的 JavaScript 文件，例如 delayLoadImages.js。
   
-编写完 Delayloadimages.js 后，可以将文件的内容添加到 SharePoint Online 中的母版页。 为此，请将脚本链接添加到母版页中的标头。 在母版页中，JavaScript 将应用于使用该母版页布局的 SharePoint Online 网站中的所有页面。 或者，如果您打算仅在网站的一个页面上使用此项，请使用脚本编辑器 Web 部件将 JavaScript 嵌入到页面中。 有关详细信息，请参阅以下主题：
+编写完 delayLoadImages.js 后，可以将文件的内容添加到 SharePoint Online 中的母版页。 为此，请将脚本链接添加到母版页中的标头。 在母版页中，JavaScript 将应用于使用该母版页布局的 SharePoint Online 网站中的所有页面。 或者，如果您打算仅在网站的一个页面上使用此项，请使用脚本编辑器 Web 部件将 JavaScript 嵌入到页面中。 有关详细信息，请参阅以下主题：
   
 - [如何：向 SharePoint 2013 中的网站应用母版页](https://go.microsoft.com/fwlink/p/?LinkId=525627)
 
 - [如何：在 SharePoint 2013 中创建页面布局](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>示例：在 SharePoint Online 中引用母版页中的 JavaScript Delayloadimages.js 文件
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>示例：在 SharePoint Online 中引用母版页中的 JavaScript delayLoadImages.js 文件
   
 若要使其正常工作，您还需要在母版页中引用 jQuery。 在下面的示例中，您可以在初始页面加载中看到仅加载了一个图像，但在页面上有多个。
   

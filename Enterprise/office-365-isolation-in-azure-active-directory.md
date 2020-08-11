@@ -14,17 +14,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 摘要：隔离和访问控制如何在 Azure Active Directory 中工作。
-ms.openlocfilehash: fe242acb5d14f5c90d6e646140b50f5f96c7a331
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，了解隔离和访问控制如何为在 Azure Active Directory 中彼此隔离的多个租户保持数据的工作方式。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 98b18e57374132530e8b4c70a6becde01983dc2b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998712"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605604"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Azure Active Directory 中的 Microsoft 365 隔离和访问控制
 
-Azure Active Directory （Azure AD）旨在通过逻辑数据隔离以一种高度安全的方式托管多个租户。 对 Azure AD 的访问通过授权层进行了封闭。 Azure AD 将租户容器的客户隔离为安全边界，以保护客户的内容，以使其无法通过共同租户访问或泄露内容。 由 Azure AD 的授权层执行三项检查：
+Azure Active Directory (Azure AD) 旨在通过逻辑数据隔离以一种高度安全的方式托管多个租户。 对 Azure AD 的访问通过授权层进行了封闭。 Azure AD 将租户容器的客户隔离为安全边界，以保护客户的内容，以使其无法通过共同租户访问或泄露内容。 由 Azure AD 的授权层执行三项检查：
 
 - 是否为主体启用了对 Azure AD 租户的访问权限？
 - 是否为主体启用了对此租户中的数据的访问权限？
@@ -44,8 +45,8 @@ Azure Active Directory （Azure AD）旨在通过逻辑数据隔离以一种高�
 
 此外，没有可以从 Azure AD 中执行的应用程序组件，并且一个租户无法强制实施另一个租户的完整性、访问其他租户的加密密钥或从服务器读取原始数据。
 
-默认情况下，Azure AD 不允许由其他租户中的标识颁发的所有操作。 每个租户通过基于声明的访问控制在 Azure AD 中逻辑隔离。 目录数据的读取和写入作用域为租户容器，并由内部抽象层和基于角色的访问控制（RBAC）层（共同将租户强制为安全边界）封闭。 每个目录数据访问请求都由这些层处理，Microsoft 365 中的每个访问请求都是通过上述逻辑 policed 的。
+默认情况下，Azure AD 不允许由其他租户中的标识颁发的所有操作。 每个租户通过基于声明的访问控制在 Azure AD 中逻辑隔离。 目录数据的读取和写入作用域为租户容器，并由内部抽象层和基于角色的访问控制 (RBAC) 层组成，它们共同强制租户作为安全边界。 每个目录数据访问请求都由这些层处理，Microsoft 365 中的每个访问请求都是通过上述逻辑 policed 的。
 
-Azure AD 具有北美、美国政府、欧洲联合、德国和全球通用分区。 一个租户存在于单个分区中，分区可以包含多个租户。 对分区信息进行抽象，使其远离用户。 给定分区（包括其中的所有租户）将复制到多个数据中心中。 租户的分区是根据租户的属性（例如，国家/地区代码）选择的。 使用专用密钥对每个分区中的机密和其他敏感信息进行加密。 创建新分区时，会自动生成密钥。
+Azure AD 具有北美、美国政府、欧洲联合、德国和全球通用分区。 一个租户存在于单个分区中，分区可以包含多个租户。 对分区信息进行抽象，使其远离用户。 给定分区 (，其中包括) 中的所有租户都将复制到多个数据中心。 根据租户的属性选择租户的分区 (例如，国家/地区代码) 。 使用专用密钥对每个分区中的机密和其他敏感信息进行加密。 创建新分区时，会自动生成密钥。
 
 Azure AD 系统功能是每个用户会话的唯一实例。 此外，Azure AD 使用加密技术在网络级别提供共享系统资源的隔离，以防止未经授权和无意的信息传输。

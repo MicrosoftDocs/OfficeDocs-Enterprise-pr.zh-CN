@@ -16,15 +16,17 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 这些概述步骤旨在帮助您设置网络、创建标识、部署适用于企业的 Microsoft 365 应用程序、迁移数据，以及帮助组织中的人员使用 Microsoft 365 开始。
-ms.openlocfilehash: 274cd4ae285ae97825b4d46a125cd9eeecf83312
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: 这些概述步骤旨在帮助您设置网络、创建标识、部署 Microsoft 365 应用和迁移数据。
+ms.openlocfilehash: aa1e4a364843ab6c502e037d464517b643dddbdc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735940"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605124"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>为你的组织部署 Microsoft 365 企业版
 
@@ -54,7 +56,7 @@ ms.locfileid: "44735940"
  
 2. [设置你的标识](protect-your-global-administrator-accounts.md)
 
-   包括确定标识模型（仅限云或混合模式）和混合标识，在本地 Active Directory 域服务（AD DS）和 Microsoft 365 订阅之间设置目录同步。
+   包括确定 (仅限云或混合) 的标识模型，以及在本地 Active Directory 域服务 (AD DS) 和 Microsoft 365 订阅之间设置目录同步。
 
 3. [实施安全性](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
 
@@ -62,7 +64,7 @@ ms.locfileid: "44735940"
  
 4. [部署客户端软件](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   包括部署 Microsoft 365 Apps for enterprise （以前称为 Office 365 专业增强版）、设备上 Office 套件（Word、Excel、PowerPoint 和其他）的云更新和始终为当前版本。 每个 Microsoft 365 客户端许可证都包含适用于企业的 Microsoft 365 应用的许可证。
+   包括部署 Microsoft 365 Apps for enterprise (以前名为 Office 365 专业增强版) ，Office 套件的云更新的和始终为的版本 (Word、Excel、PowerPoint 和其他设备上的其他) 。 每个 Microsoft 365 客户端许可证都包含适用于企业的 Microsoft 365 应用的许可证。
  
 5. [设置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 

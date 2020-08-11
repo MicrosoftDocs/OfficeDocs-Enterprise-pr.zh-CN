@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 search.appverid:
@@ -20,13 +22,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
-description: 了解如何将 Microsoft 365 与您的现有目录服务集成。
-ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: 在本文中，我们将了解如何将 Microsoft 365 与您现有的目录服务和本地环境集成。
+ms.openlocfilehash: 9eadad2f7dd4c0843b522658c361a0950f61509b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571055"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606568"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 与本地环境的集成
 

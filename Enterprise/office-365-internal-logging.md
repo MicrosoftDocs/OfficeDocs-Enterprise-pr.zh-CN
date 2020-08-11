@@ -14,17 +14,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365 工程的内部日志记录的工作原理的说明。
-ms.openlocfilehash: 09e0d2910a71cbcae9db0b75193cc5d672914737
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 在本文中，我们将介绍 Microsoft 365 工程团队的内部日志记录的工作原理。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c5c32d1ea0704f8f56a4af6e6dd85f73f9c2df
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774917"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606548"
 ---
 # <a name="internal-logging-for-microsoft-365-engineering"></a>Microsoft 365 工程的内部日志记录
 
-除了可供客户使用的事件和日志数据之外，microsoft 365 工程师还可以使用 Microsoft 的内部日志数据收集系统。 将许多不同类型的日志数据从 Microsoft 365 服务器上传到内部的大型数据计算服务（称为 Cosmos）。 每个服务团队将审核日志从各自的服务器上载到 Cosmos 数据库中，以进行聚合和分析。 此数据传输通过经过专用的自动化工具（称为 Office 数据加载程序（ODL））在专门批准的端口和协议上进行 FIPS 140-2 验证的 TLS 连接。 Microsoft 365 中用于收集和处理审核记录的工具不允许对原始审核记录的内容或时间排序进行永久或不可恢复的更改。
+除了可供客户使用的事件和日志数据之外，microsoft 365 工程师还可以使用 Microsoft 的内部日志数据收集系统。 将许多不同类型的日志数据从 Microsoft 365 服务器上传到内部的大型数据计算服务（称为 Cosmos）。 每个服务团队将审核日志从各自的服务器上载到 Cosmos 数据库中，以进行聚合和分析。 此数据传输通过经过专用的自动化工具（称为 Office 数据加载程序 (ODL) ）在专门批准的端口和协议上进行 FIPS 140-2 验证的 TLS 连接。 Microsoft 365 中用于收集和处理审核记录的工具不允许对原始审核记录的内容或时间排序进行永久或不可恢复的更改。
 
 服务团队使用 Cosmos 作为一个集中存储库来对应用程序使用情况进行分析，以衡量系统和操作性能，并查找可能指示问题或安全问题的 abnormalities 和模式。 每个服务团队将日志的基准上载到 Cosmos，具体取决于他们要分析的内容，这通常包括：
 

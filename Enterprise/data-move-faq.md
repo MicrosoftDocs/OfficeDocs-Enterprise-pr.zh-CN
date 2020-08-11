@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
-description: 以下是有关将核心数据移动到新的数据中心地理位置的常见问题的解答。
-ms.openlocfilehash: 2954d85b0094a8d0f74980fa4e0ee9cac504abbe
-ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
+description: 查找有关将核心数据移动到新的 Office 365 datacenter geo 的常见问题 (Faq) 的解答。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: bd26296831ddb5aa0932d4106893e5a9adfb1d50
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44781037"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606038"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -32,7 +33,7 @@ ms.locfileid: "44781037"
 ## <a name="how-do-we-define-core-customer-data"></a>如何定义核心客户数据？
  
 Core customer data 是一个术语，指的是在[Microsoft Online Services 术语](https://aka.ms/ost)中定义的客户数据子集： 
-- Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）
+- Exchange Online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容) 
 - SharePoint Online 网站内容和该网站中存储的文件
 - 上载到 OneDrive for business 的文件 
 
@@ -42,7 +43,7 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
 
 ## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>如何确保移动过程中的客户数据是安全的，并且不会经历停机时间？
   
-数据移动是一种后端服务操作，对最终用户影响最小。 在[数据移动期间和之后](during-and-after-your-data-move.md)会列出受影响的功能。 我们遵循[Microsoft Online Services 服务级别协议（SLA）](https://go.microsoft.com/fwlink/p/?LinkId=523897)的可用性，以便客户无需准备或在移动过程中进行监视。 
+数据移动是一种后端服务操作，对最终用户影响最小。 在[数据移动期间和之后](during-and-after-your-data-move.md)会列出受影响的功能。 我们遵循[Microsoft Online Services 服务级别协议 (SLA) ](https://go.microsoft.com/fwlink/p/?LinkId=523897)以获取可用性，这样在移动过程中，客户无需准备或监控。 
   
 所有 Microsoft 365 服务在数据中心中运行相同的版本，因此您可以确保功能一致。 您的服务在整个过程中完全受支持。
 
@@ -130,7 +131,7 @@ Core customer data 是一个术语，指的是在[Microsoft Online Services 术�
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>在新数据中心托管的 Microsoft 365 租户是否适用于该国家/地区之外的用户？
   
-是。 Microsoft 在全球范围内的35国家/地区内的国家/地区的多达130个位置维护一个大型的全球网络，其 Internet 服务提供商（Isp）数量超过2700的对等协议。 用户将能够从 Internet 上的任何位置访问数据中心。
+是。 Microsoft 在全球范围内的35国家/地区内的国家/地区内有超过130个位置的大型全球网络，其使用情况协议的 Internet 服务提供商数超过2700个， (Isp) 。 用户将能够从 Internet 上的任何位置访问数据中心。
 
 ## <a name="my-tenant-has-configured-the-multi-geo-add-on-can-i-still-enroll-in-my-tenant-in-the-microsoft-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>我的租户配置了[多地理加载](https://aka.ms/multi-geo)项。 我是否可以在 Microsoft 365 移动程序中注册我的租户以更改我的默认地理位置并将任何用户不在附属区域中移动到新的默认地理位置？
 

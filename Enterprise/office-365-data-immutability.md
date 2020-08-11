@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 定义并解释 Microsoft 365 中的数据永久性。
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 了解 Microsoft 365 如何在可发现的表单中保留数据，以满足法规遵从性、内部治理要求和诉讼风险。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998456"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605634"
 ---
 # <a name="immutability-in-microsoft-365"></a>Microsoft 365 中的永久性
 
@@ -49,7 +50,7 @@ ms.locfileid: "44998456"
 
 例如，当将邮箱置于诉讼保留状态时，将保留第三方数据。 您可以使用就地电子数据展示或合规性搜索来搜索第三方数据。 或者，您可以将存档和保留策略应用于第三方数据，就像 Microsoft 数据一样。 在 Microsoft 365 中存档第三方数据可帮助您的组织遵守政府和法规策略。
 
-Microsoft 365 中的存档提供有价证券和 Exchange 委员会（SEC）规则17a-4 兼容的存储。 Microsoft 365 保留使用就地保留策略和保留策略（包括保留锁定）以不可改写、不可擦除的格式收集的所有数据的永久文件。
+Microsoft 365 中的存档提供了证券交易委员会和 Exchange 委员会 (SEC) 规则17a-4 合规存储。 Microsoft 365 保留使用就地保留策略和保留策略（包括保留锁定）以不可改写、不可擦除的格式收集的所有数据的永久文件。
 
 具体来说：
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 为 Microsoft 365 创建报告
+title: 使用 PowerShell 创建 Microsoft 365 报告
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 摘要：使用适用于 Microsoft 365 的 PowerShell 创建无法在 Microsoft 365 管理中心生成的报告。
-ms.openlocfilehash: 855f6529445b95dd949fb672f978a82f1afd6149
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: d2d03d6ac170fef95352a2aabf6cd27176202a1e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229798"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605314"
 ---
-# <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 为 Microsoft 365 创建报告
+# <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 创建 Microsoft 365 报告
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
@@ -59,11 +61,11 @@ Microsoft 365 管理中心中提供很多不同的报告。 但是，这些报�
     
   - [使用 PowerShell 显示 Exchange Online 报告](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)
   
 [使用 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
   

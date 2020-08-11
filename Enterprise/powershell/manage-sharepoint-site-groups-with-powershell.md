@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 摘要：使用 PowerShell 管理 SharePoint Online 网站用户组。
-ms.openlocfilehash: bee1f01ae78ec35d34a6aba0119bba3fbf7eeada
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 在本文中，查找使用适用于 Microsoft 365 的 PowerShell 管理 SharePoint Online 网站用户组的过程。
+ms.openlocfilehash: 5df2b57db4ac57aaf7905346d090ccde2d96a11c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230488"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605898"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 网站用户组
 
@@ -38,10 +39,10 @@ ms.locfileid: "45230488"
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>使用适用于 Microsoft 365 的 PowerShell 查看 SharePoint Online
 
-SharePoint Online 管理中心具有一些易于使用的方法来管理网站用户组。 例如，假设您想要查看网站的组和组成员 `https://litwareinc.sharepoint.com/sites/finance` 。 以下是需要执行的操作：
+SharePoint Online 管理中心具有一些易于使用的方法来管理网站用户组。 例如，假设您想要查看网站的组和组成员 `https://litwareinc.sharepoint.com/sites/finance` 。 您必须执行以下操作：
 
 1. 在 SharePoint 管理中心中，单击 "**活动网站**"，然后单击网站的 URL。
-2. 在 "网站" 页上，单击 "**设置**" 图标（位于页面的右上角），然后单击 "**网站权限**"。
+2. 在 "网站" 页上，单击页面右上角 (的 "**设置**" 图标) ，然后单击 "**网站权限**"。
 
 然后对您要查看的下一个网站重复此过程。
 
@@ -60,7 +61,7 @@ foreach ($y in $x)
 
 有两种方法可以在 SharePoint Online 命令行管理程序命令提示符中运行此命令集：
 
-- 将命令复制到记事本（或其他文本编辑器）中，修改 **$siteURL**变量的值，选择命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符中。 执行此操作时，PowerShell 将在出现 **>>** 提示时停止。 按 Enter 以执行 `foreach` 命令。<br/>
+- 将命令复制到记事本中 (或其他文本编辑器) ，修改 **$siteURL**变量的值，选择命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符中。 执行此操作时，PowerShell 将在出现 **>>** 提示时停止。 按 Enter 以执行 `foreach` 命令。<br/>
 - 将命令复制到记事本（或其他文本编辑器），修改 **$siteURL** 变量值，然后在合适的文件夹中使用一个名称和.ps1 扩展名保存该文本文件。 接下来，通过指定其路径和文件名从 SharePoint Online 命令行管理程序命令提示符处运行脚本。 下面是一个示例命令：
 
 ```powershell
@@ -101,5 +102,5 @@ foreach ($y in $x)
 
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)
 

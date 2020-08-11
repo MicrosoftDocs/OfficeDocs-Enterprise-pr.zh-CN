@@ -14,19 +14,20 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 适用于新式验证的 Microsoft 365 客户端应用程序支持。
-ms.openlocfilehash: ed573cdf0cbd8f685f2807127335f5abc940cace
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，了解哪些平台、客户端和 Powershell 模块支持适用于 Microsoft 365 的新式验证。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 29a579111d04cef444d1f8ad306b940a93517fe6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998490"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606658"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Microsoft 365 客户端应用程序支持-新式验证
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-新式验证为跨不同平台的 Office 客户端应用启用基于 Active Directory 身份验证库（ADAL）的登录。 这将启用多因素身份验证（MFA）、智能卡和基于证书的身份验证等登录功能。
+新式验证为不同平台上的 Office 客户端应用程序启用 Active Directory 身份验证库 (基于) 的基于 ADAL 的登录。 这将启用多因素身份验证 (MFA) 、智能卡和基于证书的身份验证等登录功能。
 
 了解有关[多因素身份验证](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)和[基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started)的详细信息。
 

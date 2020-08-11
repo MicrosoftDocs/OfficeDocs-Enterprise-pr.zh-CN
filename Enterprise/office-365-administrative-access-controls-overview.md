@@ -14,13 +14,14 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 摘要：概述了 Microsoft 365 的管理访问控制和数据分类。
-ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom: seo-marvel-apr2020
+description: 本文提供了 Microsoft 365 中的管理访问控制和数据分类的概述。
+ms.openlocfilehash: 58cbc7ebea3edb66f5d48d282a3e6995b247a044
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774967"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606708"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Microsoft 365 中的管理访问控制 
 
@@ -31,7 +32,7 @@ Microsoft 已在系统和控件中进行了大量投资，以自动化 microsoft
 Microsoft 使用多种形式的云传递提供了在线服务：
 
 - **公共云：** 包括在北美、南美洲、欧洲、亚洲、澳大利亚等托管的 Microsoft 365、Azure 和其他服务的多租户版本。
-- **国家/地区云：** 包括美国以外的所有 sovereign 和第三方运营云（前面提到的云除外），例如 Microsoft 365 in 中国（由世纪互联运营）和德国的 Microsoft 365 （由 Microsoft 使用，但在一种模型中，在德语数据受信者、德国电信中，控制和监控 Microsoft 对客户数据和包含客户数据的系统的访问）。
+- **国家/地区云：** 包括 (美国以外的所有 sovereign 和第三方运营云，除了之前) 之外的所有和第三方运行的云（如中国 () 运营的中国 365 Microsoft 365）和德语中的 Microsoft (由 Microsoft 运营，但在一种模型中，在德语数据受信者、德国电信中，控制并监控 Microsoft 对包含客户数据) 的客户数据
 - **政府群：** 包含适用于美国政府客户的 Microsoft 365 和 Azure 服务。
 
 出于本文的目的，Microsoft 365 服务包括：
@@ -57,14 +58,14 @@ Microsoft 使用多种形式的云传递提供了在线服务：
 - 即时消息
 - 日历项目
 - 文档
-- Contacts
-- 最终用户身份信息（EUII）（用户特有或 linkable 给个人用户但不包含客户内容的数据）
+- 联系人
+- 最终用户可识别的信息 (EUII) 用户特有或 linkable 给个人用户但不包含客户内容的数据 (数据) 
 
 ### <a name="other-types-of-data"></a>其他类型的数据
 
 其他类型的数据包括：
 
-- **帐户数据：** 包括管理数据（管理员在注册或购买服务时提供的信息）和付款数据（有关付款仪器的信息，如信用卡详细信息）。
+- **帐户数据：** 包括管理员在注册或购买服务) 时提供的管理数据 (信息，以及付款数据 (有关付款仪器的信息，如信用卡详细信息) 。
 - **组织的可识别信息：** 包含用于标识租户、使用情况数据，而不是 linkable 给个人用户或包含在客户内容中的数据。
 - **系统元数据：** 包括包含配置设置、系统状态、Microsoft IP 地址和订阅和租户的技术信息的服务日志。
 
@@ -97,4 +98,4 @@ Microsoft 365 允许您以与在本地环境中管理数据的方式管理数据
 - [人员控制](office-365-personnel-controls.md)
 - [技术控制](office-365-technology-controls.md)
 - [监视和审核访问控制](office-365-monitoring-and-auditing-access-controls.md)
-- [Yammer Enterprise访问控制](office-365-yammer-enterprise-access-controls.md)
+- [Yammer Enterprise 访问控制](office-365-yammer-enterprise-access-controls.md)

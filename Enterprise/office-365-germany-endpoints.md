@@ -1,5 +1,5 @@
 ---
-title: Office 365 Germany 终结点
+title: 适用于德国的 Office 365 端点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: 如果您的组织使用 Office 365 并限制网络中的计算机连接到 Internet，则在下面您将找到您应在出站允许列表中包含的终结点 (Fqdn、端口、Url 以及 IPv4 和 IPv6 地址范围) ，以确保您的计算机可以成功使用 Office 365。
+description: 在本文中，您将找到在德国使用 Office 365 的客户可以访问的终结点。
 hideEdit: true
-ms.openlocfilehash: f78fe11ccf9b659c5606f743fe91bd426392f549
-ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
+ms.openlocfilehash: a711499799ecbf50e7534fc0d015146fc26d220d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46596908"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606589"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 终结点
 
@@ -41,7 +43,7 @@ Office 365 要求连接到 Internet。 下面的终结点应仅供使用**Office
 
 以下页面上显示的数据都是从基于 REST 的 web 服务生成的。 如果使用脚本或网络设备访问此数据，则应直接转到[Web 服务](office-365-ip-web-service.md)。
 
-下面的终结点数据列出了从用户计算机到 Office 365 的连接要求。它不包括从 Microsoft 到客户网络的网络连接（有时称为混合或入站网络连接）。
+下面的终结点数据列出了从用户计算机到 Office 365 的连接要求。 它不包括从 Microsoft 到客户网络的网络连接，有时也称为混合网络连接或入站网络连接。
 
 终结点分为四个服务区域。可以独立选择前三个服务区域进行连接。第四个服务区域是一个常见的依赖项（称为 Microsoft 365 Common 和 Office），并且必须始终具有网络连接。
 

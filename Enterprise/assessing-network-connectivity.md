@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 旨在让世界各地的客户能够使用 internet 连接连接到服务。 随着服务的演变，Microsoft 365 的安全性、性能和可靠性将根据使用 internet 的客户建立与服务的连接而得到改进。
-ms.openlocfilehash: 0ccf729dc8eddfd99ffc0b70c8ab56e31451be88
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: eae7e56c13ab0d0799226c834dd7d9092c8f9551
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997956"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605798"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>评估 Microsoft 365 网络连接
 
@@ -61,7 +63,7 @@ Microsoft 365 旨在让世界各地的客户能够使用 internet 连接连接�
 
 ## <a name="the-microsoft-365-connectivity-test"></a>Microsoft 365 连接测试
 
-[Microsoft 365 连接测试](https://aka.ms/netonboard)是一种概念证明（POC）网络评估工具，可对你的 microsoft 365 租户运行基本的连接测试，并为最佳 Microsoft 365 性能提供特定的网络设计建议。 该工具突出显示了常见的大型企业网络外围设计选项，这些选项对 Internet web 浏览很有用，但会影响 Microsoft 365 等大型 SaaS 应用程序的性能。
+[Microsoft 365 连接测试](https://aka.ms/netonboard)是一 (POC) 网络评估工具的概念证明，它对您的 microsoft 365 租户运行基本的连接测试，并为最佳 Microsoft 365 性能提供具体的网络设计建议。 该工具突出显示了常见的大型企业网络外围设计选项，这些选项对 Internet web 浏览很有用，但会影响 Microsoft 365 等大型 SaaS 应用程序的性能。
 
 网络载入工具执行以下操作：
 
@@ -83,12 +85,12 @@ Microsoft 365 旨在让世界各地的客户能够使用 internet 连接连接�
   - 按城市、州和国家/地区的网络出口位置
   - 用户进入网络传出距离
   - Microsoft 365 Exchange Online 服务前盖位置
-  - 适用于用户位置的最佳 Microsoft 365 Exchange Online 服务前端门（s）
+  - 适用于用户位置的最佳 Microsoft 365 Exchange Online 服务前盖 (s) 
   - 使用更好的性能的大都市区域内的客户
 
 高级测试下载应用程序提供以下附加信息：
 
-- "详细信息和解决方案" 选项卡（追加）
+-  (追加) 的详细信息和解决方案选项卡
   - 用户的默认网关
   - 客户端 DNS 服务器
   - 客户端 DNS 递归解析器
@@ -107,7 +109,7 @@ Microsoft 365 旨在让世界各地的客户能够使用 internet 连接连接�
   
 以下是可用于返回的简短链接： [ https://aka.ms/o365networkconnectivity 。](https://aka.ms/o365networkconnectivity)
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [Microsoft 365 网络连接概述](office-365-networking-overview.md)
 

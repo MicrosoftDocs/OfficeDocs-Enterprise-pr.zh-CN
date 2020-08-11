@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 摘要： SharePoint 2013 解决方案可以在 Microsoft Azure 虚拟机中托管。了解哪种类型的解决方案非常适合以及如何设置 Microsoft Azure 托管一个解决方案。
-ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 了解可以在 Microsoft Azure 虚拟机中托管的 SharePoint 2013 解决方案的类型，以及如何将 Azure 设置为托管1。
+ms.openlocfilehash: f76d5020ab4695f48edca956d6593040c42dcc70
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997889"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605684"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 的 Microsoft Azure 体系结构
 
@@ -44,7 +46,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
   
 - 确定 Microsoft 365 是否满足你的业务要求，或是否可以成为解决方案的一部分。 Microsoft 365 提供了一个始终处于最新状态的丰富功能集。
     
-- 如果 Microsoft 365 不符合你的所有业务要求，请考虑从 Microsoft 咨询服务（MCS）的本地部署 SharePoint 2013 的标准实现。 相比自定义体系结构而言，标准体系结构的支持更快速、便宜和简单。 
+- 如果 Microsoft 365 不符合你的所有业务要求，请考虑从 Microsoft 咨询服务 (MCS) 的本地部署 SharePoint 2013 的标准实现。 相比自定义体系结构而言，标准体系结构的支持更快速、便宜和简单。 
     
 - 如果标准实现不满足您的业务需求，请考虑使用自定义的内部部署解决方案。
     
@@ -105,7 +107,7 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
     
 有关规划和创建跨界虚拟网络的其他信息，请参阅[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)。
   
-## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>添加 Active Directory 域服务（AD DS）和 DNS
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>将 Active Directory 域服务 (AD DS) 和 DNS
 
 在 Azure 中进行灾难恢复时，您在混合方案中部署 Windows Server AD 和 DNS，其中 Windows Server AD 部署在本地和 Azure 虚拟机上。
   

@@ -1,5 +1,5 @@
 ---
-title: Office 365 美国政府 DoD 终结点
+title: Office 365 美国政府 DOD 终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,15 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 f1.keywords:
 - NOCSH
-description: 摘要： Office 365 要求连接到 Internet。 下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。
+description: Office 365 要求连接到 Internet。 下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。
 hideEdit: true
-ms.openlocfilehash: d4c719711bf09f22c0d7adcd87b98bb0a97f579a
-ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 1097baeca9bb3b1ba7c732f23cea4005d6b3529e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46596888"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606499"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 美国政府 DoD 终结点
 

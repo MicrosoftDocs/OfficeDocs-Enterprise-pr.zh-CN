@@ -13,6 +13,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 获取适用于 Skype for business 的管理员帮助-设置 Skype for business、您的网络、会议和即时消息以及用户的外部访问。 配置设置、排除故障和查看使用率报告。
-ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 作为管理员，查找帮助以设置 Skype for Business Online 的各个部分，包括您的网络、会议和即时消息以及用户的外部访问。
+ms.openlocfilehash: 2e0a3b47c89f1573b50681445e150755e0a78985
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841109"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603654"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 中的 Skype for Business Online - 管理员帮助
 

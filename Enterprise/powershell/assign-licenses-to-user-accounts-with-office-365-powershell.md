@@ -16,16 +16,17 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: 如何使用 PowerShell 将 Microsoft 365 许可证分配给未经许可的用户。
-ms.openlocfilehash: 25a57158be82f985885a7ceaf89f526f9d522b4d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 在本文中，我们将了解如何使用 PowerShell 将 Microsoft 365 许可证分配给未经许可的用户。
+ms.openlocfilehash: 824d6b786c3334ae36929e50298e6be0aafd9cb2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229828"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606468"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell 将 Microsoft 365 许可证分配给用户帐户
 
@@ -48,7 +49,7 @@ ms.locfileid: "45229828"
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-接下来，获取要向其添加许可证（也称为用户主体名称（UPN））的帐户的登录名。
+接下来，获取要向其添加许可证（也称为 "用户主体名称" (UPN) ）的帐户的登录名。
 
 接下来，请确保已为用户帐户分配了使用位置。
 
@@ -122,7 +123,7 @@ Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-本示例将**litwareinc： ENTERPRISEPACK** （Office 365 企业版 E3）许可计划中的许可证分配给未经许可的**用户 \@ belindan litwareinc.com**：
+本示例将**litwareinc： ENTERPRISEPACK** (Office 365 企业版 E3) 许可计划中的许可证分配给未经许可的**用户 \@ belindan litwareinc.com**：
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -138,7 +139,7 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLi
 >您无法使用相同的许可计划为用户分配多个许可证。 如果没有足够可用的许可证，将按照 **Get-MsolUser** cmdlet 返回的顺序为用户分配许可证，直到可用许可证用尽。
 >
 
-此示例将**litwareinc： ENTERPRISEPACK** （Office 365 企业版 E3）许可计划中的许可证分配给所有未经许可的用户：
+此示例将**litwareinc： ENTERPRISEPACK** (Office 365 企业版 E3) 许可计划中的许可证分配给所有未经许可的用户：
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -150,13 +151,13 @@ Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwa
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>将用户移动到其他订阅（许可证计划），并使用 Azure Active Directory PowerShell for Graph 模块
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>使用 Azure Active Directory PowerShell for Graph 模块将用户移动到其他订阅 (许可证计划) 
 
 首先，[连接到 Microsoft 365 租户](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
-接下来，获取要对其进行切换订阅（也称为用户主体名称（UPN））的用户帐户的登录名。
+接下来，获取要对其进行切换订阅（也称为用户主体名称 (UPN) ）的用户帐户的登录名。
 
-接下来，使用此命令列出租户的订阅（许可证计划）。
+接下来，使用此命令列出租户 (许可证计划) 的订阅。
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
@@ -171,9 +172,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-确定用户当前拥有的订阅（FROM 订阅）以及用户将移动到的订阅（TO 订阅）。
+确定用户当前已 (FROM 订阅) 的订阅，以及用户将移动到的订阅 (到订阅) 。
 
-最后，指定 TO 和 FROM 订阅名称（SKU 部件号）并运行这些命令。
+最后，指定 TO 和 FROM 订阅名称 (SKU 部件号) 并运行这些命令。
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"
@@ -208,4 +209,4 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
   
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)

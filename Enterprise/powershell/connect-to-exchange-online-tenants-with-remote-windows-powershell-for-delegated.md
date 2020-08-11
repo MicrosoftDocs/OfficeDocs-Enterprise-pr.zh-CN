@@ -1,5 +1,5 @@
 ---
-title: 通过远程 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴连接到 Exchange Online 租户
+title: 使用远程 Windows PowerShell 连接到 Exchange Online 租户，以获取用于合作合作伙伴的
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 摘要：使用 DelegatedOrg 值，通过远程 Windows PowerShell 连接到 Exchange Online。
-ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: bfb041a9ab91cda54e643e8410704662c11ef175
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230828"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606008"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>通过远程 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴连接到 Exchange Online 租户
 
@@ -30,7 +30,7 @@ ms.locfileid: "45230828"
 > [!IMPORTANT]
 > 本主题中的过程仅适用于委派访问权限 (DAP) 合作伙伴。如果你不是 DAP 合作伙伴，请不要使用此主题中的过程。 
   
-DAP 合作伙伴是整合和云解决方案提供商 (CSP) 合作伙伴。 它们通常是面向其他公司的网络或电信提供程序。 它们将订阅捆绑到为其客户提供的服务产品中。 他们拥有将代表（AOBO）权限自动授予给其 Microsoft 365 客户租赁的 "管理" 的合作伙伴租赁，以便他们可以管理和报告其所有客户租赁。
+DAP 合作伙伴是整合和云解决方案提供商 (CSP) 合作伙伴。 它们通常是面向其他公司的网络或电信提供程序。 它们将订阅捆绑到为其客户提供的服务产品中。 他们拥有一个合作伙伴租户，该租赁将代表 () AOBO 为其 Microsoft 365 客户租赁自动授予管理权限，以便他们可以管理和报告其所有客户租赁。
 
 建立合作伙伴可以使用 Exchange Online PowerShell 管理客户 Exchange Online 设置，并从命令行获取 Microsoft 365 报告。 可以使用本地计算机上的 Windows PowerShell 创建到 Exchange Online 的远程 PowerShell 会话。 这是一个简单的三步骤过程，可在其中输入凭据、提供所需的连接设置，然后将 Exchange Online cmdlet 导入到您的本地 Windows PowerShell 会话中，以便您可以使用它们。
 

@@ -22,13 +22,14 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Office 2007 服务器和客户端应用程序的支持已结束，并且自定义支持协议不可用。 使用本文立即开始规划升级。
-ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+description: 本文提供的资源可帮助您从 Office 2007 服务器和客户端进行升级，因为 Office 2007 的支持已结束。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 21147ccd027ba0492ced6078f91932acc3bb958c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906225"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605868"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>可帮助您从 Office 2007 服务器和客户端进行升级的资源
 
@@ -49,9 +50,9 @@ Office 2007 产品和服务的支持已结束。 下面的路线图可帮助您�
 |[从 Office 通信服务器升级](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |2018年1月8日  <br/> |
 |[PerformancePoint Server 2007 停止提供支持路线图](pps-2007-end-of-support.md) <br/> |2018 年 1 月 9 日  <br/> |
    
-当 Microsoft 产品的支持结束时，没有新的安全更新、非安全更新、免费或付费的辅助支持选项（包括自定义支持协议）或在线技术内容更新。无论您是企业组织还是个人家庭用户，都可以考虑以下几个选项：
+在 Microsoft 产品的支持结束时，没有新的安全更新、非安全更新、免费或付费的协助支持选项 (包括自定义支持协议) 或在线技术内容更新。无论您是企业组织还是个人家庭用户，都可以考虑以下几个选项：
 
-## <a name="im-a-home-user-what-do-i-do"></a>我是家庭用户。 What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>我是一位家庭用户。 我怎么办？
 
 如果你在家使用 Office 2007 产品和应用程序，请参阅[此信息](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
      
@@ -61,6 +62,6 @@ Office 2007 产品和服务的支持已结束。 下面的路线图可帮助您�
   
 [Microsoft 生命周期策略](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[规划从 Office 2007 或 Office 2010 服务器和客户端升级](plan-upgrade-previous-versions-office.md)
+[计划升级自 Office 2007 或 Office 2010 服务器和客户端](plan-upgrade-previous-versions-office.md)
   
 

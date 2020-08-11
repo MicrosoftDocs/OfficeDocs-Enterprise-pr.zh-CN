@@ -14,22 +14,24 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: 如果您使用的是 Office 2007 或 Office 2010，请随时规划升级。 不会堵塞过期和不受支持的应用程序和服务器。 使用这些资源开始使用您的计划。
-ms.openlocfilehash: 83881977bdd3e42be47f7a9f08fdaff84742cf55
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.custom:
+- seo-marvel-apr2020
+description: 本文包含使用 Office 2007 或 Office 2010 的用户帮助他们规划升级的资源。
+ms.openlocfilehash: 8ea43c708c84ae81f61bb2acedd8bf60027070d4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735730"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606248"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>规划从 Office 2007 或 Office 2010 服务器和客户端升级
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>计划升级自 Office 2007 或 Office 2010 服务器和客户端
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 如果您的组织使用的是较旧版本的 Office 产品和服务器，这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其[支持的最终](upgrade-from-office-2007-servers-and-products.md)期限。 
 
-- Office 2010 和 Exchange 2010 将在**年10月 13 2020 日**到达其支持结束。 
-- SharePoint 2010 和 Project Server 2010 将在**年4月 13 2021 日**到达其支持终止。 
+- Office 2010 和 Exchange 2010 将于 **2020 年 10 月13日**终止支持。 
+- SharePoint 2010 和 Project Server 2010 将于 **2021 年 4 月 13 日**终止支持。 
 
 若要开始，请使用本文中的资源。
 
@@ -39,7 +41,7 @@ ms.locfileid: "44735730"
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365)是创新的 Office 应用、智能云服务和世界一流的安全性组合，旨在帮助你实现更多。
 
-Microsoft 365 包括的许可证和功能，可帮助确保您的组织使用最新的 Windows 操作系统，并确保您的设备（包括 Windows、iOS 和 Android）已使用需要身份验证和数据保护的策略进行了注册并保持安全。 此外，还将定期更新 Windows 10 和 Microsoft 365 应用程序的企业版（以前称为 Office 365 专业增强版）客户端软件，以包括最新的功能和安全更新。
+Microsoft 365 包括的许可证和功能，可帮助确保您的组织使用最新的 Windows 操作系统，并确保您的设备（包括 Windows、iOS 和 Android）已使用需要身份验证和数据保护的策略进行了注册并保持安全。 此外，Windows 10 和 Microsoft 365 应用程序的企业版 (以前名为 Office 365 专业增强版) 客户端软件将继续更新，以包括最新的功能和安全更新。
   
 Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作效率体验，以数字方式为你的企业进行数字转换。
   
@@ -63,7 +65,7 @@ Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作�
     
     |Office 2007 产品和服务  |Office 2010 产品和服务  |
     |---------|---------|
-    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) （桌面） | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) （桌面） |
+    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (桌面)  | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (桌面)  |
     |[Exchange 2007](exchange-2007-end-of-support.md) |[Exchange 2010](exchange-2010-end-of-support.md) |
     |[SharePoint 2007](sharepoint-2007-end-of-support.md) |[SharePoint 2010](upgrade-from-sharepoint-2010.md) |
     |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |
@@ -84,11 +86,11 @@ Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作�
 
 - 如果您是较小组织的一部分，或者您更愿意自己处理组织的 Office 升级，请参阅将[Microsoft 365 for business 用户升级到最新的 Office 客户端](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)。 
   
-## <a name="im-a-home-user-what-do-i-do"></a>我是家庭用户。 What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>我是一位家庭用户。 我怎么办？
 
 如果使用的是 Office 2007 或 Office 2010 （在家中），请考虑以下更新选项：
 
-- **免费在浏览器中使用 Office。** 在浏览器中创建、查看和编辑 Office 文件，并可从任何具有 internet 访问权限的设备访问这些文件。 [Office for](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) web 包含[适用于 web 的 Word](https://go.microsoft.com/fwlink/p/?linkid=746664)、[适用](https://go.microsoft.com/fwlink/p/?linkid=746665)于 web 的 Excel、适用于 web 的[PowerPoint](https://go.microsoft.com/fwlink/p/?linkid=746666)、适用于[web 的 OneNote](https://go.microsoft.com/fwlink/p/?linkid=746674)、 [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675)、[电子邮件](https://go.microsoft.com/fwlink/p/?linkid=746676)、[日历](https://go.microsoft.com/fwlink/p/?linkid=746678)和[OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679)。 若要开始，请访问[office.com](https://office.com) ，并使用你的[Microsoft 帐户](https://account.microsoft.com/account)登录。 （如果你没有 Microsoft 帐户，可以在[office.com](https://office.com)创建一个。）
+- **免费在浏览器中使用 Office。** 在浏览器中创建、查看和编辑 Office 文件，并可从任何具有 internet 访问权限的设备访问这些文件。 [Office for](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) web 包含[适用于 web 的 Word](https://go.microsoft.com/fwlink/p/?linkid=746664)、[适用](https://go.microsoft.com/fwlink/p/?linkid=746665)于 web 的 Excel、适用于 web 的[PowerPoint](https://go.microsoft.com/fwlink/p/?linkid=746666)、适用于[web 的 OneNote](https://go.microsoft.com/fwlink/p/?linkid=746674)、 [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675)、[电子邮件](https://go.microsoft.com/fwlink/p/?linkid=746676)、[日历](https://go.microsoft.com/fwlink/p/?linkid=746678)和[OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679)。 若要开始，请访问[office.com](https://office.com) ，并使用你的[Microsoft 帐户](https://account.microsoft.com/account)登录。  (如果你没有 Microsoft 帐户，可以在[office.com](https://office.com)创建一个。 ) 
 
 - **试用 Microsoft 365 供家庭使用。** 使用适用于家庭的[Microsoft 365 系列](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab)。 启动试用版，了解 Microsoft 365 系列适用于你的情况。 使用 Microsoft 365 系列，你将享受使用 OneDrive 的云存储。
 
@@ -98,7 +100,7 @@ Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作�
 
     - 如果你的 Windows 电脑运行的是 Windows 10，请考虑获取[Office 家庭 & 学生 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)。
 
-    - 如果你的 Windows 电脑运行的是 Windows 7、8或8.1，并且你现在不升级到 Windows 10，请考虑从授权的经销商处获取 Office 家庭版 & 学生版2016（或其他版本的 Microsoft Office）。
+    - 如果你的 Windows 电脑运行的是 Windows 7、8或8.1，并且你现在不升级到 Windows 10，请考虑从授权的经销商处获取 Office 家庭版 & 学生版 2016 (或其他版本的 Microsoft Office) 。
      
      - 对 Windows 7 的支持已[在2020年1月14日结束](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)，之后 Microsoft 将不提供安全更新或支持。 将 Windows 7 设备升级到 Windows 10 以继续进行安全性和功能更新以及持续支持。
 

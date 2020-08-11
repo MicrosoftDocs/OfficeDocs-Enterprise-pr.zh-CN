@@ -13,20 +13,21 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: 新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 Core customer data 是一项术语，指在 Microsoft Online Services 术语： Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）、SharePoint Online 网站内容和存储在该网站中的文件以及上传到 OneDrive for business 的文件中定义的客户数据子集。
-ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+description: 了解新的 Office 365 datacenter 信息以及如何使用 "数据中心" 选项请求将核心数据移动到新的地理位置。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d612c77eec4cb14e9522f3003c557e7e5bffd900
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547720"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606818"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>将核心数据移动到新的 Microsoft 365 数据中心信息
 
 我们将继续为 Microsoft 365 服务打开新的数据中心信息。 这些新数据中心信息添加容量和计算资源，以支持我们持续的客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。 
 
 Core customer data 是一个术语，指的是一部分客户数据，包括： 
-- Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）
+- Exchange Online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容) 
 - SharePoint Online 网站内容和该网站中存储的文件
 - 上载到 OneDrive for business 的文件
 - 工作组聊天邮件，包括在聊天中使用的专用邮件、频道消息和图像
@@ -52,7 +53,7 @@ Core customer data 是一个术语，指的是一部分客户数据，包括：
 
 
 >[!Note]
->我们在12月2019日启动了德国数据中心区域。 新的 Microsoft 365 客户，其中与租户关联的德国注册地址将把其核心客户数据存储在德国的其他位置。 我们计划在将来为德国客户提供从欧洲到德国的迁移。 目前，Microsoft 云德国/德国客户可以请求迁移到新的德国数据中心区域中的 Office 365 服务。 有关详细信息，请参阅[如何选择从 Microsoft 云德国（Microsoft 云德国）迁移到 Office 365 服务](https://aka.ms/office365germanymoveoptin)。
+>我们在12月2019日启动了德国数据中心区域。 新的 Microsoft 365 客户，其中与租户关联的德国注册地址将把其核心客户数据存储在德国的其他位置。 我们计划在将来为德国客户提供从欧洲到德国的迁移。 目前，Microsoft 云德国/德国客户可以请求迁移到新的德国数据中心区域中的 Office 365 服务。 有关详细信息，请参阅[如何选择从 Microsoft 云德国迁移 (microsoft 云德国) 到 Office 365 service in 新的德国数据中心区域](https://aka.ms/office365germanymoveoptin)。
 >
   
 所有数据中心信息、数据中心和 rest 上的客户数据位置的完整列表都可用作[交互式数据中心地图](https://office.com/datamaps)的一部分。 
@@ -65,7 +66,7 @@ Core customer data 是一个术语，指的是一部分客户数据，包括：
     
 我们需要在全局运营和自动环境中执行数据移动的复杂性、精度和规模将禁止我们在对你的租户或任何其他单一租户完成数据移动时进行共享。 客户在其数据移动完成后，每个参与的服务都会在邮件中心收到一条确认消息。 
     
-数据移动是一种后端服务操作，对最终用户影响最小。 可受影响的功能将在[数据移动页面的过程中和之后](during-and-after-your-data-move.md)列出。 我们遵循[Microsoft Online Services 服务级别协议（SLA）](https://go.microsoft.com/fwlink/p/?LinkId=523897)的可用性，以便客户无需准备或在移动过程中进行监视。 如果需要，将执行任何服务维护的通知。 
+数据移动是一种后端服务操作，对最终用户影响最小。 可受影响的功能将在[数据移动页面的过程中和之后](during-and-after-your-data-move.md)列出。 我们遵循[Microsoft Online Services 服务级别协议 (SLA) ](https://go.microsoft.com/fwlink/p/?LinkId=523897)以获取可用性，这样在移动过程中，客户无需准备或监控。 如果需要，将执行任何服务维护的通知。 
 
 将数据移动到新的数据中心地理位置完成时，客户不需要额外付费。
     

@@ -14,19 +14,20 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 适用于单一登录的 Microsoft 365 客户端应用程序支持。
-ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，了解哪些平台、客户端和 Powershell 模块支持 Microsoft 365 的单一登录。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d0f757c28695c46e6a960828914fff34c7fab5e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998510"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605644"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 客户端应用支持—单一登录
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-当用户登录到 Azure Active Directory （Azure AD）中的应用程序时，单一登录（SSO）将增加安全性和方便性。 通过单一登录，用户可使用一个帐户登录一次，以访问加入域的设备、公司资源、软件即服务（SaaS）应用程序和 web 应用程序。
+单一登录 (SSO) 当用户登录到 Azure Active Directory (Azure AD) 中的应用程序时，会增加安全性和方便性。 通过单一登录，用户可使用一个帐户登录一次，以访问加入域的设备、公司资源、软件作为服务 (SaaS) 应用程序和 web 应用程序。
 
 了解有关[单一登录](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)的详细信息。
 

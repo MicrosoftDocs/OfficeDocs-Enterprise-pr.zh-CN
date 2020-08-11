@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: 了解如何使用适用于 Microsoft 365 的 PowerShell 来创建用户帐户。
-ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 在本文中，我们将了解如何使用 PowerShell 创建用户帐户或多个 Microsoft 365 用户帐户。
+ms.openlocfilehash: 2f4d7b42e68e3bd426ea73c8568e0c603af06dcb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230788"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605988"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 创建 Microsoft 365 用户帐户
 
@@ -38,7 +39,7 @@ ms.locfileid: "45230788"
 |**UserPrincipalName** <br/> |是  <br/> |这是用于登录 Microsoft 365 服务的帐户名称。 例如，CalebS@contoso.onmicrosoft.com。  <br/> |
 |**FirstName** <br/> |否  <br/> ||
 |**LastName** <br/> |否  <br/> ||
-|**LicenseAssignment** <br/> |否  <br/> |这是向用户帐户分配可用许可证的许可计划（也称为许可证计划或 SKU）。 许可证定义了可供帐户使用的 Microsoft 365 服务。 您不必在创建帐户时向用户分配许可证，但该帐户需要许可证才能访问 Microsoft 365 服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
+|**LicenseAssignment** <br/> |否  <br/> |这是许可计划 (也称为 "许可证计划" 或 "SKU) ，可将可用许可证分配给用户帐户。 许可证定义了可供帐户使用的 Microsoft 365 服务。 您不必在创建帐户时向用户分配许可证，但该帐户需要许可证才能访问 Microsoft 365 服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
 |**密码** <br/> |否  <br/> | 如果你没有指定密码，将向用户帐户分配一个随机密码，且该密码将显示在命令结果中。如果你指定了密码，则需要是以下三种类型的 8 到 16 位 ASCII 文本字符：小写字母、大写字母、数字和符号。 <br/> |
 |**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如，US 代表美国，FR 代表法国。 提供此值非常重要，因为某些 Microsoft 365 服务在某些国家/地区不可用，因此，除非帐户配置了此值，否则不能向用户帐户分配许可证。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。  <br/> |
    
@@ -125,4 +126,4 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)

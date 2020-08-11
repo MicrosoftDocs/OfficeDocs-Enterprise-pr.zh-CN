@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365 中的数据损坏的说明，以及 Microsoft 预防和恢复的努力。
-ms.openlocfilehash: 674f2a3a026c5706f5c3a23db6e2d968ed815656
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom: seo-marvel-apr2020
+description: 本文介绍了 Microsoft 365 中的数据损坏情况，以及 Microsoft 在阻止和恢复数据时所采取的努力。
+ms.openlocfilehash: dc8e865a69e110fa0a68e6cd9d9f4d6b45d43d71
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998446"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606628"
 ---
 # <a name="dealing-with-data-corruption-in-microsoft-365"></a>处理 Microsoft 365 中的数据损坏
 
@@ -40,4 +41,4 @@ ms.locfileid: "44998446"
 - 单元测试、集成测试和系统测试
 - 行程线路测试/关口
 
-在 Microsoft 365 的生产环境中，数据中心之间的对等复制可确保始终有任何数据的多个活动副本。 标准图像和脚本用于恢复丢失的服务器，复制的数据用于还原客户数据。 由于内置的数据弹性检查和过程，Microsoft 仅维护 Microsoft 365 信息系统文档的备份（包括与安全相关的文档），并使用 SharePoint Online 中的内置复制和我们的内部代码存储库工具（来源仓库）。 系统文档存储在 SharePoint Online 中，源仓库包含系统和应用程序映像。 SharePoint Online 和源仓库都使用版本控制，并在近实时进行复制。
+在 Microsoft 365 的生产环境中，数据中心之间的对等复制可确保始终有任何数据的多个活动副本。 标准图像和脚本用于恢复丢失的服务器，复制的数据用于还原客户数据。 由于内置的数据弹性检查和过程，Microsoft 仅维护 Microsoft 365 信息系统文档 (，其中包括与安全相关的文档) ，使用 SharePoint Online 中的内置复制和我们的内部代码库工具（来源仓库）。 系统文档存储在 SharePoint Online 中，源仓库包含系统和应用程序映像。 SharePoint Online 和源仓库都使用版本控制，并在近实时进行复制。

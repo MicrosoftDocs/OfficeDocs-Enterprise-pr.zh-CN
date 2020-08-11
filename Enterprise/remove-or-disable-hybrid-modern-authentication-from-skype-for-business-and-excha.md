@@ -15,19 +15,21 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 如果您已启用混合新式身份验证（HMA），则可以禁用 HMA。 本文介绍如何操作。
-ms.openlocfilehash: ad9db5894670b49d2d9a1f385cd9f6acd43ea00f
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: 本文介绍如何从 Skype for Business 和 Exchange 中删除或禁用混合新式身份验证。
+ms.openlocfilehash: 9c3dcb2f4bb8993964707a3f30c699bcea3f0dbb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998201"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606168"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>从 Skype for Business 和 Exchange 删除或禁用混合新式验证
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-如果您已启用混合新式身份验证（HMA），则可以禁用 HMA。 本文介绍如何操作。
+如果已启用混合新式身份验证 (HMA) 仅在找不到适合您的当前环境的情况下，您可以禁用 HMA。 本文介绍如何操作。
   
 ## <a name="who-is-this-article-for"></a>本文的目标是什么？
 
@@ -36,7 +38,7 @@ ms.locfileid: "44998201"
 > [!IMPORTANT]
 > 如果你在 Skype for Business Online 或内部部署中，请参阅 "[使用新式身份验证支持的 Skype For business 拓扑](https://technet.microsoft.com/library/mt803262.aspx)" 一文具有混合拓扑 HMA，在开始之前，需要查看受支持的拓扑。
   
-## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>如何禁用混合新式身份验证（Exchange）
+## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>如何在 Exchange) 中禁用混合新式身份验证 (
 
 1. **Exchange 本地**：打开 Exchange 命令行管理程序并运行以下命令： 
 
@@ -51,7 +53,7 @@ Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 ```
     
-## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>如何禁用混合新式身份验证（Skype for Business）
+## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>如何禁用 (Skype for business) 的混合新式身份验证
 
 1. **Skype**for business 本地：在 Skype For Business 命令行管理程序中运行以下命令：
 

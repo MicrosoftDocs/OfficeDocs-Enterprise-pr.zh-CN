@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 摘要： Microsoft 365 中的隔离控件的说明。
-ms.openlocfilehash: da26bb6a41c97a16865bfdd5bdf6aada2069f7fe
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 了解隔离控制在 Microsoft 365 中的工作方式，允许服务在需要时进行操作或保持自治。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: da49d19371c0b7f704bf7cb1c4c83205b9cc9cb0
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774907"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605614"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Microsoft 365 隔离控件 
 

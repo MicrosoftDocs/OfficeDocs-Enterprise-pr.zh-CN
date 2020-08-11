@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 执行到 Microsoft 365 的直接转换迁移
+title: 使用 PowerShell 直接转换迁移到 Microsoft 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -12,17 +12,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 摘要：了解如何使用 Windows PowerShell 执行到 Microsoft 365 的直接转换迁移。
-ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 了解如何通过执行到 Microsoft 365 的直接转换迁移，使用 PowerShell 一次性移动源电子邮件系统中的内容。
+ms.openlocfilehash: fde0795b767f908fb0d1dcc5ce17a0bb50235d8e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229846"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606218"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>使用 PowerShell 执行到 Microsoft 365 的直接转换迁移
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>使用 PowerShell 直接转换迁移到 Microsoft 365
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
@@ -79,7 +79,7 @@ ms.locfileid: "45229846"
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **为内部部署用户帐户分配访问 Exchange 组织中的邮箱所需的权限。** 用于连接到内部部署 Exchange 组织的本地用户帐户（也称为迁移管理员）必须具有访问要迁移到 Microsoft 365 的本地邮箱的必要权限。。 该用户帐户用于创建内部部署组织的迁移终结点。
+- **为内部部署用户帐户分配访问 Exchange 组织中的邮箱所需的权限。** 用于连接到内部部署 Exchange 组织的本地用户帐户也称为迁移管理员) 必须具有访问要迁移到 Microsoft 365 中的本地邮箱的必要权限 (。 该用户帐户用于创建内部部署组织的迁移终结点。
     
     以下列表显示了使用直接转换迁移迁移邮箱所需的管理权限。有三个可能的选项。
     
@@ -219,7 +219,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
     有关详细信息，请参阅[添加 DNS 记录以连接到您的域](https://go.microsoft.com/fwlink/p/?LinkId=535028)。
     
-- **停止使用内部部署 Exchange 服务器。** 确认所有电子邮件都直接路由到 Microsoft 365 邮箱，并且不再需要维护内部部署电子邮件组织或未计划实施单一登录（SSO）解决方案时，可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
+- **停止使用内部部署 Exchange 服务器。** 确认所有电子邮件都直接路由到 Microsoft 365 邮箱，并且不再需要维护内部部署电子邮件组织或不计划实现单一登录 (SSO) 解决方案时，可以从服务器中卸载 Exchange 并删除内部部署 Exchange 组织。
     
     有关详细信息，请参阅以下资源：
     

@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Skype for Business 中的数据删除说明。
-ms.openlocfilehash: 7c94c5d1ddfb5a8056e139d664627dd1e7bed0de
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，您可以找到有关 Skype for Business 中的数据删除的说明，包括哪些类型的内容不会保留。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40ce2ca16367b0ca4b86ed839ca3ac9c6ddc04e4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997792"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606278"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365 中的 Skype for Business 数据删除
 
@@ -44,7 +45,7 @@ Skype for Business 中的所有存档均被视为 "用户级存档"，因为您�
 - 会议结束时间后，**立即开会会议**-内容将保留8小时。
 
 > [!NOTE]
-> 如果用户未获授权或已禁用（例如，如果**msRTCSIP-msrtcsip-userenabled**设置为*False*），然后重新授权或重新启用，则不会保留会议内容。
+> 如果用户未授权或被禁用 (例如，如果将**msRTCSIP-msrtcsip-userenabled**设置为*False*) ，然后重新获得许可或重新启用，则不会保留会议内容。
 
 ## <a name="meeting-expiration"></a>会议过期
 
@@ -60,12 +61,12 @@ Skype for Business 中的所有存档均被视为 "用户级存档"，因为您�
 
 ## <a name="audio-test-service"></a>音频测试服务
 
-在音频测试服务呼叫过程中，会记录你的语音的短（约5秒）示例。 根据录制的质量，你可以使用语音示例检查和/或验证 Skype for Business 呼叫的声音质量。 当音频测试服务呼叫结束时，语音示例将被删除。
+在音频测试服务呼叫过程中，会记录一个简短的 (大约5秒) 的声音示例。 根据录制的质量，你可以使用语音示例检查和/或验证 Skype for Business 呼叫的声音质量。 当音频测试服务呼叫结束时，语音示例将被删除。
 
 ## <a name="persistent-group-chat"></a>持久组聊天
 
 持续组聊天存储组聊天对话的内容。 如果启用，管理员可以控制保留期、存储此信息的服务器、组内聊天历史记录是否出于合规性或其他目的进行存档，以及如何管理/修改聊天室上的任何属性。 具有不同角色的用户具有对持久化数据的不同访问权限，如下所示：
 
-- 管理员可以从任何聊天室删除较旧的内容（例如，在特定日期之前发布的内容），以使数据库大小不会显著增长。 或者，他们可以删除或替换视为不适合给定聊天室的邮件（或认为不适合）。
+- 管理员可以删除较旧的内容 (例如，在特定日期之前发布的内容) 从任何聊天室，以使数据库大小不会显著增长。 或者，他们可以删除或替换视为不适合给定聊天室的邮件 (或认为不适合的) 。
 - 最终用户（包括邮件作者）无法删除任何聊天室中的内容。
 - 聊天室管理员可以禁用聊天室，但不能删除聊天室。 只有管理员才能在创建聊天室后删除该聊天室。

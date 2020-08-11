@@ -1,5 +1,5 @@
 ---
-title: 从 SharePoint 2010 升级
+title: 升级自 SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -18,15 +18,16 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: 在2010年4月13日2021，SharePoint 和 SharePoint Server 2010 的支持终止。 使用本文作为升级到 SharePoint Online 或本地 SharePoint Server 的更新版本的指南。
-ms.openlocfilehash: 91083cbf64bde3e083ba87e2867e7e1a9e22628c
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+description: 查找要从 SharePoint 2010 和 Sharepoint Server 2010 升级的信息和资源，以支持在10月13日的2020上提供。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6382c375439acaf8b978f6ef5c2813eaebc0701d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102580"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603614"
 ---
-# <a name="upgrading-from-sharepoint-2010"></a>从 SharePoint 2010 升级
+# <a name="upgrading-from-sharepoint-2010"></a>升级自 SharePoint 2010
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
@@ -55,7 +56,7 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年4月 13 2021 日
   
 此矩阵有助于在迁移产品功能和用户数据时绘制课程：
   
-|**支持产品的结束**|**良好**|**最好**|
+|**支持产品的结束**|**Good**|**最好**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013 (本地)   <br/> |SharePoint Online  <br/> |
 ||SharePoint Server 2013 与 SharePoint Online 的混合  <br/> |SharePoint Server 2016 (本地)   <br/> |
@@ -253,13 +254,13 @@ Microsoft SharePoint 2010 和 SharePoint Server 2010 将在**年4月 13 2021 日
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 客户端和服务器以及 Windows 7 的选项的摘要
 
-有关 Office 2010 客户端和服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[支持海报的结尾](./downloads/Office2010Windows7EndOfSupport.pdf)。
+有关 Office 2010 客户端和服务器以及 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅[终止支持海报](./downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 客户端和服务器及 Windows 7 终止支持海报图像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
-本页面海报是一种快速了解您可以采取的各种途径，以防止 Office 2010 客户端和服务器产品和 Windows 7 达到支持的最终状态，并突出显示了 Microsoft 365 企业版中的首选路径和选项支持。
+此海报包含一页内容，可借助它快速了解用于避免 Office 2010 客户端和服务器产品及 Windows 7 停止提供支持的各种方式，突出显示了 Microsoft 365 企业版中的首选方式和选项支持。
 
-您还可以[下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)此海报并在信件、法律或 tabloid 中打印它， (11 x 17) 格式。
+还可以[下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)此海报并按 letter、legal 或 tabloid (11 x 17) 格式打印。
         
 ## <a name="related-topics"></a>相关主题
 

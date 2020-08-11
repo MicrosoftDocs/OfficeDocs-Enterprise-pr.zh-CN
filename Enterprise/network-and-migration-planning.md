@@ -13,18 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: 包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
-ms.openlocfilehash: 530e07aeb2f3420f0c752f2b254913a42c73f8ee
-ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
+description: 本文包含有关网络规划、测试和迁移到 Office 365 的信息的链接。
+ms.openlocfilehash: 56a4d0179f373fd846d2a746d081829a04e94088
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117264"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606748"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
@@ -73,7 +75,7 @@ ms.locfileid: "45117264"
   
 1. 想要立即开始帮助你的用户吗？ 有关在[慢速网络上使用 office 365 的最佳实践](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)，请参阅在网络不合作时使用 office 365 的提示（包括 SharePoint Online、Exchange Online 和 Lync online）。 本文链接到 TechNet 和 Support.office.com 上的内容加载以优化 Office 365 体验，其中包括有关自定义网页的简单方法以及如何设置 Internet Explorer 设置以实现最佳 Office 365 体验的信息。 
     
-2. 阅读[office 365 网络连接原则](https://aka.ms/o365networkingprinciples)，了解用于安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助您了解有关安全优化 Office 365 网络连接的最新指南。 
+2. 阅读[office 365 网络连接原则](https://aka.ms/o365networkingprinciples)，了解用于安全管理 Office 365 流量和获得最佳性能的连接原则。 本文将帮助你了解有关安全优化 Office 365 网络连接的最新指南。 
     
 3. 通过仔细管理 Windows 更新的日程安排，提高邮件迁移性能。 您可以成批更新客户端计算机，并确保在迁移到 Office 365 之前更新所有客户端计算机，以控制网络带宽的使用。 有关详细信息，请参阅为[Office 365 手动更新和配置桌面，以获取最新更新](https://support.microsoft.com/gp/office-2013-365-update)。
     

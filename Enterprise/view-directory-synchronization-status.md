@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -18,13 +20,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
-description: 了解如何停用目录同步。 您还可以查看其状态。
-ms.openlocfilehash: 4c2f0baf6d3657e3eb9974ff7d4f8109e52e603b
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: 在本文中，您将了解如何在 Office 365 中检查目录同步的状态。
+ms.openlocfilehash: 9aaad085854326ebb6542f03256ae851b27f0980
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571035"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605858"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>在 Microsoft 365 中查看目录同步状态
 

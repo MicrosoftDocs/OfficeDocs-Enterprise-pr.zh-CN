@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Office for Mac 应用程序在 macOS 平台上提供了本机应用程序体验。 每个应用程序设计为在各种情况下运行，包括在没有网络访问权限的情况下使用的状态。 当计算机连接到网络时，应用程序将自动连接到一系列基于 web 的服务，以提供增强功能。 本白皮书介绍了应用程序尝试访问的终结点和 Url，以及提供的服务。 此信息在对网络配置问题进行故障排除以及为网络代理服务器设置策略时非常有用。 本文中的详细信息旨在补充 Office 365 URL 和地址范围文章。
-ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 本文介绍 Office for Mac 应用程序尝试访问的终结点和 Url，以及提供的服务。
+ms.openlocfilehash: 70b2da671b590dbe0c7572eebd6d96e0970532e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774947"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606718"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac 中的网络请求
 
@@ -48,7 +50,7 @@ URL 类型定义如下：
 
  **安装和更新**
   
-以下网络终结点用于从 Microsoft Content 传递网络（CDN）下载 Office for Mac 安装程序。
+以下网络终结点用于从 Microsoft Content 传递网络 (CDN) 中下载 Office for Mac 安装程序。
   
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
@@ -59,7 +61,7 @@ URL 类型定义如下：
    
  **首次应用启动**
   
-首次启动 Office 应用时，将会联系到以下网络终结点。 这些终结点为用户提供增强的 Office 功能，而不管许可证类型（包括批量许可证安装）如何联系 Url。
+首次启动 Office 应用时，将会联系到以下网络终结点。 这些终结点为用户提供增强的 Office 功能，无论许可证类型 (（包括批量许可证安装) ），都会联系 Url。
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -73,8 +75,8 @@ URL 类型定义如下：
 |```https://templateservice.office.com/```  <br/> |WXP  <br/> |客户  <br/> |Office 模板服务-为用户提供联机文档模板。  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |客户  <br/> |Office 模板下载-PNG 模板图像的存储。  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |客户  <br/> |Office 应用的存储配置。  <br/> |
-|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |Office Document Integration Services 目录（服务和终结点列表）和主领域发现。  <br/> |
-|```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |客户  <br/> |适用于家庭领域发现 v2 的资源（15.40 及更高版本）  <br/> |
+|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |Office Document Integration Services 目录 (服务和终结点的列表) 和主领域发现。  <br/> |
+|```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |客户  <br/> |适用于家庭领域发现 v2 (15.40 及更高版本的资源)   <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 自动更新清单-检查以查看是否有可用更新  <br/> |
 |```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |SS  <br/> |Microsoft Ajax JavaScript 库  <br/> |
 |```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |固件  <br/> |SS  <br/> |适用于 Office 的维基百科应用配置和资源。  <br/> |
@@ -103,15 +105,15 @@ URL 类型定义如下：
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Windows 授权服务  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 365 登录服务（OrgID）  <br/> |
-|```https://login.live.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 帐户登录服务（MSA）  <br/> |
-|```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |客户  <br/> |Microsoft 帐户登录服务帮助程序（MSA）  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Microsoft 365 登录品牌打造（OrgID）  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 365 登录服务 (OrgID)   <br/> |
+|```https://login.live.com/```  <br/> |WXPON  <br/> |圣保罗  <br/> |Microsoft 帐户登录服务 (MSA)   <br/> |
+|```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |客户  <br/> |Microsoft 帐户登录服务帮助程序 (MSA)   <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Microsoft 365 登录品牌 (OrgID)   <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |文档和位置存储定位程序  <br/> |
-|```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |最近使用的（MRU）文档服务  <br/> |
+|```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |客户  <br/> |最近使用 (MRU) document service  <br/> |
    
 > [!NOTE]
-> 对于基于订阅的许可证和零售许可证，登录既激活了产品，又支持对云资源（如 OneDrive）的访问。 对于批量许可证安装，仍会提示用户登录（默认情况下），但仅当产品已激活时，才需要访问云资源。 
+> 对于基于订阅的许可证和零售许可证，登录既激活了产品，又支持对云资源（如 OneDrive）的访问。 对于批量许可证安装，默认情况下仍会提示用户登录 () ，但仅当产品已激活时，才需要访问云资源。 
   
  **产品激活**
   
@@ -190,9 +192,9 @@ URL 类型定义如下：
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
-|```https://wordcs.officeapps.live.com/```  <br/> |固件  <br/> |客户  <br/> |Word 文档转换服务（PDF）  <br/> |
+|```https://wordcs.officeapps.live.com/```  <br/> |固件  <br/> |客户  <br/> |Word document 转换服务 (PDF)   <br/> |
    
- **Office 应用（亦称为 "外接程序"）**
+ **Office 应用程序 (称为外接程序) **
   
 当 Office 应用外接程序受信任时，以下网络终结点适用于 Microsoft 365 订阅和零售/批量许可证激活。
   
@@ -265,7 +267,7 @@ Office for Mac 的默认配置提供了最佳用户体验，包括功能和保�
     
 - 上面的 "产品激活" 一节中列出的所有终结点。
     
-- 上面的 "Office 应用（称为外接程序）" 一节中列出的所有终结点。
+- "Office 应用程序 (中列出的所有终结点都称为" 外接程序) "一节。
     
 若要为用户重新建立完整的功能，请将首选项设置为 "2" 或将其删除。
   
@@ -311,13 +313,13 @@ Microsoft 会认真对待你的隐私。 你可以在上阅读有关 Microsoft �
   
 ### <a name="updates"></a>更新
   
-Microsoft 按固定时间间隔（通常每月一次）发布 Office for Mac 更新。 我们强烈建议用户和 IT 管理员将计算机保持最新，以确保安装了最新的安全修补程序。 在 IT 管理员希望密切控制和管理计算机更新的情况下，可以设置以下首选项，以防止自动更新过程自动检测和提供产品更新：
+Microsoft 通常会定期在一个月的时间间隔内发布 Office for Mac 更新 () 。 我们强烈建议用户和 IT 管理员将计算机保持最新，以确保安装了最新的安全修补程序。 在 IT 管理员希望密切控制和管理计算机更新的情况下，可以设置以下首选项，以防止自动更新过程自动检测和提供产品更新：
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
 ### <a name="blocking-requests-with-a-firewallproxy"></a>使用防火墙/代理阻止请求
   
-如果你的组织通过防火墙或代理服务器阻止对 Url 的请求，请确保将此文档中列出的 Url 配置为 "允许" 或 "阻止" （例如，403或404） "阻止"。 40X 响应将允许 Office 应用程序正常接受无法访问资源的情况，并提供更快的用户体验，而不只是删除连接，这将导致客户端重试。
+如果您的组织通过防火墙或代理服务器阻止对 Url 的请求，请确保将此文档中列出的 Url 配置为 "允许" 或 "阻止" 40X 响应 (例如，403或 404) 。 40X 响应将允许 Office 应用程序正常接受无法访问资源的情况，并提供更快的用户体验，而不只是删除连接，这将导致客户端重试。
   
 如果代理服务器需要身份验证，则407响应将返回到客户端。 为获得最佳体验，请确保您使用的是 Office for Mac 版本15.27 或更高版本，因为它们包含用于使用 NTLM 和 Kerberos 服务器的特定修补程序。
   

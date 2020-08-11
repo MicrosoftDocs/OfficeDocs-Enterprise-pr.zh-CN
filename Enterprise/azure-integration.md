@@ -13,30 +13,32 @@ ms.collection:
 - M365-identity-device-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
-description: 你的 Microsoft 365 订阅包括 Azure AD 订阅。 如果要使用本地环境进行密码同步或单一登录，请将 Microsoft 365 与 Azure AD 集成。
-ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
-ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
+description: 如果要使用本地环境进行密码同步或单一登录，请将 Microsoft 365 与 Azure AD 集成。
+ms.openlocfilehash: 64fcf25c75e636bebf78e9367f4cc68b367548f7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842054"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606098"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Azure 与 Microsoft 365 的集成
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Microsoft 365 使用 Azure Active Directory （Azure AD）管理场景背后的用户身份。 Microsoft 365 订阅包括对 Azure AD 的免费订阅，这样，如果要同步密码或使用本地环境设置单一登录，则可以将 Microsoft 365 与 Azure AD 集成。 您还可以购买高级功能，以便更好地管理帐户。
+Microsoft 365 使用 Azure Active Directory (Azure AD) 管理场景背后的用户身份。 Microsoft 365 订阅包括对 Azure AD 的免费订阅，这样，如果要同步密码或使用本地环境设置单一登录，则可以将 Microsoft 365 与 Azure AD 集成。 您还可以购买高级功能，以便更好地管理帐户。
   
 Azure 还提供其他功能（如管理集成的应用程序），您可以使用这些功能来扩展和自定义 Microsoft 365 订阅。
   
-您可以使用 Azure AD 部署顾问进行引导式设置和配置体验（您必须登录到 Microsoft 365）：
+您可以使用 Azure AD 部署顾问进行引导式安装和配置体验 (您必须登录到 Microsoft 365) ：
 
  - [Azure AD Connect advisor](https://aka.ms/aadconnectpwsync)
  - [AD FS 部署顾问](https://aka.ms/adfsguidance)
@@ -50,7 +52,7 @@ Azure 还提供其他功能（如管理集成的应用程序），您可以使�
   
 使用免费订阅，您可以与本地目录同步，设置单一登录，并与服务应用程序（如 Salesforce、DropBox 和更多）作为服务应用程序与多个软件同步。
   
-如果需要增强的 Active Directory 域服务（AD DS）功能、双向同步和其他管理功能，可以将免费订阅升级到付费的高级订阅。 有关详细信息，请参阅[Azure Active Directory 版本](https://azure.microsoft.com/pricing/details/active-directory/)。
+如果想要增强 Active Directory 域服务 (AD DS) 功能、双向同步和其他管理功能，可以将免费订阅升级到付费的 premium 订阅。 有关详细信息，请参阅[Azure Active Directory 版本](https://azure.microsoft.com/pricing/details/active-directory/)。
   
 有关 Microsoft 365 和 Azure AD 的详细信息，请参阅[了解 microsoft 365 标识和 Azure Active Directory](about-office-365-identity.md)。
   

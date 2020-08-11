@@ -14,13 +14,14 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: 数据移动是一种后端操作，对最终用户影响最小。 在 Microsoft 将租户的每项服务和关联数据移动到新的数据中心地理位置时，无需执行任何操作。 数据传输和验证在后台进行，并对用户影响最小。
-ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 数据移动是指 Microsoft 将租户的服务和关联数据移到新的数据中心地理位置时发生的后端操作。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6dbfbd9f33aba84086b257ce5a93f01bb707a54c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774487"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606408"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -53,7 +54,7 @@ ms.locfileid: "44774487"
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>在 Outlook Web Access 中打开 "共享文件夹"
 
-某些用户使用 "共享文件夹" 功能在 Outlook Web Access 中打开另一个邮箱中的共享邮件文件夹（该用户对其具有读取或写入权限）。 下表介绍了在邮箱移动过程中共享文件夹的访问工作方式。 请注意，对共享邮箱拥有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
+某些用户从其他邮箱打开共享邮件文件夹， (用户具有使用 "共享文件夹" 功能在 Outlook Web Access 中) 的读取或写入权限。 下表介绍了在邮箱移动过程中共享文件夹的访问工作方式。 请注意，对共享邮箱拥有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
   
 |**配置**|**说明**|
 |:-----|:-----|
@@ -104,7 +105,7 @@ ms.locfileid: "44774487"
     
 - 电子数据展示：在爬网选取更改之前，不会显示在迁移过程中更改的项目。
     
-- 数据丢失保护（DLP）：在爬网选取更改之前，不会对更改的项强制实施策略。
+- 数据丢失保护 (DLP) ：不会对更改的项目强制执行策略，直到爬网选取更改。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -123,11 +124,11 @@ Skype for Business 移动可用于澳大利亚、日本、印度、加拿大、�
   
 |**在整个移动过程中工作的功能**|**移动过程中可能会受到限制的功能**|
 |:-----|:-----|
-| 即时消息和语音呼叫  <br/>  用户可以添加联系人、添加联系人组、添加会议、设置其位置并更改 "今天发生的情况"。  <br/>  音频会议提供商（ACP）设置将复制到目标数据中心地理位置。 如果目标数据中心中存在 ACP 提供程序，则它将正常工作。 否则，它将不会。  <br/> | 租户管理员 TRPS （租户远程 PowerShell）将不可供管理员创建会话。  <br/>  租户管理员 LAC 将不可供管理员登录并更改用户设置。  <br/> |
+| 即时消息和语音呼叫  <br/>  用户可以添加联系人、添加联系人组、添加会议、设置其位置并更改 "今天发生的情况"。  <br/>  音频会议提供商 (ACP) 设置将被复制到目标数据中心地理位置。 如果目标数据中心中存在 ACP 提供程序，则它将正常工作。 否则，它将不会。  <br/> | 租户管理员 TRPS (租户远程 PowerShell) 将不可供管理员创建会话。  <br/>  租户管理员 LAC 将不可供管理员登录并更改用户设置。  <br/> |
    
 |**移动后**|
 |:-----|
-| 会议数据（上载的演示文稿等）将不会移动，需要重新上载。  <br/>  较旧的 Lync 客户端（如 Lync 2010 客户端和 Lync for Mac 2011 客户端）被识别为导致登录问题的服务缓存 DNS 信息。 如果用户不在最新的 Skype for Business Windows 客户端上，则可能需要清除 DNS 缓存。 请参阅[Office 365 中的 Skype For Business ONLINE DNS 配置问题故障排除](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue)。 适用于 Mac 客户端用户的 Lync 应按照[这些说明](https://support.microsoft.com/kb/2629861)操作。  <br/> |
+| 会议数据 (上传的演示文稿等，) 不会移动，需要重新上载。  <br/>  较旧的 Lync 客户端（如 Lync 2010 客户端和 Lync for Mac 2011 客户端）被识别为导致登录问题的服务缓存 DNS 信息。 如果用户不在最新的 Skype for Business Windows 客户端上，则可能需要清除 DNS 缓存。 请参阅[Office 365 中的 Skype For Business ONLINE DNS 配置问题故障排除](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue)。 适用于 Mac 客户端用户的 Lync 应按照[这些说明](https://support.microsoft.com/kb/2629861)操作。  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>涉及第三方音频会议提供商的 Skype for Business 移动
 适用于 Skype for business 的第三方音频会议提供商附加服务不适用于驻留在新地理位置的新数据中心中的用户。  使用第三方音频会议提供商服务的现有客户不应请求移动到新的特定地理位置的数据中心。  如果新客户部署到新的特定地理位置数据中心，则需要请求移动到区域数据中心以使用第三方音频会议提供商。

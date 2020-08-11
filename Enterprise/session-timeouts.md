@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +22,13 @@ search.appverid:
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
-description: 会话超时用于在 Microsoft 365 客户端应用程序中平衡安全性和轻松访问。
-ms.openlocfilehash: d439d36a3a67914658098e757b916dcf110b1df4
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 了解如何使用会话超时在 Microsoft 365 客户端应用程序中平衡安全性和轻松访问。
+ms.openlocfilehash: 72146ca49e07bf3641982bc880897456699d0877
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998154"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605214"
 ---
 # <a name="session-timeouts-for-microsoft-365"></a>Microsoft 365 的会话超时
 
@@ -43,7 +45,7 @@ ms.locfileid: "44998154"
 |Microsoft 365 管理中心  <br/> |系统将要求你为管理中心每隔8小时提供凭据。  <br/> |
 |SharePoint Online  <br/> |只要用户选择 "**让我进入登录**状态"，5天的非活动状态。 如果用户在24小时或更长时间后再次访问 SharePoint Online，则超时值将重置为5天。  <br/> |
 |Outlook Web App  <br/> |6小时。  <br/> 您可以使用[set-organizationconfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) cmdlet 中的_ActivityBasedAuthenticationTimeoutInterval_参数更改此值。  <br/> |
-|Azure Active Directory  <br/> （由启用新式验证的 Office 2013 Windows 客户端使用）  <br/> | 新式验证使用访问令牌和刷新令牌向用户授予使用 Azure Active Directory 的 Microsoft 365 资源的访问权限。 访问令牌是在成功进行身份验证后提供的 JSON Web 令牌，有效期为1小时。 此外，还提供刷新令牌的生存期较长。 当访问令牌过期时，Office 客户端将使用有效的刷新令牌获取新的访问令牌。 如果用户的初始身份验证仍然有效，则 exchange 将成功。  <br/>  刷新令牌有效期为90天，且持续使用，它们在被吊销前可有效。  <br/>  刷新令牌可能会因以下几个事件而无效：  <br/>  用户的密码自发出刷新令牌后已更改。  <br/>  管理员可以应用条件访问策略，该策略将限制对用户尝试访问的资源的访问。  <br/> |
+|Azure Active Directory  <br/> 由启用新式验证的 Office 2013 Windows 客户端使用的 ()   <br/> | 新式验证使用访问令牌和刷新令牌向用户授予使用 Azure Active Directory 的 Microsoft 365 资源的访问权限。 访问令牌是在成功进行身份验证后提供的 JSON Web 令牌，有效期为1小时。 此外，还提供刷新令牌的生存期较长。 当访问令牌过期时，Office 客户端将使用有效的刷新令牌获取新的访问令牌。 如果用户的初始身份验证仍然有效，则 exchange 将成功。  <br/>  刷新令牌有效期为90天，且持续使用，它们在被吊销前可有效。  <br/>  刷新令牌可能会因以下几个事件而无效：  <br/>  用户的密码自发出刷新令牌后已更改。  <br/>  管理员可以应用条件访问策略，该策略将限制对用户尝试访问的资源的访问。  <br/> |
 |适用于 Android、iOS 和 Windows 10 的 SharePoint 和 OneDrive 移动应用  <br/> |访问令牌的默认生存时间为1小时。 刷新令牌的默认最大非活动时间为90天。  <br/> [了解有关令牌和如何配置令牌生存期的详细信息](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> 若要撤销刷新令牌，可以重置用户的 Microsoft 365 密码  <br/> |
 |使用 Microsoft 365 登录的 Yammer  <br/> |浏览器的生存期。 如果用户关闭浏览器并在新浏览器中访问 Yammer，Yammer 将使用 Microsoft 365 重新对其进行身份验证。 如果用户使用的是缓存 cookie 的第三方浏览器，则在重新打开浏览器时，可能不需要重新进行身份验证。  <br/> > [!NOTE]> 仅对使用适用于 Yammer 的 Microsoft 365 登录的网络有效。           |
    

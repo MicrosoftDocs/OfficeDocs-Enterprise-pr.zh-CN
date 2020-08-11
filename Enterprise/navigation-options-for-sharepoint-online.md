@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: 本文介绍 SharePoint Online 中启用了 SharePoint 发布的导航选项网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。 本文不适用于经典团队网站。
-ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 本文介绍 SharePoint Online 中启用了 SharePoint 发布的导航选项网站。
+ms.openlocfilehash: dd11775c35f9eb7d2b6bccc38023b6f8bce8efc4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004757"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606758"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 
@@ -33,13 +35,13 @@ ms.locfileid: "44004757"
 >[!NOTE]
 >如果您使用的是新式 SharePoint 导航选项，如您的其他位置的菜单、级联导航或中心导航，本文不会应用于您的网站。 新式 SharePoint 网站体系结构利用更平展的网站层次结构和中心辐射型模型。 这允许实现许多不需要使用 SharePoint 发布功能的方案。
 
-## <a name="overview"></a>概述
+## <a name="overview-of-navigation-options"></a>导航选项概述
 
 导航提供程序配置会显著影响整个网站的性能，并且必须仔细考虑选择一个导航提供程序和配置，以便有效地扩展以满足 SharePoint 网站的要求。 有两个现成的导航提供程序，以及自定义导航实现。
 
 **如果为您的网站启用结构性导航缓存**，则第一个选项（[**结构导航**](#using-structural-navigation-in-sharepoint-online)）是 SharePoint Online 中的推荐导航选项（如果有）。 此导航提供程序显示当前网站下方的导航项目，以及（可选）当前网站及其同级。 它提供了其他功能，如安全修整和网站结构枚举。 如果禁用缓存，这会对性能和可伸缩性产生负面影响，并且可能会受到限制。
 
-第二个选项 "[**托管（元数据）导航**](#using-managed-navigation-and-metadata-in-sharepoint-online)" 表示使用托管元数据术语集的导航项目。 建议禁用安全修整，除非需要。 将安全修整启用为此导航提供程序的默认安全设置;但是，许多网站不需要安全修整的开销，因为导航元素通常对网站的所有用户都是一致的。 使用建议的配置禁用安全修整后，此导航提供程序不需要枚举网站结构，且高度可扩展，性能影响可接受。
+第二个选项（[**托管 (元数据) 导航**](#using-managed-navigation-and-metadata-in-sharepoint-online)）表示使用托管元数据术语集的导航项。 建议禁用安全修整，除非需要。 将安全修整启用为此导航提供程序的默认安全设置;但是，许多网站不需要安全修整的开销，因为导航元素通常对网站的所有用户都是一致的。 使用建议的配置禁用安全修整后，此导航提供程序不需要枚举网站结构，且高度可扩展，性能影响可接受。
 
 除了现成的导航提供程序之外，许多客户还成功实现了替代的自定义导航实现。 请参阅本文中的[搜索驱动的客户端脚本](#using-search-driven-client-side-scripting)。
   
@@ -50,12 +52,12 @@ ms.locfileid: "44004757"
 |结构导航  |托管导航  |搜索驱动的导航  |自定义导航提供程序  |
 |---------|---------|---------|---------|
 |供<br/><br/>易于维护<br/>安全修整<br/>在内容发生更改时，在24小时内自动更新<br/>     |供<br/><br/>易于维护<br/>|供<br/><br/>安全修整<br/>添加网站时自动更新<br/>快速加载时间和本地缓存导航结构<br/>|供<br/><br/>可用选项的更宽选择<br/>正确使用缓存时的快速加载<br/>许多选项在使用快速响应页面设计时非常有效<br/>|
-|消耗<br/><br/>**如果禁用缓存，则会影响性能**<br/>受限制的主题<br/>|消耗<br/><br/>不会自动更新以反映网站结构<br/>**如果启用了安全修整**或导航结构复杂，则会影响性能<br/>|消耗<br/><br/>无法轻松订购网站<br/>需要自定义母版页（需要技术技能）<br/>|消耗<br/><br/>需要进行自定义开发<br/>需要存储外部数据源/缓存，例如 Azure<br/>|
+|消耗<br/><br/>**如果禁用缓存，则会影响性能**<br/>受限制的主题<br/>|消耗<br/><br/>不会自动更新以反映网站结构<br/>**如果启用了安全修整**或导航结构复杂，则会影响性能<br/>|消耗<br/><br/>无法轻松订购网站<br/>需要自定义母版页 (所需的技术技能) <br/>|消耗<br/><br/>需要进行自定义开发<br/>需要存储外部数据源/缓存，例如 Azure<br/>|
 
 最适合您的网站的选项取决于您的网站要求和您的技术能力。 如果您希望易于配置的导航提供程序在内容发生更改时自动更新，则[启用了缓存](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)的结构导航是一个很好的选择。
 
 >[!NOTE]
->通过将整个网站结构简化为较简单的非分层结构来应用与新式 SharePoint 网站相同的原则可提高性能并简化移动到新式 SharePoint 网站的工作。 这意味着，它不是拥有数百个网站（子网站）的单个网站集，更好的方法是拥有很少子网站（子网站）的多个网站集。
+>通过将整个网站结构简化为较简单的非分层结构来应用与新式 SharePoint 网站相同的原则可提高性能并简化移动到新式 SharePoint 网站的工作。 这意味着它是什么，而不是使用包含数百个网站的单个网站集 (子网站) ，更好的方法是拥有很少子网站 (子网站) 的多个网站集。
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>在 SharePoint Online 中分析导航性能
 
@@ -63,7 +65,7 @@ ms.locfileid: "44004757"
 
 该工具为每个分析页面生成一个报告，该页面显示页面如何针对预定义的规则集执行，并在测试的结果超出比较基准值时显示详细信息。 SharePoint Online 管理员和设计人员可以使用该工具来解决性能问题，以确保新页面在发布之前进行了优化。
 
-**SPRequestDuration**尤其是 SharePoint 处理页面所需的时间。 较长的导航（如在导航中包含页面）、复杂的网站层次结构和其他配置和拓扑选项都可能会显著影响更长的工期。
+**SPRequestDuration**尤其是 SharePoint 处理页面所需的时间。 大量导航 (如导航) 中的页面、复杂的网站层次结构和其他配置和拓扑选项都可能会显著影响延长的工期。
 
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>在 SharePoint Online 中使用结构导航
 
@@ -71,15 +73,15 @@ ms.locfileid: "44004757"
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>如何实现结构导航缓存
 
-在 "**网站设置** > **外观和外观** > **导航**" 下，可以验证是否已选择 "全局导航" 或 "当前导航" 的 "结构导航"。 选择 "**显示页面**" 将对性能产生负面影响。
+在 "**网站设置**  >  **外观和外观**  >  **导航**" 下，可以验证是否已选择 "全局导航" 或 "当前导航" 的 "结构导航"。 选择 "**显示页面**" 将对性能产生负面影响。
 
 ![选择了 "显示子网站" 的结构导航](media/SPONavOptionsStructuredShowSubsites.png)
 
-可以在网站集级别和网站级别启用或禁用缓存，默认情况下启用缓存。 若要在网站集级别启用，请在 "**网站设置** > " "**网站集管理** > **网站集导航**" 下，选中 "**启用缓存**" 框。
+可以在网站集级别和网站级别启用或禁用缓存，默认情况下启用缓存。 若要在网站集级别启用，请在 "**网站设置**" "  >  **网站集管理**  >  **网站集导航**" 下，选中 "**启用缓存**" 框。
 
 ![在网站级别启用缓存](media/structural-nav/structural-nav-caching-site-coll.png)
 
-若要在网站级别启用，请在 "**网站设置** > **导航**" 下选中 "**启用缓存**" 框。
+若要在网站级别启用，请在 "**网站设置**  >  **导航**" 下选中 "**启用缓存**" 框。
 
 ![在网站级别启用缓存](media/structural-nav/structural-nav-caching-site.png)
 
@@ -110,7 +112,7 @@ ms.locfileid: "44004757"
 这些导航提供程序具有以下几个主要优势：
 
 - 它们通常适用于响应页面设计。
-- 它们的可伸缩性和性能极高，因为它们在呈现时无需资源成本（并在超时后在后台进行刷新）。
+- 它们的可伸缩性和性能极高，因为它们可以在不 (资源成本的情况中呈现，并在超时) 后在后台进行刷新。
 - 这些导航提供程序可以使用各种策略检索导航数据，范围从简单静态配置到各种动态数据提供程序。
 
 数据提供程序的一个示例是使用**搜索驱动的导航**，这样可以灵活地枚举导航节点和有效处理安全修整。
@@ -119,15 +121,15 @@ ms.locfileid: "44004757"
 
 使用搜索可以利用连续爬网在后台中构建的索引。 搜索结果从搜索索引中提取，结果将进行安全修整。 当需要安全修整时，这通常比现成的导航提供程序更快。 使用搜索结构导航，尤其是在您有复杂的网站结构时，将会显著加快页面加载时间。 此优先于托管导航的主要优势是，您可以从安全修整中获益。
 
-此方法涉及到创建自定义母版页并将现成的导航代码替换为自定义 HTML。 按照以下示例中概述的此过程操作，以替换文件`seattle.html`中的导航代码。 在此示例中，将打开`seattle.html`文件，并将整个元素`id="DeltaTopNavigation"`替换为自定义 HTML 代码。
+此方法涉及到创建自定义母版页并将现成的导航代码替换为自定义 HTML。 按照以下示例中概述的此过程操作，以替换文件中的导航代码 `seattle.html` 。 在此示例中，将打开 `seattle.html` 文件，并将整个元素替换 `id="DeltaTopNavigation"` 为自定义 HTML 代码。
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>示例：将现成的导航代码替换为母版页
 
 1. 导航到 "网站设置" 页。
 2. 通过单击 "**母版页**" 打开母版页样式库。
-3. 从这里，您可以在库中导航并下载该`seattle.master`文件。
+3. 从这里，您可以在库中导航并下载该文件 `seattle.master` 。
 4. 使用文本编辑器编辑代码，并删除以下屏幕截图中的代码块。<br/>![删除显示的代码块](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. 删除`<SharePoint:AjaxDelta id="DeltaTopNavigation">`和`<\SharePoint:AjaxDelta>`标记之间的代码，并将其替换为以下代码段：<br/>
+5. 删除和标记之间的 `<SharePoint:AjaxDelta id="DeltaTopNavigation">` 代码 `<\SharePoint:AjaxDelta>` ，并将其替换为以下代码段：<br/>
 
 ```javascript
 <div id="loading">
@@ -206,13 +208,13 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. 将结果分配给 self. 节点数组，并使用使用 linq 将输出分配给数组 self 层次结构的对象生成层次结构。 此数组是绑定到 HTML 的对象。 这是通过将 self 对象传递给 applyBinding （）函数在 toggleView （）函数中完成的。<br/>然后，这会将层次结构数组绑定到以下 HTML：<br/>
+8. 将结果分配给 self. 节点数组，并使用 linq.js 将输出分配给数组 self 层次结构的对象生成层次结构。 此数组是绑定到 HTML 的对象。 这是通过将 self 对象传递给 applyBinding ( # A3 函数在 toggleView ( # A1 函数中完成的。<br/>然后，这会将层次结构数组绑定到以下 HTML：<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
 ```
 
-和的事件处理程序将被添加到顶级导航中，以处理在`addEventsToElements()`函数中完成的子网站下拉菜单。 `mouseexit` `mouseenter`
+和的事件处理 `mouseenter` 程序 `mouseexit` 将被添加到顶级导航中，以处理在函数中完成的子网站下拉菜单 `addEventsToElements()` 。
 
 在复杂的导航示例中，没有本地缓存的新页面加载将显示服务器上所用的时间已从基准结构导航中减少，以获取与托管导航方法类似的结果。
 
@@ -456,11 +458,11 @@ function addEventsToElements() {
 
 ```
 
-若要汇总上面的`jQuery $(document).ready`函数中显示的`viewModel object`代码，则表示已创建， `loadNavigationNodes()`然后调用该对象上的函数。 此函数会加载以前在客户端浏览器的 HTML5 本地存储中存储的导航层次结构，或者调用该`queryRemoteInterface()`函数。
+若要汇总上面的函数中显示 `jQuery $(document).ready` 的代码，则 `viewModel object` 表示已创建，然后 `loadNavigationNodes()` 调用该对象上的函数。 此函数会加载以前在客户端浏览器的 HTML5 本地存储中存储的导航层次结构，或者调用该函数 `queryRemoteInterface()` 。
 
-`QueryRemoteInterface()`生成一个请求，并`getRequest()`将该函数与脚本中先前定义的查询参数一起使用，然后从服务器返回数据。 此数据实质上是网站集中所有网站的数组，这些网站表示为具有各种属性的数据传输对象。
+`QueryRemoteInterface()`生成一个请求，并将该 `getRequest()` 函数与脚本中先前定义的查询参数一起使用，然后从服务器返回数据。 此数据实质上是网站集中所有网站的数组，这些网站表示为具有各种属性的数据传输对象。
 
-然后，将此数据解析为之前定义`SPO.Models.NavigationNode`的对象， `Knockout.js`这些对象使用创建可观察到的属性以供将值绑定到我们之前定义的 HTML 中的数据。
+然后，将此数据解析为之前定义的 `SPO.Models.NavigationNode` 对象，这些对象使用 `Knockout.js` 创建可观察到的属性以供将值绑定到我们之前定义的 HTML 中的数据。
 
 然后，将这些对象放入结果数组中。 使用挖空将此数组解析为 JSON，并将其存储在本地浏览器存储中，以改进将来页面加载的性能。
 
@@ -474,9 +476,9 @@ function addEventsToElements() {
 
 - jQueryhttps://jquery.com/
 - KnockoutJS -https://knockoutjs.com/
-- https://linqjs.codeplex.com/Linq 或 github.com/neuecc/linq.js
+- Linq.js https://linqjs.codeplex.com/ 或 github.com/neuecc/linq.js
 
-当前版本的 LinqJS 不包含在上面的代码中使用的 ByHierarchy 方法，将断开导航代码。 若要解决此问题，请将以下方法添加到行`Flatten: function ()`之前的 Linq 文件中。
+当前版本的 LinqJS 不包含在上面的代码中使用的 ByHierarchy 方法，将断开导航代码。 若要解决此问题，请将以下方法添加到 Linq.js 文件中的行之前 `Flatten: function ()` 。
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

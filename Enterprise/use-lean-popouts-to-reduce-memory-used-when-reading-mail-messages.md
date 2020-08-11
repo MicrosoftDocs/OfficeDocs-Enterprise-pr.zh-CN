@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 f1.keywords:
 - NOCSH
-description: 本文包含有关在 web 上的 Outlook 中改进邮件下载性能的信息。
-ms.openlocfilehash: 49b570da9092ce4fc857757a7da72b2a81fd0090
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 本文包含有关使用精益弹出内容改进 web 上的 Outlook 中的邮件下载性能的信息。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9ca2f90c8798c144f2763106c4c9ca9f57e9df1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843903"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603604"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>使用精益弹出内容减少阅读邮件时使用的内存
 
@@ -28,7 +29,7 @@ ms.locfileid: "41843903"
 作为 Office 365 全局管理员，你可以将 web 上的 Outlook 配置为在 Microsoft Edge 或 Internet Explorer 中的特定电子邮件的较小、占用大量内存的版本中提供_精益弹出内容_。 当为 web 上的 Outlook 配置了精益弹出内容时，将加载服务器端呈现的组件以优化性能。
   
 > [!NOTE]
-> 从2018年3月起，精益弹出内容不适用于指定使用权限限制（如信息权限管理（IRM））的邮件。
+> 从2018年3月起，精益弹出内容不适用于指定使用权限限制的邮件，如信息权限管理 (IRM) 。
   
 这些功能将继续在主窗口中运行，但在精益弹出内容中不可用：
   

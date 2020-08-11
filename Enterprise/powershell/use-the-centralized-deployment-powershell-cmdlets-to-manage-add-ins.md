@@ -14,20 +14,22 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 f1.keywords:
 - NOCSH
+ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
+ms.custom:
+- seo-marvel-apr2020
 description: 使用集中部署 PowerShell cmdlet 可帮助您部署和管理适用于 Microsoft 365 组织的 Office 外接程序。
-ms.openlocfilehash: aa8ec43cb0e6bcbcdbb2b4eeb3fd67fec9d8a39b
-ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.openlocfilehash: 849e27dc3bda5dc9e6b4f45bc100e896eae3e281
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45263584"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605344"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
-作为 Microsoft 365 全局管理员，你可以通过集中部署功能向用户部署 Office 外接程序（请参阅[在管理中心部署 Office 加载项](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)）。 除了通过 Microsoft 365 管理中心部署 Office 外接程序之外，你还可以使用 Microsoft PowerShell。 安装[适用于 Windows PowerShell 的 O365 集中外接程序部署模块](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
+作为 Microsoft 365 全局管理员，你可以通过集中部署功能向用户部署 Office 外接程序 (请参阅[在管理中心部署 Office 加载项](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)) 。 除了通过 Microsoft 365 管理中心部署 Office 外接程序之外，你还可以使用 Microsoft PowerShell。 安装[适用于 Windows PowerShell 的 O365 集中外接程序部署模块](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
 
 下载模块后，打开一个常规的 Windows PowerShell 窗口并运行以下 cmdlet：
 

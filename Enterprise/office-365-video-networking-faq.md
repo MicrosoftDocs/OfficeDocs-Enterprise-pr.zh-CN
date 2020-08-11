@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
-description: Office 365 视频存储库和流服务使您的组织内的存储和流式处理视频更加简单。 有关 Office 365 视频的很多重要信息，请参阅。此网络常见问题解答旨在回答有关带宽规划、加密和服务如何利用内容传递网络（Cdn）的常见问题。
-ms.openlocfilehash: 21c7327878bc76bc3bbe92d004a26a4704ef8c3d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
+description: 查找一些有关带宽规划、加密 & 服务如何利用内容传递网络 (Cdn) 的常见问题解答。
+ms.openlocfilehash: 938876075bf849a94f52de9285e83cd442fe2006
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841969"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605474"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 视频网络常见问题
 
-Office 365 视频存储库和流服务使您的组织内的存储和流式处理视频更加简单。 [有关 Office 365 视频](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)的很多重要信息，请参阅。此网络常见问题解答旨在回答有关带宽规划、加密和服务如何利用[内容传递网络](content-delivery-networks.md)（cdn）的常见问题。
+Office 365 视频存储库和流服务使您的组织内的存储和流式处理视频更加简单。 [有关 Office 365 视频](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)的很多重要信息，请参阅。此网络常见问题解答旨在回答有关带宽规划、加密和服务如何利用[内容传递网络](content-delivery-networks.md) (cdn) 的常见问题。
   
 如果你还没有透彻地了解在上载或播放视频时所发生的情况，请查看我们将此视频放在一起的内容，将[视频文件上载到 Office 365 视频时，会发生什么情况](https://www.youtube.com/watch?v=HXSZ0jYBKlM)。
   
@@ -47,24 +49,24 @@ Office 365 视频存储库和流服务使您的组织内的存储和流式处理
 |576p  <br/> |2.5 Mbps  <br/> |
 |720p  <br/> |3.8 Mbps  <br/> |
 
-（[返回到顶部](office-365-video-networking-faq.md)）
+ ([返回页首](office-365-video-networking-faq.md)) 
   
-## <a name="how-do-content-delivery-networks-cdns-help-video-playback"></a>内容传递网络（Cdn）如何帮助视频播放？
+## <a name="how-do-content-delivery-networks-cdns-help-video-playback"></a>内容传递网络如何 (Cdn) 帮助视频播放？
 
-如果同一地理位置中的同一个组织中的多个用户使用同一视频流，则 Cdn 会将这些视频的副本存储在距离该地理区域更近的位置。 将视频存储在最近的位置，或将其缓存在最近的位置，而不是将视频从距离最远的位置流式传输到其他位置。 Office 365 视频使用 Azure 媒体服务管理在 Azure Cdn 中缓存的内容，以及使用多长时间。 Azure 媒体服务可以使用任何[AZURE CDN 位置](https://azure.microsoft.com/documentation/articles/cdn-pop-locations/)将视频片段和清单缓存几天。 如果你组织中的人员继续观看缓存中将保留的缓存视频。 如果没有人在几天内访问视频，则视频最终将从缓存中删除。 下次有人尝试观看视频时，它会再次缓存在最近的 CDN 位置。
+如果同一地理位置中同一组织中的多个人员流 (s) 的同一视频，则 Cdn 将把这些视频的副本存储在距离该地理区域更近的位置。 将视频存储在最近的位置，或将其缓存在最近的位置，而不是将视频从距离最远的位置流式传输到其他位置。 Office 365 视频使用 Azure 媒体服务管理在 Azure Cdn 中缓存的内容，以及使用多长时间。 Azure 媒体服务可以使用任何[AZURE CDN 位置](https://azure.microsoft.com/documentation/articles/cdn-pop-locations/)将视频片段和清单缓存几天。 如果你组织中的人员继续观看缓存中将保留的缓存视频。 如果没有人在几天内访问视频，则视频最终将从缓存中删除。 下次有人尝试观看视频时，它会再次缓存在最近的 CDN 位置。
   
 在内容被缓存在邻近的 CDN 中时，尝试观看视频的每个人都将从较近的热门 CDN 获益，在大多数情况下，远离跃点。 这将提高视频播放速度;但是，不会更改网络要求以播放视频。
   
 > [!NOTE]
 > 在某些情况下，例如我们达到容量限制，在三天内可能会删除视频。
   
-（[返回到顶部](office-365-video-networking-faq.md)）
+ ([返回页首](office-365-video-networking-faq.md)) 
   
 ## <a name="can-i-cache-the-videos-locally-for-faster-playback"></a>是否可以在本地缓存视频以加快播放速度？
 
-能。 Office 365 不会阻止你使用本地 CDN 或缓存代理将视频或其他 Office 365 内容导入到本地网络，以加快访问速度。 在网络上实施本地缓存解决方案的方法有多种，最常见的方法是使用代理解决方案在本地缓存内容。 代理或专用 CDN 缓存了视频片段和清单后，通过代理或专用 CDN 路由的那些文件的未来请求将从本地缓存中提取，而不是从 internet 位置提取。 在规划解决方案的过程中，请考虑网络带宽、容量和视频播放并发性。
+是。 Office 365 不会阻止你使用本地 CDN 或缓存代理将视频或其他 Office 365 内容导入到本地网络，以加快访问速度。 在网络上实施本地缓存解决方案的方法有多种，最常见的方法是使用代理解决方案在本地缓存内容。 代理或专用 CDN 缓存了视频片段和清单后，通过代理或专用 CDN 路由的那些文件的未来请求将从本地缓存中提取，而不是从 internet 位置提取。 在规划解决方案的过程中，请考虑网络带宽、容量和视频播放并发性。
   
-（[返回到顶部](office-365-video-networking-faq.md)）
+ ([返回页首](office-365-video-networking-faq.md)) 
   
 ## <a name="how-videos-are-encrypted-and-secured"></a>如何加密和保护视频？
 
@@ -86,17 +88,17 @@ Office 365 视频了解保护数据安全和保密的重要程度。 [Microsoft 
 
 ![O365 视频播放](media/9d3c6e76-151d-48a3-a30e-ba8dd07db0b7.png)
   
-（[返回到顶部](office-365-video-networking-faq.md)）
+ ([返回页首](office-365-video-networking-faq.md)) 
   
 ## <a name="what-are-the-requirements-to-playback-office-365-video"></a>播放 Office 365 视频的要求是什么？
 
 Office 365 视频支持的操作系统和 web 浏览器与[office 365 系统要求](https://support.office.com/article/Office-365-system-requirements-719254c0-2671-4648-9c84-c6a3d4f3be45)中的 SharePoint Online 要求相同。 根据您拥有的操作系统和 web 浏览器配置，您将确定视频播放器的特定需求。 以下是有关[视频播放要求](https://support.office.com/article/ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)的详细信息。
   
-（[返回到顶部](office-365-video-networking-faq.md)）
+ ([返回页首](office-365-video-networking-faq.md)) 
   
 ## <a name="i-cant-get-office-365-video-to-work-where-should-i-start"></a>我无法使 Office 365 视频正常工作，我应该从哪里开始？
 
-故障排除连接到 Office 365 视频涉及故障排除你的网络、你的 ISP 以及你的 Office 365 的配置。 启动的第一个位置是服务运行状况仪表板。 这将告知你的 Office 365 视频出现问题。 如果一切看起来都非常棒，下面提供了一些帮助您的其他资源。
+故障排除连接到 Office 365 视频涉及故障排除网络、ISP (s) 和您的 Office 365 的配置。 启动的第一个位置是服务运行状况仪表板。 这将告知你的 Office 365 视频出现问题。 如果一切看起来都非常棒，下面提供了一些帮助您的其他资源。
   
 - 请确保您可以连接到[Office 365 视频所需的网络终结点](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)。
 
@@ -106,7 +108,7 @@ Office 365 视频支持的操作系统和 web 浏览器与[office 365 系统要�
 
 - [查找有关 Office 365 视频配置的帮助](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)。
 
-（[返回到顶部](office-365-video-networking-faq.md)）
+ ([返回页首](office-365-video-networking-faq.md)) 
   
 ## <a name="office-365-video-resources"></a>Office 365 视频资源
 
@@ -122,6 +124,6 @@ Office 365 视频支持的操作系统和 web 浏览器与[office 365 系统要�
   
 [在 Office 365 视频中工作的视频格式](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
   
-（[返回到顶部](office-365-video-networking-faq.md)）
+ ([返回页首](office-365-video-networking-faq.md)) 
   
 以下是可以用于返回的简短链接：[https://aka.ms/video365networkfaq](https://aka.ms/video365networkfaq)

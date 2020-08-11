@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
-description: 如果您的组织使用 Office 365 并限制网络中的计算机连接到 Internet，则在下面将找到您应在出站允许列表中包含的终结点 (Fqdn、端口、Url、IPv4 和 IPv6 地址范围) ，以确保您的计算机可以成功使用 Office 365。
+description: 在本文中，您将找到使用 Office 365 美国政府版高计划的客户可访问的终结点。
 hideEdit: true
-ms.openlocfilehash: f8c6707d4d77182c64564dc9f150e60a9153bb4b
-ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
+ms.openlocfilehash: 509cbf028899d0e289bc151922c63f22a231a827
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46596868"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606519"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 美国政府版（GCC）高终结点
 

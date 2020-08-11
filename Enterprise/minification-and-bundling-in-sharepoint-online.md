@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: 本文介绍如何将缩小和捆绑技术与 Web Essentials 结合使用，以减少 HTTP 请求数，并减少在 SharePoint Online 中加载页面所需的时间。
-ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 了解如何将缩小和捆绑技术与 Web Essentials 结合使用，以减少 HTTP 请求以及在 SharePoint Online 中加载页面所需的时间。
+ms.openlocfilehash: 3b840b7da953103448515c51f79ba15cb356ae38
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004767"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605654"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online 中的缩小和捆绑
 
@@ -39,13 +41,13 @@ ms.locfileid: "44004767"
 您可以使用第三方软件（如 Web Essentials）捆绑 CSS 和 JavaScript 文件。
   
 > [!IMPORTANT]
-> Web Essentials 是基于第三方的开放源代码的基于社区的项目。 本软件是对 Visual Studio 2012 和 Visual Studio 2013 的扩展，Microsoft 不支持该软件。 若要下载 Web Essentials，请访问网站[https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)。 
+> Web Essentials 是基于第三方的开放源代码的基于社区的项目。 本软件是对 Visual Studio 2012 和 Visual Studio 2013 的扩展，Microsoft 不支持该软件。 若要下载 Web Essentials，请访问网站 [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) 。 
   
 Web Essentials 提供了两种形式的捆绑：
   
 - . 捆绑：用于 CSS 和 JavaScript 文件
     
-- sprite：图像（仅在 Visual Studio 2013 中可用）
+- sprite：仅在 Visual Studio 2013 中可用的图像 () 
     
 如果具有在自定义母版页中引用的一些品牌元素的现有功能，则可以使用 Web Essentials，例如：
   

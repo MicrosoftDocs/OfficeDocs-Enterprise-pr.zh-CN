@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: 摘要：提供了有关如何使用网络地址转换（NAT）对组织中的每个 IP 地址使用的客户端的正确数量的详细信息。
-ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
-ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
+description: 本文提供了有关如何通过使用 NAT 对组织中的每个 IP 地址使用的客户端数的详细信息。
+ms.openlocfilehash: f5914efb8042076e3ae7cad0d5fcb1f7eb97c12a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201606"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606768"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 中的 NAT 支持
 
@@ -34,21 +36,21 @@ ms.locfileid: "45201606"
 
 通过使用 NAT，企业网络中的数以千计的人员可以 "共享" 几个可公开路由的 IP 地址。
   
-大多数公司网络使用专用（RFC1918） IP 地址空间。 专用地址空间由 Internet 分配的号码颁发机构（IANA）分配，专门用于不直接路由到全球 Internet 的网络。
+大多数公司网络使用专用 (RFC1918) IP 地址空间。 专用地址空间由 Internet 分配的号码颁发机构 (IANA) 并专门用于不直接路由到全球 Internet 的网络。
   
-若要在专用 IP 地址空间上提供对设备的 Internet 访问，组织需要使用提供网络地址转换（NAT）或端口地址转换（PAT）服务的防火墙和代理等网关技术。 这些网关使来自内部设备（包括 Office 365）的通信显示为来自一个或多个可公开路由的 IP 地址。 来自内部设备的每个出站连接都会转换为公共 IP 地址上的其他源 TCP 端口。 
+若要在专用 IP 地址空间上提供对设备的 Internet 访问，组织可以使用网关技术（如防火墙和代理），提供网络地址转换 (NAT) 或端口地址转换 (PAT) services。 这些网关使从内部设备到 Internet 的流量 (包括 Office 365) 似乎来自一个或多个可公开路由的 IP 地址。 来自内部设备的每个出站连接都会转换为公共 IP 地址上的其他源 TCP 端口。 
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>为什么您需要将这么多的连接同时打开到 Office 365？
 
-Outlook 可能会打开八个或更多的连接（在有加载项、共享日历、邮箱等的情况下）。 由于基于 Windows 的 NAT 设备上最多可提供64000个端口，因此在端口耗尽之前，IP 地址最多可以有8000个用户。 请注意，如果客户使用的是基于非 Windows 操作系统的 NAT 设备，则可用端口总数取决于所使用的 NAT 设备或软件。 在这种情况下，最大端口数可能小于64000。 端口的可用性也受其他因素（如 Windows 限制4000端口以供其自己使用）的影响，这会将可用端口的总数减少到60000。 可能存在其他可能同时连接的应用程序（如 Internet Explorer），需要额外的端口。
+如果存在外接程序、共享日历、邮箱等 ) ，Outlook 可能会打开八个或更多的连接 (的情况。 由于基于 Windows 的 NAT 设备上最多可提供64000个端口，因此在端口耗尽之前，IP 地址最多可以有8000个用户。 请注意，如果客户使用的是基于非 Windows 操作系统的 NAT 设备，则可用端口总数取决于所使用的 NAT 设备或软件。 在这种情况下，最大端口数可能小于64000。 端口的可用性也受其他因素（如 Windows 限制4000端口以供其自己使用）的影响，这会将可用端口的总数减少到60000。 可能存在其他可能同时连接的应用程序（如 Internet Explorer），需要额外的端口。
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>使用 Office 365 计算单个公共 IP 地址后的最大受支持设备数
 
-若要确定单个公共 IP 地址后的最大设备数，应监视网络流量以确定每个客户端的峰值端口使用率。 此外，应将峰值因子用于端口使用情况（最小值为4）。 
+若要确定单个公共 IP 地址后的最大设备数，应监视网络流量以确定每个客户端的峰值端口使用率。 此外，使用峰值因子应用于端口使用 (最低 4) 。 
   
  **使用以下公式计算每个 IP 地址支持的设备数：**
   
-单个公共 IP 地址后的最大受支持设备数 = （64000限制的端口）/（峰值端口消耗 + 峰值因子）
+单个公共 IP 地址后的最大受支持设备数 = (64000-受限端口) / (峰值端口消耗 + 峰值因子) 
   
  **例如，如果满足以下条件：**
   
@@ -58,9 +60,9 @@ Outlook 可能会打开八个或更多的连接（在有加载项、共享日历
 
 - **峰值因子：** 4
 
-然后，单个公共 IP 地址后的最大支持设备数 = （64000-4000）/（6 + 4） = 6000
+然后，单个公共 IP 地址后的最大受支持设备数 = (64000-4000) / (6 + 4) = 6000
   
-在 Microsoft Office Outlook 2007 的 9 2011 月9日更新中包含 Office 365 承载包，或 Microsoft Outlook 2010 的11月2011或更高版本的更新中，从 Outlook （Office Outlook 2007 with Service Pack 2 和 Outlook 2010）到 Exchange 的连接数可以只是2。 您需要考虑不同的操作系统、用户行为等，以确定您的网络在高峰期所需的最小和最大端口数。
+在 Microsoft Office Outlook 2007 的9月2011版更新中包含 Office 365 承载包，或 Microsoft Outlook 2010 的11月2011或更高版本的更新中，从 Outlook (Office Outlook 2007 with Service Pack 2 和 Outlook 2010) 到 Exchange 的连接数可以少到2个。 您需要考虑不同的操作系统、用户行为等，以确定您的网络在高峰期所需的最小和最大端口数。
   
 如果要支持单个公用 IP 地址后面的更多设备，请按照概述的步骤来评估可支持的最大设备数：
   

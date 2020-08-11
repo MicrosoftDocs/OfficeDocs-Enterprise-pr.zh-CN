@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 执行到 Microsoft 365 的暂存迁移
+title: 使用 PowerShell 执行分步迁移以迁移到 Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: 摘要：了解如何使用 Windows PowerShell 执行到 Microsoft 365 的暂存迁移。
-ms.openlocfilehash: bc21ec403b0c6daa3fe2411f8f4fea790dd5e71c
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 了解如何使用 PowerShell 将暂存迁移到 Microsoft 365，从而在一段时间后通过源电子邮件系统移动内容。
+ms.openlocfilehash: a50966f65bbec5e4b453c4caf02e4b89fa7d04b5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229788"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606208"
 ---
-# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>使用 PowerShell 执行到 Microsoft 365 的暂存迁移
+# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>使用 PowerShell 执行分步迁移以迁移到 Microsoft 365
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
@@ -63,7 +63,7 @@ ms.locfileid: "45229788"
   
 - 使用公司网络外部的 Outlook 连接到您的内部部署 Exchange 邮箱。
     
-- 使用[Microsoft 远程连接分析器](https://https://testconnectivity.microsoft.com/)测试您的连接设置。使用 Outlook 无处不在（RPC over HTTP）或 Outlook 自动发现测试。
+- 使用[Microsoft 远程连接分析器](https://https://testconnectivity.microsoft.com/)测试您的连接设置。使用 Outlook Anywhere (RPC over HTTP) 或 Outlook 自动发现测试。
     
 - 在 Exchange Online PowerShell 中运行以下命令：
     
@@ -75,7 +75,7 @@ ms.locfileid: "45229788"
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **设置权限**用于连接到内部部署 Exchange 组织的本地用户帐户（也称为迁移管理员）必须具有访问要迁移到 Microsoft 365 的本地邮箱的必要权限。。通过在此过程的后续[步骤（步骤3：创建迁移终结点](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint)）中创建迁移终结点连接到电子邮件系统时，将使用此用户帐户。
+ **设置权限**用于连接到内部部署 Exchange 组织的本地用户帐户也称为迁移管理员) 必须具有访问要迁移到 Microsoft 365 中的本地邮箱的必要权限 (。在此过程中，通过在此过程的后面创建迁移终结点来连接到电子邮件系统时，将使用此用户帐户 ([步骤3：创建迁移终结点](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint)) 。
   
 要迁移邮箱，管理员必须拥有以下权限集之一：
   
@@ -97,11 +97,11 @@ ms.locfileid: "45229788"
   
 创建用户以后，您需要对他们授予许可。您可以在创建用户之后的 30 天内添加许可证。有关添加许可证的步骤，请参阅[步骤 8：完成迁移后任务](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration)。
   
- 您可以使用 Microsoft Azure Active Directory （Azure AD）同步工具或 Microsoft Azure AD 同步服务在 Microsoft 365 中同步和创建本地用户。将邮箱迁移到 Microsoft 365 后，可以在内部部署组织中管理用户帐户，并将其与您的 Microsoft 365 组织同步。有关详细信息，请参阅[目录集成](https://go.microsoft.com/fwlink/?LinkId=521788)。
+ 您可以使用 Microsoft Azure Active Directory (Azure AD) 同步工具或 Microsoft Azure AD 同步服务在 Microsoft 365 中同步和创建本地用户。将邮箱迁移到 Microsoft 365 后，可以在内部部署组织中管理用户帐户，并将其与您的 Microsoft 365 组织同步。有关详细信息，请参阅[目录集成](https://go.microsoft.com/fwlink/?LinkId=521788)。
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>步骤 2：为暂存迁移批处理创建 CSV 文件
 
-在确定要将其本地邮箱迁移到 Microsoft 365 的用户后，使用逗号分隔值（CSV）文件创建迁移批处理。CSV 文件中的每一行（由 Microsoft 365 用于运行迁移）包含有关本地邮箱的信息。 
+在确定要将其本地邮箱迁移到 Microsoft 365 的用户后，使用逗号分隔的值 (CSV ) 文件来创建迁移批处理。CSV 文件中的每一行（由 Microsoft 365 用于运行迁移）包含有关本地邮箱的信息。 
   
 > [!NOTE]
 > 使用暂存迁移可迁移到 Microsoft 365 的邮箱数没有限制。迁移批处理的 CSV 文件最多可包含2000行。若要迁移超过2000的邮箱，请创建其他 CSV 文件，并使用每个文件创建新的迁移批处理。 

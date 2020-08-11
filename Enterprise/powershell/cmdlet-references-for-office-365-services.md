@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 服务的 Cmdlet 参考
+title: Microsoft 365 服务的 cmdlet 参考
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: 摘要：查找适用于 PowerShell cmdlet 的 Microsoft 365 Azure Active Directory、Exchange Online、SharePoint Online、Skype for Business Online 和安全 & 合规性的相关主题。
-ms.openlocfilehash: 71259e49fd70c4f3f7d7ebb7332fe75955797335
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 查找适用于 Azure AD、Exchange Online、SharePoint Online、Skype for Business Online 和安全 & 合规性的 Microsoft 365 PowerShell cmdlet 参考主题。
+ms.openlocfilehash: 92423c9bd1f6a977c41d9077ab30122589ae374f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230858"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606018"
 ---
-# <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 服务的 Cmdlet 参考
+# <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 服务的 cmdlet 参考
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
@@ -34,7 +36,7 @@ ms.locfileid: "45230858"
 
 适用于 Graph 的 Azure Active Directory PowerShell cmdlet 参考主题位于[Azure Active Directory powershell For graph 文档](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)的**参考**部分。
 
-适用于 Windows PowerShell cmdlet 的 Azure Active Directory 模块参考主题位于[Azure Active directory （MSOnline）文档](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)的 "**参考**" 部分。
+适用于 Windows PowerShell cmdlet 的 Azure Active Directory 模块参考主题位于[Azure Active directory (MSOnline) 文档](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)的 "**参考**" 部分。
 
 有关 Microsoft 365 PowerShell 连接说明，请参阅[Connect To Microsoft 365 With powershell](connect-to-office-365-powershell.md)。
   
@@ -71,5 +73,5 @@ Microsoft 365 安全 &amp; 合规中心 cmdlet 参考主题位于[Exchange Onlin
 
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)
 

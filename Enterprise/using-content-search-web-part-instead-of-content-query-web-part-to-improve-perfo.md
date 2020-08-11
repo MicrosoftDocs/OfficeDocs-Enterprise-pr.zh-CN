@@ -13,24 +13,26 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: 本文介绍如何通过将内容查询 Web 部件替换为 SharePoint Server 2013 和 SharePoint Online 中的内容搜索 Web 部件来提高性能。
-ms.openlocfilehash: 16d8e976a96487752a78b91a783041448621a275
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 了解如何通过将内容查询 Web 部件替换为 SharePoint Server 2013 和 SharePoint Online 中的内容搜索 Web 部件来提高性能。
+ms.openlocfilehash: 50706236c3ecdbdf915c257877990c4b9e51e22a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843923"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603534"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>使用内容搜索 Web 部件而不是内容查询 Web 部件来提高 SharePoint Online 中的性能
 
 本文介绍如何通过将内容查询 Web 部件替换为 SharePoint Server 2013 和 SharePoint Online 中的内容搜索 Web 部件来提高性能。
   
-SharePoint Server 2013 和 SharePoint Online 的最强大的新增功能之一是内容搜索 Web 部件（CSWP）。 此 Web 部件使用搜索索引快速检索向用户显示的结果。 使用内容搜索 Web 部件，而不是页面中的内容查询 Web 部件（CQWP）来提高用户的性能。
+SharePoint Server 2013 和 SharePoint Online 的一项最强大的新功能是内容搜索 Web 部件 (CSWP) 。 此 Web 部件使用搜索索引快速检索向用户显示的结果。 使用内容搜索 Web 部件（而不是内容查询 Web 部件） (CQWP) 在页面中，为用户提高性能。
   
 在内容查询 Web 部件上使用内容搜索 Web 部件几乎总是能够在 SharePoint Online 上显著提高页面加载性能。 有一些额外的配置可实现正确的查询，但回报的性能和用户感到高兴更高。
   

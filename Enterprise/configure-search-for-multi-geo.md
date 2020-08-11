@@ -7,18 +7,18 @@ manager: arnek
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: 了解如何在多地理位置环境中配置搜索。
-ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（如 OneDrive for Business）可以在多地理位置环境中返回结果。
+ms.openlocfilehash: 94d8b9de0fc7eeb6b7fda20275686de62eaa9346
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433563"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605768"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>为 Microsoft 365 多地理位置配置搜索
 
@@ -88,12 +88,12 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 <tr class="odd">
 <td align="left"></td>
 <td align="left">多地理位置搜索不支持数值精简的动态存储桶。</td>
-<td align="left">对于数值精简，请使用<a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”参数</a>。</td>
+<td align="left">对数值精简条件使用<a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" 参数</a>。</td>
 </tr>
 <tr class="even">
 <td align="left">文档 ID</td>
 <td align="left">如果正在开发依赖于文档 ID 的搜索驱动的应用程序，请注意，多地理位置环境中的文档 ID 对所有地理位置来说并不是唯一的，它们只对每个地理位置来说是唯一的。</td>
-<td align="left">我们添加了用于标识地理位置的列。 使用此列来实现唯一性。 此列名为“GeoLocationSource”。</td>
+<td align="left">我们添加了用于标识地理位置的列。 使用此列来实现唯一性。 此列的名称为 "GeoLocationSource"。</td>
 </tr>
 <tr class="odd">
 <td align="left">结果数</td>

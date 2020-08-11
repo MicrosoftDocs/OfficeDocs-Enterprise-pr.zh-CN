@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 在卫星定位中启用 SharePoint 多地理位置功能。
-ms.openlocfilehash: 2bf914c6df06f6e1cdfc8c95743f45a53823073c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 本文为全球或 SharePoint 管理员提供有关在卫星地理位置启用 SharePoint 多地理位置的信息。
+ms.openlocfilehash: dc2cd3eeb4c7e74d8dbfee1070338e0e243b0519
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433483"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605848"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>在卫星定位中启用 SharePoint 多地理位置功能
 
@@ -38,11 +38,11 @@ ms.locfileid: "45433483"
 
 要将地理位置设置为 SPO 模式，请连接到要在 SPO 模式中设置的地理位置：
 
-1.  打开 SharePoint Online Management Shell 
-2.  Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
-3.  Set-SPOMultiGeoExperience</br></br>
+1.    打开 SharePoint Online Management Shell 
+2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
+3.    Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience](media/Set-SPO-MultiGeo.jpg)
-4.  此操作通常需要约一小时，在此期间，我们会在服务中执行多种发布返回，并重新戳记你的租户。 至少 1 小时后，请执行 Get-SPOMultiGeoExperience。  这将显示此地理位置是否在 SPO 模式下。</br></br>
+4.    此操作通常需要约一小时，在此期间，我们会在服务中执行多种发布返回，并重新戳记你的租户。 至少 1 小时后，请执行 Get-SPOMultiGeoExperience。  这将显示此地理位置是否在 SPO 模式下。</br></br>
 ![Set-SPOMultiGeoExperience](media/Get-SPO-MultiGeo.jpg)
 
  

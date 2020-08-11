@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 摘要：有关不同 Microsoft 365 云的 Internet 终结点，请参阅这些文章。
-ms.openlocfilehash: 8fe95915f687b38a86fd13fb823a0db39637c47d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: 对于 Microsoft 365 流量的目标 IP 地址和 Url，请使用不同 Microsoft 365 云的 Internet 终结点的文章列表。
+ms.openlocfilehash: 1ef9d3a97beb14a1d51827d145f6fdc644c49f3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592196"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606618"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 终结点
 

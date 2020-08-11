@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 f1.keywords:
 - NOCSH
-description: 了解 Microsoft 365 协作在租户和组织中的工作原理。
-ms.openlocfilehash: 197f12f7c102da30582eb2c4f4447d895ca2768d
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 了解 Microsoft 365 协作如何跨租户和组织工作，从而使不同的组织能够安全地协同工作。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e68df7c7b4d3574951957f576ffe7c896c0d13da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998722"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606558"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 租户间协作
 
@@ -38,15 +39,15 @@ Microsoft 365-租户之间的协作选项包括使用文件和对话的中央位
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|与其他 Microsoft 365 组织共享日历  <br/> |管理员可以在 Exchange Online 中设置不同级别的日历访问权限，以允许企业与其他公司进行协作，并让用户与其他公司共享日程安排（闲/忙信息）  <br/> |[Exchange Online 中的共享](https://technet.microsoft.com/library/jj916670%28v=exchg.150%29.aspx) <br/> [Exchange Online 中的组织关系](https://technet.microsoft.com/library/jj916658%28v=exchg.150%29.aspx) <br/> [在 Exchange Online 中创建组织关系](https://technet.microsoft.com/library/jj916671%28v=exchg.150%29.aspx) <br/> [在 Exchange Online 中修改和组织关系](https://technet.microsoft.com/library/jj916659%28v=exchg.150%29.aspx) <br/> [在 Exchange Online 中删除组织关系](https://technet.microsoft.com/library/jj916657%28v=exchg.150%29.aspx) <br/> [与外部用户共享日历](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
+|与其他 Microsoft 365 组织共享日历  <br/> |管理员可以在 Exchange Online 中设置不同级别的日历访问权限，以允许企业与其他公司进行协作，并让用户共享 (闲/忙信息的日程安排) 与其他人  <br/> |[Exchange Online 中的共享](https://technet.microsoft.com/library/jj916670%28v=exchg.150%29.aspx) <br/> [Exchange Online 中的组织关系](https://technet.microsoft.com/library/jj916658%28v=exchg.150%29.aspx) <br/> [在 Exchange Online 中创建组织关系](https://technet.microsoft.com/library/jj916671%28v=exchg.150%29.aspx) <br/> [在 Exchange Online 中修改和组织关系](https://technet.microsoft.com/library/jj916659%28v=exchg.150%29.aspx) <br/> [在 Exchange Online 中删除组织关系](https://technet.microsoft.com/library/jj916657%28v=exchg.150%29.aspx) <br/> [与外部用户共享日历](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
 |控制用户如何与组织外部的人员共享其日历  <br/> |管理员将共享策略应用于用户邮箱，以控制可以共享的用户和授予的访问权限级别  <br/> |[Exchange Online 中的共享策略](https://technet.microsoft.com/library/jj916673%28v=exchg.150%29.aspx) <br/> [在 Exchange Online 中创建共享策略](https://technet.microsoft.com/library/jj916676%28v=exchg.150%29.aspx) <br/> [将共享策略应用于 Exchange Online 中的邮箱](https://technet.microsoft.com/library/jj916672%28v=exchg.150%29.aspx) <br/> [修改、禁用或删除 Exchange Online 中的共享策略](https://technet.microsoft.com/library/jj916674%28v=exchg.150%29.aspx) <br/> |
-|配置安全的电子邮件通道并控制合作伙伴组织的邮件流  <br/> |管理员创建连接器以将安全性应用于与合作伙伴组织或服务提供商进行的邮件交换。 连接器通过传输层安全性（TLS）强制实施加密，并允许对合作伙伴发送电子邮件的域名或 IP 地址范围进行限制。  <br/> |[Exchange Online 如何使用 TLS 保护电子邮件连接](https://technet.microsoft.com/library/mt163898.aspx) <br/> [使用连接器配置邮件流](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Exchange Online 中的远程域](https://technet.microsoft.com/library/jj966211%28v=exchg.150%29.aspx) <br/> [设置连接器以实现与合作伙伴组织的安全邮件流](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx) <br/> [Exchange Online 的邮件流最佳做法（概述）](https://technet.microsoft.com/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
+|配置安全的电子邮件通道并控制合作伙伴组织的邮件流  <br/> |管理员创建连接器以将安全性应用于与合作伙伴组织或服务提供商进行的邮件交换。 连接器通过传输层安全性 (TLS) 实施加密，并允许对合作伙伴发送电子邮件的域名或 IP 地址范围进行限制。  <br/> |[Exchange Online 如何使用 TLS 保护电子邮件连接](https://technet.microsoft.com/library/mt163898.aspx) <br/> [使用连接器配置邮件流](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Exchange Online 中的远程域](https://technet.microsoft.com/library/jj966211%28v=exchg.150%29.aspx) <br/> [设置连接器以实现与合作伙伴组织的安全邮件流](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx) <br/> [Exchange Online (概述) 的邮件流最佳做法](https://technet.microsoft.com/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
    
 ## <a name="sharepoint-online-and-onedrive-for-business-collaboration-options"></a>SharePoint Online 和 OneDrive for business 协作选项
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|与外部用户共享网站和文档  <br/> |管理员在租户或网站集级别配置 Microsoft 帐户身份验证、工作或学校帐户身份验证或来宾帐户的网站集级别的共享  <br/> |[管理 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [限制 SharePoint 和 OneDrive 内容的共享（按域）](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) <br/> [将 SharePoint Online 用作企业到企业（B2B） extranet 解决方案](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
+|与外部用户共享网站和文档  <br/> |管理员在租户或网站集级别配置 Microsoft 帐户身份验证、工作或学校帐户身份验证或来宾帐户的网站集级别的共享  <br/> |[管理 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [限制 SharePoint 和 OneDrive 内容的共享（按域）](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) <br/> [使用 SharePoint Online 作为企业到企业 (B2B) extranet 解决方案](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
 |跟踪和控制最终用户的外部共享  <br/> |OneDrive for Business 文件所有者和 SharePoint Online 最终用户配置网站和文档共享并建立通知以跟踪共享  <br/> |[为 OneDrive for business 的外部共享配置通知](https://support.office.com/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
 ## <a name="skype-for-business-collaboration-options"></a>Skype for Business 协作选项
@@ -54,13 +55,13 @@ Microsoft 365-租户之间的协作选项包括使用文件和对话的中央位
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
 |Skype for business Online-与其他 Skype for Business 用户的 IM、呼叫和状态  <br/> |管理员可以为其 Skype for Business Online 用户启用 IM，发出音频/视频呼叫，并与另一 Microsoft 365 租户中的用户查看状态。  <br/> |[允许用户连接外部 Skype for Business 用户](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
-|Skype for business Online-Skype （消费者）用户的 IM、呼叫和状态  <br/> |管理员可以为其 Skype for business Online 用户启用 IM、打电话和查看 Skype （消费者）用户的状态。  <br/> |[允许 Skype for Business 用户添加 Skype 联系人](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
+|Skype for business Online-Skype (消费者) 用户的 IM、呼叫和状态  <br/> |管理员可以让其 Skype for business Online 用户使用 Skype (消费者) 用户在即时消息中进行呼叫和查看状态。  <br/> |[允许 Skype for Business 用户添加 Skype 联系人](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
    
 ## <a name="azure-ad-b2b-collaboration-options"></a>Azure AD B2B 协作选项
 
 |**共享目标**|**管理操作**|**操作方法信息**|
 |:-----|:-----|:-----|
-|Azure AD B2B 协作-通过将外部用户添加到组织目录中的组中的内容共享  <br/> |一个 Microsoft 365 租户的全局管理员可以邀请另一个 Microsoft 365 租户中的人员加入其目录，将这些外部用户添加到一个组，并授予对内容的访问权限，如组的 SharePoint 网站和库。  <br/> |[什么是 Azure AD B2B 协作预览？](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B：新的更新使跨业务 collab 变得轻松](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [外部共享和 Azure Active Directory B2B 协作](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory B2B 协作 API 和自定义](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-api) <br/> [Azure AD 和 Identity Show： Azure AD B2B 协作（企业到企业）](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
+|Azure AD B2B 协作-通过将外部用户添加到组织目录中的组中的内容共享  <br/> |一个 Microsoft 365 租户的全局管理员可以邀请另一个 Microsoft 365 租户中的人员加入其目录，将这些外部用户添加到一个组，并授予对内容的访问权限，如组的 SharePoint 网站和库。  <br/> |[什么是 Azure AD B2B 协作预览？](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B：新的更新使跨业务 collab 变得轻松](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [外部共享和 Azure Active Directory B2B 协作](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory B2B 协作 API 和自定义](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-api) <br/> [Azure AD 和 Identity Show： Azure AD B2B 协作 (企业到企业](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
    
 ## <a name="microsoft-365-collaboration-options"></a>Microsoft 365 协作选项
 
@@ -96,13 +97,13 @@ Microsoft 365-租户之间的协作选项包括使用文件和对话的中央位
   
 - **用户帐户：** 帐户无法共享，并且在内部部署 Active Directory 目录服务中的租户或分区之间无法复制帐户。 
     
-- **许可证 &amp; 订阅：** 在 Microsoft 365 中，许可计划中的许可证（也称为 sku 或 Microsoft 365 计划）为用户提供对为这些计划定义的 Microsoft 365 服务的访问权限。 
+- **许可证 &amp; 订阅：** 在 Microsoft 365 中，许可计划中的许可证也称为 sku 或 Microsoft 365 计划) 授予用户对为这些计划定义的 Microsoft 365 服务的访问权限 (。 
     
 - **存储：** 在 Microsoft 365 计划中，SharePoint Online 的软件边界和限制与邮箱存储限制分开管理。 邮箱存储限制通过使用 Exchange Online 进行设置和管理。 在这两种情况下，存储不能跨租户共享。 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>我们可以跨 Microsoft 365 租户共享域命名空间吗？
 
-否。 虚域（例如 fabrikam.com 或 tailspintoys.com）一次只能与一个租户关联和使用。 每个租户都必须具有自己的命名空间;UPN、SMTP 和 SIP 命名空间无法在租户之间共享。
+不正确。 虚域（例如 fabrikam.com 或 tailspintoys.com）一次只能与一个租户关联和使用。 每个租户都必须具有自己的命名空间;UPN、SMTP 和 SIP 命名空间无法在租户之间共享。
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>混合组件和 Microsoft 365 之间的组织之间的协作是什么？
 

@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: 摘要：了解如何使用 PowerShell 管理 Microsoft 365 用户和许可证、Skype for Business Online、SharePoint Online、Exchange Online 和安全 & 合规性中心。
-ms.openlocfilehash: 741ec15a78db9393e11ba6d06720457e20741581
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 了解如何使用 PowerShell 管理 Microsoft 365 用户和许可证以及 Microsoft 365 应用。
+ms.openlocfilehash: ed20ec5bbe05ab0be382b87c04ba2dbc9428b4cc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230508"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605928"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>使用 PowerShell 管理 Microsoft 365
 
@@ -58,9 +59,9 @@ PowerShell for Microsoft 365 是一种功能强大的管理工具，可补充 Mi
 
     若要使用自动化命令来管理安全与合规中心，请从本主题入手。
 
-- [委派访问权限（分配）合作伙伴](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
+- [ () 合作伙伴的委派访问权限](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    如果您想要使用联合和云解决方案提供商（CSP）合作伙伴来管理 Microsoft 365 客户租户，请从这里开始。
+    如果要使用联合和云解决方案提供商 (CSP) 合作伙伴管理您的 Microsoft 365 客户租户，请从这里开始。
 
 - [Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
 

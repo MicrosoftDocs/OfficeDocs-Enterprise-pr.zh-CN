@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 学习如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
-ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: 管理员可以了解如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
+ms.openlocfilehash: 166aa61b6ef3158c8ff479fd1a93252ef1bc50d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548894"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606108"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -36,7 +36,7 @@ BCS、安全存储和应用在每个附属位置都具有单独的实例，因�
 
 ## <a name="ediscovery"></a>电子数据展示 
 
-默认情况下，电子数据展示管理员或多地理位置租户的管理员将只能在该租户的中心位置执行电子数据展示。 Microsoft 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。 若要针对区域配置合规性安全筛选器，请参阅[配置 Microsoft 365 多地理位置电子数据展示](multi-geo-ediscovery-configuration.md)。
+默认情况下，电子数据展示管理员或多地理位置租户的管理员将只能在该租户的中心位置执行电子数据展示。 Office 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。 若要针对区域配置合规性安全筛选器，请参阅[配置 Office 365 多地理位置电子数据展示](multi-geo-ediscovery-configuration.md)。
 
 ## <a name="exchange-mailboxes"></a>Exchange 邮箱
 

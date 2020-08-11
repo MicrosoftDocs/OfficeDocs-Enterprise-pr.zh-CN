@@ -14,13 +14,14 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Microsoft 365 客户端应用程序对基于证书的身份验证的支持。
-ms.openlocfilehash: a174e24c31e9ad2688ead557c29c3fecdac82a56
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，查找有关基于证书的身份验证的 Microsoft 365 客户端应用程序支持的详细信息。。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 759979ac7236ff4a6cf4c77ab52fff9b472b84ec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998594"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606668"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Microsoft 365 客户端应用程序支持—基于证书的身份验证
 

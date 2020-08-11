@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 摘要：使用适用于 Microsoft 365 的 PowerShell 管理 SharePoint Online 用户、组和网站。
-ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
-ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
+description: 在本文中，了解如何使用适用于 Microsoft 365 的 PowerShell 管理 SharePoint Online 用户、组和网站。
+ms.openlocfilehash: 96e9040542ac9a3351cf8b8f3ab314910dc66a3b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "46542813"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605888"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 用户和组
 
@@ -69,7 +70,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 若要使用这些命令，请使用正确的名称替换引号内的所有内容，包括 < 和 > 字符。
 
-例如，以下命令集将 Opal Castillo （用户名 opalc）添加到 Contoso 租赁中 ContosoTest 网站集的网站集管理员列表中：
+例如，以下命令集将 Opal Castillo (用户名 opalc) 添加到 Contoso 租赁中 ContosoTest 网站集上的网站集管理员列表中：
 
 ```powershell
 $tenant = "contoso"
@@ -93,7 +94,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ```
 
-例如，让我们将 Glen Rife （用户名 glenr）添加到 contoso 租赁的 ContosoTest 网站集上的审计员组中：
+例如，让我们将 Glen Rife (用户名 glenr) 添加到 contoso 租赁中 ContosoTest 网站集上的审计员组中：
 
 ```powershell
 $tenant = "contoso"
@@ -168,7 +169,7 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 基本过程是，创建具有与 Windows PowerShell 脚本所需的参数对应的标头（列）的 CSV 文件。 您可以在 Excel 中轻松创建这样的列表，然后将其导出为 CSV 文件。 然后使用 Windows PowerShell 脚本循环访问 CSV 文件中的记录（行），将用户添加到组，将组添加到网站。 
 
-例如，我们创建一个 CSV 文件，以定义一组网站集、组和权限。接下来将创建一个 CSV 文件，将用户填充到组中。最后，要创建并运行一个简单的 Windows PowerShell 脚本，此脚本将创建并填充组。
+例如，让我们创建一个 CSV 文件来定义一组网站集、组和权限。 接下来将创建一个 CSV 文件，将用户填充到组中。 最后，要创建并运行一个简单的 Windows PowerShell 脚本，此脚本将创建并填充组。
 
 第一个 CSV 文件将一个或多个组添加到一个或多个网站集，并具有以下结构：
 
@@ -235,7 +236,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –Logi
 
 该脚本将导入 CSV 文件内容，并使用列中的值填充**remove-spositegroup**和**get-spouser**命令的参数。 在我们的示例中，我们将它保存到驱动器 C 上的 theO365Admin 文件夹中，但你可以将其保存到您想要的任何位置。
 
-下面我们来使用相同的 CSV 文件删除不同网站中多个组的一批人员。 下面是一个示例命令：
+现在，让我们使用同一个 CSV 文件删除不同网站中几个组的一组人员。 下面是一个示例命令：
 
 ```powershell
 Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}

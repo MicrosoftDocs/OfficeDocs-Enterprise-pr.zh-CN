@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
-description: 了解如何将 Azure ExpressRoute 与 Office 365 结合使用，以及如何规划在部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。
-ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 了解如何使用 Azure ExpressRoute 和 Office 365，并规划网络实现项目（如果要使用它进行部署）。
+ms.openlocfilehash: 3d74d8b9274aebd92710f859a8c39aed12fe8da2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230028"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605788"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
@@ -64,11 +66,11 @@ ms.locfileid: "45230028"
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft 团队<sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|门户和共享<sup>1</sup> <br/> Azure Active Directory （Azure AD） <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|门户和共享<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
 <sup>1</sup>这些应用程序中的每一个都具有不受 ExpressRoute 支持的 internet 连接要求，请参阅[Office 365 终结点一文](https://aka.ms/o365endpoints)以了解详细信息。
 
-不包含在适用于 Office 365 的 ExpressRoute 中的服务是 Microsoft 365 应用程序，用于企业客户端下载、本地标识提供程序登录和 Office 365 （由 21 Vianet （由21）服务在中国运营。
+不包含在适用于 Office 365 的 ExpressRoute 中的服务是 Microsoft 365 应用程序，用于企业客户端下载、内部部署标识提供程序登录和 Office 365 (在中国的 21 Vianet) 服务。
 
 ## <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 

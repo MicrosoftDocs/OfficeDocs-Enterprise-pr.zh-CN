@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: 现有的 Office 365 客户需要在其所在国家/地区的最后期限前提交请求，以便将其参与的 Microsoft 365 服务的客户数据移动到其新地理位置。
-ms.openlocfilehash: 06deead188f985f7cd8e410937ae612f3d509b7c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 现有 Office 365 客户必须在其所在国家/地区的截止日期前提交请求，以将其 Microsoft 365 服务数据移动到其新地理位置。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 72b7c7d1f6b6b19ff5749787fd8ea6e789c3372a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433753"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606158"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -54,7 +55,7 @@ ms.locfileid: "45433753"
   
 **如果应用了以下情况之一，则可能不会看到此部分**：
 - 你的租户不符合 Office 365 移动程序的条件。  资格由租户注册国家/地区决定。
-- Rest 上的所有核心客户数据都已位于新地理位置（请参阅页面的 "数据位置" 部分）。 
+- Rest 上的所有核心客户数据都已位于 "新建地理位置" (参阅页面) 的 "数据位置" 部分。 
   
 如果您的组织具有数据驻留要求，并且您需要请求迁移，请标记该复选框，然后再**保存**。
   

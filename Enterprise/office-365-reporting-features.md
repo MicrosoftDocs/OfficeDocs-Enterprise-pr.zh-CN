@@ -14,21 +14,22 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Microsoft 365 中报告功能的说明。
-ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 了解 Microsoft 365 中的各种报告功能，包括 Azure Active Directory 和 Exchange Online。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1e0039f354516f85362a8936d10d9fca2a7e3f6f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997782"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606308"
 ---
-# <a name="microsoft-365-reporting-features"></a>Microsoft 365 报告功能 
+# <a name="microsoft-365-reporting-features"></a>Microsoft 365 报告功能
 
-Microsoft 365 中的报告功能提供了 Azure Active Directory （Azure AD）、Exchange Online、设备管理、监管审核和数据丢失防护（DLP）的各种审核报告。 这些报告与 Microsoft 365 活动报告不同，彼此独立。
+Microsoft 365 中的报告功能为 Azure AD) 、Exchange Online、设备管理、监管审核和数据丢失防护 (DLP) 提供了各种审核报告，其中列出了 Azure Active Directory (。 这些报告与 Microsoft 365 活动报告不同，彼此独立。
 
 ## <a name="microsoft-365-reports-dashboard"></a>Microsoft 365 报告仪表板
 
-Microsoft 365 管理中心预览中的 "报告" 仪表板显示跨 Microsoft 365 的使用情况活动。 Microsoft 365 全局管理员或 Exchange Online、SharePoint Online 或 Skype for Business 管理员可以详细了解该服务的使用情况。 例如，特定 Microsoft 365 服务中的用户数、已为企业激活 Microsoft 365 应用程序的用户数（以前称为 Office 365 专业增强版）以及邮件在组织中的流动量。 报告可用于最近7、30、90和180天。
+Microsoft 365 管理中心预览中的 "报告" 仪表板显示跨 Microsoft 365 的使用情况活动。 Microsoft 365 全局管理员或 Exchange Online、SharePoint Online 或 Skype for Business 管理员可以详细了解该服务的使用情况。 例如，特定 Microsoft 365 服务中的用户数、已激活企业版的 Microsoft 365 应用程序的用户数 (之前命名的 Office 365 专业增强版) ，以及通过组织流出的邮件量。 报告可用于最近7、30、90和180天。
 
 可以使用以下报告：
 
@@ -70,7 +71,7 @@ Exchange Online 审核报告包含有关邮箱访问和管理员对 Exchange Onl
 
 ## <a name="device-compliance-reports"></a>设备合规性报告
 
-您可以使用 Microsoft 365 移动设备管理（MDM）管理和安全连接到订阅的移动设备。 用于访问工作电子邮件、日历、联系人和文档的移动设备在确保员工随时能够随时随地工作的过程中起着重要的作用。 保护组织的信息非常关键。 您可以使用 Microsoft 365 MDM 设置设备安全策略和访问规则。 如果丢失或被盗，还可以使用 Microsoft 365 MDM 来擦除移动设备。
+您可以使用 Microsoft 365 移动设备管理 (MDM) 管理和安全连接到订阅的移动设备。 用于访问工作电子邮件、日历、联系人和文档的移动设备在确保员工随时能够随时随地工作的过程中起着重要的作用。 保护组织的信息非常关键。 您可以使用 Microsoft 365 MDM 设置设备安全策略和访问规则。 如果丢失或被盗，还可以使用 Microsoft 365 MDM 来擦除移动设备。
 
 MDM 合规性报告提供组织设置的用于保护访问 Microsoft 365 数据的移动设备的策略的概述。 此报告允许按符合性状态、报告的冲突、阻止的设备以及由于安全策略而擦除的设备来筛选设备。 有关详细信息，请参阅[适用于 Microsoft 365 的移动设备管理概述](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)。
 
@@ -82,7 +83,7 @@ DLP 策略可帮助管理组织中信息的安全性和流动。 您可以设置
 
 ## <a name="auditing-in-yammer-enterprise"></a>Yammer 企业版中的审核
 
-Yammer Enterprise 为管理员提供了通过[yammer 数据导出 API](https://support.office.com/article/export-data-from-yammer-enterprise-b303d8f3-007d-4ad4-81f8-54fb1ecfb3f2)从其 yammer 网络导出用户活动数据的功能，或通过 yammer 网络管理页面手动导出的功能。 将日志导出的功能仅限于 Yammer 中的网络管理员。 （所有 Microsoft 365 全局管理员都是 Yammer 网络管理员。）
+Yammer Enterprise 为管理员提供了通过[yammer 数据导出 API](https://support.office.com/article/export-data-from-yammer-enterprise-b303d8f3-007d-4ad4-81f8-54fb1ecfb3f2)从其 yammer 网络导出用户活动数据的功能，或通过 yammer 网络管理页面手动导出的功能。 将日志导出的功能仅限于 Yammer 中的网络管理员。  (所有 Microsoft 365 全局管理员都是 Yammer 网络管理员。 ) 
 
 可导出以下数据：
 
@@ -90,10 +91,10 @@ Yammer Enterprise 为管理员提供了通过[yammer 数据导出 API](https://s
 |----------------------------|-------------------------------------------------------------------------|
 | Users.csv | 网络中的所有新的、挂起的和挂起的用户 |
 | Messages.csv | 网络中的所有邮件 |
-| Files.csv （元数据） | 元数据，如文件名、文件 API URL、上载 ID、上载位置等。 |
-| Files.csv （原始文件） | 用户上载到 Yammer 中的原始文件的 Zip 文件 |
+| Files.csv (元数据)  | 元数据，如文件名、文件 API URL、上载 ID、上载位置等。 |
+| Files.csv (原始文件)  | 用户上载到 Yammer 中的原始文件的 Zip 文件 |
 | Topics.csv | 在网络上创建的主题 |
-| Pages.csv | 用户在网络中创建的页面（注释） |
+| Pages.csv | 由网络中的用户创建的页面 (注释)  |
 | Admins.csv | 网络中所有已验证的管理员 |
 | Networks.csv | 所有 Yammer 外部网络 |
 

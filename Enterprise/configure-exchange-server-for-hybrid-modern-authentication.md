@@ -15,13 +15,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 混合新式身份验证 (HMA) ，是一种提供更安全的用户身份验证和授权的身份管理方法，可用于 Exchange server 本地混合部署。
-ms.openlocfilehash: afc3b2926f02a64a9f2f27ba85e5264258b49c3b
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: 了解如何在本地将 Exchange Server 配置为使用混合新式身份验证 (HMA) ，从而为您提供更安全的用户身份验证和授权。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8cffd30b07cf3f99be67cdc52f14534e639552ae
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548875"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606068"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 

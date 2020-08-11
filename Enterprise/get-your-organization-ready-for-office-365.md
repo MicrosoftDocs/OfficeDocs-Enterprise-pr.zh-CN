@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: 获取对要为 Microsoft 365 企业版部署规划的资源的访问权限。
-ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: 本文提供了用于规划 Microsoft 365 企业版部署的清单和其他资源。
+ms.openlocfilehash: 0f3fb9a70f9f5035f2f1a0f3a90ce1a50ac3c6b8
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774467"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606388"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>规划 Microsoft 365 企业版
 
@@ -45,18 +47,18 @@ ms.locfileid: "44774467"
 
 - 你的 Microsoft 365 租户
 
-  包括规划与 Internet 的网络连接、Microsoft 365 标识以及与应用、内部部署、Azure 和其他元素的集成。 从[这里](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)开始。
+  包括规划与 Internet 的网络连接、Microsoft 365 标识以及与应用、内部部署、Azure 和其他元素的集成。 有关详细信息，请转到[Microsoft 云服务的订阅、许可证、帐户和租户](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)。
 
 - 对客户端的支持
 
-  包括基于证书的身份验证、移动设备管理、身份验证选项和租户间协作。 从[这里](office-365-client-support-certificate-based-authentication.md)开始。
+  包括基于证书的身份验证、移动设备管理、身份验证选项和租户间协作。 有关详细信息，请转到[基于证书的身份验证](office-365-client-support-certificate-based-authentication.md)。
 
 - 支持混合新式身份验证
 
-  包括在使用关键 Microsoft 365 生产力应用的混合配置时规划新式验证。 从[这里](hybrid-modern-auth-overview.md)开始。
+  包括在使用关键 Microsoft 365 生产力应用的混合配置时规划新式验证。 有关详细信息，请转到 "[混合新式身份验证概述和先决条件](hybrid-modern-auth-overview.md)"。
 
 - 较旧的 Office 客户端和服务器
 
-  包括 Office 2007 和 Office 2010 客户端和服务器产品的迁移信息。 从[这里](plan-upgrade-previous-versions-office.md)开始。
+  包括 Office 2007 和 Office 2010 客户端和服务器产品的迁移信息。 有关详细信息，请参阅[规划升级](plan-upgrade-previous-versions-office.md)。
 
 您还可以登录到 Microsoft 365 订阅，并使用[microsoft 365 和 Office 365 服务的设置指南](setup-guides-for-office-365.md)。

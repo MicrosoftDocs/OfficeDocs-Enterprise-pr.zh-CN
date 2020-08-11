@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 摘要： Microsoft 365 搜索中的租户隔离说明。
-ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，我们将详细介绍租户隔离如何在 Microsoft 365 搜索中对各个租户数据进行工作。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b887088799c83422a6bc5797a76dde73a58e2f29
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998252"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605584"
 ---
 # <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 搜索中的租户隔离
 
@@ -54,10 +55,10 @@ SharePoint Online 搜索使用租户分离模型来平衡共享数据结构的�
 
 ## <a name="document-access-control-list-checks"></a>文档访问控制列表检查
 
-搜索控制通过在搜索索引中保存的 Acl 对文档的访问。 每个项目都使用特殊 ACL 字段中的一组术语编制索引。 ACL 字段包含可查看文档的每个组或用户一个术语。 每个查询都使用一系列访问控制项（ACE）术语进行扩充，每个查询已通过身份验证的用户所属的组一个。
+搜索控制通过在搜索索引中保存的 Acl 对文档的访问。 每个项目都使用特殊 ACL 字段中的一组术语编制索引。 ACL 字段包含可查看文档的每个组或用户一个术语。 每个查询都扩充了 (ACE) 术语的访问控制项列表，每个查询已通过身份验证的用户所属的组一个。
 
-例如，类似于 "<*guid*> 的查询。*FOO 和 tenantID*： <*guid*> "将变为：" <*guid*>。*foo 和 tenantID*： <*guid* >  *和*（*docACL：* < *ace1* >  *或 docACL*： <*ace2* >  *or docACL*： <*ace3* >  *...*） "
+例如，类似于 "<*guid*> 的查询。*FOO 和 tenantID*： <*guid*> "将变为：" <*guid*>。*foo 和 tenantID*： <*guid* >  *和* (*docACL：* < *ace1* >  *或 docACL*： <*ace2* >  *or docACL*： <*ace3* >  *...*) "
 
 由于用户和组标识符，因此 Ace 是唯一的，因此这将为仅对某些用户可见的文档提供其他级别的安全性。 对于在租户中向常规用户授予访问权限的特殊 "除外部用户之外的任何人" ACE 也是如此。 但由于 "Everyone" 的 Ace 对于所有租户都是相同的，因此公共文档的租户分隔取决于租户 ID 筛选。 此外，还支持 Deny Ace。 当与 deny ACE 匹配时，查询扩充将添加从结果中删除文档的子句。
 
-在 Exchange Online 搜索中，索引在邮箱 ID 上针对单个用户的邮箱（而不是租户 ID （订阅 ID））进行分区，就像在 SharePoint Online 中一样。 分区机制与 SharePoint Online 相同，但没有 ACL 筛选。
+在 Exchange Online 搜索中，索引对单个用户邮箱的邮箱 ID 进行分区，而不是租户 ID (订阅 ID) 在 SharePoint Online 中。 分区机制与 SharePoint Online 相同，但没有 ACL 筛选。

@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
-description: 部署 Microsoft 365 后，可以使用下面的一些工具和技术来维护 Microsoft 365 连接。你将需要了解官方服务运行状况和连续性准则以及我们在慢速网络上使用 Microsoft 365 的最佳做法。
-ms.openlocfilehash: aa47ff76f70e48285c6ca5f21ffdf30f1db52521
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: 在本文中，您将了解可用于监视和维护 Microsoft 365 连接的工具和技术。
+ms.openlocfilehash: 791352910cf82bf4d43543166cb4b1e974f9a238
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571005"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606858"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>监视 Microsoft 365 连接
 
@@ -41,7 +43,7 @@ ms.locfileid: "46571005"
 
 以下是可以用于返回的简短链接：[https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [配置 Microsoft 365 企业版服务和应用程序](configure-services-and-applications.md)
   

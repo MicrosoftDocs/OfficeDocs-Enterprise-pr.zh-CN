@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: '摘要：使用这些文章以在 Microsoft Azure 中部署 Office Server 工作负荷。 '
-ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 提供指向在 Microsoft Azure 中部署 Office Server 工作负荷的有用信息的链接列表。
+ms.openlocfilehash: abefa94dd193286021fd187499eac28b6bc41f87
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229948"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605718"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 
@@ -46,12 +48,12 @@ ms.locfileid: "45229948"
 - [Microsoft Azure 中使用 SharePoint Server 2013 的 Internet 站点](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [云应用和混合解决方案](cloud-adoption-and-hybrid-solutions.yml)
   
 [Microsoft 云 IT 体系结构资源](microsoft-cloud-it-architecture-resources.md)
   
-[适用于企业测试实验室指南的 Microsoft 365 （Tlg）](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
+[适用于企业测试实验室指南 (Tlg) 的 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)

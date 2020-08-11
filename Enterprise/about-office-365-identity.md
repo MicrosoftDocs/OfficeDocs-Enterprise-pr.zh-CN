@@ -14,25 +14,27 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-mar2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: 了解如何在 Microsoft 365 中管理用户标识。
-ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 了解如何使用仅限云或混合标识模型在 Microsoft 365 中管理 Azure AD 用户标识服务。
+ms.openlocfilehash: fee2f0e9c8a2ee1216fb2a37e6d517348111b064
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433613"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605828"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 标识模型和 Azure Active Directory
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Microsoft 365 使用 Azure Active Directory （Azure AD），这是 Microsoft 365 订阅附带的基于云的用户标识和身份验证服务，用于管理 Microsoft 365 的身份和身份验证。 正确配置您的身份基础结构对于管理您的组织的 Microsoft 365 用户访问和权限至关重要。
+Microsoft 365 使用 Azure Active Directory (Azure AD) （一种基于云的用户标识和身份验证服务）包含在 Microsoft 365 订阅中，用于管理 Microsoft 365 的身份和身份验证。 正确配置您的身份基础结构对于管理您的组织的 Microsoft 365 用户访问和权限至关重要。
 
 开始之前，请观看此视频，以获取 Microsoft 365 身份模型和身份验证的概述。
 
@@ -42,7 +44,7 @@ Microsoft 365 使用 Azure Active Directory （Azure AD），这是 Microsoft 36
 
 ## <a name="microsoft-365-identity-models"></a>Microsoft 365 标识模型
 
-若要规划用户帐户，首先需要了解 Microsoft 365 中的两个标识模型。 您可以仅在云中维护组织的标识，也可以维护内部部署 Active Directory 域服务（AD DS）标识，并在用户访问 Microsoft 365 云服务时使用它们进行身份验证。  
+若要规划用户帐户，首先需要了解 Microsoft 365 中的两个标识模型。 您可以仅在云中维护组织的标识，也可以维护内部部署 Active Directory 域服务 (AD DS) 标识，并在用户访问 Microsoft 365 云服务时使用它们进行身份验证。  
 
 下面是两种类型的标识及其最佳优势。
 
@@ -62,7 +64,7 @@ Microsoft 365 使用 Azure Active Directory （Azure AD），这是 Microsoft 36
  
 ![仅限云标识的基本组件](./media/about-office-365-identity/cloud-only-identity.png)
 
-内部部署和远程（联机）用户使用其 Azure AD 用户帐户和密码来访问 Microsoft 365 云服务。 Azure AD 根据其存储用户帐户和密码对用户凭据进行身份验证。
+内部部署和远程 (联机) 用户使用其 Azure AD 用户帐户和密码来访问 Microsoft 365 云服务。 Azure AD 根据其存储用户帐户和密码对用户凭据进行身份验证。
 
 ### <a name="administration"></a>管理
 由于用户帐户仅存储在 Azure AD 中，因此可使用[Microsoft 365 管理中心](https://admin.microsoft.com)和[Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell)等工具管理云标识。 
@@ -71,7 +73,7 @@ Microsoft 365 使用 Azure Active Directory （Azure AD），这是 Microsoft 36
 
 混合标识使用源自内部部署 AD DS 的帐户，并在 Microsoft 365 订阅的 Azure AD 租户中拥有副本。 但是，大多数更改仅以单向方式流动。 对 AD DS 用户帐户所做的更改将同步到其在 Azure AD 中的副本。 但是，在 Azure AD 中对基于云的帐户所做的更改（例如，新用户帐户）不会与 AD DS 同步。
 
-Azure AD Connect 提供了持续的帐户同步。 它在本地服务器上运行，检查 AD DS 中的更改，并将这些更改转发到 Azure AD。 Azure AD Connect 提供了筛选要同步的帐户以及是否同步用户密码的哈希版本（称为密码哈希同步（PHS））的功能。
+Azure AD Connect 提供了持续的帐户同步。 它在本地服务器上运行，检查 AD DS 中的更改，并将这些更改转发到 Azure AD。 Azure AD Connect 提供了筛选要同步的帐户以及是否同步哈希版本的用户密码（称为密码哈希同步 (PHS) ）的功能。
 
 在实现混合标识时，内部部署 AD DS 是帐户信息的权威源。 这意味着您在内部部署中经常执行管理任务，这些任务随后将同步到 Azure AD。 
 

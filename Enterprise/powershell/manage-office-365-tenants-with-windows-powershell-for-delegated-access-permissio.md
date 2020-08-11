@@ -1,5 +1,5 @@
 ---
-title: 使用 Windows PowerShell 为委派访问权限（分配）合作伙伴管理 Microsoft 365 租户
+title: 使用 Windows PowerShell 为 "联盟" 合作伙伴管理 Microsoft 365 租户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,23 +14,23 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 摘要：使用适用于 Microsoft 365 的 PowerShell 管理客户租赁。
-ms.openlocfilehash: 31ce5b9a7bdfa50234c76be65eaeb99d6d199136
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 在本文中，您将了解如何使用适用于 Microsoft 365 的 PowerShell 来管理客户租赁。
+ms.openlocfilehash: b1e0459b906bd0a06758147923dff0dcc0af1b3e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230588"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605938"
 ---
-# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 为委派访问权限（分配）合作伙伴管理 Microsoft 365 租户
+# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 为 Microsoft 365 租户管理 () 合作伙伴的委派访问权限
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Windows PowerShell 允许联合和云解决方案提供商（CSP）合作伙伴轻松管理和报告 Microsoft 365 管理中心中不可用的客户租赁设置。请注意，需要代表（AOBO）权限进行管理，合作伙伴管理员帐户才能连接到其客户租赁。
+Windows PowerShell 允许联合和云解决方案提供商 (CSP) 合作伙伴轻松管理和报告 Microsoft 365 管理中心中不可用的客户租赁设置。请注意，代表 (AOBO 的管理) 权限是合作伙伴管理员帐户连接到其客户租赁所必需的。
   
-委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Microsoft 365 订阅捆绑到其客户的服务产品中。 在销售 Microsoft 365 订阅时，会自动将代表（AOBO）权限的 "管理" 授予 "客户" 租赁，以便他们可以管理和报告客户租赁。
+委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Microsoft 365 订阅捆绑到其客户的服务产品中。 在销售 Microsoft 365 订阅时，会自动为他们代表 (AOBO) 权限授予对 customer 租赁的管理权限，以便他们可以管理和报告客户租赁。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
 本主题中的过程要求连接到[使用 PowerShell 的 Microsoft 365 连接](connect-to-office-365-powershell.md)。
@@ -100,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>添加用户、设置选项并分配许可证
 
-Microsoft 365 用户的批量创建、配置和许可对于使用适用于 Microsoft 365 的 PowerShell 尤其有效。 在这两个步骤的过程中，首先为要在逗号分隔值（CSV）文件中添加的所有用户创建条目，然后使用 PowerShell for Microsoft 365 导入该文件。 
+Microsoft 365 用户的批量创建、配置和许可对于使用适用于 Microsoft 365 的 PowerShell 尤其有效。 在这两个步骤的过程中，首先为您要在 CSV) 文件 (的逗号分隔值中添加的所有用户创建条目，然后使用 PowerShell for Microsoft 365 导入该文件。 
   
 #### <a name="create-a-csv-file"></a>创建 CSV 文件
 

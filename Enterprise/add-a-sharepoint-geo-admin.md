@@ -11,13 +11,14 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 了解如何在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
-ms.openlocfilehash: 13b730de6b318ddb3a4cf3a084d4b59e56a82dbf
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 是否需要为每个地理位置配置单独的管理员？ 了解如何在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b69ff352ae0e5ceb55200e0ed034e278808cdc9f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433603"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605818"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
 
@@ -55,7 +56,7 @@ ms.locfileid: "45433603"
 
 若要使用对象 ID 删除组，请运行 `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 

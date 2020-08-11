@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用适用于 Microsoft 365 的 PowerShell 为 Skype for Business Online 策略分配每用户通信设置。
-ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a5850c24f991161ec1de817d5b3f5037e9526767
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229838"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606458"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>为 Microsoft 365 的 PowerShell 分配每用户 Skype for Business Online 策略
 
@@ -27,13 +27,13 @@ ms.locfileid: "45229838"
 
 使用 PowerShell for Microsoft 365 是将每个用户的通信设置分配到 Skype for Business Online 策略的有效方式。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="prepare-to-run-the-powershell-commands"></a>准备运行 PowerShell 命令
 
-使用以下说明设置运行命令（跳过已完成的步骤）：
+使用以下说明设置运行命令 (跳过已完成的步骤) ：
   
 1. 下载并安装[Skype For Business Online 连接器模块](https://www.microsoft.com/download/details.aspx?id=39366)。
     
-2. 打开 Windows PowerShell 命令提示符，并运行以下命令： 
+2. 开启 Windows PowerShell 命令提示符并运行以下命令： 
     
 ```powershell
 Import-Module LyncOnlineConnector
@@ -46,7 +46,7 @@ Import-PSSession $sfbSession
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>更新用户帐户的外部通信设置
 
-假设您想要更改用户帐户上的外部通信设置。 例如，您希望允许 Alex 与联合用户通信（EnableFederationAccess 等于 True），而不是 Windows Live 用户（EnablePublicCloudAccess 等于 False）。 若要执行此操作，您需要执行以下两项操作：
+假设您想要更改用户帐户上的外部通信设置。 例如，您希望允许 Alex 与联盟用户通信 (EnableFederationAccess 等于 True) 而不是 Windows Live 用户 (EnablePublicCloudAccess 等于 False) 。 若要执行此操作，您需要执行以下两项操作：
   
 1. 找到符合我们的条件的外部访问策略。
     
@@ -58,7 +58,7 @@ Import-PSSession $sfbSession
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-除非您已创建 ExternalAccessPolicy 的任何自定义实例，否则该命令将返回一个符合我们的条件（FederationOnly）的策略。 如以下示例所示：
+除非您已创建 ExternalAccessPolicy 的任何自定义实例，否则该命令将返回一个策略，该策略符合我们的标准 (FederationOnly) 。 如以下示例所示：
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -84,7 +84,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
-换言之，向我们显示 ExternalAccessPolicy 属性设置为 FederationAndPICDefault 的所有用户。 （为了限制屏幕上显示的信息量，请使用 Select-Object cmdlet 显示 "仅显示每个用户的显示名称"。） 
+换言之，向我们显示 ExternalAccessPolicy 属性设置为 FederationAndPICDefault 的所有用户。  (，为了限制屏幕上显示的信息量，请使用 Select-Object cmdlet 显示 "仅显示每个用户的显示名称"。 )  
   
 若要将所有用户帐户配置为使用相同的策略，请使用以下命令：
   
@@ -100,12 +100,12 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
-此命令将向 Alex 分配的外部访问策略的名称设置为一个 null 值（$Null）。 空值表示 "nothing"。 换言之，没有向 Alex 分配任何外部访问策略。 如果没有向用户分配任何外部访问策略，则该用户将由全局策略进行管理。
+此命令将向 Alex 分配的外部访问策略的名称设置为 $Null)  (null 值。 空值表示 "nothing"。 换言之，没有向 Alex 分配任何外部访问策略。 如果没有向用户分配任何外部访问策略，则该用户将由全局策略进行管理。
   
 
 ## <a name="managing-large-numbers-of-users"></a>管理大量用户
 
-若要管理大量用户（1000或更多），您需要通过使用[调用命令](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)cmdlet 的脚本块对命令进行批处理。  在前面的示例中，每次执行 cmdlet 时，都必须先设置调用，然后等待结果，然后再将其发送回来。  使用脚本块时，可以远程执行 cmdlet，并在完成后将数据发送回来。 
+若要管理大量用户 (1000 或更多) ，您需要通过使用[调用命令](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)cmdlet 的脚本块对命令进行批处理。  在前面的示例中，每次执行 cmdlet 时，都必须先设置调用，然后等待结果，然后再将其发送回来。  使用脚本块时，可以远程执行 cmdlet，并在完成后将数据发送回来。 
 
 ```powershell
 Import-Module LyncOnlineConnector
@@ -142,4 +142,4 @@ $count = 0
   
 [使用 PowerShell 管理 Microsoft 365](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 的 PowerShell 入门](getting-started-with-office-365-powershell.md)
+[PowerShell for Microsoft 365 入门](getting-started-with-office-365-powershell.md)

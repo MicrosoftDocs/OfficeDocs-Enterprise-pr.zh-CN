@@ -11,25 +11,27 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: 适用于 Office 365 的 ExpressRoute 提供了网络和 Microsoft 数据中心之间的第3层连接。 电路使用 Office 365 前端服务器的边界网关协议（BGP）路由播发。 从本地设备的角度来看，当他们需要选择到 Office 365 的正确 TCP/IP 路径时，Azure ExpressRoute 被视为是 Internet 的替代方法。
-ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: 在本文中，您将了解有关 Office 365 的 Azure ExpressRoute 以及如何利用它进行网络规划。
+ms.openlocfilehash: 72fe3dc05a50a4a237a7493498ba792316d98b68
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230878"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606728"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>使用适用于 Office 365 的 ExpressRoute 进行网络规划
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-适用于 Office 365 的 ExpressRoute 提供了网络和 Microsoft 数据中心之间的第3层连接。 电路使用 Office 365 前端服务器的边界网关协议（BGP）路由播发。 从本地设备的角度来看，当他们需要选择到 Office 365 的正确 TCP/IP 路径时，Azure ExpressRoute 被视为是 Internet 的替代方法。
+适用于 Office 365 的 ExpressRoute 提供了网络和 Microsoft 数据中心之间的第3层连接。 电路使用边界网关协议 (BGP) Office 365 前端服务器的路由播发。 从本地设备的角度来看，当他们需要选择到 Office 365 的正确 TCP/IP 路径时，Azure ExpressRoute 被视为是 Internet 的替代方法。
   
 Azure ExpressRoute 添加了指向由 Microsoft 数据中心内的 Office 365 服务器提供的一组特定支持的功能和服务的直接路径。 Azure ExpressRoute 不会将 Internet 连接替换为 Microsoft 数据中心或基本 Internet 服务（如域名解析）。 Azure ExpressRoute 和你的 Internet 电路应受到保护和冗余。
   
@@ -41,7 +43,7 @@ Azure ExpressRoute 添加了指向由 Microsoft 数据中心内的 Office 365 �
 | 对 Office 365 服务的访问权限，包括;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  浏览器中的 Office  <br/>  Office 365 门户和身份验证  <br/> |是，所有应用程序和功能  <br/> |是，[特定的应用程序和功能](https://aka.ms/o365endpoints) <br/> |
 |外围环境的本地安全性。  <br/> |是  <br/> |是  <br/> |
 |高可用性规划。  <br/> |故障转移到备用 internet 网络连接  <br/> |故障转移到备用 ExpressRoute 连接  <br/> |
-|与可预测网络配置文件的直接连接。  <br/> |否  <br/> |可访问  <br/> |
+|与可预测网络配置文件的直接连接。  <br/> |否  <br/> |是  <br/> |
 |IPv6 连接。  <br/> |是  <br/> |是  <br/> |
 
 若要详细了解网络规划指南，请展开下面的标题。 我们还记录了10部分[Azure ExpressRoute For Office 365 培训](https://channel9.msdn.com/series/aer)系列，dives 更深入。
@@ -94,7 +96,7 @@ Azure ExpressRoute 订阅是以客户为中心的，这意味着订阅与客户�
   
 - 网络/安全控制的深度和类型可能影响 Office 365 用户体验的性能和可伸缩性。
 
-- 出站（本地- \> microsoft）和入站（microsoft \> 本地） [如果已启用] 流可能具有不同的要求。 它们可能与常规 Internet 目标的出站不同。
+- 出站 (内部部署- \> microsoft) 和入站 (microsoft \> 本地) [如果已启用] 流可能具有不同的要求。 它们可能与常规 Internet 目标的出站不同。
 
 - 对于端口/协议和必需的 IP 子网，Office 365 的要求与通过 ExpressRoute 为 Office 365 或通过 Internet 路由通信的情况相同。
 

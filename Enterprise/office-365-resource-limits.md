@@ -14,17 +14,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 摘要：有关 Microsoft 365 中各种应用程序的资源限制的信息。
-ms.openlocfilehash: c3f10be1e64cb5d355d319a603cc0c1d2f238dc7
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 在本文中，您可以找到有关 Microsoft 365 中各种应用程序的资源限制的信息。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4d2e7987620891ddeac2c4fa08aaeb203f001f57
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997849"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606298"
 ---
 # <a name="resource-limits"></a>资源限制
 
-使用配额（限制）和限制来强制实施资源限制。 Azure Active Directory （Azure AD）和各个 Microsoft 365 服务均使用两者。 在添加新功能时，限制因服务而异并随时间而变化。 有关各种服务的当前限制的详细信息，请参阅下列主题：
+使用配额来强制执行资源限制 (限制) 和限制。 Azure Active Directory (Azure AD) 和各个 Microsoft 365 服务使用这两者。 在添加新功能时，限制因服务而异并随时间而变化。 有关各种服务的当前限制的详细信息，请参阅下列主题：
 
 - [Azure AD 服务限制和限制](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx)
@@ -36,6 +37,6 @@ ms.locfileid: "44997849"
 
 除了这些限制之外，还需要在 Azure AD 和 Microsoft 365 中使用多个限制机制。 如果 Microsoft 数据中心中的网络资源针对使用服务的广泛客户进行了优化，则服务中的限制尤为重要。 限制机制包括：
 
-- Azure AD 和 Microsoft 365 功能用户级别限制，它限制单个用户可以执行的事务或并发呼叫（按脚本或代码）的数量。
+- Azure AD 和 Microsoft 365 功能用户级别限制，它限制由单个用户可以执行的脚本或代码)  (的事务或并发调用的数量。
 - 在创建租户时，会为每个租户分配一个默认的 PowerShell 限制策略。 这些设置会影响其他项目，如一台管理员可打开的最大并发 PowerShell 会话数。
-- 每个 Exchange Online 客户都有一个默认的 Exchange Web 服务（EWS）策略，该策略针对 EWS 客户端操作进行了优化，并具有适用于所有 Outlook 客户端的限制。
+- 每个 Exchange Online 客户都具有默认的 Exchange Web 服务 (EWS) 策略，该策略针对 EWS 客户端操作进行了优化，并且限制适用于所有 Outlook 客户端。

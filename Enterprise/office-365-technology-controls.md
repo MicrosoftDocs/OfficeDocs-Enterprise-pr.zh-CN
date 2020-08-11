@@ -14,13 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 摘要： Microsoft 365 的 Microsoft 技术控制措施概述。
-ms.openlocfilehash: ef17d00cdeac4a5c7fa9dd1b2d5b5a644bb62ddb
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: 本文概述了 microsoft 365 中 Microsoft 的技术控制使用的工具和技术。
+ms.openlocfilehash: 4944fcdac1142344178d289be1e5699b80b47683
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774847"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606268"
 ---
 # <a name="microsoft-365-technology-controls"></a>Microsoft 365 技术控件 
 
@@ -48,7 +50,7 @@ Microsoft 365 的客户密码箱可帮助您满足法规遵从性义务（如果
 
 ## <a name="just-in-time-access"></a>实时访问
 
-Microsoft 使用 Microsoft 365 的实时（JIT）访问原则来缓解凭据篡改风险和横向攻击。 JIT 可删除服务的持久管理访问权限，并将权限替换为根据需要提升为这些角色。 从管理员删除永久访问权限可确保凭据仅在需要时才可用，并可降低凭据窃取风险。
+Microsoft 使用 Microsoft 365 的实时 (JIT) 访问原则来缓解凭据篡改风险和横向攻击。 JIT 可删除服务的持久管理访问权限，并将权限替换为根据需要提升为这些角色。 从管理员删除永久访问权限可确保凭据仅在需要时才可用，并可降低凭据窃取风险。
 
 JIT 访问模型要求工程师在有限的时段内请求提升的权限，以执行管理任务。 此外，工程师使用使用计算机生成的复杂密码创建的临时帐户，并只授予那些允许他们执行必要任务的角色。 例如，由密码箱授予的管理访问权限是受时间限制的，并且访问权限的时间量取决于请求的角色。 工程师指定对密码箱系统的请求中所需的时间访问的持续时间。 当请求的时间超过提升的最长允许时间时，密码箱系统会拒绝请求。 过期后，将删除管理访问权限，并且临时帐户将过期。
 
@@ -56,9 +58,9 @@ JIT 访问模型要求工程师在有限的时段内请求提升的权限，以�
 
 ## <a name="constrained-management-interfaces"></a>受约束的管理接口
 
-工程师使用两个管理界面执行管理任务：通过安全的终端服务网关（TSGs）和远程 PowerShell 的远程桌面。 在这些管理界面中，软件策略和访问控制对所执行的应用程序以及可用的命令和 cmdlet 施加了很大的限制。
+工程师使用两个管理界面执行管理任务：通过安全的终端服务网关 (TSGs) 和远程 PowerShell 执行的远程桌面。 在这些管理界面中，软件策略和访问控制对所执行的应用程序以及可用的命令和 cmdlet 施加了很大的限制。
 
-Microsoft 365 服务器将并发会话限制为每个服务的团队管理员，每个服务器一个会话。 TSGs 仅允许用户单个并发会话，不允许多个会话。 通过对每个服务器使用一个会话，TSGs 允许 Microsoft 365 服务团队管理员同时连接到多台服务器，以便管理员能够有效地执行其职责。 服务团队管理员对 TSGs 本身没有任何权限。 TSG 仅用于强制实施多因素身份验证（MFA）和加密要求。 一旦服务团队管理员通过 TSG 连接到特定服务器，则该特定服务器会强制每个管理员一个会话限制为一个。
+Microsoft 365 服务器将并发会话限制为每个服务的团队管理员，每个服务器一个会话。 TSGs 仅允许用户单个并发会话，不允许多个会话。 通过对每个服务器使用一个会话，TSGs 允许 Microsoft 365 服务团队管理员同时连接到多台服务器，以便管理员能够有效地执行其职责。 服务团队管理员对 TSGs 本身没有任何权限。 TSG 仅用于强制执行多重身份验证 (MFA) 和加密要求。 一旦服务团队管理员通过 TSG 连接到特定服务器，则该特定服务器会强制每个管理员一个会话限制为一个。
 
 Microsoft 365 人员的使用限制和连接和配置要求由 Active Directory 组策略建立。 这些策略包括以下特征：
 
@@ -68,6 +70,6 @@ Microsoft 365 人员的使用限制和连接和配置要求由 Active Directory 
 
 与 TSGs 的连接还需要使用单独的物理智能卡和帐户（与工程师的 Microsoft 公司凭据分开）进行 MFA。 为各种平台和机密管理平台颁发不同的智能卡的工程师可确保凭据的安全存储。 TSGs 使用 Active Directory 组策略来控制谁可以登录到远程服务器、允许的会话数和空闲超时设置。 其他策略将限制对允许的应用程序的访问，并限制 Internet 访问。
 
-除了使用巧尽心思配置的 TSGs 的远程访问之外，Exchange Online 还允许具有服务工程师操作角色的用户使用远程 PowerShell 访问生产服务器上的特定管理功能。 若要执行此操作，用户必须获得对 Microsoft 365 生产环境的只读（调试）访问权限。 启用权限提升的方式与使用密码箱进程为 TSGs 启用权限的方式相同。
+除了使用巧尽心思配置的 TSGs 的远程访问之外，Exchange Online 还允许具有服务工程师操作角色的用户使用远程 PowerShell 访问生产服务器上的特定管理功能。 若要执行此操作，必须向用户授予只读 (debug) 对 Microsoft 365 生产环境的访问权限。 启用权限提升的方式与使用密码箱进程为 TSGs 启用权限的方式相同。
 
 对于远程访问，每个数据中心都有一个负载平衡的虚拟 IP，用作单一访问点。 可用的远程 PowerShell cmdlet 基于身份验证期间获取的访问声明中标识的权限级别。 这些 cmdlet 仅提供使用此方法进行连接的用户可访问的唯一管理功能。 远程 PowerShell 限制可用于工程师的命令的范围，并基于通过密码箱进程授予的访问级别。 例如，在 Exchange Online 中，可以使用 "获取邮箱"，但将 "邮箱" 设置为 "邮箱"。

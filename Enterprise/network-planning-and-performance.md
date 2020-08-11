@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection: Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
-description: 帮助您规划 Microsoft 365 的网络带宽要求。 在部署后，请返回此处对 Microsoft 365 性能进行微调和故障排除。
-ms.openlocfilehash: 2754bdfe427a87f0cbed538703877b089c3fcc38
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+- Adm_O365
+description: 本文将帮助您规划 Microsoft 365 的网络带宽要求，并对性能进行微调和故障排除。
+ms.openlocfilehash: 4942d2d9d36123465dd15aecf6e72988c9952037
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998577"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606738"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Microsoft 365 网络计划和性能优化
 在首次部署或迁移到 Microsoft 365 之前，您可以使用这些主题中的信息来估计所需的带宽，然后测试并验证是否有足够的带宽来部署或迁移到 Microsoft 365。 有关概述，请参阅：[针对 Microsoft 365 的网络和迁移规划](network-and-migration-planning.md)。
