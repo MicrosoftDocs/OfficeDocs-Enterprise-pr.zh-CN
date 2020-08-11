@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: pandrew
 search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: Office 365 IP 地址和 URL Web 服务可帮助你更好地识别和区分 Office 365 网络流量，以便更轻松地评估、配置和及时了解最新变更。
-ms.openlocfilehash: 7a1d882b6bc5e34e3d59cf4bade30a58a1c76d6f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 了解如何使用 Office 365 IP 地址和 URL Web 服务来帮助你更好地标识并区分 Office 365 网络流量。
+ms.openlocfilehash: a51ee69c5d1364e92b2f8a1f4c06059023084ef5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843595"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605624"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务
 
@@ -247,7 +249,7 @@ Worldwide,2018063000
 
 变更 Web 方法需要使用以下必填参数：
 
-- **Version=\<YYYYMMDDNN>** — 所需的 URL 路由参数。 此值为当前实施的版本。 Web 服务应返回自该版本之后发生的变更。 格式为 _YYYYMMDDNN_；如果需要在一天内发布多个版本，则 _NN_ 是一个递增的自然数，而 _00_ 表示给定日期的第一个更新。 Web 服务要求 _version_ 参数恰好包含 10 位数。
+- **Version=\<YYYYMMDDNN>**  — 所需的 URL 路由参数。 此值为当前实施的版本。 Web 服务应返回自该版本之后发生的变更。 格式为 _YYYYMMDDNN_；如果需要在一天内发布多个版本，则 _NN_ 是一个递增的自然数，而 _00_ 表示给定日期的第一个更新。 Web 服务要求 _version_ 参数恰好包含 10 位数。
 
 变更 Web 方法受速率限制，与终结点 Web 方法受限于速率一样。 如果收到 429 HTTP 响应代码，请先等待 1 小时，然后再重复你的请求，或者为该请求生成新的 GUID。
 
