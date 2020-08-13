@@ -5280,7 +5280,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | 工作区分析 | 美国 |
 </p></details>
 
-## <a name="taiwan"></a>中国台湾
+## <a name="taiwan"></a>台湾
 <details><summary>单击展开</summary><p>
 
 | 服务 | 位置 |
